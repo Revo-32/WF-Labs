@@ -42,7 +42,7 @@ python -X utf8 tools/release-preflight.py
 ## GitHub 준비 상태
 
 - `windows.yml`: main push/PR/수동 실행에서 Release 빌드, 전체 계산 검사, 리벤 작업 흐름 검사, 전체 WPF UI 검사, 설치 파일 생성과 artifact 보관.
-- `release.yml`: main에서 수동 실행하면 같은 검사 후 **draft Release**를 만든다. 자동으로 공개하지 않는다. 저장소 생성 후 실제 GitHub Actions 실행 검증은 별도로 필요하다.
+- `release.yml`: main에서 수동 실행하면 같은 검사 후 **draft Release**를 만든다. 자동으로 공개하지 않는다. 첫 공개 배포는 아래에 기록한 Windows Actions 검증과 로컬 설치 전이 검증을 통과한 파일을 게시했다.
 - `.gitignore`: 빌드 결과, 검증 산출물, 사용자 리벤 작업, 일반적인 서명키·환경 파일을 제외한다.
 - `release-preflight.py`: 포함 예정 파일의 크기와 특정 자격 증명 형식을 읽기 전용으로 검사한다. 자동 Git add/commit/push를 하지 않는다.
 
@@ -70,3 +70,19 @@ Velopack 1.2.161 Setup의 진단용 `-- EXE_ARGS` 전달에서 오류를 관찰�
 - `artifacts/distribution-installer-qa/installer-verification.json`: 격리 설치 `0.8.0-qa.3` → 자동 다운로드 → `0.8.0-qa.4` 설치/재시작 → 미완성 리벤 입력·예산·모딩 비교 기준·활성 탭 복원 → 제거 성공. 기존 사용자 설정·자동 실행 항목 보존 확인.
 
 이 설치 전이 검사는 로컬 feed를 사용했다. GitHub Release의 익명 접근·온라인 feed 확인과 구분한다. 실제 Windows 로그아웃/로그인과 Warframe 실행, 서로 다른 실제 모니터 간 이동은 이 자동 검증에 포함하지 않았다. 인증서가 없어 Authenticode 서명은 미적용 상태다.
+
+## 0.8.0-preview.2 공개 배포와 온라인 확인
+
+2026-10-13, [v0.8.0-preview.2](https://github.com/Revo-32/WF-Labs/releases/tag/v0.8.0-preview.2)를 공개 미리보기로 게시했다. 자체 소스 공개와 함께 설치 파일·압축 버전·전체 업데이트 패키지·feed·체크섬 7개 파일을 제공한다. 업로드한 모든 파일의 크기와 GitHub SHA-256이 로컬 검증본과 일치한다.
+
+- [GitHub Windows Actions](https://github.com/Revo-32/WF-Labs/actions/runs/38384138493): 배포 기준 커밋 `162828f4dd569ecb4b54c17bcc88b181fd5a089e`에서 전체 검사, 설치·업데이트 패키지 생성, 패키지 검증과 artifact 업로드 성공.
+- `artifacts/distribution-public-release.json`: 인증 없이 공개 Release 조회와 설치 파일 다운로드 URL의 HTTP 200 확인.
+- `artifacts/distribution-online-update.json`: 앱과 같은 Velopack 1.2.161 `GithubSource`로 인증 토큰 없이 새 버전 확인, 77,310,027바이트 전체 업데이트 패키지 다운로드와 SHA-256 일치 확인. `0.8.0-preview.1`에서는 새 버전 `0.8.0-preview.2`를 찾고, `0.8.0-preview.2`에서는 업데이트 없음으로 판정했다.
+
+온라인 검사는 별도 진단 프로그램에서 설치 버전 정보만 `TestVelopackLocator`로 주입했다. 실제 설치본 적용·재시작·작업 복구는 위의 격리 설치 QA에서 검증했다. 온라인 검사에서 사용자의 설치본을 변경하거나 재시작하지 않았다. `release.yml` 자체의 수동 draft 생성 경로는 아직 별도로 실행하지 않았다.
+
+[Windows 설치 파일](https://github.com/Revo-32/WF-Labs/releases/download/v0.8.0-preview.2/WFLabs-win-Setup.exe)의 SHA-256:
+
+```text
+e4fcaffcdfe423ceb6c5da2de0e015fb2b3fe5d6074f6a51af23f8f50598a8e1
+```
