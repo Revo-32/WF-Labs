@@ -1,0 +1,6678 @@
+[
+  {
+    "name": "Nikana Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKatana/PrimeNikana",
+    "codexSecret": false,
+    "damagePerShot": [
+      9.9000006,
+      9.9000006,
+      178.2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalDamage": 198,
+    "description": "An ancient blade predating the fall of the Orokin Empire. Forged using techniques lost over the centuries, the edge remains sharper than that of any modern Nikana.",
+    "criticalChance": 0.28,
+    "criticalMultiplier": 2.4000001,
+    "procChance": 0.27999997,
+    "fireRate": 1.0833334,
+    "masteryReq": 12,
+    "productCategory": "Melee",
+    "slot": 5,
+    "omegaAttenuation": 0.60000002,
+    "blockingAngle": 55,
+    "comboDuration": 5,
+    "followThrough": 0.69999999,
+    "range": 2.5,
+    "slamAttack": 594,
+    "slamRadialDamage": 396,
+    "slamRadius": 6,
+    "slideAttack": 396,
+    "heavyAttackDamage": 990,
+    "heavySlamAttack": 792,
+    "heavySlamRadialDamage": 594,
+    "heavySlamRadius": 7,
+    "windUp": 0.5,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeNikanaBlade",
+        "itemCount": 1
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/PrimeNikanaBlueprint",
+        "itemCount": 1
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeNikanaHandle",
+        "itemCount": 1
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "itemCount": 15
+      }
+    ],
+    "type": "Melee",
+    "damage": {
+      "total": 198,
+      "impact": 9.9000006,
+      "puncture": 9.9000006,
+      "slash": 178.2,
+      "heat": 0,
+      "cold": 0,
+      "electricity": 0,
+      "toxin": 0,
+      "blast": 0,
+      "radiation": 0,
+      "gas": 0,
+      "magnetic": 0,
+      "viral": 0,
+      "corrosive": 0,
+      "void": 0,
+      "tau": 0,
+      "cinematic": 0,
+      "shieldDrain": 0,
+      "healthDrain": 0,
+      "energyDrain": 0,
+      "true": 0
+    },
+    "imageName": "NikanaPrime.png",
+    "category": "Melee",
+    "tradable": false,
+    "wikiAvailable": true,
+    "attacks": [
+      {
+        "name": "Normal Attack",
+        "speed": 1.08,
+        "crit_chance": 28,
+        "crit_mult": 2.4,
+        "status_chance": 28,
+        "damage": {
+          "impact": 9.9,
+          "slash": 178.2,
+          "puncture": 9.9
+        },
+        "slide": "396"
+      },
+      {
+        "name": "Slam Attack",
+        "speed": 1.08,
+        "crit_chance": 28,
+        "crit_mult": 2.4,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 6,
+          "reduction": 0.5
+        },
+        "damage": {
+          "impact": 396
+        }
+      },
+      {
+        "name": "Heavy Slam Attack",
+        "speed": 1.08,
+        "crit_chance": 28,
+        "crit_mult": 2.4,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 7,
+          "reduction": 0.3
+        },
+        "damage": {
+          "blast": 594
+        }
+      }
+    ],
+    "polarities": [
+      "madurai",
+      "vazarin"
+    ],
+    "tags": [
+      "Prime",
+      "Vaulted"
+    ],
+    "stancePolarity": "madurai",
+    "wikiaThumbnail": "https://wiki.warframe.com/images/NikanaPrime.png?5dadf",
+    "wikiaUrl": "https://wiki.warframe.com/w/Nikana_Prime",
+    "introduced": {
+      "name": "Hotfix 18.4.12",
+      "url": "https://wiki.warframe.com/w/Update_18%23Hotfix_18.4.12",
+      "aliases": [
+        "18.4.12"
+      ],
+      "parent": "18.4",
+      "date": "2016-02-16"
+    },
+    "disposition": 1,
+    "releaseDate": "2016-02-16",
+    "isPrime": true,
+    "vaulted": true,
+    "vaultDate": "2017-12-12",
+    "estimatedVaultDate": "2017-12-12",
+    "masterable": true
+  },
+  {
+    "name": "Kronen Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinnerPrime/TonfaContestWinnerPrimeWeapon",
+    "codexSecret": false,
+    "damagePerShot": [
+      21.200001,
+      21.200001,
+      169.60001,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalDamage": 212,
+    "description": "Ancient blades, perfected for today’s combat.",
+    "criticalChance": 0.22,
+    "criticalMultiplier": 2,
+    "procChance": 0.34000003,
+    "fireRate": 1.1666667,
+    "masteryReq": 13,
+    "productCategory": "Melee",
+    "slot": 5,
+    "omegaAttenuation": 0.69999999,
+    "blockingAngle": 60,
+    "comboDuration": 5,
+    "followThrough": 0.60000002,
+    "range": 2.5,
+    "slamAttack": 424,
+    "slamRadialDamage": 424,
+    "slamRadius": 8,
+    "slideAttack": 424,
+    "heavyAttackDamage": 848,
+    "heavySlamAttack": 848,
+    "heavySlamRadialDamage": 636,
+    "heavySlamRadius": 9,
+    "windUp": 0.69999999,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/KronenPrimeBlade",
+        "itemCount": 2
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/KronenPrimeBlueprint",
+        "itemCount": 1
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/KronenPrimeHandle",
+        "itemCount": 2
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "itemCount": 15
+      }
+    ],
+    "type": "Melee",
+    "damage": {
+      "total": 212,
+      "impact": 21.200001,
+      "puncture": 21.200001,
+      "slash": 169.60001,
+      "heat": 0,
+      "cold": 0,
+      "electricity": 0,
+      "toxin": 0,
+      "blast": 0,
+      "radiation": 0,
+      "gas": 0,
+      "magnetic": 0,
+      "viral": 0,
+      "corrosive": 0,
+      "void": 0,
+      "tau": 0,
+      "cinematic": 0,
+      "shieldDrain": 0,
+      "healthDrain": 0,
+      "energyDrain": 0,
+      "true": 0
+    },
+    "imageName": "KronenPrime.png",
+    "category": "Melee",
+    "tradable": false,
+    "wikiAvailable": true,
+    "attacks": [
+      {
+        "name": "Normal Attack",
+        "speed": 1.17,
+        "crit_chance": 22,
+        "crit_mult": 2,
+        "status_chance": 34,
+        "damage": {
+          "impact": 21.2,
+          "slash": 169.6,
+          "puncture": 21.2
+        },
+        "slide": "424"
+      },
+      {
+        "name": "Slam Attack",
+        "speed": 1.17,
+        "crit_chance": 22,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 8,
+          "reduction": 0.5
+        },
+        "damage": {
+          "impact": 424
+        }
+      },
+      {
+        "name": "Heavy Slam Attack",
+        "speed": 1.17,
+        "crit_chance": 22,
+        "crit_mult": 2,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 9,
+          "reduction": 0.3
+        },
+        "damage": {
+          "blast": 636
+        }
+      }
+    ],
+    "polarities": [
+      "madurai",
+      "naramon"
+    ],
+    "tags": [
+      "Prime",
+      "Vaulted"
+    ],
+    "stancePolarity": "madurai",
+    "wikiaThumbnail": "https://wiki.warframe.com/images/KronenPrime.png?badf1",
+    "wikiaUrl": "https://wiki.warframe.com/w/Kronen_Prime",
+    "introduced": {
+      "name": "Hotfix 22.16.4",
+      "url": "https://wiki.warframe.com/w/Update_22%23Hotfix_22.16.4",
+      "aliases": [
+        "22.16.4"
+      ],
+      "parent": "22.16",
+      "date": "2018-03-20"
+    },
+    "disposition": 1,
+    "releaseDate": "2018-03-20",
+    "isPrime": true,
+    "vaulted": true,
+    "vaultDate": "2019-12-17",
+    "estimatedVaultDate": "2019-12-17",
+    "masterable": true
+  },
+  {
+    "name": "Gram Prime",
+    "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGram/PrimeGram",
+    "codexSecret": false,
+    "damagePerShot": [
+      60,
+      15,
+      225,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalDamage": 300,
+    "description": "Born anew, the father of swords returns.",
+    "criticalChance": 0.31999999,
+    "criticalMultiplier": 2.5999999,
+    "procChance": 0.31999999,
+    "fireRate": 0.80000007,
+    "masteryReq": 14,
+    "productCategory": "Melee",
+    "slot": 5,
+    "omegaAttenuation": 0.80000001,
+    "blockingAngle": 55,
+    "comboDuration": 5,
+    "followThrough": 0.60000002,
+    "range": 2.9000001,
+    "slamAttack": 900,
+    "slamRadialDamage": 600,
+    "slamRadius": 8,
+    "slideAttack": 600,
+    "heavyAttackDamage": 1800,
+    "heavySlamAttack": 300,
+    "heavySlamRadialDamage": 900,
+    "heavySlamRadius": 9,
+    "windUp": 1.1,
+    "buildPrice": 15000,
+    "buildTime": 43200,
+    "skipBuildTimePrice": 50,
+    "buildQuantity": 1,
+    "consumeOnBuild": true,
+    "components": [
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GramPrimeBlade",
+        "itemCount": 1
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/GramPrimeBlueprint",
+        "itemCount": 1
+      },
+      {
+        "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GramPrimeHandle",
+        "itemCount": 1
+      },
+      {
+        "uniqueName": "/Lotus/Types/Items/MiscItems/OrokinCell",
+        "itemCount": 15
+      }
+    ],
+    "type": "Melee",
+    "damage": {
+      "total": 300,
+      "impact": 60,
+      "puncture": 15,
+      "slash": 225,
+      "heat": 0,
+      "cold": 0,
+      "electricity": 0,
+      "toxin": 0,
+      "blast": 0,
+      "radiation": 0,
+      "gas": 0,
+      "magnetic": 0,
+      "viral": 0,
+      "corrosive": 0,
+      "void": 0,
+      "tau": 0,
+      "cinematic": 0,
+      "shieldDrain": 0,
+      "healthDrain": 0,
+      "energyDrain": 0,
+      "true": 0
+    },
+    "imageName": "GramPrime.png",
+    "category": "Melee",
+    "tradable": false,
+    "wikiAvailable": true,
+    "attacks": [
+      {
+        "name": "Normal Attack",
+        "speed": 0.8,
+        "crit_chance": 32,
+        "crit_mult": 2.6,
+        "status_chance": 32,
+        "damage": {
+          "impact": 60,
+          "slash": 225,
+          "puncture": 15
+        },
+        "slide": "600"
+      },
+      {
+        "name": "Slam Attack",
+        "speed": 0.8,
+        "crit_chance": 32,
+        "crit_mult": 2.6,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 8,
+          "reduction": 0.5
+        },
+        "damage": {
+          "impact": 600
+        }
+      },
+      {
+        "name": "Heavy Slam Attack",
+        "speed": 0.8,
+        "crit_chance": 32,
+        "crit_mult": 2.6,
+        "status_chance": 10,
+        "shot_type": "AoE",
+        "falloff": {
+          "start": 0,
+          "end": 9,
+          "reduction": 0.3
+        },
+        "damage": {
+          "blast": 900
+        }
+      }
+    ],
+    "polarities": [
+      "madurai",
+      "madurai"
+    ],
+    "tags": [
+      "Prime"
+    ],
+    "stancePolarity": "vazarin",
+    "wikiaThumbnail": "https://wiki.warframe.com/images/GramPrime.png?89383",
+    "wikiaUrl": "https://wiki.warframe.com/w/Gram_Prime",
+    "introduced": {
+      "name": "Update 23.9",
+      "url": "https://wiki.warframe.com/w/Update_23%23Update_23.9",
+      "aliases": [
+        "23.9",
+        "23.9.0"
+      ],
+      "parent": "23.9",
+      "date": "2018-09-25"
+    },
+    "disposition": 2,
+    "releaseDate": "2018-09-25",
+    "isPrime": true,
+    "vaulted": true,
+    "vaultDate": "2020-07-14",
+    "estimatedVaultDate": "2020-07-14",
+    "masterable": true
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponMeleeDamageMod",
+    "name": "Pressure Point",
+    "polarity": "madurai",
+    "rarity": "Common",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+20% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+40% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+60% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+80% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+100% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+120% Melee Damage"
+        ]
+      }
+    ],
+    "imageName": "MeleeDamageMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Ceres/Lex (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Earth/Mantle (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Cosis (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Isos (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Abaddon (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Beleth (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Cryotic Front (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jupiter/Ananke (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Lua/Copernicus (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Ara (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Quirinus (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mercury/Elion (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Neptune/Galatea (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Limtoc (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Skyresh (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Todd (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Corb (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Hydra (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Cassini (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Phoebe (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Uranus/Ariel (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Uranus/Trinculo (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Venus/Venera (Capture)",
+        "type": "Pressure Point",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Bailiff",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Butcher",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Drahk Master",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Drekar Butcher",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Drekar Manic",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Frontier Bailiff",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Butcher",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Drahk Master",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Lobber Crawler",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Toxic Crawler",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tusk Butcher",
+        "type": "Pressure Point",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Aurax Baculus",
+        "type": "Pressure Point",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Guardsman",
+        "type": "Pressure Point",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Hyekka Master",
+        "type": "Pressure Point",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Hyekka Master",
+        "type": "Pressure Point",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ceres/Seimeni (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Coba (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Akkad (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Larzac (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Sinai (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mars/Kadesh (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Pluto/Sechura (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sedna/Sangeru (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Romula (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 1.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Arid Hellion",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Arid Lancer",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Coildrive",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Deimos Venin Mutalist",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Drekar Elite Lancer",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Drekar Lancer",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Drekar Scorpion",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Frontier Hellion",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Frontier Lancer",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Hellion",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Jarka Lar",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Juno Jactus Osprey",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Kuva Hellion",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Kuva Lancer",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Kuva Lich Agor Rok (Level 0 - 69)",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Lancer Survivor",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Lancer",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Mine Osprey",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Mutalist Osprey",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Coildrive",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Commander",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Hellion",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Lancer",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Mine Osprey",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Nightwatch Reaver",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Rogg-417",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scaldra Ti-92",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Mine Osprey",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Sikula",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Special Duty Coildrive",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Tusk Hellion",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Tusk Lancer",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Tusk Reaver",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Venin Mutalist",
+        "type": "Pressure Point",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Drekar Heavy Gunner",
+        "type": "Pressure Point",
+        "chance": 1.16,
+        "rarity": "Common"
+      },
+      {
+        "location": "Ghoul Rictus",
+        "type": "Pressure Point",
+        "chance": 1.9,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation B",
+        "type": "Pressure Point",
+        "chance": 15.18,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation B",
+        "type": "Pressure Point",
+        "chance": 15.49,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Another Betrayer, Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Family Reunion, Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Hot Mess, Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Opik (Rush), Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Recover The Orokin Archive, Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sunkiller, Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Table For Two, Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "The Aftermath, Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Time's Up, Rotation A",
+        "type": "Pressure Point",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bailiff Defector",
+        "type": "Pressure Point",
+        "chance": 2.28,
+        "rarity": "Common"
+      },
+      {
+        "location": "Bailiff",
+        "type": "Pressure Point",
+        "chance": 2.28,
+        "rarity": "Common"
+      },
+      {
+        "location": "Kuva Bailiff",
+        "type": "Pressure Point",
+        "chance": 2.28,
+        "rarity": "Common"
+      },
+      {
+        "location": "Ghoul Devourer",
+        "type": "Pressure Point",
+        "chance": 2.53,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Earth/Cetus (Level 5 - 15 Cetus Bounty), Rotation B",
+        "type": "Pressure Point",
+        "chance": 20,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "General Sargas Ruk",
+        "type": "Pressure Point",
+        "chance": 37.94,
+        "rarity": "Common"
+      },
+      {
+        "location": "J3 Jordas Golem",
+        "type": "Pressure Point",
+        "chance": 37.94,
+        "rarity": "Common"
+      },
+      {
+        "location": "Jordas Golem",
+        "type": "Pressure Point",
+        "chance": 37.94,
+        "rarity": "Common"
+      },
+      {
+        "location": "Ancient Infested",
+        "type": "Pressure Point",
+        "chance": 38.72,
+        "rarity": "Common"
+      },
+      {
+        "location": "Infested Corpus",
+        "type": "Pressure Point",
+        "chance": 38.72,
+        "rarity": "Common"
+      },
+      {
+        "location": "Infested Grineer",
+        "type": "Pressure Point",
+        "chance": 38.72,
+        "rarity": "Common"
+      },
+      {
+        "location": "Ambulas",
+        "type": "Pressure Point",
+        "chance": 60.7,
+        "rarity": "Common"
+      },
+      {
+        "location": "Another Betrayer, Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Seimeni (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Coba (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Akkad (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Larzac (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Family Reunion, Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Hot Mess, Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Sinai (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mars/Kadesh (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Opik (Rush), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Pluto/Sechura (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Recover The Orokin Archive, Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sedna/Sangeru (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sunkiller, Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Table For Two, Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "The Aftermath, Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Time's Up, Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Romula (Defense), Rotation B",
+        "type": "Pressure Point",
+        "chance": 8.43,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Bode (Spy), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Casta (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Egeria (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Varro (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Lith (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Valac (Spy), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Amalthea (Spy), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mars/Spear (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mercury/Lares (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Drunlo (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Gulliver (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Aegaeon (Spy), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Dione (Spy), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Tessera (Defense), Rotation A",
+        "type": "Pressure Point",
+        "chance": 9.09,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Grineer Manic",
+        "type": "Pressure Point",
+        "chance": 9.48,
+        "rarity": "Uncommon"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/PressurePointMod.png?d9969",
+    "wikiaUrl": "https://wiki.warframe.com/w/Pressure_Point",
+    "transmutable": true,
+    "introduced": {
+      "name": "Vanilla",
+      "url": "https://wiki.warframe.com/w/Closed_Beta_Updates%23Vanilla",
+      "aliases": [
+        "0",
+        "0.0"
+      ],
+      "parent": "0.0",
+      "date": "2012-10-25"
+    },
+    "releaseDate": "2012-10-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeDamageModExpert",
+    "name": "Primed Pressure Point",
+    "polarity": "madurai",
+    "rarity": "Legendary",
+    "codexSecret": true,
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+30% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+45% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+60% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+75% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+90% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+105% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+120% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+135% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+150% Melee Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+165% Melee Damage"
+        ]
+      }
+    ],
+    "imageName": "MeleeDamageMod.jpg",
+    "category": "Mods",
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/PrimedPressurePointMod.png?d530f",
+    "wikiaUrl": "https://wiki.warframe.com/w/Primed_Pressure_Point",
+    "transmutable": false,
+    "introduced": {
+      "name": "Update: Lunaro",
+      "url": "https://wiki.warframe.com/w/Update_19%23Update%3A_Lunaro",
+      "aliases": [
+        "Lunaro"
+      ],
+      "parent": "18.15",
+      "date": "2016-06-15"
+    },
+    "releaseDate": "2016-06-15",
+    "isPrime": true,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponCritChanceMod",
+    "name": "True Steel",
+    "polarity": "madurai",
+    "rarity": "Common",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+20% Critical Chance (x2 for Heavy Attacks)"
+        ]
+      },
+      {
+        "stats": [
+          "+40% Critical Chance (x2 for Heavy Attacks)"
+        ]
+      },
+      {
+        "stats": [
+          "+60% Critical Chance (x2 for Heavy Attacks)"
+        ]
+      },
+      {
+        "stats": [
+          "+80% Critical Chance (x2 for Heavy Attacks)"
+        ]
+      },
+      {
+        "stats": [
+          "+100% Critical Chance (x2 for Heavy Attacks)"
+        ]
+      },
+      {
+        "stats": [
+          "+120% Critical Chance (x2 for Heavy Attacks)"
+        ]
+      }
+    ],
+    "imageName": "MeleeCritChanceMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Kuva Roller",
+        "type": "True Steel",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Latcher",
+        "type": "True Steel",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Roller Sentry",
+        "type": "True Steel",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Roller",
+        "type": "True Steel",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tusk Roller",
+        "type": "True Steel",
+        "chance": 0.57,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Bombard",
+        "type": "True Steel",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Bombard",
+        "type": "True Steel",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Narmer Bombard",
+        "type": "True Steel",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tusk Bombard",
+        "type": "True Steel",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tusk Mortar Bombard",
+        "type": "True Steel",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Cinderthresh Hyena",
+        "type": "True Steel",
+        "chance": 0.78,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Gyre Hyena",
+        "type": "True Steel",
+        "chance": 0.78,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Icemire Hyena",
+        "type": "True Steel",
+        "chance": 0.78,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Rabbleback Hyena",
+        "type": "True Steel",
+        "chance": 0.78,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Scavenger Drone",
+        "type": "True Steel",
+        "chance": 1.16,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scavenger Drone",
+        "type": "True Steel",
+        "chance": 1.16,
+        "rarity": "Common"
+      },
+      {
+        "location": "Drekar Manic Bombard",
+        "type": "True Steel",
+        "chance": 10.12,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Manic Bombard",
+        "type": "True Steel",
+        "chance": 10.12,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Heavy Gunner",
+        "type": "True Steel",
+        "chance": 2.53,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tusk Heavy Gunner",
+        "type": "True Steel",
+        "chance": 2.53,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Jupiter/The Ropalolyst (Assassination)",
+        "type": "Amalgam Ripkas True Steel",
+        "chance": 20,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Hyena Ln2",
+        "type": "True Steel",
+        "chance": 23.23,
+        "rarity": "Common"
+      },
+      {
+        "location": "Hyena Ng",
+        "type": "True Steel",
+        "chance": 23.23,
+        "rarity": "Common"
+      },
+      {
+        "location": "Hyena Pb",
+        "type": "True Steel",
+        "chance": 23.23,
+        "rarity": "Common"
+      },
+      {
+        "location": "Hyena Th",
+        "type": "True Steel",
+        "chance": 23.23,
+        "rarity": "Common"
+      },
+      {
+        "location": "Tyl Regor",
+        "type": "True Steel",
+        "chance": 25.81,
+        "rarity": "Uncommon"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/TrueSteelMod.png?ef2ba",
+    "wikiaUrl": "https://wiki.warframe.com/w/True_Steel",
+    "transmutable": true,
+    "introduced": {
+      "name": "Vanilla",
+      "url": "https://wiki.warframe.com/w/Closed_Beta_Updates%23Vanilla",
+      "aliases": [
+        "0",
+        "0.0"
+      ],
+      "parent": "0.0",
+      "date": "2012-10-25"
+    },
+    "releaseDate": "2012-10-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponCritDamageMod",
+    "name": "Organ Shatter",
+    "polarity": "madurai",
+    "rarity": "Common",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% Critical Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+30% Critical Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+45% Critical Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+60% Critical Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+75% Critical Damage"
+        ]
+      },
+      {
+        "stats": [
+          "+90% Critical Damage"
+        ]
+      }
+    ],
+    "imageName": "MeleeCritDamageMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Arcane Boiler",
+        "type": "Organ Shatter",
+        "chance": 0.46,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Boiler",
+        "type": "Organ Shatter",
+        "chance": 0.46,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Toxic Ancient",
+        "type": "Organ Shatter",
+        "chance": 0.46,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Sprag",
+        "type": "Organ Shatter",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ven'Kra Tel",
+        "type": "Organ Shatter",
+        "chance": 0.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ballista",
+        "type": "Organ Shatter",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Kuva Ballista",
+        "type": "Organ Shatter",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Lynx",
+        "type": "Organ Shatter",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Ballista",
+        "type": "Organ Shatter",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Tusk Ballista",
+        "type": "Organ Shatter",
+        "chance": 1.14,
+        "rarity": "Common"
+      },
+      {
+        "location": "Raptor Mt",
+        "type": "Organ Shatter",
+        "chance": 1.9,
+        "rarity": "Common"
+      },
+      {
+        "location": "Raptor Ns",
+        "type": "Organ Shatter",
+        "chance": 1.9,
+        "rarity": "Common"
+      },
+      {
+        "location": "Raptor Rv",
+        "type": "Organ Shatter",
+        "chance": 1.9,
+        "rarity": "Common"
+      },
+      {
+        "location": "Coolant Raknoid",
+        "type": "Organ Shatter",
+        "chance": 11.62,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Latro Raknoid",
+        "type": "Organ Shatter",
+        "chance": 11.62,
+        "rarity": "Common"
+      },
+      {
+        "location": "Profit-Taker",
+        "type": "Organ Shatter",
+        "chance": 14.1,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Aurax Atloc Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Kyta Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Mite Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Mite",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Narmer Scyto Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Joro Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Lythrum Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Mite Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scyto Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Syzygy Mite Raknoid",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "Organ Shatter",
+        "chance": 3.79,
+        "rarity": "Common"
+      },
+      {
+        "location": "Raptor",
+        "type": "Organ Shatter",
+        "chance": 37.94,
+        "rarity": "Common"
+      },
+      {
+        "location": "Drekar Ballista",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Drekar Hellion",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Jackal",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Attack Drone",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Drover Bursa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Syzygy Attack Drone",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Ambulas",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Elite Embattor Moa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Elite Raptor Sx",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Embattor Moa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Jackal",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Raptor Sx",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "Organ Shatter",
+        "chance": 7.59,
+        "rarity": "Common"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/OrganShatterMod.png?ffc15",
+    "wikiaUrl": "https://wiki.warframe.com/w/Organ_Shatter",
+    "transmutable": true,
+    "introduced": {
+      "name": "Vanilla",
+      "url": "https://wiki.warframe.com/w/Closed_Beta_Updates%23Vanilla",
+      "aliases": [
+        "0",
+        "0.0"
+      ],
+      "parent": "0.0",
+      "date": "2012-10-25"
+    },
+    "releaseDate": "2012-10-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponFireRateMod",
+    "name": "Fury",
+    "polarity": "madurai",
+    "rarity": "Uncommon",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+5% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+10% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+15% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+20% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+25% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+30% Attack Speed"
+        ]
+      }
+    ],
+    "imageName": "MeleeFireRateMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Corrupted Ancient",
+        "type": "Berserker Fury",
+        "chance": 0.03,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orb Vallis - Enrichment Labs Enemies",
+        "type": "Fury",
+        "chance": 0.14,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orb Vallis - Spaceport Enemies",
+        "type": "Fury",
+        "chance": 0.14,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ancient Maggot",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ancient Protector",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ancient Undying Flyer",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Axio Elite Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bladeswarm Bailiff",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bladeswarm Derivator",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bladeswarm Eviscerator",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bladeswarm Power Carrier",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bladeswarm Roller Sentry",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bladeswarm Scrambus",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bladeswarm Shield Osprey",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bladeswarm Sniper Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Brood Mother",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Deimos Leaper",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Electric Crawler",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Elite Bursa",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Elite Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Exo Butcher",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Exo Elite Lancer",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Exo Eviscerator",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Exo Gokstad Officer",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Exo Raider Carver",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Exo Raider Eviscerator",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Exo Raider",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Exo Roller Sentry",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Juggernaut",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kuva Powerclaw",
+        "type": "Grim Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Leaper",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Machinist",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mine Osprey",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Elite Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Machinist",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Powerfist",
+        "type": "Grim Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Nauseous Crawler",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Detron Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Elite Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Nemes",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Nullifier Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Railgun Moa",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Shield Osprey",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Stropha Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orm Tech",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Powerfist",
+        "type": "Grim Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ratel",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ryoku Shadow Clone Master",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scavenger Drone",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Swarm Mutalist Moa",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Tar Mutalist Moa",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Taro Elite Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Toxic Crawler",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Vapos Elite Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Vorac Elite Crewman",
+        "type": "Fury",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Orb Vallis - Temple of Profit Enemies",
+        "type": "Fury",
+        "chance": 0.18,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Primm",
+        "type": "Fury",
+        "chance": 0.18,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Shield Osprey",
+        "type": "Fury",
+        "chance": 0.18,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Attack Drone",
+        "type": "Fury",
+        "chance": 0.18,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Oxium Osprey",
+        "type": "Fury",
+        "chance": 0.18,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shield Osprey",
+        "type": "Fury",
+        "chance": 0.18,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Verd-Ie",
+        "type": "Fury",
+        "chance": 0.18,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Attack Drone",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Carabus",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Fog Comba",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Frontier Regulator",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Juno Oxium Osprey",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Observation Drone",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Oxium Osprey",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Regulator",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Nemes",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Nul Comba",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Observation Drone",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Oxium Osprey",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Rathuum Broadcaster",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Regulator",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Remech Osprey",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sap Comba",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Elite Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Grenadier Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Plasmor Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Sniper Ranger",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sensor Regulator",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Slo Comba",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Prod Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Sniper Ranger",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Taro Secura Osprey",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Detron Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Plasmor Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Research Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Sniper Crewman",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Vapos Oxium Osprey",
+        "type": "Fury",
+        "chance": 0.22,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Corpus Power Carrier",
+        "type": "Fury",
+        "chance": 0.23,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Axio Crewman",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Corpus Power Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Corrupted Power Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Crewman",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos Mutalist Osprey Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Grineer Power Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Hellion Power Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Hellion Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Power Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Mutalist Osprey Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Narmer Crewman",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Narmer Power Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Nightwatch Carrier",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Orm Crewman",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Scrofa Obviator",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Taro Crewman",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Vapos Crewman",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Vorac Crewman",
+        "type": "Fury",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Eidolon Vomvalyst",
+        "type": "Fury",
+        "chance": 0.55,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Chroma",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Commandeered Ember Prime",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Commandeered Protea Prime",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Commandeered Trinity Prime",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ember Specter",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Infested Mesa",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Jade Mockery",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Lyon Allard",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Marie Leroux",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tenno Specter",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Vena",
+        "type": "Berserker Fury",
+        "chance": 0.6,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ceres/Seimeni (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 1 (Normal)",
+        "type": "Arcane Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 1 (Normal)",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 3 (Normal)",
+        "type": "Arcane Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 3 (Normal)",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Earth/Coba (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Akkad (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Larzac (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jupiter/Sinai (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Kadesh (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Sechura (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Sedna/Sangeru (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Venus/Romula (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Scrofa Shield Osprey",
+        "type": "Fury",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Attack Drone",
+        "type": "Fury",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Oxium Osprey",
+        "type": "Fury",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shield Osprey",
+        "type": "Fury",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Crewman",
+        "type": "Fury",
+        "chance": 0.88,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Plasmor Crewman",
+        "type": "Fury",
+        "chance": 0.88,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Sniper Ranger",
+        "type": "Fury",
+        "chance": 0.88,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Prod Crewman",
+        "type": "Fury",
+        "chance": 0.88,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Sniper Ranger",
+        "type": "Fury",
+        "chance": 0.88,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Crewman",
+        "type": "Fury",
+        "chance": 0.88,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Plasmor Crewman",
+        "type": "Fury",
+        "chance": 0.88,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Sniper Crewman",
+        "type": "Fury",
+        "chance": 0.88,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 6 (Normal)",
+        "type": "Berserker Fury",
+        "chance": 1.03,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 4 (Normal)",
+        "type": "Berserker Fury",
+        "chance": 1.49,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+        "type": "Grim Fury",
+        "chance": 10.08,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Conclave, Mistral",
+        "type": "Piercing Fury",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Conclave, Whirlwind",
+        "type": "Martial Fury",
+        "chance": 100,
+        "rarity": "Common"
+      },
+      {
+        "location": "Eidolon Hydrolyst (Capture)",
+        "type": "Arcane Fury",
+        "chance": 11.24,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation A",
+        "type": "Necramech Fury",
+        "chance": 12.5,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation B",
+        "type": "Necramech Fury",
+        "chance": 12.5,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation C",
+        "type": "Necramech Fury",
+        "chance": 12.5,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Isolation Vault), Rotation A",
+        "type": "Necramech Fury",
+        "chance": 12.5,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Isolation Vault), Rotation B",
+        "type": "Necramech Fury",
+        "chance": 12.5,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Isolation Vault), Rotation C",
+        "type": "Necramech Fury",
+        "chance": 12.5,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Eidolon Hydrolyst",
+        "type": "Arcane Fury",
+        "chance": 13.76,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Nightmare Mode Rewards, Rotation B",
+        "type": "Seeking Fury",
+        "chance": 15.49,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation A",
+        "type": "Necramech Fury",
+        "chance": 15.63,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation B",
+        "type": "Necramech Fury",
+        "chance": 15.63,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation C",
+        "type": "Necramech Fury",
+        "chance": 15.63,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Another Betrayer, Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Family Reunion, Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Hot Mess, Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Opik (Rush), Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Recover The Orokin Archive, Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sunkiller, Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Table For Two, Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "The Aftermath, Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Time's Up, Rotation B",
+        "type": "Fury",
+        "chance": 2.01,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Hellion Power Carrier",
+        "type": "Fury",
+        "chance": 2.77,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Veil Proxima/Erato (Skirmish), Rotation C",
+        "type": "Arcane Fury",
+        "chance": 2.82,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation A",
+        "type": "Necramech Fury",
+        "chance": 25,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation B",
+        "type": "Necramech Fury",
+        "chance": 25,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 50 - 60 Arcana Isolation Vault), Rotation C",
+        "type": "Necramech Fury",
+        "chance": 25,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+        "type": "Grim Fury",
+        "chance": 25,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Neptune/Mammon's Prospect (Skirmish), Rotation C",
+        "type": "Arcane Fury",
+        "chance": 3.45,
+        "rarity": "Rare"
+      },
+      {
+        "location": "The Descendia: Infernum 20 Triple Arcane Rewards",
+        "type": "3X Arcane Fury",
+        "chance": 3.7,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 9 (Normal)",
+        "type": "Arcane Fury",
+        "chance": 4,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Bode (Spy), Rotation B",
+        "type": "Fury",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Valac (Spy), Rotation B",
+        "type": "Fury",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Amalthea (Spy), Rotation B",
+        "type": "Fury",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Aegaeon (Spy), Rotation B",
+        "type": "Fury",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Dione (Spy), Rotation B",
+        "type": "Fury",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Paimon (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 6.25,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Io (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 6.25,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Helene (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 6.25,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sedna/Camenae (Defense), Rotation B",
+        "type": "Fury",
+        "chance": 6.25,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Necramech (Tier 3)",
+        "type": "Necramech Fury",
+        "chance": 7.59,
+        "rarity": "Common"
+      },
+      {
+        "location": "Earth/Cetus (Level 10 - 30 Cetus Bounty), Rotation C",
+        "type": "Grim Fury",
+        "chance": 9.68,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/FuryMod.png?f0224",
+    "wikiaUrl": "https://wiki.warframe.com/w/Fury",
+    "transmutable": true,
+    "introduced": {
+      "name": "Vanilla",
+      "url": "https://wiki.warframe.com/w/Closed_Beta_Updates%23Vanilla",
+      "aliases": [
+        "0",
+        "0.0"
+      ],
+      "parent": "0.0",
+      "date": "2012-10-25"
+    },
+    "releaseDate": "2012-10-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/Expert/WeaponFireRateModExpert",
+    "name": "Primed Fury",
+    "polarity": "madurai",
+    "rarity": "Legendary",
+    "codexSecret": true,
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+5% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+10% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+15% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+20% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+25% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+30% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+35% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+40% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+45% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+50% Attack Speed"
+        ]
+      },
+      {
+        "stats": [
+          "+55% Attack Speed"
+        ]
+      }
+    ],
+    "imageName": "MeleeFireRateMod.jpg",
+    "category": "Mods",
+    "tradable": false,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/PrimedFuryMod.png?1dafc",
+    "wikiaUrl": "https://wiki.warframe.com/w/Primed_Fury",
+    "transmutable": false,
+    "introduced": {
+      "name": "Hotfix: Lunaro 4",
+      "url": "https://wiki.warframe.com/w/Update_19%23Hotfix%3A_Lunaro_4",
+      "aliases": [
+        "Lunaro 4"
+      ],
+      "parent": "18.15",
+      "date": "2016-06-20"
+    },
+    "releaseDate": "2016-06-20",
+    "isPrime": true,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/Event/ComboCritChanceMod",
+    "name": "Blood Rush",
+    "polarity": "madurai",
+    "rarity": "Uncommon",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 10,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+3.6% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+7.3% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+10.9% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+14.6% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+18.2% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+21.8% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+25.5% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+29.1% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+32.8% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+36.4% Critical Chance stacks with Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+40% Critical Chance stacks with Combo Multiplier"
+        ]
+      }
+    ],
+    "imageName": "ComboCritChanceMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Duviri/Endless: Tier 1 (Normal)",
+        "type": "Blood Rush",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 3 (Normal)",
+        "type": "Blood Rush",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Lua/Pavlov (Spy), Rotation A",
+        "type": "Blood Rush",
+        "chance": 12.18,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation A",
+        "type": "Blood Rush",
+        "chance": 13.21,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation A",
+        "type": "Blood Rush",
+        "chance": 7.53,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 30 - 40 Cambion Drift Bounty), Rotation A",
+        "type": "Blood Rush",
+        "chance": 9.59,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/BloodRushMod.png?17470",
+    "wikiaUrl": "https://wiki.warframe.com/w/Blood_Rush",
+    "transmutable": false,
+    "introduced": {
+      "name": "Hotfix 18.4.1",
+      "url": "https://wiki.warframe.com/w/Update_18%23Hotfix_18.4.1",
+      "aliases": [
+        "18.4.1"
+      ],
+      "parent": "18.4",
+      "date": "2016-01-25"
+    },
+    "releaseDate": "2016-01-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/Event/ComboStatusChanceMod",
+    "name": "Weeping Wounds",
+    "polarity": "madurai",
+    "rarity": "Uncommon",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+6.7% Status Chance per Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+13.3% Status Chance per Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+20% Status Chance per Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+26.7% Status Chance per Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+33.3% Status Chance per Combo Multiplier"
+        ]
+      },
+      {
+        "stats": [
+          "+40% Status Chance per Combo Multiplier"
+        ]
+      }
+    ],
+    "imageName": "ComboStatusChanceMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Duviri/Endless: Tier 1 (Normal)",
+        "type": "Weeping Wounds",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 3 (Normal)",
+        "type": "Weeping Wounds",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+        "type": "Weeping Wounds",
+        "chance": 10.29,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+        "type": "Weeping Wounds",
+        "chance": 14,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Deimos/Cambion Drift (Level 15 - 25 Cambion Drift Bounty), Rotation A",
+        "type": "Weeping Wounds",
+        "chance": 7.95,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/WeepingWoundsMod.png?96b8d",
+    "wikiaUrl": "https://wiki.warframe.com/w/Weeping_Wounds",
+    "transmutable": false,
+    "introduced": {
+      "name": "Hotfix 18.4.1",
+      "url": "https://wiki.warframe.com/w/Update_18%23Hotfix_18.4.1",
+      "aliases": [
+        "18.4.1"
+      ],
+      "parent": "18.4",
+      "date": "2016-01-25"
+    },
+    "releaseDate": "2016-01-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponDamageIfVictimProcActive",
+    "name": "Condition Overload",
+    "polarity": "madurai",
+    "rarity": "Rare",
+    "codexSecret": false,
+    "baseDrain": 10,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+13.3% Melee Damage per Status Type affecting the target"
+        ]
+      },
+      {
+        "stats": [
+          "+26.7% Melee Damage per Status Type affecting the target"
+        ]
+      },
+      {
+        "stats": [
+          "+40% Melee Damage per Status Type affecting the target"
+        ]
+      },
+      {
+        "stats": [
+          "+53.3% Melee Damage per Status Type affecting the target"
+        ]
+      },
+      {
+        "stats": [
+          "+66.7% Melee Damage per Status Type affecting the target"
+        ]
+      },
+      {
+        "stats": [
+          "+80% Melee Damage per Status Type affecting the target"
+        ]
+      }
+    ],
+    "imageName": "WeaponDamageIfVictimProcActive.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Basal Diploid Rex",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Basal Diploid",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Deimos Carnis",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Deimos Jugulus",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Deimos Leaping Thrasher",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Deimos Saxum",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Drekar Butcher",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Feral Diploid Rex",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Feral Diploid",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Kuva Bombard",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Leaping Thrasher",
+        "type": "Condition Overload",
+        "chance": 0.02,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Kuva Lich Agor Rok (Level 80 - 100)",
+        "type": "Condition Overload",
+        "chance": 0.05,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 6 (Normal)",
+        "type": "Condition Overload",
+        "chance": 1.03,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 4 (Normal)",
+        "type": "Condition Overload",
+        "chance": 1.49,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/ConditionOverloadMod.png?44763",
+    "wikiaUrl": "https://wiki.warframe.com/w/Condition_Overload",
+    "transmutable": true,
+    "introduced": {
+      "name": "Update 19.2",
+      "url": "https://wiki.warframe.com/w/Update_19%23Update_19.2",
+      "aliases": [
+        "19.2.0",
+        "19.2"
+      ],
+      "parent": "19.0",
+      "date": "2016-12-01"
+    },
+    "releaseDate": "2016-12-01",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponToxinDamageMod",
+    "name": "Fever Strike",
+    "polarity": "naramon",
+    "rarity": "Uncommon",
+    "codexSecret": false,
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% <DT_POISON_COLOR>Toxin"
+        ]
+      },
+      {
+        "stats": [
+          "+30% <DT_POISON_COLOR>Toxin"
+        ]
+      },
+      {
+        "stats": [
+          "+45% <DT_POISON_COLOR>Toxin"
+        ]
+      },
+      {
+        "stats": [
+          "+60% <DT_POISON_COLOR>Toxin"
+        ]
+      },
+      {
+        "stats": [
+          "+75% <DT_POISON_COLOR>Toxin"
+        ]
+      },
+      {
+        "stats": [
+          "+90% <DT_POISON_COLOR>Toxin"
+        ]
+      }
+    ],
+    "imageName": "PoisonDamageMeleeMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Arid Butcher",
+        "type": "Fever Strike",
+        "chance": 0.13,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Frontier Butcher",
+        "type": "Fever Strike",
+        "chance": 0.13,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Butcher",
+        "type": "Fever Strike",
+        "chance": 0.13,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Basal Diploid Rex",
+        "type": "Fever Strike",
+        "chance": 0.19,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Basal Diploid",
+        "type": "Fever Strike",
+        "chance": 0.19,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Feral Diploid Rex",
+        "type": "Fever Strike",
+        "chance": 0.19,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Feral Diploid",
+        "type": "Fever Strike",
+        "chance": 0.19,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Aurax Atloc Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kyta Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mite Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Mite",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Scyto Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Joro Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Lythrum Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Mite Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scyto Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Mite Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "Fever Strike",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 1 (Normal)",
+        "type": "Fever Strike",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 3 (Normal)",
+        "type": "Fever Strike",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jackal",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Attack Drone",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Drover Bursa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Attack Drone",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Ambulas",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Embattor Moa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Raptor Sx",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Embattor Moa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Jackal",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Raptor Sx",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "Fever Strike",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Coolant Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.97,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Latro Raknoid",
+        "type": "Fever Strike",
+        "chance": 0.97,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Profit-Taker",
+        "type": "Fever Strike",
+        "chance": 10.26,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Wolf Of Saturn Six",
+        "type": "Fever Strike",
+        "chance": 18.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Zealoid Prelate",
+        "type": "Fever Strike",
+        "chance": 18.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Eris/Candiru (Caches), Rotation B",
+        "type": "Fever Strike",
+        "chance": 5.64,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Lepis (Caches), Rotation B",
+        "type": "Fever Strike",
+        "chance": 5.64,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Naeglar (Caches), Rotation B",
+        "type": "Fever Strike",
+        "chance": 5.64,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Psoro (Caches), Rotation B",
+        "type": "Fever Strike",
+        "chance": 5.64,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Viver (Caches), Rotation B",
+        "type": "Fever Strike",
+        "chance": 5.64,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/FeverStrikeMod.png?2350e",
+    "wikiaUrl": "https://wiki.warframe.com/w/Fever_Strike",
+    "transmutable": true,
+    "introduced": {
+      "name": "Update 11.0",
+      "url": "https://wiki.warframe.com/w/Update_11%23Update_11.0",
+      "aliases": [
+        "11",
+        "11.0",
+        "Update 11"
+      ],
+      "parent": "11.0",
+      "date": "2013-11-20"
+    },
+    "releaseDate": "2013-11-20",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponFreezeDamageMod",
+    "name": "North Wind",
+    "polarity": "vazarin",
+    "rarity": "Uncommon",
+    "codexSecret": false,
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% <DT_FREEZE_COLOR>Cold"
+        ]
+      },
+      {
+        "stats": [
+          "+30% <DT_FREEZE_COLOR>Cold"
+        ]
+      },
+      {
+        "stats": [
+          "+45% <DT_FREEZE_COLOR>Cold"
+        ]
+      },
+      {
+        "stats": [
+          "+60% <DT_FREEZE_COLOR>Cold"
+        ]
+      },
+      {
+        "stats": [
+          "+75% <DT_FREEZE_COLOR>Cold"
+        ]
+      },
+      {
+        "stats": [
+          "+90% <DT_FREEZE_COLOR>Cold"
+        ]
+      }
+    ],
+    "imageName": "MeleeFreezeDamageMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Aurax Baculus",
+        "type": "North Wind",
+        "chance": 0.11,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Guardsman",
+        "type": "North Wind",
+        "chance": 0.11,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Arid Butcher",
+        "type": "North Wind",
+        "chance": 0.13,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Frontier Butcher",
+        "type": "North Wind",
+        "chance": 0.13,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Butcher",
+        "type": "North Wind",
+        "chance": 0.13,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Bailiff",
+        "type": "North Wind",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Butcher",
+        "type": "North Wind",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Drahk Master",
+        "type": "North Wind",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Drekar Manic",
+        "type": "North Wind",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Frontier Bailiff",
+        "type": "North Wind",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kuva Butcher",
+        "type": "North Wind",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kuva Drahk Master",
+        "type": "North Wind",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Tusk Butcher",
+        "type": "North Wind",
+        "chance": 0.17,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Axio Moa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Bailiff Defector",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Bailiff",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Drover Bursa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Bailiff",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Minima Moa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Moa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Orm Moa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ratel",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Syzygy Denial Bursa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tarask Bursa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Taro Moa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Vapos Moa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Vorac Moa",
+        "type": "North Wind",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ceres/Lex (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Earth/Mantle (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Cosis (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Isos (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Abaddon (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Beleth (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Cryotic Front (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jupiter/Ananke (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Lua/Copernicus (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Ara (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Quirinus (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mercury/Elion (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Neptune/Galatea (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Limtoc (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Skyresh (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Todd (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Corb (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Hydra (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Cassini (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Phoebe (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Uranus/Ariel (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Uranus/Trinculo (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Venus/Venera (Capture)",
+        "type": "North Wind",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Aurax Atloc Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ghoul Devourer",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kyta Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mite Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Mite",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Scyto Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Joro Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Lythrum Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Mite Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scyto Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Mite Raknoid",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "North Wind",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ghoul Rictus",
+        "type": "North Wind",
+        "chance": 0.55,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 1 (Normal)",
+        "type": "North Wind",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 3 (Normal)",
+        "type": "North Wind",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jackal",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Attack Drone",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Drover Bursa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Attack Drone",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Ambulas",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Embattor Moa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Raptor Sx",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Embattor Moa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Jackal",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Raptor Sx",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "North Wind",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Coolant Raknoid",
+        "type": "North Wind",
+        "chance": 0.97,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Latro Raknoid",
+        "type": "North Wind",
+        "chance": 0.97,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Profit-Taker",
+        "type": "North Wind",
+        "chance": 10.26,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Wolf Of Saturn Six",
+        "type": "North Wind",
+        "chance": 18.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Zealoid Prelate",
+        "type": "North Wind",
+        "chance": 18.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Grineer Manic",
+        "type": "North Wind",
+        "chance": 3.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Bode (Spy), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Cinxia (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Gaia (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Valac (Spy), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Amalthea (Spy), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mars/Alator (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mercury/Odin (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Aegaeon (Spy), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Dione (Spy), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Cytherean (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Paimon (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.25,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Io (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.25,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Helene (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.25,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sedna/Camenae (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.25,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Ixodes (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Kala-Azar (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kuva Fortress/Nabuk (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Lua/StöFler (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Neptune/Proteus (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Pluto/Outer Terminus (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sedna/Hydron (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Uranus/Bianca (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Uranus/Miranda (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Uranus/Stephano (Defense), Rotation B",
+        "type": "North Wind",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Hyena Ln2",
+        "type": "North Wind",
+        "chance": 6.77,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Hyena Ng",
+        "type": "North Wind",
+        "chance": 6.77,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Hyena Pb",
+        "type": "North Wind",
+        "chance": 6.77,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Hyena Th",
+        "type": "North Wind",
+        "chance": 6.77,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Europa/Ose (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 7.14,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Callisto (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 7.14,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Rhea (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 7.14,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Uranus/Umbriel (Interception), Rotation B",
+        "type": "North Wind",
+        "chance": 7.14,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Lua/Pavlov (Spy), Rotation B",
+        "type": "North Wind",
+        "chance": 7.49,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/NorthWindMod.png?35552",
+    "wikiaUrl": "https://wiki.warframe.com/w/North_Wind",
+    "transmutable": true,
+    "introduced": {
+      "name": "Vanilla",
+      "url": "https://wiki.warframe.com/w/Closed_Beta_Updates%23Vanilla",
+      "aliases": [
+        "0",
+        "0.0"
+      ],
+      "parent": "0.0",
+      "date": "2012-10-25"
+    },
+    "releaseDate": "2012-10-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponFireDamageMod",
+    "name": "Molten Impact",
+    "polarity": "naramon",
+    "rarity": "Uncommon",
+    "codexSecret": false,
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% <DT_FIRE_COLOR>Heat"
+        ]
+      },
+      {
+        "stats": [
+          "+30% <DT_FIRE_COLOR>Heat"
+        ]
+      },
+      {
+        "stats": [
+          "+45% <DT_FIRE_COLOR>Heat"
+        ]
+      },
+      {
+        "stats": [
+          "+60% <DT_FIRE_COLOR>Heat"
+        ]
+      },
+      {
+        "stats": [
+          "+75% <DT_FIRE_COLOR>Heat"
+        ]
+      },
+      {
+        "stats": [
+          "+90% <DT_FIRE_COLOR>Heat"
+        ]
+      }
+    ],
+    "imageName": "MeleeFireDamageMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Thermic Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.28,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Isolator Bursa",
+        "type": "Molten Impact",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ceres/Lex (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Earth/Mantle (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Cosis (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Isos (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Abaddon (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Beleth (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Cryotic Front (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jupiter/Ananke (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Lua/Copernicus (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Ara (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Quirinus (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mercury/Elion (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Neptune/Galatea (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Limtoc (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Skyresh (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Todd (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Corb (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Hydra (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Cassini (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Phoebe (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Uranus/Ariel (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Uranus/Trinculo (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Venus/Venera (Capture)",
+        "type": "Molten Impact",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Aurax Atloc Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kyta Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mite Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Mite",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Scyto Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Joro Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Lythrum Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Mite Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scyto Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Mite Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "Molten Impact",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 1 (Normal)",
+        "type": "Molten Impact",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 3 (Normal)",
+        "type": "Molten Impact",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jackal",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Attack Drone",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Drover Bursa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Attack Drone",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Ambulas",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Embattor Moa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Raptor Sx",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Embattor Moa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Jackal",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Raptor Sx",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "Molten Impact",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Coolant Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.97,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Latro Raknoid",
+        "type": "Molten Impact",
+        "chance": 0.97,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Seimeni (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Coba (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Akkad (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Larzac (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Sinai (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mars/Kadesh (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Pluto/Sechura (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sedna/Sangeru (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Romula (Defense), Rotation C",
+        "type": "Molten Impact",
+        "chance": 1.84,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Profit-Taker",
+        "type": "Molten Impact",
+        "chance": 10.26,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Wolf Of Saturn Six",
+        "type": "Molten Impact",
+        "chance": 18.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Zealoid Prelate",
+        "type": "Molten Impact",
+        "chance": 18.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Lt Lech Kril",
+        "type": "Molten Impact",
+        "chance": 22.92,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Hunhow",
+        "type": "Molten Impact",
+        "chance": 30.56,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Protector Stalker",
+        "type": "Molten Impact",
+        "chance": 30.56,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Shadow Stalker",
+        "type": "Molten Impact",
+        "chance": 30.56,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Stalker",
+        "type": "Molten Impact",
+        "chance": 30.56,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ambulas",
+        "type": "Molten Impact",
+        "chance": 4.42,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Artificer",
+        "type": "Molten Impact",
+        "chance": 4.42,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Councilor Vay Hek",
+        "type": "Molten Impact",
+        "chance": 4.42,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Vay Hek Terra Frame",
+        "type": "Molten Impact",
+        "chance": 4.42,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phorid",
+        "type": "Molten Impact",
+        "chance": 5.64,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/MoltenImpactMod.png?74e14",
+    "wikiaUrl": "https://wiki.warframe.com/w/Molten_Impact",
+    "transmutable": true,
+    "introduced": {
+      "name": "Vanilla",
+      "url": "https://wiki.warframe.com/w/Closed_Beta_Updates%23Vanilla",
+      "aliases": [
+        "0",
+        "0.0"
+      ],
+      "parent": "0.0",
+      "date": "2012-10-25"
+    },
+    "releaseDate": "2012-10-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponElectricityDamageMod",
+    "name": "Shocking Touch",
+    "polarity": "naramon",
+    "rarity": "Uncommon",
+    "codexSecret": false,
+    "baseDrain": 6,
+    "fusionLimit": 5,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% <DT_ELECTRICITY_COLOR>Electricity"
+        ]
+      },
+      {
+        "stats": [
+          "+30% <DT_ELECTRICITY_COLOR>Electricity"
+        ]
+      },
+      {
+        "stats": [
+          "+45% <DT_ELECTRICITY_COLOR>Electricity"
+        ]
+      },
+      {
+        "stats": [
+          "+60% <DT_ELECTRICITY_COLOR>Electricity"
+        ]
+      },
+      {
+        "stats": [
+          "+75% <DT_ELECTRICITY_COLOR>Electricity"
+        ]
+      },
+      {
+        "stats": [
+          "+90% <DT_ELECTRICITY_COLOR>Electricity"
+        ]
+      }
+    ],
+    "imageName": "MeleeElectricityDamageMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Arid Eviscerator",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Arid Trooper",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Denial Bursa",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Drekar Eviscerator",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Drekar Trooper",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Eviscerator",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Frontier Eviscerator",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Frontier Trooper",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Eviscerator",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Kuva Trooper",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Narmer Trooper",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Trooper Survivor",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Trooper",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tusk Eviscerator",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Tusk Trooper",
+        "type": "Shocking Touch",
+        "chance": 0.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ceres/Lex (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Earth/Mantle (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Cosis (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Eris/Isos (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Abaddon (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Beleth (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Europa/Cryotic Front (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jupiter/Ananke (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Lua/Copernicus (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Ara (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mars/Quirinus (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Mercury/Elion (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Neptune/Galatea (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Limtoc (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Skyresh (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Phobos/Todd (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Corb (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Pluto/Hydra (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Cassini (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Saturn/Phoebe (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Uranus/Ariel (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Uranus/Trinculo (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Venus/Venera (Capture)",
+        "type": "Shocking Touch",
+        "chance": 0.34,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Aurax Atloc Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kyta Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mite Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Mite",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Narmer Scyto Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Joro Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Lythrum Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Mite Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scyto Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Mite Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "Shocking Touch",
+        "chance": 0.37,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Duviri/Endless: Tier 1 (Normal)",
+        "type": "Shocking Touch",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Duviri/Endless: Tier 3 (Normal)",
+        "type": "Shocking Touch",
+        "chance": 0.67,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Jackal",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Attack Drone",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Drover Bursa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Laser Moa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Railgun Moa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Syzygy Attack Drone",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Ambulas",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Anti Moa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Embattor Moa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Elite Raptor Sx",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Embattor Moa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Jackal",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Moa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Railgun Moa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Raptor Sx",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Terra Shockwave Moa",
+        "type": "Shocking Touch",
+        "chance": 0.74,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Coolant Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.97,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Scrofa Latro Raknoid",
+        "type": "Shocking Touch",
+        "chance": 0.97,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Profit-Taker",
+        "type": "Shocking Touch",
+        "chance": 10.26,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Wolf Of Saturn Six",
+        "type": "Shocking Touch",
+        "chance": 18.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Zealoid Prelate",
+        "type": "Shocking Touch",
+        "chance": 18.33,
+        "rarity": "Uncommon"
+      },
+      {
+        "location": "Ceres/Bode (Spy), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Europa/Valac (Spy), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Jupiter/Amalthea (Spy), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Aegaeon (Spy), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Saturn/Dione (Spy), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 5.56,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Ixodes (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Eris/Kala-Azar (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Kuva Fortress/Nabuk (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Lua/StöFler (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Neptune/Proteus (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Pluto/Outer Terminus (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sedna/Hydron (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Uranus/Bianca (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Uranus/Miranda (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Uranus/Stephano (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 6.67,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Lua/Pavlov (Spy), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.49,
+        "rarity": "Rare"
+      },
+      {
+        "location": "The Sergeant",
+        "type": "Shocking Touch",
+        "chance": 7.52,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Tyl Regor",
+        "type": "Shocking Touch",
+        "chance": 7.52,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Another Betrayer, Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Family Reunion, Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Hot Mess, Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Opik (Rush), Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Recover The Orokin Archive, Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Sunkiller, Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Table For Two, Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "The Aftermath, Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Time's Up, Rotation C",
+        "type": "Shocking Touch",
+        "chance": 7.59,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Casta (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Egeria (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Ceres/Varro (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Lith (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mars/Spear (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mercury/Lares (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Drunlo (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Gulliver (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Tessera (Defense), Rotation B",
+        "type": "Shocking Touch",
+        "chance": 7.69,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/ShockingTouchMod.png?79483",
+    "wikiaUrl": "https://wiki.warframe.com/w/Shocking_Touch",
+    "transmutable": true,
+    "introduced": {
+      "name": "Vanilla",
+      "url": "https://wiki.warframe.com/w/Closed_Beta_Updates%23Vanilla",
+      "aliases": [
+        "0",
+        "0.0"
+      ],
+      "parent": "0.0",
+      "date": "2012-10-25"
+    },
+    "releaseDate": "2012-10-25",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/PoisonEventMeleeMod",
+    "name": "Virulent Scourge",
+    "polarity": "madurai",
+    "rarity": "Rare",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 3,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% <DT_POISON_COLOR>Toxin",
+          "+15% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+30% <DT_POISON_COLOR>Toxin",
+          "+30% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+45% <DT_POISON_COLOR>Toxin",
+          "+45% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+60% <DT_POISON_COLOR>Toxin",
+          "+60% Status Chance"
+        ]
+      }
+    ],
+    "imageName": "PoisonEventMeleeMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Corrupted Vor",
+        "type": "Virulent Scourge",
+        "chance": 25,
+        "rarity": "Uncommon"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/VirulentScourgeMod.png?b9a99",
+    "wikiaUrl": "https://wiki.warframe.com/w/Virulent_Scourge",
+    "transmutable": false,
+    "introduced": {
+      "name": "Update 11.5",
+      "url": "https://wiki.warframe.com/w/Update_11%23Update_11.5",
+      "aliases": [
+        "11.5.0",
+        "11.5"
+      ],
+      "parent": "11.5",
+      "date": "2013-12-19"
+    },
+    "releaseDate": "2013-12-19",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/IceEventMeleeMod",
+    "name": "Vicious Frost",
+    "polarity": "madurai",
+    "rarity": "Rare",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 3,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% <DT_FREEZE_COLOR>Cold",
+          "+15% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+30% <DT_FREEZE_COLOR>Cold",
+          "+30% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+45% <DT_FREEZE_COLOR>Cold",
+          "+45% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+60% <DT_FREEZE_COLOR>Cold",
+          "+60% Status Chance"
+        ]
+      }
+    ],
+    "imageName": "IceEventMeleeMod.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Ceres/Hapke (Spy), Rotation C",
+        "type": "Vicious Frost",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Cambria (Spy), Rotation C",
+        "type": "Vicious Frost",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mars/Arval (Spy), Rotation C",
+        "type": "Vicious Frost",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mercury/Suisei (Spy), Rotation C",
+        "type": "Vicious Frost",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Grildrig (Spy), Rotation C",
+        "type": "Vicious Frost",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Shklovsky (Spy), Rotation C",
+        "type": "Vicious Frost",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Unda (Spy), Rotation C",
+        "type": "Vicious Frost",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Vesper (Spy), Rotation C",
+        "type": "Vicious Frost",
+        "chance": 8.6,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/ViciousFrostMod.png?b7409",
+    "wikiaUrl": "https://wiki.warframe.com/w/Vicious_Frost",
+    "transmutable": false,
+    "introduced": {
+      "name": "Update 14.5",
+      "url": "https://wiki.warframe.com/w/Update_14%23Update_14.5",
+      "aliases": [
+        "14.5.0",
+        "14.5"
+      ],
+      "parent": "14.5",
+      "date": "2014-08-28"
+    },
+    "releaseDate": "2014-08-28",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/FireEventMeleeMod",
+    "name": "Volcanic Edge",
+    "polarity": "madurai",
+    "rarity": "Rare",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 3,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% <DT_FIRE_COLOR>Heat",
+          "+15% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+30% <DT_FIRE_COLOR>Heat",
+          "+30% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+45% <DT_FIRE_COLOR>Heat",
+          "+45% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+60% <DT_FIRE_COLOR>Heat",
+          "+60% Status Chance"
+        ]
+      }
+    ],
+    "imageName": "DualStatFireProcMelee.jpg",
+    "category": "Mods",
+    "drops": [
+      {
+        "location": "Thermic Raknoid",
+        "type": "Volcanic Edge",
+        "chance": 0.03,
+        "rarity": "Legendary"
+      },
+      {
+        "location": "Ceres/Hapke (Spy), Rotation C",
+        "type": "Volcanic Edge",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Earth/Cambria (Spy), Rotation C",
+        "type": "Volcanic Edge",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mars/Arval (Spy), Rotation C",
+        "type": "Volcanic Edge",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Mercury/Suisei (Spy), Rotation C",
+        "type": "Volcanic Edge",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Grildrig (Spy), Rotation C",
+        "type": "Volcanic Edge",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Phobos/Shklovsky (Spy), Rotation C",
+        "type": "Volcanic Edge",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Unda (Spy), Rotation C",
+        "type": "Volcanic Edge",
+        "chance": 8.6,
+        "rarity": "Rare"
+      },
+      {
+        "location": "Venus/Vesper (Spy), Rotation C",
+        "type": "Volcanic Edge",
+        "chance": 8.6,
+        "rarity": "Rare"
+      }
+    ],
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/VolcanicEdgeMod.png?4cf08",
+    "wikiaUrl": "https://wiki.warframe.com/w/Volcanic_Edge",
+    "transmutable": false,
+    "introduced": {
+      "name": "Update 13.8",
+      "url": "https://wiki.warframe.com/w/Update_13%23Update_13.8",
+      "aliases": [
+        "13.8.0",
+        "13.8"
+      ],
+      "parent": "13.8",
+      "date": "2014-06-19"
+    },
+    "releaseDate": "2014-06-19",
+    "isPrime": false,
+    "masterable": false
+  },
+  {
+    "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/ElectEventMeleeMod",
+    "name": "Voltaic Strike",
+    "polarity": "madurai",
+    "rarity": "Rare",
+    "codexSecret": false,
+    "baseDrain": 4,
+    "fusionLimit": 3,
+    "compatName": "Melee",
+    "type": "Melee Mod",
+    "levelStats": [
+      {
+        "stats": [
+          "+15% <DT_ELECTRICITY_COLOR>Electricity",
+          "+15% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+30% <DT_ELECTRICITY_COLOR>Electricity",
+          "+30% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+45% <DT_ELECTRICITY_COLOR>Electricity",
+          "+45% Status Chance"
+        ]
+      },
+      {
+        "stats": [
+          "+60% <DT_ELECTRICITY_COLOR>Electricity",
+          "+60% Status Chance"
+        ]
+      }
+    ],
+    "imageName": "ElectEventMeleeMod.jpg",
+    "category": "Mods",
+    "tradable": true,
+    "wikiAvailable": true,
+    "wikiaThumbnail": "https://wiki.warframe.com/images/VoltaicStrikeMod.png?8d877",
+    "wikiaUrl": "https://wiki.warframe.com/w/Voltaic_Strike",
+    "transmutable": false,
+    "introduced": {
+      "name": "Update 12.4",
+      "url": "https://wiki.warframe.com/w/Update_12%23Update_12.4",
+      "aliases": [
+        "12.4",
+        "12.4.0"
+      ],
+      "parent": "12.4",
+      "date": "2014-03-05"
+    },
+    "releaseDate": "2014-03-05",
+    "isPrime": false,
+    "masterable": false
+  }
+]

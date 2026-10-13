@@ -1,0 +1,85 @@
+{{Successor
+|precededby=Aura Forma
+|precededbysince={{ver|38.5}}
+}}
+{{ResourceInfobox}}
+
+'''Omni Forma''' is a {{Resource|Forma}} variant which changes the mod slot polarity to {{Pol|Aura}}, allowing it to support all polarities except {{Pol|Umbra}}. 
+
+==Acquisition==
+===Completed===
+*Purchased from the [[Market]]:
+**1x for {{pc|80}}
+**3x bundle for {{pc|150}}
+*Potential reward from [[Temporal Archimedea]] and [[Elite Temporal Archimedea]]
+*Purchased from [[Nakak]] during [[Operation: Plague Star]] for {{sc|5,000}} + {{cc|10,000}}, requiring '''Rank 3 - Champion''' with [[Operational Supply]]. Has a purchase limit of 1.
+*Potential reward from the [[Void Surplus]] offering for sale by [[Baro Ki'Teer]].
+====Mission Drop Tables====
+{{DropLocations|Omni Forma|Mission}}
+====Expired====
+*Built [[Omni Forma]] as potential reward from [[1999 Calendar]]. (See Patch History Update 38.5)
+*Obtained from [[Operation: Hostile Mergers]] Mission 3
+*Obtained from [[Nightwave]]:
+**[[Nightwave/Intermission|Intermission I]] as the Rank 14 reward
+**[[Nightwave/Nora's Mix Volume 5|Nora's Mix Volume 5]] as the Rank 26 reward
+
+===Blueprint===
+*Obtained as a potential reward from [[Arbitrations]]
+*Potential reward from [[1999 Calendar]], [[Temporal Archimedea]] and [[Elite Temporal Archimedea]]
+{{BuildRequire
+|buildcredits = 100,000
+|build1 = Forma
+|build1amount = 4
+|build2 = Argon Crystal
+|build2amount = 1
+|build3 = Nitain Extract
+|build3amount = 10
+|buildtime = 24
+|buildrush = 10
+|market = 80
+}}
+====Mission Drop Tables====
+{{DropLocations|Omni Forma Blueprint|Mission}}
+
+==Using Omni Forma on Equipment==
+To apply an Omni Forma, go to the [[Arsenal]] and access the desired item's Mod loadout. Select ''Action'' at the bottom of the screen, then choose Polarize, which will show all available types of Forma to choose from. Choose Omni Forma, which will show a layout of the item's mod slots and polarities. Click on a slot to select it for polarization. A slot that already has a polarity (either by default or from a prior polarization) can also be changed.
+
+Omni Forma can only be used on equipment that has already been ranked to 30 and, when used, said equipment is reset to rank 0 (unranked). However, [[Warframe|Warframes]], [[Archwing|Archwings]], and [[Necramech|Necramechs]] may retain abilities and/or their ranks depending on the player's [[Mastery Rank]]; for example, a player with a Mastery Rank of 30 or higher would have all abilities unlocked at rank 3. Forma can also be used again on already polarized equipment, provided that it is leveled to 30 again. [[Orokin Catalyst|Orokin Catalysts]] and [[Orokin Reactor|Orokin Reactors]] are unaffected by the usage of Forma. Re-leveling equipment after using Forma on it does not grant [[mastery points]].
+
+==Notes==
+*Placing an Umbral mod in an Omni slot is not considered a polarity mismatch, and as such will not increase the capacity cost of the Umbral mod.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40}}
+*Fixed Rivens and Galvanized Mod cards blocking Omni-Forma Polarity indicators in the Arsenal Modding screen.
+
+{{ver|38.5.11}}
+*Fixed Auto-Install not equipping Mods in slots with Omni polarities.
+
+{{ver|38.5.10}}
+*Mods equipped in an Omni Polarity slot will now display an Omni Polarity indicator in the Upgrade Menu to help easily identify where Omni Forma have been installed.
+**Made general improvements to the Auto Install system:
+**Fixed Auto Install not putting Mods in slots with an Omni Polarity.
+
+{{ver|38.5.2}}
+*Omni Forma in the Gold and Arcane reward tiers have changed from BLUEPRINT to BUILT. 
+**In conjunction with that change, Omni Forma in the Silver reward tier remains a Blueprint, and its rarity has been adjusted to match the Tauforged rewards.
+
+{{ver|38.5}}
+*Aura Forma are now compatible for all Mod slots, instead of just Aura. We’ve renamed this Forma to be called '''Omni Forma''' to reflect this change.
+**Installing an Omni Forma will apply a Universal Polarity to the selected Mod Slot, which will halve the capacity of any Mod equipped in it (excluding Umbra Polarities). 
+**Enabled the ability to move the Polarity of the Aura Slot using the “Swap Polarities” action. This allows players who installed Aura Forma in this slot to make use of this Universal Polarity elsewhere, should they wish. 
+**With Aura Forma being reworked to become Omni Forma, a significantly more useful item than its predecessor, we have rebalanced the 1999 Calendar reward pool as follows:
+***Changed reward to Omni Forma Blueprint.
+***Increased drop pool rarity from Common to Rare.
+}}
+
+==See Also==
+*[[Forma]]
+*[[Umbra Forma]]
+*[[Orokin Catalyst]]
+*[[Orokin Reactor]]
+*[[Exilus Adapter]]
+
+{{EquipmentNav}}

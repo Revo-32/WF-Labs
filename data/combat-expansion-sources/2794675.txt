@@ -1,0 +1,39 @@
+Wielding explosive power and incredible stamina, {{WF|Atlas}} strengthens his insurmountable durability through battle. Atlas possesses various passive mechanics highlighted in the tabs below:
+<div class="tabber-borderless" >
+{{#tag:tabber|
+{{!}}-{{!}}Immovable=
+Strong as the mountain, Atlas is immune to {{D|Knockdown}} while in contact with the ground.
+
+*Knockdown immunity does '''not''' apply while in the air.
+*Does '''not''' apply to pushback effects.
+*Does '''not''' prevent the recoiling effect from firing powerful [[Archgun]]s such as {{Weapon|Corvas}}, {{Weapon|Velocitus}}, and {{Weapon|Larkspur}} in non-[[Archwing]] missions.
+*Works in [[Archwing]] missions.
+
+{{!}}-{{!}}Rubble= 
+'''Rubble''' is a pickup item unique to Atlas that drops from [[Petrify|petrified]] enemies and {{A|Rumblers}} on death. Rubble restores [[Health]] to Atlas if he is injured; if Atlas is at full health, Rubble instead grants additional [[Armor]] that decays over time.
+[[File:AtlasRubblePickup.png|100px|right|thumb|A piece of Rubble]]
+*Each petrified enemy and each Rumbler will drop <u>'''1'''</u> piece of Rubble that restores <u>'''50'''</u> health or provides <u>'''50'''</u> armor. Rubble will remain on the ground for <u>'''30'''</u> seconds before crumbling away if left untouched.
+**Enemies petrified by {{M|Path of Statues}}' rock trail, Petrify's flash, and the summoning of Rumblers are eligible to drop Rubble.
+**Petrified enemies killed by {{A|Landslide}} grant <u>'''75'''</u> health or armor from their dropped Rubble.
+**Rumblers that sustain damage to their health will grant less health points or bonus armor from their dropped Rubble.
+**Rubble will '''not''' grant armor if at least 1 health point is missing from Atlas' maximum health pool. Excess health points gained will '''not''' overflow into bonus armor points.
+*Rubble armor is displayed in a circular gauge on the HUD above the ability icons.
+**The current number of bonus armor is shown below the gauge and will visibly subtract as bonus armor decays or add as Atlas picks up new Rubble.
+**Armor bonus is capped at <u>'''1,500'''</u> points.
+**Bonus armor decays at a rate of <u>'''5'''</u> armor points per second.
+***Decay rate is doubled when Atlas is inside a [[Nullifier Crewman]]'s bubble or inside a Fog or Nul [[Comba]] and [[Scrambus]]'s nullification field.
+**Upon picking up Rubble to gain bonus armor, bonus armor decay is paused for <u>'''2'''</u> seconds. Picking up Rubble to restore health points will '''not''' pause armor decay.
+**Bonus armor will '''not''' be lost if the player falls [[Out of Bounds]], but will be lost in the event of a host migration.
+**The stone icon in the center of the gauge will enlarge or shrink depending on the amount of bonus armor stored. At 0 bonus armor, it remains a pebble; at 1,500 bonus armor, it becomes a large boulder.
+**Rock formations will appear on Atlas' body as he accumulates bonus armor.
+*Rubble pickup can be {{M|Vacuum|vacuumed}} by [[Sentinel]]s or the Warframe's innate vacuum radius, or {{M|Fetch|fetched}} by [[Companion]]s.
+*Rubble pickups resemble a piece of stone encased in a translucent layer of reflective rock-shaped metal, which is tinted in Atlas' chosen Warframe energy color.
+*Rubble pickups spawned when a petrified enemy or Rumbler dies while airborne will fall to the ground.
+*The additional armor Atlas gains from Rubble affects {{Arcane|Arcane Battery}}.
+
+{{!}}-{{!}}Augment= 
+[[File:RubbleHeapMod.png|200px|left]]
+{{main|Rubble Heap}}
+{{#lst:Rubble Heap|intro}}
+{{#lsth:Rubble Heap|Stats}}
+}}</div>

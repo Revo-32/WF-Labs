@@ -1,0 +1,63 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|A heavy Zaw Strike for Machete and Hammer weapons. Measure twice, strike once... heavily.|In game description}}
+
+The '''Rabvee''' is an {{D|Impact}}-focused Strike used in [[Zaw]] construction.
+
+{{BuildRequire
+|buildcredits = 5,000
+|build1 = Grokdrul
+|build1amount = 35
+|build2 = Fish Scales
+|build2amount = 50
+|build3 = Esher Devar
+|build3amount = 10
+|build4 = Fersteel Alloy
+|build4amount = 20
+|buildtime = 1
+|buildrush = 25
+|blueprint = 1,000
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+The Rabvee blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This Strike primarily deals {{D|Impact}} damage.
+
+* '''60%''' {{D|Impact}}
+* '''5%''' {{D|Puncture}}
+* '''35%''' {{D|Slash}}
+
+Compatible weapon types:
+*Machete
+*Hammer
+
+== Trivia ==
+
+* The text on the neck of this Zaw strike roughly translates as "Crush" from the Ostron language
+
+==Bugs==
+
+*When built with onehanded grip (Machete), it is not holstered properly, staying in hand when equipping primary or secondary weapon. It is also impossible to change holster style, which is set to "Nikana Standard Holster".
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|22.20}}
+*Fixed being unable to Chat link Rabvee Zaws.
+
+{{ver|22.18.4}}
+*Rabvee strike one handed stance polarity changed to Zenurik to match existing Stances.
+
+{{ver|22.18.2}}
+*Fixed Rabvee playing the wrong hit effect sounds.
+
+{{ver|22.18}}
+*Introduced.
+}}
+{{ZawNav}}
+[[es:Rabvee]]
+[[Category:Zaw]]
+[[Category:Update 22]]
+[[uk:Рабві]]
+[[fr:Ravbee]]

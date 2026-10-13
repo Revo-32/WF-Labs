@@ -1,0 +1,126 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapon|Weapon}}
+<div class="tabber-borderless floatTabBox"><tabber>
+Primary={{WeaponInfoboxAutomatic|name=Vinquibus (Primary)}}
+|-|Melee={{WeaponInfoboxAutomatic|name=Vinquibus (Melee)}}
+</tabber></div>
+{{Codex|Bring hell to the battlefield with Uriel's signature rifle and bayonet combination. Occupying both primary and melee slots, this unique weapon blends precision marksmanship and unrelenting melee combat.}}
+
+'''Vinquibus''' is {{WF|Uriel}}'s [[Signature Weapon]] that functions as both a primary semi-automatic [[rifle]] and a melee [[bayonet]] weapon.
+
+==Characteristics==
+*This weapon deals primarily {{D|Puncture}} damage.
+*Equipping Vinquibus will occupy both primary and melee weapon slots.
+**Both forms gain an equal amount of [[Affinity]] and will thus rank up evenly.
+***Vinquibus is counted as a single weapon in regards to earning [[Mastery Rank]].
+**Primary and melee forms are modded separately, using rifle and melee mods respectively.
+***[[Riven Mod]]s for primary and melee forms are generated separately.
+**{{Resource|Orokin Catalyst}}, [[Focus Lens]], {{Resource|Exilus Weapon Adapter}}, and {{Resource|Forma}}/[[Polarization]] are applied to both forms.
+**Does not appear as an available loadout option in [[Deep Archimedea]]/[[Temporal Archimedea]] or [[Duviri]].
+*Innate one {{Pol|Madurai}} and one {{Pol|Aura}} polarities.
+
+;Primary
+*[[Enemy Body Parts|Headshots]] grant '''2''' stacks (max '''16''') of the '''Vinquibus Precision''' buff, increasing melee damage by '''250%'''.
+**Stacks are indicated on the right side of the reticle.
+**[[Multishot]] and [[Punch Through]] can generate more stacks.
+**Stacks are expended once the attack connects with an enemy. Attacks with multiple hits or connecting with multiple enemies will only consume '''1''' stack.
+{{Advantages|name=Vinquibus (Primary)|class=Rifle|trigger=Semi-Auto|
+}}
+
+{{Disadvantages|name=Vinquibus (Primary)|class=Rifle|trigger=Semi-Auto|
+}}
+<hr />
+;Melee
+*Kills grant '''4''' stacks (max '''16''') of the '''Vinquibus Ferocity''' buff, increasing primary [[Ammo Efficiency]] by '''100%'''.
+**Stacks are indicated on the left side of the reticle.
+**Stacks are expended on shot, regardless whether or not they hit an enemy.
+{{Advantages|name=Vinquibus (Melee)|
+}}
+
+{{Disadvantages|name=Vinquibus (Melee)|
+}}
+
+{{Acquisition|Vinquibus' main and component blueprints are obtained from [[Roathe (Boss)|Roathe's Oblivion]] on Infernium 21 of [[The Descendia]], available after completing [[The Old Peace]] quest.
+
+Alternatively Vinquibus's blueprints can be purchased from [[Roathe]] in [[La Cathėdrale]], [[Sanctum Anatomica]] for {{Resource|Maphica}} obtained in The Descendia. Each component blueprint requires 25 and the main blueprint requires 35, totaling 135 Maphica for the whole set.}}
+
+==Crafting==
+Vinquibus's materials are obtained from [[The Perita Rebellion]]. A total of 2,500 {{Resource|Agnovidisc}}, 1,330 {{Resource|Laudavi}}, and 430 {{Resource|Servoris}} are needed to craft all parts.
+
+{{BuildAutomatic|type=Weapon|name=Vinquibus}}
+
+==Notes==
+*Since consumable upgrades are shared between both forms, it is possible to access the Melee [[Arcane Enhancement|Arcane]] slot prior to completing [[Whispers in the Walls]] by applying a [[Primary Arcane Adapter]] to the Rifle. This circumvents the need for a [[Melee Arcane Adapter]], and allows for extremely effective early-game melee builds long before players gain access to the [[Melee upgrade segment|Melee Upgrade Segment]] later in the story.
+**While this behavior persists, it does not apply until you sign back in or otherwise re-sync.
+*When {{D|Disarmed}} of the Vinquibus, the player will only drop the primary form, but is still capable of using the melee form.
+*It is NOT advised to use the {{Resource|Umbra Forma}} on the Vinquibus, as polarities are shared between forms, unless the weapon has been polarized enough times. Since there are no {{Pol|Umbra}} Mods for Primary Weapons, it cannot benefit from reducing capacity drain on Vinquibus' Primary mode.
+*The Vinquibus cannot be used in Melee Only missions, such as the [[Gift from the Lotus|Anniversary]] [[Alerts]].
+*Renaming the Vinquibus through any open world weapons provider will only rename the Primary or Melee depending on which one you choose to rename. So it would cost 30 [[Platinum]] instead of 15 to rename both
+
+==Trivia==
+*When reloading from empty, the Vinquibus produces a distinct "ping" sound as the old magazine is ejected, akin to the famous [[wikipedia:M1 Garand|M1 Garand]] rifle used in World War 2.
+*It is the second weapon to be named after the real-life [[wikipedia:Arquebus|Arquebus]], the first being the {{WF|Voidrig}}'s {{Weapon|Arquebex}}.
+*When the Vinquibus is stowed in its rifle mode the sugatra will float in the air where it would be as a melee weapon
+
+==Media==
+<gallery widths="300">
+File:UrielKeyart.png|{{WF|Uriel}} with Vinquibus|alt=Uriel with Vinquibus
+File:VinquibusExcaliburPromo1.jpg
+File:VinquibusExcaliburPromo2.jpg
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|43.5.2}}
+*Fixed another case of being able to equip the Vinquibus in only one weapon slot, or equip disallowed weapons on Companions.
+
+{{ver|43.5}}
+*Fixed a case of Sirius & Orion being able to equip the Vinquibis in only one weapon slot.
+
+{{ver|43}}
+*Fixed the Vinquibus being auto-equipped if it is the last melee weapon owned after selling all others.
+
+{{ver|42.0.8}}
+*Fixed being able to unequip the Vinquibis as a Primary Weapon (while keeping it equipped as a Melee).
+
+{{ver|42}}
+*More fixes towards Transference locking character animations to look like you are walking on the spot (“moonwalking”).
+**For some time it has been our white whale to hunt down and while we can not offer a complete fix at the moment, we’ve added extensive logging that should help find us get rid of it once and for all. We were able to locate the cause of recent Moonwalk issues relating to Warframes using Vinquibus and Mesa using Mesa’s Waltz with this method and are hoping to find a general fix that catches all iterations of this issue.
+*Fixed Ash failing to perform a finisher using Teleport with the Vinquibus equipped.
+*Fixed purchasing the Vinquibus in the Arsenal not equipping it on both Primary and Melee weapon slots. 
+*Fixed being able to equip another Primary weapon with the Vinquibus after equipping and unequipping it in the Melee slot.
+*Fixed incorrectly being able to sell the Vinquibus if it is the last melee weapon on your account.
+*Fixed incorrect stats in UI when equipping the Vinquibus and when swapping to an Incarnon weapon.
+*Fixed players being able to sell their last Melee weapon if they owned the Vinquibus.
+
+{{ver|41.1}}
+*Fixed a loss of function (unable to shoot, use abilities, or move normally) when using Ember/Protea and the Vinquibus. 
+*Fixed Vinquibus incorrectly having a melee entry in the Profile screen when it should only show as a Primary.
+
+{{ver|41.0.6}}
+*Fixed the Vinquibus' custom reticle disappearing in a stage of The Old Peace quest.
+*Fixed the newly-unequipped weapon slot in the Arsenal being briefly unresponsive after unequipping the Vinquibus.
+
+{{ver|41.0.5}}
+*Fixed Vinquibus' passive counter always remaining empty for Clients.
+
+{{ver|41.0.4}}
+*Fixed a case of players being able to equip a Primary Weapon with the Vinquibus in the Melee Weapon slot.
+
+{{ver|41.0.3}}
+*Made various tweaks to Vinquibus' SFX.
+
+{{ver|41.0.2}}
+*Fixed missing Sugatra offsets for the Vinquibus.
+
+{{ver|41.0.1}}
+*Improved the Vinquibus' unique Reticle to make it clearer which mode is currently active.
+**Now, the inactive side will be noticeably dimmer.
+**Also increased the thickness of the Rifle side to make it easier to see.
+
+{{ver|41}}
+*Introduced.
+}}
+
+{{WeaponNav}}
+
+[[ru:Винквибус]]

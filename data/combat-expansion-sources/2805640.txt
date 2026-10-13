@@ -1,0 +1,136 @@
+{{ArcaneBox}}
+{{Arcane|Melee Influence}} is a Melee [[Arcane Enhancement]] that grants melee {{D|Electricity}} status procs a 20% chance to grant a timed buff that causes melee elemental status effects to spread to enemies around the targeted enemy. The buff cannot have its duration refreshed.
+
+==Effect==
+{| class="emodtable"
+|-
+!Rank
+!Chance
+!Range
+!Duration
+|-
+| 0 || 20% || 10m || 3s
+|-
+| 1 || 20% || 12m || 6s
+|-
+| 2 || 20% || 14m || 9s
+|-
+| 3 || 20% || 16m || 12s
+|-
+| 4 || 20% || 18m || 15s
+|-
+| 5 || 20% || 20m || 18s
+|-
+|}
+
+{{Acquisition|*Awarded for killing [[The Fragmented]] on [[Effervo]], [[Deimos]].
+*Awarded for killing [[Whisper]]s in [[Albrecht's Laboratories]] missions.
+*Awarded for killing [[Gruzzling]]s in non-[[Disruption]] Albrecht's Laboratories mission.
+*Can be bought from [[Bird 3]] of [[Cavia]] for {{sc|7,500}}, requiring '''Rank 4 - Scholar'''.}}
+
+==Notes==
+*Eligible status effects that can be spread by Melee Influence include:
+**Primary Elemental ({{D|Cold}}, {{D|Electricity}}, {{D|Heat}}, {{D|Toxin}})
+**Secondary Elemental ({{D|Blast}}, {{D|Corrosive}}, {{D|Gas}}, {{D|Magnetic}}, {{D|Radiation}}, {{D|Viral}})
+*Melee Influence cannot spread the following:
+**Physical ({{D|Impact}}, {{D|Puncture}}, {{D|Slash}})
+**{{D|Void}}, {{D|Tau}}, {{D|Knockdown}}, {{D|Stagger}}, {{D|Ragdoll}}, {{D|Lifted}}, and {{D|Microwave}}
+*When an elemental Status Effect is spread by Melee Influence, affected enemies are also dealt damage equal to that element's damage from the original attack.
+**Example: When a melee attack that deals 100 physical base damage modded with {{M|Shocking Touch}} and {{M|Magnetic Rush}} procs Magnetic, every other enemy within Melee Influence's range will receive 60 Magnetic damage and a Magnetic status effect.
+**Damage spread is based on the amount of matching elemental damage after quantization, including effects such as {{M|Condition Overload}} and [[Critical Hit#Critical Multiplier|critical multiplier]].
+***For damage spread by Melee Influence, Condition Overload's damage bonus is based on the number of status effects on the target directly struck by the attack that caused Melee Influence damage to be spread; the number of status effects on the enemies receiving Melee Influence damage is not part of the calculation.
+** Performing a finisher with a forced elemental proc will not spread any [[Finisher]] damage, as 0% of the damage dealt is made up of the elemental status that was procced.
+*Spread radius extends from the position of the enemy hit.
+**Thrown weapons like {{Weapon|Xoris}} and gunblades like {{Weapon|Redeemer}} greatly benefit from this 
+*Melee Influence only triggers from direct melee strikes. Secondary melee effects such as {{D|Magnetic}}'s breakage effect and {{Weapon|Dual Ichor|Dual Ichor Incarnon}}'s toxin fields cannot trigger Melee Influence.
+**Melee ''projectiles'' passing through {{A|Electric Shield}}, {{Weapon|Mutalist Quanta}}'s alternate fire, or {{M|Conductive Sphere}} can also trigger Melee Influence.
+***Does not work with [[Glaive (Weapon Type)]] weapons
+***Examples of this are {{Weapon|Nepheri}}, {{Resource|Hate Incarnon Genesis}}, {{Resource|Ceramic Dagger Incarnon Genesis}}, or {{Weapon|Syam}}'s projectiles.
+*Proccing multiple elements at the same time will show the sum of the spread damage.
+*Due to the nature of [[Faction Damage Bonus|Faction Damage Bonuses]], they are applied '''twice''' on damage done by Melee Influence and '''thrice''' on damaging status procs caused by it.
+** A melee with 100 base damage modded with {{M|Shocking Touch}} and with a 55% Increased Faction Damage Bonus, will deal 294 Hit damage, with a 228 Electricity Proc Damage. If Melee Influence procs, the spread Electricity procs will deal 353 damage. 
+* Examples: A {{Weapon|Skana}} modded with {{M|Pressure Point}}, {{M|Vicious Frost}}, {{M|Virulent Scourge}}, and {{M|Voltaic Strike}}.
+**A hit that procs {{D|Electricity}} will do {{Math|120 {{mul}} (1 + 1.2) {{mul}} (0.6)|mt=y}} {{D|Electricity}} damage to all enemies in range and apply an {{D|Electricity}} proc dealing {{Math|120 {{mul}} (1 + 1.2) {{mul}} (1 + 0.6) {{div}} 2|mt=y}} {{D|Electricity}} damage per tick.
+** A hit that procs {{D|Viral}} will do {{Math|120 {{mul}} (1 + 1.2) {{mul}} (0.6 + 0.6)|mt=y}} {{D|Viral}} damage to all enemies in range and apply a {{D|Viral}} proc.
+** A hit that procs {{D|Slash}} will do nothing.
+**A hit that procs {{D|Electricity}} and {{D|Viral}} will do {{Math|120 {{mul}} (1 + 1.2) {{mul}} (0.6)|mt=y}} {{D|Electricity}} damage and {{Math|120 {{mul}} (1 + 1.2) {{mul}} (0.6 + 0.6)|mt=y}} {{D|Viral}} damage to all enemies in range, then apply a {{D|Viral}} proc and an {{D|Electricity}} proc dealing {{Math|120 {{mul}} (1 + 1.2) {{mul}} (1 + 0.6) {{div}} 2|mt=y}} {{D|Electricity}} damage per tick.
+*The AoE ignores the [[Rift Plane]], affecting all enemies within range regardless of what plane the attack was made from.
+*Elemental damage gained through abilities such as {{M|Smite Infusion}} will also be spread by Melee Influence.
+
+==Tips==
+*It can sometimes be strategic to focus on only one elemental type, since adding additional types makes it less likely for your weapon's highest elemental damage type to trigger. But it can also be strategic to use multiple elemental types; for example, Viral procs can multiply the damage of subsequent Eletric procs, and more types of status procs means increased damage bonuses from Condition Overload.
+
+== Weapons With Forced Electric Procs==
+
+Weapons that have a chance or guaranteed electricity status effect independent of weapon elemental damage types, that can activate Melee Influence. Note that slam attacks include any melee stance combo that also results in a slam attack.
+*{{Weapon|Prova}}/{{Weapon|Prova Vandal}}: Slam attacks (100% chance) and {{M|Static Discharge}} (chance)
+*{{Weapon|Xoris}}: In-flight detonation (100%)
+*{{Weapon|Falcor}}: In-flight detonation and charged throw (100%)
+*{{Weapon|Arca Titron}}: Slam attacks (chance), Slam Capacitor slam attacks (100%) and Heavy slam attacks (100%)
+*{{Weapon|Obex}}/{{Weapon|Prisma Obex}}: Slam attacks (chance)
+*{{Weapon|Ohma}}/{{Weapon|Prisma Ohma}}: Slam attacks (chance)
+*{{Weapon|Lacera}}/{{Weapon|Ceti Lacera}}: Slam attacks (chance)
+*{{Weapon|Galvacord}}: Slam attacks (chance)
+*{{Weapon|Rumblejack}}: Slam attacks (100%), Heavy slam attacks (chance)
+**Unique finisher cannot proc Melee Influence 
+*{{Weapon|Lecta}}/{{Weapon|Secura Lecta}}: Slam attacks (chance), Heavy slam attacks (chance)
+*{{Weapon|Ninkondi}}: Slam attacks (chance), Heavy slam attacks (chance)
+*{{Weapon|Korumm}}: Unique block combo (100%)
+
+==Bugs==
+*Hits that one-hit-kill enemies cannot trigger nor benefit from Melee Influence.
+*Melee Influence works with [[Unattributed Damage|Unattributed Damage Sources]] causing certain abilities, decrees and weapons to benefit from it whilst not usually being able to. Some examples are:
+**{{M|Electro Pulse}}
+**{{M|Synergized Prospectus}} only on clients.
+**{{A|Breach Surge}} only on clients.
+**{{A|Elemental Ward}} on {{D|Cold}}
+**{{Decree|Wyrmling's Aid}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40}}
+*The following Arcane Collections are now available for Vosfor in Loid’s Arcane Dissolution: 
+**Cavia Arcane Collection (includes the Cavia and Ascension Arcanes) 
+***Melee Influence
+
+{{ver|38.5.3}}
+*Fixed Baruuk's Serene Storm waves not triggering Melee Influence.
+
+{{ver|38}}
+*Fixed greyed out damage numbers appearing when Melee Influence spreads Status Effects. 
+**This was a rare case where if you, for example, dealt a Toxin Status Effect without any Toxin Damage, you’d see a big grey zero next to the Toxin Status icon on all nearby enemies. This was misleading and made it seem that the enemy was invulnerable to damage and that the Status was not transferring, when in fact it was just not dealing any damage directly. So we’ve removed that zero from appearing when dealing no damage and now you will just see the Status Effect icon when transfer has been successful.
+*Fixed Titania’s Dex Pixia triggering Melee Influence.
+
+{{ver|36}}
+*Fixed the Melee Influence Arcane breaking the holding and holster animations for Tonfa skins.
+
+{{ver|35.5}}
+;NEW ENEMY&#58; GRUZZLING
+Greedy creatures born from The Indifference, these little Murmur tricksters love to steal Conduit Dockets and other coveted items from Albrecht's Laboratory.
+
+In any other Deimos/Albrecht’s Laboratory missions (including Netracells), these avaricious beings contain within them one of the following:
+*1x Common Entrati Melee Arcane:
+**Melee Influence
+
+;Netracell Drop Table Changes
+In the same vein as the above change to make Archon Shards more accessible, we’ve made the following changes to the Netracell Drop Tables. 
+
+'''1. Removed all non-Legendary Arcanes (as listed below)'''
+*Melee Influence 
+
+{{ver|35.1}}
+*Fixed Melee Influence’s buffs applying to clones spawned from Warframe abilities (ex: Mirage’s Hall of Mirror clones). 
+**''While this has been a popular combination, it has also been the source of many severe performance issues that can crash players. We have removed this interaction in the name of stability for the game.''
+*Fixed Melee Influence being triggered by Dual Ichor Incarnon’s Toxin fields.  
+**''Melee Influence is intended to trigger “On Melee Electricity Status” and not from secondary effects (as they are not considered direct Melee hits). Since the Toxin fields deal damage independently of Melee attacks, it does not meet the Arcane’s criteria of triggering only if the Electricity Status originates from the weapon in hand.''
+*Fixed a crash caused by Status Effects spreading from Melee Influence.
+
+{{ver|35.0.4}}
+*Fixed Melee Influence spreading status effects applied to invulnerable enemies. 
+*Fixed Melee Influence being able to trigger Exodia Force.
+
+{{ver|35}}
+*Introduced.
+}}
+
+{{ArcaneNav}}

@@ -1,0 +1,67 @@
+{{ModBox}}
+{{for|the [[Empyrean]] mission|Volatile}}
+{{for|the [[Predasite]] mod|Volatile Parasite}}
+{{for|the other Glaive mod|Volatile Quick Return}}
+{{for|the [[Infested]] enemy|Volatile Runner}}
+'''Volatile Rebound''' is a [[mod]] for [[Glaive (Weapon Type)|Glaives]] that adds a chance for the glaive to explode on bouncing but disables [[punch through]].
+
+==Stats==
+{| class="emodtable"
+|-
+![[Mod#Mod Rank|Rank]]
+!Explosion Chance
+![[Mod#Attributes|Cost]]
+|-
+|0 || 25% || 10
+|-
+|1 || 50% || 11
+|-
+|2 || 75% || 12
+|-
+|3 || 100% || 13
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+==Notes==
+*Explosions do '''50%''' of [[Heavy Attack]] damage.
+*Explosions do ''not'' increase the [[Melee Combo]] counter; only the thrown weapon's direct hits on enemies count.
+*Explosions from this mod do not consume [[Heavy Attack]] combo count, nor do they benefit from its damage multiplier.
+*Explosion from this mod does not inflict guaranteed procs unlike manual detonations.
+*Cannot be equipped on {{Weapon|Deconstructor}} ({{Weapon|Deconstructor Prime|Prime}}), due to its lack of explosive properties.
+*Cannot be equipped with {{M|Rebound}} since it is considered as a variant of this mod.
+*Cannot be equipped with {{M|Quick Return}} or {{M|Volatile Quick Return}}
+
+==Tips==
+*Ideal for the [[Falcor]] and [[Orvius]] as they are the only two Glaive weapons in the game that automatically seek enemies directly, rather than needing a direct hit first. 
+*When used on [[Xoris]], with its infinite combo counter time, the 12x multiplier remains at full strength unless manually detonated
+{{clr}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|29.5.3}}
+*Deconstructor can no longer equip Volatile Rebound.
+**''Deconstructor projectiles do not have any explosive properties so the Mods did nothing.''
+
+{{ver|29.5}}
+*Introduced.
+}}
+
+==See Also==
+*{{M|Rebound}}, the normal counterpart of this mod.
+*{{M|Volatile Quick Return}}, the opposite counterpart of this mod.
+
+{{MeleeMods}}
+
+
+[[de:Schnelle Rückkehr]]
+[[es:Rebote volátil]]
+[[ru:Нестабильный Рикошет]]
+[[Category:Mods]]
+[[Category:Melee Mods]]
+[[Category:Glaive Exclusive Mods]]
+[[Category:Rare Mods]]
+[[Category:Update 29]]
+[[Category:Naramon Mods]]
+[[uk:Летюче підбирання]]

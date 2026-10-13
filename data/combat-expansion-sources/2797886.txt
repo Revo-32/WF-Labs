@@ -1,0 +1,148 @@
+{{ResourceInfobox}}
+'''Okina Incarnon Genesis''' is an item that is used to add [[Incarnon]] upgrades to the {{Weapon|Okina}} or {{Weapon|Okina Prime}}.
+
+==Acquisition==
+*Upon completion of [[The Duviri Paradox]] and [[Angels of the Zariman]], and unlocking [[The Steel Path]], players can earn {{Resource|Okina Incarnon Genesis}} from [[The Circuit]]'s Steel Path to place on their Okina with the help of [[Cavalero]] in the [[Chrysalith]]. This [[Incarnon Genesis]] form grants it evolutions to a transformation and newfound strength.
+*Purchased from Cavalero for {{pc|120}}, complete with the resources used in its installation. This purchase can only be made '''once'''.
+
+==Incarnon Genesis==
+
+*Installing the Okina Incarnon Genesis requires 20 {{Resource|Pathos Clamp|Pathos Clamps}}, 20 {{Resource|Maw Fang}}, and 80 {{Resource|Lamentus}}.
+**When installed, the first Evolution tier is unlocked. Each challenge additionally grants 5,000 [[affinity]] to the weapon, affected by [[Affinity Booster]]s.
+
+===Overview===
+*Incarnon Form is charged by building [[Melee Combo]] to 6x, then using a [[Heavy Attack]]. Once activated, the Incarnon form lasts for '''180''' seconds.
+**Incarnon Form persists through all activities, such as holstering, [[bleedout]], or being [[disarm]]ed. However, Incarnon Form is removed upon [[death]].
+{{clr}}
+
+===Evolutions===
+{| class="wikitable sortable stickyHeader"
+|+
+|-
+! class=unsortable colspan="3" | Evolution
+! class=unsortable style="white-space: nowrap;" | {{Weapon|Okina}}
+! class=unsortable style="white-space: nowrap;" | {{Weapon|Okina Prime}}
+! class=unsortable | Notes
+|-
+! EVO1
+| style="white-space: nowrap; text-align:center;" | '''Incarnon Form''' [[File:OkinaGhosts(xWhite).png|64px|center]]
+| 
+*Reach '''6x''' Combo and then [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form.
+*Kills generate spectral daggers that target enemies, applying max {{D|Cold}} Status stacks.
+**'''+100%''' Melee Damage
+**'''+20%''' Sprint Speed
+**'''+20%''' to Parkour Velocity
+| style="text-align:center;" colspan="2" | -
+|
+*Kills create a spectral dagger that orbits the player, then seeks an enemy within '''15''' meters. Daggers deal damage and apply '''10''' forced {{D|Cold}} stacks to the target, then explode in a '''4m''' radius, dealing AoE damage and applying '''1''' forced {{D|Cold}} stack to enemies hit. 
+**Up to '''6''' daggers can be active at once.
+**Dagger hits do '''not''' add to the melee combo counter.
+**Kills from the daggers will not generate new daggers, but kills from status procs created by daggers will.
+**Dagger direct hits and explosions are '''not''' affected by melee damage bonuses, such as Incarnon form's innate '''+100%''' melee damage, {{M|Pressure Point}}, or {{Arcane|Arcane Fury}}.
+***However, direct hits and explosions '''are''' affected by [[Universal Weapon Bonuses#Damage|universal base damage]] sources, such as {{Arcane|Arcane Arachne}} and {{A|Vex Armor}}.
+***'''Direct hits''' of daggers '''are''' affected by {{M|Condition Overload}}, while the explosions are not.
+****Condition Overload effects are '''multiplicative''' to sources of universal base damage.
+**Dagger seek range and AoE radius are not affected by melee range mods such as {{M|Reach}}.
+**Dagger direct hit and AoE damage '''are''' affected by faction damage, elemental damage, critical stats, status stats, and most other effects.
+**Dagger damage type can be changed with elemental mods.
+***Modded elements will not change the element type of the forced cold procs, which are applied separately from natural status procs from the daggers.
+**Dagger direct hits and AoEs can activate {{Arcane|Melee Influence}}'s buff, but only statuses procced from the dagger AoE will be spread by the effect.
+***Forced cold procs will '''not''' be spread.
+**Daggers can benefit from {{Arcane|Melee Careen}}'s damage multiplier against frozen enemies.
+|-
+! colspan="3" | Evolution Challenge !! colspan="3" | Complete a solo mission with this weapon equipped
+|-
+! rowspan="2" | EVO2
+| style="white-space: nowrap; text-align:center;" | '''Seeing Red''' [[File:5AdditionalCombosOnTargetsWithBleed(xWhite).png|64px|center]]
+|
+*Increase Base Damage by '''+X'''.
+*'''5''' additional Combos on targets affected by {{D|Slash}} Status
+| style="text-align:center" | X = 60
+| style="text-align:center" | X = 20
+| style="text-align:center | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Synergist Surety''' [[File:OnCriticalHitGainXStatusDamage(xWhite).png|64px|center]]
+|
+*Increase Base Damage by '''+X'''.
+*On [[Critical Hit]]: '''+Y%''' [[Status Damage]] for '''10s'''. Stacks up to '''5x'''.
+| style="text-align:center" | X = 60<br>Y = 8%
+| style="text-align:center" | X = 20<br>Y = 6%
+| style="text-align:center | -
+|-
+! colspan="3" | Evolution Challenge !! colspan="3" | Activate this weapon's Incarnon form '''6''' times in a mission
+|-
+! rowspan="3" | EVO3
+| style="white-space: nowrap; text-align:center;" | '''Orokin Reach''' [[File:MoreRange(xWhite).png|64px|center]]
+| 
+*'''+1''' [[Range]]
+| colspan="2" style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Standoff''' [[File:ComboCounterPausedWhenHolstered(xWhite).png|64px|center]]
+| 
+*Combo Timer pauses when weapon is [[holster|holstered]]
+| colspan="2" style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Swordsman's Celerity''' [[File:MovementSpeedWhileEquipped(xWhite).png|64px|center]]
+| 
+*'''+30%''' [[Movement Speed]]
+| colspan="2" style="text-align:center" | -
+|
+*Movement Speed bonus applies at all times.
+|-
+! colspan="3" | Evolution Challenge !! colspan="3" | Reach '''10x''' Combo Multiplier 10 times.
+|-
+! rowspan="3" | EVO4
+| style="white-space: nowrap; text-align:center;" | '''Commodore's Fortune''' [[File:HighCrit(xWhite).png|64px|center]]
+|
+*Increase Base Critical Chance by '''+X%'''.
+| style="text-align:center" | X = 12%
+| style="text-align:center" | X = 6%
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Alchemy of War''' [[File:HighStatus(xWhite).png|64px|center]]
+|
+*Increase Base Status Chance by '''+X%'''.
+*'''+25%''' Status Duration
+| style="text-align:center" | X = 16%
+| style="text-align:center" | X = 12%
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Survivor's Edge''' [[File:XCritChanceYStatChance(xWhite).png|64px|center]]
+|
+*Increase Base Critical Chance by '''+X'''
+*Increase Base Status Chance by '''+Y%'''
+| style="text-align:center" | X = 6%<br>Y = 10%
+| style="text-align:center" | X = 2%<br>Y = 8%
+| style="text-align:center | -
+|}
+
+==Bugs==
+*Both perks in the Evolution 2 slot give base weapon damage instead of base melee damage, which do not affect Okina but do affect the spectral daggers.
+
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39.1}}
+*Fixed the spectral daggers spawned by the Okina's Incarnon Form not using player colors.
+
+{{ver|37.0.7}}
+*Fixed Okina’s Incarnon Form duration being 90 seconds instead of 180 seconds.
+
+{{ver|37.0.6}}
+*Fixed the Okina Evolution 3 Incarnon Challenge not progressing. 
+
+{{ver|37.0.4}}
+*Tweaked Okina Prime’s Incarnon dagger projectile VFX.
+*Fixed activating any Incarnon weapons counting towards Okina’s Incarnon Evolution III challenge (activate this weapon’s Incarnon Form 0/6 times in a mission). 
+*Fixed the Okina daggers in the Incarnon evolution screen being super close together. They are now spaced out so that there’s no sibling squabbles.
+
+{{ver|37}}
+*Introduced.}}
+
+{{IncarnonNav}}
+
+[[Category:Duviri]]
+[[Category:Incarnon]]
+[[Category:Incarnon Geneses]]

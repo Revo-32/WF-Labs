@@ -1,0 +1,81 @@
+{{ArcaneBox}}
+'''Arcane Avenger''' is an [[Arcane Enhancement]] that provides a 21% chance whenever the player receives damage to increase the '''absolute'''  [[Critical Hit|critical chance]] of all attacks by 45% for 12 seconds (additive to the final critical chance).
+
+Can be sold for {{cc|1,000}}.
+
+==Effect==
+{| class="emodtable"
+|-
+! [[Arcane Enhancement#Rank|Rank]]
+! Critical Chance Bonus
+|-
+| 0 || 7.5%
+|-
+| 1 || 15%
+|-
+| 2 || 22.5%
+|-
+| 3 || 30%
+|-
+| 4 || 37.5%
+|-
+| 5 || 45%
+|}
+
+{{Acquisition|*Awarded for killing or capturing the [[Eidolon Hydrolyst]].
+*Dropped in Rotation C of [[Orphix (Mission)|Orphix]] [[Pluto Proxima]] or [[Veil Proxima]] missions.}}
+
+===History===
+*Arcane Avenger was first introduced in the [[Trial]] mission [[The Law of Retribution]], which was retired in {{ver|22.14}}.
+*The [[Operation: Scarlet Spear]] event sold Arcane Avenger from [[Little Duck]] for 2,000 {{Resource|Scarlet Credits}}.
+*The [[Operation: Orphix Venom]] event sold Arcane Avenger from [[Father]] for 400 {{Resource|Phasic Cells}}.
+*The [[Operation: Gargoyle's Cry]] event sold Arcane Avenger from the [[Jahu Gargoyle|Vigile Jahu Gargoyle]] for 6 {{Resource|Grotesque Splinter}}.
+*The [[Operation: Belly of the Beast]] event sold Arcane Avenger from [[Ordis]] for 5 {{Resource|Volatile Motes}} in the first run of the event, and 6 Motes in the second, with a purchase limit of 42.
+*The [[Operation: Eight Claw]] event sold Arcane Avenger from [[Dominus Thrax]] in bundles of 7, costing 4 {{Resource|Dominus Aureus}}, with a purchase limit of 3 (21 Arcanes in total).
+
+==Notes==
+*Capable of making some abilities crit. {{main|Universal Weapon Bonuses}}
+*A Rank 5 '''Arcane Avenger''' adds 45 ''percentage points'' to a weapon's critical chance after other bonuses.
+*'''Arcane Avenger''' stacks additively with other percentage point bonuses, such as {{A|Covenant}} and {{M|Cat's Eye}}. For example, an {{Weapon|Atterax}} with a max rank {{M|True Steel}}, {{M|Cat's Eye}}, and '''Arcane Avenger''', will have a {{Math|[25% {{mul}} (1 + 120%) + 60% + 45%]|mt = y|p = y}} critical chance on attacks.
+**Highly effective with weapons with high critical damage multipliers.
+**Weapons that have 0% [[critical chance]] can crit with this enhancement, although due to their lack of a [[critical multiplier]], their damage will not be altered unless the shot lands on the head, which yields 2x [[critical multiplier]].
+*Aside from damage to shields and health, this Arcane can be triggered by the following instances of damage:
+**Damage to player [[Overguard]].
+**Self-damage from {{M|Combat Discipline}}.
+**Damage while the player is invulnerable, such as {{A|Absorb}}.
+*Damage that is rounded down to 0 due to damage reduction or redirection ''can'' trigger this Arcane.
+**For example, with a Rank 0 {{M|Combat Discipline}} equipped and {{A|Eclipse}} active for 75% damage '''reduction''', kills will deal {{Math|[1 {{mul}} (1 - 75%)]|mt = y}} self-damage, which is rounded down to 0, but this Arcane can still trigger.
+**For example, with a Rank 2 {{M|Combat Discipline}} equipped while on {{A|Merulina}} providing 90% damage '''redirection''', kills will deal {{Math|[4 {{mul}} (1 - 90%)]|mt = y}} self-damage, which is rounded down to 0, but this Arcane can still trigger.
+*Damage while {{A|Mesmer Skin}} or {{M|Mesmer Shield}} is active will ''not'' trigger this Arcane, unless {{M|Combat Discipline}} is equipped.
+*Damage from {{M|Despoil}} does not trigger this Arcane.
+*Damage from the {{Weapon|Hema}} or {{Weapon|Coda Hema}}'s reload does not trigger this Arcane.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|35.1}}
+*Fixed certain Arcanes (including but not limited to: Arcane Avenger) having “0” in their Buff icons instead of the actual stat.
+
+{{ver|31.6}}
+;ARCANE STAT CHANGES PER RANK
+
+We’ve adjusted the values of older Arcanes with the goal of making lower rank Arcanes more viable, and more desirable while collecting as a result. In short, there are three stats that each Arcane tends to have (speaking generally) -- for example, a percentage chance, a stat buff, and the duration of the buff.
+
+Certain Arcanes increase all of these stats per rank (making them scale exponentially), but we are changing it so that only one stat is affected by rank (making it scale linearly). The other stats will now be at the max-rank value regardless of the Arcane Rank, thereby buffing lower-rank Arcanes as a result.
+
+;Arcane Avenger
+On Damaged: 21% (was 4%) chance for +7.5%/45% Critical Chance for 12s (was 2s)
+
+{{ver|16}}
+*Introduced.
+}}
+{{ArcaneNav}}
+[[de:Arkana Rächer]]
+[[es:Vengador arcano]]
+[[Category:Arcane Enhancements]]
+[[Category:Equipment]]
+[[Category:Mechanics]]
+[[Category:Update 16]]
+[[uk:Містичний месник]]
+[[Category:Eidolon Arcanes]]
+[[Category:Hydrolyst Arcanes]]
+[[category:Orphix Arcanes]]

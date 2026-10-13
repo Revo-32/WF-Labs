@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<title>WF Labs · Vector Core 렌더링 검사</title>
+<style>
+  @font-face { font-family: Wanted; src: url('../../../Fonts/WantedSans-Regular.ttf'); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0C131D; color: #F0F5F8; font: 15px/1.6 Wanted, sans-serif; }
+  section { padding: 28px 40px; }
+  h1 { font-size: 19px; margin: 0 0 18px; font-weight: 500; }
+  h2 { font-size: 15px; font-weight: 400; margin: 0 0 12px; }
+  .logos { display: flex; align-items: center; gap: 88px; height: 190px; }
+  .logos .symbol { width: 160px; height: 160px; }
+  .logos .horizontal { width: 490px; height: auto; }
+  .light { background: #F0F5F8; color: #0C131D; }
+  .icons { display: flex; gap: 40px; align-items: flex-start; }
+  figure { margin: 0; min-width: 62px; }
+  figcaption { margin-top: 12px; color: #94A7BD; font-size: 13px; }
+  .checker { background: repeating-conic-gradient(#D7DBE0 0% 25%, #F0F5F8 0% 50%) 0 / 16px 16px; }
+  .checker figure { min-height: 70px; }
+  .checker figcaption { color: #253547; }
+</style>
+<section>
+  <h1>WF Labs · Vector Core — 브라우저 SVG 렌더링</h1>
+  <div class="logos"><img class="symbol" src="../wf-labs-symbol.svg" alt="투명 심볼"><img class="horizontal" src="../wf-labs-horizontal.svg" alt="가로형 로고"></div>
+</section>
+<section class="light">
+  <h2>밝은 배경 전용 버전 · Navy / Steel Blue</h2>
+  <div class="logos"><img class="symbol" src="../wf-labs-symbol-light.svg" alt="밝은 배경 심볼"><img class="horizontal" src="../wf-labs-horizontal-light.svg" alt="밝은 배경 가로형 로고"></div>
+</section>
+<section>
+  <h2>실제 크기 PNG · 16 / 32 / 48 / 64 / 128 / 256 px</h2>
+  <div class="icons">
+    <figure><img src="../png/wf-labs-icon-16.png" width="16" height="16" alt="16px"><figcaption>16 px · 획 보정</figcaption></figure>
+    <figure><img src="../png/wf-labs-icon-32.png" width="32" height="32" alt="32px"><figcaption>32 px</figcaption></figure>
+    <figure><img src="../png/wf-labs-icon-48.png" width="48" height="48" alt="48px"><figcaption>48 px</figcaption></figure>
+    <figure><img src="../png/wf-labs-icon-64.png" width="64" height="64" alt="64px"><figcaption>64 px</figcaption></figure>
+    <figure><img src="../png/wf-labs-icon-128.png" width="128" height="128" alt="128px"><figcaption>128 px</figcaption></figure>
+    <figure><img src="../png/wf-labs-icon-256.png" width="256" height="256" alt="256px"><figcaption>256 px</figcaption></figure>
+  </div>
+</section>
+<section class="checker"><div class="icons">
+  <figure><img src="../png/wf-labs-icon-16.png" width="16" height="16" alt="16px 투명 모서리"><figcaption>16 px 알파 경계</figcaption></figure>
+  <figure><img src="../png/wf-labs-icon-32.png" width="32" height="32" alt="32px 투명 모서리"><figcaption>32 px 알파 경계</figcaption></figure>
+  <figure><img src="../wf-labs-icon.svg" width="64" height="64" alt="아이콘 SVG"><figcaption>SVG 아이콘</figcaption></figure>
+</div></section>
+</html>

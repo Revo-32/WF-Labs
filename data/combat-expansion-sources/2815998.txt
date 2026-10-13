@@ -1,0 +1,852 @@
+{{Community}}
+{{UpdateMe}}
+{{CleanUp}}
+{{Navigation|Condition Overload (Mechanic)|Condition Overload (Mechanic)/Testing|Condition Overload (Mechanic)/Trivia}}
+{{Infobox
+| Box title=Condition Overload
+| image=ConditionOverloadMod.png
+| caption=The namesake mod, one of multiple examples of a mod that provide a conditional damage bonus based on enemy state.
+}}
+{{For|the melee mod|Condition Overload}}
+
+'''Condition Overload'''-type damage bonuses are a category of bonuses that are activated on transient enemy conditions, such as a [[Status Effect]] which can sometimes be applied, as opposed to an enemy [[Faction Damage Bonus|faction]] which is always applied. The current form of CO bonuses were introduced when the mod {{M|Condition Overload}} went through an iteration<ref>"Condition Overload now uses a stacking multiplier based on how many Status Effects are on the target at 120% damage per Status." - {{ver|26}} patch notes</ref> to make it additive with {{M|Pressure Point}} instead of an exponentially-scaling multiplier. Today, this same bonus is applicable to almost every weapon class, sometimes by multiple sources, but each source is categorically consistent.
+
+;Community Terminology
+*''[[CO]] (Condition Overload abbreviated. Used in this article to refer to the Condition Overload Mechanic)''
+*''[[GunCO]] (Condition Overload for ranged weapons, e.g. primary and secondaries, abbreviated)''
+
+;Writer(s) Notes
+While much of this page may be considered and acknowledged by developers as bugs, this page exists to reflect the present state of the mechanic, as it has existed for multiple years, not been modified for a year, and becomes more relevant as the mechanics are utilized more by developers despite their state.
+{{LatestEdit}}
+
+==Sources of Condition Overload-Style Bonuses==
+Although some sources are not related to status effects on targets, they are still based on transient conditions and are internally considered the same effect that will additively stack with each other in the list.
+*{{M|Condition Overload}} (Melee, +80% per status)
+*{{M|Galvanized Aptitude}} (Rifle, +40% per status, stacking up to 2 times for +80% per status)
+*{{M|Galvanized Shot}} (Pistol, +40% per status, stacking up to 3 times for +120% per status)
+*{{M|Galvanized Savvy}} (Shotgun, +40% per status, stacking up to 2 times for +80% per status)
+*{{Arcane|Secondary Shiver}} (Pistol or [[Archgun]], +45% per {{D|Freeze}} stack)
+*{{Weapon|Cedo}} and {{Weapon|Cedo Prime}} (+60% per status)
+*{{Resource|Dual Toxocyst Incarnon Genesis}} (+33% per status | Evolution 2, Perk 1: Carnage Reign)
+*{{Resource|Lato Incarnon Genesis}} (+40% per status | Evolution 4, Perk 3: Carnage Reign)
+*{{Resource|Latron Incarnon Genesis}} (+30% per status | Evolution 2, Perk 2: Swift Punishment)
+*{{Resource|Angstrum Incarnon Genesis}} (+40% per status | Evolution 4, Perk 3: Fatal Affliction)
+*{{Resource|Despair Incarnon Genesis}} (+40% per status | Evolution 2, Perk 1: Fatal Affliction)
+*{{Resource|Zylok Incarnon Genesis}} (+40% per status | Evolution 4, Perk 3: Fatal Affliction)
+*{{Resource|Soma Incarnon Genesis}} (+40% per status | Evolution 4, Perk 2: Fatal Affliction)
+*{{Resource|Kunai Incarnon Genesis}} (+100% vs <50% health | Evolution 2, Perk 1: Swift Conclusion)
+*{{Resource|Dread Incarnon Genesis}} (+100% vs <50% health | Evolution 2, Perk 1: Hitman's Opportunity)
+*{{Decree|Shattering Frost}} (+80% vs {{D|Freeze|Frozen}}, upgradeable to +240%. Affects non-exalted-weapon abilities, additive to Ability Damage effects such as those seen on [[Violet Archon Shard|Violet Archon Shards]].)
+
+For example, Shiver would additively stack with {{M|Galvanized Shot}}, and {{Weapon|Dread}}'s low-HP Incarnon bonus would additively stack with the [[Shattering Frost]] decree.
+
+{{A|Catalyze}} is not part of the category, as it breaks multiple rules such as being exponential per condition like the original pre-{{ver|26}} Condition Overload mod, and is a radial attack.
+
+==Mechanics==
+In-game, this bonus is commonly written as "+X% Direct Damage" in the EN [[localization]].
+
+"Direct Damage" is intended language<ref>"Changed the description of Galvanized Aptitude to better reflect its current function (which clarifies that area of effect damage is not included)." - {{ver|30.9}} patch notes</ref> to specify that ''Radial Explosion Damage'' does not benefit from CO, but this is not completely true. Despite the spirit of this exclusion, many other forms of crowd damage still benefit.
+*The following forms of damage apply CO:
+**[[Hitscan]] - ''(e.g., {{Weapon|Braton}})''
+**Hitscan Explosion - ''(e.g., {{Weapon|Trumna}} Main Fire)'' only on directly-hit target.
+**Hitscan [[Ricochet]] - ''(e.g., {{Weapon|Lato}} Incarnon Form) ''
+**[[Projectile]]s - ''(e.g., {{Weapon|Boltor}})''
+***[[Homing]] - ''(e.g., {{Weapon|Zymos}} Spores)''
+***[[Bounce|Bouncing]] - ''(e.g., {{Weapon|Cyanex}})''
+***[[Punch Through|Punching Through]] - ''(e.g., {{Weapon|Lanka}})''
+***Wave Projectile - ''(e.g., {{Weapon|Arca Plasmor}})''
+**Embedded Cloud - ''(e.g., {{Weapon|Pox}})'' only on directly-embedded target.
+**Beam - ''(e.g., {{Weapon|Spectra}})''
+***Beam AoE - ''(e.g., {{Weapon|Glaxion Vandal}})''
+***Beam Chain - ''(e.g., {{Weapon|Kuva Nukor}})''
+***Multi-beam - ''(e.g., {{Weapon|Ocucor}})''
+**{{D|Blast}}, {{D|Electricity}} and {{D|Gas}} procs are generated based on the bonus to the initial target, but carry that proc damage to their radius.
+
+*Forms that do '''not''' apply CO are:
+**Projectile Explosion Radius - ''(e.g., {{Weapon|Ogris}})''
+**Hitscan Explosion Radius - ''(e.g., {{Weapon|Ambassador}})'' on every non-directly hit target.
+**Embedded Cloud Radius - ''(e.g., {{Weapon|Torid}} primary fire)'' on every non-directly hit target.
+**Things that should work but don't:
+***{{Weapon|Balefire Charger}} ''(Has no direct-hit damage)''
+***{{Weapon|Stug}} ''(Despite embeds, is entirely "radial" damage)''
+***{{Weapon|Ferrox}} family embedded alt-fire ''(Pulsing radius with 2s intervals instead of 1s)''
+***{{Weapon|Azima}} turret ''(Should qualify as Hitscan. but not affected)''
+***{{Weapon|Sonicor}} ''(Should qualify as wave, but not affected)''
+
+===Application Behaviors===
+CO-type bonuses have five known ways of [[Calculating Bonuses|applying]], which varies on an attack-to-attack basis that is community documented. Say we have a CO-bonus value of X, ranking CO-bonus behavior by effectiveness in the eyes of a WARFRAME player:
+{| class="wikitable sortable"
+|-
+!Ranking/Behavior #!!Ranking Description!!CO-Bonus Damage Stacking Behavior<ref>"How does CO-bonus stack with damage mods/bonuses like {{M|Serration}}?"</ref>!!CO-Bonus Application Behavior<ref>"How does CO-bonus increase an attack's damage?"</ref>!!Player's Metagame Perspective!!Attack Examples
+|-
+|1
+|CO-bonus performs extremely better than expected ("excellent")
+|Multiplicative Stacking ("not intended")
+|Applies above X% of damage value despite listed as +X% ("not intended")
+|"Game is bugged in our favor because it multiplicatively stacks with additive stacking bonuses like {{M|Serration}}. Put both CO-bonus and {{M|Serration}} in the same mod config for this weapon."
+|
+Most [[projectile]]-based weapons/attacks
+*{{Weapon|Arca Plasmor}}
+*{{Weapon|Latron}}'s Incarnon Mode
+|-
+|2
+|CO-bonus performs better than expected ("good")
+|Additive Stacking ("intended")
+|Applies above X% of damage value as listed +X% ("not intended")
+|"The game is bugged and GunCO provides more damage bonus than its description. Replace additive bonuses like {{M|Serration}}."
+|
+Child projectiles that spawn from a parent projectile (CO-bonus uses parent projectile damage, which tend to be higher than its children):
+*{{Weapon|Kuva Bramma}}'s Cluster Bomb Contact
+*{{Weapon|Kulstar}}'s Cluster Bombs
+|-
+|3
+|CO-bonus performs as expected ("intended")
+|Additive Stacking ("intended")
+|Applies exactly X% of damage value as listed +X% ("intended")
+|"Replace additive bonuses like {{M|Serration}} because CO-bonus tends to give a larger bonus. Since CO-bonus and other damage bonuses are additive to each other, I rather use that mod slot for something that increases my damage more like crit damage bonus." (opportunity cost)
+|Most, if not all, [[hitscan]] weapons/attacks and some projectile-based weapons/attacks that behave "normally"
+*{{Weapon|Braton}}'s Normal Attack
+*{{Weapon|Braton}}'s Incarnon Mode
+*{{Weapon|Latron}}'s Normal Attack
+*{{Weapon|Paris}}'s Uncharged Shot
+|-
+|4
+|CO-bonus performs worse than expected ("bad")
+|Additive Stacking ("intended")
+|Applies below X% of damage value despite listed as +X% ("not intended")
+|"Keep using additive bonuses like {{M|Serration}} because CO-bonus is lying to the player and gives less damage than expected over {{M|Serration}}."
+|
+Most [[bow]]s and projectile-based weapons with Charge [[Trigger Type]]'s Charged Shot (CO-bonus uses initial uncharged projectile damage, which tend to be lower than its charged damage)
+*{{Weapon|Paris}}'s Charged Shot
+|-
+|5
+|CO-bonus doesn't work ("very bad")
+|N/A
+|Does not apply any damage bonus ("intended" or "not intended", depends)
+|"Keep using additive bonuses like {{M|Serration}} because GunCo doesn't work on this weapon."
+|AoE component of attacks for GunCo bonuses
+*{{Weapon|Latron}}'s Incarnon Mode
+|-
+|}
+
+====Math====
+We can group the behaviors from the previous section into two categories based on how they stack with other damage bonuses:
+*Behavior #1: "'''Multiplying'''". A multiplicative bonus that '''additively stacks''' with only CO-like damage bonuses (e.g. {{M|Galvanized Aptitude}}) AND '''multiplicatively stacks''' with other damage bonuses (e.g. {{M|Serration}}, {{A|Vex Armor}}, {{Arcane|Arcane Fury}}). Its functionality is reliable and compatible with all weapon bonuses. This is the least common way on how CO-like effects stack with damage bonuses.
+**'''Base Weapon Damage {{mul}} Most Damage Bonuses {{mul}} CO {{mul}} Other Damage Multipliers'''
+**Example with {{M|Serration}} and 2 procs/1 stack of {{M|Galvanized Aptitude}} bonus:
+***'''Final Damage = Base Weapon Damage {{mul}} (1 + {{M|Serration|1.65}}) {{mul}} (1 + {{M|Galvanized Aptitude|0.4}} + {{M|Galvanized Aptitude|0.4}})'''
+<!--Mechanics below confirmed as of 2025-11-03-->
+*Behavior #2/3/4: "'''Adding'''". A multiplicative bonus that '''additively stacks''' with ALL +% Damage mods, damage bonuses, AND CO-like damage bonuses (e.g. {{M|Serration}}, {{A|Vex Armor}}, {{Arcane|Arcane Fury}}, {{M|Galvanized Aptitude}}). This type is an additive recalculation of all effects, but omits +X% Damage in the recalculation, thus making CO mathematically additive to +X% Damage. However, this recalculation inadvertently omits some other effects. This is the most common way on how CO-like effects stack with damage bonuses.
+**'''(Base Weapon Damage {{mul}} Most Damage Bonuses {{mul}} Other Damage Multipliers) + (Base Weapon Damage {{mul}} CO )'''
+***Or '''Base Weapon Damage {{mul}} [ (Most Damage Bonuses {{mul}} Other Damage Multipliers) + CO ]'''
+***Damage multipliers or effects that are ignored with Additive Stacking CO-like bonuses:
+****Final Damage Multipliers
+*****[[Dragon Key#Variants|Extinguished Dragon Key]]
+*****[[Damage Falloff#Range Falloff|Range-based Damage Falloff]] (but not Beam ramp-up)
+*****{{Arcane|Longbow Sharpshot}}
+*****{{Arcane|Primary Compression}} on projectile weapons
+*****{{WF|Equinox}}'s {{M|Duality}}
+*****{{WF|Excalibur}}'s {{M|Furious Javelin}}
+*****{{WF|Garuda}}'s [[Garuda/Abilities/Passive|Passive]]
+*****{{WF|Mirage}}'s {{A|Eclipse}}
+*****{{WF|Mirage}}'s {{A|Hall of Mirrors}} damage modifier
+*****{{WF|Nidus}}' {{A|Parasitic Link}}
+*****{{WF|Vauban}}'s {{A|Minelayer|Overdriver}}
+****Base Damage increases from [[Incarnon#Genesis|Incarnon Genesis Evolutions]].
+****Some Melee [[Stance]] Multipliers, on inputs with multiple hits.
+****Some natural weapon stats modifiers, such as [[Bow]] charging and more.<!--
+**Example with {{M|Serration}} and 2 stacks of {{M|Galvanized Aptitude}} bonus:
+***'''Final Damage = Base Weapon Damage {{mul}} (1 + {{M|Serration|1.65}})'''
+-->
+
+===What Counts As A Status Effect?===
+All [[Status Effect]]s that have a damage type equivalent are counted for purposes of calculating the CO damage bonus. For thoroughness, this includes:
+*Status effects from physical damage types
+**{{D|Impact}} procs
+**{{D|Puncture}} procs
+**{{D|Slash}} procs
+*Status effects from elemental damage types (single and combined types)
+**{{D|Cold}} procs
+**{{D|Electricity}} procs
+**{{D|Heat}} procs
+**{{D|Toxin}} procs
+**{{D|Blast}} procs
+**{{D|Corrosive}} procs
+**{{D|Gas}} procs
+**{{D|Magnetic}} procs
+**{{D|Radiation}} procs
+**{{D|Viral}} procs
+*Status effects from unique damage types
+**{{D|Void}} procs
+**{{D|Tau}} procs
+*Unique "hidden" status effects
+**{{D|Lifted}} (cannot coexist with {{D|Knockdown}} on same target)
+**{{D|Knockdown}} (cannot coexist with {{D|Lifted}} on same target)
+**{{D|Microwave}}
+
+==Attack Catalog==
+This section contains community-sourced<ref>Prof_Blocks_007's list: https://docs.google.com/spreadsheets/d/1FJ_RIEG2mlFGBQ__szeGoFM6azj23n0CqelBFO_MGGw/edit?usp=sharing</ref><ref>Rainy's list: https://docs.google.com/spreadsheets/d/1ryemX4Y2vWy9LjuJ355bWVNuBhzLaHTTFqPeTNto9RA/edit?usp=sharing</ref><ref>Arbitrary Mary's Original List (2022 version, outdated): https://docs.google.com/spreadsheets/d/1jFIcb4W_KeZ5glapDLgFasmcOt8tp_lcpId82UQSv2c/edit?usp=sharing</ref><ref>WFCD maintained list: https://docs.google.com/spreadsheets/d/1VsEoCYhZmmPNgfqQksMnZFSFiTWaXDavulsghO-_QNE</ref> info on whether CO-bonuses applies to an attack additively ("intended") or multiplicatively ("not intended") and what CO counts for base damage, which is not always the same damage as the base attack.
+
+A pattern to note is that:
+* [[Projectile]]-based attacks tend to have CO-bonuses apply to them multiplicatively instead of additively.
+* Non-projectile or [[hitscan]] weapons will have CO-bonuses apply to them additively as "intended".
+
+===Primaries===
+Listing <u>only discrepant attacks</u>. Anything '''not''' listed should be assumed to be '''Additive''' with '''+100%''' bonus ("intended" behavior), keeping in mind the omitted effects in the [[Condition Overload (Mechanic)#Math|math section]] will include all those ordinary attacks.
+
+{| class="wikitable sortable"
+|-
+!Weapon!!Attack Name!!Projectile Type!!Attack Unmodded Damage!!Actual CO Damage Bonus at +100%!!CO Damage Bonus Relative To Base Damage!!Math/Behavior Type!!Notes
+|-
+|{{Weapon|Acceltra}}||Normal Attack||Projectile||35||26||74.3%||Adding
+|-
+|{{Weapon|Aeolak}}||Normal Attack||Projectile||60||60||100%||Multiplying
+|-
+|{{Weapon|Aeolak}}||Alt-fire||Projectile||97||97||100%||Multiplying
+|-
+|{{Weapon|Alternox}}||Normal Attack||Projectile||62||62||100%||Multiplying
+|-
+|{{Weapon|Alternox Prime}}||Normal Attack||Projectile||75||75||100%||Multiplying
+|-
+|{{Weapon|Ambassador}}||Alt-fire Hitscan Radial Attack||AoE||800||600||75%||Adding||Radial hit only receives CO bonus on target directly hit by laser. CO-bonus scales off hitscan damage. AoE does not scale off multishot.
+|-
+|{{Weapon|Arca Plasmor}}||Normal Attack||Projectile||600||600||100%||Multiplying
+|-
+|{{Weapon|Tenet Arca Plasmor}}||Normal Attack||Projectile||760||760||100%||Multiplying
+|-
+|{{Weapon|Basmu}}||Main-fire||Projectile||39||39||100%||Multiplying
+|-
+|{{Weapon|Battacor}}||Main-fire||Projectile||66||66||100%||Multiplying
+|-
+|{{Weapon|Braton}}/{{Weapon|Mk1-Braton|Mk1}}/{{Weapon|Braton Prime|Prime}}/{{Weapon|Braton Vandal|Vandal}}||Incarnon Form Radial Attack||AoE||74||70||95%||Adding||Listed values for Braton Prime with inactive Daring Reverie. Radial hit only receives CO bonus on target directly hit by bullet. AoE does not scale off multishot.
+|-
+|{{Weapon|Bubonico}}||Main-fire||Projectile||287||287||100%||Multiplying
+|-
+|{{Weapon|Bubonico}}||Alt-fire||Projectile||9||9||100%||Multiplying
+|-
+|{{Weapon|Burston}}/{{Weapon|Burston Prime}}||Incarnon Form Radial Attack||AoE||55||13||24%||Adding||Listed values for Burston Prime. Radial hit only receives CO bonus on target directly hit by bullet. AoE does not scale off multishot.
+|-
+|{{Weapon|Buzlok}}||Normal Attack||Projectile||60||60||100%||Multiplying
+|-
+|{{Weapon|Buzlok}}||Alt-fire||Projectile||3||3||100%||Multiplying
+|-
+|{{Weapon|Catchmoon (Primary)}} (Tremor)||Normal Attack||Projectile||216||216||100%||Multiplying
+|-
+|{{Weapon|Cedo}}/{{Weapon|Cedo Prime}} ||Alt-fire||Projectile||20||20||100%||Multiplying
+|-
+|{{Weapon|Cernos}}||Charged Attack||Projectile||380||190||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Cernos Prime}}||Charged Attack||Projectile||552||276||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Coda Bassocyst}}||Normal Attack||Projectile||808||808||100%||Multiplying
+|-
+|{{Weapon|Coda Bassocyst}}||Alt-fire||Homing Projectile||303||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Coda Hema}}||Normal Attack||Projectile||52||52||100%||Multiplying
+|-
+|{{Weapon|Rakta Cernos}}||Charged Attack||Projectile||470||235||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Mutalist Cernos}}||Uncharged Attack||Projectile||205||205||100%||Multiplying
+|-
+|{{Weapon|Mutalist Cernos}}||Charged Attack||Projectile||410||205||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Mutalist Cernos}}||Uncharged AoE Toxin Cloud||AoE||5||5||100%||Multiplying
+|-
+|{{Weapon|Mutalist Cernos}}||Charged AoE Toxin Cloud||AoE||5||205||4100%||Adding||{{M|Galvanized Aptitude}} uses the 205 base damage of the Uncharged Attack
+|-
+|{{Weapon|Cinta}}||Uncharged Attack||Projectile||450||450||100%||Multiplying
+|-
+|{{Weapon|Cinta}}||Charged Attack||Projectile||800||800||100%||Multiplying
+|-
+|{{Weapon|Cinta}}||Perfect Shot||Projectile||600||600||100%||Multiplying
+|-
+|{{Weapon|Daikyu Prime}}||Charged Attack||Projectile||750||375||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Drakgoon}}||Charged Attack||Projectile||700||400||57%||Adding
+|-
+|{{Weapon|Kuva Drakgoon}}||Charged Attack||Projectile||460||230||50%||Adding||CO-bonus only applies to base (uncharged) damage; uses bows mechanics; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Dread}}||Charged Attack||Projectile||336||168||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Dread}}||Incarnon Mode||Projectile||400||400||100%||Multiplying
+|-
+|{{Weapon|Evensong}}||Charged Attack||Projectile||500||325||65%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Evensong}}||Charged Radial Attack||AoE||150||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Exergis}}||Normal Attack||Projectile||1620||1620||100%||Multiplying
+|-
+|{{Weapon|Felarx}}||Normal Attack||Projectile||760||760||100%||Multiplying
+|-
+|{{Weapon|Felarx}}||Incarnon Mode||Projectile||600||600||100%||Multiplying
+|-
+|{{Weapon|Ferrox}}||Hitscan AoE Direct||AoE||100||350||350%||Adding||Radial hit only receives CO bonus on target directly hit by laser. CO-bonus scales off hitscan damage. AoE does not scale off multishot.
+|-
+|{{Weapon|Tenet Ferrox}}||Hitscan AoE Direct||AoE||60||200||333%||Adding||Radial hit only receives CO bonus on target directly hit by laser. CO-bonus scales off hitscan damage. AoE does not scale off multishot.
+|-
+|{{Weapon|Fulmin}}||Semi-Mode||Projectile||500||500||100%||Multiplying
+|-
+|{{Weapon|Glaxion Vandal}}||Normal Attack Hitscan AoE||AoE||29||29||100%||Adding||CO-bonus scales off hitscan damage. AoE does not scale off multishot.
+|-
+|{{Weapon|Harpak}}||Alt-fire||Projectile||100||100||100%||Multiplying
+|-
+|{{Weapon|Hema}}||Normal Attack||Projectile||47||47||100%||Multiplying
+|-
+|{{Weapon|Javlok}}||Main-fire||Projectile||160||160||100%||Multiplying
+|-
+|{{Weapon|Latron}}/{{Weapon|Latron Prime}}||Incarnon Mode||Projectile||50||50||100%||Multiplying||CO does not apply for Latron's AoE in any way
+|-
+|{{Weapon|Lanka}}||Charged Attack||Projectile||525||200||38%||Adding||CO-bonus only applies to base (partially charged) damage
+|-
+|{{Weapon|Miter}}||Charged Attack||Projectile||500||200||40%||Adding||CO-bonus only applies to base (partially charged) damage; uses bows mechanics; has innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Miter}}||Incarnon Mode||Projectile||60||60||100%||Multiplying
+|-
+|{{Weapon|Nataruk}}||Charged Attack||Projectile||900||900||100%||Multiplying
+|-
+|{{Weapon|Nataruk}}||Perfect Shot||Projectile||900||900||100%||Multiplying
+|-
+|{{Weapon|Nunchasa}}||Alternate Fire||Projectile||1000||1000||100%||Multiplying
+|-
+|{{Weapon|Opticor}}||Charged Hitscan Direct Hit Radial Attack||AoE||400||1000||250%||Adding||Radial hit only receives CO bonus on target directly hit by laser. CO-bonus scales off hitscan damage. AoE does not scale off multishot.
+|-
+|{{Weapon|Opticor Vandal}}||Charged Hitscan Radial Attack||AoE||200||400||200%||Adding||Radial hit only receives CO bonus on target directly hit by laser. CO-bonus scales off hitscan damage. AoE does not scale off multishot.
+|-
+|{{Weapon|Paracyst}}||Alt-fire||Projectile||15||15||100%||Multiplying
+|-
+|{{Weapon|Paris}}||Charged Attack||Projectile||320||160||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Paris Prime}}||Charged Attack||Projectile||360||180||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Mk1-Paris}}||Charged Attack||Projectile||230||115||50%||Adding||CO-bonus only applies to base (uncharged) damage; bows have innate 2x damage multiplier when fully charged
+|-
+|{{Weapon|Paris}}/{{Weapon|Paris Prime}}||Incarnon Mode||Projectile||520||520||100%||Multiplying
+|-
+|{{Weapon|Phantasma}}||Alt-fire Child Bomb||Projectile||3||3||100%||Multiplying
+|-
+|{{Weapon|Phantasma Prime}}||Alt-fire Child Bomb||Projectile||3||3||100%||Multiplying
+|-
+|{{Weapon|Proboscis Cernos}}||Radial attack||AOE||1003||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Proboscis Cernos}}||Tendrils||AOE||90||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Quellor}}||Alt-fire||Projectile||1400||1400||100%||Multiplying
+|-
+|{{Weapon|Scourge}}||Throw||Projectile||150||150||100%||Multiplying
+|-
+|{{Weapon|Scourge Prime}}||Throw||Projectile||200||200||100%||Multiplying
+|-
+|{{Weapon|Shedu}}||Normal Attack||Projectile||71||71||100%||Multiplying
+|-
+|{{Weapon|Sporelacer (Primary)}} (Tremor)||Normal Attack||Projectile||127||127||100%||Multiplying
+|-
+|{{Weapon|Stahlta}}||Main-fire||Projectile||52||52||100%||Multiplying
+|-
+|{{Weapon|Stahlta}}||Alt-fire||Projectile||600||600||100%||Multiplying
+|-
+|{{Weapon|Steflos}}||Normal Attack||Projectile||320||320||100%||Multiplying
+|-
+|{{Weapon|Tenet Envoy}}||Normal Attack||Projectile||100||100||100%||Multiplying
+|-
+|{{Weapon|Tombfinger (Primary)}} (Brash)||Normal Attack||Projectile||38||38||100%||Multiplying
+|-
+|{{Weapon|Torid}}||Main-fire||Projectile||100||100||100%||Multiplying
+|-
+|{{Weapon|Torid}}||Toxin AoE Cloud||AoE||40||40||100%||Multiplying
+|-
+|{{Weapon|Trumna}}||Main-fire Hitscan Radial Attack||AoE||50||82||164%||Adding||Radial hit only receives CO bonus on target directly hit by laser. CO-bonus scales off hitscan damage. AoE does not scale off multishot.
+|-
+|{{Weapon|Trumna}}||Alt-fire||Projectile||100||100||100%||Multiplying
+|-
+|{{Weapon|Vadarya Prime}}||Primary Fire Lightning Strikes||AoE||400||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Zarr}}||Cannon Child Bomb||Projectile||15||25||167%||Adding
+|-
+|{{Weapon|Kuva Zarr}}||Cannon Child Bomb||Projectile||15||50||333%||Adding
+|-
+|{{Weapon|Zenith}}||Alt-fire Disk Bonk||Projectile||10||10||100%||Multiplying
+|-
+|{{Weapon|Zhuge Prime}}||Arrow Direct Hit||Projectile||50||50||100%||Adding||Some damage is lost due to damage quantization, so the "real" in-game value is 48.4375 for both the base damage and aptitude damage
+|-
+|{{Weapon|Zhuge Prime}}||Arrow Embedded Explosion||AOE||40||0||0%||N/A||Does not apply
+|-
+|}
+
+=== Secondaries ===
+{{CleanUp|We are also showing attacks with intended behavior (100%, Adding). Do we want to list discrepant weapons and not solely on attacks? Some weapons have CO-bonuses work on their normal attack but not their alt-fires.}}
+Listing <u>only discrepant attacks</u>. Anything '''not''' listed should be assumed to be '''Additive''' with '''+100%''' bonus ("intended" behavior), keeping in mind the omitted effects in the [[Condition Overload (Mechanic)#Math|math section]] will include all those ordinary attacks.
+
+{| class="wikitable sortable"
+|-
+!Weapon!!Attack Name!!Projectile Type!!Base Attack Damage!!CO Damage Bonus at +100%!!CO Damage Bonus Relative To Base Damage!!Math/Behavior Type!!Notes
+|-
+|{{Weapon|Acrid}}||	Normal Attack||Projectile||43||43||100%||Adding
+|-
+|{{Weapon|Akarius Prime}}||Rocket Impact||Projectile||68||68||100%||Multiplying
+|-
+|{{Weapon|Akarius Prime}}||Rocket Detonation||AoE||509||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Atomos}}||Incarnon Mode||Projectile||100 or 124 (with Evolution II)||100||100% or 81%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Aegrit}}||Direct Hit||Projectile||9||9||100%||Multiplying
+|-
+|{{Weapon|Angstrum}}/{{Weapon|Prisma Angstrum}}||Incarnon Mode||Projectile||30||30||100%||Multiplying
+|-
+|{{Weapon|Azima}}||Alt-Fire Turret Bullets||Hit-Scan||20||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Balefire Charger}}||Uncharged Shot||Projectile||500||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Balefire Charger}}||Charged Shot||Projectile||1000||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Ballistica}}||Charged Shot||Projectile||100||25||25%||Adding||Uses uncharged damage value
+|-
+|{{Weapon|Ballistica Prime}}||Charged Shot||Projectile||76||38||50%||Adding||Uses uncharged damage value
+|-
+|{{Weapon|Ballistica Prime}}||Incarnon Mode||Projectile||833||833||100%||Multiplying
+|-
+|{{Weapon|Rakta Ballistica}}||Charged Shot||Projectile||300||75||25%||Adding||Uses uncharged damage value
+|-
+|{{Weapon|Bronco Prime}}||Incarnon Mode||Projectile||238 or 448 (with Evolution II Perk 1)||238||100% or 53%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Castanas}}||Normal Attack||AoE||160||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Sancti Castanas}}||Mid-Flight Detonation||AoE||300||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Sancti Castanas}}||Embedded Detonation||AoE||300||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Catabolyst}}||Partial Reload Impact||Projectile||11||11||100%||Multiplying
+|-
+|{{Weapon|Catabolyst}}||Reload From Empty Impact||Projectile||11||11||100%||Multiplying
+|-
+|{{Weapon|Catchmoon (Secondary)}}||Normal Attack||Projectile||256||256||100%||Multiplying
+|-
+|{{Weapon|Cestra}}||Normal Attack||Projectile||26 or 36 (with Evolution II)||26||100% or 72.2%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Cestra}}||Incarnon Mode||Projectile||50 or 60 (with Evolution II)||50||100% or 83.3%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Cyanex}}||Projectile Impact||Projectile||50||50||100%||Multiplying
+|-
+|{{Weapon|Cyanex}}||Burst Mode||Projectile||72||72||100%||Multiplying
+|-
+|{{Weapon|Despair}}||Incarnon Mode||Projectile||60 or 120 (with Evolution II Perk 2)||60||100% or 50%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Mara Detron}}||Normal Attack||Projectile||40||40||100%||Adding||
+|-
+|{{Weapon|Tenet Detron}}||Normal Attack||Projectile||26||26||100%||Adding||Only 65% effective on projectiles created by [[Multishot]].
+|-
+|{{Weapon|Tenet Detron}}||Burst Shot||Projectile||26||26||100%||Adding|| 
+|-
+|{{Weapon|Dual Toxocyst}}||Incarnon Mode||Projectile||75 or 135 (with Evolution II Perk 1)||75||100% or 56%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Epitaph}}||Charged Shot||Projectile||300||300||100%||Multiplying
+|-
+|{{Weapon|Epitaph}}||Uncharged Direct Hit||Projectile||100||100||100%||Multiplying
+|-
+|{{Weapon|Furis}}||Incarnon Mode||Projectile||100 or 128 (with Evolution II)||100||100% or 78%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Kompressa Prime}}||Radial Attack||AoE||184||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Kulstar}}||Cluster Bombs||Projectile||75||200||257%||Adding||CO-bonus uses parent projectile damage value
+|-
+|{{Weapon|Kunai}}||Normal Attack||Projectile||46||46||100%||Adding
+|-
+|{{Weapon|Kunai}}||Incarnon Mode||Projectile||40||40||100%||Multiplying||CO-bonus DOES use base damage increase Evolution; does not factor +200% (3x) bonus vs <50% hp targets, effectively additive with it
+|-
+|{{Weapon|Mk1-Kunai}}||Incarnon Mode||Projectile||24||24||100%||Multiplying||CO-bonus DOES use base damage increase Evolution; does not factor +200% (3x) bonus vs <50% hp targets, effectively additive with it
+|-
+|{{Weapon|Laetum}}||Normal Attack||Projectile||160||160||100%||Adding||CO-bonus multiplies properly with Devouring Attrition perk
+|-
+|{{Weapon|Laetum}}||Incarnon Form||Projectile||100||100||100%||Adding||CO-bonus multiplies properly with Devouring Attrition perk
+|-
+|{{Weapon|Lato Vandal}}||Incarnon Mode||Projectile||152 or 174 (with Evolution II Perk 1)||152||100% or 87%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Lex Prime}}||Incarnon Mode||Projectile||1200 or 1220 (with Evolution II)||1200||100% or 98%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Tenet Plinx}}||Alt Fire Impact||Projectile||1000||1000||100%||Multiplying||Scales properly with magazine size
+|-
+|{{Weapon|Pox}}||DoT Cloud||AoE||20||50||250%||Adding||CO-bonus uses to Spore Impact damage value. Damage recalculates on every tick
+|-
+|{{Weapon|Seer}}||Normal Attack||Projectile||101.01||101.01||100%||Multiplying
+|-
+|{{Weapon|Kuva Seer}}||Projectile Impact||Projectile||131||131||100%||Multiplying
+|-
+|{{Weapon|Sepulcrum}}||Primary-Fire||Projectile||48||48||100%||Multiplying
+|-
+|{{Weapon|Sepulcrum}}||Lock-On Mode||Projectile||96||96||100%||Multiplying
+|-
+|{{Weapon|Sonicor}}||Projectile Impact||Projectile||150||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Sporelacer (Secondary)}}||Normal Attack||Projectile||90.5||57||63%||Adding||Some reason CO-bonus uses 57 damage value for any configuration
+|-
+|{{Weapon|Sporelacer (Secondary)}}||Bomblet Impact||Projectile||9||57||633%||Adding||CO-bonus uses parent projectile damage value
+|-
+|{{Weapon|Stug}}||Blob Impact||Projectile||4||0||0%||N/A||Does not apply
+|-
+|{{Weapon|Stug}}||Incarnon Form||Projectile||50||0||0%||Does not apply||
+|-
+|{{Weapon|Scyotid}}||Alt-Fire Grab||Projectile||320||0||0%||Does not apply||
+|-
+|{{Weapon|Sonicor}}||Projectile Wave||Projectile||150||0||0%||Does not apply||
+|-
+|{{Weapon|Tenet Diplos}}||Lock-on Mode||Projectile||28||28||100%||Multiplying
+|-
+|{{Weapon|Tenet Spirex}}||Slug Impact||Projectile||120||120||100%||Multiplying
+|-
+|{{Weapon|Tombfinger (Secondary)}}||Normal Attack||Projectile||18||18||100%||Multiplying
+|-
+|{{Weapon|Tysis}}||Normal Attack||Projectile||49||49||100%||Adding||Does not affect DoT
+|-
+|{{Weapon|Vasto Prime}}||Incarnon Mode||Projectile||420 or 564 (with Evolution II Perk 2)||420||100% or 74%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Zakti}}/{{Weapon|Zakti Prime}}||Normal Attack||Projectile||30||30||100%||Multiplying
+|-
+|{{Weapon|Zylok}}/{{Weapon|Zylok Prime}}||Incarnon Form Radial Attack||AoE||776||700||90%||Adding||Listed Values for Zylok Prime with inactive Precision's Payoff. Radial hit only receives CO bonus on target directly hit by bullet. AoE does not scale off multishot.
+|-
+|{{Weapon|Zylok Prime}}||Incarnon Mode||Projectile||500 or 530 (with Evolution II)||500||100% or 94%||Adding||CO-bonus does not use base damage increase Evolution
+|-
+|{{Weapon|Zymos}}||Homing Spore Contact||Projectile||23||23||100%||Multiplying
+|-
+|}
+
+===Melees===
+Listing <u>only discrepant attacks</u>. Anything '''not''' listed should be assumed to be '''Additive''' with '''+100%''' bonus ("intended" behavior), keeping in mind the omitted effects in the [[Condition Overload (Mechanic)#Math|math section]] will include all those ordinary attacks.
+
+{| class="wikitable sortable" width="100%"
+|-
+!Weapon!!Attack Name!!Attack Damage!!CO Damage Bonus at +100%!!CO Damage Bonus Relative To Base Damage!!Math/Behavior Type!!Notes
+|-
+|{{Weapon|Argo & Vel}}||Thrown Glaive||600||200||33%||Adding||Also does not factor [[Melee Combo]] multiplier.
+|-
+|{{Weapon|Corufell}}||Heavy Attack Projectile||1200||1200||100%||Multiplying||
+|-
+|{{Weapon|Destreza}}/{{Weapon|Destreza Prime}}||Spectral Rapiers||765||1530||200%||Adding||Values listed for Prime.
+|-
+|{{Weapon|Edun}}||Heavy Attack Projectile||480||120||25%||Adding||
+|-
+|[[Exodia Contagion]]||Aerial Projectile||2x Zaw Base||2x Zaw Base||100%||Multiplying||Does not apply to Embed damage or resultant AoE.
+|-
+|{{Weapon|Innodem}}||Aerial Incarnon Projectile||360||720||200%||Adding||
+|-
+|{{Weapon|Nepheri}}||Neutral Combo Fireball||131||131||100%||Multiplying||
+|-
+|{{Weapon|Arum Spinosa}}||Heavy Attack 1 Daggers||175||35||20%||Adding||Also does not factor [[Melee Combo]] multiplier.
+|-
+|{{Weapon|Arum Spinosa}}||Heavy Attack 2 Daggers||175||18||10%||Adding||Also does not factor [[Melee Combo]] multiplier.
+|-
+|{{Weapon|Quassus Prime}}||Heavy Attack 1 Daggers||190||76||40%||Adding||Also does not factor [[Melee Combo]] multiplier.
+|-
+|{{Weapon|Quassus Prime}}||Heavy Attack 2 Daggers||380||76||20%||Adding||Also does not factor [[Melee Combo]] multiplier.
+|-
+|{{Weapon|Stropha}}||Heavy Attack Projectile||2800||700||25%||Adding||
+|-
+|{{Weapon|Syam}}||Heavy Attack Wave 1||500||500||100%||Multiplying||
+|-
+|{{Weapon|Syam}}||Heavy Attack Wave 2||1500||1500||100%||Multiplying||
+|-
+|{{Weapon|Tenet Agendus}}
+|Heavy Attack Wave 1
+|2800
+|560
+|20%
+|Multiplying
+|
+|-
+|{{Weapon|Tenet Agendus}}
+|Heavy Attack Wave 2
+|3600
+|720
+|20%
+|Multiplying
+|
+|-
+|{{Weapon|Tenet Grigori}}||Energy Disk||4080||4080||100%||Multiplying||The Energy Disk's damage '''does not''' increase with melee base damage sources such as {{M|Pressure Point}} and {{Arcane|Arcane Fury}}. However, [[Universal_Weapon_Bonuses|universal weapon damage bonuses]] such as {{Arcane|Arcane Arachne}}, {{A|Symphony of Mercy|Deathbringer}}, etc., do increase the Energy Disk's damage and are affected by CO multiplicatively.||
+|-
+|{{Weapon|Verdilac}}||Energy Wave||213||213||100%||Multiplying||
+|-
+|{{Weapon|Zenistar}}||Heavy Disc||75||780||1040%||Adding||
+|-
+|}
+
+===Stances===
+*"100%" means that [[Stance]] multipliers for all hits in that combo work as expected with CO-bonuses.
+*Less than 100% means CO-bonuses perform worse than expected.
+*Greater than 100% means CO-bonuses perform better than expected.
+*Any blank cells means that those combos are untested or those combos do not exist for that stance.<ref>Sourced from "Melee Stances sheet v2" on https://docs.google.com/spreadsheets/d/1FJ_RIEG2mlFGBQ__szeGoFM6azj23n0CqelBFO_MGGw/</ref>
+*Stanceless combos not included.
+
+{| class="wikitable sortable"
+! Class !! Stance !! Neutral !! Forward !! Forward Block !! Block !! Slide Attack !! Ground Slam Strike !! Ground Finisher !! Wall Attack !! Air Attack !! Heavy Attack
+|-
+| [[Assault Saw]] || {{M|Butcher's Revelry}} || 100% || 100% || 50% || 56% || 100% || 100% || 100% || || 100% || 100%
+|-
+| [[Blade and Whip]] || {{M|Defiled Snapdragon}} || 87% || 85% || 75% || 100% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| [[Claws (Melee)|Claws]] || {{M|Vermillion Storm}} || 62% || 78% || 128% || 67% || 100% || 100% || 44% || 100% || 100% || 100%
+|-
+| Claws || {{M|Four Riders}} || 100% || 100% || 53% || 63% || 100% || || || || || 
+|-
+| Claws || {{M|Malicious Raptor}} || 58% || 78% || 58% || 58% || || || || || || 
+|-
+| [[Dagger]] || {{M|Homing Fang}} || 53% || 100% || 75% || || 100% || 100% || 63% || 100% || 100% || 40%
+|-
+| Dagger || {{M|Pointed Wind}} || 50% || 100% || || || || || || || || 
+|-
+| Dagger || {{M|Stinging Thorn}} || 59% || 75% || 73% || 75% || || || || || || 
+|-
+| [[Dual Daggers]] || {{M|Gnashing Payara}} || 36% || 80% || 73% || || 100% || 100% || 100% || 100% || 100% || 40%
+|-
+| Dual Daggers || {{M|Sinking Talon}} || 100% || || 75% || || || || || || || 
+|-
+| Dual Daggers || {{M|Spinning Needle}} || 100% || 92% || 93% || 43% || || || || || || 
+|-
+| [[Dual Nikanas]] || {{M|Mountain's Edge}} || 100% || 100% || 100% || || 100% || 100% || 100% || 100% || 63% || 233%
+|-
+| [[Dual Swords]] || {{M|Crossing Snakes}} || 122% || 78% || 60% || 75% || 100% || 100% || 100% || 100% || 63% || 100%
+|-
+| Dual Swords || {{M|Carving Mantis}} || 95% || 100% || 50% || 83% || || || || || || 
+|-
+| Dual Swords || {{M|Swirling Tiger}} || 82% || 89% || 75% || || || || || || || 
+|-
+| [[Fists]] || {{M|Fracturing Wind}} || 67% || 100% || 75% || 25% || 100% || 100% || 44% || 100% || 100% || 100%
+|-
+| Fists || {{M|Seismic Palm}} || 83% || 100% || 80% || 42% || || || || || || 
+|-
+| Fists || {{M|Gaia's Tragedy}} || 89% || 100% || 100% || 93% || || || || || || 
+|-
+| [[Glaive (Weapon Type)|Glaive]] || {{M|Astral Twilight}} || 77% || 100% || 83% || 63% || 100% || 100% || 100% || 100% || 100% || 
+|-
+| Glaive || {{M|Gleaming Talon}} || 62% || 100% || 77% || 100% || || || || || || 
+|-
+| [[Gunblade]] || {{M|High Noon}} || 100% || 100% || 100% || 100% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Gunblade || {{M|Bullet Dance}} || 100% || 100% || 100% || 100% || || || || || || 
+|-
+| [[Hammer]] || {{M|Crushing Ruin}} || 79% || 100% || 88% || 33% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Hammer || {{M|Shattering Storm}} || 57% || 100% || 33% || 68% || || || || || || 
+|-
+| [[Heavy Blade]] || {{M|Cleaving Whirlwind}} || 100% || 67% || 60% || 100% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Heavy Blade || {{M|Tempo Royale}} || 63% || 100% || 50% || 100% || || || || || || 
+|-
+| Heavy Blade || {{M|Rending Crane}} || 100% || 90% || 40% || 100% || || || || || || 
+|-
+| [[Heavy Scythe]] || {{M|Galeforce Dawn}} || 100% || 100% || 62% || 100% || 100% || 100% || 100% || 100% || 100% || 167%
+|-
+| [[Machete (Weapon Type)|Machete]] || {{M|Sundering Weave}} || 100% || 100% || 88% || 100% || 100% || 100% || 100% || 100% || 100% || 109%
+|-
+| Machete || {{M|Cyclone Kraken}} || 71% || 100% || 45% || 82% || || || || || || 
+|-
+| [[Nikana (Weapon Type)|Nikana]] || {{M|Decisive Judgement}} || 100% || 100% || 65% || 100% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Nikana || {{M|Blind Justice}} || 58% || 69% || 71% || 71% || 100% || || || || || 
+|-
+| Nikana || {{M|Tranquil Cleave}} || 76% || 100% || 100% || 100% || || || || || || 
+|-
+| [[Nunchaku]] || {{M|Atlantis Vulcan}} || 100% || 100% || 100% || 94% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| [[Polearm]] || {{M|Twirling Spire}} || 57% || 82% || 100% || 67% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Polearm || {{M|Bleeding Willow}} || || 80% || 56% || || || || || || || 
+|-
+| Polearm || {{M|Shimmering Blight}} || 80% || || 69% || || || || || || || 
+|-
+| [[Rapier]] || {{M|Vulpine Mask}} || 88% || 100% || 79% || 67% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| [[Scythe]] || {{M|Reaping Spiral}} || 59% || 100% || 67% || || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Scythe || {{M|Stalking Fan}} || 60% || 100% || 70% || || || || || || || 
+|-
+| [[Sparring]] || {{M|Grim Fury}} || 62% || 100% || 100% || || 100% || 100% || 44% || 100% || 100% || 100%
+|-
+| Sparring || {{M|Brutal Tide}} || 107% || || 47% || || || || || || || 
+|-
+| [[Staff]] || {{M|Clashing Forest}} || 74% || 80% || 100% || || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Staff || {{M|Flailing Branch}} || 67% || 60% || 50% || || || || || || || 
+|-
+| [[Sword]] || {{M|Crimson Dervish}} || 64% || 83% || 38% || || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Sword || {{M|Iron Phoenix}} || 100% || 100% || 75% || || || || || || || 
+|-
+| Sword || {{M|Swooping Falcon}} || 58% || 100% || 100% || 83% || || || || || || 
+|-
+| Sword || {{M|Vengeful Revenant}} || 100% || 100% || 73% || 70% || || || || || || 
+|-
+| [[Sword and Shield]] || {{M|Final Harbinger}} || 95% || 93% || 68% || 90% || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Sword and Shield || {{M|Eleventh Storm}} || 84% || 100% || 88% || 100% || || || || || ||
+|-
+| [[Tonfa]] || {{M|Gemini Cross}} || 93% || 100% || 77% || 69% || 100% || 100% || 100% || 100% || 100% || 105%
+|-
+| Tonfa || {{M|Sovereign Outcast}} || 95% || 100% || 100% || 67% || || || || || || 
+|-
+| [[Two-Handed Nikana]] || {{M|Wise Razor}} || 71% || 100% || 71% || || 100% || 100% || 100% || 100% || 100% || 78%
+|-
+| [[Warfan]] || {{M|Slicing Feathers}} || 89% || 100% || 78% || 100% || 100% || 100% || 100% || 100% || 100% || 90%
+|-
+| Warfan || {{M|Votive Onslaught}} || 70% || 100% || 74% || 75% || || || || || || 
+|-
+| [[Whip]] || {{M|Coiling Viper}} || || 110% || 100% || || 100% || 100% || 100% || 100% || 100% || 100%
+|-
+| Whip || {{M|Burning Wasp}} || 100% || 80% || 100% || || || || || || || 
+|-
+| {{Weapon|Desert Wind}} || {{M|Serene Storm}} || 60% || 50% || 64% || 69% || 86% || 50% || || || || 
+|-
+| {{Weapon|Diwata}} || {{M|Razorwing}} || 100% || || || || || || || || || 
+|-
+| {{Weapon|Exalted Blade}} || {{M|Exalted Blade}} || 128% || 125% || 129% || 130% || 122% || || || || || 
+|-
+| {{Weapon|Iron Staff}} || {{M|Primal Fury}} || 88% || 100% || 100% || 81% || || || || || 100% || 
+|-
+| {{Weapon|Shadow Claws}} || {{M|Ravenous Wraith}} || 80% || 100% || 100% || 65% || 100% || || || 100% || 100% || 
+|-
+| {{Weapon|Valkyr Talons}} || {{M|Hysteria}} || 100% || 100% || 93% || 90% || 100% || || || || || 
+|-
+|}
+
+=== Archguns ===
+Listing <u>only discrepant attacks</u>. Anything '''not''' listed should be assumed to be '''Additive''' with '''+100%''' bonus ("intended" behavior), keeping in mind the omitted effects in the [[Condition Overload (Mechanic)#Math|math section]] will include all those ordinary attacks. As of {{ver|43}}, the only 2 ways to apply CO bonuses to Archguns is {{Arcane|Secondary Shiver}} and {{Decree|Shattering Frost}} on {{WF|Koumei}}.
+
+{| class="wikitable sortable" width="100%"
+|-
+!Weapon!!Attack Name!!Projectile Type!!CO Damage Bonus Relative To Base Damage!!Math/Behavior Type!!Notes
+|-
+|{{Weapon|Arbucep}}||Direct Hit||Projectile||100%||Multiplying||Consistent on all 6 projectiles. Deals 130 instead of 32. Does not apply to the 228 damage AoE
+|-
+|{{Weapon|Kuva Ayanga}}||Direct Hit||Projectile||100%||Multiplying||
+|-
+|{{Weapon|Corvas|Corvas (Atomsphere)}}||Normal attack||Hitscan||100%||Adding||Respects Charge damage increase, rather than being ignored like on [[Bows]].
+|-
+|{{Weapon|Corvas Prime}}||Uncharged Attack||Projectile||100%||Multiplying||
+|-
+|{{Weapon|Corvas Prime}}||Charged Attack||Projectile||100%||Multiplying||
+|-
+|{{Weapon|Fluctus}}||Normal attack||Projectile||100%||Adding||
+|-
+|{{Weapon|Grattler}}||Normal attack||Projectile||100%||Multiplying||
+|-
+|{{Weapon|Larkspur Prime}}||Alt-fire||Projectile||100%||Multiplying||
+|-
+|{{Weapon|Mandonel}}||Uncharged Attack||Projectile||100%||Multiplying||
+|-
+|{{Weapon|Mandonel}}||Charged attack||Hitscan||100%||Adding||
+|-
+|{{Weapon|Mausolon}}||Main-fire Radial Attack||AoE||250%||Adding||Not affected by multishot. Based on hitscan damage. Radial hit only recieves CO bonus on target struck by laser.
+|-
+|{{Weapon|Mausolon}}||Alt-fire Radial Attack||AoE||33%||Adding||Actual damage is 5x higher than UI displays. Not affected by multishot. Based on hitscan damage. Radial hit only recieves CO bonus on target struck by laser.
+|-
+|{{Weapon|Velocitus}}||Uncharged attack||Projectile||100%||Multiplying||
+|-
+|{{Weapon|Velocitus}}||Charged attack||Projectile||100%||Multiplying||
+|}
+
+=== Exalted / Pseudo-Exalted Weapons ===
+Listing <u>only discrepant attacks</u>. Anything '''not''' listed should be assumed to be '''Additive''' with '''+100%''' bonus ("intended" behavior), keeping in mind the omitted effects in the [[Condition Overload (Mechanic)#Math|math section]] will include all those ordinary attacks.
+
+{| class="wikitable sortable" width="100%"
+!Weapon!!Attack Name!!Attack Type!!Attack Damage!!CO Damage Bonus at +100%!!CO Damage Bonus Relative To Base Damage!!Math/Behavior Type!!Notes
+|-
+|{{Weapon|Noctua}}||{{A|Noctua}} Primary Fire||Projectile||250||200||80%||Adding||CO scaling value of 200 does not scale with [[Ability Strength]].
+|-
+|{{Weapon|Noctua}}||{{A|Noctua}} Alt Fire||Projectile||2750||2500||91%||Adding||CO scaling value of 2500 does not scale with [[Ability Strength]].
+|-
+|{{Weapon|Noctua}}||{{A|Final Verse}} Wordwarden||Projectile||125||200||160%||Adding||CO scaling value of 200 does not scale with [[Ability Strength]].
+|-
+|{{Weapon|Artemis Bow}}||Uncharged/Charged Attack||Projectile||1680||525||31.25%||Adding||Scales off 75 base damage per projectile instead of 240, unaffected by Power Strength. Does not work while {{M|Concentrated Arrow}} is equipped.
+|-
+|{{Weapon|Exalted Umbra Blade}}||Light Waves||Projectile||250||500||200%||Adding||
+|-
+|{{Weapon|Exalted Umbra Blade}}||Heavy Waves||Projectile||250||250||100%||Multiplying||
+|-
+|}
+
+=== Robotic ===
+Listing <u>only discrepant attacks</u>. Anything '''not''' listed should be assumed to be '''Additive''' with '''+100%''' bonus ("intended" behavior), keeping in mind the omitted effects in the [[Condition Overload (Mechanic)#Math|math section]] will include all those ordinary attacks.
+
+{| class="wikitable sortable" width="100%"
+! Weapon !! Attack Name !! Attack Type !! Attack Damage !! CO Damage Bonus at +100% !! CO Damage Bonus Relative To Base Damage !! Math/Behavior Type !! Notes
+|-
+| {{Weapon|Burst Laser}}/{{Weapon|Prisma Burst Laser}}/{{Weapon|Burst Laser Prime}}|| Normal Attack || Projectile || 25 || 25 || 100% || Multiplying || Listed Values for Burst Laser Prime.
+|-
+| {{Weapon|Cryotra}}|| Normal Attack || Projectile || 10 || 10 || 100% || Multiplying || UI damage number combines direct hit (10 damage) and lingering cloud AoE (20 damage). As usual, CO does not apply to the AoE.
+|-
+| {{Weapon|Helstrum}}|| Normal Attack || Projectile || 9 || 9 || 100% || Multiplying ||
+|-
+| {{Weapon|Prime Laser Rifle}} || Normal Attack || Projectile || 55 || 55 || 100% || Multiplying ||
+|-
+| {{Weapon|Laser Rifle}} || Normal Attack || Projectile || 45 || 45 || 100% || Multiplying ||
+|-
+| {{Weapon|Multron}} || Normal Attack || Projectile || 10 || 10 || 100% || Multiplying ||
+|-
+| {{Weapon|Stinger}} || Normal Attack || Projectile || 15 || 15 || 100% || Adding || Does not apply to embedded DoT.
+|-
+| {{Weapon|Vulcax}} || Normal Attack + AoE || Hit-Scan || 500 + 100 || 1000 || 167% || Adding ||
+|-
+| {{Weapon|Vulklok}} || Normal Attack || Projectile || 175 || 175 || 100% || Multiplying ||
+|-
+|}
+
+=== Amps ===
+Listing <u>only discrepant attacks</u>. Anything '''not''' listed should be assumed to be '''Additive''' with '''+100%''' bonus ("intended" behavior), keeping in mind the omitted effects in the [[Condition Overload (Mechanic)#Math|math section]] will include all those ordinary attacks.
+
+{| class="wikitable sortable" width="100%"
+! Weapon !! Attack Name !! Attack Type !! Attack Damage !! CO Damage Bonus at +100% !! CO Damage Bonus Relative To Base Damage !! Math/Behavior Type !! Notes
+|-
+| {{Weapon|Shwaak Prism}} || Normal Attack || Projectile || 3500 || 3500 || 100% || Multiplying ||
+|-
+| {{Weapon|Phahd Scaffold}} || Normal Attack || Projectile || 3000 || 3000 || 100% || Multiplying || 
+|-
+| {{Weapon|Shraksun Scaffold}} || Normal Attack || Projectile || 3000 || 3000 || 100% || Multiplying ||
+|-
+|}
+==Patch History==
+Unofficial / wiki-clarified notes written in (round brackets).
+{{Scrollbox/Article|
+{{ver|36}}
+*Fixed Ivara’s Artemis Bow not benefitting from the Galvanized Aptitude Mod.
+
+{{ver|31.5}}, {{ver|31.2}}, 
+*(Fixed the innate damage bonus of Kuva/Tenet projectile weapons not applying the bonus damage from [[GunCO|CO]]).
+**(This interaction was never broken on multiplicative cases, only the additive recalculation.)
+
+{{ver|31.1.7}}
+*(Fixed progenitor bonus on Lich Hitscan and Melee not applying to [[GunCO|CO]]).
+
+{{ver|31.1.6}}
+*(Fixed Multishot on weapons multiplying bonus from [[GunCO|CO]] by each pellet).
+
+{{ver|31.1}}
+*(Fixed [[GunCO|CO]] on many projectile attacks. Previously, many projectiles had a default CO damage of 10 instead of using the full projectile damage. Most cases were fixed, but multi-stage damage and charged attacks were not).
+**''A previous change had them operate relative to "base damage" but the code was incorrectly getting base damage from the impact behavior rather than the projectile. This problem was pervasive and there are hundreds of weapons in our game! Please be patient and send updated reports if something slipped through our net.''
+
+{{ver|30.9}}
+*Changed the description of Galvanized Aptitude to better reflect its current function [which clarifies that area of effect damage is not included]
+**... BUT WAIT! We want to explain why because it’s very important to us that everyone understands where we are coming from with our current design mindset. AoE Weapons are the dominant ones by every usage metric. We see this day after day. Having this bonus apply to the AoE instance felt dangerously close to a myopic choice concerning powering up player Arsenals that simply do not need it. This mod never worked on AoE, and the description now explains that to avoid confusion. We understand those seeking a different outcome will disagree with this choice, but ultimately we are not willing to further bolster AoE at this time. This is due to the increasing difficulty in creating content that serves to challenge the Tenno.
+**([[GunCO|CO]] Never applied to explosions, but a handful of explosive weapons were exceedingly effective and almost exclusively used in missions at the time, so the choice was made to keep [[GunCO|CO]] as a bonus exclusive to single-target attacks to encourage their usage.)
+
+{{ver|30.5.5}}
+*Fixed Galvanized Mods offering increased damage from Status on target not reliably working on numerous weapons.
+**(Fixed a handful of reported cases).
+
+{{ver|30.5}}
+*Galvanized Aptitude, Galvanized Savvy, and Galvanized Shot Introduced (Making [[GunCO|CO]] available to Guns for the first time).
+
+{{ver|26.0}}
+*Condition Overload mod Reworked. (Did not apply to explosions, such as Glaives).
+
+{{ver|19.2}}
+*Condition Overload mod introduced, the first occurrence of CO-bonuses.
+}}
+
+==References==
+{{Reflist}}
+
+==External Links==
+*https://www.youtube.com/watch?v=FK_bTRkfB9s - "Secondary Shiver + GunCO + Hornet Strike Interactions" by Jazzimus (2024-01-22)
+*https://www.youtube.com/watch?v=ghQy3-dMT-g - "Longbow Sharpshot + GunCO + Serration Interactions" by Jazzimus (2024-01-03)
+
+{{MechNav}}
+[[Category:Damage 2.0]]
+[[Category:Mechanics]]
+[[fr:Surcharge d'État (Mécanique)]]

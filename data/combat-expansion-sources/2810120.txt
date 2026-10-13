@@ -1,0 +1,71 @@
+{{ArcaneBox|name=Melee Careen}}
+
+'''Melee Careen''' is a [[Melee]] [[Arcane Enhancement]] that grants a damage multiplier against frozen targets (enemies afflicted with 10 {{D|Cold}} stacks) and passively allows [[Rolling]] to pass through and apply {{D|Cold}} stacks to nearby enemies with a short cooldown.
+
+==Effect==
+{| class="emodtable"
+|-
+!Rank
+!Damage Multiplier
+!Cold Radius
+!Cold Stacks
+|-
+|0||1.25x
+|3.0m
+|5
+|-
+|1||1.50x
+|3.5m
+|6
+|-
+|2||1.75x
+|4.0m
+|7
+|-
+|3||2.00x
+|4.5m
+|8
+|-
+|4||2.25x
+|5.0m
+|9
+|-
+|5||2.50x
+|5.5m
+|10
+|-
+|}
+
+==Acquisition==
+*Can be bought from [[Roathe]] at [[La Cathédrale]] in the [[Sanctum Anatomica]] for 5 {{Resource|Maphica}}.
+*May appear as a [[Steel Path]] [[The Descendia]] reward on a weekly rotational basis.
+**Infernum 6 and 13 awards 1.
+**Infernum 20 awards 3.
+
+==Notes==
+*The damage multiplier only affects enemies that are fully frozen, i.e. 10 {{D|Cold}} stacks.
+*{{D|Cold}} stacks are applied to nearby enemies during the entire rolling animation.
+*{{D|Cold}} status applied by rolling lasts for 6 seconds.
+**Status duration is affected by universal bonuses, such as {{Weapon|Harmony}}'s passive and {{WF|Lavos}}' passive.
+**However, it is <u>not</u> affected by mods, such as [[Lasting Sting]].
+*Rolling only ignores enemy collision when it applies {{D|Cold}} from rolling every 2s.
+*{{M|Shivering Contagion}} affects the rolling {{D|Cold}} passive, regardless if the modded weapon is currently equipped.
+**This also applies if the mod is equipped on a [[Robotic]] weapon.
+*Synergizes well with {{Arcane|Arcane Ice Storm}}, {{Arcane|Primary Frostbite}}, and {{Arcane|Secondary Shiver}}.
+*Freezing enemies does not alert them.
+*When activated, a particle effect surrounds your warframe during a roll. 
+**The colour of the effect is based on the equipped melee's energy colour.
+
+==Bugs==
+*Does absolutely nothing when equipped on {{Weapon|Shadow Clones}} (and possibly other [[Exalted Weapon]]s). 
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|41.0.1}}
+*Fixed Melee Careen not applying extra damage against enemies affected by Cold Status Effects.
+
+{{ver|41}}
+*Introduced.
+}}
+
+{{ArcaneNav}}

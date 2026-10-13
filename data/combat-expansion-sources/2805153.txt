@@ -1,0 +1,322 @@
+{{Infobox
+| Box title = Electricity Damage
+| image = ElectricModBundleIcon.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Electricity_b.png|class=icon]] [[File:Electricity_w.png|class=icon]]
+}}
+{{Quote|'''DAMAGE EFFICACY'''<br/>
+'''{{text|green|x1.5}}''' damage to Anarch<br/>
+'''{{text|green|x1.5}}''' damage to Corpus Amalgam<br/>
+'''{{text|green|x1.5}}''' damage to The Murmur
+
+'''STATUS EFFECT'''<br/>
+{{D|Electricity}} chains between nearby enemies, temporarily applying a stun effect and dealing damage over time.|In-game Description}}
+'''{{D|Electricity}} Damage''' is one of the four primary elemental damage types. Deals increased damage to {{D|Corpus Amalgam}}, {{D|The Murmur}}, and {{D|Anarchs}}. Its [[Status Effect]] creates an electric chain that stuns and deals [[Damage over Time]].
+
+==[[Status Effect]]s==
+===General===
+The status effect of '''{{D|Electricity}}''' damage is '''Tesla Chain'''. It stuns the affected target and deals a tick of damage every second for '''6''' seconds to all enemies in a '''3'''-meter radius.
+
+Enemies affected by an {{D|Electricity}} proc have their bodies covered in blue electricity, with electric lines connecting to each afflicted.
+
+====Damage Over Time====
+Each tick dealing {{D|Electricity}} damage equal to:
+
+:<math>
+{
+\begin{aligned}
+\text{Electricity Proc Damage per Tick} &= 0.5 \times \text{Modded Base Damage} \\
+&\qquad \times (1 + \text{Electricity Damage Bonuses}) \\
+&\qquad \times (1 + \text{Faction Damage Bonuses}) \\
+&\qquad \times (1 + \text{Status Damage Bonuses}) \\
+&\qquad \times \text{Additional Multipliers}
+\end{aligned}
+}
+</math>
+::''Additional Multipliers include modded critical multiplier on [[Critical Hit]] and multipliers on [[Enemy Body Parts]]; these stack multiplicatively with each other.''
+:''Modded Base Damage is not the same as normal damage calculations, ignoring physical and elemental damage bonuses and calculated as:''
+::<math>
+{
+\begin{aligned}
+\text{Modded Base Damage} &= \text{Base Damage} \times (1 + \text{Base Damage Bonuses}) \times (1 + \text{Faction Damage Bonuses})
+\end{aligned}
+}
+</math>
+
+Multiple instances of the effect can stack with each instance having its own timer. If a proc occurs together with a headshot, stealth bonus, and/or critical hit, the damage is also affected by their respective multipliers. 
+
+The Tesla Chain is able to hit heads and other [[Enemy Body Parts|body parts]] by itself. However, Tesla Chain itself has a '''1x''' damage bonus when headshotting. This can be increased with the use of mods such as {{M|Target Acquired}}, zoom bonuses on some [[Sniper Rifle|sniper rifles]], or {{Arcane|Primary Deadhead}}/{{Arcane|Secondary Deadhead}}.
+
+For example, tick damage for a weapon with an innate 100 damage, {{M|Serration}}, {{M|Stormbringer}}, {{M|Bane of Grineer}}, and {{M|Rifle Elementalist}} will be:
+
+:Modded Base Damage = {{Math|100 {{mul}} (1 + 1.65) {{mul}} (1 + 0.3)|t=y|bf-a=y}}
+:Electricity Mod Multiplier = {{Math|(1 + 0.9) {{mul}} (1 + 0.3)|t=y|bf-a=y|m=y}}
+:'''Tick Damage''' = {{Math|0.5 {{mul}} 344.5 {{mul}} 2.47 {{mul}} (1 + 0.9)|t = y|bf-a = y}}
+
+As can be seen in the above calculations for tick damage, Faction Damage is applied twice, making their effective bonus {{MathText|{{eql}} (1 + Faction Damage bonus)<sup>2</sup>}}. Which is +69% for the 30% Faction Damage mods and +140.25% for the 55% Primed Faction Damage mods.
+
+{| class="wikitable"
+|+ Electricity tick damage and proc duration
+|-
+! Time from initial proc
+| 0s || 1s || 2s || 3s || 4s || 5s || 6s || 7s
+|-
+! Tick damage occured?
+| ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✗ || ✗
+|-
+|}
+
+====Crowd Control====
+Enemies affected by this [[Status Effect|status effect]] will also be standing up stunned, preventing them from taking any other action for about '''3''' seconds ([[Osprey]]s, [[Bosses]], and [[Tenno]] are immune to this). Note that only the original target will be stunned, and others around it will only take damage, and Status Duration mods will not extend this stun effect.
+
+===Railjack===
+{{Quote|Railjack <DT_ELECTRICITY>Electricity Damage results in a Scramble Status Effect which temporarily disables enemy ship flight controls.|In-Game Description}}
+The status effect of {{D|Electricity}} damage against [[Railjack]] space enemies is '''Scramble''', causing enemy ships to spiral erratically in a forward direction while being unable to use weaponry for '''6''' seconds, with subsequent procs refreshing the duration. Against the Tenno's [[Railjack]], it causes an '''Electricity Hazard''' which scrambles the minimap and disables use of the [[Railjack/Tactical Menu|Tactical Menu]].
+
+==Elemental Combinations==
+{{D|Electricity}} damage mods can be combined with other elemental mods to create a new elemental damage type.
+*{{D|Electricity}} + {{D|Heat}} = {{D|Radiation}}
+*{{D|Electricity}} + {{D|Cold}} = {{D|Magnetic}}
+*{{D|Electricity}} + {{D|Toxin}} = {{D|Corrosive}}
+
+==Electricity Sources==
+{{Main|:Category:Electricity Damage}}
+
+===Weapons===
+{{Main|:Category:Electricity Damage Weapons}}
+{{DamageTypeTable|Electricity}}
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+MutalistQuanta.png|link=Mutalist Quanta|{{Weapon|Mutalist Quanta}}<br>(Adds electricity on shots passing through orb)
+SynoidSimulor.png|link=Synoid Simulor|{{Weapon|Synoid Simulor}}<br>(Guaranteed Proc on explosions, Adds electricity on shots passing through orb)
+Hystrix.png|link=Hystrix|{{Weapon|Hystrix}} <br />(Electric quill, proc only)
+Amphis.png|link=Amphis|{{Weapon|Amphis}}<br>(Slam Attack)
+Obex.png|link=Obex|{{Weapon|Obex}}<br>(Slam Radial Damage)
+PrismaObex.png|link=Prisma Obex|{{Weapon|Prisma Obex}}<br>(Slam Radial Damage)
+</gallery>
+Do also note that [[Adversary#Adversary Weapons|adversary weapons]] such as the {{Weapon|Kuva Nukor}} may come with an Electric damage benefit of up to 60% as long as the progenitor matches. In this case, {{WF|Volt}} would be a valid Electric progenitor amongst others, see [[Adversary#Progenitor Warframe|the progenitor list]] for all valid options.
+
+===Enemies===
+{{#tag:tabber|Corpus = <gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+CrewmanProd.png|link=Prod Crewman|[[Prod Crewman]] wielding the {{Weapon|Prova}}
+DiscOsprey.png|link=Sapping Osprey|[[Sapping Osprey]] deploys pulse mines
+CrewmanSniper.png|link=Sniper Crewman|[[Sniper Crewman]] wielding the {{Weapon|Lanka}}
+CrpNullRanger.png|link=Nullifier Crewman|[[Nullifier Crewman]] wielding the {{Weapon|Lanka}}
+JetpackCrewmamQuanta.png|link=Quanta Ranger|[[Quanta Ranger]] wielding the {{Weapon|Quanta}}
+CrpShipFlak.png|link=Corvette|[[Corvette]] fires electrical scatter grenades
+DEHyenaTh.png|link=Hyena TH|[[Hyena TH]] uses [[Electric Surge]]
+SapComba.png|link=Comba|[[Comba]] may be armed with the {{Weapon|Lecta}}
+FogScrambus.png|link=Scrambus|[[Scrambus]] may be armed with the {{Weapon|Lecta}}
+TerraEmbattorMOA.png|link= Terra Embattor MOA|[[Terra Embattor MOA]]
+</gallery>
+{{!}}-{{!}}Infested=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+DEElectricCrawler.png|link=Electric Crawler|[[Electric Crawler]] can shock from up to 10m away
+Golem2.png|link=Jordas Golem|The [[Jordas Golem]] can launch electric orbs that home into nearby [[Archwing]]s
+</gallery>
+{{!}}-{{!}}Grineer=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+EelFrogLancer.png|link=Shock Draga|[[Shock Draga]] can fire an electric arc from his {{Weapon|Sydon}}
+</gallery>
+{{!}}-{{!}}Corrupted=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+OrokinNullifySpaceman.png|link=Corrupted Nullifier|[[Corrupted Nullifier]] wielding the {{Weapon|Lanka}}
+</gallery>
+{{!}}-{{!}}Techrot=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+InfestedUnadoza.png|link=Techrot Matmas|[[Techrot Matmas]] can bombard the area beneath it with electric projectiles
+InfestedMutalist.png|link=Techrot Skuzzi|[[Techrot Skuzzi]] can fire electric projectiles or generate an electric field while standing in place
+</gallery>
+{{!}}-{{!}}Environment=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Arc Trap Improved.png|link=Arc Trap|[[Arc Trap]]s fire an electric arc at enemies that come too close to it
+Plasmavents.png|link=Environmental Hazards#Plasma Vent|[[Environmental Hazards#Plasma Vent|Plasma Vents]] periodically damage nearby [[Archwing]]s
+</gallery><!-- will add electrified water -->
+}}
+
+===Mods===
+{{#tag:tabber|Rifle = <gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+StormbringerMod.png|link=Stormbringer|{{M|Stormbringer}}
+HighVoltageMod.png|link=High Voltage|{{M|High Voltage}}
+VoltageSequenceMod.png|link=Voltage Sequence|{{M|Voltage Sequence}} (Dropped Arc Traps)
+</gallery>
+{{!}}-{{!}}Shotgun =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ChargedShellMod.png|link=Charged Shell|{{M|Charged Shell}}
+PrimedChargedShellMod.png|link=Primed Charged Shell|{{M|Primed Charged Shell}}
+ShellShockMod.png|link=Shell Shock|{{M|Shell Shock}}
+</gallery>
+{{!}}-{{!}}Pistol =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ConvulsionMod.png|link=Convulsion|{{M|Convulsion}}
+PrimedConvulsionMod.png|link=Primed Convulsion|{{M|Primed Convulsion}}
+JoltMod.png|link=Jolt|{{M|Jolt}}
+PrototypeShockCoilsMod.png|link=Prototype Shock Coils|{{M|Prototype Shock Coils}}
+</gallery>
+{{!}}-{{!}}Melee =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ShockingTouchMod.png|link=Shocking Touch|{{M|Shocking Touch}}
+VoltaicStrikeMod.png|link=Voltaic Strike|{{M|Voltaic Strike}}
+FocusEnergyMod.png|link=Focus Energy|{{M|Focus Energy}}
+</gallery>
+{{!}}-{{!}}Archgun =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ElectrifiedBarrelMod.png|link=Electrified Barrel|{{M|Electrified Barrel}}
+ChargedBulletsMod.png|link=Charged Bullets|{{M|Charged Bullets}}
+</gallery>
+{{!}}-{{!}}Archmelee =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ConductiveBladeMod.png|link=Galvanized Blade|{{M|Conductive Blade}}
+IonInfusionMod.png|link=Ion Infusion|{{M|Ion Infusion}}
+</gallery>
+{{!}}-{{!}}Warframe =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+RazorMortarMod.png|link=Razor Mortar|{{M|Razor Mortar}}
+AfterburnMod.png|link=Afterburn|{{M|Afterburn}}
+ShockTrooperMod.png|link=Shock Trooper|{{M|Shock Trooper}}
+ShockingSpeedMod.png|link=Shocking Speed|{{M|Shocking Speed}}
+RetributionMod.png|link=Retribution|{{M|Retribution}}
+LightningDashMod.png|link=Lightning Dash|{{M|Lightning Dash}}
+VoltaicLanceMod.png|link=Voltaic Lance|{{M|Voltaic Lance}} ([[Conclave]] only-Comestic)
+</gallery>
+{{!}}-{{!}}Companion =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ArcCoilMod.png|link=Arc Coil|{{M|Arc Coil}}
+ElectroPulseMod.png|link=Electro Pulse|{{M|Electro Pulse}}
+ShockCollarMod.png|link=Shock Collar|{{M|Shock Collar}}
+ShockingClawsMod.png|link=Shocking Claws|{{M|Shocking Claws}}
+</gallery>
+}}
+
+===Abilities===
+{{#tag:tabber|
+Citrine =
+{{#tag:tabber|
+Prismatic Gem=
+{{:Prismatic Gem}}
+}}
+{{!}}-{{!}}
+Chroma (Electric)=
+{{#tag:tabber|
+Spectral Scream =
+{{:Spectral Scream}}
+{{!}}-{{!}}Elemental Ward =
+{{:Elemental Ward}}
+{{!}}-{{!}}Effigy =
+{{:Effigy}}
+}}
+{{!}}-{{!}}Gyre =
+{{#tag:tabber|Arcsphere =
+{{:Arcsphere}}
+{{!}}-{{!}}Coil Horizon =
+{{:Coil Horizon}}
+{{!}}-{{!}}Rotorswell =
+{{:Rotorswell}}
+}}
+{{!}}-{{!}}Koumei =
+{{#tag:tabber|
+Kumihimo=
+{{:Kumihimo}}
+{{!}}-{{!}}
+Omikuji=
+{{:Omikuji}}
+{{!}}-{{!}}
+Bunraku=
+{{:Bunraku}}
+}}
+{{!}}-{{!}}Trinity =
+{{#tag:tabber| Link =
+{{:Link}}
+}}
+{{!}}-{{!}}Vauban =
+{{:Tesla Nervos}}
+{{!}}-{{!}}Volt =
+{{#tag:tabber|Shock =
+{{:Shock}}
+{{!}}-{{!}}Electric Shield =
+{{:Electric Shield}}
+{{!}}-{{!}}Discharge =
+{{:Discharge}}
+}}
+{{!}}-{{!}}Wisp =
+{{:Reservoirs}}
+{{!}}-{{!}}Itzal (Archwing) =
+{{:Fighter Escort}}
+}}
+
+===Railjack Battle Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+BlackoutPulseMod.png|link=Blackout Pulse|{{M|Blackout Pulse}}
+</gallery>
+
+==Sources of Electricity Resistances==
+===Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+LightningRodMod.png|link=Lightning Rod|{{M|Lightning Rod}}
+OrgoneTuningMatrixMod.png|link=Orgone Tuning Matrix|{{M|Orgone Tuning Matrix}}
+</gallery>
+
+===Enemies===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+InfestedAncient.png|link=Techrot Obsolyte|[[Techrot Obsolyte]]
+</gallery>
+
+==Additional Effects==
+Some mods and arcanes add additional effects when an {{D|Electricity}} occurs or dealing {{D|Electricity}} damage.
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+ArchonStretchMod.png|link=Archon Stretch|{{M|Archon Stretch}}
+ConjunctionVoltage.png|link=Conjunction Voltage|{{Arcane|Conjunction Voltage}}
+MeleeInfluence.png|link=Melee Influence|{{Arcane|Melee Influence}}
+VioletArchonShard.png|link=Violet Archon Shard|{{Resource|Violet Archon Shard}}
+</gallery>
+
+==Notes==
+*Since {{ver|33.6}}, multiple procs on an enemy no longer deal their respective damage separately, like current {{D|Slash}} statuses, but once per second, similar to {{D|Heat}} status. However, they still maintain each own timer and will not refresh, unlike {{D|Heat}}.
+*[[Sentinel]]s are extremely susceptible to heavy damage when the player is under an electric status effect, as they are always within range of the arc. On [[The Steel Path]] a single instance of an electric status effect on the player is sometimes enough to outright incapacitate a sentinel companion. 
+**Grineer [[Powerfist]] deal heavy electric damage on their slams, stopping natural shield recharge on players for the duration of the electric proc and causing sometimes fatal damage to Sentinels.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Screenshot_494 .png|Electricity visuals on a melee weapon
+Screenshot_493 .png|An enemy affected by an Electric proc
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.5}}
+*Fixed dead Ancients, Brood Mothers, Thrashers, and Therids playing electrocuted animations before entering their death animation. 
+**Since the electrocution animations were so long, players would waste valuable bullets and time trying to take down these foes, even though they were dead. 
+
+{{ver|38}}
+*Fixed Infested Runners and Leapers freezing and disappearing when dying to electric damage. Now they should convulse in their death throes like the rest of ‘em!
+
+{{ver|37}}
+*Fixed an issue where rag-dolled enemies received more Electrical Status Effects than they should.
+
+{{ver|36}}
+;Simplified Faction Resistances
+*Corpus Amalgam:
+**Vulnerable to '''Electricity'''
+*The Murmur:
+**Vulnerable to '''Electricity'''
+
+{{ver|31.0.8}}
+*Reduced the volume of electricity Status Effect sounds.
+
+{{ver|27.2}}
+*AoE Electric Damage that is part of the Status Effect can now reoccur while the target is still under the stun animation of another Electric Status Effect.
+
+{{ver|11}}
+*Introduced.
+}}
+
+{{DamageNav}}
+
+{{DISPLAYTITLE:Electricity Damage}}
+[[es:Daño Eléctrico]]
+[[fr:Dégâts/Dégâts Électrique]]
+[[ru:Урон/Электро]]
+[[Category:Mechanics]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Update 11]]
+[[Category:Electricity Damage]]

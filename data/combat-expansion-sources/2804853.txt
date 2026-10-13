@@ -1,0 +1,46 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapon|Weapon}}
+{{WeaponInfoboxAutomatic|name=Pride}}
+{{Codex|The pride of one that knows their worth. Sirius' signature Heavy Scythe.}}
+{{for|the seasonal event|Pride (Event)}}
+'''Pride''' is {{WF|Sirius}}' [[Signature Weapon|signature]] Heavy Scythe. The weapon gains increased [[Status Chance]] upon hitting enemies with a [[Slam]] Attack.
+
+==Characteristics==
+*This weapon deals equal {{D|Puncture}} and {{D|Slash}} damage.
+*[[Slam]] attacks grant the '''Coronal Ejection''' buff, increasing [[Status Chance]] by '''15%''' (additive to mods such as {{M|Melee Prowess}}) per enemy enemy hit, stacking up to '''10''' times for '''150%''' additional Status Chance. Lasts '''10''' seconds and can be refreshed.
+*Innate {{Pol|Madurai}} polarity.
+
+{{Advantages|name=Pride|
+}}
+{{Disadvantages|name=Pride|}}
+{{WeaponComparison|Wrath}}
+
+==Acquisition==
+{{Acquisition|header=no|Pride's main and component blueprints can be obtained from [[The Kuva Wytch]], [[Uranus Proxima]], as well as a {{Weapon|Wrath}} Blade from [[Scoria's Angel]]. Access requires completion of [[Jade Shadows: Constellations]].
+
+Alternatively Pride and the Wrath Blade's blueprints can be purchased from [[Pontis Tower]] with {{Resource|Emerald Talent}} and {{Resource|Crimson Talent}}, awarded from The Kuva Wytch and Scoria's Angel respectively in quantities of 12-16 (18-22 on [[The Steel Path]]) from mission completion plus shooting down targets from the Owowyrm/Ramsled minigame. Each component requires 45 and the main blueprint requires 90, totaling 180 {{Resource|Emerald Talent}} and 45 {{Resource|Crimson Talent}} for the whole set.}}
+{{BuildAutomatic|type=Weapon|name=Pride}}
+
+==Notes==
+
+== Trivia ==
+*Pride and {{Weapon|Wrath}} share the exact same design, with the only difference being which end is pointing upwards (in Pride's case, the green end associated with Sirius).
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+File:SiriusAlone.png|{{WF|Sirius}} wielding Pride.
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|43}}
+*Introduced.
+}}
+
+==See also==
+*{{Weapon|Wrath}}
+
+{{WeaponNav}}
+
+[[ru:Гордость]]

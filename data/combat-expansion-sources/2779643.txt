@@ -1,0 +1,83 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|A warrior who prefers brute force will make the most of Sampotes. Its Slams and Heavy Slams have an extended area of effect.}}
+
+'''Sampotes''' is a [[Duviri]] [[Hammer]] wielded by [[Dax Malleus]]. Its Slam and Heavy Slam attacks generate multiple shockwaves, [[ragdoll]]ing enemies and sending them flying.
+
+==Characteristics==
+*This weapon deals primarily {{D|Impact}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Crushing Ruin}} stance.
+*Unique Slam Attack unleashes a line of '''8''' explosions every '''5''' meters, each dealing ? damage in a '''5''' meter radius.
+**Specific Stance Combos that contain slams can trigger the line of explosions too. {{M|Crushing Ruin}} and its block+neutral can make it easy to spam this unique effect.
+*Unique Heavy Slam Attack unleashes 3 lines of '''4''' explosions in a fan, each dealing ? damage in a '''7''' meter radius.
+===Drifter Combat===
+*Power Strike (blocking + heavy attack, default {{Keybind|RMB}} + {{Keybind|MMB}}) slams the ground to release a shockwave that travels forward in a line, inflicting {{D|Heat}} damage with guaranteed procs.
+**Ground slam can hit the same target multiple times.
+
+{{Advantages|}}
+
+{{Disadvantages|}}
+
+==Acquisition==
+The Blueprint for Sampotes can be purchased in [[Teshin's Cave]] for 60 {{Resource|Pathos Clamp}} or {{pc|275}}. Purchasing using the former will unlock the [[Drifter]]-compatible version and the blueprint for a [[Warframes|Warframe]]-compatible version; purchasing using the latter will unlock both versions.
+
+Additional Warframe blueprint copies can be purchased from [[Cephalon Simaris]] for {{sc|100,000}}.
+
+{{BuildAutomatic|type=Weapon}}
+
+{{StanceTable|ComboType=Heavy,Slam,Heavy Slam}}
+
+==Notes==
+*Sampotes can apply multiple instances of [[Lifted]], resulting in enemies being [[Ragdoll]]ed.
+
+===Shockwaves===
+*The shockwaves created by its Slam and Heavy Slam attacks have extreme Lifting-Ragdolling properties, making the Sampotes an effective crowd control melee.
+*Heavy Slam shockwave damage is unaffected by the [[Melee Combo]] multiplier. Shockwaves can still benefit from mods that scale with melee combo counter, such as {{M|Blood Rush}} and {{M|Weeping Wounds}}.
+*Slam and Heavy Slam shockwave damage is unaffected by {{M|Condition Overload}}.
+*Both light and heavy slam shockwaves have a base 10.00% [[Status Effect#Status Chance|Status Chance]].
+
+==Trivia==
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+<!--images-->
+</gallery>
+
+<gallery widths="300" position="center" spacing="small">
+<!--videos-->
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|34}}
+*Fixed being unable to change Sampotes’ energy color.
+
+{{ver|33.6.4}}
+*Fixed the Sampotes missing several SFX with various Melee Stances.
+
+{{ver|33.0.11}}
+*Fixed the following issues when melee blocking as Warframe using Drifter Melee weapons: 
+**Fixed damage from enemy projectiles not being 100% blocked while blocking.
+**Fixed enemy projectile weapons bouncing back at whoever fired them (intended only for Drifter for Parrying Dax arrows).
+
+{{ver|33.0.4}}
+*Added the Sampotes Blueprints (for Warframe use) to Cephalon Simaris’ Offerings for those who accidentally sell theirs.
+
+{{ver|33}}
+*Introduced.
+}}
+
+==See Also==
+*{{Weapon|Syam}}
+*{{Weapon|Azothane}}
+*{{Weapon|Edun}}
+*{{Weapon|Argo & Vel}}
+*{{Weapon|Cinta}}
+{{WeaponNav}}
+
+[[Category:Weapons]]
+[[Category:Melee Weapons]]
+[[uk:Сампот]]
+[[fr:Sampotes]]

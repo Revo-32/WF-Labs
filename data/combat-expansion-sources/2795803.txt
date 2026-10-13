@@ -1,0 +1,79 @@
+{{Top|Enemy|Coda|Coda|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|The Coda Caustacyst scythe is a force to be reckoned with, the Technocyte virus honing it with improved Damage, Status, and Critical Damage, as well as larger acid pools with longer duration.}}
+'''Coda Caustacyst''' is the [[Coda]] variant of the Infested {{Weapon|Caustacyst}} scythe. A direct upgrade with higher damage, [[critical chance]], [[critical multiplier]], and [[status chance]], along with its {{D|Corrosive}} [[Heavy Attack]] pools being bigger and longer lasting.
+
+==Characteristics==
+*This weapon deals {{D|Corrosive}} damage.
+*[[Melee#Heavy Attacks|Heavy attacks]] throws a 5m wide {{D|Corrosive}} wave of up to '''30''' meters in the direction of the player's aim. The wave leaves a temporary trail on the ground, damaging and staggering enemies standing in it.
+*{{Pol|Zenurik}} stance polarity matches {{M|Stalking Fan}}.
+*Innate {{Pol|Madurai}} polarity.
+*Adversary Weapon:
+**Comes with an additional bonus {{D|Impact}}, {{D|Heat}}, {{D|Cold}}, {{D|Electricity}}, {{D|Toxin}}, {{D|Magnetic}}, or {{D|Radiation}} damage, which increases the listed base damage of the weapon by 25%-60%.
+***[[Valence Fusion]] can optionally change the resulting output damage type, and can upgrade the bonus increase (up to 60%).
+**[[Polarization|Polarizing]] the weapon increases its max [[rank]] by '''2''', capping at rank '''40''' after '''5''' polarizations, granting the weapon additional mod capacity.
+**{{Resource|Elemental Vice}} can be applied to the weapon after it has reached rank 40, allowing the bonus damage type to be swapped freely.
+**Unlike [[Kuva (Variant)|Kuva]] and [[Tenet]] weapons directly acquired from a [[Kuva Lich]] or [[Sisters of Parvos]], the listed [[Mastery Rank]] requirement '''is''' enforced.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+{{WeaponComparison|Caustacyst}}
+
+==Acquisition==
+{{Transclude|Lich System/Weapons#Coda Acquisition}}
+==Notes==
+*When performing a heavy attack, the Caustacyst throws a '''3m''' wide toxic wave in the direction of the player's aim. 
+**Wave flies at a constant speed of '''15''' m/s until it dissipates after '''2.5s''', which corresponds to a maximum distance of '''37.5m'''
+***Wave range is not affected by {{M|Reach}} or {{M|Primed Reach}}.
+**Wave has base damage of '''225''' {{D|Corrosive}}, with '''9%''' Critical Chance, '''2x''' Critical Damage, and '''37%''' Status Chance.
+***Wave loses '''40%''' of its damage per second; Wave damage falls off linearly with distance from 100% to 0% between 0 and 37.5m.
+***Wave loses '''20%''' of its damage each time it hit an enemy; this decreases the projectile lifetime by 0.5s (range by 7.5m) for every enemy hit from the max lifetime of 2.5s (max range of 37.5m).
+***Wave damage is affected by universal base damage increases such as {{M|Vigorous Swap}}, {{Arcane|Arcane Arachne}}, and abilities such as {{A|Amp}} and {{A|Vex Armor}}
+***Wave damage is <u>not</u> affected by melee damage increases such as {{M|Pressure Point}}.
+**Wave has infinite [[Punch Through]].
+*The wave will leave behind a 20x2m trail of {{D|Corrosive}} pools on the ground that last '''8''' seconds.
+**Pools deal '''145''' {{D|Corrosive}} damage every second to enemies that stand on it, with '''0%''' Critical Chance, '''1x''' Critical Damage, and '''100%''' Status Chance.
+***Pool damage is affected by melee damage increases such as {{M|Pressure Point}}, but <u>not</u> {{M|Condition Overload}}.
+***Pool damage is affected by the weapon's valence bonus.
+***Pool damage is <u>not</u> affected by universal base damage increases such as {{M|Vigorous Swap}}, {{Arcane|Arcane Arachne}}, and abilities such as {{A|Amp}} and {{A|Vex Armor}}
+***Status Chance is <u>not</u> affected by mods.
+**Corrosive pools will deal damage the moment it contacts the enemy.
+*The wave and pools inherit any elemental damage from mods and can proc their own status effects.
+**This includes the valence bonus from the adversary system. If the valence bonus type is {{D|Impact}} damage, then the wave and pools are also affected by {{D|Impact}} physical damage mods.
+*Enemies that touch the pools are blinded for a short duration, making them vulnerable to [[Melee 2.0#Finishers|melee finishers]] (default {{Keybind|E}}) and susceptible to [[Stealth#Melee Damage Multiplier|stealth damage multipliers]].
+**Enemies stunned by these pools do not have their alert status changed; enemies can be damaged by the pools and still be killed for stealth kills as long as their stun animation is still playing.
+**This allows players to launch a pool, then launch up to 3 more charge attacks before the enemy can become alerted.
+**Enemies can be staggered from one pool into another, triggering an additional immediate tick of damage.
+
+
+
+{{Transclude|Adversary System#Notes}}
+
+==Tips==
+
+==Trivia==
+*Coda Caustacyst's techrot cyst can appear in Seighe Scythe Skin.
+*Coda Caustacyst is one of five Coda weapons and one of two Coda melee weapons with speakers.
+
+==Media==
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.6}}
+*Fixed script error after Polarizing a Coda Weapon and then swapping to another weapon in the Arsenal.
+
+{{ver|38.5.7}}
+*Coda weapons now have a Coda icon next to their name in the Arsenal, to match their Kuva and Tenet counterparts.
+
+{{ver|38.5}}
+*Introduced.
+}}
+
+{{WeaponNav}}
+
+[[ru:Тайсис Кода]]

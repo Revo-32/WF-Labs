@@ -1,0 +1,1612 @@
+{
+  "Blind Justice": {
+    "Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100,
+            200
+          ],
+          "Hits": [
+            1,
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            100,
+            200,
+            200
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "",
+            [
+              "Knockback",
+              "Bleed"
+            ]
+          ]
+        },
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Ragdoll"
+          ],
+          "SlashMultiplier": [
+            2
+          ]
+        }
+      ],
+      "Duration": 1.7,
+      "Image": "BlindJusticeCombo3.gif",
+      "Name": "Destined Path"
+    },
+    "Forward": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            100,
+            200
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Types": [
+            "360",
+            "360"
+          ]
+        },
+        {
+          "Dmg": [
+            100,
+            200,
+            300
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "",
+            "Lifted"
+          ],
+          "StatusMultiplier": [
+            1,
+            1,
+            2
+          ],
+          "Types": [
+            "360",
+            "360",
+            "Sweep"
+          ]
+        },
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ]
+        }
+      ],
+      "Duration": 3.05,
+      "Image": "BlindJusticeCombo1.gif",
+      "Name": "Zatōs Creed"
+    },
+    "Forward Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            5
+          ]
+        },
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Knockback"
+          ],
+          "SlashMultiplier": [
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            400,
+            100
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "unresolved:Knockdown",
+            ""
+          ],
+          "Types": [
+            "Sweep",
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 2.45,
+      "Image": "BlindJusticeCombo2.gif",
+      "Name": "Heeding Call"
+    },
+    "Neutral": {
+      "Attacks": [
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Knockback"
+          ],
+          "SlashMultiplier": [
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ],
+          "SlashMultiplier": [
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            400
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "Bleed",
+            "Knockdown"
+          ]
+        }
+      ],
+      "Duration": 2.6,
+      "Image": "BlindJusticeCombo0.gif",
+      "Name": "Guiding Light"
+    },
+    "Slide": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100,
+            100,
+            100
+          ],
+          "Hits": [
+            2,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "Lifted",
+            ""
+          ],
+          "Types": [
+            "360",
+            "360",
+            "360"
+          ]
+        }
+      ],
+      "Duration": 0.91,
+      "Image": "BlindJusticeComboSlide.gif",
+      "Name": "Parting Knee"
+    },
+    "StanceName": "Blind Justice",
+    "Wall": {
+      "Attacks": [
+        {
+          "Dmg": [
+            215
+          ],
+          "Hits": [
+            1
+          ]
+        }
+      ],
+      "Image": "BlindJusticeComboWall.gif",
+      "Name": "Guiding Wire"
+    },
+    "WeaponType": "Nikana"
+  },
+  "Decisive Judgement": {
+    "Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            500
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Ragdoll"
+          ]
+        }
+      ],
+      "Duration": 1.55,
+      "Image": "DecisiveJudgementCombo3.gif",
+      "Name": "Silent Acumen"
+    },
+    "Forward": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        }
+      ],
+      "Duration": 0.9,
+      "Image": "DecisiveJudgementCombo1.gif",
+      "Name": "Windless Cuts"
+    },
+    "Forward Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100,
+            200,
+            300
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "",
+            "Knockback"
+          ],
+          "StatusMultiplier": [
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            1
+          ],
+          "SlashMultiplier": [
+            2
+          ],
+          "StatusMultiplier": [
+            2
+          ]
+        }
+      ],
+      "Duration": 1.65,
+      "Image": "DecisiveJudgementCombo2.gif",
+      "Name": "Consent Decree"
+    },
+    "Neutral": {
+      "Attacks": [
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Bleed"
+          ]
+        },
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Lifted"
+          ]
+        },
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Knockdown"
+          ],
+          "StatusMultiplier": [
+            1.5
+          ]
+        }
+      ],
+      "Duration": 2.65,
+      "Image": "DecisiveJudgementCombo0.gif",
+      "Name": "Swift Retribution"
+    },
+    "Slide": {
+      "Attacks": [
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ],
+          "Types": [
+            "360"
+          ]
+        }
+      ],
+      "Duration": 0.67,
+      "Image": "NikanaComboSlide.gif",
+      "Name": "Parting Knee"
+    },
+    "StanceName": "Decisive Judgement",
+    "WeaponType": "Nikana"
+  },
+  "Tranquil Cleave": {
+    "Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            2
+          ],
+          "Procs": [
+            "Ragdoll"
+          ]
+        }
+      ],
+      "Duration": 1.2,
+      "Image": "TranquilCleaveCombo3.gif",
+      "Name": "Hook and Eye"
+    },
+    "Forward": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ],
+          "SlashMultiplier": [
+            1.5
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        }
+      ],
+      "Duration": 1.9,
+      "Image": "TranquilCleaveCombo1.gif",
+      "Name": "Windless Cut"
+    },
+    "Forward Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Knockback"
+          ],
+          "SlashMultiplier": [
+            1.2
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Knockback"
+          ]
+        }
+      ],
+      "Duration": 2.6,
+      "Image": "TranquilCleaveCombo2.gif",
+      "Name": "Beyond Reproach"
+    },
+    "Neutral": {
+      "Attacks": [
+        {
+          "Dmg": [
+            300,
+            100,
+            100
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "PunctureMultiplier": [
+            1.5,
+            1.5,
+            1.5
+          ],
+          "Procs": [
+            "",
+            "",
+            [
+              "Bleed",
+              "Big Stagger"
+            ]
+          ],
+          "StatusMultiplier": [
+            1,
+            1.5,
+            1.25
+          ]
+        },
+        {
+          "Dmg": [
+            100,
+            300
+          ],
+          "Hits": [
+            1,
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Knockdown"
+          ],
+          "SlashMultiplier": [
+            2
+          ],
+          "StatusMultiplier": [
+            2
+          ]
+        }
+      ],
+      "Duration": 3.8,
+      "Image": "TranquilCleaveCombo0.gif",
+      "Name": "Breathless Lunge"
+    },
+    "Slide": {
+      "Attacks": [
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ],
+          "Types": [
+            "360"
+          ]
+        }
+      ],
+      "Duration": 0.67,
+      "Image": "NikanaComboSlide.gif",
+      "Name": "Parting Knee"
+    },
+    "StanceName": "Tranquil Cleave",
+    "WeaponType": "Nikana"
+  },
+  "Sovereign Outcast": {
+    "Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Knockback"
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            300
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "Ragdoll"
+          ]
+        }
+      ],
+      "Duration": 1.25,
+      "Image": "SovereignOutcastCombo3.gif",
+      "Name": "Scout Command"
+    },
+    "Forward": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            6
+          ],
+          "Types": [
+            "360"
+          ]
+        }
+      ],
+      "Duration": 1.75,
+      "Image": "SovereignOutcastCombo1.gif",
+      "Name": "Vagrant Behest"
+    },
+    "Forward Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            50
+          ],
+          "Hits": [
+            6
+          ]
+        },
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "SlashMultiplier": [
+            1.25
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            100
+          ],
+          "Hits": [
+            2,
+            1
+          ],
+          "Procs": [
+            "Knockdown",
+            "Knockback"
+          ],
+          "Types": [
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 3,
+      "Image": "SovereignOutcastCombo2.gif",
+      "Name": "Villain Rule"
+    },
+    "Neutral": {
+      "Attacks": [
+        {
+          "Dmg": [
+            200,
+            50
+          ],
+          "Hits": [
+            1,
+            5
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            50,
+            300
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "",
+            "Knockback"
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            4
+          ],
+          "Procs": [
+            "Bleed"
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            2
+          ],
+          "Procs": [
+            "Knockdown"
+          ]
+        }
+      ],
+      "Duration": 2.85,
+      "Image": "SovereignOutcastCombo0.gif",
+      "Name": "Rogue Edict"
+    },
+    "StanceName": "Sovereign Outcast",
+    "WeaponType": "Tonfa"
+  },
+  "Gemini Cross": {
+    "Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100,
+            100
+          ],
+          "Hits": [
+            2,
+            2
+          ],
+          "Procs": [
+            "",
+            "Knockback"
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            100,
+            300,
+            100
+          ],
+          "Hits": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "Procs": [
+            "",
+            "Bleed",
+            "Knockdown",
+            "Knockback"
+          ],
+          "Types": [
+            "Sweep",
+            "Sweep",
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 2.85,
+      "Image": "GeminiCrossCombo3.gif",
+      "Name": "Blind Tormentor"
+    },
+    "Forward": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        }
+      ],
+      "Duration": 1.2,
+      "Image": "GeminiCrossCombo1.gif",
+      "Name": "Cold Vendetta"
+    },
+    "Forward Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            300,
+            100,
+            200,
+            100
+          ],
+          "Hits": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "",
+            "",
+            "Knockback"
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        }
+      ],
+      "Duration": 2.3,
+      "Image": "GeminiCrossCombo2.gif",
+      "Name": "Baleful Sin"
+    },
+    "Neutral": {
+      "Attacks": [
+        {
+          "Dmg": [
+            200,
+            50
+          ],
+          "Hits": [
+            2,
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            100,
+            50,
+            100,
+            100
+          ],
+          "Hits": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "",
+            "Bleed",
+            ""
+          ]
+        },
+        {
+          "Dmg": [
+            100,
+            50
+          ],
+          "Hits": [
+            2,
+            3
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            2
+          ]
+        },
+        {
+          "Dmg": [
+            300,
+            200
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "Knockback",
+            [
+              "Bleed",
+              "Knockdown"
+            ]
+          ]
+        }
+      ],
+      "Duration": 4.6,
+      "Image": "GeminiCrossCombo0.gif",
+      "Name": "Vagrant Blight"
+    },
+    "StanceName": "Gemini Cross",
+    "WeaponType": "Tonfa"
+  },
+  "Tempo Royale": {
+    "Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            600,
+            100
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "Knockdown",
+            "Knockback"
+          ],
+          "SlashMultiplier": [
+            1.25,
+            1
+          ],
+          "Types": [
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 1.8,
+      "Image": "TempoRoyaleCombo3.gif",
+      "Name": "Bold Reprise"
+    },
+    "Forward": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            2
+          ],
+          "Types": [
+            "360"
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            1
+          ],
+          "SlashMultiplier": [
+            1.25
+          ]
+        },
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            1
+          ]
+        }
+      ],
+      "Duration": 3.4,
+      "Image": "TempoRoyaleCombo1.gif",
+      "Name": "Majestic Abandon"
+    },
+    "Forward Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Knockback"
+          ],
+          "SlashMultiplier": [
+            1.25
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            500,
+            100
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "Knockdown",
+            "Knockback"
+          ],
+          "Types": [
+            "Sweep",
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 2.1,
+      "Image": "TempoRoyaleCombo2.gif",
+      "Name": "Resplendent Calma"
+    },
+    "Neutral": {
+      "Attacks": [
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "SlashMultiplier": [
+            1.25
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            100,
+            300,
+            100
+          ],
+          "Hits": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "Types": [
+            "",
+            "Slam",
+            "",
+            "Slam"
+          ]
+        },
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Stagger"
+          ],
+          "SlashMultiplier": [
+            1.25
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            100,
+            400
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "Knockback",
+            "Knockdown"
+          ]
+        }
+      ],
+      "Duration": 4.65,
+      "Image": "TempoRoyaleCombo0.gif",
+      "Name": "August Mesto"
+    },
+    "StanceName": "Tempo Royale",
+    "WeaponType": "Heavy Blade"
+  },
+  "Cleaving Whirlwind": {
+    "Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            400,
+            100
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "SlashMultiplier": [
+            1.25,
+            1
+          ],
+          "Types": [
+            "",
+            "Slam"
+          ]
+        },
+        {
+          "Dmg": [
+            500
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Ragdoll"
+          ],
+          "SlashMultiplier": [
+            1.25
+          ]
+        }
+      ],
+      "Duration": 1.9,
+      "Image": "CleavingWhirlwindCombo3.gif",
+      "Name": "Drifting Stampede"
+    },
+    "Forward": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            2
+          ],
+          "Types": [
+            "360"
+          ]
+        },
+        {
+          "Dmg": [
+            100
+          ],
+          "Hits": [
+            2
+          ],
+          "Types": [
+            "360"
+          ]
+        },
+        {
+          "Dmg": [
+            100,
+            200
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Types": [
+            "360",
+            "360"
+          ]
+        },
+        {
+          "Dmg": [
+            200
+          ],
+          "Hits": [
+            2
+          ],
+          "Types": [
+            "360"
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            200
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "Knockback"
+          ],
+          "Types": [
+            "360",
+            "360"
+          ]
+        },
+        {
+          "Dmg": [
+            0
+          ],
+          "Hits": [
+            1
+          ]
+        }
+      ],
+      "Duration": 5.7,
+      "Image": "CleavingWhirlwindCombo1.gif",
+      "Name": "Broken Bull"
+    },
+    "Forward Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            500,
+            100
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "Knockback",
+            ""
+          ],
+          "SlashMultiplier": [
+            1.25,
+            1
+          ],
+          "Types": [
+            "",
+            "Slam"
+          ]
+        },
+        {
+          "Dmg": [
+            300,
+            100,
+            100,
+            200,
+            100,
+            400,
+            100
+          ],
+          "Hits": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Lifted",
+            "Knockback"
+          ],
+          "SlashMultiplier": [
+            1.25,
+            1.25,
+            1,
+            1.25,
+            1,
+            1.25,
+            1
+          ],
+          "Types": [
+            "",
+            "",
+            "Slam",
+            "",
+            "Slam",
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 2.7,
+      "Image": "CleavingWhirlwindCombo2.gif",
+      "Name": "Sundered Tusk"
+    },
+    "Neutral": {
+      "Attacks": [
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            400
+          ],
+          "Hits": [
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            500,
+            100
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "Knockdown",
+            ""
+          ],
+          "Types": [
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 2.25,
+      "Image": "CleavingWhirlwindCombo0.gif",
+      "Name": "Crowd Fall"
+    },
+    "StanceName": "Cleaving Whirlwind",
+    "WeaponType": "Heavy Blade"
+  },
+  "Rending Crane": {
+    "Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            500
+          ],
+          "Hits": [
+            1
+          ],
+          "Procs": [
+            "Ragdoll"
+          ]
+        }
+      ],
+      "Duration": 1.05,
+      "Image": "RendingCraneCombo3.gif",
+      "Name": "Landing Dragon"
+    },
+    "Forward": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100,
+            200
+          ],
+          "Hits": [
+            2,
+            1
+          ]
+        },
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "SlashMultiplier": [
+            1.25
+          ],
+          "Types": [
+            "360"
+          ]
+        },
+        {
+          "Dmg": [
+            300
+          ],
+          "Hits": [
+            1
+          ],
+          "SlashMultiplier": [
+            1.25
+          ],
+          "Types": [
+            "360"
+          ]
+        }
+      ],
+      "Duration": 2.35,
+      "Image": "RendingCraneCombo1.gif",
+      "Name": "Lashing Tempest"
+    },
+    "Forward Block": {
+      "Attacks": [
+        {
+          "Dmg": [
+            100,
+            300,
+            100
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "Knockback",
+            ""
+          ]
+        },
+        {
+          "Dmg": [
+            200,
+            400,
+            100
+          ],
+          "Hits": [
+            1,
+            1,
+            1
+          ],
+          "Procs": [
+            "",
+            "",
+            "Knockback"
+          ],
+          "Types": [
+            "Sweep",
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 2.3,
+      "Image": "RendingCraneCombo2.gif",
+      "Name": "Rampaging Boar"
+    },
+    "Neutral": {
+      "Attacks": [
+        {
+          "Dmg": [
+            400,
+            100
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "Stagger",
+            ""
+          ],
+          "Types": [
+            "",
+            "Slam"
+          ]
+        },
+        {
+          "Dmg": [
+            500,
+            100
+          ],
+          "Hits": [
+            1,
+            1
+          ],
+          "Procs": [
+            "Knockdown"
+          ],
+          "Types": [
+            "",
+            "Slam"
+          ]
+        }
+      ],
+      "Duration": 1.85,
+      "Image": "RendingCraneCombo0.gif",
+      "Name": "Skull Splitter"
+    },
+    "StanceName": "Rending Crane",
+    "WeaponType": "Heavy Blade"
+  }
+}

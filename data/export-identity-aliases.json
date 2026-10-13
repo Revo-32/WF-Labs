@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "note": "위키의 내부 ID와 공식 Export의 현재 ID가 다른 항목만 명시적으로 연결합니다. 저장된 빌드 ID는 보존하며 표시 이름·공식 메타데이터를 가져올 때만 사용합니다.",
+  "aliases": {
+    "/Lotus/Weapons/Tenno/Melee/Warfan/TnBrokenFrameWarfan/TnBrokenFramePrimeWarfanWeapon": {
+      "exportId": "/Lotus/Weapons/Tenno/Melee/Warfan/PrimeQuassus/PrimeQuassusWeapon",
+      "wikiSource": "https://wiki.warframe.com/w/Quassus_Prime?oldid=2677504",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportWeapons_ko.json!00_EbjufCglVfIC1GSoqzqSNg",
+      "exportSha256": "fd6c06b73131ebecc5723fcc6208794349ea0c9e815a73811ed847871d11696f"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{{ArcaneBox}}
+{{Arcane|Melee Duplicate}} is a Melee [[Arcane Enhancement]] that causes base (yellow) [[Critical Hit|Critical Hits]] to inflict a [[Extra Hit|second instance of damage]].
+
+==Effect==
+{| class="emodtable"
+|-
+!Rank
+!Chance
+|-
+|0||25%
+|-
+|1||40%
+|-
+|2||55%
+|-
+|3||70%
+|-
+|4||85%
+|-
+|5||100%
+|-
+|}
+
+{{Acquisition|*Potential award from [[Netracells]].
+*Potential award from [[Deep Archimedea]].}}
+
+==Notes==
+*Creates a separate damage instance that will reroll the chance to apply status and also the critical tier.
+**It is possible to create a duplicated hit that is either non critical, tier 1 (yellow) or tier 2 (orange).
+*The effect can proc on {{Arcane|Exodia Contagion}}, unless the first burst of damage kills the enemy (or one shot it).
+*Forced status procs will apply to the duplicated hit if they originate from the melee weapon.
+**Duplicated hit will not apply a forced status from {{A|Seeking Talons}}.
+*With rank 5 Melee Duplicate the formula for the most optimal [[Critical Chance]] is following:
+::{{MathText|Critical Chance {{eql}} (3 {{mul}} [[Critical Damage]] Multiplier {{min}} 4) {{div}} (2 {{mul}} Critical Damage Multiplier {{min}} 2)}}
+**With a low [[Critical Damage]] multiplier, other Arcanes such as {{Arcane|Melee Exposure}} will likely provide more damage than Melee Duplicate.
+**This formula isn't entirely accurate for weapons with low total crit damage multipliers (shouldn't ever be relevant but should at least be noted).
+*[[Trading]] Melee Duplicate requires the trader to be [[Mastery Rank]] 11 or higher.
+
+==Bugs==
+*If used with {{A|Toxic Lash}} or {{A|Xata's Whisper}}, this arcane will duplicate the extra damage instance coming from these abilities rather than the original melee hit.
+**If {{A|Toxic Lash}} and {{A|Xata's Whisper}} are active simultaneously, the arcane prioritizes the ability occupying the earlier ability slot.
+***For example, on a {{WF|Saryn}} with {{A|Spores}} replaced with {{A|Xata's Whisper}} through the [[Helminth]]'s Ability Replacement System, if both {{A|Xata's Whisper}} and {{A|Toxic Lash}} is active, Melee Duplicate would duplicate the extra hit from {{A|Xata's Whisper}}. Conversely, if {{A|Miasma}} is instead the ability replaced with {{A|Xata's Whisper}}, Melee Duplicate would duplicate the Extra Hit from {{A|Toxic Lash}} instead.
+*The separate damage instance generated from area of effect damage such [[Slam Attack|Melee Slam Attacks]] or {{Arcane|Exodia Contagion}}'s explosion does not bypass enemy [[Shield Gating]] despite abilities such as {{A|Toxic Lash}}  or {{A|Xata's Whisper}} bypassing them properly in the same scenario.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40}}
+*The following Arcane Collections are now available for Vosfor in Loid’s Arcane Dissolution: 
+**Cavia Arcane Collection (includes the Cavia and Ascension Arcanes) 
+***Melee Duplicate 
+
+{{ver|36}}
+*Trading Legendary Arcanes now requires you to be Mastery Rank 11. 
+**It’s important to note that only the player trading requires MR 11 and not the receiver. 
+***We needed to address an issue with exploitative Legendary Arcanes farming and ban-evasion account creation used to trade Legendary Arcanes. Other options we experimented with had the risk of innocent players getting caught in the crossfire of the ban-evasion subjects. When we took a look at Trading stats we found that a very small number of players below Mastery Rank 10 trade Legendary Arcanes, and therefore decided to go this route. This is purely a means of deterring the bad actors and ensuring legitimate trading for players. 
+*Optimized the Melee Duplicate Arcane to help prevent performance lag.
+
+{{ver|35.0.8}}
+*Fixed a script error caused by Melee Duplicate.
+
+{{ver|35}}
+*Introduced.
+}}
+
+{{ArcaneNav}}

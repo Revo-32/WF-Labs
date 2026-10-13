@@ -1,0 +1,67 @@
+{{DISPLAYTITLE:Tau Damage}}
+{{Infobox
+| Box title = Tau Damage
+| image     = EssentialTauGlyph.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Tau_b.png|class=icon]] [[File:Tau_w.png|class=icon]]
+}}
+{{Quote|Tau increases Status Chance of all subsequent attacks by up to 100% with multiple stacks.|In-Game Description}}
+{{For|the planetary system|Tau System}}
+'''{{D|Tau}} Damage''', also known as '''Sentient Damage''', is a special damage type exclusive to only a few [[Sentient]]-related equipments. Similar to {{D|Void}} Damage, it is neutral to all health types, meaning its damage is neither increased or decreased against any target, though Warframes are able to gain {{D|Tau}} Resistance from the [[Set Mods#Umbral Mod Set|Umbral Mod Set]]. Its [[Status Effect]] applies [[Status Chance]] vulnerability.
+
+==[[Status Effect]]s==
+The status effect of {{D|Tau}} damage is '''Status Chance Vulnerability'''. It increases [[Status Chance]] received from all other status sources by '''10%''' per stack for up to '''10''' stacks and lasts for '''8''' seconds, with each stack having its own duration. Any stacks applied after the 10th will replace the oldest stack.
+
+*For example: Enemies with 5 stacks (50% Status Chance Vulnerability) will receive 150% the amount of status procs when they are attacked. Enemies with 10 stacks will receive double the amount of status procs. If attacked with a weapon with 210% chance status this would result in a hit with 305% chance of status.
+
+[[Status Effect#Forced Procs|Forced Procs]] (such as {{Weapon|Hystrix}}'s forced elemental procs) will not create additional procs due to this vulnerability.
+
+==Tau Sources==
+*[[Sentient]]s
+*[[Amalgam#Corpus Amalgams|Corpus Amalgams]]
+*Gates in [[Archon Hunt]]s
+*[[Orowyrm]] in [[The Duviri Paradox]]
+*{{WF|Caliban}}'s ability kit
+**{{A|Razor Gyre}}
+**{{A|Sentient Wrath}}
+**{{A|Lethal Progeny}}
+**{{A|Fusion Strike}}
+*{{Weapon|Venato Prime}} (Status Effect only)
+*{{Weapon|Haalvu}}
+*{{WF|Trinity}}'s {{A|Link}} via [[Damage Redirection]]
+*{{Resource|Vomval Trumpet}}
+
+==Sources of Tau Resistances==
+
+===Abilities===
+*{{WF|Caliban}} ({{WF|Caliban Prime|Prime}})'s passive
+
+===Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+UmbralIntensifyMod.png|alt=Umbral Intensify|link=Umbral_Intensify|{{M|Umbral Intensify}}
+UmbralFiberMod.png|alt=Umbral Fiber|link=Umbral_Fiber|{{M|Umbral Fiber}}
+UmbralVitalityMod.png|alt=Umbral Vitality|link=Umbral_Vitality|{{M|Umbral Vitality}}
+AdaptationMod.png|alt=Adaptation|link=Adaptation|{{M|Adaptation}}
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.5}}
+*Updated the tooltip for Tau Damage to be more accurate, now reads: “Tau increases Status Chance of all subsequent attacks by up to 100% with multiple stacks.”
+
+{{ver|37}}<br/>
+'''Introducing a new Status Effect: Tau Damage'''
+
+Being of half-Sentient origin, Caliban brings a new element to the fight. He’ll inflict '''Tau Damage''' and '''Tau Status Effects''' upon the battlefield with many of his abilities (specifics listed below for affected abilities).
+
+Tau’s Status Effect inflicts '''Status Chance Vulnerability*''' to enemies affected by it, with a max of 10 Stacks culminating in 100% Status Chance Vulnerability (10% per Stack), with each stack individually lasting 8 seconds!
+
+<nowiki>*</nowiki>This effect was originally introduced by Dante and his Pageflight Paragrimms, which applies Status Chance Vulnerability to enemies. This mechanic increases the likelihood an enemy receives a Status Effect when being hit.
+}}
+
+{{DamageNav}}
+[[ru:Урон/Тау]]
+[[Category:Mechanics]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Tau Damage]]

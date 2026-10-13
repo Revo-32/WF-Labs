@@ -1,0 +1,74 @@
+<onlyinclude>{{EditTab|Zaw Stats/Rapiers}}
+<div class="tabber-borderless">
+<tabber>All Rapiers=
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="2" rowspan="1" style="width:100px;" | Strikes
+|-
+| [[File:Dehtat.png|center|thumb|100px]]'''[[Dehtat]]'''
+| [[File:PlagueKripath.png|center|thumb|100px]]'''[[Plague Kripath]]'''
+|-
+|}
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTypeTable|Rapier|OneHanded}}
+|-|Dehtat =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Dehtat.png|center|thumb|100px]]'''[[Dehtat]]'''
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#tag:tabber|Korb =
+{{#invoke:Modular|getZawTable|Dehtat|Korb}}
+{{!}}-{{!}}Kwath =
+{{#invoke:Modular|getZawTable|Dehtat|Kwath}}
+{{!}}-{{!}}Laka =
+{{#invoke:Modular|getZawTable|Dehtat|Laka}}
+{{!}}-{{!}}Peye =
+{{#invoke:Modular|getZawTable|Dehtat|Peye}}
+{{!}}-{{!}}Plague Akwin =
+{{#invoke:Modular|getZawTable|Dehtat|Plague Akwin}}
+}}
+|-|Plague Kripath =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:PlagueKripath.png|center|thumb|100px]]'''[[Plague Kripath]]'''
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#tag:tabber|Korb =
+{{#invoke:Modular|getZawTable|Plague Kripath|Korb}}
+{{!}}-{{!}}Kwath =
+{{#invoke:Modular|getZawTable|Plague Kripath|Kwath}}
+{{!}}-{{!}}Laka =
+{{#invoke:Modular|getZawTable|Plague Kripath|Laka}}
+{{!}}-{{!}}Peye =
+{{#invoke:Modular|getZawTable|Plague Kripath|Peye}}
+{{!}}-{{!}}Plague Akwin =
+{{#invoke:Modular|getZawTable|Plague Kripath|Plague Akwin}}
+}}
+</tabber>
+</div>
+</onlyinclude>
+[[Category:Zaw]]
+[[fr:Stats des Zaws/Rapières]]

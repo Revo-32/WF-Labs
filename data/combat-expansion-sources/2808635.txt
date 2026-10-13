@@ -1,0 +1,365 @@
+{{UpdateMe|Is Impact status name "Stagger" or "Knockback"? Because Stagger is also used to describe staggering effects like {{Weapon|Opticor}} hits or melee hits}}
+{{Infobox
+| Box title = Impact Damage
+| image     = EssentialImpactGlyph.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Impact_b.svg|class=icon]] [[File:Impact_w.svg|class=icon]]
+}}
+{{Quote|'''DAMAGE EFFICACY'''<br/>
+'''{{text|green|x1.5}}''' damage to Anarch<br/>
+'''{{text|green|x1.5}}''' damage to Grineer<br/>
+'''{{text|green|x1.5}}''' damage to Kuva Grineer<br/>
+'''{{text|green|x1.5}}''' damage to Scaldra
+
+'''STATUS EFFECT'''<br/>
+{{D|Impact}} causes the target to flail backwards temporarily, with repeated stacks increasing the size and duration of the stagger.
+
+For heavy units such as Eximus, it also lowers the Parazon Mercy Kill threshold to 80% of total health with multiple stacks.|In-game Description}}
+'''{{D|Impact}} Damage''' is one of the three physical damage types. Deals increased damage to {{D|Grineer}}, {{D|Kuva Grineer}}, {{D|Scaldra}}, and {{D|Anarchs}} enemies. Its status effect causes enemies to stagger and increase [[Parazon]] mercy threshold.
+
+==[[Status Effect]]s==
+===General===
+The status effect of {{D|Impact}} damage is '''[[Stagger]]'''. It lasts '''6''' seconds and stacks to a maximum of '''5''' times. Any stacks applied after the 5th will replace the oldest stack.
+*It causes enemies to flinch and recoil backwards. Subsequent procs increase the stagger duration. However, [[Osprey]]s, [[Bosses]] and [[Tenno]] are immune to the stagger.
+*Against heavy units (all humanoid [[Eximus]], [[Heavy Gunner]], [[Bombard]], [[Scrambus]] and [[Comba]], [[Nullifier Crewman]], [[Ancient Disruptor]], [[Ancient Healer]], and [[Toxic Ancient]]), {{D|Impact}} additionally increases the health threshold at which they can be [[Parazon]] Mercy Killed by '''8%''' per proc, allowing them to be vulnerable at up to '''80%''' ('''100%''' on Corpus and Eximus with all their shields removed) of their total health.
+
+Enemies killed by an {{D|Impact}} proc will have their corpse ragdolled and flown away, regardless of the amount of force behind the weapon.
+
+===Railjack===
+{{Quote|Railjack <DT_IMPACT>Impact Damage results in a Concuss Status Effect which reduces the aim and damage of enemy ships.|In-Game Description}}
+The status effect of {{D|Impact}} damage against [[Railjack]] space enemies is '''Concuss''', causing enemy crew within a gunship to have reduced aim and damage for '''6''' seconds, with subsequent procs refreshing the duration.
+
+==Impact Sources==
+{{Main|:Category:Impact Damage}}
+===Weapons===
+These weapons deal more than a majority of their physical damage as {{D|Impact}}. The damage ratio is important for physical damage status effects because the game weights the likelihood of which proc occurs according to physical damage ratio. Hence, these weapons proc {{D|Knockback}} more than {{D|Bleed}} or {{D|Weakened}}.
+
+{{CustomCollapsible|Weapons with Impact Damage|impact}}
+{{DamageTypeTable|Impact}}
+{{CustomCollapsible/End}}
+<br>
+Do also note that [[Adversary#Adversary Weapons|adversary weapons]] such as the {{Weapon|Kuva Hek}} may come with an Impact damage benefit of up to 60% as long as the progenitor matches. In this case, {{WF|Rhino}} would be a valid Impact progenitor amongst others, see [[Adversary#Progenitor Warframe|the progenitor list]] for all valid options.
+
+===Weapons with guaranteed Impact proc===
+These weapons are guaranteed to inflict {{D|Impact}} status on hit, not dependent on status chance. 
+{{CustomCollapsible|Weapons with guaranteed Impact proc|impact2}}
+<tabber>Primary=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Acceltra.png|link=Acceltra|{{Weapon|Acceltra}}<br/>(direct hit)
+AcceltraPrime.png|link=Acceltra Prime|{{Weapon|Acceltra Prime}}<br/>(direct hit)
+AfentisPrime.png|link=Afentis Prime|{{Weapon|Afentis Prime}}<br/>(direct hit)
+Astilla.png|link=Astilla|{{Weapon|Astilla}}<br/>(direct hit)
+AstillaPrime.png|link=Astilla Prime|{{Weapon|Astilla Prime}}<br/>(direct hit)
+ArcaPlasmor.png|link=Arca Plasmor|{{Weapon|Arca Plasmor}}<br/>(within 14m)
+TenetArcaPlasmor.png|link=Tenet Arca Plasmor|{{Weapon|Tenet Arca Plasmor}}<br/>(within 28m)
+CodaBassocyst.png|link=Coda Bassocyst|{{Weapon|Coda Bassocyst}}<br/>(alt fire mites inflict 6 ticks)
+Corinth.png|link=Corinth|{{Weapon|Corinth}}<br/>(alt fire direct hit)
+CorinthPrime.png|link=Corinth Prime|{{Weapon|Corinth Prime}}<br/>(alt fire direct hit)
+Daikyu.png|link=Daikyu|{{Weapon|Daikyu}}
+DaikyuPrime.png|link=Daikyu Prime|{{Weapon|Daikyu Prime}}
+Fulmin.png|link=Fulmin|{{Weapon|Fulmin}}<br/>(within 9m)
+FulminPrime.png|link=Fulmin Prime|{{Weapon|Fulmin Prime}}<br/>(within 9m)
+Javlok.png|link=Javlok|{{Weapon|Javlok}}<br/>(fully charged alt fire explosion)
+KuvaChakkhurr.png|link=Kuva Chakkhurr|{{Weapon|Kuva Chakkhurr}}
+KuvaOgris.png|link=Kuva Ogris|{{Weapon|Kuva Ogris}}<br/>(direct hit)
+LatronIncarnonGenesis.png|link=Latron_Incarnon_Genesis|{{Resource|Latron Incarnon Genesis}}<br/>(Incarnon Form direct hits only)
+Lenz.png|link=Lenz|{{Weapon|Lenz}}<br/>(direct hit)
+Nataruk.png|link=Nataruk|{{Weapon|Nataruk}}<br/>(quick shot)
+Nagantaka.png|link=Nagantaka|{{Weapon|Nagantaka}}
+NagantakaPrime.png|link=Nagantaka Prime|{{Weapon|Nagantaka Prime}}
+Phantasma.png|link=Phantasma|{{Weapon|Phantasma}}<br/>(alt fire direct hit, projectiles)
+PhantasmaPrime.png|link=Phantasma Prime|{{Weapon|Phantasma Prime}}<br/>(alt fire direct hit, projectiles)
+PrismaLenz.png|link=Prisma Lenz|{{Weapon|Prisma Lenz}}<br/>(direct hit)
+Quellor.png|link=Quellor|{{Weapon|Quellor}}<br/>(alt fire within 18m)
+Scourge.png|link=Scourge|{{Weapon|Scourge}}<br/>(alt fire explosion)
+ScourgePrime.png|link=Scourge Prime|{{Weapon|Scourge Prime}}<br/>(alt fire explosion)
+Shedu.png|link=Shedu|{{Weapon|Shedu}}<br/>(upon depleting mag)
+Stahlta.png|link=Stahlta|{{Weapon|Stahlta}}<br/>(alt fire direct hit)
+</gallery>
+|-|Secondary=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Epitaph.png|link=Epitaph|{{Weapon|Epitaph}}<br/>(direct hit)
+EpitaphPrime.png|link=Epitaph Prime|{{Weapon|Epitaph Prime}}<br/>(direct hit)
+LexIncarnonGenesis.png|link=Lex_Incarnon_Genesis|{{Resource|Lex Incarnon Genesis}}<br/>(Incarnon Form Only)
+Sonicor.png|link=Sonicor|{{Weapon|Sonicor}}
+TenetSpirex.png|link=Tenet Spirex|{{Weapon|Tenet Spirex}}<br/>(direct hit)
+Zakti.png|link=Zakti|{{Weapon|Zakti}}<br/>(direct hit)
+ZaktiPrime.png|link=Zakti Prime|{{Weapon|Zakti Prime}}<br/>(direct hit)
+Zymos.png|link=Zymos|{{Weapon|Zymos}}<br/>(direct hit and spore direct hit over 7m away)
+</gallery>
+|-|Melee=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Falcor.png|link=Falcor|{{Weapon|Falcor}}<br/>(thrown)
+Glaive.png|link=Glaive|{{Weapon|Glaive}}<br/>(thrown and explosion)
+GlaivePrime.png|link=Glaive Prime|{{Weapon|Glaive Prime}}<br/>(thrown)
+Halikar.png|link=Halikar|{{Weapon|Halikar}}<br/>(thrown and explosion)
+Kestrel.png|link=Kestrel|{{Weapon|Kestrel}}<br/>(thrown and explosion)
+Redeemer.png|link=Redeemer|{{Weapon|Redeemer}}<br/>(heavy attack)
+RedeemerPrime.png|link=Redeemer Prime|{{Weapon|Redeemer Prime}}<br/>(heavy attack)
+Stropha.png|link=Stropha|{{Weapon|Stropha}}
+Xoris.png|link=Xoris|{{Weapon|Xoris}}<br/>(thrown)
+</gallery>
+|-|Archgun=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Corvas.png|link=Corvas|{{Weapon|Corvas}}
+CorvasPrime.png|link=Corvas Prime|{{Weapon|Corvas Prime}}
+Fluctus.png|link=Fluctus|{{Weapon|Fluctus}}
+</gallery>
+|-|Kitgun=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Catchmoon.png|link=Catchmoon|[[Catchmoon|Catchmoon Kitguns]]<br/>(within 9m)
+Tombfinger.png|link=Tombfinger|[[Tombfinger|Tombfinger Kitguns]]<br/>(direct hit)
+</gallery>
+|-|Exalted Weapon=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ArtemisBowWeapon.png|link=Artemis Bow|{{Weapon|Artemis Bow}} w/ {{M|Concentrated Arrow}}
+</gallery>
+</tabber>
+{{CustomCollapsible/End}}
+
+===Enemies===
+{{#tag:tabber|
+Enemies =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ToxicAncient2DE.png|link=Toxic Ancient|[[Toxic Ancient]] deals Impact damage with many of its attacks
+</gallery>}}
+===Mods===
+{{#tag:tabber|
+Primary =
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+RuptureMod.png|link=Rupture|{{M|Rupture}}
+CrashCourseMod.png|link=Crash Course|{{M|Crash Course}}
+DisruptorMod.png|link=Disruptor|{{M|Disruptor}}
+FullContactMod.png|link=Full Contact|{{M|Full Contact}}
+CometRoundsMod.png|link=Comet Rounds|{{M|Comet Rounds}} ([[Conclave]] only)
+CrashShotMod.png|link=Crash Shot|{{M|Crash Shot}} ([[Conclave]] only)
+</gallery>
+{{!}}-{{!}}
+Secondary =
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+ConcussionRoundsMod.png|link=Concussion Rounds|{{M|Concussion Rounds}}
+PummelMod.png|link=Pummel|{{M|Pummel}}
+SaxumSpittleMod.png|link=Saxum Spittle|{{M|Saxum Spittle}}
+MeteorMunitionsMod.png|link=Meteor Munitions|{{M|Meteor Munitions}} ([[Conclave]] only)
+</gallery>
+{{!}}-{{!}}
+Melee =
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+HeavyTraumaMod.png|link=Heavy Trauma|{{M|Heavy Trauma}}
+PrimedHeavyTraumaMod.png|link=Primed Heavy Trauma|{{M|Primed Heavy Trauma}}
+CollisionForceMod.png|link=Collision Force|{{M|Collision Force}}
+SaxumThoraxMod.png|link=Saxum Thorax|{{M|Saxum Thorax}}
+CounterweightMod.png|link=Counterweight|{{M|Counterweight}} ([[Conclave]] only)
+</gallery>
+{{!}}-{{!}}
+Warframe =
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" perrow="2" captionalign="center">
+BatteringManeuverMod.png|link=Battering Maneuver|{{M|Battering Maneuver}}
+SaxumCarapaceMod.png|link=Saxum Carapace|{{M|Saxum Carapace}}
+</gallery>
+{{!}}-{{!}}
+Archgun =
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+CometBlastMod.png|link=Comet Blast|{{M|Comet Blast}}
+</gallery>
+{{!}}-{{!}}
+Archmelee =
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+MeteorCrashMod.png|link=Meteor Crash|{{M|Meteor Crash}}
+</gallery>
+}}
+
+===Abilities===
+{{#tag:tabber|
+
+Atlas =
+{{:Landslide}}
+{{!}}-{{!}}
+
+Banshee =
+{{:Sonic Boom}}
+{{!}}-{{!}}
+
+Citrine =
+{{#tag:tabber|
+Fractured Blast =
+{{:Fractured Blast}}
+{{!}}-{{!}}
+Crystallize =
+{{:Crystallize}}
+}}
+{{!}}-{{!}}
+
+Excalibur =
+{{:Radial Javelin}}
+{{!}}-{{!}}
+
+Grendel = 
+{{:Pulverize}}
+{{!}}-{{!}}
+
+Hildryn =
+{{:Aegis Storm}}
+{{!}}-{{!}}
+
+Hydroid =
+{{#tag:tabber|
+Tempest Barrage =
+{{:Tempest Barrage}}
+{{!}}-{{!}}
+Tidal Surge =
+{{:Tidal Surge}}
+{{!}}-{{!}}
+Undertow =
+{{:Undertow}}
+}}
+{{!}}-{{!}}
+
+Loki =
+{{#tag:tabber|
+Decoy =
+{{:Decoy}}
+{{!}}-{{!}}
+Radial Disarm =
+{{:Radial Disarm}}
+}}
+{{!}}-{{!}}
+
+Mesa =
+{{:Peacemaker}}
+{{!}}-{{!}}
+
+Nekros =
+{{:Soul Punch}}
+{{!}}-{{!}}
+
+Nezha =
+{{:Divine Spears}}
+(Ability End Slam)
+{{!}}-{{!}}
+
+Oberon =
+{{#tag:tabber|
+Smite =
+{{:Smite}}
+{{!}}-{{!}}
+Reckoning =
+{{:Reckoning}}
+}}
+{{!}}-{{!}}
+
+Revenant =
+{{:Enthrall}}
+{{!}}-{{!}}
+
+Rhino =
+{{:Rhino Charge}}
+{{!}}-{{!}}
+
+Sevagoth = 
+{{:Exalted Shadow}}
+{{!}}-{{!}}
+
+Styanax =
+{{:Tharros Strike}}
+{{!}}-{{!}}
+
+Valkyr =
+{{#tag:tabber|
+Paralysis =
+{{:Paralysis}}
+{{!}}-{{!}}
+Hysteria =
+{{:Hysteria}}
+}}
+{{!}}-{{!}}
+
+Zephyr =
+{{#tag:tabber|
+Tail Wind =
+{{:Tail Wind}}
+{{!}}-{{!}}
+Airburst =
+{{:Airburst}}
+}}
+{{!}}-{{!}}
+
+Odonata (Archwing) =
+{{:Repel}}
+
+Bonewidow (Necramech) =
+{{:Meathook}}
+}}
+
+==Additional Effects==
+Some mods and arcanes add additional effects when an {{D|Impact}} occurs or dealing {{D|Impact}} damage.
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+InternalBleedingMod.png|link=Internal Bleeding|{{M|Internal Bleeding}}
+HemorrhageMod.png|link=Hemorrhage|{{M|Hemorrhage}}
+File:MagneticWeltMod.png|{{M|Magnetic Welt}}
+ShatteringImpactMod.png|link=Shattering Impact|{{M|Shattering Impact}}
+PrimaryExhilarate.png|link=Primary Exhilarate|{{Arcane|Primary Exhilarate}}
+</gallery>
+
+==Media==
+{{VideoGallery
+|{{YouTube|xhjwVyRX6X4|size=300px}}
+}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39}}
+*Fixed heavy unit enemies (e.g., Grineer Heavy Gunners, Scaldra Dedicants) having permanently-available finishers after an Impact Status Effect expires.
+
+{{ver|36.0.1}}
+*Fixes towards a large panel appearing on Warframes with invisibility abilities active (includes Stalker in the Jade Shadows Quest) after being hit by Impact damage.
+
+{{ver|36}}
+;Simplified Faction Resistances
+*Grineer: Vulnerable to '''Impact'''
+*Kuva Grineer:
+**Vulnerable to '''Impact'''
+
+{{ver|33.6}}<br/>
+<u>Impact Changes:</u>
+
+Stagger Status Effect Changes:
+
+*Reduced the maximum amount of stacks from 10 to 5.
+*Increased the Mercy Threshold from 4% to 8% per stack. 
+
+Functionally, this allows for players to trigger early Mercy kills with less stacks required!
+
+NOTE: These changes should not affect the functionality of Impact Stacks for Mods such as Internal Bleeding or Hemorrhage.
+
+{{ver|30.5}}
+;PARAZON REWORK
+
+'''This also means that Impact Status Effect is changing:''' 
+
+'''Before:''' Impact Status Effects used to increase the chance that the random Mercy kill opportunity  would happen. 
+
+'''After:''' Impact Status Effects increases the Mercy Kill threshold range on eligible enemies. So instead of triggering at 40% on the list above, you can apply Impact Status to do a Mercy kill sooner (4% per Status)… up to 80%. Meaning, applying a lot of Impact Status quickly makes an enemy VIP more quickly susceptible to a Mercy Kill. Impact would then be a build strategy for getting the VIPs out of the fight!
+
+{{ver|27.3}}
+*Instead of ending in a knockdown or ragdoll, accumulating 5+ Impact Effects will now result in a "big stagger" with smaller staggers leading up to it, which has a random chance to activate a Parazon Finisher if the enemy is under the Health threshold. Each Impact Status adds 10% chance for the Parazon Finisher to be available.
+
+{{ver|27.2.1}}
+*Fixed multiple Impact Status Effects in a single damage event causing incorrect Stagger.
+
+{{ver|27.2}}
+*Repeat single-target Impact Status Effects will escalate the efficacy of the Impact Status
+
+{{ver|11}}
+*Introduced.
+}}
+{{DamageNav}}
+
+{{DISPLAYTITLE:Impact Damage}}
+[[es:Daño Impacto]]
+[[fr:Dégâts/Dégâts d'Impact]]
+[[ru:Урон/Удар]]
+[[Category:Mechanics]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Update 11]]

@@ -1,0 +1,298 @@
+{{Infobox
+|Box title    = Stealth
+|image        = AshLokiDuo.png
+}}
+{{Quote|You're still in the clear. No detection from enemy sensors.|[[Lotus]]}}
+<section begin=intro />
+When [[Warframe]]s are not detected by enemies, they are in '''stealth''', able to sneak past combat encounters or perform devastating attacks to unsuspecting targets. However, conspicuous activity will raise the alertness of observant enemies, which can increase the difficulty of the mission. At various levels of alert, enemies may become more careful, call for help from other nearby enemies, or trigger the alarm control panels to summon backup from other rooms. Alertness decreases over time.
+
+<section end=intro />
+{{clr}}
+{{tocright}}
+While most missions in [[WARFRAME]] do not require or explicitly reward stealthy play styles, the game provides an assortment of [[weapons]], [[mods]], and a different [[damage]] multiplier that enable an alternative gameplay option for advanced players who seek immersion or challenges.
+
+==Alertness==
+Enemies can only see things in a short, frontal cone and their view can be further restricted by the environment. They are bad at noticing threats at a distance or anyone somewhat above their heads. [[Maneuvers#Crouching|Crouching]] will hide a Warframe's silhouette well, and being [[invisible]] allows the Warframe to move past enemy eyesight without triggering any suspicion. [[Noise Level|Loud noise]], however, can cause enemies to fire towards invisible Tenno–shooting most weapons while visually shrouded will still alert nearby enemies from all directions.
+
+Distant gunfire or suspicious activity (such as noticing the corpse of an ally or a silent weapon hitting the terrain) may temporarily put enemies in nearby [[Tile Sets|map tiles]] into a '''minor alert'''. These enemies keep watch from behind cover or patrol with guns raised and are more sensitive to the Tenno presence. As they don't know exactly where their threats are, they are more cautious, looking down corners and expanding their vision. This can usually be heard by the player, as enemies talk to each other while in this state. From this state and above, enemies can no longer be [[:Stealth#Stealth Attack|Stealth Attacked]] until their alertness level lowers below a minor alert.
+
+Enemies in a tile enter '''full combat alert''' when they see or hear the Tenno directly, are directly shot at, or hear a loud weapon being fired. In this state, they will attempt to pursue the Tenno while getting backup by summoning nearby allies or activating alarms via [[Hacking|control consoles]]. Enemies from other tiles will not enter this state if the enemy detecting the Tenno is killed quickly enough and the alarms are not triggered. Additionally, their range of vision expands and they will be able to spot Tenno and their [[companions]] from far away, even after the player disengages from combat. Note that backup troops arriving in nearby rooms may not know what the threat is, and will be put into minor alert instead. Players can infer an ongoing full combat alert from how enemies will notice and fire upon the player from much further away than before.
+
+[[Infested]] and [[Corrupted]] enemies are exceptions because of their hive-mindedness. They will not use manually activated alarms, but once even one unit reaches full combat alert every other unit in a huge range will enter minor alert too. And, since there are no alarms, it is not possible to remove alerted states. New enemies may still spawn unalerted though, and minor alerts work as usual.
+
+The minimap will change color depending on the alertness of the room's occupants with White, Amber, and Red referring to enemies being unalerted, in a minor alert, or a full combat alert respectively.
+
+===Control Panels===
+{{Main|Hacking}}
+[[Hacking|Control consoles]] are liberally scattered around most [[tilesets]]. If activated by an enemy, it will alert the entire room and may spread the alert to the whole map. Killing the enemy before they finish using a control panel (they take about '''1.5'''s to complete the alert) will prevent the alarm from sounding. Enemies will not consecutively run towards the same console to set off the alarm, but if the fight takes long enough, another enemy will likely attempt it. Note that if the enemy activating the alarm takes enough damage, they will abort activating the alarm and turn to attack the Tenno. If an alarm is set off, the alarm can be reset by going to another control terminal and [[hacking]] it without further spread of notice. While it is possible for stealth to be recovered in missions populated by the [[Grineer]] and [[Corpus]], the [[Corrupted]] and [[Infested]] factions do not use control consoles to sound alarms and any open detection will result in these factions' enemies becoming alert in a very large radius.
+
+Even when the control panel has been accessed and an alarm has sounded, enemies will lose track of the Tenno when the last group of enemies killed is not close enough to set the next group of enemies on alert. They will wander as if they never heard an alarm. By sprinting through rooms quickly, one can sometimes avoid alarms being set off or escape to new rooms distant enough from the hostile room arming its alarm that these new enemies won't hear it. Equipping a [[sprint speed]] mod such as {{M|Rush}} on the Warframe can increase this chance of escape.
+
+===Security Cameras and Turrets===
+{{Main|Security Camera}}
+[[Security Camera|Cameras]] can detect Tenno and deploy any nearby [[Corpus Turret]]s to engage in combat. However, triggering a camera or shooting a turret will not trigger any kind of alertness for other enemies, nor will the general alarm state in the mission cause the security cameras to be alerted. The challenge reward for 10 stealth kills can easily be accomplished in high-alarm scenarios by destroying cameras that haven't personally witnessed the player. The turret, on the other hand, is hard to destroy if never activated but note that its shots are silent and do not alert the enemies in nearby rooms.
+
+==Stealth Damage Bonus==
+Standard melee attacks are affected by a '''+700%''' Stealth Damage Bonus when attacking enemies that are unalerted, made vulnerable to [[Finisher|front/back finishers]] by a stun, or that are otherwise unable to detect the attacking player due to being [[blind]]ed or under the effect of {{WF|Banshee}}'s {{A|Silence}}, as well as if the player is cloaked by an ability (e.g. {{A|Invisibility}}). This damage increase changes the color of regular damage pop-ups from white to yellow (similar to critical hits).
+:{{MathText|Stealth Melee Damage {{eql}} Weapon Damage {{mul}} (1 + Stealth Damage Bonus)}}
+
+Being revealed to an enemy will temporarily put the Stealth Damage Bonus on a 3s cooldown once stealth damage conditions have been re-established. When conditions are met by way of invisibility, physical contact by means such as a true melee attack (directly contacting an enemy with the weapon), brushing by an enemy, bullet jumping, or jump kicking counts as being revealed for a brief instant and will trigger the cooldown appropriately. However, if enemies are blinded, then physical contact does not count as being revealed and the Stealth Damage Bonus will persist in this case. This cooldown is tracked on a per-enemy basis, potentially allowing you to get the full effect for every weapon attack presuming you can kill every enemy with a single hit.  
+
+No other interaction with an enemy will trigger the full Stealth Damage Bonus cooldown if you are otherwise undetectable, be it gunfire (damage or sound) from primaries and secondaries, companion damage of any kind, status damage from any source (including those inflicted by a true melee attack), ability damage, and ranged melee attacks of any kind (e.g. certain Gunblade attacks, Exalted Blade waves). However, certain instances of weapon damage seem to trigger a very short window where the Stealth Damage Bonus can not take effect - this is most notably the case with the neutral burst attack of the High Noon stance for Gunblades (excluding Stropha, which inexplicably does not suffer from this issue), where the first shot will benefit from the Stealth Damage Bonus normally but the immediate follow up shot will not. 
+
+The Stealth Damage Bonus is affected by the rank of the weapon. Rank 30 weapons deal 700% bonus damage, while unranked ones only gain 100%. In between that the bonus scales linearly as per the formula:
+:{{MathText|Stealth Damage Bonus {{Eql}} 1 + (6 {{Div}} 30) {{Mul}} Weapon Rank}}
+:{{MathText|Stealth Damage Bonus {{Eql}} 1 + 0.2 {{Mul}} Weapon Rank}}
+:<small>Bonus does not scale beyond rank 30.</small>
+
+[[Critical Hit|Critical hits]] while under these effects will still appear yellow or in their respective color for higher crit tiers. The damage bonus from crits and stealth stack additively with each other.
+:{{MathText|Stealth Melee Crit Damage {{eql}} Weapon Damage {{mul}} (1 + Stealth Damage Bonus + Crit Tier x (Crit Multiplier - 1))}}
+
+==Stealth Attack==
+{{Main|Finisher#Stealth Attack}}
+[[File:Sneak Prompt.jpg|right|250px]] 
+As long as an enemy is unaware of the Tenno presence, a '''stealth attack''' may be executed on them. To perform a stealth attack, the player must approach an enemy from behind and activate the stealth attack prompt. Successfully performing a stealth attack will deal a massive amount of damage during a special animation, during which the [[Warframe]] is immune to damage and will not be attacked by enemies. The attack's final damage depends on the melee weapon type used, on top of the 8.0x melee damage multiplier described in the preceding section.
+
+{{MathText|Stealth Attack Damage {{eql}} Weapon Damage {{mul}} Stealth Multiplier {{mul}} Weapon Multiplier}}
+
+As these multipliers factor total weapon damage, equipped mods (including [[Critical Hit#Chance to Critically Hit|critical chance]] and [[Critical Hit#Critical Hit Damage|critical damage]] mods) will also affect the stealth attack's final damage. Stealth attacks inflict {{D|True}} Damage, which is unaffected by [[armor]]. Damage value pop-ups always appear yellow, identical to critical hit damage values (even if the stealth attack did not crit).
+
+A complete kill ensures your target cannot recuperate and bring attention to you. Performing an unsuccessful melee stealth kill (which happens often when in a high-level area) or failing to kill an enemy with a silent ranged attack or ability will alert the enemy after a short moment. Due to that short moment, though, it is possible to execute consecutive stealth attacks by pressing melee key quickly right after the previous stealth attack is finished. This is also noteworthy for eliminating pairs or groups of enemies, as enemies within 5 meters of the victim will become cautious (even without seeing the Warframe) for roughly 20 seconds due to the sound of their comrade's death.
+
+===Enemy Eligibility===
+[[File:CBNefStealth.jpg|thumb|right|280px|Bosses can indeed be stealth attacked.]]
+Some enemies do not grant a stealth attack prompt. Many [[Machinery|mechanical]] or [[robotic]] enemies are '''immune''' to stealth attacks, either completely or from specific weapon types.
+
+'''[[Grineer]]'''
+*[[Roller]]
+
+'''[[Corpus]]'''
+*[[Corpus#Osprey|Ospreys]]
+*[[Security Camera|Cameras]]
+*[[Corpus Turret|Turrets]]
+
+Formerly MOAs would not grant a stealth attack prompt, but through updates this has been changed, and now have stealth attack animations for every class of melee weapon.
+
+Formerly, humanoid [[Bosses]] were vulnerable to stealth attacks. This has been phased out over time, and only [[The Sergeant]]  can still be stealth attacked. Non-humanoid Bosses such as [[Phorid]] and [[Jackal]] have always been immune to stealth attacks.
+
+Special [[Warden]] enemies take bonus damage from stealth attacks, allowing a larger chance of instantly killing them, which is crucial in order to complete their host mission with the most points. This is especially useful since Wardens have very high health and will trigger the execution sequence if the player is spotted.
+
+==Affinity Bonus==
+Killing a target while they are completely unalerted (whether via melee or ranged attacks) will trigger a '''Stealth Kill Affinity Bonus''', which increases the amount of [[affinity]] that a player gains from killing said enemy. A notification appears in a player's [[HUD]] to the left of the [[shield]] counter (like all other outside buffs) upon performing a stealth kill, which will display the bonus affinity value for that kill, as well as the time remaining for the combo duration of '''30s'''. Each successive stealth kill will refresh the combo counter and grant 100% more affinity towards the next kill, stacking up to 500% bonus affinity after 5 stealth kills.
+
+The stealth kill affinity bonus resets if the Warframe kills an alert enemy or is attacked by an alerted enemy ([[Companion]]s, [[Sentinel]]s, and [[Operator]]s do not reset the bonus). Only enemy units will trigger these affinity bonuses. Environmental objects like [[Corpus Turret]]s, [[Security Camera]]s, [[Sensor Bar]]s, and [[Storage Containers]] will not reset the multiplier nor do they count as a stealth kill. Certain units like [[Sensor Regulator]]s are also considered objects, and thus will not initiate stealth affinity bonuses.
+
+Oddly enough, certain Warframe powers (like {{A|Paralysis}}) and [[Stance#Melee Combos|Melee Combos]] that initiate stagger may initiate stealth kill affinity bonuses upon performing a [[Finisher#Front/Back Finisher|Finisher]], even if the enemy was previously aware of the player.
+
+==Invisible==
+{{Main|Invisible}}
+
+Turning [[invisible]] will hide the character from sight, preventing enemies from directly seeing them and thus will not alert enemies from moving in their field of view. However, they can still be alerted by firing a noisy weapon or coming into physical contact.
+
+When a Tenno or allied NPCs come out of invisibility, their enemies will take a full second of delay before noticing them, regardless of their alert state.
+
+==Fighting Silently==
+{{Main|Noise Level}}
+Using [[Noise Level|noisy]] weapons and abilities will alert enemies within 50m. Equipping max-rank {{M|Suppress}}, {{M|Hush}} or {{M|Silent Battery}} will render any [[:Category:Secondary Weapons|pistols]], [[:Category:Primary Weapons|rifles or shotguns]] completely silent.
+
+===Silent or Quiet Weapons===
+All melee weapon attacks are silent, including those from thrown weapons, the {{Weapon|Deconstructor}}, and the shotgun attack of the {{Weapon|Redeemer}} (as long as enemies are more than 5 meters away from the player when it is fired). The following ranged weapons are also innately silent or otherwise produce less noise than standard when fired:
+
+<div class="tabber-borderless">{{#tag:tabber|Primary =
+{{#tag:tabber|Bows=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Attica.png|link=Attica|{{Weapon|Attica}} (Silent)
+Cernos.png|link=Cernos|{{Weapon|Cernos}} (Silent)
+Daikyu.png|link=Daikyu|{{Weapon|Daikyu}} (Silent)
+Dread.png|link=Dread|{{Weapon|Dread}} (Silent, except in [[Dread Incarnon Genesis|Incarnon Genesis form]])
+Evensong.png|link=Evensong|{{Weapon|Evensong}} (Silent)
+Paris.png|link=Paris|{{Weapon|Mk1-Paris}} or {{Weapon|Paris}} (Silent, except in [[Paris Incarnon Genesis|Incarnon Genesis form]])
+ParisPrime.png|link=Paris Prime|{{Weapon|Paris Prime}} (Silent, except in [[Paris Incarnon Genesis|Incarnon Genesis form]])
+RaktaCernos.png|link=Rakta Cernos|{{Weapon|Rakta Cernos}} (Silent, except for [[Blight]] explosions)
+MutalistCernos.png|link=Mutalist Cernos|{{Weapon|Mutalist Cernos}} (Silent, however enemies passing through the toxic cloud will be immediately alerted)
+Zhuge.png|link=Zhuge|{{Weapon|Zhuge}} (Silent)
+ZhugePrime.png|link=Zhuge Prime|{{Weapon|Zhuge Prime}} (Silent)
+Nagantaka.png|link=Nagantaka|{{Weapon|Nagantaka}} (Silent, except for Alt-Fire)
+</gallery>
+{{!}}-{{!}}Rifles =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Amprex.png|link=Amprex|{{Weapon|Amprex}} (25.0m)
+Baza.png|link=Baza|{{Weapon|Baza}} (Silent)
+BazaPrime.png|link=Baza Prime|{{Weapon|Baza Prime}} (Silent)
+FluxRifle.png|link=Flux Rifle|{{Weapon|Flux Rifle}} (25.0m)
+Glaxion.png|link=Glaxion|{{Weapon|Glaxion}} (25.0m)
+Ignis.png|link=Ignis|{{Weapon|Ignis}} (25.0m)
+Opticor.png|link=Opticor|{{Weapon|Opticor}} (10.0m)
+Quanta.png|link=Quanta|{{Weapon|Quanta}} (25.0m)
+Synapse.png|link=Synapse|{{Weapon|Synapse}} (25.0m)
+Fulmin.png|link=Fulmin|{{Weapon|Fulmin}} (20.0m, Silent in Semi-Auto)
+</gallery>}}
+{{!}}-{{!}}Secondary =
+
+{{#tag:tabber|Single=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF" perrow="3">
+Ballistica.png|link=Ballistica|{{Weapon|Ballistica}} (Silent when Charged)
+BallisticaPrime.png|link=Ballistica Prime|{{Weapon|Ballistica Prime}} (Silent)
+RaktaBallistica.png|link=Rakta Ballistica|{{Weapon|Rakta Ballistica}} (Silent)
+Gammacor.png|link=Gammacor|{{Weapon|Gammacor}} (10.0m)
+SynoidGammacor.png|link=Synoid Gammacor|{{Weapon|Synoid Gammacor}} (10.0m)
+</gallery>
+<!--
+{{!}}-{{!}}Dual=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF" perrow="3">
+</gallery>
+-->
+{{!}}-{{!}}Thrown=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF" perrow="3">
+Despair.png|link=Despair|{{Weapon|Despair}} (Silent, however the explosions caused by its [[Despair Incarnon Genesis|Incarnon Genesis form]] are alarming)
+Cantare.png|link=Cantare|{{Weapon|Cantare}} (silent)
+Fusilai.png|link=Fusilai|{{Weapon|Fusilai}} (Silent)
+Hikou.png|link=Hikou|{{Weapon|Hikou}} (Silent)
+HikouPrime.png|link=Hikou Prime|{{Weapon|Hikou Prime}} (Silent)
+Kunai.png|link=Kunai|{{Weapon|Kunai}} or {{Weapon|Mk1-Kunai}} (Silent)
+Pox.png|link=Pox|{{Weapon|Pox}} (Silent)
+Spira.png|link=Spira|{{Weapon|Spira}} (Silent)
+SpiraPrime.png|link=Spira Prime|{{Weapon|Spira Prime}} (Silent)
+</gallery>}}
+{{!}}-{{!}}Robotic =
+
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF" perrow="3">
+Stinger.png|link=Stinger|{{Weapon|Stinger}} (Silent)
+</gallery>
+}}</div>
+{{Ver/Lu|35.0.1}}
+
+===Silent Abilities===
+The following table lists the abilities which are either silent to enemies or enable the player to perform silent kills. Note that direct damage abilities ({{A|Shuriken}}, {{A|Slash Dash}}, etc.) are silent if cast while invisible or shrouded.
+
+<div class="tabber-borderless"><tabber>
+|-|Ash = 
+{{#tag:tabber|Smoke Screen = {{:Smoke Screen}}
+{{!-!}}Teleport = {{:Teleport}}
+{{!-!}}Blade Storm = {{:Blade Storm}}
+}}
+
+|-|Banshee = {{:Silence}}
+
+|-|Huras = [[File:StalkModU145.png|right|150px]]
+The {{M|Stalk}} mod allows the [[Huras Kubrow]] to cloak itself and its master when hostile entities are within range. Though firing a weapon while stealthed will break the effect, the Huras Kubrow will still cloak the player if they are holding down the trigger of a continuous rifle such as the {{Weapon|Synapse}} when the ability activates. Warframe abilities do not break this stealth effect.{{clr}}
+
+
+|-|Loki = 
+{{#tag:tabber|Invisibility = {{:Invisibility}}
+{{!-!}}Hushed Invisibility = [[File:HushedInvisibilityMod.png|right|150px]]
+At maximum rank, {{WF|Loki}}'s Invisibility [[augment]] {{M|Hushed Invisibility}} will render all weapons and noise made absolutely silent, enabling stealth attacks with non-silent weapons as long as the attack one-shots the unalerted enemy.{{clr}}
+}}
+
+|-|Mag =
+{{#tag:tabber|Pull = {{:Pull}}
+{{!-!}}Shield Polarize = {{:Shield Polarize}}
+}}
+
+|-|Shade = [[File:GhostModU145.png|right|150px]]
+{{M|Ghost}} allows the [[Shade]] [[sentinel]] to cloak itself and the Warframe when hostile entities are within range, rendering themselves invisible to enemies. Though firing a weapon while stealthed will break the effect, the Shade will still cloak the player if they are holding down the trigger of a continuous rifle such as the {{Weapon|Synapse}} when the ability activates. Warframe abilities do not break this stealth effect.{{clr}}
+
+|-|Vauban =
+The casting of any of {{WF|Vauban}}'s abilities are silent—this does not mean all of the abilities' effects are.
+{{#tag:tabber|Tesla Nervos = {{:Tesla Nervos}}
+{{!}}-{{!}}Minelayer = {{:Minelayer}}
+{{!}}-{{!}}Photon Strike = {{:Photon Strike}}
+{{!}}-{{!}}Bastille = {{:Bastille}}
+}}
+</tabber></div>
+
+===Silencing Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+HushMod.png|link=Hush|{{M|Hush}}|alt=Hush
+SuppressMod.png|link=Suppress|{{M|Suppress}}|alt=Suppress
+SilentBatteryMod.png|link=Silent Battery|{{M|Silent Battery}}|alt=Silent Battery
+HushedInvisibilityMod.png|link=Hushed Invisibility|{{M|Hushed Invisibility}}|alt=Hushed Invisibility
+</gallery>
+
+==Tips==
+*It's not recommended to bring a [[companion]] when playing stealth without a way of cloaking (becoming invisible) yourself, as crouching may reduce enemy visibility for you, but it does not affect your companions and could still leave them in enemy sight.
+*Be patient and learn the [[Enemy Behavior#When Unalerted|behaviour]] of your enemies. Good timing means you can avoid patrols and position yourself to attack enemies from behind.
+*Check your surroundings to sneak up on an unsuspecting enemy without interruption. Do not eliminate an enemy if it is being watched by another enemy. If enemies see a corpse that has not disappeared yet, they might be alert for a short period of time.
+*In large rooms, look for exposed ceiling rafters or ventilation shafts that can be used to traverse areas without the risk of directly encountering enemy patrols.
+*Always allow at least a two-meter distance between enemies before engaging them in melee as a precautionary measure.
+*Staggered enemies don't make sounds, but they become alert and will alert others if given a chance to recover. If you did not kill an enemy with a single hit, keep it staggered by stealthy means and you'll be fine. {{D|Cold}} procs will lengthen the amount of time an enemy stays staggered.
+*Stand to the side of a door to open it and peer slightly by moving the camera. You can see around the left edge of obstacles by changing the camera to hang over your left shoulder (default is {{Keybind|H}}).
+*Having a Sentinel equipped may compromise stealth, as it does not hide behind low cover. If you do bring a Sentinel, make sure to remove their targeting precept mod or the weapon itself. The only exception is Shade's {{M|Revenge}}, which will not target enemies unless they attack players.
+**If you have a [[Shade]] with the {{M|Ghost}} ability, consider sprinting toward an enemy to activate it quickly.
+*[[Sniper Rifle]]s and other long-range weapons such as the {{Weapon|Latron}} are less likely to attract attention. This is most likely because the weapon noise at the gun's barrel is far greater than the noise at the impact site.
+*Use a [[Codex Scanner]] or [[Synthesis Scanner]]. Scanners can show enemies within '''50''' meters through walls and behind cover. However, if used to scan, it will remove the scanned enemies from the player's view.
+*Practice stealth play on low-level Extermination missions. As players will usually one-shot almost all enemies, they will get the hang of silent weapons, the enemy's cone of vision, and other things that would be difficult to practice with the most difficult of missions.
+*Try doing stealth missions [[Game Modes|solo]], as various players that may join mid-round may not agree with taking a stealthy approach to a mission. A solo player is also able to improve on their mistakes and their mistakes alone.
+*If going invisible in [[Corpus]] stealth missions, be very careful of [[Nullifier Crewman|Nullifier Crewmen]] and Fog [[Comba]]s and [[Scrambus]]es, as they can disable a Warframe's invisibility powers.
+*Unalerted enemies that are sent to sleep by {{WF|Equinox}}'s [[Rest & Rage|Rest]] and {{WF|Ivara}}'s [[Quiver|Sleep Arrow]] can be killed using automatic weapons that deal weak damage per shot without alerting them, as long as the enemy is killed quickly enough after passing their waking damage threshold. Both abilities can also be used on clustered enemies to prevent them from being alerted by kills made in their proximity.
+*The fiery [[Environmental Hazards#Self-Destruct|battle damage]] environmental hazard will spawn extremely alert enemies at the start. To resume stealth, kill all alert enemies in the area quickly and hack the nearest panel to reset the alarm. They will revert to an unalert state after some time. If the alarm is not reset, all enemies will spawn in the alerted state.
+*Sources of enemy radar, such as {{M|Enemy Sense}}, {{M|Enemy Radar}} and {{M|Animal Instinct}}, reveal enemies within range on your [[Heads-Up Display|minimap]] as red arrows indicating position, general facing, and alertness level. Use this information when available to gauge the situation and plan how to proceed in a stealthy manner.
+
+==Bugs==
+*After {{ver|25.8.1}}, only stealth finishers could receive a bonus, though no mention of this change was made in any patch notes. As of a recent patch, proper stealth bonus functionality returned.
+*Shooting a silent Weapon within 6 meters of an enemy or at the terrain near an enemy will cause them to stop and look around, but will not change their actual alert state.
+*The practicality of attempting an assassination on heavy and shielded units, especially purely mechanical enemies such as Corpus [[Osprey]]s.
+*If you aren't at the same altitude as the target, the prompt will not easily appear.
+**Being at a lower altitude will teleport the enemy to your current location, possibly causing them to overlap with walls. This usually happens on the stairs.
+*A Prompt will appear and disappear unexpectedly when the enemy is alerted.
+*After each stealth attack, you finish standing up, which might reveal your position. You will need to release and re-press the crouch button to return to the crouch position. If you are using a toggle crouch key, simply press it during the animation to return to crouching when the attack completes.
+*Dropping off a ledge will also cause you to stand upon landing.
+*A glitch can occur when stealth attacking [[Infested]] Ancients, [[Heavy Gunner]]s or [[Corpus]] [[Corpus Tech|Techs]]. Upon entering the stealth attack animation, the enemy will shrink to roughly the player's size. (This shrinking glitch can also occur when using {{WF|Ash}}'s {{A|Blade Storm}}. Blade Storm has a possibility to also shrink [[Grineer]] soldiers, as well as a few bosses, including [[Lieutenant Lech Kril]].)
+*It is possible to attempt a stealth finisher without a melee weapon. This uses the finisher animation of [[:Category:Nikana|nikanas]] but does very little damage.
+<hr />
+{{Main|Enemy Behavior}}
+*For a long time, it was possible to notice enemy spawn points (usually in Survival missions) and continue to fire your weapon under stealth to gain continuous stealth bonus experience, allowing quick leveling and Focus affinity.
+**To counter this, a mechanic was introduced wherein newly spawned enemies have a hidden timer active. This timer, which can be around 4–8 seconds or in rare cases indefinitely, causes killing this otherwise unalerted enemy to not count as a stealth kill and thus will reset any stealth bonus multiplier you have if this enemy is killed. This is why players may notice that despite all enemies being unaware of your presence, killing them all at once with an explosive weapon will often not give you any stealth affinity, or lose your current stealth multiplier.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|43.0.2}}
+*Fixed a script error related to stealth finishers.
+
+{{ver|43}}
+*Added new SFX when a player uses the context action to Stealth kill.
+
+{{ver|32.3}}
+*Added a new react animation to several Grineer and Corpus units when Warframes vanish in front of them (using Abilities or other mechanics). 
+**''This also applies to their Narmer variants.''
+
+{{ver|30.9}}
+*Fixed some enemies being unable to activate alarms. As reported here: https://forums.warframe.com/topic/1281911-bug-enemy-seems-like-not-triggering-alarm-now/
+
+{{ver|27.1}}
+*NPCs now have about a second of delay before being able to perceive other players or NPCs that come out of invisibility, regardless of alert state. Previously, combat-state enemies would near instantly retarget in such cases. Seen in: https://www.reddit.com/r/Warframe/comments/ep76hd/can_we_add_a_very_small_delay_between_detection/
+
+{{ver|25.7.6}}
+*Enemies may now “react” (without changing their Alert state) to you by stopping and looking around if you shoot a Silent weapon within 2-3m of them several times quickly.
+
+{{ver|19.6.3}}
+*Enemies no longer receive a mental perception of an attacker, but rather mental perception of the source object. This causes them to play a reaction and become alert, but not have any extra information about the player. Enemies that are shot with projectiles that are silent and/or without a sound effect will now report a visual perception (rather than doing nothing). Previously enemies knew the exact location of their attacker when taking damage, regardless of the source. 
+
+{{ver|16}}
+*Fixed stealth weapon XP multipliers increasing the stealth combo xp multipler as per: [https://forums.warframe.com/index.php?/topic/400667-stealth-kill-affinity-bonus-is-being-incorrectly-calculated/ this thread]
+
+{{ver|15.13}}
+;Stealth Finisher/Affinity Updates&#58;
+Joining our updated Spy 2.0 are some exciting improvements to stealth combat! Players will now find that sneaking around each Mission may come with some excellent rewards. These alterations to stealth gameplay will continue to evolve based upon player feedback, but for now stealth aficionados can sink their teeth into the following changes:
+*Stealth Streaks are here! Stealth kills can now receive Affinity multipliers if done in succession. Players will have 30 seconds from one stealth kill to the next to increase their Affinity multiplier, which goes up to 5x for melee and 2x for Ranged!
+*Finisher damage will now increase based on weapon rank and enemy level. Finisher Damage for stealth kills capped at 8x damage with max rank melee weapon!
+*The UI will inform you of your Stealth Streak where buff timers are usually located!
+
+{{ver|9.5}}
+*Added Stealth Finishers for Infested Ancients.
+
+{{ver|7}}
+*Stealth Attacks - sneaking up on unaware enemies now yields stealth attack options with melee weapons.
+*Stealth improvements - AI reaction and alert states have been tuned to make stealth play more viable.
+}}
+
+==See also==
+* [[Enemy Behavior]]
+* [[Hacking]]
+* [[Noise Level]]
+* [[Spy]]
+
+{{MechNav}}
+[[es:Sigilo]]
+[[Category:Mechanics]]
+[[fr:Furtivité]]

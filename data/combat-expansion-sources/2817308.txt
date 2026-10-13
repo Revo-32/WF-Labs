@@ -1,0 +1,115 @@
+{{Top|Weapon|Weapons|Weapons|Lotus|Tenno|Tenno|}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Ice in motion can crush mountains, this frozen hammer is no different.}}
+The '''Sibear''' is a large hammer featuring a head composed entirely of {{Resource|Cryotic}} that deals {{D|Cold}} damage on attacks. Performing a [[Melee#Heavy Attacks|heavy attack]] increases its [[Status Chance]], making it ideal for inflicting status effects on enemies.
+
+==Characteristics==
+*This weapon deals primarily {{D|Cold}} damage.
+*[[Heavy Attack]]s grant '''+50%''' [[status chance]] to all attacks with the Sibear for '''4''' seconds.
+**Bonus is a flat amount applied after other status chance bonuses.
+**Only triggered by Heavy Attacks; Heavy Slams will not trigger the status chance bonus.
+*Stance has a {{Pol|Madurai}} polarity, matches {{M|Crushing Ruin}}.
+*Innate {{Pol|Vazarin}} polarity.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+==Acquisition==
+The Sibear's blueprint can be purchased from the [[Market]].
+
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*On a heavy attack, Sibear gains '''+50%''' status chance for '''4''' seconds. This bonus is a flat amount applied after mods.
+**For example, when equipped with {{M|Vicious Frost}}, the Sibear will have: {{Math|30% {{mul}} (1 + 60%) + 50%|t = y|p = y}} status chance after a heavy attack.
+**While this buff is active, Sibear grows ice spikes.
+*The Sibear is currently the most expensive item in-game in regards to {{Resource|Cryotic}} requirements for construction, needing 30,000 Cryotic to build.
+**As the player can only obtain 100 cryotic (without resources boosters) in [[Excavation]] (the only mission where it's guaranteed to drop), a player would need to complete 300 excavations in order to obtain the amount required to build Sibear. Due to each excavator taking 100 seconds to complete, it would take over '''8 hours and 20 minutes''' to farm it all
+**It is also the second most expensive item for {{Resource|Alloy Plate|Alloy Plates}}, requiring 50,000.
+*Slam attacks release a small ice spike from the ground.
+
+==Incarnon Genesis==
+{{Transclude|Sibear Incarnon Genesis#Acquisition}}
+
+{{Transclude|Sibear Incarnon Genesis#Incarnon Genesis}}
+
+==Trivia==
+*Sibear is most likely a corruption of ''[[wikipedia:Siberia|Siberia]]'', a region in Russia known for its low temperatures, si and bears.
+*Sibear was the first [[melee]] weapon to deal pure {{D|Cold}} damage.
+*It is also the first hammer whose components derive from another hammer to build.
+*The ice spikes on the Sibear's head will temporarily grow when performing a charge attack or a jump attack from a significant height.
+
+==Bugs==
+*Adding a combined element (that leaves the innate cold damage) may remove the shimmering cold effect on the coils, despite there being {{D|Cold}} damage on the weapon. This bug is inconsistent and may not appear for some people. <sup>[https://www.youtube.com/watch?v=bYq5N-ZltdA Video Proof]</sup>
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+SibearCodex.png|Sibear in Codex. 
+</gallery>
+
+{{VideoGallery
+|{{YouTube|1DQ4-EpXVU0|size=300px}}
+|{{YouTube|OX2gb7wePvI|size=300px}}
+|{{YouTube|6UfL9PVvGwU|size=300px}}
+|{{YouTube|RMf81oU1tEM|size=300px}}
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|35}}
+*Fixed a case of Sibear’s heavy attack causing a performance hitch.
+
+{{ver|33}}
+*Fixed the Sibear’s VFX rendering incorrectly.
+
+{{ver|26}}
+''Actual patch notes made a mistake on new damage number and on old follow through.''
+*Damage increased from 130 Cold to 270 (70 Impact, 20 Puncture, 50 Slash, and 130 Cold).
+*Range increased from 1 to 2.6.
+*Status Chance increased from 10% to 30%.
+*Slam Attack increased from 260 to 810.
+*Slide Attack increased from 260 to 540.
+*Parry Angle set to 50.
+*Follow Through decreased from 0.9 to 0.4.
+
+{{ver|22.17.1}}
+*Fixed the Sibear being granted stacking bonuses from charge attacks and those bonuses being persistent when using a Skin.
+
+{{ver|21.0.7}}
+*Fixed the Palatine Hammer Skin not applying correctly to the Sibear.
+
+{{ver|19.11.5}}
+*Fixed a script error caused by the Sibear.
+
+{{ver|19.9.2}}
+*Fixed a script error when using the Sibear.
+
+{{ver|18.8.1}}
+*Fixed the Sibear not applying color customizations properly.
+
+{{ver|18.8}}
+*Introduced
+}}
+{{ver/Lu|26}}
+
+==See Also==
+*[[Sibear Incarnon Genesis]], the Incarnon power-up for the Sibear.
+
+
+{{WeaponNav}}
+
+[[es:Sibear]]
+[[it:Sibear]]
+[[fr:Sibear]]
+[[Category:Weapons]]
+[[Category:Melee Weapons]]
+[[Category:Hammer]]
+[[Category:Cold Damage Weapons]]
+[[Category:Update 18]]
+[[Category:Weapons with Passives]]
+[[uk:Сибір]]

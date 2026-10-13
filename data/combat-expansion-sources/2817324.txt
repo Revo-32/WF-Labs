@@ -1,0 +1,79 @@
+As one and the same from different alternate timelines, {{WF|Sirius & Orion}} exhibit numerous unique properties and interactions, highlighted in the tabs below:
+
+<div class="tabber-borderless" >
+{{#tag:tabber|
+{{!-!}}Control=
+==The Duo Sons==
+*One of the two Warframes appear as the Primary Son. The Primary Son depends on which name was chosen at the end of [[Jade Shadows]], but can be freely changed after completing [[Jade Shadows: Constellations]] via [[Pontis Tower]]. If Jade Shadows is not completed and the Warframe is acquired through other means (such as being purchased with {{Resource|Platinum}}), Sirius becomes the default Primary Son.
+**The Primary Son is the default Warframe the player controls.
+**The Secondary Son is the default uncontrolled Warframe.
+***Only the Primary Son will be shown on the login screen, cutscenes (such as mission entry and exit), the end of mission screen, and [[Teshin's Cave]] selection pedestal if they are generated for [[Duviri]]. The Secondary Son will be present in the [[Base of Operations]] and in [[Hub]]s, but absent from any event that disables their [[Passives|Passive]] (such as [[Dog Days]]).
+
+==The Unchosen==
+*The uncontrolled Warframe becomes an [[Invulnerable]] AI-controlled ally similar to a [[Specter (Tenno)|Specter]] with their own visible [[Health]], [[Shield]] and [[Energy]] bars.
+**The uncontrolled Warframe attacks nearby enemies with his equipped weapon and frequently casts all his abilities except {{A|Celestial Clash}}. However, the uncontrolled Warframe has a '''0.25x''' damage multiplier applied to all their weapons, reducing their damage.
+***The uncontrolled Warframe cannot use the same weapon as the controlled Warframe, and will swap as necessary. It prefers a ranged weapon over a Melee weapon, and will be unarmed if there is only one weapon in the loadout.
+***When in close range to enemies, the uncontrolled Warframe will switch to a melee weapon if one is in the loadout and not currently in use by the controlled Warframe.
+**If the controlled Warframe enters [[Bleedout]], both Sirius and Orion will be downed.
+**In [[Archwing]] missions, the uncontrolled Warframe will be entirely absent.
+**If an {{Resource|Archwing Launcher}}, {{Resource|K-Drive Launcher}}, {{Resource|Necramech Summon}}, {{Resource|Kaithe Summon}}, or {{Resource|Atomicycle Summon}} are used, the uncontrolled Warframe will not enter a vehicle of their own and attempt to follow on foot.
+***Additionally, hold-casting the vehicle's abilities does not swap to the uncontrolled Warframe.
+**If [[Transference]] is used, the uncontrolled Warframe will still continue to fight.
+**[[Squad Restore]]s will only affect the controlled Warframe.
+**When using [[Emotes]], the uncontrolled Warframe will perform the same emote. The sons can also perform Handshakes with each other.
+
+==Switching==
+*Holding down the ability inputs (default {{Keybind|1}}, {{Keybind|2}}, {{Keybind|3}}) causes the player to become briefly [[Invulnerable]] as the uncontrolled Warframe kicks aside the controlled Warframe, switches player control to the other Warframe, and casts their own version of the ability instead. For example, when controlling Sirius, his first ability will tap-cast {{A|Coronal Ejection}}, while hold-casting will switch to Orion and cast {{A|Gravitic Slash}}.
+**Carriable objects (e.g. [[Mobile Defense]] datamass, [[Excavation]] power cells, [[Disruption]] keys) stay with the original Warframe when swapping, but '''will''' be dropped by the uncontrolled Warframe if it switches to a Primary weapon. This can be prevented either with a loadout that lacks a Primary weapon, or by ensuring the controlled Warframe always has the Primary weapon active whenever enemies are nearby.
+***The negative effects of a [[Defixio]] will apply to whichever Warframe is holding it.
+**If an {{Resource|Archgun Deployer}} is used and then switches control, the [[Arch-gun]] will still be equipped on the Warframe that used the deployer.
+***Of note, this does not bar you from redeploying an Archgun, though aggression on the uncontrolled warframe may temporarily stop until swapped to and from that warframe.
+**Switching Warframes carries the same energy cost as the ability used to switch. (e.g. switching from Orion to Sirius by holding {{Keybind|1}} will cause Orion to lose 15 energy, as if he had casted Gravitic Slash, and for Sirius to lose no energy)
+*Switching between Sirius and Orion provides a <u>'''+45%'''</u> {{Stat|Ability Efficiency}} bonus for the next <u>'''two'''</u> abilities, lasting until used.
+**Switching while the Efficiency bonus is active will refill the charges to <u>'''2'''</u> max.
+**Switch during {{A|Celestial Clash}} does '''not''' activate this Passive.
+*When the controlled Warframe falls below <u>'''50'''</u> energy, it automatically steals energy from the uncontrolled Warframe <u>as much as possible</u> to get back up to '''the aforementioned threshold'''.
+**Energy stealing occurs when falling below the '''threshold''' after (e.g.:) casting an ability, or getting hit by an '''Energy Leech Eximus'''.
+**Energy stealing cannot happen if the uncontrolled Warframe has <u>'''no'''</u> energy
+**The uncontrolled Warframe's energy pool flashes brightly when the stealing occurs.
+*Switching applies a refresh to all [[Maneuvers|Maneuver]] limits, including bullet jumps, double jumps, rolls, and the air-glide timer. 
+**This allows for potentially endless flight, only limited by energy consumption spent on casting abilities to switch. 
+**Airborne maneuverability can help maximize the effectiveness of Event Horizon.
+
+{{!-!}}Upgrade=
+*Sirius & Orion utilizes separate Upgrade loadouts from each other, allowing the player to slot in a different [[Aura]], [[Arcane Enhancements]], and [[Mods]] for customization according to their own attributes.
+**Both Sons can receive {{Resource|Forma}}, {{Resource|Omni Forma}}, {{Resource|Umbra Forma}}, and {{Resource|Exilus Warframe Adapter}}.
+***{{WF|Sirius}} can install a {{Resource|Focus Lens}}, but {{WF|Orion}} can '''not''' regardless of the player's chosen Primary Son.
+***{{WF|Orion}} comes with a pre-installed {{Resource|Orokin Reactor}}.
+**Equipping two of the same Aura on both Warframes do '''not''' stack.
+**Conditional effects (e.g. {{Arcane|Arcane Fury}}) cannot be triggered by the uncontrolled Warframe, nor can he trigger conditional Arcanes for himself.
+**Passive effects (e.g. {{Arcane|Arcane Battery}}) or already built-up stacks (e.g. {{Arcane|Molt Augmented}}) are retained by the uncontrolled Warframe.
+**{{M|Power Donation}} affects both Warframes; the Warframe with it equipped will lose {{Stat|Ability Strength}}, while the other gains it.
+**The effect of {{M|Coaction Drift}} functions as though it was two separate players.
+***This means if both brothers has it installed, both will have a resulting effect of 1.3225, or 1.15<sup>2</sup> due to both being effected by the 1.15 Aura Strength and 1.15 Aura Effectiveness.
+***This also means if only one brother has Coaction Drift installed, the aura from the brother without Coaction Drift will only get the 1.15 Aura Effectiveness on the brother with it installed, and will not effect the aura on that brother itself. Likewise, the aura from the brother with Coaction Drift installed will have the 1.15 Aura Strength applied to the other brother without Coaction Drift, and the brother with it installed will get their own aura at 1.3225 from both buffs, just like a normal frame.
+**{{M|Rolling Guard}} tracks separate cooldown timers if installed on both Sirius and Orion. 
+**[[Helminth]] abilities can only be subsumed on the Primary Son.
+***If the Primary Son is swapped, any Helminth ability present will be replaced with the default ability.
+****Swapping back will restore the infused ability. 
+***Note that subsuming over {{A|Celestial Clash}} will disable Celestial Clash for both Sons.
+***If the subsumed ability has a hold/tap mechanic, the hold to swap mechanic of the replaced ability will be overwritten. For example, if {{A|Eclipse}} is placed over Orion's {{A|Gravitic Slash}}, Eclipse's damage buff and reduction can be used, but the first ability can no longer switch to Sirius and cast {{A|Coronal Ejection}}.
+**[[Archon Shard|Archon Shards]] and [[Decree]]s are shared between Sirius and Orion.
+*Both Warframes gain [[Affinity]] simultaneously.
+**The Secondary Son does '''not''' award [[Mastery Rank]] Points.
+*When Sirius & Orion is the player's equipped Warframe, the Secondary Son is available for customization with its own Upgrade, Appearance, and Abilities tabs in the [[Arsenal]] loadout screen.
+*Primary, Secondary, and Melee [[Weapons]] and their Upgrades and Arcanes are shared between Sirius and Orion.
+**Weapon Appearance tabs (A, B, C, etc) select two adjacent slots, one for Sirius and one for Orion, indicated by their names above the tabs. The player can also copy the Primary Son's colors, or the current Son's colors, to that weapon.
+*Regardless of the weapon's Accuracy stat, the unchosen frame's weapon fire will be very inaccurate. 
+*Weapon Arcanes that proc from applying status effects can sometimes activate on weapon fire from the uncontrolled Warframe. {{Arcane|Cascadia Flare}}, {{Arcane|Conjunction Voltage}}, and {{Arcane|Primary Frostbite}} can be activated, because they do not have a weapon slot-specific requirement to activate. 
+**{{Arcane|Secondary Encumber}} can also be activated.
+**However, Arcanes that only activate on primary or secondary fire, like {{Arcane|Primary Blight}}, {{Arcane|Primary Exhilarate}} and {{Arcane|Secondary Cryogenic}}, cannot.
+*Weapon damage from the uncontrolled Warframe is not considered ability damage, and cannot trigger [[Archon Mods]] or {{Arcane|Arcane Hot Shot}}.
+
+{{!-!}}Constellation Stars=
+When casting abilities, Sirius & Orion ignite '''Constellation Stars''' displayed above the ability icons. Casting a Sirius ability ignites a green round star, while casting an Orion ability ignites a red diamond star; only <u>'''2'''</u> of the same-colored stars can be created consecutively and up to <u>'''7'''</u> stars can be created in total. Stars may be spent using {{A|Celestial Clash}}, where matching the ability inputs with the green star/Sirius ({{Keybind|LMB}}) or red star/Orion ({{Keybind|RMB}}) results in more damage and higher [[Critical Chance]].
+*Celestial Clash can only be cast with at least 1 Constellation Star.
+*Once 7 Constellations Stars have been acquired, the crosses on the Constellation Stars and smaller stars will light up.
+*Constellation Stars matching their Sons inherit their primary energy color.
+}}</div>
+{{clr}}

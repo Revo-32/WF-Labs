@@ -1,0 +1,19 @@
+<onlyinclude>
+<tabber>
+Daggers={{:Zaw Stats/Daggers}}
+|-|Hammers={{:Zaw Stats/Hammers}}
+|-|Heavy Blades={{:Zaw Stats/Heavy Blades}}
+|-|Machetes={{:Zaw Stats/Machetes}}
+|-|Nikanas={{:Zaw Stats/Nikanas}}
+|-|Polearms={{:Zaw Stats/Polearms}}
+|-|Rapiers={{:Zaw Stats/Rapiers}}
+|-|Scythes={{:Zaw Stats/Scythes}}
+|-|Staves={{:Zaw Stats/Staves}}
+|-|Swords={{:Zaw Stats/Swords}}
+</tabber>
+</onlyinclude>
+
+[[fr:Stats des Zaws]]
+[[es:Estadísticas Zaw]]
+[[Category:Tabview]]
+[[Category:Zaw]]

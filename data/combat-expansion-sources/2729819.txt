@@ -1,0 +1,61 @@
+{{ModBox}}
+<section begin=intro />
+'''Enraged''' is a [[Warframe Augment Mod]] for {{WF|Valkyr}}'s {{A|Hysteria}} that increases its damage and [[critical chance]] but fixes its duration to 15 seconds and adds a matching cooldown. The base [[Energy]] cost is also increased to 50, while the Energy drain over time is removed.
+<section end=intro />
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! Damage & Critical Chance Bonus
+! {{Stat|Ability Duration|icon=only}}Maximum Hysteria Duration
+! {{Stat|Ability Duration|icon=only}}Maximum Hysteria Cooldown
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || +200% || 15s || 15s || 6
+|-
+| 1 || +250% || 15s || 15s || 7
+|-
+| 2 || +300% || 15s || 15s || 8
+|-
+| 3 || +350% || 15s || 15s || 9
+|}
+
+==Acquisition==
+*Can be acquired by attaining the rank of '''Partner''' under {{Faction|The Perrin Sequence}}, or the rank of '''Flawless''' under {{Faction|New Loka}}, and spending {{sc|25,000}} to purchase.
+
+==Notes==
+*Cooldown starts '''after''' the duration ends, and cannot start while Transferenced out.
+*Cooldown is equal to the length of time {{A|Hysteria}} was active. For example, if Hysteria was activated for 5 seconds, the cooldown will be 5 seconds.
+*Duration is affected by [[Ability Duration]].
+*Bonus damage and critical chance are '''not''' affected by mods and stack additively with mods like {{M|Pressure Point}} and {{M|True Steel}}.
+*Cannot be equipped at the same time as {{M|Hysterical Assault}}.
+*Recurring bug, where critical bonus mods stack in the simulacrum but not in game.
+{{clr}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39}}
+;VALKYR REWORK
+
+*'''Enraged:''' Damage and Critical Chance are increased to 350% from 200%.
+
+{{ver|27.5.6}}
+*Valkyr’s Enraged Hysteria Augment now has a 1 time Energy cost of 50 instead of draining Energy over time. This also allows you to gain Energy while it's active!
+
+{{ver|27.5.5}}
+*Fixed a script error when deactivating Valkyr’s Hysteria with the Enraged Augment equipped.
+*Fixed script error that could occur when joining a mission in progress with a Valkyr using the Enraged Augment.
+
+{{ver|27.5.4}}
+*Introduced.
+}}
+{{AugmentNav}}
+__NOTOC__
+[[es:Enfurecida]]
+[[ru:Остервенение]]
+[[Category:Valkyr]]
+[[Category:Update 27]]
+[[Category:Warframe Mods]]
+[[Category:Augment Mods]]
+[[uk:Розлюченість]]

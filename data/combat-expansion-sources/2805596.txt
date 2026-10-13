@@ -1,0 +1,99 @@
+{{Top|Enemy|Infested|Infested|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|An instrument of unrelenting harm. If Lesion tastes blood, it becomes invigorated with faster Attack Speed and increased {{D|Toxin}} Damage.}}
+
+The '''Lesion''' is an [[Infested]] polearm based on the {{Weapon|Tipedo}}. Upon inflicting a [[Status Effect]] on its target, the Lesion gains bonuses to its attack speed, status chance, and bonus {{D|Toxin}} damage, which coupled with its primary focus on {{D|Slash}} damage makes it a dangerous weapon against lightly-armored targets.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Applying a status effect grants the '''Frenzy''' buff.
+**Frenzy buff lasts for '''6''' seconds, and can <u>'''not'''</u> be refreshed while active.
+**Frenzy grants the following buffs:
+***'''+15%''' [[Attack Speed]].
+****Bonus is multiplicative to other sources of attack speed.
+***'''+100%''' {{D|Toxin}} damage.
+***'''+25%''' [[Status_Effect#Status Chance|Status Chance]]
+****Bonus is a flat amount applied after mods.
+*Stance slot has {{Pol|Zenurik}} polarity, matching {{M|Shimmering Blight}} and {{M|Argent Scourge}} ([[Conclave]] only) stance.
+*Has a {{Pol|Madurai}} polarity.
+
+{{Advantages|
+}}
+	
+{{Disadvantages|
+}}
+
+==Acquisition==
+The Lesion's blueprint can be purchased from the [[Market]].
+
+{{BuildAutomatic|type=Weapon}}
+This weapon can be sold for {{cc|6,000}}.
+
+==Notes==
+*On dealing status procs on an enemy, the Lesion has a unique feature whereby it gains '''+15%''' attack speed for '''6''' seconds, '''+100%''' {{D|Toxin}} damage, and '''+25%''' status chance.
+**Attack speed buff is multiplicative to attack speed buffs.
+**The {{D|Toxin}} damage is additive to other elemental mods on the weapon, and will combine with any primary elements (or secondary elements with {{D|Toxin}}) on the weapon.
+**Status chance bonus is a flat amount applied after mods.
+**This buff does '''not''' stack with repeated status procs.
+**This buff duration is '''not''' refreshed upon inflicting procs while the buff is still active. The buff must first expire before another instance can be activated.
+
+==Tips==
+*The weapon's {{D|Toxin}} buff synergizes well with {{D|Corrosive}}, {{D|Gas}}, or {{D|Viral}} builds.
+*Synergizes well with {{WF|Saryn}}: her passive increases the duration of status procs by 25% (adding to their total damage) and {{A|Toxic Lash}} guarantees procs along with adding even more {{D|Toxin}} damage.
+*The attack speed buff along with the weapon's high status chance allows the Lesion to proc multiple statuses quickly, good for limited crowd control and/or {{M|Condition Overload}}.
+
+==Trivia==
+*A [[wikipedia:Lesion|Lesion]] is any abnormal damage or change in an organism's tissue, usually the result of injury or disease. It is derived from the Latin word ''[[wiktionary:laesio|laesio]]'', which simply means "injury".
+*Though looking quite similar in design and length to the {{Weapon|Tipedo}},the Lesion's crafting component, the Lesion is labelled as a [[polearm]] while the Tipedo is a [[staff]].
+*The Lesion has a non-static model; the "jaws" of the weapon close when not actively equipped, will open upon being wielded, and without a Stance equipped, the jaws will visibly "bite" on the thrusting second and fourth strikes of the combo.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+LesionTeaser.png|The Lesion, shown in the Update 18.5 Teaser
+Inaros-2016-Teaser.png|Inaros wielding a Lesion in the Update 18.5 Teaser
+185-weapTease.png|18.5 Hub's Weapon Teaser
+Lucas-hug-inftipedo-01.jpg
+File:Utpjd2i8m1wa1.webp|The Lesion's "jaws" opening if no Stance is used
+File:Zp0m5tuam1wa1.webp
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.5}}
+*Added a tooltip for Lesion indicating that the added element will combine with Mods.
+
+{{ver|26}}
+*Mastery Rank increased from 7 to 9.
+*Damage increased from 100 to 237.
+*Range increased from 1.5 to 2.7.
+*Status Chance increased from 30% to 37%.
+*Critical Chance increased from 5% to 15%.
+*Slam Attack increased from 200 to 711.
+*Slide Attack increased from 222 to 474.
+*Parry Angle set to 55.
+*Follow Through reduced from 0.8 to 0.6.
+
+{{ver|22.6}}
+*Fixed polearms clipping on some Warframes when using the standard holster position.
+
+{{ver|18.5}}
+*Introduced.
+}}
+{{Ver/Lu|26}}
+{{WeaponNav}}
+[[de:Lesion]]
+[[es:Lesion]]
+[[fr:Lesion]]
+[[Category:Melee Weapons]]
+[[Category:Update 18]]
+[[Category:Weapons]]
+[[Category:Polearm]]
+[[Category:Hybrid Weapons]]
+[[Category:Slash Damage Weapons]]
+[[Category:Infested]]
+[[Category:Toxin Damage]]
+[[Category:Infested Weapons]]
+[[Category:Weapons with Passives]]
+[[uk:Лезія]]

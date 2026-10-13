@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>WFLabs</AssemblyName>
+    <Product>WF Labs</Product>
+    <Title>WF Labs</Title>
+    <Version>0.8.0-preview.2</Version>
+    <StartupObject>TennoForge.Desktop.EntryPoint</StartupObject>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets/Brand/wf-labs.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../TennoForge.Core/TennoForge.Core.csproj" />
+    <Resource Include="Fonts/*.ttf" />
+    <Resource Include="Assets/Polarities/*.svg" />
+    <Resource Include="Assets/Brand/wf-labs-symbol.svg" />
+    <Resource Include="Assets/Brand/wf-labs.ico" />
+    <Content Include="release-config.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/PUBLIC-EXPORT-NOTICE.txt" Link="PUBLIC-EXPORT-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fonts/OFL.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fonts/SOURCE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/WFCD-LICENSE.txt" Link="WFCD-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/WF-WIKI-NOTICE.txt" Link="WF-WIKI-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Velopack" Version="1.2.161" />
+  </ItemGroup>
+</Project>
+

@@ -1,0 +1,96 @@
+{{Navigation|Shattered Lash|Splinter Storm|Spectrorage|Mass Vitrify}}
+<onlyinclude>{{AbilityU10.3
+| name = Mass Vitrify
+| gameimage = GaraMassVitrify.png
+| cardimage = MassVitrify.png
+| hotkey = 4
+| energy = 75
+| description = Create an expanding ring of molten glass that slowly crystallizes enemies who enter. When the expansion is complete, the ring hardens to block weapons fire. The ring draws extra strength from the health and shields of crystallized enemies. Use Shattered Lash to smash the ring and send razor-sharp glass flying outward.
+<br>'''Energy Drain''': 3 s<sup>-1</sup>, ramp up to 5 s<sup>-1</sup>
+| strength = 20% / 30% / 40% / 50% ([[Damage Vulnerability]])<br />500 / 750 / 1000 / 1600 (ring segment base health)<br/>500 / 600 / 700 / 800 (segment explosion damage)<br/>5x (armor multiplier)
+| range = 2 m (ring initial radius)<br/>3 m/s (ring expansion rate)<br />8 / 8.75 / 10.25 / 11 m (ring max radius)<br />8 / 10 / 12 / 15 m (explosion range)
+| duration = 2 / 2.25 / 2.75 / 3 s (expansion time)<br />10 / 12 / 14 / 16 s (effect duration)
+| misc = 3 m (ring initial height)<br />15 m (ring max height)<br />3 s (crystallization time)<br />12 (ring segments)
+| cardonly = {{{1|}}}
+| info = 
+*Gara expends {{Stat|Ability Efficiency|icon=only}}'''75''' [[Energy]] and coats herself in a shell of hardened glass, becoming immobile and [[Invulnerable]] to damage as she unleashes a radial ring of molten glass that expands outward and downward. The molten glass ring's initial horizontal radius from Gara is {{Stat|Ability Range|icon=only}}'''2''' meters, which expands horizontally at a rate of {{Stat|Ability Range|icon=only}}'''3''' meters per second over {{Stat|Ability Duration|icon=only}}'''2 / 2.25 / 2.75 / 3''' seconds, up to a maximum horizontal radius of {{Stat|Ability Range|icon=only}}{{Stat|Ability Duration|icon=only}}'''8 / 8.75 / 10.25 / 11''' meters. Ring expansion initially drains {{Stat|Ability Efficiency|icon=only}}{{Stat|Ability Duration|icon=only}}'''3''' energy per second, which ramps up to {{Stat|Ability Efficiency|icon=only}}{{Stat|Ability Duration|icon=only}}'''5''' energy per second over the course of expansion. The molten glass ring's initial height is '''<u>3</u>''' meters high, which expands downward up to a maximum height of '''<u>15</u>''' meters.
+**The maximum wall radius follows the formula '''2R + 9RD''', where '''R''' is power range and '''D''' is power duration (both expressed in decimal notation).
+**Molten glass bypasses all entities, obstacles, and terrain as it expands.
+**When the molten glass ring is created, its base is aligned with Gara's feet to ensure that the initial ring height is about Warframe height.
+**Ring height expands downward much faster than ring horizontal radius, reaching full height before expansion time completes.
+**Initial casting animation and release animation are affected by casting speed, from mods such as {{M|Natural Talent}} and {{M|Speed Drift}}.
+**Can be recast while active to expand molten glass and create a new barrier. Only 1 barrier may remain active per player.
+**Molten glass, hardened glass, and crystal tint color and particle effects energy color are affected by Gara's chosen Warframe energy color.
+**If a [[Nullifier Crewman]] bubble touches the glass, it will end the ability prematurely if casting, and instantly shatter it without dealing any damage to surrounding enemies if already hardened. However, enemies hardened with glass will only harden prematurely if the nullifier touches them. 
+*Mass Vitrify's glass undergoes two distinct phases with diverse effects on Gara, allies, and enemies:
+<div class="tabber-borderless" >
+{{#tag:tabber|
+{{!}}-{{!}} Crystallization =
+<div style="display:none;">'''Crystallization'''<br></div>
+*Enemies that contact the molten glass are crystallized over '''<u>3</u>''' seconds, slowing in movement and attack speed until completely solidified in place for {{Stat|Ability Duration|icon=only}}'''10 / 12 / 14 / 16''' seconds. Crystallized enemies receive {{Stat|Ability Strength|icon=only}}'''20% / 30% / 40% / 50%''' [[Damage Vulnerability]]. Each enemy crystallized contributes extra health to the barrier formation phase, based on a portion of their maximum [[Shields]] and [[Health]].
+**Crystallize converted health is affected by both {{Stat|Ability Strength}} and [[Armor]] mods such as {{M|Steel Fiber}} equipped on Gara.
+*If Gara or allies are affected by a {{D|Radiation}} proc, allies may also be vitrified. This includes [[Sortie]] Defense Operatives, [[Syndicate]]s Operatives, and [[Defection|Kavor Defectors]] in addition to fellow Tenno.
+*On death, crystallized enemies shatter into glass with visual and sound effects.
+
+{{!}}-{{!}} Barrier Formation =
+<div style="display:none;">'''Barrier Formation'''<br></div>
+*Upon pressing the ability key again (default {{Keybind|4}}), when maximum horizontal radius is reached, or when Gara runs out of [[Energy]], Gara sheds her glass shell as the molten glass ring solidifies into a hardened glass barrier. The glass barrier lasts until all segments are destroyed or when Mass Vitrify is recast.
+*The glass barrier consists of a circle made out of '''<u>12</u>''' individual segments, each possessing {{Stat|Ability Strength|icon=only}}'''500 / 750 / 1000 / 1600''' base health, plus additional health equal to Gara's total armor value multiplied by {{Stat|Ability Strength|icon=only}}'''500%'''. For each enemy affected by the crystallization phase, each glass barrier segment gains extra health equal equal to <u>'''10%'''</u> of the enemy's maximum shields and health, or {{Stat|Ability Strength|icon=only}}'''320''' plus {{Stat|Ability Strength|icon=only}}'''500%''' of Gara's total armor (whichever value is greater).
+**Health for each Barrier segment uses the following expression:<br/>{{MathText|Modified Health {{eql}} (Base Health + 5 {{mul}} (Base Armor {{mul}} (1 + Armor Mods) + Additional Armor)) {{mul}} (1 + Strength Mods) + Absorbed Health}}
+***With a maxed {{M|Steel Fiber}} and {{M|Intensify}} a wall segment would have<br/>{{Math|(1600 + 5 {{mul}} (160 {{mul}} (1 + 100%))) {{mul}} (1 + 30%)|bf=y}} Health before accounting for converted health from crystallized enemies (values resulting from intermediate calculations are rounded down to the nearest whole number).
+**'''Absorbed Health''':
+***Minimum Health added from each enemy affected by the crystallization phase is: <br/>{{MathText|Health Added {{eql}} (320 + 5 {{mul}} (Base Armor {{mul}} (1 + Armor Mods) + Additional Armor)) {{mul}} (1 + Strength Mods)}}
+***Maximum Health added is: <br/>{{MathText|Health Added {{eql}} (Max Enemy Health + Max Enemy Shields) {{div}} 10}}
+***Whichever formula results in a greater value is used for health added.
+**During the crystallization phase, the number of total crystallize converted health is displayed beside the shield and health indicators on the HUD, as a buff icon with the number of converted health below the icon.
+**The number of intact glass barrier segments is shown on the ability icon while at least 1 segment exists.
+*When a segment's health is depleted, it explodes outward and damages all enemies in a range of {{Stat|Ability Range|icon=only}}'''8 / ? / ? / 15''' meters for {{Stat|Ability Strength|icon=only}}'''250 / 300 / 350 / 400''' damage. The explosion also reaches inwards to the center of Mass Vitrify.
+**Explosion has a damage composition of '''18.75%''' {{D|Impact}}, '''37.5%''' {{D|Puncture}}, and '''37.5%''' {{D|Slash}}.
+*Player and AI interaction with the glass barrier have notable differences:
+**Ally players, allied AI, ally weapon fire, and Warframe abilities can pass through unhindered. However, some friendly projectile-based weapons are deflected when striking either side of the wall, such as {{Weapon|Miter}} and {{Weapon|Arca Plasmor}}.
+**Some allies such as hacked [[Eidolon Lure]]s and [[Sortie]] Defense Operatives cannot pass through.
+**Most enemies are blocked by the glass barrier from moving and attacking through it, including [[Kuva Siphon|Kuva Clouds]]. However, most bosses and the [[Eidolon Teralyst]] can pass through unhindered.
+**Area of effect attacks (e.g., [[Shockwave MOA]]s and [[Bombard]]s) and weapons with innate [[punch through]] (e.g. Tusk Grineer units) can hit through the glass barrier.
+}}</div>
+<hr />
+
+|interactions = 
+* If Gara strikes her own Mass Vitrify glass barrier with {{A|Shattered Lash}}'s glass longsword, the barrier is shattered and destroyed in an explosion of glass fragments that inflicts Shattered Lash's damage ''and'' {{Stat|Ability Strength|icon=only}}'''500 / 600 / 700 / 800''' damage to all enemies within {{Stat|Ability Range|icon=only}}'''8 / 10 / 12 / 15''' meters from the barrier's exterior surface, '''as well as all enemies inside the barrier'''.
+** Explosion has a damage composition of '''18.75%''' {{D|Impact}}, '''37.5%''' {{D|Puncture}}, and '''37.5%''' {{D|Slash}}.
+** Explosion damage is affected by base damage mods (e.g. {{M|Pressure Point}}, {{M|Spoiled Strike}}), elemental damage mods (e.g. {{M|North Wind}}, {{Arcane|Melee Exposure}}), combo multiplier on {{A|Shattered Lash}}, as well as abilities like {{A|Roar}}, {{A|Nourish}} and {{Focus|Lethal Levitation}}.
+** Explosion damage is '''not''' affected by [[Faction mods]], {{M|Condition Overload}}, {{M|Vigorous Swap}}, critical chance or status chance mods as it cannot crit or proc status effects.
+** Explosion is radial and '''not''' dependent on the direction Gara strikes Mass Vitrify with Shattered Lash. Gara must strike a currently intact part of the barrier, but the explosion will occur even around broken segments.
+* Casting Mass Vitrify will also refresh the duration of {{A|Splinter Storm}} on Gara, as well as any affected allies that contact the molten glass during its expansion.
+* If Mass Vitrify's barrier is destroyed by {{A|Shattered Lash}} and Splinter Storm is within the explosion radius of the barrier, '''<u>50%</u>''' of the glass fragments' damage is permanently added to Splinter Storm's damage per second until its duration expires.
+** Absorbed damage can stack from repeated Mass Vitrify explosions inside Splinter Storm's radius.
+** Splinter Storms on Gara herself and allies can absorb damage from Mass Vitrify's explosion, while storms on affected enemies do '''not'''.
+* Gara's [[Gara/Abilities#Passive|Passive]] allows casting abilities to have a <u>'''15%'''</u> chance to {{D|Blind}} enemies within <u>'''12'''</u> meters for <u>'''10'''</u> seconds, exposing them to [[Finisher|Melee Finisher]] attacks. Blind chance increases by <u>'''20%'''</u> until the blind triggers.
+| augment = 
+| tips = **While Mass Vitrify is a potent defensive tool, Gara players can convert it into an offensive tool by investing in Ability Range and Efficiency, to increase the effective range of the resulting shrapnel explosion and reduce casting cost for repeated use. Equipping a melee damage boosting Arcane such as {{Arcane|Arcane Blade Charger}}, {{Arcane|Arcane Fury}}, and Mods like {{M|Steel Charge}} can further power up the resulting shrapnel explosion from Shattered Lash's damage, boosted by melee weapon mods like {{M|Proton Snap}}, Corrupted Mods {{M|Spoiled Strike}} and {{M|Corrupt Charge}}.
+***For this offensive purpose, Gara players can opt to eschew Ability Duration to either further augment Range and Efficiency (by, for example, equipping {{M|Fleeting Expertise}}) or to increase Ability Strength. As this may entail reducing the effectiveness of either {{A|Spectrorage}} or {{A|Splinter Storm}}, [[Helminth]] may replace one of them for a damage-increasing ability such as {{WF|Rhino}}'s {{A|Roar}}, {{WF|Mirage}}'s {{A|Eclipse}}, {{WF|Mesa}}'s {{A|Shooting Gallery}}, Helminth exclusive {{A|Empower}}. Arcanes like{{Arcane|Molt Augmented}}, {{Arcane|Molt Vigor}} and {{Arcane|Pax Bolt}} Operator abilities {{Focus|Sling Strength}} and {{Focus|Hardened Wellspring}} and Archon Shard {{Resource|Crimson Archon Shard}} can augment Shattered Lash's base damage which, in turn, will also increase Mass Vitrify's shrapnel explosion.
+
+**A defensive play style with Gara can be effective taking into consideration that Mass Vitrify scales with enemy armor values. The more enemies caught inside the ring, the stronger the glass walls and effectively CC'ing a large area. This can be strong enough to stop very high level [[Demolisher]] and [[Acolytes]] if enough enemies are vitrified inside the ring. The Armor value of Mass Vitrify is displayed with an icon onscreen, and can be boosted with Armor boosting Arcanes {{Arcane|Arcane Ultimatum}}, {{Arcane|Arcane Tanker}},{{Arcane|Arcane Guardian}}, Operator Focus skill {{Focus|Stone Skin}} Helminth ability {{A|Parasitic Armor}}, {{WF|Chroma}}'s Cold {{A|Elemental Ward}} and {{A|Vex Armor}}, {{WF|Oberon}}'s {{A|Renewal}} synergy with {{A|Hallowed Ground}}, {{WF|Wukong}}'s {{A|Defy}}, Mods like {{M|Mecha Pulse}}.
+***Synergizes well with {{Arcane|Magus Anomaly}} to bring in a group of enemies to vitrify and build stronger walls. Scaling infinitely. Perfect for choke points. 
+
+**Enemies Vitrified, take 50% more damage from all sources.
+
+**Mass Vitrify will refresh Allies {{A|Splinter Storm}} timers if they are passing through while Mass Vitrify is cast.
+| bugs = *Casting Mass Vitrify in the air often delays the effect of refreshing Splinter Storm's duration until Gara lands on the ground, or if done from extreme heights, not refresh it at all.
+*Interrupting the expansion quickly after casting might sometimes result in a "fake" barrier which does not block damage and can not be detonated with Shattered Lash. This can also occasionally happen without voluntarily stopping the expansion.
+*Operators that come into contact with the ring while it's expanding are slowed down.
+<noinclude>
+|max = {{WFmax|main|gara4}}
+</noinclude>|
+}}</onlyinclude>
+
+==See Also==
+*{{WF|Gara}}
+__NOTOC__
+[[es:Vitrificación masiva]]
+[[fr:Vitrification de Masse]]
+[[Category:Warframe Abilities]]
+[[Category:Gara]]
+[[Category:High Scalability]]
+[[Category:Invulnerability]]
+[[Category:Damage Vulnerability]]
+[[uk:Масове засклення]]

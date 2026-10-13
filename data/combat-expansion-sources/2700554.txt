@@ -1,0 +1,61 @@
+{{ArcaneBox}}
+'''Arcane Eruption''' is an [[Arcane Enhancement]] that provides a chance to {{D|Knockdown}} nearby enemies on [[Energy Orb]] pickups. The knockdown goes through walls and is not restricted by [[Line of Sight]].
+
+Can be sold for {{cc|500}}.
+
+==Effect==
+{| class="emodtable"
+|-
+! [[Arcane Enhancement#Rank|Rank]]
+! Chance
+! Radius
+|-
+| 0 || 17% || 5m
+|-
+| 1 || 34% || 10m
+|-
+| 2 || 51% || 15m
+|-
+| 3 || 68% || 20m
+|-
+| 4 || 85% || 25m
+|-
+| 5 || 100% || 30m
+|}
+
+{{Acquisition|*Awarded for killing or capturing the [[Eidolon Gantulyst]].
+*Dropped in Rotation C of [[Orphix]] [[Pluto Proxima]] or [[Veil Proxima]] missions.}}
+
+===History===
+*Arcane Eruption was first introduced in the [[Trial]] mission [[The Law of Retribution]], which was retired in {{ver|22.14}}.
+*The [[Operation: Scarlet Spear]] event sold Arcane Eruption from [[Little Duck]] for 1,500 {{Resource|Scarlet Credits}}.
+*The [[Operation: Orphix Venom]] event sold Arcane Eruption from [[Father]] for 300 {{Resource|Phasic Cells}}.
+*The [[Operation: Gargoyle's Cry]] event sold Arcane Eruption from the [[Jahu Gargoyle|Vigile Jahu Gargoyle]] for 5 {{Resource|Grotesque Splinter}}.
+*The [[Operation: Belly of the Beast]] event sold Arcane Eruption from [[Ordis]] for 3 {{Resource|Volatile Motes}} in the first run of the event, and 4 Motes in the second, with a purchase limit of 42.
+*The [[Operation: Eight Claw]] event sold Arcane Eruption from [[Dominus Thrax]] in bundles of 7, costing 2 {{Resource|Dominus Aureus}}, with a purchase limit of 3 (21 Arcanes in total).
+
+==Notes==
+*Universal Orbs created by {{WF|Lavos}}' {{A|Transmutation Probe}} can trigger Arcane Eruption.
+*{{M|Equilibrium}} Health Orb conversion and Energy Motes spawned by {{Arcane|Emergence Dissipate}} can '''not''' trigger Arcane Eruption.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|34}}
+*Buffs or mechanics that are triggered upon Health or Energy Orb pickup can now be triggered if your Health or Energy pools are at max.
+**''If your buffs are fully stacked, you will no longer pick up these Orbs at max Health/Energy.''
+
+{{ver|16}}
+*Introduced.
+}}
+{{ArcaneNav}}
+__NOTOC__
+[[de:Arkana Eruption]]
+[[es:Erupción arcana]]
+[[Category:Arcane Enhancements]]
+[[Category:Equipment]]
+[[Category:Mechanics]]
+[[Category:Update 16]]
+[[uk:Містичне виверження]]
+[[Category:Eidolon Arcanes]]
+[[Category:Gantulyst Arcanes]]
+[[category:Orphix Arcanes]]

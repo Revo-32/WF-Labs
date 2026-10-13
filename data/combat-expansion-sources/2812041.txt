@@ -1,0 +1,77 @@
+{{DISPLAYTITLE:True Damage}}
+{{Infobox
+| Box title = True Damage
+| image     = EssentialTrueGlyph.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:True_b.png|class=icon]] [[File:True_w.png|class=icon]]
+}}
+'''{{D|True}} Damage''' is a hidden, unique damage type which has no [[Damage Type Modifier|damage modifier]] against any [[Factions|faction]]. This damage type ignores [[armor]]'s [[Damage Reduction|damage reduction]]. It is primarily available through some [[Warframes|Warframe]] abilities.
+
+==Mechanics==
+*{{D|True}} Damage can not be ''directly'' added to a weapon through mods.
+**The {{Weapon|Basmu}} is currently the only weapon that deals it innately: fully depleting the weapon's magazine produces three '''10'''-meter pulses that deals up to '''10''' {{D|True}} Damage, staggers nearby enemies and heals the user's health by '''10x''' the damage done to each enemy per pulse.
+*{{D|True}} Damage is not increased by buffs to physical or elemental damage.
+* Due to its [[armor]]-ignoring properties, {{D|True}} Damage is very useful against high-level [[Grineer]] and most [[Boss]]es.
+* [[Sentient]] enemies do not adapt to {{D|True}} Damage.
+*{{D|True}} Damage does not bypass [[Damage Reduction|damage reduction]] provided by sources that are not armor.
+
+==Status Effects ==
+{{D|True}} Damage does not possess any applicable status procs on its own.
+
+==Sources of True Damage==
+*{{Weapon|Basmu}}'s 10 meter healing pulse.
+
+===Abilities dealing True Damage===
+{{#tag:tabber|
+
+Dagath =
+{{:Doom}}
+{{!}}-{{!}}
+
+Frost =
+{{:Snow Globe}}
+{{!}}-{{!}}
+
+Hydroid =
+{{:Tentacle Swarm}}
+{{!}}-{{!}}
+
+Inaros={{:Desiccation}}
+{{!}}-{{!}}
+
+Kullervo=
+{{:Collective Curse}}
+{{!}}-{{!}}
+
+Mag =
+{{:Polarize}}
+{{!}}-{{!}}
+
+Revenant=
+{{:Reave}}
+{{!}}-{{!}}
+
+Sevagoth={{:Reap}}
+{{:Sow}}
+{{!}}-{{!}}
+
+Trinity =
+{{:Energy Vampire}}
+{{!}}-{{!}}
+}}
+
+== Notes==
+*The term "True Damage" is player-created and not used in the game.
+**Previously, the term "Finishing Damage" was used, often leading to confusion with [[Finisher]] attacks.
+
+
+{{DamageNav}}
+__NOTOC__
+[[de:Schaden/Finishingschaden]]
+[[es:Daño Verdadero]]
+[[fr:Dégâts/Dégâts Brut]]
+[[ru:Урон/Истинный Урон]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Mechanics]]
+[[Category:Update 11]]

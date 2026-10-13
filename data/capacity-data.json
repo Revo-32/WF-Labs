@@ -1,0 +1,3788 @@
+{
+  "version": "capacity-0.5.0",
+  "weaponDefaults": {
+    "/Lotus/Weapons/Grineer/Melee/GrineerTylAxeAndBoar/RegorAxeShield": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Polearms/Naginata/ShrineMaidenNaginataWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Staff/GrnStaff": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Scythe/ParisScythe/ParisScythe": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Gauntlet/Gauntlet": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Gauntlet/PrimeAnkyros/PrimeAnkyros": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Corpus/Melee/Hammer/CorpusHammerWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/DaxDuviriMaceShieldWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/Melee/InfWarfan/InfWarfanWeapon": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerWhip/GrineerWhip": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriTwoHandedKatana/DaxDuviriTwoHandedKatanaWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Staff/Staff": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Staff/PrimeBo/PrimeBoWeapon": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Tonfa/Boltonfa/Boltonfa": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnQueenSceptre/GrnQueenSceptreWeapon": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoSmallSword": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Staff/SingleStaff": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Polearms/TnHalberdPolearm/TnHalberdPolearmWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Infested/Melee/InfEmbolistScythe/InfestedScythe": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Dagger/CeramicDagger": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/Melee/Glaives/PunctureGlaive/PunctureGlaiveWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/OperationsLacera": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/PacifistShieldAndSword/PacifistShieldSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/PrimeCobraAndCrane/PrimeCobraAndCraneWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaCaustacyst/CodaCaustacyst": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaHirudo": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaMire": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaPathocyst/CodaPathocyst": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Archwing/Melee/ExaltedArchScythe/ExaltedAWScytheWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/CronusSword/CronusLongSword": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/CronusSword/PrimeCronusLongSword": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Dagger/DarkDagger": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerDuals": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerSingle": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkLongSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/TnoRapier/TnoRapier": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PRapier/DestrezaPrime": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/DexTheSecond/DexTheSecond": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Dex2023Nikana/Dex2023Nikana": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/TnDagathBladeWhip/TnDagathBladeWhip": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/LowKatana": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/DualCleaverWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualEtherSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualHeatSwords": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "Universal"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Axe/DualInfestedAxesWeapon": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/DualKamas/DualKamas": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PrimeDualKamas/PrimeDualKamas": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/QuillSword/QuillDualSwords": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeDualKeres/PrimeDualKeresWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Soma/SomaDualKamas": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/DualShortSword/DualShortSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Lasria/LasGooSickle/LasGooSicklePlayerWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Axe/DualAxeWeapon": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Axe/PrimeZoren/PrimeZorenAxeWeapon": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "AP_TACTIC",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Polearms/DaxDuviriPolearm/DaxDuviriPolearmWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Thanotech/EntSphereHammer/EntSphereHammer": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/ThreeLeaf/ThreeLeaf": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/DualDagger/DualEtherDagger": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Scythe/EtherScytheWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/LongSword/EtherSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGlaive/CrpGlaive": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/DualDagger/DualDagger": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/DualDagger/FangPrimeDagger": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Hammer/HammerWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PrimeFragor/PrimeFragor": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Fist/Fist": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Fist/FuraxWraith": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Grineer/Melee/Scythe/GrnDrillScythe/GrnDrillScythe": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/GreatSword/TennoGreatSword": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGalatine/PrimeGalatine": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Corpus/Melee/Whips/CrpShockGrip/CrpShockGripWhipWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Powersuits/Garuda/GarudaPrimeClaws": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Powersuits/Garuda/GarudaClaws": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PersianMachete/DjinnMachete": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnGhoulSaw/GrnGhoulSawPlayer": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Glaives/LightGlaive/LightGlaiveWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeGlaive/PrimeGlaiveWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/GreatSword/GreatSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGram/PrimeGram": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Polearms/TnGuandaoPolearm/TnGuandaoPolearmWeapon": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Polearms/PrimeGuandao/PrimeGuandaoWeapon": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Warfan/WarfanWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Warfan/PrimeGunsen/PrimeGunsenWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnBoomerang/GrnBoomerang": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnBoomerang/HalikarWraithWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Scythe/TnChoirScythe/TnChoirScythe": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Scythe/StalkerScytheWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Dagger/Dagger": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/HeatSword/HeatLongSword": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Cephalon/Melee/Hammer/CephHammerWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/HeavyScythe/DuviriScythe/DuviriHeavyScytheWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/Melee/InfWFAccompanyingSparring/InfestedKogake": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Zariman/Melee/Dagger/ZarimanDaggerWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerJetPoweredPolearm/GrineerJetPolearm": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnKusarigama/GrnKusarigamaWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/JawSword/JawLongSword": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/DualKamas/SingleKama": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/KrisDagger/KrisDagger": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKaryst/PrimeKrisDagger": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/Melee/InfTransformClaw/InfTransformClawsWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerHalberd/GrnHalberd": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Glaives/Boomerang/BoomerangWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Glaives/PrimeKestrel/PrimeKestrel": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/BrassKnuckles/BrassKnuckles": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PrimeKogake/KogakePrimeKnuckles": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnSparring/GrnSpiderSparring/GrnSpiderSparring": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Archon/Melee/Trident/ArchonTridentPlayerWep": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Corpus/Melee/CrpVenusHatchet/CrpVenusHatchet": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/GrnEgyptSwdWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinner/TennoTonfa": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinnerPrime/TonfaContestWinnerPrimeWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnGhoulSaw/GrnKuvaGhoulSawPlayer": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnKuvaLichScythe/GrnKuvaLichScytheWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/StalkerMios": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Corpus/Melee/Whip/CorpusWhipWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Infested/Melee/TipedoStaff/InfTipedoStaff": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/Machete": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/WraithMacheteWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Maces/PaladinMace/PaladinMaceWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/TnChiselKanabo/TnChiselKanabo": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeMasseter/PrimeMasseter": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/Melee/Swords/Mios/Mios": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/Melee/Swords/Mire/MireSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/MK1Series/MK1Bo": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/MK1Series/MK1Furax": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/CutlassPoignardSwords": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeNamiSkyla/PrimeNamiSkyla": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/TennoCutlass": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Archon/Melee/DualDaggers/ArchonDualDaggersPlayerWep": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/KatanaAndWakizashi/Katana": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKatana/PrimeNikana": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Nunchaku/Nunchaku/Nunchaku": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PrimeNinkondi/PrimeNikondi": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Corpus/Melee/KickAndPunch/KickPunchWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Corpus/Melee/CrpTonfa/CrpTonfa": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/TennoSai/TennoSais": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeOkina/PrimeOkina": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Polearms/PolearmWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Glaives/TeshinGlaive/TnTeshinGlaiveWep": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimePangolinSword/PrimePangolinSword": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PangolinSword/PangolinLongSword": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Orokin/BallasSword/BallasSwordWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Infested/Melee/InfBoomerang/InfBoomerangWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/TnRailjackGreatKatana/TnRailJackGreatKatanaWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PlasmaSword/PlasmaLongSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Zariman/Melee/Tonfas/ZarimanTonfaWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/HeavyScythe/TnOrionSiriusScythe/TnSiriusScytheWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaDualCleavers": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/PrismaMachete": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Corpus/Melee/KickAndPunch/PrismaObex": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Corpus/Melee/CrpTonfa/CrpPrismaTonfa": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/VoidTrader/PrismaSkana": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/ClanTech/Energy/ElectroProd": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/ClanTech/Energy/VandalElectroProd": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Infested/Melee/Nunchaku/InfNunchuck/InfNunchuck": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Infested/Melee/Staff/InfStaff/InfStaff": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Warfan/TnBrokenFrameWarfan/TnBrokenFrameWarfanWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Warfan/TnBrokenFrameWarfan/TnBrokenFramePrimeWarfanWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Syndicates/RedVeil/Melee/RVDarkDagger": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Scythe/ReaperWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Gunblade/TnoGunblade": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Gunblade/RedeemerPrime/RedeemerPrimeWep": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerClaws/GrnClaws": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Operator/Melee/DrifterTazer/DrifterTazerPlayerWep": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Thanotech/EntFistIncarnon/EntFistIncarnon": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Hammer/DaxDuviriHammer/DaxDuviriHammerWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Syndicates/NewLoka/Melee/NLMagistar": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Axe/WolfFrameAxeWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Axe/PrimeVorunaAxeWeapon": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Gunblade/GunbladeAutomatic/TnoGunbladeAutomatic": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Axe/AxeWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Axe/PrimeScindo/PrimeScindoWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Infested/Melee/Whip/InfestedWhip/InfestedWhipWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Syndicates/PerrinSequence/Melee/PSLecta": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Corpus/Melee/Polearm/CorpusPolearm01/CorpusPolearmWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Nunchaku/TnoNunchaku/TnoNunchaku": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrineerCombatKnife/GrineerCombatKnife": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Hammer/IceHammer/IceHammer": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/SundialSwordBoard/SundialBoardSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/MeleeContestWinnerOne/TennoSwordShield": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PrimeSilvaAegis/PrimeSilvaAegis": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_DEFENSE",
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/LongSword/LongSword": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/LongSword/SkanaPrime": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/UmbraKatana/UmbraKatana": {
+      "slotPolarities": [
+        "AP_UMBRA",
+        "AP_UMBRA",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnSharbola/GrnSharbolaWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Whips/SpiderWhip/SpiderWhipWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Corpus/Melee/Gunblade/CrpGunBlade/CrpGunbladeWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Types/Friendly/PlayerControllable/Weapons/DuviriDualSwordsWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriKatana/DaxDuviriKatanaWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnTrident/GrnTridentWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Syndicates/CephalonSuda/Melee/CSHeliocor": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/MortiforShieldAndSword/MortiforShieldAndSword": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/TnTwoHandedKatana/TnTwoHandedKatana": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeTatsu/PrimeTatsuWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Gauntlet/BrawlerKnuckles/BrawlerKnuckles": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PrimeTekko/PrimeTekko": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Melee/AHBoltace": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Corpus/Melee/ShieldAndSword/CrpHammerShield/CrpHammerShield": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/CrpBigSlash/CrpBigSlash": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Corpus/Melee/CrpBriefcaseScythe/CrpBriefcaseScythe": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Corpus/Melee/CrpBriefcase2HKatana/CrpBriefcase2HKatana": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Zariman/Melee/HeavyScythe/ZarimanHeavyScythe/ZarimanHeavyScytheWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Staff/MonkSpade/TnoMonkStaff": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Staff/TipedoPrime/TipedoPrimeWeapon": {
+      "slotPolarities": [
+        "AP_DEFENSE",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_WARD"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Polearms/FlowerPowerPolearm/FlowerPowerPolearmWep": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Grineer/Melee/Tonfa/GrnChainSawTonfa/GrnChainSawTonfaWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnDualFireAxe/GrnDualFireAxe": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnEgyptSwd/DualGrnEgyptSwdWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GunBlade/GrnGunBlade/GrnGunblade": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Syndicates/SteelMeridian/Melee/SMSydon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Sentients/SentJointedScythe/SentJointedScytheWeapon": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Scythe/PrimeVento/PrimeVentoScythe": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_POWER"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Claws/TennoClaws": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PrimeVenKa/PrimeVenkaClaws": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Archon/Melee/Whip/ArchonWhipPlayerWep": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Warfan/TnMoonWarfan/MoonWarfanWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/NWIIIOrokinSword/NWOrokinSword": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Hammer/GlassHammer/GlassHammer": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/PrimeVolnus/VolnusPrimeWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/StalkerTwo/StalkerTwoGreatSword": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeWar/PrimeWarWeapon": {
+      "slotPolarities": [
+        "AP_TACTIC",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_DEFENSE"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Hammer/ThrowingHammer": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Melee/HeavyScythe/TnOrionSiriusScythe/TnOrionScytheWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGhostCatcherGlaive/CrpGhostCatcherGlaive": {
+      "slotPolarities": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_TACTIC"
+    },
+    "/Lotus/Weapons/Tenno/Melee/SunDialAxe/SundialAxeWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "AP_ATTACK"
+    },
+    "/Lotus/Weapons/Tenno/Bayonet/TnBayonetRifleWeapon": {
+      "slotPolarities": [
+        "AP_ATTACK",
+        "Omni",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "stanceSlotPolarity": "Omni"
+    }
+  },
+  "stanceMods": {
+    "Argent Scourge": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPPolearmStanceOne",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Argo & Vel": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Arum Spinosa": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Assault Saw": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Astral Twilight": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/GlaiveCmbTwoMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Atlantis Vulcan": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/NunchakuCmbOneMeleeTree",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Azothane": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Bayonet": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Biting Piranha": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDualDaggersStanceOne",
+      "polarity": "AP_WARD",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Blade and Whip": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Bleeding Willow": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/PolearmCmbTwoMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Blind Justice": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbThreeMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Brutal Tide": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/PunchKickCmbTwoMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Bullet Dance": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/GunbladeCmbTwoMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Burning Wasp": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/WhipCmbOneMeleeTree",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Butcher's Revelry": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AssaultSawMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Carving Mantis": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualSwordCmbThreeMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Caustacyst": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Celestial Nightfall": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPGlaiveStanceOne",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Clashing Forest": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/StaffCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Claws": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Cleaving Whirlwind": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbTwoMeleeTree",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Cobra & Crane": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Coiling Viper": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/WhipCmbTwoMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Crashing Havoc": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPHammerStanceOne",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Crashing Timber": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPStavesStanceOne",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Crimson Dervish": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/CrimsonDervishMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Crossing Snakes": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualSwordCmbTwoMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Crushing Ruin": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/HammerCmbTwoMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Cunning Aspect": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPRapierStanceOne",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Cyclone Kraken": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/MacheteCmbTwoMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Dagger": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Decisive Judgement": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbTwoMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Defiled Snapdragon": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/SwordWhipCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Dividing Blades": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDualSwordStanceOne",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Dual Daggers": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Dual Nikanas": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Dual Swords": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Edun": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Eleventh Storm": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/SwordShieldCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Exalted Blade": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DoomSwordMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 3
+    },
+    "Fateful Truth": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPKatanaStanceOne",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Final Harbinger": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/RegorSwordShieldMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Fist": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Flailing Branch": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/StaffCmbTwoMeleeTree",
+      "polarity": "AP_WARD",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Four Riders": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/ClawCmbThreeMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Fracturing Wind": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/FistCmbOneMeleeTree",
+      "polarity": "AP_WARD",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Gaia's Tragedy": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/FistCmbThreeMeleeTree",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Galeforce Dawn": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/HeavyScytheCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Gemini Cross": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Glaive": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Gleaming Talon": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/GlaiveCmbOneMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Gnashing Payara": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualDaggerCmbTwoMeleeTree",
+      "polarity": "AP_WARD",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Grim Fury": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/PunchKickCmbOneMeleeTree",
+      "polarity": "AP_WARD",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Gunblade": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Hammer": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Harrowing Spire": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/BayonetCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Heavy Blade": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Heavy Scythe": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "High Noon": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/GunbladeCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Homing Fang": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DaggerCmbOneMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Hysteria": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/BerserkerMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 3
+    },
+    "Iron Phoenix": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/IronPhoenixMeleeTree",
+      "polarity": "AP_WARD",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Jat Kusar": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Keratinos": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Korumm": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Lashing Coil": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPWhipStanceOne",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Last Herald": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPSwordShieldStanceOne",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Machete": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Mafic Rain": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPNunchakuStanceOne",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Malicious Raptor": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/ClawCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Mountain's Edge": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualKatanaCmbOneMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Nepheri": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Nikana": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Noble Cadence": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPHeavyBladeStanceOne",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Nunchaku": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Piercing Fury": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPDaggerStanceOne",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Pointed Wind": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DaggerCmbTwoMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Polearm": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Primal Fury": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/MonkeyKingStaffMeleeTreeRework",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 3
+    },
+    "Quaking Hand": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPFistStanceOne",
+      "polarity": "AP_WARD",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Quassus": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Rapier": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Ravenous Wraith": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/ReaperMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 3
+    },
+    "Reaping Spiral": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/ScytheCmbOneMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Rending Crane": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Rending Wind": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPMacheteStanceOne",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Rising Steel": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPSwordStanceOne",
+      "polarity": "AP_WARD",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Sampotes": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Scarlet Hurricane": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPClawStanceOne",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Scythe": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Seismic Palm": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/FistCmbTwoMeleeTree",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Serene Storm": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/PacifistMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 3
+    },
+    "Shadow Harvest": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPScytheStanceOne",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Shattering Storm": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/HammerCmbOneMeleeTree",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Shimmering Blight": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/PolearmCmbOneMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Sigma & Octantis": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Sinking Talon": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualDaggerCmbOneMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Slicing Feathers": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/WarfanCmbOneMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Sovereign Outcast": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbTwoMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Sparring": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Spinning Needle": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualDaggerCmbThreeMeleeTree",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Staff": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Stalking Fan": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/ScytheCmbTwoMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Star Divide": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPTonfaStanceOne",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Stinging Thorn": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DaggerCmbThreeMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Sundering Weave": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/MacheteCmbOneMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Swirling Tiger": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/DualSwordCmbOneMeleeTree",
+      "polarity": "AP_POWER",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Swooping Falcon": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/SwordCmbTwoMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Sword": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Sword and Shield": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Syam": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Tatsu": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Tainted Hydra": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPSwordWhipStanceOne",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Telos Boltace": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Tempo Royale": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbThreeMeleeTree",
+      "polarity": "AP_DEFENSE",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Tenet Agendus": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Tenet Exec": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Tenet Grigori": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Tonfa": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Tranquil Cleave": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Twirling Spire": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/PolearmCmbThreeMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Two-Handed Nikana": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Vengeful Revenant": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/StalkerSwordMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Verdilac": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Vermillion Storm": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/ClawCmbTwoMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Vicious Approach": {
+      "modId": "/Lotus/Upgrades/Mods/PvPMods/Stances/PvPPunchKickStanceOne",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Vitrica": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Votive Onslaught": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/WarfanCmbTwoMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Vulpine Mask": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/RapierCmbOneMeleeTree",
+      "polarity": "AP_TACTIC",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Warfan": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Whip": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    },
+    "Wise Razor": {
+      "modId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/LongKatanaCmbOneMeleeTree",
+      "polarity": "AP_ATTACK",
+      "maxRank": 3,
+      "bonus": 5
+    },
+    "Zenistar": {
+      "modId": "",
+      "polarity": "None",
+      "maxRank": 0,
+      "bonus": 0
+    }
+  }
+}

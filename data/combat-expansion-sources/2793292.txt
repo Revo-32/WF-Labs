@@ -1,0 +1,83 @@
+{{ArcaneBox}}
+'''Exodia Might''' is an [[Arcane Enhancement]] for [[Zaw]]s that has a 50% chance to grant [[Life Steal]] on [[Finisher]]s for 8 seconds.
+
+==Effect==
+{| class="emodtable"
+|-
+! Rank
+! Life Steal
+|-
+| 0 || 7.5%
+|-
+| 1 || 15%
+|-
+| 2 || 22.5%
+|-
+| 3 || 30%
+|}
+
+==Acquisition==
+Can be bought from [[Hok]] for {{sc|10,000}} per arcane upon reaching the rank of '''Kin''' with the [[Ostron]]s.
+
+==Notes==
+*While the buff is active, only melee damage will siphon health. This includes damage over time status effects such as {{D|Slash}}, {{D|Toxin}}, {{D|Gas}}, and {{D|Heat}} status effects.
+*Ground finishers will not grant life steal buff.
+*The initial finisher that triggers the buff will only grant healing if the player is the host.
+*Synergizes well with {{M|Dizzying Rounds}} as close range finishers will be guaranteed after hitting an enemy with the augment-modded {{Weapon|Bronco}}/{{Weapon|Bronco Prime}}.
+
+==Trivia==
+Prior to {{ver|24.6}}, Exodia Might was purchasable as a blueprint with the following requirements to build:
+
+{{BuildRequire
+|buildcredits= 7,500
+|build1= Breath Of The Eidolon
+|build1amount=10
+|build2= Cetus Wisp
+|build2amount=10
+|build3= Tralok Eyes
+|build3amount=5
+|build4= Heart Nyth
+|build4amount=3
+|buildtime=1
+|buildrush=10
+|blueprint=12,500
+|blueprintunit=Standing
+}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|34}}
+*Fixed several cases where the game was not recognizing a Ground Finisher for the activation of Mods and Arcanes. The intent is that Ground Finishers, Stealth Finishers and Parazon Finishers should be equivalent unless explicitly stated otherwise:
+**Exodia Might will now activate from Ground Finishers
+
+{{ver|33.6}}
+*Fixed Exodia Might not triggering on Mercy Kills. Previously it would only trigger on Finishers performed by your actual Zaw (versus your Parazon, etc.).
+
+{{ver|31.6}}
+;ARCANE STAT CHANGES PER RANK
+
+We’ve adjusted the values of older Arcanes with the goal of making lower rank Arcanes more viable, and more desirable while collecting as a result. In short, there are three stats that each Arcane tends to have (speaking generally) -- for example, a percentage chance, a stat buff, and the duration of the buff. 
+
+Certain Arcanes increase all of these stats per rank (making them scale exponentially), but we are changing it so that only one stat is affected by rank (making it scale linearly). The other stats will now be at the max-rank value regardless of the Arcane Rank, thereby buffing lower-rank Arcanes as a result.
+
+;Exodia Might
+On Finisher Kill: 50% (was 13%) chance for +7.5%/30% Life Steal for 8s (was 2s)
+
+{{ver|24.6}}
+*Replaced Arcane Blueprints with Arcanes in Hok's Offerings meaning that Arcanes no longer need to be built.
+**Players that had previous Arcane Blueprints in Inventory were crafted on patch login for free.
+
+{{ver|22.2.4}}
+*Reduced the component cost in certain crafting recipes.
+**EXODIA MIGHT: Breath of the Eidolon from 20 to 10
+**EXODIA MIGHT: Tralok Eyes from 40 to 5
+
+{{ver|Plains of Eidolon}}
+*Introduced.}}
+{{ArcaneNav}}
+__NOTOC__
+[[es:Fortaleza de Exodia]]
+[[Category:Update 22]]
+[[Category:Syndicate Offerings]]
+[[Category:Arcane Enhancements]]
+[[uk:Екзодія «Міць»]]

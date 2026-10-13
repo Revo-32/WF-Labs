@@ -1,0 +1,56 @@
+{{WarframeTopNav}}
+==Passive==
+{{Transclude|Sirius & Orion/Abilities/Passive}}
+
+==Abilities==
+Sirius and Orion possess a unique set of seven abilities (with one being shared between them) with different modding benefits, highlighted in the sections below:
+
+==={{WF|Sirius}}===
+{{WarframePage/Abilities
+| Coronal Ejection | Jade Stars | Light's Sanctuary | Celestial Clash |
+| ability1          = Coronal Ejection
+| ability1icon      = CoronalEjectionIcon(xWhite).png
+| ability1strength  = yes
+| ability1duration  = 
+| ability1range     = yes
+| ability2          = Jade Stars
+| ability2icon      = JadeStarsIcon(xWhite).png
+| ability2strength  = yes
+| ability2duration  = yes
+| ability2range     = yes
+| ability3          = Light's Sanctuary
+| ability3icon      = Light'sSanctuaryIcon(xWhite).png
+| ability3strength  = yes
+| ability3duration  = yes
+| ability3range     = yes
+| ability4          = Celestial Clash
+| ability4icon      = CelestialClashIcon(xWhite).png
+| ability4strength  = yes
+| ability4duration  = 
+| ability4range     = yes
+}}
+<hr>
+==={{WF|Orion}}===
+{{WarframePage/Abilities
+| Gravitic Slash | Astral Shell | Event Horizon | Celestial Clash |
+| ability1          = Gravitic Slash
+| ability1icon      = GraviticSlashIcon(xWhite).png
+| ability1strength  = yes
+| ability1duration  = 
+| ability1range     = yes
+| ability2          = Astral Shell
+| ability2icon      = AstralShellIcon(xWhite).png
+| ability2strength  = yes
+| ability2duration  = yes
+| ability2range     = yes
+| ability3          = Event Horizon
+| ability3icon      = EventHorizonIcon(xWhite).png
+| ability3strength  = yes
+| ability3duration  = yes
+| ability3range     = yes
+| ability4          = Celestial Clash
+| ability4icon      = CelestialClashIcon(xWhite).png
+| ability4strength  = yes
+| ability4duration  = 
+| ability4range     = yes
+}}

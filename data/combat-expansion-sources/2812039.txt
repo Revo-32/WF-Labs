@@ -1,0 +1,768 @@
+<!--indenting on lists: for some reason the way i have implemented collapsibles here, indents the list below that onepoint outward, which can be countered by just moving it one point further in again.-->
+{{infobox
+|Box title    = Finisher
+|image        = DaggerBackFinisher.gif
+|caption      = Excalibur performing a Stealth Attack with a Dagger.
+}}
+<section begin=intro />
+'''Finisher''' attacks are special [[melee]] attacks that have a custom animation and deal a very high amount of damage. For the available types of finishers see below.
+<section end=intro />
+*While in [[Stealth]], the weapon's level will affect finisher's damage. See [[#Stealth Attack]].
+*All weapon types have individual finisher animations. Heavier weapons tend to perform this action slower than lighter weapons.
+*Players performing finishers are '''[[invulnerable]]''' for the duration of the animation.
+*Additionally, Finisher attack damage is dependent on the type of melee weapon used and can be increased by {{M|Finishing Touch}} as well as several Ability Augments (e.g. {{WF|Excalibur}}'s {{M|Radiant Finish}}). 
+*({{M|Primed Fury|Primed}}) {{M|Fury}}, {{M|Gladiator Vice}}, {{M|Quickening}}, {{M|Berserker Fury}}, {{Arcane|Arcane Strike}} and the weapon type influence the animation speed of the finisher. This caps at a 33% faster animation with +50% attack speed. The weapon's base attack speed does '''not''' affect animation speed.
+*Damage multipliers from finishers factor total weapon damage, equipped mods (including [[critical chance]] and [[critical multiplier]] mods) will also affect a finisher's final damage.
+*On some enemies (particularly non-quadrupedal and nonbipedal enemies) it is not possible to use a finisher, these include [[Roller]]s, [[Corpus#Osprey|Ospreys]], [[Security Camera|Cameras]] and [[Turret]]s.
+*[[Garuda]] overrides Front/Back finishers to use claw animations and their respective damage modifiers, which prevents [[Rumblejack]] and Rapiers(?) from applying their related status effects as well.
+*Examples of finisher moves can be found in the [[Melee/Gallery|gallery page]].
+
+==Ground Finisher==
+[[File:SkanaGroundFinisher.gif|thumb|right|220px|A ground attack finisher with a Skana.]]
+{{Combo|Aiming at Downed Enemy + Interact button}}
+Execute [[Knockdown|knocked-down]] enemies. This attack is performed upon moving close to a downed opponent, and pressing the interact button when prompted. This will not work on ''most'' bosses. This attack often will initiate even when not looking down at an enemy, but when contacting an enemy who has been knocked down.
+*Ground Finishers have their damage fully converted to '''{{D|Finisher}} Damage'''.
+*Ground Finishers deal a multiple of the weapon's damage. '''Different weapon types gain different damage multipliers''':
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;width:60%;font-size:12px;"
+|-
+! Weapon/Weapon Class
+! data-sort-type=number | Ground Finisher Multiplier
+|-
+|[[:Category:Assault Saw|Assault Saw]] || 9x
+|-
+|[[:Category:Bayonet|Bayonet]] || 24x (12x {{mul}} 2 hits)
+|-
+|[[:Category:Dagger|Dagger]] || 10x (5x {{mul}} 2 hits)
+|-
+|[[:Category:Gunblade|Gunblade]] || 10x
+|-
+|[[:Category:Whip|Whip]] || 10x
+|-
+|[[:Category:Dual Daggers|Dual Daggers]] || 16x (8x {{mul}} 2 hits)
+|-
+|[[Exalted Blade (Weapon)|Exalted Blade]]
+|12x
+|-
+|[[:Category:Fist|Fist]] || 30x (5x {{mul}} 6 hits)
+|-
+|[[:Category:Hammer|Hammer]] || 12x
+|-
+|[[:Category:Sparring|Sparring]] || 30x (5x {{mul}} 6 hits)
+|-
+|[[:Category:Claws|Claws]] || 13.5x (2.5x {{mul}} 5 hits + 1x)
+|-
+|[[:Category:Glaive|Glaive]] || 10x
+|-
+|[[:Category:Heavy Blade|Heavy Blade]] || 12x
+|-
+|[[:Category:Heavy Scythe|Heavy Scythe]] || 12x
+|-
+|[[:Category:Machete|Machete]] || 10x
+|-
+|[[:Category:Nikana|Nikana]] || 10x
+|-
+|[[:Category:Nunchaku|Nunchaku]] || 10x
+|-
+|[[:Category:Polearm|Polearm]] || 12x
+|-
+|[[:Category:Sword|Sword]] || 10x
+|-
+|[[:Category:Two-Handed Nikana|Two-Handed Nikana]] || 12x
+|-
+|[[:Category:Warfan|Warfan]] || 10x
+|-
+|[[:Category:Blade and Whip|Blade and Whip]] || 10x
+|-
+|[[:Category:Dual Swords|Dual Swords]] || 16x (8x {{mul}} 2 hits)
+|-
+|[[:Category:Rapier|Rapier]] || 10x
+|-
+|[[:Category:Scythe|Scythe]] || 12x
+|-
+|[[:Category:Staff|Staff]] || 10x
+|-
+|[[:Category:Tonfa|Tonfa]] || 20x (10x {{mul}} 2 hits)
+|-
+|[[:Category:Sword and Shield|Sword and Shield]] || 8x
+|-
+|{{Weapon|Valkyr Talons}} || 54x (10x {{mul}} 5 hits + 4x)
+|-
+|}
+
+===Methods to Open Enemies to Ground Finishers===
+{{#section:Knockdown|knockdownbyplayer}}
+
+==Stealth Attack==
+{{Main|Stealth#Stealth Damage Bonus}}
+{{Combo|Approach [[Stealth#Alertness|unalerted]] enemy from behind + Interact button}}
+[[File:StealthAttackPrompt.png|thumb|right|220px|A stealth attack prompt on an unalerted Lancer]]
+[[File:SkanaStealthFinisher.gif|thumb|right|220px|A Skana's stealth attack]]
+As long as an enemy is unaware of the Tenno presence, a '''stealth attack''' may be executed on them. To perform a stealth attack, the player must approach an enemy from behind and activate the stealth attack prompt.
+*Often called "Stealth Finisher" to differentiate from normal attacks with the [[Stealth#Stealth Damage Bonus|stealth damage bonus]].
+:{{MathText|Stealth Damage Bonus {{Eql}} 1 + 0.2 {{Mul}} Weapon Rank}}
+*Weapons with a maximum rank of 40 (such as the [[Paracesis]]) instead use the following formula:
+:{{MathText|Stealth Damage Bonus {{Eql}} 1 + 0.15 {{Mul}} Weapon Rank}}
+
+* Whether a weapon has a max rank of 30 or 40, a fully ranked weapon will have a stealth damage bonus of +7x or 8x damage.
+
+*Stealth Attacks have their damage fully converted to '''{{D|Finisher}} Damage'''.
+:{{MathText|Stealth Finisher Damage {{eql}} Melee Weapon Damage {{mul}} Melee Type Damage Multiplier {{mul}}（1 + Stealth Damage Bonus）}}
+*Elemental and Physical damage mods only apply half of their bonus before being converted.
+*Stealth Finisher Damage can also be crit:
+:{{MathText|Stealth Finisher Damage {{eql}} Melee Weapon Damage {{mul}} Melee Type Damage Multiplier {{mul}}（1 + Stealth Damage Bonus + Critical Multiplier）}}
+
+*Damage value pop-ups always appear yellow, identical to critical hit damage values (even if the stealth attack did not crit).
+*Stealth Damage Bonus does not work in the [[Simulacrum]] unless Enemy AI is enabled.
+*Special enemies, such as [[Grineer Target|Targets]] and [[Warden]]s, receive extra damage from stealth attacks.
+*Few [[Bosses]] can be stealth attacked.
+*Rapier front and back finishers proc {{D|Slash}}.
+**These slash procs only receive a 4x multiplier instead of an 8x.
+*Stealth Attacks deal a multiple of the weapon's damage. '''Damage multipliers for each weapon type are as follows:
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;width:60%;font-size:12px;"
+|-
+! Weapon/Weapon Class
+! data-sort-type=number | Stealth Finisher Multiplier
+! data-sort-type=number | Final Stealth Multiplier
+! Notes
+|-
+|[[:Category:Bayonet|Bayonet]] || 12x
+|96x
+|-
+|[[:Category:Blade and Whip|Blade and Whip]] || 8x
+|64x
+|-
+|[[:Category:Claws|Claws]] || 8x (0.8x + 1.6x + 5.6x)
+|64x
+|-
+|[[:Category:Dagger|Dagger]] || 6x (2x + 4x)
+|48x
+|-
+|[[:Category:Dual Daggers|Dual Daggers]] || 6x (1.8x + 4.2x)
+|48x
+|-
+|[[:Category:Dual Swords|Dual Swords]] || 8x (2.4x + 5.6x)
+|64x
+|-
+|[[Exalted Blade (Weapon)|Exalted Blade]]
+|16x (8x + 8x)
+|128x
+|-
+|[[:Category:Fist|Fist]]|| 8x (1.6x + 6.4x)
+|64x
+|-
+|[[:Category:Glaive|Glaive]]|| 8x (1.6x + 6.4x)
+|64x
+|-
+|[[:Category:Gunblade|Gunblade]]|| 8x
+|64x
+|-
+|[[:Category:Hammer|Hammer]]|| 12x (4x + 8x)
+|96x
+|-
+|[[:Category:Heavy Blade|Heavy Blade]]|| 12x (4x + 8x)
+|96x
+|-
+|[[:Category:Heavy Scythe|Heavy Scythe]]|| 12x (4x + 8x)
+|96x
+|-
+|[[:Category:Machete|Machete]]|| 8x
+|64x
+|-
+|[[:Category:Nikana|Nikana]]|| 8x
+|64x
+|-
+|[[:Category:Nunchaku|Nunchaku]]|| 6x
+|48x
+|-
+|[[:Category:Polearm|Polearm]]|| 6x
+|48x
+|-
+|[[:Category:Rapier|Rapier]]|| 8x (0.5x + 1.5x + 6x)
+|64x
+|Forced {{D|Slash}} proc on each hit
+|-
+|[[:Category:Scythe|Scythe]]|| 12x (4x + 8x)
+|96x
+|-
+|[[:Category:Sparring|Sparring]]|| 8x (1.6x + 6.4x)
+|64x
+|-
+|[[:Category:Staff|Staff]]|| 6x
+|48x
+|-
+|[[:Category:Sword|Sword]]|| 16x
+|128x
+|-
+|[[:Category:Sword and Shield|Sword and Shield]]|| 8x
+|64x
+|-
+|[[:Category:Tonfa|Tonfa]]|| 8x
+|64x
+|-
+|[[:Category:Two-Handed Nikana|Two-Handed Nikana]] || 8x
+|64x
+|-
+|[[Valkyr Talons]] || 4x || 32x
+|-
+|[[:Category:Warfan|Warfan]] || 8x || 64x
+|-
+|[[:Category:Whip|Whip]] || 8x || 64x
+|-
+|{{Weapon|Rumblejack}} || 10.4x (0.4x + 10x) || 83.2x || Forced {{D|Electricity}} proc on first hit
+|-
+|}
+
+==Front/Back/Universal Finisher==
+{{Combo|Vulnerable enemy + Interact button}}
+[[File:SkanaParryFinisher.gif|thumb|right|220px|Parrying a Butcher, then executing an impaling finisher.]]
+Through certain abilities and attacks even alerted enemies can be made '''vulnerable''' to finisher attacks. Without a prompt the player can perform a finisher on the enemy, if close enough.
+*Enemies in this stunned, vulnerable state also take increased damage through the [[Stealth#Stealth Damage Bonus|stealth damage bonus]].
+**However they do not grant the [[Stealth#Affinity Bonus|affinity bonus]] of normal stealth kills, if they were alerted beforehand.
+**If they were unalerted when being affected by these effects, they will stay that way for the duration of the stun or blind even when attacked.
+*Damage conversion to '''{{D|Finisher}} Damage''' applies just as for Stealth Finishers.
+*Even if the enemy remains in a stunned or blinded state, a finisher can only be executed '''once''' per enemy until they are made vulnerable again.
+**{{WF|Inaros}}'s {{A|Desiccation}} can attack the enemy '''multiple times''' during the duration.
+**Stealth Finisher on [[Nox]] can also be multiple times.
+*While most melee weapons by themselves cannot open enemies to finishers, all single dagger weapons can after performing a [[Melee#Heavy Attacks|heavy attack]].
+*Rear finishers use the same animations as Stealth finishers. Front finishers, for enemies who can be targeted with such, have a different animation. If an enemy is lacking an animation for front or back finisher, a universal finisher animation will be used instead.
+**[[MOA]]s, for example, have a rear finisher animation, but finishers from the front will use a universal finisher.
+*The Finisher damage calculation formula is the same as Stealth Finisher.
+*Some weapons have different damage multipliers for their Front-Finishers compared their Back-Finishers, with back finishers using weapon multipliers from the Stealth Attack section above. '''Multipliers for Back and Front Finishers are as follows:
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;width:60%;font-size:12px;"
+|-
+! Weapon/Weapon Class
+! data-sort-type=number | Back Finisher Multiplier
+! data-sort-type=number | Front Finisher Multiplier
+!Universal Finisher Multiplier
+! Notes
+|-
+|[[:Category:Assault Saw|Assault Saw]]
+|10x
+|10x
+|1x
+|
+|-
+|[[:Category:Bayonet|Bayonet]]|| 12x || 2x 
+|2x|| Back finisher may occasionally use front finisher multiplier
+|-
+|[[:Category:Blade and Whip|Blade and Whip]]|| 8x || 8x
+|16x (8x {{mul}} 2 hits)
+|-
+|[[:Category:Claws|Claws]]|| 8x (0.8x + 1.6x + 5.6x) || 8x (0.8x + 1.6x + 5.6x)
+|2.4x (0.8x + 1.6x)
+|-
+|[[:Category:Dagger|Dagger]]|| 6x (2x + 4x) || 6x (2x + 4x)
+|6x (2x + 4x)
+|-
+|[[:Category:Dual Daggers|Dual Daggers]]|| 6x (1.8x + 4.2x) || 6x (1.8x + 4.2x)
+|18x (1.8x + 4.2x + 6x + 6x)
+|-
+|[[:Category:Dual Swords|Dual Swords]]|| 8x (2.4x + 5.6x) || 8x (4x {{mul}} 2 hits)
+|8x (4x {{mul}} 2 hits)
+|-
+|[[Exalted Blade (Weapon)|Exalted Blade]]
+|8x
+|8x (6x + 2x)
+|8x
+|-
+|[[:Category:Fist|Fist]]|| 8x (1.6x + 6.4x) || 8x (1.2x + 1.2x + 5.6x)
+|2.4x (1.2x {{mul}} 2 hits)
+|-
+|[[:Category:Glaive|Glaive]]|| 8x (1.6x + 6.4x) || 8x (1.6x + 6.4x)
+|8x (1.6x + 6.4x)
+|
+|-
+|[[:Category:Gunblade|Gunblade]]|| 8x || 8x
+|16x (8x {{mul}} 2 hits)
+|-
+|[[:Category:Hammer|Hammer]]|| 24x (12x {{mul}} 2 hits) || 12x
+|12x
+|-
+|[[:Category:Heavy Blade|Heavy Blade]]|| 8x (2x + 6x) || 2x
+|2x
+|-
+|[[:Category:Heavy Scythe|Heavy Scythe]]|| 6x (2x + 4x) || 2x
+|2x
+|-
+|[[:Category:Machete|Machete]]|| 8x || 8x
+|16x (8x {{mul}} 2 hits)
+|-
+|[[:Category:Nikana|Nikana]]|| 8x || 16x (8x {{mul}} 2 hits)
+|8x
+|-
+|[[:Category:Nunchaku|Nunchaku]]|| 8x || 8x
+|12x (6x {{mul}} 2 hits)
+|-
+|[[:Category:Polearm|Polearm]]|| 6x || 6x
+|6x
+|-
+|[[:Category:Rapier|Rapier]]|| 24 (8x {{mul}} 3 hits) || 8x
+|16x (8x {{mul}} 2 hits)
+|Forced {{D|Slash}} proc on each hit
+|-
+|[[:Category:Scythe|Scythe]]|| 16x (8x {{mul}} 2 hits) || 8x
+|8x
+|-
+|[[:Category:Sparring|Sparring]]|| 8x (1.6x +5.4x) || 8x (1.2x + 1.2x + 5.6x)
+|2.4x (1.2 {{mul}} 2 hits)
+|-
+|[[:Category:Staff|Staff]]|| 6x || 6x
+|6x
+|-
+|[[:Category:Sword|Sword]]|| 8x || 8x (6x + 2x)
+|8x
+|-
+|[[:Category:Sword and Shield|Sword and Shield]]|| 8x || 8x
+|16x (8x {{mul}} 2 hits)
+|-
+|[[:Category:Tonfa|Tonfa]]|| 8x || 8x
+|16x (8x {{mul}} 2 hits)
+|-
+|[[:Category:Two-Handed Nikana|Two-Handed Nikana]]|| 8x || 8x
+|16x (8x {{mul}} 2 hits)
+|-
+|[[Valkyr Talons]]|| 16x || 16x
+|2.4x (0.8x + 1.6x)
+|-
+|[[:Category:Warfan|Warfan]]|| 8x || 8x
+|8x
+|-
+|[[:Category:Whip|Whip]]|| 8x || 8x
+|16x (8x {{mul}} 2 hits)
+|-
+|{{Weapon|Rumblejack}} || 10.4x (0.4x + 10x) || 10.4x (0.4x + 10x) 
+|None|| Forced {{D|Electricity}} proc on first hit
+|-
+|}
+
+===Methods to Open Enemies to Front/Back Finishers===
+
+====Abilities====
+{{#tag:tabber|
+Ash=
+{{:Teleport|cardonly}}
+{{!}}-{{!}}
+Banshee=
+{{:Silence|cardonly}}
+*Must have {{M|Savage Silence}} equipped.
+{{!}}-{{!}}
+Baruuk=
+{{:Lull|cardonly}}
+{{!}}-{{!}}
+Equinox=
+{{:Rest & Rage|cardonly}}
+{{!}}-{{!}}
+Excalibur=
+{{#tag:tabber|
+Radial Blind =
+{{:Radial Blind|cardonly}}
+{{!}}-{{!}}
+Radial Howl =
+{{:Radial Howl|cardonly}}
+{{!}}-{{!}}
+Exalted Blade =
+{{:Exalted Blade|cardonly}}
+}}
+{{!}}-{{!}}
+Gara=
+*'''Passive:''' Casting abilities has a <u>'''15%'''</u> chance to {{D|Blind}} enemies within <u>'''12'''</u> meters for <u>'''10'''</u> seconds, exposing them to Melee Finisher attacks. Blind chance increases by <u>'''20%'''</u> until the blind triggers.
+{{!}}-{{!}}
+Inaros=
+{{#tag:tabber|
+Desiccation =
+{{:Desiccation|cardonly}}
+{{!}}-{{!}}
+Sandstorm =
+{{:Sandstorm|cardonly}}
+}}
+{{!}}-{{!}}
+Ivara=
+{{:Quiver|cardonly}}
+{{!}}-{{!}}
+Lavos=
+{{:Ophidian Bite|cardonly}}
+{{!}}-{{!}}
+Oberon=
+{{:Smite|cardonly}}
+{{!}}-{{!}}
+Oraxia=
+{{:Mercy's Kiss|cardonly}}
+{{!}}-{{!}}
+Qorvex=
+{{:Containment Wall|cardonly}}
+{{!}}-{{!}}
+Styanax=
+{{:Tharros Strike|cardonly}}
+{{!}}-{{!}}
+Valkyr=
+{{:Paralysis|cardonly}}
+{{!}}-{{!}}
+Wukong=
+{{:Cloud Walker|cardonly}}
+{{!}}-{{!}}
+}}
+<hr />
+
+====Mods====
+<gallery bordercolor="transparent" bordersize="none" captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center">
+ParryMod.png|link=Parry|{{M|Parry}}|alt=Parry
+AeroAgilityMod.png|link=Aero Agility|{{M|Aero Agility}} (Set effect)|alt=Aero Agility (Set effect)
+AeroPeripheryMod.png|link=Aero Periphery|{{M|Aero Periphery}} (Set effect)|alt=Aero Periphery (Set effect)
+AeroVantageMod.png|link=Aero Vantage|{{M|Aero Vantage}} (Set effect)|alt=Aero Vantage (Set effect)
+SavageSilenceMod.png|link=Savage Silence|{{M|Savage Silence}}|alt=Savage Silence
+RadiantFinishMod.png|link=Radiant Finish|{{M|Radiant Finish}}|alt=Radiant Finish
+RetributionMod.png|link=Retribution|{{M|Retribution}}'s damage produces a stun, opening enemies to finishers.|alt=Retribution's damage produces a stun, opening enemies to finishers.
+ReflectionMod.png|link=Reflection|{{M|Reflection}}'s stun effect opens enemies to finishers, stagger does not.|alt=Reflection's stun effect opens enemies to finishers, stagger does not.
+DizzyingRoundsMod.png|link=Dizzying Rounds|{{M|Dizzying Rounds}}|alt=Dizzying Rounds
+File:ParalyticSporesMod.png|{{M|Paralytic Spores}}|alt=Paralytic Spores
+</gallery>
+<hr />
+
+====Weapons====
+<gallery bordercolor="transparent" bordersize="none" captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center">
+Caustacyst.png|link=Caustacyst|[[Caustacyst]]<br>Enemies are vulnerable upon touching the wave trail produced by {{Weapon|Caustacyst}}'s  Heavy Attack.
+Cobra&Crane.png|link=Cobra & Crane|[[Cobra & Crane]]<br>When using [[Baruuk]], enemies are vulnerable upon being hit by {{Weapon|Cobra & Crane}}'s first attack.
+HeatDagger.png|link=Category:Dagger|[[Dagger]]<br>Enemies are vulnerable upon being hit by a Heavy Attack with '''any''' [[:Category:Dagger|Dagger]] weapon.
+ObexIncarnonGenesis.png|link=Obex Incarnon Genesis|[[Obex Incarnon Genesis]]<br>Incarnon Evolution 2: 20% chance to stun enemies hit by a Neutral Combo, opening them to finishers.
+Sigma&Octantis.png|link=Sigma & Octantis|[[Sigma & Octantis]]<br>Enemies are vulnerable upon being hit by a shield-throw from {{Weapon|Sigma & Octantis}}'s Air Attack.
+Tatsu.png|link=Tatsu|[[Tatsu]]<br>Enemies are vulnerable upon being hit by a projectile emitted from {{Weapon|Tatsu}}'s Slide Attack after at least one kill.
+Zakti.png|link=Zakti|[[Zakti]]<br>Enemies are vulnerable upon being hit by a {{Weapon|Zakti}} dart's explosion.
+</gallery>
+<hr />
+
+====[[Steel Meridian]]'s [[Justice]] Effect====
+<tabber>Mods=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+JusticeBladesMod.png|link=Justice Blades|{{M|Justice Blades}}
+NeutralizingJusticeMod.png|link=Neutralizing Justice|{{M|Neutralizing Justice}}
+ScatteredJusticeMod.png|link=Scattered Justice|{{M|Scattered Justice}}
+ShatteringJusticeMod.png|link=Shattering Justice|{{M|Shattering Justice}}
+</gallery>
+|-|Weapons=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+VaykorHek.png|link=Vaykor Hek|{{Weapon|Vaykor Hek}}
+VaykorMarelok.png|link=Vaykor Marelok|{{Weapon|Vaykor Marelok}}
+</gallery>
+</tabber>
+<hr />
+
+====[[Zaw]] [[Arcane Enhancement]]====
+<gallery bordercolor="transparent" bordersize="none" captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center">
+ExodiaHunt.png|link=Exodia Hunt|Enemies affected by {{Arcane|Exodia Hunt}}'s pull upon melee [[Melee 2.0#Slam Attack|slam attack]] are staggered and opened up to finishers.
+</gallery>
+<hr />
+
+====[[Focus]] School [[Void Sling]]====
+{{Transclude|Focus/Naramon#Sling Stun}}
+
+==All Finishers Multiplier Comparison==
+{{UpdateMe|Heavy Scythe finishers}}
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;width:80%;font-size:12px;"
+|-
+! Weapon/Weapon Class
+! data-sort-type=number | Ground Finisher Multiplier
+! data-sort-type=number | Stealth Finisher Multiplier
+! data-sort-type=number | Back Finisher Multiplier
+! data-sort-type=number | Front Finisher Multiplier
+!Universal Finisher Multiplier
+|-
+|[[:Category:Assault Saw|Assault Saw]] || 9x || 10x || 10x || 10x
+|1x
+|-
+|[[:Category:Bayonet|Bayonet]]
+|24x (12x × 2 hits)
+|2x
+|12x
+|2x
+|2x
+|-
+|[[:Category:Blade and Whip|Blade and Whip]]|| 10x || 8x || 8x || 8x
+|16x (8x × 2 hits)
+|-
+|[[:Category:Claws|Claws]]|| 30x (5x {{mul}} 6 hits) || 8x (0.8x + 1.6x + 5.6x) || 8x (0.8x + 1.6x + 5.6x) || 8x (0.8x + 1.6x + 5.6x)
+|2.4x (0.8x + 1.6x)
+|-
+|[[:Category:Dagger|Dagger]]|| 10x (5x {{mul}} 2 hits) || 6x (2x + 4x) || 6x (2x + 4x) || 6x (2x + 4x)
+|6x (2x + 4x)
+|-
+|[[:Category:Dual Daggers|Dual Daggers]]|| 16x (8x {{mul}} 2 hits) || 6x (1.8x + 4.2x) || 6x (1.8x + 4.2x) || 6x (1.8x + 4.2x)
+|18x (1.8x + 4.2x + 6x + 6x)
+|-
+|[[:Category:Dual Swords|Dual Swords]]|| 16x (8x {{mul}} 2 hits) || 8x (2.4x + 5.6x) || 8x (2.4x + 5.6x) || 8x (4x {{mul}} 2 hits)
+|8x (4x × 2 hits)
+|-
+|[[Exalted Blade (Weapon)|Exalted Blade]]
+|12x
+|16x (8x + 8x)
+|8x (6x + 2x)
+|8x
+|8x
+|-
+|[[:Category:Fist|Fist]]|| 30x (5x {{mul}} 6 hits) || 8x (1.6x + 6.4x) || 8x (4x {{mul}} 2 hits) || 8x (1.2x + 1.2x + 5.6x)
+|2.4x (1.2x {{mul}} 2 hits)
+|-
+|[[:Category:Glaive|Glaive]]|| 10x || 8x (1.6x + 6.4x) || 8x (1.6x + 6.4x) || 8x (1.6x + 6.4x)
+|8x (1.6x + 6.4x)
+|-
+|[[:Category:Gunblade|Gunblade]]|| 10x || 8x || 8x || 8x
+|16x (8x × 2 hits)
+|-
+|[[:Category:Hammer|Hammer]]|| 12x || 12x (4x + 8x) || 24x (12x {{mul}} 2 hits) || 12x
+|12x
+|-
+|[[:Category:Heavy Blade|Heavy Blade]]|| 12x || 12x (4x + 8x) || 8x (2x + 6x) || 2x
+|2x
+|-
+|[[:Category:Heavy Scythe|Heavy Scythe]]|| 12x ||12x (4x + 8x) ||6x (2x + 4x) || 2x
+|2x
+|-
+|[[:Category:Machete|Machete]]|| 10x || 8x || 8x || 8x
+|16x (8x × 2 hits)
+|-
+|[[:Category:Nikana|Nikana]]|| 10x || 8x || 8x || 16x (8x {{mul}} 2 hits)
+|8x
+|-
+|[[:Category:Nunchaku|Nunchaku]]|| 10x || 6x || 8x || 8x
+|12x (6x {{mul}} 2 hits)
+|-
+|[[:Category:Polearm|Polearm]]|| 12x || 6x || 6x || 6x
+|6x
+|-
+|[[:Category:Rapier|Rapier]]|| 10x || 8x (0.5x + 1.5x + 6x) || 24x (8x {{mul}} 3 hits) || 8x
+|16x (8x × 2 hits)
+|-
+|[[:Category:Scythe|Scythe]]|| 12x || 12x (4x + 8x) || 16x (8x {{mul}} 2 hits) || 8x
+|8x
+|-
+|[[:Category:Sparring|Sparring]]|| 30x (5x {{mul}} 6 hits) || 8x (1.6x + 6.4x) || 8x (1.6x +5.4x) || 8x (1.2x + 1.2x + 5.6x)
+|2.4x (1.2x {{mul}} 2 hits)
+|-
+|[[:Category:Staff|Staff]]|| 10x || 6x || 6x || 6x
+|6x
+|-
+|[[:Category:Sword|Sword]]|| 10x || 16x (8x + 8x) || 8x (6x + 2x) || 8x
+|8x
+|-
+|[[:Category:Sword and Shield|Sword and Shield]]|| 8x || 8x || 8x || 8x
+|16x (8x × 2 hits)
+|-
+|[[:Category:Two-Handed Nikana|Two-Handed Nikana]]|| 12x || 8x || 8x || 8x
+|16x (8x × 2 hits)
+|-
+|[[Valkyr Talons]]|| 54x (10x {{mul}} 5 hits + 4x) || 4x || 16x || 16x
+|2.4x (0.8x + 1.6x)
+|-
+|[[:Category:Warfan|Warfan]]|| 10x || 8x || 8x || 8x
+|8x
+|-
+|[[:Category:Tonfa|Tonfa]]|| 20x (10x {{mul}} 2 hits) || 8x || 8x || 8x
+|16x (8x × 2 hits)
+|-
+|[[:Category:Whip|Whip]] || 10x || 8x || 8x || 8x
+|16x (8x × 2 hits)
+|-
+|
+|}
+
+==Mercies==
+{{Main|Parazon}}
+
+{{Combo|Marked enemy + Interact Button}}
+Mercies are special finishers that can be performed using the [[Parazon]] on weakened enemies marked by a Parazon symbol. Players can gain a buff upon performing mercies based on the [[:Category:Parazon Mods|mods]] equipped on their Parazon. The trigger and animations for Mercies are completely independent of melee weapons, and do not require having a melee weapon equipped.
+
+When a Mercy opportunity has been triggered, a red Parazon symbol will appear above the target for 10 seconds. This indicates that a Mercy Finisher can be performed. The Parazon mark and Mercy opportunity will disappear after 10 seconds.
+*Mercy opportunities can trigger up to '''twice''' on the same target, but the second instance will have a much shorter duration.
+*Mercy opportunities cannot trigger while the target has shields remaining, even when under the mercy kill threshold. If the target's shields begin to regenerate after being depleted, the mercy kill opportunity will be lost.
+Mercies deal {{D|Finisher}} Damage, consisting of two parts: {{MathText|Mercy Damage {{eql}} Enemy residual health + 1}}
+
+==Increasing Finisher Damage==
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+CovertLethalityMod.png|link=Covert Lethality|{{M|Covert Lethality}} (Daggers only)|alt=Covert Lethality (Daggers only)
+Hunter'sBonesawMod.png|link=Hunter's Bonesaw|{{M|Hunter's Bonesaw}} (Ground Finishers Only)|alt=Hunter's Bonesaw (Ground Finishers Only)
+FinishingTouchMod.png|link=Finishing Touch|{{M|Finishing Touch}}|alt=Finishing Touch
+RadiantFinishMod.png|link=Radiant Finish|{{M|Radiant Finish}}|alt=Radiant Finish
+SavageSilenceMod.png|link=Savage Silence|{{M|Savage Silence}}|alt=Savage Silence
+ObexIncarnonGenesis.png|link=Obex Incarnon Genesis|[[Obex Incarnon Genesis]]<br>Incarnon form performs large radial attacks for each finisher hit.
+</gallery>
+
+==Unique Finisher Procs==
+Instances where finishers apply a unique effect:
+
+===Warframe===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+EndlessLullabyMod.png|link=Endless Lullaby|{{M|Endless Lullaby}}<br>Finishers re-trigger Lull.
+PeculiarEndMod.png|link=Peculiar End|{{M|Peculiar End}}<br>Finisher kills have a chance to dissolve enemies in dread.
+TeleportRushMod.png|link=Teleport Rush|{{M|Teleport Rush}}<br>Mercy kills fully refresh the duration.
+</gallery>
+
+===Weapon===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+EntropyDetonationMod.png|link=Entropy Detonation|[[Entropy Detonation]]<br>Lethal ground attacks cause enemies to explode.
+Innodem.png|link=Innodem|[[Innodem]]<br>Incarnon Form: Finishers grant Incarnon Resilience, increasing Damage Reduction by 10% up to four stacks.
+ObexIncarnonGenesis.png|link=Obex Incarnon Genesis|[[Obex Incarnon Genesis]]<br>Incarnon evolution 3: On Finisher Kill, +2.5% Parkour Velocity. Stacks up to 16x.
+Skiajati.png|link=Skiajati|[[Skiajati]]<br>Finisher attacks turn user invisible.
+Thalys.png|link=Thalys|[[Thalys]]<br>Incarnon evolution 4 ''Devastating Mercy'': Ground Finishers knock enemies down in 6m radius.
+</gallery>
+
+===Arcane===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+ArcaneTrickery.png|link=Arcane Trickery|[[Arcane Trickery]]<br>Finisher kills can turn user invisible.
+ArcaneUltimatum.png|link=Arcane Ultimatum|[[Arcane Ultimatum]]<br>Finisher kills grant Armor.
+ExodiaMight.png|link=Exodia Might|[[Exodia Might]]<br>Finisher kill gives 50% chance for life steal for 8s.
+MeleeCrescendo.png|link=Melee Crescendo|[[Melee Crescendo]]<br>Finisher kills increase the initial melee combo for the rest of the mission.
+</gallery>
+
+===Companion===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+CovertBondMod.png|link=Covert Bond|[[Covert Bond]]<br>Finisher and Mercy kills grant your companion 10s of stealth.
+</gallery>
+
+== Bugs==
+
+*Weapons with [[Valence Fusion|Valence Bonuses]] seem to deal exactly half as much damage as expected.  For example, a rank 18 [[Kuva Shildeg]] with a valence bonus of 25% has a base damage of 256.3, and on a front finisher should deal {{MathText|[256.3 {{mul}} 12 {{mul}} (1 + 3.7)] {{eql}} 14,455}} damage, but instead only deals 7,226 damage.  This issue appears specific to weapons with Valence Bonuses, as the Paracesis- another weapon with a maximum rank of 40- does not suffer from this halved finisher damage.
+*Rumblejack is unable to perform a universal finishers.
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40.0.3}}
+*Fixed Finishers leaving Sparring weapons unequipped.
+
+{{ver|40}}
+*Fixed the inability to perform a Finisher after swapping away from an Exalted Melee ability. This was commonly seen from Valkyr swapping out of Hysteria and attempting to perform a Finisher.
+
+{{ver|38.5}}
+*Fixed the Stealth Finisher UI prompt flickering.
+
+{{ver|37.0.9}}
+*Fixed Finishers and Mercy kills being enabled on Synthesis Targets. Despite how your squad mates treat them, these targets are intended to be Synthesized instead of killed.
+
+{{ver|37}}
+*Ferocity (SAHASA Kubrow):
+**Greatly reduced cooldown, but now can only target enemies open to finishers.
+**If the enemy gets killed by the finisher, they’ll explode. Nearby enemies have a 30% of being knocked down and opened to finishers for 5s. 
+*Paralytic Spores (MEDJAY Predasite): 
+**In addition to staggering enemies, now applies 5 seconds of 50% slow, and enemies are open to melee finishers.
+*Fixed enemies ragdolled by Mag’s Pull not properly displaying the context action for Ground Finishers.
+*Fixed enemies not being open to Finishers when put to sleep by the first hit from Cobra and Crane when wielded by Baruuk.
+*Fixed enemy animation transitions getting wonky after executing a ground finisher from behind and using the finisher context action.
+*Fixed Finisher context action on Eximus units alternating between being open to a Mercy or Front Finisher when damage over time Status Effects are active and they are attempting to Shield regen.
+
+{{ver|36.0.5}}
+*Fixed a crash caused by NPCs attempting to move to player to perform some kind of a context action (ex: Finisher), but no clear path is available to them. 
+*Fixed a crash caused by Finishers. 
+
+{{ver|36.0.4}}
+*Fixed a crash caused by Finishers.
+
+{{ver|36.0.2}}
+*Fixed a crash caused by Finishers.
+
+{{ver|36.0.1}}
+*Fixed a crash caused by NPCs attempting to move to player to perform some kind of a context action (ex: Finisher), but no clear path is available to them.
+
+{{ver|36}}
+;FINISHER CHANGES
+
+'''Unified Finisher Mechanics'''
+
+Before explaining the changes, let’s define a few terms and basic concepts about Finishers:
+
+'''Mercy Kills:''' Available on specialty enemies when they reach certain health thresholds.
+'''Finishers:''' Available when a move “opens enemies to finishers”.
+'''Ground Finishers:''' Available after certain effects which knock enemies down.
+
+All of the above count as Finishers for relevant Mods, Arcanes, Abilities, etc. Mercy Kills differ slightly as they are specific to your Parazon upgrades which do not apply to other Finishers.
+
+In order to make utilizing finishers easier, we have updated how they function to unify their mechanics: 
+ 
+*Increased the Finisher context action distance for Finishers from in front or behind from 2m to 3m.
+*Ground finishers are now performed via context action instead of automatically via Melee Attack input. This should allow players to execute *Ground Finishers much more reliably.
+**The “Ground Finisher” context action will appear on enemies in range who are open to Ground Finishers.
+*Updated the Mercy Kill context action with unique visuals to clearly distinguish between Mercy Kills and Finishers.
+*Updated the overhead icon displayed on enemies open to non-Mercy Finishers.
+
+'''Enemy Size Scaling'''
+
+We’ve taken strides in reducing how we scale enemies whenever a Finisher is used against them!
+
+By default, Finishers cause enemies larger than your Warframe (ex: Grineer Bombard and Corrupted Gunners). This had the risk of causing some strange visual issues on the enemies that weren't ideal. 
+
+We’ve audited the contact points between the player and the enemy with all Melee Weapon animations to resolve these graphical sizing mishaps! 
+
+What this looks like is:
+*If a point of contact is present between the player character and an enemy, such as a chokehold or grabbing a limb, enemy scaling will persist.
+*If there is no physical point of contact between the player character and an enemy, the enemy scaling doesn’t occur as it isn’t necessary!
+
+'''Scaling Fixes:'''
+*Fixed an issue where Finishers on Corpus Crewman and Grineer Lancers would stretch their spines. Like an untrained chiropractor. 
+
+;FIXES
+*Fixes towards the finisher icon showing up on boss type enemies that are not eligible for finishers (ex: Deimos Saxum).
+*Fixed Ruvox Finisher animation being unintentionally slow when Transforming. 
+
+{{ver|35.5.3}}
+*Enemies put to sleep by Aero Set Mods are now open to Melee Finishers.
+
+{{ver|35.5}}
+;Inaros Rework
+
+'''Ability 1: Desiccation '''<br/>
+Largely unchanged, but we have fixed issues with certain enemies not being vulnerable to Melee Finishers! Now, this should be more consistent.
+
+'''Ability 2: Sandstorm (Was Devour)'''
+*Instead of throwing enemies everywhere around the level, it drags enemies beneath your feet so you can use Melee Ground Finishers if you choose.
+
+;Melee Finisher Improvements
+
+Melee Finishers have been updated to standardize Finisher eligibility across enemies and weapons. Previously, if an enemy did not have a finisher animation prepared for a certain weapon type, then players would not be able to perform that specific Finisher on them. We have added default animations for all weapon types to prevent this restriction, meaning '''all enemies* should now be eligible for every type of finisher.'''
+
+*Also added a new VFX to showcase when an enemy is open to Finishers. You will still need to get into proper position to execute the finisher with this VFX active!
+*This includes finisher openings created by Warframe abilities (ex: Inaros Desiccation) and Ground Finishers. 
+*<nowiki>*</nowiki>Flying enemies (Corpus Ospreys, The Anatomizer, etc.) are still ineligible for Melee Finishers with this change.
+*Added new unique Mercy Finishers to the Hollow Vein, Severed Warden, The Anatomizer, Lumbering Fragment, and Shuffling Fragment enemies! Each with their own custom animations to really stick it to the Murmur in style. 
+**The context action to perform a Finisher on the airborn Murmur enemies (The Anatomizer and The Severed Warden) are not anchored to their bodies and will instead appear on the HUD when you are within radius of them. This is an experimental approach into finding ways to include Finishers on other airborne enemies in the future. 
+
+;TOP FIXES
+*Fixed context action Finishers not triggering “On Finisher Kill” Arcanes (Arcane Trickery, Arcane Ultimatum, Melee Crescendo).
+
+{{ver|34.0.7}}
+*Fixed Finisher and quick time event inputs not working with Steam Input.
+
+{{ver|34}}
+*Ground Finishers now ignore the Armor value of enemies as other types of Finishers do. This affects the following: 
+**Hunter’s Bonesaw now grants 120% Finisher Damage instead of Status Chance since Ground Finishers now deal Finisher Damage which does not proc Status.
+*Fixed several cases where the game was not recognizing a Ground Finisher for the activation of Mods and Arcanes. The intent is that Ground Finishers, Stealth Finishers and Parazon Finishers should be equivalent unless explicitly stated otherwise:
+**Duviri Decrees will now accept Ground Finishers (Tamm's Fortune, Brimon's Nerve, Molten Mettle)
+**Inaros' Desiccation Curse augment will now create sand minions on Ground Finishers
+**Arcane Trickery will now activate from Ground Finishers
+**Arcane Ultimatum will now activate from Ground Finishers
+**Exodia Might will now activate from Ground Finishers
+
+{{ver|29.1.1}}
+*Fixed enemies not staying focused on the player when doing Finishers. Enemies won’t attack/shoot while a Finisher is happening, but they also won’t storm off as if nothing is happening.
+
+{{ver|26}}
+*(Undocumented) Stealth and Front/Back finishers are now bound to interact key (PC default {{Keybind|X}}).
+*(Undocumented) Stance changes also come with buffs to all finisher multipliers. Every weapon class has at least one buff to the finisher moves they can perform (ground, front, back, and stealth).
+
+{{ver|Specters of the Rail}}
+*Improved finisher hit detection for multiple weapons. Reticles will now flash red when a finisher can be performed and with each hit for multistrike finisher moves.
+*Multistrike finisher moves will have their damage split amongst each hit instead of now being delivered all at the end.
+
+{{ver|18.5}}
+*Added stealth finishers for Machete, Polearm, Rapier, Staff, Sword, Sword & Shield, Tonfa, and Whip weapons when used against MOAs.
+
+{{ver|11.1}}
+*Adding kick and punch events to stealth finisher animations.
+
+{{ver|9.3}}
+*Enable ground hit on enemies who have ragdolled (as opposed to only working on enemies who are "knocked down").
+
+{{ver|7.9}}
+*Added Dual Dagger stealth attack (was sharing dual sword stealth attack).
+}}
+{{MechNav}}
+
+[[es:Remate]]
+[[fr:Coup de Grâce]]
+[[Category:Mechanics]]
+[[Category:Melee 2.0]]

@@ -1,0 +1,99 @@
+<onlyinclude>{{EditTab|Zaw Stats/Machetes}}
+<div class="tabber-borderless">
+<tabber>All Machetes=
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="3" rowspan="1" style="width:100px;" | Strikes
+|-
+| [[File:Cyath.png|center|thumb|100px]]'''[[Cyath]]'''
+| [[File:Kronsh.png|center|thumb|100px]]'''[[Kronsh]]'''
+| [[File:Rabvee.png|center|thumb|100px]]'''[[Rabvee]]'''
+|-
+|}
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTypeTable|Machete|OneHanded}}
+|-|Cyath =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Cyath.png|center|thumb|100px]]'''[[Cyath]]'''
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#tag:tabber|Korb =
+{{#invoke:Modular|getZawTable|Cyath|Korb}}
+{{!}}-{{!}}Kwath =
+{{#invoke:Modular|getZawTable|Cyath|Kwath}}
+{{!}}-{{!}}Laka =
+{{#invoke:Modular|getZawTable|Cyath|Laka}}
+{{!}}-{{!}}Peye =
+{{#invoke:Modular|getZawTable|Cyath|Peye}}
+{{!}}-{{!}}Plague Akwin =
+{{#invoke:Modular|getZawTable|Cyath|Plague Akwin}}
+}}
+|-|Kronsh =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Kronsh.png|center|thumb|100px]]'''[[Kronsh]]'''
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#tag:tabber|Korb =
+{{#invoke:Modular|getZawTable|Kronsh|Korb}}
+{{!}}-{{!}}Kwath =
+{{#invoke:Modular|getZawTable|Kronsh|Kwath}}
+{{!}}-{{!}}Laka =
+{{#invoke:Modular|getZawTable|Kronsh|Laka}}
+{{!}}-{{!}}Peye =
+{{#invoke:Modular|getZawTable|Kronsh|Peye}}
+{{!}}-{{!}}Plague Akwin =
+{{#invoke:Modular|getZawTable|Kronsh|Plague Akwin}}
+}}
+|-|Rabvee =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Rabvee.png|center|thumb|100px]]'''[[Rabvee]]'''
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#tag:tabber|Korb =
+{{#invoke:Modular|getZawTable|Rabvee|Korb}}
+{{!}}-{{!}}Kwath =
+{{#invoke:Modular|getZawTable|Rabvee|Kwath}}
+{{!}}-{{!}}Laka =
+{{#invoke:Modular|getZawTable|Rabvee|Laka}}
+{{!}}-{{!}}Peye =
+{{#invoke:Modular|getZawTable|Rabvee|Peye}}
+{{!}}-{{!}}Plague Akwin =
+{{#invoke:Modular|getZawTable|Rabvee|Plague Akwin}}
+}}
+</tabber>
+</div>
+</onlyinclude>
+[[Category:Zaw]]
+[[fr:Stats des Zaws/Machettes]]

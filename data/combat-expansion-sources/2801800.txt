@@ -1,0 +1,598 @@
+{{infobox
+|Box title    = Shield
+|image        = ShieldHeader.png
+|caption      = A Mag deflecting a Lancer's bullet with her shield.
+}}
+{{Quote|Shields absorb every Damage but {{D|Toxin}}.
+
+Shields regenerate automatically. They can also be replenished with Abilities and items like Health Orbs. Stack Shields to create Overshields, which offer additional protection.
+
+----
+
+> When Shields break, become invulnerable for minimum 0.33 seconds. Increase Max Shields to increase the invulnerability duration.
+
+> Shield Recharge Delay: '''<nowiki>|AMOUNT|</nowiki>''' seconds
+
+> Shield Recharge: '''<nowiki>|AMOUNT|</nowiki>'''% per second|In-game Description}}
+{{tocright}}
+<section begin=intro />
+'''Shields''' are invisible barriers that absorb incoming damage and protects the player from taking {{Stat|Health}} damage against enemy attacks. Unlike {{Stat|Health}}, shields regenerate after a few seconds of not taking damage, making them a naturally replenishing defense.
+
+All [[Warframes]], except {{WF|Inaros}}, {{WF|Kullervo}}, and {{WF|Nidus}}, possess shields, whose values can be seen in the upper right of the player's UI as a blue number, with each Warframe possessing different amounts of maximum shields. {{Faction|Corpus}} units also make extensive use of shielding, along with certain [[bosses]]. When a player's shields are depleted, the player's [[HUD]] will briefly flash with blue and red lines, and the player will be surrounded by a red aura. A pulsing blue outline will envelop the player once shields begin to recharge.
+<section end=intro />
+
+==Effects==
+Shields recharge after a couple seconds when not being damaged. In addition, when shields are fully depleted, the user experiences a brief period of invulnerability known as shield gating.
+
+The shields of player's [[Warframe]]s, [[Operator]]s, [[Archwing]]s, [[Railjack]]s and [[Necramech]]s (but '''not''' [[Companion|Companions]]) enjoy a 50% [[Damage Reduction]]. However, shields receive no damage mitigation from [[armor]], making them less effective at taking damage for any warframe with over 300 total armor. On the other hand, their regeneration makes them more useful for frames with high potential maximum shields but below-average potential maximum health such as {{WF|Hildryn}}.
+
+{{D|Magnetic}} [[Status Effect]] increases damage dealt towards shields, as well as preventing shield regeneration for its duration. {{D|Toxin}} damage completely ignores normal shields, dealing damage directly to the health points underneath.
+
+==Increasing Maximum Shields==
+A [[Warframe]]'s maximum shield value increases after every few ranks until rank 30 is reached (see [[Warframes#Leveling Up]] for more details). Beyond this, shields can only be enhanced by installing mods like {{M|Redirection}} or {{M|Vigor}}, or both if larger shield amounts are desired. A similar [[mod]] exists for [[Sentinel]]s to increase their maximum shields: {{M|Calculated Redirection}}. [[Kubrow]]s can instead be equipped with {{M|Link Redirection}}, which increases their shields by a value based on the Warframe's maximum shields.
+
+Shields work broadly similar to additive damage mods for weapons (e.g. {{M|Serration}}) where effects like {{WF|Chroma}}'s {{A|Elemental Ward}} (electricity) simply add their %-value to the combined multiplier bonus that already exists:
+
+<math>
+\begin{aligned}
+\text{Total Shields} &= \text{Base Shields} * (1 + \text{Relative Mod Bonus} + \text{Relative Ability Bonus})
+\end{aligned}
+</math>
+
+Where the '''Relative Mod Bonus''' and '''Relative Ability Bonus''' is the sum of all the applicable bonuses from mods and Warframe abilities respectively.
+
+<math>\text{Relative Mod Bonus or Relative Ability Bonus} = \text{Bonus}_{1} + \text{Bonus}_{2} + \text{Bonus}_{3} + \cdots</math>
+
+Using {{WF|Hildryn}} as an example who's equipped with {{M|Redirection}}, {{M|Primed Vigor}}, and has an unmodded, max rank {{D|Electricity}} {{A|Elemental Ward}} active:
+
+<math>
+\begin{aligned}
+\text{Total Shields} &= \text{Base Shields} * (1 + \text{Redirection Bonus} + \text{Primed Vigor Bonus} + \text{Relative Ability Bonus}) \\
+&= 1780 * (1 + 1 + 0.75 + 0.3) \\
+&= 5429
+\end{aligned}
+</math>
+
+Missions may randomly have the [[Environmental Hazards#Cryogenic Leakage|cryogenic leakage]] hazard present, which reduces the maximum shield capacity of all Warframes by half. {{M|Warm Coat}} can be equipped in anticipation of this random possibility in order to reduce the loss of shields, but it is not recommended due to its niche use.
+
+===Mods===
+<gallery captionposition="below" hideaddbutton="true" bordersize="none" bordercolor="#FFFFFF" position="center" captionalign="center" navigation="true">
+RedirectionMod.png|alt=Redirection{"Description":"+100% Shield Capacity","UpgradeTypes":["AVATAR_SHIELD_MAX"],"MaxRank":"10","Image":"RedirectionMod.png","Introduced":"0","Icon":"Redirection.png","Transmutable":true,"Type":"Warframe","Rarity":"Common","Tradable":true,"BaseDrain":"2","Polarity":"Vazarin","Name":"Redirection","InternalName":"/Lotus/Upgrades/Mods/Warframe/AvatarShieldMaxMod","Link":"Redirection","Incompatible":["Primed Redirection","Flawed Redirection"],"CodexSecret":false}|link=Redirection|{{M|Redirection}}
+PrimedRedirectionMod.png|alt=Primed Redirection{"Description":"+180% Shield Capacity","UpgradeTypes":["AVATAR_SHIELD_MAX"],"MaxRank":"10","Image":"PrimedRedirectionMod.png","Introduced":"35","Icon":"Redirection.png","Transmutable":false,"Type":"Warframe","Rarity":"Legendary","Tradable":true,"BaseDrain":"6","Polarity":"Vazarin","Name":"Primed Redirection","InternalName":"/Lotus/Upgrades/Mods/Warframe/AvatarShieldMaxModExpert","Link":"Primed Redirection","Incompatible":["Redirection","Flawed Redirection"],"CodexSecret":true}|link=Primed_Redirection|{{M|Primed Redirection}}
+VigorMod.png|alt=Vigor{"Description":"+50% Shield Capacity\r\n+50% Health","UpgradeTypes":["AVATAR_SHIELD_MAX","AVATAR_HEALTH_MAX"],"MaxRank":"5","Image":"VigorMod.png","Introduced":"9.5","Icon":"Vigor.png","Transmutable":false,"Type":"Warframe","Rarity":"Rare","Tradable":true,"BaseDrain":"6","Polarity":"Vazarin","Name":"Vigor","InternalName":"/Lotus/Upgrades/Mods/Warframe/DualStat/VigorMod","Link":"Vigor","Incompatible":["Primed Vigor"],"CodexSecret":false}|link=Vigor|{{M|Vigor}}
+PrimedVigorMod.png|alt=Primed Vigor{"Description":"+75% Shield Capacity\r\n+75% Health","UpgradeTypes":["AVATAR_SHIELD_MAX","AVATAR_HEALTH_MAX"],"MaxRank":"10","Image":"PrimedVigorMod.png","Introduced":"19.5.6.1","Icon":"PrimedVigor.png","Transmutable":false,"Type":"Warframe","Rarity":"Legendary","Tradable":false,"BaseDrain":"6","Polarity":"Vazarin","Name":"Primed Vigor","InternalName":"/Lotus/Upgrades/Mods/Warframe/Expert/VigorModExpert","Link":"Primed Vigor","Incompatible":["Vigor"],"CodexSecret":true}|link=Primed_Vigor|{{M|Primed Vigor}}
+AugurAccordMod.png|alt=Augur Accord{"Description":"+70% Shield Capacity","UpgradeTypes":["AVATAR_SHIELD_MAX"],"MaxRank":"5","Image":"AugurAccordMod.png","Introduced":"22","InternalName":"/Lotus/Upgrades/Mods/Sets/Augur/WarframeAugurAccordMod","Transmutable":false,"Type":"Warframe","Rarity":"Uncommon","Tradable":true,"BaseDrain":"2","Polarity":"Vazarin","Name":"Augur Accord","Set":"Augur Set","Link":"Augur Accord","Icon":"AugurAccord.png","CodexSecret":false}|link=Augur_Accord|{{M|Augur Accord}}
+Boreal'sHatredMod.png|alt=Boreal's Hatred{"Description":"+65% Shield Capacity\r\n+15% Ability Efficiency","Conclave":false,"UpgradeTypes":["AVATAR_SHIELD_MAX","AVATAR_ABILITY_EFFICIENCY"],"MaxRank":"5","Image":"Boreal'sHatredMod.png","Introduced":"31","Icon":"Boreal'sHatred.png","Transmutable":false,"Type":"Warframe","Rarity":"Uncommon","Link":"Boreal's Hatred","BaseDrain":"4","Polarity":"Vazarin","Tradable":true,"Incompatible":["Amar's Hatred","Nira's Hatred"],"Name":"Boreal's Hatred","InternalName":"/Lotus/Upgrades/Mods/Sets/Boreal/BorealWarframeMod","IsExilus":false,"IsFlawed":false,"Set":"Boreal Set","CodexSecret":false}|link=Boreal's_Hatred|{{M|Boreal's Hatred}}
+ShieldChargerMod.png|alt=Shield Charger{"Transmutable":false,"Type":"Robotic","Rarity":"Rare","Tradable":true,"BaseDrain":"0","MaxRank":"5","Link":"Shield Charger","Icon":"ShieldCharger.png","Image":"ShieldChargerMod.png","Name":"Shield Charger","Introduced":"The Index Preview","Description":"Increases Max Shields by 60% and Shield Regeneration by 60% for 10s.","Polarity":"Penjaga","InternalName":"/Lotus/Types/Sentinels/SentinelPrecepts/Events/CorpusArena/ShieldAuraPrecept","CodexSecret":false}|link=Shield_Charger|{{M|Shield Charger}}
+CalculatedRedirectionMod.png|alt=Calculated Redirection{"Description":"+250% Shield Capacity","UpgradeTypes":["AVATAR_SHIELD_MAX"],"MaxRank":"10","Image":"CalculatedRedirectionMod.png","Introduced":"7","InternalName":"/Lotus/Upgrades/Mods/Sentinel/SentinelShieldMaxMod","Transmutable":true,"Type":"Companion","Rarity":"Common","Tradable":true,"BaseDrain":"4","Polarity":"Vazarin","Name":"Calculated Redirection","Icon":"CalculatedRedirection.png","Link":"Calculated Redirection","Incompatible":["Link Redirection"],"CodexSecret":false} (Companion only)|link=Calculated_Redirection|{{M|Calculated Redirection}} (Companion only)
+LinkRedirectionMod.png|alt=Link Redirection{"Description":"Increase Shield by +125% of Warframe's Max Shield","UpgradeTypes":["AVATAR_SENTINEL_SHIELD_LINK"],"MaxRank":"10","Image":"LinkRedirectionMod.png","Introduced":"14","Icon":"LinkRedirection.png","Transmutable":true,"Type":"Companion","Rarity":"Uncommon","Tradable":true,"BaseDrain":"4","CompatibilityTags":["KAVAT_MOD","KUBROW_MOD","HELMINTH_MOD","MOA_MOD","PREDASITE_MOD","VULPAPHYLA_MOD","ZANUKA_MOD"],"Name":"Link Redirection","Polarity":"Vazarin","Incompatible":["Calculated Redirection"],"Link":"Link Redirection","InternalName":"/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowLinkShieldMaxMod","CodexSecret":false} (Companion only)|link=Link_Redirection|{{M|Link Redirection}} (Companion only)
+RisingSkillMod.png|alt=Rising Skill{"Description":"+10% Mobility\r\n-30 Shield Capacity","IsExilus":true,"UpgradeTypes":["AVATAR_PARKOUR_BOOST","AVATAR_SLIDE_BOOST","AVATAR_SLIDE_FRICTION","AVATAR_SHIELD_MAX"],"MaxRank":"3","Image":"RisingSkillMod.png","Introduced":"17.8","Icon":"RisingSkill.png","Transmutable":false,"Type":"Warframe","Rarity":"Uncommon","Link":"Rising Skill","BaseDrain":"2","Polarity":"Naramon","Tradable":true,"Name":"Rising Skill","Incompatible":["Adept Surge","Air Thrusters","Calculated Spring","Tempered Bound"],"IncompatibilityTags":["SANDMAN"],"InternalName":"/Lotus/Upgrades/Mods/PvPMods/Warframe/MoreBulletJumpLessShieldMod","Conclave":true,"CodexSecret":false} (Conclave only)|link=Rising_Skill|{{M|Rising Skill}} (Conclave only)
+TemperedBoundMod.png|alt=Tempered Bound{"Description":"-10% Mobility\r\n+30 Shield Capacity","IsExilus":true,"UpgradeTypes":["AVATAR_PARKOUR_BOOST","AVATAR_SLIDE_BOOST","AVATAR_SLIDE_FRICTION","AVATAR_SHIELD_MAX"],"MaxRank":"3","Image":"TemperedBoundMod.png","Introduced":"17.8","Icon":"TemperedBound.png","Transmutable":false,"Type":"Warframe","Rarity":"Uncommon","Link":"Tempered Bound","BaseDrain":"2","Polarity":"Naramon","Tradable":true,"Name":"Tempered Bound","Incompatible":["Adept Surge","Air Thrusters","Calculated Spring","Rising Skill"],"IncompatibilityTags":["SANDMAN"],"InternalName":"/Lotus/Upgrades/Mods/PvPMods/Warframe/MoreShieldLessBulletJumpMod","Conclave":true,"CodexSecret":false} (Conclave only)|link=Tempered_Bound|{{M|Tempered Bound}} (Conclave only)
+</gallery>
+
+====Arcanes====
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+ArcaneExpertise.png|link=Arcane Expertise|{{Arcane|Arcane Expertise}}|alt=Arcane expertise
+</gallery>
+
+===Abilities===
+<div class="tabber-borderless">{{#tag:tabber|
+Chroma=
+{{:Elemental Ward}}
+{{!}}-{{!}}
+
+Equinox=
+{{:Metamorphosis}}
+{{!}}-{{!}}
+
+Hildryn=
+{{:Haven}}
+}}</div>
+
+==Regaining Shields==
+===Passive Restoration (Warframe)===
+Shields naturally recharge, but there is a '''recharge delay''' imposed whenever struck. Partial Tenno shields begin to regenerate after '''1 second''' of not taking damage. Fully depleted Tenno shields begin to regenerate '''4 seconds''' after the last hit taken during Shield Gate. Restoring some shields after fully depleting them or during the 4-second shield recharge delay (e.g. with [[Augur Mods]] set bonus) '''will not''' lower the recharge delay. In addition, damage from [[Status Effect]]s like {{D|Slash}} or {{D|Heat}} do not reset the delay timer.
+
+The delay timer is only reduced by {{M|Fast Deflection}}, {{M|Vigilante Vigor}}, {{WF|Gauss}}'s [[Gauss/Abilities|Passive]], {{WF|Jade}}'s {{A|Symphony of Mercy}}, the {{Focus|Vazarin}} ability {{Focus|Guardian Break}}, and the {{M|Quick Charge}} mod. Recharge Delay reduction is capped at '''80%'''. The delay is increased by {{M|Vital Systems Bypass}} and the '''Lethargic Shields''' personal modifier from [[Deep Archimedea]] and [[Temporal Archimedea]]. Both {{M|Quick Charge}} and {{M|Vital Systems Bypass}} can only be used in {{Faction|Conclave}} matches.
+
+Shields recharge at '''15''' units per second, plus '''5%''' of the Warframe's maximum shields:
+
+:<math>\text{Shield Recharge Rate} = (15 + 0.05(\text{Maximum Shields})) * (1+\text{Shield Recharge Bonus})</math>
+To calculate the time needed for depleted shields to regenerate to max shields:
+
+:<math>\text{Shield Recharge Time (s)} = \frac{\text{Maximum Shields}}{\text{Shield Recharge Rate}}</math>
+
+This delayed full-recharge penalty is also less noticeable with higher shielding. Despite taking longer to fully recharge shields at higher values, the relative increase in recharge time begins to taper off after around 900 maximum shield capacity, where it takes 15 seconds to fully recharge. After this point, additional shield capacity will cause a less noticeable increase in the time it takes to fully recharge shields compared to lower values. Even with over 10,000 maximum shields, it will never take more than 20 seconds to fully restore shields.
+
+===Passive Restoration (Enemy)===
+Enemy shields take a maximum of '''3 seconds''' to begin regenerating, depending on depleted amount.
+
+====Mods====
+<gallery captionposition="below" hideaddbutton="true" bordersize="none" bordercolor="#FFFFFF" position="center" captionalign="center" navigation="true">
+File:FastDeflectionMod.png|link=Fast_Deflection|alt=Fast Deflection{"Description":"+90% Shield Recharge\r\n-45% Shield Recharge Delay","UpgradeTypes":["AVATAR_SHIELD_RECHARGE_RATE"],"MaxRank":"5","Image":"FastDeflectionMod.png","Introduced":"0","InternalName":"/Lotus/Upgrades/Mods/Warframe/AvatarShieldRechargeRateMod","Transmutable":true,"Type":"Warframe","Rarity":"Uncommon","Tradable":true,"BaseDrain":"2","Polarity":"Vazarin","Name":"Fast Deflection","Icon":"FastDeflection.png","Link":"Fast Deflection","Incompatible":["Flawed Fast Deflection"],"CodexSecret":false}|{{M|Fast Deflection}}
+File:FortitudeMod.png|link=Fortitude|alt=Fortitude{"Transmutable":false,"Type":"Warframe","Description":"+40% Chance to Resist Knockdown\r\n+100% Shield Recharge","Tradable":true,"UpgradeTypes":["AVATAR_INJURY_BLOCK_CHANCE","AVATAR_SHIELD_RECHARGE_RATE"],"BaseDrain":"6","MaxRank":"3","Icon":"Fortitude.png","Link":"Fortitude","Image":"FortitudeMod.png","Name":"Fortitude","Introduced":"9","Polarity":"Naramon","Rarity":"Rare","InternalName":"/Lotus/Upgrades/Mods/Warframe/DualStat/FortitudeMod","CodexSecret":false}|{{M|Fortitude}}
+File:VigilanteVigorMod.png|link=Vigilante_Vigor|alt=Vigilante Vigor{"Description":"+60% Shield Recharge\r\n-30% Shield Recharge Delay","UpgradeTypes":["AVATAR_SHIELD_RECHARGE_RATE"],"MaxRank":"5","Image":"VigilanteVigorMod.png","Introduced":"22","Icon":"VigilanteVigor.png","Transmutable":false,"Type":"Warframe","Rarity":"Common","Tradable":true,"BaseDrain":"4","Polarity":"Vazarin","Name":"Vigilante Vigor","Set":"Vigilante Set","Link":"Vigilante Vigor","InternalName":"/Lotus/Upgrades/Mods/Sets/Vigilante/WarframeVigilanteVigorMod","CodexSecret":false}|{{M|Vigilante Vigor}}
+File:FassCanticleMod.png|{{M|Fass Canticle}}
+File:ShieldChargerMod.png|link=Shield_Charger|alt=Shield Charger{"Transmutable":false,"Type":"Robotic","Rarity":"Rare","Tradable":true,"BaseDrain":"0","MaxRank":"5","Link":"Shield Charger","Icon":"ShieldCharger.png","Image":"ShieldChargerMod.png","Name":"Shield Charger","Introduced":"The Index Preview","Description":"Increases Max Shields by 60% and Shield Regeneration by 60% for 10s.","Polarity":"Penjaga","InternalName":"/Lotus/Types/Sentinels/SentinelPrecepts/Events/CorpusArena/ShieldAuraPrecept","CodexSecret":false}|{{M|Shield Charger}}
+File:AcceleratedDeflectionMod.png|link=Accelerated_Deflection|alt=Accelerated Deflection{"Transmutable":true,"Type":"Companion","Description":"+90% Shield Recharge\r\n-45% Shield Recharge Delay","Tradable":true,"UpgradeTypes":["AVATAR_SHIELD_RECHARGE_RATE"],"BaseDrain":"4","MaxRank":"5","InternalName":"/Lotus/Upgrades/Mods/Sentinel/SentinelShieldRechargeRateMod","Link":"Accelerated Deflection","Image":"AcceleratedDeflectionMod.png","Name":"Accelerated Deflection","Introduced":"Vanilla","Polarity":"Vazarin","Rarity":"Uncommon","Icon":"AcceleratedDeflection.png","CodexSecret":false} (Companion only)|{{M|Accelerated Deflection}} (Companion only)
+File:HastenedDeflectionMod.png|link=Hastened_Deflection|alt=Hastened Deflection{"Transmutable":true,"Type":"Beast","Description":"+90% Shield Recharge\r\n-45% Shield Recharge Delay","Tradable":true,"UpgradeTypes":["AVATAR_SHIELD_RECHARGE_RATE"],"BaseDrain":"4","MaxRank":"5","Icon":"HastenedDeflection.png","Link":"Hastened Deflection","Image":"HastenedDeflectionMod.png","Name":"Hastened Deflection","Introduced":"14","Polarity":"Vazarin","Rarity":"Uncommon","InternalName":"/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowShieldRechargeRateMod","CodexSecret":false} (Companion only)|{{M|Hastened Deflection}} (Companion only)
+File:MechaRechargeMod.png|link=Mecha_Recharge|alt=Mecha Recharge{"Description":"+90% Shield Recharge","UpgradeTypes":["AVATAR_SHIELD_RECHARGE_RATE"],"MaxRank":"5","Image":"MechaRechargeMod.png","Introduced":"24","Icon":"MechaRecharge.png","Transmutable":false,"Type":"Kubrow","Rarity":"Rare","Tradable":true,"BaseDrain":"4","Polarity":"Madurai","Name":"Mecha Recharge","Set":"Mecha Set","IncompatibilityTags":["HELMINTH_MOD"],"Link":"Mecha Recharge","InternalName":"/Lotus/Upgrades/Mods/Sets/Mecha/KubrowMechaRechargeMod","CodexSecret":false} (Companion only)|{{M|Mecha Recharge}} (Companion only)
+File:QuickChargeMod.png|link=Quick_Charge|alt=Quick Charge{"Description":"-20% Shield Recharge Delay\r\n-20 Shield Capacity","Conclave":true,"UpgradeTypes":["AVATAR_SHIELD_RECHARGE_RATE","AVATAR_SHIELD_MAX"],"MaxRank":"3","Image":"QuickChargeMod.png","Introduced":"16.5","Icon":"QuickCharge.png","Transmutable":false,"Type":"Warframe","Rarity":"Rare","Link":"Quick Charge","BaseDrain":"6","Polarity":"Vazarin","Name":"Quick Charge","Tradable":true,"IncompatibilityTags":["SANDMAN"],"InternalName":"/Lotus/Upgrades/Mods/PvPMods/Warframe/ReduceShieldRechargeDelayWarframe","CodexSecret":false} (Conclave only)|{{M|Quick Charge}} (Conclave only)
+File:VitalSystemsBypassMod.png|link=Vital_Systems_Bypass|alt=Vital Systems Bypass{"Description":"+1 Heal Rate/s\r\n+50% Shield Recharge Delay","Conclave":true,"UpgradeTypes":["AVATAR_HEAL_RATE","AVATAR_SHIELD_RECHARGE_RATE"],"MaxRank":"3","Image":"VitalSystemsBypassMod.png","Introduced":"17.2","Icon":"VitalSystemsBypass.png","Transmutable":false,"Type":"Warframe","Rarity":"Rare","Link":"Vital Systems Bypass","BaseDrain":"10","Polarity":"Naramon","Name":"Vital Systems Bypass","Tradable":true,"IncompatibilityTags":["SANDMAN"],"InternalName":"/Lotus/Upgrades/Mods/PvPMods/Warframe/HealthRegenLongerShieldRecharge","CodexSecret":false} (Conclave only)|{{M|Vital Systems Bypass}} (Conclave only) 
+</gallery>
+
+====Abilities====
+<div class="tabber-borderless">{{#tag:tabber|
+Gauss=
+{{:Gauss/Abilities/Passive}}
+----
+Passively gains bonus shield recharge rate and shield recharge delay reduction for every point of battery stored in his gauge, up to a maximum of '''120%''' for recharge rate and '''80%''' for recharge delay when the battery is full.
+{{!}}-{{!}}
+
+Hildryn=
+{{:Haven}}
+{{!}}-{{!}}
+
+Jade=
+{{:Symphony of Mercy}}
+{{!}}-{{!}}
+}}</div>
+
+===Active Restoration===
+{{Main|:Category:Shield Restoration}}
+In the event of persistent enemy fire, a Warframe's shields may be hit too frequently for the natural regeneration to activate. In such cases, shields can be restored via several alternative methods as listed below:
+
+====Items====
+<gallery captionposition="below" hideaddbutton="true" bordersize="none" bordercolor="#FFFFFF" position="center" captionalign="center" navigation="true">
+TeamShieldRestore.png|link=Squad Shield Restore (Small)|[[Squad Shield Restore]]
+ShieldTotemMediumBundle.png|link=Squad Shield Restore (Medium)|[[Squad Shield Restore (Medium)]]
+LargeTeamShieldPack.png|link=Squad Shield Restore (Large)|[[Squad Shield Restore (Large)]]
+Shield Restore.png|link=Shield Restore|[[Shield Restore]] (retired item)
+</gallery>
+
+====Abilities====
+<div class="tabber-borderless">{{#tag:tabber|Innate = {{#tag:tabber|
+Caliban=
+{{:Lethal Progeny}}
+{{!}}-{{!}}
+
+Equinox=
+{{:Mend and Maim}}
+{{!}}-{{!}}
+
+Harrow=
+{{:Condemn}}
+{{!}}-{{!}}
+
+Hildryn=
+{{:Pillage}}
+{{!}}-{{!}}
+
+Mag={{#tag:tabber|
+Polarize=
+{{:Polarize}}
+{{!}}-{{!}}
+
+Crush=
+{{:Crush}}
+}}
+{{!}}-{{!}}
+
+Protea=
+{{:Grenade Fan}}
+{{!}}-{{!}}
+
+Revenant=
+{{:Danse Macabre}}
+{{!}}-{{!}}
+
+Styanax=
+{{:Rally Point}}
+{{!}}-{{!}}
+
+Trinity=
+{{:Blessing}}
+{{!}}-{{!}}
+
+Rebuild Shields (Helminth)=
+{{:Rebuild Shields}}
+}}
+{{!}}-{{!}}
+
+Augmented=
+
+{{#tag:tabber|
+Excalibur=
+[[File:PurgingSlashMod.png|thumb|right|150px]]
+{{Main|Purging Slash}}
+{{!}}-{{!}}
+
+Hildryn={{#tag:tabber|
+Balefire=
+[[File:BalefireSurgeMod.png|thumb|right|150px]]
+{{Main|Balefire Surge}}
+{{!}}-{{!}}
+
+Pillage=
+[[File:BlazingPillageMod.png|thumb|right|150px]]
+{{Main|Blazing Pillage}}
+}}
+{{!}}-{{!}}
+
+Trinity=
+[[File:VampireLeechMod.png|thumb|right|150px]]
+{{Main|Vampire Leech}}
+{{!}}-{{!}}
+
+Valkyr=
+[[File:HystericalFixationMod.png|thumb|right|150px]]
+{{Main|Hysterical Fixation}}
+{{!}}-{{!}}
+
+Volt={{#tag:tabber|
+Electric Shield=
+[[File:RechargeBarrierMod.png|thumb|right|150px]]
+{{Main|Recharge Barrier}}
+{{!}}-{{!}}
+
+Discharge=
+[[File:CapacitanceMod.png|thumb|right|150px]]
+{{Main|Capacitance}}
+}}}}}}</div>
+
+====Mods====
+<gallery captionposition="below" hideaddbutton="true" bordersize="none" bordercolor="#FFFFFF" position="center" captionalign="center" navigation="true">
+File:BriefRespiteMod.png|link=Brief_Respite|alt=Brief Respite{"Transmutable":false,"Type":"Aura","Description":"Squad converts 150% of Energy spent to Shields while Overshields are inactive","Tradable":true,"UpgradeTypes":["AVATAR_ABILITY_ENERGY_TO_SHIELD"],"BaseDrain":"-2","MaxRank":"5","InternalName":"/Lotus/Upgrades/Mods/Aura/FairyQuest/FairyQuestAbilityToShieldsAuraMod","Link":"Brief Respite","Image":"BriefRespiteMod.png","Name":"Brief Respite","Introduced":"The Silver Grove","Polarity":"Zenurik","Rarity":"Uncommon","Icon":"BriefRespite.png","CodexSecret":false}|{{M|Brief Respite}}
+File:AugurAccordMod.png|link=Augur_Accord|alt=Augur Accord{"Description":"+70% Shield Capacity","UpgradeTypes":["AVATAR_SHIELD_MAX"],"MaxRank":"5","Image":"AugurAccordMod.png","Introduced":"22","InternalName":"/Lotus/Upgrades/Mods/Sets/Augur/WarframeAugurAccordMod","Transmutable":false,"Type":"Warframe","Rarity":"Uncommon","Tradable":true,"BaseDrain":"2","Polarity":"Vazarin","Name":"Augur Accord","Set":"Augur Set","Link":"Augur Accord","Icon":"AugurAccord.png","CodexSecret":false}|{{M|Augur Accord}}
+File:AugurMessageMod.png|link=Augur_Message|alt=Augur Message{"Description":"+24% Ability Duration","UpgradeTypes":["AVATAR_ABILITY_DURATION"],"MaxRank":"5","Image":"AugurMessageMod.png","Introduced":"22","InternalName":"/Lotus/Upgrades/Mods/Sets/Augur/WarframeAugurMessageMod","Transmutable":false,"Type":"Warframe","Rarity":"Common","Tradable":true,"BaseDrain":"2","Polarity":"Naramon","Name":"Augur Message","Set":"Augur Set","Link":"Augur Message","Icon":"AugurMessage.png","CodexSecret":false}|{{M|Augur Message}}
+File:AugurPactMod.png|link=Augur_Pact|alt=Augur Pact{"Description":"+90% Damage","UpgradeTypes":["WEAPON_DAMAGE_AMOUNT"],"MaxRank":"5","Image":"AugurPactMod.png","Introduced":"22","InternalName":"/Lotus/Upgrades/Mods/Sets/Augur/SecondaryAugurPactMod","Transmutable":false,"Type":"Pistol","Rarity":"Common","Tradable":true,"BaseDrain":"2","Polarity":"Naramon","Name":"Augur Pact","Set":"Augur Set","Link":"Augur Pact","Icon":"AugurPact.png","CodexSecret":false}|{{M|Augur Pact}}
+File:AugurReachMod.png|link=Augur_Reach|alt=Augur Reach{"Description":"+30% Ability Range","UpgradeTypes":["AVATAR_ABILITY_RANGE"],"MaxRank":"5","Image":"AugurReachMod.png","Introduced":"22","InternalName":"/Lotus/Upgrades/Mods/Sets/Augur/WarframeAugurReachMod","Transmutable":false,"Type":"Warframe","Rarity":"Uncommon","Tradable":true,"BaseDrain":"2","Polarity":"Naramon","Name":"Augur Reach","Set":"Augur Set","Link":"Augur Reach","Icon":"AugurReach.png","CodexSecret":false}|{{M|Augur Reach}}
+File:AugurSecretsMod.png|link=Augur_Secrets|alt=Augur Secrets{"Description":"+24% Ability Strength","UpgradeTypes":["AVATAR_ABILITY_STRENGTH"],"MaxRank":"5","Image":"AugurSecretsMod.png","Introduced":"22","InternalName":"/Lotus/Upgrades/Mods/Sets/Augur/WarframeAugurSecretsMod","Transmutable":false,"Type":"Warframe","Rarity":"Rare","Tradable":true,"BaseDrain":"2","Polarity":"Naramon","Name":"Augur Secrets","Set":"Augur Set","Link":"Augur Secrets","Icon":"AugurSecrets.png","CodexSecret":false}|{{M|Augur Secrets}}
+File:AugurSeekerMod.png|link=Augur_Seeker|alt=Augur Seeker{"Description":"+30% Status Duration","UpgradeTypes":["WEAPON_PROC_TIME"],"MaxRank":"5","Image":"AugurSeekerMod.png","Introduced":"22","InternalName":"/Lotus/Upgrades/Mods/Sets/Augur/SecondaryAugurSeekerMod","Transmutable":false,"Type":"Pistol","Rarity":"Rare","Tradable":true,"BaseDrain":"2","Polarity":"Madurai","Name":"Augur Seeker","Set":"Augur Set","Link":"Augur Seeker","Icon":"AugurSeeker.png","CodexSecret":false}|{{M|Augur Seeker}}
+</gallery>
+
+====Companions====
+<gallery captionposition="below" hideaddbutton="true" bordersize="none" bordercolor="#FFFFFF" position="center" captionalign="center" navigation="true">
+CharmMod.png|alt=Charm{"Transmutable":false,"Type":"Smeeta Kavat","Rarity":"Rare","Tradable":true,"BaseDrain":"0","MaxRank":"3","Link":"Charm","InternalName":"/Lotus/Types/Friendly/Pets/CatbrowPetPrecepts/CatbrowLuckPrecept","Image":"CharmMod.png","Name":"Charm","Introduced":"Specters of the Rail","Description":"Smeeta Kavat has a 40% chance every 27s to bestow its owner with good fortune.","Polarity":"Penjaga","Icon":"Charm.png","CodexSecret":false}|link=Charm|{{M|Charm}}
+GuardianMod.png|alt=Guardian{"Transmutable":true,"Type":"Robotic","Rarity":"Common","Tradable":true,"BaseDrain":"2","MaxRank":"5","Link":"Guardian","Icon":"Guardian.png","Image":"GuardianMod.png","Name":"Guardian","Introduced":"7","Description":"Boosts owner's shield by 100% when it runs out.","Polarity":"Penjaga","InternalName":"/Lotus/Types/Sentinels/SentinelPrecepts/Guardian","CodexSecret":false}|link=Guardian|{{M|Guardian}}
+MolecularConversionMod.png|alt=Molecular Conversion{"Transmutable":false,"Type":"Taxon","Rarity":"Common","Tradable":true,"BaseDrain":"2","MaxRank":"5","Link":"Molecular Conversion","Icon":"MolecularConversion.png","Image":"MolecularConversionMod.png","Name":"Molecular Conversion","Introduced":"19.10","Description":"Blast enemies within 10m, converting 200 Damage into Shields for the Warframe.","Polarity":"Penjaga","InternalName":"/Lotus/Types/Sentinels/SentinelPrecepts/ShieldVampire","CodexSecret":false}|link=Molecular_Conversion|{{M|Molecular Conversion}}
+ProtectMod.png|alt=Protect{"Transmutable":false,"Type":"Raksa Kubrow","Rarity":"Rare","Tradable":true,"BaseDrain":"0","MaxRank":"5","Link":"Protect","Icon":"Protect.png","Image":"ProtectMod.png","Name":"Protect","Introduced":"14","Description":"The kubrow comes to the defense of its master, replenishing their shields by 300.","Polarity":"Penjaga","InternalName":"/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowShieldPrecept","CodexSecret":false}|link=Protect|{{M|Protect}}
+</gallery>
+
+====Arcanes====
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+ArcaneAegis.png|alt=Arcane Aegis{"Rarity":"Rare","Type":"Warframe","Description":"3% chance for +30% Shield Recharge for 12s","Link":"Arcane Aegis","Icon":"ArcaneAegis64x.png","UpgradeTypes":["AVATAR_SHIELD_RECHARGE_PERCENT","AVATAR_SHIELD_RECHARGE_DELAY","GAMEPLAY_FREE_REVIVE_COUNT"],"MaxRank":"5","IncompatibilityTags":["OPERATOR_SUIT"],"Dissolution":"28","Image":"ArcaneAegis.png","Name":"Arcane Aegis","Introduced":"17.9.1","IsRefreshable":false,"Criteria":"On Shield Damaged","InternalName":"/Lotus/Upgrades/CosmeticEnhancers/Defensive/GolemArcaneShieldRegenOnDamage","CodexSecret":true}|link=Arcane_Aegis|{{Arcane|Arcane Aegis}}
+ArcaneBarrier.png|alt=Arcane Barrier{"Rarity":"Legendary","Type":"Warframe","Description":"6% chance to instantly restore all Shields","Link":"Arcane Barrier","Icon":"ArcaneBarrier64x.png","UpgradeTypes":["GAMEPLAY_FREE_REVIVE_COUNT"],"MaxRank":"5","IncompatibilityTags":["OPERATOR_SUIT"],"Dissolution":"98","Image":"ArcaneBarrier.png","Name":"Arcane Barrier","Introduced":"16","IsRefreshable":false,"Criteria":"On Shield Damaged","InternalName":"/Lotus/Upgrades/CosmeticEnhancers/Defensive/InstantShieldOnDamage","CodexSecret":true}|link=Arcane_Barrier|{{Arcane|Arcane Barrier}}
+</gallery>
+
+====Other====
+*{{Weapon|Rakta Dark Dagger}}'s passive effect.
+*Allied [[Shield Osprey]]s will increase players maximum shield capacity by '''100''', plus '''35%''' of base shields.
+**Additional Ospreys will give an additional '''+35%''' bonus, but <u>not</u> the '''+100''' bonus.
+*The [[Sequence]] Syndicate Effect from {{Faction|The Perrin Sequence}} restores '''25%''' of the players max shields upon activation and increases the base shields by '''50%''' for '''30''' seconds.
+
+==Overshield==
+[[File:Overshields.png|150px|right|thumb|The shield counter changes from blue to purple while possessing overshields.]]
+'''Overshields''' are extra shield points on top of the normal maximum shielding, which are acquired through the use of active shield restoration items or abilities that would restore shields beyond the maximum shield capacity. Allied NPCs, such as [[Rescue]] targets or [[Defense Objects]], are incapable of gaining overshields.
+
+Unlike normal shields, overshields do not regenerate and instead stack on top of normal shielding. Overshields have a maximum value of '''1,200''' for [[Warframes]] and '''600''' for [[Companion]]s. This value cannot be increased except for the following:
+
+* {{WF|Harrow}}'s [[Harrow/Abilities|Passive]] increases maximum by '''1,200'''
+* {{M|Blast Shield}} for [[MOA (Companion)|MOAs]] increases maximum by '''3,000'''
+* {{Companion|Djinn}}'s {{M|Reawaken}} increases maximum by '''900'''
+
+Overshields can be obtained from:
+*[[Squad Shield Restore]]s Small, Medium and Large
+*{{WF|Caliban}}'s {{A|Lethal Progeny}}
+*{{WF|Equinox}}'s {{A|Mend & Maim}}
+*{{WF|Harrow}}'s {{A|Condemn}}
+*{{WF|Koumei}}'s {{A|Omamori}}
+*{{WF|Mag}}'s {{A|Crush}}
+*{{WF|Trinity}}'s {{M|Vampire Leech}}
+*{{WF|Volt}}'s {{M|Capacitance}}
+*{{WF|Revenant}}'s {{A|Danse Macabre}} overshield pickups
+*{{WF|Hildryn}}'s {{A|Pillage}} and {{A|Haven}}
+*{{WF|Protea}}'s {{A|Grenade Fan}}
+*{{WF|Styanax}}'s {{A|Rally Point}}
+*{{WF|Jade}}'s {{A|Symphony of Mercy}}
+*{{WF|Temple}}'s {{A|Ripper's Wail}}
+*{{WF|Uriel}}'s {{A|Remedium}}
+*{{Weapon|Rakta Dark Dagger}}'s effect
+*{{M|Shield Charger}} effect
+*{{Companion|Taxon}}'s {{M|Molecular Conversion}} effect
+*{{Companion|Smeeta Kavat}}'s {{M|Charm}}
+*The [[Set Mods#Augur Mod Set|Augur Mod Set]]
+*{{M|Brief Respite}}
+
+Some [[Incarnon]] weapon evolutions can grant Overshields, or provide conditional weapon buffs when Overshields are present: 
+*Fortifying Bloodshed: On {{D|Slash}} Status kill: Gain 100 Overshields.
+**Evolution II for  {{Resource|Soma Incarnon Genesis}}.
+*Guardian's Promise: +80% [[Melee Combo#Heavy Attack Efficiency|Heavy Attack Efficiency]] with Overshields.
+**Evolution II for {{Resource|Anku Incarnon Genesis}} and {{Resource|Skana Incarnon Genesis}}.
+*Haven Foray: Increased weapon damage with Overshields.
+**Evolution II for {{Resource|Angstrum Incarnon Genesis}}, {{Resource|Furis Incarnon Genesis}} and {{Resource|Lato Incarnon Genesis}}.
+*Guardian's Might: Increased weapon damage with Overshields. 
+**Evolution II for {{Resource|Skana Incarnon Genesis}} and {{Resource|Paris Incarnon Genesis}}.
+
+==Shield Gating==
+'''Shield Gating''' is an effect that occurs when shields are fully depleted, which prevents any excess damage leaking into the health pool.
+
+Warframes, [[Companion]]s, [[Archwing]]s, [[Necramech]]s, and [[Railjack]]s gain [[Invulnerability]] when their shields are fully depleted. Invulnerability duration can be approximated with the following:
+[[File:Shield vs shield gating.png|thumb|Graph of maximum shield vs the shield gating invulnerability in seconds]]
+:<math>
+t(shield) = 
+\begin{cases}
+\frac{\text{Shield}}{180} + \frac{1}{3},\; & \text{Shield} < 53 \\
+\left(\frac{\text{Shield}}{350}\right)^{0.65} + \frac{1}{3},\; & 53 \leq \text{Shield} \leq 1150 \\
+2.5,\; & \text{Shield} > 1150
+\end{cases}
+</math>
+:
+
+Invulnerability duration will scale based on the maximum shields replenished since the last shield gate occurred.
+
+*Invulnerability period scales from '''0.33''' seconds minimum to a maximum of '''2.5''' seconds at 1,150 shields.
+**The invulnerability duration of {{WF|Hildryn}} and allies protected by her {{A|Haven}} instead last for '''3.5''' seconds.
+**{{WF|Protea}}'s {{A|Grenade Fan}} '''doubles''' minimum shield gating duration, lasting anywhere between '''0.66''' - '''5''' seconds.
+**{{M|Catalyzing Shields}} sets the invulnerability window to '''1.33''' seconds upon recovering any amount of shields, at the cost of reducing maximum shields by 80%.
+**Equipping the [[Decaying Dragon Key]] caps the invulnerability window to '''0.33''' seconds regardless of maximum shield value. Completely overrides {{M|Catalyzing Shields}} effects.
+*Restoring '''any''' amount of shields during the invulnerability period from any sources, including natural shield regeneration, will immediately end it.
+
+Enemies have a shield gate that lasts '''0.1''' seconds, during which only '''5%''' of the damage dealt will damage their health. However, targeting [[Enemy Body Parts|weakspots]] will completely bypass their shield gate. Some area of effect attacks (like [[Slam Attack|slam attacks]]) do not benefit from the damage bypass and instead will have the damage instance completely blocked. Additional damage instance associated with the attack such as [[Status Effect|status effects]] or {{A|Xata's Whisper}} can still damage the enemy.
+
+==Shield Reduction==
+[[File:DecayingDragonKeySymbol.jpg|right|x100px]]
+Equipping a [[Dragon Key|Decaying Dragon Key]] reduces shields by '''75%'''. During missions, this is indicated by a symbol to the left of the shield/health bar (shown on the right).
+
+Additionally, the [[Environmental Hazards#Cryogenic Leakage|Cryogenic Leakage]] environmental hazard reduces shields by '''50%''', while {{M|Catalyzing Shields}} can decrease them by up to '''80%'''. For [[Conclave]], {{M|Rising Skill}} and {{M|Quick Charge}} are other sources of shield reduction.
+
+The [[Dragon Key|Decaying Dragon Key]] does not stack with {{M|Catalyzing Shields}} and completely overrides its effects.
+
+To completely remove all shields, one can equip {{Arcane|Arcane Persistence}}. The '''No Shields''' challenge from [[Nightmare Mode|Nightmare Missions]] and the '''Exposure Curse'''/'''Exposed''' personal modifier from [[Deep Archimedea]] and [[Temporal Archimedea]] also remove all shields. Having no shields disables '''Shield Gating''' and also prevents any '''Overshield''' gain.
+
+==Enemy Shield Scaling==
+{{Transclude|Enemy Level Scaling#Shields}}
+
+==Removing Enemy Shields ==
+All shield strip effects removes a percentage of the ''current'' maximum value, as such it has diminishing returns on subsequent casts against the same enemies. For example, with an ability that removes 50% shields, the first cast will bring shields down from 100% to 50%, and the second cast will bring the 50% down to 25%.
+
+Enemy shields can still regenerate with natural shield regeneration (such as [[Armis Ulta]], [[Kuva Lich]], or [[Sisters of Parvos]]) or while affected by regeneration buffs (such as [[Shield Osprey]]s).
+
+===Magnetic Status Procs===
+{{Main|Magnetic Damage}}
+{{D|Magnetic}} status effects amplifies damage dealt to shields by 100% for 6 seconds. This stacks up to 10 times, with each subsequent proc increasing damage by 25% for a total of 325%.
+
+===Mods===
+<div class="tabber-borderless">{{#tag:tabber|
+Shield Disruption = [[File:ShieldDisruptionMod.png|150px|right]]
+{{Main|Shield Disruption}}
+{{M|Shield Disruption}} is an Aura mod that decreases shields by '''18%''', up to '''72%''' when paired with a full squad. Hard caps at '''80%''' with {{M|Coaction Drift}}.
+{{!}}-{{!}}
+}}</div>
+
+{{clr}}
+
+=== Abilities===
+
+<div class="tabber-borderless">{{#tag:tabber|
+Caliban = {{Transclude|Fusion Strike}}
+This ability converges three beams that implodes, leaving a field that permanently strips the target's current shields by {{Stat|Ability Strength|icon=only}}'''50%'''. At '''200%''' {{Stat|Ability Strength}}, Fusion Strike can remove all shields.{{clr}}
+
+{{!}}-{{!}}
+
+Dagath = {{Transclude|Rakhali's Cavalry}}
+This ability sends forth five spectral horses that charge forward; enemies affected by {{A|Doom}} are permanently stripped of their shields by {{Stat|Ability Strength|icon=only}}'''35%''' per hit. At '''286%''' {{Stat|Ability Strength}}, a single hit of Rakhali's Calvary can remove all shields; however because the ability strikes multiple times, far less Strength is needed, with '''145%''' removing all shields from just two hits.{{clr}}
+
+{{!}}-{{!}}
+
+Hildryn = {{Transclude|Pillage}}
+This ability releases a pulse that permanently removes shields by {{Stat|Ability Strength|icon=only}}'''25%''' to all enemies hit by the pulse.
+
+{{!}}-{{!}}
+
+Jade = {{:Ophanim Eyes}}
+This ability releases a frontal conical gaze that permanently removes {{Stat|Ability Strength|icon=only}}'''10%''' shields per second.
+
+{{!}}-{{!}}
+
+Mag = {{Transclude|Polarize}}
+
+{{!}}-{{!}}
+
+Nyx = {{Transclude|Psychic Bolts}}
+This ability releases 6 telekinetic bolts that temporarily removes shields by {{Stat|Ability Strength|icon=only}}'''80%''' from up to 6 enemies in a single cast. At '''125%''' {{Stat|Ability Strength}}, Psychic Bolts can remove all shields.
+
+Psychic Bolts will be active for its duration until all affected enemies die. It can be recasted at any time but doing so will cancel debuff on currently affected enemies.
+
+{{!}}-{{!}}
+
+Styanax = {{Transclude|Tharros Strike}}
+This ability hurls shields in a cone in front of Styanax that permanently strips the target's shields by {{Stat|Ability Strength|icon=only}}'''50%'''. At '''200%''' {{Stat|Ability Strength}}, Tharros Strike can remove all shields.
+
+{{!}}-{{!}}
+
+Xaku = {{Transclude|The Lost}}
+'''Gaze''' binds one enemy to produce an aura that temporarily reduces enemy shields by {{Stat|Ability Strength|icon=only}}'''50%''' while they are within its aura. At '''200%''' {{Stat|Ability Strength}}, Gaze can remove all shields. Enemies will regain their armor if they leave the debuff field or the ability ends.
+{{clr}}
+}}
+
+==Media==
+<gallery position="center" orientation="square" widths="300">
+File:ShieldOspreyExample.png|An Excalibur Utilizing The Shield Osprey Specter To Boost Shields
+File:ShieldRestoreExample.png|An Excalibur Utilizing A Squad Shield Restore To Restore Shields 
+NyxEximusExample.png|A Nyx Using Mind Control On A Guardian Eximus To Increase Shield Recharge + Delay
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37}}
+*When a Shield Gate is triggered, your Health Bar will now turn gray to indicate you are invulnerable while the Shield Gate is active.
+
+{{ver|36.0.2}}
+*Player Necramech changes: 
+**Player Necramech’s Shields now have a 50% Damage Reduction. 
+**Also fixed Warframe and the Railjack Shields missing their intended 50% Damage Reduction!
+**Player Necramechs have also had their weaknesses/resistances standardized to match Tenno Health. 
+
+{{ver|36}}
+;Shield Adjustments
+
+'''Important note: We have not changed player Shields. This only applies to enemy Shields!'''
+
+The Grineer are tankier by design, but the Corpus try to make the difference through their Shields. However, Corpus Effective Hit Points (EHP) are significantly lower, making them often trivial to deal with by comparison. Our goal is to reduce the discrepancy between Grineer and Corpus time-to-kill (TTK) by making Corpus Shields a bit more challenging and interesting to fight. 
+
+Changes to Enemy Shields:
+*Shields now scale more quickly starting at level 80. This means stronger Shields than before as players fight higher-leveled Shielded enemies. 
+*Shield Recharge Delay is now unified across all enemy types.
+*Shield Recharge Delay now has a minimum and maximum length depending on how much damage has been dealt to enemy Shields.
+**The more damage dealt, the slower enemy Shields will begin recharging, so if you can’t outpace enemy Shields right away, you can chip their Recharge Delay down within a maximum and a minimum.
+***For example, if enemy Shields break at any point, it automatically acts as if 200% damage (which becomes the maximum delay) has been inflicted on those Shields. However, if an enemy absorbs 99% damage (so 1% of their shields left), their accumulated damage taken now sets their Recharge Delay in the middle of their respective minimum and maximum delays. Should they Recharge and you deal another 99% damage to their Shields, they’ll have absorbed 198% damage, taking them to the maximum Recharge delay of what that scaled enemy can have.
+*Shield Recharge Rate scales with enemy level, recharging at a faster rate for higher-leveled enemies.
+*Shield Recharge Rate will also accelerate while Shields are actively Recharging.
+*Shield Recharge Acceleration Rate’s base multiplier greatly increases after level 80, resulting in faster Recharge rates at higher levels.
+*Steel Path Shields are now multiplied by 2.5x, in place of the previous 6.25x. Steel Path Shields were doubly-applying the multiplier unintentionally.
+
+{{ver|34}}
+;Warframe Shield Changes
+
+There are many avenues for Tenno to approach Warframe survivability. Usually, it’s through increasing Health and Armor values, or making use of damage resistance features of certain Mods or Abilities, etc. For Shields, however, there is an incentive to do the opposite: '''the meta prior to this update encouraged players to reduce Shield values as much as possible to make use of Shield Gating mechanics.'''
+
+As Developers, we’re stuck in a strange position. On one hand, we see player ingenuity and creative ways of engaging with mechanics, but on the other, we see proof that Shields are not offering the same value to players as other survivability tools - to the point where you are rewarded for having the ''lowest'' Shield stat possible. 
+
+We have changed this so that Tenno are incentivized to increase their Shield stat instead of reducing it. To do so, we have approached this challenge in two key ways:
+
+'''Firstly - we’ve buffed Tenno Shields overall!'''<br/>
+<u>Previously:</u> Tenno Shields offered a 25% resistance to all damage types.<br/>
+<u>Now:</u> Tenno Shields will offer a 50% resistance to all damage types.
+
+'''Secondly - we’ve reworked Shield Gating!'''<br/>
+Shield Gating was added to the game back in 2020 with Update 27.2.0 as a way to prevent one-shots, especially at higher-level content. We feel that this mechanic accomplished that goal, but the implementation of it had an unintended side-effect: players were rewarded for having the smallest Shield stat and fastest Shield Recharge stat to make use of the Full Shield Break mechanic.  
+
+As mentioned above, our intention is to offer players more benefits for having larger Shield values, so Shield Gating has been reworked. The core mechanic is staying: when you lose all Shields, you gain a period of invulnerability. '''What has changed is how this period of invulnerability scales with the amount of Shields you have.'''
+
+The changes outlined below have been made with that vision in mind:
+
+'''Part 1 - Shield Gate Duration will scale with the amount of Shields you had upon Shield Break.'''
+
+<u>Previously:</u> Full Shields upon Shield break offered a '''1.3-second''' window of invulnerability. 
+
+<u>Now</u>, depending on your Modded values, this window could be anywhere from '''0.33 seconds''' (minimum duration) to '''2.5 seconds''' (capped at 1150 Shields). To receive the original 1.3-second Shield Gate, players will now need around 325 Shields upon Shield Break. 
+
+You can see a full overview of the Gate Duration vs. Shields Depleted in the graph below: 
+
+'''Part 2 - Partially Depleted Shields do not have a separate Shield Gate Duration.'''
+
+<u>Previously</u>, shield breaks on Shields that were not fully regenerated offered 0.33 seconds of Shield Gating.
+
+'''<u>Now</u>, Partially Depleted Shields are treated with the same scaling values outlined above.''' For example, if you had a max Shield value of 1200, but your Shields were broken with only 350 available, you would receive ~1.3 seconds of Shield Gating!
+
+With these changes, the more Shields you have and the faster they regenerate, the more you’ll get out of the Shield Gating system!
+
+'''Part 3 - We’ve added a new Corrupted Mod: Catalyzing Shields'''<br/>
+With the changes to Shield Gating, we still wanted to offer players different ways to interact with this system without always having to Mod for the most Shields possible. To accomplish this, we have introduced a new Corrupted Mod: Catalyzing Shields.
+
+This Mod '''reduces your maximum Shields by 80%''' but also changes how Shield Gating Scaling works for your Warframe '''with a guaranteed 1.33 seconds of Shield Gating upon full Shield depletion.''' With this Mod equipped, Shield Gating duration scales from 0.33 to 1.33 based on your maximum Shield values, regardless of what they are.
+
+For example, if my maximum Shields are 100 with Catalyzing Shields equipped, I would expect the following Shield Gating durations:
+
+* 100 Shields at Shield Break: 1.33s of Shield Gating
+* 75 Shields at Shield Break: 1.0s of Shield Gating
+* 50 Shields at Shield Break: 0.67s of Shield Gating
+* 25 Shields at Shield Break: 0.34s of Shield Gating
+* 10 Shields at Shield Break: 0.33s of Shield Gating
+** ''As a reminder, 0.33s is the absolute minimum duration for Shield Gating!''
+
+''How to acquire Catalyzing Shields:''<br/>
+Since this is a new Corrupted Mod, '''it is obtainable via Orokin Vaults on Deimos.'''
+
+<s>'''An Alert for the Catalyzing Shields Mod is now will be available in the near future to give players faster access to this Mod to test in their builds. We will share start/end dates for that Alert soon!'''</s><br/>
+'''An Alert for the Catalyzing Shields Mod is now live!'''
+
+'''Part 4 - Decaying Dragon Keys have been updated to debuff both Shields and Shield Gating.'''<br/>
+With revised Shield Gating, we felt it was important to update Decaying Dragon Keys as well. These Gear items were previously used to lower the threshold needed for Full Shield Breaks with Shield Gating, and while we loved to see players finding unique interactions between various mechanics, Dragon Keys are intended to increase difficulty when equipped.
+
+With that intention in mind, '''Decaying Dragon Keys now cap player Shield Gates to 0.33s maximum.'''
+
+'''Part 5 - A few other details to cover!'''
+
+*Hildryn’s Passive has been buffed from 3s Shield Gating Duration to 3.5s Shield Gating Duration!
+*Updated Grenade Fan’s description to better communicate how Shield Satellites work with Shield Gating. 
+**“(HOLD) SHIELD SATELLITES - Protea reconfigures Grenades to work as overcharging shield generators, protecting her, her allies and companions. When Shields break, a Satellite is destroyed to double minimum Shield Gate invincibility time.”  
+*<u>Shield Regeneration Delay Reduction is now capped at 80%.</u> Many Mods have now been updated to offer this benefit, leading to the possibility of stacking Shield Regen to be faster than Shield Gate expiring. Now, players should have easier access to reducing the regeneration time, without risking issues with permanent invulnerability. 
+**Guardian Break Shield Regeneration delay reduction has been decreased from 90% to 80% at max rank as a result. We have buffed this effect’s duration 8s to 12s at max rank to compensate!
+*<u>Updated the Shield stat on-hover description in the Upgrade Screen</u> to describe Shield break functionality and include Shield Gate duration for your current modded max Shields.
+
+There are many variables that will impact the overall outcome of these Shield changes with Abyss of Dagath, and we’ll be keeping a close eye on player feedback now that this is in the community’s hands.
+
+;Changes&#58;
+*Gaining Shields now provide more gradual feedback in the health bar instead of instantly changing.
+
+{{ver|30.5.4}}
+*Fixed Headshots dealing double damage if it bleeds over from Shields to Health.
+
+{{ver|28.0.6}}
+*Shield Gating now applies to Companions the same way it does to Warframes!
+**''Blocks 100% of Damage for 1000ms on first break, reduced to 300ms if Shields break again without fully recharging.''
+*Fixed Shield-Gating not functioning properly after Reviving when becoming downed.
+
+{{ver|28}}
+*Fixed Shield Gating mechanic being ignored by weapons that fire multiple projectiles at once for Clients. This resulted in some enemies shot by the Host will survive due to Shield Gating negating most of the damage, while enemies shot by the Client are not protected by the Shield Gate.
+
+{{ver|27.4}}
+*Fixed certain boss attacks (Ropalolyst’s laser attack and Profit Taker’s missile for example) not respecting Shield Gating and killing players in one hit.
+
+{{ver|27.2}}
+;Armor and Damage Changes (Enemy):
+This section will go over before and after scenarios with our enemy Armor, Health, and Shield changes. Reading this section should give you a conceptual and on-paper understanding of what we’re changing and why, but practical experiences will tell the full story here. You may need to refresh some aspects of your Builds to truly optimize your power against your enemies. 
+
+Before: Armor, Shields and Health on an Exponential Curve<br/>
+After: Armor Shields and Health on an S curve
+
+;Damage-Type Changes:
+
+*Slash Status now does not bypass Shields and instead deals damage over time to Shields. Slash Status still bypasses Armor.
+
+;Player Changes:
+
+Player Shields, Health, and Armor used to be shared with all AI, so they had all the weaknesses and resistances that their AI counterparts did. 
+
+Now Players have their own unique Shield, Health, and Armor type classified as TENNO! These have all weaknesses and resistances neutralized (for now). Player Shields now reduce 25% of incoming damage. Player Shields now recharge with custom player-only logic. Shield recharge delays are based on depleted or partial depleted shields. Partially depleted shields (any amount) is a 1 second recharge delay. Full depletion is a 4 second recharge delay.  
+
+These changes to Player shields are in addition to coming Shield Gating changes, which you can read about in our Shield Gating section!
+
+''Why: Armor Scaling and enemy Damage Reduction was the nucleus for this change. For years Tenno have had the tools to deal with these things, but the tools were uniform: Use Corrosive Projection, or else. While this is a simplification, it removed the feeling of choice. With these changes, we hope players experience a feeling of variety and choice when taking on enemies. By changing the scaling for Armor, we could consistently change the scaling for all!''
+
+;Shield Gating: Friend and Foe
+
+'''Friend:''' First, let’s answer ‘What is Shield Gating?’ when it applies to you as a player. In this implementation, Shield Gating is the mechanic of preventing an instance of lethal (‘1-shot’) damage if you have Shields active. Simply put, the goal is to reduce the number of ‘1-shots’ you take when your shields are up, particularly for Shield-based frames. When any shields are active, an incoming hit that depletes your last bit of Shields will not continue into your Health pool, and also triggers a brief time where your Health is protected. Once that period is over you can take Health damage normally. Additionally, you will no longer take Slash Status Effect damage to your Health while Shields are up. 
+
+'''Foe:''' Enemies - Corpus in particular - also have received a bit of a Shield Gating, but with skillful gameplay you can overcome this. Any Headshots or shots to Weakspots completely bypass Corpus enemy Shield Gating. In addition, 5% of the damage dealt when hitting the shield gate will target enemy Health - this allows you to take your Forma fueled weapons back to low level enemies and hit them hard instead of hitting the shield gate. The goal here is to make Shields a mechanic you want to play against with Mods (Auras, Elemental) or to bypass with skill (Headshots). Slash Status Effects will now deal damage over time to Shields, Toxin damage remains as-is (bypassing Shields to directly affect enemy Health). Damage from Warframe Abilities will ignore the enemy Shield Gate (i.e if an instance of Damage from an ability is greater than the Shield value, it will go into health as well). 
+
+''Why: Giving both Friend and Foe shield gating has two purposes: we want to reward skill a bit more in all Corpus missions, and give the ‘squishier’ frames a bit more viable edge and a chance to really explore Shield-focused builds. Toxin Damage and Status Effects are still your friend against Corpus or Shielded enemies!''
+
+{{ver|15.13}}
+;Tenno Shields Update
+Shields and HP are two critical elements to keep track of in Warframe, but when fighting enemies it can be difficult to keep track of how much damage you’ve taken in the heat of combat. This Update contains new visual and audio cues for when your Warframe takes damage in combat.
+
+When taking damage in combat damage will sound different depending on if your shields are down or intact. Additionally shields ‘breaking’ have a new audio cue to help you better keep track of when your health is exposed to enemy fire.
+
+{{ver|15.10}}
+
+Overshields have been added to Warframe! Overshields are an extra layer of protection on your existing shield that must be destroyed before your Warframe’s shields can be damaged.
+*Overshields can be obtained when using Shield Restore items when you are at maximum shield capacity. Overshields cannot be regenerated, and this extra protective shield is noted by a color change (purple) in the UI.
+*Overshields have a cap at 1200.
+
+{{ver|Vanilla}}
+*Introduced.
+}}
+{{Ver/Lu|27.1}}
+
+==References==
+{{Reflist}}
+{{DamageNav}}
+{{MechNav}}
+[[es:Escudo]]
+[[fr:Bouclier]]
+[[Category:Mechanics]]
+[[Category:Damage 2.0]]
+[[Category:Closed Beta]]

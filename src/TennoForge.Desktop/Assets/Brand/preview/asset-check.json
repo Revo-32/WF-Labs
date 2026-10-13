@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "png": [
+    {
+      "size": 16,
+      "width": 16,
+      "height": 16,
+      "opticalMaster": true
+    },
+    {
+      "size": 32,
+      "width": 32,
+      "height": 32,
+      "opticalMaster": false
+    },
+    {
+      "size": 48,
+      "width": 48,
+      "height": 48,
+      "opticalMaster": false
+    },
+    {
+      "size": 64,
+      "width": 64,
+      "height": 64,
+      "opticalMaster": false
+    },
+    {
+      "size": 128,
+      "width": 128,
+      "height": 128,
+      "opticalMaster": false
+    },
+    {
+      "size": 256,
+      "width": 256,
+      "height": 256,
+      "opticalMaster": false
+    }
+  ],
+  "icoFrames": [
+    16,
+    32,
+    48,
+    64,
+    128,
+    256
+  ],
+  "icoSmallFrames": "32-bit BGRA DIB \u002B AND mask",
+  "icoLargeFrames": "PNG",
+  "vectorStrokes": 3,
+  "font": "Wanted Sans SemiBold (outlined)",
+  "palette": [
+    "#0C131D",
+    "#F0F5F8",
+    "#64D9F2",
+    "#253547"
+  ]
+}

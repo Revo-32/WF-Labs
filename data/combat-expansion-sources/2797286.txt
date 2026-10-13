@@ -1,0 +1,738 @@
+{{UpdateMe|
+Update ExplosionDelay key to store a 2-tuple value (2-element table) for minimum delay and maximum delay.
+Add a new Radius key that is distinct from Range. This is to account for projectiles with a radius. (e.g. {{Weapon|Miter}} w/ 0.2m)
+}}
+Hey! You! Here to update something that's out of date? Follow these easy steps:
+#Open the relevant [[Module:Weapons/data#Horizontal Partitions (and where to update data)|Horizontal Partition]] and click "Edit Source" on the top right of the page.
+#Use <code>CTRL+F</code> to find the data for the weapon.
+#Find the number/string that's wrong.
+#Change the number/string and save the page.
+That's it! After you've done that, the data will proliferate out to all the relevant pages.
+
+If you're adding new data instead of just changing existing data, try to use an example of how things are entered if you're not quite sure what to do.
+
+(Oh, order doesn't matter, but spelling and capitalization do. For example, it doesn't matter if Disposition is first or last)
+
+Thanks, you're awesome!
+
+[[User:Falterfire]]
+__TOC__
+{{LatestEdit}}
+==Horizontal Partitions (and where to update data)==
+*[[Module:Weapons/data/primary]] - [[Primary Weapon]]s
+*[[Module:Weapons/data/secondary]] - [[Secondary Weapon]]s
+*[[Module:Weapons/data/melee]] - [[Melee]] weapons
+*[[Module:Weapons/data/archwing]] - [[Archgun]]s and [[Archmelee]]s
+*[[Module:Weapons/data/companion]] - [[Companion]] weapons
+*[[Module:Weapons/data/railjack]] - [[Railjack]] turrets and ordnances
+*[[Module:Weapons/data/modular]] - [[Amp]]s, [[Zaw]]s, and [[Kitgun]]s
+*[[Module:Weapons/data/misc]] - everything else
+
+For [[Conclave]] data:
+*[[Module:Weapons/Conclave/data/primary]] - Primary Weapons
+*[[Module:Weapons/Conclave/data/secondary]] - Secondary Weapons
+*[[Module:Weapons/Conclave/data/melee]] - Melee Weapons
+
+==Attack Data Schema==
+<syntaxhighlight lang="lua">
+	{
+		AttackIndex = 1,
+		AttackName = "Normal Attack",
+		AmmoCost = 1,
+		BurstCount = 1,
+		Damage = { Impact = 1, Puncture = 1, Slash = 1 },
+		CritChance = 0.1,
+		CritMultiplier = 1,
+		StatusChance = 0.1,
+		FireRate = 1.0,
+		Falloff = { StartRange = 400, EndRange = 600, Reduction = 0.2 },
+		ShotType = "Hit-Scan",
+		ShotSpeed = 1,
+		Trigger = "Semi-Auto"
+	},
+</syntaxhighlight>
+
+{| class="wikitable sortable"
+|-
+! Key/Column Name !! [[Arsenal]] EN L10n !! [[Public Export]] Equivalent !! Internal Equivalent !! Data Type || Required? || Explanation/Description || Example(s)
+|-
+| <code>AttackIndex</code> || N/A || N/A || N/A || Number (integer) || ✔️ || Entry number for the attack || 1
+|-
+| <code>AttackName</code> || Varies || N/A || N/A || String || ❌ || Name of attack; defaults to "Normal Attack" || <code>"Normal Attack"</code> or <code>"AoE Explosion"</code> 
+|-
+| <code>AttackParentIndex</code> || N/A || N/A || N/A || Number (integer) || ❌ || Entry number for the parent attack, usually applies to AoE component of attacks || 1
+|-
+| <code>AmmoCost</code> || N/A || N/A || <code>ammoRequirement</code> || Number (float) || ✔️ || Ammo consumed on a single attack input; defaults to nil || <code>0.5</code> or <code>10</code>
+|-
+| <code>AmmoType</code> || N/A || N/A || <code>ammoType</code> || String || ❌ || Type of ammo pickups that replenishes ammo reserves; "None" for battery weapons and "Energy" for those that use Warframe energy || <code>"Primary"</code>
+|-
+| <code>BurstCount</code> || N/A || N/A || <code>NumShots</code> || Number (integer) || ❌ || For burst-fire weapons, the number of shots per burst; omit for attacks that shoot bursts that scale off magazine size (e.g {{Weapon|Pandero}}) || <code>4</code>
+|-
+| <code>BurstDelay</code> || N/A || N/A || <code>BurstDelay</code> || Number (float) || ❌ || For burst-fire weapons, the time in seconds between shooting each individual shot in a burst. || <code>0.061</code>
+|-
+| <code>BurstReloadDelay</code> || N/A || N/A || N/A || Number (float) || ❌ || Only for burst-fire attacks that scale off magazine size (e.g {{Weapon|Pandero}}), the time after a burst before an automatic reload commences. This value is derived from the inverse of internal fire rates of burst attacks (1 {{div}} fireRate). || <code>0.2</code>
+|-
+| <code>Damage</code> || Damage || <code>damagePerShot</code> and <code>totalDamage</code> || <code>AttackData</code> || Table (map of floats) || ✔️ || Table of [[damage]] types that the weapon deals and their individual damage values. Possible keys: Impact, Puncture, Slash, Cold, Electricity, Heat, Toxin, Blast, Corrosive, Gas, Magnetic, Radiation, Viral, Void, and MinProgenitorBonus (random element for Kuva/Tenet weapons) || <code>{ Impact = 100, Puncture = 25, Slash = 30 }</code>
+|-
+| <code>ChargeTime</code> || Charge Rate || N/A || <code>ChargeTime</code> || Number (float) || ❌ || For charged attacks, the base charge time for a fully charged attack || <code>0.5</code>
+|-
+| <code>CritChance</code> || Critical Chance || <code>criticalChance</code> || <code>CriticalChance</code> or <code>criticalHitChance</code> || Number (float) || ✔️ || Attack's base [[Critical Hit|critical chance]] as a decimal || <code>0.25</code>
+|-
+| <code>CritMultiplier</code> || Critical Multiplier || <code>criticalMultiplier</code> || <code>CriticalMultiplier</code> or <code>criticalHitDamageMultiplier</code> || Number (float) || ✔️ || Attack's base [[Critical Hit|critical hit multiplier]] as a scalar || <code>2.2</code>
+|-
+| <code>EffectDuration</code> || N/A || N/A || N/A || Number (float) || ❌ || For special attacks, the time in seconds that a special effect lasts for (e.g. {{Weapon|Pox}}'s toxin clouds or {{Weapon|Zenistar}}'s disc) || <code>5</code>
+|-
+| <code>ExplosionDelay</code> || Embed Delay || N/A || <code>EmbedTime</code> || Number (float) || ❌ || For AoE attacks, the time in seconds between initial shot and explosion; the same as "Embed Delay" stat in-game || <code>0.5</code>
+|-
+| <code>ExtraHeadshotDmg</code> || N/A || N/A || N/A || Number (float) || ❌ || Additional bonus damage on headshots for weapons such as {{Weapon|Cernos Prime}} || <code>0.5</code>
+|-
+| <code>Falloff</code> || Falloff || N/A || <code>damageFallOff</code> and <code>damageFallOffMinDamage</code> or <code>ExplosionFallOff</code> and <code>DamageRadius</code> || Table (map of floats) || ❌ || Attack's base [[Damage Falloff]] stats; includes starting distance in meters when falloff multiplier comes into play, ending distance in meters when falloff multipler is at max reduction, and the maximum damage reduction as a decimal || <code>{ StartRange = 0, EndRange = 5, Reduction = 0.5 }</code>
+|-
+| <code>FireRate</code> || Fire Rate || <code>fireRate</code> || <code>fireRate</code> (stored as a whole number representing number shots per minute, have to divide by 60s to get arsenal Fire Rate) || Number (float) || ✔️ || Attack's base [[Fire Rate]] or [[Attack Speed]] multiplier || <code>6.5</code>
+|-
+| <code>ForcedProcs</code> || N/A || N/A || <code>ForcedProcs</code> || Table (array of strings) || ❌ || Attack's forced procs, if any || <code>{ "Impact", "Slash" }</code>
+|-
+| <code>IncarnonCharges</code> || N/A || N/A || N/A || Number (integer) || ❌ || For guns, the number of available shots while in [[Incarnon Mode]] || 160
+|-
+| <code>IsSilent</code> || Noise || <code>noise</code> || <code>IsSilenced</code> or <code>SilentProjectile</code> || Boolean || ❌ || Whether or not an attack has a silent [[Noise Level]]; defaults to false || <code>true</code>
+|-
+| <code>MaxSpread</code> || Max Deviation || N/A || <code>AIMED_ACCURACY.Spread.SHOOTING.range[1]</code> || Number (float) || ❌ || Attack's maximum spread range. Arsenal accuracy is calculated as the inverse of the average spread multiplied by 100. || <code>16</code>
+|-
+| <code>MinSpread</code> || Deviation With Aim || N/A || <code>AIMED_ACCURACY.Spread.SHOOTING.range[0]</code> || Number (float) || ❌ || Attack's minimum spread range. Arsenal accuracy is calculated as the inverse of the average spread multiplied by 100. || <code>6</code>
+|-
+| <code>Multishot</code> || Multishot || <code>multishot</code> || <code>fireIterations</code> || Number (integer) || ❌ || Attack's base [[Multishot]] value; defaults to 1 || <code>10</code>
+|-
+| <code>PunchThrough</code> || Punch Through || N/A || <code>PunctureDepth</code> or <code>tracePunctureDepth</code> || Number (float) || ❌ || Attack's base [[Punch Through]] value in meters; defaults to 0  || <code>1.5</code>
+|-
+| <code>Range</code> || Range || N/A || <code>traceDistance</code> or <code>DamageRadius</code> || Number (float) || ❌ || For maximum range of a particular attack in meters. For AoE attacks, the base radius of area of effect in meters. || <code>40</code>
+|-
+| <code>ShotType</code> || N/A || N/A || <code>HitType</code> || String || ✔️ || Attack's shot type (e.g. "Hit-Scan", "Projectile", and "AoE" for area of effects) || <code>Projectile</code>
+|-
+| <code>ShotSpeed</code> || N/A || N/A || <code>KinematicMaxSpeed</code> or <code>ForwardVel</code> || Number (integer) || ❌ || For projectile attacks, the attack's maximum [[Projectile Speed|projectile speed]] in meters per second (not initial or minimum speed) || <code>50</code>
+|-
+| <code>StatusChance</code> || Status || <code>procChance</code> || <code>ProcChance</code> || Number (float) || ✔️ || Attack's base [[Status Effect|status chance]] as a decimal || <code>0.2</code>
+|-
+| <code>SyndicateEffect</code> || N/A || N/A || N/A || String || ❌ || For [[Syndicate]] weapons, the [[Syndicate Radial Effects|Syndicate Radial Effect]] that it has || <code>"Entropy"</code>
+|-
+| <code>Trigger</code> || Trigger || <code>trigger</code> || <code>FireModes</code> || String || ❌ || For weapons with multiple [[Trigger Type]]s, attack's trigger type || <code>"Semi-Auto"</code>
+|-
+|}
+
+==Gun Entry Schema==
+<syntaxhighlight lang="lua">
+["Long Gun Weapon Name"] = {
+	_IgnoreEntry = true,
+	_TooltipAttackDisplay = 1,
+	Accuracy = 100,
+	AmmoMax = 540,
+	AmmoPickup = 80,
+	AmmoType = "Primary",
+	AmmoPickup = 1,
+	Attacks = {
+		{
+			AttackIndex = 1,
+			AttackName = "Normal Attack",
+			AmmoCost = 0.5,
+			BurstCount = 1,
+			Damage = { Impact = 1, Puncture = 1, Slash = 1 },
+			CritChance = 0.1,
+			CritMultiplier = 1,
+			StatusChance = 0.1,
+			FireRate = 1.0,
+			Falloff = { StartRange = 400, EndRange = 600, Reduction = 0.2 },
+			MaxSpread = 0,
+			MinSpread = 0,
+			ShotType = "Hit-Scan",
+			ShotSpeed = 100,
+			Trigger = "Semi-Auto"
+		}
+	},
+	Class = "Sniper Rifle",
+	Conclave = false,
+	Disposition = 0.5,
+	ExilusPolarity = "Madurai",
+	Family = "",
+	Image = "Weapon.png",
+	Introduced = "",
+    Link = "Page Name",
+	Magazine = 1,
+	Mastery = 1,
+	MaxRank = 30,
+	Name = "Weapon Name",
+	Polarities = { "Madurai" },
+	Reload = 1,
+	ReloadStyle = "Regenerate",
+	SellPrice = 7500,
+    Slot = "Primary",
+	SniperComboMin = 1,
+	SniperComboReset = 1,
+	Spool = 5,
+	Trigger = "Semi-Auto",
+	Traits = { "Grineer" },
+	Users = { },
+	Zoom = { "2.0x", "4.0x" }
+},
+</syntaxhighlight>
+
+{| class="wikitable sortable" width=100%
+|-
+!width=12.5%| Key/Column Name 
+!width=12.5%| [[Arsenal]] EN L10n 
+!width=12.5%| [[Public Export]] Equivalent 
+!width=12.5%| Internal Equivalent 
+!width=12.5%| Data Type 
+!width=12.5%| Required? 
+!width=12.5%| Explanation/Description 
+!width=12.5%| Example(s)
+|-
+| <code>Accuracy</code> || Accuracy || <code>accuracy</code> || N/A || Number (float) || ✔️ || Gun's base [[Accuracy]] value || <code>100</code>
+|-
+| <code>AmmoMax</code> || Ammo Maximum || N/A || <code>AmmoCapacity</code> || Number (integer) || ✔️ || Gun's base maximum reserve ammo (this excludes magazine size) || <code>210</code> or <code>0</code> (represents infinite ammo, for weapons that don't use ammo)
+|-
+| <code>AmmoPickup</code> || Ammo Pickup || N/A || <code>AmmoPickUpCount</code> || Number (integer) || ❌ || Amount of ammo recovered after walking over an ammo pickup || <code>1</code>
+|-
+| <code>Attacks</code> || N/A || N/A || <code>AttackData</code>, <code>ExplosiveAttack</code>, <code>RadialDamage</code>, <code>EmbedAttack</code> || Table || ✔️ || Contains attack data for the weapon || See [[#Attack Data Schema]]
+|-
+| <code>Class</code> || N/A || <code>productCategory</code> || <code>IsAbilityWeapon</code> for Exalted Weapons, otherwise no direct equivalent || String || ✔️ || Weapon class for modding or a subclass of the weapon in its equip slot; in the case of [[Exalted Weapon]]s, it is just "Exalted Weapon" || <code>"Sniper Rifle"</code>
+|-
+| <code>CodexSecret</code> || N/A || <code>codexSecret</code> || <code>CodexSecret</code> || Boolean || ❌ || Whether or not the weapon has an entry in the [[Codex]] before the player acquires it; defaults to false || <code>false</code>
+|-
+| <code>CompatibilityTags</code> || N/A || N/A || <code>CompatibilityTags</code> || Table (array of strings) || ❌ || Tags that denote item compatibility. In other words, items with these tags can/cannot have a particular mod installed with the same tag. || <code>{ "POWER_WEAPON" }</code>
+|-
+| <code>Conclave</code> || N/A || N/A || <code>AvailableOnPvp</code> || Boolean || ❌ || Whether or not the weapon can be used in [[Conclave]] || <code>false</code>
+|-
+| <code>DefaultUpgrades</code> || N/A || N/A || <code>DefaultUpgrades</code><ref>As of {{ver|32.0.12}}, this may not be accurate (last checked 2022-11-01 and first noticed a weapon data schema change ~2 months ago). This key is absent on most weapons and if it is present, then equivalent data is under <code>UpgradeType</code> key like for {{Weapon|Tatsu Prime}} (see script tag with id "__NEXT_DATA__" under HTML source on https://overframe.gg/build/new/5979/tatsu-prime/). Treat this information as speculation however.</ref> || Table (array of strings) || ❌ || Additional upgrades that are innate to the weapon || <code>{ "/Lotus/Weapons/Grineer/KuvaLich/Upgrades/InnateDamageRandomMod" } </code>
+|-
+| <code>Disposition</code> || Riven Disposition || <code>omegaAttenuation</code> || <code>OmegaAttenuation</code> || Number (float) || ✔️ || [[Riven Mods|Riven Mod]] Disposition value || <code>0.5</code>
+|-
+| <code>ExilusPolarity</code> || N/A || N/A || <code>ArtifactSlots</code> || String || ❌ || Polarity on Exilus slot || <code>"Madurai"</code>
+|-
+| <code>Family</code> || N/A || N/A || N/A || String || ❌ || Weapon family that it belongs to, corresponding to the [[Riven Mods|Riven Mod]] compatibility || <code>"Latron"</code>
+|-
+| <code>IncarnonChargeGain</code> || N/A || N/A || N/A || Number (integer) || ❌ || For guns, the number of Incarnon shots gained by hitting a [[Weak Point]] || 10
+|-
+| <code>IncarnonImage</code> || N/A || N/A || N/A || String || ❌ || Image file name of the weapon in its [[Incarnon]] Form as uploaded to the wiki || <code>"Ack&BruntIncarnon.png"</code>
+|-
+| <code>Image</code> || N/A || <code>textureLocation</code> || <code>Icon</code> || String || ✔️ || Image file name of the weapon as uploaded to the wiki || <code>"CrpBFG.png"</code>
+|-
+| <code>InternalName</code> || N/A || <code>uniqueName</code> || <code>TypeName</code> || String || ✔️ || The full unique name of a weapon formatted as a file path || <code>"/Lotus/Weapons/MK1Series/MK1Paris"</code>
+|-
+| <code>Introduced</code> || N/A || N/A || N/A || String || ✔️ || The game version in which the weapon was first introduced in the global build of [[WARFRAME]] || <code>"30.5"</code> or <code>"Specters of the Rail"</code>
+|-
+| <code>IsLichWeapon</code> || N/A || N/A || <code>IsKuva</code> || Boolean || ❌ || Denotes whether or not a weapon is a [[:Category:Kuva Lich Weapons|Kuva]] or [[:Category:Tenet Weapons|Tenet]] weapon || <code>true</code>
+|-
+| <code>Link</code> || N/A || N/A || N/A || String || ✔️ || Page/article link to the weapon on the wiki || <code>"Artemis Bow (Weapon)"</code>
+|-
+| <code>Magazine</code> || Magazine || <code>magazineSize</code> || <code>AmmoClipSize</code> || Number (integer) || ✔️ || Gun's base magazine size || <code>45</code> or <code>0</code> (no magazine)
+|-
+| <code>Mastery</code> || N/A || <code>masteryReq</code> || <code>RequiredLevel</code> || Number (integer) || ✔️ || [[Mastery Rank]] requirement || <code>5</code>
+|-
+| <code>MaxRank</code> || N/A || N/A || <code>LevelCap</code> || Number (integer) || ❌ || Weapon's maximum rank || <code>30</code>
+|-
+| <code>Name</code> || N/A || <code>name</code> || <code>LocalizeTag</code> || String || ✔️ || Weapon's name || <code>"Primary Vermisplicer Chamber"</code>
+|-
+| <code>Polarities</code> || N/A || N/A || <code>ArtifactSlots</code> || Table (array of strings) || ✔️ || Full names of the weapon's non-Universal [[polarity|polarities]] || <code>{ "Naramon", "Madurai" }</code>
+|-
+| <code>Reload</code> || Reload || <code>reloadTime</code> || <code>reloadTime</code> or <code>reloadEndTime</code>, <code>reloadLoopTime</code>, <code>reloadStartTime</code> for by shell reloads || Number (float) || ✔️ || Gun's base [[reload]] time in seconds || <code>3.5</code>
+|-
+| <code>ReloadDelay</code> || N/A || N/A || <code>HeavyBatteryRegenDelay</code> || Number (float) || ❌ || For rechargeable/battery weapons, the time in seconds after firing before magazine 'recharges' or is replenished. For {{Weapon|Vectis}} and {{Weapon|Exergis}}, the time in seconds after firing before reload animation starts. || <code>0.5</code>
+|-
+| <code>ReloadDelayEmpty</code> || N/A || N/A || <code>HeavyBatteryRegenDelayFromEmpty</code> || Number (float) || ❌ || For rechargeable/battery weapons, the time in seconds after fully depleting magazine before magazine 'recharges' or is replenished || <code>1</code>
+|-
+| <code>ReloadRate</code> || N/A || N/A || <code>HeavyBatteryRegenRate</code> || Number (float) || ❌ || For rechargeable/battery weapons, the rate at which magazine 'recharges' or is replenished per second || <code>40</code>
+|-
+| <code>ReloadStyle</code> || N/A || N/A || N/A || String || ❌ || Gun's unique reload type for weapons like {{Weapon|Cycron}} or {{Weapon|Corinth}} || <code>"Regenerate"</code> or <code>"ByRound"</code>
+|-
+| <code>SellPrice</code> || N/A || N/A || <code>SellingPrice</code> || Number (integer) || ❌ || For sellable weapons, the sell price in [[Credits]] when removed from the player's inventory || <code>25000</code>
+|-
+| <code>Slot</code> || N/A || <code>slot</code> || <code>InventorySlot</code> || String || ✔️ || The weapon slot that the weapon can be equipped on; in the case of [[Exalted Weapon]]s, it is just their modding class || <code>"Primary"</code>
+|-
+| <code>SniperComboMin</code> || N/A || N/A || <code>HitReqNextTierOperator</code> || Number (integer) || ❌ || For sniper rifles, the minimum number of hits to gain combo bonus || <code>1</code>
+|-
+| <code>SniperComboReset</code> || N/A || N/A || <code>TimeBetweenHits</code> || Number (integer) || ❌ || For sniper rifles, the number of seconds after last hit before combo number goes down || <code>3</code>
+|-
+| <code>Spool</code> || N/A || N/A || <code>ContinuousMaxShots</code> || Number (integer) || ❌ || For auto-spool weapons, number of shots until weapon reaches max [[Fire Rate|fire rate]] || <code>5</code>
+|-
+| <code>Tradable</code> || N/A || N/A || <code>TradeCapability</code> || Number (integer, enum) || ❌ || Whether or not a weapon is [[Trading|tradable]] to other players.
+*0 or nil = not tradable
+*1 = weapon itself is tradable only if it is unranked with no Forma and Orokin Catalyst installed
+*2 = tradable parts and/or blueprint(s) but weapon itself is not tradable
+*3 = indirectly tradable through trading Kuva Liches/Sisters of Parvos ([[Adversary System]] in general)
+*4 = only fully built components are tradable, not blueprints
+*5 = for Robotic weapons that are indirectly tradable if parent companion is tradable
+| <code>2</code>
+|-
+| <code>Trigger</code> || Trigger || <code>trigger</code> || <code>FireModes</code> || String || ✔️ || Gun's [[Trigger Type]] || <code>"Auto"</code> or <code>"Auto / Burst"</code>
+|-
+| <code>Traits</code> || N/A || N/A || N/A || Table (array of strings) || ❌ || Gun's categorical traits || <code>{ "Grineer", "Wraith" }</code>
+|-
+| <code>Users</code> || N/A || N/A || N/A || Table (array of strings) || ❌ || Name of NPCs that use this weapon || <code><nowiki>{ "Stalker", "Shadow Stalker" }</nowiki></code>
+|-
+| <code>Zoom</code> || N/A || N/A || <code>ZoomLevels</code> || Table (array of strings) || ❌ || The levels of zoom that the gun offers || <code>{ "2.0x", "4.5x" }</code>
+|-
+|}
+
+==Melee Entry Schema==
+<syntaxhighlight lang="lua">
+["Melee Weapon Name"] = {
+	_IgnoreEntry = true,
+	_TooltipAttackDisplay = 1,
+	Attacks = {
+		{
+			AttackIndex = 1,
+            AttackName = "Normal Attack",
+			Damage = { Impact = 1, Puncture = 1, Slash = 1 },
+			CritChance = 0.1,
+			CritMultiplier = 2,
+			StatusChance = 0.1,
+			FireRate = 1
+ 		},
+        {
+			AttackIndex = 2
+			AttackName = "Slam Attack",
+			AttackParentIndex = 1,
+			CritChance = 0.1,
+			CritMultiplier = 2,
+			Damage = { Impact = 1 },
+			Falloff = { EndRange = 1, Reduction = 0.5, StartRange = 0 },
+			FireRate = 1,
+			ForcedProcs = { "Impact" },
+			IsSilent = true,
+			Range = 1,
+			ShotType = "AoE",
+			StatusChance = 0.1 
+		},
+		{
+			AttackIndex = 3
+			AttackName = "Heavy Slam Attack",
+			AttackParentIndex = 1,
+			CritChance = 0.1,
+			CritMultiplier = 2,
+			Damage = { Blast = 1 },
+			Falloff = { EndRange = 2, Reduction = 0.3, StartRange = 0 },
+			FireRate = 1,
+			ForcedProcs = { "Lifted" },
+			IsSilent = true,
+			Range = 2,
+			ShotType = "AoE",
+			StatusChance = 0.1 
+		}
+	},
+	BlockAngle = 55,
+	Class = "Two-Handed Nikana",
+	ComboDur = 5,
+	Conclave = false,
+	Disposition = 0.5,
+	Family = "Tatsu",
+	FollowThrough = 0.7,
+	HeavyAttack = 1284,
+	Image = "Tatsu.png",
+	Introduced = "",
+    Link = "Page Name",
+	Mastery = 1,
+	MaxRank = 30,
+	MeleeRange = 3,
+	Name = "MeleeName",
+	Polarities = { "Madurai" },
+	SellPrice = 7500,
+	SlideAttack = 1,
+ 	Slot = "Melee",
+	StancePolarity = "Madurai",
+	SweepRadius = 0.25,
+	Traits = { "Tenno" },
+	WindUp = 0.7
+},
+</syntaxhighlight>
+
+{| class="wikitable sortable"
+|-
+! Key/Column Name !! [[Arsenal]] EN L10n !! [[Public Export]] Equivalent !! Internal Equivalent !! Data Type || Required? || Explanation/Description || Example(s)
+|-
+| <code>Attacks</code> || N/A || N/A || <code>AttackData</code>, <code>ExplosiveAttack</code>, <code>RadialDamage</code>, <code>EmbedAttack</code> || Table || ✔️ || Contains attack data for the weapon || See [[#Attack Data Schema]]
+|-
+| <code>BlockAngle</code> || Blocking Angle || <code>blockingAngle</code> || <code>ParryAngle</code> || Number (integer) || ✔️ || Melee's base blocking angle in degrees || <code>90</code>
+|-
+| <code>Class</code> || N/A || <code>productCategory</code> || <code>parent</code>, <code>parents</code>, or <code>MeleeStyle</code> || String || ✔️ || Weapon class for modding or a subclass of the weapon in its equip slot; in the case of [[Exalted Weapon]]s, it is just "Exalted Weapon" || <code>"Nikana"</code>
+|-
+| <code>CodexSecret</code> || N/A || <code>codexSecret</code> || <code>CodexSecret</code> || Boolean || ❌ || Whether or not the weapon has an entry in the [[Codex]] before the player acquires it; defaults to false || <code>false</code>
+|-
+| <code>ComboDur</code> || Combo Duration || <code>comboDuration</code> || <code>TimeBetweenHits</code> || Number (integer) || ❌ || Melee's base [[combo]] duration in seconds || <code>5</code>
+|-
+| <code>CompatibilityTags</code> || N/A || N/A || <code>CompatibilityTags</code> || Table (array of strings) || ❌ || Tags that denote item compatibility. In other words, items with these tags can/cannot have a particular mod installed with the same tag. || <code>{ "POWER_WEAPON" }</code>
+|-
+| <code>Conclave</code> || N/A || N/A || <code>AvailableOnPvp</code> || Boolean || ❌ || Whether or not the weapon can be used in [[Conclave]] || <code>false</code>
+|-
+| <code>DefaultUpgrades</code> || N/A || N/A || <code>DefaultUpgrades</code> || Table (array of strings) || ❌ || Additional upgrades that are innate to the weapon || <code>{ "/Lotus/Weapons/Grineer/KuvaLich/Upgrades/InnateDamageRandomMod" } </code>
+|-
+| <code>Disposition</code> || Riven Disposition || <code>omegaAttenuation</code> || <code>OmegaAttenuation</code> || Number (float) || ✔️ || [[Riven Mods|Riven Mod]] Disposition value || <code>0.5</code>
+|-
+| <code>Family</code> || N/A || N/A || N/A || String || ❌ || Weapon family that it belongs to, corresponding to the [[Riven Mods|Riven Mod]] compatibility || <code>"Machete"</code>
+|-
+| <code>FollowThrough</code> || Follow Through || <code>followThrough</code> || N/A || Number (float) || ✔️ || Melee's base follow through multiplier as a decimal || <code>0.6</code>
+|-
+| <code>HeavyAttack</code> || Heavy Attack || <code>heavyAttackDamage</code> || N/A || Number (float) || ✔️ || Melee's base heavy attack damage. For Kuva/Tenet weapons include minimum +25% Progenitor bonus in damage value. || <code>1284</code>
+|-
+| <code>IncarnonDuration</code> || N/A || N/A || N/A || Number (integer) || ❌ || For melees, the duration of Incarnon Mode in seconds || 180
+|-
+| <code>IncarnonImage</code> || N/A || N/A || N/A || String || ❌ || Image file name of the weapon in its [[Incarnon]] Form as uploaded to the wiki || <code>"Ack&BruntIncarnon.png"</code>
+|-
+| <code>Image</code> || N/A || <code>textureLocation</code> || <code>Icon</code> || String || ✔️ || Image file name of the weapon as uploaded to the wiki || <code>"Ankyros.png"</code>
+|-
+| <code>InternalName</code> || N/A || <code>uniqueName</code> || <code>TypeName</code> || String || ✔️ || The full unique name of a weapon formatted as a file path || <code>"/Lotus/Weapons/MK1Series/MK1Furis"</code>
+|-
+| <code>Introduced</code> || N/A || N/A || N/A || String || ✔️ || The game version in which the weapon was first introduced in the global build of [[WARFRAME]] || <code>"30.5"</code> or <code>"Specters of the Rail"</code>
+|-
+| <code>IsLichWeapon</code> || N/A || N/A || <code>IsKuva</code> || Boolean || ❌ || Denotes whether or not a weapon is a [[:Category:Kuva Lich Weapons|Kuva]] or [[:Category:Tenet Weapons|Tenet]] weapon || <code>true</code>
+|-
+| <code>Link</code> || N/A || N/A || N/A || String || ✔️ || Page/article link to the weapon on the wiki || <code>"Exalted Blade (Weapon)"</code>
+|-
+| <code>Mastery</code> || N/A || <code>masteryReq</code> || <code>RequiredLevel</code> || Number (integer) || ✔️ || [[Mastery Rank]] requirement || <code>5</code>
+|-
+| <code>MaxRank</code> || N/A || N/A || <code>LevelCap</code> || Number (integer) || ❌ || Weapon's maximum rank || <code>30</code>
+|-
+| <code>MeleeRange</code> || Range || <code>range</code> || N/A || Number (float) || ✔️ || Melee's base attack range in meters || <code>2</code>
+|-
+| <code>Name</code> || N/A || <code>name</code> || <code>LocalizeTag</code> || String || ✔️ || Weapon's name || <code>"Galatine Prime"</code>
+|-
+| <code>Polarities</code> || N/A || N/A || <code>ArtifactSlots</code> || Table (array of strings) || ✔️ || Full names of the weapon's non-Universal [[polarity|polarities]] || <code>{ "Naramon", "Madurai" }</code>
+|-
+| <code>SellPrice</code> || N/A || N/A || <code>SellingPrice</code> || Number (integer) || ❌ || For sellable weapons, the sell price in [[Credits]] when removed from the player's inventory || <code>25000</code>
+|-
+| <code>SlideAttack</code> || Slide Attack || <code>slideAttack</code> || N/A || Number (float) || ✔️ || Melee's base slide attack damage. For Kuva/Tenet weapons include minimum +25% Progenitor bonus in damage value. || <code>100</code>
+|-
+| <code>SlideElement</code> || N/A || N/A || N/A || String || ❌ || Melee's base slide attack damage type || <code>"Toxin"</code>
+|-
+| <code>Slot</code> || N/A || <code>slot</code> || <code>InventorySlot</code> || String || ✔️ || The weapon slot that the weapon can be equipped on; in the case of [[Exalted Weapon]]s, it is just their modding class || <code>"Melee"</code>
+|-
+| <code>StancePolarity</code> || N/A || N/A || <code>ArtifactSlots</code> || String || ✔️ || Polarity on [[Stance]] slot || <code>"Madurai"</code>
+|-
+| <code>SweepRadius</code> || N/A || N/A || <code>SweepRadius</code> || Number (float) || ✔️ || Melee's sweep attack's (i.e. normal and heavy attacks) base hitbox radius in meters || <code>0.25</code>
+|-
+| <code>Tradable</code> || N/A || N/A || <code>TradeCapability</code> || Number (integer, enum) || ❌ || Whether or not a weapon is [[Trading|tradable]] to other players.
+*0 or nil = not tradable
+*1 = weapon itself is tradable only if it is unranked with no Forma and Orokin Catalyst installed
+*2 = tradable parts and blueprint(s) but weapon itself is not tradable
+*3 = indirectly tradable through trading Kuva Liches/Sisters of Parvos ([[Adversary System]] in general)
+*4 = only fully built components are tradable, not blueprints
+| <code>2</code>
+|-
+| <code>Traits</code> || N/A || N/A || N/A || Table (array of strings) || ❌ || Gun's categorical traits || <code>{ "Grineer", "Wraith" }</code>
+|-
+| <code>Users</code> || N/A || N/A || N/A || Table (array of strings) || ❌ || Name of NPCs that use this weapon || <code><nowiki>{ "Stalker", "Shadow Stalker" }</nowiki></code>
+|-
+| <code>WindUp</code> || Wind Up || <code>windUp</code> || N/A || Number (float) || ✔️ || Heavy attack wind-up time in seconds || <code>0.5</code>
+|-
+|}
+
+==For Module Use==
+{| class="wikitable sortable"
+|-
+! Key/Column Name !! Data Type || Required? || Explanation/Description || Example(s)
+|-
+| <code>_IgnoreEntry</code> || Boolean || ❌ || For module use, indicates that this weapon table entry is special and should ignored when parsing table entries || <code>true</code>
+|-
+| <code>_IgnoreInCSV</code> || Boolean || ❌ || For module use, indicates that this weapon table entry should be ignored when outputting CSV (via [[Module:Weapons/csv]]) || <code>true</code>
+|-
+| <code>_IgnoreInMasteryCount</code> || Boolean || ❌ || For module use, indicates that this weapon table entry should be ignored when tallying up mastery totals || <code>true</code>
+|-
+| <code>_TooltipAttackDisplay</code> || Number || ❌ || For module use, tells what table entry in <code>Attack</code> table to use when processing weapon tooltips and comparing weapon variants in Comparison sections; <code>1</code> will be used if no value is assigned || <code>4</code>
+|-
+|}
+
+==Preprocessed Data==
+If you want data on the relative stat rankings (percentile-based) of each weapon for each weapon stat, see [[Module:Weapons/ppdata]].
+
+==Export Data==
+{{JSWarning}}
+Since this database is horizontally partitioned, if you want all the weapon table entries at once, go to [[Special:ExpandTemplates]] and run <code><nowiki>{{#invoke:LuaSerializer|serialize|Weapons/data}}</nowiki></code>. This will run the script on this page and return plaintext that contains a executable prettified Lua table with all the weapon table entries.
+
+Alternatively, you can use [[mw:API:Main page|MediaWiki's Action API]] to get the executed contents of this module:
+*[[Special:ApiSandbox]]:
+**<code>https://wiki.warframe.com/w/Special:ApiSandbox#action=scribunto-console&format=json&title=Module%3AWeapons&content=return%20require('Module%3ALuaSerializer')._serialize('Weapons%2Fdata')&question=%3Dp&clear=1</code>
+**<code>https://wiki.warframe.com/w/Special:ApiSandbox#action=scribunto-console&format=json&title=Module%3AWeapons&content=return%20require('Module%3AWeapons%2Fdata')&question=%3Dp&clear=1</code>
+*Raw endpoints:
+**<code>https://wiki.warframe.com/api.php?action=scribunto-console&format=json&title=Module%3AWeapons&content=return%20require(%27Module%3ALuaSerializer%27)._serialize(%27Weapons%2Fdata%27)&question=%3Dp&clear=1</code>
+**<code>https://wiki.warframe.com/api.php?action=scribunto-console&format=json&title=Module%3AWeapons&content=return%20require(%27Module%3AWeapons%2Fdata%27)&question=%3Dp&clear=1</code>
+*JavaScript:
+**<syntaxhighlight lang="javascript">var url = new URL('https://wiki.warframe.com/api.php?');
+var searchParams = new URLSearchParams({
+	action: 'scribunto-console',
+	format: 'json',
+	title: 'Module:Weapons',
+	// Alternatively, run "return require('Module:LuaSerializer')._serialize('Weapons/data')"
+	// If you want to convert Lua tables to native JSON, run "return require('Module:JSON').stringify(require('Module:Weapons/data'))"
+	content: "return require('Module:Weapons/data')",
+	question: '=p',
+	clear: 1
+});
+fetch(url + searchParams)
+	.then(data => data.json())
+	.then(json => console.log(json.return));
+</syntaxhighlight>
+*See https://wiki.warframe.com/api.php for auto-generated documentation on this wiki's version of the API
+
+==Weapon Edge Cases==
+Some weapons have complicated mechanics or behaviors that are not currently compatible with the wiki's weapon entry schema:
+*{{Weapon|Tenet Diplos}}'s lock-on mechanic while aiming has a ~0.5 second delay after the burst ends before being able to lock-on again. This delay is affected by Fire Rate bonuses. This delay is not the same as <code>BurstDelay</code> or <code>BurstReloadDelay</code>. Can be thought as the "delay between bursts that is not the reciprocal of Fire Rate".
+
+==Where To Source Weapon Data==
+Some notes on where editors can source weapon data:
+*In-game:
+**[[Chat]] link
+**[[Market]] preview
+**Viewing or equipping in [[Arsenal]]
+**For Railjack weapons, go to [[Clan Dojo]]'s or [[Relay]]'s [[Dry Dock]]
+*Outside of the game (without the need to launch the game):
+**[[Public Export]]'s <code>ExportWeapons</code> manifest
+**https://overframe.gg/, go create a "New Build" and F12 to HTML source to find some internal JSON data on weapon. See the below section for more details.
+
+===Where To Find Weapon Metadata===
+The in-game UI does not thoroughly present all the data and interactions that is provided from a weapon. Here are some methods and sources to get more insight on the internal mechanics on weapons:
+*https://overframe.gg/ has access to more metadata than what Digital Extremes provide to the public. This JSON data is cached locally on the client in these tags: <code><nowiki><script id="__NEXT_DATA__" type="application/json"></script></nowiki></code>
+**For example, for more metadata on {{Weapon|Kuva Bramma}}, go create a new build https://overframe.gg/build/new/4245/kuva-bramma/ and inspect the HTML element on the page using your browser's development tools. The relevant metadata should be under the <code><nowiki><script id="__NEXT_DATA__" type="application/json"></script></nowiki></code> tags. If not, hard refresh the browser's cache so the underlying data is updated to reflect on the actual item.<syntaxhighlight lang="json">
+	"data": {
+		"AmmoCapacity": 5,
+		"AmmoClipSize": 1,
+		"ArtifactSlots": ["AP_UNIVERSAL", "AP_UNIVERSAL", "AP_UNIVERSAL", "AP_ATTACK", "AP_UNIVERSAL", "AP_UNIVERSAL", "AP_UNIVERSAL", "AP_UNIVERSAL", "AP_TACTIC", "AP_UNIVERSAL"],
+		"Behaviors": [{
+				"fire:LotusWeaponProjectileFireBehavior": {
+					"AIMED_ACCURACY": {
+						"Spread": {
+							"SHOOTING": {
+								"range": [0, 12],
+								"type": "ST_EXPONENTIAL"
+							}
+						}
+					},
+					"IgnoreFireIterations": 0,
+					"IsMeleeBehavior": 0,
+					"IsSilenced": 0,
+					"RoundUpAmmoConsumption": 0,
+					"ScaleAmmoRequirement": 0,
+					"UseAmmo": 1,
+					"ammoRequirement": 1,
+					"ammoType": "/Lotus/Weapons/Ammo/RifleAmmoEx",
+					"chargedProjectileType": {
+						"AttackData": {
+							"Amount": 187,
+							"HitType": "DHT_PROJECTILE",
+							"ProcChance": 0.21,
+							"Type": "DT_IMPACT"
+						},
+						"BounceOnAvatars": 0,
+						"CanStick": 1,
+						"ClusterProjectiles": {
+							"AttackData": {
+								"Amount": 49,
+								"HitType": "DHT_PROJECTILE",
+								"ProcChance": 0.21,
+								"Type": "DT_IMPACT"
+							},
+							"BounceOnAvatars": 0,
+							"CanStick": 1,
+							"CriticalChance": 0.35,
+							"CriticalMultiplier": 2.1,
+							"DamageRadius": 3.5,
+							"DealDamageThroughImpactBehavior": 1,
+							"EmbedAttack": {
+								"Amount": 0,
+								"Type": "DT_POISON"
+							},
+							"EmbedDeathAttack": {
+								"Amount": 35,
+								"Type": "DT_EXPLOSION"
+							},
+							"EmbedTime": [0.5, 0.5],
+							"ExplosionFallOff": 0.5,
+							"ExplosionIgnoreSource": 1,
+							"ExplosiveAttack": {
+								"Amount": 57,
+								"HitType": "DHT_RADIAL",
+								"ProcChance": 0.21
+							},
+							"MaxLife": 2
+						},
+						"CriticalChance": 0.35,
+						"CriticalMultiplier": 2.1,
+						"DamageRadius": 8.3,
+						"DealDamageThroughImpactBehavior": 1,
+						"EmbedAttack": {
+							"Amount": 0,
+							"Type": "DT_POISON"
+						},
+						"EmbedDeathAttack": {
+							"Amount": 175,
+							"HitType": "DHT_RADIAL"
+						},
+						"ExplosionFallOff": 0.9,
+						"ExplosiveAttack": {
+							"Amount": 839,
+							"HitType": "DHT_RADIAL",
+							"ProcChance": 0.21
+						},
+						"MaxLife": 5,
+						"NumClusterProjectiles": 3
+					},
+					"fireIterations": 1,
+					"projectileType": {
+						"AttackData": {
+							"Amount": 187,
+							"HitType": "DHT_PROJECTILE",
+							"ProcChance": 0.21,
+							"Type": "DT_IMPACT"
+						},
+						"BounceOnAvatars": 0,
+						"CanStick": 1,
+						"ClusterProjectiles": {
+							"AttackData": {
+								"Amount": 49,
+								"HitType": "DHT_PROJECTILE",
+								"ProcChance": 0.21,
+								"Type": "DT_IMPACT"
+							},
+							"BounceOnAvatars": 0,
+							"CanStick": 1,
+							"CriticalChance": 0.35,
+							"CriticalMultiplier": 2.1,
+							"DamageRadius": 3.5,
+							"DealDamageThroughImpactBehavior": 1,
+							"EmbedAttack": {
+								"Amount": 0,
+								"Type": "DT_POISON"
+							},
+							"EmbedDeathAttack": {
+								"Amount": 35,
+								"Type": "DT_EXPLOSION"
+							},
+							"EmbedTime": [0.5, 0.5],
+							"ExplosionFallOff": 0.5,
+							"ExplosionIgnoreSource": 1,
+							"ExplosiveAttack": {
+								"Amount": 57,
+								"HitType": "DHT_RADIAL",
+								"ProcChance": 0.21
+							},
+							"MaxLife": 2
+						},
+						"CriticalChance": 0.35,
+						"CriticalMultiplier": 2.1,
+						"DamageRadius": 8.3,
+						"DealDamageThroughImpactBehavior": 1,
+						"EmbedAttack": {
+							"Amount": 0,
+							"Type": "DT_POISON"
+						},
+						"EmbedDeathAttack": {
+							"Amount": 175,
+							"HitType": "DHT_RADIAL"
+						},
+						"ExplosionFallOff": 0.9,
+						"ExplosiveAttack": {
+							"Amount": 839,
+							"HitType": "DHT_RADIAL",
+							"ProcChance": 0.21
+						},
+						"MaxLife": 5,
+						"NumClusterProjectiles": 3
+					}
+				},
+				"fire:Type": "/Lotus/Types/Game/LotusWeaponProjectileFireBehavior",
+				"impact:LotusWeaponImpactBehavior": {
+					"AttackData": {
+						"Amount": 10,
+						"DT_IMPACT": 0.33333,
+						"DT_PUNCTURE": 0.33333,
+						"DT_SLASH": 0.33333,
+						"HitType": "DHT_NONE",
+						"ProcChance": 0.1,
+						"Type": "DT_PHYSICAL",
+						"UseNewFormat": 0
+					},
+					"PlayerDamageMultiplier": 1,
+					"PvpDamageMultiplier": 1,
+					"criticalHitChance": 0.2,
+					"criticalHitDamageMultiplier": 1.5,
+					"radius": 0
+				},
+				"impact:Type": "/Lotus/Types/Weapon/LotusWeaponImpactBehavior",
+				"state:ChargedRemoteMineStateBehavior": {
+					"AutoFireWhenChargeCompleted": 0,
+					"ChargeModifier": "WEAPON_FIRE_RATE",
+					"ChargeTime": 0.4,
+					"ClipSizeAffectsChargeTime": 0,
+					"DamageMultiplier": 1,
+					"IsAlternateFire": 0,
+					"LocTag": "/Lotus/Language/Menu/Loadout_TriggerCharge",
+					"MinChargeRatio": 1,
+					"MinDamageMultiplier": 1,
+					"fireRate": 40,
+					"reloadTime": 0.6
+				},
+				"state:Type": "/Lotus/Types/Weapon/ChargedRemoteMineStateBehavior"
+			}
+		],
+		"CompatibilityTags": ["PROJECTILE", "AOE", "SNIPER_AMMO", "SINGLESHOT", "GRNBOW"],
+		"EquipTime": 1.8,
+		"GripType": "BOW",
+		"HasClip": 0,
+		"Icon": "/Lotus/Interface/Icons/StoreIcons/Weapons/PrimaryWeapons/Weapons/KuvaGrnBow.png",
+		"InventorySlot": "SLOT_2",
+		"IsKuva": 1,
+		"LevelCap": 40,
+		"LocalizeDescTag": "/Lotus/Language/Weapons/KuvaGrnBowDesc",
+		"LocalizeTag": "/Lotus/Language/Weapons/KuvaGrnBowName",
+		"MarketMode": "MM_HIDDEN",
+		"OmegaAttenuation": 0.6,
+		"PVPAmmoClipSize": 1,
+		"PremiumPrice": 225,
+		"ProductCategory": "LongGuns",
+		"RequiredLevel": 15,
+		"SellingPrice": 7500,
+		"ZoomLevels": [{}
+		]
+	},
+	"id": 4245,
+	"parent": "/Lotus/Weapons/Tenno/Bows/LotusLongBow",
+	"parents": ["/Lotus/Weapons/Tenno/Bows/LotusLongBow", "/Lotus/Weapons/Tenno/Bows/LotusBow", "/Lotus/Weapons/Tenno/Rifle/LotusRifle", "/Lotus/Weapons/Tenno/LotusLongGun", "/Lotus/Weapons/Tenno/LotusBulletWeapon"],
+	"path": "/Lotus/Weapons/Grineer/Bows/GrnBow/GrnBowWeapon",
+	"storeData": {
+		"DisplayRecipe": "",
+		"PremiumPrice": 225,
+		"ProductCategory": "LongGuns",
+		"SearchTags": ["/Lotus/Language/Game/DT_EXPLOSION_NoIcon", "/Lotus/Language/Game/DT_IMPACT_NoIcon", "/Lotus/Language/Items/BowCategoryName", "/Lotus/Language/Items/RifleCategoryName", "/Lotus/Language/Items/SniperCategoryName"],
+		"SellingPrice": 7500,
+		"ShowInMarket": 0
+	},
+	"storeItemType": "/Lotus/StoreItems/Weapons/Grineer/Bows/GrnBow/GrnBowWeapon",
+	"tag": "Weapon",
+	"texture": "/Lotus/Interface/Icons/Store/KuvaGrnBow.png",
+	"texture_new": "/Lotus/Interface/Icons/StoreIcons/Weapons/PrimaryWeapons/Weapons/KuvaGrnBow.png"
+}
+</syntaxhighlight>
+
+==Data Validation==
+===Validate data types of key-value pairs===
+{{Column|3|
+{{#invoke:Weapons/data/validate|validateDataTypes}}
+}}
+
+===Checking missing keys===
+{{Column|3|
+{{#invoke:Weapons/data/validate|checkForMissingData}}
+}}
+
+===Validate <code>Attack</code> tables===
+{{Column|3|
+{{#invoke:Weapons/data/validate|validateAttacks}}
+}}
+
+===Validate required weapon table keys===
+{{Column|3|
+{{#invoke:Weapons/data/validate|validateRequiredKeys}}
+}}
+
+==Weapon Data==
+
+==References==
+{{Reflist}}
+[[Category:Databases]]

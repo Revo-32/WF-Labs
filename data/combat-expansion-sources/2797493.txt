@@ -1,0 +1,48 @@
+{{Top|Enemy|Scaldra|Scaldra|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Reap what the Techrot have sown with this vicious pair of Scaldra hand-scythes.}}
+'''Dual Viciss''' are {{Faction|Scaldra}} dual sickles used by [[Scaldra Flayer]]s. Inflicting {{D|Gas}} status effects boosts the user's [[Movement Speed]] and [[Attack Speed]].
+
+==Characteristics==
+*This weapon deals primarily {{D|Gas}} damage.
+*Inflicting {{D|Gas}} status effect with this weapon grants a buff that increases [[Movement Speed]] by '''8%''' and [[Attack Speed]] by '''7%''' for '''10''' seconds and stacks '''5''' times.
+*Stance slot has {{Pol|Naramon}} polarity, matching {{M|Carving Mantis}}, {{M|Crossing Snakes}} and {{M|Dividing Blades}} ([[Conclave]] only) stance.
+*Innate {{Pol|Madurai}} polarity.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+==Acquisition==
+Dual Viciss's blueprints can be purchased from [[Minerva]] of {{Faction|The Hex}} for {{sc|Standing}}; 2 copies of the component blueprints for {{sc|5,000}} each and the main blueprint for {{sc|15,000}} to a total of {{sc|35,000}}, all requiring '''Rank 5 - Pizza Party'''.
+
+This weapon is also part of the [[Scaldra Dominance Pack]] for {{pc|655}}.
+
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*Bonus Movement Speed and Attack Speed buffs stack additively to weapon mods like {{M|Fury}} and {{M|Dispatch Overdrive}}.
+*Buff refreshes its duration upon gaining a new stack.
+*When timer runs out, all stacks are lost.
+*Gives only one stack per melee hit, even if the hit procced more than one gas status. Striking several enemies gives one stack per each enemy.
+*Activations of [[Truth]] via [[Truth's Flame]] will trigger a stack of the buff for each enemy affected. <nowiki>{{cite}}</nowiki>
+
+==Tips==
+
+==Trivia==
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.5}}
+*Introduced.
+}}
+
+{{WeaponNav}}

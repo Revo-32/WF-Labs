@@ -1,0 +1,35 @@
+{{UpdateMe|Incomplete animation stance length.}}
+{{ModBox}}
+'''Harrowing Spire''' is a ''[[:Category:Stance Mods|stance mod]]'' for [[Bayonet]].
+
+{{StanceWeapons}}
+
+{{StanceTable}}
+
+==Drop Locations==
+*[[The Descendia]] - 1% chance from [[Storage Container]]s.
+
+==Notes==
+*The Block combo shot is considered a melee attack:
+**It builds '''Vinquibus Ferocity''' and benefits from '''Vinquibus Precision'''.
+**It can trigger headshot conditions on a warframe (e.g. {{Arcane|Arcane Precision}}), but '''not''' on weapons (including {{Weapon|Vinquibus (Primary)}}).
+*The Block combo shot has pinpoint [[Accuracy]] and can pierce '''1''' killed enemy.
+
+==Media==
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|41.0.2}}
+*Added the Harrowing Spire Stance to The Old Peace Uriel Bundle and The Old Peace Complete Collection (Platinum and paid). 
+**As mentioned in our PSA, those who had purchased these bundles before this Hotfix will be receiving the Stance in a script tomorrow. We’ll update the PSA once the script has begun. Thank you, Tenno! 
+
+{{ver|41}}
+*Introduced.
+}}
+
+{{StanceNav}}
+
+[[Category:Mods]]
+[[Category:Melee Mods]]
+[[Category:Stance Mods]]
+[[Category:Bayonet]]

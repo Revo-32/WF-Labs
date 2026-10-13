@@ -1,0 +1,48 @@
+{{Navigation|Landslide|Tectonics|Petrify|Rumblers}}
+<onlyinclude>{{AbilityU10.3
+| name = Petrify
+| strength = 100% (Rumbler heal)
+| range = 10 / 11 / 12 / 14 m (cone length)
+| duration = 5 / 10 / 15 / 20 s
+| misc = 120° (FOV)<br>+50% (damage vulnerability)<br>1 (Rubble dropped per enemy)
+| cardonly = {{{1|}}}
+| info = *Atlas expends {{Stat|Ability Efficiency|icon=only}}'''75''' [[energy]] to unleash his hardened gaze in a conical burst of energy {{Stat|Ability Range|icon=only}}'''10 / 11 / 12 / 14''' meters long within a <u>'''120°'''</u> field of view. All enemies caught within the cone are instantly turned into stone. Petrified enemies have <u>'''+50%'''</u> [[Damage Vulnerability]] and are incapacitated for {{Stat|Ability Duration|icon=only}}'''5 / 10 / 15 / 20''' seconds.
+**Petrification duration diminishes linearly with range from Atlas at the time of cast, with targets at the ability's maximum range only being petrified for '''50%''' of the ability's duration.
+**Petrify will '''not''' solidify enemies behind obstacles in the environment unless Atlas has line of sight.
+**Using Petrify on an enemy that is currently solidified will '''not''' refresh the stone duration. Once the enemy breaks free, it can be petrified once again.
+**Casting Petrify will interrupt Atlas' actions and movement.
+**Bosses, [[Capture]] targets, enemies with {{D|Overguard}}, and enemies frozen by 10 {{D|Cold}} stacks can '''not''' be petrified.
+***Damage vulnerability is tied to being petrified; enemies that cannot be petrified will ''''not''' have the damage vulnerability applied.
+*If enemies are unaware once hit by Petrify, they will retain their unaware status upon being petrified.
+*Enemies will turn a darker tone and obtain a stone texture upon being petrified.
+*Subsuming Atlas to the [[Helminth]] will offer Petrify and its augments to be used by other Warframes.
+**However, enemies petrified by other Warframes do not drop Rubble.
+| interactions = 
+* Killing petrified enemies will drop <u>'''1'''</u> piece of [[Atlas/Abilities#Passive|Rubble]] for Atlas to pick up, restoring <u>'''50'''</u> health or granting <u>'''50'''</u> bonus armor.
+* Killing petrified enemies with {{A|Landslide}} will cause them to drop a piece of [[Atlas/Abilities#Passive|Rubble]] that gives '''50%''' more health or armor.
+* Casting Petrify on {{A|Tectonics}}'s Bulwark hardens it into a Petrified Bulwark that gains increased rolling velocity, rolling distance, and bonus damage when launched as a boulder.
+* Casting Petrify on {{A|Rumblers}}' will heal them to {{Stat|Ability Strength|icon=only}}'''100%''' of their maximum health.
+| tips = *Since Petrify's cone is created at the end of the casting animation, {{M|Natural Talent}} and/or {{M|Speed Drift}} can speed up the process to produce a nearly instant flash.
+*While the default casting animation is playing, the player can move the aiming reticle to reorient Atlas to keep moving enemies in his field of view before the flash occurs.
+*Petrify enemies to amplify all damage dealt to them, including damage from weapons and abilities. This can further empower damage dealt by {{A|Landslide}} punch combos, Tectonics' boulder rolling and explosion, and Rumblers' punch, rock throw, and detonation.
+*Although [[Tectonics|Bulwark]] can block line of sight to enemies, casting Petrify directly after creating a Bulwark will freeze enemies behind it due to line of sight mechanic rules. Enemies within a few seconds of being seen by Atlas or have noticed Atlas in that time are considered still in sight.
+*Petrify gives Atlas an effective form of crowd control and also allows him to heal himself with Rubble.
+*Use Petrify on Tectonics to create a Petrified Bulwark that rolls faster, rolls farther, and deals more damage when launched as a boulder.
+*When {{A|Rumblers}} have taken damage, use Petrify on them to fully heal them to maximum health. Fully healed Rumblers ensure that their dropped Rubble provide the highest healing or bonus armor possible.
+*Petrify enemies to keep them in place for Rumblers to beat down, since Rumbler's punch or stone throw will stagger or ragdoll enemies backward.
+*Petrified enemies that are killed cannot be broken into multiple pieces even with +100% Gore Chance from {{M|Amalgam Ripkas True Steel}}. This means {{WF|Nekros}} can only {{A|Desecrate}} an enemy that was killed while petrified once.
+}}</onlyinclude>
+
+==See Also==
+*{{WF|Atlas}}
+
+[[de:Versteinern]]
+[[es:Petrificar]]
+[[fr:Pétrification]]
+[[ru:Остолбенение]]
+[[Category:Atlas]]
+[[Category:Warframe Abilities]]
+[[Category:Update 17]]
+[[Category:Damage Type Modifier]]
+[[Category:Conal Area of Effects]]
+[[uk:Закам’яніння]]

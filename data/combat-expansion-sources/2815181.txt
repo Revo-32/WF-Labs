@@ -1,0 +1,56 @@
+{{Navigation|Slash Dash|Radial Blind|Radial Javelin|Exalted Blade}}<onlyinclude>{{AbilityU10.3
+| cardonly = {{{1|}}}
+| name = Radial Blind
+| gameimage = RadialBlind.png
+| cardimage = RadialBlindMod.png
+| hotkey = 2
+| energy = 50
+| description = Emits a bright flash of light, blinding all enemies in a small radius for several seconds.
+| strength = N/A
+| range = 8 / 12 / 15 / 25 m
+| duration = 7 / 10 / 12 / 15 s
+| subsumable = true
+| info = *Excalibur expends {{Stat|Ability Efficiency|icon=only}}'''50''' [[Energy]] to summon and raise his Exalted Blade, releasing an intense flash of light that affects enemies within {{Stat|Ability Range|icon=only}}'''8 / 12 / 15 / 25''' meters and {{D|Blind}} them for {{Stat|Ability Duration|icon=only}}'''7 / 10 / 12 / 15''' seconds.
+**Blinded enemies are vulnerable to [[Finisher|melee finishers]] and [[Stealth|stealth damage bonus]]. 
+**Front or Back Finishers can be performed. Note that finisher have different multipliers based on weapon type and Front or Back Finisher. Finishers also deal {{D|True}} Damage.
+**Radial Blind will '''not''' affect enemies behind obstacles in the environment unless Excalibur has line of sight, or unless the enemy is aware of Excalibur within a short period of time (e.g., an enemy that spots Excalibur and runs out of view is still susceptible to Radial Blind if the ability is used within a small time frame).
+*Enemies affected by the ability are stunned for the entire duration.
+**Bosses are still able to move, attack, or use abilities while affected by the ability.
+**Bosses will attack the player's last known location and will follow the sound of gunfire.
+**Successive casts will reduce the duration of the ability's effect on bosses.
+*Security cameras will deactivate their laser barriers for the duration.
+*Blinded enemies have smoke diffusing from their eyes or similar body part for the effect's duration.
+*Can be recast while active to blind multiple new enemies.
+| helminth =
+*Subsuming Excalibur to the [[Helminth]] will offer Radial Blind and its augments to be used by other Warframes.
+| augment = [[File:RadiantFinishMod.png|200px|left]]
+{{main|Radiant Finish}}
+{{#lst:Radiant Finish|intro}}
+{{#lsth:Radiant Finish|Stats}}
+{{clr}}
+| tips = *Radial Blind lets players quickly disable enemies, especially if they are surrounded. This allows players to either escape or to deal with the enemies.
+*This ability can be used on some bosses to prevent them from using their abilities.
+<noinclude>
+| max = {{WFmax|main|excalibur2}}
+</noinclude>
+| bugs = *If Excalibur managed to use an item (such as a Life Support in [[Survival]]) while casting the ability, Radial Blind will be cast twice: First, in a slowed animation and the second as the actual ability. Both animations still counts as a single Radial Blind.
+}}
+
+</onlyinclude>
+
+==See Also==
+*[[Conclave:Radial Blind|Radial Blind (Conclave)]]
+*{{A|Radial Howl}}, the [[Excalibur/Umbra|Umbra]] variant of the ability.
+*{{WF|Excalibur}}
+__NOTOC__
+[[de:Radiale_Blendung]]
+[[es:Destello radial]]
+[[it:Radial Blind]]
+[[ru:Ослепляющий Свет]]
+[[Category:Warframe Abilities]]
+[[Category:Update 7]]
+[[Category:Excalibur]]
+[[Category:One-Handed Abilities]]
+[[Category:Stealth Abilities]]
+[[Category:Line Of Sight Abilities]]
+[[uk:Променеве засліплення]]

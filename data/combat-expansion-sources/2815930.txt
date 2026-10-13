@@ -1,0 +1,1093 @@
+{{Infobox
+| Box title=Status Effect
+| image=StatusEffectIconUI.jpg
+| caption=Health bar of an [[Elite Lancer]] with a single [[Impact]] proc, a [[Cold]] proc, and four [[Radiation]] procs
+}}
+{{tocright}}
+{{Quote|The chance that a hit will apply a Status Effect based on the types of damage the weapon inflicts.
+
+Values over 100% have a chance to inflict multiple Status Effects at once.
+
+----
+
+> Chance for each Status Effect type per hit:|In-game Description}}
+A '''Status Effect''', or commonly called a ''[[wiktionary:proc|Proc]]'', is an additional effect which may be triggered at random by a hit from a weapon or [[Warframe]] ability. '''Status Chance''' is the probability that a hit will inflict a status effect. The base duration of the Proc will depend on its type, and whether the target is an enemy or another Tenno. Warframe abilities usually have a high chance to proc, or in some cases, greater than or equal to 100% chance to inflict their status effect (e.g. {{WF|Frost}}'s {{A|Ice Wave}} ability).
+
+Each damage type is associated with a status effect. Weapons that deal multiple damage types will have a separate chance to inflict its associated status effect on a target, and only one damage type can proc per hit, unless [[#Status Chance|status chance is over 100%]].  These multiple status effects can also be referred to as '''Unique Status Effects'''.
+
+For example, a weapon such as an unmodified {{Weapon|Staticor}} deals solely {{D|Radiation}} damage. In addition to its damage, the Staticor also has a 28% status chance on each shot to cause a proc. On a successful proc, the enemy will receive the Radiation status effect, which causes Confusion over the duration of the effect.
+
+Enemies also possess the ability to inflict status effects on players. For example, a [[Grineer]] {{E|Scorch}} has a chance to inflict the Ignite status effect with the {{D|Heat}} damage from his {{Weapon|Ignis}}. Similarly, enemies are also able to inflict physical procs such as Bleeding (associated with {{D|Slash}} damage) bypassing the player's armor. Several Warframe abilities will grant immunity to status, (e.g. {{WF|Oberon}}'s {{A|Hallowed Ground}} ability). Any amount of {{D|Overguard}} will grant immunity as well.
+
+{{clr}}
+==Status Effects==
+===General===
+{| class="wikitable"
+! Damage Type
+! Status Effect Internal Name
+! Status Effects
+|-
+| {{D|Impact}}
+| <code>PT_KNOCKBACK</code>
+| '''Knockback'''<br />On Enemy: Causes target to flinch and staggers movement for '''1''' second and increases the health threshold at which they can be [[Parazon]] Mercy Killed by '''8%''' per proc. Stacks up to '''5''' times.<br />On Player: No effect.
+|-
+| {{D|Puncture}}
+| <code>PT_FRAILTY</code>
+| '''Weakened'''<br />On Enemy: Reduces any damage dealt by '''40%''' for '''10''' seconds. Stacks up to '''5''' times, with subsequent procs reducing damage by '''10%''' to a total of '''80%'''. The victim receives '''5%''' increased weapon [[Critical Chance]] per proc up to '''25%''' at max stacks. This bonus is additive after mods, but does not apply to area of effect damage or Warframe abilities.<br />On Player: Reduces any damage dealt to '''30%''' for '''10''' seconds.
+|-
+| {{D|Slash}}
+| <code>PT_BLEEDING</code>
+| '''Bleed'''<br />On Enemy: Deals '''35%''' of the base damage per second over '''6''' seconds. This damage bypasses [[Armor]].<br />On Player: Deals '''10%''' of the base damage per second over '''6''' seconds. This damage bypasses Armor.
+|-
+| {{D|Heat}}
+| <code>PT_IMMOLATION</code>
+| '''Ignite'''<br />On Enemy: Deals '''50%''' of the base damage as {{D|Heat}} damage per second over '''6''' seconds while causing the target to panic for '''4''' seconds and gradually stripping up to '''50%''' [[Armor]].<br />On Player: Deals '''50%''' base {{D|Heat}} damage over '''6''' seconds and strips up to '''50%''' Armor.
+|-
+| {{D|Cold}}
+| <code>PT_CHILLED</code>
+| '''Freeze'''<br />On Enemy: Reduces Movement Speed, [[Fire Rate]], and [[Attack Speed]] by '''50%''' for '''6''' seconds. Stacks up to '''10''' times, with subsequent procs increasing slow by '''5%''' to a total of '''90%''' on the 9th stack. The target receives '''+0.1''' increased [[Critical Multiplier]] on initial proc and '''+0.05''' per subsequent proc to a maximum of '''+0.5''' on the 9th stack. This bonus is additive after mods, but does '''not''' apply to [[:Category:Weapons with Area of Effect|area of effect]] damage. On the 10th stack, enemies become frozen solid, their [[Shield]] recharge is negated, and their received Critical Multiplier is increased to '''+1.0''', for '''3''' seconds.<br />On Player: Reduces Movement Speed, Fire Rate, and Attack Speed by '''25%''' for '''6''' seconds.
+|-
+| {{D|Electricity}}
+| <code>PT_ELECTROCUTION</code>
+| '''Tesla Chain'''<br />On Enemy: Deals '''50%''' of the base damage as{{D|Electricity}} damage per second over '''6 '''seconds to enemies within '''3''' meters of the target and stuns the affected target for '''3''' seconds.<br />On Player: Deals '''50%''' base {{D|Electricity}} damage to allies within '''3''' meters of the target.
+|-
+| {{D|Toxin}}
+| <code>PT_POISONED</code>
+| '''Poison'''<br />Universal: Deals '''50% '''of the base damage as {{D|Toxin}} damage per second over '''6''' seconds. This damage can bypass [[Shield]]s.
+|-
+| {{D|Blast}}
+| <code>PT_FLASHBANG</code>
+| '''Detonate'''<br />On Enemy: Deals '''30%''' of base damage after '''1.5''' seconds. On maximum '''10''' stacks or when the target dies, premature detonation occurs and all stacks are dealt simultaneously as enemies within '''5''' meters are dealt '''300%''' of base damage per proc. The increased damage from premature detonation only applies to surrounding enemies hit by the explosion, but '''not''' the initial target.
+|-
+| {{D|Corrosive}}
+| <code>PT_CAUSTIC_BURN</code>
+| '''Corrosion'''<br />On Enemy: Reduces [[armor]] by '''26%''' for '''8''' seconds. Stacks up to '''10''' times, with subsequent procs reducing armor by '''6%''' to a total of '''80%'''.<br />On Player: Reduces armor by '''26%''' for '''8''' seconds.
+|-
+| {{D|Gas}}
+| <code>PT_ASPHYXIATION</code>
+| '''Gas Cloud'''<br />Universal: Deals '''50%''' of the base damage as {{D|Gas}}  damage per second over '''6''' seconds in a '''3''' meter radius. Stacks up to '''10''' times, with subsequent procs increasing radius by '''0.3''' meters to a total of '''6''' meters.
+|-
+| {{D|Magnetic}}
+| <code>PT_MAGNETIZED</code>
+| '''Disrupt'''<br />On Enemy: Amplifies damage dealt to [[Shield]]s and {{D|Overguard}} by '''100%''' and nullifies shield regeneration for '''6''' seconds. Stacks up to '''10''' times, with subsequent procs increasing damage to shields by '''25%''' to a total of '''325%'''. On removing Shields or Overguard, inflict an {{D|Electricity}} proc equal to '''3%''' of the target's maximum shields/overguard per {{D|Magnetic}} stack to a maximum of '''30%'''.<br />On Player: Amplifies damage dealt to shields by '''100%''', nullifies shield regeneration, drains '''20''' [[Energy]] per second and scrambles the interface for '''4''' seconds. Due to player overguard granting status immunity, procs do not result in additional damage. 
+|-
+| {{D|Radiation}}
+| <code>PT_RAD_TOX</code>
+| '''Confusion'''<br />On Enemy: Attacks any closest enemy and will be attacked in return while dealing '''100%''' additional damage to allied units for '''12''' seconds. Stacks up to '''10''' times, with subsequent procs increasing damage by '''50%''' to a total of '''550%'''.<br />On Player: Reduces firing accuracy, able to damage and be damaged by allies for '''4''' seconds.
+|-
+| {{D|Viral}}
+| <code>PT_INFECTED</code>
+| '''Virus'''<br />On Enemy: Amplifies damage dealt to [[health]] by '''100%''' for '''6''' seconds. Stacks up to '''10''' times, with subsequent procs increasing damage to health by '''25%''' to a total of '''325%'''.<br />On Player: Amplifies damage dealt to health by '''100%''' for '''6''' seconds.
+|-
+| {{D|Void}}
+| <code>PT_RADIANT</code>
+| '''Bullet Attractor'''<br />On Enemy: Creates a '''2.5''' meter radius field which attracts projectiles for '''3''' seconds.
+|-
+| {{D|Tau}}
+| <code>PT_SENTIENT</code>
+| '''Status Vulnerability'''<br />On Enemy: The victim receives '''10%''' increased [[Status Chance]] per proc for '''8''' seconds up to '''100%''' at '''10''' stacks.
+|-
+| {{D|True}}
+| N/A
+| ''No status effect.''
+|-
+|}
+
+===Independent from Damage===
+{{UpdateMe|Hidden status effects need more research}}
+{{Community}}
+{| class="wikitable"
+! Status Effect !! Internal Name !! Description
+|-
+| {{D|Big Stagger}}
+| <code>PT_BIG_STAGGER</code>
+| Universal: Target is staggered for a longer duration? Can be applied by {{Weapon|Opticor}}, {{Weapon|Opticor Vandal}}, {{Weapon|Vulkar}}, and {{Weapon|Vulkar Wraith}}.
+|-
+| {{D|Disarmed}}
+| <code>PT_DISARMED</code>
+| Universal: Target is disarmed of their equipped weapon. Can be applied by {{Weapon|Halikar}} and {{Weapon|Halikar Wraith}}?
+|-
+| {{D|Impair}}<br />([[Conclave|PvP]] only)
+| <code>PT_ROOTS</code>
+| Universal: Restricts the target's movement for '''2''' seconds, disabling jumps and decreases movement speed. After Impair duration ends, players will be immune to the same status effect and knockdowns for 2 seconds.
+|-
+| {{D|Knockdown}}
+| <code>PT_KNOCKED_DOWN</code>
+| Universal: Players and enemies fall to the ground. Counts as an individual status for {{M|Condition Overload}}, {{M|Galvanized Aptitude}},  {{M|Galvanized Savvy}}, and {{M|Galvanized Shot}}.
+|-
+| {{D|Lifted}}
+| <code>PT_LIFT_HIT</code>
+| Universal: Briefly suspends targets in mid-air. Counts as an individual status for {{M|Condition Overload}}, {{M|Galvanized Aptitude}}, {{M|Galvanized Savvy}}, and {{M|Galvanized Shot}} (or any bonus that uses [[Condition Overload (Mechanic)]]).
+|-
+| {{D|Microwave}}
+| <code>PT_MICROWAVE_BURN</code>
+| Universal: Enlarges an enemy's body part when shot at. Has infinite duration and counts as an individual status for {{M|Condition Overload}}, {{M|Galvanized Aptitude}}, {{M|Galvanized Savvy}}, and {{M|Galvanized Shot}}. Exclusive to {{Weapon|Nukor}} and {{Weapon|Kuva Nukor}}.
+|-
+| {{D|Parried}}
+| <code>PT_PARRIED</code>
+| Universal: Target is open to finishers? Can be applied through {{M|Parry}}?
+|-
+| {{D|Ragdoll}}
+| <code>PT_RAGDOLL</code>
+| Universal: Body is launched into the air, incapacitating the player or enemy.
+|-
+| {{D|Silence}}
+| <code>PT_SILENCED</code>
+| Universal: Active abilities are disabled. Casting new abilities is prevented.
+|-
+| {{D|Sleep}}
+| <code>PT_SLEEP</code>
+| On enemy: Target is temporarily put to sleep.
+|-
+| {{D|Slow}}
+| <code>PT_GLUE</code>
+|
+|-
+| {{D|Stagger}}
+| <code>PT_STAGGERED</code>
+| Universal: Players and enemies get staggered for a brief moment.
+|-
+| {{D|Stun}}
+| <code>PT_STUNNED</code>
+| Universal: Players and enemies get stunned in-place temporarily and cannot move or shoot.<br />On Enemy: Target is opened to melee finishers for '''3''' seconds.
+|-
+| ?
+| <code>PT_VOID</code>
+| 
+|-
+|}
+
+===[[Empyrean]]===
+{{Transclude|Damage#Empyrean}}
+
+==Status Chance==
+'''Status Chance''' can be a key factor in deciding on a weapon as some status effects are very powerful against certain enemies, while others may be less beneficial. For example, {{D|Corrosive}} procs are valued highly against heavily [[armor]]ed foes, but {{D|Magnetic}} procs have no benefit to enemies that lack [[shield]]s or [[overguard]].
+
+The chance that a proc will occur can be directly increased with mods such as {{M|Rifle Aptitude}}. One can also increase the number of projectiles fired through [[multishot]] mods such as {{M|Split Chamber}}; this effectively increases the opportunities for an enemy to be procced per a given attack, and is reflected in the weapon's attributes box in the [[Arsenal]] screen, but does not change the status chance for each individual hit. Another indirect way of increasing the amount of procs is to increase [[fire rate]], this also doesn't change the likelihood that a proc will occur per hit, but increases the number of possible procs in a given time frame.
+
+When a weapon achieves a status chance '''higher than 100%''', each hit may apply additional "'''unique'''" status effects. The type of each proc is independently drawn, so it is possible to apply the same status several times in one hit. 
+
+A specific status type shown at 100% status chance, when hovering over a weapon’s shown Status in the Arsenal, does not guarantee that status effect. An example of this would be a weapon that has 200% Status with only Heat and Impact status effects as possible options can still trigger two heat or two impact status effects regardless of their relative status chance values.
+
+If a single attack hits multiple enemies, each enemy gets their own status roll to determine if they will receive a status effect from the attack and which status effect they will receive.
+===Status Vulnerability===
+'''Status Vulnerability''' increases the Status Chance received from all other status effects. This means that if an enemy or player has Status Vulnerability, they will be more susceptible to status effects applied by weapons and abilities. The increase can stack with other sources of Status Chance, potentially leading to very high proc rates.
+
+==Damage Distribution==
+Status effect procs will occur in proportion to the amount of base damage dealt by each of the present damage types on the weapon. For example, an unmodded {{Weapon|Strun}}'s highest physical damage type is {{D|Impact}}, thus it inflicts mostly Knockback procs.
+
+Increasing the physical or elemental damage of a weapon does not increase the duration of the associated proc (e.g. enemies won't be confused longer if {{D|Radiation}} damage is increased).
+
+When a hit procs, the chance for an individual damage type to proc in relation to the others is:
+
+{{MathText|Proc Type Chance {{eql}} Damage {{div}} Total Damage}}
+
+For example, if a weapon's damage is composed of 20 {{D|Impact}}, 5 {{D|Puncture}}, 10 {{D|Slash}}, 25 {{D|Heat}}, and 50 {{D|Corrosive}}, then its total damage is {{Math|20 + 5 + 10 + 25 + 50|t=y}}. Therefore, the chance for the individual damage types to proc will be:
+{| class="wikitable"
+! style="width:25%;"|
+! style="width:12.5%;"| Impact
+! style="width:12.5%;"| Puncture
+! style="width:12.5%;"| Slash
+! style="width:12.5%;"| Heat
+! style="width:12.5%;"| Corrosive
+|- align="center"
+! Damage
+|20
+|5
+|10
+|25
+|50
+|- align="center"
+! Proc Type Chance
+|18.18%
+|4.55%
+|9.09%
+|22.73%
+|45.45%
+|}
+
+=== Status Immunity Interactions ===
+Proc type chances are not altered by enemy resistances or weaknesses to the damage components used in their computation; however, they are modified by enemy status immunities. When an attack procs a status effect on an enemy which is immune to a particular proc type, the respective damage type is excluded from proc type chance calculations for status effects on that enemy.
+
+For example, if the weapon outlined above were used against an enemy with Corrosion status immunity (regardless of whether that enemy is also immune to {{D|Corrosive}} damage), the chances for the individual damage types to proc would change to the following values:
+{| class="wikitable"
+! style="width:25%;"|
+! style="width:12.5%;"| Impact
+! style="width:12.5%;"| Puncture
+! style="width:12.5%;"| Slash
+! style="width:12.5%;"| Heat
+! style="width:12.5%;"| Corrosive
+|- align="center"
+! Damage
+|20
+|5
+|10
+|25
+|50
+|- align="center"
+! Proc Type Chance
+|33.33%
+|8.33%
+|16.67%
+|41.67%
+|N/A
+|}
+
+==DoT Damage Scaling==
+{{Main|Damage over Time}}
+{{#lsth:Damage over Time|DoT Damage Scaling}}
+
+==Status Duration==
+{{UpdateMe|Negative Duration Table is outdated.}}
+Status effects have a duration over which they apply to their target, and some of them even deal [[Damage over Time]]. A status effect's duration can be increased or decreased with mods that affect status duration (e.g. {{M|Lasting Sting}}).
+
+Damage-dealing status effects will benefit from modifiers on [[Enemy Body Parts|headshots]] and [[Critical Hit|critical hits]].
+
+{| class="wikitable"
+!Damage Type
+!Default Duration
+!Increased Duration Status Effects
+|-
+| {{D|Stagger}}
+| 6 seconds
+| Increases duration of status, but does not increase duration of stagger animation. 
+|-
+| {{D|Weakened}}
+| 10 seconds
+| Increases duration of weakened status. 
+|-
+| {{D|Bleed}}
+| 6 seconds
+| Increases DoT duration. 
+|-
+| {{D|Freeze}}<br>{{D|Freeze|Frozen}}
+| 6 seconds<br>3 seconds
+| Increases slow duration. <br> Increases duration of fully frozen status and subsequent {{D|Cold}} status. 
+|-
+| {{D|Tesla Chain}}
+| 6 seconds
+| Increases DoT duration. Stun duration is unaffected.
+|-
+| {{D|Ignite}}
+| 6 seconds 
+| Increases DoT duration. Ramp up and ramp down times for armor strip lengthened.  
+|-
+| {{D|Poison}}
+| 6 seconds
+| Increases DoT duration. 
+|-
+| {{D|Detonate}}
+| 1.5 seconds
+| Increases fuse duration, delaying detonation. 
+|-
+| {{D|Corrosion}}
+| 8 seconds
+| Increases armor strip duration.
+|-
+| {{D|Gas Cloud}}
+| 6 seconds
+| Increases gas cloud's duration.
+|-
+| {{D|Disrupt}}
+| 6 seconds
+| Increases duration of shield vulnerability and negation of shield regen. Subsequent {{D|Electricity}} proc on shield break has increased DoT duration with the stun unaffected.
+|-
+| {{D|Confusion}}
+| 12 seconds
+| Increases status and enemy damage bonus duration.
+|-
+| {{D|Virus}}
+| 6 seconds
+| Increases damage vulnerability duration.
+|}
+
+===Negative Status Duration===
+Damage duration can be '''negative''' (over -100% duration through [[Riven Mods]]). This causes all proc effects which have a duration or deal damage over time to be nullified. All instant procs or those who deal instant damage occur. The following table shows this in more detail:
+{{CustomCollapsible|Negative Status Duration Effects|NegativeDuration}}
+{| class="wikitable"
+|-
+! Damage Type
+! Nullified Effect
+! Occurs Normally
+|-
+! {{D|Impact}}
+| Stagger
+| -
+|-
+! {{D|Puncture}}
+| Weakened
+| -
+|-
+! {{D|Slash}}
+| Bleed
+| -
+|-
+! {{D|Cold}}
+| Freeze
+| -
+|-
+! {{D|Electricity}}
+| Stun
+| Tesla Chain
+|-
+! {{D|Heat}}
+| Ignite
+| ''Panic animation occurs (but no flame)''
+|-
+! {{D|Toxin}}
+| Poison
+| -
+|-
+! {{D|Blast}}
+| -
+| Effect expiry damage to target. Explosion occurs only if the triggering hit kills.
+|-
+! {{D|Corrosive}}
+| Corrosion
+| -
+|-
+! {{D|Gas}}
+| Toxin Cloud
+| -
+|-
+! {{D|Magnetic}}
+| Increased shield damage
+| ''Visual effects''
+|-
+! {{D|Radiation}}
+| Confusion
+| -
+|-
+! {{D|Viral}}
+| Increased health damage
+| ''Visual effects''
+|-
+|}
+{{CustomCollapsible/End}}
+
+<small>''Note: The information above is based on this [https://forums.warframe.com/topic/722745-negative-status-duration-and-procs-riven-mod/?do=findComment&comment=8678964 forum post from EDFScout] and may need further confirmation. Non-consistent observations as mentioned in the post have been changed to the more likely effect, i.e. for impact stagger should not appear, but knockback, and for electricity stun should not be triggered.''</small>
+
+==Status Damage==
+{{Main|Damage over Time}}
+{{D|Slash}}, {{D|Heat}}, {{D|Toxin}}, {{D|Electricity}}, and {{D|Gas}} all deal [[Damage over Time]]. They have a base duration of '''6''' seconds, during which they will deal a tick of damage for every second that the effect is active. Area of effect statuses ({{D|Electricity}} and {{D|Gas}}) will always start dealing damage ticks the moment it is procced on an enemy, while single target status effects ({{D|Slash}}, {{D|Heat}}, {{D|Toxin}}) will have a '''1''' second delay before dealing their damage ticks. The table below illustrates this mechanic.
+
+{| class="wikitable"
+|+ Damage Tick and Proc Duration
+|-
+! colspan=2 | Time From Initial Proc
+| 0s || 1s || 2s || 3s || 4s || 5s || 6s 
+|-
+! rowspan=5 style="writing-mode: sideways-lr; white-space: nowrap; min-width: 20px;" | Damage Tick Occurred?
+! {{D|Slash}}
+| ❌ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ 
+|-
+! {{D|Heat}}
+| ❌ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ 
+|-
+! {{D|Toxin}}
+| ❌ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ 
+|-
+! {{D|Electricity}}
+| ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ❌ 
+|-
+! {{D|Gas}}
+| ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ❌ 
+|-
+|}
+
+Status Damage itself is any damage dealt through a Status Effect tick ({{D|Slash}}, {{D|Heat}}, {{D|Toxin}}, {{D|Electricity}}, {{D|Gas}}, and {{D|Blast}}). Sources of Status Damage bonuses are multiplicative to other damage bonuses and additive to other sources of Status Damage bonuses.
+*Stacks multiplicatively with bonuses like Faction Multipliers: {{M|Bane of Grineer}} and {{A|Roar}}
+*Stacks additively with other Status Damage bonuses: {{Resource|Emerald Archon Shard}} stacks additively with [[Elementalist Mods]]
+==== <big>Sources of Status Damage</big> ====
+<gallery>
+GalvanizedElementalistMod.png|link=Galvanized Elementalist|{{M|Galvanized Elementalist}}|alt=Galvanized Elementalist
+MeleeElementalistMod.png|link=Melee Elementalist|{{M|Melee Elementalist}}|alt=Melee Elementalist
+PistolElementalistMod.png|link=Pistol Elementalist|{{M|Pistol Elementalist}}|alt=Pistol Elementalist
+RifleElementalistMod.png|link=Rifle Elementalist|{{M|Rifle Elementalist}}|alt=Rifle Elementalist
+ShotgunElementalistMod.png|link=Shotgun Elementalist|{{M|Shotgun Elementalist}}|alt=Shotgun Elementalist
+BurningHateMod.png|link=Burning Hate|{{M|Burning Hate}}|alt=Burning Hate
+EmpoweredBladesMod.png|link=Empowered Blades|{{M|Empowered Blades}}|alt=Empowered Blades
+ImmunityResistanceMod.png|link=Immunity Resistance|{{M|Immunity Resistance}}|alt=Immunity Resistance
+Boreal'sContemptMod.png|link=Boreal's Contempt|{{M|Boreal's Contempt}}|alt=Boreal's Contempt
+EmeraldArchonShard.png|link=Emerald Archon Shard|{{Resource|Emerald Archon Shard}}|alt=Emerald Archon Shard
+Ash.png|link=Ash|{{WF|Ash}}|alt=Ash
+ConductiveSphereMod.png|link=Conductive Sphere|{{M|Conductive Sphere}}|alt=Conductive Sphere
+</gallery>
+*{{Resource|Emerald Archon Shard}} only gives {{D|Toxin}} Status Damage.
+*{{WF|Ash}} only gives {{D|Slash}} Status Damage.
+*{{M|Conductive Sphere}} only gives {{D|Electricity}} Status Damage.
+
+==Forced Procs==
+{{UpdateMe}}
+{{Community}}
+Forced Procs<ref>Despite not being formally used in-game, internally the developers do use the term to refer to guaranteed procs independent from chance</ref> are status effects that are guaranteed to occur regardless of the status chance and damage distribution of the weapon. They are independent from normally occurring procs which can also take place alongside forced procs.
+
+Note that this is not the same as having 100% status chance.
+
+For melee weapons, information about forced procs on [[Stance#Melee_Combos|light attack combos]] can be viewed on Stance pages. For example, the [[Claws (Melee)|Claws]] Stance mod {{M|Malicious Raptor}} in its Neutral Combo applies both {{D|Bleed}} and {{D|Knockback}} on its first two attacks, and then {{D|Lifted}} followed by {{D|Knockdown}} on its third attack. 
+
+Heavy attacks, aerial attacks, and [[Finisher|finishers]] can also sometimes apply forced procs. These are stanceless moves, meaning their properties are determined by weapon type rather than stance, and will be the same for all weapons of that type. For example, all slides and aerial attacks of [[Scythe]]-type weapons will apply {{D|Knockback}}, and all heavy attacks will apply {{D|Bleed}} and {{D|Knockback}}.
+
+Attacks that apply a forced proc are also capable of inflicting a regular status effect. 
+
+Forced procs have negative interactions with some Warframe abilities such as Zephyr's {{A|Tornado}} where forced procs do not apply to enemies caught within the tornadoes, and instead apply to the tornadoes themselves which can then proc the Status Effect the tornadoes are effected with.
+
+==Multishot==
+When firing multiple pellets in a single attack, the status chance on a listed weapon in the Arsenal is the probability that each pellet will individually proc. For example, the {{Weapon|Strun Wraith}} displays a 12% status chance, so each of its ten pellets has a 12% chance to individually proc.
+
+===Average Procs===
+When you might apply more than one kind of status effect, or the applied effect is one which benefits from multiple applications in the same shot (e.g. {{D|Corrosive}} procs), it is helpful to know the average quantity of status effects triggered per shot (i.e. from a single click of the fire button). This value can be determined with the following formula:
+
+{{MathText|Average Number of Procs Per Shot {{eql}} Multishot {{mul}} (Number of Forced Procs + Status Chance per Projectile)}}
+
+{{MathText|Average Number of Procs per Second {{eql}} Average Number of Procs Per Shot {{mul}} Fire Rate}}
+
+A table with example values to display the relation of status chance and multishot.
+{| border="1" style="border-collapse:collapse"
+|- align="center"
+| style="border-right:solid;"|
+|colspan=8| '''Arsenal Status Chance'''
+|- align="center"
+| style="border-right:solid; border-bottom:solid;"|
+| style="width:12%; border-bottom:solid;"| '''150%'''
+| style="width:12%; border-bottom:solid;"| '''100%'''
+| style="width:12%; border-bottom:solid;"| '''99%'''
+| style="width:12%; border-right:solid; border-bottom:solid;"| '''80%'''
+| style="width:12%; border-bottom:solid;"| '''150%'''
+| style="width:12%; border-bottom:solid;"| '''100%'''
+| style="width:12%; border-bottom:solid;"| '''99%'''
+| style="width:12%; border-bottom:solid;"| '''80%'''
+|- align="center"
+| style="border-right:solid;"| '''Multishot'''
+|colspan=4 style="border-right:solid;"| '''Chance per Pellet/Projectile'''
+|colspan=4| '''Average Procs per Shot'''
+|- align="center"
+| style="border-right:solid;"| 1.9<br />(using {{M|Split Chamber|SC}})
+| 150%
+| 100%
+| 99%
+| style="border-right:solid;"| 80%
+| 2.85
+| 1.9
+| 1.88
+| 1.52
+|- align="center"
+| style="border-right:solid;"| 3<br />(e.g.{{Weapon|Exergis| }})
+| 150%
+| 100%
+| 99%
+| style="border-right:solid;"| 80%
+| 4.5
+| 3
+| 2.97
+| 2.4
+|- align="center"
+| style="border-right:solid;"| 5<br />(e.g.{{Weapon|Sobek| }})
+| 150%
+| 100%
+| 99%
+| style="border-right:solid;"| 80%
+| 7.5
+| 5
+| 4.95
+| 4
+|- align="center"
+| style="border-right:solid;"| 10<br />(e.g.{{Weapon|Strun Wraith| }})
+| 150%
+| 100%
+| 99%
+| style="border-right:solid;"| 80%
+| 15
+| 10
+| 9.9
+| 8
+|- align="center"
+| style="border-right:solid;"| 20
+| 150%
+| 100%
+| 99%
+| style="border-right:solid;"| 80%
+| 30
+| 20
+| 19.8
+| 16
+|}
+
+===Continuous Weapons===
+Despite [[Continuous Weapon]]s firing only one beam after adding multishot (with damage instances merged), it will still proc status effects as if more than one projectile was visually present. This means that multishot benefits the average status chance of continuous weapons like any other weapon.
+
+<!-- Out of date as of U27.2
+===At least one Proc===
+When you apply a status effect which does not benefit from multiple applications (e.g. {{D|Radiation}} or {{D|Blast}} procs), it is helpful to know the chance that a shot or strike with that weapon will inflict at least one status effect. For this, the following formula is needed:
+
+{{MathText|At-least-one Chance {{eql}} 1 {{min}} (1 {{min}} Chance per Pellet)<sup>floor(Pellets)</sup> {{mul}} (1 - Chance per Pellet {{mul}} frac(Pellets))}}
+*'''floor(Pellets)''' refers to the '''Pellet Count''' rounded down to the nearest integer.
+*'''frac(Pellets)''' refers to the fractional part of the '''Pellet Count'''. ( ''frac(x) := x - floor(x) | x >= 0'' )
+
+The values given by this formula will be different from the '''Status Chance''' value listed in the Arsenal because the game actually uses the flawed formula: {{MathText|1 {{min}} (1 {{min}} Chance per Pellet)<sup>Pellet Count</sup>}}. This formula works correctly when the '''Pellet Count''' is a whole number, but in any case where there is a fractional pellet, as in the case of any 1 pellet weapon with Split Chamber equipped, it no longer works correctly.
+
+Together, the values given by '''Average Amount per Shot''' and '''At-least-one Chance''' formulas give a helpful profile of the weapon's ability to apply status effects.
+-->
+
+==Status Mods and Effects==
+Status chance mods affect the base status chance of the weapon, i.e. the status chance value displayed in the Codex that is the probability, for the unmodded weapon, that ''each'' projectile will inflict a status effect.
+
+===Status Chance===
+{{#tag:tabber|
+{{!}}-{{!}}Rifle=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+CatalyzerLinkMod.png|link=Catalyzer Link|{{M|Catalyzer Link}}
+GalvanizedAptitudeMod.png|link=Galvanized Aptitude|{{M|Galvanized Aptitude}}
+HammerShotMod.png|link=Hammer Shot|{{M|Hammer Shot}}
+HighVoltageMod.png|link=High Voltage|{{M|High Voltage}}
+MalignantForceMod.png|link=Malignant Force|{{M|Malignant Force}}
+ProtonJetMod.png|link=Proton Jet|{{M|Proton Jet}}
+RifleAptitudeMod.png|link=Rifle Aptitude|{{M|Rifle Aptitude}}
+RimeRoundsMod.png|link=Rime Rounds|{{M|Rime Rounds}}
+ThermiteRoundsMod.png|link=Thermite Rounds|{{M|Thermite Rounds}}
+CrimsonArchonShard.png|link=Crimson Archon Shard|{{Resource|Crimson Archon Shard}}|alt=Crimson Archon Shard
+</gallery>
+
+{{!}}-{{!}}Shotgun=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+FrigidBlastMod.png|link=Frigid Blast|{{M|Frigid Blast}}
+GalvanizedSavvyMod.png|link=Galvanized Savvy|{{M|Galvanized Savvy}}
+MotusSetupMod.png|link=Motus Setup|{{M|Motus Setup}}
+Nano-ApplicatorMod.png|link=Nano-Applicator|{{M|Nano-Applicator}}
+ScatteringInfernoMod.png|link=Scattering Inferno|{{M|Scattering Inferno}}
+ShellShockMod.png|link=Shell Shock|{{M|Shell Shock}}
+ShotgunSavvyMod.png|link=Shotgun Savvy|{{M|Shotgun Savvy}}
+ToxicBarrageMod.png|link=Toxic Barrage|{{M|Toxic Barrage}}
+CrimsonArchonShard.png|link=Crimson Archon Shard|{{Resource|Crimson Archon Shard}}|alt=Crimson Archon Shard
+</gallery>
+
+{{!}}-{{!}}Pistol=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+CarnisStingerMod.png|link=Carnis Stinger|{{M|Carnis Stinger}}
+EmbeddedCatalyzerMod.png|link=Embedded Catalyzer|{{M|Embedded Catalyzer}}
+FrostbiteMod.png|link=Frostbite|{{M|Frostbite}}
+GalvanizedShotMod.png|link=Galvanized Shot|{{M|Galvanized Shot}}
+JoltMod.png|link=Jolt|{{M|Jolt}}
+JugulusSpinesMod.png|link=Jugulus Spines|{{M|Jugulus Spines}}
+PistolPestilenceMod.png|link=Pistol Pestilence|{{M|Pistol Pestilence}}
+SaxumSpittleMod.png|link=Saxum Spittle|{{M|Saxum Spittle}}
+ScorchMod.png|link=Scorch (Mod)|{{M|Scorch}}
+StunningSpeedMod.png|link=Stunning Speed|{{M|Stunning Speed}}
+SureShotMod.png|link=Sure Shot|{{M|Sure Shot}}
+</gallery>
+
+{{!}}-{{!}}Melee=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+CarnisMandibleMod.png|link=Carnis Mandible|{{M|Carnis Mandible}}
+DriftingContactMod.png|link=Drifting Contact|{{M|Drifting Contact}}
+EnduringAfflictionMod.png|link=Enduring Affliction|{{M|Enduring Affliction}}
+JugulusBarbsMod.png|link=Jugulus Barbs|{{M|Jugulus Barbs}}
+MeleeProwessMod.png|link=Melee Prowess|{{M|Melee Prowess}}
+ProtonSnapMod.png|link=Proton Snap|{{M|Proton Snap}}
+SaxumThoraxMod.png|link=Saxum Thorax|{{M|Saxum Thorax}}
+ViciousFrostMod.png|link=Vicious Frost|{{M|Vicious Frost}}
+VirulentScourgeMod.png|link=Virulent Scourge|{{M|Virulent Scourge}}
+VolcanicEdgeMod.png|link=Volcanic Edge|{{M|Volcanic Edge}}
+VoltaicStrikeMod.png|link=Voltaic Strike|{{M|Voltaic Strike}}
+WeepingWoundsMod.png|link=Weeping Wounds|{{M|Weeping Wounds}}
+Nira'sContemptMod.png|link=Nira's Contempt|{{M|Nira's Contempt}}
+</gallery>
+
+{{!}}-{{!}}Exalted Weapon=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ReactiveStormMod.png|link=Reactive Storm|{{M|Reactive Storm}}
+ChromaticBladeMod.png|link=Chromatic Blade|{{M|Chromatic Blade}}
+</gallery>
+
+{{!}}-{{!}}Archgun=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ChargedBulletsMod.png|link=Charged Bullets|{{M|Charged Bullets}}
+ContaminationCasingMod.png|link=Contamination Casing|{{M|Contamination Casing}}
+HypothermicShellMod.png|link=Hypothermic Shell|{{M|Hypothermic Shell}}
+MarkedTargetMod.png|link=Marked Target|{{M|Marked Target}}
+ModifiedMunitionsMod.png|link=Modified Munitions|{{M|Modified Munitions}}
+MagmaChamberMod.png|link=Magma Chamber|{{M|Magma Chamber}}
+</gallery>
+
+{{!}}-{{!}}Archmelee=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+CryoCoatingMod.png|link=Cryo Coating|{{M|Cryo Coating}}
+InfectiousInjectionMod.png|link=Infectious Injection|{{M|Infectious Injection}}
+IonInfusionMod.png|link=Ion Infusion|{{M|Ion Infusion}}
+SuddenImpactMod.png|link=Sudden Impact|{{M|Sudden Impact}}
+SearingSteelMod.png|link=Searing Steel|{{M|Searing Steel}}
+</gallery>
+}}
+
+===Status Damage===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+GalvanizedElementalistMod.png|link=Galvanized Elementalist|{{M|Galvanized Elementalist}}|alt=Galvanized Elementalist
+MeleeElementalistMod.png|link=Melee Elementalist|{{M|Melee Elementalist}}|alt=Melee Elementalist
+PistolElementalistMod.png|link=Pistol Elementalist|{{M|Pistol Elementalist}}|alt=Pistol Elementalist
+RifleElementalistMod.png|link=Rifle Elementalist|{{M|Rifle Elementalist}}|alt=Rifle Elementalist
+ShotgunElementalistMod.png|link=Shotgun Elementalist|{{M|Shotgun Elementalist}}|alt=Shotgun Elementalist
+BurningHateMod.png|link=Burning Hate|{{M|Burning Hate}}|alt=Burning Hate
+EmpoweredBladesMod.png|link=Empowered Blades|{{M|Empowered Blades}}|alt=Empowered Blades
+ImmunityResistanceMod.png|link=Immunity Resistance|{{M|Immunity Resistance}}|alt=Immunity Resistance
+Boreal'sContemptMod.png|link=Boreal's Contempt|{{M|Boreal's Contempt}}|alt=Boreal's Contempt
+EmeraldArchonShard.png|link=Emerald Archon Shard|{{Resource|Emerald Archon Shard}}|alt=Emerald Archon Shard
+Ash_Thumb.png|link=Ash/Abilities|{{WF|Ash}}'s Passive|alt=Ash
+ConductiveSphereMod.png|link=Conductive Sphere|{{M|Conductive Sphere}}|alt=Conductive Sphere
+</gallery>
+
+===Status Duration===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+AugurSeekerMod.png|link=Augur Seeker|{{M|Augur Seeker}}|alt=Augur Seeker
+Bubonico.png|link=Bubonico|{{Weapon|Bubonico}}'s alt fire explosion (+9s pre-mods)|alt=Bubonico
+ContinuousMiseryMod.png|link=Continuous Misery|{{M|Continuous Misery}}|alt=Continuous Misery
+FrenziedPostureMod.png|link=Frenzied Posture|{{M|Frenzied Posture}}|alt=Frenzied Posture
+HunterTrackMod.png|link=Hunter Track|{{M|Hunter Track}}|alt=Hunter Track
+LastingStingMod.png|link=Lasting Sting|{{M|Lasting Sting}}|alt=Lasting Sting
+Lavos_Thumb.png|link=Lavos/Abilities|{{WF|Lavos}}'s Passive|alt=Lavos
+LingeringTormentMod.png|link=Lingering Torment|{{M|Lingering Torment}}|alt=Lingering Torment
+PerpetualAgonyMod.png|link=Perpetual Agony|{{M|Perpetual Agony}}|alt=Perpetual Agony
+RapidResilienceMod.png|link=Rapid Resilience|{{M|Rapid Resilience}}|alt=Rapid Resilience
+Saryn_Thumb.png|link=Saryn/Abilities|{{WF|Saryn}}'s Passive|alt=Saryn
+ToxicSequenceMod.png|link=Toxic Sequence|{{M|Toxic Sequence}}|alt=Toxic Sequence
+</gallery>
+
+===Status Spread ===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ContagiousBondMod.png|link=Contagious Bond|{{M|Contagious Bond}}|alt=Contagious Bond
+ShiveringContagionMod.png|link=Shivering Contagion|{{M|Shivering Contagion}}|alt=Shivering Contagion
+mechaEmpoweredMod.png|link=Mecha Empowered|{{M|Mecha Empowered}}|alt=Mecha Empowered
+mechaOverdriveMod.png|link=Mecha Overdrive|{{M|Mecha Overdrive}}|alt=Mecha Overdrive
+mechaPulseMod.png|link=Mecha Pulse|{{M|Mecha Pulse}}|alt=Mecha Pulse
+mechaRechargeMod.png|link=Mecha Recharge|{{M|Mecha Recharge}}|alt=Mecha Recharge
+divineRetributionMod.png|link=Divine Retribution|{{M|Divine Retribution}}|alt=Divine Retribution
+fangsofRaksh.png|link=Fangs of Raksh|{{A|Fangs of Raksh}}|alt=Fangs of Raksh
+stormofUkko.png|link=Storm of Ukko|{{A|Storm of Ukko}}|alt=Storm of Ukko
+secondaryIrradiate.png|link=Secondary irradiate|{{Arcane|Secondary Irradiate}}|alt=Secondary Irradiate
+</gallery>
+
+{{Ver/Lu|29.5}}
+
+==List of Ability Status Effects==
+Most Frames can make use of status effects via abilities.
+This list does not include CC status effects like {{D|Ragdoll}} for example.
+{{Transclude|Warframes Comparison/Ability Status Effects|mw-collapsed}}
+
+
+==Status Immunity==
+Players can achieve temporary total status immunity by equipping the below mods or using these abilities. For immunity towards individual status effects, please navigate towards the respective damage type page. Status immunity prevents new status effects from being applied to players, but does not remove existing status effects.
+
+Note that sources of [[Invulnerability]] and [[Overguard]] also protect against status effects. 
+
+===Sources of Status Immunity===
+;Abilities
+<tabber>
+|-|Helminth = {{:Hideous Resistance}}
+|-|Revenant = {{:Mesmer Skin}}
+|-|Inaros = {{:Scarab Shell}}
+|-|Lavos = {{#lsth:Lavos/Abilities|Passive}}
+|-|Nezha =
+   {{#tag:tabber|
+      Fire Walker={{:Fire Walker}}
+      {{!}}-{{!}}
+      Warding Halo={{:Warding Halo}}
+   }}
+|-|Oberon = {{:Hallowed Ground}}
+|-|Oraxia = {{:Silken Stride}}
+|-|Nidus = {{:Parasitic Link}}
+|-|Qorvex = {{:Disometric Guard}}
+|-|Titania = {{:Spellbind}}
+|-|Trinity =
+   {{#tag:tabber|
+      Well Of Life={{:Well Of Life}}
+      {{!}}-{{!}}
+      Link={{:Link}}
+   }}
+|-|Valkyr = {{:Hysteria}}
+|-|Voruna = {{#lsth:Voruna/Abilities|Passive}}
+|-|Amesha = {{:Warding Grace}}
+</tabber>
+
+;Mods
+<gallery captionalign="center" captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+EmpoweredQuiverMod.png|link=Empowered Quiver|{{M|Empowered Quiver}}|alt=Empowered Quiver
+HeartyNourishmentMod.png|link=Hearty Nourishment|{{M|Hearty Nourishment}}|alt=Hearty Nourishment
+NegateMod.png|link=Negate|{{M|Negate}}|alt=Negate
+PurifyingFlamesMod.png|link=Purifying Flames|{{M|Purifying Flames}}|alt=Purifying Flames
+ShieldofShadowsMod.png|link=Shield of Shadows|{{M|Shield of Shadows}}|alt=Shield of Shadows
+TidalImpunityMod.png|link=Tidal Impunity|{{M|Tidal Impunity}}|alt=Tidal Impunity
+CarnisMandibleMod.png|link=Carnis Mandible|{{M|Carnis Mandible}}|alt=Carnis Mandible
+CarnisCarapaceMod.png|link=Carnis Carapace|{{M|Carnis Carapace}}|alt=Carnis Carapace
+CarnisStingerMod.png|link=Carnis Stinger|{{M|Carnis Stinger}}|alt=Carnis Stinger
+</gallery>
+
+;Miscellaneous
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+HealerAncientDE.png|link=Ancient Healer|Ancient Healer [[Specter]]
+</gallery>
+
+===Sources of Status Effect Cleansing===
+Status effect cleansing removes active status effects on the player.
+
+;Abilities
+<tabber>
+|-|Garuda={{:Bloodletting}}
+|-|Hildryn={{:Pillage}}
+|-|Nezha={{:Fire Walker}}
+|-|Oberon={{:Hallowed Ground}}
+|-|Qorvex={{:Disometric Guard}}
+|-|Revenant={{:Reave}}
+|-|Saryn={{:Molt}}
+|-|Titania={{:Spellbind}}
+|-|Wukong=
+   {{#tag:tabber|
+      Cloud Walker={{:Cloud Walker}}
+      {{!}}-{{!}}
+      Defy={{:Defy}}
+   }}
+</tabber>
+
+;Mods
+<gallery captionalign="center" captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+HeartyNourishmentMod.png|link=Hearty Nourishment|{{M|Hearty Nourishment}}|alt=Hearty Nourishment
+PurgingSlashMod.png|link=Purging Slash|{{M|Purging Slash}}|alt=Purging Slash
+RollingGuardMod.png|link=Rolling Guard|{{M|Rolling Guard}}|alt=Rolling Guard
+SafeguardSwitchMod.png|link=Safeguard Switch|{{M|Safeguard Switch}}|alt=Safeguard Switch
+TidalImpunityMod.png|link=Tidal Impunity|{{M|Tidal Impunity}}|alt=Tidal Impunity
+</gallery>
+
+===Status Resistance===
+Unlike sources of status immunity, these provide a percent chance to ignore an incoming proc on the player.
+
+<gallery>
+SanctiMagistar.png|link=Sancti Magistar|Holding {{Weapon|Sancti Magistar}}, 20% to resist any incoming procs
+EmpoweredQuiverMod.png|link=Empowered Quiver|{{M|Empowered Quiver}}<br/>(chance affected by ability strength and mod rank)|alt=Empowered Quiver(chance affected by ability strength and mod rank)
+FortitudeMod.png|link=Fortitude|{{M|Fortitude}}|alt=Fortitude
+MotusImpactMod.png|link=Motus Impact|{{M|Motus Impact}}|alt=Motus Impact
+MotusSetupMod.png|link=Motus Setup|{{M|Motus Setup}}|alt=Motus Setup
+MotusSignalMod.png|link=Motus Signal|{{M|Motus Signal}}|alt=Motus Signal
+PowerDriftMod.png|link=Power Drift|{{M|Power Drift}}|alt=Power Drift
+PrimedSureFootedMod.png|link=Primed Sure Footed|{{M|Primed Sure Footed}}|alt=Primed Sure Footed
+ResoluteFocusMod.png|link=Resolute Focus|{{M|Resolute Focus}}|alt=Resolute Focus
+SureFootedMod.png|link=Sure Footed|{{M|Sure Footed}}|alt=Sure Footed
+ArcaneDeflection.png|link=Arcane Deflection|{{Arcane|Arcane Deflection}}|alt=Arcane Deflection
+ArcaneHealing.png|link=Arcane Healing|{{Arcane|Arcane Healing}}|alt=Arcane Healing
+ArcaneIce.png|link=Arcane Ice|{{Arcane|Arcane Ice}}|alt=Arcane Ice
+ArcaneNullifier.png|link=Arcane Nullifier|{{Arcane|Arcane Nullifier}}|alt=Arcane Nullifier
+ArcaneResistance.png|link=Arcane Resistance|{{Arcane|Arcane Resistance}}|alt=Arcane Resistance
+ArcaneWarmth.png|link=Arcane Warmth|{{Arcane|Arcane Warmth}}|alt=Arcane Warmth
+</gallery>
+
+==Status Immune Enemies==
+{{UpdateMe}}
+===Full Immunity===
+<gallery>
+RegulatorDE.png|[[Regulator]]
+DesertSkateDE.png|[[Desert Skate]]
+Teralyst.png|[[Eidolon]]s, including [[Vomvalyst]]s
+ExploiterOrb.png|[[Exploiter Orb]]
+ProfitTakerOrb.png|[[Profit-Taker Orb]]
+Ropalolyst.png|[[Ropalolyst]]
+ArbiterDrone.png|[[Arbitration Shield Drone]]
+TuskThumper.png|[[Tusk Thumper]]
+TuskThumperBull.png|[[Tusk Thumper Bull]]
+TuskThumperDoma.png|[[Tusk Thumper Doma]]
+</gallery>
+
+===Partial Immunity===
+; To {{D|Viral}} procs
+<gallery>
+CodexAmbulas.png|link=Ambulas|[[Ambulas]]
+AshenAvatar.png|link=Deimos Carnis|[[Deimos Carnis]]
+InfestedBigDropShipAvatar.png|link=Deimos Genetrix|[[Deimos Genetrix]]
+BoneBladeAvatar.png|link=Deimos Jugulus|[[Deimos Jugulus]]
+AncientTankMicroPlanetAvatar.png|link=Leaping Thrasher|[[Leaping Thrasher|Deimos Leaping Thrasher]]
+AncientShellAvatar.png|link=Deimos Therid|[[Deimos Therid]]
+InfestedFemurAvatar.png|link=Deimos Saxum|[[Deimos Saxum]]
+LeapingThrasher.png|link=Leaping Thrasher|[[Leaping Thrasher]]
+Juggernaut.png|link=Juggernaut|[[Juggernaut]]
+DemolisherBoiler.png|link=Boiler|[[Boiler|Demolisher Boiler]]
+DemolisherThrasher.png|link=Leaping Thrasher|[[Leaping Thrasher|Demolisher Leaping Thrasher]]
+DemolisherCharger.png|link=Charger|[[Charger|Demolisher Charger]]
+DemolisherJuggernaut.png|link=Juggernaut|[[Juggernaut|Demolisher Juggernaut]]
+Mitosid.png|link=Mitosid|[[Mitosid]]
+BasalDiploid.png|link=Basal Diploid|[[Basal Diploid]]
+FeralDiploid.png|link=Feral Diploid|[[Feral Diploid]]
+UndyingFlyer.png|link=Undying Flyer|[[Undying Flyer]]
+</gallery>
+
+==Trivia==
+*Prior to {{ver|25.7}}, a status effect's duration could be increased or decreased, along with the total number of ticks in the case of damage-over-time procs, if the target's speed was altered by a Warframe power (such as {{A|Molecular Prime}} or {{A|Rest & Rage}}) according to the following formulas:
+**For slowing effects: {{MathText|Effective status duration {{eql}} (base status duration) {{div}} (1 {{min}} slow % in decimals)}}
+**For speeding effects: {{MathText|Effective status duration {{eql}} (base status duration) {{div}} (1 + speed up % in decimals)}}
+
+*Prior to {{ver|27.2}}, physical procs were weighted four times more than elemental ones.
+*Prior to {{ver|27.2}}, shotguns' status chance per pellet were calculated differently, instead of being the exact status chance shown in the Arsenal: {{MathText|Chance per Pellet {{eql}} 1 {{min}} (1 {{min}} Status Chance)<sup>(1 {{div}} Pellet Count)</sup>}}
+**In other words, the status chance shown in the Arsenal represented the calculated probability that at least one of the weapon's pellets would proc.
+**This meant that shotguns that could reach 100% status chance in the Arsenal (before [[Multishot]] mods) benefited significantly more from a status build since each pellet would proc as a result of the above equation.
+**However, a shotgun that only reaches shy of 100% status chance when modded would see significantly diminished results.
+***For example, a 99% '''status chance''' on a 10 pellet weapon would result in a 36.9% '''status chance per pellet'''.
+
+{{CustomCollapsible|Old Status Chance Calculation Table}}
+A table with example values to display the relation of status chance and multishot.
+{| border="1" style="border-collapse:collapse"
+|- align="center"
+| style="border-right:solid;"|
+|colspan=6| '''Arsenal Status Chance'''
+|- align="center"
+| style="border-right:solid; border-bottom:solid;"|
+| style="width:15%; border-bottom:solid;"| '''100%'''
+| style="width:15%; border-bottom:solid;"| '''99%'''
+| style="width:15%; border-right:solid; border-bottom:solid;"| '''80%'''
+| style="width:15%; border-bottom:solid;"| '''100%'''
+| style="width:15%; border-bottom:solid;"| '''99%'''
+| style="width:15%; border-bottom:solid;"| '''80%'''
+|- align="center"
+| style="border-right:solid;"| '''Pellets'''
+|colspan=3 style="border-right:solid;"| '''Chance per Pellet'''
+|colspan=3| '''Average Amount per Shot'''
+|- align="center"
+| style="border-right:solid;"| 3
+| 100%
+| 78.5%
+| style="border-right:solid;"| 41.5%
+| 3
+| 2.4
+| 1.25
+|- align="center"
+| style="border-right:solid;"| 5
+| 100%
+| 60.2%
+| style="border-right:solid;"| 27.5%
+| 5
+| 3.0
+| 1.38
+|- align="center"
+| style="border-right:solid;"| 10
+| 100%
+| 36.9%
+| style="border-right:solid;"| 14.9%
+| 10
+| 3.7
+| 1.5
+|- align="center"
+| style="border-right:solid;"| 20
+| 100%
+| 20.6%
+| style="border-right:solid;"| 7.7%
+| 20
+| 4.1
+| 1.6
+|}
+{{CustomCollapsible/End}}
+
+==Media==
+{{YouTube|_yfDX1Xtcy4|size=300px|align=center}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42}}
+*Increased the number of Status Effects per line on Boss Health Bars.
+*Fixed status effects being unclear by showing them on their own line under enemy names.
+
+{{ver|40}}
+*Fixed Status Effect icons being hidden under large enemies (e.g., Scaldra Dedicant) models.
+
+{{ver|38.5}}
+*Players will now parry enemy Status Effects when parrying an enemy Melee Attack.
+**This fixes Scaldra Flayers Gas Status Effect damaging players through Melee parries, turning a bug into a feature. Woo!
+
+{{ver|37}}<br/>
+'''Introducing a new Status Effect: Tau Damage'''
+
+Being of half-Sentient origin, Caliban brings a new element to the fight. He’ll inflict Tau Damage and Tau Status Effects upon the battlefield with many of his abilities (specifics listed below for affected abilities). 
+
+Tau’s Status Effect inflicts Status Chance Vulnerability* to enemies affected by it, with a max of 10 Stacks culminating in 100% Status Chance Vulnerability (10% per Stack), with each stack individually lasting 8 seconds! 
+
+<nowiki>*</nowiki>This effect was originally introduced by Dante and his Pageflight Paragrimms, which applies Status Chance Vulnerability to enemies. This mechanic increases the likelihood an enemy receives a Status Effect when being hit.
+
+;UI QOL Changes
+*Added an on-hover tip for the Status Damage stat to explain its mechanics (notably on Elementalist Mods).
+
+;FIXES
+*Fixed an issue where rag-dolled enemies received more Electrical Status Effects than they should.
+*Fixed Abilities or sources that could cleanse Status Effects unintentionally triggering Blast Detonate damage.
+
+{{ver|36}}
+;Status Effect Reworks
+
+'''Blast'''
+
+Our goal with Blast is to invoke an immediate and on-death effect to emphasize explosions. 
+
+Now, instead of enemy inaccuracy, you '''detonate''' your enemies! When dealing a Blast Status Effect to an enemy, the following will happen:
+
+'''Blast Changes:'''
+
+*Upon inflicting a Blast Status Effect, individual stacks will cause a mini-explosion, and a max stack count of 10 will inflict combined damage in a 5m radius
+**After 1.5 seconds, an individually incurred Blast Status Effect deals a percentage of base-inflicted damage per stack-explosion and over 100% of base-inflicted damage for a full (10 stack) explosion.
+*Status Duration will increase the delay before the Status Effect applies and depletes.
+*Removed the previous Status Effect of inaccuracy.
+
+'''Cold'''
+
+With Cold, we want to fully realize the fantasy of slowing, freezing and shattering your enemies. The existing Cold Status mechanic of slowing enemies is unchanged, but now has a new mechanic upon applying Max Stacks - freezing your foes!
+
+'''Cold Changes:'''
+
+*Cold now has a maximum cap of 10 stacks (was 9).
+**Applying 10 Cold stacks to a foe will make them '''Frozen''' for 3 seconds. Frozen enemies cannot move, will not recharge Shields, and receive double Critical Damage. After the Frozen effect wears off, 3 Cold stacks will remain. 
+***Bosses, such as Alad V or Kela De Thaym, will be unable to be Frozen since they cannot accumulate 10 Cold stacks.
+
+'''Gas'''
+
+Gas often lacked effective readability, making it difficult to distinguish its presence from the enemy or yourself. We’ve introduced enhanced visuals so that when the Gas Status Effect is active, you’ll be able to recognize it more clearly.
+
+'''Gas Changes:'''
+
+*Added VFX on top of the target affected by a Gas Cloud to clearly show an effect is active.
+**In addition to current and new VFX, Gas VFX now also more clearly shows the radius of the Gas Damage-over-Time (DoT) effect around a given target to better understand its impact on surrounding enemies.
+***If a player is inside the radius of the Gas DoT, the visuals are reduced for them to maintain visibility, similar to Frost’s Snow Globe. 
+*Gas VFX now has billowy volume to better present presence.
+*Gas VFX now has additional floating particles around the smoke.
+
+'''Magnetic'''
+
+Magnetic has received a few buffs to increase its effectiveness against Shields and to hammer home the power fantasy of overloading enemy Shields.
+
+'''Magnetic Changes:'''
+
+*Damage to Nullifier Bubbles has been increased
+**Minimum Damage raised to 300 Damage per shot.
+**Maximum Damage raised to 1200 Damage per shot.
+**Additionally, we now show the minimum and maximum damage numbers against Nullifier Bubbles, with Magnetic attacks displaying the buffed damage shown above, while non-Magnetic sources will display the original, unbuffed damage.
+***Known issue: Clients see the incorrectly unbuffed damage from Magnetic sources, which is strictly a UI/visual bug. Magnetic sources will continue to deal increased damage towards Nullifier Bubbles despite the incorrect numbers displayed. We will look to resolve this in a future Hotfix/Update. 
+*Reduced Shield Regeneration by a percentage per Magnetic stack against affected targets.
+*Upon Shield/Overguard Breaking a target, the enemy will now be dealt Electric Status damage for a percentage of Max Shields/Overguard per Magnetic stack while also forcing an Electric Status Effect.
+*Magnetic stacks on an enemy with Overguard now allow for bonus damage to Overguard, similar to how Magnetic affects Shields.
+
+{{ver|35}}
+*Fixed icons of currently inflicted Status Effects not appearing over enemy heads with the “Show Enemy Names” setting toggled off.
+
+{{ver|34}}
+*Fixed Status Proc icons appearing under squadmate username when aiming over their player avatar. Now these icons will appear beside their name to improve legibility.
+
+{{ver|33.6}}
+;Status Changes
+With the variety of Status effects in Warframe, there are certain types that may be seen as less favorable than others. Cold, Puncture, and Impact tend to have a lesser impact on the battlefield, so we felt it was time to revisit the value they added to player kits:
+
+<u>Puncture Changes:</u><br/>
+Weakened Status Effect Buffs:
+*Increased the debuff to enemy attacks from 30% to 40% on the first stack.
+*Reduced the maximum amount of stacks from 10 to 5.
+*Increased per-stack debuff from 5% to 10%. 
+*Increased the total debuff at Max Stacks from 75% to 80%. 
+
+Weakened Status Effect Additions:
+*Increases Critical Chance threshold on enemy by 5% per Stack, to a maximum of 25% at 5 Stacks. This is additive after mods, not before. Does not apply to Abilities or AOE damage.
+ 
+<u>Impact Changes:</u><br/>
+Stagger Status Effect Changes: 
+*Reduced the maximum amount of stacks from 10 to 5.
+*Increased the Mercy Threshold from 4% to 8% per stack. 
+
+Functionally, this allows for players to trigger early Mercy kills with less stacks required!
+
+NOTE: These changes should not affect the functionality of Impact Stacks for Mods such as Internal Bleeding or Hemorrhage.
+
+<u>Cold Changes:</u><br/>
+Freeze Status Effect Changes:
+*Increased the maximum amount of stacks from 8 to 9.
+*Increased the additional per-stack Slow from 3.5% to 5%. 
+*Increased the maximum Slow effect from 75% to 90%. 
+*While we previously mentioned buffing Cold Slow Effect to 85% in our Citrine’s Last Wish update, we mistakenly only increased it to 75% instead. 
+
+Freeze Status Effect Additions:
+*Increased the Critical Damage taken by an enemy by 10% on initial Status Effect Subsequent Stacks increase this debuff by 5%, up to a maximum of 50%. This is additive after mods, not before.
+
+{{ver|33}}
+*Fixed issues with enemies affected by Status Effects not behaving as intended when the game is paused.
+
+{{ver|32.3}}
+;Cold Status Effect Changes&#58;
+
+Cold Damage has traditionally been one of the lesser-used and valued Status Effects within the community, as its effect on foes may not be as noticeable compared to its peers. As a result, we’ve decided to to make the following changes: 
+
+*Increased base Slow from 25% to 50%.
+*Max stacks reduced from from 10 to 8.
+
+Final result of the above is an overall increase in the Max Slow from 70% to 85%.
+
+{{ver|31.5}}
+*Removed potential rare specific scenarios where Status Effects could potentially do unintended critical damage.
+
+{{ver|27.2}}
+;Damage-Type Changes&#58;
+
+*Slash Status now does not bypass Shields and instead deals damage over time to Shields. Slash Status still bypasses Armor. 
+*Toxin Damage used to apply to Armor with a 25% bonus. Now it is neutral. For role distinction, Toxin bypasses Shields (but not Armor) where as Slash Status bypasses Armor but not Shields. 
+
+;Greater than 100% Status having meaning:
+Years ago we added Orange and Red Critical Damage numbers when you land a Critical with greater than 100%. For years, Status being greater than 100% has done nothing except guarantee Status - which is good, just not an added incentive to go over 100%. We are changing that this update. 
+
+When you hit a Status Chance greater than 100%, a single damage instance will be able to create two Status Effects. This means if you have a Shot with 200% Status Chance modded with both Blast and Toxin Damage, that single shot will result in both Status Effects!
+
+It is worth noting we are fixing a UI inconsistency that is ‘Display Only’. Right now the Arsenal shows Status Chance affected by Multishot, which makes reading the new >100% value confusing. For example, the Arsenal might say 120% but really the Status Chance is 80%. We don’t have Multishot affect any Critical Stats (Chance or Multiplier), so we are fixing this display inconsistency. Multishot now has its own Stat. 
+
+Shotguns have a unique Role here based on a very patch-work history with how they interact with Status Chance. A Shotgun that shoots 99% Status Chance would give you 35% (roughly) status per pellet. 100% Status Gives you 100% Status per pellet. This huge jump in performance happens with just a 1% gain - why? Well, to answer that we have to look at our choice to make what the UI conveys reality. It would feel broken to shoot a Shotgun with 100% Status and not see a perfect spread of Effects. In reality, to make Status consistent we have to treat Shotguns as a special case. 
+
+Shotguns as a special case means we have buffed the Status Chance of all Shotguns by x3 or greater. The UI now behaves to show the reality that you are determining Status Chance per pellet. 
+
+;Stacking Status Effects
+'''But wait - THERE’S MORE! In addition to being able to achieve two Status Effects on a single shot with >100% Status,  we are also adding new meaning if you get a duplicate Status Effect on an enemy overall.'''
+
+This section will outline exactly what this means for each Status type, including information on how multiple Status Effects behaved with stacking prior to this Hotfix:
+*{{D|Impact}}: Repeat single-target Impact Status Effects will escalate the efficacy of the Impact Status (removed previous change of adding Ragdoll as maximum Stagger consequence).
+*{{D|Puncture}}: The first Puncture Status Effect has an enemy deal 30% less Damage. Subsequent Puncture Status add +5% weakening, leading to up to 75% (capped). Each Puncture Status has a duration of 6 Seconds.
+*{{D|Slash}}: Each Slash Status has its own duration, but now we only show a maximum of 10 damage numbers in the HUD, damage is unaffected, but reducing how many damage events we show helps with performance
+*{{D|Cold}}: The first Cold Status Effect deals 25% slow. Subsequent Cold Status Effects deal +5% slow for a total of 70% slow at 10 procs. Each Cold Status has a duration of 6 seconds.
+*{{D|Heat}}: No Change.
+*{{D|Toxin}}: See Slash, plus the base duration of a Toxin Status Effect now matches Slash for 6 seconds.
+*{{D|Electricity}}: AoE Electric Damage that is part of the Status Effect can now reoccur while the target is still under the stun animation of another Electric Status Effect.
+*{{D|Blast}}: Grants the Blast Status Effect a single target. Blast Status reduces enemy accuracy by 30% base. Subsequent Blast Status Effects add +5% inaccuracy for  for 75% total at 10 stacks. Each Blast Status has a 6 second Duration.
+*{{D|Corrosive}}: The first Corrosive Status Effect strips 26% Armor. Subsequent Corrosive Status Effects strip 6% more Armor, leading up to 80% Armor removal. Each Corrosive Status Effect lasts 8 seconds. Note: Corrosive was the only Status with infinite Duration and 100% Efficacy toward a defensive stat. This was necessary to some based on how Armor Scaled. We feel our rebalancing efforts need a differently behaving Corrosive to balance out all Status overall. 
+*{{D|Radiation}}: The first Radiation Status Effect has an enemy deal 100% Damage to allies. Subsequent Radiation Status adds +50% damage, leading to up to 550% (capped). Each Radiation Status Effect has a duration of 12 seconds.
+*{{D|Magnetic}}: New Status Effect entirely: enhanced Damage! First Magnetic Status Effect deals 100% additional Shield damage, subsequent Magnetic Status add +25% for a total of 325% (capped). Enemies under a Magnetic Status Effect cannot regenerate Shields. Magnetic Status Duration is now 6 seconds.
+*{{D|Viral}}: New Status Effect entirely: enhanced Damage! First Viral Status Effect deals 100% additional Health damage, subsequent Viral Status add +25% for a total of 325% (capped).
+**''Note: Before Viral would halve a target’s health pool and simply refresh the duration. Now it deals 2x Damage to Health, and can scale up to 4.5x Damage on repeat Status Effects.''
+*{{D|Gas}}: The base duration of a Gas Status Effect now matches Slash for 6 seconds. No longer does AoE with forced Poison Status Effect (resulting in Poison DoT for enemies in radius), instead it does AoE DoT Gas damage around the target.
+
+Players - aka Tenno - can only have a Maximum of 1 Stack on them - you cannot receive Stacked Status Effects as a player from enemies, fear not!
+
+''Why: The inclusion of enhanced or different stacking of Duplicate Status Effects is one to refresh the appeal of Status.''
+
+In addition, we’ve removed 0.25x Multiplier for Elemental Status Effects, meaning all Elemental Status Effects are 4x more likely.
+
+''Why: Critical has long been king - and while we are leaving Critical as is, our goal is to bring Status into the Arsenals in a new light for all Primary, Secondary, and Melee weapons. Our long-term goal with this change is to build upon this series of changes to eventually allow Status to impact bigger threats like Liches and Eidolons.''
+
+{{ver|27.1}}
+*Fixed projectile explosion & embed damage not properly using Status Chance upgrades.
+
+{{ver|25.7}}
+*Reduced Status Effect light FX intensity further to compensate for stacking procs (Gas multiprocs, etc.)
+*If you freeze enemies with things like Frost, Atlas, or Gara’s abilities, you can now immediately apply other Status Effects! Before these powers would prevent Status Effects from being added. Read more on that here: https://forums.warframe.com/topic/1119134-cold-status-effects-how-they-block-new-status-effects-coming-changes/
+*Fixed Status FX not applying to ragdolled enemies.
+*Fixed sometimes seeing duplicate corpses if the enemy died from a Slash Status Effect.
+
+{{ver|11.7}}
+*Continued Changes to proc/status logic with Continuous Fire weapons:
+**Their proc/status is now determined per second – the Arsenal will display the “Status per second” value.  Continuous fire weapons that had a weaker proc chance before should be yielding reasonable proc/status per second with this calculation.
+    
+{{ver|11.0.2}}
+*Added more visibilty to Proc/status on enemies when dealing damage. Proc/status icons added to damage numbers.
+
+{{ver|11}}
+*New Damage Model 2.0! More information here: https://forums.warframe.com/index.php?/topic/132366-information-on-damage-20/
+*Stun Chance mods (Pistol, Rifle, Shotgun, Melee) are now Status Effect mods in accordance with new damage system
+}}
+{{MechNav}}
+{{StatusModsNav}}
+[[es:Efecto de estado]]
+[[it:Effetto Stato]]
+[[fr:Effet de Statut]]
+[[Category:Mechanics]]
+[[Category:Update 11]]

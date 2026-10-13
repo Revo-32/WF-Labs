@@ -1,0 +1,70 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|An infested rapier-like or polearm strike that also deals {{D|Viral}} damage. Its light weight provides an increase in speed at the cost of damage.|In-game Description}}
+The '''Plague Kripath''' is an [[Infested]] Strike for [[Zaw]]s that grants {{D|Viral}} damage.
+
+{{BuildRequire
+|buildcredits= 5,000
+|build1= Nano Spores
+|build1amount=1,600
+|build2= Plastids
+|build2amount=700
+|build3= Tear Azurite
+|build3amount=10
+|build4= Pyrotic Alloy
+|build4amount=60
+|buildtime=1
+|buildrush=25
+|blueprint=2,000 + {{cc|3,500}}
+|blueprintunit=Standing
+|market=
+}}
+
+==Acquisition==
+*Plague Kripath is obtainable from limited-time events:
+**[[Operation: Plague Star]] sold Plague Kripath from [[Nakak]] for {{sc|2,000}} + {{cc|3,500}}, requiring '''Rank 3 - Champion''' with [[Operational Supply]].
+**The October 2020, 2022 and 2024 [[Nights of Naberus]] event sold Plague Kripath from [[Daughter]] for 25 {{Resource|Mother Token|Mother Tokens}} each.
+*
+
+==Characteristics==
+This strike primarily deals {{D|Puncture}} damage
+
+*'''14%''' {{D|Impact}}
+* '''33%''' {{D|Puncture}}
+*'''23%''' {{D|Slash}}
+*'''30%''' {{D|Viral}}
+
+This Strike also has a Crit Damage Multiplier of 2.2x and a flat +4% Critical Chance bonus.
+
+Compatible weapon types:
+
+*Rapier
+*Polearm
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+</onlyinclude>
+</gallery>
+{{VideoGallery
+|{{YouTube|Kn3Hc4Ct8yA|size=300px}}
+|{{YouTube|TV2QHg7Oo5g|size=300px}}
+}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|22.9}}
+*The Plague Kripath now uses Rapier melee style instead of Sword melee style.
+
+{{ver|22.8.3}}
+*Zaw strike Plague Kripath now uses the default Rapier holster position when used with a one handed Zaw Grip.
+
+{{ver|22.3}}
+*Introduced.
+}}
+{{ZawNav}}
+[[es:Kripath plaga]]
+[[Category:Update 22]]
+[[Category:Zaw]]
+[[Category:Weapons]]
+[[Category:Viral Damage Weapons]]
+[[uk:Моровий кріпат]]
+[[fr:Fléau Kripath]]

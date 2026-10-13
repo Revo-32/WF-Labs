@@ -1,0 +1,639 @@
+{{Navigation|Armor|Armor/Calculator}}
+{{Infobox
+| Box title=Armor
+| image=ArmorIconUI.png
+| caption=An example of an armored health bar
+}}
+{{tocright}}
+{{For|the [[Warframe Cosmetics|Warframe Cosmetic]]|Armor (Cosmetic)}}
+{{Quote|Reduces damage to Health by '''<nowiki>|AMOUNT|</nowiki>'''%.
+
+Shields are not affected by Armor.|In-game Description}}
+<section begin=intro />
+'''Armor''' is an attribute that reduces damage taken to [[health]] but not to [[shields]] or [[overguard]]. Not all enemies possess armor; [[Warframes]], some [[the Murmur|Murmur]], most [[bosses]], and all [[Grineer]] do, but normal [[Corpus]] and [[Infested]] enemies do not have any. For a given Warframe, its armor value can be found in the [[Arsenal]]. Armored enemies have their base armor values listed in the [[Codex]] but this value increases when they spawn with higher levels due to [[Enemy Level Scaling]].
+
+In combat, enemies with more than one point of armor have their health bars displayed yellow instead of red. It is possible to strip away armor value through certain [[abilities]] or damage [[Status Effect]]s, turning those enemies' health bars back to red.<section end=intro />
+
+==Effects==
+When damage is inflicted to an armored target, incoming damage is reduced by armor value according to a damage reduction formula.
+:''See also: [[Damage#Damage Calculation|Damage Calculation]]''
+
+
+===Tenno Damage Reduction Formula===
+[[File:RDI.jpg|center]]
+
+{{clr}}
+The damage reduction from armor is as follows:
+
+<math>\text{Tenno Damage Reduction}=\frac{\text{Net Armor}}{\text{Net Armor}+300}</math>
+
+A net armor value of 300 will reduce incoming damage by {{Math|300 {{div}} 600|mt = y|percent = y}}, so only half of the weapon's damage is inflicted in total. At '''600''', you receive only '''33%''' (reduction is {{Math|600 {{div}} 900|t = y|percent = y}}) of a weapon's outgoing damage. At '''900 '''armor, inflicted damage is only '''25%''' (reduction {{Math|900 {{div}} 1200|t=y|percent=y}}), and so on.
+
+===Enemy Damage Reduction Formula===
+For enemies using the standard NPC armor calculation, damage reduction is calculated as follows when Net Armor is no greater than 2,700:
+
+<math>\text{Enemy Damage Reduction}=90\% \cdot \sqrt{\frac{\text{Net Armor}}{2700}}</math>
+
+Enemy level scaling normally clamps an enemy's initial armor to between 200 and 2,700. Armor removal can still reduce current armor below 200. If an enemy's Net Armor exceeds 2,700 under an exceptional condition, damage reduction instead uses:
+
+<math>\text{Enemy Damage Reduction}=\frac{\text{Net Armor}}{\text{Net Armor}+300}</math>
+
+When damage is reduced from armor, each damage type has a minimum damage of 1. E.g. a {{Weapon|Braton}} will always do a minimum of 3 damage against an armored target regardless of how high their armor value is, as it has 3 different damage types. Non-Armor sources of damage reduction do not have such a behavior.
+{{clr}}
+
+==Effective Health==
+{{Main|Health#Effective Health}}
+'''Effective health''' is the concept that each single point of health you have actually absorbs more than one point of damage, so you effectively have more hit points than indicated. Therefore, there are two ways that armor functionality can be imagined: either as a reduction to damage, or as an increase of effective health and incoming heals.
+
+[[File:REH.jpg|center]]
+
+{{clr}}
+An alternative way to think of armor transforms the above equation to the following:
+
+<math>\text{Effective Health}=\frac{\text{Nominal Health}}{1-\text{Damage Reduction}}</math>
+
+*'''Nominal Health''' means "health in name", referring to the [[Health]] points in your screen's upper right corner.
+*'''Effective Health''' is your "health in effect", reflecting a "truer" measurement of survivability.
+
+
+Or in terms of armor:
+
+<math>\text{Effective Health}=\text{Nominal Health}\times\frac{\text{Net Armor}+300}{300}</math>
+
+
+'''Example 1:''' If you have 1000 Nominal Health and 100 armor, your Effective Health would be:
+
+<math>\text{Damage Reduction}=\frac{\text{Net Armor}}{\text{Net Armor}+300}=\frac{100}{100+300}=0.25=25%</math>
+
+<math>\text{Effective Health}=\frac{\text{Nominal Health}}{1-\text{Damage Reduction}}=\frac{1000}{1-0.25} \approx 1,333</math>
+
+Or
+
+<math>\text{Effective Health}=\text{Nominal Health}\times\frac{\text{Net Armor}+300}{300}=1000\times\frac{100+300}{300} \approx 1,333</math>
+
+
+'''Example 2:''' If you have 1000 Nominal Health and 600 armor, your Effective Health would be:
+
+<math>\text{Damage Reduction}=\frac{\text{Net Armor}}{\text{Net Armor}+300}=\frac{600}{600+300} \approx 0.67=67%</math>
+
+<math>\text{Effective Health}=\frac{\text{Nominal Health}}{1-\text{Damage Reduction}}=\frac{1000}{1-0.67} \approx 3,000</math>
+
+Or
+
+<math>\text{Effective Health}=\text{Nominal Health}\times\frac{\text{Net Armor}+300}{300}=1000\times\frac{600+300}{300} \approx 3,000</math>
+{{clr}}
+{| class="wikitable mw-collapsible mw-collapsed" style="width:100%; text-align:left"
+! style="text-align:center;" | In-Depth Analysis
+|-
+|The relative increase in effective health is exactly proportional to the armor increase. Let us call <math>E</math> the effective health, <math>H</math> nominal health, <math>A</math> armor, and <math>R</math> effective health multiplier, and use <math>\Delta X</math> to denote the discrete increase in some variable <math>X</math>, then:
+
+<math>
+{
+\begin{aligned}
+E &= \frac{H}{1-\text{Damage Reduction}} = HR
+\end{aligned}
+}
+</math>
+
+Now we first find the change in <math>E</math> as a result of a change in <math>H</math>, and then the change in <math>E</math> as a result of the change in <math>A</math>. The total change in <math>E</math> is the sum of these two changes:
+
+<math>
+{
+\begin{aligned}
+\Delta E &= R \Delta H + H \Delta R \\
+\qquad &= (\frac{300+A}{300}) \Delta H + H \frac{\Delta A}{300} \\
+\qquad &= (\frac{300+A}{300}) \Delta H + \frac{H}{300}\Delta A
+\end{aligned}
+}
+</math>
+
+Now ignoring any increases in the nominal health (i.e. <math>\Delta H=0</math>):
+
+<math>
+{
+\begin{aligned}
+\Delta E &= \frac{H}{300}\Delta A
+\end{aligned}
+}
+</math>
+
+Since <math>H</math> is a constant we end up with effective health being proportional to armor:
+
+<math>
+{
+\begin{aligned}
+\Delta E \propto \Delta A
+\end{aligned}
+}
+</math>
+
+Where most algebraic simplification was omitted and to make the notation cleaner, we have set:
+
+<math>
+{
+\begin{aligned}
+R &= \frac{1}{1-\text{Damage Reduction}} = \frac{300+A}{300}
+\end{aligned}
+}
+</math>
+
+It is also worth noting that this is only including individual, independent variations in <math>H</math> and <math>A</math>. If we were to vary them at the same time, a different and much more involved analysis has to be carried out:
+
+Let us begin by redefining our variation in the arbitrary variable <math>X</math> as <math>\delta X</math>. This is purely due to convention and is just a "relabeling". 
+
+Given <math>E</math> as a function of <math>H</math> and <math>A</math> (written more compactly as <math>E(H,A)</math>) we need to find <math>\delta E (\delta H, \delta A)</math>. Therefore, we carry on by considering the sum of <math>E</math> and its variation in terms of <math>H</math> and <math>A</math> with their respective variations and then isolating the variations 
+
+<math>
+{
+\begin{aligned}
+E &= H\frac{300+A}{300} \qquad \text{(Initial equation)} \\
+\\
+E + \delta E &= (H + \delta H)\frac{300+(A+ \delta A)}{300} \qquad \text{(Substituting in the variations)} \\
+\\
+E + \delta E &= (H + \delta H)(\frac{300+A}{300}+\frac{\delta A}{300}) \qquad \text{(Expanding out the fraction)} \\
+\\
+E + \delta E &= H \frac{300+A}{300}+ \delta H \frac{300+A}{300} + H\frac{\delta A}{300} + \frac{\delta H\delta A}{300} \qquad \text{(Simplifying)} \\
+\\
+E + \delta E &= E + \delta H \frac{300+A}{300} + H\frac{\delta A}{300} + \frac{\delta H\delta A}{300} \qquad \text{(By definition of E)} \\
+\\
+\delta E &= \delta H \frac{300+A}{300} + H\frac{\delta A}{300} + \frac{\delta H\delta A}{300} \qquad \text{(Subtracting E from both sides)}
+\end{aligned}
+}
+</math>
+
+This equation is the variation equation we wanted; it is the same as the one obtained in the first analysis but with the extra correction term <math>(\delta H\delta A)/300</math>.
+
+When varying the terms independently, this term will evaluate to zero (since one of the variations would be zero) and we recover the equation from the previous analysis, and all the results that follow from it. It is good to note that at the moment, this equation is currently unnecessary for most of the applications it has in-game since the preceding equation is pretty much always sufficient. At the moment, the game has no circumstances where the nominal health is a function of its armor and vice versa, this is more for mathematical rigor.
+|}
+
+==Increasing Armor==
+===Mods===
+<gallery captionposition="below" hideaddbutton="true" bordersize="none" bordercolor="#FFFFFF" position="center" captionalign="center" navigation="true" spacing="small">
+StandUnitedMod.png|link=Stand United|{{M|Stand United}}
+ArmoredAgilityMod.png|link=Armored Agility|{{M|Armored Agility}}
+SteelFiberMod.png|link=Steel Fiber|{{M|Steel Fiber}}
+UmbralFiberMod.png|link=Umbral Fiber|{{M|Umbral Fiber}}
+CarnisCarapaceMod.png|link=Carnis Carapace|{{M|Carnis Carapace}}
+Amar'sHatredMod.png|{{M|Amar's Hatred}}
+GladiatorAegisMod.png|link=Gladiator Aegis|{{M|Gladiator Aegis}}
+JugulusCarapaceMod.png|link=Jugulus Carapace|{{M|Jugulus Carapace}}
+MechaPulseMod.png|link=Mecha Pulse|{{M|Mecha Pulse}}
+SaxumCarapaceMod.png|link=Saxum Carapace|{{M|Saxum Carapace}}
+HealthConversionMod.png|link=Health Conversion|{{M|Health Conversion}}
+HallowedReckoningMod.png|link=Hallowed Reckoning|{{M|Hallowed Reckoning}}
+IroncladChargeMod.png|link=Ironclad Charge|{{M|Ironclad Charge}}
+ShepherdMod.png|link=Shepherd|{{M|Shepherd}} (Companion only)
+LinkFiberMod.png|link=Link Fiber|{{M|Link Fiber}} (Companion only)
+MetalFiberMod.png|link=Metal Fiber|{{M|Metal Fiber}} (Companion only)
+SynthFiberMod.png|link=Synth Fiber|{{M|Synth Fiber}} (Companion only)
+</gallery>
+
+{{M|Steel Fiber}} and {{M|Armored Agility}} increase armor value when equipped. As a percentage modifier, Warframes with higher base armor values have a higher benefit from it. Like with most other stats, armor gains from mods stack additively together before being multiplied with the Warframe's base armor:
+
+<math>\text{Total Armor}=\text{Base Armor}(1+\text{Mod Multiplier})</math>
+* '''Mod Multiplier''' refers to the value on the mods equipped. It is 1.0 at max rank Steel Fiber, 0.40 at max rank Armored Agility, and 1.40 with both equipped.
+
+===Abilities===
+<div class="tabber-borderless">{{#tag:tabber|
+Innate = {{#tag:tabber|
+Atlas= {{PassivesHeader|Atlas|true|NoAnchor=true}}
+{{!}}-{{!}}Chroma= {{Transclude|Elemental Ward}}{{Transclude|Vex Armor}}
+{{!}}-{{!}}Frost= {{PassivesHeader|Frost|true|NoAnchor=true}}
+{{!}}-{{!}}Grendel= {{PassivesHeader|Grendel|true|NoAnchor=true}}
+{{!}}-{{!}}Helminth= {{Transclude|Parasitic Armor}}
+{{!}}-{{!}}Hydroid= {{Transclude|Plunder}}
+{{!}}-{{!}}Inaros= {{Transclude|Scarab Shell}}
+{{!}}-{{!}}Oberon= {{Transclude|Renewal}}{{Transclude|Reckoning}}
+{{!}}-{{!}}Octavia= {{Transclude|Metronome}}
+{{!}}-{{!}}Valkyr= {{Transclude|Warcry}}
+{{!}}-{{!}}Wukong= {{Transclude|Defy}}
+}}
+
+{{!}}-{{!}}Augmented={{#tag:tabber|
+
+Banshee=
+[[File:SonicSiphonMod.png|200px|left]]
+{{main|Sonic Siphon}}
+{{#lst:Sonic Siphon|intro}}
+{{#lsth:Sonic Siphon|Stats}}
+
+{{!}}-{{!}}Grendel=
+[[File:GourmandMod.png|200px|left]]
+{{main|Gourmand}}
+{{#lst:Gourmand|intro}}
+{{#lsth:Gourmand|Stats}}
+
+{{!}}-{{!}}Oberon=
+[[File:HallowedReckoningMod.png|200px|left]]
+{{main|Hallowed Reckoning}}
+{{#lst:Hallowed Reckoning|intro}}
+{{#lsth:Hallowed Reckoning|Stats}}
+
+{{!}}-{{!}}Rhino=
+[[File:IroncladChargeMod.png|200px|left]]
+{{main|Ironclad Charge}}
+{{#lst:Ironclad Charge|intro}}
+{{#lsth:Ironclad Charge|Stats}}
+}}}}</div>
+
+===Arcanes===
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+ArcaneCircumvent.png|link=Arcane Circumvent|{{Arcane|Arcane Circumvent}} 
+ArcaneGuardian.png|link=Arcane Guardian|{{Arcane|Arcane Guardian}}
+ArcaneReaper.png|link=Arcane Reaper|{{Arcane|Arcane Reaper}}
+ArcaneTanker.png|link=Arcane Tanker|{{Arcane|Arcane Tanker}}
+ArcaneUltimatum.png|link=Arcane Ultimatum|{{Arcane|Arcane Ultimatum}}
+MeleeFortification.png|link=Melee Fortification|{{Arcane|Melee Fortification}}
+MagusHusk.png|link= Magus Husk|{{Arcane|Magus Husk}} ([[Operator]] only)
+</gallery>
+
+Armor bonus from Arcanes stack additively after mods:
+
+<math>\text{Total Armor}=\text{Base Armor}(1+\text{Mod Multiplier})+\text{Arcane Bonus}</math>
+<br />
+
+===Focus===
+{{#tag:tabber|
+Stone Skin={{Transclude|Focus/Unairu#Stone Skin}}
+{{!}}-{{!}}Tempered Benison={{Transclude|Focus/Unairu#Tempered Benison}}
+Requires unlocking {{Focus|Cogron Tauron Strike}}.
+{{!}}-{{!}}Enduring Tides={{Transclude|Focus/Vazarin#Enduring Tides}}
+}}
+
+===Archon Shards===
+{{Resource|Azure Archon Shard}} +150 Armor each.<br>
+{{Resource|Tauforged Azure Archon Shard}} +225 Armor each.
+
+==Warframe Armor and Effective Health==
+Unlike health and shield, a Warframe's base armor doesn't change as it advances from Rank 0 to Rank 30, with the exceptions of {{WF|Nidus}}, {{WF|Lavos}}, and {{WF|Kullervo}}.
+
+{{#invoke:Warframes|getArmorChart}}
+
+===Armor Calculator ===
+{{Ambox
+|id			= depreciated-calculator
+|type		= This calculator feature is sunsetted on the wiki thus some of these calculations may be depreciated. Stats are stored on [[MediaWiki:Calculator.js]]. It may not see further updates, but will be present on articles for the time being since some people still find use for them. See [[User blog:Cephalon Scientia/Sunsetting of Maximization Calculators]] for more details.	
+|link		= User blog:Cephalon Scientia/Sunsetting of Maximization Calculators
+}}
+<div id="calculator_armor">Error: JS unable to load. If you can read this consider activating javascript or changing to a device that supports javascript.</div>
+
+==Abilities Benefiting from Armor ==
+Some abilities have values which are increased by the armor of the Warframe casting them. These are outlined below:
+
+<div class="tabber-borderless">{{#tag:tabber|
+Iron Skin=
+{{:Iron Skin}}
+*Base health and armor multiplier are affected by [[Ability Strength]].
+*Iron Skin's health uses the following expression when accounting for Ability Strength:<br/>{{MathText|Modified Health {{eql}} (Base Health + (Armor Multiplier {{mul}} Base Armor {{mul}} (1 + Armor Bonus))) {{mul}} (1 + Ability Strength) + Absorbed Damage}}.
+*Note that the base armor value is different between Rhino and Rhino Prime; while ''Rhino'' has '''190''' Base Armor, ''Rhino Prime'' has '''275''' Base Armor.
+*As an example for '''Rhino''':
+**With a maxed {{M|Steel Fiber}} and {{M|Intensify}}, a Rank 3 Iron Skin cast by ''Rhino'' will have an initial health of {{Math|(1200 + (2.5 {{mul}} 190 {{mul}} 2.1)) {{mul}} 1.3|mt=y}} before absorbing damage.
+{{!}}-{{!}}
+
+Snow Globe=
+{{:Snow Globe}}
+*Base health and armor multiplier are affected by [[Ability Strength]].
+*Snow Globe's health uses the following expression when accounting for Ability Strength:<br/>{{MathText|Modified Health {{eql}} (Base Health + 5 {{mul}} Frost's Base Armor {{mul}} Base Armor Bonus) {{mul}} (1 + Ability Strength) + Absorbed Damage}}.
+**For example, with a maxed {{M|Steel Fiber}} and {{M|Intensify}}, rank-3 Snow Globe will have an initial health of<br/>{{Math|(5000 + 5 {{mul}} 300 {{mul}} 2.1) {{mul}} (1 + 0.3)|mt=y}} before converting absorbed damage.
+{{!}}-{{!}}
+
+Warding Halo=
+{{:Warding Halo}}
+*Base health, armor multiplier, absorption multiplier and damage per second, are affected by [[Ability Strength]].
+*Warding Halo's health uses the following expression when accounting for Ability Strength:<br/>{{MathText|Modified Health {{eql}} (Base Health + Armor Multiplier {{mul}} Nezha's Base Armor {{mul}} (1 + Base Armor Bonus)) {{mul}} (1 + Ability Strength) + Absorbed Damage}}.<sup>(More testing and confirmation needed)</sup>
+**As an example, with a maxed {{M|Steel Fiber}} and {{M|Intensify}}, a rank-3 Warding Halo will have an initial health of {{Math|(900 + 2.5 {{mul}} 175 {{mul}} 2.1) {{mul}} 1.3|mt=y}} before absorbing damage.
+{{!}}-{{!}}
+
+Tectonics=
+{{:Tectonics}}
+*The bulwark's health uses the following expression when accounting for [[Ability Strength]]:<br/>{{MathText|Modified Health {{eql}} (Base Health + 5 {{mul}} (Atlas' Base Armor {{mul}} (1 + Armor Mods)) {{mul}} (1 + Strength Mods) + Additive Armor) + Absorbed Damage}}. 
+**For example, with a maxed {{M|Steel Fiber}} and {{M|Intensify}}, rank-3 Tectonics will produce a bulwark with an initial health of<br/>{{Math|(3750 + 5 {{mul}} 450 {{mul}} 2.1) {{mul}} (1 + 0.3)|mt=y}} before converting absorbed damage.
+{{!}}-{{!}}
+
+Rumblers=
+{{:Rumblers}}
+*Rumbler armor uses the following expression when accounting for [[Ability Strength]]:<br/>{{MathText|Modified Armor {{eql}} Armor {{mul}} (1 + Armor Mods + Ability Strength)}}.
+**For example, with a maxed {{M|Steel Fiber}} and {{M|Intensify}}, rank-3 Rumblers will have a modified armor value of<br/>{{Math|500 {{mul}} (1 + 1.1 + 0.3)|mt=y}}.
+{{!}}-{{!}}
+
+Mass Vitrify=
+{{:Mass Vitrify}}
+*Barrier segment base health and segment explosion damage are affected by [[Ability Strength]], while crystallize converted health is affected by both Ability Strength and Armor mods such as {{M|Steel Fiber}} equipped on Gara.
+**Barrier segment health uses the following expression:<br/>{{MathText|Modified Health {{eql}} (Base Health + (5 {{mul}} Base Armor {{mul}} (1 + Armor Mods))) {{mul}} (1 + Strength Mods)}}
+**With a maxed {{M|Steel Fiber}} and {{M|Intensify}} a wall segment would have<br/>{{Math|[2225 + (5 {{mul}} 125 {{mul}} (1 + 1.1))] {{mul}} (1 + 0.3)|bf=y}} Health before accounting for converted health from crystallized enemies (values resulting from intermediate calculations are rounded down to the nearest whole number).
+}}
+
+==Enemy Armor Scaling==
+{{Main|Enemy Level Scaling}}
+Enemy base armor values are displayed under the codex and infobox, but scale to the enemy's level. Generally, only [[Grineer]] and boss enemies have armor, while the only [[Corpus]] and [[Infested]] units to possess armor are [[Bursa]] units, [[Oxium Osprey]], and the [[Juggernaut]]. When the enemy health bars are yellow, armor is in effect and damage will be reduced.
+
+{{#lsth:Enemy Level Scaling|Armor}}
+
+==Removing Enemy Armor (Armor Stripping)==
+{{Anchor|Armor Strip}}
+Most armor strip effects removes a percentage of the maximum value. For {{D|Heat}} and {{D|Corrosive}}, it is based on the ''current'' value, and thus has diminishing returns. Warframe abilities are based on the ''total''; for example, an ability that strips 50% armor will remove it in just two casts.
+
+===Percentage From Total Armor===
+
+====Mods====
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+CorrosiveProjectionMod.png|link=Corrosive Projection|{{M|Corrosive Projection}} is an Aura mod that decreases armor by '''18%''', up to '''72%''' when paired with a full squad.
+SharpenedClawsMod.png|link=Sharpened Claws|{{M|Sharpened Claws}} is a [[Kavat]] mod that allows the Kavat to perform a highly damaging strike while removing '''120%''' armor.
+ViciousBondMod.png|link=Vicious Bond|{{M|Vicious Bond}} is a [[Companion]] mod that allows the Companion to remove '''15%''' armor with melee attacks
+</gallery>
+
+====Abilities====
+
+<div class="tabber-borderless">{{#tag:tabber|
+
+Ash =
+[[File:SeekingShurikenMod.png|160px|right]]
+{{Main|Seeking Shuriken}}
+This ability augment makes {{A|Shuriken}} find weaknesses in the target's armor, temporarily reducing its armor values by {{Stat|Ability Strength|icon=only}}'''70%''' for '''8''' seconds at max rank. At '''143%''' {{Stat|Ability Strength}}, Seeking Shuriken can remove all armor.{{clr}}
+
+{{!}}-{{!}}
+
+Banshee = {{:Sonic Boom}}
+This ability knocks down enemies in a cone near {{WF|Banshee}}, permanently reducing their armor values by {{Stat|Ability Strength|icon=only}}'''70%'''. At '''143%''' {{Stat|Ability Strength}}, Sonic Boom can remove all armor.
+
+{{!}}-{{!}}
+
+Caliban = {{:Fusion Strike}}
+This ability converges three beams that implodes, leaving a field that permanently strips the target's armor by {{Stat|Ability Strength|icon=only}}'''50%'''. At '''200%''' {{Stat|Ability Strength}}, Fusion Strike can remove all armor.{{clr}}
+
+{{!}}-{{!}}
+
+Dagath = {{:Rakhali's Cavalry}}
+This ability sends forth five spectral horses that charge forward; enemies affected by {{A|Doom}} are permanently stripped of their armor by {{Stat|Ability Strength|icon=only}}'''35%''' per hit. At '''286%''' {{Stat|Ability Strength}}, a single hit of Rakhali's Calvary can remove all armor; however because the ability strikes multiple times, far less Strength is needed, with '''145%''' removing all armor from just two hits.{{clr}}
+
+{{!}}-{{!}}
+
+Ember = {{:Fire Blast}}
+This ability creates a wave of fire that expands outwards and permanently reduces the armor of enemies hit by {{Stat|Ability Strength|icon=only}}'''50% - 100%'''. The armor reduction depends linearly on the {{A|Immolation}} gauge, with a fully filled gauge resulting in the maximum armor reduction.
+
+It will also apply a {{D|Heat}} status effect on enemies, further reducing armor.{{clr}}
+
+{{!}}-{{!}}
+
+Follie = {{:Plein Air}}
+This ability ties enemies to balloons and permanently reduces their armor by {{Stat|Ability Strength|icon=only}}'''50%'''. At '''200%''' {{Stat|Ability Strength}}, Fusion Strike can remove all armor.{{clr}}
+
+{{!}}-{{!}}
+
+Frost = {{:Avalanche}}
+This ability freezes enemies and permanently reduces their armor by {{Stat|Ability Strength|icon=only}}'''60%''' for the duration of the effect. At '''167%''' {{Stat|Ability Strength}}, Avalanche can remove all armor.{{clr}}
+
+{{!}}-{{!}}
+
+Gauss = {{:Thermal Sunder}}
+
+This ability creates a field of {{D|Cold}} when ability tapped or a field of {{D|Heat}} when ability held. When used while {{A|Redline}} is active and the battery gauge is above 80%, stacking the two fields creates a {{D|Blast}} zone that instantly and permanently strips armor on cast, equal to the battery gauge up to '''100%''' at full battery.
+
+{{!}}-{{!}}
+
+Grendel = 
+{{#tag:tabber|
+Pulverize =
+{{:Pulverize}}
+This ability transforms Grendel into a mobile sphere that damage enemies on contact. Enemies impacted permanently lose {{Stat|Ability Strength|icon=only}}'''50%''' of their armor. At '''200%''' {{Stat|Ability Strength}}, Pulverize can remove all armor.
+
+{{!}}-{{!}}
+Regurgitate =
+{{:Regurgitate}}
+This ability augment spits out one enemy swallowed by {{A|Feast}} as a projectile, dealing damage over a wide radius. Enemies impacted permanently lose {{Stat|Ability Strength|icon=only}}'''75%''' of their armor. At '''134%''' {{Stat|Ability Strength}}, Regurgitate can remove all armor.
+}}
+
+{{!}}-{{!}}
+
+Hildryn = {{:Pillage}}
+
+This ability releases a pulse that permanently removes shields and armor by {{Stat|Ability Strength|icon=only}}'''25%''' to all enemies hit by the pulse. If the affected enemy has both shield and armor, shield is removed first.
+
+{{!}}-{{!}}
+
+Hydroid =
+{{Main|Hydroid/Abilities}}
+
+Hydroid's Passive increases {{D|Corrosive}}'s armor reduction to '''50%''' from the first stack, allowing full stacks to fully remove armor.
+
+Hydroid's abilities {{A|Tempest Barrage}}, {{A|Tidal Surge}}, and {{A|Tentacle Swarm}} inflict {{D|Corrosive}} damage and status.
+
+{{A|Plunder}} consumes all {{D|Corrosive}} status affecting the target to permanently remove armor while also granting a {{D|Corrosive}} damage bonus to Hydroid's abilities and weapons.
+
+{{!}}-{{!}}
+
+Jade = {{:Ophanim Eyes}}
+This ability releases a frontal conical gaze that permanently removes {{Stat|Ability Strength|icon=only}}'''10%''' armor per second.
+
+{{!}}-{{!}}
+
+Mag =
+{{#tag:tabber|
+Fracturing Crush =
+[[File:FracturingCrushMod.png|160px|right]]
+{{Main|Fracturing Crush}}
+This ability augment makes {{A|Crush}} strain the targets' armor, permanently reducing armor by {{Stat|Ability Strength|icon=only}}'''75%'''. At '''134%''' {{Stat|Ability Strength}}, Fracturing Crush can remove all armor.{{clr}}
+
+{{!}}-{{!}}
+Polarize =
+{{:Polarize}}
+This ability releases a pulse that permanently removes armor by {{Stat|Ability Strength|icon=only}}'''400''' points. If the affected enemy has both shield and armor, shield is removed first.
+}}
+
+{{!}}-{{!}}
+
+Nekros = {{:Terrify}}
+This ability causes affected enemies to flee and temporarily reduces their armor by {{Stat|Ability Strength|icon=only}}'''60%''' for the duration of the effect. At '''168%''' {{Stat|Ability Strength}}, Terrify can remove all armor from affected enemies.{{clr}}
+
+{{!}}-{{!}}
+
+Nyx = {{:Psychic Bolts}}
+This ability releases 6 telekinetic bolts that temporarily removes armor by {{Stat|Ability Strength|icon=only}}'''80%''' from up to 6 enemies in a single cast. At '''125%''' {{Stat|Ability Strength}}, Psychic Bolts can remove all armor.
+
+Psychic Bolts will be active for its duration until all affected enemies die. It can be recasted at any time but doing so will cancel debuff on currently affected enemies.
+
+{{!}}-{{!}}
+
+Oberon = {{:Smite}}
+This ability permanently removes all armor from a single target.
+{{:Reckoning}}
+This ability forcibly slams all nearby enemies into the ground while permanently reducing their armor by {{Stat|Ability Strength|icon=only}}'''60%'''. At '''167%''' {{Stat|Ability Strength}}, Reckoning can remove all armor.{{clr}}
+
+{{!}}-{{!}}
+
+Protea =
+[[File:TemporalErosionMod.png|160px|right]]
+{{Main|Temporal Erosion}}
+This ability augment makes {{A|Grenade Fan}} and {{A|Blaze Artillery}} permanently remove {{Stat|Ability Strength|icon=only}}'''10%''' armor per hit while {{A|Temporal Anchor}} is active.
+
+{{!}}-{{!}}
+
+Styanax = {{:Tharros Strike}}
+This ability hurls shields in a cone in front of Styanax that permanently strips the target's armor by {{Stat|Ability Strength|icon=only}}'''50%'''. At '''200%''' {{Stat|Ability Strength}}, Tharros Strike can remove all armor.{{clr}}
+
+{{!}}-{{!}}
+
+Trinity =
+[[File:AbatingLinkMod.png|160px|right]]
+{{Main|Abating Link}}
+This ability augment makes {{A|Link}} drain the targets' armor, temporarily reducing their armor values by {{Stat|Ability Strength|icon=only}}'''60%''' for the ability's duration. At '''168%''' {{Stat|Ability Strength}}, Abating Link can remove all armor.
+
+{{!}}-{{!}}
+
+Vauban = {{:Bastille}}
+Enemies suspended by {{A|Bastille}} will be permanently stripped of their armor at a rate of {{Stat|Ability Strength|icon=only}}'''10%''' per second.
+{{clr}}
+{{!}}-{{!}}
+
+Xaku = {{:The Lost}}
+'''Gaze''' binds one enemy to produce an aura that temporarily reduces enemy armor by {{Stat|Ability Strength|icon=only}}'''50%''' while they are within its aura. At '''200%''' {{Stat|Ability Strength}}, Gaze can remove all armor. Enemies will regain their armor if they leave the debuff field or the ability ends.
+{{clr}}
+}}
+
+====Focus====
+{{Transclude|Focus/Unairu#Caustic Strike}}
+
+===Percentage From Current Armor===
+====Heat Status Procs====
+{{Main|Heat Damage}}
+{{D|Heat}} status effects remove 50% of a target's current armor amount temporarily, for the duration of the status effect.
+
+====Corrosive Status Procs====
+{{Main|Corrosive Damage}}
+{{D|Corrosive}} status effects remove 26% of a target's armor amount for 8 seconds. This stacks up to 10 times, with each subsequent proc removing 6% armor for a total of 80%.
+
+===Flat Value From Base Armor===
+Sources that armor strip based on the base armor value of an enemy will remove a flat value from the base armor. This will affect the total armor an enemy will have.
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ShatteringImpactMod.png|link=Shattering Impact|{{M|Shattering Impact}} is a melee mod that removes '''6''' base armor when dealing {{D|Impact}} damage.
+AmalgamArgonakMetalAugerMod.png|link=Amalgam Argonak Metal Auger|{{M|Amalgam Argonak Metal Auger}} is an [[:Category:Amalgam Mods|Amalgam]] [[Weapon Augments|Weapon Augment]] mod exclusive for the {{Weapon|Argonak}} that removes '''6''' base armor when attacking with single [[:Category:Dagger|dagger]]s.
+</gallery>
+
+==Media==
+[[File:ArmorStrippingDemo.mp4|frame|Armor Stripping demo]]
+{{clr}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|36}}
+;Armor Adjustments
+
+'''Important Note: We have not changed player Armor. This only applies to enemy Armor!'''
+
+Enemy Armor scaling in its previous current iteration meant that Armor Stripping was almost an all-or-nothing game, especially at higher levels. This resulted in players focusing on Armor Stripping as a way to tackle Grineer at higher difficulty content. Our goal is to reduce some of the extreme damage reduction offered by Armor at high levels, and make partial Armor Stripping more feasible. 
+
+To do so, we are making the following changes: 
+*Armor has a maximum cap of 2700 Armor (90% Damage Reduction).
+*Armor has a minimum cap of 200 Armor.
+*Steel Path no longer increases Armor values.
+*Grineer enemies have increased Health scaling.
+*Altered the formula for Armor Reduction to increase the effectiveness of Partial Armor Stripping.
+**For reference, currently around 50% of Damage Resistance came from just 300 Armor, which is why complete Armor Strip felt so needed at higher levels.
+
+Additionally, our goal was to make partial Armor Stripping a more valuable tool. By capping enemy Armor and adjusting how Armor is calculated, a partial Armor Strip will allow players to engage with high-level Grineer more easily - meaning max Corrosion stacks against an Armored enemy (reducing the Armor by 80%) will feel more impactful due to the new distribution of Damage Resistance from Armor values). 
+
+Full Armor Strip is still valuable, but we wanted to even the playing field so players didn’t feel forced to build around it.
+
+{{ver|34}}
+;HYDROID REWORK
+
+'''Changing Impact and Magnetic Damage to Corrosive Damage and Status'''
+
+Previously, Tempest Barrage and Tidal Surge both dealt Impact damage, while Tentacle Swarm dealt Magnetic Damage. These have been changed to Corrosive Damage, which can apply Corrosive Status. Corroding Barrage has been a widely used Augment Mod by Hydroid players, which caused Corrosive Status for Tempest Barrage, and due to its popularity, we looked to incorporate its effect into Hydroid at a base level.
+
+We felt changing Damage to Corrosive Damage in Hydroid’s abilities makes them more thematic to the sea while also incorporating Corroding Barrage’s current effect in a meaningful way. With this change in mind, Corroding Barrage will now apply Viral Status instead of Corrosive - more details on that below.
+
+'''Passive Changes'''
+
+Hydroid’s previous Passive had a chance to spawn a tentacle when performing a melee slam attack. We have removed that passive entirely and replaced it with an entirely new effect.
+
+The nature of Hydroid’s previous Passive pushed players to a very specific playstyle (regular usage of melee slam attacks), while not guaranteeing anything useful from each individual slam. We wanted to make the passive feel more reliable and impactful.
+
+<u>New Passive:</u> Enemies damaged by Hydroid are more vulnerable to Corrosion Status, with initial status reducing armor by 50%. 
+
+Hydroid’s new Passive affects an enemy once Hydroid damages them, lasting until their death. It makes the first instance of Corrosive Status on an enemy remove 50% of their Armor rather than 26%. Not only does this make the first Corrosive Status stronger, but it also means Corrosion Status can reach 100% Armor Reduction with full stacks!
+
+To clarify, this means Hydroid does not need to apply all, or even any, of the Corrosive Status Effects on an enemy. As long as Hydroid has damaged the enemy, the Corrosive Status Effects can be applied from any source and will receive the benefit.
+
+'''Ability Changes'''
+
+'''Tempest Barrage:'''
+*The '''Corroding Barrage Augment Mod''' has been renamed Viral Tempest and now has a chance to apply a Viral Status Effect, rather than Corrosive Status Effect. It also no longer grants Ability Strength.
+**Changing the Impact Damage of Tempest Barrage to Corrosive Damage meant the Corrosive Status Effect from the Augment was already included. We changed this to Viral to maintain its relevance with the other changes. In light of the punch Corrosive and Viral packs in comparison to Corrosive and Impact, the Ability Strength buff was removed for balance purposes.
+
+'''Tidal Surge:'''
+*Tidal Surge now applies Corrosive Status Effects to enemies based on how long they are carried by its waves.
+
+'''Plunder:'''
+*A new ability added to Hydroid’s third ability slot.
+*All enemies in range will have Corrosive Status Effects remove their armor permanently, increasing Hydroid’s armor and granting bonus Corrosive damage to weapons. 
+**This ability is stronger based on the number of Corrosive Status Effects applied to the enemies affected by Plunder.
+**This means with a full stack of Corrosive Status Effects, their Armor will be removed permanently.
+
+{{ver|32.2}}
+;GRENDEL REWORK
+
+'''Feast'''
+*Replaced the Armor Reduction with 2% of their total Shields and Health overtime (does not scale).
+
+'''Pulverize'''
+*Added a 50% Armor Reduction (at max rank) to enemies struck by Pulverize (scales with Ability Strength Mods).
+
+'''Regurgitate'''
+*Added 75% Armor Reduction on Regurgitated enemies (scalable with Ability Strength Mods).
+
+'''''HUD Improvements:'''''<br />
+The following changes have been made to better communicate an enemy’s state to players via HUD improvements.
+
+*Added a new Armor icon indicator next to enemy Health bars in the HUD.   
+**This new icon not only better indicates that an enemy has Armor protection (in addition to their Health bar being yellow), but more specifically how much Armor they have. The icon changes based on three different thresholds to better communicate Armor values to players: 
+***1-499 Armor: No more than ~60% Damage Reduction from Armor 
+***500-2700 Armor: No more than ~90% Damage Reduction from Armor
+***2700+: More than 90% Damage Reduction from Armor
+**Additionally, as enemy’s Armor is stripped, the icon’s meter changes at 3 stages:
+***Full {{eql}} 100% Armor
+***Halfway {{eql}} 50% Armor
+***Empty {{eql}} 0% Armor
+
+{{ver|32}}
+;ARMOR CHANGES
+
+Armor is a fundamental part of Warframe’s balance, but the act of stripping armor has always been somewhat hard to gauge. Currently, when an armor stripping Ability is cast it uses the target’s current armor as the base for its calculation. This means that you may have to cast that Ability several times on the same enemy in order to strip their armor completely.
+
+Players have adapted to this system by maximizing Ability Strength to the point where the armor stripping effect is as close to 100% as possible - thus reducing the number of casts required to strip armor to one.
+
+In the effort of encouraging build diversity and streamlining the way that armor stripping abilities work, we are making the following changes:
+
+'''ALL Armor Stripping Warframe abilities now apply to the TOTAL armor value.'''
+
+'''How it worked before:''' You cast an ability that strips 50% Armor. The first cast will reduce the foe’s Armor to 50%, the second cast will reduce the armor to 25%, taking half of the existing 50%. This was the case for every ability except Oberon’s Reckoning, and special exceptions like Shattering Impact.
+
+'''How it works now:''' Casting an ability that strips 50% Armor will reduce their Armor to 50% on the first cast, and 0% on the second cast.
+
+This applies to every single Armor removal ability in the game. We have also buffed a few of these abilities in the process to bring them up to a usable level in light of these changes:
+*Increased Frost's Avalanche armor reduction from 40% to 60% and changed the armor reduction to be permanent.
+**Frost’s Avalanche can also now reduce armor from targets even if they are immune to crowd control abilities. 
+*Increase Nekros' Terrify armor reduction from 20% to 60%.
+*Increase Oberon's Reckoning armor reduction from 30% to 50%.
+*Changed Banshee's Sonic Fracture (Augment) armor reduction to be permanent.
+*Increase Mag's Fracturing Crush (Augment) armor reduction from 50% to 75%, remove the 80% cap per cast and change the armor reduction to be permanent.
+*Increase Trinity's Abating Link (Augment) armor reduction from 45% to 60%.
+}}
+
+==See Also==
+*[[Attributes]]
+*[[Enemy Level Scaling]]
+*[[Health]]
+
+{{DamageNav}}
+{{MechNav}}
+__NOTOC__
+[[de:Rüstung]]
+[[es:Armadura]]
+[[fr:Armure]]
+[[Category:Mechanics]]
+[[Category:Damage 2.0]]
+[[Category:Update 9]]
+[[Category:Armor]]
+[[Category:Outline Pages]]
+[[Category:Damage Reduction]]

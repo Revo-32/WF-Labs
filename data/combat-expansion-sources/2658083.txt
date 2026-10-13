@@ -1,0 +1,40 @@
+{{ModBox|name=Exalted Blade}}
+<section begin=intro />
+'''Exalted Blade''' is a unique [[Stance]] exclusive to {{Weapon|Exalted Blade}} that can only be acquired and used by activating {{WF|Excalibur}}'s fourth ability, {{A|Exalted Blade}}. This Stance overrides the Stance on any currently equipped melee weapon for as long as Exalted Blade remains active.
+<section end=intro />
+
+{{StanceTable|Name=Exalted Blade}}
+
+==Acquisition==
+*Exalted Blade is a [[:Category:Special Stance|unique stance]] that can only be temporarily obtained through the use of {{WF|Excalibur}}'s {{A|Exalted Blade}}. There are no other possible methods to obtain this stance.
+
+==Notes==
+*'''Judged Severance''' will make Excalibur perform a {{A|Radial Blind}} after the slide attack. This Radial Blind has less range and duration than the standard ability, and lacks the ability to open blinded enemies to finisher attacks, but otherwise has the same effect on enemies, and still costs Energy.
+*This stance can not be ranked up manually and instead ranks up with the ability rank of {{A|Exalted Blade}}. There is also no benefit to ranking up the stance.
+*'''Weightless Steel''' and '''Death's Mark''', despite being featured on all Swords, are the only attacks that don't feature the Exalted Blade's waves.
+
+==Trivia==
+*Exalted Blade is one of five identified stance mods that are exclusive to a Warframe instead of a weapon type, the other four being {{WF|Valkyr}}'s {{A|Hysteria}}, {{WF|Wukong}}'s {{A|Primal Fury}}, {{WF|Baruuk}}'s {{A|Serene Storm}}, and {{WF|1=Sevagoth}}'s {{A|1=Exalted Shadow}}.
+==Bugs==
+*The damage of Exalted Blade's energy waves is based on the damage multiplier of the combo that Excalibur is '''currently performing AS the energy wave hits''', and NOT based on the attack that actually created the energy wave. For example, if you shoot an energy wave with Lancing Justice (100% damage) and then start the first attack of Cutting Poise (300% damage) right before the wave hits, the energy wave will deal 300% damage despite being created by an attack with a 100% damage multiplier. If Excalibur is not currently performing any attack when a wave hits, the wave will deal 100% damage regardless of what attack created the wave. 
+
+==Media==
+{{VideoGallery
+|{{YouTube|umWK1LEXDSk|size=300px}}
+|{{YouTube|xS3Qlcmgtzo|size=300px}}
+}}
+
+==See Also==
+*{{A|Exalted Blade}}
+*{{Weapon|Exalted Blade}}, the exalted weapon that uses this stance.
+*{{WF|Excalibur}}
+
+{{StanceNav}}
+__NOTOC__
+[[de:Erhabene Klinge (Haltung)]]
+[[fr:Lame Exaltée (Posture)]]
+[[Category:Excalibur]]
+[[Category:Update 16]]
+[[Category:Special Stance]]
+[[Category:Exalted Weapon]]
+[[uk:Благородний клинок (модифікатор)]]

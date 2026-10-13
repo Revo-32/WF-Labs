@@ -1,0 +1,102 @@
+{{ModBox}}
+<section begin=intro />
+'''Chromatic Blade''' is a [[Warframe Augment Mod]] for {{WF|Excalibur}}'s {{A|Exalted Blade}} that increases {{Weapon|Exalted Blade}}'s [[status chance]] while changing its damage from physical damage to a [[Damage#Primary Elemental Damage|primary elemental]] damage depending on Excalibur's chosen [[Emissive Color|primary emission color]].<section end=intro />
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mods#Mod Rank|Rank]]
+! {{Stat|Ability Strength|icon=only}}[[Status chance]]
+! [[Mods#Mod Power Cost|Cost]]
+|-
+| 0 || 100% || 6
+|-
+| 1 || 200% || 7
+|-
+| 2 || 250% || 8
+|-
+| 3 || 300% || 9
+|}
+
+==Acquisition==
+*This mod can be acquired by attaining the rank of '''General''' under {{Faction|Steel Meridian}}, or the rank of '''Maxim''' under the {{Faction|Arbiters of Hexis}}, and spending {{sc|25000}} to purchase.
+
+==Notes==
+*[[Status chance]] bonus is additive with other status chance mods and is affected by {{stat|Ability Strength}}.
+**{{MathText|Total Status Chance {{eql}} Base status chance {{mul}} [1 + (Chromatic Blade Bonus {{mul}} (1 + Strength Mods)) + Status Mods]}}
+**For example, using a maxed {{M|Intensify}}, {{M|Drifting Contact}}, and Chromatic Blade results in:<br />{{Math|0.15 {{mul}} [1 + ({{M|Chromatic Blade|3}} {{mul}} {{M|Intensify|1.3}}) + {{M|Drifting Contact|0.4}}]|p=y|t=y|bf=y}} status chance<br>
+**Achieving 100% status chance without any status chance mods requires '''189%'''{{stat|Ability Strength}}.
+*Chromatic Blade's color selection is based on Excalibur's [[Warframe Cosmetics#Colors|primary emission color]]:
+**White, grey, black, and some faded colors make {{D|Cold}}.
+**Blue and purple hues make {{D|Electricity}}.
+**Red, magenta, brown, orange, and bright yellow hues make {{D|Heat}}.
+**Green, lime, teal, and dark yellow hues make {{D|Toxin}}.
+**Purchasing color palettes is '''not''' required to unlock all the elemental options.
+**While customizing Excalibur's emission color, Chromatic Blade's active element is indicated by an icon ({{D|Heat|}}, {{D|Electricity|}}, {{D|Toxin|}}, {{D|Cold|}}). This [http://imgur.com/a/FVUu2 imgur album] can serve as a reference for future color palette purchases.
+**Customizing the secondary emission and the energy colors will have no effect.
+**The [[Arthur Gemini Skin]] swaps between appearance configs, allowing the player to color for two separate elements and swap between them with the Gemini [[Emote]].
+*Chromatic Blade's elemental damage replaces the innate physical elements and will combine with any elemental damage modded on {{Weapon|Exalted Blade}}.
+*Physical damage mods will no longer affect Exalted Blade's damage with Chromatic Blade equipped.
+
+==Bugs==
+*In the [[Simulacrum]], Chromatic Blade's bonus is applied twice, i.e., at 100% Ability Strength it gives '''+600%''' status chance instead of only '''+300%'''.
+*For unknown reasons, the element type given by the augment is sometimes shown as Electricity (and forms electric-based compound elements) regardless of emissive color.
+*Chromatic Blade's elemental change does not affect Exalted Blade's slam attacks.
+
+==Tips==
+*Although Chromatic Blade removes all Physical Damage, it is still possible to inflict {{D|Impact}} procs through the '''Cutting Poise''' combo of Exalted Blade's [[Exalted Blade (Stance)|stance]].
+*Due to the large [[status chance]] boost this augment gives, it pairs well with {{M|Condition Overload}}. Furthermore, players can forgo dual status-elemental mods, such as {{M|Volcanic Edge}}, and use mods that only increase Elemental Damage, like {{M|Molten Impact}}, to further increase Exalted Blade's total damage.
+*The status chance boost also simplifies creating a Crit-Status hybrid build, as status chance mods are no longer necessary.
+
+==Trivia==
+*Chromatic Blade is the only one of Excalibur's augments not to feature him with his [[Immortal Skin Bundle|Immortal Skin]] and [[Excalibur Pendragon Helmet|Pendragon Helmet]] equipped on the mod card.
+*The name of the augment comes from the Greek word ''Chroma'', meaning colour.
+
+==Maximization==
+{{WFmax|main|excalibur4_aug}}
+
+==Media==
+This person edited the wiki to promote their youtube channel, avoid engaging and don't follow their channel. 
+{{VideoGallery
+|{{YouTube|7Ui_tUZ8HDo|size=300px}}
+}}
+
+==External Links==
+*[http://imgur.com/a/FVUu2 Chroma's elements with their corresponding colors imgur album by TiffyGames] (works for Chromatic Blade too)
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42.0.9}}
+*Fixed Excalibur's Chromatic Blade Augment not applying to Exalted Blade's heavy attacks.
+
+{{ver|40}}
+*Fixed Umbra NPC not using the correct Chromatic Blade element.
+
+{{ver|27.2.2}}
+*Increased the base Status Chance of Exalted Blade to 15% (from 10%), while also changing the Chromatic Blade Augment to stack in the same manner other Status Mods do. This was missed in the Status changes but is a necessary change now. The following reflects the new Maximum:
+**Chromatic Blade 50% to 300% Status Chance
+
+{{ver|21.2}}
+*Fixed Excalibur’s Chromatic Blade Augment not adding Elemental FX to the energy wave.
+
+{{ver|Chains of Harrow}}
+*Fixed Chromatic Blade Augment not applying elemental FX on Exalted Blade’s projectiles.
+
+{{ver|20.7}}
+*Introduced.
+}}
+{{ver/Lu|22.20.9.2}}
+{{AugmentNav}}
+[[de:Chromatische Klinge]]
+[[es:Espada cromática]]
+[[fr:Lame Chromatique]]
+[[ru:Хроматический Клинок]]
+[[Category:Mods]]
+[[Category:Rare Mods]]
+[[Category:Warframe Mods]]
+[[Category:Augment Mods]]
+[[Category:Syndicate Offerings]]
+[[Category:Excalibur]]
+[[Category:Update 20]]
+[[Category:Zenurik Mods]]
+[[uk:Барвистий клинок]]

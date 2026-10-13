@@ -1,0 +1,26 @@
+WF Labs 배포 구성요소 고지
+
+WF Labs는 Digital Extremes의 공식 제품이 아닙니다.
+Warframe 관련 이름·게임 자료의 권리는 원권리자에게 있습니다.
+
+내장 데이터:
+- WARFRAME Wiki contributors: CC BY-NC-SA 3.0. WF-WIKI-NOTICE.txt 참조.
+- WFCD 자료: WFCD-LICENSE.txt 참조.
+- Digital Extremes Public Export: PUBLIC-EXPORT-NOTICE.txt 참조.
+
+폰트:
+- Wanted Sans: Fonts/OFL.txt 및 Fonts/SOURCE.txt 참조.
+- 수학 공식은 시스템에 설치된 Cambria Math를 참조하며 해당 폰트 파일을 재배포하지 않습니다.
+
+설치 및 업데이트:
+- Velopack 1.2.161, Copyright © Velopack Ltd. MIT License.
+  함께 포함된 VELOPACK-LICENSE.txt와 https://github.com/velopack/velopack 참조.
+
+런타임:
+- Microsoft .NET 8 / Windows Desktop Runtime. 배포 폴더의 licenses 아래
+  Microsoft.NETCore.App.Runtime.win-x64와 Microsoft.WindowsDesktop.App.Runtime.win-x64
+  고지 파일을 참조합니다. 런타임은 self-contained 배포에 포함됩니다.
+
+WF Labs 자체 소스는 공개 열람용이며 별도의 재사용 라이선스를 부여하지 않았습니다.
+COPYRIGHT.md를 참조하세요.
+이 문서는 타사 자료의 권리나 사용 조건을 변경하지 않습니다.

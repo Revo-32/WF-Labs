@@ -1,0 +1,25 @@
+{
+  "retrievedAt": "2026-10-10",
+  "sources": [
+    {
+      "title": "Stance",
+      "revision": 2815208,
+      "timestamp": "2026-10-02T07:54:09Z",
+      "url": "https://wiki.warframe.com/w/Stance?oldid=2815208",
+      "sha256": "9cc6ce5e131febd4d2387b60da9f74a1245060d7c5c71f996ac941db0b900c0b"
+    },
+    {
+      "title": "Module:Stances",
+      "revision": 2806748,
+      "timestamp": "2026-09-10T03:18:43Z",
+      "url": "https://wiki.warframe.com/w/Module:Stances?oldid=2806748",
+      "sha256": "a9c450796de09cbe1b77dc19284bb0dbcae9c7fe0a3e610130883437a84a5391"
+    }
+  ],
+  "rules": [
+    "Additional stance physical multipliers apply to their matching physical component only.",
+    "Combo duration is divided by modded attack speed.",
+    "Zero-damage animation entries preserve combo duration without counting as damaging hits.",
+    "No per-hit timestamps are inferred; TTK reports the enclosing combo interval."
+  ]
+}

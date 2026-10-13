@@ -1,0 +1,1287 @@
+---	'''Modular''' retrieves and stores [[Modular]] data of [[WARFRAME]].<br/>
+--	
+--	On this Wiki, Modular is used in:
+--	* [[Zaw]]
+--	* [[Kitgun]]
+--	* [[MOA (Companion)]]
+--	* [[Hound (Companion)]]
+--	
+--	@module		modular
+--	@alias		p
+--  @author		[[User:Croquemorttime|Croquemorttime]]
+--	@image		IconCraftingKitgunChamber.png
+--	@require	[[Module:Modular/data]]
+--	@require	[[Module:Math]]
+--	@release	stable
+--  <nowiki>
+
+local p = {}
+
+local ModularData = mw.loadData('Module:Modular/data')
+local Math = require('Module:Math')
+
+-- TODO: Could just make these maps into arrays; iterating over arrays using ipairs
+-- will still iterate in the order that the elements appear in.
+local DamageList={
+    ["Impact"]=1,
+    ["Puncture"]=2,
+    ["Slash"]=3,
+    ["Cold"]=4,
+    ["Electricity"]=5,
+    ["Heat"]=6,
+    ["Toxin"]=7,
+    ["Blast"]=8,
+    ["Corrosive"]=9,
+    ["Gas"]=10,
+    ["Magnetic"]=11,
+    ["Radiation"]=12,
+    ["Viral"]=13,
+    ["True"]=14,
+    ["Void"]=15,
+    ["Tau"]=16,
+    }
+local ZawStrikeList={
+    ["Balla"]=1,
+    ["Cyath"]=2,
+    ["Dehtat"]=3,
+    ["Dokrahm"]=4,
+    ["Kronsh"]=5,
+    ["Mewan"]=6,
+    ["Ooltha"]=7,
+    ["Rabvee"]=8,
+    ["Sepfahn"]=9,
+    ["Plague Keewar"]=10,
+    ["Plague Kripath"]=11,
+    }
+local ZawGripList={
+    ["Korb"]=1,
+    ["Kwath"]=2,
+    ["Laka"]=3,
+    ["Peye"]=4,
+    ["Plague Akwin"]=5,
+    ["Jayap"]=6,
+    ["Kroostra"]=7,
+    ["Seekalla"]=8,
+    ["Shtung"]=9,
+    ["Plague Bokwin"]=10,
+    }
+local ZawLinkList={
+    ["Jai"]=1,
+    ["Ruhang"]=2,
+    ["Jai II"]=3,
+    ["Ruhang II"]=4,
+    ["Vargeet Jai"]=5,
+    ["Vargeet Ruhang"]=6,
+    ["Ekwana Jai"]=7,
+    ["Ekwana Ruhang"]=8,
+    ["Vargeet II Jai"]=9,
+    ["Vargeet II Ruhang"]=10,
+    ["Ekwana II Jai"]=11,
+    ["Ekwana II Ruhang"]=12,
+    ["Vargeet Jai II"]=13,
+    ["Vargeet Ruhang II"]=14,
+    ["Ekwana Jai II"]=15,
+    ["Ekwana Ruhang II"]=16,
+    }
+local KitgunChamberList={
+    ["Catchmoon"]=1,
+    ["Gaze"]=2,
+    ["Rattleguts"]=3,
+    ["Tombfinger"]=4,
+    ["Sporelacer"]=5,
+    ["Vermisplicer"]=6,
+    }
+local KitgunGripList={
+    ["Gibber"]=1,
+    ["Ramble"]=2,
+    ["Lovetap"]=3,
+    ["Haymaker"]=4,
+    ["Ulnaris"]=5,
+    }
+local KitgunPrimaryGripList={
+    ["Brash"]=1,
+    ["Shrewd"]=2,
+    ["Steadyslam"]=3,
+    ["Tremor"]=4,
+    ["Palmaris"]=5,
+    }
+local KitgunLoaderList={
+    ["Bashrack"]=1,
+    ["Bellows"]=2,
+    ["Deepbreath"]=3,
+    ["Flutterfire"]=4,
+    ["Killstream"]=5,
+    ["Ramflare"]=6,
+    ["Slap"]=7,
+    ["Slapneedle"]=8,
+    ["Sparkfire"]=9,
+    ["Splat"]=10,
+    ["Stitch"]=11,
+    ["Swiftfire"]=12,
+    ["Thunderdrum"]=13,
+    ["Zip"]=14,
+    ["Zipfire"]=15,
+    ["Zipneedle"]=16,
+    ["Arcroid"]=17,
+    ["Macro Arcroid"]=18,
+    ["Macro Thymoid"]=19,
+    ["Thymoid"]=20,
+    }
+local MOACoreList={
+    ["Drex"]=1,
+    ["Alcrom"]=2,
+    ["Krisys"]=3,
+    ["Lehan"]=4,
+    }
+local MOAGyroList={
+    ["Aegron"]=1,
+    ["Atheca"]=2,
+    ["Harpen"]=3,
+    ["Hextra"]=4,
+    ["Munit"]=5,
+    ["Phazor"]=6,
+    ["Trux"]=7,
+    ["Tyli"]=8,
+    }
+local HoundBracketList={
+	["Cela"]=1,
+	["Urga"]=2,
+	["Zubb"]=3,
+	}
+local HoundCoreList={
+	["Adlet"]=1,
+	["Garmr"]=2,
+	["Raiju"]=3,
+	}
+
+local function ordertable(InTable,SortingHat)
+    local result={}
+    local altorder={}
+    
+    for DT, i in pairs(SortingHat) do
+        table.insert(altorder,"0")
+    end
+    
+    for i, DT in ipairs(InTable) do
+        altorder[SortingHat[DT]]=DT
+    end
+    for i, DT in ipairs(altorder) do
+        if altorder[i]~="0" then
+            table.insert(result,DT)
+        end
+    end
+ --   for i, val in ipairs(InTable) do mw.log(i,val) end
+ --   for i, val in ipairs(altorder) do mw.log(i,val) end
+ --   for i, val in ipairs(result) do mw.log(i,val) end
+    return result
+end
+ 
+local function asMultiplier(val)
+    if(val == nil) then
+        return "1.0x"
+    end
+    return Math.round(val, 0.1).."x"
+end
+
+local function getValue(Type,PrimaryName,SecondaryName,TertiaryName,ValName,AsString)
+    local result=''
+    local PrimaryType=nil
+    local SecondaryType=nil
+    local TertiaryType=nil
+    
+    if Type=="KitgunSecondary" then
+        PrimaryType="Chamber"
+        SecondaryType="Grip"
+        TertiaryType="Loader"
+    end
+    if Type=="KitgunPrimary" then
+        PrimaryType="Chamber"
+        SecondaryType="Grip"
+        TertiaryType="Loader"
+    end
+    if Type=="Zaw" then
+        PrimaryType="Strike"
+        SecondaryType="Grip"
+        TertiaryType="Link"
+    end
+    if Type=="MOA" then
+        PrimaryType="Bracket"
+        SecondaryType="Core"
+        TertiaryType="Gyro"
+    end
+	if Type=="Hound" then
+		PrimaryType="Stabilizer"
+		SecondaryType="Core"
+		TertiaryType="Bracket"
+	end
+    if PrimaryType==nil then return "Error: Wrong Type <br/>" end
+
+    
+    local ValNameAlt=ValName
+    if (DamageList[ValName]~=nil) then ValName="SingleDamage" end
+
+    if ValName=="StrikeName" then
+        if (ModularData[Type][PrimaryType][PrimaryName]["Name"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName]["Name"]
+            if AsString then
+                return '[['..result..']]'
+            else
+                return result
+            end
+        end
+    end   
+    if ValName=="ChamberName" then
+        if (ModularData[Type][PrimaryType][PrimaryName]["Name"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName]["Name"]
+            if AsString then
+                return '[['..result..']]'
+            else
+                return result
+            end
+        end
+    end  
+    if ValName=="BracketName" then
+		if Type=="Hound" then
+			if (ModularData[Type][TertiaryType][TertiaryName]["Name"]==nil) then 
+				if AsString then
+					return "N/A"
+				else
+					return 0
+				end
+			else
+				result=ModularData[Type][TertiaryType][TertiaryName]["Name"]
+				if AsString then
+					return '[[Bracket#'..result..'|'..result..']]'
+				else
+					return result
+				end
+			end
+		else
+			if (ModularData[Type][PrimaryType][PrimaryName]["Name"]==nil) then 
+				if AsString then
+					return "N/A"
+				else
+					return 0
+				end
+			else
+				result=ModularData[Type][PrimaryType][PrimaryName]["Name"]
+				if AsString then
+					return '[[Bracket#'..result..'|'..result..']]'
+				else
+					return result
+				end
+			end
+		end
+    end 
+    if ValName=="StabilizerName" then
+        if (ModularData[Type][PrimaryType][PrimaryName]["Name"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName]["Name"]
+            if AsString then
+                return '[[Stabilizer_(Component)#'..result..'|'..result..']]'
+            else
+                return result
+            end
+        end
+    end 
+    if ValName=="GripName" then
+        if (ModularData[Type][SecondaryType][SecondaryName]["Name"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][SecondaryType][SecondaryName]["Name"]
+            if AsString then
+                return '[['..result..']]'
+            else
+                return result
+            end
+        end
+    end 
+    if ValName=="CoreName" then
+        if (ModularData[Type][SecondaryType][SecondaryName]["Name"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][SecondaryType][SecondaryName]["Name"]
+            if AsString then
+                return '[[Core_(Component)#'..result..'|'..result..']]'
+            else
+                return result
+            end
+        end
+    end 
+    if ValName=="LinkName" then
+        if (ModularData[Type][TertiaryType][TertiaryName]["Name"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][TertiaryType][TertiaryName]["Name"]
+            if AsString then
+                return '[['..result..']]'
+            else
+                return result
+            end
+        end
+    end    
+    if ValName=="LoaderName" then
+        if (ModularData[Type][TertiaryType][TertiaryName]["Name"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][TertiaryType][TertiaryName]["Name"]
+            if AsString then
+                return '[['..result..']]'
+            else
+                return result
+            end
+        end
+    end    
+    if ValName=="GyroName" then
+        if (ModularData[Type][TertiaryType][TertiaryName]["Name"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][TertiaryType][TertiaryName]["Name"]
+            if AsString then
+                return '[[Gyro#'..result..'|'..result..']]'
+            else
+                return result
+            end
+        end
+    end  
+    if (Type=="Zaw" and ValName=="Damage") then
+        if (ModularData[Type][PrimaryType][PrimaryName][ValName]==nil) then 
+            if AsString then
+                return "0"
+            else
+                return 0
+            end
+        else
+            result=0
+            for i, dmg in pairs(ModularData[Type][PrimaryType][PrimaryName][ValName]) do
+                result=result+dmg
+            end
+            result=result+ModularData[Type][SecondaryType][SecondaryName][ValName]
+            result=result+ModularData[Type][TertiaryType][TertiaryName][ValName]
+            local GripType=ModularData[Type][SecondaryType][SecondaryName]["Type"]
+            result=result*ModularData[Type][PrimaryType][PrimaryName]["Multi"][GripType]["Base"]
+            if AsString then
+                return ''..Math.round(result,0.1)..''
+            else
+                return result
+            end
+        end
+    end
+    if (Type=="Zaw" and ValName=="SingleDamage") then
+        if (ModularData[Type][PrimaryType][PrimaryName]["Damage"][ValNameAlt]==nil) then 
+            if AsString then
+                return "0"
+            else
+                return 0
+            end
+        else
+            local totaldamage=getValue(Type,PrimaryName,SecondaryName,TertiaryName,"Damage",false)
+            local basedamage=0
+            for i, dmg in pairs(ModularData[Type][PrimaryType][PrimaryName]["Damage"]) do
+                basedamage=basedamage+dmg
+            end
+            if(PrimaryName=="Plague Kripath" or PrimaryName=="Plague Keewar") then
+                result=ModularData[Type][PrimaryType][PrimaryName]["Damage"][ValNameAlt]+(totaldamage-basedamage)/4
+            else    
+                result=ModularData[Type][PrimaryType][PrimaryName]["Damage"][ValNameAlt]*totaldamage/basedamage
+            end
+            
+            if AsString then
+                return ''..Math.round(result,0.1)..''
+            else
+                return result
+            end
+        end
+    end
+    if (Type=="Zaw" and ValName=="SlideDamage") then
+        if (ModularData[Type][PrimaryType][PrimaryName]["Damage"]==nil) then 
+            if AsString then
+                return "0"
+            else
+                return 0
+            end
+        else
+            local totaldamage=getValue(Type,PrimaryName,SecondaryName,TertiaryName,"Damage",false)
+            local GripType=ModularData[Type][SecondaryType][SecondaryName]["Type"]
+            result=totaldamage*ModularData[Type][PrimaryType][PrimaryName]["Multi"][GripType]["Slide"]
+            
+            if AsString then
+                return ''..Math.round(math.floor(result),0.1)..''
+            else
+                return result
+            end
+        end
+    end
+    if (Type=="KitgunSecondary" and ValName=="Damage") then
+        if (ModularData[Type][PrimaryType][PrimaryName][ValName][SecondaryName]==nil) then 
+            if AsString then
+                return "0"
+            else
+                return 0
+            end
+        else
+            result=0
+            for i, dmg in pairs(ModularData[Type][PrimaryType][PrimaryName][ValName][SecondaryName]) do
+                result=result+dmg
+            end
+            if AsString then
+                return ''..Math.round(result,0.1)..''
+            else
+                return result
+            end
+        end
+    end
+    if (Type=="KitgunSecondary" and ValName=="SingleDamage") then
+        if (ModularData[Type][PrimaryType][PrimaryName]["Damage"][SecondaryName][ValNameAlt]==nil) then 
+            if AsString then
+                return "0"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName]["Damage"][SecondaryName][ValNameAlt]
+            if AsString then
+                return ''..Math.round(result,0.1)..''
+            else
+                return result
+            end
+        end
+    end
+    
+    if (Type=="KitgunPrimary" and ValName=="Damage") then
+        if (ModularData[Type][PrimaryType][PrimaryName][ValName][SecondaryName]==nil) then 
+            if AsString then
+                return "0"
+            else
+                return 0
+            end
+        else
+            result=0
+            for i, dmg in pairs(ModularData[Type][PrimaryType][PrimaryName][ValName][SecondaryName]) do
+                result=result+dmg
+            end
+            if AsString then
+                return ''..Math.round(result,0.1)..''
+            else
+                return result
+            end
+        end
+    end
+    if (Type=="KitgunPrimary" and ValName=="SingleDamage") then
+        if (ModularData[Type][PrimaryType][PrimaryName]["Damage"][SecondaryName][ValNameAlt]==nil) then 
+            if AsString then
+                return "0"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName]["Damage"][SecondaryName][ValNameAlt]
+            if AsString then
+                return ''..Math.round(result,0.1)..''
+            else
+                return result
+            end
+        end
+    end
+    
+    if ValName=="CritChance" then
+        if (ModularData[Type][PrimaryType][PrimaryName][ValName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName][ValName]
+            if (ModularData[Type][TertiaryType][TertiaryName][ValName]~=nil) then
+                result=result+ModularData[Type][TertiaryType][TertiaryName][ValName]
+            end
+            if AsString then
+                return Math.percentage(result)
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="CritMultiplier" then
+        if (ModularData[Type][PrimaryType][PrimaryName][ValName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName][ValName]
+            if (ModularData[Type][TertiaryType][TertiaryName][ValName]~=nil) then
+                result=result+ModularData[Type][TertiaryType][TertiaryName][ValName]
+            end
+            if AsString then
+                return asMultiplier(result)
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="StatusChance" then
+        if (ModularData[Type][PrimaryType][PrimaryName][ValName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName][ValName]
+            if (ModularData[Type][TertiaryType][TertiaryName][ValName]~=nil) then
+                result=result+ModularData[Type][TertiaryType][TertiaryName][ValName]
+            end
+            if AsString then
+                return Math.percentage(result)
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="FireRate" then
+        if (ModularData[Type][PrimaryType][PrimaryName][ValName][SecondaryName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName][ValName][SecondaryName]
+            if AsString then
+                return ''..(result)..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="Magazine" then
+        if (ModularData[Type][PrimaryType][PrimaryName][ValName]==nil or ModularData[Type][TertiaryType][TertiaryName][ValName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][PrimaryType][PrimaryName][ValName][ModularData[Type][TertiaryType][TertiaryName][ValName]]
+            if AsString then
+                return ''..(result)..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="Speed" then
+        if (ModularData[Type][SecondaryType][SecondaryName][ValName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][SecondaryType][SecondaryName][ValName]
+            result=result+ModularData[Type][TertiaryType][TertiaryName][ValName]
+            result=result+ModularData[Type][PrimaryType][PrimaryName][ValName]
+            if AsString then
+                return ''..(Math.round(result,0.001))..''
+            else
+                return result
+            end
+        end
+    end
+	if ValName=="Health" then
+		if (ModularData[Type][SecondaryType][SecondaryName][ValName]==nil) then 
+			if AsString then
+				return "N/A"
+            else
+                return 0
+            end
+        else
+			result=ModularData[Type][SecondaryType][SecondaryName][ValName]
+			if Type=="Hound" then
+				result=result*(1+ModularData[Type][TertiaryType][TertiaryName][ValName])
+			else
+				result=result+ModularData[Type][TertiaryType][TertiaryName][ValName]
+				result=350*(1+result)
+			end
+            if AsString then
+                return ''..(Math.round(result,1))..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="Shield" then
+        if (ModularData[Type][SecondaryType][SecondaryName][ValName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][SecondaryType][SecondaryName][ValName]
+			if Type=="Hound" then
+				result=result*(1+ModularData[Type][TertiaryType][TertiaryName][ValName])
+			else
+				result=result+ModularData[Type][TertiaryType][TertiaryName][ValName]
+				result=350*(1+result)
+			end
+            if AsString then
+                return ''..(Math.round(result,1))..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="Armor" then
+        if (ModularData[Type][SecondaryType][SecondaryName][ValName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][SecondaryType][SecondaryName][ValName]
+			if Type=="Hound" then
+				result=result*(1+ModularData[Type][TertiaryType][TertiaryName][ValName])
+            else
+				result=result+ModularData[Type][TertiaryType][TertiaryName][ValName]
+				result=350*(1+result)
+			end
+            if AsString then
+                return ''..(Math.round(result,1))..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="HealthG" then
+        if (ModularData[Type][SecondaryType][SecondaryName]["Health"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+			result=ModularData[Type][SecondaryType][SecondaryName]["Health"]
+			if Type=="Hound" then
+				result=result*(1+ModularData[Type][TertiaryType][TertiaryName]["Health"]*2)
+			else
+				result=result+ModularData[Type][TertiaryType][TertiaryName]["Health"]
+				result=350*(1+result*2)
+			end
+            if AsString then
+                return ''..(Math.round(result,1))..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="ShieldG" then
+        if (ModularData[Type][SecondaryType][SecondaryName]["Shield"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+			result=ModularData[Type][SecondaryType][SecondaryName]["Shield"]
+			if Type=="Hound" then
+				result=result*(1+ModularData[Type][TertiaryType][TertiaryName]["Shield"]*2)
+			else
+				result=result+ModularData[Type][TertiaryType][TertiaryName]["Shield"]
+				result=350*(1+result*2)
+			end
+            if AsString then
+                return ''..(Math.round(result,1))..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="ArmorG" then
+        if (ModularData[Type][SecondaryType][SecondaryName]["Armor"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+			result=ModularData[Type][SecondaryType][SecondaryName]["Armor"]
+			if Type=="Hound" then
+				result=result*(1+ModularData[Type][TertiaryType][TertiaryName]["Armor"]*2)
+			else
+				result=result+ModularData[Type][TertiaryType][TertiaryName]["Armor"]
+				result=350*(1+result*2)
+			end
+            if AsString then
+                return ''..(Math.round(result,1))..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="EHPG" then
+        if (ModularData[Type][SecondaryType][SecondaryName]["Health"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+			result=ModularData[Type][SecondaryType][SecondaryName]["Health"]
+			armor=ModularData[Type][SecondaryType][SecondaryName]["Armor"]
+			shield=ModularData[Type][SecondaryType][SecondaryName]["Shield"]
+			if Type=="Hound" then
+				result=result*(1+ModularData[Type][TertiaryType][TertiaryName]["Health"]*2)
+				armor=armor*(1+ModularData[Type][TertiaryType][TertiaryName]["Armor"]*2)
+				shield=shield*(1+ModularData[Type][TertiaryType][TertiaryName]["Shield"]*2)
+				result=result*((armor+300)/300)+shield
+			else
+				result=result+ModularData[Type][TertiaryType][TertiaryName]["Health"]
+				armor=armor+ModularData[Type][TertiaryType][TertiaryName]["Armor"]
+				shield=shield+ModularData[Type][TertiaryType][TertiaryName]["Shield"]
+				result=350*(1+result*2)
+				armor=350*(1+armor*2)
+				shield=350*(1+shield*2)
+				result=result*((armor+300)/300)+shield*2
+			end
+            if AsString then
+                return ''..(Math.round(result,1))..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="EHP_CRG" then --when using Calculated Redirection
+        if (ModularData[Type][SecondaryType][SecondaryName]["Health"]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+			result=ModularData[Type][SecondaryType][SecondaryName]["Health"]
+			armor=ModularData[Type][SecondaryType][SecondaryName]["Armor"]
+			shield=ModularData[Type][SecondaryType][SecondaryName]["Shield"]
+			if Type=="Hound" then
+				result=result*(1+ModularData[Type][TertiaryType][TertiaryName]["Health"]*2)
+				armor=armor*(1+ModularData[Type][TertiaryType][TertiaryName]["Armor"]*2)
+				shield=shield*(1+2.5+ModularData[Type][TertiaryType][TertiaryName]["Shield"]*2)
+				result=result*((armor+300)/300)+shield
+			else
+				result=result+ModularData[Type][TertiaryType][TertiaryName]["Health"]
+				armor=armor+ModularData[Type][TertiaryType][TertiaryName]["Armor"]
+				shield=shield+ModularData[Type][TertiaryType][TertiaryName]["Shield"]
+				result=350*(1+result*2)
+				armor=350*(1+armor*2)
+				shield=350*(1+shield*2)
+				result=result*((armor+300)/300)+shield*2*3.5
+			end
+            if AsString then
+                return ''..(Math.round(result,1))..''
+            else
+                return result
+            end
+        end
+    end
+    if ValName=="Reload" then
+        if (ModularData[Type][TertiaryType][TertiaryName][ValName]==nil) then 
+            if AsString then
+                return "N/A"
+            else
+                return 0
+            end
+        else
+            result=ModularData[Type][TertiaryType][TertiaryName][ValName]
+            if AsString then
+                return ''..(Math.round(result,0.1))..'s'
+            else
+                return result
+            end
+        end
+    end
+-- you really shouldn't be here after all
+    return 'Nothing Returned'
+
+end
+
+
+local function BuildKitgunRow(Head,Type,PrimaryName,SecondaryName,TertiaryName)
+    local styleString = ""--"border: 1px solid lightgray;"
+    local td = ''
+    local result = ''
+    local ValNameZ = nil
+    local ValName = nil
+    
+        
+    	result = '\n|-\n|'
+    	
+        for i, Hline in ipairs(Head) do
+            ValName = Hline[1]
+            
+            if(i == 1) then td = '' else td='||' end
+            if(getValue(ChamberName,GripName,LoaderName,ValName,false)~=nil) then
+                local Value=getValue(Type,PrimaryName,SecondaryName,TertiaryName,ValName,false)
+                local ValueS=getValue(Type,PrimaryName,SecondaryName,TertiaryName,ValName,true)
+                --Add a data sort value if requested
+                if(Hline[2]) then 
+                    result = result..td..'data-sort-value="'..Value..'" style="'..styleString..'"|'..ValueS
+                else
+                    result = result..td..'style="'..styleString..'"|'..ValueS
+                end
+            else 
+                result = result..td..'style = "'..styleString..'"|'.."N/A" 
+            end
+        end
+    return result
+end
+
+
+local function BuildKitgunTable(Head,Type,PrimaryNames,SecondaryNames,TertiaryNames)
+    local styleString = "border: 1px solid black;border-collapse: collapse;"
+    local tHeader = ""
+    tHeader = tHeader..'\n{| cellpadding="1" cellspacing="0" class="wikitable sortable" style="font-size:11px;"'
+	for i, Hline in ipairs(Head) do
+		if(Hline[2] == true) then
+			tHeader = tHeader..'\n! data-sort-type="number" style="'..styleString..'"|'..Hline[3]..''
+		else
+			tHeader = tHeader..'\n! style="'..styleString..'"|'..Hline[3]..'' 
+		end
+	end
+--	mw.log(tHeader)
+
+    local tRows = ""
+    for k, PrimaryName in ipairs(PrimaryNames) do
+        for j, SecondaryName in ipairs(SecondaryNames) do
+            for i, TertiaryName in ipairs(TertiaryNames) do
+                rowStr = BuildKitgunRow(Head,Type,PrimaryName,SecondaryName,TertiaryName)
+                tRows = tRows..rowStr
+            end     
+        end
+    end
+
+--    mw.log(tRows)
+    return  tHeader..tRows.."\n|}[[Category:Automatic Comparison Table]]"
+end
+
+function p.getKitgunTable(frame)
+    local ChamberName=frame.args ~= nil and frame.args[1]
+    local SecondaryName=frame.args ~= nil and frame.args[2]
+
+    --parameter validation
+    if (ModularData["KitgunSecondary"]["Chamber"][ChamberName]==nil) then return "Error : Wrong Chamber name<br/>" end
+    if (SecondaryName~="All" and SecondaryName~="Grips" and SecondaryName~="Loaders" 
+    	and ModularData["KitgunSecondary"]["Grip"][SecondaryName]==nil) then return "Error : Wrong Grip name<br/>" end
+    
+    --list of damage types on chamber
+    local DamageTypes={}
+    for DT, val in pairs(ModularData["KitgunSecondary"]["Chamber"][ChamberName]["Damage"]["Base"]) do
+        table.insert(DamageTypes,DT)
+    end
+    DamageTypes=ordertable(DamageTypes,DamageList)
+    
+    local Type="KitgunSecondary"
+    local ChamberNames={ChamberName}
+    
+    local GripNames={}
+    if (SecondaryName=="All" or SecondaryName=="Grips") then
+        for i, grip in pairs(ModularData[Type]["Grip"]) do
+            table.insert(GripNames,grip["Name"])
+        end  
+	    GripNames=ordertable(GripNames,KitgunGripList)
+    else
+    	if (SecondaryName~="Loaders") then
+        	GripNames={SecondaryName}
+    	else	
+    		GripNames={"-"}
+        end
+    end 
+    
+    local LoaderNames={}
+	if (SecondaryName~="Grips") then
+	    for i, loader in pairs(ModularData[Type]["Loader"]) do
+	            table.insert(LoaderNames,loader["Name"])
+	    end
+	    LoaderNames=ordertable(LoaderNames,KitgunLoaderList)
+	else
+		LoaderNames={"-"}
+	end	
+    
+    local Head={}
+
+ 	 -- better if Name is always the first column !!!
+    if (SecondaryName=="All") then
+        Head={{"GripName",false,"Grip"}}
+        table.insert(Head,{"LoaderName",false,"Loader"})
+    else
+    	if (SecondaryName=="Grips") then
+	        Head={{"GripName",false,"Grip"}}
+    	else	
+        	Head={{"LoaderName",false,"Loader"}}
+        end	
+    end
+    
+	if (SecondaryName~="Loaders") then
+		table.insert(Head,{"Damage",true,"[[Damage]]"})
+		for i, DT in ipairs(DamageTypes) do
+	        table.insert(Head,{DT,true,"[["..DT.."]]"})
+	    end
+	end    
+	if (SecondaryName~="Grips") then
+		table.insert(Head,{"CritChance",true,"[[Critical Chance|Crit. Chance]]"})
+		table.insert(Head,{"CritMultiplier",true,"[[Critical multiplier|Crit. Mult.]]"})
+		table.insert(Head,{"StatusChance",true,"[[Status Chance|Status]]"})
+	end
+	if (SecondaryName~="Loaders") then
+        -- When Kitgun is a continuous weapon, grip affects the range of Kitgun and not the fire rate
+		if (ChamberName=="Gaze" or ChamberName=="Vermisplicer") then
+		    table.insert(Head,{"FireRate",true,"Beam Range"})
+	    else
+	    	table.insert(Head,{"FireRate",true,"[[Fire Rate]]"})
+		end
+	end	
+	if (SecondaryName~="Grips") then
+		table.insert(Head,{"Magazine",true,"[[Ammo#Magazine Capacity|Magazine Size]]"})
+		table.insert(Head,{"Reload",true,"[[Reload Speed|Reload Time]]"})
+	end
+	
+	--for _, temp in pairs (Head) do for k, temp2 in pairs(temp) do  mw.log(temp2) end end
+    return BuildKitgunTable(Head,Type,ChamberNames,GripNames,LoaderNames)
+end
+
+function p.getKitgunPrimaryTable(frame)
+    local ChamberName=frame.args ~= nil and frame.args[1]
+    local SecondaryName=frame.args ~= nil and frame.args[2]
+    
+    --parameter validation
+    if (ModularData["KitgunPrimary"]["Chamber"][ChamberName]==nil) then return "Error : Wrong Chamber name<br/>" end
+    if (SecondaryName~="All" and SecondaryName~="Grips" and SecondaryName~="Loaders" 
+    	and ModularData["KitgunPrimary"]["Grip"][SecondaryName]==nil) then return "Error : Wrong Grip name<br/>" end
+    
+    --list of damage types on chamber
+    local DamageTypes={}
+    for DT, val in pairs(ModularData["KitgunPrimary"]["Chamber"][ChamberName]["Damage"]["Base"]) do
+        table.insert(DamageTypes,DT)
+    end
+    DamageTypes=ordertable(DamageTypes,DamageList)
+    
+    local Type="KitgunPrimary"
+    local ChamberNames={ChamberName}
+    
+    local GripNames={}
+    if (SecondaryName=="All" or SecondaryName=="Grips") then
+        for i, grip in pairs(ModularData[Type]["Grip"]) do
+            table.insert(GripNames,grip["Name"])
+        end  
+	    GripNames=ordertable(GripNames,KitgunPrimaryGripList)
+    else
+    	if (SecondaryName~="Loaders") then
+        	GripNames={SecondaryName}
+        else
+        	GripNames={"-"}
+        end	
+    end 
+    
+    local LoaderNames={}
+    if (SecondaryName~="Grips") then
+	    for i, tertiary in pairs(ModularData[Type]["Loader"]) do
+	            table.insert(LoaderNames,tertiary["Name"])
+	    end     
+	    LoaderNames=ordertable(LoaderNames,KitgunLoaderList)
+	else
+		LoaderNames={"-"}
+	end	
+    
+    local Head={}
+	-- better if Name is always the first column !!!
+    if (SecondaryName=="All") then
+        Head={{"GripName",false,"Grip"}}
+        table.insert(Head,{"LoaderName",false,"Loader"})
+    else
+    	if (SecondaryName=="Grips") then
+	        Head={{"GripName",false,"Grip"}}
+    	else
+        	Head={{"LoaderName",false,"Loader"}}
+        end	
+    end
+
+	if (SecondaryName~="Loaders") then
+		table.insert(Head,{"Damage",true,"[[Damage]]"})
+		for i, DT in ipairs(DamageTypes) do
+	        table.insert(Head,{DT,true,"[["..DT.."]]"})
+	    end
+	end    
+	if (SecondaryName~="Grips") then
+		table.insert(Head,{"CritChance",true,"[[Critical Chance|Crit. Chance]]"})
+		table.insert(Head,{"CritMultiplier",true,"[[Critical multiplier|Crit. Mult.]]"})
+		table.insert(Head,{"StatusChance",true,"[[Status Chance|Status]]"})
+	end		
+	if (SecondaryName~="Loaders") then
+		if(ChamberName=="Gaze" or ChamberName=="Vermisplicer") then
+		    table.insert(Head,{"FireRate",true,"Beam Range"})
+	    else
+	    	table.insert(Head,{"FireRate",true,"[[Fire Rate]]"})
+		end
+	end
+	if (SecondaryName~="Grips") then
+		table.insert(Head,{"Magazine",true,"[[Ammo#Magazine Capacity|Magazine Size]]"})
+		table.insert(Head,{"Reload",true,"[[Reload Speed|Reload Time]]"})
+	end
+	
+	--for _, temp in pairs (Head) do for k, temp2 in pairs(temp) do  mw.log(temp2) end end
+    return BuildKitgunTable(Head,Type,ChamberNames,GripNames,LoaderNames)
+end
+
+function p.getZawTable(frame)
+    local StrikeName=frame.args ~= nil and frame.args[1]
+    local GripName=frame.args ~= nil and frame.args[2]
+    if (ModularData["Zaw"]["Strike"][StrikeName]==nil) then return "Error : Wrong Strike name<br/>" end
+    if (GripName~="All" and ModularData["Zaw"]["Grip"][GripName]==nil) then return "Error : Wrong Grip name<br/>" end
+    --list of damage types on chamber
+    
+    
+    local DamageTypes={}
+    for DT, val in pairs(ModularData["Zaw"]["Strike"][StrikeName]["Damage"]) do
+        table.insert(DamageTypes,DT)
+     --   mw.log(DT)
+    end
+    DamageTypes=ordertable(DamageTypes,DamageList)
+    
+    local Type="Zaw"
+    local StrikeNames={StrikeName}
+    local GripNames={}
+    local TertiaryType="Link"
+    if (GripName=="All") then
+        for i, grip in pairs(ModularData[Type]["Grip"]) do
+            table.insert(GripNames,grip["Name"])
+        end  
+    else
+        GripNames={GripName}
+    end   
+    GripNames=ordertable(GripNames,ZawGripList)
+    
+    local TertiaryNames={}
+    for i, tertiary in pairs(ModularData[Type][TertiaryType]) do
+            table.insert(TertiaryNames,tertiary["Name"])
+    end     
+    TertiaryNames=ordertable(TertiaryNames,ZawLinkList)
+    
+    local Head={}
+    if (GripName=="All") then
+        Head={{"GripName",false,"Grip"}}
+        table.insert(Head,{"LinkName",false,"Link"})
+    else
+        Head={{"LinkName",false,"Link"}}
+    end
+	 -- better if Name is always the first column !!!
+	table.insert(Head,{"Damage",true,"[[Damage]]"})
+	for i, DT in ipairs(DamageTypes) do
+        table.insert(Head,{DT,true,"[["..DT.."]]"})
+    end
+    table.insert(Head,{"SlideDamage",true,"Slide"})
+	table.insert(Head,{"CritChance",true,"[[Critical Chance|Crit. Chance]]"})
+	table.insert(Head,{"CritMultiplier",true,"[[Critical multiplier|Crit. Mult.]]"})
+	table.insert(Head,{"StatusChance",true,"[[Status Chance|Status]]"})
+	table.insert(Head,{"Speed",true,"Speed"})
+	--for _, temp in pairs (Head) do for k, temp2 in pairs(temp) do  mw.log(temp2) end end
+    return BuildKitgunTable(Head,Type,StrikeNames,GripNames,TertiaryNames)
+end
+
+function p.getZawTypeTable(frame)
+    local ZawTypeName=frame.args ~= nil and frame.args[1]
+    local GripType=frame.args ~= nil and frame.args[2]
+
+    if (GripType~="OneHanded" and GripType~="TwoHanded") then return "Error : Wrong GripType name<br/>" end
+    --list of damage types on chamber
+    local StrikeNames={}
+    local nostrike=true
+    for i, strike in pairs(ModularData["Zaw"]["Strike"]) do
+        if (strike["Type"][GripType]==ZawTypeName) then
+            table.insert(StrikeNames,strike["Name"])
+            nostrike=false
+        end
+    end
+    if nostrike then return "Error : Wrong Zaw Type name<br/>" end
+    StrikeNames=ordertable(StrikeNames,ZawStrikeList)
+    
+    local DamageTypes={}
+    local DamagePresent={}
+    for DT, i in pairs(DamageList) do
+        table.insert(DamagePresent,false)
+    end
+    for i, StrikeName in ipairs(StrikeNames) do
+        for DT, val in pairs(ModularData["Zaw"]["Strike"][StrikeName]["Damage"]) do
+            DamagePresent[DamageList[DT]]=true
+            --mw.log(DT)
+        end
+    end
+    --for i,l in ipairs(DamagePresent) do mw.log(l) end
+    for DT, Val in pairs(DamageList) do
+        if (DamagePresent[Val]) then
+            table.insert(DamageTypes,DT)
+        end
+    end
+    DamageTypes=ordertable(DamageTypes,DamageList)
+
+    local Type="Zaw"
+    local GripNames={}
+    local TertiaryType="Link"
+    for i, grip in pairs(ModularData[Type]["Grip"]) do
+        if (grip["Type"]==GripType) then
+            table.insert(GripNames,grip["Name"])
+        end
+    end  
+    GripNames=ordertable(GripNames,ZawGripList)
+    
+    local TertiaryNames={}
+    for i, tertiary in pairs(ModularData[Type][TertiaryType]) do
+            table.insert(TertiaryNames,tertiary["Name"])
+    end     
+    TertiaryNames=ordertable(TertiaryNames,ZawLinkList)
+    
+    local Head={}
+    Head={{"StrikeName",false,"Strike"}}
+    table.insert(Head,{"GripName",false,"Grip"})
+    table.insert(Head,{"LinkName",false,"Link"})
+	 -- better if Name is always the first column !!!
+	table.insert(Head,{"Damage",true,"[[Damage]]"})
+	for i, DT in ipairs(DamageTypes) do
+        table.insert(Head,{DT,true,"[["..DT.."]]"})
+    end
+    table.insert(Head,{"SlideDamage",true,"Slide"})
+	table.insert(Head,{"CritChance",true,"[[Critical Chance|Crit. Chance]]"})
+	table.insert(Head,{"CritMultiplier",true,"[[Critical multiplier|Crit. Mult.]]"})
+	table.insert(Head,{"StatusChance",true,"[[Status Chance|Status]]"})
+	table.insert(Head,{"Speed",true,"Speed"})
+	--for _, temp in pairs (Head) do for k, temp2 in pairs(temp) do  mw.log(temp2) end end
+	--for i,l in ipairs(StrikeNames) do mw.log(l) end
+    return BuildKitgunTable(Head,Type,StrikeNames,GripNames,TertiaryNames)
+end
+
+function p.getMOATable(frame)
+    local BracketName=frame.args ~= nil and frame.args[1]
+    local CoreName=frame.args ~= nil and frame.args[2]
+    if (ModularData["MOA"]["Bracket"][BracketName]==nil) then return "Error : Wrong Bracket name<br/>" end
+    if (CoreName~="All" and ModularData["MOA"]["Core"][CoreName]==nil) then return "Error : Wrong Core name<br/>" end
+
+    
+    local Type="MOA"
+    local BracketNames={BracketName}
+    local CoreNames={}
+    local TertiaryType="Gyro"
+    if (CoreName=="All") then
+        for i, core in pairs(ModularData[Type]["Core"]) do
+            table.insert(CoreNames,core["Name"])
+        end  
+    else
+        CoreNames={CoreName}
+    end 
+    CoreNames=ordertable(CoreNames,MOACoreList)
+    
+    local TertiaryNames={}
+    for i, tertiary in pairs(ModularData[Type][TertiaryType]) do
+            table.insert(TertiaryNames,tertiary["Name"])
+    end     
+    TertiaryNames=ordertable(TertiaryNames,MOAGyroList)
+    
+    local Head={}
+    if (CoreName=="All") then
+        Head={{"CoreName",false,"Core"}}
+        table.insert(Head,{"GyroName",false,"Gyro"})
+    else
+        Head={{"GyroName",false,"Gyro"}}
+    end
+	 -- better if Name is always the first column !!!
+	table.insert(Head,{"HealthG",true,"[[Health]]"})
+	table.insert(Head,{"ShieldG",true,"[[Shield]]"})
+	table.insert(Head,{"ArmorG",true,"[[Armor]]"})
+	table.insert(Head,{"EHPG",false,"[[EHP]]"})
+	table.insert(Head,{"EHP_CRG",false,"EHP + [[Calculated Redirection|CR]]"})
+	--for _, temp in pairs (Head) do for k, temp2 in pairs(temp) do  mw.log(temp2) end end
+    return BuildKitgunTable(Head,Type,BracketNames,CoreNames,TertiaryNames)
+end
+
+function p.getHoundTable(frame)
+    local StabilizerName=frame.args ~= nil and frame.args[1]
+    local CoreName=frame.args ~= nil and frame.args[2]
+    if (ModularData["Hound"]["Stabilizer"][StabilizerName]==nil) then return "Error : Wrong Stabilizer name<br/>" end
+    if (CoreName~="All" and ModularData["Hound"]["Core"][CoreName]==nil) then return "Error : Wrong Core name<br/>" end
+
+    
+    local Type="Hound"
+    local StabilizerNames={StabilizerName}
+    local CoreNames={}
+    local TertiaryType="Bracket"
+    if (CoreName=="All") then
+        for i, core in pairs(ModularData[Type]["Core"]) do
+            table.insert(CoreNames,core["Name"])
+        end  
+    else
+        CoreNames={CoreName}
+    end 
+    CoreNames=ordertable(CoreNames,HoundCoreList)
+    
+    local TertiaryNames={}
+    for i, tertiary in pairs(ModularData[Type][TertiaryType]) do
+            table.insert(TertiaryNames,tertiary["Name"])
+    end     
+    TertiaryNames=ordertable(TertiaryNames,HoundBracketList)
+    
+    local Head={}
+    if (CoreName=="All") then
+        Head={{"CoreName",false,"Core"}}
+        table.insert(Head,{"BracketName",false,"Bracket"})
+    else
+        Head={{"BracketName",false,"Bracket"}}
+    end
+	 -- better if Name is always the first column !!!
+	table.insert(Head,{"HealthG",true,"[[Health]]"})
+	table.insert(Head,{"ShieldG",true,"[[Shield]]"})
+	table.insert(Head,{"ArmorG",true,"[[Armor]]"})
+	table.insert(Head,{"EHPG",false,"[[EHP]]"})
+	table.insert(Head,{"EHP_CRG",false,"EHP + [[Calculated Redirection|CR]]"})
+	--for _, temp in pairs (Head) do for k, temp2 in pairs(temp) do  mw.log(temp2) end end
+    return BuildKitgunTable(Head,Type,StabilizerNames,CoreNames,TertiaryNames)
+end
+
+return p

@@ -1,0 +1,1513 @@
+{{Navigation|Melee|Stance|Maneuvers|Key Bindings|Melee/Gallery}}
+{{Successor
+|precededby=Melee 1.0
+|precededbysince={{ver|13}}
+}}
+{{Infobox
+| Box title = Melee
+| image = IconMelee.png
+}}
+<section begin=intro/>
+'''Melee''' is a combat system in [[WARFRAME]] that utilizes edged or blunt weapons and close quarter attacks. Melee weapons can be equipped in the tertiary weapon slot of the [[Arsenal]].
+<section end=intro/>
+
+==Melee Classes==
+Current melee weapons consist of a number of classes, in which each class of weapons has a unique set of attack animations, including normal, slam, slide, [[stealth]] attacks, finishers, combos, and blocking.
+{{MeleeNavVisual}}
+{{clr}}
+
+==Basic Maneuvers and Mechanics==
+Melee can be switched to at any time by pressing the melee attack key (default {{Keybind|E}}), immediately [[holster]]ing the currently equipped gun, and can instantly switch back to an equipped primary or secondary weapon with the fire button (default {{Keybind|LMB}}) or [[zoom]] (default {{Keybind|RMB}}). Going into melee mode (default holding {{Keybind|F}}) will unlock additional melee combat features such as manual [[#Blocking|Blocking]].
+
+All melee attacks can be executed by pressing or holding the melee input button. Every attack causes the player to take a single step forward. However, if the player is crouched, non-combo melee attacks will not cause a step forward.
+
+Each melee weapon has a number of attributes, such as [[Attack Speed]] and [[Damage]]. Each attribute can be altered by a variety of [[Melee Mods]].
+{{clr}}
+
+===Normal Attack===
+[[File:SwordComboNeutral.gif|thumb|Excalibur performing a basic melee combo.|right]]
+{{Combo|{{Keybind|E}}|ps4 = {{Keybind/PS4|circle}}}}
+The simplest form of melee attack. The action is achieved by simply pressing the melee attack key repeatedly, in which the animation pattern continues to loop until the player ceases the attack.
+
+Common Attributes:
+*[[Damage]]: Damage done by each hit. Enhanced by damage mods such as {{M|Pressure Point}}.
+*[[Attack Speed]]: Speed of the attack animation. Enhanced by Attack Speed mods such as {{M|Fury}}.
+*[[Follow Through]]: When hit multiple targets in one strike, the part of damage remaining after each target (excludes Slam Attacks and Slide Attacks).
+*Cleave Radius: A rough estimation of the size of the swing. May not be accurate due to individualized cleaving animations.
+{{clr}}
+
+===Slide Attack===
+[[File:SwordComboSlide.gif|thumb|Excalibur performing a slide attack.|right]]
+{{Quote|Damage inflicted on enemies when performing a Spin attack.|In-game Description}}
+{{Combo|While Sliding + Melee}}
+Air variation:
+{{Combo|While Air Sliding + Melee}}
+Also known as a Spin Attack, Slide Attacks propels a Warframe forward while performing a spinning slash around them, dealing greater damage and hitting multiple enemies. For sparring weapons like the {{Weapon|Kogake}} and {{Weapon|Obex}}, slide attacks perform a double kick that targets only a single enemy, but ragdolls them away instead of only dealing damage. Slide Attacks can be performed on the ground to hit low-lying enemies, or in the air to hit tall enemies, potentially landing headshots.
+
+Slide attack damage can be increased by the {{M|Pressure Point}} mod and all other elemental damage the player may have equipped on their weapon (e.g. {{M|Shocking Touch}}).
+{{clr}}
+
+===Aerial Attack===
+[[File:SwordComboAir.gif|thumb|Excalibur performing an aerial combo.|right]]
+
+{{Combo|In Air + Melee}}
+Press the melee attack button while in mid-air to perform an aerial attack, or rapidly press to perform an aerial attack combo, regardless if a jump has already been made or not. The Warframe will automatically maintain Aim Glide for the rest of the air combo if Aim Glide was initiated at the time of starting the combo. This is useful for fighting airborne targets such as [[Osprey]]s.
+
+{{clr}}
+
+===Slam Attack===
+[[File:SwordComboSlam.gif|thumb|Excalibur performing a slam attack.|right]]
+{{Quote|Damage inflicted on enemies by landing a Ground Slam attack near them.|In-game Description}}
+{{Quote|Ground Slam attack hits all enemies around the point of impact within (Slam Radius)m.|In-game Description}}
+{{Combo|In Air + Aim Downwards + Melee}}
+Also known as a Leap Attack, Jump Attack or Ground Slam. While in mid-air, this performs an aimable, plummeting melee strike that deals damage and usually inflicts {{D|Stagger}} to enemies in a radius that increases with the height of the drop. Melee combo is gained for each enemy struck by the slam's area of effect. A variation, the [[Heavy Slam]] attack, additionally benefits from the Heavy Attack [[combo multiplier]] and applies the {{D|Lifted}} status, but consumes [[melee combo]]. 
+
+Slam attacks deal 2x weapon damage (3x for Heavy Slams), with a single element base damage composition ({{D|Impact}} typically, and {{D|Blast}} for Heavy Slams, but the element can vary depending on the weapon). Damage dealt by slam attacks is affected by [[Damage Falloff]], meaning that it  diminishes linearly from 100% at the center to 50% along the outer radius (70% for Heavy Slams). 
+
+Initiating a slam attack results in instantaneous velocity towards the intended point of impact. Players can utilize slam attacks to change direction or add momentum while in mid-air, effectively zip-lining themselves in the direction of the slam. Slam attacks require that the reticle be aimed downward, with a limit about 20 degrees below the horizon, or 70 degrees above nadir. If the reticle is any higher than that, an [[Melee#Aerial_Attack|Aerial Attack]] will be performed instead. 
+
+==== Slam Attack Stats By Weapon Class ====
+
+The base size of the slam radius is determined by the class of weapon used (e.g. [[Sword]], [[Hammer]], [[Scythe]], etc.), ranging from 5 to 9 meters. The radius is increased depending on the height of the vertical drop during the slam, with the radius scaling up to a maximum '''150%''' of the base value (7.5m to 13.5m), achieved by slamming from a height of at least '''15''' meters. The minimum radius for normal slams on most weapons is 2.5 meters. 
+
+The following table shows the base slam radius and height scaling of each weapon class.
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;"
+|-
+! scope="col" |Weapon Class
+! scope="col" |Typical Normal<br />Slam Radius
+! scope="col" |Typical Heavy<br />Slam Radius
+! scope="col" |Typical Slam<br />Min Radius Scaling
+! scope="col" |Typical Slam<br />Max Radius Scaling
+|-
+|[[Dagger]]
+|rowspan="5"| 5m
+|rowspan="5"| 6m
+|rowspan="5"| 50%
+|rowspan="5"| 150%
+|-
+|[[Glaive (Weapon Type)]]
+|-
+|[[Gunblade]]
+|-
+|[[Warfan]]
+|-
+|[[Whip]] 
+|-
+|[[Claws (Melee)]] 
+|rowspan="6"| 6m
+|rowspan="6"| 7m
+|rowspan="6"| 41.666666%
+|rowspan="6"| 150%
+|-
+|[[Dual Daggers]] 
+|-
+|[[Nikana (Weapon Type)]] 
+|-
+|[[Nunchaku]] 
+|-
+|[[Rapier]] 
+|-
+|[[Staff]]
+|-
+|[[Bayonet]] 
+|rowspan="1"| 7m
+|rowspan="1"| 7m
+|rowspan="1"| 50%
+|rowspan="1"| 150%
+|-
+|[[Blade and Whip]]
+|rowspan="6"| 7m
+|rowspan="6"| 8m
+|rowspan="6"| 35.714287%
+|rowspan="6"| 150%
+|-
+|[[Polearm]]
+|-
+|[[Sparring]]
+|-
+|[[Sword]] 
+|-
+|[[Sword and Shield]] 
+|-
+|[[Two-Handed Nikana]] 
+|-
+|[[Assault Saw]] 
+|rowspan="1"| 7m
+|rowspan="1"| 9m
+|rowspan="1"| 31.25%
+|rowspan="1"| 150%
+|-
+|[[Dual Nikanas]] 
+|rowspan="8"| 8m
+|rowspan="8"| 9m
+|rowspan="8"| 31.25%
+|rowspan="8"| 150%
+|-
+|[[Dual Swords]] 
+|-
+|[[Fist]] 
+|-
+|[[Heavy Blade]] 
+|-
+|[[Heavy Scythe]] 
+|-
+|[[Machete (Weapon Type)]] 
+|-
+|[[Scythe]] 
+|-
+|[[Tonfa]] 
+|-
+|[[Hammer]] 
+|rowspan="1"| 9m
+|rowspan="1"| 10m
+|rowspan="1"| 27.777779%
+|rowspan="1"| 150%
+|}
+
+{{clr}}
+
+Exceptions exist to this chart. For example, {{Weapon|Masseter}} has a normal slam radius of '''10m''' and a heavy slam radius of '''10m''', despite Heavy Blades typically having a normal slam radius of '''8m''' and a heavy slam radius of '''9m'''. Generally speaking, minimum slam radius scaling is determined by the weapon's listed range for a normal slam, with the equation being determined by:
+:::<math>{\text{Minimum Percent of Slam Radius} = \frac{2.5}{\text{Normal Slam Radius}}}</math>
+
+So for example, {{Weapon|Tenet Exec}} scales its slams radius from
+:::{{Math|2.5/4|p=y|bf=y}} of its listed radius up to to '''150%''' of its listed radius.
+
+Incarnon evolutions and weapon-unique bonuses can increase the slam radius of {{Weapon|Praedos}}, {{Weapon|Ruvox}}, {{Resource|Magistar Incarnon Genesis}} and {{Weapon|Arca Titron}}.
+
+====Slam Damage====
+
+A unique damage multiplier called '''Slam Damage''' is applied to both normal and Heavy Slam attacks. This bonus is '''multiplicative with other modifiers to melee damage''', such as {{M|Pressure Point}}. Sources of Slam Damage include:
+* {{M|Seismic Wave}}: +200% Melee Slam Damage
+* [[Nira's Set]] bonus: +150% Slam Damage per mod equipped: {{M|Nira's Anguish}}, {{M|Nira's Hatred}}, and {{M|Nira's Contempt}}.
+* Melee [[Riven Mods]], when [[Riven Splicer|splicing]] the Melee Damage stat with either Attack Speed or Status Chance.
+* {{Weapon|Arca Titron}}'s Slam Capacitor is incremented on kills, granting +2m slam radius and +250% Slam Damage per charge, with up to 5 charges.
+
+===Wall Attack===
+[[File:SwordComboWall.gif|right]]
+{{Combo|While Wall-Latching + Melee}}
+While wall-latching a player may initiate a melee attack, causing the frame to drop off the wall facing the direction aimed, with a special melee attack animation. The attack will change depending on what melee weapon is used; most weapons will slash the air in front of them as they unlatch off the wall, while heavy weapons will swing the weapon beneath them, and sparring weapons will deal a forward punch.
+
+Since {{ver|26}}, Wall Attack damage stat is not shown in the Arsenal.
+
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;font-size:12px;"
+|-
+! scope="col" |Weapon Class
+! scope="col" |Wall Attack Damage in Relation to Melee Damage
+|-
+|[[Blade and Whip]]
+| rowspan=15 | 3.0x <!--Used unmodded Lacera against Corrupted Nullifier bubbles and dealt 648 damage regardless of normal or wall attack; this is probably because the default stance of Blade and Whip weapons copy the damage multiplier of first combo of the Defiled Snapdragon stance; note that some other weapon classes have this property (nunchakus, gunblades, rapiers, etc.)-->
+|-
+|[[Dagger]]
+|-
+|[[Dual Daggers]]
+|-
+|[[Dual Nikanas]]
+|-
+|[[Dual Swords]]
+|-
+|[[Fist]]
+|-
+|[[Glaive (Weapon Type)]]
+|-
+|[[Gunblade]]
+|-
+|[[Machete (Weapon Type)]]
+|-
+|[[Rapier]]
+|-
+|[[Sparring]]
+|-
+|[[Sword and Shield]]
+|-
+|[[Nunchaku]]
+|-
+|[[Warfan]]
+|-
+|[[Whip]]
+|-
+|[[Claws (Melee)]] || ~2.98x
+|-
+|[[Nikana (Weapon Type)]] || ~2.14x
+|-
+|[[Heavy Blade]]
+| rowspan=5 | 2.0x
+|-
+|[[Hammer]]
+|-
+|[[Scythe]]
+|-
+|[[Sword]]
+|-
+|[[Tonfa]]
+|-
+|[[Polearm]]
+| rowspan=2 | ~1.666x
+|-
+|[[Staff]]
+|-
+|}
+
+{{clr}}
+
+==Advanced Maneuvers==
+===Stances===
+[[File:MeleeCombos.jpg|200px|right|thumb|The Melee Combo list for the {{M|Crimson Dervish}} Stance.]]
+{{main|Stance}}
+Every weapon can unlock four additional '''Stance Combos''' by using stance mods. Stance mods specify a weapon class, and only melee weapons of that class can equip that stance mod.
+
+Each stance mod has different combos, and each of those combos has different animations, damage, and forced [[status effects|status procs]].
+
+Once equipped in the weapon's stance slot, the weapon's default combo will be replaced by the following four combos. Whether the player is moving and/or aiming while attacking determines which stance combo is performed.
+
+;Stance Combos:
+<blockquote>
+: Neutral combo: {{Keybind|E}}, repeated
+: Forward combo: {{Keybind|E}} while moving, repeated
+: Blocking combo: {{Keybind|RMB}} + {{Keybind|E}}, repeated
+: Forward blocking combo: {{Keybind|RMB}} + {{Keybind|E}} while moving, repeated
+</blockquote>
+
+Aerial attacks, wall attacks, heavy attacks, and slam attacks derive their stats from the weapon's class, and are unchanged by stance mods. [[Maneuvers#Rolling|Dodging]] or casting an ability while performing melee combos will cancel the current melee animation and interrupt the combo. 
+
+Stance combos are a different mechanic than the [[melee combo]] mechanic. 
+{{clr}}
+
+===Blocking===
+[[File:SkanaBlocking.jpg|200px|right|thumb|{{WF|Volt}} with {{Weapon|Skana}} in blocking pose.]]
+{{Quote|While in hand, melee weapons block incoming attacks within a [Blocking Value]° cone. Blocking is centered around the current point of aim.|In-game Description}}
+{{Combo|Weapon Aim {{Keybind|RMB}}|ps4={{Keybind|L2}}}}
+'''Blocking''' is a defensive technique that negates both incoming damage and knockbacks in an angle in front of the Warframe. 
+
+<!----[[File:BlockAngle.png|thumb|right|A drawing illustrating blocking angles.]]<!---->
+Successful blocking can only be performed if enemies attack within the blocking angle cone of the player's melee weapon, which varies depending on the melee weapon type. For example, [[Dual Swords]] have a blocking angle of 60°, meaning any damage coming from 60° to the left or right of the reticle will be negated. 
+
+All melee weapons block 100% of incoming damage, with the exception of certain [[boss]] attacks, as well as certain sources of area-of-effect damage such as [[Bombard]] rockets, both being cases where blocking is only partially effective. However, it does not negate [[Status Effect]]s in most instances (notable exceptions include the [[Knockdown]] and {{D|Heat}} status effects from an [[Eximus#Arson|Arson Eximus]]' ability).
+
+When a melee weapon is drawn by performing a melee attack while using a [[Weapon Comparison/Primary|primary]] or [[Weapon Comparison/Secondary|secondary]] weapon, blocking is '''automatic''' assuming enemies are attacking within the blocking angle. However, if a melee weapon is manually switched to, or only a melee weapon is equipped in the [[Arsenal]], blocking is '''manual''' and the block button must be held down to block.
+
+Any time an attack is successfully blocked, 1 point will be added to the [[#Combo|Combo Counter]]. 
+Additionally, blocking an enemy melee attack has a chance to stagger them, briefly opening them up to [[Finisher|melee front/back finishers]]. This stagger chance can be increased through mods like {{M|Parry}}.
+
+*Blocking negates damage from [[Continuous Weapon|continuous weapons]] like {{Weapon|Flux Rifle}} lasers and [[Scorch]] flamethrowers, as well as non-continuous weapons like {{Weapon|Gorgon}} bullets and [[Butcher]] cleavers.
+*Blocking completely negates the knockdown effect of [[Seismic Shockwave]] from [[Grineer]] heavy units and [[Eximus]] variants.
+*Blocking completely negates the pull effect from [[Scorpion]] grappling hooks.
+*Blocking partially negates effects like [[Fire Blast (Ruk)|Fire Blast]] from [[Sargas Ruk]] and [[Rippling Shockwave]] from certain [[Corpus]] units, preventing the knockdown effect, but the player will still be pushed back.
+*Certain enemies such as Fusion Moa require the player to either back up slightly or aim slightly upward in order to parry their attack up close.
+
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;width:40%;font-size:12px;"
+|-
+! scope="col" |Weapon Class
+! scope="col" |Typical Blocking Angle
+|-
+|[[Dagger]]
+| rowspan=3 | 45°
+|-
+|[[Gunblade]]
+|-
+|[[Whip]]
+|-
+|[[Dual Daggers]]
+| rowspan=4 | 50°
+|-
+|[[Fist]]
+|-
+|[[Hammer]]
+|-
+|[[Sparring]]
+|-
+|[[Claws (Melee)]]
+| rowspan=10 | 55°
+|-
+|[[Glaive (Weapon Type)]]
+|-
+|[[Heavy Blade]]
+|-
+|[[Machete (Weapon Type)]]
+|-
+|[[Nikana (Weapon Type)]]
+|-
+|[[Nunchaku]]
+|-
+|[[Polearm]]
+|-
+|[[Sword]]
+|-
+|[[Two-Handed Nikana]]
+|-
+|[[Warfan]]
+|-
+|[[Blade and Whip]]
+| rowspan=8 | 60°
+|-
+|[[Dual Nikanas]]
+|-
+|[[Dual Swords]]
+|-
+|[[Rapier]]
+|-
+|[[Scythe]]
+|-
+|[[Staff]]
+|-
+|[[Tonfa]]
+|-
+|Most [[Exalted Weapon|Exalted Melees]]
+|-
+|[[Heavy Scythe]]
+| rowspan=2 | 65°
+|-
+|{{Weapon|Iron Staff}}, {{Weapon|Iron Staff Prime}}
+|-
+|[[Sword and Shield]] || 70°
+|-
+|[[Assault Saw]]
+| rowspan=2 | 90°
+|-
+|{{Weapon|Diwata}}, {{Weapon|Diwata Prime}}
+|-
+|}
+
+====Mods That Benefit From Blocking====
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+AmalgamJavlokMagazineWarpMod.png|link=Amalgam Javlok Magazine Warp|{{M|Amalgam Javlok Magazine Warp}}|alt=Amalgam Javlok Magazine Warp
+ArcanePhantasm.png|link=Arcane Phantasm|{{Arcane|Arcane Phantasm}}|alt=Arcane Phantasm
+FocusedDefenseMod.png|link=Focused Defense|{{M|Focused Defense}}|alt=Focused Defense
+GuardianDerisionMod.png|link=Guardian Derision|{{M|Guardian Derision}}|alt=Guardian Derision
+ParryMod.png|link=Parry|{{M|Parry}}|alt=Parry
+</gallery>
+
+====Tactical Dodging====
+A tactical dodge or roll can be performed by [[Maneuvers#Rolling|rolling]] while blocking, allowing the player to shorten their roll distance while maintaining melee distance with enemies in combat.
+
+{{clr}}
+
+===Combo===
+{{main|Melee Combo}}
+{{Infobox
+| Box title = Melee Combo
+| image = ComboCounter.jpg
+| caption = A 50-hit Combo Counter with a 3.0x Damage Multiplier
+}}
+{{#lst:Melee Combo|intro}}
+Combo Multiplier can increase critical or status chance when {{M|Blood Rush}} or {{M|Weeping Wounds}} is equipped, and it acts as a direct damage modifier for Heavy Attacks. 
+
+==Heavy Attack==
+[[File:HeavyAttack.gif|thumb|220px|An example of a Heavy Attack. Notice entire combo counter is spent.]]
+{{Quote|Base damage of the weapon's Heavy Attack. Damage is increased by Combo Multiplier, but consumes Combo Count.|In-game Description of Heavy Attack Damage at the Arsenal Screen}}
+{{Combo|Middle Mouse {{Keybind|MMB}}|ps4={{Keybind|R3}}}}
+Tapping {{Keybind|MMB}} with a melee weapon in hand will perform a '''Heavy Attack''', a special attack that deals significantly more damage. Heavy Attacks consume [[Melee Combo]] upon execution, in exchange for a unique damage multiplier equal to the current [[Melee_Combo#Combo_Multiplier|melee combo tier]]. This means that the '''power of a Heavy Attack directly scales''' with the '''current combo multiplier'''. For example, a Heavy Attack performed at '''4x combo multiplier''', will deal '''4x as much damage''' as the same attack performed without a combo multiplier. 
+
+The trigger for activating [[Incarnon]] melee weapons is to perform a Heavy Attack while above a certain combo threshold. 
+
+Weapons with unique effects, like {{Weapon|Synoid Heliocor}}, {{Weapon|Sancti Magistar}} and {{Weapon|Syam}}, often have those unique effects attached to the Heavy Attack. 
+
+With the exception of {{Weapon|Diwata}}, most [[Exalted Weapons]] can perform Heavy attacks (sometimes with extra effects, like double energy waves from {{Weapon|Exalted Blade}} or an explosive projectile from {{Weapon|Ironbride}}), though [[Exalted Weapons#Pseudo-Exalted|Pseudo-Exalted]] weapons cannot.
+
+For [[Glaive_(Weapon_Type)|Glaive-type]] weapons, the Heavy attack input does not initiate an attack animation. Instead, it can be activated while the thrown weapon is in flight, resulting in an explosion that deals Heavy Attack damage and returns the weapon to the user's hand. 
+
+===Heavy Attack Damage===
+
+The damage dealt by a Heavy Attack is calculated by multiplying the weapon's damage with a Heavy Attack Multiplier (distinct from the previously mentioned Combo Multiplier), which is given by the weapon's type, along with stats for wind-up time and any forced status effects. 
+* For example, a {{Weapon|Fragor}} has '''200''' base damage, and is a [[Hammer]]-type weapon, meaning that its Heavy Attacks will each do '''6x''' base damage, equal to '''1,200 damage'''. 
+* The {{Weapon|Obex}} has '''120''' base damage, and is a [[Sparring]]-type weapon with a '''12x''' multiplier on its first Heavy Attack, equal to '''1,440 damage'''. 
+* The {{Weapon|Nikana}} has '''142''' base damage, and is [[Nikana_(Weapon_Type)|Nikana]]-type weapon with '''5x''' multiplier for '''710 damage''' on its Heavy Attack, and imparts a guaranteed {{D|Slash}} proc that will deal an additional ''1,491 {{D|Bleed}} damage over time''. 
+
+Each weapon type has two Heavy Attacks: a first and second Heavy Attack, repeating in sequence. The second Heavy Attack can also be performed by tapping {{Keybind|MMB}} while sliding. 
+
+The following table lists the damage values and [[status_Effect|forced procs]] for Heavy Attacks of each melee weapon type:
+
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;font-size:12px;"
+|-
+! scope="col" style="width:20%" |Weapon Class
+! scope="col" style="width:25%" data-sort-type=number |Multiplier for First Heavy Attack
+! scope="col" style="width:25%" data-sort-type=number |Multiplier for Second Heavy Attack (or Slide Heavy Attack)
+! scope="col" style="width:10%" data-sort-type=number |Typical Wind-up Time
+|-
+|[[Assault Saw]] || 6x (3 {{mul}} 100% + 3 {{mul}} 100% {{D|Bleed}}) || 6x || 1.0s
+|-
+|[[Blade and Whip]] || 4x || 12x (3 {{mul}} 400%) || 0.4s <!--additional aoe on Jat Kusar-->
+|-
+|[[Claws (Melee)]] || 5x {{D|Bleed}} || 5x {{D|Bleed}} || 0.6s
+|-
+|[[Dagger]] || 5x (250% {{D|Knockback}}{{D|Bleed}} + 250%) || 5x (250% {{D|Bleed}} + 250%) || 0.4s
+|-
+|[[Dual Daggers]] || 5x (250% {{D|Bleed}} + 250% {{D|Bleed}}) || 5x (250% {{D|Bleed}} + 250% {{D|Bleed}}) || 0.5s
+|-
+|[[Dual Nikanas]] || 12x (3 {{mul}} 200% + 600%) || 6x (100% + 200% + 300%) || 1.0s
+|-
+|[[Dual Swords]] || 5x (250% + 250%) || 5x (250% + 250%) || 0.7s
+|-
+|[[Fist]] || 5x || 5x || 0.6s
+|-
+|[[Glaive (Weapon Type)]] || 2x || 3x || 0.6s
+|-
+|[[Gunblade]] || 5x || 5x || 0.4s
+|-
+|[[Hammer]] || 6x || 6x || 1.2s
+|-
+|[[Heavy Blade]] || 6x || 6x || 1.1s
+|-
+|[[Heavy Scythe]] || 6x (3 {{mul}} 200%) || 12x (2 {{mul}} 600%) || 1.0s
+|-
+|[[Machete (Weapon Type)]] || 6x (150% {{D|Bleed}} + 3 {{mul}} 150%) || 5x || 0.7s
+|-
+|[[Nikana (Weapon Type)]] || 5x {{D|Bleed}}  || 5x {{D|Bleed}}  || 0.5s
+|-
+|[[Nunchaku]] || 5x || 5x || 0.5s
+|-
+|[[Polearm]] || 6x || 6x || 0.9s
+|-
+|[[Rapier]] || 4.5x {{D|Bleed}} || 4.5x {{D|Bleed}} || 0.5s
+|-
+|[[Scythe]] || 6x {{D|Bleed}} ||  6x {{D|Bleed}} || 1.0s
+|-
+|[[Sparring]] || 12x || 15x (3 {{mul}} 300% + 2 {{mul}} 300% {{D|Bleed}} || 0.5s <!--Hirudo and Korrudo differ, 6.5x and 10.7x respectively-->
+|-
+|[[Staff]] || 5x || 5x || 0.5s
+|-
+|[[Sword]] || 5x || 5x || 0.6s
+|-
+|[[Sword and Shield]] || 5x || 5x || 0.7s
+|-
+|[[Tonfa]] || 5x (250% {{D|Bleed}}  + 250% {{D|Bleed}}) || 5x (250% {{D|Bleed}}  + 250% {{D|Bleed}}) || 0.7s
+|-
+|[[Two-Handed Nikana]] || 6x {{D|Bleed}} || 6x (300% {{D|Bleed}} + 300% {{D|Bleed}}) || 0.7s
+|-
+|[[Warfan]] || 5x (250% {{D|Bleed}}  + 250% {{D|Bleed}})  || 5x {{D|Bleed}} || 0.5s
+|-
+|[[Whip]] || 4.5x {{D|Bleed}} || 4.5x {{D|Bleed}} || 0.4s
+|-
+|}
+
+Taken together, the damage dealt by a Heavy Attack (before factoring in [[critical hits]]) can be expressed as:<br><br>
+<math>
+\begin{aligned}
+[\text{Base Damage} \times (1 + \text{Damage Mods}) \times (1 + \text{Elemental Mods})]\\
+\times (\text{Heavy Attack Multiplier})\\ 
+\times (\text{Combo Multiplier}) &= \text{Total Heavy Attack Damage}
+\end{aligned}
+</math>
+
+Example: a Heavy Attack from {{Weapon|Paracesis}}, a [[Heavy Blade]]-type weapon, modded with {{M|Pressure Point}} and {{M|Fever Strike}} and while at 7x Combo Multiplier would deal: 
+
+* <math>
+\begin{aligned}
+[222 \times (1 + 1.2) \times (1 + 0.9)] \times 6 \times 7 &=
+\end{aligned}
+</math> '''38,974.32 damage'''
+
+Damage from {{D|Bleed}} is dealt as 6 ticks of damage, equal to 35% of the initial blow, bypassing armor. It is increased by damage and faction mods, but not by elemental or physical damage mods. 
+
+The damage from a {{D|Slash}} proc inflicted by a Heavy Attack (before crits) can be expressed as:<br><br>
+<math>
+\begin{aligned}
+[\text{Base Damage} \times (1 + \text{Damage Mods}) \times (1 + \text{Faction Mods})]\\
+\times (\text{Heavy Attack Multiplier})\\ 
+\times (\text{Combo Multiplier})\\
+\times (1 + \text{Faction Mods})\\
+\times 0.35 \times 6 &= \text{Total Bleed Damage from a Heavy Attack}
+\end{aligned}
+</math>
+
+Ex: the {{D|Slash}} proc from a Heavy Attack from {{Weapon|Reaper Prime}}, a [[Scythe]]-type weapon, modded with {{M|Pressure Point}} and {{M|Smite Grineer}} and while at 5x Combo Multiplier would deal a total of: 
+
+* <math>
+\begin{aligned}
+[200 \times (1 + 1.2) \times (1 + 0.3)] \times 6 \times 5 \times (1 + 0.3) \times 0.35 \times 6 &=
+\end{aligned}
+</math> ''46,846.8 {{D|Bleed}} damage over time'', dealt in ''6 ticks of 7,807.8 damage''.
+
+In addition to forced procs, Heavy Attacks can also inflict status effects normally. 
+
+Increased base damage from [[Incarnon Genesis]] is not multiplied by the Heavy Attack Multiplier, but is multiplied by the combo multiplier. 
+
+===Heavy Slams===
+[[File:Furax Heavy Slam.gif|thumb|220px|A Heavy Slam {{D|Lifted|Lifts}} enemies near the point of impact for 5 seconds, using a {{Weapon|Furax Wraith}} with 4x Combo Multiplier.]]
+{{Quote|Heavy Slam attacks hit all enemies around the point of impact within this distance.|In-game Description of Heavy Slam radius}}
+While melee is equipped, tapping {{Keybind|MMB}} in mid-air will execute a '''Heavy Slam Attack''', an aimable, plummeting area strike that damages and crowd-controls enemies. Damage from Heavy Slams is calculated similarly to Heavy Attacks, except that the Heavy Attack Multiplier is always 3x weapon damage. All melee weapons use the same multiplier and animation for their Heavy Slams. 
+
+Heavy Slams have a larger base radius (+1 meter) and less falloff (furthest enemies take minimum 70% damage, rather than 50%) than [[Melee#Slam_Attack|normal slam attacks]], but otherwise follow the same mechanics. The slam radius increases with vertical drop, maxing out at 150% of base radius, attainable from a 15m drop. The base radius is determined by weapon type, ranging from 6 to 10 meters, with exact details in [[Melee#Slam_Attack_Stats_By_Weapon_Class|this table]].
+
+Enemies struck by the shockwave of a Heavy Slam attack are {{D|Lifted}}, suspending them helplessly in the air. {{D|Lifted}} has a default duration of 1 second, increased by 1 additional second for each [[Melee_Combo#Combo_Multiplier|Combo Multiplier]] on the Heavy Slam.
+
+Though normal slam attacks can be useful for level traversal when launched along a diagonal trajectory, Heavy Slam attacks may be the better option. Normal slam attacks require the reticle to be below a certain angle (approx. 20 degrees below horizon, or 70 degrees above nadir), and cannot slam if aimed above that angle (resulting in an [[Melee#Aerial_Attack|aerial]] whiff instead). When aiming a Heavy Slam above that angle, the slam is executed as if it were aimed precisely at the maximum limit, allowing for the highest possible trajectory on every slam.  
+
+===Heavy Attacks and Initial Combo===
+
+Heavy Attack weapon builds typically include mods like {{M|Corrupt Charge}}, {{M|Galvanized Reflex}} and {{M|Ready Steel}} to increase to their [[Initial Combo]] stat. Initial Combo grants a minimum value of combo points when idle or after a combo reset. This allows builds to be geared exclusively around using Heavy Attacks, restoring spent combo multiplier with Initial Combo rather than light attacks. 
+
+Heavy Attack builds with Initial Combo might also invest into Heavy Attack Efficiency to increase their rate of effective attack.  
+
+===Heavy Attack Efficiency===
+{{Transclude|Melee Combo#Heavy Attack Efficiency}}
+
+===Wind Up===
+{{Quote|Time a Heavy Attack must charge up before it activates.|In-game Description}}
+Weapons have varying Wind-up times between activating a Heavy Attack and the actual attack being performed. For example, {{Weapon|Skana}} has a wind-up time of 0.6s, meaning the actual Heavy Attack will be performed 0.6s after tapping the {{Keybind|MMB}}. Increasing melee attack speed does '''not''' reduce the wind-up time; rather, it reduces the interval between Heavy Attacks. During this brief period, the player is free to move and maneuver with the exception of performing any other melee attack. Being knocked down will cancel the charge. While winding-up, the combo counter decay is paused. Performing a Heavy Attack is possible when the combo counter is zero, and connecting with a Heavy Attack does not add to the combo counter.
+
+There is no cap to Wind Up. Even if numbers stop changing in the arsenal after adding multiple Wind Up mods, this is due to diminishing returns and the game's number rounding system. This can be proven with an FPS animation test.
+
+Heavy Slams do not have any wind up.
+
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+AmalgamOrganShatterMod.png|link=Amalgam Organ Shatter|{{M|Amalgam Organ Shatter}}|alt=Amalgam Organ Shatter
+KillingBlowMod.png|link=Killing Blow|{{M|Killing Blow}}|alt=Killing Blow
+MeleeElementalistMod.png|link=Melee Elementalist|{{M|Melee Elementalist}}|alt=Melee Elementalist
+SwiftMomentumMod.png|link=Swift Momentum|{{M|Swift Momentum}}|alt=Swift Momentum
+</gallery>
+
+===Tennokai===
+{{Quote|Recall the art of Tennokai. You occasionally have opportunities to perform faster Heavy Attacks with no cost to your Combo Counter.}}
+[[File:TennokaiIcon.png|right|class=light-invert]]
+Certain mods have the ability to invoke '''Tennokai'''. With Tennokai enabled, melee hits have a '''15%''' chance of flashing a sword icon resembling the {{Weapon|Skana Prime}} on the reticle for '''2''' seconds; performing a Heavy Attack or Heavy Slam during this flash increases its [[Wind Up]] Speed and does not consume [[Combo Counter]].
+*The Wind Up Speed of Tennokai attacks is '''not''' affected by Wind Up Speed bonuses from other sources.
+*The Wind Up Speed applies to [[Glaive (Weapon Type)]] throws as they are Heavy Attacks, though to consume Tennokai you have to explode a glaive in flight. <!-- 2 different kinds of heavy attacks -->
+
+The first Tennokai Mod {{M|Mentor's Legacy}} is awarded from the [[Whispers in the Walls]] quest. The other Tennokai Mods are awarded from [[Rotation]] C of [[Alchemy]] missions or purchasing the [[Essential_Mod_Bundle#Essential_Tennokai_Mod_Bundle|Essential Tennokai Mod Bundle]] from the [[Market]] for {{pc|100}}; the bundle only appears after installing the [[Orbiter Segments#Melee Upgrade Segment|Melee Upgrade Segment]] obtained from the Whispers in the Walls quest.
+
+Triggering Tennokai requires directly striking an enemy, though the energy waves from {{WF|Excalibur}}'s {{A|Exalted Blade}}, and {{WF|Baruuk}}'s {{A|Serene Storm}} can also trigger Tennokai. With the exception of [[Gunblade]]s, striking multiple enemies from a single hit and multi-strike attacks do '''not''' count as hits.
+
+{{WF|Titania}}'s {{Weapon|Diwata}}, {{WF|Ash}}'s {{Weapon|Shadow Clones}}, {{WF|Atlas}}' {{Weapon|Landslide Fists}}, {{WF|Gara}}'s {{Weapon|Shattered Lash}}, and {{WF|Khora}}'s {{Weapon|Whipclaw}} cannot equip Tennokai, as they cannot use Heavy Attacks.
+
+For melee [[Incarnon]] weapons such as the {{Weapon|Praedos}}, Tennokai can be used to activate their Incarnon forms without any loss to combo counter. 
+
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+Mentor'sLegacyMod.png|link=Mentor's Legacy|{{M|Mentor's Legacy}}|alt=Mentor's Legacy
+Condition'sPerfectionMod.png|link=Condition's Perfection|{{M|Condition's Perfection}}|alt=Condition's Perfection
+Discipline'sMeritMod.png|link=Discipline's Merit|{{M|Discipline's Merit}}|alt=Discipline's Merit
+Dreamer'sWrathMod.png|link=Dreamer's Wrath|{{M|Dreamer's Wrath}}|alt=Dreamer's Wrath
+Master'sEdgeMod.png|link=Master's Edge|{{M|Master's Edge}}|alt=Master's Edge
+Opportunity'sReachMod.png|link=Opportunity's Reach|{{M|Opportunity's Reach}}|alt=Opportunity's Reach
+Truth'sFlameMod.png|link=Truth's Flame|{{M|Truth's Flame}}|alt=Truth's Flame
+</gallery>
+
+===Interactions with Heavy Attacks===
+
+There are a number of conditional effects from mods, and set bonuses, and arcanes that  activate during on Heavy attack hits or kills.  Melee critical chance from [[Riven Mods]] and the variants of {{M|True Steel}} apply their bonuses twice on Heavy Attacks.
+
+Glaive type weapons apply these effects to the explosion of a Glaive Heavy attack only, and not to the weapon's damage from direct hits. 
+
+Non-hitscan projectiles created by Heavy Attacks, like those of {{Resource|Destreza Incarnon Genesis}} and {{Weapon|Syam}}, will often not be counted for bonuses like {{M|Killing Blow}}, except while the user is in the Heavy Attack Wind Up animation.
+
+<div class="tabber-borderless">
+{{#tag:tabber|
+Mods=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+KillingBlowMod.png|link=Killing Blow|{{M|Killing Blow}}|alt=Killing Blow
+DispatchOverdriveMod.png|link=Dispatch Overdrive|{{M|Dispatch Overdrive}}|alt=Dispatch Overdrive
+LifeStrikeMod.png|link=Life Strike|{{M|Life Strike}}|alt=Life Strike
+EmpoweredBladesMod.png|link=Empowered Blades|{{M|Empowered Blades}}|alt=Empowered Blades
+TrueSteelMod.png|link=True Steel|{{M|True Steel}}|alt=True Steel
+GalvanizedSteelMod.png|link=Galvanized Steel|{{M|Galvanized Steel}}|alt=Galvanized Steel
+SacrificialSteelMod.png|link=Sacrificial Steel|{{M|Sacrificial Steel}}|alt=Sacrificial Steel
+</gallery>
+{{!}}-{{!}}
+
+Set Bonuses=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+Amar'sContemptMod.png|link=Amar's Set|[[File:Amar'sSetIcon.png|x20px]] [[Amar's Set]]<br>Teleport to a target on using a Heavy Attack.|alt=Amar's Set
+CarnisStingerMod.png|link=Carnis Set|[[File:CarnisSetIcon.png|x20px]][[Carnis Set]]<br>Killing an enemy with a Heavy Attack briefly grants Evasion and immunity to Status Effects.|alt=Carnis Set
+</gallery>
+{{!}}-{{!}}
+
+Arcanes=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+ExodiaBrave.png|link=Exodia Brave|{{Arcane|Exodia Brave}}|alt=Exodia Brave
+MeleeAnimosity.png|link=Melee Animosity|{{Arcane|Melee Animosity}}|alt=Melee Animosity
+MeleeAssimilation.png|link=Melee Assimilation|{{Arcane|Melee Assimilation}}|alt=Melee Assimilation
+</gallery>
+{{!}}-{{!}}
+
+Weapon-Specific Mods=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" column="3" position="center" bordersize="none" bordercolor="#FFFFFF">
+AmalgamRipkasTrueSteelMod.png|link=Amalgam Ripkas True Steel|{{M|Amalgam Ripkas True Steel}}<br>For the {{Weapon|Ripkas}}.|alt=Amalgam Ripkas True Steel
+RiftStrikeMod.png|link=Rift Strike|{{M|Rift Strike}}<br>For the {{Weapon|Twin Basolk}}.|alt=Rift Strike
+StaticDischargeMod.png|link=Static Discharge|{{M|Static Discharge}}<br>For the {{Weapon|Prova}}.|alt=Static Discharge
+</gallery>
+}}
+</div>
+
+===Melee Damage on Heavy Attack===
+The term "Melee Damage on Heavy Attack" appears on {{M|Killing Blow}}, {{Arcane|Melee Assimilation}} and can be [[Riven Mods#Splicing|spliced]] onto [[Riven Mods]]. This bonus is additive with damage bonuses from mods like {{M|Pressure Point}}, and only applies when the attack is a Heavy Attack or Heavy Slam.
+
+{{clr}}
+
+==Lifted Status==
+{{Main|Lifted}}
+Depending on the type of melee weapon, both light attacks and especially heavy attacks can deal different effects to enemies, such as applying {{D|Knockdown}}, {{D|Ragdoll}}, {{D|Stagger}}, or {{D|Lifted}} [[Status Effect|status]]. Surviving enemies that are struck by heavy attacks from [[Heavy Blade]]s for example, will have a guaranteed Lifted proc applied to them. However, not all melee weapons grant Lifted status on heavy attack hits.
+
+{{D|Lifted}} status suspends enemies in mid-air in a ragdolled state for a short period of time, allowing players to briefly "juggle" them in a melee combo. Besides heavy attacks, Lifted status can also be applied to enemies by performing Heavy Slam Attacks with nearly any melee weapon, lifting all enemies within that weapon's ground slam radius. The higher the combo multiplier at the time of a heavy attack or heavy slam attack, the longer enemies can stay suspended. Unlike standard status effects however, status duration bonuses do not extend the lifted duration.
+
+==Range==
+{{Quote|Melee attacks hit enemies within this distance. Some Stances offer more Range using throws or lunges.|In-game Description}}
+Each melee weapon has a '''Range''' statistic associated with it that displays the weapon's reach in meters. The [[wikipedia:hitbox|hitbox]] of melee weapons are [[wikipedia:Stadium (geometry)|obround]] in shape, with the Range stat representing the length of the hitbox and a hidden '''Sweep Radius''' stat representing its width.{{Cite}}<ref>[https://forums.warframe.com/topic/1100191-ask-me-almost-anything-again/?do=findComment&comment=10814226 Glen's Ask Me &#91;Almost&#93; Anything &#91;Again&#93;]</ref> The Sweep Radius of most melees is 0.25 meters.
+
+Range can be increased by ({{M|Primed Reach|Primed}}) {{M|Reach}}, {{M|Spring-Loaded Blade}}, {{M|Motus Impact}}, and some [[Riven Mods]].
+
+<gallery>
+ParacesisUnmoddedReachHitbox.jpg|Unmodded {{Weapon|Paracesis}}
+ParacesisUnmoddedReachHitboxSide.jpg|Unmodded {{Weapon|Paracesis}}
+ParacesisModdedReachHitbox.jpg|{{Weapon|Paracesis}} with {{M|Primed Reach}}|alt=Paracesis with  Primed Reach
+ParacesisModdedReachHitboxSide.jpg|{{Weapon|Paracesis}} with {{M|Primed Reach}}|alt=Paracesis with  Primed Reach
+</gallery>
+
+==Follow Through==
+{{UpdateMe|Does each hand of a dual-wielded weapon (e.g. [[Fist]], [[Dual Swords]]) have their own Follow Through or is it shared?}}
+{{Quote|Modifies the amount of damage dealt in a single strike each time an additional enemy is hit after the first.|In-game Description}}
+Each melee weapon has a '''Follow Through''' statistic that tells what proportion of damage is dealt to successive targets in a single melee strike. Follow Through does not affect:
+*(Heavy) Slam Attacks
+*Any attack that shoots projectiles or deals AoE (e.g. [[Glaive (Weapon Type)]] throws and explosions)
+
+In general, if a single strike hits multiple targets, the amount of damage each target will receive will be:
+
+:{{MathText|Proportion of weapon damage {{eql}} FT<sup>(n - 1)</sup>}}
+
+Where '''n''' is the order of when an enemy is hit, and '''FT''' is the amount of Follow Through for the weapon. 
+
+For example, {{Weapon|Skana}} has a Follow Through stat of 0.6 ('''FT''' = 0.6). If a single strike of Skana hits three targets, the first target to be hit ('''n''' = 1) will be dealt {{Math|0.6<sup>(1 - 1)</sup>|mt=y|p=y}} of the total damage, the second to be hit ('''n''' = 2) will be dealt {{Math|0.6<sup>(2 - 1)</sup>|mt=y|p=y}} of the total damage, and the third ('''n''' = 3) will be dealt {{Math|0.6<sup>(3 - 1)</sup>|mt=y|p=y}} of the total damage.
+
+The total damage dealt with a given Follow Through stat for a sample of enemy group sizes are as such:
+<math>
+\text{Total Damage Multiplier Against n Number of Enemies} = \sum_{x = 1}^{n} \text{Follow Through}^{x - 1}
+= \frac{1 - \text{Follow Through}^n}{1 - \text{Follow Through}}
+</math>
+
+For example, against a group of 3 enemies, the Skana would deal '''1 + 0.6 + 0.36 = 1.96 = 196%''' of the base damage in total, which can be calculated with the closed-form formula as <math>\frac{1 - \text{Follow Through}^n}{1 - \text{Follow Through}} = \frac{1 - 0.6^3}{1 - 0.6} = \frac{1 - 0.216}{1 - 0.6} = \frac{0.784}{0.4} = 1.96</math>. 
+
+In general, as the number of enemies grows (i.e. '''n''' approaches <math>\infty</math>), the damage approaches <math>\infty</math> if the Follow Through is one; otherwise, the <math>\text{Follow Through}^n</math> term approaches zero and therefore the damage approaches <math>\frac{1}{1 - \text{Follow Through}}</math>. For example, against theoretically infinite enemies, the Skana's damage would approach an upper bound of <math>\frac{1}{1 - 0.6} = 1 \div \frac{2}{5} = \frac{5}{2} = 2.5</math> times the base damage ('''250%''').
+{| class="wikitable"
+|-
+! rowspan="2" | Follow Through || colspan="6" | Number of Enemies Hit
+|-
+! 1 || 2 || 3 || 5 || 10 || ∞ (infinite)
+|-
+| 0.4 || 1.00 || 1.40 || 1.56 || 1.65 || 1.66 || 1.66
+|-
+| 0.5 || 1.00 || 1.50 || 1.75 || 1.94 || 1.99 || 2.00
+|-
+| 0.6 || 1.00 || 1.60 || 1.96 || 2.31 || 2.48 || 2.5
+|-
+| 0.7 || 1.00 || 1.70 || 2.19 || 2.77 || 3.24 || 3.33
+|-
+| 0.8 || 1.00 || 1.80 || 2.44 || 3.36 || 4.46 || 5.00
+|-
+| 0.9 || 1.00 || 1.90 || 2.71 || 4.09 || 6.51 || 10
+|-
+| 1.0 || 1.00 || 2.00 || 3.00 || 5.00 || 10.0 || ∞ (infinite)
+|-
+|}
+
+Follow Through was added in {{ver|13}}, but was only shown in the Arsenal since {{ver|26}}.{{Cite}}
+
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;width:50%;font-size:12px;"
+|-
+! scope="col" |Weapon Class
+! scope="col" |Typical Follow-through
+|-
+|[[Hammer]]
+| rowspan="2" |0.4
+|-
+|[[Heavy Scythe]]
+|-
+|[[Bayonet]]
+| rowspan="7" |0.5
+|-
+|[[Blade and Whip]]
+|-
+|[[Dual Swords]]
+|-
+|[[Gunblade]] 
+|-
+|[[Nunchaku]]
+|-
+|[[Staff]]
+|-
+|[[Whip]]
+|-
+|[[Dual Nikanas]]
+| rowspan="7" |0.6
+|-
+|[[Heavy Blade]]
+|-
+|[[Polearm]]
+|-
+|[[Scythe]]
+|-
+|[[Sword]] 
+|-
+|[[Sword and Shield]]
+|-
+|[[Tonfa]]
+|-
+|[[Glaive (Weapon Type)]]
+| rowspan="6" |0.7
+|-
+|[[Machete (Weapon Type)]]
+|-
+|[[Nikana (Weapon Type)]]
+|-
+|[[Rapier]]
+|-
+|[[Two-Handed Nikana]]
+|-
+|[[Warfan]]
+|-
+|[[Claws (Melee)]]
+| rowspan="2" |0.8
+|-
+|[[Dual Daggers]]
+|-
+|[[Dagger]]
+| rowspan="3" |0.9
+|-
+|[[Fist]]
+|-
+|[[Sparring]]
+|-
+|[[Assault Saw]] 
+| rowspan="2" |1.0
+|-
+|[[Exalted Weapon]]
+|-
+|}
+
+===Exceptions===
+* {{Weapon|Volnus}}/{{Weapon|Volnus Prime}} have a native value of 0.6, but this reverts to category default 0.4 when a stance mod is used.
+*{{Weapon|Ironbride}} has a value 0.7 instead of the category default 1.0.
+*{{Weapon|Magistar}}/{{Weapon|Sancti Magistar}} with [[Magistar Incarnon Genesis]] Evolution II, Perk 1 ('''Crushing Verdict''') increases their value to 0.8 with a [[Channeled Abilities|Channeled Ability]] active.
+*{{Weapon|Nami Solo}} with [[Nami Solo Incarnon Genesis]] Evolution III, Perk 1 ('''Lone Blade''') can increase its value to 1.0, as long as the weapon is in exclusive Melee Mode
+*{{Weapon|Dorrclave}} will increase its value to 1.0 for 10 attacks after 10 kills.
+
+==Finishers==
+[[File:Dual_Swords_Back_Finisher.png|thumb|right|170px|Excalibur executing a Stealth Attack with Dual Swords.]]
+{{Main|Finisher}}
+Finisher attacks have custom animations and deal a very high percentage of the equipped melee weapon's total damage. Players performing finishers are immune to any kind of damage for the duration of the animation.
+
+The three types of finishers are:
+*Ground Finisher, on knockdowned targets
+* Stealth Attack, on unalerted enemies
+*Front- / Back-Finisher, under specific effects
+
+==Tips==
+*For players wanting to specialize in melee combat, remapping the equipped melee attack key to {{Keybind|LMB}} can make performing attacks and melee combos easier and more instinctive.  
+**There is also an option which allows the Fire button to be used when the melee is drawn using the default melee key. Players can immediately return to their other weapons by pressing the Aim/Block button, which will not block, but rather bring up the previously equipped Primary or Secondary.
+*While doing heavy attacks, the moment the swing does damage, immediately pressing the melee key will execute another heavy attack, this can be repeated. Connecting a second heavy attack immediately after the first will retain the current combo counter, only draining it after the second heavy strike has been swung.
+
+==Bugs==
+*Successfully blocking an attack while rolling can make a player unable to attack with their melee weapon. This is usually accompanied by a slight change in camera perspective where the camera is positioned slightly down while facing upwards. This bug can be resolved by performing a roll or dodge again.
+*Tapping the melee key slightly before landing causes the player to slide across the ground with minimal friction for a brief period.
+==History==
+*Some melee weapons were previously used as '''''Statsticks''''', modifying the power of a Warframe's (typically [[Pseudo exalted|pseudo-exalted]]) ability via the equipped melee mods.  These melee builds often featured unconventional mods specifically for the purpose of boosting an ability, rather than for use as a traditional melee weapon.
+
+==Media==
+
+{{VideoGallery
+|{{YouTube|nyE0Wbef8NQ|size=300px}}
+|{{YouTube|36Ejk7e04II|size=300px}}
+|{{YouTube|xS3Qlcmgtzo|size=300px}}
+}}
+
+==Patch History==
+<!--Patch history for all general melee changes (including Melee 1.0, 2.0, and 3.0)-->
+{{Scrollbox/Article|
+{{ver|42}}
+*Fixed cases of stretched VFX when performing Melee Slam attacks.
+
+{{ver|40.0.2}}
+*Fixed performance issues caused by Slam VFX.
+
+{{ver|40}}
+*Fixed Heavy Attacks on Sparring weapons and Valkyr’s Talons using the range of the previous Melee Slam Attack, instead of a set range.
+
+{{ver|39.0.6}}
+*Fixed a crash caused by Melee Slam Attacks.
+
+{{ver|39.0.5}}
+*Fixed unintentionally bright VFX from Melee Slam attacks.
+
+{{ver|39.0.4}}
+*Fixed <nowiki><IOS_BLOCK></nowiki> appearing instead of the icon for Block input in the Melee Combo screen.
+
+{{ver|39}}
+;Melee Slam Attack Changes
+
+As we detailed in Devstream #188, we are making changes to Melee Slam Attacks so the damage now scales with the Slam’s height (ie. how far players were from the ground when they initiated the Slam). In their previous iteration, Melee Slams could be used in disruptive ways:  slams could be repeatedly performed with a large radius and no energy cost, allowing a very powerful attack to be spammed with no downsides. 
+
+To address these concerns, we have adjusted Melee Slam Attacks as follows:
+
+*The radius of Melee Slam now scales with how high a Warframe is before initiating the slam.
+**When hitting an enemy precisely with a slam (by landing on or directly beside them), there should be no noticeable change even when starting near the ground.
+*Fixed how the Nira’s Mod set effect interacts with Slam for damage calculations.
+**This buff used to be incorrectly applied twice, once for Slam attacks and once for Melee attacks, and it applied to itself multiplicatively — meaning +100% took 500 damage to 2,000 damage!
+***Nira’s Mod set now only apply its bonus to Melee Slam Attacks.
+***We have changed it to be +150% (per Mod, there are 3 Mods so it can go to +450%), up from +100% per Mod (+300% max)
+*Reduced the visual effects of Melee Slam Attacks.
+**This should ensure that you can still see what is going on if someone in your party is slamming to kill everything that moves in Oraxia’s Lair (totally fair reaction, by the way).
+
+{{ver|38.6}}
+*Fixed the wrong animations being used when in melee-only mode.
+*Fixed incorrect weapon trail VFX on numerous Fist subclass Melee weapons.
+
+{{ver|38.5}}
+*Players will now parry enemy Status Effects when parrying an enemy Melee Attack.
+**This fixes Scaldra Flayers Gas Status Effect damaging players through Melee parries, turning a bug into a feature. Woo!
+
+{{ver|38.0.8}}
+*Adjusted mix for all Melee “whoosh” SFX.
+
+{{ver|38}}
+*Fixed an issue where interrupting a Heavy Melee charge with an animationless ability while holding the Melee attack binding would resume the charge from where it left off, instead of restarting the charge animation.
+*Fixed continuously Melee attacking with no input after Transference while auto-meleeing.
+*Fixed Melee weapon being in the wrong hand after Wall Latch Melee attack.
+
+{{ver|37}}
+*The Tennokai window timer is now paused while the Glaive is flying in mid-air. Previously it could expire mid-throw, when players had little power to actually make use of this window.
+*Enabled Auto-Melee Aerial attacks for Glaive-like weapons that don’t have an Aerial throw, or don’t charge their Aerial throw moves, such as the Wolf Sledge or Sigma & Octantis.
+**Also fixed an issue where holding the regular Melee attack input with a throw attack, such as the Wolf Sledge, could cause your next Heavy Melee input to execute a regular Melee attack instead.
+*Fixed Mesa being able to Melee while using Peacemaker with the Mesa’s Waltz Augment equipped.
+*Fixed an issue where certain thrown weapons couldn't activate Tennokai by doing a Heavy Slam Attack.
+*Fixed a bug where the Melee Lifted Status Effect could fling enemies unintentionally.
+*Fixed Voruna being able to Melee while in Ulfrun’s Descent, sometimes causing players to unintentionally lose her Shroud of Dynar invisibility while in Alpha Mode™.
+*Fixed a case where Melee input would be ignored if aiming while switching to Voruna’s Fangs of Raksh passive.
+*Fixed Jade’s Deathbringer buff not applying to Melee weapons.
+*Fixed an issue where performing a Heavy Slam attack immediately after a regular Quick Melee attack would cause a regular Slam attack, or a Slam attack that lacked VFX.
+*Fixed Primary/Secondary Incarnons losing their special Incarnon reticle if the Melee Retaliation Arcane is equipped.
+*Fixed an issue where holding the Heavy Melee button could sometimes throw a Glaive. 
+*Fixed auto-melee getting stuck in certain cases. 
+*Fixed holding the melee input while summoning Archwing in Open Landscapes causing players to continually Melee while in Archwing. 
+*Fixed opening the Nightwave Screen while mid-melee swing causing your gun to shoot uncontrollably until the fire input is hit.
+*Fixed a script error crash caused by Heavy Melee Slamming with Melee Afflictions equipped.      
+*Fixed Sword and Shield melee weapons not holstering correctly on Styanax (Shield not attaching to his forearm).
+
+{{ver|36.1.5}}
+*Ivara's Prowl, Loki's Invisibility, Ash's Smoke Screen and Banshee's Silence will now muffle Melee weapon impact and dismemberment sounds (for player audio).
+
+{{ver|36.0.5}}
+*Fixed cases of Melee Heavy Attack input not registering. 
+**Also added the ability for Tennokai attacks to interrupt “not quite started” quick attacks. 
+*Fixed Overguard preventing players from parrying.
+
+{{ver|36}}
+*Improved the responsiveness of holding the Melee Attack input to perform a throw for Melee weapons with ranged attacks (ex: Sigma & Octantis). Pressing and holding the Melee attack input now throws after one swing instead of two. 
+**As a result of this change, it is now easier to activate Tennokai with Glaives in the window it is available. Prior to this change, the second swing could prevent you from hitting Tennokai before the timer ran out. 
+***This also fixes multiple issues with thrown weapons and Tennokai: 
+****Fixed Wolf Sledge not benefitting from Heavy Attack Wind Up Speed Mods or Tennokai’s Wind Up Speed bonus. 
+****Fixed instances where the Wolf Sledge’s Tennokai Heavy Attack would not complete (the animation would halt halfway-through and leave players stuck mid swing until they Melee attacked again). 
+****Fixed an issue where throwing a Glaive manually (ie. by releasing the Melee attack input instead of auto-throwing) would consume and waste Tennokai unnecessarily.
+*Fixed being unable to Auto-Melee as Chroma while Spectral Scream is active. 
+*Fixed an issue where Auto-Melee wouldn’t work while on a Zipline.
+*Fixed being able to equip Tennokai Mods onto Sentinel weapons such as Deconstructor, Batoten, Lacerten or Akaten (since they do not benefit from them and take up valuable Mod slots). 
+**If you had Tennokai Mods equipped to your Sentinel’s Weapon, they have been automatically unequipped.
+*Fixed an unintentional weaponless Ground Slam Attack occurring after using the “Context Action” binding while airborne and looking down. 
+*Fixed a case where spamming Ground Slams could leave players with the inability to jump. 
+
+{{ver|35.5.9}}
+*Made mix adjustments for the Tennokai sound FX, to help alleviate potential auditory fatigue with fast Melee builds.
+
+{{ver|35.5.8}}
+*Fixed a bug where Clients would stop auto-meleeing to abruptly block when another player in the squad uses Transference. 
+**As mentioned on Devshorts 13, we are continuing to investigate other auto-melee issues.
+
+{{ver|35.5.1}}
+*Fix Slam Attacks not benefiting from Melee Slam Damage Mods.
+
+{{ver|35.5}}
+;MELEE ATTACK CHANGES
+
+'''Melee Ground Slam Attack Changes'''
+
+Prior to Dante Unbound, Melee Ground Slam Attacks were distributed between two damage instances - they appeared in the Arsenal UI (includes the stats window when hovering over equipment as well as the Upgrade screen) as follows:
+
+*'''Slam Attack:''' Damage inflicted on an enemy by hitting them directly with a Ground Slam Attack. 
+**'''Note:''' We’ll refer to this stat as “Slam Direct Hits” moving forward in this section of the patch notes to avoid confusion between all the terms. This term denotes that the damage instance came from the direct Melee hit on an enemy while performing your Ground Slam - effectively Goomba Stomping them, if you will. 
+**Damage on Slam Direct Hits was scaleable with Mods.
+'''Slam Radial Damage:''' Additional damage inflicted to all enemies in the radius of a Ground Slam attack. 
+**Other than a few specific Mods (Seismic Wave, etc.), Slam Radial Damage was locked at a flat value and did not scale with Mods.  
+
+'''What’s Changed:'''
+
+'''1 - Ground Slam Attacks are now entirely Radial Damage'''<br/>
+Ground Slam Attacks now only have one instance of damage: Slam Radial Damage! It is now the whole sum of the damage dealt by Ground Slam Attacks instead of being “additional”. 
+
+What this means is that Slam Direct Hits are no more. All the damage done by a Ground Slam Attack is now purely Radial. 
+
+With this change, it's worth noting that we have also maintained the Damage Falloff on Slam Attacks, where damage diminishes the further an enemy is from the point of impact, but with some changes:
+*'''Previously:''' Damage could fall off to ~0% at the edge of the impact radius. 
+*'''Now:''' Damage will only ever go as low as 50% (of total damage) at the edge of the impact radius for normal Slam Attacks, and 70% for Heavy Slam Attacks.
+
+'''2 - Ground Slam Attack’s Radial Damage now scales with Mods'''<br/>
+Since Slam Attacks are now purely Radial Damage, we’ve made its damage scaleable with Mods, when previously it wasn’t. This effectively buffs Ground Slam Attacks since you can now directly increase its damage and apply Weapon Status (inherited from Mods), which ultimately improves its scalability for late game content.
+
+It’s worth noting that all of the above changes '''only''' apply to AERIAL/JUMP Ground Slam Attacks (In air + Aim Downwards + Melee) and AERIAL/JUMP Heavy Ground Slam Attacks (In air + Aim Downwards + Heavy Melee). They do '''not''' affect Slam Attacks that are part of Stance Combos. For example, Slam attacks during combos deal flat damage amounts and do not scale with Mods. We currently do not have plans to change this. 
+ 
+'''3. Added a 2x Multiplier to its Radial Damage'''<br/>
+Slam Direct Hits had a 2x-3x multiplier (depending on Weapon Class) to account for the fact that it was actually quite difficult to land them, so the multiplier helped in making those rare instances feel impactful.
+
+Since Slam Direct Hits are no more, we have accounted for its removal by applying a 2x multiplier to Slam Attack’s Radial Damage '''across all Weapon classes.''' For the reasons listed directly above (Radial Damage now scalable with Mods) and for the sake of balance, the 2x (3x for Heavy Slam Attacks) multiplier on Radial Damage maintains the damage output without going overboard.
+
+'''How The Changes Appear in the Arsenal:'''<br/>
+Melee Ground Slam Attacks now has only one core stat in the Arsenal: SLAM ATTACK. The number listed beside indicates its Radial Damage.
+
+You’ll notice that with all of the above changes, some Melee weapons’ Slam Attack Damage has changed. Previously “Slam Attack” in the UI informed of “Slam Direct Hits”, which for some Melee weapon types (ex: Polearm, Sword, Two-Handed Nikanas, etc.), had a 3x multiplier applied. Now, since “Slam Attack” in the UI indicates Radial Damage and has had a 2x multiplier applied across all Melee types, the damage for those weapons may differ.
+
+But now that you can scale Slam Attack Damage with Mods, those differences can be easily recouped and then some.
+
+We’ve also added a Slam Radius stat to the tooltip to better inform players in-game: “Ground Slam attack hits all enemies around the point of impact within X meters.”
+*It’s worth noting that the Slam Radius for each Weapon class has been untouched. 
+
+;Melee Finisher Improvements
+
+Melee Finishers have been updated to standardize Finisher eligibility across enemies and weapons. Previously, if an enemy did not have a finisher animation prepared for a certain weapon type, then players would not be able to perform that specific Finisher on them. We have added default animations for all weapon types to prevent this restriction, meaning '''all enemies* should now be eligible for every type of finisher.'''
+*Also added a new VFX to showcase when an enemy is open to Finishers. You will still need to get into proper position to execute the finisher with this VFX active!
+*This includes finisher openings created by Warframe abilities (ex: Inaros Desiccation) and Ground Finishers. 
+*<nowiki>*</nowiki>Flying enemies (Corpus Ospreys, The Anatomizer, etc.) are still ineligible for Melee Finishers with this change.
+*Added new unique Mercy Finishers to the Hollow Vein, Severed Warden, The Anatomizer, Lumbering Fragment, and Shuffling Fragment enemies! Each with their own custom animations to really stick it to the Murmur in style. 
+**The context action to perform a Finisher on the airborn Murmur enemies (The Anatomizer and The Severed Warden) are not anchored to their bodies and will instead appear on the HUD when you are within radius of them. This is an experimental approach into finding ways to include Finishers on other airborne enemies in the future. 
+
+;Auto-Melee Fixes
+*Fixed getting locked auto-meleeing (even without input) after interacting with items and other actions while melee attacking. Notably: 
+**Interacting with Golden Hand Tributes
+**Selecting Duviri Decree
+**Entering Sanctuary Onslaught portal
+**Selecting Endless Void Fissure reward
+**Opening Gear Wheel
+**Using Transference
+**Interacting with turrets in Railjack
+***Known issue: We are aware that this issue can occur from the Stay/Leave screen in the Circuit. 
+*Fixed Auto-Meleeing in a certain location in the “Awaken the Sleeper” stage of the Whispers in the Walls Quest causing an interaction to be skipped. 
+**Melee will now be disabled when in this area to prevent key moments from being skipped.
+*Fixed getting locked auto-meleeing after holding the ability menu open and auto-meleeing simultaneously while using a controller. 
+*Fixed getting locked auto-meeling after opening the pause menu/chat window while holding the Melee attack button. 
+*Fixed Auto-melee persisting after exiting a Railjack turret / pilot seat if melee input was held upon entering it. 
+
+;TOP FIXES
+*Fixed being able to Heavy Attack mid-air. Now mid-air Heavy Attacks will perform a Heavy Ground Slam as intended. 
+*Fixed being unable to perform a Melee Ground Slam if started while in Transference.
+*Fixed Disclipline’s Merit’s “Opportunities [for Tennokai] occur every 4 melee hits” not counting all the hits from an Exalted Melee Weapon and standard Melee Weapon when equipped on both.
+*Fixed Melee Heavy Slide Attacks not functioning with various mechanics, including but not limited to Tennokai, Heavy Attack Decrees (ex: Salted Wound), etc.
+*Fixed an issue where if you had any Heavy Attack Efficiency and your Combo Duration was zero, you would immediately get all of your Initial Combo back instead of it regenerating overtime.
+*Fixed context action Finishers not triggering “On Finisher Kill” Arcanes (Arcane Trickery, Arcane Ultimatum, Melee Crescendo).
+
+;GENERAL FIXES
+*Fixed an issue where using Melee attack to switch from Operator to Warframe and then immediately using Transference could leave you with an invisible Operator.
+
+{{ver|35.1}}
+*Fixed Operator getting stuck infinitely Void Blasting after switching from Warframe to Operator while auto-meleeing. 
+**''We are aware of and investigating other issues related to Auto-Melee that we’re hoping to fix for Dante Unbound.''
+*Fixed Kullervo’s Wrathful Advance ability not activating Tennokai.
+*Fixed being able to gain Melee Combo by unconventional means if your Melee Combo Duration was negative. Indirectly also fixed Heavy Attacks not consuming from Combo Counter when Melee Combo Duration was negative.
+*Fixed being unable to swap Polarities on a Melee weapon if you do not own the Tennokai Segment.
+*Fixed the Exilus Slot appearing for Melee weapons in the Upgrade screen even if you don’t own the Tennokai Segment. 
+*Fixed Mod Slots overlapping in the Zaw Gild screen if the Tennokai Segment isn’t installed.
+
+{{ver|35.0.4}}
+*The Tennokai Mod Bundle no longer requires completion of the Whispers in the Walls Quest to purchase in the Market.
+**''Players can access Tennokai without the Melee Upgrade Segment installed in their Arsenal, so we see no reason to lock it behind Quest completion.''
+*Fixes towards Heavy Attacking while using Transference causing players to be stuck in an endless Void Blast loop as Operator/Drifter.
+**''We cannot guarantee this is a perfect fix, but after testing we hope that this issue should be less prevalent at the very least!''
+*Fixed Tennokai attacks sometimes occurring in the wrong order if multiple Heavy Attacks are done in a row.
+
+{{ver|35.0.3}}
+*Fixed Tennokai not applying to Heavy Slam Attacks.
+
+{{ver|35}}
+;NEW HEAVY ATTACK SYSTEM&#58; TENNOKAI
+
+With the launch of Auto Melee in Abyss of Dagath, we mentioned that we were working on a “Perfect Heavy Attack” system for Whispers in the Walls, and it is officially here!
+
+Recall the ancient art of Tennokai with new Tennokai Mods for your Melee Weapons. Tennokai is a long-lost melee art form, allowing Tenno to make the most out of their Heavy Attacks. With Tennokai enabled on your Melee weapon, you will have a 15% chance for a symbol to appear while performing a melee attack. If you perform a Heavy Attack while the symbol is active on your reticle, it will trigger a Tennokai Heavy Attack, which has a faster wind-up speed and does not consume any combo counter. 
+
+With this new Tennokai system, there are a variety of Mods that allow you to further customize the frequency and effects of these Tennokai attacks.
+
+'''HOW TO ENABLE TENNOKAI:'''<br/>
+You can enable Tennokai for your Melee Weapon by equipping any of the new Tennokai Mods onto it. Tennokai Mods can be equipped in your build as normal, or in the new Melee Exilus Slot that is unlocked via the Melee Upgrade Segment acquired upon completion of the Whispers in the Walls Quest. 
+
+;TENNOKAI MODS
+
+These Mods can be earned from Rotation C of the new '''Alchemy''' game mode (Cambire, Deimos) or purchased via the Market in the '''Essential Tennokai Mod Bundle*'''.
+
+''<nowiki>*</nowiki>The Market purchase option is not available to players until they have installed the Melee Upgrade Segment (rewarded from completing the Whispers in the Walls Quest).''
+
+'''Discipline’s Merit'''<br/>
+Enables Tennokai. Opportunities occur every 4 melee hits instead of at random.
+
+'''Dreamer’s Wrath'''<br/>
+Enables Tennokai. Increases opportunity chance by 50% and Heavy Attack critical damage by 32%.
+
+'''Master’s Edge'''<br/>
+Enables Tennokai. Increases Tennokai damage by 60%.
+
+'''Condition’s Perfection'''<br/>
+Enables Tennokai. Increases status chance by +100% on Tennokai Attacks.
+
+'''Opportunity’s Reach'''<br/>
+Enables Tennokai. Increases opportunity window to 4.0s and melee range by 3m for Tennokai attacks. 
+
+Tenno will also receive a basic Tennokai Mod in their Inbox upon completion of The Whispers in the Walls Quest:  
+
+'''Mentor’s Legacy*'''<br/>
+Enables Tennokai.<br/>
+<nowiki>*</nowiki>This mod is not tradeable as it is a Quest reward!
+
+;MELEE UPGRADE SEGMENT 
+
+Upon completion of the Whispers in the Walls Quest, players will receive a new Melee Upgrade Segment via their in-game Inbox. Installing it will further expand your Melee Arsenal with two new upgrade options:
+
+'''Melee Exilus Slots'''<br/>
+Fuse an Exilus Weapon Adapter into your Melee weapon to unlock the new Melee Exilus Slot. Players will be able to equip the new Tennokai Mods into this slot, as well as the following newly Exilus-compatible Mods: 
+
+*Parry
+*Dispatch Overdrive 
+*Focused Defense
+*Guardian Derision
+*Electromagnetic Shielding
+*Whirlwind
+
+'''Melee Arcane Slot'''
+In these new Arcane Slots, players will be able to equip new Melee Arcanes, which have also been released with this update. Players can earn Melee Arcane Adapters via the Wares & Shiny Treasures Vendor in the Cavia Syndicate, Netracells, or by purchasing them in the Market for Platinum*.
+
+<nowiki>*</nowiki>The Market purchase option is not available to players until the completion of the Whispers in the Walls Quest.
+
+'''Melee Arcanes and Zaw Arcanes'''<br/>
+Like Kitguns, Zaws will offer both a slot for Zaw Arcanes and Melee Arcanes (once Melee Arcanes are unlocked). Zaw Arcanes cannot be used in Melee Arcane Slots, and vice versa.  
+
+;TOP FIXES
+*Fixed Auto Melee persisting if the first melee of a mission is a Warframe ability (Kullervo’s Wrathful Advance, etc.)
+*Fixed using Auto Melee while entering a Cutscene resulting in being locked in a perma-melee state with no input required.
+*Fixed block combos not working seamlessly with auto-melee.
+*Fixed Parazon getting equipped in hand after Mercy-killing an Eximus enemy while auto-meleeing.
+*Fixed endlessly Melee attacking in Duviri as Drifter if the “Melee with Fire Weapon Input” toggle is enabled.
+*Fixed a bug where auto-melee was preventing players from throwing throwable objects, such as Thermia Canisters, with their Melee equipped.
+
+;GENERAL FIXES
+*Fixed Heavy Attack charge up animation not respecting “Camera Tracks Melee Target” setting while the player is stationary.
+*Fixed rare cases where you could trigger Auto Melee while on the Kaithe.
+*Fixed an issue where lightly tapping the melee input to swap from Sirocco to Melee as Drifter would not actually perform a melee swing, resulting in players being unable to quick fire for a short period of time.
+
+{{ver|34}}
+;Auto Melee 
+
+Adding an Auto Melee button has been a frequently requested topic over the years as a way to mitigate repeated button presses. Your days of spamming E are over with the new Auto-Melee functionality! Here’s how it works:
+
+With Auto Melee, players can trigger melee swings through the familiar repeated melee inputs, or '''they can simply hold the melee input button to repeatedly swing their melee weapon''' for as long as that input is held. Combos can be executed while auto-meleeing by simply adding the required inputs -- i.e. to start Slide Attacking, simply start sliding while holding the Melee Input, etc.
+
+'''In short, the Warframe melee that you know isn’t changing''' - the only difference is that instead of needing to press your E hundreds of times, you only need to press (and hold!) it once. 
+
+Our goal is not to alter the main way you play Warframe melee if you prefer the precision of individual inputs - auto-meleeing is an additional way to play the game. This mechanic has been released as a permanent functionality of the Melee system, as '''we’ve designed this so that both individual input and auto-melee can co-exist without issue.'''
+
+Since Auto-Melee is removing a lot of the active element of meleeing, we are working on an addition to this system called “Perfect Heavy Attacks” that aim to release with Whispers in the Walls. 
+
+'''Exclusions to Auto Melee'''<br/>
+Due to the mechanics of Auto Melee mirroring that of thrown melee weapons, the following weapons will not have Auto Meleeing enabled for them:
+*All Glaive Weapon Types     
+*Wolf Sledge
+
+{{ver|33.6}}
+*Added on-hover tooltip in the Melee Combos screen to provide more details (Stats, Status Effects, etc.).
+*Fixed consecutive Heavy Attacks not resetting the Melee Combo multiplier.
+
+{{ver|33.0.11}}
+*Fixed sword and hammer melee “whoosh” SFX being too loud.
+
+{{ver|33}}
+*Fixed Melee hits that hit multiple enemies in the same frame using the wrong hit FX after the first enemy was struck.
+
+{{ver|32.2}}
+*Fixed performing a Heavy Attack turning other active melee effects into Heavy Attacks.
+*Fixed flickering on Heat and Viral Melee elemental FX.
+
+{{ver|32}}
+*Fixed some melee weapons (ex: Nikana with Blind Justice) not chain attacking while blocking in melee-only mode.
+*Fixed your character rotating rapidly in the Pause Menu if it was opened while you are toggled into Blocking or you are facing enemies that cause you to automatically Block.
+*Fixed cases of some Melee weapons being unable to chain attacks while blocking in exclusive Melee mode.
+*Fixed for Melee elemental FX not showing up when loading into a level.
+*Fixed crash when certain enemies attempt to melee attack.
+
+{{ver|31.6.4}}
+*Fixed being unable to use manual blocking while in melee-only mode, or use aim+attack melee combos, unless you are also using the ‘Hold to Aim Weapon’ in the Accessibility options. 
+**''We reverted back to its original functionality where melee could toggle into blocking mode when ‘Hold to Aim Weapon’ was disabled.''
+
+{{ver|31.6}}
+*Fixed the intended heavy attack wind up time not applying to Gunblades when spammed. 
+**''This also fixes melee charges (from any melee weapon) being ignored when spammed.''
+
+{{ver|31.2}}
+*Fixed script error related to Melee ground slam kills.
+
+{{ver|31.1}}
+*Fixed inability to block with your Exalted Melee weapon if your normal Melee weapon has a Melee Combo built up and you’re in exclusively Melee mode (no other weapons).
+*Fixed a cosmetic issue where being downed while only carrying Melee weapons would leave them looking holstered when somebody revived you.
+
+{{ver|30.9}}
+*Updated Melee Slam FX.
+
+{{ver|30.7.5}}
+*Tweak elemental weapon FX to bring unification across elemental combos.
+
+{{ver|30.7.2}}
+*Fixed Melee Ground Slams not traveling to targeted spot due to being affected by gravity.
+
+{{ver|30.7}}
+*Fixed a pop in the Heavy Blade animation loop that would occur in the left hand.
+
+{{ver|30.5.4}}
+*Reverted the Melee Follow Through changes that unintentionally went out in 30.5. This was an experimental change we tried out in development, but it should have been reverted before release.
+**https://forums.warframe.com/topic/1271197-numerous-melee-weapon-classes-recieved-undocumented-follow-through-nerfs/page/3/
+
+{{ver|30.3}}
+*Fixed improper Melee sounds when hitting Sentients.
+*Fixed incorrect positioning of Sugatras on numerous Melee weapons.
+
+{{ver|29.10}}<br/>
+For those Tenno who don’t tune into Devstreams, we are actively reviewing the divide between Melee and Primary weapons in terms of power and lethality. A lot of Tenno have made cases that ‘Primary weapons just can’t compete with Melee’, and we agree. We are planning on doing a full detailed review of this and giving players a detailed workshop on what’s on our minds. That will come in the next few weeks. 
+
+However, we have one single change in this Update to Melee. The majority of all '''guaranteed enemy staggers on Melee hits''' have been removed. A few remain in neutral, forward block and neutral block combos. What this change does in practice is effectively removes the infinite Crowd Control melee attacking provided. The Crowd Control potential stacked with the scaling Damage potential was an area we could immediately change to give players a chance to try out this single tweak in the context of the current game. 
+
+This change is rather small in a practical sense, and after you’ve played missions with the change, please let us know what you think.  
+
+Other Melee Changes:
+*Reduced the forward movement of the Warfan Heavy Attack.
+*Reflection Mod changed from “Damage reflected during Channeled blocking” to:
+**+40% Chance to Stagger on Block
+**+10% Chance to Stun on Block
+**Increased from common to uncommon
+
+{{ver|29.6.5}}
+*Fixed missing lower body animations when performing a Whip aerial attack.
+
+{{ver|29.5.2}}
+*Fixed an issue with several one-handed Melee weapons not functioning (as an accidental result of the Glaive changes). Weapons included: most Machetes, Plasma Sword, Destreza and Destreza Prime, Sheev, and Scoliac.
+
+{{ver|29.5}}
+*Improved Melee slam animations!
+**You’ll now be able to start moving after a Melee slam at the same timing as when you can shoot or perform another Melee attack.
+
+{{ver|29.2}}
+*Made a micro-optimization for Melee ground slams.
+
+{{ver|28.3}}
+*Cleaned up Melee grip FX across all Prime, Syndicate, Prisma, etc. weapons.
+*Fixed switching back and forth between Melee weapon and Exalted Melee weapon causing the Arsenal stats to stack indefinitely.
+
+{{ver|28.0.6}}
+*Fixed ability to keep your Melee Combo for Gunblade Heavy Attacks by timing a Transference activation at the right time. Gunblade Heavy Attacks will now expel Melee Combo as intended.
+
+{{ver|27.3.9}}
+*Fixed being able to exit the Input Bindings screen without something bound to Melee Heavy Attack, which could result in wonky Melee Combo icons.
+
+{{ver|27.2}}
+*Fixed an extremely specific method of Melee coptering (hello 2015) by interrupting a slide attack with a dodge roll.
+
+{{ver|27.1}}
+*Melee Heavy Attacks are no longer able to be triggered by holding 'E', they again live exclusively on Alt-Fire.
+**''The loss of Melee Combo Counter feedback due to spamming Melee drove the vast amounts of requests for Melee Heavy Attack to not be holding ‘E’. A toggle for Melee Heavy Attacks is not in the cards, thus Melee Heavy Attacks are now essentially brought back to its original mechanic of having to use Alt-Fire.''
+
+{{ver|26.0.7}}
+;Melee Phase 2<nowiki>:</nowiki> Technique Changes & Fixes
+While most of our previous Hotfixes have focused on base functionality and bug fixes of Melee: Phase 2, this Hotfix takes a stab at some balancing in the wake of all the changes. This Hotfix also adjusts some Stances based on feedback.
+*UI: Split ‘HEAVY ATTACK’ Stats into their own category to better organize the various stats associated with all Melee Weapons.
+*‘Hold Melee’ will now perform heavy attack like it did before Phase 2.
+*Removed Combo Hit Multiplier with Glaive's hit damage. Only explosive damage will use the Combo Multiplier.
+
+;Mod Changes
+The Critical Chance game has largely allowed Blood Rush to shine for active melee players, and with the ‘Steel’ series of Mods applying at the Base Critical Chance level, it’s led to players feeling they are obsolete. We are significantly buffing these Mods to give players a different option for Critical Chance builds. We want to give a more upfront Critical Chance and hard-hitting Heavy Attacks to builds that don’t rely on maintaining a high combo multiplier.
+*True Steel increased from 60% to 120% Critical Chance (x2 for Heavy Attack) at Max Rank.
+*Sacrificial Steel increased from 88% to 220% Crit Chance (x2 for Heavy Attack) at Max Rank.
+
+;Stance & Weapon Changes
+*Crimson Dervish:
+**Fixed Crimson Dervish not having its sliding heavy attack hooked up.
+**Increased the damage and combo-point value of Crimson Dervish's Neutral (Twisting Flurry) and Forward+Block (Coiling Impale) combos
+*Gun Blade:
+**Added a free movement shooting attack to the first move in the Forward Combo for High Noon (Vagabond Blitz) and Bullet Dance (Magnum Mamba).
+**The Heavy Attack shot is no longer free movement (the wind up remains free movement).
+*High Noon
+**Neutral Combo (Desperado Zeal) is now Tactical Forward Combo (Final Showdown), and vice versa.
+**Switched the order of the two Tactical Forward attacks and increased the forward distance of the first attack
+*Bullet Dance
+**Moved the first attack of the Neutral Combo (Samba Slash) to the end of the combo chain.
+**Bullet Dance - Neutral Combo (Samba Slash) is now Neutral Block (Automatic Rhumba) and vice versa.
+*Rapier: Vulpine Mask
+**Swapped the order of the first two attacks in the Neutral Combo (Assailant Guise).
+*Nunchaku Stance: Atlantis Vulcan
+**Decreased the forward movement of the first attack in the Tactical Forward Combo (Blazing Vortex) and increased it in the second.
+*Wize Razor
+**Second attack in Forward Combo (Cut Thrice) is now free movement
+**The last attack in the Neutral Combo (Threshing Grain) is now the first attack, damage multipliers and combo points adjusted accordingly
+**The last attack in the Tactical Forward Combo (Calling Thunder) is now the first attack with increased gap closing movement, damage multipliers and combo points adjusted accordingly.
+*Dark Split Sword Heavy Blade
+**Increased Critical Chance from 10% to 15%
+**Increased Puncture Damage from 68 to 78
+*Zenistar
+**Combo Multiplier applied to disc recall explosion.
+
+;Fixes
+*Fixed Blood Rush / Weeping Wounds resetting when using a normal attack on Gunblades.
+*Fixed Exodia Valor considering every target to be Lifted whether they actually are or not.
+*Fixed Zenurik Inner Might not applying correctly.
+
+{{ver|26}}
+;Melee PHASE 2<nowiki>:</nowiki> TECHNIQUES
+Melee has evolved again with a focus on TECHNIQUE - Stance/Combo reworks, the return of Equipped Melee, and MUCH more.
+
+;THE GAMEPLAY
+;;1. The Return of Equipped Melee and Manual Blocking!
+*Holding the weapon swap button will equip melee fully again, and the aim button will manually block when in this mode. Holding the Weapon Swap button while Exalted Melee is in play will also lock you into Exalted Melee mode! (Don’t worry, Auto Blocking is still a thing!)
+*Blocking will now prevent 100% of damage, with a blocking angle that is dependent on the melee weapon equipped. All successful Blocks will also add to the new Combo Counter!
+;;2. Dodge Cancelling and Tactical Dodging
+*Dodge Cancel - Allows a player to activate a dodge any time during a melee attack to end the combo immediately and dodge out of the way.
+*Tactical Dodging - Dodging while blocking now performs this Tactical Dodge, keeping the distance short, and allowing you to remain within melee range. This is an effort to not break the flow of combat after cancelling out of an attack, but also if you need to make a quick escape!
+;THE COMBOS
+;;3. Stance Changes, Combos and You!
+*Forward Combo (Forward + Melee) - This allows you to attack without initially interrupting movement with the first 1-3 swings (depending on the weapon Stance). The last attack in the sequence will loop seamlessly into the first, so that you can keep a level of mobility while attacking.
+*Forward Tactical Combo (Forward + Block/Aim + Melee) - This move is usually a distance-closing opener, bringing you closer to the enemy and getting you within range to continue a harder-hitting string of attacks. The beginning or end of this combo can have a slam effect, allowing you to control the enemy, and during the mid-point of the combo, attacks will be large and sweeping, allowing multiple enemies to be hit.
+*Neutral Combo (Melee button only) - Hard hitting, movement-free attacks to allow a player to destroy their target. The last attack can either have a knockdown effect, or throw them into the air and hold them there, if one set of strikes does not finish the job.
+*Neutral Tactical Combo (Block/Aim + Melee) - First hit will likely be a longer thrust or throw of a weapon to increase range. Further attacks will be hard-hitting, and will often finish in a ragdoll effect or a Lifting Attack, as opposed to a knockdown or stagger. Lifting attacks are detailed in Section 7 of this workshop.
+*Air Combo (Melee while Jumping) - Perform a combo in the air without sacrificing movement.
+*Hover Air Combo (Back + Melee while Jumping) - Holds the player in place while the combo completes, and overrides the slam attack angle to keep the action going!
+;;4. Smoother Combo Transitions
+*This allows for last-second decisions on combo changes to occur immediately after the first attack has finished. No more waiting for a combo attack animation to end before you can start spamming the attack button again! Embrace the fluidity!
+;;5. Combo Counter Rework
+*Rather than just providing flat bonuses to damage, the Combo Counter will now also act as an expendable resource for new heavy hitting combat: HEAVY ATTACKS!
+*This counter will be increased in a more granular and rapid way, and can be built by using melee attacks, blocking damage, radial damage from Slam Attacks and hits from a thrown weapon (such as the Glaive).
+*In addition, the ‘heaviness’ of an attack will have a measured difference on the amount of Combo Counter it increases. As a general rule, lighter, swift attacks will give lower additions to the Combo Counter than slower, heavy attacks will.
+*Combo Duration is now displayed as a bar underneath your Combo Counter!
+;THE TOOLS
+;;6. Changes to Slam Attacks
+*The ragdoll effect of the Slam Attack is being removed (with some weapon-specific exceptions *cough*JatKittag*cough*), however it is being replaced with an effect that will push enemies back or knock them down, giving the player some breathing room, and setting the enemy units up for follow-up attacks.
+*Also, all Melee weapons have received an updated Slam FX - come on and SLAM (attack), and welcome to the jam!
+;;7. Goodbye Channeling, Hello Heavy Attacks and Lifting!
+*Channeling will be saying its final farewells in the Melee Rework: Phase 2 update, and instead is being replaced with a new form of Heavy Attack, as well as a new Lifted status effect. As we said before, Channeling Mods will also be changed to support this new system, as well as providing a larger pool of utility to choose from in your builds.
+*Heavy Attacks (Alt-Fire for Melee) - Heavy attacks can now occur at any time, simply by pressing the Alt-fire button while you have melee equipped or in your hand. This costs all of your Combo Counter (affected by Mods), so make sure you lay down the hurt! If you don’t have any Combo Counter active, you will use a Heavy Attack, but it will not benefit from any damage bonus from the Combo Counter.
+*Heavy Slam Attacks (Jump + Alt-Fire for Melee) - This new Slam Attack will create a new effect on targets, known as the LIFTED STATUS. When a target is Lifted, it is held suspended in the air, allowing a player to follow up on attacks while the target is held helplessly aloft. Again, if you do not have any Combo Counter active, this will act as a Heavy Slam attack without a damage bonus, and minimal Lifting Status.
+*But what about the Channeling FX you ask? Prime Armor Channeling FX will now appear when the Combo Counter reaches 2!
+;;8. Weapon Stats, Mastery Limits and General Melee Changes
+*Mastery Rank - Weapons have been reviewed to make sure their function and power are aligned with an appropriate Mastery Rank, similar to passes made on Primary and Secondary weapons.
+*Base Damage - Since the Combo Multiplier will apply to Heavy Attacks only, the base damage of all melee weapons has significantly increased.
+*Base Range - Along with damage, range has also been increased to make sure you get the most chop for your buck. While base range is being increased, Range Mods are going to have a different calculation applied to them. This is detailed in Section 9.
+*Mod and Arcane Channeling Functionality - As mentioned above, any Mods or Arcanes with functionality tied to Channeling have had their stats altered to increase Lifted Status, Heavy Attack damage and Combo Counter modifiers.
+*Every Melee weapon that was originally a single Elemental damage type has been converted to Physical + Element, allowing for more Status reliability as well (Silva and Aegis excluded given Flame Blade).
+*Range increased for kick attacks from 1.5 to 2m (Except for Sparring weapons which is increased to 2.5m).
+*Combo Duration increased from 3 to 5 seconds.
+;;9. Mod Rebalancing / Functionality
+*All Channeling Mods - have been changed to the Melee Parent type to bring them in line with Melee Phase 2 changes
+*Amalgam Organ Shatter - Description changed from Charge Attacks to Heavy Attacks.
+*Blood Rush - Will now scale differently, using a stacking multiplier based on the Combo Counter, raising 60% per Combo Counter tier (something much easier to achieve in Phase 2).
+*Condition Overload - Now uses a stacking multiplier based on how many Status Effects are on the target at 120% damage per Status.
+**During this whole Melee rebalance, Condition Overload remained a persistent outlier. Since launch, it has had an unintended stacking mechanic, that nothing else uses in the game: it grew exponentially, making it too volatile to balance. We know there’s nothing worse than ‘how can you call this unintended’, so let’s explain the history: initially it did the stacking on final damage, which, as you know from previous changes, we have been trying to move away from. This is because this type of stacking makes for very hard to control damage progression, and tends to be very confusing as to which damage, Melee/Proc etc, applies where. This new version of the mod makes Condition Overload’s damage multiplication become equal to Pressure Point when the enemy has 1 Status applied, better than Primed Pressure Point at 2 Statuses applied, and from there it just grows and grows. Even though the maximum potential damage is lower now, we think it is still an extremely powerful Mod in its latest iteration.
+**The new ‘Lifted’ Status also counts for Condition Overload calculation. Revised Stances and the new Heavy Attack give reliable ways of applying Status to enemies, which greatly increases the reliability of Condition Overload
+*Corrupt Charge - Adds a large amount to the Combo Counter, but significantly reduces the time it takes for the Combo Counter to drain.
+*Covert Lethality - is remaining as a Dagger Mod for now with +16 Initial Combo and 100% Finisher damage, pending later review. (Note: This has changed from what was laid out in the recent Dev Workshop)
+*Dispatch Overdrive - Increases player movement on a Heavy Attack hit.
+*Enduring Affliction - Increases the Status Chance on enemies suffering from the Lifted Status.
+*Enduring Strike - Increases the Combo Counter chance when hitting Lifted enemies.
+*Focus Energy - Add Electrical damage to an attack, as well as increasing Combo Counter generation.
+*Focused Defense - Adds an additional 20 degrees to a weapons blocking angle.
+*Gladiator Mod Set - Adds a multiplier with the Combo Counter up to 60% for the whole set.
+*Guardian Derision - Will add more to the Combo Counter for blocking hits. (Note: The Taunt mechanic is still in place.)
+*Killing Blow - Increases Heavy Attack damage and decreases the ‘wind-up’ time for Heavy Attacks
+*Life Strike - Heavy Attacks will now regenerate Health.
+*Maiming Strike - Changes from an additive buff to a stacking buff, but base functionality increased 150%.
+*Quickening - Grants +40% Attack Speed, +20% Combo Count Chance
+*Reach / Primed Reach - Will now increase range in a way that has been normalized. In the previous incarnation, long-range weapons were getting too much of a benefit, while short-range weapons were barely seeing any increase at all.
+*Reflex Coil - Increased Combo Point Efficiency when using Heavy Attacks.
+*Reflex Guard - +100% Combo Count Chance while Blocking.
+*Spring-Loaded Blade - Will now provide a maximum of 2 additional stacks of Melee Range.
+*True Punishment - Add 40% Critical Chance, but reduces the chance to add to the Combo Counter by -10%
+*Weeping Wounds - Increases Status chance in a Stacking Multiplier, 40% per combo tier.
+*This update will also see some changes to the following Weapon, Arcane and Focus School buffs:
+**Zenurik - Inner Might - Has been changed to provide 60% Combo Efficiency, instead of Channeling Efficiency.
+**Synoid Heliocor, Furax Wraith and Fragor Prime - All receive bonus initial Combo Count to offset the boosted Channeling Damage they had previously.
+**Exodia Triumph Arcanes - Have been changed to +50% chance to increase the Combo Counter on hit.
+**Exodia Valor Arcanes - Have been changed to +200% chance to increase Combo Count when hitting Lifted Enemies.
+**Exodia Brave Arcanes - Now grants +5 Energy Generation when killing an Enemy with a Heavy Attack. This can stack up to 3 times.
+;;10. Exalted Weapons
+*All melee-based Exalted Weapons have received the Phase 2 functionality treatment, gaining access to the combo changes. For those of you who may have missed it, Wukong’s Exalted Iron Staff has already had this functionality implemented (with the exception of the new Heavy Attacks and changes to the Slam Attacks).
+;;11. The Screens<nowiki>:</nowiki> Arsenal Changes
+*In Update 26, this screen is being reorganized to include Loadouts, Companions and Vehicles in tabs, while also giving more information about a weapon when selected: https://gfycat.com/serpentinearidalligator
+*As you can see, new stats for Heavy Attacks and Heavy Slam have been added, with channeling statistics removed.
+;THE TECHNICAL BITS
+;;12. Aim Assist
+*Aim assist can be a help or a hindrance depending on what type of attack you wish to perform. While the current system either applies to all or none (on or off), the new system will have more intelligence on aim assist on a per-attack basis. As a general rule under the new system, Aim Assist will be disabled for almost all attacks in the Forward and Tactical Forward Combos, and enabled for most of the Neutral and Tactical Neutral Combo attacks. Of course if you don’t wish to use aim assist at all, you can disable it from the settings menu as normal.
+;;13. Sticky Fingers when Equipping Melee!
+*Another common issue in user feedback was the unequipping of Gear Items (like the Codex Scanner), or dropping the ‘football’ (usually a pickup for Mobile Defense or Sabotage Missions) when equipping melee or using a melee attack. This has now been changed so that you will no longer drop items or unequip Gear Items when either equipping melee or using a Melee Attack!
+
+{{ver|25.7.4}}
+*Fixed Melee Elemental FX not always showing up when you swing the weapon. As reported here: https://forums.warframe.com/topic/1126060-elemental-fx-on-melee-weapons-arent-showing-up-in-game/
+
+{{ver|25.5}}
+*Adjusted the holster position of Warfans, Polearms, Scythes and Staffs on Zephyr Prime.
+*Adjusted the Holster position of Sword and Shields on multiple Warframes so it is attached and rotated correctly.
+*Fixed Melee Channeling toggling off when swapping to a Primary / Secondary.
+
+{{ver|25.2}}
+*Fixed the bright white FX projector on Electrical Melee FX.
+
+{{ver|24.6}}
+*Whip and Sword slide attacks now do the same damage with a Stance equipped as without.
+
+{{ver|24.5.3}}
+*Changed the Glaive recall to be done with Melee instead of Melee Channel so its consistent again (Channel being a toggle-only messed up this function).
+*Fixed cases of performing a Melee ground slam at an extreme horizontal angle if you move your mouse downwards while pressing Melee. 
+*Fixed an error where, after Dual-Wielding gun and Glaive, throwing the Glaive in the "normal" Melee only mode could result in a turbo throw that is only supposed to apply for Dual-Wield.
+*Fixed a movement hitch that happened if you tried to sprint right after a Melee ground slam.
+
+{{ver|24.5}}
+*Upon picking up a Datamass, a Melee to gun swap will automatically equip your Secondary weapon instead of your Primary weapon, which would make you drop the Datamass.
+*Pressing F when in Melee mode now switches you back to your "other" weapon. For example, if your Primary weapon is equipped when you trigger a Melee attack, you will return to your Primary weapon when you aim or fire. If you instead press F while in Melee mode, you will now equip your Secondary weapon.
+*Fixed a case where you could be left in an UNARMED state after using a non-Melee Exalted weapon (like Hildryn's Balefire) and went back to Melee when you had no other weapons in your loadout, having gone Melee only to that mission.
+*Fixed the Operator's Vazarin Guardian Shell not manifesting the charged Void Blast shield.
+*Fixed an issue where auto-blocking could cancel the charged/heavy Melee attacks.
+*Implemented fixes toward briefly being unable to Melee after an Aerial Attack, which breaks the flow of battle.
+*Fixed being able to Quick Melee when you equip an Archgun with either a Primary or Secondary equipped before that.
+*Fixed the Melee-only Parry becoming a toggle that you can't release until you attack for Clients.
+*Fixes towards the Wise Razor Stance giving unintended extreme velocity. Comical yes, but clearly an oversight of gravity!
+*Fixed the Melee combo menu not updating with the proper button inputs to use Melee when using a controller. 
+*Fixed missing Melee Channeling binding callout in the Advanced Melee screen of the Codex when using a controller.
+*Fixed a number of Melee attacks that could leave weapon trails active after the attack is finished.
+*Fixed losing your crouch position when initiating a Melee to gun swap while crouching.
+
+{{ver|24.4.2}}
+;Melee Phase 1<nowiki>:</nowiki> 'Flow' Changes
+*Manual blocking/parry has been added when players wield only a Melee weapon in a mission (i.e NO Secondary or Primary equipped). This is possible because in this specific state, the keybindings are free to allow this manual blocking. We do not plan on adding it to any other state yet. The default keybind for this is RMB/Right Mouse Button, as it was in the past. 
+
+;Controller Changes & Fixes
+*Melee Channeling can no longer be rebound on Controller due to it completely breaking Melee 2.99997 changes. We apologize for the discomfort this may cause for those who have built their controllers comfortably around a different binding. You can't make an omelette without cracking some eggs!
+*Fixed a widespread issue where players using Controllers could no longer Aim after the Melee 2.99997 changes. This affected numerous mechanics like Aim Gliding, Melee Channeling, etc.
+*We’ll be continuing to monitor controller issues as they arise! If you’re still having issues, restoring your Controller bindings to ‘Default’ will help in the meantime. Please let us know of further issues!
+*Fixed an issue where attempting to reload your Primary/Secondary while in Melee mode would not transition you back to your gun. 
+
+{{ver|24.4}}
+;MELEE REVISIT<nowiki>:</nowiki> PHASE 1 - "Flow"
+Tenno - your favorite melee weapon probably feels a little different today. Today we bring you Phase 1 of 2019’s melee upgrade - we hope you love all the gorgeous new visual effects, streamlined combat, and high fidelity hit reactions! Here's what you can expect:
+
+;Let The Gun & Blade Flow
+Swap between your gun and melee at the press of a button, no holstering required! Combos can be executed and resumed between movement and more. Blocking is now automatic in melee mode when aiming at an attacking enemy. Your stance combos may have changed, check out the Stance interface!
+
+;Death From Above
+A Tenno is a master of aerial tactics - now you can better target enemies on the ground with deadly and responsive aimed ground slams.
+
+;Effects Upgrades
+We've done a complete overall of all Melee Effects! Hit animations, elemental effects and slam attacks: making melee look as good as it feels!
+
+;More to Come
+Fundamentally, we aim to upgrade Melee. This is Phase 1.
+
+No one knows the power of their Arsenal better than the Tenno - your adaptability and skill with the blade will be tested, and as we continue these changes, we rely on your feedback! 
+
+If you missed the full workshop discussing Phase 1, you can catch it here: https://forums.warframe.com/topic/1063446-melee-changes-phase-1/
+https://gfycat.com/darkdesertedharlequinbug
+https://gfycat.com/scrawnyshinycrustacean
+
+;Our Mainline update notes will summarize the information from within the Workshop, plus denote additional information:
+
+;1) Uninterrupted Combat - firearm to equipped melee (and vice versa) states are instant.
+
+;Bonus 1.a) Combo Resume. 
+
+;2) Ground Slams are more controllable, cleaner, and simpler.
+All melee weapons have had their ground-slam ranges increased and new FX added:
+
+*Glaive slam range increased to 5m
+*Warfan slam range increased to 5m
+*Dagger slam range increased to 5m
+*Dual dagger slam range increased to 6m
+*Claw weapon slam range increased to 6m
+*Gunblade slam range increased to 5m
+*Nunchaku slam range increased to 6m
+*Sword and Shield slam range increased to 7m
+*Single Sword slam range increased to 7m
+*Blade Whip slam range increased to 7m
+*Rapier slams increased to 6m
+*Dual Sword slam range increased to 8m
+*Tonfa slam range increased to 8m
+*Machete slam range increased to 7m
+*Nikana slam range increased to 6m
+*Hammer slam range increased to 9m
+*Staff slam range increased to 6m
+*Polearm slam range adjusted to 7m
+*Scythe slam range increased to 8m
+*Heavy Blade slam range increased to 8m
+*Fists weapon slam range increased to 8m
+*Sparring weapon slam range increased to 7m 
+
+;3) Visual FX: 2019 style!
+
+A full Visual FX pass has been done for Phase 1! Because this is Phase 1, it 'means all the unique weapons will have new generic FX for a little while (Jat Kittag etc.) until we can get through them all and make new clean variants'.
+
+New and cleaner FX have been created with the idea of beautifully short, highly detailed lifespans. Not infinite - meaning the 'Constant Weapon Trail' option will be removed as a result of this change (at least for Phase 1, we really do think it looks better removed).
+
+;4) Keybinds!
+Notable Keybind changes:
+
+BLOCKING
+*Blocking with a melee weapon is no longer keybound, it is automatic when facing enemies who are dealing damage to you in melee mode. Your Reticle determines all! 
+
+CHANNELING
+*Channeling is now a toggle set to your alt-fire button when in melee mode.
+*Your 'F' button (if using default key bindings) now exclusively swaps between Primary and Secondary weapons with a tap.
+*Your left mouse button is gun fire, always, instantly.
+*Your right mouse button is now aim, always, instantly.
+
+OPTIONS:
+*We are adding a toggle to preserve one aspect of the older melee system. You will be able to toggle an option, allowing you to continue melee attacks with the left mouse button once in melee mode.
+
+;Additional Information and Changes:
+
+*Updated Reticles: Melee mode has received its own reticle!
+*Archwing: Arch-Melee & Archgun now also use the 'instant swap' behaviour.
+*Dual Wield (i.e Glaive & Single Secondary) is still supported!
+*Exalted weapons will also benefit from the uninterrupted swaps! Be aware that Energy will still drain, even when swapping between weapons!
+*AI hit reacts are getting updated! Enemies will have a more visceral/realistic response to the various hits you dish out.
+*With Melee Blocking now automatic, the Blocking angle has been reduced to 45 degrees.
+*If using no custom Energy color, the weapon will inherit the colors of the Elemental FX (or base trails if no elements are present). This unifies all colors (swing FX, trails, hit FX, etc).
+
+{{ver|23.10.2}}
+*Minor sounds mix adjustments to Melee slide attack / heavy attack / slam attack.
+
+{{ver|23.10}}
+*Updated Melee slam and elemental FX!
+*Cleaned up Melee FX when hitting an enemy.
+
+{{ver|22.20}}
+*Melee attacks (including spin attacks) will no longer sweep through walls or objects. Please read our Dev Workshop for Melee insight!
+
+{{ver|15}}
+;Directional Air Melee!
+*Allows you to jump, pick an angle and then hit the melee, which will then send you with momentum in the given direction
+*This will enable you to hit enemies in the air
+**Note: this feature is planned on being revised depending on feedback
+
+{{ver|13}}
+*New Gameplay System - Melee 2.0! We have discussed and shared insight on this system overhaul over several Livestreams, and now you can play it for yourself! Main features of this overhaul include:
+**A completely reanimated system for each weapon grip.
+**A ‘Stance’ slot with every melee weapon, where you can equip a fighting stance.
+**A combo system that increases your melee weapon’s damage the more you hit your enemy.
+**A feedback system that allows for more responsive melee attacks.
+**A Channeling mechanic that allows you to channel your Warframe’s energy into your melee weapon when it’s equipped!
+**A fully equipped melee weapon state, hold your melee key to equip your weapon (default F)!
+**There are unique combos across many different weapons, for a list of how to execute these combos, visit the Combos section of the pause menu.
+*Charge attacks have been removed and replaced with Combos.
+
+{{ver|11.1}}
+*Melee Auto-Targeting System:
+**Allow more customization based on player preference.
+**Add Settings for Auto-lock (Melee Assist), attack toward character facing or camera (Align Attacks To Camera)
+**Auto-turning the camera to face the target (Camera Tracks Melee Target)
+**Do smooth turns when attacking away from a melee target.
+
+{{ver|7}}
+*New moves - Ground Attacks, smart-actions for finishing off downed enemies (no more jumping)!
+}}
+
+{{MechNav}}
+
+[[de:Nahkampf 2.0]]
+[[es:Cuerpo a cuerpo]]
+[[fr:Mêlée]]
+[[Category:Mechanics]]
+[[Category:Update 13]]
+[[Category:Melee 2.0]]
+[[Category:Outline Pages]]
+
+<references />

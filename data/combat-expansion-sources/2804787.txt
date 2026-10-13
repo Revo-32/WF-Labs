@@ -1,0 +1,52 @@
+{{Top|Weapon|Weapons|Weapons|Orokin|Orokin|Orokin}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Each lash of Oraxia’s whip injects its victim with a dose of deadly toxin. Upon death, afflicted enemies have a chance to burst, damaging nearby enemies and spreading the poison.}}
+'''Spinnerex''' is {{WF|Oraxia}}'s [[Signature Weapon|signature]] whip. Dealing {{D|Toxin}} damage with high [[Status Chance]], enemies tagged by Spinnerex and afflicted with {{D|Toxin}} status have a chance to explode upon their death, spreading {{D|Toxin}} status effects.
+
+==Characteristics==
+*This weapon deals {{D|Toxin}} damage.
+*Stance slot has {{Pol|Zenurik}} polarity, matching {{M|Coiling Viper}} and {{M|Lashing Coil}} ([[Conclave]] only) stance.
+*Enemies hit by Spinnerex and then killed from any source have a '''10%''' chance to explode for each stack of {{D|Toxin}} status, spreading {{D|Toxin}} damage.
+*Innate {{Pol|Madurai}} polarity.
+
+{{Advantages|}}
+{{Disadvantages|}}
+
+==Acquisition==
+{{Acquisition|header=no|Spinnerex's main and component blueprints can be obtained from [[Isleweaver]] in [[Duviri]]. Access requires completion of [[The Hex (Quest)|The Hex]] Quest.
+
+Alternatively, Spinnerex's blueprints can be purchased from [[File:IconDuviriAcrithis.png|30x30px]][[Acrithis]] or [[Dominus Thrax]] in the [[Dormizone]], using {{Resource|Scuttler Husk}} awarded from Isleweaver. Each component blueprint requires 16 {{#invoke:Tooltips|icon|Scuttler Husk|Resources}} and the main blueprint requires 48 {{#invoke:Tooltips|icon|Scuttler Husk|Resources}}, totaling 96 {{#invoke:Tooltips|icon|Scuttler Husk|Resources}} Scuttler Husks for the complete set.}}
+
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*Enemies hit by the Spinnerex within the past '''5''' seconds have a '''10%''' chance to explode per {{D|Toxin}} status effect on them when killed, dealing '''480''' {{D|Toxin}} damage in a '''10''' meter radius, with a forced {{D|Toxin}} status effect.
+**Spinnerex does <u>not</u> need to deal the killing blow, nor apply the {{D|Toxin}} status effects in order to trigger the effect.
+**Damage is affected by Melee damage buffs, Elemental buffs, and Faction damage buffs, but not by {{M|Condition Overload}}.
+**Damage falls off with distance.
+**Explosions cannot perform critical hits, or apply modded status effects.
+**Explosions will cause an additional damage instance from {{WF|Garuda}}'s {{A|Seeking Talons}}, {{WF|Saryn}}'s {{A|Toxic Lash}}, and {{WF|Xaku}}'s {{A|Xata's Whisper}}.
+*Despite being her [[Signature Weapon|signature weapon]], {{WF|Oraxia}} can never take full advantage of the Spinnerex due to her melee slot being blocked while using her ultimate ability, {{A|Silken Stride}}.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+OraxiaBundlePromoKeyart.png
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|41.0.7}}
+*Removed the Spinnerex from being usable in Conclave, as they are not balanced for this gamemode.
+
+{{ver|39.0.4}}
+*Fixed the Spinnerex Blade being tradeable.
+
+{{ver|39}}
+*Introduced.
+}}
+
+{{WeaponNav}}
+
+[[ru:Спиннерекс]]

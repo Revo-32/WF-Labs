@@ -1,0 +1,43 @@
+{{Top|Orokin|Orokin|Orokin|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Wield the timeless power of this mighty hammer. Heavy Attacks performed with Ekhein temporarily increase its Damage and Attack Speed.}}
+
+The '''Ekhein''' is an {{Faction|Entrati}} [[Hammer]]. Its [[Heavy Attack]]s increase its damage and [[Attack Speed]].
+
+==Characteristics==
+*This weapon deals pure {{D|Impact}} damage.
+*Landing a [[Heavy Attack]] grants the '''Heavy Insight''' buff for '''8''' seconds, increasing Damage by '''80%''' and [[Attack Speed]] by '''20%'''.
+
+{{Advantages|
+}}
+{{Disadvantages|}}
+
+==Acquisition==
+Ekhein's blueprint is sold by [[Bird 3]] of {{Faction|Cavia}} for {{sc|15,000}}, requiring '''Rank 3 - Colleague'''.
+{{BuildAutomatic|type=Weapon}}
+
+==Trivia==
+
+* In the [[Whispers in the Walls]] Quest, [[Loid (Original)|Loid]] can be seen using the Ekhein to smash [[Albrecht Entrati]]'s casket.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Ekhein.jpg|[[Excalibur]] with the Ekhein
+EkheinModel1.jpg
+EkheinModel2.jpg
+EkheinModelComparison.jpg
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|35.1}}
+*Fixed minor typo in the Ekhein’s Blueprint Market description.
+
+{{ver|35}}
+*Introduced.}}
+
+{{WeaponNav}}
+
+[[fr:Ekhein]]

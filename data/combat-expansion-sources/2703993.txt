@@ -1,0 +1,28 @@
+<div class="tabber-borderless" >
+{{#tag:tabber|
+{{!-!}} Swordsmanship =
+{{WF|Excalibur}} and {{WF|Excalibur Prime}} has improved mastery in the Tenno [[Melee|art of the blade]], receiving  '''<u>+10%</u>''' [[Attack Speed]] and '''<u>+10%</u>''' [[damage]] bonuses for melee attacks while wielding the following weapons:
+*[[:Category:Sword|Swords]], such as the {{Weapon|Skana}}.
+*[[:Category:Dual Swords|Dual swords]], such as the {{Weapon|Dual Skana}}.
+*[[:Category:Nikana|Nikanas]], such as the {{Weapon|Dragon Nikana}}.
+*[[:Category:Rapier|Rapiers]], such as the {{Weapon|Destreza}}.
+*{{Weapon|Exalted Blade}}
+*Bonuses are additive to mods such as {{M|Pressure Point}} and {{M|Fury}}.
+{{!-!}} Umbra's Sentience =
+{{WF|Excalibur Umbra}} exhibits sentience, allowing him to remain active in combat even when a player uses [[Operator]] form, acting similarly to a [[Specter (Tenno)|Specter]].
+*Umbra can receive damage and healing in his specter form. Health and shields lost in his specter form will '''not''' be restored upon returning to Umbra unless all of Umbra's health is depleted.
+*Once all of Umbra's health is depleted, he will stop moving or attacking.
+**The player does '''not''' die or lose a revive, however, if Umbra's health is depleted.
+*Umbra can use any equipped weapon and most abilities, which will take into account any mods installed.
+*When enemies come within '''3''' meters of Umbra, he will automatically switch to the equipped melee weapon.
+**If no melee weapon is equipped, Umbra will not attack enemies who approach him, but will still cast abilities.
+*Umbra's weapons will still expend [[ammo]] reserves normally. Umbra is capable of looting ammo pickups, and will actively search for them should his ammo reserves be depleted.
+**Depleting all ammo reserves displays a red ammunition icon above Umbra's head.
+**[[Squad Ammo Restore]]s will replenish ammo but '''only''' if the player is in range, even if Umbra himself is in range.
+*If Umbra falls down a bottomless pit while in Specter mode, he will '''not''' be teleported back and will remain missing until players return to Warframe mode.
+
+Umbra's passive can be disabled with {{M|Warrior's Rest}}.
+
+'''Radial Blind''' is also replaced with Radial Howl:
+{{:Radial Howl|yes}}
+}}</div>

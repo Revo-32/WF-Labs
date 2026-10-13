@@ -1,0 +1,59 @@
+{{ArcaneBox}}
+'''Exodia Valor''' is an [[Arcane Enhancement]] for [[Zaw]]s that grants a chance to gain additional [[Melee Combo]] Count Chance on {{D|Lifted}} enemies.
+
+==Effect==
+{| class="emodtable"
+|-
+! Rank
+! Effect
+|-
+| 0 || +50%
+|-
+| 1 || +100%
+|-
+| 2 || +150%
+|-
+| 3 || +200%
+|}
+
+==Acquisition==
+Can be bought from [[Hok]] for {{sc|10,000}} per arcane upon reaching the rank of '''Kin''' with the [[Ostron]]s.
+
+==Trivia==
+Prior to {{ver|24.6}}, {{PAGENAME}} was purchasable as a blueprint with the following requirements to build:
+
+{{BuildRequire
+|buildcredits= 7,500
+|build1= Breath Of The Eidolon
+|build1amount=10
+|build2= Cetus Wisp
+|build2amount=10
+|build3= Condroc Wing
+|build3amount=10
+|build4= Heart Nyth
+|build4amount=3
+|buildtime=1
+|buildrush=10
+|blueprint=12,500
+|blueprintunit=Standing
+}}
+==Patch History==
+{{Scrollbox/Article|{{ver|26.0}}
+*Grants chance to increase Combo Count when hitting Lifted Enemies instead of increasing Channeling Damage.
+{{ver|24.6}}
+*Replaced Arcane Blueprints with Arcanes in Hok Offerings meaning that Arcanes no longer need to be built.
+**Players that had previous Arcane Blueprints in Inventory were crafted on patch login for free.
+
+{{ver|22.2.4}}
+*Reduced the component cost in certain crafting recipes.
+**EXODIA VALOR: Breath of the Eidolon from 20 to 10
+
+{{ver|Plains of Eidolon}}
+*Introduced.}}
+{{ArcaneNav}}
+__NOTOC__
+[[es:Valor de Exodia]]
+[[Category:Update 22]]
+[[Category:Syndicate Offerings]]
+[[Category:Arcane Enhancements]]
+[[uk:Екзодія «Хоробрість»]]

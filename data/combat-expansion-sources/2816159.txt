@@ -1,0 +1,80 @@
+{{Navigation|Mallet|Resonator|Metronome|Amp (Ability)}}
+<onlyinclude>{{AbilityU10.3
+| name = Metronome
+| gameimage = MalletIcon.png
+| cardimage = Metronome.png
+| hotkey = 3
+| energy = 75
+| description = Grants buffs to those who consistently perform actions in time to Octavia’s music. Timed jumps offer the Vivace speed buff. Crouching on the beat grants cloaking with the Nocturne buff. Firing rhythmically bestows Opera multishot buff. Timed melee swings give the Forte damage buff.
+| strength = 10 / 15 / 20 / 35 % (armor bonus)<br>
+10 / 15 / 20 / 30 % (speed bonus)<br>
+12 / 20 / 25 / 30 % (multishot bonus)<br>
+20 / 25 / 25 / 30 % (melee damage bonus)
+| duration = 8 / 12 / 16 / 20 s (ability duration)<br>
+5 / 8 / 12 / 15 s (buff duration)
+| range = 6 / 8 / 10 / 12 m
+| cardonly = {{{1|}}}
+| info = *Octavia expends {{Stat|Ability Efficiency|icon=only}}'''75''' [[energy]] to produce a melodic musical aura with a radius of {{Stat|Ability Range|icon=only}}'''6 / 8 / 10 / 12''' meters for {{Stat|Ability Duration|icon=only}}'''8 / 12 / 16 / 20''' seconds. Octavia and her allies gain an {{Stat|Ability Strength|icon=only}}'''10% / 15% / 20% / 35%''' [[Armor]] bonus while inside the melodic aura.
+**Metronome's music is in tune with the '''Melody''' section of the [[Octavia/Abilities|Mandachord]], drawing from the preset musical notes to determine the melodic aura's note intervals.
+**While the player and allies can hear the melody, Metronome's aura is considered silent to enemies.
+*While inside the melodic aura, Octavia and her allies can perform specific actions in sync to the melodic music to gain various '''Sync Buffs''' that can be active simultaneously:
+<div class="tabber-borderless" ><tabber>
+|-|Synchronize =
+How to Synchronize with Metronome:
+*Each line of Melody notes is visually represented as a concentric ring of light, which begins at the edge of the melodic aura and shrinks toward Octavia’s feet, where the ring disappears as the sound of the notes are played.
+*In order to gain buffs, players must time their actions to sync with the moment a concentric ring is centered on Octavia, as the sound of the notes are played. A flash of light will appear below the player upon a successful sync.
+**Synchronize percentages are listed between '''0%''' and '''100%''', and will raise or lower depending on the player's timing. Once the percentage reaches '''100%''', the player gains the corresponding buff.
+**Synchronize percentage is displayed as an icon with the current stored percentage beside the health and shield indicators on the HUD. Once synchronized, the corresponding buff icon will also be displayed with the remaining buff duration beneath and bonus percentage at the top-right of the icon.
+**Each player must perform actions individually to gain buffs. Sync buffs are gained per-player and are '''not''' shared between allies in range.
+**If a player does not perform an action when the ring disappears, their existing synchronize percentage does '''not''' decrease. however, if they do perform an action at the wrong time, their synchronize percentage resets; meaning that players can skip certain beats and focus on precision if they cannot keep up with the Mandachord's rapid pace. This is particularly important for weapons with low or high fire rate / attack speed and with the Vivace (movement speed) buff.
+*The amount of synchronize percentage gained for a correctly timed action is based on the number of melody beats (beats with at least one melody note) within '''8''' beats of the action, and how close those melody beats are. Correctly timed actions on tightly packed melody beats will yield significantly less synchronize percentage compared to melody beats that are spread far apart.
+**With '''no''' melody beats on the '''8''' beats before or after a correctly timed action, the '''maximum''' synchronize percentage will be gained. 
+**Multiple melody beats within '''8''' beats of each other will reduce the synchronize percentage gained on each of those beats, with the reduction being greater the closer the beats are to each other.
+**Having multiple melody notes on the same beat has no effect on the synchronize percentage gained.
+*Mistiming an action will reduce the current synchronize percentage by '''80%''' of the amount that would be gained from a correctly timed action. For example, if a correctly timed action would give '''50%''' synchronize percentage, a mistimed action would instead reduce it by '''40%'''.
+**With extremely spaced apart melody beats, the reduction can actually vary from about '''75%''' to '''85%'''. Mistimed actions that are close to a melody beat will give a smaller penalty than mistimed actions far away from one.
+*The amount of notes on one line of the Melody section on the Mandachord determines the brightness of the concentric rings.
+|-|Vivace =
+*By synchronizing with jumps (default {{Keybind|Space}}), Octavia and her allies can gain the '''Vivace''' buff which increases [[Movement Speed]] by {{Stat|Ability Strength|icon=only}}'''10% / 15% / 20% / 30%''' for {{Stat|Ability Duration|icon=only}}'''5 / 8 / 12 / 15''' seconds.
+**A correctly timed action will yield '''18% - 76%''' synchronize percentage towards activating the buff, based on the number and spacing of melody beats within '''8''' beats of the action.
+*Double jump (default press {{Keybind|Space}} twice), wall climb (face wall and press {{Keybind|Space}}), and wall jump (face wall + {{Keybind|W}} +  {{Keybind|Space}}) can also be used to synchronize.
+|-|Nocturne =
+*By synchronizing with crouching (default {{Keybind|Ctrl}}) or sliding (default {{Keybind|W}} + {{Keybind|Ctrl}}), Octavia and her allies can gain the '''Nocturne''' buff which grants them and their [[Companion]] [[Invisible]] for {{Stat|Ability Duration|icon=only}}'''5 / 8 / 12 / 15''' seconds.
+**A correctly timed action will yield '''18% - 76%''' synchronize percentage towards activating the buff, based on the number and spacing of melody beats within '''8''' beats of the action.
+|-|Opera =
+*By synchronizing with ranged weapon fire (default {{Keybind|LMB}}), Octavia and her allies can gain the '''Opera''' buff, granting {{Stat|Ability Strength|icon=only}}'''12% / 20% / 25% / 30%''' ranged weapon [[Multishot]] for {{Stat|Ability Duration|icon=only}}'''5 / 8 / 12 / 15''' seconds.
+**A correctly timed action will yield '''8% - 34%''' synchronize percentage towards activating the buff, based on the number and spacing of melody beats within '''8''' beats of the action.
+*While all other categories of firearms can inherently synchronize shots with each shot fired, Beam Weapons (except for the {{Weapon|Tenet Flux Rifle}} because of its Auto Trigger) uniquely cannot.  Upon activating Metronome and emptying the magazine of a beam weapon by holding down the trigger, you will gain minimum charge, requiring you to tap-fire in time with your Mandachord.
+*Multishot bonus stacks additively with multishot mods such as {{M|Split Chamber}}.
+*Alternate-fire or secondary attacks on select weapons e.g. Redeemer Prime can gain multishot from Opera.
+|-|Forte =
+*By synchronizing with melee weapons (default {{Keybind|E}}), Octavia and her allies can gain the '''Forte''' buff, granting {{Stat|Ability Strength|icon=only}}'''20% / 25% / 25% / 30%''' bonus melee weapon damage for {{Stat|Ability Duration|icon=only}}'''5 / 8 / 12 / 15''' seconds.
+**A correctly timed action will yield '''12% - 51%''' synchronize percentage towards activating the buff, based on the number and spacing of melody beats within '''8''' beats of the action.
+*Damage bonus stacks additively with base damage mods like {{M|Pressure Point}}.
+</tabber></div>
+<hr />
+*Metronome can be recast while active to refresh its duration. On recast, existing synchronize percentages will '''not''' carry over and will be reset to '''0%'''.
+*Casting Metronome is '''not''' a [[One-Handed Action]] and interrupts other actions, but allows movement.
+*Casting animation is affected by [[Casting Speed]].
+*When Octavia is standing on higher elevations or objects, the concentric rings of light from the melodic aura will partially fade depending on the surrounding terrain to allow better visibility.
+*Concentric ring color and Nocturne cloak effect are affected by Octavia’s chosen Warframe energy color.
+*Metronome affects the visuals and audio of any nearby {{A|Mallet}} and {{A|Resonator}} belonging to Octavia herself.
+| tips = *Having the mandachord's melody set to a consistent rhythm makes it much easier to sync up your buffs.
+*Similar to Octavia's other abilities, without a melody this skill will do nothing.
+*The longer the pause is between notes, the higher is the percentage gained per successful action.
+*The intensity of light rings is determined by the number of notes in a particular column.
+<noinclude>
+| max = {{WFmax|main|octavia3}} 
+</noinclude>
+}}
+
+</onlyinclude>
+
+==See Also==
+*{{WF|Octavia}}
+[[es:Metrónomo]]
+[[fr:Métronome]]
+[[Category:Octavia]]
+[[Category:Warframe Abilities]]
+[[Category:Stealth Abilities]]
+[[uk:Метроном]]

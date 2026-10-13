@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+.vs/
+artifacts/
+builds/
+*.user
+**/__pycache__/
+Releases/
+*.pfx
+*.p12
+*.key
+.env
+.env.*
+!.env.example
+*.wfriven

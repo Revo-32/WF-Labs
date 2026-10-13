@@ -1,0 +1,143 @@
+{{ResourceInfobox}}
+''' Skana Incarnon Genesis''' is an item that is used to add [[Incarnon]] upgrades to the {{Weapon|Skana}}, {{Weapon|Prisma Skana}} or {{Weapon|Skana Prime}}.
+==Acquisition==
+*Upon completion of [[The Duviri Paradox]] and [[Angels of the Zariman]], and unlocking [[The Steel Path]], players can earn {{Resource|1=Skana Incarnon Genesis}} from [[The Circuit]]'s Steel Path to place on their Skana with the help of [[Cavalero]] in the [[Chrysalith]]. This [[Incarnon Genesis]] form grants it evolutions to a transformation and newfound strength.
+*Purchased from Cavalero for {{pc|120}}, complete with the resources used in its installation. This purchase can only be made '''once'''.
+
+==Incarnon Genesis==
+
+*Installing the Skana Incarnon Genesis requires '''20''' {{Resource|Pathos Clamp|Pathos Clamps}}, '''70''' {{Resource|Dracroot}}, and '''80''' {{Resource|Connla Sprout|Connla Sprouts}}.
+**When installed, the first Evolution tier is unlocked. Each challenge additionally grants 5,000 [[affinity]] to the weapon, affected by [[Affinity Booster]]s.
+
+===Overview===
+*Incarnon Form is charged by building [[Melee Combo]] to 6x, then using a [[Heavy Attack]]. Once activated, the Incarnon form lasts for '''180''' seconds.
+**Incarnon Form persists through all activities, such as holstering, [[bleedout]], or being [[disarm]]ed. However, Incarnon Form is removed upon [[death]].
+===Evolutions===
+{| class="wikitable sortable stickyHeader"
+|+
+|-
+! class=unsortable colspan="3" | Evolution
+! class=unsortable style="white-space: nowrap;" | {{Weapon|Skana}}
+! class=unsortable style="white-space: nowrap;" | {{Weapon|Prisma Skana}}
+! class=unsortable style="white-space: nowrap;" | {{Weapon|Skana Prime}}
+! class=unsortable | Notes
+|-
+! EVO1
+| style="white-space: nowrap; text-align:center;" | Incarnon Form [[File:RadialStunOnActivationFinisherKillsPulseStun(xWhite).png|64px|center]]
+|
+*Reach '''6x''' Combo and then [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form.
+*Incarnon Form stuns nearby enemies when it enters Incarnon Form and after [[Finisher]] attacks.
+**'''+100%''' Melee Damage
+**'''+20%''' Sprint Speed
+**'''+20%''' Parkour Velocity
+| style="text-align:center;" colspan="3" | -
+|
+*Incarnon form stuns enemies within '''10''' meters when activated and after performing a Finisher.
+*+100% damage is ''additive'' with other bonus damage sources like {{M|Pressure Point}}.
+|-
+! colspan="3" | Evolution Challenge !! colspan="4" | Complete a solo mission with this weapon equipped
+|-
+! rowspan="2" | EVO2
+| style="white-space: nowrap; text-align:center;" | '''Guardian's Promise''' [[File:DamageAndHeavyEfficiencyWithOvershield(xWhite).png|64px|center]]
+|
+*Increase Base Damage by '''+X'''.
+*With Overshields: '''+80%''' Heavy Attack Efficiency.
+| style="text-align:center" | X = 100
+| style="text-align:center" | X = 100
+| style="text-align:center" | X = 10
+| style="text-align:center | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Wartime Nerve''' [[File:DamageAndComboGain(xWhite).png|64px|center]]
+|
+*Increase Base Damage by '''+X'''.
+*'''+9''' Combo Count on undamaged enemies.
+| style="text-align:center" | X = 90
+| style="text-align:center" | X = 90
+| style="text-align:center" | X = 10
+|
+*Enemies are undamaged as long as their health and shield have not been damaged.
+**Damaging {{D|Overguard}} is not taken into account.
+|-
+! colspan="3" | Evolution Challenge !! colspan="4" | Activate this weapon's Incarnon form '''6''' times in a mission
+|-
+! rowspan="3" | EVO3
+| style="white-space: nowrap; text-align:center;" | '''Orokin Reach''' [[File:MoreRange(xWhite).png|64px|center]]
+|
+*'''+0.4''' Range
+| colspan="3" style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Resolute Force''' [[File:IncarnonComboTimer(xWhite).png|64px|center]]
+| 
+*'''+6s''' Combo Duration
+| colspan="3" style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Swift Break''' [[File:IncarnonWindUpSpeed(xWhite).png|64px|center]]
+| 
+*'''+50%''' Heavy Attack Wind Up Speed.
+| colspan="3" style="text-align:center" | -
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution Challenge !! colspan="4" | Reach '''10x''' Combo Multiplier '''10''' times
+|-
+! rowspan="3" | EVO4
+| style="white-space: nowrap; text-align:center;" | '''Survivor's Edge''' [[File:XCritChanceYStatChance(xWhite).png|64px|center]]
+|
+*Increase Base Critical Chance by '''+X%'''.
+*Increase Base Status Chance by '''+Y%'''.
+| style="text-align:center" | X = 12%<br>Y = 10%
+| style="text-align:center" | X = 12%<br>Y = 10%
+| style="text-align:center" | X = 2%<br>Y = 4%
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Elemental Excess''' [[File:HighStatus(xWhite).png|64px|center]]
+|
+*Increase Base Status Chance by '''+X%'''.
+| style="text-align:center" | X = 20%
+| style="text-align:center" | X = 20%
+| style="text-align:center" | X = 10%
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Absolute Valor''' [[File:HighCrit(xWhite).png|64px|center]]
+|
+*Increase Base Critical Chance by '''+X%'''.
+| style="text-align:center" | X = 25%
+| style="text-align:center" | X = 25%
+| style="text-align:center" | X = 4%
+| style="text-align:center | -
+|}
+
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39}}
+*Incarnon Adapters available in the current Steel Path Circuit rotation are now available for Platinum Purchase in Cavalero’s store in the Chrysalith.
+**Purchasing these Incarnons for Platinum will reward players with both the Adapter and the required resources to install it.
+
+{{ver|37.0.8}}
+*Fixed typo in Skana’s Incarnon Evolution I description.
+
+{{ver|33.5}}
+*Fixed Melee Incarnon weapons (original and Genesis) missing their Incarnon Form stats in the Arsenal.
+*Fixed the Evolution IV description of the Prisma Skana’s Incarnon Genesis stating 30% Status Chance increase instead of the intended 20%.  
+**''It was always 20% in mission, this was just a description error in the Arsenal stats!''
+
+{{ver|33.0.5}}
+*Fixed Melee Incarnon Weapons using the incorrect HUD indicator to state that Incarnon Mode was ready. 
+
+{{ver|33.0.6}}
+*Changed the following Skana variant’s “Elemental Excess” Incarnon Genesis evolution:
+**Prisma Skana: Increase Status Chance by 20% (was 30%)
+**Skana Prime: Increase Status Chance by 10% (was 24%)
+***''Varying values for variants are intended for all Incarnon Genesis weapons, so the Skana was adjusted to match that format.''
+
+{{ver|33}}
+*Introduced.}}
+
+{{IncarnonNav}}
+
+[[Category:Duviri]]
+[[Category:Incarnon Geneses]]
+[[Category:Incarnon]]
+[[Category:Update 33]]

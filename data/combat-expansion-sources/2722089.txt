@@ -1,0 +1,82 @@
+{{ArcaneBox}}
+'''Exodia Brave''' is an [[Arcane Enhancement]] for [[Zaw]]s that grants a 4-second [[energy]] regeneration on [[Melee 2.0#Heavy Attacks|heavy attack]] kills.
+
+==Effect==
+{| class="emodtable"
+|-
+! Rank
+! Energy/sec
+|-
+| 0 || 1.25
+|-
+| 1 || 2.50
+|-
+| 2 || 3.75
+|-
+| 3 || 5.00
+|}
+
+==Acquisition==
+Can be bought from [[Hok]] for {{sc|10,000}} per arcane upon reaching the rank of '''Kin''' with the [[Ostron]]s.
+
+==Notes==
+*Grants a buff that regenerates energy over time
+**The killing blow must be from the weapon's direct damage; status kills will not trigger the buff.
+**Casting an ability will stop the energy generation for '''1''' second.
+***[[Channeled Abilities|Channeled Abilities]] that drain energy over time, such as {{A|Immolation}}, {{A|Sound Quake}}, and {{A|Renewal}} will completely prevent energy generation for as long as they are active.
+**Stacks up to three times for 15 energy/sec, for a total of 60 energy over 4 sec.
+**(bug?) Obtaining the 2nd and 3rd stacks refreshes the buff, but killing an enemy while the buff is active at max stacks (x3) does not refresh the timer.
+
+==Trivia==
+Prior to {{ver|24.6}}, Exodia Brave was purchasable as a blueprint with the following requirements to build:
+
+{{BuildRequire
+|buildcredits= 7,500
+|build1= Breath Of The Eidolon
+|build1amount=10
+|build2= Cetus Wisp
+|build2amount=10
+|build3= Kuaka Spinal Claw
+|build3amount=10
+|build4= Heart Nyth
+|build4amount=3
+|buildtime=1
+|buildrush=10
+|blueprint=12,500
+|blueprintunit=Standing
+}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|31.6}}
+;ARCANE STAT CHANGES PER RANK
+
+We’ve adjusted the values of older Arcanes with the goal of making lower rank Arcanes more viable, and more desirable while collecting as a result. In short, there are three stats that each Arcane tends to have (speaking generally) -- for example, a percentage chance, a stat buff, and the duration of the buff. 
+
+Certain Arcanes increase all of these stats per rank (making them scale exponentially), but we are changing it so that only one stat is affected by rank (making it scale linearly). The other stats will now be at the max-rank value regardless of the Arcane Rank, thereby buffing lower-rank Arcanes as a result.
+
+;Exodia Brave
+On Heavy Attack Kill: +1.3/5 Energy Rate for 4s (was 1s). Stacks up to 3x 
+
+{{ver|26}}
+*Now grants +5 Energy Generation when killing an Enemy with a Heavy Attack. This can stack up to 3 times.
+
+{{ver|24.6}}
+*Replaced Arcane Blueprints with Arcanes in Hok Offerings meaning that Arcanes no longer need to be built.
+**Players that had previous Arcane Blueprints in Inventory were crafted on patch login for free.
+
+{{ver|22.2.4}}
+*Reduced the component cost in certain crafting recipes.
+**EXODIA BRAVE: Breath of the Eidolon from 20 to 10
+
+{{ver|Plains of Eidolon}}
+*Introduced.
+}}
+{{ArcaneNav}}
+__NOTOC__
+[[es:Valentía de Exodia]]
+[[Category:Update 22]]
+[[Category:Syndicate Offerings]]
+[[Category:Arcane Enhancements]]
+[[Category:Energy Restoration]]
+[[uk:Екзодія «Відвага»]]

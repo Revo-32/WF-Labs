@@ -1,0 +1,230 @@
+{{UpdateMe}}
+{{ArcaneBox}}
+'''Melee Afflictions''' is a [[Arcane Enhancement|Melee Arcane]] that adds additional stacks to every existing [[Status Effect]] on enemies that are knocked down or flung by melee attacks.
+
+==Effect==
+{| class="emodtable"
+|-
+!Rank
+!Additional Stacks
+|-
+|0||1
+|-
+|1||2
+|-
+|2||3
+|-
+|3||4
+|-
+|4||5
+|-
+|5||6
+|-
+|}
+
+{{Acquisition|Melee Afflictions can be obtained from [[Ascension]]'s optional [[Sisters of Parvos (Ascension Mode)|Sister of Parvos]], summoned by acquiring 3 Sister Beacons during the elevator ride. Alternatively it can be purchased from [[Ordis]] in the [[Drifter's Camp]] for 10 {{Resource|Vestigial Motes}}, for a total of 210 for max rank.}}
+
+==Damage Calculation==
+For damaging status effects, each time {{Arcane|Melee Afflictions}} is triggered, the damage of each added stack is calculated as follows. There are 4 main parts, 1. Damage of individual Status procs, 2. The average of all Status procs for each [[Status Effect]], 3. The sum of all the average [[Status Effect]] damage, 4. The calculation of new [[Status Effect]] damages for procs that are present on the target.
+#For each Status proc find the Modded Base Damage of every Status proc on the enemy for each [[Status Effect]] type. 
+#*<math>{
+\begin{aligned}
+&\qquad \\
+\text{Proc MBD (Modded Base Damage)} &= 
+\qquad \text {Weapon Base Damage} \\
+&\qquad \times ( 1 + \text {Weapon Base Damage Bonus} ) \\
+&\qquad \times ( 1 + \text {Weapon Faction Damage Bonus} ) \\
+&\qquad \times ( 1 + \text {Weapon Status Damage Bonus} ) \\
+&\qquad \times \text {(Additional Multipliers)} \\
+&\qquad \\
+\end{aligned}
+}</math>
+#*''Additional Multipliers include modded critical multiplier on [[Critical Hit]] and multipliers on [[Enemy Body Parts]]; these stack multiplicatively with each other.''
+#*Note that [[Faction Damage Bonus|Faction Damage Bonuses]] only apply once from the source weapon of the status. The "double dip" is not counted.
+#For each [[Status Effect]] type, sum the damage of all [[Status Effect]] procs is used to find the damage of that [[Status Effect]].
+#*<math>{
+\begin{aligned}
+&\qquad \\
+\text {Status Effect Average Damage} &= 
+\left [ \frac{ \text {Sum Of All Proc MBDs} }{ \text {Number Of Status Procs} } \right ]\\
+&\qquad \\
+\end{aligned}
+}</math>
+#Affliction Damage Hit is the instance of damage caused by {{Arcane|Melee Afflictions}} and is the sum of all of the [[Status Effect]] Average Damage and multiplied by melee [[Faction Damage Bonus|Faction Damage Bonuses]].
+#*<math>{
+\begin{aligned}
+\text{Affliction Damage Hit} &= 
+\qquad ( \text {Slash Status Effect Average Damage} \\
+&\qquad + \text {Heat Status Effect Average Damage} \\
+&\qquad + \text {Toxic Status Effect Average Damage} \\
+&\qquad + \text {Electricity Status Effect Average Damage} \\
+&\qquad + \text {Gas Status Effect Average Damage} ) \\
+&\qquad \times \text {(1 + Melee Faction Bonuses)} \\
+\end{aligned}
+}</math>
+#Affliction Damage Hit is used to find the Damage Over Time of all [[Status Effect]] types present. Modifiers that are considerd are the same as the normal calculation for respective [[Status Effect]] types. [[Faction Damage Bonus|Faction Damage Bonuses]], and [[Status_Effect#Status_Damage_2|Status Damage Bonuses]] that are present on the melee weapon are applied to [[Status Effect|Status Effects]].
+#*<math>{
+\begin{aligned}
+&\qquad \\
+\text{Affliction Damage Tick of Status Effect } &= 
+\qquad \text {Affliction Damage} \\ 
+&\qquad \times \text {Status Effect Multiplier} \\
+&\qquad \times ( 1 + \text {Melee Faction Damage Bonus} ) \\
+&\qquad \times ( 1 + \text {Melee Status Damage Bonus} ) \\
+&\qquad \times ( 1 + \text {Elemental on Melee of Status Effect (where applicable)} ) \\ 
+&\qquad \\
+\end{aligned}
+}</math>
+#*Only {{D|Toxin}} and {{D|Electricity}} statuses can benefit from Elemental Damage Bonuses.
+#*{{D|Heat}} damage will not benefit from Elemental and Faction Damage [[Faction Damage Bonus|Faction Damage Bonuses]] on the melee weapon, unless the melee weapon was the source of the first heat status on the enemy. See [[Heat Inherit]].
+#*{{D|Blast}} does use Affliction Damage to calculate the damage of new status procs are added by {{Arcane|Melee Afflictions}}.
+==Trigger==
+{{D|Knockdown}}, {{D|Lifted}}, or {{D|Ragdoll}} procs will not trigger {{Arcane|Melee Afflictions}} depending on the enemy state. See the table below for the known interactions as of {{ver|39}}.<ref>Data sourced from jWFlab https://jwflab.com/en/melee-afflictions-enemy-state/</ref>
+{| class="wikitable"
+! Enemy State 
+! {{D|Knockdown}}
+! {{D|Ragdoll}}
+! {{D|Lifted}}
+|-
+| {{D|Overguard}}
+| ❌ 
+| ❌ 
+| ❌
+|-
+| {{D|Cold}} freeze 
+| ❌ (1)
+| ✔️ 
+| ❌
+|-
+| {{D|Heat}} panic 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| {{D|Electricity}} stun 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| {{D|Impact}} stagger 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| {{D|Knockdown}} 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| {{D|Ragdoll}} 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| {{D|Lifted}} 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| Atlas’s {{A|Petrify}} 
+| ❌ 
+| ✔️ 
+| ❌
+|-
+| Citrine’s {{A|Crystallize}}
+| ❌ 
+| ❌ 
+| ❌
+|-
+| Garuda’s {{A|Blood Altar}} 
+| ❌ 
+| ❌ 
+| ❌
+|-
+| Harrow’s {{A|Condemn}} 
+| ❌ 
+| ❌ 
+| ❌
+|-
+| Khora’s {{A|Ensnare}} 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| Limbo’s {{A|Stasis}} 
+| ❌ 
+| ❌ 
+| ❌
+|-
+| Nezha’s {{A|Divine Spears}} 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| Nidus’s {{A|Larva}} 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| Rhino’s {{A|Rhino Stomp}} 
+| ✔️ 
+| ✔️ 
+| ✔️
+|-
+| Trinity’s {{A|Well of Life}} 
+| ❌ 
+| ❌ 
+| ❌
+|-
+| Vauban’s {{A|Bastille}} Vortex
+| ✔️ 
+| ✔️ 
+| ✔️
+|}
+
+*(1) {{A|Slash Dash}} can knockdown Frozen targets and still trigger Melee Afflictions.
+
+==Notes==
+*[[Status Effect|Status Effects]] from any source can be affected by this arcane, including statuses applied on the attack that triggered {{Arcane|Melee Afflictions}}.
+*{{D|Toxin}} and {{D|Electricity}} mods can increase the damage of the stacks added by {{Arcane|Melee Afflictions}}. {{D|Heat}} mods cannot.
+*[[Faction Damage Bonus|Faction Damage Bonuses]] and [[Status_Effect#Status_Damage_2|Status Damage Bonuses]] can highly increase the damage from {{Arcane|Melee Afflictions}}. 
+**These bonuses exponentially scale. Probably a bug.
+*When equipped on [[Exalted Weapon|Exalted weapons]], {{Arcane|Melee Afflictions}}:
+**can stack {{Arcane|Arcane Impetus}}
+**can stack {{Arcane|Arcane Ice Storm}}
+**can trigger {{M|Archon Vitality}}, however Archon Vitality doesn't double but adds only one additional stack (from +6 to +7).
+**can trigger {{M|Archon Continuity}} on targets afflicted by toxin (only results in 1 stack of {{D|Corrosive}}).
+**can trigger {{M|Archon Stretch}} on targets afflicted by electric.
+**does not trigger {{M|Archon Flow}} by stacking {{D|Cold}}.
+
+==Tips==
+*Stances that can force {{D|Ragdoll}} are the most efficient at triggering this arcane since it can ignore most control effects that otherwise would prevent Afflictions from activating.
+*Slams and Heavy Slams are excellent at force proccing {{D|Lifted}} or {{D|Knockdown}}.
+*{{D|Gas}} is very effective at scaling with {{Arcane|Melee Afflictions}}, since it is capped at 10 stacks and new procs override older ones, which always leaves the 10 strongest stacks possible. This can be used to quickly scale other damaging status effects alongside it.
+*{{D|Blast}} is best used to do big instances of damage once Damage Over Time status effects have had some damage built up.
+*{{D|Heat}} is best used to compound the damage on enemies because of [[Heat Inherit]].
+*Combined elemental mods on your Melee like modded {{D|Magnetic}}, {{D|Corrosive}}, and {{D|Viral}} can still apply elemental bonuses to {{D|Toxin}}, and {{D|Electricity}} . {{D|Heat}} must be applied by the weapon to use elemental mods. Incarnons or other weapons that forces {{D|Heat}} to proc can use combined elements mods on  your melee like {{D|Gas}}, {{D|Blast}}, and {{D|Radiation}} for elemental bonuses to{{D|Heat}}  damage.
+
+==Bugs==
+
+*{{D|Lifted}} procs add 12 stacks instead of 6.<br />
+
+==References==
+{{Reflist}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|43}}
+* {{D|Blast}} instances added through {{Arcane|Melee Afflictions}} when no other damaging status instances are present now deal the intended damage (unconfirmed if this is the correct patch this was fixed)
+{{ver|40}}
+*The following Arcane Collections are now available for Vosfor in Loid’s Arcane Dissolution: 
+**Cavia Arcane Collection (includes the Cavia and Ascension Arcanes) 
+***Melee Afflictions
+
+{{ver|36}}
+*Introduced.
+}}
+
+{{ArcaneNav}}
+[[es:Aflicciones cuerpo a cuerpo]]
+[[Category:Ascension Arcanes]]

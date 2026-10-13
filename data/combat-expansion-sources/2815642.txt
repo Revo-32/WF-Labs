@@ -1,0 +1,114 @@
+{{Navigation|Shuriken|Smoke Screen|Teleport|Blade Storm}}
+<onlyinclude>{{AbilityU10.3
+| name = Blade Storm
+| gameimage = BladeStorm.png
+| cardimage = BladeStormModU15.jpeg
+| hotkey = 4
+| energy = 0
+| description = Project fierce shadow clones of Ash upon groups of distant enemies. Join the fray using Teleport.
+<br/>'''Energy per Mark''': 12
+<br/>'''Energy per Mark''' (while invisible): 6
+| cost = 
+| strength = 562 / 750 / 1125 / 1500 ({{D|Finisher}} damage)
+| range = 50 m
+| duration = N/A
+| misc = 1 (number of hits per mark)<br>2 (number of Shadow Clones)<br>{{D|Bleed}} status per hit<br>50 % (invisible mark discount)<br>100 % (energy discount for Teleport on marked enemy)
+| cardonly = {{{1|}}}
+| info = 
+*Ash toggles a state of intense focus as he searches for targets to assassinate. During targeting mode, enemies within {{Stat|Ability Range|icon=only}}'''50''' meters from Ash that are seen near the aiming reticle become highlighted and tagged with a death mark above their head, consuming {{Stat|Ability Efficiency|icon=only}}'''12''' [[energy]] per enemy.
+**Leaving this range while targeting will unmark enemies and refund the energy.
+***Refunding is not considered energy gain, so {{A|Nourish}} does not increase it.
+*When 1 or more enemies are marked, reactivating the ability will create <u>'''2'''</u> Shadow Clones that teleport to each marked enemy, striking them with <u>'''1'''</u> [[Finisher#Front- .2F Back-Finisher|Finisher]] attacks that inflict {{Stat|Ability Strength|icon=only}}'''562 / 750 / 1125 / 1500''' {{D|Finisher}} Damage per hit with a guaranteed {{D|Bleed}} status effect as a melee strike.
+**The {{D|Bleed}} proc damage scales '''only''' with {{D|Finisher}} damage and ignores [[Elemental mods]] and Finisher [[Damage Vulnerability]] (i.e. {{M|Savage Silence}}).
+**Blade Storm has <u>'''5%'''</u> [[critical chance]], <u>'''1.2x'''</u> [[critical multiplier]], and <u>'''5%'''</u> [[status chance]].
+***Because these base values are so low, they are difficult to increase significantly with relative bonuses such as {{M|True Steel}}, {{M|Organ Shatter}}, and {{M|Melee Prowess}}. They can instead be increased more effectively through [[Critical_Hit#Sources_of_Absolute_(Flat)_Critical_Chance_Bonus|absolute (flat) bonuses]]. For example, critical chance with {{Arcane|Arcane Avenger}}, {{M|Cat's Eye}}, or {{A|Wrathful Advance}} (via [[Helminth#Ability_Replacement|Helminth]]); critical damage with {{Arcane|Arcane Crepuscular}} or {{M|Tenacious Bond}}; and status chance with {{M|Proton Snap}}.
+**Blade Storm has a moddable Pseudo-[[Exalted Weapon]], '''{{Weapon|Shadow Clones}}''', which does not provide an actual equippable weapon but can be modded and slotted with [[Arcane Enhancement]]s to boost the ability's performance.
+***Can equip the dagger-exclusive {{M|Covert Lethality}} mod.
+***{{D|Finisher}} Damage ignores armor, but all modded elements equipped to {{Weapon|Shadow Clones}} will calculate their damage with armor as normal. 
+****{{M|Covert Lethality}} and {{M|Finishing Touch}} increase its damage accordingly.
+****{{Weapon|Innodem}}'s [[Innodem#Evolutions|Blade Twister Evolution]] (+60% Finisher Damage) does '''not''' affect the damage.
+***Animation speed of the clones attacking is affected by [[Attack Speed]] (e.g., {{M|Fury}}) but is capped at 1.5.
+***Cannot perform [[Melee#Blocking|blocking]] or [[Melee#Heavy Attack|heavy attacks]] and as such cannot equip related mods (e.g., {{M|Parry}}, {{M|Reflex Coil}}, {{M|Mentor's Legacy}}, {{Arcane|Melee Animosity}}) and does not have an Exilus Slot.
+***Cannot benefit from {{M|Carnis Mandible}}'s heavy attack set effect.
+***[[Riven Mod]]s are '''not''' generated for Blade Storm.
+**The color of the death mark visual effect on enemies is determined by Ash's left energy color, the color of Ash in targeting mode and of his Shadow Clones is determined by his right energy color.
+**Some stats are [[Snapshotting|snapshotted]] when the ability is cast, meaning changes to those stats after casting will '''not''' affect that instance of Blade Storm.
+***[[Abilities#Ability_Strength|Ability Strength]] and [[Attack Speed]] are snapshotted. For example, becoming invisible after casting with {{Arcane|Arcane Crepuscular}} equipped will increase Ability Strength, but that will '''not''' affect the damage of the active Blade Storm. Likewise, {{M|Berserker Fury}} stacks gained after casting will '''not''' increase the Shadow Clones' Attack Speed.
+***Critical chance, status chance, modded damage, and combo damage multiplier update dynamically. For example, if {{A|Wrathful Advance}} (via [[Helminth#Ability_Replacement|Helminth]]) is cast or expires while Blade Storm is active, the critical chance will change immediately, and [[Maneuvers#Wall_Latch|wall-latching]] for 2 seconds with {{M|Proton Snap}} equipped will increase status chance and damage immediately.
+**Blade Storm can be recast within a {{Stat|Ability Duration|icon=only}}'''5''' second window to perform a repeating combo chain, granting 20 [[Melee Combo#Ability Combo Counter|Ability Combo Counter]] points. Blade Storm gains <u>'''1x'''</u> additional damage per combo multiplier, up to '''<u>12x</u>''' damage at 12x combo.
+***Ability Combo is functionally equivalent to Melee Combo and as such benefits from [[Melee_Combo#Combo_Duration|Combo Duration]] (e.g., {{M|Body Count}}, {{Arcane|Primary Dexterity}}), [[Melee_Combo#Additional_Combo_Count_Chance|Additional Combo Count Chance]] (e.g., {{M|Quickening}}, {{M|True Punishment}}, {{M|Relentless Combination}}) and [[Melee_Combo#Initial_Combo|Initial Combo]] (e.g., {{M|Corrupt Charge}}, {{M|Galvanized Reflex}}). It is also affected by [[Melee_Combo#Combo_Decay|Combo Decay]] from {{Focus|Naramon}}'s {{Focus|Power Spike}}.
+**Because Blade Storm is counted as a melee and finisher strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+**{{D|Finisher}} Damage increases stack additively with each other and multiplicatively with other damage increases, so the equation looks like this:<br/>{{MathText|Blade Storm Damage {{eql}} Base Damage {{mul}} Ability Strength {{mul}} Melee Damage {{mul}} Elemental Damage {{mul}} Finisher Damage {{mul}} Faction Damage {{mul}} Combo Multiplier}}.<br/>Example at max rank:<br/>{{MathText| 1500 Base Damage<br/>{{mul}} 1.54 Ability Strength (1 + 0.3 {{M|Intensify}} + 0.24 {{M|Augur Secrets}})<br/>{{mul}} 2.80 Melee Damage (1 + 0.6 {{M|Steel Charge}} + 1.2 {{M|Pressure Point}})<br/>{{mul}} 3.55 Elemental Damage (1 + 0.9 {{M|Molten Impact}} + 1.65 {{M|Primed Fever Strike}})<br/>{{mul}} 2.60 Finisher Damage (1 + 0.6 {{M|Finishing Touch}} + 1.0 {{M|Covert Lethality}})<br/>{{mul}} 1.30 Faction Damage (like {{M|Smite Corpus}}, {{M|Smite Grineer}}, {{A|Roar}} [[Faction_Damage_Bonus|etc.]])<br/>{{mul}} 12 Combo Multiplier<br/>{{eql}} 931,314 Damage}} (The damage numbers in-game vary slightly due to [[Damage/Calculation#Quantization|Quantization]].)
+**{{D|Finisher}} [[Damage Vulnerability]] sources stack multiplicatively with each other and with {{D|Viral}}:
+***{{M|Savage Silence}} (if {{A|Silence}} is injected via [[Helminth#Ability_Replacement|Helminth]]) increases the damage enemies take.
+***{{M|Radiant Finish}} (if {{A|Radial Blind}} is injected via [[Helminth#Ability_Replacement|Helminth]]) increases the damage enemies take.
+***{{Focus|Naramon}}'s {{Focus|Sling Stun}} increases the damage enemies take, but only by '''20%''' at max rank, not '''30%''' as stated in the ability.
+*Reactivating Blade Storm with no marks will toggle off targeting mode instead.
+**While in targeting mode, Ash emits black smoke and his vision darkens.
+** Casting Blade Storm is a [[One-Handed Action]]. As such, Ash can still perform all other functions normally such as maneuvering, casting other abilities, and firing or reloading weapons.
+**Ash cannot re-enter targeting mode while his Shadow Clones are attacking marked enemies.
+| interactions = 
+*Invisibility by means of {{A|Smoke Screen}} or other allied abilities will <u>'''halve'''</u> the energy cost of Blade Storm to {{Stat|Ability Efficiency|icon=only}}'''6''' energy per enemy.
+*Bonus [[Critical Chance]] from {{M|Smoke Shadow}} affects {{Weapon|Shadow Clones}}.
+*While Blade Storm is attacking, {{A|Teleport}} can be cast on a marked enemy at <u>'''0'''</u> energy cost to include Ash in the assault. Ash becomes invulnerable for the duration as he teleports and strikes all remaining marked enemies in a cinematic sequence.
+**While joining Blade Storm costs no energy, Ash must have enough energy to cast Teleport to join.
+**Strikes by Ash deal the same damage as his clones, but will attack enemies not targeted by his clones at the moment. He consumes marks, which generally accelerates the assault, when the enemy is not dying from the first hit. 
+**Ash can regenerate his shields during the animation.
+**While {{A|Blade Storm}} is an ability, using {{A|Teleport}} tchnically counts as attacking and will dispel conditional cloaking (e.g. {{M|Stalk}}).
+| augment = [[File:RisingStormMod.png|200px|left]]
+{{main|Rising Storm}}
+{{#lst:Rising Storm|intro}}
+{{#lsth:Rising Storm|Stats}}
+{{clr}}
+| tips = 
+*Blade Storm can be activated while zooming in with a ranged weapon. This can be used to more precisely pick targets. 
+*You are invincible while using {{A|Blade Storm}}. This can be used to give time to regenerate your shields.
+*{{A|Blade Storm}} can be used to pick up items that are very far away or in dangerous situations (an item surrounded by 5 enemies for example). This generally requires a sentinel's {{M|Vacuum}} skill for maximum effectiveness. Simply target an enemy near something you want to pick up and activate the ability. Since you return to your starting point you will return to your "safe spot" but will have picked up health orbs, energy orbs, resources, and even mods.
+*Blade Storm can be used to start long melee combo chains to gain additional bonus melee damage.
+**This synergizes well with builds centered around {{M|Blood Rush}}, {{M|Weeping Wounds}}, and [[Set Mods#Gladiator Mod Set|Gladiator Mods]].
+*{{Weapon|Shadow Clones}} have no {{D|Slash}} damage and it cannot be added with mods, the {{D|Bleed}} proc is forced by the ability itself so the only way to make more of those procs is by using the [[Mecha Set]].
+*Blade Storm can be empowered by performing melee combo chains before casting, as the ability's damage benefits greatly from the bonus melee damage multiplier.
+*Blade Storm's {{D|Finisher}} damage and forced {{D|Bleed}} procs bypass [[Sentient Adaptation]].
+*Ash's second ability, {{A|Smoke Screen}}, synergizes well with this ability, reducing both the energy cost per mark and Ash's vulnerability when marking enemies.
+**Similarly, {{Arcane|Arcane Trickery}} also synergizes well, since it can be triggered by Blade Storm and reduces the cost per mark.
+*Blade Storm allows Ash to easily trigger {{Arcane|Arcane Ultimatum}}, giving him a boost in survivability.
+*Blade Storm finishers also trigger {{Arcane|Exodia Might}} with Zaws, allowing substantial health regeneration without the use of {{M|Life Strike}}.
+*Blade Storm benefits greatly from the effects of {{M|Body Count}}, {{M|Drifting Contact}}, and {{M|Gladiator Rush}}. Instead of having a 3 second delay before the combo counter disappears, the delay will be {{Math|3+12+10+6|mt=y}} seconds.
+**Using the {{M|Rising Storm}} augment will further increase the delay.
+*Since Ash only spawns '''2''' Shadow Clones, it's highly suggested to equip attack speed mods as the time needed for the Shadow Clones' animations can make gameplay sluggish, especially if a large amount of enemies are marked.
+*Joining Blade Storm has multiple benefits for Ash:
+**Becoming invulnerable allows Ash to ignore status effects, such as {{D|Toxin}}, and regenerate his shields.
+**The rate in which attacks are dealt is increased as there will be 3 attackers instead of 2.
+**The amount of hits added to the [[Melee 2.0#Combo Counter|combo counter]] from the ability will be higher than if Ash were to not join.
+*Using Teleport on an unmarked enemy while Ash's Shadow Clones are attacking marked ones will result in the unmarked enemy being marked without consuming any energy. Ash will then join Blade Storm until all marks are expended.
+| bugs = 
+*On certain unspecific occasions Ash will become invulnerable after using Blade Storm. It should also be noted that Blade Storm can cause lag commonly.
+*Very rarely, after using Blade Storm, Ash will float and become invincible. He is unable to jump or fall down, use melee weapons (or primaries/secondaries in some cases), or use Blade Storm again. Pressing E will teleport to a random enemy and perform a purely aesthetic Blade Storm attack which does no damage. This appears to occur when Blade Storm's initial target is killed before Blade Storm begins.
+**On some occasions (most likely related to latency), Ash will remain vulnerable whilst being unable to exit this bugged state without getting killed (as in, actually dying and using a revive charge, as revived by a teammate will not end this glitch).
+**This may occur when the initial target for Blade Storm is killed (by another player/procs) during the teleporting animation, causing Ash to teleport to his casting location, and initiate this bug.
+**To deactivate the bug, Ash can prompt a "falling out of level" event by power wall climbing to the sky if there is a wall in the map that allows him to. This will respawn Ash to a random location on the ground and deactivate the bug.
+*'''Very Rarely,''' when Ash finishes using Blade Storm he will appear at the location where he used it with 0 Health, unable to move, unable to use weapons, and unable to be damaged by enemies. Any on screen prompts that occur, such as Defense and Interception wave prompts, will not be presented to Ash in this state. Ash cannot be revived as he isn't considered down despite the fact that he has 0 health. The only way to fix this bug is to wait for the mission to end or leave the mission.
+*If wielding a melee weapon when cast, Blade Storm will occasionally perform Finisher attacks on enemies. This does not occur if the player is hosting.
+*Occasionally, Ash will fall out of the map after using Blade Storm, where he will either teleport back to the original casting position or die.
+*If Blade Storm is cast and Ash's holograms seek out a {{A|Mind Control}}led target, they will attack the target indefinitely until either the Mind Controlled target dies or its duration expires.
+*Attempting to use Blade Storm against another player when fighting in the Dojo will cause Ash to become invincible and hover in the air. In this state, Ash can only move and use firearms.
+*When Ash has no melee weapon equipped, it is possible in some cases for Ash to attain an unmodded Skana after using Bladestorm. This Skana is not listed in the end of mission screen, nor in the in-game gear list, and is lost upon dying or completion of the mission.
+*When used on a Crewship during Railjack missions, and using teleport to join the fray, Ash can grow 10x in size and will be too large to move around not only the Crewship but also the Railjack. Player will have to return to dock to reset size.
+}}</onlyinclude>
+
+==See also==
+
+*{{WF|Ash}}
+
+[[de:Klingensturm]]
+[[es:Tormenta de espadas]]
+[[ru:Буря Клинков]]
+[[Category:Warframe Abilities]]
+[[Category:One-Handed Abilities]] 
+[[Category:Ability Weapons]]
+[[Category:Ash]]
+[[Category:Update 7]]
+[[Category:True Damage]]
+[[Category:Invulnerability]]
+[[uk:Буря клинків]]
+[[fr:Tempête de Lames]]

@@ -1,0 +1,42 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapon|Weapon}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Enforce authority with these fine-edged blades.}}
+'''Okina Prime''' is the [[Prime]]d counterpart of the {{Weapon|Okina}} dual sai, acting as a direct upgrade. Okina Prime was released alongside {{WF|Protea Prime}} and {{Weapon|Velox Prime}}.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Stance slot has {{Pol|Vazarin}} polarity, matches {{M|Spinning Needle}}.
+*Innate two {{Pol|Madurai}} polarities.
+
+{{Advantages|
+*Grants a '''5%''' [[Movement Speed]] bonus when held (i.e. melee mode or quick melee).
+}}
+{{Disadvantages|
+}}
+{{WeaponComparison|Okina}}
+
+==Acquisition==
+{{PrimeTable}}
+{{BuildAutomatic|type=Weapon}}
+
+==Incarnon Genesis==
+{{Transclude|Okina Incarnon Genesis#Acquisition}}
+
+{{Transclude|Okina Incarnon Genesis#Incarnon Genesis}}
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+File:EGS ProteaPrimeAccessWeaponsPack DigitalExtremes DLC G1A 00 1920x1080-a72a02d8d54593024ff91ad2896f854d.jpeg
+File:Protea Prime weapons and helmet.jpeg
+File:First-look-of-new-prime-weapons-v0-pzjkjrujzxpc1.png
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|35.5.9}}
+*Introduced.
+}}
+
+{{WeaponNav}}

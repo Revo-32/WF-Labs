@@ -1,0 +1,107 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|A shorter version of the Ether blade that allows for a more focused attack on a single target.}}
+The '''Ether Daggers''' are pair of daggers using the same technology as the {{Weapon|Ether Sword}}.
+
+This weapon can be sold for {{cc|5,000}}.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Stance slot has a {{Pol|Zenurik}} polarity, matches {{M|Sinking Talon}} stance.
+*Innate {{Pol|Vazarin}} polarity.
+
+{{Advantages|
+*Grants a '''5%''' [[Movement Speed]] bonus when held (i.e. melee mode or quick melee).
+}}
+
+{{Disadvantages|}}
+
+==Acquisition==
+The Ether Daggers' blueprint is rewarded by completing the [[Stolen Dreams]] [[quest]]. Additional blueprints can be bought from [[Cephalon Simaris]] for {{sc|100,000}}.
+
+Alternatively, its blueprint can be bought from [[Nakak]] (as [[Operational Supply]]) in [[Cetus]] during the [[Operation: Plague Star]] event for {{sc|3,000}} + {{cc|5,000}}.
+
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*Stealth attacks do '''+900%''' damage instead of the normal bonus of '''+700%''' damage.
+
+==Trivia==
+*The Ether Daggers were released on April 12, 2013 with {{ver|7.7.3}}.
+*This weapon was removed from the [[Market]] in {{ver|10.3}}, though it was temporarily re-released for PS4 from Saturday, August 9, 12pm EDT to Sunday, August 10th, 12pm EDT as part of a special alert event prior to {{ver|14}}'s introduction. The Ether Daggers have since made its return as a reward in the [[Stolen Dreams]] quest added in {{ver|15.13}}.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+DualEtherDaggers1.png|Taken by Sherbniz
+DuelEtherDaggers2.png|Taken by Sherbniz
+</gallery>
+
+{{VideoGallery
+|{{YouTube|x4NqmYqsOBk|size=300px}}
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|29.0.8}}
+*Added Ether Daggers to Simaris’ Offerings for players who might have sold theirs.
+
+{{ver|26}}
+*Mastery Rank increased from 0 to 6.
+*Damage increased from 45 to 224.
+*Range increased from 0.75 to 1.75.
+*Status Chance increased from 15% to 30%.
+*Critical Chance increased from 5% to 10%.
+*Critical Damage increased from 1.5x to 1.8x.
+*Slam Attack increased from 90 to 448.
+*Slide Attack increased from 225 to 448.
+*Parry Angle set to 50.
+*Follow Through increased from 0.3 to 0.8.
+
+{{ver|Specters of the Rail 4}}
+*Fixed missing sounds on Dual Ether Dagger melee attacks.
+
+{{ver|17.5}}
+*The Dual Ether Daggers can now be used in Conclave.
+
+{{ver|15.13}}
+*Ether Dagger Blueprint and a Catalyst Blueprint rewarded upon completing Stolen Dreams quest.
+
+{{ver|10.3}}
+*Retired Dual Ether Daggers from the market.
+
+{{ver|9.5.2}}
+*Fixed appearance of Ether weapons. Our weapons manufacturer apologizes for the defective translucency in the 9.5 model.
+
+{{ver|8.3}}
+*Fixed missing sound effects for Ether Daggers slide attack.
+
+{{ver|7.11}}
+*Fixed electricity FX on Ether Daggers.
+
+{{ver|7.10}}
+*Fixed FX on Ether Daggers.
+
+{{ver|7.7.3}}
+*Introduced.
+}}
+{{ver/Lu|26}}
+
+==See Also==
+*{{Weapon|Ether Reaper}}, a scythe variant.
+*{{Weapon|Ether Sword}}, a single longsword variant.
+*{{Weapon|Dual Ether}}, dual sword variant.
+
+{{WeaponNav}}
+[[de:Ether-Dolche]]
+[[es:Dagas éter]]
+[[fr:Dagues Ether]]
+[[Category:Dual Daggers]]
+[[Category:Tenno]]
+[[Category:Melee Weapons]]
+[[Category:Update 7]]
+[[Category:Weapons]]
+[[Category:Slash Damage Weapons]]
+[[Category:Weapons with Passives]]
+[[uk:Етерні кинджали]]

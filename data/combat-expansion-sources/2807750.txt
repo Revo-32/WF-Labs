@@ -1,0 +1,883 @@
+{{UpdateMe|Include blocking angle and follow through stats}}
+{{Infobox
+|Box title    = Zaw
+|image        = ZawWall.png
+|caption      = 
+}}
+{{Quote|You have dreamed of your perfect blade! Well, dream no longer! It resides in this place between yourself and Hok, master craftsman, waiting to be born!|[[Hok]]}}
+<section begin=intro />
+'''Zaws''' are [[modular]] [[melee]] [[weapon]]s created and assembled at [[Hok]]'s Anvil in [[Cetus]]. Unlike traditional weapons, Zaws utilize a modular components system with interchangeable parts when crafting. Different parts grant different stats and abilities when used in crafting a Zaw, and players are able to mix and match different combinations of parts, resulting in a much wider variety of base stat customization for the weapons. Players are also free to give Zaws a name of their choice to further enhance customization.
+
+<section end=intro />
+==Components==
+A Zaw consists of three different components: the '''Strike''', the '''Grip''', and the '''Link'''. Each component is centered around a particular aspect of the weapon, and these components can each have various parts to choose from, which changes the type of functionality that the component provides.
+
+===Strikes===
+'''Strikes''' are the head of the weapon, which determines the weapon's damage distribution, critical chance, critical damage and status; while also altering the final base speed of the Zaw. These are the components that earn [[Mastery Rank]] points for the weapon. It also determines what picture is shown in the arsenal. Each Strike can give two types of weapon depending on the '''Grip''' used (one-handed or two-handed). Weapon type determines the polarity of the [[Stance]] slot.
+
+{| class="sortable wikitable"
+|-
+!Strike
+!Type 1H & Range
+! width="15%" |Type 2H & Range
+! width="17%" |Damage
+!{{D|Impact}}
+!{{D|Puncture}}
+!{{D|Slash}}
+!{{D|Viral}}
+!Speed
+!Crit Chance
+!Crit Multi
+!Status
+!Disposition
+|-
+|'''[[Balla]]'''
+|Dagger ({{Pol|Madurai}}) 1.7m
+|Staff ({{Pol|Madurai}}) 3.0m
+|'''224.0'''
+|11.2
+|134.4
+|78.4
+| -
+| +0.083
+| 18%
+|2.0x
+|18%
+|0.8
+|-
+|'''[[Cyath]]'''
+|Machete ({{Pol|Zenurik}}) 2.6m
+|Polearm ({{Pol|Naramon}}) 3.0m
+|'''230.0'''
+|46.0
+|11.5
+|172.5
+| -
+| +0.000
+| 18%
+|2.0x
+|18%
+|0.95
+|-
+|'''[[Dehtat]]'''
+|Rapier ({{Pol|Naramon}}) 2.5m
+|Polearm ({{Pol|Naramon}}) 3.0m
+|'''224.0'''
+|22.4
+|112.0
+|89.6
+| -
+| +0.083
+| 18%
+|2.0x
+|18%
+|1.2
+|-
+|'''[[Dokrahm]]'''
+|Scythe ({{Pol|Zenurik}}) 1.7m
+|Heavy Blade ({{Pol|Madurai}}) 3.0m
+|'''309'''
+|46.4
+|108.1
+|154.5
+| -
+| +0.083
+| 18%
+|2.0x
+|18%
+|0.75
+|-
+|'''[[Kronsh]]'''
+|Machete ({{Pol|Zenurik}}) 2.6m
+|Polearm ({{Pol|Naramon}}) 3.0m
+|'''234.0'''
+|163.8
+| -
+| 70.2
+| -
+| -0.067
+| 18%
+|2.0x
+|18%
+|1.3
+|-
+|'''[[Mewan]]'''
+|Sword ({{Pol|Madurai}}) 2.5m
+|Polearm ({{Pol|Naramon}}) 3.0m
+|'''224.0'''
+|56.0
+|78.4
+|89.6
+| -
+| -0.067
+| 18%
+|2.0x
+|18%
+|1.1
+|-
+|'''[[Ooltha]]'''
+|Sword ({{Pol|Madurai}}) 2.5m
+|Staff ({{Pol|Madurai}}) 3.0m
+|'''224.0'''
+|22.4
+|89.6
+|112.0
+| -
+| +0.000
+| 18%
+|2.0x
+|18%
+|1.25
+|-
+|'''[[Rabvee]]'''
+|Machete ({{Pol|Zenurik}}) 2.6m
+|Hammer ({{Pol|Madurai}}) 3.0m
+|'''234.0'''
+|140.4
+|11.7
+|81.9
+| -
+| -0.067
+| 18%
+|2.0x
+|18%
+|1.3
+|-
+|'''[[Sepfahn]]'''
+|Nikana ({{Pol|Madurai}}) 2.5m
+|Staff ({{Pol|Madurai}}) 3.0m
+|'''226.0'''
+|22.6
+|56.5
+|146.9
+| -
+| +0.000
+| 20%
+|2.0x
+|20%
+|0.7
+|-
+|'''[[Plague Keewar]]'''
+|Scythe ({{Pol|Zenurik}}) 1.7m
+|Staff ({{Pol|Madurai}}) 3.0m
+|'''306'''
+|88.0
+|57.0
+|91.0
+|70.0
+| -0.033
+| 18%
+|2.0x
+|22%
+|0.85
+|-
+|'''[[Plague Kripath]]'''
+|Rapier ({{Pol|Naramon}}) 2.5m
+|Polearm ({{Pol|Naramon}}) 3.0m
+|'''213.0'''
+|30.0
+|70.0
+|49.0
+|64.0
+| +0.033
+| 22%
+|2.2x
+|18%
+|0.6
+|-
+|}
+
+<gallery captionposition="below" captionalign="center" position="center" spacing="small" bordersize="none">
+Balla.png|'''[[Balla]]'''<br>Dagger / Staff<br>{{D|Puncture}}|link=Balla
+Cyath.png|'''[[Cyath]]'''<br>Machete / Polearm<br>{{D|Slash}}|link=Cyath
+Dehtat.png|'''[[Dehtat]]'''<br>Rapier / Polearm<br>{{D|Puncture}}|link=Dehtat
+Dokrahm.png|'''[[Dokrahm]]'''<br>Scythe / Heavy Blade<br>{{D|Slash}}|link=Dokrahm
+Kronsh.png|'''[[Kronsh]]'''<br>Machete / Polearm<br>{{D|Impact}}|link=Kronsh
+Mewan.png|'''[[Mewan]]'''<br>Sword / Polearm<br>{{D|Slash}}|link=Mewan
+Ooltha.png|'''[[Ooltha]]'''<br>Sword / Staff<br>{{D|Slash}}|link=Ooltha
+Rabvee.png|'''[[Rabvee]]'''<br>Machete / Hammer<br>{{D|Impact}}|link=Rabvee
+Sepfahn.png|'''[[Sepfahn]]'''<br>Nikana / Staff<br>{{D|Slash}}|link=Sepfahn
+PlagueKeewar.png|'''[[Plague Keewar]]'''<br>Scythe / Staff<br>{{D|Viral}}<br>''Available from [[Operation: Plague Star]]''|link=Plague Keewar
+PlagueKripath.png|'''[[Plague Kripath]]'''<br>Rapier / Polearm<br>{{D|Viral}}<br>''Available from [[Operation: Plague Star]]''|link=Plague Kripath
+</gallery>
+
+===Grip===
+'''Grips''' refer to the weapon's handle, which will determine the weapon's base attack speed, overall base damage (damage distribution will retain the ratio from the '''Strike''') and the type of weapon that will be built (one-handed or two-handed).
+
+{|class="wikitable sortable"
+|-
+!Grip
+!Type
+!Damage Bonus
+!Base Speed
+|-
+|'''[[Jayap]]'''
+| Two-handed
+| 0
+| '''0.917'''
+|-
+|'''[[Korb]]'''
+| One-handed
+| +28
+| '''0.783'''
+|-
+|'''[[Kroostra]]'''
+| Two-handed
+| +14
+| '''0.850'''
+|-
+|'''[[Kwath]]'''
+| One-handed
+| +14
+| '''0.850'''
+|-
+|'''[[Laka]]'''
+| One-handed
+| +0
+| '''0.917'''
+|-
+|'''[[Peye]]'''
+| One-handed
+| -4
+| '''1.000'''
+|-
+|'''[[Seekalla]]'''
+| Two-handed
+| -4
+| '''1.000'''
+|-
+|'''[[Shtung]]'''
+| Two-handed
+| +28
+| '''0.783'''
+|-
+|'''[[Plague Akwin]]'''
+| One-handed
+| -2
+| '''0.950'''
+|-
+|'''[[Plague Bokwin]]'''
+| Two-handed
+| +7
+| '''0.883'''
+|}
+
+<gallery captionposition="below" captionalign="center" position="center" spacing="small" bordersize="none">
+Jayap.png|'''[[Jayap]]'''<br>- Damage<br>+ Speed|link=Jayap
+Korb.png|'''[[Korb]]'''<br>+++ Damage<br>--- Speed|link=Korb
+Kroostra.png|'''[[Kroostra]]'''<br>++ Damage<br>-- Speed|link=Kroostra
+Kwath.png|'''[[Kwath]]'''<br>++ Damage<br>-- Speed|link=Kwath
+Laka.png|'''[[Laka]]'''<br>- Damage<br>+ Speed|link=Laka
+Peye.png|'''[[Peye]]'''<br>--- Damage<br>+++ Speed|link=Peye
+Seekalla.png|'''[[Seekalla]]'''<br>--- Damage<br>+++ Speed|link=Seekalla
+Shtung.png|'''[[Shtung]]'''<br>+++ Damage<br>--- Speed|link=Shtung
+PlagueAkwin.png|'''[[Plague Akwin]]'''<br>-- Damage<br>++ Speed<br>''Available from [[Operation: Plague Star]]''|link=Plague Akwin
+PlagueBokwin.png|'''[[Plague Bokwin]]'''<br>+ Damage<br>- Speed<br>''Available from [[Operation: Plague Star]]''|link=Plague Bokwin
+</gallery>
+
+===Links===
+'''Links''' are the various weights and decorations attached to the hilt of the weapon's handle, which grant a variety of stat bonuses to the weapon with corresponding penalties.
+
+{|class="wikitable sortable"
+|-
+!Link
+!Speed Bonus
+!Critical Chance
+!Status Chance
+!Damage Bonus
+|-
+|'''[[Jai#Jai|Jai]]'''
+| +0.083
+| +0%
+| +0%
+| -4
+|-
+|'''[[Ruhang#Ruhang|Ruhang]]'''
+| -0.067
+| +0%
+| +0%
+| +14
+|-
+|'''[[Jai#Jai II|Jai II]]'''
+| +0.167
+| +0%
+| +0%
+| -8
+|-
+|'''[[Ruhang#Ruhang II|Ruhang II]]'''
+| -0.133
+| +0%
+| +0%
+| +28
+|-
+|'''[[Jai#Vargeet Jai|Vargeet Jai]]'''
+| +0.083
+| +7%
+| -4%
+| -4
+|-
+|'''[[Ruhang#Vargeet Ruhang|Vargeet Ruhang]]'''
+| -0.067
+| +7%
+| -4%
+| +14
+|-
+|'''[[Jai#Ekwana Jai|Ekwana Jai]]'''
+| +0.083
+| -4%
+| +7%
+| -4
+|-
+|'''[[Ruhang#Ekwana Ruhang|Ekwana Ruhang]]'''
+| -0.067
+| -4%
+| +7%
+| +14
+|-
+|'''[[Jai#Vargeet II Jai|Vargeet II Jai]]'''
+| +0.083
+| +14%
+| -8%
+| -4
+|-
+|'''[[Ruhang#Vargeet II Ruhang|Vargeet II Ruhang]]'''
+| -0.067
+| +14%
+| -8%
+| +14
+|-
+|'''[[Jai#Ekwana II Jai|Ekwana II Jai]]'''
+| +0.083
+| -8%
+| +14%
+| -4
+|-
+|'''[[Ruhang#Ekwana II Ruhang|Ekwana II Ruhang]]'''
+| -0.067
+| -8%
+| +14%
+| +14
+|-
+|'''[[Jai#Vargeet Jai II|Vargeet Jai II]]'''
+| +0.167
+| +7%
+| -4%
+| -8
+|-
+|'''[[Ruhang#Vargeet Ruhang II|Vargeet Ruhang II]]'''
+| -0.133
+| +7%
+| -4%
+| +28
+|-
+|'''[[Jai#Ekwana Jai II|Ekwana Jai II]]'''
+| +0.167
+| -4%
+| +7%
+| -8
+|-
+|'''[[Ruhang#Ekwana Ruhang II|Ekwana Ruhang II]]'''
+| -0.133
+| -4%
+| +7%
+| +28
+|}
+
+<gallery captionposition="below" captionalign="center" position="center" spacing="small" bordersize="none">
+Ruhang.png|'''[[Ruhang]]'''<br>+ Damage<br>- Speed|link=Ruhang
+Jai.png|'''[[Jai]]'''<br>- Damage<br>+ Speed|link=Jai
+RuhangII.png|'''[[Ruhang II]]'''<br>++ Damage<br>-- Speed
+JaiII.png|'''[[Jai II]]'''<br>-- Damage<br>++ Speed
+VargeetRuhang.png|'''[[Vargeet Ruhang]]'''<br>+ Damage<br>- Speed<br>+ Critical Chance<br>- Status Chance
+EkwanaRuhang.png|'''[[Ekwana Ruhang]]'''<br>+ Damage<br>- Speed<br>- Critical Chance<br>+ Status Chance
+VargeetJai.png|'''[[Vargeet Jai]]'''<br>- Damage<br>+ Speed<br>+ Critical Chance<br>- Status Chance
+EkwanaJai.png|'''[[Ekwana Jai]]''' <br>- Damage<br>+ Speed<br>- Critical Chance<br>+ Status Chance
+VargeetIIRuhang.png|'''[[Vargeet II Ruhang]]'''<br>+ Damage<br>- Speed<br>++ Critical Chance<br>-- Status Chance
+EkwanaIIRuhang.png|'''[[Ekwana II Ruhang]]'''<br>+ Damage<br>- Speed<br>-- Critical Chance<br>++ Status Chance
+VargeetIIJai.png|'''[[Vargeet II Jai]]'''<br>- Damage<br>+ Speed<br>++ Critical Chance<br>-- Status Chance
+EkwanaIIJai.png|'''[[Ekwana II Jai]]'''<br>- Damage<br>+ Speed<br>-- Critical Chance<br>++ Status Chance
+VargeetRuhangII.png|'''[[Vargeet Ruhang II]]'''<br>++ Damage<br>-- Speed<br>+ Critical Chance<br>- Status Chance
+EkwanaRuhangII.png|'''[[Ekwana Ruhang II]]'''<br>++ Damage<br>-- Speed<br>- Critical Chance<br>+ Status Chance
+VargeetJaiII.png|'''[[Vargeet Jai II]]'''<br>-- Damage<br>++ Speed<br>+ Critical Chance<br>- Status Chance
+EkwanaJaiII.png|'''[[Ekwana Jai II]]'''<br>-- Damage<br>++ Speed<br>- Critical Chance<br>+ Status Chance
+</gallery>
+
+The names of the Links are indicative of the stats they change, and the degree to which they change said stats.
+*'''Ruhang''' links increase damage at the cost of [[attack speed]].
+*'''Jai''' Links increase attack speed at the cost of damage.
+*'''Vargeet''' increases [[critical chance]] at the cost of [[status chance]].
+*'''Ekwana''' increases status chance at the cost of critical chance.
+
+The premade combinations of Link types determine the bonus and penalties they provide.
+*Example: The ''Vargeet Ruhang'' combines the Vargeet and Ruhang links, leading to an increase in damage and critical chance at the cost of attack speed and status chance.
+
+Numbers in the name indicate how many of a particular link is present, showing an increase in that Link's particular stat. The number will appear after the name of the link it refers to.
+*Example: The ''Vargeet II Ruhang'' has 2 Vargeet links, meaning that it offers greater critical chance bonus for a greater status chance penalty. On the other hand, the ''Vargeet Ruhang II'' has 2 Ruhang links, meaning it offers greater damage bonus for a greater speed penalty.
+
+==Crafting==
+===Forging===
+[[File:ZawForging.png|thumb|300px|The Zaw Forging screen at Hok's Anvil.]]
+Before players can craft a Zaw, they must first purchase the blueprints for the parts they desire from Hok's Anvil, which is available for [[Standing]], after which these parts must then be constructed at the [[Foundry]].
+
+Once the component parts have been crafted, players must return to Hok's Anvil and select the '''Forge a Zaw''' option. Here, players must choose the crafted components they have available to form the weapon. Once a Strike, Grip and Link are selected, the player will be shown a preview of the weapon's appearance, along with the weapon's stats. If the weapon is satisfactory, players can then proceed with the '''Build Weapon''' action, which will instantly craft the weapon for {{cc|4,000}}. Players can also use the Forge screen to preview builds of Zaw components they do not yet own.
+
+A newly built Zaw cannot be renamed, customized, [[Polarization|Polarized]], equipped with a [[Focus Lens]], have [[Arcane Enhancements#Exodia Arcanes|Exodia Arcanes]] installed, or earn Mastery Rank experience. However, they can be equipped with an [[Orokin Catalyst]].
+
+Once built, a Zaw cannot be disasssembled to return its components parts.
+
+===Zaw Combos===
+While any Strike can be combined with any Grip, the type of weapon that results is dependent upon the exact type of parts that are used, and certain weapon types are limited to certain combinations of parts. Links do not affect the weapon type created, and can be freely used on any Grip and Strike combination.
+
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:20px;" | Strike/Grip
+! Jayap
+! Korb
+! Kroostra
+! Kwath
+! Laka
+! Peye
+! Plague Akwin
+! Plague Bokwin
+! Seekalla
+! Shtung
+|-
+! Balla
+| Staff
+| Dagger
+| Staff
+| Dagger
+| Dagger
+| Dagger
+| Dagger
+| Staff
+| Staff
+| Staff
+|-
+! Cyath
+| Polearm
+| Machete
+| Polearm
+| Machete
+| Machete
+| Machete
+| Machete
+| Polearm
+| Polearm
+| Polearm
+|-
+! Dehtat
+| Polearm
+| Rapier
+| Polearm
+| Rapier
+| Rapier
+| Rapier
+| Rapier
+| Polearm
+| Polearm
+| Polearm
+|-
+! Dokrahm
+| Heavy Blade
+| Scythe
+| Heavy Blade
+| Scythe
+| Scythe
+| Scythe
+| Scythe
+| Heavy Blade
+| Heavy Blade
+| Heavy Blade
+|-
+! Kronsh
+| Polearm
+| Machete
+| Polearm
+| Machete
+| Machete
+| Machete
+| Machete
+| Polearm
+| Polearm
+| Polearm
+|-
+! Mewan
+| Polearm
+| Sword
+| Polearm
+| Sword
+| Sword
+| Sword
+| Sword
+| Polearm
+| Polearm
+| Polearm
+|-
+! Ooltha
+| Staff
+| Sword
+| Staff
+| Sword
+| Sword
+| Sword
+| Sword
+| Staff
+| Staff
+| Staff
+|- 
+!Plague Keewar
+| Staff
+| Scythe
+| Staff
+| Scythe
+| Scythe
+| Scythe
+| Scythe
+| Staff
+| Staff
+| Staff
+|- 
+!Plague Kripath
+| Polearm
+| Rapier
+| Polearm
+| Rapier
+| Rapier
+| Rapier
+| Rapier
+| Polearm
+| Polearm
+| Polearm
+|- 
+!Rabvee
+| Hammer
+| Machete
+| Hammer
+| Machete
+| Machete
+| Machete
+| Machete
+| Hammer
+| Hammer
+| Hammer
+|- 
+!Sepfahn
+| Staff
+| Nikana
+| Staff
+| Nikana
+| Nikana
+| Nikana
+| Nikana
+| Staff
+| Staff
+| Staff
+|}
+
+===Gilding===
+[[File:GildingComparison.png|thumb|250px|A freshly-built Zaw (above), and a Gilded Zaw (below).]]
+In order to fully unlock all of a Zaw's features, players must '''gild''' their weapon. To gild a weapon, players must have a reputation rank of at least '''Trusted''' with the [[Ostron]]s, and the desired Zaw must first be leveled up to Rank 30. Afterwards, players must return to Hok's Anvil and select the ''Gild'' option under ''Other services'', which will cost 2 {{Resource|Cetus Wisp|Cetus Wisps}} and {{sc|5,000}}. Upon gilding the weapon, players will be asked to first add a [[Polarity]] to the weapon, and then finally give it a custom name. This process will reset the weapon's level back to Rank 0.
+
+A Gilded Zaw will have all of the functionality available to other weapons. A Zaw will only give [[Mastery Rank]] points once gilded.
+
+Visually, the Gilded Zaw will have a modified appearance over a newly-built one, namely having all rust traces removed, the Strike being smoother and glossier, the orange Links becoming gold, and finally the blade having Ostron characters written on it.
+{{clr}}
+===Exodia Arcanes===
+[[File:ExodiaValor.png|thumb|250px]]
+Gilded Zaws can be further improved through the installation of [[Arcane Enhancements#Exodia Arcanes|Exodia Arcanes]], that grant special conditional abilities to the Zaw. These can be bought from Hok's Anvil once a player has achieved the rank of '''Kin''' with the [[Ostron]]s. Two particular Exodia Arcanes, {{Arcane|Exodia Contagion}} and {{Arcane|Exodia Epidemic}}, are instead limited-time offers either through reruns of [[Operation: Plague Star]] via [[Nakak]] or as [[Naberus]] offerings from [[Daughter]].
+
+Installing an Exodia Arcane onto a Zaw will visually add energy lights on the weapon's Links, or add [[Infested]] growths in the case of both Exodia Contagion or Exodia Epidemic. It will also prepend the "'''Arcane'''" prefix to the weapon's name on the [[Arsenal]], though the weapon's name will not have the prefix during missions.
+{{clr}}
+
+==Final Stats==
+Final stat values are calculated by adding values of the '''Strike''', '''Grip''', and '''Link'''.<br/>
+For Two-Handed Zaws, the Damage value is further multiplied by a factor, listed in the table below, depending on the '''Strike'''.
+{|class="wikitable sortable"
+|-
+!Type 2H
+!Strike
+!Damage factor
+|-
+|rowspan=4|Staff 
+|[[Balla]]
+|1.00
+|-
+|[[Ooltha]]
+|1.00
+|-
+|[[Sepfahn]]
+|1.00
+|-
+|[[Plague Keewar]]
+|0.85
+|-
+|rowspan=5|Polearm 
+|[[Cyath]]
+|1.08
+|-
+|[[Dehtat]]
+|1.09
+|-
+|[[Kronsh]]
+|1.07
+|-
+|[[Mewan]]
+|1.09
+|-
+|[[Plague Kripath]]
+|1.08
+|-
+|Hammer 
+|[[Rabvee]]
+|1.08
+|-
+|Heavy Blade 
+|[[Dokrahm]]
+|0.93
+|}
+
+The tables below show the various stats that can result from different Zaw part combinations. 
+{{Transclude|Zaw Stats}}
+
+<!-- ''Reference: [https://docs.google.com/spreadsheets/d/1oCoeJnIi1LfSZoXhRdVSP1_hTlgnt0Zdb0MsvB-zvhU/edit#gid=1066975310 Zaw Compendium Table].'' outdated  -->
+{{clr}}
+
+==Notes==
+*Links are not always called links in the item description texts; they may be called "counterweights."
+*As of {{ver|26.1}}, Zaws are compatible with any [[Deluxe Skins]].
+*Hok also sells fully assembled Gilded Zaws on his '''Today's Special''' option for {{pc}}. The Strike, Grip and Link combinations on these weapons are randomized daily.
+*Zaws have to be gilded to earn [[Mastery Rank]] points, with their progression tied to the weapon's Strike alone. For example, if a player levels up a Gilded Zaw crafted with the Balla Strike to 30, any future Zaws forged using the Balla Strike will no longer provide Mastery regardless of what combination of Grips and Links they have.
+**As there are eleven Strikes currently available, the maximum amount of Mastery Rank points that can be earned from Zaw crafting is '''33,000'''.
+*With '''11''' Strikes, '''10''' Grips, and '''16''' Links, there are currently a total of '''1760''' possible Zaw combinations available.
+**This would total to '''1,440,000''' Standing for Strikes, '''1,408,000''' Standing for Grips and '''10,560,000''' Standing for Links, totaling to '''13,408,000''' Standing, not counting the Plague parts, which roughly translates to '''401''' days, at '''Legendary 5''', of maxing out standing with Cetus, or '''67,040''' Bad Kuaka captures.
+*Rank 30 Zaws or Gilded Zaws can be donated to Hok's Anvil in exchange for Ostron Standing.
+*Zaws can equip [[Riven Mods]], with the Riven Mods generated tied to the weapon's Strike, e.g. ''Balla Exi-Gelitis''.
+*Custom names for Zaws have a ''24'' character limit including spaces, and will not accept special characters like commas (,) or apostrophes ('), though hyphens ( - ) are accepted.
+**Names can also not include any profanities such as swear words.
+*Applying Exodia [[Arcane Enhancement|Arcanes]] to Zaws will give their Links a visual change. Most Exodias will add a small glowing gem to the Links, while the [[Infested]] [[Exodia Epidemic]] and [[Exodia Contagion]] will make the Link visibly corrupted by the Infestation. This however is a purely cosmetic change.
+*Zaws inherit basic colours after gilding from the grip, though this change can only be seen with plague grips.
+*Typing [Zaw] in the in-game chat and selecting the Zaw will let other players in the same chat channel see its bonuses.
+*Zaws cannot be used in [[Conclave]].
+*Changing Holster Style will have no affect on certain Zaws, such as the Oothla and Seekalla
+
+==Bugs==
+*If a newly Gilded weapon is equipped while on Cetus, the polarity slot added to the weapon during gilding will not appear. The polarity slot will appear once the player returns to their [[Orbiter]].
+*The gems added to links by Exodia [[Arcane Enhancement|Arcanes]] are tinted by the accent color channel, rather than the expected energy or emissive channels.
+
+==Gallery==
+<gallery widths="300" position="center" spacing="small">
+File:ZawGeneric.png|Generic icon for Zaws
+File:Lucas-hug-ostronmodular1.jpg
+File:Lucas-hug-ostronmodular2.jpg
+File:Lucas-hug-ostronmodular3.jpg
+File:Lucas-hug-ostronmodular4.jpg
+File:GemsIngame.jpg|Link 3D models
+File:22.18Zaw.png|Preview image from update 22.18, of Sepfahn and Dokrahm
+</gallery>
+
+==Media==
+{{VideoGallery
+|{{YouTube|xujHtFhEeBE|size=300px}}
+|{{YouTube|FPJlrB_afNA|size=300px}}
+}}
+
+{{VideoGallery
+|{{YouTube|YFy5cbo2Bsg|size=300px}}
+|{{YouTube|hVh1CroR4X0|size=300px}}
+|{{YouTube|kjUFFmdNU6I|size=300px}}
+}}
+
+==External Links==
+*[https://semlar.com/zawcalc Zaw Builder by Semlar]
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40.0.3}}
+*Fixed an additional non-existent Mod Slot being shown when gilding a Zaw.
+
+{{ver|39.1}}
+*Providing Modular Items for Standing now prompts a confirmation screen so players don't accidentally donate without realizing it.
+
+{{ver|36}}
+*Fixed modular weapons in their respective screens (Zaws) being highlighted with the Ally Highlights setting enabled.
+
+{{ver|35.5}}
+*Fixed the blade of a Zaw Melee (specifically with the Sepfahn Strike and the Undercutter Skin equipped) clipping out of the sheath and not staying in the sheath when moving forward.
+
+{{ver|35.1}}
+*Fixed Mod Slots overlapping in the Zaw Gild screen if the Tennokai Segment isn’t installed.
+
+{{ver|33.6}}
+*Modular Components that can earn Mastery will now show if that component is Mastered when viewed in a Vendor Menu (ex: viewing Zaw Strikes at Hok).
+
+{{ver|32}}
+;GILDING CHANGES
+
+As mentioned on Devstream #163, we have made changes to the Gilding system to make it easier to access the full power of your Modular items earlier on in-game. For those players that have just completed the Second Dream and are looking to craft a more powerful Amp to help you into and beyond The New War - these changes are for you!
+
+Instead of upon Gilding, modular weapons will now have their full stats available upon ranking up to Level 30. Gilding your Modular weapon now serves the purpose of allowing it to earn Mastery and unlock customization. This allows players to have access to more powerful gear without needing to fully level and earn Standing for the respective Syndicates!
+
+{{ver|30.5}}
+*Players can now install an Orokin Catalyst onto ungilded Modular items
+**Being unable to install a Reactor or Catalyst onto an ungilded modular item significantly slowed down progression on new Modular items. Players who were willing to make the investment into Modular items weren’t able to Mod them to their full capacity, which left their new gear feeling very underpowered. So we have removed that restriction!
+
+{{ver|30.3}}
+*Fixed multiple issues with the Nikana Zaw (Sepfahn Strike):
+**Fixed sheath disappearing after attacking for the first time in a mission.
+**Fixed the sheath sharing it's colour channels with the blade instead of being coloured in attachments.
+**Fixed the sheath not showing in Captura.
+**Fixed issue when using Sepfahn strike without a skin (rotating on every holster/unholster), was previously fixed only with skin applied.
+
+{{ver|29.5}}
+*Fixed any holster alterations for a two-Handed Zaw in the Arsenal not being correctly applied when you leave, and reverting back to the default standard holster type.
+
+{{ver|29}}
+*Fixed script error resulting in loss of functionality when attempting to rename a Zaw.
+
+{{ver|28.3.2}}
+*Fixed a script error resulting in a loss of functionality when attempting to rename a Zaw.
+
+{{ver|28.3}}
+*Fixed some two-handed Melee weapons (i.e. Hammer Zaw (Rabvee), Heavy Blade Zaw (Dokrahm)) sticking to your hand no matter what you’re doing.
+
+{{ver|27.4.4}}
+*Fixed for Zaw's using weapon Skins covering the Warframe with the weapon's Elemental FX. As reported here: https://forums.warframe.com/topic/1190562-tiatnia-zaw-skin-color/
+
+{{ver|27.4}}
+*Fixed clicking on chat-linked Zaws overlapping UI screens that are already open with the Zaw inventory select screen.
+*Fixed equipping a TennoGen Skin onto a polearm Zaw removing the Sugatra placements at both ends of the polearm.
+*Fixed incorrect Melee sounds playing when using a Gilded Polearm Zaw with a Skin.
+*Fixed Zaws remaining in your Warframe’s hands when switching Arsenal views to your Primary/Secondary.
+*Fixed custom holstered locations for Zaw Staves defaulting after exiting the Arsenal.
+
+{{ver|26.1.3}}
+*Added Lifted status to Ooltha Heavy Slam radial attack when used with a one handed Zaw.
+*Added Lifted status to Rabvee Heavy Slam radial attack when used with a two handed Zaw.
+
+{{ver|26.1}}
+*We now allow the use of Skins on Zaws - this 2 year old request is finally seeing the light of day after some under-the-hood restructuring. If you come across any issues with Exodia, or odd behaviours, please let us know! Skin compatibility is automatically determined by Strike!
+
+{{ver|26.0.3}}
+;Melee Phase 2 Changes & Fixes<nowiki>:</nowiki>
+*Zaws now block 100% damage.
+
+{{ver|26}}
+;Balla
+;;Dagger
+*Damage increased from 68 to 224.
+*Range increased from 1 to 1.7.
+;;Staff
+*Damage increased from 80 to 224.
+
+;Ooltha
+;;Sword
+*Damage increased from 72 to 224.
+*Range increased from 1 to 2.5.
+;;Staff
+*Damage increased from 85 to 224.
+
+;Mewam
+;;Sword
+*Damage increased from 86 to 224.
+*Range increased from 1 to 2.5.
+;;Polearm
+*Damage increased from 101 to 244.
+
+;Cyath
+;;Machete
+*Damage increased from 72 to 230.
+*Range increased from 1 to 2.6.
+;;Polearm
+*Damage increased from 101 to 248.
+
+;Dehtat
+;;Rapier
+*Damage increased from 68 to 224.
+*Range increased from 1 to 2.5.
+;;Polearm
+*Damage increased from 80 to 244.
+
+;Kronsh
+;;Machete
+*Damage increased from 86 to 234.
+*Range increased from 1 to 2.4.
+;;Polearm
+*Damage increased from 101 to 250.
+
+;Plague Kripath
+;;Rapier
+*Damage increased from 70 to 213.
+*Range increased from 1 to 2.5.
+;;Polearm
+*Damage increased from 82 to 230.
+
+;Plague Keewar
+;;Scythe
+*Damage increased from 79 to 309.
+*Range increased from 1 to 1.7.
+;;Staff
+*Damage increased from 93 to 262.
+
+;Sepfahn
+;;Nikana
+*Damage increased from 72 to 226.
+*Range increased from 1 to 2.5.
+;;Staff
+*Damage increased from 85 to 226.
+
+;Rabvee
+;;Machete
+*Damage increased from 68 to 234.
+*Range increased from 1 to 2.4.
+;;Hammer
+*Damage increased from 146 to 252.
+
+;Dokrahm
+;;Scythe
+*Damage increased from 68 to 308.
+*Range increased from 1 to 1.8.
+;;Heavy Blade
+*Damage increased from 146 to 286.
+
+{{ver|24.6}}
+;POE / CETUS ECONOMY REMASTER LITE:
+
+With Fortuna's release, we applied some general economy changes based on takeaways from Cetus. Now that we have returned to Cetus and the Plains of Eidolon with a remaster, we are applying some 'Economy Remaster' changes to go with the changes in an effort to apply our continued learnings. Change is the name of the game - thank you for all feedback on our economies and for being receptive to change! 
+
+*Zaw Handles now use Fish Oil instead of Fish Scales. Amount normalized to 50 units.
+
+{{ver|23}}
+*You can now include “&” in your Zaw weapon Entitling.
+
+{{ver|22.13}}
+*Fixed cases of Zaw Damage preview stats not calculating properly.
+
+{{ver|22.11}}
+*Zaws can now be linked in Chat! The name you Entitled your Zaw will also appear in the list that populates from typing in Zaw.
+*You can now preview custom weapon Zaw builds from Hok with parts you don't own yet. This should help you figure out which parts you want to get for your own. (Item will not Preview until all 3 parts are selected) 
+
+{{ver|Plains of Eidolon}}
+*Introduced.
+}}
+
+==See Also==
+*[[Kitgun]], primary and secondary modular weapons.
+*[[Amp]], Operator modular weapons.
+*[[K-Drive]], modular vehicles.
+*[[MOA (Companion)|MOA Companions]], modular [[MOA]] companions.
+*[[Predasite]], modular [[Kubrow]]-like companions.
+*[[Vulpaphyla]], modular [[Kavat]]-like companions.
+*[[Hound (Companion)]], modular [[Sisters of Parvos]] companions.
+
+{{ZawNav}}
+{{WeaponNav}}
+[[de:Zaw]]
+[[es:Zaw]]
+[[ru:Зо]]
+[[fr:Zaw]]
+[[Category:Update 22]]
+[[Category:Melee Weapons]]
+[[Category:Syndicate Offerings]]
+[[Category:Modular]]
+[[Category:Modular Weapons]]
+[[Category:Weapons]]

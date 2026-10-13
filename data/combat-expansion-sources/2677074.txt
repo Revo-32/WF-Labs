@@ -1,0 +1,66 @@
+{{ModBox}}
+'''Galvanized Steel''' is the [[Galvanized Mods|Galvanized]] variant of {{M|True Steel}}, increasing [[Critical Chance]] while increasing [[Critical Damage]] on kill.
+
+==Stats==
+{| class="emodtable"
+|-
+![[Mods#Mod Rank|Rank]]
+!Critical Chance (x2 for Heavy Attacks)
+!Critical Damage
+!Max Bonus
+![[Mods#Mod Power Cost|Cost]]
+|-
+|0|| +10%|| +2.7%|| +10.8%||2
+|-
+|1|| +20%|| +5.5%|| +22%||3
+|-
+|2|| +30%|| +8.2%|| +32.8%||4
+|-
+|3|| +40%|| +10.9%|| +43.6%||5
+|-
+|4|| +50%|| +13.6%|| +54.4%||6
+|-
+|5|| +60%|| +16.4%|| +65.6%||7
+|-
+|6|| +70%|| +19.1%|| +76.4%||8
+|-
+|7|| +80%|| +21.8%|| +87.2%||9
+|-
+|8|| +90%|| +24.5%|| +98%||10
+|-
+|9|| +100%|| +27.3%|| +109.2%||11
+|-
+|10||+110%||+30%|| +120%||12
+|}
+
+==Acquisition==
+This mod can be bought from the [[Arbitrations]] vendor in the [[Arbiters of Hexis]] room in [[Relay]]s for 20 {{Resource|Vitus Essence}}.
+
+==Notes==
+*When the buff times out, one stack is lost and the buff duration resets.
+*Only kills from a weapon equipped with this mod will give stacks, and only the weapon equipped with this mod will benefit from the buff. If equipped on both a normal weapon and an [[Exalted Weapon]], it will affect both weapons.
+*Compared to {{M|Sacrificial Steel}}, Galvanized Steel provides less overall critical chance, but the additional [[Critical Damage]], reduced mod capacity, and only requiring standard {{Resource|Forma}} for [[Polarization]] makes it more versatile.
+
+==Known Bugs==
+*Killing enemies with [[Archmelee]]s also increase the stack, but the bonus does not apply.
+==Trivia==
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37.0.4}}
+*Fixed Galvanized Steel’s Critical Chance bonus on Heavy Attacks being +330% instead of the intended +220%.  
+**The issue was that it was incorrectly adding the +220% Critical Chance on top of the +110% that applies to all Melee attacks, for that unintended total of +330%. It will now properly grant +220%, as indicated in the description (+110% Crit Chance x2 for Heavy attacks). 
+
+{{ver|37.0.1}}
+*Fixed the Galvanized Steel Mod having the incorrect Fusion Endo cost (10k) to bring them to max rank. 
+**It will now cost 30k Endo, as intended, to match other Galvanized mods. For those of you who fused it to max before this hotfix, put the Endo you saved into a piggy bank!
+
+{{ver|37}}
+*Introduced.
+}}
+
+{{MeleeMods}}
+[[es:Acero galvanizado]]
+[[Category:Galvanized Mods]]
+[[Category:Melee Mods]]
+[[Category:Update 37]]

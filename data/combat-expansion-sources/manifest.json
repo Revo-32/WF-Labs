@@ -1,0 +1,1839 @@
+[
+  {
+    "title": "Damage/Slash Damage",
+    "revision": 2816318,
+    "timestamp": "2026-10-06T17:43:33Z",
+    "url": "https://wiki.warframe.com/w/Damage/Slash_Damage?oldid=2816318",
+    "sha256": "2df104ec0432061370418619bcc81457ed902308863cc8b3054129f260b6c56c",
+    "file": "2816318.txt",
+    "retrievedAt": "2026-10-11T05:13:51.526418+00:00"
+  },
+  {
+    "title": "Damage/Heat Damage",
+    "revision": 2807948,
+    "timestamp": "2026-09-14T17:41:49Z",
+    "url": "https://wiki.warframe.com/w/Damage/Heat_Damage?oldid=2807948",
+    "sha256": "dadb303bb8c985865c6541440e55310af53ee371c41e0cd782f3b03601edb451",
+    "file": "2807948.txt",
+    "retrievedAt": "2026-10-11T05:13:53.763208+00:00"
+  },
+  {
+    "title": "Damage/Electricity Damage",
+    "revision": 2805153,
+    "timestamp": "2026-09-02T22:29:50Z",
+    "url": "https://wiki.warframe.com/w/Damage/Electricity_Damage?oldid=2805153",
+    "sha256": "635554ffb593d63751caf167db6e7545f0abec052f17a89adf5a0dc75e94f37e",
+    "file": "2805153.txt",
+    "retrievedAt": "2026-10-11T05:13:52.544495+00:00"
+  },
+  {
+    "title": "Damage/Toxin Damage",
+    "revision": 2804593,
+    "timestamp": "2026-09-01T06:32:24Z",
+    "url": "https://wiki.warframe.com/w/Damage/Toxin_Damage?oldid=2804593",
+    "sha256": "55b019a2cbc2fcdeae8a15a4754b1fb39e2a738b93eec241d36b94dea8e3c69b",
+    "file": "2804593.txt",
+    "retrievedAt": "2026-10-11T05:13:51.536095+00:00"
+  },
+  {
+    "title": "Damage/Gas Damage",
+    "revision": 2813897,
+    "timestamp": "2026-09-28T09:43:02Z",
+    "url": "https://wiki.warframe.com/w/Damage/Gas_Damage?oldid=2813897",
+    "sha256": "feeac2d7ec89937df993ce9efa36247f020e74e6d59bf0686e013a62bb789d22",
+    "file": "2813897.txt",
+    "retrievedAt": "2026-10-11T05:13:51.540592+00:00"
+  },
+  {
+    "title": "Damage/Blast Damage",
+    "revision": 2804600,
+    "timestamp": "2026-09-01T06:37:48Z",
+    "url": "https://wiki.warframe.com/w/Damage/Blast_Damage?oldid=2804600",
+    "sha256": "887d2f2c641d4e7b0e6f8e6887b8c2844ebdc74d5adb99ab9c50da91106ed9cb",
+    "file": "2804600.txt",
+    "retrievedAt": "2026-10-11T05:13:51.924822+00:00"
+  },
+  {
+    "title": "Damage/Cold Damage",
+    "revision": 2814575,
+    "timestamp": "2026-09-30T12:38:41Z",
+    "url": "https://wiki.warframe.com/w/Damage/Cold_Damage?oldid=2814575",
+    "sha256": "f5dbd8ce3385b66266b62aa28aec88095312cc72826007fb24199e8ac5bdc990",
+    "file": "2814575.txt",
+    "retrievedAt": "2026-10-11T05:13:51.917988+00:00"
+  },
+  {
+    "title": "Damage/Magnetic Damage",
+    "revision": 2808215,
+    "timestamp": "2026-09-16T20:33:03Z",
+    "url": "https://wiki.warframe.com/w/Damage/Magnetic_Damage?oldid=2808215",
+    "sha256": "62e44edd874210e95f77ac15574132802c3815c78df75202f4a9ba9933f92ffb",
+    "file": "2808215.txt",
+    "retrievedAt": "2026-10-11T05:13:51.940966+00:00"
+  },
+  {
+    "title": "Damage/Tau Damage",
+    "revision": 2813936,
+    "timestamp": "2026-09-28T12:35:34Z",
+    "url": "https://wiki.warframe.com/w/Damage/Tau_Damage?oldid=2813936",
+    "sha256": "77045c57bbcfd7e23cdba64b2d1f8bb650978c5aba2875ca0fdadb21ebfa1119",
+    "file": "2813936.txt",
+    "retrievedAt": "2026-10-11T05:13:52.291629+00:00"
+  },
+  {
+    "title": "Riven Mods",
+    "revision": 2817521,
+    "timestamp": "2026-10-10T21:51:31Z",
+    "url": "https://wiki.warframe.com/w/Riven_Mods?oldid=2817521",
+    "sha256": "a943a0c650b2dd7e50c3d74fdd9035ad8dfa93f9b09d1b9e9b2cc1c622dfaec5",
+    "file": "2817521.txt",
+    "retrievedAt": "2026-10-11T05:13:52.323606+00:00"
+  },
+  {
+    "title": "Zaw",
+    "revision": 2807750,
+    "timestamp": "2026-09-13T11:17:29Z",
+    "url": "https://wiki.warframe.com/w/Zaw?oldid=2807750",
+    "sha256": "7d5f69753942e1318530aa99ab5165e4012f1acfb019e689baf47e4d8c6a2af2",
+    "file": "2807750.txt",
+    "retrievedAt": "2026-10-11T05:13:52.357920+00:00"
+  },
+  {
+    "title": "Module:Zaws/data",
+    "missing": true
+  },
+  {
+    "title": "Lesion",
+    "revision": 2805596,
+    "timestamp": "2026-09-05T01:40:09Z",
+    "url": "https://wiki.warframe.com/w/Lesion?oldid=2805596",
+    "sha256": "dbd7bc2342268a97431d83b21ef820ecf23107a44a700a6de66378c46e31dfea",
+    "file": "2805596.txt",
+    "retrievedAt": "2026-10-11T05:13:52.698338+00:00"
+  },
+  {
+    "title": "Dual Toxocyst",
+    "revision": 2817270,
+    "timestamp": "2026-10-09T09:55:12Z",
+    "url": "https://wiki.warframe.com/w/Dual_Toxocyst?oldid=2817270",
+    "sha256": "a3dee134d72af7ecb29c07120234f3fda69b01802f4bea7c7449b3a5680d8929",
+    "file": "2817270.txt",
+    "retrievedAt": "2026-10-11T05:13:52.747637+00:00"
+  },
+  {
+    "title": "Melee Animosity",
+    "revision": 2784208,
+    "timestamp": "2026-06-09T23:14:45Z",
+    "url": "https://wiki.warframe.com/w/Melee_Animosity?oldid=2784208",
+    "sha256": "d4db12927dd5e5304c009b20520a6be1c569ee68adb8a79e08736fb2f110531a",
+    "file": "2784208.txt",
+    "retrievedAt": "2026-10-11T05:13:52.943957+00:00"
+  },
+  {
+    "title": "Melee Exposure",
+    "revision": 2776388,
+    "timestamp": "2026-05-13T06:26:34Z",
+    "url": "https://wiki.warframe.com/w/Melee_Exposure?oldid=2776388",
+    "sha256": "2eb637b42132d76cb471d2f9dd49f204f0a1d1b917c1b96a280c72d9e249ca99",
+    "file": "2776388.txt",
+    "retrievedAt": "2026-10-11T05:13:53.065474+00:00"
+  },
+  {
+    "title": "Melee Afflictions",
+    "revision": 2814989,
+    "timestamp": "2026-10-01T13:40:26Z",
+    "url": "https://wiki.warframe.com/w/Melee_Afflictions?oldid=2814989",
+    "sha256": "2cd57686cae779b950e0d25d72423ace4d29c48e3f75008a0226e00768dd627f",
+    "file": "2814989.txt",
+    "retrievedAt": "2026-10-11T05:13:53.096376+00:00"
+  },
+  {
+    "title": "Melee Duplicate",
+    "revision": 2781451,
+    "timestamp": "2026-05-28T12:55:19Z",
+    "url": "https://wiki.warframe.com/w/Melee_Duplicate?oldid=2781451",
+    "sha256": "72714adbc7ed4ba4bb71c19655d41986ecc68e1c5732a389ee4fcc27544bc927",
+    "file": "2781451.txt",
+    "retrievedAt": "2026-10-11T05:13:53.134857+00:00"
+  },
+  {
+    "title": "Exodia Force",
+    "revision": 2620642,
+    "timestamp": "2024-06-23T06:46:37Z",
+    "url": "https://wiki.warframe.com/w/Exodia_Force?oldid=2620642",
+    "sha256": "cf3f03bab4d25a4fe2ac7090ae63aa129a6d875b44baeae8a6d725eacf092dcf",
+    "file": "2620642.txt",
+    "retrievedAt": "2026-10-11T05:13:53.319099+00:00"
+  },
+  {
+    "title": "Exodia Contagion",
+    "revision": 2808344,
+    "timestamp": "2026-09-17T09:50:43Z",
+    "url": "https://wiki.warframe.com/w/Exodia_Contagion?oldid=2808344",
+    "sha256": "54e1f87d357fdf8b17c1a2baef10d0c63eefc3b9eb44a5b9e6b49463f3d4c8ee",
+    "file": "2808344.txt",
+    "retrievedAt": "2026-10-11T05:13:53.457171+00:00"
+  },
+  {
+    "title": "Harmony",
+    "revision": 2789911,
+    "timestamp": "2026-06-29T22:04:25Z",
+    "url": "https://wiki.warframe.com/w/Harmony?oldid=2789911",
+    "sha256": "f630fb43346c592ec71a9f19353ae17264d90bec73f00feaf55b5952f01616dd",
+    "file": "2789911.txt",
+    "retrievedAt": "2026-10-11T05:13:53.482679+00:00"
+  },
+  {
+    "title": "Shattering Impact",
+    "revision": 2807593,
+    "timestamp": "2026-09-12T13:59:40Z",
+    "url": "https://wiki.warframe.com/w/Shattering_Impact?oldid=2807593",
+    "sha256": "0cf0c5cb0f11ab692f4383626f5ee9df0888603c4a774201711eee6f91a5dffc",
+    "file": "2807593.txt",
+    "retrievedAt": "2026-10-11T05:13:53.547386+00:00"
+  },
+  {
+    "title": "Berserker Fury",
+    "revision": 2685881,
+    "timestamp": "2025-06-21T01:52:50Z",
+    "url": "https://wiki.warframe.com/w/Berserker_Fury?oldid=2685881",
+    "sha256": "5d08e78aa2546052f7ced473277dfa48eb40eafaf43b9a223a9b64f83047b4b8",
+    "file": "2685881.txt",
+    "retrievedAt": "2026-10-11T05:13:53.703779+00:00"
+  },
+  {
+    "title": "Zaw Stats",
+    "revision": 2659550,
+    "timestamp": "2025-01-31T18:12:59Z",
+    "retrievedAt": "2026-10-11T06:33:40.973067+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats?oldid=2659550",
+    "sha256": "eb6ff516b999c240870e28dc1fd7804ac66b5867a83db0bb7f40dfc801f7d199",
+    "file": "2659550.txt"
+  },
+  {
+    "title": "Melee Influence",
+    "revision": 2805640,
+    "timestamp": "2026-09-05T04:17:20Z",
+    "retrievedAt": "2026-10-11T06:32:04.449998+00:00",
+    "url": "https://wiki.warframe.com/w/Melee_Influence?oldid=2805640",
+    "sha256": "30c074b54e3a6c4e50da7ed352d192e9c23649ac8f1fe572531a384a476e7689",
+    "file": "2805640.txt"
+  },
+  {
+    "title": "Arcane Fury",
+    "revision": 2748251,
+    "timestamp": "2026-03-27T17:10:46Z",
+    "url": "https://wiki.warframe.com/w/Arcane_Fury?oldid=2748251",
+    "sha256": "cefe93fd4655433aa376d470eb505a242fa09eab7906298a800343eaed3aab2d",
+    "file": "2748251.txt",
+    "retrievedAt": "2026-10-11T05:16:12.820348+00:00"
+  },
+  {
+    "title": "Arcane Strike",
+    "revision": 2787994,
+    "timestamp": "2026-06-23T01:38:09Z",
+    "url": "https://wiki.warframe.com/w/Arcane_Strike?oldid=2787994",
+    "sha256": "4fbe484fbe5d5deeedc3550afc784ab26f26e8880a5eed6897a837514d62ba8f",
+    "file": "2787994.txt",
+    "retrievedAt": "2026-10-11T05:16:13.201280+00:00"
+  },
+  {
+    "title": "Galvanized Steel",
+    "revision": 2677074,
+    "timestamp": "2025-04-09T04:27:57Z",
+    "url": "https://wiki.warframe.com/w/Galvanized_Steel?oldid=2677074",
+    "sha256": "5bf9d04b02b6ecc73d8f11664ffd004c5981c97b09bd5628bb22281ffc9579b4",
+    "file": "2677074.txt",
+    "retrievedAt": "2026-10-11T05:16:13.602267+00:00"
+  },
+  {
+    "title": "Galvanized Reflex",
+    "revision": 2657194,
+    "timestamp": "2025-01-28T08:04:43Z",
+    "url": "https://wiki.warframe.com/w/Galvanized_Reflex?oldid=2657194",
+    "sha256": "26859e5e2743e1fd2c799733db0e649d1c482cd118a36447bee841dfcbb9c16e",
+    "file": "2657194.txt",
+    "retrievedAt": "2026-10-11T05:16:13.991091+00:00"
+  },
+  {
+    "title": "Galvanized Elementalist",
+    "revision": 2651943,
+    "timestamp": "2024-12-27T17:39:28Z",
+    "url": "https://wiki.warframe.com/w/Galvanized_Elementalist?oldid=2651943",
+    "sha256": "a35bf85d6534516beb16cdecd68bbb0c5fb4755114f82209f7c2a26ca78bf93b",
+    "file": "2651943.txt",
+    "retrievedAt": "2026-10-11T05:16:14.358778+00:00"
+  },
+  {
+    "title": "Sibear",
+    "revision": 2817308,
+    "timestamp": "2026-10-09T10:05:37Z",
+    "url": "https://wiki.warframe.com/w/Sibear?oldid=2817308",
+    "sha256": "d8d930167cb0ec8c878169bda1b6751f0fa1facd4498e7dc9807ebea2869cd78",
+    "file": "2817308.txt",
+    "retrievedAt": "2026-10-11T05:16:14.816433+00:00"
+  },
+  {
+    "title": "Arca Titron",
+    "revision": 2789897,
+    "timestamp": "2026-06-29T21:44:03Z",
+    "url": "https://wiki.warframe.com/w/Arca_Titron?oldid=2789897",
+    "sha256": "e058d12b9809185fe733a414b3e293cacc0cf26278073834c5e2ea8eda2ea363",
+    "file": "2789897.txt",
+    "retrievedAt": "2026-10-11T05:16:15.195529+00:00"
+  },
+  {
+    "title": "Keratinos",
+    "revision": 2804544,
+    "timestamp": "2026-09-01T03:12:53Z",
+    "url": "https://wiki.warframe.com/w/Keratinos?oldid=2804544",
+    "sha256": "71b849b0a7c2362dd29f779c3ba42838e57573e09db15deeb69124b3dc945532",
+    "file": "2804544.txt",
+    "retrievedAt": "2026-10-11T05:16:15.567258+00:00"
+  },
+  {
+    "title": "Dual Viciss",
+    "revision": 2797493,
+    "timestamp": "2026-08-07T22:07:31Z",
+    "url": "https://wiki.warframe.com/w/Dual_Viciss?oldid=2797493",
+    "sha256": "11d5058b4b402bdd164c18c861ac166ccf5d3c9bc45687b9a359840fada10db5",
+    "file": "2797493.txt",
+    "retrievedAt": "2026-10-11T05:25:36.234832+00:00"
+  },
+  {
+    "title": "Ekhein",
+    "revision": 2789898,
+    "timestamp": "2026-06-29T21:47:22Z",
+    "url": "https://wiki.warframe.com/w/Ekhein?oldid=2789898",
+    "sha256": "7e8eb9e3fdf27ef5b0c820752d7efecf4655e271a936463b29a02d79cc779292",
+    "file": "2789898.txt",
+    "retrievedAt": "2026-10-11T05:25:35.975017+00:00"
+  },
+  {
+    "title": "Tonkkatt",
+    "revision": 2789937,
+    "timestamp": "2026-06-29T22:23:34Z",
+    "url": "https://wiki.warframe.com/w/Tonkkatt?oldid=2789937",
+    "sha256": "ea3af76894b4ee553b3c751fe8f172c29794740302eddf189adbe3f441dd5820",
+    "file": "2789937.txt",
+    "retrievedAt": "2026-10-11T05:25:37.084917+00:00"
+  },
+  {
+    "title": "Wrath",
+    "revision": 2804662,
+    "timestamp": "2026-09-01T09:22:21Z",
+    "url": "https://wiki.warframe.com/w/Wrath?oldid=2804662",
+    "sha256": "8dd6b3c4fb04948ce42200495790e7c504c67cf43194c9a704ed093d96e36496",
+    "file": "2804662.txt",
+    "retrievedAt": "2026-10-11T05:25:35.951862+00:00"
+  },
+  {
+    "title": "Dorrclave",
+    "revision": 2812872,
+    "timestamp": "2026-09-24T20:57:28Z",
+    "url": "https://wiki.warframe.com/w/Dorrclave?oldid=2812872",
+    "sha256": "1d5f9fc271c90085f5e49aa86f67e94d83a5e4f6ed7ab9ead3d09435925571c9",
+    "file": "2812872.txt",
+    "retrievedAt": "2026-10-11T05:25:35.964901+00:00"
+  },
+  {
+    "title": "Pennant",
+    "revision": 2815686,
+    "timestamp": "2026-10-03T22:44:12Z",
+    "url": "https://wiki.warframe.com/w/Pennant?oldid=2815686",
+    "sha256": "054de6e2d11a57a9629e1ac9314388c83ba6dec926607d42f74f11300e9792a4",
+    "file": "2815686.txt",
+    "retrievedAt": "2026-10-11T05:25:36.334901+00:00"
+  },
+  {
+    "title": "Pride",
+    "revision": 2804853,
+    "timestamp": "2026-09-02T07:43:05Z",
+    "url": "https://wiki.warframe.com/w/Pride?oldid=2804853",
+    "sha256": "a9b07f3b022be30b7c6a1e5ade3d592768ceda1458727ed987bc1032763e8df5",
+    "file": "2804853.txt",
+    "retrievedAt": "2026-10-11T05:25:36.358869+00:00"
+  },
+  {
+    "title": "Arcane Avenger",
+    "revision": 2813365,
+    "timestamp": "2026-09-26T13:14:43Z",
+    "url": "https://wiki.warframe.com/w/Arcane_Avenger?oldid=2813365",
+    "sha256": "a589fddbc36783101d0195e5ee1c70eb671a10b4a9acdc71665f3f85ca752f4d",
+    "file": "2813365.txt",
+    "retrievedAt": "2026-10-11T05:25:36.350333+00:00"
+  },
+  {
+    "title": "Arcane Blade Charger",
+    "revision": 2683009,
+    "timestamp": "2025-05-29T09:09:24Z",
+    "url": "https://wiki.warframe.com/w/Arcane_Blade_Charger?oldid=2683009",
+    "sha256": "9282db7e6fb417f913888362fa765388782cf7955c6d44b66b92158848111b93",
+    "file": "2683009.txt",
+    "retrievedAt": "2026-10-11T05:25:36.616915+00:00"
+  },
+  {
+    "title": "Arcane Arachne",
+    "revision": 2785031,
+    "timestamp": "2026-06-14T21:45:22Z",
+    "url": "https://wiki.warframe.com/w/Arcane_Arachne?oldid=2785031",
+    "sha256": "ba643a7033f69d607dfa75dc8cd9f10bac94392f340127969241affe37906535",
+    "file": "2785031.txt",
+    "retrievedAt": "2026-10-11T05:25:36.722378+00:00"
+  },
+  {
+    "title": "Spring-Loaded Blade",
+    "revision": 2782020,
+    "timestamp": "2026-05-29T15:41:37Z",
+    "url": "https://wiki.warframe.com/w/Spring-Loaded_Blade?oldid=2782020",
+    "sha256": "5a259e8a10e41abb25737b89e92a465a24f3f3894f9b617d9be7cf5ccf5bae03",
+    "file": "2782020.txt",
+    "retrievedAt": "2026-10-11T05:25:36.755078+00:00"
+  },
+  {
+    "title": "Exodia Triumph",
+    "revision": 2586321,
+    "timestamp": "2023-06-01T12:13:46Z",
+    "url": "https://wiki.warframe.com/w/Exodia_Triumph?oldid=2586321",
+    "sha256": "d3fedcae4183dcb1bcf7f80fda2c5a2a0c28bf3f60992b8822dd9bff748705c1",
+    "file": "2586321.txt",
+    "retrievedAt": "2026-10-11T05:25:36.738413+00:00"
+  },
+  {
+    "title": "Exodia Valor",
+    "revision": 2586322,
+    "timestamp": "2023-06-01T12:13:48Z",
+    "url": "https://wiki.warframe.com/w/Exodia_Valor?oldid=2586322",
+    "sha256": "799a96671884c0453e6af482ebf312ada16c163f4aca383a84b5d4299a86b664",
+    "file": "2586322.txt",
+    "retrievedAt": "2026-10-11T05:25:37.002591+00:00"
+  },
+  {
+    "title": "Exodia Might",
+    "revision": 2793292,
+    "timestamp": "2026-07-13T18:29:23Z",
+    "url": "https://wiki.warframe.com/w/Exodia_Might?oldid=2793292",
+    "sha256": "91d7fe8bda8655335e556fe45924f30726d1bc4626173aeaec9540215ba05d69",
+    "file": "2793292.txt",
+    "retrievedAt": "2026-10-11T05:25:37.100565+00:00"
+  },
+  {
+    "title": "Exodia Brave",
+    "revision": 2722089,
+    "timestamp": "2026-01-12T11:10:52Z",
+    "url": "https://wiki.warframe.com/w/Exodia_Brave?oldid=2722089",
+    "sha256": "b302be5e663524dec050b0c88233e812f46d02747f9df6d318d2c14f75c5d7b2",
+    "file": "2722089.txt",
+    "retrievedAt": "2026-10-11T05:25:37.123998+00:00"
+  },
+  {
+    "title": "Zaw Stats/Nikanas",
+    "revision": 2572451,
+    "timestamp": "2023-02-26T02:57:41Z",
+    "retrievedAt": "2026-10-11T06:38:41.027798+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Nikanas?oldid=2572451",
+    "sha256": "55e20e392cb0be30585a5fcb55fac8c01f53cb048f78537f2b61bb84dd684ddd",
+    "file": "2572451.txt"
+  },
+  {
+    "title": "Zaw Stats/Heavy Blades",
+    "revision": 2572434,
+    "timestamp": "2023-02-26T02:46:17Z",
+    "retrievedAt": "2026-10-11T06:38:40.021169+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Heavy_Blades?oldid=2572434",
+    "sha256": "0a9d2e0ff9e2f4af924d4e3f842452f13ee4da72ae77a37bcce54d1afdaef43f",
+    "file": "2572434.txt"
+  },
+  {
+    "title": "Module:Modular",
+    "revision": 2813993,
+    "timestamp": "2026-09-28T16:22:40Z",
+    "url": "https://wiki.warframe.com/w/Module%3AModular?oldid=2813993",
+    "sha256": "31f8fa336ab0fbd807461a316cf455fd8bb374e12f677e6c296848f178b8f73b",
+    "file": "2813993.txt",
+    "retrievedAt": "2026-10-11T05:30:18.909252+00:00"
+  },
+  {
+    "title": "Module:Modular/data",
+    "revision": 2787806,
+    "timestamp": "2026-06-22T05:27:50Z",
+    "url": "https://wiki.warframe.com/w/Module%3AModular/data?oldid=2787806",
+    "sha256": "d8d24a13d7124c1a6c430727e45138f9a03324f5bd5f5fc5dc6e7ce2d6147eb2",
+    "file": "2787806.txt",
+    "retrievedAt": "2026-10-11T05:30:19.306730+00:00"
+  },
+  {
+    "title": "Melee Combo",
+    "revision": 2817078,
+    "timestamp": "2026-10-08T20:36:43Z",
+    "retrievedAt": "2026-10-11T06:58:37.385334+00:00",
+    "url": "https://wiki.warframe.com/w/Melee_Combo?oldid=2817078",
+    "sha256": "0ebc1931970c65077815568f21e54f74b44fef0d4eef4eb99f08ee740d73d750",
+    "file": "2817078.txt"
+  },
+  {
+    "title": "Armor",
+    "revision": 2814011,
+    "timestamp": "2026-09-28T18:00:40Z",
+    "url": "https://wiki.warframe.com/w/Armor?oldid=2814011",
+    "sha256": "e2ba45eb98ee6ccc55811e2209dc066bf9f6eaa98b9b9b9f6591783937829bfb",
+    "file": "2814011.txt",
+    "retrievedAt": "2026-10-11T05:38:22.561627+00:00"
+  },
+  {
+    "title": "Overguard",
+    "revision": 2814940,
+    "timestamp": "2026-10-01T10:26:33Z",
+    "retrievedAt": "2026-10-11T06:32:02.240665+00:00",
+    "url": "https://wiki.warframe.com/w/Overguard?oldid=2814940",
+    "sha256": "b33cd3bd869c2bd9ee5c5c21b5196dd219f3a227406db2e743cf758341cfdf7c",
+    "file": "2814940.txt"
+  },
+  {
+    "title": "Shield",
+    "revision": 2801800,
+    "timestamp": "2026-08-23T22:39:11Z",
+    "retrievedAt": "2026-10-11T08:18:31.090838+00:00",
+    "url": "https://wiki.warframe.com/w/Shield?oldid=2801800",
+    "sha256": "33941e2ce9c90f1a052cbe3927efc4f58acc0c466fe6de80857d1971600cc5a0",
+    "file": "2801800.txt"
+  },
+  {
+    "title": "Finisher",
+    "revision": 2812039,
+    "timestamp": "2026-09-23T13:24:49Z",
+    "retrievedAt": "2026-10-11T09:18:21.586245+00:00",
+    "url": "https://wiki.warframe.com/w/Finisher?oldid=2812039",
+    "sha256": "5ede39b71c97189aa674ee8bcab404a6e8aa24a27ca50148b1dd46d9fd6c2b02",
+    "file": "2812039.txt"
+  },
+  {
+    "title": "Stealth",
+    "revision": 2786867,
+    "timestamp": "2026-06-19T04:16:49Z",
+    "retrievedAt": "2026-10-11T06:32:03.230384+00:00",
+    "url": "https://wiki.warframe.com/w/Stealth?oldid=2786867",
+    "sha256": "038e322788200e28bf3a44f3616ed0989b6e18605faa6a005c7c6e8b3c2313ba",
+    "file": "2786867.txt"
+  },
+  {
+    "title": "Melee",
+    "revision": 2817484,
+    "timestamp": "2026-10-10T19:36:08Z",
+    "retrievedAt": "2026-10-11T06:32:02.645646+00:00",
+    "url": "https://wiki.warframe.com/w/Melee?oldid=2817484",
+    "sha256": "4207c9cffe80aa022addc73e8fbf10b5244c7079de8e8d6d393c8594b1c2f3df",
+    "file": "2817484.txt"
+  },
+  {
+    "title": "Balla",
+    "revision": 2690741,
+    "timestamp": "2025-07-26T22:18:02Z",
+    "retrievedAt": "2026-10-11T06:32:03.039338+00:00",
+    "url": "https://wiki.warframe.com/w/Balla?oldid=2690741",
+    "sha256": "eee16d4dcab807fe95e80d44a34ac0101e05ce53ddd545d468f57f2323f02aac",
+    "file": "2690741.txt"
+  },
+  {
+    "title": "Ooltha",
+    "revision": 2585985,
+    "timestamp": "2023-06-01T08:20:11Z",
+    "retrievedAt": "2026-10-11T06:32:04.067368+00:00",
+    "url": "https://wiki.warframe.com/w/Ooltha?oldid=2585985",
+    "sha256": "cfacfca453746c3e3a90c58ac6d4351aab8f85585b7bb66c6d2f26e70cd317a0",
+    "file": "2585985.txt"
+  },
+  {
+    "title": "Sepfahn",
+    "revision": 2719646,
+    "timestamp": "2026-01-01T06:48:42Z",
+    "retrievedAt": "2026-10-11T06:32:03.269754+00:00",
+    "url": "https://wiki.warframe.com/w/Sepfahn?oldid=2719646",
+    "sha256": "6edb79dba54045a63ad4b2f5faa886b4a6283643858706e7968efe39d666390e",
+    "file": "2719646.txt"
+  },
+  {
+    "title": "Plague Keewar",
+    "revision": 2801726,
+    "timestamp": "2026-08-23T06:32:10Z",
+    "retrievedAt": "2026-10-11T06:32:03.435558+00:00",
+    "url": "https://wiki.warframe.com/w/Plague_Keewar?oldid=2801726",
+    "sha256": "c26ee08f64b9546cd2cef0af863bf242e593eae1fc124c3c444b0d76c6b12dfc",
+    "file": "2801726.txt"
+  },
+  {
+    "title": "Cyath",
+    "revision": 2800827,
+    "timestamp": "2026-08-20T14:47:22Z",
+    "retrievedAt": "2026-10-11T06:32:03.652158+00:00",
+    "url": "https://wiki.warframe.com/w/Cyath?oldid=2800827",
+    "sha256": "c3984be8e1f49d3a944902ba465f27c7640594b97f0d71068aa4d42f106d7226",
+    "file": "2800827.txt"
+  },
+  {
+    "title": "Dehtat",
+    "revision": 2584786,
+    "timestamp": "2023-05-29T04:43:46Z",
+    "retrievedAt": "2026-10-11T06:32:03.669041+00:00",
+    "url": "https://wiki.warframe.com/w/Dehtat?oldid=2584786",
+    "sha256": "0ba193d29a079272877009d2f0f306270185fc787d05ce16a9b3a4c08edc832a",
+    "file": "2584786.txt"
+  },
+  {
+    "title": "Kronsh",
+    "revision": 2609991,
+    "timestamp": "2024-03-03T16:38:41Z",
+    "retrievedAt": "2026-10-11T06:32:03.822568+00:00",
+    "url": "https://wiki.warframe.com/w/Kronsh?oldid=2609991",
+    "sha256": "2f6304b0a49dc2d9e8f1f86909b698bafb70a9acfd56ba730e2ba0296a3d6a00",
+    "file": "2609991.txt"
+  },
+  {
+    "title": "Mewan",
+    "revision": 2616822,
+    "timestamp": "2024-05-03T20:46:05Z",
+    "retrievedAt": "2026-10-11T06:32:04.037219+00:00",
+    "url": "https://wiki.warframe.com/w/Mewan?oldid=2616822",
+    "sha256": "f20d9c524e341f5d9c2d6774cb155177bc04fda3a88dac87926741092c3354c8",
+    "file": "2616822.txt"
+  },
+  {
+    "title": "Plague Kripath",
+    "revision": 2801725,
+    "timestamp": "2026-08-23T06:31:21Z",
+    "retrievedAt": "2026-10-11T06:32:04.030042+00:00",
+    "url": "https://wiki.warframe.com/w/Plague_Kripath?oldid=2801725",
+    "sha256": "6a0320e505193b73545f998975ed7a4a2294eed99aea4663e98b4ff1a217ec96",
+    "file": "2801725.txt"
+  },
+  {
+    "title": "Rabvee",
+    "revision": 2800832,
+    "timestamp": "2026-08-20T15:19:04Z",
+    "retrievedAt": "2026-10-11T06:32:04.190863+00:00",
+    "url": "https://wiki.warframe.com/w/Rabvee?oldid=2800832",
+    "sha256": "2c000b71b0f5eeec4b247d01644988d12c79f569f49533c9ee46896902b257f0",
+    "file": "2800832.txt"
+  },
+  {
+    "title": "Dokrahm",
+    "revision": 2800822,
+    "timestamp": "2026-08-20T14:34:28Z",
+    "retrievedAt": "2026-10-11T06:32:04.410311+00:00",
+    "url": "https://wiki.warframe.com/w/Dokrahm?oldid=2800822",
+    "sha256": "7efe37143c08bdac451047839397bf3f25a597409dec649c54f95e0a64e00710",
+    "file": "2800822.txt"
+  },
+  {
+    "title": "Exodia Epidemic",
+    "revision": 2723781,
+    "timestamp": "2026-01-17T06:37:07Z",
+    "retrievedAt": "2026-10-11T17:15:46.168364+00:00",
+    "url": "https://wiki.warframe.com/w/Exodia_Epidemic?oldid=2723781",
+    "sha256": "b5f59aeceb9d351b6a9cc104c9975c510b1a23262057321d30e0dcf29d3ec204",
+    "file": "2723781.txt"
+  },
+  {
+    "title": "Melee Assimilation",
+    "revision": 2787665,
+    "timestamp": "2026-06-21T18:23:33Z",
+    "retrievedAt": "2026-10-11T06:32:04.568846+00:00",
+    "url": "https://wiki.warframe.com/w/Melee_Assimilation?oldid=2787665",
+    "sha256": "94c49e648db0e1b109b516235f23d5a362d38dc7881ad147cb8f13db2a6e7d6f",
+    "file": "2787665.txt"
+  },
+  {
+    "title": "Sampotes",
+    "revision": 2779643,
+    "timestamp": "2026-05-24T03:12:22Z",
+    "retrievedAt": "2026-10-11T06:32:04.794907+00:00",
+    "url": "https://wiki.warframe.com/w/Sampotes?oldid=2779643",
+    "sha256": "7f0155edd58c8c70553daf9baa6adf126e37026f8ab7a5fc96d4b69b844dc6e3",
+    "file": "2779643.txt"
+  },
+  {
+    "title": "Azothane",
+    "revision": 2794721,
+    "timestamp": "2026-07-19T19:08:24Z",
+    "retrievedAt": "2026-10-11T06:32:04.837611+00:00",
+    "url": "https://wiki.warframe.com/w/Azothane?oldid=2794721",
+    "sha256": "b6cd7e1ab8be45d1ec590a53df8342f63b27a48a2a2b158a790519ede2e01c9a",
+    "file": "2794721.txt"
+  },
+  {
+    "title": "Tenet Exec",
+    "revision": 2792713,
+    "timestamp": "2026-07-11T10:07:09Z",
+    "retrievedAt": "2026-10-11T06:32:05.303391+00:00",
+    "url": "https://wiki.warframe.com/w/Tenet_Exec?oldid=2792713",
+    "sha256": "7aa21cb2bd4740d94c3137b4b0ca23344745e26b75e3a41670230c98f543ea96",
+    "file": "2792713.txt"
+  },
+  {
+    "title": "Thalys",
+    "revision": 2817401,
+    "timestamp": "2026-10-10T05:13:56Z",
+    "retrievedAt": "2026-10-11T06:32:04.951080+00:00",
+    "url": "https://wiki.warframe.com/w/Thalys?oldid=2817401",
+    "sha256": "9adee083de029f29049370e8a92530f5584bf6c45bb0822387588434009b6a5c",
+    "file": "2817401.txt"
+  },
+  {
+    "title": "Orvius",
+    "revision": 2796804,
+    "timestamp": "2026-08-03T15:57:16Z",
+    "retrievedAt": "2026-10-11T06:32:05.193142+00:00",
+    "url": "https://wiki.warframe.com/w/Orvius?oldid=2796804",
+    "sha256": "375d23a430bee804f70e3841169f0094c00da47901467f2ab9d3a73f276d12b3",
+    "file": "2796804.txt"
+  },
+  {
+    "title": "Tak & Lug",
+    "revision": 2789936,
+    "timestamp": "2026-06-29T22:23:21Z",
+    "retrievedAt": "2026-10-11T06:32:05.247779+00:00",
+    "url": "https://wiki.warframe.com/w/Tak_%26_Lug?oldid=2789936",
+    "sha256": "cfea1c0ff4de3893c38f159a68360a45fa0c3d2dbd778c97ad4c13eed2b82d07",
+    "file": "2789936.txt"
+  },
+  {
+    "title": "Condition Overload (Mechanic)",
+    "revision": 2815998,
+    "timestamp": "2026-10-05T21:00:03Z",
+    "retrievedAt": "2026-10-11T09:17:09.044935+00:00",
+    "url": "https://wiki.warframe.com/w/Condition_Overload_%28Mechanic%29?oldid=2815998",
+    "sha256": "f1838f8322651bfd72a0a1699e068942beb1ac1189135bc58fd2c80a5e1aefcc",
+    "file": "2815998.txt"
+  },
+  {
+    "title": "Follow Through",
+    "revision": 2610380,
+    "timestamp": "2024-03-08T20:22:08Z",
+    "retrievedAt": "2026-10-11T06:33:40.601242+00:00",
+    "url": "https://wiki.warframe.com/w/Follow_Through?oldid=2610380",
+    "sha256": "7b658a67e9e449ff0e24d50d58e68db4acab7afe13f75ebaa8362a5581e26ea5",
+    "file": "2610380.txt"
+  },
+  {
+    "title": "Zaw Stats/Daggers",
+    "revision": 2572453,
+    "timestamp": "2023-02-26T02:58:38Z",
+    "retrievedAt": "2026-10-11T06:38:41.024060+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Daggers?oldid=2572453",
+    "sha256": "de99261d8e272d0e205447f333e3dd9ed33821a285cf93c8272a912a3a7e076d",
+    "file": "2572453.txt"
+  },
+  {
+    "title": "Zaw Stats/Hammers",
+    "revision": 2572449,
+    "timestamp": "2023-02-26T02:57:02Z",
+    "retrievedAt": "2026-10-11T06:38:40.010980+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Hammers?oldid=2572449",
+    "sha256": "4c2a450c5594d5edb320c0555fe095274dfc27dfb46dc71a60518d582c53ed1d",
+    "file": "2572449.txt"
+  },
+  {
+    "title": "Zaw Stats/Machetes",
+    "revision": 2572439,
+    "timestamp": "2023-02-26T02:52:33Z",
+    "retrievedAt": "2026-10-11T06:38:40.008949+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Machetes?oldid=2572439",
+    "sha256": "0f1b10a2931ffad6529c2c9f65bbecc5c0a805bc58816663538d0e6cc45d2cb5",
+    "file": "2572439.txt"
+  },
+  {
+    "title": "Zaw Stats/Polearms",
+    "revision": 2572438,
+    "timestamp": "2023-02-26T02:52:09Z",
+    "retrievedAt": "2026-10-11T06:38:41.404758+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Polearms?oldid=2572438",
+    "sha256": "907ac492248f6fe90f95d91afdcaf256eea6b0230402f22480d3d344128f877e",
+    "file": "2572438.txt"
+  },
+  {
+    "title": "Zaw Stats/Rapiers",
+    "revision": 2572440,
+    "timestamp": "2023-02-26T02:53:22Z",
+    "retrievedAt": "2026-10-11T06:38:40.380991+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Rapiers?oldid=2572440",
+    "sha256": "1a9144f4dfc0b0efa5d8f5ebe92baea321df76b011ee66370cabe6c075006304",
+    "file": "2572440.txt"
+  },
+  {
+    "title": "Zaw Stats/Scythes",
+    "revision": 2572435,
+    "timestamp": "2023-02-26T02:47:09Z",
+    "retrievedAt": "2026-10-11T06:38:40.416343+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Scythes?oldid=2572435",
+    "sha256": "d13e09e91befc79fb99da6d96b76e6a363874c01abb587e1afcc8f8b7d95b373",
+    "file": "2572435.txt"
+  },
+  {
+    "title": "Zaw Stats/Staves",
+    "revision": 2572447,
+    "timestamp": "2023-02-26T02:56:15Z",
+    "retrievedAt": "2026-10-11T06:38:40.761110+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Staves?oldid=2572447",
+    "sha256": "80caa5b782cb27b696174938d2a54fa85ff4d399b76808af5daa88906b1f415e",
+    "file": "2572447.txt"
+  },
+  {
+    "title": "Zaw Stats/Swords",
+    "revision": 2572444,
+    "timestamp": "2023-02-26T02:55:24Z",
+    "retrievedAt": "2026-10-11T06:38:40.792574+00:00",
+    "url": "https://wiki.warframe.com/w/Zaw_Stats/Swords?oldid=2572444",
+    "sha256": "418845b111da660f309e743902967bfe2bafda67b5961cd73d25cf623b99ef12",
+    "file": "2572444.txt"
+  },
+  {
+    "title": "Lavos/Abilities/Passive",
+    "revision": 2793587,
+    "timestamp": "2026-07-15T23:54:45Z",
+    "retrievedAt": "2026-10-11T07:20:53.558624+00:00",
+    "url": "https://wiki.warframe.com/w/Lavos/Abilities/Passive?oldid=2793587",
+    "sha256": "8ea915846eec4f914db3679d01f6e2a2b526e52b6ad6c53a9e26e2ae8b64ae5d",
+    "file": "2793587.txt"
+  },
+  {
+    "title": "Prismatic Gem",
+    "revision": 2815760,
+    "timestamp": "2026-10-04T05:56:04Z",
+    "retrievedAt": "2026-10-11T07:20:53.555769+00:00",
+    "url": "https://wiki.warframe.com/w/Prismatic_Gem?oldid=2815760",
+    "sha256": "5c1366e0b5c7e7c62eda97c3d38b543f9f8bb5bfddaf88e2152ad9ecccd1749e",
+    "file": "2815760.txt"
+  },
+  {
+    "title": "Melee Careen",
+    "revision": 2810120,
+    "timestamp": "2026-09-20T03:07:35Z",
+    "retrievedAt": "2026-10-11T07:20:53.530254+00:00",
+    "url": "https://wiki.warframe.com/w/Melee_Careen?oldid=2810120",
+    "sha256": "14ff86b7b557695b6abb206fa0680cefa3c121b4165a6191ff2d2f3ec5a0436b",
+    "file": "2810120.txt"
+  },
+  {
+    "title": "Skana Incarnon Genesis",
+    "revision": 2817313,
+    "timestamp": "2026-10-09T10:07:46Z",
+    "retrievedAt": "2026-10-11T07:28:35.459217+00:00",
+    "url": "https://wiki.warframe.com/w/Skana_Incarnon_Genesis?oldid=2817313",
+    "sha256": "e85f6b3fb6249d6574445ce78e3f7bbb4c190da31134b76c9ab181eded4f6f84",
+    "file": "2817313.txt"
+  },
+  {
+    "title": "Innodem",
+    "revision": 2816908,
+    "timestamp": "2026-10-08T10:10:02Z",
+    "retrievedAt": "2026-10-11T07:28:35.856196+00:00",
+    "url": "https://wiki.warframe.com/w/Innodem?oldid=2816908",
+    "sha256": "fb3bcb7d5cce7b54e33126a032440bc1cb5036604b8d6ea8303199c868f97489",
+    "file": "2816908.txt"
+  },
+  {
+    "title": "Praedos",
+    "revision": 2817314,
+    "timestamp": "2026-10-09T10:10:13Z",
+    "retrievedAt": "2026-10-11T07:28:36.278945+00:00",
+    "url": "https://wiki.warframe.com/w/Praedos?oldid=2817314",
+    "sha256": "0a9cf926e135f25ecb0bad0ebd9761312f21db176de4b4424742d3eb772cf5e2",
+    "file": "2817314.txt"
+  },
+  {
+    "title": "Ruvox",
+    "revision": 2816913,
+    "timestamp": "2026-10-08T10:15:04Z",
+    "retrievedAt": "2026-10-11T07:28:36.675756+00:00",
+    "url": "https://wiki.warframe.com/w/Ruvox?oldid=2816913",
+    "sha256": "599c88517a226870afe8d372c6a2664a4d0494e5e897ff3266efdd5a3ddb4ebe",
+    "file": "2816913.txt"
+  },
+  {
+    "title": "Cobra & Crane",
+    "revision": 2677800,
+    "timestamp": "2025-04-13T03:17:05Z",
+    "retrievedAt": "2026-10-11T07:28:37.229930+00:00",
+    "url": "https://wiki.warframe.com/w/Cobra_%26_Crane?oldid=2677800",
+    "sha256": "acd5f0dcc993cd85596538b429454c87499577539c087911b60a975a0d710658",
+    "file": "2677800.txt"
+  },
+  {
+    "title": "Amanata",
+    "revision": 2789907,
+    "timestamp": "2026-06-29T21:57:47Z",
+    "retrievedAt": "2026-10-11T07:28:37.621064+00:00",
+    "url": "https://wiki.warframe.com/w/Amanata?oldid=2789907",
+    "sha256": "b3f987df1e33fe407c31f42994b9bc80a595af193e85a363a78185ed58e4fdb4",
+    "file": "2789907.txt"
+  },
+  {
+    "title": "Ether Daggers",
+    "revision": 2789887,
+    "timestamp": "2026-06-29T21:32:49Z",
+    "retrievedAt": "2026-10-11T07:28:38.033009+00:00",
+    "url": "https://wiki.warframe.com/w/Ether_Daggers?oldid=2789887",
+    "sha256": "9f41935875465f0d3b73e3dea59387f932798a983c7d007541ed4270a736c6f6",
+    "file": "2789887.txt"
+  },
+  {
+    "title": "Lifted",
+    "revision": 2759788,
+    "timestamp": "2026-04-08T15:52:48Z",
+    "retrievedAt": "2026-10-11T08:11:38.211901+00:00",
+    "url": "https://wiki.warframe.com/w/Lifted?oldid=2759788",
+    "sha256": "1dd85931d7d442715df1e9e3561462af88d2caa2e37f77768261ac8c759ea1d9",
+    "file": "2759788.txt"
+  },
+  {
+    "title": "Damage/Impact Damage",
+    "revision": 2808635,
+    "timestamp": "2026-09-18T00:47:39Z",
+    "retrievedAt": "2026-10-11T08:11:38.630718+00:00",
+    "url": "https://wiki.warframe.com/w/Damage/Impact_Damage?oldid=2808635",
+    "sha256": "3bd0f98a742386bf9d96378fe185dd89b9b21bfc1e4e4adb1924479203a71673",
+    "file": "2808635.txt"
+  },
+  {
+    "title": "Life Steal",
+    "revision": 2727929,
+    "timestamp": "2026-01-28T22:42:30Z",
+    "retrievedAt": "2026-10-11T08:18:30.681662+00:00",
+    "url": "https://wiki.warframe.com/w/Life_Steal?oldid=2727929",
+    "sha256": "eaa52104f8383f4b447e81e4c785d132c3d5f2fbad8a27010201cdd4ac5eaf06",
+    "file": "2727929.txt"
+  },
+  {
+    "title": "Damage",
+    "revision": 2816587,
+    "timestamp": "2026-10-07T19:34:08Z",
+    "retrievedAt": "2026-10-11T08:39:33.779131+00:00",
+    "url": "https://wiki.warframe.com/w/Damage?oldid=2816587",
+    "sha256": "9e74485c237c3d672cc6fa92a701ffd2b942fcdf3b887a1f122fbc2a5963e071",
+    "file": "2816587.txt"
+  },
+  {
+    "title": "Status Effect",
+    "revision": 2815930,
+    "timestamp": "2026-10-05T12:17:13Z",
+    "retrievedAt": "2026-10-11T08:39:34.204812+00:00",
+    "url": "https://wiki.warframe.com/w/Status_Effect?oldid=2815930",
+    "sha256": "002102af16c202c4ab3d50b1c44961264730834f3557cf5240ec6617748f6127",
+    "file": "2815930.txt"
+  },
+  {
+    "title": "Damage over Time",
+    "revision": 2804374,
+    "timestamp": "2026-08-30T16:20:36Z",
+    "retrievedAt": "2026-10-11T08:45:51.640221+00:00",
+    "url": "https://wiki.warframe.com/w/Damage_over_Time?oldid=2804374",
+    "sha256": "8923e2a5ca18e3faacbfd1e67476692264476191ef3b3480e6f24c286b5d58fb",
+    "file": "2804374.txt"
+  },
+  {
+    "title": "Zenistar",
+    "revision": 2793361,
+    "timestamp": "2026-07-14T13:32:22Z",
+    "retrievedAt": "2026-10-11T09:17:08.648258+00:00",
+    "url": "https://wiki.warframe.com/w/Zenistar?oldid=2793361",
+    "sha256": "60e7bb150e125f67a30ed63e92c5c115655b732270259744e434c97e023372f8",
+    "file": "2793361.txt"
+  },
+  {
+    "title": "Secura Lecta",
+    "revision": 2775554,
+    "timestamp": "2026-05-08T06:21:10Z",
+    "retrievedAt": "2026-10-11T09:17:09.416665+00:00",
+    "url": "https://wiki.warframe.com/w/Secura_Lecta?oldid=2775554",
+    "sha256": "dc079f00bddd99fe81605a70a7c5b49d0f12584cd45a30dbef615f6f61e0e822",
+    "file": "2775554.txt"
+  },
+  {
+    "title": "Sancti Magistar",
+    "revision": 2817302,
+    "timestamp": "2026-10-09T10:04:30Z",
+    "retrievedAt": "2026-10-11T09:17:09.835040+00:00",
+    "url": "https://wiki.warframe.com/w/Sancti_Magistar?oldid=2817302",
+    "sha256": "23e9f717d1cb0f5f6f7c7cbefad2b0fe15e54c622750de2582485e3bad04e77c",
+    "file": "2817302.txt"
+  },
+  {
+    "title": "Attack Speed",
+    "revision": 2728743,
+    "timestamp": "2026-02-04T00:38:34Z",
+    "retrievedAt": "2026-10-11T09:18:21.981182+00:00",
+    "url": "https://wiki.warframe.com/w/Attack_Speed?oldid=2728743",
+    "sha256": "925493e9b1ea3881bcaeddececb9b07babe332d5de7d965f347f6216e9ca9e63",
+    "file": "2728743.txt"
+  },
+  {
+    "title": "Damage/True Damage",
+    "revision": 2812041,
+    "timestamp": "2026-09-23T14:17:49Z",
+    "retrievedAt": "2026-10-11T09:24:21.290479+00:00",
+    "url": "https://wiki.warframe.com/w/Damage/True_Damage?oldid=2812041",
+    "sha256": "3449938c7986a0455de7ebf5d5656a161d8be8c60642cff417625de1fa3899b5",
+    "file": "2812041.txt"
+  },
+  {
+    "title": "Galvanized Mods",
+    "revision": 2745813,
+    "timestamp": "2026-03-24T07:19:04Z",
+    "retrievedAt": "2026-10-11T09:59:10.872515+00:00",
+    "url": "https://wiki.warframe.com/w/Galvanized_Mods?oldid=2745813",
+    "sha256": "8665698ff94b7bd044b78a0ad0338ff4f134f556bc5c14a3b0261072397876e1",
+    "file": "2745813.txt"
+  },
+  {
+    "title": "Official PC patch 38-5-3",
+    "revision": "38-5-3",
+    "timestamp": null,
+    "url": "https://www.warframe.com/en/patch-notes/pc/38-5-3",
+    "sha256": "279e13f3275ab61f13a11c0333b16f2470f596e5f705bcbac195372e52468235",
+    "file": "official-38-5-3.html",
+    "retrievedAt": "2026-10-11T10:10:11.945203+00:00"
+  },
+  {
+    "title": "Official PC patch 34-0-0",
+    "revision": "34-0-0",
+    "timestamp": null,
+    "url": "https://www.warframe.com/en/patch-notes/pc/34-0-0",
+    "sha256": "b733d858fb5af8ea8e90fbf5af1fa2008266b49f0145daaa693721ba79f49184",
+    "file": "official-34-0-0.html",
+    "retrievedAt": "2026-10-11T10:10:12.498538+00:00"
+  },
+  {
+    "title": "Evensong",
+    "revision": 2789951,
+    "timestamp": "2026-06-30T00:39:19Z",
+    "retrievedAt": "2026-10-11T12:35:22.735337+00:00",
+    "url": "https://wiki.warframe.com/w/Evensong?oldid=2789951",
+    "sha256": "62abf283357a167fea0b852ff3eb5b0cf1cc98e945d6f825fe6c60832dec699a",
+    "file": "2789951.txt"
+  },
+  {
+    "title": "Cantare",
+    "revision": 2797776,
+    "timestamp": "2026-08-10T05:54:59Z",
+    "retrievedAt": "2026-10-11T12:35:22.765169+00:00",
+    "url": "https://wiki.warframe.com/w/Cantare?oldid=2797776",
+    "sha256": "cb93e8348e806071ae4b7b453041cd013907edcd9fd000ec2dff5a44f50a8e01",
+    "file": "2797776.txt"
+  },
+  {
+    "title": "Official Update 33.0.0",
+    "url": "https://www.warframe.com/en/patch-notes/pc/33-0-0",
+    "sha256": "3d2c80d5b210baada5d3cab906b6048df9456f301999eea7c4a44eb54225b18d",
+    "file": "official-33-0-0.html",
+    "retrievedAt": "2026-10-11T13:09:21.391417+00:00"
+  },
+  {
+    "title": "Omni Forma",
+    "revision": 2815619,
+    "timestamp": "2026-10-03T17:19:52Z",
+    "retrievedAt": "2026-10-11T15:51:34.166623+00:00",
+    "url": "https://wiki.warframe.com/w/Omni_Forma?oldid=2815619",
+    "sha256": "63ce0dc5a3d0aa9311253c8a5653b8c77ac94620786ac20fe9eb51b98bd7ce8b",
+    "file": "2815619.txt"
+  },
+  {
+    "title": "Serene Storm",
+    "revision": 2816022,
+    "timestamp": "2026-10-06T00:16:57Z",
+    "retrievedAt": "2026-10-11T15:51:33.174229+00:00",
+    "url": "https://wiki.warframe.com/w/Serene_Storm?oldid=2816022",
+    "sha256": "7768ae87ec27a9d0a8c65bfda2a308010b11df5839b9d92ce6dccde4fdb5b448",
+    "file": "2816022.txt"
+  },
+  {
+    "title": "Exalted Blade",
+    "revision": 2817346,
+    "timestamp": "2026-10-09T21:06:41Z",
+    "retrievedAt": "2026-10-11T15:51:33.180593+00:00",
+    "url": "https://wiki.warframe.com/w/Exalted_Blade?oldid=2817346",
+    "sha256": "6e86672120a779d2313d5d23dd783998495ad2158e7f3fa295af979a6335af35",
+    "file": "2817346.txt"
+  },
+  {
+    "title": "Hysteria",
+    "revision": 2816219,
+    "timestamp": "2026-10-06T02:08:49Z",
+    "retrievedAt": "2026-10-11T15:51:33.177618+00:00",
+    "url": "https://wiki.warframe.com/w/Hysteria?oldid=2816219",
+    "sha256": "01c3752c2c88fa19b24d955610e8186ecb59f836b04601c712f1c8d0c66bb4f3",
+    "file": "2816219.txt"
+  },
+  {
+    "title": "Primal Fury",
+    "revision": 2816241,
+    "timestamp": "2026-10-06T02:18:34Z",
+    "retrievedAt": "2026-10-11T15:51:33.566627+00:00",
+    "url": "https://wiki.warframe.com/w/Primal_Fury?oldid=2816241",
+    "sha256": "0462aa99082661b1133baf6631c049181a2313af5a92a13b7250893de60a382b",
+    "file": "2816241.txt"
+  },
+  {
+    "title": "Razorwing",
+    "revision": 2816208,
+    "timestamp": "2026-10-06T02:02:30Z",
+    "retrievedAt": "2026-10-11T16:32:55.411786+00:00",
+    "url": "https://wiki.warframe.com/w/Razorwing?oldid=2816208",
+    "sha256": "379212161a7a1b0c49a55aea29c50d8f8b70718f9c8552414ca322517e33c772",
+    "file": "2816208.txt"
+  },
+  {
+    "title": "Exalted Shadow",
+    "revision": 2816185,
+    "timestamp": "2026-10-06T01:52:16Z",
+    "retrievedAt": "2026-10-11T15:51:33.579992+00:00",
+    "url": "https://wiki.warframe.com/w/Exalted_Shadow?oldid=2816185",
+    "sha256": "02fd56b8fb392054a08714bc859dda4def8b7929fcf129015f652cc0c8180e5b",
+    "file": "2816185.txt"
+  },
+  {
+    "title": "Landslide",
+    "revision": 2815643,
+    "timestamp": "2026-10-03T19:04:59Z",
+    "retrievedAt": "2026-10-11T15:51:33.943306+00:00",
+    "url": "https://wiki.warframe.com/w/Landslide?oldid=2815643",
+    "sha256": "c4dde1e8394c7ba8fa7c4f658cf04612e1f3017f4160ea8568c31ddf38bfc199",
+    "file": "2815643.txt"
+  },
+  {
+    "title": "Blade Storm",
+    "revision": 2815642,
+    "timestamp": "2026-10-03T19:03:17Z",
+    "retrievedAt": "2026-10-11T15:51:33.948034+00:00",
+    "url": "https://wiki.warframe.com/w/Blade_Storm?oldid=2815642",
+    "sha256": "0bdd23e8a5c2abef9d9175486315921e0a419656cddd01896a6ff30cd229d82d",
+    "file": "2815642.txt"
+  },
+  {
+    "title": "Shattered Lash",
+    "revision": 2816059,
+    "timestamp": "2026-10-06T00:38:56Z",
+    "retrievedAt": "2026-10-11T15:51:33.973245+00:00",
+    "url": "https://wiki.warframe.com/w/Shattered_Lash?oldid=2816059",
+    "sha256": "8972a09c7abc99bef4021090b787396fb0b19e9ec30131d1bd5d17fc9b4f770b",
+    "file": "2816059.txt"
+  },
+  {
+    "title": "Whipclaw",
+    "revision": 2816105,
+    "timestamp": "2026-10-06T01:02:11Z",
+    "retrievedAt": "2026-10-11T15:51:34.354439+00:00",
+    "url": "https://wiki.warframe.com/w/Whipclaw?oldid=2816105",
+    "sha256": "27e9b06aca917bfc85d07f03271471f2c2ebca3f07b77cea76c263a14278e6eb",
+    "file": "2816105.txt"
+  },
+  {
+    "title": "Bayonet",
+    "revision": 2717773,
+    "timestamp": "2025-12-23T18:46:44Z",
+    "retrievedAt": "2026-10-11T15:54:52.778242+00:00",
+    "url": "https://wiki.warframe.com/w/Bayonet?oldid=2717773",
+    "sha256": "e4b42ff01b2a593b5203645511351ed22267433ad514130268b223fefd9d4920",
+    "file": "2717773.txt"
+  },
+  {
+    "title": "Chromatic Blade",
+    "revision": 2817132,
+    "timestamp": "2026-10-08T21:49:50Z",
+    "retrievedAt": "2026-10-11T15:58:59.893615+00:00",
+    "url": "https://wiki.warframe.com/w/Chromatic_Blade?oldid=2817132",
+    "sha256": "2d66c68f44082f90ad8f3736b9a7ce10ec00638717354cbbde027e19e4f1a703",
+    "file": "2817132.txt"
+  },
+  {
+    "title": "Reactive Storm",
+    "revision": 2795617,
+    "timestamp": "2026-07-27T16:32:33Z",
+    "retrievedAt": "2026-10-11T15:59:00.915888+00:00",
+    "url": "https://wiki.warframe.com/w/Reactive_Storm?oldid=2795617",
+    "sha256": "be3dc1ccd20d1f91905137f023b7f4f0eea898169dd868e425ba80bb31fc60e5",
+    "file": "2795617.txt"
+  },
+  {
+    "title": "Primal Rage",
+    "revision": 2729832,
+    "timestamp": "2026-02-12T23:05:28Z",
+    "retrievedAt": "2026-10-11T17:01:57.974022+00:00",
+    "url": "https://wiki.warframe.com/w/Primal_Rage?oldid=2729832",
+    "sha256": "3664f5f05b5df55c33b136b2d0aaff07acc3a7f2d202a5741d1cfb137378bb56",
+    "file": "2729832.txt"
+  },
+  {
+    "title": "Enraged",
+    "revision": 2729819,
+    "timestamp": "2026-02-12T22:48:44Z",
+    "retrievedAt": "2026-10-11T17:01:57.538630+00:00",
+    "url": "https://wiki.warframe.com/w/Enraged?oldid=2729819",
+    "sha256": "ab56cf336cf6d67bfdf8888674391d497484db865dc76b8ce9657405ebcee150",
+    "file": "2729819.txt"
+  },
+  {
+    "title": "Accumulating Whipclaw",
+    "revision": 2726160,
+    "timestamp": "2026-01-22T19:06:53Z",
+    "retrievedAt": "2026-10-11T17:01:58.354419+00:00",
+    "url": "https://wiki.warframe.com/w/Accumulating_Whipclaw?oldid=2726160",
+    "sha256": "7bd363bf7055c57d977b22e8ea7a9f3baab05a931c8acaecc76d49849c259b81",
+    "file": "2726160.txt"
+  },
+  {
+    "title": "Rising Storm",
+    "revision": 2729730,
+    "timestamp": "2026-02-12T20:50:04Z",
+    "retrievedAt": "2026-10-11T15:59:00.268138+00:00",
+    "url": "https://wiki.warframe.com/w/Rising_Storm?oldid=2729730",
+    "sha256": "678f519338b3d6943c33337dbebce8f2c8a969766d42aeafb04625092a68f642",
+    "file": "2729730.txt"
+  },
+  {
+    "title": "Excalibur/Abilities/Passive",
+    "revision": 2703993,
+    "timestamp": "2025-11-03T05:57:53Z",
+    "retrievedAt": "2026-10-11T15:59:00.350185+00:00",
+    "url": "https://wiki.warframe.com/w/Excalibur/Abilities/Passive?oldid=2703993",
+    "sha256": "2dbdbc14e7d6f426edf1665d6194ff3f1137eb362b557072a43b8f3b62a4446b",
+    "file": "2703993.txt"
+  },
+  {
+    "title": "Ash/Abilities/Passive",
+    "missing": true
+  },
+  {
+    "title": "Ash",
+    "revision": 2760486,
+    "timestamp": "2026-04-09T14:54:02Z",
+    "retrievedAt": "2026-10-11T16:06:51.980694+00:00",
+    "url": "https://wiki.warframe.com/w/Ash?oldid=2760486",
+    "sha256": "48bc029ea4b0fb505560903e698b9e117839c8502580d1b43dca6bb4c12a3cc1",
+    "file": "2760486.txt"
+  },
+  {
+    "title": "Valkyr/Abilities/Passive",
+    "revision": 2775801,
+    "timestamp": "2026-05-10T17:23:49Z",
+    "retrievedAt": "2026-10-11T16:06:52.986560+00:00",
+    "url": "https://wiki.warframe.com/w/Valkyr/Abilities/Passive?oldid=2775801",
+    "sha256": "bf33e5164510790c6cbc72491cef682815da1d084afb1719d85ad26a9cdf3705",
+    "file": "2775801.txt"
+  },
+  {
+    "title": "Valkyr/Abilities",
+    "revision": 2777794,
+    "timestamp": "2026-05-19T16:32:18Z",
+    "retrievedAt": "2026-10-11T16:06:51.970557+00:00",
+    "url": "https://wiki.warframe.com/w/Valkyr/Abilities?oldid=2777794",
+    "sha256": "5180cce95cb129b2f2c7b42d9fb4cbd6585fd4b9d01f406c79ad32edceb73a8b",
+    "file": "2777794.txt"
+  },
+  {
+    "title": "Ash/Abilities",
+    "revision": 2804381,
+    "timestamp": "2026-08-30T16:54:29Z",
+    "retrievedAt": "2026-10-11T16:08:15.095989+00:00",
+    "url": "https://wiki.warframe.com/w/Ash/Abilities?oldid=2804381",
+    "sha256": "15f215ee045a74674559d5826725afe827c6f9f8009556e347303e11616df5f9",
+    "file": "2804381.txt"
+  },
+  {
+    "title": "Rubble Heap",
+    "revision": 2809731,
+    "timestamp": "2026-09-19T06:10:36Z",
+    "retrievedAt": "2026-10-11T16:22:36.974186+00:00",
+    "url": "https://wiki.warframe.com/w/Rubble_Heap?oldid=2809731",
+    "sha256": "99037110fae27a783a86567b77cddee68ffcfe868db5a4d5bdcf4551631b8246",
+    "file": "2809731.txt"
+  },
+  {
+    "title": "Module:Stances",
+    "revision": 2806748,
+    "timestamp": "2026-09-10T03:18:43Z",
+    "retrievedAt": "2026-10-11T16:32:54.621289+00:00",
+    "url": "https://wiki.warframe.com/w/Module%3AStances?oldid=2806748",
+    "sha256": "a9c450796de09cbe1b77dc19284bb0dbcae9c7fe0a3e610130883437a84a5391",
+    "file": "2806748.txt"
+  },
+  {
+    "title": "Hysteria (Stance)",
+    "revision": 2795064,
+    "timestamp": "2026-07-22T22:44:15Z",
+    "retrievedAt": "2026-10-11T16:32:55.019001+00:00",
+    "url": "https://wiki.warframe.com/w/Hysteria_%28Stance%29?oldid=2795064",
+    "sha256": "5d44a5003d9d25db4feec4ecd4caf294290d45be677bfcec01f8ab6814380281",
+    "file": "2795064.txt"
+  },
+  {
+    "title": "Arcane Truculence",
+    "revision": 2702306,
+    "timestamp": "2025-10-28T07:48:40Z",
+    "retrievedAt": "2026-10-11T16:43:34.490722+00:00",
+    "url": "https://wiki.warframe.com/w/Arcane_Truculence?oldid=2702306",
+    "sha256": "6e657bd159c9c250c88cd09c45f05a87fd9fb0ea093ecfa129849f36abed7ada",
+    "file": "2702306.txt"
+  },
+  {
+    "title": "Arcane Eruption",
+    "revision": 2700554,
+    "timestamp": "2025-10-19T10:49:18Z",
+    "retrievedAt": "2026-10-11T17:15:46.584511+00:00",
+    "url": "https://wiki.warframe.com/w/Arcane_Eruption?oldid=2700554",
+    "sha256": "ed9460ffe04fbe9fcb94578afff49897e8ae7df69ee7113668fa4c83e7eded0a",
+    "file": "2700554.txt"
+  },
+  {
+    "title": "Arcane Universal Fallout",
+    "revision": 2809434,
+    "timestamp": "2026-09-19T00:28:12Z",
+    "retrievedAt": "2026-10-11T16:43:35.286331+00:00",
+    "url": "https://wiki.warframe.com/w/Arcane_Universal_Fallout?oldid=2809434",
+    "sha256": "0a4e6b8bbe93498d2df0923cf638ea465d6259ecfc2d9a8157b0f0868cd5f399",
+    "file": "2809434.txt"
+  },
+  {
+    "title": "Amanata Pressure",
+    "revision": 2782354,
+    "timestamp": "2026-05-31T20:01:46Z",
+    "retrievedAt": "2026-10-11T17:01:56.770728+00:00",
+    "url": "https://wiki.warframe.com/w/Amanata_Pressure?oldid=2782354",
+    "sha256": "9b47f4b71eea399f55b59327611fa09462de38ffe653f971126c3465d650a2f3",
+    "file": "2782354.txt"
+  },
+  {
+    "title": "Ack & Brunt",
+    "revision": 2817288,
+    "timestamp": "2026-10-09T10:01:16Z",
+    "retrievedAt": "2026-10-11T17:01:57.165149+00:00",
+    "url": "https://wiki.warframe.com/w/Ack_%26_Brunt?oldid=2817288",
+    "sha256": "f99eabe76f8295beba6e4dcb275402f5d7d624f2ae7027140fa0e54cf50768f7",
+    "file": "2817288.txt"
+  },
+  {
+    "title": "Static Discharge",
+    "revision": 2688723,
+    "timestamp": "2025-07-08T02:23:12Z",
+    "retrievedAt": "2026-10-11T17:15:44.923872+00:00",
+    "url": "https://wiki.warframe.com/w/Static_Discharge?oldid=2688723",
+    "sha256": "9ec4930e929ae48950638d2ef7d03c93844f6281f47b81bc62ad66a2eb3fb8da",
+    "file": "2688723.txt"
+  },
+  {
+    "title": "Energy Channel",
+    "revision": 2587555,
+    "timestamp": "2023-06-03T13:33:15Z",
+    "retrievedAt": "2026-10-11T17:15:45.784718+00:00",
+    "url": "https://wiki.warframe.com/w/Energy_Channel?oldid=2587555",
+    "sha256": "e9894017c9e7850be02fdb4772516d374045b36977310a28f8439e05e94b93e9",
+    "file": "2587555.txt"
+  },
+  {
+    "title": "Ensnare",
+    "revision": 2816106,
+    "timestamp": "2026-10-06T01:02:29Z",
+    "retrievedAt": "2026-10-11T17:22:44.311460+00:00",
+    "url": "https://wiki.warframe.com/w/Ensnare?oldid=2816106",
+    "sha256": "817b73e6b0065816456ccd9cf2e4746e20d483c393f92c9dfe845ba6c7725391",
+    "file": "2816106.txt"
+  },
+  {
+    "title": "Strangledome",
+    "revision": 2816108,
+    "timestamp": "2026-10-06T01:03:05Z",
+    "retrievedAt": "2026-10-11T17:22:44.700080+00:00",
+    "url": "https://wiki.warframe.com/w/Strangledome?oldid=2816108",
+    "sha256": "cefe2a0108f80ef1803c6ea26c653af577bb4196e3a257c4990bbaa2f351c3fe",
+    "file": "2816108.txt"
+  },
+  {
+    "title": "Mass Vitrify",
+    "revision": 2816062,
+    "timestamp": "2026-10-06T00:39:36Z",
+    "retrievedAt": "2026-10-11T17:22:45.089074+00:00",
+    "url": "https://wiki.warframe.com/w/Mass_Vitrify?oldid=2816062",
+    "sha256": "1c83c22d5ebc2dc4b1392ebcd0a14f59273efa57b4523d762934731afa0f3f46",
+    "file": "2816062.txt"
+  },
+  {
+    "title": "Splinter Storm",
+    "revision": 2816060,
+    "timestamp": "2026-10-06T00:39:08Z",
+    "retrievedAt": "2026-10-11T17:22:45.475462+00:00",
+    "url": "https://wiki.warframe.com/w/Splinter_Storm?oldid=2816060",
+    "sha256": "9aee223dac290b4d8439650842a957b75e4946d89ba918e211d83ea4698e2e8b",
+    "file": "2816060.txt"
+  },
+  {
+    "title": "Petrify",
+    "revision": 2815645,
+    "timestamp": "2026-10-03T19:05:17Z",
+    "retrievedAt": "2026-10-11T17:22:45.886185+00:00",
+    "url": "https://wiki.warframe.com/w/Petrify?oldid=2815645",
+    "sha256": "0e4b8e55f13a8313f868caf948fc823b0ffb0ea9f2ff0f913ea97f48777d454b",
+    "file": "2815645.txt"
+  },
+  {
+    "title": "Damage Vulnerability",
+    "revision": 2813807,
+    "timestamp": "2026-09-27T22:09:28Z",
+    "retrievedAt": "2026-10-11T17:23:22.753476+00:00",
+    "url": "https://wiki.warframe.com/w/Damage_Vulnerability?oldid=2813807",
+    "sha256": "33322e4cb8eb7327e68653e718d969b38dc0959437a937d209186d1e1896fb23",
+    "file": "2813807.txt"
+  },
+  {
+    "title": "Spinnerex",
+    "revision": 2804787,
+    "timestamp": "2026-09-01T14:37:33Z",
+    "retrievedAt": "2026-10-11T17:43:01.804128+00:00",
+    "url": "https://wiki.warframe.com/w/Spinnerex?oldid=2804787",
+    "sha256": "1a7b58738c00c57e2818b6e3d2d7d0278fa3968022d1339ded48b97b1e532626",
+    "file": "2804787.txt"
+  },
+  {
+    "title": "Harrowing Spire",
+    "revision": 2795015,
+    "timestamp": "2026-07-22T07:16:08Z",
+    "retrievedAt": "2026-10-11T18:17:44.005849+00:00",
+    "url": "https://wiki.warframe.com/w/Harrowing_Spire?oldid=2795015",
+    "sha256": "5e48ca865f39bd6e32a4d4a5a8314f985505b061d7ccdb363d3f1bb46b674a6d",
+    "file": "2795015.txt"
+  },
+  {
+    "title": "Module:Weapons/data/doc",
+    "revision": 2797286,
+    "timestamp": "2026-08-06T13:55:51Z",
+    "retrievedAt": "2026-10-11T18:25:17.144410+00:00",
+    "url": "https://wiki.warframe.com/w/Module%3AWeapons/data/doc?oldid=2797286",
+    "sha256": "42a8f2dbbff0aa3aea3ba02c2f3a1a5d645fdedc3ec8e64b59268216df8f5c76",
+    "file": "2797286.txt"
+  },
+  {
+    "title": "Caustacyst",
+    "revision": 2785124,
+    "timestamp": "2026-06-14T23:07:33Z",
+    "retrievedAt": "2026-10-11T18:40:42.578895+00:00",
+    "url": "https://wiki.warframe.com/w/Caustacyst?oldid=2785124",
+    "sha256": "2d39394aa2c6ea5654454fbde1eb26bd7993d90a4c553a859897936471b78b6b",
+    "file": "2785124.txt"
+  },
+  {
+    "title": "Coda Caustacyst",
+    "revision": 2795803,
+    "timestamp": "2026-07-29T00:07:47Z",
+    "retrievedAt": "2026-10-11T18:40:41.476369+00:00",
+    "url": "https://wiki.warframe.com/w/Coda_Caustacyst?oldid=2795803",
+    "sha256": "4de32268538bee255b593add4b3dde47ce2933a4f782a57e6be546a28446ed1e",
+    "file": "2795803.txt"
+  },
+  {
+    "title": "Vinquibus",
+    "revision": 2811587,
+    "timestamp": "2026-09-22T16:41:34Z",
+    "retrievedAt": "2026-10-11T18:40:41.836468+00:00",
+    "url": "https://wiki.warframe.com/w/Vinquibus?oldid=2811587",
+    "sha256": "9681d7d0900d0aeb632192b236f1c69f1c19341345fc394afb97a17498d28665",
+    "file": "2811587.txt"
+  },
+  {
+    "title": "Volatile Quick Return",
+    "revision": 2719572,
+    "timestamp": "2025-12-31T21:24:12Z",
+    "retrievedAt": "2026-10-11T18:47:07.270695+00:00",
+    "url": "https://wiki.warframe.com/w/Volatile_Quick_Return?oldid=2719572",
+    "sha256": "7108a73ac68d069b0e64bc9a87f5c6dfb6e980ecd121c7114e4c5d17402fa557",
+    "file": "2719572.txt"
+  },
+  {
+    "title": "Volatile Rebound",
+    "revision": 2677047,
+    "timestamp": "2025-04-08T17:36:29Z",
+    "retrievedAt": "2026-10-11T18:47:06.289702+00:00",
+    "url": "https://wiki.warframe.com/w/Volatile_Rebound?oldid=2677047",
+    "sha256": "2f25d137fdf5492c7d7950a37eb52e642736c4ea445eeb6023150e5cd731d4ba",
+    "file": "2677047.txt"
+  },
+  {
+    "title": "Dual Ichor Incarnon Genesis",
+    "revision": 2812453,
+    "timestamp": "2026-09-24T03:07:17Z",
+    "retrievedAt": "2026-10-11T18:47:06.316360+00:00",
+    "url": "https://wiki.warframe.com/w/Dual_Ichor_Incarnon_Genesis?oldid=2812453",
+    "sha256": "56c83e6a1306f667f2f708f94433fa4c70b3584cdec2970414783db75a2d664c",
+    "file": "2812453.txt"
+  },
+  {
+    "title": "Okina Incarnon Genesis",
+    "revision": 2797886,
+    "timestamp": "2026-08-11T05:10:36Z",
+    "retrievedAt": "2026-10-11T19:13:27.605570+00:00",
+    "url": "https://wiki.warframe.com/w/Okina_Incarnon_Genesis?oldid=2797886",
+    "sha256": "cde9e33031672695463a3acbb742378d74a546b81c4d777abd13b4f47c447b80",
+    "file": "2797886.txt"
+  },
+  {
+    "title": "Okina",
+    "revision": 2817306,
+    "timestamp": "2026-10-09T10:05:09Z",
+    "retrievedAt": "2026-10-11T19:13:27.989470+00:00",
+    "url": "https://wiki.warframe.com/w/Okina?oldid=2817306",
+    "sha256": "a1463a58f424aeabf4653297610515a56bac3b4dfbcb9ff09d1918461b9f11d7",
+    "file": "2817306.txt"
+  },
+  {
+    "title": "Okina Prime",
+    "revision": 2817307,
+    "timestamp": "2026-10-09T10:05:23Z",
+    "retrievedAt": "2026-10-11T19:13:28.371511+00:00",
+    "url": "https://wiki.warframe.com/w/Okina_Prime?oldid=2817307",
+    "sha256": "d3b86571d0b7dc302113a47558733bf1a6c9b0c86030c5b144f76ebf71996c49",
+    "file": "2817307.txt"
+  },
+  {
+    "title": "Ceramic Dagger Incarnon Genesis",
+    "revision": 2773637,
+    "timestamp": "2026-05-01T20:47:44Z",
+    "retrievedAt": "2026-10-11T19:26:14.617122+00:00",
+    "url": "https://wiki.warframe.com/w/Ceramic_Dagger_Incarnon_Genesis?oldid=2773637",
+    "sha256": "dc8e69f9abb034a73d8d1b11853d540daacf087f5248b9fca2316f55bc64eb5f",
+    "file": "2773637.txt"
+  },
+  {
+    "title": "Ceramic Dagger",
+    "revision": 2817293,
+    "timestamp": "2026-10-09T10:02:47Z",
+    "retrievedAt": "2026-10-11T19:26:14.998527+00:00",
+    "url": "https://wiki.warframe.com/w/Ceramic_Dagger?oldid=2817293",
+    "sha256": "86ac8045aa6185e6f3498e63426ce4eafa3c1409a8b1b1665a45ea7be0c24028",
+    "file": "2817293.txt"
+  },
+  {
+    "title": "Wrathful Advance",
+    "revision": 2816114,
+    "timestamp": "2026-10-06T01:06:25Z",
+    "retrievedAt": "2026-10-11T19:40:38.338632+00:00",
+    "url": "https://wiki.warframe.com/w/Wrathful_Advance?oldid=2816114",
+    "sha256": "791b3308808d4f7bf17c5c299ad8744c20ff2c8b43caf5f5414bb9f63704ef29",
+    "file": "2816114.txt"
+  },
+  {
+    "title": "Hall of Mirrors",
+    "revision": 2816130,
+    "timestamp": "2026-10-06T01:15:07Z",
+    "retrievedAt": "2026-10-12T04:46:52.167369+00:00",
+    "url": "https://wiki.warframe.com/w/Hall_of_Mirrors?oldid=2816130",
+    "sha256": "43d44af808bdc952b63d9c85aa82f3c7204212f9b33f02ea235df65f0500fff6",
+    "file": "2816130.txt"
+  },
+  {
+    "title": "Sirius & Orion",
+    "revision": 2795770,
+    "timestamp": "2026-07-28T22:31:42Z",
+    "retrievedAt": "2026-10-12T04:46:52.558589+00:00",
+    "url": "https://wiki.warframe.com/w/Sirius_%26_Orion?oldid=2795770",
+    "sha256": "f0caf8c2646788f0f73b351a1a331859eb47d7332da93e959108d2fb6f8b3f4d",
+    "file": "2795770.txt"
+  },
+  {
+    "title": "Magus Aggress",
+    "revision": 2813200,
+    "timestamp": "2026-09-25T22:59:13Z",
+    "retrievedAt": "2026-10-12T04:46:52.950876+00:00",
+    "url": "https://wiki.warframe.com/w/Magus_Aggress?oldid=2813200",
+    "sha256": "ee3e296cfb73c9ae2d4c8b9fa9ed8a1f4870eb907679f81e62a159a2a1b6ee44",
+    "file": "2813200.txt"
+  },
+  {
+    "title": "Sirius & Orion/Abilities",
+    "revision": 2789325,
+    "timestamp": "2026-06-26T03:12:34Z",
+    "retrievedAt": "2026-10-12T04:51:34.745672+00:00",
+    "url": "https://wiki.warframe.com/w/Sirius_%26_Orion/Abilities?oldid=2789325",
+    "sha256": "db636a5610f7f2102147e8ba1f9d2033dc027becb9c81c7e6f78a291d9757226",
+    "file": "2789325.txt"
+  },
+  {
+    "title": "Glaive",
+    "revision": 2798798,
+    "timestamp": "2026-08-13T08:30:01Z",
+    "retrievedAt": "2026-10-12T04:57:38.499808+00:00",
+    "url": "https://wiki.warframe.com/w/Glaive?oldid=2798798",
+    "sha256": "cd0c99738e3d367146b554bb8555e0e7678bb4863144467ec3fdbfe7f3041f5c",
+    "file": "2798798.txt"
+  },
+  {
+    "title": "Glaive (Weapon Type)",
+    "revision": 2792460,
+    "timestamp": "2026-07-10T22:48:56Z",
+    "retrievedAt": "2026-10-12T04:57:38.887937+00:00",
+    "url": "https://wiki.warframe.com/w/Glaive_%28Weapon_Type%29?oldid=2792460",
+    "sha256": "ad68167a236d71154536aaaa8e37417f8b4a1742a3aefdaad85da1096e66f1ab",
+    "file": "2792460.txt"
+  },
+  {
+    "title": "Power Throw",
+    "revision": 2787704,
+    "timestamp": "2026-06-21T21:25:08Z",
+    "retrievedAt": "2026-10-12T04:57:39.266029+00:00",
+    "url": "https://wiki.warframe.com/w/Power_Throw?oldid=2787704",
+    "sha256": "f8946da99680ea693712461eeed8047f1ea5e114f46d06e53f17afa875b1f95b",
+    "file": "2787704.txt"
+  },
+  {
+    "title": "Rebound",
+    "revision": 2666063,
+    "timestamp": "2025-02-21T23:25:11Z",
+    "retrievedAt": "2026-10-12T04:57:39.653433+00:00",
+    "url": "https://wiki.warframe.com/w/Rebound?oldid=2666063",
+    "sha256": "c54082470866c13a09bf7cff42896c1163fc554923ea2875fd22a9d24c8fed95",
+    "file": "2666063.txt"
+  },
+  {
+    "title": "Quick Return",
+    "revision": 2695212,
+    "timestamp": "2025-08-26T17:02:32Z",
+    "retrievedAt": "2026-10-12T04:57:40.049310+00:00",
+    "url": "https://wiki.warframe.com/w/Quick_Return?oldid=2695212",
+    "sha256": "2850dadb5b457e58505305c072a2a5b5adb03a4ae1949725e59f0c6f75e96865",
+    "file": "2695212.txt"
+  },
+  {
+    "title": "Radial Blind",
+    "revision": 2815181,
+    "timestamp": "2026-10-02T06:04:47Z",
+    "retrievedAt": "2026-10-12T06:17:32.459218+00:00",
+    "url": "https://wiki.warframe.com/w/Radial_Blind?oldid=2815181",
+    "sha256": "ba4f5a9ebe1bf951664282f976b9b23e39e488581950643eeb428e882de8b101",
+    "file": "2815181.txt"
+  },
+  {
+    "title": "Exalted Blade (Stance)",
+    "revision": 2658083,
+    "timestamp": "2025-01-31T15:47:14Z",
+    "retrievedAt": "2026-10-12T06:17:32.459218+00:00",
+    "url": "https://wiki.warframe.com/w/Exalted_Blade_%28Stance%29?oldid=2658083",
+    "sha256": "7c0ce4ca193ec735cd386b7d1649a10bcfa5613bd38aa70481ab4cc4b1521503",
+    "file": "2658083.txt"
+  },
+  {
+    "title": "Razorwing (Stance)",
+    "revision": 2699080,
+    "timestamp": "2025-10-11T18:21:28Z",
+    "retrievedAt": "2026-10-12T06:17:32.462855+00:00",
+    "url": "https://wiki.warframe.com/w/Razorwing_%28Stance%29?oldid=2699080",
+    "sha256": "3467ff3737e781ff5b7ee7364721cec06847c79becd27d5176ffdacf3bf5a2bd",
+    "file": "2699080.txt"
+  },
+  {
+    "title": "Sleep",
+    "revision": 2816991,
+    "timestamp": "2026-10-08T16:15:57Z",
+    "retrievedAt": "2026-10-12T06:29:37.476337+00:00",
+    "url": "https://wiki.warframe.com/w/Sleep?oldid=2816991",
+    "sha256": "bee2ab6a0b25c7b6ee266e2553e5d2cb9fe068928d18292616197e742665c51a",
+    "file": "2816991.txt"
+  },
+  {
+    "title": "Ack & Brunt Incarnon Genesis",
+    "revision": 2787344,
+    "timestamp": "2026-06-20T14:23:35Z",
+    "retrievedAt": "2026-10-12T06:51:00.298025+00:00",
+    "url": "https://wiki.warframe.com/w/Ack_%26_Brunt_Incarnon_Genesis?oldid=2787344",
+    "sha256": "1b0a0bdb19ba706615e62abb16ea6b496ee995cda416c97d10ccc786514d5caf",
+    "file": "2787344.txt"
+  },
+  {
+    "title": "Wolf Sledge",
+    "revision": 2789902,
+    "timestamp": "2026-06-29T21:49:23Z",
+    "url": "https://wiki.warframe.com/w/Wolf_Sledge?oldid=2789902",
+    "sha256": "4c43642c507c40b0aa87169b292c74ad99f732c652a0952f141640222eb9ebf2",
+    "file": "2789902.txt"
+  },
+  {
+    "title": "Sigma & Octantis",
+    "revision": 2808876,
+    "timestamp": "2026-09-18T02:16:37Z",
+    "url": "https://wiki.warframe.com/w/Sigma_&_Octantis?oldid=2808876",
+    "sha256": "57eaf3507dae3e146b640eab335181d5fc8f5704d73bc5ce4d9dd661821dd9d3",
+    "file": "2808876.txt"
+  },
+  {
+    "title": "Cobra & Crane Prime",
+    "revision": 2779541,
+    "timestamp": "2026-05-23T23:30:17Z",
+    "url": "https://wiki.warframe.com/w/Cobra_&_Crane_Prime?oldid=2779541",
+    "sha256": "6413e1c4d280d3d446d641ad8175b20adeae012657f275ffa6338dd78e30f5fb",
+    "file": "2779541.txt"
+  },
+  {
+    "title": "Pathocyst",
+    "revision": 2804892,
+    "timestamp": "2026-09-02T17:05:22Z",
+    "url": "https://wiki.warframe.com/w/Pathocyst?oldid=2804892",
+    "sha256": "f384fbb0cb87b38e30c887000ce87fd7f869e223b8277a26172baed1c2450fff",
+    "file": "2804892.txt"
+  },
+  {
+    "title": "Coda Pathocyst",
+    "revision": 2804895,
+    "timestamp": "2026-09-02T17:09:02Z",
+    "url": "https://wiki.warframe.com/w/Coda_Pathocyst?oldid=2804895",
+    "sha256": "07d83aa8eed40ada7ddb5c179292960941961f0468363726c3bec405899b710e",
+    "file": "2804895.txt"
+  },
+  {
+    "title": "Amalgam Daikyu Target Acquired",
+    "revision": 2800299,
+    "timestamp": "2026-08-18T11:44:02Z",
+    "retrievedAt": "2026-10-12T09:14:12.334884+00:00",
+    "url": "https://wiki.warframe.com/w/Amalgam_Daikyu_Target_Acquired?oldid=2800299",
+    "sha256": "627fb8b51c76b04e1fbd7da463d559da6d48df455b5e3420fb1b20f1bd1b1a85",
+    "file": "2800299.txt"
+  },
+  {
+    "title": "Amalgam Argonak Metal Auger",
+    "revision": 2807661,
+    "timestamp": "2026-09-12T20:32:17Z",
+    "retrievedAt": "2026-10-12T09:14:12.713911+00:00",
+    "url": "https://wiki.warframe.com/w/Amalgam_Argonak_Metal_Auger?oldid=2807661",
+    "sha256": "8916730859b3363f3aa7e8ff292cf26bf4e01195a4a3763926aef4f3c23c90b0",
+    "file": "2807661.txt"
+  },
+  {
+    "title": "Jet Stream",
+    "revision": 2811808,
+    "timestamp": "2026-09-22T20:43:45Z",
+    "retrievedAt": "2026-10-12T09:14:13.109082+00:00",
+    "url": "https://wiki.warframe.com/w/Jet_Stream?oldid=2811808",
+    "sha256": "17e6163731358aa91dc57c073a34e3b20231266ae372910170ddac9fe7048ee6",
+    "file": "2811808.txt"
+  },
+  {
+    "title": "Projectile Speed",
+    "revision": 2792246,
+    "timestamp": "2026-07-09T23:41:59Z",
+    "retrievedAt": "2026-10-12T09:15:57.209808+00:00",
+    "url": "https://wiki.warframe.com/w/Projectile_Speed?oldid=2792246",
+    "sha256": "093e8403afea926ae0c2092adb032edcbdddaa00132b1adb7ccbdce8a2ba6d83",
+    "file": "2792246.txt"
+  },
+  {
+    "title": "Enemy Level Scaling",
+    "revision": 2795886,
+    "timestamp": "2026-07-29T08:52:16Z",
+    "retrievedAt": "2026-10-12T09:20:44.170211+00:00",
+    "url": "https://wiki.warframe.com/w/Enemy_Level_Scaling?oldid=2795886",
+    "sha256": "01080a09ce7bf5182d1af1e85fca89c8145c910b55e5fce053ef57de9893b931",
+    "file": "2795886.txt"
+  },
+  {
+    "title": "Metronome",
+    "revision": 2816159,
+    "timestamp": "2026-10-06T01:30:34Z",
+    "retrievedAt": "2026-10-12T10:10:23.686402+00:00",
+    "url": "https://wiki.warframe.com/w/Metronome?oldid=2816159",
+    "sha256": "f59866def356690099b2f16913aff429821bd5870c66ec37e6916b82b09fc3ab",
+    "file": "2816159.txt"
+  },
+  {
+    "title": "Eternal War",
+    "revision": 2729817,
+    "timestamp": "2026-02-12T22:47:03Z",
+    "retrievedAt": "2026-10-12T10:10:24.063442+00:00",
+    "url": "https://wiki.warframe.com/w/Eternal_War?oldid=2729817",
+    "sha256": "ddca5c4a909e26620a9ca8bb1f4b39ee22c6adf527c454aa8ab7499ac9091ce7",
+    "file": "2729817.txt"
+  },
+  {
+    "title": "Multishot",
+    "revision": 2815667,
+    "timestamp": "2026-10-03T20:43:37Z",
+    "retrievedAt": "2026-10-12T10:10:39.628547+00:00",
+    "url": "https://wiki.warframe.com/w/Multishot?oldid=2815667",
+    "sha256": "d8734c5f889249a21535727a218cd5e6f0162d754f38a6a40c2eacecdca22f12",
+    "file": "2815667.txt"
+  },
+  {
+    "title": "Warcry",
+    "revision": 2816217,
+    "timestamp": "2026-10-06T02:08:21Z",
+    "retrievedAt": "2026-10-12T10:15:12.180588+00:00",
+    "url": "https://wiki.warframe.com/w/Warcry?oldid=2816217",
+    "sha256": "76097b5c9a7edad4d007253c344db7f2ac79d87a1de043b4ce4b4244b313129f",
+    "file": "2816217.txt"
+  },
+  {
+    "title": "Sirius & Orion/Abilities/Passive",
+    "revision": 2817324,
+    "timestamp": "2026-10-09T14:56:35Z",
+    "retrievedAt": "2026-10-12T10:16:22.462856+00:00",
+    "url": "https://wiki.warframe.com/w/Sirius_%26_Orion/Abilities/Passive?oldid=2817324",
+    "sha256": "3dad3ae872c67f372f4076bbd5fd7d146c129fe25ef07f36d7b5d7334a1374e0",
+    "file": "2817324.txt"
+  },
+  {
+    "title": "Sirius & Orion/Main",
+    "revision": 2817565,
+    "timestamp": "2026-10-11T08:09:02Z",
+    "retrievedAt": "2026-10-12T10:16:22.845896+00:00",
+    "url": "https://wiki.warframe.com/w/Sirius_%26_Orion/Main?oldid=2817565",
+    "sha256": "15d61f8d53b8dd94f21a7aff340700992772b9ae0f1a2a2ce2e24b2e6bbf2164",
+    "file": "2817565.txt"
+  },
+  {
+    "title": "Official PC patch 39-0-0",
+    "revision": "39-0-0",
+    "timestamp": null,
+    "url": "https://www.warframe.com/en/patch-notes/pc/39-0-0",
+    "sha256": "d454230f64128847ad2ef598bb3f58904fd7d5c60c7a054ca59698cd711da5f7",
+    "file": "official-39-0-0.html",
+    "retrievedAt": "2026-10-12T10:35:54.589439+00:00"
+  },
+  {
+    "title": "Hall of Malevolence",
+    "revision": 2659191,
+    "timestamp": "2025-01-31T16:11:32Z",
+    "retrievedAt": "2026-10-12T10:55:41.063759+00:00",
+    "url": "https://wiki.warframe.com/w/Hall_of_Malevolence?oldid=2659191",
+    "sha256": "cf0a57f605d91b467b1be1b3ac7a68d8eff11dc421a43451a158cdb0c309418a",
+    "file": "2659191.txt"
+  },
+  {
+    "title": "Atlas/Abilities",
+    "revision": 2779163,
+    "timestamp": "2026-05-20T20:50:32Z",
+    "retrievedAt": "2026-10-12T11:28:57.299745+00:00",
+    "url": "https://wiki.warframe.com/w/Atlas/Abilities?oldid=2779163",
+    "sha256": "ce0b4e4a14b2e8ec49583df16ac06c05ca3346e5d3ded4ab2629111aae471e6d",
+    "file": "2779163.txt"
+  },
+  {
+    "title": "Atlas/Abilities/Passive",
+    "revision": 2794675,
+    "timestamp": "2026-07-19T01:11:07Z",
+    "retrievedAt": "2026-10-12T11:29:41.511592+00:00",
+    "url": "https://wiki.warframe.com/w/Atlas/Abilities/Passive?oldid=2794675",
+    "sha256": "4167298bebb51ee4323b625f964a3a64a087b1769be6ef61ab205fd895c8a174",
+    "file": "2794675.txt"
+  },
+  {
+    "title": "Roar",
+    "revision": 2816179,
+    "timestamp": "2026-10-06T01:47:04Z",
+    "retrievedAt": "2026-10-12T11:40:57.975813+00:00",
+    "url": "https://wiki.warframe.com/w/Roar?oldid=2816179",
+    "sha256": "659b0bd0edf49bd6aa8c9d5f55b05b87782e672059dff6ed5c0b7943f221aeee",
+    "file": "2816179.txt"
+  },
+  {
+    "title": "Eclipse",
+    "revision": 2816132,
+    "timestamp": "2026-10-06T01:15:33Z",
+    "retrievedAt": "2026-10-12T11:40:58.633345+00:00",
+    "url": "https://wiki.warframe.com/w/Eclipse?oldid=2816132",
+    "sha256": "d8561e509ef0f25600b3d0528ca4c544ac1914f95cc393c0c85f1726fc7af69e",
+    "file": "2816132.txt"
+  }
+]

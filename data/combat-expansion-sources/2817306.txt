@@ -1,0 +1,80 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{codex|Perforate enemies with these two needle-sharp sai.}}
+The '''Okina''' are {{Faction|Tenno}} dual sai that excel in [[attack speed]].
+
+This weapon can be sold for {{cc|5,000}}.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Stance slot has {{Pol|Vazarin}} polarity, matches {{M|Spinning Needle}}.
+*Innate {{Pol|Madurai}} polarity.
+
+{{Advantages|
+*Grants a '''5%''' [[Movement Speed]] bonus when held (i.e. melee mode or quick melee).
+}}
+
+{{Disadvantages|}}
+{{WeaponComparison|Okina Prime}}
+
+==Acquisition==
+The Okina's blueprint can be [[research]]ed from the [[Research/Tenno Lab|Tenno Lab]] in the [[dojo]].
+
+{{BuildAutomatic|type=Weapon}}
+
+==Incarnon Genesis==
+{{Transclude|Okina Incarnon Genesis#Acquisition}}
+
+{{Transclude|Okina Incarnon Genesis#Incarnon Genesis}}
+
+==Trivia==
+*The Okina's name is likely derived from [[wikipedia:Okinawa_Prefecture|Okinawa]], a prefecture in Japan traditionally associated with the [[wikipedia:Sai_(weapon)|sai]].
+*The Okina is based on the Japanese Sai. The game however does not support traditional Sai fighting style and does not convey the damage types a Sai would inflict. If compared to a Sai the weapon should predominently deal {{D|Impact}} and {{D|Puncture}} damage and should not deal {{D|Slash}} damage.
+
+{{clr}}
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+SaiCodex.png|Okina in Codex.
+File:Joel-wood-ps5okinaskin.jpg|Ps5 skin for the Okina
+</gallery>
+
+<gallery widths="300" position="center" spacing="small">
+<!--Videos -->
+</gallery>
+{{VideoGallery
+|{{YouTube|FQ5ecGg_Zp8|size=300px}}
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|26}}
+*Damage increased from 40 to 140.
+*Range increased from 0.75 to 1.7.
+*Status Chance increased from 15% to 20%.
+*Critical Chance increased from 5% to 16%.
+*Slam Attack increased from 80 to 280.
+*Slide Attack increased from 200 to 280.
+*Parry Angle set to 50.
+*Follow Through increased from 0.3 to 0.8.
+
+{{ver|Specters of the Rail}}
+*Introduced.
+}}
+{{Ver/Lu|26}}
+{{ResearchNav}}
+{{WeaponNav}}
+
+[[de:Okina]]
+[[es:Okina]]
+[[fr:Okina]]
+[[it:Okina]]
+[[Category:Dual Daggers]]
+[[Category:Tenno]]
+[[Category:Update 19]]
+[[Category:Weapons]]
+[[Category:Slash Damage Weapons]]
+[[Category:Weapons with Passives]]
+[[uk:Окіни]]

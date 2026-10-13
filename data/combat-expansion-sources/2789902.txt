@@ -1,0 +1,153 @@
+{{Top|Enemy|Grineer|Grineer|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|The signature hammer of the only lunatic fearsome enough to bust out of the Saturn Six Max-Pen. Once loosed this formidable throwing hammer always finds its way home.}}
+The '''Wolf Sledge''' is the signature hammer of the [[Wolf of Saturn Six]]. In addition to its high [[status chance]], the sledge can be thrown by holding the melee button, similar to [[Glaive (Weapon Type)|Glaive]]s.
+
+==Characteristics==
+*This weapon deals primarily {{D|Impact}} and {{D|Slash}} damage.
+*Holding the melee button while on the ground throws the hammer in a similar manner to a [[Glaive (Weapon Type)|Glaive]], which travels up to 40 meters, [[bounce]]s off one enemy to hit up to a second, and damages anyone in its return path. Meleeing while the hammer is in mid-flight commands it to return immediately.
+**Primary and secondary weapons can be fired and reloaded normally with a thrown hammer, and retrieving the hammer does not interrupt these actions. Additional throws can also be "buffered" while the hammer is in mid-flight.
+***Hitting an enemy with a thrown attack will cause it to seek one more target up to 20 meters behind the first before returning.
+**[[Heavy Attack]]s while the hammer is in mid-flight produces a '''5''' meter explosion and forces the hammer to return.
+***Explosion deals {{D|Blast}} damage.
+***Explosion does not need direct line of sight to deal damage and will penetrate walls.
+***No [[Damage Falloff]].
+***Explosion inflicts [[Stagger|self-stagger]].
+***Explosion has a [[Enemy Body Parts|headshot]] multiplier of 1x and cannot trigger headshot conditions.
+***Explosion is affected by Heavy Attack bonuses such as {{M|True Steel}} 2x bonus, {{M|Killing Blow}} damage, and the combo multiplier.
+**Hits from a thrown Sledge contribute to [[Melee Combo]] count.
+**Cannot use the Glaive-exclusive "Thrown Melee" mods such as {{M|Volatile Quick Return}} despite being a thrown melee.
+**Cannot be thrown in mid-air, instead performing standard hammer melee attacks or slams.
+*Stance polarity {{Pol|Madurai}} matches {{M|Crushing Ruin}}.
+
+{{Advantages|
+*Third highest [[status chance]] of all hammers, behind {{Weapon|Arca Titron}} and {{Weapon|Synoid Heliocor}}.
+}}
+
+{{Disadvantages|
+*Cannot use melee attacks or block while the hammer is in mid-flight.
+}}
+
+{{clr}}
+{{Acquisition|Wolf Sledge's main blueprint and components can be acquired as random drops after defeating the [[Wolf of Saturn Six]]. All parts are tradeable between players.}}
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*Holding the melee key for '''200'''{{text||ms|hover=miliseconds}} will begin to charge a unique throw attack. The warframe will throw the Wolf Sledge, which will attempt to seek the nearest enemy as they enter the its line-of-sight. After hitting an enemy, the Wolf Sledge will attempt to seek another enemy, but only if it is possible for homing turn-rate to maneuver to the target. The Wolf Sledge can be detonated any time in its flight by pressing the heavy attack key.
+**Charge level does not affect damage.
+**Charge Time and short throwing animation is affected by Attack Speed mods. Charge time is {{text||not affected by Wind-up|hover=The charging reticle is affected by heavy wind-up bonuses, but it is only visual.}}.
+***When using no stance, similarly to heavy attacks and Glaive throws, the charge time is affected by wind-up bonuses, '''not''' by attack speed bonuses, while the throwing animation remains affected by attack speed bonuses.
+**Travels up to 40m, but can bounce off a target to '''one''' more enemy up to 20m behind the first.
+***Projectile speed and distance is affected by {{M|Jet Stream}}, but not the homing turn-rate, sacrificing the homing capability.
+**While traveling outward, the projectile produces a '''5''' meter explosion on each strike.
+***Hitting terrain will produce an explosion but force the hammer to immediately return.
+***Hammer does not explode on return hits.
+**Hits contribute to the combo multiplier. Explosion hits do not.
+**Can be manually recalled by pressing the melee key.
+***Upon return, Wolf Sledge ignores terrain and strikes everything in its path.
+***Projectile width is not affected by {{M|Reach}} mods.
+**If the melee key is held as the hammer returns to your hands, it will "{{text||Buffer|hover=Buffering inputs in video games refers to preemptively pressing inputs to sequence actions so they are executed as fast as they are ready, as opposed to pressing a key as you see it ready, which adds human delays.}}" the attack and pre-count the 200ms hold-delay to immediately begin charging another throw.
+***Cannot be buffered after certain combo animations or thrown mid-air.{{exp|[Needs Clarification]}}
+**Can be detonated any time in flight by pressing the heavy attack key.
+***Recall Explosion is a [[Melee#Heavy Attack|Heavy Attack]] and benefits from all heavy bonuses such as {{M|True Steel}}'s 2x bonus, {{M|Killing Blow}}'s damage, the combo multiplier and even {{M|Life Strike}}. It will consume the combo counter and reset its timer.
+***Heavy Explosion will {{D|Ragdoll}} enemies. It also applies a ridiculous force to send ragdolls flying.
+***Recall explosion causes self-stagger.
+***Activating heavy explosion causes the hammer to return if not already returning. Returning this way causes all return strikes to be heavy hits, benefiting from heavy bonuses just like the heavy explosion.
+*Despite being throwable, it cannot equip Glaive-exclusive "Thrown" mods such as {{M|Power Throw}} and {{M|Rebound}}.
+*{{WF|Mirage}}'s {{A|Hall of Mirrors}} throws five hammers.
+
+==Tips==
+*Target bouncing is like assisted punch-through, it only bounces to a target behind the initial victim.
+*Wolf Sledge's heavy explosion has the highest moddable status chance (~50%) of any melee attack, making status damage a viable build option unlike most dedicated heavy attacks.
+*Wolf Sledge can seek enemies around long corners, silently exploding without exposing yourself.
+*Wolf Sledge can be rapidly thrown at close range by recalling as fast as possible and holding the melee key a second time while it returns to buffer the next throw. Attack Speed mods help in this niche use.
+*Ragdolled enemies will be pinned to ceilings and walls due to their momentum. They can be juggled thanks to the Wolf Sledge's homing.
+
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+lucas-hug-grnwolfhammer.jpg
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42}}
+*Wolf Sledge’s Blueprint and Components now share an even 25% drop chance from the Wolf of Saturn Six. 
+
+{{ver|39.1}}
+*Fixed cases of players becoming stuck if they cast Wrathful Advance throwing the Wolf Sledge.
+
+{{ver|38.5.11}}
+*Fixed the Wolf Sledge's explosion being inconsistent for Clients.
+
+{{ver|37}}
+*Enabled Auto-Melee Aerial attacks for Glaive-like weapons that don’t have an Aerial throw, or don’t charge their Aerial throw moves, such as the Wolf Sledge.
+**Also fixed an issue where holding the regular Melee attack input with a throw attack, such as the Wolf Sledge, could cause your next Heavy Melee input to execute a regular Melee attack instead.
+*Fixed an issue where Glaive-like weapons, such as the Wolf Sledge, lost Heavy Attack functionality while using Wukong’s “Cloud Walker” Ability, preventing players from Heavy Slamming for the duration of the Ability.
+
+{{ver|36}}
+*Wolf of Saturn Six now has a guaranteed (100%) Weapon Part drop per kill, increased from 35%. 
+**This drop rate was originally designed for The Wolf of Saturn Six Nightwave Series, where a) all players were marked with his Death Mark and b) he had an increasing chance to spawn in-mission while the Series was live. Now, players farming the Wolf Sledge can only do so via Wolf Beacons, so drop rates have been amended with this in mind.
+*Improved the responsiveness of holding the Melee Attack input to perform a throw for Melee weapons with ranged attacks (ex: Sigma & Octantis). Pressing and holding the Melee attack input now throws after one swing instead of two. 
+**As a result of this change, it is now easier to activate Tennokai with Glaives in the window it is available. Prior to this change, the second swing could prevent you from hitting Tennokai before the timer ran out. 
+***This also fixes multiple issues with thrown weapons and Tennokai: 
+****Fixed Wolf Sledge not benefitting from Heavy Attack Wind Up Speed Mods or Tennokai’s Wind Up Speed bonus. 
+****Fixed instances where the Wolf Sledge’s Tennokai Heavy Attack would not complete (the animation would halt halfway-through and leave players stuck mid swing until they Melee attacked again). 
+
+{{ver|35.5}}
+*Fixed Wolf Sledge not being able to activate Tennokai (combo counter was still being consumed).
+
+{{ver|32.2}}
+*Removed the Wolf Sledge from Conclave. 
+**''In their current state, they had several broken interactions.''
+*Fixed the Wolf Sledge’s Heavy Attack/throw not consuming its combo counter. 
+**''Also fixed its combo counter getting stuck after detonating it mid-flight.''
+
+{{ver|29.10}}
+*Fixed Wolf Sledge’s follow through stat dropping by half when a Stance Mod is equipped.
+
+{{ver|29.5.4}}
+*Fixed Melee Heavy Attacks not functioning for Wolf Sledge.
+
+{{ver|29.5}}
+*Now uses the new Glaive hold melee to throw mechanics (no air throws at this time).
+*Wolf Sledge now explodes on impact when Thrown.
+
+{{ver|26}}<br />
+''Actual patch notes made a mistake on old follow through.''
+*Damage increased from 130 to 259.
+*Range increased from 1.5 to 3.1.
+*Slam Attack increased from 130 to 777.
+*Slide Attack increased from 260 to 518.
+*Parry Angle set to 50.
+*Follow Through decreased from 0.9 to 0.4.
+
+{{ver|24.6}}
+*Added a 5m 200 Explosion damage radial attack on recall.
+*Increased Range from 1 to 1.5m.
+*Increased Melee damage from 115 to 130.
+*Increased throwing projectile damage from 575 to 650.
+*Reduced the collision width of the thrown projectile from 0.6m to 0.2m.
+*Increased the speed of the throwing animations.
+
+{{ver|24.3.3}}
+*Removed the Ducat selling price from a Wolf Sledge's component parts. 
+
+{{ver|24.3.2}}
+*Component parts and blueprint are now tradable.
+
+{{ver|24.3}}
+*Introduced.
+}}
+{{Ver/Lu|26}}
+{{WeaponNav}}
+[[es:Mazo del lobo]]
+[[de:Wolfshammer]]
+[[fr:Marteau du Loup]]
+[[Category:Update 24]]
+[[Category:Hammer]]
+[[Category:Melee Weapons]]
+[[Category:Grineer Weapons]]
+[[uk:Вовча Довбня]]

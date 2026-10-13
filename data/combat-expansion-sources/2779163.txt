@@ -1,0 +1,27 @@
+{{WarframeTopNav}}
+==Passive==
+{{Transclude|Atlas/Abilities/Passive}}
+
+==Abilities==
+{{WarframePage/Abilities| Landslide | Tectonics | Petrify | Rumblers |
+| ability1icon      = LandslideIcon(xWhite).png
+| ability1strength  = true
+| ability1duration  = true
+| ability1range     = true
+| ability2icon      = TectonicsIcon(xWhite).png
+| ability2strength  = true
+| ability2duration  = 
+| ability2range     = true
+| ability3icon      = PetrifyIcon(xWhite).png
+| ability3strength  = true
+| ability3duration  = true
+| ability3range     = true
+| ability4icon      = RumblersIcon(xWhite).png
+| ability4strength  = true
+| ability4duration  = true
+| ability4range     = true
+}}<noinclude>
+__NOTOC__
+[[es:Atlas/Habilidades]]
+[[fr:Atlas/Capacités]]
+[[Category:Atlas]]

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{61475574-63B2-432A-9586-1C4FBF879E12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennoForge.Core", "src\TennoForge.Core\TennoForge.Core.csproj", "{1540824F-5606-4628-B2B4-65E1D402A665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennoForge.Desktop", "src\TennoForge.Desktop\TennoForge.Desktop.csproj", "{8B8DED06-31C8-4D17-8BB8-6AC6F7CC9F8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FFBD0DFB-0B9B-4964-A8EE-E3502953CC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennoForge.Checks", "tests\TennoForge.Checks\TennoForge.Checks.csproj", "{D4D91AFD-86B0-4964-B6E8-EDA067AEEA93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFLabs.Startup", "src\WFLabs.Startup\WFLabs.Startup.csproj", "{5ADE2087-E0E9-4F8B-AA92-06105DFD41F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1540824F-5606-4628-B2B4-65E1D402A665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1540824F-5606-4628-B2B4-65E1D402A665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1540824F-5606-4628-B2B4-65E1D402A665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1540824F-5606-4628-B2B4-65E1D402A665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B8DED06-31C8-4D17-8BB8-6AC6F7CC9F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B8DED06-31C8-4D17-8BB8-6AC6F7CC9F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B8DED06-31C8-4D17-8BB8-6AC6F7CC9F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B8DED06-31C8-4D17-8BB8-6AC6F7CC9F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D91AFD-86B0-4964-B6E8-EDA067AEEA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D91AFD-86B0-4964-B6E8-EDA067AEEA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D91AFD-86B0-4964-B6E8-EDA067AEEA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D91AFD-86B0-4964-B6E8-EDA067AEEA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ADE2087-E0E9-4F8B-AA92-06105DFD41F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADE2087-E0E9-4F8B-AA92-06105DFD41F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADE2087-E0E9-4F8B-AA92-06105DFD41F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADE2087-E0E9-4F8B-AA92-06105DFD41F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1540824F-5606-4628-B2B4-65E1D402A665} = {61475574-63B2-432A-9586-1C4FBF879E12}
+		{8B8DED06-31C8-4D17-8BB8-6AC6F7CC9F8B} = {61475574-63B2-432A-9586-1C4FBF879E12}
+		{D4D91AFD-86B0-4964-B6E8-EDA067AEEA93} = {FFBD0DFB-0B9B-4964-A8EE-E3502953CC67}
+		{5ADE2087-E0E9-4F8B-AA92-06105DFD41F2} = {61475574-63B2-432A-9586-1C4FBF879E12}
+	EndGlobalSection
+EndGlobal

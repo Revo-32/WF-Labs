@@ -1,0 +1,157 @@
+{{Top|Infested|Infested|Infested|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Each strike of this infested glaive infects its target with viral pathogens. Occasionally, it discharges the spores of rabid, enemy-seeking maggots, either in-flight or on contact with an enemy.}}
+The '''Pathocyst''' is an {{Faction|Infested}} [[Glaive (Weapon Type)|Glaive]] that is the signature weapon of the [[Zealoid Prelate]], boasting innate {{D|Viral}} damage and high [[status chance]], and releases [[Maggot]]s when attacking enemies or when thrown.
+
+==Characteristics==
+*This weapon deals primarily {{D|Viral}} damage.
+*Can be wielded in-tandem with a single-handed secondary weapon.
+*Holding the melee button throws the glaive, which can [[bounce]] up to three times or travels up to '''30''' meters before returning to the user, damaging anyone in its path. Meleeing while the glaive is in mid-flight commands it to return.
+**Primary and secondary weapons can be fired and reloaded normally with a thrown glaive, and retrieving the glaive does not interrupt these actions. Additional throws can also be "buffered" while the glaive is in mid-flight.
+**Thrown glaive is [[silent]].
+**Thrown glaive has no [[punch through]].
+**[[Heavy Attack]]s while the glaive is in mid-flight produce a '''4.9''' meter explosion and forces the glaive to return.
+***Explosion inflicts a guaranteed {{D|Viral}} proc.
+***Explosion does not need direct line of sight to deal damage and will penetrate walls.
+***No [[Damage Falloff]].
+***Explosion inflicts [[Stagger|self-stagger]].
+***Explosion has a [[Enemy Body Parts|headshot]] multiplier of 1x and cannot trigger headshot conditions.
+**Cannot use melee attacks or block while the glaive is in mid-flight.
+**During flight or when striking an enemy, the glaive drops Infested pods which quickly hatch into [[Maggot]]s that last for 7 seconds and will fight alongside the player before exploding in a '''?''' radius.
+***Maggots can latch onto enemies and stagger them.
+***Maggots may also appear on any normal attack done to enemies.
+***Maggots alerts enemies, despite the weapon being silent.
+*Can use the Glaive-exclusive mods {{M|Combo Fury}}, {{M|Combo Killer}}, {{M|Power Throw}}, {{M|Quick Return}} ({{M|Volatile Quick Return|Volatile}}), {{M|Rebound}} ({{M|Volatile Rebound|Volatile}}), and {{M|Whirlwind}}.
+*Stance slot has {{Pol|Naramon}} polarity, matching {{M|Gleaming Talon}}, {{M|Astral Twilight}} and {{M|Celestial Nightfall}} ([[Conclave]] only) stance.
+*Innate {{Pol|Madurai}} and {{Pol|Vazarin}} polarities.
+
+{{Advantages|class=Glaive|}}
+
+{{Disadvantages|class=Glaive|}}
+{{WeaponComparison|Coda Pathocyst}}
+
+{{Acquisition|Pathocyst's main blueprint and components can be obtained from defeating [[Zealoid Prelate]] on Exequias, [[Deimos]]. All parts are tradeable between players.}}
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*Acquired blueprints can be sold for {{cc|2,500}} each while its components can be sold for {{cc|3,500}} each.
+*[[Maggot]]s spawned by the Pathocyst do not interact with {{WF|Nidus}}'s abilities or the [[Strain Set]].
+*Spawned maggots do ''not'' benefit from elemental boost augments such as {{M|Smite Infusion}}, they can benefit from some ally-related buffs such as {{WF|Wisp}}'s {{A|Reservoirs}}.
+*Leveling the Pathocyst through stealth can be very challenging, due to maggots spawning sometimes through stealth finishers, and many more spawning through thrown attacks, which will alert enemies. Exploding maggots, while dealing low damage, may immediately thrust enemies out of a 'sleep state' (eg Sleep Arrow from {{A|Quiver}} or {{A|Rest & Rage}}) with no wakeup animation, who may then see dead bodies.
+**It is important to mod the weapon with attack speed and finisher damage to ensure one-shot kills on enemies, but also extra awareness of which enemies in range are asleep or out of visual range, and which are not. Maggots may also suddenly sprint very quickly, darting around a corner if they detect enemies and then getting shot at, alerting the area.
+{{UpdateMe|Maggot research}}
+*Properties of exploding Maggots:
+**Explosions have 0% crit chance and status chance. Deal pure viral damage.
+**Explosion damage can be increased through base Damage and Melee Damage modifiers such as {{WF|Chroma}}'s {{A|Vex Armor}}, {{WF|Excalibur}}'s {{M|Furious Javelin}}, {{WF|Garuda}}'s passive, {{WF|Limbo}}'s {{M|Rift Torrent}}, {{WF|Mirage}}'s {{M|Hall of Malevolence}}, {{WF|Nidus}}' {{A|Parasitic Link}} {{WF|Nova}}'s {{A|Molecular Prime}}, {{WF|Octavia}}'s {{A|Metronome}} and {{A|Amp}}, {{WF|Rhino}}'s {{A|Roar}}, {{WF|Vauban}}'s passive, {{Focus|Madurai}} focus tree, {{Arcane|Arcane Fury}}, {{Arcane|Arcane Blade Charger}}, {{M|Pressure Point}}, {{M|Spoiled Strike}}, {{M|Steel Charge}}
+**Maggot damage is not enhanced by combo multiplier, faction damage modifiers, elemental modifiers, or physical damage modifiers.
+**Maggots spawn at the same level as the weapon's current rank. For Example, a rank 24 Pathocyst will spawn level 24 Maggots.
+
+==Tips==
+*The main benefit of the spawned maggots is crowd control; Enemies will be briefly distracted by running maggots or stunned when they manage to latch onto them, but due to their limited life span they won't last long.
+*Modding the Pathocyst with high-status chance and {{D|Cold}} damage will extend the duration of the stun when maggots latch, assuming the cold damage procs. This can slightly boost the effectiveness of latched maggots.
+
+==Media==
+<gallery>
+File:Tim-bergholz-chamferzone-com-screenshot047.jpg
+File:Tim-bergholz-chamferzone-com-screenshot048.jpg
+File:Tim-bergholz-chamferzone-com-screenshot049.jpg
+File:Tim-bergholz-chamferzone-com-screenshot108.jpg
+File:Tim-bergholz-chamferzone-com-screenshot109.jpg
+File:Pathocyst 1.jpg|Concept art
+File:Pathocyst 2.jpg
+</gallery>{{VideoGallery
+|{{YouTube|PxLjtepid4I|size=300px}}
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37.0.2}}
+*Fixed indefinitely stacking unintended amount of Health from a combination of the Strain Consume mod and any of the following: Helminth Charger, Nidus Maggots and Pathocyst.
+
+{{ver|34}}
+*Fixed Pathocyst’s heavy charged projectile dealing the same damage as quick attack.
+
+{{ver|30.9}}
+*Fixed Glaives not being affected by abilities that attract projectiles (i.e Mag’s Magnetize).
+**This also fixes a Glaive that has been redirected in such a way infinitely bouncing.
+**This also fixes Glaive being unable to punchthrough certain Metal surfaces (Crewman Helmets)
+
+{{ver|30.5}}
+;MELEE / PRIMARY BALANCE CHANGES
+
+In late 2020, we reworked the Glaive melee class to be more powerful and comfortable to use. Overall, we feel these changes had their intended effect as weapons like the Glaive Prime skyrocketed from obscurity to the top of the pile with their newfound ability to inflict huge damage using heavy attacks.
+
+However, these changes also introduced a common issue: players with high melee attack speed would sometimes accidentally throw their Glaives when trying to perform simple melee strikes, and the “catch and release” mechanic sometimes resulted in multiple unintended throws. In reviewing our Melee system, we felt it was a good opportunity to address this concern, while also doing a balancing pass to reflect the power in this newly reworked melee class.
+
+That said, our two changes to Glaives go hand in hand: 
+
+First, '''the heavy attack wind-up speed is being increased from 0.6 seconds to 1.2 seconds.''' With more time on the wind-up, it is much harder to accidentally throw when you are trying to swing.
+
+With this increased wind-up speed, players are also more capable of performing quick throws. Right now the damage on quick throws is very close to fully charged, so in order to encourage more meaningful choice, our second change is to '''reduce quick throw damage to approximately 50% of the maximum charge.''' Exact number changes are as follows:
+
+Pathocyst<br/>
+Direct Hit Damage from 524 to 288<br/>
+Radial Damage from 786 to 393
+
+{{ver|29.6.5}}
+*Fixed Pathocyst Infested pod sound looping when pods are created but do not spawn a maggot.
+
+{{ver|29.5}}
+*Added guaranteed Viral proc to Heavy Attack Detonation.
+*Reduced Max self CC from Knocked Down to Stagger.
+*Removed falloff from Throw Explosion and Charged Throw Explosion damage.
+*(Undocumented) Throw Explosion Damage and Charged Throw Explosion damage increased from 786 to 1,572 Viral damage.
+
+{{ver|29.3.2}}
+*Fixed a heavy spot-load occurring when equipping the Pathocyst in the Arsenal.
+
+{{ver|27.2.2}}<br/>
+Reduced the following AoE weapons Radial Damage Falloff from central impact that were all previously 90%:
+*Pathocyst: 50%
+
+{{ver|27.2}}
+;Self Damage Changes:
+We are getting rid of Self Damage and replacing it with something else: instead of Self Damage, it’s now ‘Stagger’. This change completely removes the chance of killing yourself, and instead now creates scenarios where you will interrupt yourself - or ‘Stagger’ - to varying degrees if you aren’t careful. 
+
+The degrees of Self-Interrupt start with a small stumble all the way to full knockdown depending on how close you are to the center of explosion. Any Mods referring to Self Damage will be converted to acknowledge Stagger.
+
+With this Self-Interrupt system, we have added dozens of new recovery animations that harness a ninja-like recovery experience. By pressing ‘Jump’ at the correct time, you can execute a ninja-skill-based knockdown recovery to ALL in-game knockdowns. This ninja recovery window is indicated by a glowing FX on your Warframe.
+
+In the original Dev Workshop, we said:<br />
+''As a result of this overall systemic change, Weapons with Stagger will be getting approximately a 20% buff in Damage, with any weapons with AOE receiving a 50% Radial Damage Falloff from central impact.''
+
+This is no longer accurate after continued testing. What we are doing now is:
+
+No damage buffs have been added, but any weapons with AOE are receiving ~20% increase in Radius. Additionally, AOE weapons are receiving a 90% Radial Damage Falloff from central impact. This means on the very outer section of the explosion Radius 10% of the Damage will be dealt. Tactics will be deadly - aim true, Tenno. 
+
+''Why: Several players brought up the history of the Tonkor and we want to make sure we ship this change in a place that’s conservative in its starting point from a balance perspective. The complete removal of Self Damage does change the pace of destruction with some of the game’s most powerful weapons, so we want to make sure we can iterate upwardly instead of releasing a bonanza of explosions with no other choices.''
+
+{{ver|26}}<br/>
+As a general note, self damage has been removed from Glaive power throws. As this decision made it through the testing pipeline, some mentioned this impacts a specific Chroma interaction, but positively impacts 41 other Warframes. 
+*Damage increased from 82 to 262.
+*Slam Attack increased from 82 to 786.
+*Slide Attack increased from 410 to 524.
+*Parry Angle set to 55.
+*Follow Through increased from 0.5 to 0.7.
+
+{{ver|25.8}}
+*Added new “fast whooshing” sounds to the Pathocyst.
+
+{{ver|25.7.7}}
+*(Undocumented) Introduced.
+}}
+{{Ver/Lu|26}}
+{{WeaponNav}}
+
+[[es:Pathocyst]]
+[[fr:Pathocyst]]
+[[ru:Патоцист]]
+[[Category:Glaive]]
+[[Category:Infested]]
+[[Category:Infested Weapons]]
+[[Category:Update 25]]
+[[Category:Self Interrupt Weapons]]
+[[Category:Toxin Damage Weapons]]
+[[uk:Патоцист]]

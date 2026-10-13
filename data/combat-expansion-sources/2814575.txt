@@ -1,0 +1,406 @@
+{{Infobox
+| Box title = Cold Damage
+| image = ColdModBundleIcon.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Cold_b.png|class=icon]] [[File:Cold_w.png|class=icon]]
+}}
+{{Quote|'''DAMAGE EFFICACY'''<br/>
+'''{{text|green|x1.5}}''' damage to Sentient<br/>
+'''{{text|red|x0.5}}''' damage to Techrot
+
+'''STATUS EFFECT'''<br/>
+{{D|Cold}} causes enemies to move and attack slower for each stack and will completely freeze for 3 seconds upon reaching 10 stacks. Increases Critical Damage by 10% on the first stack, with an additional 5% per stack. This effect doubles when frozen.|In-game Description}}
+'''{{D|Cold}} Damage''' is one of the four primary elemental damage types. It deals increased damage to {{D|Sentient}} enemies, but reduced damage against {{D|Techrot}} enemies. Its [[Status Effect]] reduces enemy action speed, freezing them solid at 10 stacks, and increases their received [[Critical Hit#Critical Damage|Critical Damage]].
+
+==[[Status Effect]]s==
+===General===
+====On Enemies====
+The status effect of {{D|Cold}} damage is '''Freeze'''. It lasts '''6''' seconds and stacks to a maximum of '''10''', with each stack having its own duration. 
+*The target's [[Movement Speed]], [[Fire Rate]], and [[Attack Speed]] are reduced by '''50%''' at 1 stack, and subsequent stacks until the 9th add an additional '''5%''' reduction ('''90%''' at 9 stacks).
+*The target receives {{D|Cold|+0.1x}} increased [[Critical Hit#Critical Damage|Critical Damage]] multiplier with 1 stack, and {{D|Cold|+0.05x}} per subsequent stack, adding up to {{D|Cold|+0.50x}} at 9 stacks. The increase is additive with Critical Damage mods, and applies before critical tier is calculated, but does '''not''' apply to [[Area of Effect]] damage.
+**For example, a {{Weapon|Kunai}} with {{M|Primed Target Cracker}} will crit a target afflicted with 9 cold stacks for 1.6x {{mul}} (1 + {{M|Primed Target Cracker|110%}}) + {{D|Cold|0.50x}} = 3.86x Critical Damage.
+**A {{Weapon|Paris Prime}} with {{M|Point Strike}} (112.5% final Critical Chance) will land a [[Critical Hit#Critical Tiers|Tier 1 Critical Hit]] 87.5% of the time for 1x + 1 {{Mul}} (2x + {{D|Cold|0.5x}} - 1) = 2.5x Critical Damage, and 1x + 2 {{Mul}} (2x + {{D|Cold|0.5x}} - 1) = 4x Critical Damage 12.5% of the time.
+*On the 10th stack, enemies become '''Frozen''' for '''3''' seconds, preventing all action, negating [[shield]] recharge, and increasing the Critical Damage Multiplier bonus to {{D|Cold|+1.0x}}. After the Frozen effects wears off, 3 {{D|Cold}} stacks will remain. 
+**Frozen enemies cannot receive additional {{D|Cold}} stacks, meaning that effects like {{Arcane|Primary Frostbite}} will not stack further or refresh their duration when applying Cold to Frozen enemies.
+**Both the initial {{D|Cold}} duration of 6 seconds and the 3 second Frozen status can be affected by Status Duration mods. 
+
+Bosses, as well as enemies with active {{D|Overguard}}, can receive a maximum of '''4''' Cold stacks.
+{| class="wikitable"
+|+{{D|Cold}} Status Enemy Effects
+!{{D|Cold}} Status 
+Effects
+!Slow 
+Effects
+!Bonus 
+[[Critical Hit#Critical Damage|Critical Damage]] 
+
+Multiplier
+!Notes
+|-
+|1
+|50%
+| +0.10x
+|
+|-
+|2
+|55%
+| +0.15x
+|
+|-
+|3
+|60%
+| +0.20x
+|
+|-
+|4
+|65%
+| +0.25x
+|Boss/Overguard Cap
+|-
+|5
+|70%
+| +0.30x
+|
+|-
+|6
+|75%
+| +0.35x
+|
+|-
+|7
+|80%
+| +0.40x
+|
+|-
+|8
+|85%
+| +0.45x
+|
+|-
+|9
+|90%
+| +0.50x
+|
+|-
+|10
+|'''Freeze'''
+| +1.0x
+|{{D|Cold}} Status Cap
+|}
+
+====On Players====
+Getting afflicted by {{D|Cold}} status will slow players down by -'''10%''' and can stack up to '''4''' times, capping player slow at -'''40%'''.
+
+* The only current exception to this is the [[Temporal_Archimedea#Optimism|Optimism Peely Pix]], which can accumulate up to 10 stacks with progressively more extreme slowing, along with the Frozen effect at 10 stacks.
+
+===Railjack===
+{{Quote|Railjack {{D|Cold}} Damage results in an Immobilize Status Effect which disables enemy ship flight controls and slows them to a halt.|In-Game Description}}
+The status effect of {{D|Cold}} damage against [[Railjack]] space enemies is '''Immobilize''', which disables the affected ship's weapons and slows their movement to a complete stop for '''6''' seconds, refreshing the duration with subsequent procs. Against the Tenno's [[Railjack]], it instead creates an '''Ice Hazard''' that disables interactive elements within the Railjack, such as the pilot seat, turrets, Archwing Slingshot, doors, and Resource Forge.
+
+==Elemental Combinations==
+{{D|Cold}} damage mods can be combined with other elemental mods to create a new elemental damage type.
+
+*{{D|Cold}} + {{D|Heat}} = {{D|Blast}}
+*{{D|Cold}} + {{D|Toxin}} = {{D|Viral}}
+*{{D|Cold}} + {{D|Electricity}} = {{D|Magnetic}}
+
+==Cold Sources==
+{{Main|:Category:Cold Damage}}
+
+===Weapons===
+{{Main|:Category:Cold Damage Weapons}}
+{{DamageTypeTable|Cold}}
+
+====Weapons with guaranteed Cold proc====
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF" orientation="landscape">
+Epitaph.png|link=Epitaph|{{Weapon|Epitaph}}/{{Weapon|Epitaph Prime|Prime}} (Uncharged Shot)|alt=Epitaph/ Prime (Uncharged Shot)
+Hystrix.png|link=Hystrix|{{Weapon|Hystrix}}/{{Weapon|Hystrix Prime|Prime}} (Ice Quill)|alt=Hystrix/ Prime (Ice Quill)
+Lenz.png|link=Lenz|{{Weapon|Lenz}}/{{Weapon|Prisma Lenz|Prisma}} (Initial Blast)|alt=Lenz/ Prisma (Initial Blast)
+Orvius.png|link=Orvius|{{Weapon|Orvius}} (Thrown)|alt=Orvius (Thrown)
+</gallery>
+Do also note that [[Adversary#Adversary Weapons|adversary weapons]] such as the {{Weapon|Kuva Nukor}} may come with a Cold damage benefit of up to 60% as long as the progenitor matches. In this case, {{WF|Frost}} would be a valid Cold progenitor amongst others, see [[Adversary#Progenitor Warframe|the progenitor list]] for all valid options.
+
+===Enemies===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF" orientation="landscape">
+Orokin freeze trap.jpg|link=Orokin_Void#Cryo_Floor|[[Orokin Void#Cryo Floor|Cryo Floors]] in [[Orokin Void]] tileset<br />(proc only)
+Explosive_Barrel_Cryogenic_U17.png|link=Explosive Barrel#Cryogenic Exploding Barrel|In [[Corpus Ice Planet|Ice Planet]] and [[Corpus Outpost|Outpost]] [[tilesets]], [[Explosive Barrel#Cryogenic Exploding Barrels|exploding barrels]] deal and proc {{D|Cold}} damage
+Lt Lech KrilIcon.png|link=Lieutenant Lech Kril|[[Lieutenant Lech Kril]]<br />(First phase, {{A|Freeze}} and {{A|Ice Wave}} attacks)
+ExploiterOrb.png|link=Exploiter Orb|[[Exploiter Orb]]
+IcemireHyena.png|link=Icemire Hyena|[[Icemire Hyena]]
+JunoGlaxionMOA.png|link=Juno Glaxion MOA|[[Juno Glaxion MOA]]
+JunoTech.png|link=Corpus Tech|Artic [[Eximus]] Juno [[Corpus Tech]] wielding a {{Weapon|Glaxion}}
+KosmaSupressor.png|link=Supressor|[[Supressor]]
+</gallery>
+
+===Arcanes===
+
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+SecondaryCryogenic.png|link=Secondary Cryogenic|{{Arcane|Secondary Cryogenic}}|alt=Secondary Cryogenic
+File:MeleeCareen.png|link=Melee Careen|{{Arcane|Melee Careen}}|alt=Melee Careen
+</gallery>
+
+===Mods===
+<tabber>
+|-|Primary =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ShiveringContagionMod.png|link=Shivering Contagion|{{M|Shivering Contagion}}
+</gallery>
+|-|Rifle =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+CryoRoundsMod.png|link=Cryo Rounds|{{M|Cryo Rounds}}
+PrimedCryoRoundsMod.png|link=Primed Cryo Rounds|{{M|Primed Cryo Rounds}}
+RimeRoundsMod.png|link=Rime Rounds|{{M|Rime Rounds}}
+</gallery>
+|-|Shotgun =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ChillingGraspMod.png|link=Chilling Grasp|{{M|Chilling Grasp}}
+PrimedChillingGraspMod.png|link=Primed Chilling Grasp|{{M|Primed Chilling Grasp}}
+ChillingReloadMod.png|link=Chilling Reload|{{M|Chilling Reload}}
+FrigidBlastMod.png|link=Frigid Blast|{{M|Frigid Blast}}
+</gallery>
+|-|Pistol =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+DeepFreezeMod.png|link=Deep Freeze|{{M|Deep Freeze}}
+FrostbiteMod.png|link=Frostbite|{{M|Frostbite}}
+IceStormMod.png|link=Ice Storm|{{M|Ice Storm}}
+</gallery>
+|-|Melee =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+NorthWindMod.png|link=North Wind|{{M|North Wind}}
+ViciousFrostMod.png|link=Vicious Frost|{{M|Vicious Frost}}
+</gallery>
+|-|Archgun =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+PolarMagazineMod.png|link=Polar Magazine|{{M|Polar Magazine}}
+PrimedPolarMagazineMod.png|link=Primed Polar Magazine|{{M|Primed Polar Magazine}}
+HypothermicShellMod.png|link=Hypothermic Shell|{{M|Hypothermic Shell}}
+</gallery>
+|-|Archmelee =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+GlacialEdgeMod.png|link=Glacial Edge|{{M|Glacial Edge}}
+CryoCoatingMod.png|link=Cryo Coating|{{M|Cryo Coating}}
+</gallery>
+|-|Warframe =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+FreezeForceMod.png|link=Freeze Force|{{M|Freeze Force}}
+IceSpringMod.png|link=Ice Spring|{{M|Ice Spring}}
+RimeVaultMod.png|link=Rime Vault|{{M|Rime Vault}} ([[Conclave]] only-Cosmetic)
+</gallery>
+|-|Companion =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+AerialBondMod.png|link=Aerial Bond|{{M|Aerial Bond}}
+ChillingClawsMod.png|link=Chilling Claws|{{M|Chilling Claws}}
+CoolantLeakMod.png|link=Coolant Leak|{{M|Coolant Leak}}
+FrostJawMod.png|link=Frost Jaw|{{M|Frost Jaw}}
+</gallery>
+|-|Railjack =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+VoidHoleMod.png|link=Void Hole|{{M|Void Hole}}
+</gallery>
+</tabber>
+
+===Abilities===
+{{#tag:tabber|
+Citrine =
+{{#tag:tabber|
+Prismatic Gem=
+{{:Prismatic Gem}}
+}}
+{{!}}-{{!}}
+Chroma (Cold) =
+{{#tag:tabber|
+Spectral Scream =
+{{:Spectral Scream}}
+{{!}}-{{!}}
+Elemental Ward =
+{{:Elemental Ward}}
+{{!}}-{{!}}
+Effigy =
+{{:Effigy}}
+}}
+{{!}}-{{!}}
+Frost =
+{{#tag:tabber|
+Freeze =
+{{:Freeze}}
+{{!}}-{{!}}
+Ice Wave =
+{{:Ice Wave}}
+{{!}}-{{!}}
+Snow Globe =
+{{:Snow Globe}}
+{{!}}-{{!}}
+Avalanche =
+{{:Avalanche}}
+{{!}}-{{!}}
+}}
+{{!}}-{{!}}
+Gauss =
+{{#tag:tabber|
+Thermal Sunder=
+{{:Thermal Sunder}}
+}}
+{{!}}-{{!}}
+Koumei =
+{{#tag:tabber|
+Kumihimo=
+{{:Kumihimo}}
+}}
+{{!}}-{{!}}
+Lavos =
+{{#tag:tabber|
+Vial Rush=
+{{:Vial Rush}}
+}}
+{{!}}-{{!}}
+Narin =
+{{#tag:tabber|
+Neote =
+{{:Neote}}
+{{!}}-{{!}}
+Hakchum =
+{{:Hakchum}}
+{{!}}-{{!}}
+Nurinarim =
+{{:Nurinarim}}
+{{!}}-{{!}}
+}}
+{{!}}-{{!}}
+Yareli =
+{{#tag:tabber|
+Sea Snares =
+{{:Sea Snares}}
+{{!}}-{{!}}
+Riptide =
+{{:Riptide}}
+}}
+}}
+
+==Sources of Cold Resistances==
+===Arcanes===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ArcaneWarmth.png|alt=Arcane Warmth{"Rarity":"Common","Type":"Warframe","Description":"+102% chance to resist a <DT_FREEZE_COLOR>Cold Damage effect","Link":"Arcane Warmth","Icon":"ArcaneWarmth64x.png","UpgradeTypes":["AVATAR_INJURY_BLOCK_CHANCE","GAMEPLAY_FREE_REVIVE_COUNT"],"MaxRank":"5","IncompatibilityTags":["OPERATOR_SUIT"],"Dissolution":"14","Image":"ArcaneWarmth.png","Name":"Arcane Warmth","Introduced":"16","IsRefreshable":true,"Criteria":"Passive","InternalName":"/Lotus/Upgrades/CosmeticEnhancers/Defensive/FreezeProcResist","CodexSecret":true}|link=Arcane_Warmth|{{Arcane|Arcane Warmth}}
+</gallery>
+
+===Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+InsulationMod.png|alt=Insulation{"Transmutable":true,"Type":"Warframe","Description":"+60% <DT_FREEZE_COLOR>Cold Resistance","Tradable":true,"UpgradeTypes":["AVATAR_DAMAGE_TAKEN"],"BaseDrain":"4","MaxRank":"5","Icon":"Insulation.png","Link":"Insulation","Image":"InsulationMod.png","Name":"Insulation","Introduced":"8","Polarity":"Vazarin","Rarity":"Common","InternalName":"/Lotus/Upgrades/Mods/Warframe/AvatarDamageResistanceIce","CodexSecret":false}|link=Insulation|{{M|Insulation}}
+OrgoneTuningMatrixMod.png|alt=Orgone Tuning Matrix{"Transmutable":false,"Type":"Railjack Aura","Rarity":"Uncommon","Tradable":true,"BaseDrain":"-2","MaxRank":"5","Link":"Orgone Tuning Matrix","Icon":"OrgoneTuningMatrix.png","Image":"OrgoneTuningMatrixMod.png","Name":"Orgone Tuning Matrix","Introduced":"29.10","Description":"+22.5% Forge Capacity\r\n-15% Forge Cooldown\r\n+15% Elemental Resistance\r\n+18% Turret Heat Capacity","Polarity":"Naramon","InternalName":"/Lotus/Upgrades/Mods/Railjack/Engineering/LavanEngineerMatrix","CodexSecret":false}|link=Orgone_Tuning_Matrix|{{M|Orgone Tuning Matrix}}
+</gallery>
+===Enemies===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+TheFragmentedSuzerain.png|link=The Fragmented|[[The Fragmented]] (Immune)
+</gallery>
+
+==Additional Effects==
+Some mods and arcanes add additional effects when a {{D|Cold}} status effect occurs, dealing {{D|Cold}} damage, or causing Freeze.
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+File:ArchonFlowMod.png|link=Archon_Flow|alt=Archon Flow{"Description":"+185% Energy Max\r\nEnemies killed by <DT_FREEZE_COLOR>Cold Abilities have 10% chance to drop an Energy Orb. Cooldown: 10s","UpgradeTypes":["AVATAR_POWER_MAX"],"MaxRank":"10","Image":"ArchonFlowMod.png","Introduced":"32.0.2","InternalName":"/Lotus/Upgrades/Mods/Warframe/Kahl/KahlAvatarPowerMaxMod","Transmutable":false,"Type":"Warframe","Rarity":"Legendary","Tradable":true,"BaseDrain":"6","Polarity":"Naramon","Name":"Archon Flow","Incompatible":["Flow","Primed Flow","Flawed Flow"],"Link":"Archon Flow","Icon":"ArchonFlow.png","Class":"Archon"}|{{M|Archon Flow}}
+File:PrimaryFrostbite.png|link=Primary_Frostbite|alt=Primary Frostbite{"Rarity":"Rare","Type":"Primary","Description":"+3% Critical Damage and +2.25% Multishot for 12s. Stacks up to 40x","Link":"Primary Frostbite","Icon":"PrimaryFrostbite64x.png","UpgradeTypes":["WEAPON_CRIT_DAMAGE","WEAPON_FIRE_ITERATIONS"],"MaxRank":"5","IncompatibilityTags":["OPERATOR_SUIT"],"Dissolution":"22","Image":"PrimaryFrostbite.png","Name":"Primary Frostbite","Introduced":"32.2","IsRefreshable":true,"Criteria":"On <DT_FREEZE_COLOR>Cold Status Effect","InternalName":"/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryCritDmgAndMultishotOnColdProc","CodexSecret":false}|{{Arcane|Primary Frostbite}}
+File:SecondaryShiver.png|link=Secondary_Shiver|alt=Secondary Shiver{"Type":"Secondary","Rarity":"Legendary","Link":"Secondary Shiver","Description":"Enemies take +45% damage per <DT_FREEZE_COLOR>Cold Status","UpgradeTypes":["WEAPON_DAMAGE_PER_ACTIVE_PROC_STACK_ON_VICTIM"],"MaxRank":"5","Icon":"SecondaryShiver64x.png","Criteria":"","Image":"SecondaryShiver.png","Name":"Secondary Shiver","Introduced":"33","IsRefreshable":true,"Dissolution":"84","InternalName":"/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryExtraDamagePerFreezeStack","CodexSecret":false}|{{Arcane|Secondary Shiver}}
+File:ArcaneIceStorm.png|link=Arcane_Ice_Storm|alt=Arcane Ice Storm{"Rarity":"Rare","Type":"Warframe","Description":"Gain +2% Ability Strength and +2% Ability Duration for 15s. Stacks up to 20x.","Link":"Arcane Ice Storm","Icon":"ArcaneIceStorm64x.png","UpgradeTypes":["AVATAR_ABILITY_STRENGTH","AVATAR_ABILITY_DURATION","GAMEPLAY_FREE_REVIVE_COUNT"],"MaxRank":"5","IncompatibilityTags":["OPERATOR_SUIT"],"Dissolution":"24","Image":"ArcaneIceStorm.png","Name":"Arcane Ice Storm","Introduced":"36","IsRefreshable":true,"Criteria":"On Enemy Frozen","InternalName":"/Lotus/Upgrades/CosmeticEnhancers/Offensive/AbilityPowerOnFreeze","CodexSecret":true}|{{Arcane|Arcane Ice Storm}}
+File:MeleeCareen.png|link=Melee Careen|alt=Melee Careen{"Rarity":"Rare","Type":"Warframe","Description":"x2.50 Melee Damage against Frozen enemies. On Roll: Freeze enemies in a 5.5m radius with a 2s Cooldown.","Link":"Melee Careen","Icon":"MeleeCareen64x.png","UpgradeTypes":["WEAPON_DAMAGE"],"MaxRank":"5","IncompatibilityTags":["OPERATOR_SUIT"],"Dissolution":"24","Image":"MeleeCareen.png","Name":"Melee Careen","Introduced":"41","IsRefreshable":true,"Criteria":"On Roll","InternalName":"/Lotus/Upgrades/CosmeticEnhancers/Utility/FreezeEnemiesOnRoll","CodexSecret":true}|{{Arcane|Melee Careen}}
+</gallery>
+
+
+==Trivia==
+*While all other elemental mods utilize the {{Pol|Naramon}} polarity, cold damage mods that aren't associated with secondary effects (like added status chance) use the {{Pol|Vazarin}} polarity, which is tied to defensive mods.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Cold damage visual effects.png|Cold damage visual effects
+Screenshot 492 .png|An enemy dead while affected by a cold proc
+Screenshot 509.png|An enemy affected by a cold proc
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42}}
+;Player Cold Status & Arctic Eximus Rework
+
+In this update we adjusted Arctic Eximus enemies to make them less punishing and make it easier to engage in counter-play. This led to some changes in the way that Cold Status affects players.
+
+'''Player Cold Status Changes*'''
+
+'''Before:''' Getting afflicted with Cold Status would result in a 25% slowdown with no stacking for a 6 second duration.
+
+*'''Now:''' Cold Status results in a 10% slowdown with an individual 6 second duration per stack, stacking up to 4 times for Players. (Players remain unable to be frozen solid)
+
+This change results in an overall potential of having up to 40% speed reduction but does not halt player movement completely.
+
+''<nowiki>*</nowiki> These changes only apply to Cold Status against players (from sources such as environmental hazards and enemies), and does not alter how Cold Status affects enemies.''
+
+'''Arctic Eximus Changes'''
+
+The Arctic Eximus has a unique application of the Cold Status effect. Under the previous system, the Arctic Eximus’ slowdown aura was invisible and much larger than their Globe suggested. Multiple Arctic Eximus auras could also overlap and apply their slowdown exponentially which made playing against them frustrating. To address this and to add more clarity to how their effects function we have made the following changes:
+
+*Arctic Eximus enemies no longer have an invisible slowdown aura, instead the area of effect of their Cold Status is limited to the inside of their Globe.
+*Arctic Eximus enemies now apply one stack of Cold Status per second if a player is inside their Globe.
+*While inside of their Globe, Cold Status will stack up to 4 times for Players without duration.
+*Cold Status from the Arctic Eximus is immediately removed if you leave the Globe, destroy the Globe, or kill the Eximus.
+
+We believe that these changes will make taking on these enemies more engaging and will also reduce the frustration that may arise from being held in place by status effects. As with any change we are open to your feedback on this rework.
+
+{{ver|37}}
+*Fixed an issue where the 25% extra damage to incapacitated enemies from Vauban’s Passive was not applying to frozen solid enemies due to maximum Cold stacks.
+
+{{ver|36.0.3}}
+*Fixed PH tag in the Cold Damage’s tooltip description.
+
+{{ver|36}}
+;Simplified Faction Resistances
+*Sentient:
+**Vulnerable to '''Cold'''
+
+;Status Effect Reworks
+
+'''Cold'''
+
+With Cold, we want to fully realize the fantasy of slowing, freezing and shattering your enemies. The existing Cold Status mechanic of slowing enemies is unchanged, but now has a new mechanic upon applying Max Stacks - freezing your foes!
+
+'''Cold Changes:'''
+*Cold now has a maximum cap of 10 stacks (was 9).
+*Applying 10 Cold stacks to a foe will make them '''Frozen''' for 3 seconds. Frozen enemies cannot move, will not recharge Shields, and receive double Critical Damage. After the Frozen effect wears off, 3 Cold stacks will remain. 
+**Bosses, such as Alad V or Kela De Thaym, will be unable to be Frozen since they cannot accumulate 10 Cold stacks.
+
+{{ver|33.6}}<br/>
+<u>Cold Changes:</u>
+
+Freeze Status Effect Changes:
+
+*Increased the maximum amount of stacks from 8 to 9.
+*Increased the additional per-stack Slow from 3.5% to 5%. 
+*Increased the maximum Slow effect from 75% to 90%. 
+*While we previously mentioned buffing Cold Slow Effect to 85% in our Citrine’s Last Wish update, we mistakenly only increased it to 75% instead. 
+
+Freeze Status Effect Additions:
+*Increased the Critical Damage taken by an enemy by 10% on initial Status Effect Subsequent Stacks increase this debuff by 5%, up to a maximum of 50%. This is additive after mods, not before.
+
+{{ver|32.3}}
+;Cold Status Effect Changes&#58;
+
+Cold Damage has traditionally been one of the lesser-used and valued Status Effects within the community, as its effect on foes may not be as noticeable compared to its peers. As a result, we’ve decided to to make the following changes: 
+
+*Increased base Slow from 25% to 50%.
+*Max stacks reduced from from 10 to 8.
+
+Final result of the above is an overall increase in the Max Slow from 70% to 85%.
+
+{{ver|27.2}}
+*The first Cold Status Effect deals 25% slow. Subsequent Cold Status Effects deal +5% slow for a total of 70% slow at 10 procs. Each Cold Status has a duration of 6 seconds.
+
+{{ver|11}}
+*Introduced.
+}}
+{{DamageNav}}
+[[de:Schaden 2.0/Kälteschaden]]
+[[es:Daño Frío]]
+[[fr:Dégâts/Dégâts Glace]]
+[[ru:Урон/Холод]]
+{{DISPLAYTITLE:Cold Damage}}
+[[Category:Mechanics]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Cold Damage]]
+[[Category:Update 11]]
+[[Category:Slow]]

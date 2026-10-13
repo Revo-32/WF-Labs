@@ -1,0 +1,81 @@
+{{ArcaneBox}}
+'''Arcane Strike''' is an [[Arcane Enhancement]] that provides a 15% chance on each hit with any weapon to increase the speed of [[melee]] attacks for 18 seconds.
+
+Can be sold for {{cc|500}}.
+
+==Effect==
+{| class="emodtable"
+|-
+! [[Arcane Enhancement#Rank|Rank]]
+! Attack Speed Bonus
+|-
+| 0 || +10%
+|-
+| 1 || +20%
+|-
+| 2 || +30%
+|-
+| 3 || +40%
+|-
+| 4 || +50%
+|-
+| 5 || +60%
+|}
+
+{{Clr}}
+{{Acquisition|*Awarded for killing or capturing the [[Eidolon Gantulyst]].
+*Dropped in Rotation C of [[Orphix]] [[Venus Proxima]] or [[Veil Proxima]] missions.
+*May appear as a [[The Circuit|Circuit]] Tier 1, 3, 4, 6, 7, or 9 reward on a weekly rotational basis.}}
+
+===History=== 
+*Arcane Strike was first introduced in the [[Trial]] mission [[The Law of Retribution]], which was retired in {{ver|22.14}}.
+*The [[Operation: Scarlet Spear]] event sold Arcane Strike from [[Little Duck]] for 1,500 {{Resource|Scarlet Credits}}.
+*The [[Operation: Orphix Venom]] event sold Arcane Strike from [[Father]] for 300 {{Resource|Phasic Cells}}.
+*The [[Operation: Gargoyle's Cry]] event sold Arcane Strike from the [[Jahu Gargoyle|Vigile Jahu Gargoyle]] for 5 {{Resource|Grotesque Splinter}}.
+*The [[Operation: Belly of the Beast]] event sold Arcane Strike from [[Ordis]] for 3 {{Resource|Volatile Motes}} in the first run of the event, and 4 Motes in the second, with a purchase limit of 42.
+*The [[Operation: Eight Claw]] event sold Arcane Strike from [[Dominus Thrax]] in bundles of 7, costing 2 {{Resource|Dominus Aureus}}, with a purchase limit of 3 (21 Arcanes in total).
+
+==Notes ==
+*The increase in attack speed is additive to mods like {{M|Fury}}.
+*Also triggers on hits by ranged weapons, Warframe powers, or sentinels.
+* Arcane Strike also affects the attack speed of {{A|Exalted Blade}}, {{A|Hysteria}}, {{A|Primal Fury}}, and {{A|Blade Storm}}.
+*Affects [[Archmelee]] in [[Archwing]] missions.
+
+==Tips==
+*Particularly effective with area effects that hit many times.
+**{{WF|Vauban}}'s {{A|Bastille}}
+**{{WF|Gauss}}' {{A|Thermal Sunder}}, which can be subsumed to [[Helminth]]
+**{{WF|Saryn}}'s {{A|Spores}}
+**{{WF|Equinox}}'s {{A|Mend & Maim}} while she is in day form
+**{{WF|Titania}}'s {{A|Razorwing}}
+**{{Weapon|Torid}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|31.6}}
+;ARCANE STAT CHANGES PER RANK
+
+We’ve adjusted the values of older Arcanes with the goal of making lower rank Arcanes more viable, and more desirable while collecting as a result. In short, there are three stats that each Arcane tends to have (speaking generally) -- for example, a percentage chance, a stat buff, and the duration of the buff.
+
+Certain Arcanes increase all of these stats per rank (making them scale exponentially), but we are changing it so that only one stat is affected by rank (making it scale linearly). The other stats will now be at the max-rank value regardless of the Arcane Rank, thereby buffing lower-rank Arcanes as a result.
+
+;Arcane Strike
+On Hit: 15% (was 3%) chance for +10%/60% Attack Speed to Melee Weapons for 18s (was 3s)
+
+{{ver|22.12}}
+*Now has a base value of 10%.
+
+{{ver|16}}
+*Introduced.
+}}
+{{ArcaneNav}}
+[[de:Arkana Hieb]]
+[[es:Ataque arcano]]
+[[Category:Arcane Enhancements]]
+[[Category:Equipment]]
+[[Category:Mechanics]]
+[[Category:Update 16]]
+[[uk:Містичний удар]]
+[[Category:Eidolon Arcanes]]
+[[Category:Gantulyst Arcanes]]
+[[Category:Orphix Arcanes]]

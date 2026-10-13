@@ -1,0 +1,64 @@
+{{ArcaneBox}}'''Arcane Truculence''' is an [[Arcane Enhancement]] for Warframes that releases a radial attack applying 10 stacks of {{D|Viral}} damage for every 3,000 [[Overguard]] they obtain.
+
+==Effect==
+{| class="emodtable"
+|-
+!Rank
+!Attack Radius
+|-
+|0||5m
+|-
+|1||10m
+|-
+|2||15m
+|-
+|3||20m
+|-
+|4||25m
+|-
+|5||30m
+|-
+|}
+
+{{Acquisition|*Can be bought from [[Eleanor]] of {{Faction|The Hex}} for {{sc|7,500}} at '''Rank 4 - Hot & Fresh'''.
+*Rewarded from the [[1999 Calendar]].
+*Rewarded from Techrot Safes in [[Höllvania]] missions.
+*Rewarded from Scaldra Caches in Höllvania [[Exterminate]] missions.
+*Dropped by the {{E|H-09 Efervon Tank}} in Höllvania [[Assassination]] missions.
+*Rewarded from Höllvania [[Faceoff]] missions.
+*Dropped by the {{E|Scaldra Screamer}} in Höllvania [[Stage Defense]] missions.}}
+==Notes==
+*The viral wave is created every time you achieve a multiple of 3,000 Overguard (including 6,000, 9,000, and so on), whether you had no Overguard before or if you already had an existing amount applied to you.
+*In the top-right side of your screen the arcane's icon will appear with a percentage counter indicating your progress towards the next overguard threshold, and thus the next viral wave.
+*The viral wave respects the line-of-sight requirement and does not bypass walls and obstacles.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40}}
+*The following Arcane Collections are now available for Vosfor in Loid’s Arcane Dissolution: 
+**Hӧllvania Arcane Collection (includes the Hex and Temporal Archimedea Arcanes) 
+***Arcane Truculence
+
+{{ver|38.5}}<br/>
+'''Scaldra Screamers:'''
+
+Scaldra Screamers also have a few Arcanes stuffed in their pockets — you’ll find when you stop their shrieking that they end up dropping one! Each Scaldra Screamer will drop one of the following Arcanes:
+
+*Arcane Truculence
+
+;FIXES
+
+'''Misc. Fixes:'''
+*Fixed the description for Arcane reward in the 1999 Calendar being incorrect. 
+
+{{ver|38.0}}
+*Introduced.
+}}
+
+{{ArcaneNav}}
+[[es:Truculencia arcana]]
+[[Category:Arcane Enhancements]]
+[[Category:Update 38]]
+[[Category:Warframe Arcanes]]
+[[Category:Hex Arcanes]]
+[[fr:Arcane Truculence]]

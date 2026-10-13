@@ -1,0 +1,191 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Albrecht's Void experiments revealed the true destructive potential of this fist weapon. In Incarnon form, perform Heavy Slams to impale nearby enemies with spikes.}}
+
+'''Ruvox''' are {{Faction|Entrati}} fists made into an [[Incarnon]] weapon by [[Albrecht Entrati]]. Heavy Slams in Incarnon Form causes spikes to rise from the ground to impale enemies.
+
+==Characteristics==
+*This weapon deals pure {{D|Impact}} damage.
+*Stance slot has {{Pol|Vazarin}} polarity, matching {{M|Seismic Palm}} and {{M|Gaia's Tragedy}} stances.
+*As an [[Incarnon]] weapon, Ruvox has '''5''' evolution tiers with different perks that allow players to customize their Ruvox' stats.
+**Once unlocked, activate Incarnon Form by executing a Heavy Attack with a [[Melee Combo]] of 6x or higher.
+***When the transformation is ready, the combo counter will shimmer with Void energy.
+***Incarnon form lasts for '''90''' seconds and behaves as follows:
+****Heavy Slam attacks impale enemies on spikes.
+****'''+3''' [[Range]]
+****'''-35%''' [[Attack Speed]]
+****'''100%''' of {{D|Impact}} damage is converted to {{D|Puncture}} damage.
+
+{{Advantages}}
+{{Disadvantages}}
+
+{{Acquisition|Ruvox's blueprint and components can be obtained from [[Disruption]] [[Armatus]] on [[Deimos]], whose access requires completion of [[The Deadlock Protocol]] and [[Whispers in the Walls]]; all parts come from [[Rotation]] B.
+
+Alternatively they can be purchased from [[Loid (Original)|Loid]] in [[Sanctum Anatomica]] with {{Resource|Vessel Capillaries}} dropped by Disruption Armatus [[Demolisher]]s in quantities of 2-3 (5-7 on [[The Steel Path]]); each component requires 45, while the blueprint requires 180, totaling to 360 Vessel Capillaries. (2 of each component is required.)}}
+
+{{BuildAutomatic|type=Weapon|name=Ruvox}}
+
+== Incarnon Form ==
+
+When newly acquired from the [[Foundry]], players must acquire '''100''' kills with the Ruvox in order to gain access to its Incarnon transformation. Each challenge additionally grants 5,000 [[affinity]] to the weapon, affected by [[Affinity Booster]]s. The following Evolution tiers, their requirements for unlocking them, and their related perks, are shown below.
+
+=== Overview ===
+* Incarnon Form is charged by building [[Melee Combo]] to 6x, then using a [[Heavy Attack]]. Once activated, the Incarnon form lasts for '''90''' seconds.
+** Incarnon Form persists through all activities, such as holstering, [[bleedout]], or being [[disarm]]ed. However, Incarnon Form is removed upon [[death]].
+
+=== Evolutions ===
+
+{{clr}}
+{| class="wikitable"
+|+
+|-
+! colspan="3" | Evolution
+! Notes
+|-
+! colspan="3" | Evolution I Challenge !! Kill '''100''' enemies with the Ruvox.
+|-
+! EVO1
+| style="white-space: nowrap; text-align:center;" | '''Incarnon Form''' [[File:HeavyAtkVoidSpikesComboCt(xWhite).png|64px|center]]
+| 
+* Reach '''6x''' Combo and then [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form.
+* Heavy Slam attacks impale nearby enemies on Void Spikes.
+** '''+3''' [[Melee#Range|Range]]
+** '''-35%''' Max Melee [[Attack Speed]]
+** '''+100%''' of {{D|Impact}} Damage converted to {{D|Puncture}} Damage
+|
+* Heavy Slam attacks impale enemies within '''8 meters''' on Void spikes for '''1.5s + 1.0s * (combo multiplier - 1)''', for a maximum total duration of '''12.5 seconds'''.
+** The height from which the slam is performed does not affect the impale radius.
+* Melee Attack Speed curse is multiplicative to all other attack speed buffs.
+|-
+! colspan="3" | Evolution II Challenge !! Kill '''8''' [[Eximus]] with this weapon's Incarnon Transmutation
+|-
+! rowspan="3" | EVO2
+| style="white-space: nowrap; text-align:center;" | '''Orokin Reach''' [[File:MoreRange(xWhite).png|64px|center]]
+|
+* '''+1''' [[Melee#Range|Range]]
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Lethal Impetus''' [[File:IncarnonAttackSpeed(xWhite).png|64px|center]]
+|
+* On Kill: '''+15%''' [[Attack Speed]] for '''15s'''. Stacks up to '''3x'''.
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Gathering Momentum''' [[File:MoveSpdComboMult(xWhite).png|64px|center]]
+|
+* Gain '''+5%''' [[Movement Speed]] per Melee Combo Multiplier
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution III Challenge !! Inflict '''3''' Heavy Attacks on {{E|Scathing Whisper|Scathing}} and {{E|Mocking Whisper|Mocking Whispers}} in [[Albrecht's Laboratories]]
+|-
+! rowspan="3" | EVO3
+| style="white-space: nowrap; text-align:center;" | '''Shockwave Synergy''' [[File:IncarnonSlamDamage(xWhite).png|64px|center]]
+| 
+* For each enemy hit by Slam radius, gain '''4''' Combo Count.
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Seismic Slam''' [[File:IncarnonSlamRadius(xWhite).png|64px|center]]
+| 
+* '''+60%''' Slam Radius
+|
+* Does '''not''' affect the impale radius from Heavy Slam attacks.
+|-
+| style="white-space: nowrap; text-align:center;" | '''Adept Reflexes''' [[File:InitialComboCount(xWhite).png|64px|center]]
+| 
+* '''+20''' Initial Combo
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution IV Challenge !! Open '''20''' Conduits in [[Disruption]] on [[Armatus]], [[Deimos]]
+|-
+! rowspan="3" | EVO4
+| style="white-space: nowrap; text-align:center;" | '''Swift Transmute''' [[File:HeavyAttackTransformAt6x(xWhite).png|64px|center]]
+|
+* Reach '''3x''' [[Combo]] and [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Ternary Vault''' [[File:IncarnonTripleJump(xWhite).png|64px|center]]
+|
+* Gain '''+1''' mid-air jumps
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Inspiring Execution''' [[File:ComboFromFinishers(xWhite).png|64px|center]]
+|
+* '''+30%''' Combo Count Chance on [[Finisher]]s for '''20s'''
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution V Challenge !! Complete a Solo mission with an Incarnon Weapon equipped in every slot.
+|-
+! rowspan="3" | EVO5
+| style="white-space: nowrap; text-align:center;" | '''Brutal Efficiency''' [[File:HeavyEffOnMultImpaled(xWhite).png|64px|center]]
+|
+* Gain '''+40%''' Heavy Attack Efficiency for '''20s''' when impaling '''5''' or more enemies.
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Vulnerability Serum''' [[File:ImpaledStatusVuln(xWhite).png|64px|center]]
+|
+* Impaled enemies are '''+35%''' more vulnerable to [[Status Chance]]
+|
+* The status chance boost is a '''flat 35%''', allowing damage sources with '''0%''' status chance to inflict status procs.
+* '''Any''' source of damage can benefit from status chance vulnerability, not just Ruvox. This includes abilities.
+* AoE [[Status Effect]]s from other enemies such as {{D|Electricity}} can trigger new status effects on vulnerable enemies, allowing exponential damage growth with prolonged chaining.
+|-
+| style="white-space: nowrap; text-align:center;" | '''Permanent Perforation''' [[File:ImpaledPuncProcCrit(xWhite).png|64px|center]]
+| 
+* Enemies suffer '''5''' {{D|Puncture}} Status while impaled
+| style="text-align:center" | -
+|-
+|}
+
+
+==Tips==
+*Combining {{M|Corrupt Charge}} and '''Adept Reflexes''' grants a passive minimum 3x [[Melee Combo]], allowing '''Swift Transmute''' to immediately transform Ruvox at will.
+*{{M|Condition Overload}} does not work on heavy slam.
+
+==Trivia==
+*In [[Devstream 176]], Ruvox is mentioned to be {{WF|Dante}}'s [[Signature Weapon]], and are bundled together in the [[Dante Collection]]. However, this is not referenced in {{ver|35.5}} or the [[Codex]].
+*Ruvox is the most resource-intensive weapon with respect to {{Resource|Necracoil}}, costing 1,000 to build two of its gloves.
+
+==Gallery==
+<gallery>
+File:Dante with Ruvox.jpg|Dante with the Ruvox
+File:Kaz Adams Ruvox model promo.jpg
+File:Kaz-adams-entfistincarnon.jpg
+File:Kaz-adams-entfistincarnonhi.jpg
+File:Kaz-adams-entfistincarnontendrils.jpg|Incarnon mode
+File:Kaz-adams-entfistincarnontendrilshi.jpg
+File:Kaz-adams-entfistincarnonsketch.jpg|Concept art
+File:Grendel with Ruvox.jpeg
+File:Kaz-adams-excaltest.jpg
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39}}
+*Updated the Evolution I description for the Ruvox to specify a single Heavy Attack with x Combo multiplier is required instead of the previously written “Heavy Attacks”.
+*Increased the Initial Combo from Evolution III Adept Reflexes perk from 15 to 20 for the Ruvox. 
+**The goal with the change was to ensure that the perk can provide at least a full 2x damage. 
+
+{{ver|36}}
+*Fixed Ruvox Incarnon’s Damage stat not updating from Impact to Puncture when transformed to Incarnon Mode in the Arsenal stats.
+*Fixed Ruvox Finisher animation being unintentionally slow when Transforming.
+
+{{ver|35.5.8}}
+*Fixed Eximus kills not counting towards Ruvox’s Evolution II challenge (kill 8 Eximus with this weapon's Incarnon Transmutation) for Clients.
+
+{{ver|35.5.3}}
+*Enemies that are already in a ragdoll state will no longer be impaled by Ruvox's Heavy Slam Void Spikes.
+**This fixes several scenarios in which enemies could be insta-killed from a combination of the Void Spikes and other abilities with ragdoll effects (such as Nezha's Divine Spears or Hydroid's Tentacle Swarm).
+
+{{ver|35.5.2}}
+*Updated the Ruvox Blueprint description to indicate that they also drop in the Armatus Disruption mission on Deimos.
+*Fixed progress not tracking for the Ruvox’s Evolution IV challenge (Open X Conduits in Disruption on Armatus, Deimos), making it impossible to unlock.
+
+{{ver|35.5}}
+*Introduced.
+}}
+
+==See Also==
+*[[Incarnon]]
+
+{{WeaponNav}}

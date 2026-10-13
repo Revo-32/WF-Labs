@@ -1,0 +1,64 @@
+{{Top|Enemy|Corpus|Corpus|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Leverage bleeding-edge Granum tech with this massive heavy blade. Slam sends forth a cascading set of three shockwaves, while Heavy Slam unleashes a swath of shockwaves.}}
+'''Tenet Exec''' is a unique [[Tenet]] [[Heavy Blade]] with Slam Attacks that release a multitude of shockwaves.
+
+==Characteristics==
+*This weapon deals primarily {{D|Impact}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Rending Crane}} and {{M|Noble Cadence}} ([[Conclave]] only) stance.
+*Slam Attacks release a shockwave across the ground, ragdolling enemies. Shockwaves consist of up to 3 explosions that trigger every 5 meters in sequence.
+*Heavy Slam Attacks release 3 shockwaves in a fan.
+*Adversary Weapon:
+**Comes with an additional bonus {{D|Impact}}, {{D|Heat}}, {{D|Cold}}, {{D|Electricity}}, {{D|Toxin}}, {{D|Magnetic}}, or {{D|Radiation}} damage, which increases the listed base damage of the weapon by 25%-60%.
+***[[Valence Fusion]] can optionally change the resulting output damage type, and can upgrade the bonus increase (up to 60%).
+**[[Polarization|Polarizing]] the weapon increases its max [[rank]] by '''2''', capping at rank '''40''' after '''5''' polarizations, granting the weapon additional mod capacity.
+**{{Resource|Elemental Vice}} can be applied to the weapon after it has reached rank 40, allowing the bonus damage type to be swapped freely.
+**Unlike Tenet weapons directly acquired from Sisters, the listed [[Mastery Rank]] requirement '''is''' enforced.
+
+{{Advantages|
+}}
+{{Disadvantages|
+}}
+
+==Acquisition==
+{{Transclude|Adversary System/Weapons#Tenet Acquisition (Ergo Glast)}}
+
+{{StanceTable|ComboType=Slam,Heavy Slam}}
+
+==Notes==
+
+===Shockwave Mechanics===
+*Slam attacks send out a series of '''3''' shockwaves in a straight line. Heavy slam attacks send out '''3''' sets of '''3''' shockwaves in a spread.
+**Shockwaves travel in a line and trigger every '''5''' meters.
+***Maximum shockwave travel distance is '''not''' affected by Range mods such as {{M|Reach}}.
+**Shockwaves will stop at the first explosion that isn't on the ground at the same height, such as against walls, platform edges, and terrain elevation. If there are gaps between the initial slam and the explosions, it will not be interrupted.
+**Each heavy blade stance will trigger a shockwave on the last hit of the forward block combo. {{M|Tempo Royale}} can also trigger a shockwave with the single hit block combo.
+*Shockwave damage type distribution is 100% {{D|Impact}}, but innate bonus elemental damage applies to it.
+**Shockwave damage is affected by all melee mods and buffs that affect slams.
+**Heavy slam attack shockwave damage is affected by the [[Melee Combo]] multiplier and mods that affect heavy attacks.
+**Shockwaves have the same radial damage fall-off as the slam that triggered them; 70% falloff for normal slam attack shockwaves, and 50% for heavy slam attack shockwaves.
+*Regular slam attack shockwaves add to to the [[Melee Combo]], and benefit from Combo Count Chance mods like {{M|Quickening}} and {{M|True Punishment}}.
+*Shockwaves will trigger on hit effects such as {{M|Healing Return}}, {{M|Life Strike}} and {{M|Shattering Impact}}.
+*{{A|Hall of Mirrors}} clones copy the slam attacks, but '''not''' the shockwaves.
+*Shockwaves '''are not''' considered projectiles, so {{a|Magnetize}} and {{a|Navigator}} '''do not''' work on it.
+*Shockwaves will remove [[Invisible]] from {{A|Shroud of Dynar}}（especially when you use this it immediately after shockwave spawned）
+
+{{Transclude|Adversary System#Notes}}
+
+==Tips==
+==Trivia==
+*The weapon's name, Exec, might be an abbreviation of a business "executive".
+
+==Media==
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|30.5}}
+*Introduced.
+}}
+
+{{WeaponNav}}
+[[es:Exec tenet]]
+[[uk:Виконавець-догмат]]

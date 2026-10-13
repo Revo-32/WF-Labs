@@ -1,0 +1,73 @@
+{{Navigation|Whipclaw|Ensnare|Venari|Strangledome}}
+<onlyinclude>
+{{AbilityU10.3
+| name = Whipclaw
+| gameimage = Whipclaw130xWhite.png
+| cardimage = WhipclawMod.png
+| hotkey = 1
+| energy = 25
+| description = Send enemies reeling with a deafening whipcrack. Stats are boosted by the equipped melee weapon's mods.
+| strength = 100 / 112 / 125 / 150
+| range = 5 / 7 / 8 / 10 m (cast range)<br/>3 / 4 / 4 / 5 m (explosion radius)
+| duration = 
+| misc = 200 % (explosion radius range cap)<br/>2.0 x (Ensnare damage multiplier)<br/>50 % (Strangledome damage distribution)
+| cardonly = {{{1|}}}
+| info = *Khora expends {{Stat|Ability Efficiency|icon=only}}'''25''' [[energy]] to crack her whip toward the aiming reticle, creating an explosion up to {{Stat|Ability Range|icon=only}}'''5 / 7 / 8 / 10''' meters away in a {{Stat|Ability Range|icon=only}}'''3 / 4 / 4 / 5''' meters radius area around the first object or entity hit. All enemies within line of sight of the explosion receive {{Stat|Ability Strength|icon=only}}'''100 / 112 / 125 / 150''' base damage as a melee strike, while enemies at the center are also disoriented briefly, causing them to receive {{D|Stagger}} and {{D|Ragdoll}}.
+**Explosion radius is capped at <u>'''10'''</u> meters, achievable with '''200%''' {{Stat|Ability Range}}.
+***Melee range mods (e.g., {{M|Primed Reach}}) can increase the radius beyond the 10 meter cap.
+**Ability Strength and {{M|Accumulating Whipclaw}} are additive with each other and multiplicative to base damage (e.g., {{M|Pressure Point}}, {{Arcane|Arcane Fury}}).
+**Damage is distributed evenly between {{D|Impact}}, {{D|Puncture}}, and {{D|Slash}}.
+**Whipclaw has <u>'''25%'''</u> [[critical chance]], <u>'''2x'''</u> [[critical multiplier]], and <u>'''25%'''</u> [[status chance]].
+**Whipclaw is affected by [[Casting Speed]].
+**Whipclaw has a moddable Pseudo-[[Exalted Weapon]], '''{{Weapon|Whipclaw}}''', which does not provide an actual equippable weapon but can be modded and slotted with [[Arcane Enhancement]]s to boost the ability's performance.
+***Cannot perform [[Melee#Blocking|blocking]] or [[Melee#Heavy Attack|heavy attacks]] and as such cannot equip related mods (e.g., {{M|Parry}}, {{M|Reflex Coil}}, {{M|Mentor's Legacy}}, {{Arcane|Melee Animosity}}) and does not have an Exilus Slot.
+****Cannot benefit from {{M|Carnis Mandible}}'s heavy attack set effect.
+***Does not benefit from [[Attack Speed]] and as such cannot equip {{M|Fury}}. 
+****This means that {{M|Spoiled Strike}} provides no downside.
+***Cannot perform [[Finisher]]s and as such cannot equip {{M|Finishing Touch}} and {{Arcane|Melee Crescendo}}.
+***[[Riven Mod]]s are '''not''' generated for Whipclaw.
+**Whipclaw can be recast within a {{Stat|Ability Duration|icon=only}}'''5''' second window to perform a repeating combo chain, granting 20 [[Melee Combo#Ability Combo Counter|Ability Combo Counter]] points. Whipclaw gains <u>'''1x'''</u> additional damage per combo multiplier, up to '''<u>12x</u>''' damage at 12x combo.
+***Ability Combo functions like [[Melee Combo]] and, as such, benefits from [[Melee_Combo#Combo_Duration|Combo Duration]], [[Melee_Combo#Additional_Combo_Count_Chance|Additional Combo Count Chance]], and [[Melee_Combo#Initial_Combo|Initial Combo]]. It is also affected by {{Focus|Power Spike}}.
+**Because Whipclaw is counted as a melee strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+**Damage also affects [[Objects]], bypasses obstacles in the environment, and does '''not''' diminish with distance.
+*Whipclaw will strike toward the aiming reticle at the end of the animation, landing the attack when the whip is fully extended.
+**The explosion radius is centered on the closest physical object or surface in the player's crosshair, or the farthest area Whipclaw is able to reach.
+*Can be cast while moving and airborne.
+*Casting Whipclaw is an upper-body animation that allows movement and parkour [[Maneuvers]].
+*Khora's whip visually consists of a handle that resembles the {{Weapon|Hystrix}}'s model, alongside living metal spikes lining the thong, spine, and fall; four claw-like extensions comprise the lash of the whip, ending in the metallic adornments on Khora's body that match {{A|Venari}}'s selected battle posture. The whip is affected by Khora's chosen Appearance colors.
+*Whipclaw's radial explosion, the whip's energy lights and travel trail, are affected by Khora's chosen energy color.
+| interactions = 
+* Whipclaw inflicts <u>'''200%'''</u> damage against enemies affected by {{A|Ensnare}} and refreshes the propagation effect on ensnared enemies.
+* If at least one enemy captured by {{A|Strangledome}} is hit by Whipclaw, all other enemies in the same dome will each receive <u>'''50%'''</u> of the total damage. This also works on a Strangledome cast by an ally Khora. Additionally, Whipclaw's [[Critical Chance]] and [[Status Chance]] will reroll on each enemy separately.
+| augment = [[File:AccumulatingWhipclawMod.png|200px|left]]
+{{main|Accumulating Whipclaw}}
+{{#lst:Accumulating Whipclaw|intro}}
+{{#lsth:Accumulating Whipclaw|Stats}}
+{{clr}}
+| tips = *Whipclaw's radial explosion forms when Khora's whip is fully extended. You can adjust your aim to hit your target or elsewhere during this animation.
+*If your target is moving away too quickly during the animation, try to land the explosion on a nearby surface to catch your target in the area of effect.
+**The explosion's area of effect will bypass terrain and obstacles to hit enemies through walls, which pairs well with radar mods such as {{M|Enemy Sense}} and {{M|Animal Instinct}} to detect nearby enemies.
+*Cast Whipclaw directly on an enemy to knock it backward when it is hit by the radial burst.
+*Cast Whipclaw on enemies entangled by {{A|Ensnare}} for double damage. Ensnared enemies that survive Whipclaw will propagate again to pull in new enemies.
+*Cast Whipclaw on enemies captured by {{A|Strangledome}}. The initial target takes full damage from Whipclaw, while all other enemies in the dome take half damage. Damage, critical chance, critical multiplier, and status chance on all targets will benefit from your equipped melee mods.
+**Critical chance and status chance will proc on each enemy separately, inflicting them with potentially different damage amounts and [[Status Effect]]s.
+*Whipclaw's radial explosion can bypass Arctic [[Eximus]] bubbles to form inside directly.
+*Equip {{Arcane|Arcane Fury}} on Khora to increase damage.
+<noinclude>
+|max = {{WFmax|main|khora1}}
+</noinclude>
+| bugs = |
+}}</onlyinclude>
+
+==See Also==
+*{{WF|Khora}}
+__NOTOC__
+[[es:Látigo garra]]
+[[fr:Fouet Acéré]]
+[[Category:Khora]]
+[[Category:Ability Weapons]]
+[[Category:Impact Damage]]
+[[Category:Puncture Damage]]
+[[Category:Slash Damage]]
+[[Category:Line Of Sight Abilities]]
+[[uk:Пазурхлист]]

@@ -1,0 +1,1145 @@
+{
+  "retrievedAt": "2026-10-10",
+  "authority": "Digital Extremes Public Export / ko",
+  "sources": {
+    "ExportUpgrades": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "sha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "ExportWeapons": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportWeapons_ko.json!00_EbjufCglVfIC1GSoqzqSNg",
+      "sha256": "fd6c06b73131ebecc5723fcc6208794349ea0c9e815a73811ed847871d11696f"
+    }
+  },
+  "stanceIds": {
+    "Blind Justice": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbThreeMeleeTree",
+    "Decisive Judgement": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbTwoMeleeTree",
+    "Tranquil Cleave": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbOneMeleeTree",
+    "Sovereign Outcast": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbTwoMeleeTree",
+    "Gemini Cross": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbOneMeleeTree",
+    "Tempo Royale": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbThreeMeleeTree",
+    "Cleaving Whirlwind": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbTwoMeleeTree",
+    "Rending Crane": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbOneMeleeTree"
+  },
+  "records": {
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbTwoMeleeTree": {
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbTwoMeleeTree",
+      "name": "소버린 아웃캐스트",
+      "polarity": "AP_TACTIC",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": -2,
+      "fusionLimit": 3,
+      "compatName": "톤파",
+      "type": "STANCE",
+      "description": [
+        "기이한 스타일의 휩쓸기 공격입니다."
+      ],
+      "tags": [
+        "Sovereign Outcast"
+      ]
+    },
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbOneMeleeTree": {
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/TonfaCmbOneMeleeTree",
+      "name": "제미니 크로스",
+      "polarity": "AP_ATTACK",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": -2,
+      "fusionLimit": 3,
+      "compatName": "톤파",
+      "type": "STANCE",
+      "description": [
+        "광범위한 베기 공격과 빠른 잽을 선보이는 공격입니다."
+      ],
+      "tags": [
+        "Gemini Cross"
+      ]
+    },
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbTwoMeleeTree": {
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbTwoMeleeTree",
+      "name": "디사이시브 저지먼트",
+      "polarity": "AP_ATTACK",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": -2,
+      "fusionLimit": 3,
+      "compatName": "니카나",
+      "type": "STANCE",
+      "description": [
+        "양손으로 사납게 몰아치는 연속기입니다."
+      ],
+      "tags": [
+        "Decisive Judgement"
+      ]
+    },
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbThreeMeleeTree": {
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbThreeMeleeTree",
+      "name": "블라인드 저스티스",
+      "polarity": "AP_ATTACK",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": -2,
+      "fusionLimit": 3,
+      "compatName": "니카나",
+      "type": "STANCE",
+      "description": [
+        "강력한 베기와 찌르기 일격이 돋보이는 역수 검법입니다."
+      ],
+      "tags": [
+        "Blind Justice"
+      ]
+    },
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbOneMeleeTree": {
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/KatanaCmbOneMeleeTree",
+      "name": "트랭퀼 클리브",
+      "polarity": "AP_ATTACK",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": -2,
+      "fusionLimit": 3,
+      "compatName": "니카나",
+      "type": "STANCE",
+      "description": [
+        "반달형으로 휘어지며 강하게 몰아치는 연속기입니다."
+      ],
+      "tags": [
+        "Tranquil Cleave"
+      ]
+    },
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbTwoMeleeTree": {
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbTwoMeleeTree",
+      "name": "클리빙 훨윈드",
+      "polarity": "AP_DEFENSE",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": -2,
+      "fusionLimit": 3,
+      "compatName": "중도검",
+      "type": "STANCE",
+      "description": [
+        "회전하는 마지막 공격을 가진 반달 모양의 공격입니다."
+      ],
+      "tags": [
+        "Cleaving Whirlwind"
+      ]
+    },
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbThreeMeleeTree": {
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbThreeMeleeTree",
+      "name": "템포 로얄",
+      "polarity": "AP_DEFENSE",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": -2,
+      "fusionLimit": 3,
+      "compatName": "중도검",
+      "type": "STANCE",
+      "description": [
+        "휘는 베기 공격을 포함한 휩쓰는 공격입니다."
+      ],
+      "tags": [
+        "Tempo Royale"
+      ]
+    },
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbOneMeleeTree": {
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AxeCmbOneMeleeTree",
+      "name": "렌딩 크레인",
+      "polarity": "AP_ATTACK",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": -2,
+      "fusionLimit": 3,
+      "compatName": "중도검",
+      "type": "STANCE",
+      "description": [
+        "강한 충격을 주는 내려찍기 연속기입니다."
+      ],
+      "tags": [
+        "Rending Crane"
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponToxinDamageMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponToxinDamageMod",
+      "name": "피버 스트라이크",
+      "polarity": "AP_TACTIC",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": 6,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Fever Strike"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% <DT_POISON_COLOR>독성"
+          ]
+        },
+        {
+          "stats": [
+            "+30% <DT_POISON_COLOR>독성"
+          ]
+        },
+        {
+          "stats": [
+            "+45% <DT_POISON_COLOR>독성"
+          ]
+        },
+        {
+          "stats": [
+            "+60% <DT_POISON_COLOR>독성"
+          ]
+        },
+        {
+          "stats": [
+            "+75% <DT_POISON_COLOR>독성"
+          ]
+        },
+        {
+          "stats": [
+            "+90% <DT_POISON_COLOR>독성"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponMeleeDamageMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponMeleeDamageMod",
+      "name": "프레셔 포인트",
+      "polarity": "AP_ATTACK",
+      "rarity": "COMMON",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Pressure Point"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+20% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+40% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+60% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+80% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+100% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+120% 근접 피해"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponFreezeDamageMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponFreezeDamageMod",
+      "name": "노스 윈드",
+      "polarity": "AP_DEFENSE",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": 6,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "North Wind"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% <DT_FREEZE_COLOR>냉기"
+          ]
+        },
+        {
+          "stats": [
+            "+30% <DT_FREEZE_COLOR>냉기"
+          ]
+        },
+        {
+          "stats": [
+            "+45% <DT_FREEZE_COLOR>냉기"
+          ]
+        },
+        {
+          "stats": [
+            "+60% <DT_FREEZE_COLOR>냉기"
+          ]
+        },
+        {
+          "stats": [
+            "+75% <DT_FREEZE_COLOR>냉기"
+          ]
+        },
+        {
+          "stats": [
+            "+90% <DT_FREEZE_COLOR>냉기"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponFireRateMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponFireRateMod",
+      "name": "퓨리",
+      "polarity": "AP_ATTACK",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Fury"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+5% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+10% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+15% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+20% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+25% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+30% 공격 속도"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponFireDamageMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponFireDamageMod",
+      "name": "몰튼 임팩트",
+      "polarity": "AP_TACTIC",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": 6,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Molten Impact"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% <DT_FIRE_COLOR>화염"
+          ]
+        },
+        {
+          "stats": [
+            "+30% <DT_FIRE_COLOR>화염"
+          ]
+        },
+        {
+          "stats": [
+            "+45% <DT_FIRE_COLOR>화염"
+          ]
+        },
+        {
+          "stats": [
+            "+60% <DT_FIRE_COLOR>화염"
+          ]
+        },
+        {
+          "stats": [
+            "+75% <DT_FIRE_COLOR>화염"
+          ]
+        },
+        {
+          "stats": [
+            "+90% <DT_FIRE_COLOR>화염"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponElectricityDamageMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponElectricityDamageMod",
+      "name": "쇼킹 터치",
+      "polarity": "AP_TACTIC",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": 6,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Shocking Touch"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% <DT_ELECTRICITY_COLOR>전기"
+          ]
+        },
+        {
+          "stats": [
+            "+30% <DT_ELECTRICITY_COLOR>전기"
+          ]
+        },
+        {
+          "stats": [
+            "+45% <DT_ELECTRICITY_COLOR>전기"
+          ]
+        },
+        {
+          "stats": [
+            "+60% <DT_ELECTRICITY_COLOR>전기"
+          ]
+        },
+        {
+          "stats": [
+            "+75% <DT_ELECTRICITY_COLOR>전기"
+          ]
+        },
+        {
+          "stats": [
+            "+90% <DT_ELECTRICITY_COLOR>전기"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponDamageIfVictimProcActive": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponDamageIfVictimProcActive",
+      "name": "컨디션 오버로드",
+      "polarity": "AP_ATTACK",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": 10,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Condition Overload"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "목표물에게 걸린 각 상태 이상마다 +13.3% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "목표물에게 걸린 각 상태 이상마다 +26.7% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "목표물에게 걸린 각 상태 이상마다 +40% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "목표물에게 걸린 각 상태 이상마다 +53.3% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "목표물에게 걸린 각 상태 이상마다 +66.7% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "목표물에게 걸린 각 상태 이상마다 +80% 근접 피해"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponCritDamageMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponCritDamageMod",
+      "name": "오르건 섀터",
+      "polarity": "AP_ATTACK",
+      "rarity": "COMMON",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Organ Shatter"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% 치명타 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+30% 치명타 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+45% 치명타 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+60% 치명타 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+75% 치명타 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+90% 치명타 피해"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/WeaponCritChanceMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponCritChanceMod",
+      "name": "트루 스틸",
+      "polarity": "AP_ATTACK",
+      "rarity": "COMMON",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "True Steel"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+20% 치명타 확률 (강 공격 시 2배)"
+          ]
+        },
+        {
+          "stats": [
+            "+40% 치명타 확률 (강 공격 시 2배)"
+          ]
+        },
+        {
+          "stats": [
+            "+60% 치명타 확률 (강 공격 시 2배)"
+          ]
+        },
+        {
+          "stats": [
+            "+80% 치명타 확률 (강 공격 시 2배)"
+          ]
+        },
+        {
+          "stats": [
+            "+100% 치명타 확률 (강 공격 시 2배)"
+          ]
+        },
+        {
+          "stats": [
+            "+120% 치명타 확률 (강 공격 시 2배)"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeDamageModExpert": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/Expert/WeaponMeleeDamageModExpert",
+      "name": "프라임드 프레셔 포인트",
+      "polarity": "AP_ATTACK",
+      "rarity": "LEGENDARY",
+      "codexSecret": true,
+      "baseDrain": 4,
+      "fusionLimit": 10,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Primed Pressure Point"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+30% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+45% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+60% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+75% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+90% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+105% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+120% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+135% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+150% 근접 피해"
+          ]
+        },
+        {
+          "stats": [
+            "+165% 근접 피해"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/Expert/WeaponFireRateModExpert": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/Expert/WeaponFireRateModExpert",
+      "name": "프라임드 퓨리",
+      "polarity": "AP_ATTACK",
+      "rarity": "LEGENDARY",
+      "codexSecret": true,
+      "baseDrain": 4,
+      "fusionLimit": 10,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Primed Fury"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+5% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+10% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+15% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+20% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+25% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+30% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+35% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+40% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+45% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+50% 공격 속도"
+          ]
+        },
+        {
+          "stats": [
+            "+55% 공격 속도"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/Event/ComboStatusChanceMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/Event/ComboStatusChanceMod",
+      "name": "위핑 운즈",
+      "polarity": "AP_ATTACK",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 5,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Weeping Wounds"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "연속기 배수 당 +6.7% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +13.3% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +20% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +26.7% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +33.3% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +40% 상태 이상 확률"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/Event/ComboCritChanceMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/Event/ComboCritChanceMod",
+      "name": "블러드 러쉬",
+      "polarity": "AP_ATTACK",
+      "rarity": "UNCOMMON",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 10,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Blood Rush"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "연속기 배수 당 +3.6% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +7.3% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +10.9% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +14.6% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +18.2% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +21.8% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +25.5% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +29.1% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +32.8% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +36.4% 치명타 확률 누적"
+          ]
+        },
+        {
+          "stats": [
+            "연속기 배수 당 +40% 치명타 확률 누적"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/DualStat/PoisonEventMeleeMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/PoisonEventMeleeMod",
+      "name": "비럴런트 스커지",
+      "polarity": "AP_ATTACK",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 3,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Virulent Scourge"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% <DT_POISON_COLOR>독성",
+            "+15% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+30% <DT_POISON_COLOR>독성",
+            "+30% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+45% <DT_POISON_COLOR>독성",
+            "+45% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+60% <DT_POISON_COLOR>독성",
+            "+60% 상태 이상 확률"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/DualStat/IceEventMeleeMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/IceEventMeleeMod",
+      "name": "비셔스 프로스트",
+      "polarity": "AP_ATTACK",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 3,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Vicious Frost"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% <DT_FREEZE_COLOR>냉기",
+            "+15% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+30% <DT_FREEZE_COLOR>냉기",
+            "+30% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+45% <DT_FREEZE_COLOR>냉기",
+            "+45% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+60% <DT_FREEZE_COLOR>냉기",
+            "+60% 상태 이상 확률"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/DualStat/FireEventMeleeMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/FireEventMeleeMod",
+      "name": "볼캐닉 엣지",
+      "polarity": "AP_ATTACK",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 3,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Volcanic Edge"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% <DT_FIRE_COLOR>화염",
+            "+15% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+30% <DT_FIRE_COLOR>화염",
+            "+30% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+45% <DT_FIRE_COLOR>화염",
+            "+45% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+60% <DT_FIRE_COLOR>화염",
+            "+60% 상태 이상 확률"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Upgrades/Mods/Melee/DualStat/ElectEventMeleeMod": {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/ElectEventMeleeMod",
+      "name": "볼택 스트라이크",
+      "polarity": "AP_ATTACK",
+      "rarity": "RARE",
+      "codexSecret": false,
+      "baseDrain": 4,
+      "fusionLimit": 3,
+      "compatName": "근접 무기",
+      "type": "MELEE",
+      "tags": [
+        "Voltaic Strike"
+      ],
+      "levelStats": [
+        {
+          "stats": [
+            "+15% <DT_ELECTRICITY_COLOR>전기",
+            "+15% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+30% <DT_ELECTRICITY_COLOR>전기",
+            "+30% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+45% <DT_ELECTRICITY_COLOR>전기",
+            "+45% 상태 이상 확률"
+          ]
+        },
+        {
+          "stats": [
+            "+60% <DT_ELECTRICITY_COLOR>전기",
+            "+60% 상태 이상 확률"
+          ]
+        }
+      ]
+    },
+    "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinnerPrime/TonfaContestWinnerPrimeWeapon": {
+      "name": "크로넨 프라임",
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinnerPrime/TonfaContestWinnerPrimeWeapon",
+      "codexSecret": false,
+      "damagePerShot": [
+        21.200001,
+        21.200001,
+        169.60001,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "totalDamage": 212,
+      "description": "오늘의 전투를 위해 벼려진 고대의 칼날입니다.",
+      "criticalChance": 0.22,
+      "criticalMultiplier": 2,
+      "procChance": 0.34000003,
+      "fireRate": 1.1666667,
+      "masteryReq": 13,
+      "productCategory": "Melee",
+      "slot": 5,
+      "omegaAttenuation": 0.69999999,
+      "blockingAngle": 60,
+      "comboDuration": 5,
+      "followThrough": 0.60000002,
+      "range": 2.5,
+      "slamAttack": 424,
+      "slamRadialDamage": 424,
+      "slamRadius": 8,
+      "slideAttack": 424,
+      "heavyAttackDamage": 848,
+      "heavySlamAttack": 848,
+      "heavySlamRadialDamage": 636,
+      "heavySlamRadius": 9,
+      "windUp": 0.69999999
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKatana/PrimeNikana": {
+      "name": "니카나 프라임",
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKatana/PrimeNikana",
+      "codexSecret": false,
+      "damagePerShot": [
+        9.9000006,
+        9.9000006,
+        178.2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "totalDamage": 198,
+      "description": "오로킨 제국이 몰락하기 전 만들어진 고대의 검인 니카나 프라임의 검날은 수세기를 넘어 실전된 제작 기법과 다르게 여전히 그 어떤 현대의 니카나의 날보다 날카롭습니다.",
+      "criticalChance": 0.28,
+      "criticalMultiplier": 2.4000001,
+      "procChance": 0.27999997,
+      "fireRate": 1.0833334,
+      "masteryReq": 12,
+      "productCategory": "Melee",
+      "slot": 5,
+      "omegaAttenuation": 0.60000002,
+      "blockingAngle": 55,
+      "comboDuration": 5,
+      "followThrough": 0.69999999,
+      "range": 2.5,
+      "slamAttack": 594,
+      "slamRadialDamage": 396,
+      "slamRadius": 6,
+      "slideAttack": 396,
+      "heavyAttackDamage": 990,
+      "heavySlamAttack": 792,
+      "heavySlamRadialDamage": 594,
+      "heavySlamRadius": 7,
+      "windUp": 0.5
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGram/PrimeGram": {
+      "name": "그람 프라임",
+      "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeGram/PrimeGram",
+      "codexSecret": false,
+      "damagePerShot": [
+        60,
+        15,
+        225,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "totalDamage": 300,
+      "description": "새로 태어난, 도검류의 조상이 귀환했습니다.",
+      "criticalChance": 0.31999999,
+      "criticalMultiplier": 2.5999999,
+      "procChance": 0.31999999,
+      "fireRate": 0.80000007,
+      "masteryReq": 14,
+      "productCategory": "Melee",
+      "slot": 5,
+      "omegaAttenuation": 0.80000001,
+      "blockingAngle": 55,
+      "comboDuration": 5,
+      "followThrough": 0.60000002,
+      "range": 2.9000001,
+      "slamAttack": 900,
+      "slamRadialDamage": 600,
+      "slamRadius": 8,
+      "slideAttack": 600,
+      "heavyAttackDamage": 1800,
+      "heavySlamAttack": 300,
+      "heavySlamRadialDamage": 900,
+      "heavySlamRadius": 9,
+      "windUp": 1.1
+    }
+  }
+}

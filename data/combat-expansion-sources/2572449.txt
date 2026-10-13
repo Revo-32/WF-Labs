@@ -1,0 +1,76 @@
+<onlyinclude>{{EditTab|Zaw Stats/Hammers}}
+<div class="tabber-borderless">
+<tabber>
+All Hammers=
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strikes
+|-
+| [[File:Rabvee.png|center|thumb|100px]]'''[[Rabvee]]'''
+|-
+|}
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Jayap.png|center|thumb|100px]]'''[[Jayap]]'''
+| [[File:Kroostra.png|center|thumb|100px]]'''[[Kroostra]]'''
+| [[File:Seekalla.png|center|thumb|100px]]'''[[Seekalla]]'''
+| [[File:Shtung.png|center|thumb|100px]]'''[[Shtung]]'''
+| [[File:PlagueBokwin.png|center|thumb|100px]]'''[[Plague Bokwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTypeTable|Hammer|TwoHanded}}
+|-|Rabvee-Jayap =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Rabvee.png|center|thumb|100px]]'''[[Rabvee]]'''
+| [[File:Jayap.png|center|thumb|100px]]'''[[Jayap]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Rabvee|Jayap}}
+|-|Rabvee-Kroostra =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Rabvee.png|center|thumb|100px]]'''[[Rabvee]]'''
+| [[File:Kroostra.png|center|thumb|100px]]'''[[Kroostra]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Rabvee|Kroostra}}
+|-|Rabvee-Seekalla =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Rabvee.png|center|thumb|100px]]'''[[Rabvee]]'''
+| [[File:Seekalla.png|center|thumb|100px]]'''[[Seekalla]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Rabvee|Seekalla}}
+|-|Rabvee-Shtung =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Rabvee.png|center|thumb|100px]]'''[[Rabvee]]'''
+| [[File:Shtung.png|center|thumb|100px]]'''[[Shtung]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Rabvee|Shtung}}
+|-|Rabvee-Plague Bokwin =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Rabvee.png|center|thumb|100px]]'''[[Rabvee]]'''
+| [[File:PlagueBokwin.png|center|thumb|100px]]'''[[Plague Bokwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Rabvee|Plague Bokwin}}
+</tabber>
+</div>
+</onlyinclude>
+[[Category:Hammer]]
+[[fr:Stats des Zaws/Marteaux]]

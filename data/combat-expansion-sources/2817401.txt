@@ -1,0 +1,206 @@
+{{Top|Weapon|Weapons|Weapons|Orokin|Orokin|Orokin}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|The Thalys played a ceremonial role in the Zariman harvest festival, and was intended to reap the first fruits of Tau. Now twisted from this purpose, it plants Void shards in enemy flesh instead. Each new shard planted causes existing shards to inflict damage on their hosts.}}
+'''Thalys''' is an [[Incarnon]] ceremonial [[Heavy Scythe]]. In its transformed state, struck enemies are embedded with a Void shard, with each new shard causing existing shards to inflict damage on their hosts.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*As an [[Incarnon]] weapon, Thalys has '''5''' evolution tiers with different perks that allow players to customize their Thalys' stats.
+**Once unlocked, activate Incarnon Form by executing a [[Heavy Attack|Heavy Atta]][[Heavy Attack|ck]], a [[Slam|Slam Attack]] or a [[Heavy slam|Heavy Slam Attack]] with a [[Melee Combo]] of 6x or higher.
+***When the transformation is ready, the combo counter will shimmer with Void energy.
+***Incarnon Form lasts for '''90''' seconds and behaves as follows:
+****Attacks embed a damaging shard in enemies.
+****'''+3''' [[Range]]
+****'''+40%''' [[Attack Speed]]
+*Innate {{Pol|Madurai}} polarity.
+
+{{Advantages|}}
+{{Disadvantages|}}
+
+==Acquisition==
+Thalys' blueprint is purchased from [[File:IconDuviriAcrithis.png|30x30px]][[Acrithis]] or [[Dominus Thrax]] in the [[Dormizone]] for 96 {{Resource|Scuttler Husk}} awarded from [[Isleweaver]] in [[Duviri]]. Access requires completion of [[The Hex (Quest)|The Hex]] Quest.
+{{BuildAutomatic|type=Weapon}}
+
+== Incarnon Form ==
+When newly acquired from the [[Foundry]], players must acquire '''100''' kills with the Thalys in order to gain access to its Incarnon transformation. Each challenge additionally grants 5,000 [[affinity]] to the weapon, affected by [[Affinity Booster]]s. The following Evolution tiers, their requirements for unlocking them, and their related perks, are shown below.
+
+=== Overview ===
+* Incarnon Form is charged by building [[Melee Combo]] to 6x, then using a [[Heavy Attack]], a [[Slam Attack]] or a [[Heavy slam|Heavy Slam Attack.]] Once activated, the Incarnon form lasts for '''90''' seconds.
+** Incarnon Form persists through all activities, such as holstering, [[bleedout]], or being [[Disarm|disarmed]]. However, Incarnon Form is removed upon [[death]].
+** Despite the in-game description only listing Heavy Attacks (and consequently Heavy Slams) as able to activate Incarnon Form, non-Heavy Slams may be used as well and may be preferred as they do not reduce your Melee Combo. This behavior is shared by all melee Incarnon weapons released since Thalys, including [[Obex Incarnon Genesis|Obex]] and [[Destreza Incarnon Genesis|Destreza]].
+
+===Evolutions===
+
+{{clr}}
+{| class="wikitable" width="100%" style="text-align:center"
+|+
+|-
+! colspan="3" | Evolution
+! Notes
+|-
+! colspan="3" | Evolution I Challenge !! Kill '''100''' enemies with the Thalys.
+|-
+! EVO1
+| style="white-space: nowrap;"  | '''Incarnon Form''' [[File:VoidScytheTier0(xWhite).png|64px|center]]
+| style="text-align:left" |
+* Reach '''6x''' Combo and then [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form.
+* Attacks embed a damaging shard in enemies. Each time a new shard is created, existing shards deal '''75%''' of weapon damage to embedded foes.
+** '''+3''' [[Melee#Range|Range]]
+** '''+40%''' [[Attack Speed]]
+| style="text-align:left" |
+*Light attacks (not slam attacks or heavy attacks) embed a shard in enemies which lasts for '''15''' seconds. Each enemy can only be embedded with '''one''' shard at a time.
+*Embedding a shard deals no damage to the main target, but triggers all shards embedded in other enemies, dealing damage to their host. 
+**Shards can be triggered regardless of the distance between the newly embedded enemy and any previously embedded enemies.
+**Triggering a shard does not remove it from its host and it can still be triggered by new shards.
+**Shard trigger damage is '''75% of Thalys's base damage''', for a total of 157.5 Slash Damage and 67.5 Puncture Damage. 
+***If the triggering attack has a damage multiplier from a melee stance combo, it will also multiply the shard damage.
+***'''Is''' affected by base damage bonuses such as {{M|Pressure Point}} and {{A|Vex Armor}}, but not {{M|Condition Overload}}.
+***'''Is not''' affected by IPS, elemental, or faction damage bonuses. Does not trigger forced procs from {{M|Valence Formation}} or {{A|Toxic Lash}}.
+***'''0% status chance''', can be increased with flat bonuses like {{M|Proton Snap}} and {{A|Shroud of Dynar}}.
+****Status duration '''is not''' affected by {{M|Lasting Sting}}.
+***'''0% critical chance''', can be increased with flat bonuses like {{Arcane|Arcane Avenger}} and {{A|Wrathful Advance}}.
+***'''1.0x critical multiplier''', affected by mods like {{M|Organ Shatter}} and {{Arcane|Melee Doughty}}.
+****{{Arcane|Melee Doughty}}'s bonus scales with Thalys's normal melee stats, not the shard stats, allowing the shards to gain a significant critical multiplier.
+***Cannot trigger {{Arcane|Melee Duplicate}} even when the shards themselves crit.
+*Shard damage is considered an instance of [[Unattributed Damage]].
+|-
+! colspan="3" | Evolution II Challenge !! Kill '''8''' [[Eximus]] enemies with this weapon's Incarnon Transmutation.
+|-
+! rowspan="3" | EVO2
+| style="white-space: nowrap;"  | '''Dreadful Reach''' [[File:StatusProcIncreasesRange(xWhite).png|64px|center]]
+| style="text-align:left" |
+* On Weapon Status Effect: '''+0.1''' Range for '''8''' seconds. Stacks '''20x'''
+| -
+|-
+| style="white-space: nowrap;" | '''Whirling Flurry''' [[File:EvolutionAttackSpeed(xWhite).png|64px|center]]
+| style="text-align:left" |
+* '''+20%''' [[Attack Speed]]
+| -
+|-
+| style="white-space: nowrap;" | '''Raging Drift''' [[File:SlideAttackSpeed(xWhite).png|64px|center]]
+| style="text-align:left" |
+* '''+80%''' [[Attack Speed]] while sliding
+* '''+20%''' Slide
+| -
+|-
+! colspan="3" | Evolution III Challenge !! Perform '''20''' [[Ground Finisher]] attacks
+|-
+! rowspan="3" | EVO3
+| style="white-space: nowrap;" | '''Nimble Scythe''' [[File:ComboPointOnSlide(xWhite).png|64px|center]]
+| style="text-align:left" |
+* For each enemy hit by Slide Attack, gain '''+5''' [[Combo Count]]
+| -
+|-
+| style="white-space: nowrap;" | '''Echoes of Rage''' [[File:ComboCountonShardEcho(xWhite).png|64px|center]]
+| style="text-align:left" |
+* '''+1''' [[Combo Count]] on Shard Damage
+| -
+|-
+| style="white-space: nowrap;" | '''Adept Reflexes''' [[File:EvolutionAdeptReflexes(xWhite).png|64px|center]]
+| style="text-align:left" |
+* '''+20''' Initial [[Combo]]
+| -
+|-
+! colspan="3" | Evolution IV Challenge !! Activate Incarnon Form '''3''' times in a mission
+|-
+! rowspan="3" | EVO4
+| style="white-space: nowrap;" | '''Swift Transmute''' [[File:HeavyAttackTransformAt3x(xWhite).png|64px|center]]
+| style="text-align:left" |
+* Reach '''3x''' [[Combo]] and [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form
+| -
+|-
+| style="white-space: nowrap;" | '''Vaulting Leap''' [[File:JumpHeight(xWhite).png|64px|center]]
+| style="text-align:left" |
+* '''+100%''' Jump and Double Jump Height
+| -
+|-
+| style="white-space: nowrap;" | '''Devastating Mercy''' [[File:RadialAttackGroundFinisherKnockdown(xWhite).png|64px|center]]
+| style="text-align:left" |
+* Ground [[Finisher|Finishers]] knock enemies down in '''6m''' radius
+| -
+|-
+! colspan="3" | Evolution V Challenge !! Complete a Solo mission with an Incarnon Weapon equipped in every slot.
+|-
+! rowspan="3" | EVO5
+| style="white-space: nowrap;" | '''Explosive Growth''' [[File:GrowingShards(xWhite).png|64px|center]]
+| style="text-align:left" |
+* Shards grow when a new shard is created, up to '''3''' times. Fully grown shards erupt out of the embedded enemy, dealing '''x2''' damage and impaling them on the spot.
+| style="text-align:left" |
+* New shards still trigger existing shards to deal damage, in addition to the growth effect.
+* Shard growth is limited to 1 stage per melee swing, regardless of how many new enemies are embedded with a shard. However, a shard '''can''' be embedded and grow by 1 stage in the same melee swing.
+* Impaled enemies are stunned for 5 seconds while suspended in the air. After the impale ends, the enemy will fall to ground before taking a second to stand back up.
+** Impaling an enemy removes the shard on them. They cannot be embedded with a new shard until the impale is over.
+* Impale damage is 2x the normal shard trigger damage, but otherwise has the same stats and is affected by the same mods.
+** {{M|Condition Overload}} is an exception, as it affects the impale damage but not the shard damage (likely a bug).
+* Impale effect does not trigger {{Arcane|Melee Afflictions}} despite being somewhat similar to {{D|Lifted}}.
+|-
+| style="white-space: nowrap;" | '''Chain Shatter''' [[File:HeavyAttackDetonateShards(xWhite).png|64px|center]]
+| style="text-align:left" |
+* Heavy attacks detonate shards. Shards caught within the blast radius will also detonate
+| style="text-align:left" |
+* Heavy slams will also detonate shards.
+* Detonated shards deal '''200% of Thalys's base damage''' (420 Slash and 180 Puncture) to their host.
+** Has a damaging radius of only about ~'''1m''' with ?% falloff.
+** The detonation will also trigger other shards within ~'''5m''' to detonate, which can cause a chain reaction.
+** Combo multiplier will only multiply the detonation damage to the shard's host and enemies in the 1m damaging radius. Other shards detonated by the explosion will '''not''' benefit from the combo multiplier.
+* '''Is''' affected by base damage bonuses (including {{M|Condition Overload}}), as well as IPS and elemental bonuses (unlike the shard trigger damage).
+* '''Is not''' affected by faction damage bonuses.
+* Has '''24% status chance''', 0% crit chance, and a 1x critical multiplier.
+* Does not trigger forced procs from {{M|Valence Formation}} or {{A|Toxic Lash}}.
+* '''Can''' trigger {{Arcane|Melee Influence}}.
+* '''Cannot''' trigger {{Arcane|Melee Duplicate}}.
+* Enemies that have been detonated are still able to have a new shard embedded in them by further melee attacks, allowing them to be detonated again.
+|-
+| style="white-space: nowrap;" | '''Void Splinters''' [[File:LongLastingShards(xWhite).png|64px|center]]
+| style="text-align:left" |
+* Shard duration is increased to '''30s'''. Shards become weak spots that have '''+100%''' Critical Chance when damaged. Shard damage is reduced by '''-50%'''.
+| style="text-align:left" |
+* Critical Chance bonus is additive to mods such as {{M|Point Strike}}, {{M|Pistol Gambit}} and {{M|True Steel}}.
+|-
+|}
+
+==Tips==
+*Combining {{M|Corrupt Charge}} (or more ideally {{M|Galvanized Reflex}}) and '''Adept Reflexes''' (or [[Ready Steel]]) grants a passive minimum 3x [[Melee Combo]], allowing '''Swift Transmute''' to immediately transform Thalys at will.
+*When using a ground finisher to embed a new enemy with a shard, the 12x damage multiplier of the finisher will be applied to shard trigger damage on all previously embedded targets.
+
+== Trivia ==
+*The name Thalys may be derived from "Thal", an older spelling of German Tal, meaning "valley", and French "Lys", meaning "lily".
+*[[Wikipedia:Thalys|Thalys]] is also the name of a European high speed train service.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+ThalysKeyart.png
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|43.0.5}}
+*Fixed the Thalys missing a swing trail when in Incarnon Form.
+
+{{ver|41.1}}
+*Fixed Kullervo’s Wrathful Advance not triggering Thalys’ Incarnon form.
+
+{{ver|40}}
+*Fixed cases of the Thalys’ “Incarnon Ready” SFX playing too loud in the Orbiter.
+*Fixed Thalys' Incarnon Form shards not fading away properly.
+
+{{ver|39.0.4}}
+*Fixed the Thalys' icon in the Arsenal displaying its Incarnon form.
+
+{{ver|39.0.1}}
+*Fixed being unable to complete Thalys' Evolution V Incarnon Challenge.
+*Fixed Thalys' Evolution IV Incarnon Challenge progressing without any Incarnon Activations.
+*Fixed missing Incarnon Form stats in the Arsenal for the Thalys if Evolution I has not yet been unlocked.
+*Fixed the Thalys having incorrect offsets for Nova with the Kaya Gemini Skin equipped.
+*Fixed incorrect VFX positioning on the Thalys.
+*Fixed incorrect Incarnon Form mesh on the Thalys.
+
+{{ver|39}}
+*Introduced.
+}}
+
+{{WeaponNav}}
+
+[[ru:Талис]]

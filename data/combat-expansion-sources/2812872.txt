@@ -1,0 +1,45 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapon|Weapon}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|After 10 kills or assists, Dorrclave enters a spectral state that doubles weapon Follow Through and guarantees Status Effects for the next 10 attacks. In Dagath's hands, each active Status Effect heals her slightly.}}
+'''Dorrclave''' is {{WF|Dagath}}'s [[Signature Weapon|signature]] [[Blade and Whip]]. Upon 10 kills or assisted kills, the Dorrclave gains bonus [[Melee#Follow Through|Follow Through]] and [[Status Effect|Status Chance]] for the next 10 attacks. In Dagath's hands, she recovers some health when striking enemies with Status Effects.
+
+==Characteristics==
+*This weapon deals pure {{D|Slash}} damage.
+*10 kills or assists from Dorrclave grants the '''Rising Vendetta''' buff, granting '''+0.5''' [[Melee#Follow Through|Follow Through]] and a flat '''+100%''' [[Status Effect|Status Chance]] <u>after mods</u> for the next 10 attacks.
+**Charges are indicated by 10 blips that appear on the reticle brackets. When the buff activates, the reticle changes color.
+**Charges are only consumed when they strike an enemy.
+*When used by Dagath, she heals '''6''' health per active Status Effect on an enemy she strikes.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+==Acquisition==
+Dorrclave's main and component blueprints are acquired from [[Research/Dagath's Hollow|Dagath's Hollow]] within the [[Clan Dojo]]. Unlike most Clan Dojo rooms, Dorrclave does not require [[Research]] and can be acquired immediately following the room's construction.
+
+Component blueprints require a total of 80 {{Resource|Vainthorn|Vainthorns}}, obtained from the [[Abyssal Zone]], a unique [[Exterminate]] mission on [[Ceres]]. Access requires [[Abyssal Beacon]]s, purchased from Faction [[Syndicate]] ([[Steel Meridian]], [[Arbiters of Hexis]], [[Cephalon Suda]], [[The Perrin Sequence]], [[Red Veil]], or [[New Loka]]) at Rank 2 and {{sc|5000}}, consuming only the host's beacon upon mission completion. Each clear awards 6, 7, or 8 Vainthorns (8, 11, or 12 on [[The Steel Path]]).
+
+==Crafting==
+{{BuildAutomatic|type=Weapon}}
+
+==Trivia==
+*Many of the damage values on this weapon are sets of repeating numbers: normal and slide attacks are 222, slam attack is 666, and Heavy Attack is 888. These numbers may relate to the [[Wikipedia:Number of the beast|Number of the Beast]], similarly to Dagath's Health when max rank.
+
+==Gallery==
+<gallery>File:DagathSplash.png|Dagath with her signature Dorrclave</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|44.0.1}}
+*Fixed the Dorrclave's unique trait not functioning properly.
+
+{{ver|35}}
+*Fixed custom reticle color from HUD settings not applying to the Dorrclave.
+
+{{ver|34}}
+*Introduced.}}
+{{WeaponNav}}

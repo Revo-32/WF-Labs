@@ -1,0 +1,48 @@
+{{Navigation|Rip Line|Warcry|Paralysis|Hysteria}}
+<onlyinclude>{{AbilityU10.3
+| name = Warcry
+| gameimage = WarcryPanel.png
+| cardimage = WarcryModU15.jpeg
+| hotkey = 2
+| energy = 75
+| description = Valkyr lets out a rallying cry that bolsters Armor and Attack Speed for allies in Affinity Range
+| strength = 15 / 20 / 25 / 50 % (attack speed buff)<br>25 / 35 / 45 / 50 % (armor buff)
+| range = N/A
+| duration = 10 / 14 / 17 / 20 s
+| misc = 
+| subsumable = true
+| cardonly = {{{1|}}}
+| info = *Valkyr expends {{Stat|Ability Efficiency|icon=only}}'''75''' [[energy]] to let out a rallying cry, generating an aura within [[Affinity Range]] that strengthens Valkyr and her allies with {{Stat|Ability Strength|icon=only}}'''15% / 20% / 25% / 50%''' [[Attack Speed]] and {{Stat|Ability Strength|icon=only}}'''25% / 35% / 45% / 50%''' [[Armor]] for {{Stat|Ability Duration|icon=only}}'''10 / 14 / 17 / 20''' seconds.
+**If allies lose Warcry such as from [[death]] or [[Nullifier Crewman|nullifiers]], they can regain it upon re-entering Valkyr's Affinity Range. However, if Valkyr herself enters a nullifier field or falls out-of-bounds, Warcry will be dispelled from the entire squad.
+**Attack Speed bonus is additive to mods (e.g., {{M|Fury}}).
+***A maxed {{M|Fury}} and {{M|Intensify}} with a rank-3 Warcry will increase Valkyr's attack speed by:<br/>{{MathText|Attack Speed Mods + Warcry Modifier {{mul}} (1 + Strength Mods) {{eql}}}}<br/>{{Math|0.3 + 0.5 {{mul}} (1 + 0.3)|mt=y|percent=y}}
+**The armor buff is based off of the affected Warframe's ''base'' armor value, and therefore stacks additively with other armor bonuses.
+***For example, a Valkyr with a max rank {{M|Steel Fiber}}, 130% Ability Strength, and while using Warcry increases her armor to:<br/>{{MathText|Base Armor {{mul}} (1 + Armor Mods + Warcry Modifier {{mul}} (1 + Strength Mods)) {{eql}}}}<br/>{{Math|855 {{mul}} (1 + 1 + 0.5 {{mul}} (1 + 0.3))|mt=y}}
+**Warcry affects other Warframes, [[Companions]], [[Rescue|Hostages]], [[Defense]] objectives, [[Shadows Of The Dead|Shadows]], and [[Specter]]s.
+| interactions =
+* Warcry's armor bonus is multiplied by <u>'''3x'''</u> when used while {{A|Hysteria}} is active.
+* Warcry's melee attack speed bonus allows Valkyr to charge her Rage passive faster, making it easier to reach the death prevention threshold while she is still invulnerable after a fatal hit.
+| helminth =
+* Subsuming Valkyr to the [[Helminth]] will offer Warcry and its augments to be used by other Warframes.
+** However, Subsumed Warcry's attack speed bonus is reduced to {{Stat|Ability Strength|icon=only}}'''9% / 12% / 15% / 30%'''.
+| augment = [[File:EternalWarMod.png|200px|left]]
+{{main|Eternal War}}
+{{#lst:Eternal War|intro}}
+{{#lsth:Eternal War|Stats}}
+{{clr}}
+<noinclude>
+|max = {{WFmax|main|valkyr2}}
+</noinclude>|
+}}</onlyinclude>
+
+==See Also==
+*{{WF|Valkyr}}
+__NOTOC__
+[[de:Kriegsschrei]]
+[[es:Grito de guerra]]
+[[fr:Cri de Guerre]]
+[[ru:Боевой клич]]
+[[Category:Valkyr]]
+[[Category:Update 11]]
+[[Category:Warframe Abilities]]
+[[uk:Бойовий клич]]

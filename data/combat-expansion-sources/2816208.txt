@@ -1,0 +1,125 @@
+{{Navigation|Spellbind|Tribute|Lantern|Razorwing}}
+<onlyinclude>{{AbilityU10.3
+| name = Razorwing
+| gameimage = RazorwingIcon.png
+| cardimage = Razorwing.png
+| hotkey = 4
+| energy = 25
+| description = Shrink down and take flight, while razorflies attack nearby enemies.<br/>'''Energy Drain:''' 5 s<sup>-1</sup>
+| strength = 50 / 80 / 120 / 160 (gun damage)<br>150 / 165 / 180 / 200 (melee damage)<br>10 / 24 / 48 / 80 (drone damage)
+| duration = 
+| range = 
+| misc = 50% (evasion bonus)<br>10 m (vacuum radius)<br>6 (razorfly drones)<br>&infin; (drones duration)<br>100% (drone damage vulnerability)<br>4 (max extra razorflies from Tribute)
+| cardonly = {{{1|}}}
+| info = *Titania expends {{Stat|Ability Efficiency|icon=only}}'''25''' [[energy]] to shrink down to a quarter of her original size, becoming a flying pixie. In this form, through  the use of her built-in [[Archwing]], Titania permanently remains in mid-air, gaining vertical and horizontal flight capabilities using the movement ({{Keybind|W}}{{Keybind|A}}{{Keybind|S}}{{Keybind|D}}), crouch ({{Keybind|Ctrl}}), jump ({{Keybind|Spacebar}}), and Archwing Blink ({{Keybind|Shift}}) hotkeys, similar to [[Archwing Maneuvers]] but without terrain collision damage. Additionally, Titania passively gains <u>'''50%'''</u> evasion and a <u>'''10'''</u> meter {{M|Vacuum}}-like pickup radius. In Razorwing, Titania flies at <u>'''10 m/s'''</u> and sprints at <u>'''20 m/s'''</u>.
+**Sprinting flight speed is affected by [[Sprint Speed]] (e.g., {{M|Rush}}).
+**Terrain collision animation is considered a [[Knockdown]] effect, and can be prevented as such.
+**[[Railjack]] [[Railjack/Intrinsics|Intrinsic]] bonuses do '''not''' affect Razorwing, with the exception of the Rank 8 Tactical Intrinsic "Archwing Tactical Blink", which reduces Razorwing's Archwing Blink cooldown by 25%.
+**Razorwing mode counts as being [[airborne]] in regards to the effects of {{M|Aerodynamic}}, {{M|Agility Drift}} and {{M|Aviator}}/{{M|Ironclad Flight}}.
+**Cast animation of '''1.4''' seconds and deactivation of '''1.0''' second are affected by [[Casting Speed]]. 
+***If cast while airborne, the activation time is greatly reduced.
+**Razorwing consumes {{Stat|Ability Efficiency|icon=only}}{{Stat|Ability Duration|icon=only}}'''5''' per second while active and will remain active until Titania's energy is depleted, or the ability is deactivated by pressing the ability key again.
+***Titania '''cannot''' replenish energy using {{A|Energy Vampire}}, {{A|Rally Point}}, [[Rift Plane]]'s innate energy regeneration, [[Squad Energy Restore]]s, {{M|Energy Siphon}}, {{M|Energy Nexus}}, {{M|Dreamer's Bond}}, and/or {{Focus|Wellspring}} while Razorwing is active.
+***[[Energy Orb]]s, [[Orokin Void]] [[Orokin Tower#Death Orbs|Death Orb]]'s energy restores, {{M|Rage}}, {{M|Hunter Adrenaline}}, {{M|Spellbound Harvest}}, {{Arcane|Arcane Energize}}, {{Arcane|Emergence Dissipate}}'s Energy Motes and {{A|Brightbonnet}} can still replenish Titania's energy while in Razorwing.
+***Razorwing's energy drain is '''not''' converted into shields by [[Set Mods#Augur Mod Set|Augur Mods]].
+*Instead of all her normal weapons, Titania wields two proprietary Razorwing [[Exalted Weapon]]s: the '''{{Weapon|Dex Pixia}}''' dual machine pistols and the '''{{Weapon|Diwata}}''' heavy sword.
+**Both weapons can damage enemies across the [[Rift Plane]], although Diwata's auto-targeting doesn't work across planes.
+**Unaffected by {{M|Amalgam Serration}} or {{M|Amalgam Furax Body Count}} while in Razorwing form.
+***However, [[Incarnon]] melee weapons apply a buff that is carried over into Razorwing. 
+**Swapping between Dex Pixia and Diwata does not trigger On Equip effects like {{M|Vigorous Swap}}.
+<div class="tabber-borderless" ><tabber>
+|-|Dex Pixia =
+*'''{{Weapon|Dex Pixia}}''' is an [[Exalted Weapon]] with its own unique statistics.
+**Base damage is {{Stat|Ability Strength|icon=only}}'''50 / 80 / 120 / 160''' per hit.
+***Because Ability Strength modifies the base damage properties of the weapon, damage bonuses like {{M|Hornet Strike}} and are fully ''multiplicative'' with the effects of Ability Strength mods.
+**Base damage distribution is '''10%''' {{D|Impact}}, '''10%''' {{D|Puncture}}, and '''80%''' {{D|Slash}}.
+**Has a [[Fire Rate]] of <u>'''5.83'''</u> shots per second with a <u>'''60'''</u> round magazine. When not firing, the clip will automatically regenerate <u>'''50'''</u> shots per second after a <u>'''0.3'''</u> second delay.
+**Dex Pixia has <u>'''2.0x'''</u> [[critical multiplier]], <u>'''10%'''</u> [[critical chance]], and <u>'''25%'''</u> [[status chance]].
+**Dex Pixia can be equipped with [[pistol Mods|secondary mods]] and [[Arcane Enhancement]]s.
+***[[Riven Mods]] are '''not''' generated for Dex Pixia.
+**Because Dex Pixia is counted as a [[secondary]], it is affected by mods and Warframe Arcanes such as {{M|Pistol Amp}} and {{Arcane|Arcane Precision}}.
+**Dex Pixia, despite being a secondary [[Exalted Weapon]], functions much like the [[Dual Decurion]] [[Archgun]]. 
+|-|Diwata =
+*'''{{Weapon|Diwata}}''' is an [[Exalted Weapon]] with its own unique statistics.
+**Exclusively uses the {{M|Razorwing}} Stance.
+**Base damage is {{Stat|Ability Strength|icon=only}}'''150 / 165 / 180 / 200''' with a '''<u>2.5</u>''' meter range.
+***Because Ability Strength modifies the base damage properties of the weapon, damage bonuses like {{M|Pressure Point}} and are fully ''multiplicative'' with the effects of Ability Strength mods.
+**Base damage distribution is '''15%''' {{D|Impact}}, '''75%''' {{D|Puncture}}, and '''10%''' {{D|Slash}}.
+**[[Attack Speed]] of <u>'''1.08'''</u> times per second.
+**When attacking with the Diwata, Titania will dash a short distance to her target.
+**Diwata has <u>'''2.0x'''</u> [[critical multiplier]], <u>'''20%'''</u> [[critical chance]], and <u>'''10%'''</u> [[status chance]].
+**Diwata can be equipped with [[melee Mods|melee mods]] and [[Arcane Enhancement|Arcane Enhancements]].
+***[[Riven Mod|Riven Mods]] are '''not''' generated for Diwata.
+**Because Diwata is counted as a melee strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+</tabber></div>
+<hr />
+*While Razorwing is active, Titania will also command <u>'''6'''</u> Razorfly drones to attack nearby enemies. Razorflies last <u>'''indefinitely'''</u> and are [[Invulnerable]] with increased [[Threat Level]]. They deal {{Stat|Ability Strength|icon=only}}'''10 / 24 / 48 / 80''' damage each, and inflict <u>'''100%'''</u> [[Damage Vulnerability]] permanently.
+**Damage distribution is '''10%''' {{D|Impact}}, '''10%''' {{D|Puncture}}, and '''80%''' {{D|Slash}}.
+**[[Attack Speed]] of <u>'''2.0'''</u> times per second.
+**Razorflies have <u>'''2.0x'''</u> [[critical multiplier]], <u>'''25%'''</u> [[critical chance]], and <u>'''10%'''</u> [[status chance]].
+**Razorflies have a <u>'''?%'''</u> chance to land a headshot, triggering the effects of {{Arcane|Arcane Consequence}}, {{Arcane|Arcane Precision}}, and {{Arcane|Arcane Rage}}.
+**Razorflies cannot damage enemies across the [[Rift Plane]].
+**Razorflies are counted as summons and are affected by {{M|Summoner's Wrath}}, {{Arcane|Arcane Camisado}}, and {{Arcane|Theorem Infection}}.
+*'''Ability Synergy:'''
+**{{A|Spellbind}}'s status immunity negates the stagger from "crashing" into surfaces.
+**Razorwing spawns an extra Razorfly for each {{A|Tribute}} collected, up to <u>'''4'''</u> extra Razorflies up to a maximum of <u>'''10'''</u>.
+***While Titania remains in Razorwing, these extra Razorflies are permanent and do not expire when the corresponding buff does.
+**Razorflies will fly to and pick up Tribute offerings for Titania.
+*While Razorwing is active, Titania can move around freely while casting her other abilities. She can also use most items from her [[Equipment#Gear|gear]], and equipped gear items' sizes will also be shrunk to her scale. Deployed gear items will still retain their original sizes.
+*Kills done by Titania with Razorwing active count towards the "From on High" (Kill 100 enemies in Archwing form on the [[Plains of Eidolon]]) [[Challenges|challenge]].
+**On the other hand, Razorwing is '''not''' considered an Archwing for [[Riven Mod]] challenges.
+*Titania is unable to accomplish any action that requires the Use key (default {{Keybind|X}}) while Razorwing is active, thus '''cannot''' interact with consoles, pick up carriables such as datamasses, or revive allies from [[Death#Bleedout|bleedout]].
+**Titania can pick up carriables before activating Razorwing, but is not able to use them until she deactivates the ability.
+**The [[Operator]] can still be used while in Razorwing, and be able to do these actions without deactivating the ability. However, energy drain and countdowns on buffs like {{M|Razorwing Blitz}} will still continue while in Operator mode.
+**Despite most interactions being normally blocked while Razorwing is active, certain actions, such as interacting with and hacking consoles, opening [[Friendship Door]], reviving allies from [[Death#Bleedout|bleedout]], capturing [[Capture]] targets, collecting [[Ayatan Treasures]], calling and starting elevators, executing Secret Mercy and Requiem Mercy, calling remote pickup for tranquilized creatures, depositing Antiserum Charges into Vaporizers on [[Infested Salvage]] and other Use key interactions can still be performed if Titania is holding a [[Tranq Rifle]] while Razorwing is active.
+*Subsumed abilities injected into Titania via the [[Helminth]] system '''can''' be cast while in Razorwing mode. 
+*[[Companions]] disappear when activating Razorwing and will come back once the ability is deactivated. 
+**{{M|Animal Instinct}}/{{M|Primed Animal Instinct}} will still apply, similar to Archwing, 
+**{{M|Duplex Bond}} will continue to create clones.
+**{{M|Reinforced Bond}} and {{M|Tenacious Bond}}'s buffs will continue, if the conditions are met on the companion.
+**[[Retriever Mods]] can still double resources/credits.
+**Companions will not regenerate shields while Titania is in Razorwing.
+**If Titania enters Razorwing while a companion is downed, the companion recovery timer will continue to count up, and effects that shorten the companion recovery timer such as {{M|Aerial Bond}} will work as normal. The recovery timer will pause at 100%, and the companion will not revive until Titania exits Razorwing. 
+| tips = *Razorwing greatly improves Titania's survivability:
+**Titania presents a smaller target profile with Razorwing active, making it more difficult for enemies to hit her.
+**Razorwing's innate evasion allows Titania to avoid shots.
+**Razorflies have increased threat rating, drawing aggro away from Titania.
+**The fact that Titania is airborne with Razorwing also allows her to fully avoid taking damage from certain enemies, such as melee enemies and [[Nox]]'s toxin cloud.
+**Equipping {{M|Agility Drift}} and {{M|Aviator}} can provide even higher survivability, especially against high level enemies.
+*Dex Pixia has a high rate of fire which allows Titania to deal a lot of damage in a short amount of time. They are also fully capable of triggering {{Arcane|Arcane Pistoleer}}, frequently allowing for up to 12 second bursts of unlimited fire.
+*Casting the ability while in the air will shave off about '''0.3''' seconds of the animation, the part where she lifts off of the ground, since she is already in the air.
+*When trying to decide between equipping {{M|Growing Power}} or {{M|Pistol Amp}}, Growing Power increases Dex Pixia's base damage '''before''' secondary weapon mods are considered, and Pistol Amp increases Dex Pixia's base damage '''as if''' it was a secondary weapon mod (e.g., {{M|Hornet Strike}}). This means that Growing Power's 25% ability strength increase is the better choice accompanying ability strength bonuses less than 300% and stronger secondary weapon damage bonuses, while Pistol Amp's 27% damage increase is the better choice with ability strength bonuses greater than 300% and weaker secondary weapon damage bonuses.
+*When trying to decide between equipping {{M|Growing Power}} or {{M|Steel Charge}}, Growing Power increases Diwata's base damage '''before''' melee weapon mods, and Steel Charge increases Diwata's base damage '''as if''' it was a melee weapon mod. Despite this advantage for Growing Power, its 25% ability strength increase is inferior to Steel Charge's 60% damage increase in most situations. It will, however, depend if you are using a subsume or not, as {{A|Roar}}, for instance, would make the ability strength the superior option again.
+*Razorflies can consistently trigger the effect of {{M|Growing Power}} thanks to how frequently 10 Razorwings (the max number of summonable Razorwings) can proc status effects. 
+*Titania will drop a datamass or lantern when razorwing is invoked.
+<noinclude>
+| max = {{WFmax|main|titania4}}
+</noinclude>
+| bugs = *While in the Simulacrum, using the Helminth ability '''Empower''', or {{M|Energy Conversion}}, {{M|Power Drain}}, {{Arcane|Arcane Camisado}} before activating {{A|Razorwing}} does not increase the damage of {{Weapon|Dex Pixia}} as opposed to other strength benefits, despite showing otherwise in the 'Abilities' section.
+*Tennokai mods can be installed on Diwata but cannot be activated as Diwata does not have a [[Melee#Heavy Attack|Heavy Attack]].
+*Titania can summon archwing weapons when you are close to the ground.
+*Titania can use normal weapon if the connection has a large ping.
+*If you fly to the roof of a tile and then switch into operator mode and back into razorwing relatively quickly you can glitch out of the map.
+**This was 'fixed' in [[Update 29#Hotfix 29.0.8|Update 29.0.8]], it is still possible in further updates but requires significantly more precision.
+*If you equip [[Conservation]] tools or a [[Fishing]] spear, you can interact with relative normalcy, excluding hacking and carrying power cells or datamasses or their equivalents (you'll pick them up, but after it puts them at your hand's position, it won't let you hold them).
+**This bug is a possible trigger condition for another; should you vanquish a [[Kuva Lich]] while in Archwing mode, you switch to the secondary equipped in your loadout, rather than Dex Pixia. This is only possible if you've used another bug to allow you to interact.
+*There are some cases where after voiding out, as operator or while in Razorwing mode, you will become normal size and the ability icon for Razorwing will show that you have 6 razorflies, this is only visual.|Arcane benefit edit
+*If you fly with sufficient speed, while Razorflies are occupied with attacking enemy, it is possible to cross the automatic door before your drones will catch up with you, resulting in situation, where Razorflies will continuously try to join you, but won't be able to, since automatic door does not detect them. This can later result in significantly lower survivability, as Razorflies are not around you to draw enemy's fire.
+}}
+
+</onlyinclude>
+
+==See Also==
+
+*{{WF|Titania}}
+__NOTOC__
+[[de:Klingenflügel]]
+[[es:Alas afiladas]]
+[[fr:Ailes Rasoirs]]
+[[Category:Titania]]
+[[Category:Update 19]]
+[[Category:Channeled Abilities]]
+[[Category:Ability Weapons]]
+[[Category:Exalted Weapon]]
+[[Category:Slash Damage]]
+[[uk:Лезокрил]]

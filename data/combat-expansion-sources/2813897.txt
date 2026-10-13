@@ -1,0 +1,209 @@
+{{Infobox
+| Box title = Gas Damage
+| image     = EssentialGasGlyph.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Gas_b.png|class=icon]] [[File:Gas_w.png|class=icon]]
+}}
+{{Quote|'''DAMAGE EFFICACY'''<br/>
+'''{{text|green|x1.5}}''' damage to Infested Deimos<br/>
+'''{{text|green|x1.5}}''' damage to Techrot<br/>
+'''{{text|red|x0.5}}''' damage to Scaldra
+
+'''STATUS EFFECT'''<br/>
+Created by combining {{D|Heat}} and {{D|Toxin}} damage.
+
+{{D|Gas}} produces gas clouds that deal damage to all enemies within a 3  meter radius for a short duration.|In-game Description}}
+{{D|Gas}} '''Damage''' is one of the six secondary elemental damage types, composed of {{D|Heat}} and {{D|Toxin}} elements. Deals increased damage to {{D|Infested Deimos}} and {{D|Techrot}} enemies but reduced damage against {{D|Scaldra}} enemies. Its [[Status Effect]] creates a damaging cloud that deals {{D|Gas}} [[Damage over Time]].
+
+==[[Status Effect]]s==
+===General===
+The status effect of {{D|Gas}} damage is '''Gas Cloud'''. It produces a gas cloud that deals a tick of damage each second to all enemies within a '''3'''-meter radius; subsequent procs increase the radius by '''0.3''' meters up to '''6 '''meters in total after '''10''' stacks. The cloud has a '''6''' second duration. Each tick deals {{D|Gas}} damage equal to:
+
+:<math>
+{
+\begin{aligned}
+\text{Gas Proc Damage per Tick} &= 0.5 \times \text{Modded Base Damage} \\
+&\qquad \times (1 + \text{Gas Damage Bonuses}) \\
+&\qquad \times (1 + \text{Faction Damage Bonuses}) \\
+&\qquad \times (1 + \text{Status Damage Bonuses}) \\
+&\qquad \times \text{Additional Multipliers}
+\end{aligned}
+}
+</math>
+::''Gas Damage Bonuses include {{M|Valence Formation}}.''
+::''Additional Multipliers include modded critical multiplier on [[Critical Hit]] and multipliers on [[Enemy Body Parts]]; these stack multiplicatively with each other.''
+:Modded Base Damage is not the same as normal damage calculations, ignoring physical and elemental damage bonuses and calculated as:
+::<math>
+{
+\begin{aligned}
+\text{Modded Base Damage} &= \text{Base Damage} \times (1 + \text{Base Damage Bonuses}) \times (1 + \text{Faction Damage Bonuses})
+\end{aligned}
+}
+</math>
+
+As can be seen from the formula, tick damage scales with {{D|Gas}} mods ({{D|Heat}} and {{D|Toxin}} mods have no effect). Up to '''10''' instances of the effect can stack on the same target, with each instance having its own timer. Any instances after the 10th will replace the oldest instance.
+
+The Gas Cloud is able to hit heads and other [[Enemy Body Parts|body parts]] by itself. However, the Gas Cloud itself has a '''1x''' damage bonus when headshotting. This can be increased with the use of mods such as {{M|Target Acquired}}, zoom bonuses on some [[Sniper Rifle|sniper rifles]], or {{Arcane|Primary Deadhead}}/{{Arcane|Secondary Deadhead}}.
+
+Example 1 ({{D|Heat}} and {{D|Toxin}} mods), tick damage for a weapon with an innate 180 damage, {{M|Hornet Strike}},  {{M|Scorch}}, {{M|Pathogen Rounds}}, {{M|Expel Grineer}}, and {{M|Pistol Elementalist}} will be:
+
+:Modded Base Damage = {{Math|180 {{mul}} (1 + 2.2) {{mul}} (1 + 0.3)|t=y|bf-a=y}}
+:'''Tick Damage''' = {{Math|0.5 {{mul}} 748.8 {{mul}} (1 + 0.3) {{mul}} (1 + 0.9)|t=y|bf-a=y}}
+
+Example 2 ({{D|Gas}} mod), tick damage for the {{Weapon|Vesper 77}} with {{M|Hornet Strike}}, {{M|Leaded Gas}}, {{M|Expel Grineer}}, and {{M|Pistol Elementalist}} will be:
+
+:Modded Base Damage = {{Math|180 {{mul}} (1 + 2.2) {{mul}} (1 + 0.3)|t=y|bf-a=y}}
+:'''Tick Damage''' = {{Math|0.5 {{mul}} 748.8 {{mul}} (1 + 3) {{mul}} (1 + 0.3) {{mul}} (1 + 0.9)|t=y|bf-a=y}}
+
+As can be seen in the above calculations for tick damage, Faction Damage is applied twice, making their effective bonus {{MathText|{{eql}} (1 + Faction Damage bonus)<sup>2</sup>}}. Which is +69% for the 30% Faction Damage mods and +140.25% for the 55% Primed Faction Damage mods.
+
+If the host target dies, {{D|Gas}} will continue to tick damage on all enemies caught in the host's radius for its remaining duration.
+
+A {{D|Gas}} proc briefly creates a dark green cloud on the afflicted.
+
+{| class="wikitable"
+|+ Gas tick damage and proc duration
+|-
+! Time from initial proc
+| 0s || 1s || 2s || 3s || 4s || 5s || 6s || 7s
+|-
+! Tick damage occured?
+| ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✗ || ✗
+|-
+|}
+
+===Railjack===
+{{D|Gas}} does not have a [[Railjack]] space counterpart and is thus not able to proc any status effect nor is it included in calculations for status proc weighting.
+
+==Gas Sources==
+{{Main|:Category:Gas Damage}}
+
+===Weapons===
+{{Main|:Category:Gas Damage Weapons}}
+{{DamageTypeTable|Gas}}
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Cyanex.png|link=Cyanex|{{Weapon|Cyanex}} (Primary Fire)
+DualViciss.png|link=Dual_Viciss|{{Weapon|Dual Viciss}}
+</gallery>
+
+===Weapons with forced Gas Status Effect===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Purgator1.png|link=Purgator_1|{{Weapon|Purgator 1}} (Forced Gas status effect on direct hit kill)
+TelosBoltor.png|link=Telos_Boltor|{{Weapon|Telos Boltor}} (Truth Effect)
+TelosAkbolto.png|link=Telos_Akbolto|{{Weapon|Telos Akbolto}} (Truth Effect)
+</gallery>
+
+===Mods===
+
+{{#tag:tabber|Weapons = <gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+AvengingTruthMod.png|link=Avenging_Truth|{{M|Avenging Truth}}
+BladeofTruthMod.png|link=Blade of Truth|{{M|Blade of Truth}}
+GildedTruthMod.png|link=Gilded Truth|{{M|Gilded Truth}}
+StingingTruthMod.png|link=Stinging_Truth|{{M|Stinging Truth}}
+Truth'sFlameMod.png|link=Truth's Flame|{{M|Truth's Flame}}
+LeadedGasMod.png|link=Leaded Gas|{{M|Leaded Gas}}
+
+</gallery>
+
+{{!}}-{{!}}
+Warframe = <gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:GaseousQuakeMod.png|link=Gaseous Quake|{{M|Gaseous Quake}}
+File:GastroMod.png|link=Gastro|{{M|Gastro}}
+File:GastroparesisMod.png|link=Gastro|{{M|Gastroparesis}}
+File:ValenceFormationMod.png|link=Valence Formation|{{M|Valence Formation}}
+</gallery>
+}}
+
+===Enemies===
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+Juggernaut.png|link=Juggernaut|[[Juggernaut]] can launch noxious spores that deal {{D|Gas}} damage.
+LasrianShieldLancer.png|link=Scaldra Barbican|[[Scaldra Barbican]] can fire a glob of Efervon that explodes after embedding on a surface.
+LasrianNox.png|Link=Scaldra Dedicant|[[Scaldra Dedicant]] is armed with twin Efervon grenade launchers.
+LasrianGoonadier.png|Link=Scaldra Eradicator|[[Scaldra Eradicator]] throws two Efervon grenades at a time and can set up a Efervon chemspire.
+
+
+</gallery>
+
+===Abilities===
+{{#tag:tabber
+|Revenant =
+{{:Danse Macabre}}
+{{!}}-{{!}}Cyte-09 =
+{{:Resupply}}
+}}
+
+==Sources of Gas Resistances==
+===Peely Pix===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:Sticker21.png|[[Temporal Archimedea#Peely Pix|Breathless]]: Gain '''100%''' resistance to {{D|Gas}} and {{D|Toxin}} for '''30s'''. Collected Health Orbs add '''10s / 15s / 20s'''.
+</gallery>
+
+==Bugs==
+*{{D|Gas Cloud}} is misaligned on all units with a {{E|Heavy Gunner}}-type body, both the procs applied through a headshot and the lingering clouds from dead enemies often miss the head.
+
+==Trivia==
+*Gas damage, with its brown color, damage over time, and its extra lethality to Deimos {{Faction|Infested}}, is likely a reference or callback to [https://darksector.fandom.com/wiki/Enferon Enferon], a gas that is highly lethal to creatures infected by the [https://darksector.fandom.com/wiki/Technocyte_Virus Technocyte Virus] but not uninfected humans in Digital Extremes' earlier title, [[wikipedia:Dark_Sector|Dark Sector]].
+**This is further expanded with the weakness {{Faction|Techrot}} possess, as well as the existence of [[Efervon Sample|Efervon]], a very similarly named substance used by {{Faction|Scaldra}} against the Techrot. Scaldra are also resistant to Gas damage.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Screenshot_515.png|Gas visuals on a melee weapon
+Screenshot_516.png|Gas procs on an enemy 
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.5}}
+*Fixed Gas Status Effect VFX not showing up. 
+
+{{ver|37}}
+*Fixed Gas damage’s radial damage bubble VFX disappearing after hitting 10 stacks on the target.
+**It should now only disappear after all Gas stacks have expired.
+
+{{ver|36}}
+;Simplified Faction Resistances
+*Deimos Infested:
+**Vulnerable to '''Gas'''
+
+;Status Effect Reworks
+
+'''Gas'''
+
+Gas often lacked effective readability, making it difficult to distinguish its presence from the enemy or yourself. We’ve introduced enhanced visuals so that when the Gas Status Effect is active, you’ll be able to recognize it more clearly.
+
+'''Gas Changes:'''
+*Added VFX on top of the target affected by a Gas Cloud to clearly show an effect is active.
+**In addition to current and new VFX, Gas VFX now also more clearly shows the radius of the Gas Damage-over-Time (DoT) effect around a given target to better understand its impact on surrounding enemies.
+***If a player is inside the radius of the Gas DoT, the visuals are reduced for them to maintain visibility, similar to Frost’s Snow Globe. 
+*Gas VFX now has billowy volume to better present presence.
+*Gas VFX now has additional floating particles around the smoke.
+
+{{ver|33.5}}
+*Fixed a rare crash that could occur when using Enemy Radar and weapons that create Gas Status Effects.
+
+{{ver|27.3}}
+*Gas Effects will continue to tick radial Damage-over-Time for the average of the remaining Effect duration if their host dies. 
+*Gas Status Area-of-Effect radius increases with the number of stacks, to a max of 10 stacks.
+*Removed Gas damage resistance from Toxic Ancient Auras. 
+
+{{ver|27.2}}
+*The base duration of a Gas Status Effect now matches Slash for 6 seconds. No longer does AoE with forced Poison Status Effect (resulting in Poison DoT for enemies in radius), instead it does AoE DoT Gas damage around the target.
+
+{{ver|11}}
+*Introduced.
+}}
+
+==See Also==
+*[[Truth]]
+
+{{DamageNav}}
+
+[[es:Daño Gas]]
+[[fr:Dégâts/Dégâts_Gaz]]
+[[ru:Урон/Газ]]
+{{DISPLAYTITLE:Gas Damage}}
+[[Category:Gas Damage]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Mechanics]]
+[[Category:Update 11]]

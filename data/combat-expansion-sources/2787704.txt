@@ -1,0 +1,119 @@
+{{UpdateMe|{{ver|29.5}} changes and add gif showcasing what a consecutive throw looks like}}
+{{ModBox}}
+'''Power Throw''' is a [[mod]] for [[Glaive (Weapon Type)|Glaives]] that adds [[punch through]] when thrown and increases thrown damage and projectile speed.
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! [[Punch Through]]
+! Throw Damage
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || +0.3m || +16.7% || 4
+|-
+| 1 || +0.7m || +33.3% || 5
+|-
+| 2 || +1m || +50% || 6
+|-
+| 3 || +1.3m || +66.7% || 7
+|-
+| 4 || +1.7m || +83.3% || 8
+|-
+| 5 || +2.0m || +100% || 9
+|}
+
+{| class="article-table article-table-selected" style="width:400px; font-size:12px; text-align:center;" border="0" cellpadding="0" cellspacing="0"
+|+Body Units Punctured
+|-
+![[Punch through]]
+! +0.3 !! +0.7 !! +1 !! +1.3 !! +1.7 !! +2
+|-
+| Humanoid
+| 0 || 1 || 1 || 1-2 || 2 || 2
+|-
+| [[Charger|Quadruped]]
+| 0 || 0 || 1 || 1 || 1 || 2
+|}
+<sup>Data may differ due to width variances from dynamic posing & inconsistent mechanic.</sup>
+<br/>
+{| class="emodtable"
+|+ [[Flawed Mods|Flawed]]
+|-
+! [[Mod#Mod Rank|Rank]]
+! [[Punch Through]]
+! Throw Damage
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || - || - || -
+|-
+| 1 || - || - || -
+|-
+| 2 || - || - || -
+|-
+| 3 || +1.3m || +66.7% || 7
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+==Notes==
+*Damage bonus is multiplicative to the one provided by {{M|Pressure Point}} and other Melee Damage buffs.
+**Damage bonus is additive with many [[Universal Weapon Bonuses]] as it gives Weapon Damage, not Melee Damage.
+*[[Punch through]] applies to bodies only, but not surfaces of any kind (e.g. it cannot pass through a [[Shield Lancer]]'s shield).
+*Consecutive throw bonus refers to "buffering" by holding the melee button before the Glaive is caught, otherwise the buff will be lost. In addition to the Power Throw buff combo counter, the throw animation will also change; the base throw is an open-handed forward throw, while consecutive throws alternate between a backspin throw and a side-flip under throw.
+
+==Trivia==
+*Prior to {{ver|10.2.1}}, the mod granted 1.0m [[punch through]] per rank.
+*In [[w:Dark Sector|Dark Sector]], another game published by [[Digital Extremes]], "Power Throw" is an ability for Hayden Tenno to deal quadruple damage with his Glaive.
+*{{ver|13}} gave Power Throw the ability to create explosions when hitting an object or an enemy on its last bounce. This feature has since been removed in {{ver|26}}.
+
+==Bugs==
+*Cannot pass through [[Fusion MOA]]'s Osprey Attack Drone.
+*Buff Icon will not show more than 1 stack despite damage increasing up to expected values at 3 stacks like normal.
+
+==Gallery==
+<gallery hideaddbutton="true">
+ModPowerThrowU11.jpg|Old appearance
+PowerThrowModOld.png|Old appearance
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|29.5}}
+*Increased Punch Through from 0.6 to 2m.
+**+2m Punch Through. On Consecutive Throw: +100% Throw Damage (up to maximum 3 stacks)
+*Added 60% projectile speed.
+
+{{ver|26}}
+*The Power Throw Mod has been changed to not create explosions when hitting an object or enemy on its last bounce, it solely offers a Punchthrough addition. 
+
+{{ver|17}}
+*Flight speed is now increased everytime an enemy is hit.
+
+{{ver|13}}
+*Glaives with this mod equipped now explode on enemies hit during their last bounce.
+
+{{ver|10}}
+*Introduced.
+}}
+
+==See Also==
+*[[Punch through]]
+*{{M|Metal Auger}}, the rifle counterpart
+*{{M|Seeker|Seeker}}, the pistol counterpart
+*{{M|Seeking Force}}, the shotgun counterpart
+
+{{MeleeMods}}
+__NOTOC__
+[[fr:Lancer Puissant]]
+[[de:Mächtiger Wurf]]
+[[es:Lanzamiento potente]]
+[[ru:Могучий Бросок]]
+[[Category:Mods]]
+[[Category:Melee Mods]]
+[[Category:Glaive Exclusive Mods]]
+[[Category:Rare Mods]]
+[[Category:Update 10]]
+[[Category:Madurai Mods]]
+[[uk:Потужний кидок]]

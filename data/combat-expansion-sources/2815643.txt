@@ -1,0 +1,74 @@
+{{Navigation|Landslide|Tectonics|Petrify|Rumblers}}
+<onlyinclude>{{AbilityU10.3
+| name = Landslide
+| gameimage = LandslideIcon.png
+| cardimage = Landslide.png
+| hotkey = 1
+| energy = 25
+| description = Bash enemies with an explosive sliding punch, repeat up to three times for a combo attack. Each hit in the three-punch combo increases the radius attack. Energy cost is reduced with each hit of Landslide. Install mods on the Landslide Fists to boost stats.
+| strength = 100 / 200 / 300 / 350 ({{D|Impact}} damage)
+| range = [1st hit] 3 / 3.2 / 3.4 / 4 m (impact radius)<br>[2nd hit] ? / ? / ? / 6 m (impact radius)<br>[3rd hit] ? / ? / ? / 8 m (impact radius)
+| duration = N/A
+| misc = 6 / 8 / 10 / 12 m (dash range)<br>2.0 x (crit multiplier)<br>35% (crit chance)<br>15% (status chances)<br>50% (bonus Rubble health/armor)<br>5 s (combo window)
+| cardonly = {{{1|}}}
+| info = *Atlas expends {{Stat|Ability Efficiency|icon=only}}'''25''' [[energy]] to charge forward at '''40''' m/s to punch a target enemy up to <u>'''6 / 8 / 10 / 12'''</u> meters away. The target and enemies within {{Stat|Ability Range|icon=only}}'''3 / 3.2 / 3.4 / 4''' meters are dealt {{Stat|Ability Strength|icon=only}}'''100 / 200 / 300 / 350''' {{D|Impact}} damage as a melee strike.
+**Ability Strength is additive and multiplicative to base damage (e.g., {{M|Pressure Point}}, {{Arcane|Arcane Fury}}).
+**Landslide has a <u>'''35%'''</u> [[critical chance]], <u>'''2x'''</u> [[critical multiplier]], and <u>'''15%'''</u> [[status chance]].
+**Landslide has a moddable Pseudo-[[Exalted Weapon]], '''{{Weapon|Landslide Fists}}''', which does not provide an actual equippable weapon but can be modded and slotted with [[Arcane Enhancement]]s to boost the ability's performance.
+***Cannot perform [[Melee#Blocking|blocking]] or [[Melee#Heavy Attack|heavy attacks]] and as such cannot equip related mods (e.g., {{M|Parry}}, {{M|Reflex Coil}}, {{M|Mentor's Legacy}}, {{Arcane|Melee Animosity}}) and does not have an Exilus Slot.
+****Cannot benefit from {{M|Carnis Mandible}}'s heavy attack set effect.
+***Does not benefit from [[Attack Speed]] and as such cannot equip {{M|Fury}}. 
+****This means that {{M|Spoiled Strike}} provides no downside.
+***Cannot perform [[Finisher]]s and as such cannot equip {{M|Finishing Touch}} and {{Arcane|Melee Crescendo}}.
+***[[Riven Mod]]s are '''not''' generated for Landslide.
+**Landslide can be recast within a '''5''' second window (Affected by {{M|Body Count|Combo Duration}} Mods) to perform a repeating combo chain, granting 20 [[Melee Combo#Ability Combo Counter|Ability Combo Counter]] points. Landslide gains <u>'''1x'''</u> additional damage per combo multiplier, up to '''<u>12x</u>''' damage at 12x combo.
+***Additionally, recasting the ability during this duration will perform consecutive punches that increases the move's range and reduces energy cost. On the 2nd punch, the impact radius is increased to '''? / ? / ? / 6''' meters and <u>'''halves'''</u> the energy cost, and the 3rd punch increases the impact radius to '''? / ? / ? / 8''' and <u>'''quarters'''</u> the energy cost. As long as the combo counter is active, the next punch in the sequence will not reset, following a 1-2-3-1-2-3... pattern for the impact range, but keeping the energy discount. Running out of combo window resets to first punch.
+****This reduction in energy cost modifies Landslide's activation cost and is afterward affected by {{Stat|Ability Efficiency}} as normal.
+***Ability Combo is functionally equivalent to Melee Combo and as such benefits from [[Melee_Combo#Combo_Duration|Combo Duration]] (e.g., {{M|Body Count}}, {{Arcane|Primary Dexterity}}), [[Melee_Combo#Additional_Combo_Count_Chance|Additional Combo Count Chance]] (e.g., {{M|Quickening}}, {{M|True Punishment}}, {{M|Relentless Combination}}) and [[Melee_Combo#Initial_Combo|Initial Combo]] (e.g., {{M|Corrupt Charge}}, {{M|Galvanized Reflex}}). It is also affected by [[Melee_Combo#Combo_Decay|Combo Decay]] from {{Focus|Naramon}}'s {{Focus|Power Spike}}.
+**Because Landslide is counted as a melee strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+**Atlas' is [[Invulnerable]] to damage while dashing.
+**Each enemy hit increases the [[Melee#Combo Counter|Melee Combo Counter]] by 1 point.
+**AoE damage bypasses obstacles in the environment and does '''not''' diminish with distance.
+**If the target dies before Atlas lands his punch, energy used for Landslide will be refunded.
+**The third hit of the combo will knock down enemies, and activate {{Arcane|Melee Afflictions}}
+*Can be cast while in mid-air.
+*Landslide attacks can damage enemies across the [[Rift Plane]].
+| interactions = 
+*Using Landslide to kill petrified enemies frozen by {{M|Path of Statues}}, {{A|Petrify}}, or by casting {{A|Rumblers}} grants <u>'''50%'''</u> more health and [[armor]] points from the enemies' dropped [[Atlas/Abilities#Passive|Rubble]].
+*{{M|Rubble Heap}} removes the energy cost, doubles the punch distance, and adds '''100%''' {{Stat|Ability Strength}} to Landslide.
+| augment = [[File:PathofStatuesMod.png|200px|left]]
+{{main|Path of Statues}}
+{{#lst:Path of Statues|intro}}
+{{#lsth:Path of Statues|Stats}}
+{{clr}}
+| tips = *Landslide excels at rampaging between spread out clusters of enemies.
+*Take advantage of the dash's health invulnerability to charge through devastating attacks
+*Modifiers for increasing melee combo duration (such as [[Primary Dexterity]] at Rank 5) as well as decreasing melee combo loss (such as [[Naramon]]'s Power Spike) can be used to minimize the combo loss if you are unable to hit a target for a period of time (such as while traveling between objectives).
+*Performing a [[Maneuvers#Bullet Jump|Bullet Jump]] between casts allows players to extend Atlas' reach.
+*{{M|Rubble Heap}} Doubles the dash range of Landslide
+**Note that Atlas' knockdown immunity will not apply while he is not grounded.
+*Landslide benefits from elemental damage granted by certain [[Warframe Augment Mods|augments]], including:
+**Ember's {{M|Fireball Frenzy}}
+**Frost's {{M|Freeze Force}}
+**Oberon's {{M|Smite Infusion}}
+**Saryn's {{M|Venom Dose}}
+**Volt's {{M|Shock Trooper}}
+<noinclude>
+|max = {{WFmax|combo|atlas1}}
+</noinclude>|
+}}</onlyinclude>
+
+==See Also==
+*{{WF|Atlas}}
+
+[[de:Erdrutsch]]
+[[es:Desprendimiento]]
+[[ru:Оползень]]
+[[fr:Éboulement]]
+[[Category:Atlas]]
+[[Category:Warframe Abilities]]
+[[Category:Update 17]]
+[[Category:Ability Weapons]]
+[[Category:Impact Damage]]
+[[Category:Invulnerability]]
+[[uk:Зсув]]

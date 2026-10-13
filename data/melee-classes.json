@@ -1,0 +1,229 @@
+{
+  "source": {
+    "title": "Melee",
+    "revision": 2817484,
+    "timestamp": "2026-10-10T19:36:08Z",
+    "retrievedAt": "2026-10-11T06:32:02.645646+00:00",
+    "url": "https://wiki.warframe.com/w/Melee?oldid=2817484",
+    "sha256": "4207c9cffe80aa022addc73e8fbf10b5244c7079de8e8d6d393c8594b1c2f3df",
+    "file": "2817484.txt"
+  },
+  "classes": [
+    {
+      "name": "Assault Saw",
+      "firstHeavyMultiplier": 6.0,
+      "secondHeavyMultiplier": 6.0,
+      "windup": 1.0,
+      "firstHeavyText": "6x (3 {{mul}} 100% + 3 {{mul}} 100% {{D|Bleed}})",
+      "secondHeavyText": "6x"
+    },
+    {
+      "name": "Blade and Whip",
+      "firstHeavyMultiplier": 4.0,
+      "secondHeavyMultiplier": 12.0,
+      "windup": 0.4,
+      "firstHeavyText": "4x",
+      "secondHeavyText": "12x (3 {{mul}} 400%)"
+    },
+    {
+      "name": "Claws",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.6,
+      "firstHeavyText": "5x {{D|Bleed}}",
+      "secondHeavyText": "5x {{D|Bleed}}"
+    },
+    {
+      "name": "Dagger",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.4,
+      "firstHeavyText": "5x (250% {{D|Knockback}}{{D|Bleed}} + 250%)",
+      "secondHeavyText": "5x (250% {{D|Bleed}} + 250%)"
+    },
+    {
+      "name": "Dual Daggers",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.5,
+      "firstHeavyText": "5x (250% {{D|Bleed}} + 250% {{D|Bleed}})",
+      "secondHeavyText": "5x (250% {{D|Bleed}} + 250% {{D|Bleed}})"
+    },
+    {
+      "name": "Dual Nikanas",
+      "firstHeavyMultiplier": 12.0,
+      "secondHeavyMultiplier": 6.0,
+      "windup": 1.0,
+      "firstHeavyText": "12x (3 {{mul}} 200% + 600%)",
+      "secondHeavyText": "6x (100% + 200% + 300%)"
+    },
+    {
+      "name": "Dual Swords",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.7,
+      "firstHeavyText": "5x (250% + 250%)",
+      "secondHeavyText": "5x (250% + 250%)"
+    },
+    {
+      "name": "Fist",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.6,
+      "firstHeavyText": "5x",
+      "secondHeavyText": "5x"
+    },
+    {
+      "name": "Glaive",
+      "firstHeavyMultiplier": 2.0,
+      "secondHeavyMultiplier": 3.0,
+      "windup": 0.6,
+      "firstHeavyText": "2x",
+      "secondHeavyText": "3x"
+    },
+    {
+      "name": "Gunblade",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.4,
+      "firstHeavyText": "5x",
+      "secondHeavyText": "5x"
+    },
+    {
+      "name": "Hammer",
+      "firstHeavyMultiplier": 6.0,
+      "secondHeavyMultiplier": 6.0,
+      "windup": 1.2,
+      "firstHeavyText": "6x",
+      "secondHeavyText": "6x"
+    },
+    {
+      "name": "Heavy Blade",
+      "firstHeavyMultiplier": 6.0,
+      "secondHeavyMultiplier": 6.0,
+      "windup": 1.1,
+      "firstHeavyText": "6x",
+      "secondHeavyText": "6x"
+    },
+    {
+      "name": "Heavy Scythe",
+      "firstHeavyMultiplier": 6.0,
+      "secondHeavyMultiplier": 12.0,
+      "windup": 1.0,
+      "firstHeavyText": "6x (3 {{mul}} 200%)",
+      "secondHeavyText": "12x (2 {{mul}} 600%)"
+    },
+    {
+      "name": "Machete",
+      "firstHeavyMultiplier": 6.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.7,
+      "firstHeavyText": "6x (150% {{D|Bleed}} + 3 {{mul}} 150%)",
+      "secondHeavyText": "5x"
+    },
+    {
+      "name": "Nikana",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.5,
+      "firstHeavyText": "5x {{D|Bleed}} ",
+      "secondHeavyText": "5x {{D|Bleed}} "
+    },
+    {
+      "name": "Nunchaku",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.5,
+      "firstHeavyText": "5x",
+      "secondHeavyText": "5x"
+    },
+    {
+      "name": "Polearm",
+      "firstHeavyMultiplier": 6.0,
+      "secondHeavyMultiplier": 6.0,
+      "windup": 0.9,
+      "firstHeavyText": "6x",
+      "secondHeavyText": "6x"
+    },
+    {
+      "name": "Rapier",
+      "firstHeavyMultiplier": 4.5,
+      "secondHeavyMultiplier": 4.5,
+      "windup": 0.5,
+      "firstHeavyText": "4.5x {{D|Bleed}}",
+      "secondHeavyText": "4.5x {{D|Bleed}}"
+    },
+    {
+      "name": "Scythe",
+      "firstHeavyMultiplier": 6.0,
+      "secondHeavyMultiplier": 6.0,
+      "windup": 1.0,
+      "firstHeavyText": "6x {{D|Bleed}}",
+      "secondHeavyText": " 6x {{D|Bleed}}"
+    },
+    {
+      "name": "Sparring",
+      "firstHeavyMultiplier": 12.0,
+      "secondHeavyMultiplier": 15.0,
+      "windup": 0.5,
+      "firstHeavyText": "12x",
+      "secondHeavyText": "15x (3 {{mul}} 300% + 2 {{mul}} 300% {{D|Bleed}}"
+    },
+    {
+      "name": "Staff",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.5,
+      "firstHeavyText": "5x",
+      "secondHeavyText": "5x"
+    },
+    {
+      "name": "Sword",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.6,
+      "firstHeavyText": "5x",
+      "secondHeavyText": "5x"
+    },
+    {
+      "name": "Sword and Shield",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.7,
+      "firstHeavyText": "5x",
+      "secondHeavyText": "5x"
+    },
+    {
+      "name": "Tonfa",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.7,
+      "firstHeavyText": "5x (250% {{D|Bleed}}  + 250% {{D|Bleed}})",
+      "secondHeavyText": "5x (250% {{D|Bleed}}  + 250% {{D|Bleed}})"
+    },
+    {
+      "name": "Two-Handed Nikana",
+      "firstHeavyMultiplier": 6.0,
+      "secondHeavyMultiplier": 6.0,
+      "windup": 0.7,
+      "firstHeavyText": "6x {{D|Bleed}}",
+      "secondHeavyText": "6x (300% {{D|Bleed}} + 300% {{D|Bleed}})"
+    },
+    {
+      "name": "Warfan",
+      "firstHeavyMultiplier": 5.0,
+      "secondHeavyMultiplier": 5.0,
+      "windup": 0.5,
+      "firstHeavyText": "5x (250% {{D|Bleed}}  + 250% {{D|Bleed}}) ",
+      "secondHeavyText": "5x {{D|Bleed}}"
+    },
+    {
+      "name": "Whip",
+      "firstHeavyMultiplier": 4.5,
+      "secondHeavyMultiplier": 4.5,
+      "windup": 0.4,
+      "firstHeavyText": "4.5x {{D|Bleed}}",
+      "secondHeavyText": "4.5x {{D|Bleed}}"
+    }
+  ]
+}

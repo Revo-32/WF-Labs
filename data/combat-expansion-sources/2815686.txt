@@ -1,0 +1,71 @@
+{{Top|Weapon|Weapons|Weapons|Lotus|Tenno|Tenno|}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|The steel flag of Old War Railjack crews, the Pennant was invaluable in repelling boarders. With each heavy attack kill the Pennant's speed of attack increases.}}
+
+The '''Pennant''' is a [[Two-Handed Nikana]] used by [[Railjack]] crews during the Old War, featuring high [[critical chance]] and [[critical multiplier]]. The Pennant gains increased [[attack speed]] after killing an enemy with a [[Melee#Heavy Attack|Heavy Attack]].
+
+==Characteristics==
+*This weapon deals primarily {{D|Puncture}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Wise Razor}} stance.
+*[[Heavy Attack]] kills increases the weapon's [[attack speed]] by '''50%''' for '''2''' to '''46''' seconds, scaling with [[Melee Combo|Combo Multiplier]].
+**This effect stacks with each kill.
+**Each stack has its own duration and will wear off separately.
+*Heavy Attacks with this weapon deal guaranteed {{D|Slash}} status.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+{{Acquisition|The Pennant's main blueprint can be obtained from defeating [[Blite Captain]], [[Glacik Commander]], <!--[[Kuva Lich Agor Rok]], -->[[Lektro Commander]], or [[Pyr Captain]] in [[Empyrean]] missions (at '''Kasio's Rest''' on [[Saturn Proxima]], '''Flexa''' in [[Veil Proxima]], or sometimes '''Korms Belt''' in [[Earth Proxima]]). The blueprint pickup is shared across the entire squad and can be [[Trading|traded]] between players.}}
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*Upon killing an enemy with a heavy attack, Pennant's attack speed rises by 50%, indicated via an icon and timer next to the health bar. The buff duration is dependent on the combo multiplier at the time of the heavy attack, beginning at 2 seconds with no combo counter and increasing by 4 seconds for each combo multi; {{MathText|Duration {{eql}} 4s {{mul}} (Combo Multi - 1) + 2s}}. This gives a maximum duration of '''46''' seconds at a 12x combo multi.
+**Making multiple heavy attack kills within the buff's duration will grant additional buffs, each having their own duration.
+**Multiple buffs stack additively with each other. 
+
+{{SkinGallery}}
+
+== Gallery ==
+<gallery>
+File:EmpyreanExcaliburWithPennant.jpg
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|41.1}}
+*Fixed Pennant’s unique trait not working in the Simulacrum and for Clients in general. 
+
+{{ver|31.1}}
+*Fixed enemy teleporting while performing a stealth kill with a Two-Handed Nikana (Tatsu, Pennant, etc.).
+
+{{ver|27.3.8}}
+*Fixed Pennant sounds not playing correctly for Melee Stance Combos.
+
+{{ver|27.0.11}}
+*Fixed Pennant not using all attacks/features of Wise Razor Stance. As reported here: https://forums.warframe.com/topic/1152222-is-pennant-wise-razor-combo-working-correctly/
+
+{{ver|27.0.9}}
+*The Pennant has been removed from Conclave.
+
+{{ver|27.0.6}}
+*Pennant and Quellor Blueprints are now shared pickups; no longer required for all players to manually collect the pickup! Thanks for your patience as we work toward the rest of the on-foot items being picked up.
+
+{{Ver|27}}
+*Introduced.
+}}
+{{Ver/Lu|27.0.11}}
+
+==See Also==
+*{{Weapon|Quellor}}, the primary counterpart of this weapon.
+
+{{WeaponNav}}
+
+[[es:Pennant]]
+[[fr:Pennant]]
+[[Category:Update 27]]
+[[Category:Weapons with Passives]]
+[[Category:Dax Weapons]]
+[[uk:Вимпел]]

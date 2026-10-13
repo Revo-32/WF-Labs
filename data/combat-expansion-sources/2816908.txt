@@ -1,0 +1,243 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|In the early Orokin Empire, elites wore Innodem as a symbolic reminder to defend the defenseless. The tradition fell out of style, but nostalgic elites sometimes acknowledged the sentiment in the form of a gift. The Void amplifies that ideal. Void energy strengthens Innodem gliding aerial attacks and the wielder is increasingly resilient as the perform finisher attacks in Incarnon Form.}}
+'''Innodem''' is an [[Incarnon]] ceremonial [[dagger]]. Once its Incarnon form is unlocked, Tenno can transform this weapon in battle by executing a [[Heavy Attack]] with a [[Melee Combo]] of 5x or higher, increasing the weapon's range and attack speed, enabling Innodem's Incarnon Resilience, and causing aim glide melee attacks to throw projectiles.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Stinging Thorn}} and {{M|Pointed Wind}} stance.
+*As an [[Incarnon]] weapon, Innodem has '''5''' evolution tiers with different perks that allow players to customize their Innodem's stats.
+**Once unlocked, activate Incarnon Form by executing a [[Heavy Attack]] with a [[Melee Combo]] of 5x or higher (3x with the  '''Incarnon Imago''' evolution). 
+***When the transformation is ready, the combo counter will shimmer with Void energy.
+***Incarnon Form lasts for '''90''' seconds and behaves as follows:
+****'''+3''' [[Range]]
+****'''+40%''' [[Attack Speed]]
+****Aim glide melee attacks launch projectiles which deal 360 {{D|Radiation}} damage.
+*****Projectile has infinite Punch Through.
+*****Projectile has a range of 21 meters.
+*****Projectiles do not contribute to but benefit from [[Melee_Combo#Combo_Multiplier|Melee Combo Counter]].
+****[[Finisher]]s grant '''Incarnon Resilience''', increasing [[Damage Reduction]] by '''10%''' up to four stacks. These {{Tooltip|stacks are multiplicative to each other|Totals to 34.39% Damage reduction, or 1.52x EHP.}} and last for the duration of Incarnon Form. Mercy finishers with a [[Parazon]] do not apply a stack of '''Incarnon Resilience'''.
+***The transformation persists through all states such as holstering, [[bleedout]] and [[disarm]], but is removed upon [[death]].
+*Grants a '''10%''' [[Movement Speed]] bonus while held (i.e. melee mode or quick melee).
+
+{{Advantages}}
+{{Disadvantages}}
+
+==Acquisition==
+Innodem's main blueprint is purchased from [[Cavalero]] of [[The Holdfasts]] at '''Rank 1 - Fallen''' for {{Sc|5,500}}. The blueprint can be [[Trading|traded]].
+{{BuildAutomatic|type=Weapon|name=Innodem}}
+
+== Incarnon Form ==
+
+When newly acquired from the [[Foundry]], players must acquire '''100''' kills with the Innodem in order to gain access to its Incarnon transformation. Each challenge additionally grants 5,000 [[affinity]] to the weapon, affected by [[Affinity Booster]]s. The following Evolution tiers, their requirements for unlocking them, and their related perks, are shown below.
+
+=== Overview ===
+*Incarnon Form is charged by building [[Melee Combo]] to 5x, then using a [[Heavy Attack]]. Once activated, the Incarnon form lasts for '''90''' seconds.
+**Incarnon Form persists through all activities, such as holstering, [[bleedout]], or being [[disarm]]ed. However, Incarnon Form is removed upon [[death]].
+
+=== Evolutions ===
+
+{{clr}}
+{| class="wikitable"
+|+
+|-
+! colspan="3" | Evolution
+! Notes
+|-
+! colspan="3" | Evolution I Challenge !! Kill '''100''' enemies with the Innodem.
+|-
+! EVO1
+| style="white-space: nowrap; text-align:center;" | '''Incarnon Form''' [[File:EvolutionIncarnonFormBlade.png|64px|center]]
+| 
+* Reach '''5x''' Combo and then [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form.
+*Aerial Attacks while Aim Gliding launch {{D|Radiation}} Damage projectiles, and Finishers increase Damage Reduction.
+** '''+3''' [[Melee#Range|Range]]
+** '''+40%''' [[Attack Speed]]
+|
+*Aim glide melee attacks launch projectiles which deal 360 {{D|Radiation}} damage.
+**Projectile has infinite Punch Through.
+**Projectile has a range of 21 meters.
+**Projectiles do not contribute to but benefit from [[Melee_Combo#Combo_Multiplier|Melee Combo Counter]].
+*[[Finisher]]s grant '''Incarnon Resilience''', increasing [[Damage Reduction]] by '''10%''' up to four stacks. These {{Tooltip|stacks are multiplicative to each other|Totals to 34.39% Damage reduction}} and last for the duration of Incarnon Form. 
+**Mercy finishers with a [[Parazon]] do not apply a stack of '''Incarnon Resilience'''.
+|-
+! colspan="3" | Evolution II Challenge !! Activate Incarnon Form '''6''' times in a mission
+|-
+! rowspan="3" | EVO2
+| style="white-space: nowrap; text-align:center;" | '''Orokin Reach''' [[File:EvolutionOrokinReach(xWhite).png|64px|center]]
+|
+* '''+0.5''' [[Melee#Range|Range]]
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Bladed Harmony''' [[File:EvolutionAttackSpeed(xWhite).png|64px|center]]
+|
+* '''+20%''' [[Attack Speed]]
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Striking Swiftness''' [[File:EvolutionStrikingSwiftness(xWhite).png|64px|center]]
+|
+* '''+30%''' [[Sprint Speed]]
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution III Challenge !! Complete '''3''' Heavy Attacks on [[Thrax Centurion]]s or [[Thrax Legatus|Legates]]
+|-
+! rowspan="3" | EVO3
+| style="white-space: nowrap; text-align:center;" | '''Hawk Momentum''' [[File:EvolutionHawkMomentum(xWhite).png|64px|center]]
+| 
+* Gain '''5''' [[Combo]] for every 10m of continuous slide
+|
+* Only counts slide distance while grounded.
+* Weapon must be in hand for perk to apply.
+|-
+| style="white-space: nowrap; text-align:center;" | '''Skyborne Hunter''' [[File:EvolutionSkyborneHunter(xWhite).png|64px|center]]
+| 
+* Increase range of [[Melee#Aerial_Attack|aerial melee attacks]] by '''+0.5m'''.
+|
+* Incarnon Form projectile and {{D|Slash}}, {{D|Heat}}, and {{D|Toxin}} Status Effect kills while airborne count towards generating stacks.
+|-
+| style="white-space: nowrap; text-align:center;" | '''Blade Twister''' [[File:EvolutionBladeTwister(xWhite).png|64px|center]]
+| 
+* '''+60%''' [[Finisher]] Damage
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution IV Challenge !! Close '''12''' Ruptures in [[Void Flood]]
+|-
+! rowspan="3" | EVO4
+| style="white-space: nowrap; text-align:center;" | '''Incarnon Imago''' [[File:EvolutionIncarnonFormBlade(xWhite).png|64px|center]]
+|
+* Reach '''3x''' [[Combo]] and [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Swooping Lunge''' [[File:EvolutionSwoopingLunge(xWhite).png|64px|center]]
+|
+* On Airborne Melee Kill: '''+50%''' Melee Damage for '''10s'''. Stacks up to 3x.
+|
+* Stacks additively with Pressure Point and similar bonuses.
+|-
+| style="white-space: nowrap; text-align:center;" | '''Protracted Execution''' [[File:EvolutionProtractedExecution(xWhite).png|64px|center]]
+|
+* On Finisher: '''20''' [[Combo]] on [[Finisher]]
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution V Challenge !! Complete a Solo mission with an Incarnon Weapon equipped in every slot.
+|-
+! rowspan="3" | EVO5
+| style="white-space: nowrap; text-align:center;" | '''Blood Anointed''' [[File:EvolutionBloodAnointed(xWhite).png|64px|center]]
+|
+* On Finisher: '''+40%''' [[Melee_Combo#Heavy_Attack_Efficiency|Heavy Attack Efficiency]] for '''40s'''
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Stunning Brutality''' [[File:EvolutionStunningBrutality(xWhite).png|64px|center]]
+|
+* On [[Finisher]]: Stun aware enemies in a '''10m''' Radius
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Armed Inspiration''' [[File:EvolutionAmmoToCombo(xWhite).png|64px|center]]
+| 
+* Collecting ammo grants '''5''' Melee [[Combo]] counter
+| style="text-align:center" | -
+|-
+|}
+
+
+==Tips==
+*Using an [[Exalted Weapon]] will negate Evolution V challenge.
+*Incarnon Genesis weapons are counted for Evolution V challenge.
+*The Innodem synergizes particularly well with {{Focus|Naramon}} Focus, due to {{Focus|Sling Stun}} granting an easy way to open enemies up to finishers.
+**In addition, {{Focus|Killer's Rush}} causes a finisher from Operator form to increase critical chance. Performing a finisher in this fashion will still activate the Innodem's finisher-related evolutions.
+**As this weapon is of the dagger classification, it is also able to force slash procs and open enemies for finishers upon usage of a heavy attack.
+*Combining {{M|Corrupt Charge}} and {{M|Covert Lethality}} grants a passive minimum 3x [[Melee Combo]], allowing '''Incarnon Imago''' to immediately transform Innodem at will.
+*The Innodem's '''Hawk Momentum''' evolution can build and maintain [[Melee Combo]] out of combat at no cost.
+
+==Trivia==
+*"Innodem," in Latin, is a present subjunctive form of ''innodo'', which is a verb meaning 'to fasten with a knot' or 'to entangle'.
+
+==Bugs==
+*Damage for Innodem's projectiles seems to fluctuate semi-randomly based on a struck enemy's location, revealing a unique damage formula: ((Condition Overload bonus + Location multiplier * Stance multiplier * (1 + Pressure Point bonus)) * (1 + Elemental damage bonus)) * Base damage * Other multipliers
+**Direct hits also seem to use this formula, but without the randomness from enemy location.
+**Bonus damage from Condition Overload is sometimes doubled for projectiles.
+
+==Media==
+*Whooshes - {{Audio|VoidDaggerWhooshA.ogg}} {{Audio|VoidDaggerWhooshB.ogg}} {{Audio|VoidDaggerWhooshC.ogg}} {{Audio|VoidDaggerWhooshD.ogg}} {{Audio|VoidDaggerWhooshE.ogg}}
+*Heavy attack wooshes - {{Audio|VoidDaggerHeavyWhooshA.ogg}} {{Audio|VoidDaggerHeavyWhooshB.ogg}} {{Audio|VoidDaggerHeavyWhooshC.ogg}} {{Audio|VoidDaggerHeavyWhooshD.ogg}} {{Audio|VoidDaggerHeavyWhooshE.ogg}}
+*Projectile - {{Audio|VoidDaggerProjShotA.ogg}} {{Audio|VoidDaggerProjShotB.ogg}} {{Audio|VoidDaggerProjShotC.ogg}}
+*Projectile explosion - {{Audio|VoidDaggerProjExplosionA.ogg}} {{Audio|VoidDaggerProjExplosionB.ogg}} {{Audio|VoidDaggerProjExplosionC.ogg}}
+*Projectile whiz - {{Audio|VoidDaggerProjByA.ogg}} {{Audio|VoidDaggerProjByB.ogg}} {{Audio|VoidDaggerProjByC.ogg}}
+<gallery>
+File:Excalibur with Innodem1.png
+File:Excalibur with Innodem2.png
+File:Incarnon inodem.png
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|41.1}}
+*Fixed alternative Holster Styles for the following Incarnons missing offsets:
+**Innodem
+
+{{ver|40}}
+*Fixed the Innodem missing the custom Melee Incarnon Reticle.
+
+{{ver|39}}
+*Updated the Evolution I description for the Innodem to specify a single Heavy Attack with x Combo multiplier is required instead of the previously written “Heavy Attacks”. 
+
+{{ver|33.6.4}}
+*Fixed the Evolution V Incarnon Challenge (Complete a mission with an Incarnon Weapon in every slot) not completing for the Innodem when using weapons with Incarnon Geneses installed.
+
+{{ver|33.5}}
+*Fixed Melee Incarnon weapons (original and Genesis) missing their Incarnon Form stats in the Arsenal.
+*Fixed the Innodem not transforming into Incarnon Mode when performing a Heavy Attack with the required 5x Melee combo count (also affected the Evolution IV “Incarnon Imago” perk).
+
+{{ver|33.0.5}}
+*Fixed Melee Incarnon Weapons using the incorrect HUD indicator to state that Incarnon Mode was ready. 
+
+{{ver|33}}
+*Changed Incarnon Weapons’ “DAMAGE” stat to “Incarnon Form” when viewing the Incarnon Form damage values in the Arsenal.
+*Fixed Innodem losing their Incarnon Form after entering Arsenal in the Simulacrum. 
+*Fixed Incarnon weapons reverting to their default form not being visible to other players in the squad until it is shot again. 
+
+{{ver|32.3}}
+*Fixed custom reticles (Incarnon weapons for example) overlapping with default reticles in the UI when swapping between weapons.
+*Fixed the Incarnon mode reticle appearing when it has not yet been unlocked for that Incarnon Weapon.
+
+{{ver|32.2.5}}
+*Fixed Incarnon Weapons losing their crosshair when flying around in Archwing in open landscape areas.
+
+{{ver|32.2.4}}
+*Fixes towards script error with Incarnon Weapons’ HUD.
+
+{{ver|32.2.1}}
+*(Hot-dropped earlier today) Fixed certain players getting a “failed to update account” error while trying to complete Incarnon Weapon challenges in mission.
+*Fixed script error when hovering over Incarnon Weapon upgrades in the Arsenal UI.
+
+{{ver|32}}
+*Fixed the default Arching Reticle overlapping the custom Incarnon Weapon Reticle when in Archwing.
+*Fixed Incarnon Weapon reticles being visible in Captura Scenes.
+
+{{ver|31.7.2}}
+*You can now search for Incarnon weapons in your Inventory by typing “Incarnon”.
+
+{{ver|31.6.4}}
+*Fixed skins applying to the Innodem’s Incarnon mode form.
+
+{{ver|31.6.1}}
+*Fixed Innodem being able to equip Ceramic Dagger Rivens. 
+*Fixed Innodem’s mesh having issues when on the ground after being stolen away.
+
+{{ver|31.6}}
+*Introduced.
+}}
+
+==See Also==
+*[[Incarnon]]
+**{{Weapon|Laetum}}
+**{{Weapon|Praedos}}
+**{{Weapon|Phenmor}}
+**{{Weapon|Felarx}}
+
+{{WeaponNav}}
+{{IncarnonNav}}
+[[uk:Іннодем]]
+[[fr:Innodem]]

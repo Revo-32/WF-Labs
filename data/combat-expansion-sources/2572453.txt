@@ -1,0 +1,76 @@
+<onlyinclude>{{EditTab|Zaw Stats/Daggers}}
+<div class="tabber-borderless">
+<tabber>All Daggers=
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strikes
+|-
+| [[File:Balla.png|center|thumb|100px]]'''[[Balla]]'''
+|-
+|}
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTypeTable|Dagger|OneHanded}}
+|-|Balla-Korb =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Balla.png|center|thumb|100px]]'''[[Balla]]'''
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Balla|Korb}}
+|-|Balla-Kwath =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Balla.png|center|thumb|100px]]'''[[Balla]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Balla|Kwath}}
+|-|Balla-Laka =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Balla.png|center|thumb|100px]]'''[[Balla]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Balla|Laka}}
+|-|Balla-Peye =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Balla.png|center|thumb|100px]]'''[[Balla]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Balla|Peye}}
+|-|Balla-Plague Akwin =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Balla.png|center|thumb|100px]]'''[[Balla]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Balla|Plague Akwin}}
+</tabber>
+</div>
+</onlyinclude>
+[[Category:Tabview]]
+[[Category:Dagger]]
+[[fr:Stats des Zaws/Dagues]]

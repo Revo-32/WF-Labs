@@ -1,0 +1,1132 @@
+{
+  "version": "wiki-full-0.5.0-20261011",
+  "weaponPartitions": {
+    "primary": 200,
+    "secondary": 156,
+    "melee": 250,
+    "archwing": 50,
+    "companion": 41,
+    "railjack": 157,
+    "modular": 39,
+    "misc": 18
+  },
+  "weaponRecords": 911,
+  "weaponClasses": 62,
+  "calculableMelee": 228,
+  "stanceTables": 134,
+  "stanceMods": 84,
+  "combos": 1248,
+  "directCombos": 232,
+  "arcanes": 166,
+  "mods": 1550,
+  "equippableMeleeMods": 122,
+  "calculatedMeleeMods": 34,
+  "missingKorean": {
+    "weapons": 56,
+    "arcanes": 5,
+    "mods": 53
+  },
+  "sourceIssues": [
+    {
+      "path": "Module:Stances/data/Blind Justice/Forward Block/Attacks/2/Procs/1",
+      "value": "Knockdown"
+    },
+    {
+      "path": "Module:Weapons/data/primary/Lanka/Attacks/0/FireRate",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/primary/Lanka/Attacks/1/FireRate",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/archwing/Fluctus (Atmosphere)/Attacks/0/PunchThrough",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/archwing/Fluctus/Attacks/0/PunchThrough",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Artax/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Burst Laser/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Burst Laser Prime/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Cryotra/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Deconstructor/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Deconstructor Prime/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Deth Machine Rifle/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Deth Machine Rifle Prime/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Helstrum/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Laser Rifle/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Multron/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Prime Laser Rifle/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Prisma Burst Laser/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Stinger/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Sweeper/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Sweeper Prime/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Tazicor/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Verglas/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Verglas Prime/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Vulcax/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/companion/Vulklok/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Apoc/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Apoc Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Apoc Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Apoc Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Carcinnox/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Carcinnox Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Carcinnox Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Carcinnox Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Cryophon/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Cryophon Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Cryophon Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Cryophon Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Glazio/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Glazio Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Glazio Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Glazio Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Laith/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Laith Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Laith Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Laith Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Apoc Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Apoc Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Apoc Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Apoc Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Carcinnox Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Carcinnox Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Carcinnox Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Carcinnox Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Cryophon Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Cryophon Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Cryophon Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Cryophon Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Glazio Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Glazio Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Glazio Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Glazio Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Laith Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Laith Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Laith Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Laith Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Photor Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Photor Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Photor Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Photor Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Pulsar Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Pulsar Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Pulsar Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Pulsar Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Talyn Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Talyn Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Talyn Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Talyn Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Vort Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Vort Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Vort Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Lavan Vort Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Photor/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Photor Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Photor Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Photor Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Pulsar/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Pulsar Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Pulsar Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Pulsar Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Talyn/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Talyn Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Talyn Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Talyn Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Tunguska Cannon/Attacks/0/Range",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Apoc Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Apoc Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Apoc Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Apoc Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Carcinnox Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Carcinnox Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Carcinnox Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Carcinnox Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Cryophon Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Cryophon Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Cryophon Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Cryophon Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Glazio Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Glazio Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Glazio Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Glazio Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Laith Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Laith Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Laith Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Laith Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Photor Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Photor Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Photor Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Photor Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Pulsar Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Pulsar Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Pulsar Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Pulsar Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Talyn Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Talyn Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Talyn Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Talyn Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Vort Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Vort Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Vort Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vidar Vort Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vort/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vort Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vort Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Vort Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Apoc Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Apoc Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Apoc Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Apoc Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Carcinnox Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Carcinnox Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Carcinnox Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Carcinnox Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Cryophon Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Cryophon Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Cryophon Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Cryophon Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Glazio Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Glazio Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Glazio Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Glazio Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Laith Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Laith Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Laith Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Laith Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Photor Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Photor Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Photor Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Photor Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Pulsar Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Pulsar Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Pulsar Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Pulsar Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Talyn Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Talyn Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Talyn Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Talyn Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Vort Mk I/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Vort Mk II/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Vort Mk III/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/railjack/Zetki Vort Mk IV/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/modular/Dissic Scaffold/Attacks/2",
+      "value": [
+        {
+          "key": "AttackIndex",
+          "previous": 3,
+          "last": 2
+        }
+      ]
+    },
+    {
+      "path": "Module:Weapons/data/misc/Rampart/AmmoMax",
+      "value": "math.huge"
+    },
+    {
+      "path": "Module:Weapons/data/misc/Ebisu Spear/Attacks/0",
+      "value": [
+        {
+          "key": "CritMultiplier",
+          "previous": 2,
+          "last": 0
+        }
+      ]
+    },
+    {
+      "path": "Module:Weapons/data/misc/Lanzo Fishing Spear/Attacks/0",
+      "value": [
+        {
+          "key": "CritMultiplier",
+          "previous": 2,
+          "last": 0
+        }
+      ]
+    },
+    {
+      "path": "Module:Weapons/data/misc/Peram Fishing Spear/Attacks/0",
+      "value": [
+        {
+          "key": "CritMultiplier",
+          "previous": 2,
+          "last": 0
+        }
+      ]
+    },
+    {
+      "path": "Module:Weapons/data/misc/Shockprod Fishing Spear/Attacks/0",
+      "value": [
+        {
+          "key": "CritMultiplier",
+          "previous": 2,
+          "last": 0
+        }
+      ]
+    },
+    {
+      "path": "Module:Weapons/data/misc/Spari Spear/Attacks/0",
+      "value": [
+        {
+          "key": "CritMultiplier",
+          "previous": 2,
+          "last": 0
+        }
+      ]
+    },
+    {
+      "path": "Module:Weapons/data/misc/Stunna Fishing Spear/Attacks/0",
+      "value": [
+        {
+          "key": "CritMultiplier",
+          "previous": 2,
+          "last": 0
+        }
+      ]
+    },
+    {
+      "path": "Module:Weapons/data/misc/Tulok Fishing Spear/Attacks/0",
+      "value": [
+        {
+          "key": "CritMultiplier",
+          "previous": 2,
+          "last": 0
+        }
+      ]
+    },
+    {
+      "path": "Module:Weapons/data/misc/Dargyn/AmmoMax",
+      "value": "math.huge"
+    }
+  ],
+  "officialDifferences": [
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeKatana/PrimeNikana",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinnerPrime/TonfaContestWinnerPrimeWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Warfan/WarfanWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Warfan/PrimeGunsen/PrimeGunsenWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeNamiSkyla/PrimeNamiSkyla",
+      "field": "attackSpeed",
+      "wiki": 1.33,
+      "official": 1.3333334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Axe/DualInfestedAxesWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Axe/DualAxeWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/DualKamas/DualKamas",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/PrimeDualKamas/PrimeDualKamas",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Operator/Melee/DrifterTazer/DrifterTazerPlayerWep",
+      "field": "criticalChance",
+      "wiki": 0.13,
+      "official": 0.14
+    },
+    {
+      "id": "/Lotus/Weapons/Operator/Melee/DrifterTazer/DrifterTazerPlayerWep",
+      "field": "attackSpeed",
+      "wiki": 0.67,
+      "official": 0.66666669
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Scythe/ReaperWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Melee/GrineerClaws/GrnClaws",
+      "field": "attackSpeed",
+      "wiki": 0.883,
+      "official": 0.83333337
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Melee/Swords/Mire/MireSword",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Melee/GrineerMachetteAndCleaver/WraithMacheteWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Melee/Swords/Mios/Mios",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Sentients/SentJointedScythe/SentJointedScytheWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/SteelMeridian/Melee/SMSydon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Staff/PrimeBo/PrimeBoWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Axe/WolfFrameAxeWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Axe/PrimeVorunaAxeWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/CephalonSuda/Melee/CSHeliocor",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Nunchaku/TnoNunchaku/TnoNunchaku",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/StalkerMios/OperationsLacera",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/UmbraKatana/UmbraKatana",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/SwordsAndBoards/SundialSwordBoard/SundialBoardSword",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/Melee/InfWarfan/InfWarfanWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/DaxDuviriTwoHandedKatana/DaxDuviriTwoHandedKatanaWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Scythe/ParisScythe/ParisScythe",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Gauntlet/Gauntlet",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Scythe/EtherScytheWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Polearms/PrimePolearmWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/TennoSai/TennoSais",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeOkina/PrimeOkina",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Melee/Glaive/CrpGhostCatcherGlaive/CrpGhostCatcherGlaive",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/DualKamas/SingleKama",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Polearms/TnHalberdPolearm/TnHalberdPolearmWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Glaives/Boomerang/BoomerangWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Tonfa/TonfaContestWinner/TennoTonfa",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/PrimeTatsu/PrimeTatsuWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Melee/CrpBriefcaseScythe/CrpBriefcaseScythe",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Melee/CrpBriefcase2HKatana/CrpBriefcase2HKatana",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Melee/AHBoltace",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Staff/MonkSpade/TnoMonkStaff",
+      "field": "attackSpeed",
+      "wiki": 1.33,
+      "official": 1.3333334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Staff/TipedoPrime/TipedoPrimeWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Fist/FuraxWraith",
+      "field": "attackSpeed",
+      "wiki": 1.08,
+      "official": 1.0833334
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Zariman/Melee/Tonfas/ZarimanTonfaWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Melee/KickAndPunch/PrismaObex",
+      "field": "attackSpeed",
+      "wiki": 1.33,
+      "official": 1.3333334
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Melee/GrnBoomerang/GrnBoomerang",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    },
+    {
+      "id": "/Lotus/Weapons/Grineer/Melee/GrnBoomerang/HalikarWraithWeapon",
+      "field": "attackSpeed",
+      "wiki": 1.17,
+      "official": 1.1666667
+    }
+  ],
+  "reviewedOverrides": [
+    {
+      "item": "Reach",
+      "field": "MaxRank",
+      "module": 5,
+      "selected": 3,
+      "evidence": "Reach Stats table revision 2760400 and official Export both have ranks 0-3"
+    },
+    {
+      "item": "Venka Prime",
+      "field": "MaxCombo",
+      "selected": 13,
+      "evidence": "Venka Prime revision 2783040; Blood Rush / Weeping Wounds remain capped at 12x"
+    },
+    {
+      "item": "Exalted stance compatibility",
+      "field": "AbilityOnly",
+      "selected": [
+        "Exalted Blade",
+        "Hysteria",
+        "Primal Fury",
+        "Ravenous Wraith",
+        "Serene Storm"
+      ],
+      "evidence": "Warframe-specific stance InternalName; do not attach Exalted Blade to normal swords"
+    }
+  ]
+}

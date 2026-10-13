@@ -1,0 +1,76 @@
+'''Projectile Speed''' (also known as '''projectile velocity''' or '''flight speed''') is an attribute in non-[[hitscan]] weaponry, that defines how quickly a weapon's ammunition travels to a target after leaving the weapon. Projectile speed can be of huge consequence to player [[accuracy]] because shooting at moving targets directly on the reticle might result in the projectile(s) missing them; players must instead "lead" the target, meaning they should aim to shoot where they anticipate the target will be by the time the projectile reaches it.
+
+==Hitscan vs Projectile==
+'''[[Hitscan]]''' weapons simply strike at the aimed point instantly; the player does not need to lead the target at all.
+
+A simple way to tell if a weapon is hitscan or projectile-based, is to fire at a wall as far away as the player can reliably see bullet holes or impact marks. If the bullet hole is generated on the surface instantly upon firing and before any bullet animations, it is very likely to be a hitscan weapon. 
+*Any non-hitscan weapon is a projectile-based weapon.
+*The presence of bullet animations, smoke trails, or flashes of light do not necessarily indicate that a weapon is projectile-based; the animations may be for show.
+
+The word '''[[wikipedia:hitscan|hitscan]]''' comes from a technical term based on how computers used to determine if targets were struck on the pull of the trigger. It takes more processing power for a computer to simulate the bullet(s) as it flies through the air than it does to immediately determine if a shot will hit or miss based on the straight trajectory of where the weapon is firing, removing the factor of flight speed. This is a justifiable solution since most firearms have projectile speeds quick enough to instantly hit at short to medium ranges.
+
+'''Projectile''' in the context of computers describes weaponry that actually simulate shooting out objects which fly through the air. These move at their set projectile speeds from the weapons' barrels, and therefore the player must account for the distance between them and their target. This type of ammo is "tangible", having a physical hitbox—for example, {{WF|Valkyr}} can successfully {{A|Rip Line}} onto the rocket of an {{Weapon|Ogris}}.
+
+==Damage Falloff==
+{{Main|Damage Falloff}}
+
+The effectiveness of weapons with listed '''Damage Falloff''' values (such as [[:Category:shotgun|shotguns]]) are determined by what distance a target is hit at. Hits will deal full damage if the target is closer than the start of the weapon's falloff range, but over the falloff range the weapon's damage will decrease linearly into the weapon's minimum damage percentage. Different weapons have different minimum damage percentages unlisted in the [[Arsenal]]. Any hits dealt at distances further than the entire range will continue to deal the weapon's minimum damage percentage.
+
+'''Damage Falloff''' distances are also affected by '''Projectile Speed''' mods:
+
+*Mods including [[Riven Mods|Rivens]] that have positive or negative Projectile speeds will affect a weapon's entire Damage Falloff range accordingly, making them more or less effective at longer ranges.
+*[[Hitscan]] weapons that do '''not''' list Damage Falloff values in their UI are completely unaffected by [[Projectile Speed]] modifications.
+*Damage Falloff does not apply to [[Continuous Weapon]]s since they have no Damage Falloff, but instead unique [[Beam Length]] limits.
+
+==Projectile Speed Modifiers==
+For '''non-hitscan''' [[Projectile Speed|projectile]] weapons, these mods increase their flight speeds, reduce their travel times, and reduce projectile drop for applicable weapons such as the {{Weapon|Euphona Prime}} or [[Sporelacer]].
+
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" perrow="3" bordersize="none" bordercolor="#FFFFFF">
+TerminalVelocityMod.png|link=Terminal Velocity|{{M|Terminal Velocity}}
+FatalAccelerationMod.png|link=Fatal Acceleration|{{M|Fatal Acceleration}}
+LethalMomentumMod.png|link=Lethal Momentum|{{M|Lethal Momentum}}
+WhirlwindMod.png|link=Whirlwind|{{M|Whirlwind}}
+EntropyFlightMod.png|link=Entropy Flight|{{M|Entropy Flight}}
+JetStreamMod.png|link=Jet Stream|{{M|Jet Stream}}
+GalvanizedAccelerationMod.png|link=Galvanized Acceleration|{{M|Galvanized Acceleration}}
+</gallery>
+
+; Weapon specific
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" perrow="3" bordersize="none" bordercolor="#FFFFFF">
+StaticAlacrityMod.png|link=Static Alacrity|{{M|Static Alacrity}}
+FocusedAccelerationMod.png|link=Focused Acceleration|{{M|Focused Acceleration}}
+PrecisionMunitionMod.png|link=Precision Munition|{{M|Precision Munition}}
+</gallery>
+
+In addition, there are some [[File:Conclave Sigil Black.png|x14px|link=Conclave]][[PvP]]-exclusive mods which affect flight speed:
+
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" perrow="3" bordersize="none" bordercolor="#FFFFFF">
+FeatheredArrowsMod.png|link=Feathered Arrows|{{M|Feathered Arrows}}
+BlindShotMod.png|link=Blind Shot|{{M|Blind Shot}}
+LuckyShotMod.png|link=Lucky Shot|{{M|Lucky Shot}}
+HeavyWarheadMod.png|link=Heavy Warhead|{{M|Heavy Warhead}}
+</gallery>
+
+==List of Projectile Weapons==
+<tabber>Primary={{#invoke:Weapons/comptable|getCompTableSpeedGuns|Primary}}
+|-|Secondary={{#invoke:Weapons/comptable|getCompTableSpeedGuns|Secondary}}
+|-|Melee={{#invoke:Weapons/comptable|getCompTableSpeedGuns|Melee}}
+|-|Archgun={{#invoke:Weapons/comptable|getCompTableSpeedGuns|Archgun}}
+|-|Archgun (Atmosphere)={{#invoke:Weapons/comptable|getCompTableSpeedGuns|Archgun (Atmosphere)}}
+|-|Robotic={{#invoke:Weapons/comptable|getCompTableSpeedGuns|Robotic}}
+[[Category:Automatic Comparison Table]]
+</tabber>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|11.5}}
+*Changes to weapon projectile logic. The motivation of this change is that we want weapons like grenades that explode to end up in the same spot on host and client (in sync) without having the traditional delay of a replicated projectile (in particular, we have grenades that can be remotely detonated and this requires more or less precise timing on the part of the local client). This should fix some random self-inflicted deaths!
+}}
+
+==See Also==
+*[[Punch Through]], another mechanic shared by guns
+*[[Multishot]], another mechanic shared by guns
+
+{{MechNav}}
+[[es:Velocidad de proyectil]]
+[[Category:Mechanics]]

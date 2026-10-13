@@ -1,0 +1,42 @@
+name: Windows 검증 및 설치 파일
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: global.json
+      - name: 업로드 대상 파일 검사
+        run: python -X utf8 tools/release-preflight.py
+      - name: 계산 및 실제 WPF 화면 검증
+        run: ./tools/validate.ps1 -Dotnet (Get-Command dotnet).Source
+      - name: 설치·업데이트 패키지 생성
+        env:
+          WF_REPOSITORY: ${{ github.repository }}
+        run: ./tools/package.ps1 -Dotnet (Get-Command dotnet).Source -RepositoryUrl "https://github.com/$env:WF_REPOSITORY" -OutputDirectory builds/release
+      - name: 패키지 무결성과 업데이트 연결 검사
+        run: python -X utf8 tools/verify-package.py builds/release
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-validation
+          path: |
+            artifacts/validation/
+            artifacts/release-preflight.json
+            artifacts/package-verification.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WF-Labs-Windows
+          path: builds/release/

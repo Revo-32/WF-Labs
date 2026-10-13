@@ -1,0 +1,66 @@
+{{Infobox
+| Box title = Lifted
+| image = HeavySlamAttackLifted.gif
+}}
+
+'''{{D|Lifted}}''' is a [[Status Effect]] caused by certain [[melee]] attacks that knocks enemies airborne and briefly suspends them in mid-air in a ragdolled state. Lifted enemies can be "juggled" with repeated procs, and certain equipment and abilities provide bonuses to Lifted enemies. Lifted procs last 1 second at base, increasing by 1 second for every [[Melee Combo]] tier, up to 12 seconds at 12x combo.
+
+==Mechanics==
+{{UpdateMe}}
+*Any attack that procs Lifted while an enemy is in a Lifted state will prematurely end the state and [[ragdoll]]s the enemy.
+**Any non-melee attack on an enemy in a Lifted state will also prematurely end it.
+
+==Sources of Lifted==
+*Some Melee [[Heavy Attack]]s.
+*All Heavy [[Slam Attack]]s.
+*Naramon's {{Focus|Void Levitation}}.
+
+===Abilities===
+{{#tag:tabber|
+Bonewidow =
+{{:Shield Maiden}}
+{{:Firing Line}}
+{{!}}-{{!}}
+
+Sevagoth =
+{{:Embrace}}
+{{!}}-{{!}}
+}}
+
+===Miscellaneous===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:Mausolon.png|link=Mausolon|alt=MausolonAlt-Fire|{{Weapon|Mausolon}}<br />Alt-Fire
+File:TelosBoltace.png|link=Telos_Boltace|alt=Telos BoltaceSecond hit of Stormpath|{{Weapon|Telos Boltace}}<br />Second hit of Stormpath
+File:CrescentChargeMod.png|link=Crescent_Charge|alt=Crescent Charge|{{M|Crescent Charge}}
+</gallery>
+
+==Effects That Benefit From Lifted Procs==
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+SaxumCarapaceMod.png|link=Saxum Carapace|{{M|Saxum Carapace}}|alt=Saxum Carapace
+SaxumSpittleMod.png|link=Saxum Spittle|{{M|Saxum Spittle}}|alt=Saxum Spittle
+SaxumThoraxMod.png|link=Saxum Thorax|{{M|Saxum Thorax}}|alt=Saxum Thorax
+EnduringAfflictionMod.png|link=Enduring Affliction|{{M|Enduring Affliction}}|alt=Enduring Affliction
+EnduringStrikeMod.png|link=Enduring Strike|{{M|Enduring Strike}}|alt=Enduring Strike
+Cedo.png|link=Cedo|{{Weapon|Cedo}} (counts towards Primary Fire's damage bonus)|alt=Cedo (counts towards Primary Fire's damage bonus)
+ExodiaValor.png|link=Exodia Valor|{{Arcane|Exodia Valor}}|alt=Exodia Valor
+ConditionOverloadMod.png|link=Condition Overload|{{M|Condition Overload}} (counts towards damage bonus)|alt=Condition Overload (counts towards damage bonus)
+GalvanizedAptitudeMod.png|link=Galvanized Aptitude|{{M|Galvanized Aptitude}} (counts towards damage bonus)|alt=Galvanized Aptitude (counts towards damage bonus)
+GalvanizedSavvyMod.png|link=Galvanized Savvy|{{M|Galvanized Savvy}} (counts towards damage bonus)|alt=Galvanized Savvy (counts towards damage bonus)
+GalvanizedShotMod.png|link=Galvanized Shot|{{M|Galvanized Shot}} (counts towards damage bonus)|alt=Galvanized Shot (counts towards damage bonus)
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37}}
+*Fixed a bug where the Melee Lifted Status Effect could fling enemies unintentionally.
+
+{{ver|26.0.7}}
+*Fixed Exodia Valor considering every target to be Lifted whether they actually are or not.
+
+{{ver|26}}
+*Introduced.}}
+
+{{DamageNav}}
+[[Category:Update 26]]
+[[Category:Status]]
+[[Category:Melee 2.0]]

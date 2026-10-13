@@ -1,0 +1,1075 @@
+{{UpdateMe|Missing spliced stats, statlocking and bonus/malus locking from having spliced stat from [[Update 44]].}}
+{{Navigation|Riven Mods|Riven Mods/Weapon Dispos|Riven Mods/Patch History}}
+{{ModBoxManual
+| name = Riven Mods
+| image = -
+Default = RivenModTemplate.png
+Veiled = RivenVeiledMod.png
+Unveiled = RivenGrakataMod.png
+| description = 
+| type       = [[Mod]]
+| sellvalue  = -
+| transmutable = true (with a {{Resource|Riven Transmuter}})
+| tax        = 8000
+| introduced = {{ver|The War Within}}
+| rarity     = Riven
+| autoDrops  =
+[[Acrithis]] (when offered)<br />
+[[Sortie]]<br />
+[[Palladino]]<br />
+[[The Circuit#The Steel Path Circuit|The Steel Path Circuit]]<br />
+[[Enter Nihil's Oubliette]]<br />
+[[Arbiters of Hexis#Arbitration Honors|Arbitration Honors]] ([[Archgun]])<br />
+[[Cephalon Simaris]] ([[Companion]])<br />
+[[The Steel Path|Teshin]] (except [[Pistol]], [[Melee]])
+}}
+{{Quote|Cephalon Samodeus' grand creations. Each mod is malleable and unique, inspired by and meant for a single weapon. Complete a Riven Mod's challenge to unveil its possibilities, both rapturous and unfavorable.|In-game description}}
+
+'''Riven Mods''' are special mods for [[Primary Weapon]]s, [[Secondary Weapon]]s, [[Melee Weapon]]s, [[Archguns]], and [[Robotic Weapons]].
+
+Riven Mods are completely unique; no two are the same, even if they have the same attributes, as their numbers will differ.
+
+'''Warning''': Weapon [[#Disposition|Dispositions]] are rebalanced every [[Prime Access]] release, resulting in ever-changing Riven Mod values. This should be kept in mind when investing in the Riven system.
+
+==Properties==
+Riven Mods are unique amongst other Mods in a variety of ways:
+*Require the player to complete stated challenge to reveal its weapon assignment and attributes.
+*Carry two or three different bonuses.
+*Can carry a negative stat, the effects of which can be crippling but which greatly increases the potency of bonuses.
+*Can have any of the Madurai, Naramon, or Vazarin [[polarity|polarities]], regardless of its attributes.
+*Have their own [[Mastery Rank]] requirement independent of the weapon, ranging from 8 to 16.
+*Can have its bonuses (but not the weapon or polarity) [[#Rerolling|rerolled]] with the use of [[Kuva]].
+*Are assigned to a single weapon (and its variants) per Riven mod, similar to [[Weapon Augment Mods]].
+*Cannot be equipped alongside another Riven mod.
+
+Upgrade costs and Trading [[Credits|Credit]] taxes of Riven mods are equivalent to those of Rare mods.
+
+Players start off with 15 inventory slots for Riven mods, which can be increased by purchasing one slot for {{pc|20}} or 3 slots for {{pc|60}} from the [[Market]], up to a maximum of 180 slots (total cost to buy additional 165 slots is {{pc|3,300}}). Achieving MR 30 earns an additional 30 slots for a total of 210.
+
+==Acquisition==
+A single Riven mod is given to players upon completion of [[The War Within]] [[quest]]. 
+
+In a more general sense, '''Rifle''', '''Shotgun''', '''Pistol''', '''Melee''', '''Kitgun''', and '''Zaw''' Riven mods can ''primarily'' be acquired from:
+*[[Palladino]], a character in [[Iron Wake]], who can transmute '''10''' {{Resource|Riven Sliver}} into a veiled Riven mod twice per week. Iron Wake is only accessible after completion of the [[Chains of Harrow]] quest.
+*[[Sortie]]s, with various drop chances: 
+::{| class="wikitable"
+! Weapon Type !! Drop Chance
+|-
+|Melee || 8.14%
+|-
+|Pistol || 7.61%
+|-
+|Rifle || 6.79%
+|-
+|Kitgun || 2%
+|-
+|Zaw || 2%
+|-
+|Shotgun || 1.36%
+|}
+*[[The Steel Path]] rotating offerings – does '''not''' include Pistol and Melee Riven mods
+*Purchased from [[Acrithis]]'s shop for 15 {{Resource|Pathos Clamp|Pathos Clamps}}
+*Archon Hunt
+*Steel Path Circuit
+*Steel Path [[Descendia]]
+*[[The Icebind]] Chests
+
+Riven mods can also ''more sporadically'' be acquired from:
+*[[Nightwave]], as a possible rank reward, depending on the series
+*The [[1999 Calendar]]
+*[[Nightwave]], by purchasing [[Enter Nihil's Oubliette]] and defeating the [[Nihil]] boss, depending on weekly offerings.
+*[[Tactical Alert]]s
+*[[Gift from the Lotus]] Alerts
+*[[Daily Tribute]] Evergreen milestones, awarding three Riven Mods along with three Riven Slots
+
+In addition to the above, players can also acquire the following:
+*'''Archgun''' Riven mods – from [[Arbitration Honors]] for 35 {{Resource|Vitus Essence}}
+*'''Companion''' Weapon Riven mods – from [[Cephalon Simaris]] for {{sc|100,000}} or [[Acrithis]] for 20 {{Resource|Pathos Clamp|Pathos Clamps}}
+
+==States==
+[[File:RivenVeiledMod.png|thumb|A Veiled Riven mod.]]
+When a player receives a Riven mod, it is listed as '''???'''. In this state, it will not take up a Riven slot.
+
+Upon equipping a ??? Riven mod, it becomes '''Veiled'''. In this state:
+*Reveals a challenge that must be completed in order to become Unveiled. The weapon with the equipped Riven must be in the player's equipped loadout in order to partake in the challenge.
+*Will take up a Riven slot. Attempting to equip will prompt a confirmation screen warning this, as well as how many available Riven slots the player has.
+*Will not take up mod capacity.
+*Will not grant any bonuses or curses.
+*Cannot be upgraded.
+*Can only be equipped on a weapon of the same class that itself:
+**Veiled Rifle Rivens can only be equipped on non-shotgun primaries.
+**Veiled Shotgun Rivens can only be equipped on shotguns.
+**Veiled Pistol Rivens can only be equipped on secondaries.
+**Veiled [[Melee]] and [[Zaw]] Rivens can only be equipped on melee weapons.
+**Veiled [[Kitgun]] Rivens can be equipped on either primaries or secondaries.
+**Veiled [[Robotic Weapons|Robotic Weapon]] Rivens can be equipped on any Robotic weapon.
+**Veiled [[Archgun]] Rivens can only be equipped on Archguns.
+
+Once '''Unveiled''', the Riven's stats, polarity, and mod space are revealed, and can now be upgraded. It also now has a required [[Mastery Rank]] to equip.
+
+==Challenges==
+*The weapon used to complete a challenge is entirely irrelevant to the resulting Riven.
+*It is possible to complete the challenges using ''any'' equipped weapon or [[Warframe]] ability, i.e. it does not need to be the weapon on which the Riven is currently equipped (however the Riven must be equipped on an item within the current loadout while attempting the challenge).
+*You can unveil multiple Riven mods simultaneously during a single mission by equipping a veiled Riven mod on each applicable piece of gear (e.g., one on your primary weapon and one on your secondary). This is especially efficient if the Rivens share the same challenge requirements.
+*If its conditions are met, the Riven will be revealed independently of mission success. It will also be automatically removed from the weapon used to reveal it if that weapon is not the Riven's dedicated type.
+*Completing the challenges also gives affinity.
+*Certain challenge modifiers are listed below for the sake of clarity:
+**'''Being alone''' - No [[Companion]]s equipped. {{A|Venari}} is exempt from this modifier as she is instead tied to {{WF|Khora}}'s abilities. Not to be confused with [[Matchmaking#Solo|Solo mode]].
+**'''With an active pet''' - Generally refers to [[Beast]]-type companions and [[Hound (Companion)|Hounds]]. Venari is excluded from this modifier.
+**'''Having a [[Dragon Key]] equipped''' - ''any'' Dragon Key can be used for this challenge, unless specified.
+
+{{PrettyCollapsible|Riven Challenges
+|Width_Collapsed=85%
+|Width_Expanded=100%
+|Height=33px
+|Icon=none
+|Icon_Size=25px
+|Icon_Space=3px}}
+{| class="wikitable"
+|-
+! Challenge
+! Notes & Tips
+! Internal Name
+|-
+| Kill X Enemies with [[Finisher]]s
+| 
+*{{WF|Ash}}'s {{A|Blade Storm}} does not count.
+| <code>/Lotus/Types/Challenges/RandomizedFinisherKill</code>
+|-
+| Kill X Enemies while Sliding
+| –
+| <code>/Lotus/Types/Challenges/RandomizedStyleKill</code>
+|-
+| Kill X Enemies with Headshots
+| –
+| <code>/Lotus/Types/Challenges/RandomizedHeadshot</code>
+|-
+| Kill X unalerted [[Tusk Ballista]]s with a Headshot
+|
+*Tusk Ballistas can be found on the [[Plains of Eidolon]], on top of watchtowers near Grineer camps.
+| <code>/Lotus/Types/Challenges/RandomizedHeadshotUnawareBallistas</code>
+|-
+| Kill X Enemies with Headshots from at least 75m away
+|
+*This challenge is easier to do in [[Landscape]]s.
+*When this challenge appears on a Shotgun riven, a sniper pistol like [[Arca Scisco]] can be used to get headshots.
+| <code>/Lotus/Types/Challenges/RandomizedLongRangeSniper</code>
+|-
+| Kill X Enemies that are on a Dropship
+|
+*Dropships include [[Tusk Bolkor]], [[Tusk Firbolg]], and [[Condor Dropship]].
+**[[Coildrive|Coildrives]] are also considered Dropships for this challenge.
+| <code>/Lotus/Types/Challenges/RandomizedKillPassengers</code>
+|-
+| Catch X [[Fishing|Fish]] without missing a throw.
+|
+* Modifiers include being alone, remaining undetected.
+* The [[Pharoma]] can be used to make this easier. And note that it affects only the fish that have spawned already.
+| <code>/Lotus/Types/Challenges/RandomizedFisherman</code>
+|-
+| Catch one [[Fishing|Fish]], [[Mining|Mine]] one gem or metal, and kill one enemy in 30 seconds.
+|
+* Modifiers include being alone, remaining undetected, having a [[Dragon Key]] equipped.
+* Search for a fishing area with nearby deposits and deploy bait before attempting this challenge. Additionally, consider mining deposits first as they're the most time-consuming out of the 3 tasks.
+* The Grineer Camp at Er-Phryah's Vigil is a good place to complete this challenge, as the camp itself is located on the coast with several ore deposits nearby.
+| <code>/Lotus/Types/Challenges/PlainsTimedVariety</code>
+|-
+| Complete a defense mission with level 30 or higher enemies without the defense objective taking any damage.
+|
+* Modifiers include being alone, not using any team consumables, having a [[Dragon Key]] equipped.
+* The failure condition of taking any damage includes hits to the shields, so defense missions with Ranged enemies is not recommended.
+* {{WF|Frost}} built for {{A|Snow Globe}}, {{WF|Volt}} built for {{A|Electric Shield}}'s Duration, {{WF|Banshee}} built for {{A|Sound Quake}}, {{WF|Limbo}} built for {{A|Stasis}}, {{WF|Vauban}} built for {{A|Bastille}}, {{WF|Gara}} built for {{A|Mass Vitrify}} and {{WF|Ember}} using {{A|Inferno}} on [[Infested]] defenses is highly recommended but not required to complete this.
+* [[Kala-azar]], [[Eris]] or [[Sechura]], [[Pluto]] are recommended missions to complete this challenge.
+* Only three waves are needed to complete the challenge.
+| <code>/Lotus/Types/Challenges/HighPerfectDefense</code>
+|-
+| Complete an extermination mission with level 30 or higher enemies without being detected.
+|
+* Modifiers include not taking damage, being alone, having a [[Dragon Key]] equipped.
+* This challenge can be completed by waiting around the mission start location while your teammates do the killing, as it tracks only whether ''you'' have been detected.
+* You will be informed if you are detected and fail the challenge via pop-up.
+* Keep in mind that to be detected, enemies have to actually ''see'' you. Using a frame that is able to stay invisible like {{WF|Loki}}, {{WF|Ash}}, or {{WF|Ivara}} will make the objective much easier.
+| <code>/Lotus/Types/Challenges/HighExterminationUndetected</code>
+|-
+| Complete a solo interception mission with level 30 or higher enemies with a Hobbled [[Dragon Key]] equipped.
+|
+* Modifiers include not dying/becoming downed.
+* Remember that the Hobbled Dragon Key does not affect Bullet Jump and Slide speeds.
+* Fast or crowd-control based frames may help in keeping all points secured. {{WF|Ivara}}, {{WF|Titania}}, {{WF|Hydroid}}, and even {{WF|Rhino}} are good at keeping the enemies off the points.
+* Only one round of interception is required to complete the challenge.
+* It is possible to start the mission with two or more allies, but they ''must'' leave before all enemies have been killed at the end.
+* Suggested Mission: Pluto, Cerberus
+* [[Berehynia]], [[Sedna]] is small enough of a map for {{WF|Nyx}} to cover most of the map with {{A|Mind Control}} or {{A|Chaos}}.
+* {{WF|Gauss}} makes this challenge a breeze with {{A|Mach Rush}}, and {{A|Thermal Sunder}} can be used to defend the consoles.
+| <code>/Lotus/Types/Challenges/HighSoloInterceptionHobbled</code>
+|-
+| Complete a survival mission with level 30 or higher enemies without killing anyone.
+|
+* Modifiers include having a [[Dragon Key]] equipped, not using [[Team Bonus Consumables|Health/Energy Consumables]].
+* This challenge can be completed by using {{WF|Ivara}}'s {{A|Prowl}} ability to grab Life Support off enemies. However, this is still reliant on chance as not every enemy will drop Life Support.
+* Opening Lockers and smashing containers will also sometimes drop Life Support capsules. By equipping {{M|Master Thief}} on your Warframe you have the chance to open even more lockers than normally available.
+* Allies killing enemies '''will''' result in challenge failure. Note that this includes {{WF|Revenant}}'s {{A|Enthrall}}.
+* Enemies killed due to infighting (e.g. {{WF|Nyx}}'s {{A|Chaos}} ability) do not cause the challenge to fail. 
+* Defeating [[Stalker]] in case he appears '''will not''' result in challenge failure.
+* Enemies killed by laser traps in the Void do not result in challenge failure.
+* Only five minutes are required to complete the challenge.
+* The enemy level refers to the minimum level, not the maximum level.  For example, the survival mission on Deimos will not clear it, despite having enemies up to level 35.
+| <code>/Lotus/Types/Challenges/HighSurvivalPacifist</code>
+|-
+| Destroy X [[Dargyn (Enemy)|Dargyns]] with a bow.
+|
+* While this primarily refers to [[Plains of Eidolon|Tusk]] Dargyns, [[Kuva Fortress|Kuva]] Dargyns found at [[Koro]] will also count towards this challenge. Standard Dargyns in Archwing Free Space missions, however, will '''not'''.
+* Note that the Dargyns do not have to be [[Dargyn Pilot|piloted]], however, they do have to be airborne. Kills against grounded Dargyns do not count.
+** You can also fly a Dargyn into the air yourself, exit the vehicle and shoot it as it falls.
+* Crossbows (such as {{Weapon|Zhuge}} and {{Weapon|Attica}}) can also be used count towards the challenge.
+| <code>/Lotus/Types/Challenges/RandomizedSkiffArcher</code>
+|-
+|Destroy X [[Turret|Vruush Turrets]] while in [[Archwing]].
+|
+* Modifiers include without dying/being downed, not getting afflicted by a [[Status Effect]], while alone/in Solo Mode, having a [[Dragon Key]] equipped.
+* Vruush Turrets usually found above Watch Towers in Grineer settlements.
+* They are usually hidden underground. Fly low through a settlement, which will pop them up and then go to a safe distance and shoot them.
+| <code>/Lotus/Types/Challenges/RandomizedAntiAntiAir</code>
+|-
+| Find [1-4] [[Resource Cache|Caches]].
+|
+* Modifiers include having an active pet, not dying/becoming downed, not using ciphers, not taking damage, not using energy consumables, being alone/in Solo Mode, and having a Dragon Key equipped.
+* [[Bounties]] given by [[Konzu]] or [[Eudico]] related to finding caches also count towards this challenge, making it easier to get.
+* There is currently a bugged modifier of having to not raise the alarms, as completing the [[Sabotage]] objective will raise an alarm. Aborting the mission after finding a cache will still count towards the challenge, however.
+* It is impossible to raise the alarm on [[Plato]], [[Lua]], which makes this mission well suited to completing the challenge.
+* 1999 Scaldra caches do not count for this challenge
+| <code>/Lotus/Types/Challenges/RandomizedFindCaches</code>
+|-
+| Find [8-12] [[Syndicate Medallions]].
+|
+* Modifiers include having an active pet present, not failing a mission, not having an ally downed, not taking damage, not triggering an alarm.
+**The active pet ''must'' be a [[Beast]].
+**[[Syndicate]] [[Operative]]s are '''not''' counted toward this (they ''can'' be downed).
+*Any Syndicate medallion counts towards the challenge's progress.
+**As of {{ver|31.6}}, [[Voidplume]]s '''count''' towards this challenge, but only the eight Voidplumes that spawn for pickup.
+*As any Syndicate mission is guaranteed to spawn eight medallions, players can expect to finish this challenge within 1-3 Syndicate missions depending on the challenge's requirements.
+*Note: Completing the mission is ''not neccesary'' to complete the challenge on the riven, meaning you can gather the medallions and then abort the mission and it will still unveil it.
+| <code>/Lotus/Types/Challenges/RandomizedFindRareMedallions</code>
+|-
+| Get 3 headshot kills in a single aim glide.
+|
+* Modifiers include having a Dragon Key equipped.
+* Note that this does not require ''consecutive'' headshot kills. A "spray and pray" approach on an enemy-dense mission type is a possible tactic.
+* {{M|Patagium}} combined with {{M|Aero Vantage}} can make this much easier by completely removing motion while aim gliding. Simply stop moving, jump straight up, and hold aim, and you'll hover in place for ~6 seconds.
+* Frames that can prevent enemy movement without killing enemies such as {{WF|Ivara}}, {{WF|Vauban}} and {{WF|Equinox}} can help a lot. A good strategy is to bring a friend to immobilize enemies while the person with the Riven mod equipped brings {{WF|Zephyr}} to get the headshots.
+* The {{Weapon|Scourge}}'s Bullet Attractor field makes headshots noticeably easier to land if the throw doesn't kill the targets. For this reason, do not equip any damage-boosting mods on the Scourge.
+* The {{Weapon|Arca Plasmor}}'s large hitbox and innate [[punch through]] make it easy to score multiple headshots on a crowd if aimed slightly above head height.
+* [[Pax Seeker]]'s projectiles seek enemy heads and count towards the 3 headshots.
+* Can be made trivial by charging Zephyr's Tail Wind to hover in place
+* It is recommended to do this on Corpus Tilesets, as some Grineer can be difficult to headshot. If you have a warframe that can heal a Defense target like Khora's [[Venari]], Tessera on [[Venus]] is an excellent choice; shoot out any Moas but let a sizeable number of Corpus converge on the defense target, then with an accurate semi-auto weapon like a {{Weapon|Vulkar}} get into an Aim Glide and headshot 3 of them in quick succesion.
+| <code>/Lotus/Types/Challenges/RandomizedHeadshotGlide</code>
+|-
+| Get [10-20] kills in a row while wall dashing or wall clinging without touching the floor.
+|
+* Modifiers include having to be invisible during the kills, not raising alarms, taking no damage.
+** {{WF|Ivara}} or {{WF|Loki}} are useful for "being invisible" modifier.
+** Silent weapons or equipping silencing mods (f.e. {{M|Hush}}) on weapons are useful for "not raising alarms" modifier.
+**Can not be completed by doing a Survival or Defense mission for the "not raising alarms" modifier due to an alarm being raised at the beginning of the mission.
+* {{WF|Oraxia}} trivializes this challenge via {{A|Silken Stride}}, while remaining invisible via refreshing her [[Oraxia/Abilities|Passive]].
+* Weapons that deal area-of-effect damage (i.e. {{Weapon|Tonkor}}, {{Weapon|Penta}}, {{Weapon|Ignis}} etc.) are ideal for completing this challenge.
+*The wall clinging time can be prolonged by jumping on the wall once when your clinging time is about to run out and then reactivating wall clinging. As long as you do not touch the floor, the challenge won't reset.
+*Keep in mind that {{WF|Loki}} has a 60-second long wall latch time as a passive ability, making this very helpful for this challenge.
+*Exilus mods like {{M|Patagium}}, {{M|Ice Spring}}, {{M|Firewalker}} or {{M|Toxic Flight}} can help increasing the wall latch time as well.
+*Abilities that can attack for you, such as {{WF|Wukong}}'s {{A|Celestial Twin}}, can make this trivial.
+| <code>/Lotus/Types/Challenges/RandomizedWallClingKillstreak</code>
+|-
+| Get the killing blow on [2-12] [[Sentient]]s.
+|
+* Modifiers include having a Dragon Key equipped, being invisible, while sliding, while alone, without dying/becoming downed, without an ally getting downed, without getting afflicted by a status effect, without using energy consumables, doing it in one day, taking no damage.
+* Sentinel, Necramech, or [[Operator]] last hits will not count towards the challenge.
+** [[Vomvalyst]]s are an exception to this rule, but players must complete the challenge or leave the [[Plains of Eidolon]] ''before'' sunrise, otherwise, the challenge will be considered a failure.
+* During [[The Second Dream]], killing Sentients while being carried counts towards the requirement.
+* [[Brachiolyst]]s do not count towards this challenge. Neither do Amalgams, despite being listed as Sentients in the Codex. 
+* If [[Vomvalyst]]s aren't available at the time, fighting the [[Ropalolyst]] on Jupiter spawns a good amount of Sentients during its final phase.
+* [[Murex]] railjack missions always have 20 Sentients. These can be used for this challenge.
+* The fourth mission of the [[Octavia's Anthem]] quest (Find the second song fragment) has endlessly spawning Sentients which can be used for this challenge.
+| <code>/Lotus/Types/Challenges/RandomizedKillSentients</code>
+|-
+| <s>Kill X [[Dargyn Pilot]]s before they hit the ground.</s><br />Challenge Retired.
+|
+* Simply destroying a [[Dargyn]] and the pilot simultaneously with an AoE weapon does not count, however killing the pilot with a Sniper Rifle while they are in mid-flight does work.
+* Modifiers include while aim gliding, being alone, while sliding.
+* {{WF|Mesa}}'s {{A|Peacemaker}} or {{WF|Ash}}'s {{A|Blade Storm}} abilities can make this trivial.
+** The way to complete the "while sliding"-modifier is to hold down the slide button first and then activate Peacemaker.
+* Throwing the Pilots into the air with [[Void Sling]] and killing them before they hit the ground also counts towards the challenge.
+* Warframe abilities that count in suspending [[Dargyn Pilot]]s:
+**{{WF|Nidus}}'s {{A|Larva}}
+**{{WF|Zephyr}}'s {{A|Tornado}}
+**{{WF|Titania}}'s {{A|Spellbind}}
+**{{WF|Rhino}}'s {{A|Rhino Stomp}}
+| <code>/Lotus/Types/Challenges/RandomizedKillFallingPilots</code>
+|-
+| Kill [11-125] enemies.
+|
+* Modifiers include while aim-gliding, while sliding, while invisible, kill enemies with finishers, kill enemies with headshots, kill enemies with headshots from at least 100 meters away, kill unalerted enemies, kill specific enemies, kill enemies that are on a dropship, having a [[Dragon Key]] equipped, not using consumables, not taking damage, not being affected by a [[Status Effect]], not dying/becoming downed, not raising any alarms, not being detected, not failing the mission, while alone/in Solo Mode, completing within a single day.
+* The ground vents on Jupiter will help to prolong aim glide time. {{WF|Zephyr}} is highly recommended, but it is possible to do without her.
+* {{WF|Ivara}}'s {{A|Prowl}} can aid in scoring headshots undetected, as well as raising their damage.
+*Using a sniper rifle and an [[Itzal]] as [[Penumbra]] allows players to cloak and avoid detections while the sniper rifle allows for precise aiming from longer distances.
+*{{WF|Loki}} with {{M|Hushed Invisibility}} will allow you to walk right up to the targets and headshot them.
+* No alarms:
+** Missions such as Void Exterminate (Teshub) contain no alarms.
+* Status effect: can be avoided with {{WF|Rhino}}'s {{A|Iron Skin}}, {{WF|Nezha}}'s {{A|Warding Halo}}, {{WF|Titania}}'s {{A|Spellbind}}, or {{WF|Oberon}}'s {{A|Hallowed Ground}}.
+* There is no requirement to kill all enemies within one mission, so a mission can be ended, even aborted, without resetting the counter.
+* [[Kubrow Den]]s may help, as you can have almost 10 [[Kubrow]]s per den. Be sure to equip a very low damage (unmodded) weapon to hit the den, without destroying it, to spawn additional Kubrows (about 5). Kubrows never trigger an alarm.
+* "While sliding" can be done with {{WF|Octavia}}, casting {{A|Mallet}} and just keep sliding until enough enemies are killed by the mallet.
+* "Kill on a dropship" modifier:
+** Applies to enemies on [[Tusk Firbolg]]s, [[Tusk Bolkor]]s, [[Condor Dropship|Condors]] and [[Coildrive]]s.
+** Should be noted that destroying a dropship while enemies are onboard will count towards the challenge.
+** The Interception mission on Cerberus, Pluto spawns a dropship right when you start the mission. Using a beam chaining weapon like [[Atomos]], kill the enemies in the first dropship, abort the mission and repeat.
+* Frames specializing in stealth and/or melee finishers while in open combat like {{WF|Excalibur}}, {{WF|Hydroid}}, {{WF|Ivara}}, {{WF|Equinox}}, {{WF|Ash}}, {{WF|Inaros}}, and {{WF|Zephyr}} will allow for easier completion for "with finishers" modifier. Finisher opportunities from blocking attacks and the [[Steel Meridian]]'s [[Justice]] proc may also apply as well.
+** A good way to enable finishers on enemies is by drop-kicking the enemy to the ground, leaving them open to a finisher.
+| <code>/Lotus/Types/Challenges/RandomizedKill</code>
+|-
+| Land X consecutive headshots while in [[Plains of Eidolon#Archwing|Archwing]] mode in the [[Plains of Eidolon]].
+|
+* Manually exiting Archwing Mode will not reset the counter.
+* The missiles fired by [[Hellion#Tusk Hellion|Tusk Hellions]], [[Ballista#Variants|Tusk Ballistas]], or [[Turret#Vruush Turret|Vruush Turrets]] can reset this challenge's progress, as they can force a player out of Archwing Mode should they hit.
+* Hitting any other body part than the head resets the counter. However, missing a target completely does not reset the counter.
+* The challenge only takes into account of the number of headshots, not headshot kills. The challenge can easily be completed by getting '''consecutive '''headshots (with low damage) on a single target X amount of times.
+* Shooting off a [[Tusk Thumper]]'s leg plates and revealing its points of vulnerability counts as a headshot, allowing for 4 headshots per Thumper.
+* The [[Eidolon Teralyst]] and its variants count for this challenge. It is recommended to take an accurate weapon and mod for fire rate and magazine capacity. Head out onto the plains at night and look for the Teralyst, use any Archwing abilities that can negate damage and open fire.
+* Tips:
+** When shooting one enemy of a group retreat immediately, as the others will be alerted and shoot at you.
+** Alternatively, immobilize all enemies in a group using sleep or another form of crowd control before entering Archwing to guarantee accurate headshots.
+** Use a silenced weapon.
+** [[Itzal]] and [[Amesha]] are recommended Archwings, as they can respectively use [[Penumbra]] and [[Benevolent Decoy]] to avoid/deflect incoming damage. [[Odonata]] can also use [[Energy Shell]] to protect from damage, but bear in mind it only protects from frontal attacks.
+** Headshots on grounded [[Condroc]]s count towards this challenge, as they generally stay in one place unless disturbed, but avoid [[Kuaka]]s due to their erratic movement.
+| <code>/Lotus/Types/Challenges/RandomizedFlyingHeadshotSeries</code>
+|-
+| Sustain a 6x [[Melee 2.0#Combo Counter|melee combo multiplier]] for 30 seconds.
+|
+* Modifiers include having either a [[Sentinel]], [[Kubrow]] or [[Kavat]] for the duration, while alone/in Solo mode, having a [[Dragon Key]] equipped.
+* {{M|Galvanized Reflex}}, {{M|Corrupt Charge}}, {{M|Ready Steel}} (and {{M|Covert Lethality}} for [[Dagger|Daggers]]) all contribute to your [[Initial Combo]]. {{M|Body Count}}, {{M|Drifting Contact}} and {{M|Gladiator Rush}} can all sustain the combo counter for over 30 seconds to more easily complete the challenge. Hit 6x [[Melee 2.0#Combo Counter|melee combo multiplier]] once and just wait for the seconds to go by. Alternatively, using {{Weapon|Venka Prime}} or an Extinguished [[Dragon Key]] may also make the challenge easier, especially in tandem with the above suggestions.
+* It is possible to attack a [[Kuva Fortress]] Fortress Scanner to rack up a combo, as they are invulnerable, and provide progress in combo counts. Kuva Siphons can also be used for this, as is [[Profit-Taker Orb]] resting on top of Enrichment Labs.
+* Another recommended target for this challenge is [[Lieutenant Lech Kril]] found on Mars, since he starts off invincible and cannot take damage until his coolant tank is destroyed, which makes it easy to stack combos on him.
+* The passive 'Power Spike' from the Naramon focus school helps a lot in maintaining a high combo counter even while no enemies are nearby. Pair this with slash weapons and the mod 'Relentless Combination' to make this challenge trivial.
+* Blocking with your melee weapon is a safe way to stack and maintain combo.
+* The {{Weapon|Xoris}} makes this challenge trivial due to its infinite combo duration.
+| <code>/Lotus/Types/Challenges/SustainMeleeComboThree</code>
+|-
+| Synthesize a [[Cephalon Simaris|Simaris]] target without using traps or abilities while having a Hobbled Dragon Key equipped.
+|
+* Modifiers include not taking damage, not using any abilities, being alone/in Solo Mode.
+* The Hobbled Dragon Key only affects running and sprinting speed, and does not affect sliding or parkour. {{WF|Nezha}}'s passive allows him to slide faster than he would move while running.
+* If Solo mode is not one of the requirements, this has been found possible even with the No Damage modifier with a team-mate set to the same scan target and the team-mate does the scan while the Riven-holder stays at the spawn point, and the team-mate taking damage will not fail the challenge
+* Simaris targets are vulnerable to knockdown effects, including ground slams.
+* Activating {{WF|Ivara}}'s {{A|Prowl}} or {{WF|Rhino}}'s {{A|Iron Skin}} ''before'' the target spawns (such as at the start of the mission) and keeping it active until you reach the target to scan them does not fail the challenge.
+*{{WF|Limbo}}'s passive does not fail the "not using any abilities" modifier
+*The synthesis target that you synthesize during the second mission in [[The New Strange]] quest will count towards the challenge.
+| <code>/Lotus/Types/Challenges/LimitedSynthesis</code>
+|-
+|<s>Complete an [[incursions|incursion]].</s><br />Challenge Retired.
+|
+* Modifiers include being alone, taking no damage, and having a [[Dragon Key]] equipped.
+* Note that Incursions in the Plains of Eidolon occur only during day time.
+* Incursions have been removed from the game in {{ver|24.4}}.
+| N/A
+|-
+| <s>Kill X [[Conservation|wild animals]] with a fishing spear.</s><br />Challenge Retired.
+|
+*Any wild animals outside [[Landscape]]s (e.g. [[Feral Kubrow]]s and [[Feral Kavat]]s) cannot count towards this challenge.
+*Fish do not count either.
+*This is best completed in the [[Plains of Eidolon]] as wild animals spawn naturally as opposed to the [[Orb Vallis]].
+*This challenge is quite easy as {{WF|Ivara}}, {{WF|Loki}}, or {{WF|Ash}} as being cloaked allows for careful aiming and even kill multiple animals with one throw
+*{{WF|Khora}} can use {{A|Ensnare}} to not only immobilize wild animals, but also to pull in nearby animals and stun them as well.
+*Explosion kills from {{A|Molecular Prime}} also count towards this challenge, as long as they were initiated with a fishing spear. Molecular Prime also has the added benefit of slowing down animals, making them much easier to hit.
+| N/A
+|-
+| <s>Kill 3 airborne [[Condroc]]s within 5 seconds.</s><br />Challenge Retired.
+|
+* Modifiers include not dying/becoming downed, having an active pet.
+* Ash's Blade Storm simplifies this greatly, but only works with Condrocs found on the ground. Mark them and wait for them to take flight before triggering.
+* It appears that each time you enter the Plains, 4 airborne Condrocs can be found at "Er-Phryah's Vigil". This can simplify the mission further.
+* Using an [[Odonata]] can trivialize this challenge. Getting close to a group and using Repulse, you can kill many Condrocs at once. You can use [[Energy Amplifier]] to broaden the area Repulse covers.
+| N/A
+|-
+|}
+{{PrettyCollapsible/End}}{{PrettyCollapsible|Riven Challenge Complications
+|Width_Collapsed=85%
+|Width_Expanded=100%
+|Height=33px
+|Icon=none
+|Icon_Size=25px
+|Icon_Space=3px}}
+{| class="wikitable sortable"
+! Complication || Internal Name
+|-
+| while undetected || <code>/Lotus/Types/Challenges/Complications/Undetected</code>
+|-
+| while sliding || <code>/Lotus/Types/Challenges/Complications/Sliding</code>
+|-
+| while Aim Glide || <code>/Lotus/Types/Challenges/Complications/AimGliding</code>
+|-
+| without taking damage || <code>/Lotus/Types/Challenges/Complications/ResetOnDamageTaken</code>
+|-
+| without dying or becoming downed || <code>/Lotus/Types/Challenges/Complications/ResetOnDowned</code>
+|-
+| with an active pet present || <code>/Lotus/Types/Challenges/Complications/PetPresent</code>
+|-
+| with an active sentinel present || <code>/Lotus/Types/Challenges/Complications/SentinelPresent</code>
+|-
+| , while alone or in Solo Mode || <code>/Lotus/Types/Challenges/Complications/SoloPlayer</code>
+|-
+| without failing a mission || <code>/Lotus/Types/Challenges/Complications/ResetOnMissionFailure</code>
+|-
+| without raising any alarms || <code>/Lotus/Types/Challenges/Complications/ResetOnAlarmRaised</code>
+|-
+| without being disrupted by a <DT_MAGNETIC>Magnetic Damage || <code>/Lotus/Types/Challenges/Complications/ResetOnDisrupt</code>
+|-
+| without getting afflicted by a Status Effect || <code>/Lotus/Types/Challenges/Complications/ResetOnProc</code>
+|-
+| without an ally becoming downed || <code>/Lotus/Types/Challenges/Complications/ResetOnAllyDowned</code>
+|-
+| while invisible || <code>/Lotus/Types/Challenges/Complications/Invisible</code>
+|-
+| with an Extinguished Dragon Key equipped || <code>/Lotus/Types/Challenges/Complications/EquippedDamageDebuffKey</code>
+|-
+| with a Bleeding Dragon Key equipped || <code>/Lotus/Types/Challenges/Complications/EquippedHealthDebuffKey</code>
+|-
+| with a Decaying Dragon Key equipped || <code>/Lotus/Types/Challenges/Complications/EquippedShieldDebuffKey</code>
+|-
+| with a Hobbled Dragon Key equipped || <code>/Lotus/Types/Challenges/Complications/EquippedSpeedDebuffKey</code>
+|-
+| without using ciphers || <code>/Lotus/Types/Challenges/Complications/ResetOnGearCipher</code>
+|-
+| without using air support || <code>/Lotus/Types/Challenges/Complications/ResetOnGearAirSupport</code>
+|-
+| without using health consumables || <code>/Lotus/Types/Challenges/Complications/ResetOnGearHealthRestores</code>
+|-
+| without using shield-restoring consumables || <code>/Lotus/Types/Challenges/Complications/ResetOnGearShieldRestores</code>
+|-
+| without using ammo consumables || <code>/Lotus/Types/Challenges/Complications/ResetOnGearAmmoRestores</code>
+|-
+| without using energy consumables || <code>/Lotus/Types/Challenges/Complications/ResetOnGearEnergyRestores</code>
+|-
+| in one day || <code>/Lotus/Types/Challenges/Complications/ResetOnNewDay</code>
+|-
+|}
+{{PrettyCollapsible/End}}
+
+==Attributes==
+<choose>
+<option>[[File:RivenGrakataMod.png|thumb|A {{Weapon|Grakata}} Riven mod.]]</option>
+<option>[[File:RivenCernosMod.png|thumb|A {{Weapon|Cernos}} Riven mod.]]</option>
+<option>[[File:RivenBuzlokMod.png|thumb|A {{Weapon|Buzlok}} Riven mod.]]</option>
+<option>[[File:RivenParisMod.png|thumb|A {{Weapon|Paris}} Riven mod.]]</option>
+<option>[[File:RivenPentaMod.png|thumb|A {{Weapon|Penta}} Riven mod.]]</option>
+<option>[[File:RivenMiterMod.png|thumb|A {{Weapon|Miter}} Riven mod.]]</option>
+<option>[[File:RivenLatronMod.png|thumb|A {{Weapon|Latron}} Riven mod.]]</option>
+<option>[[File:RivenDualCestraMod.png|thumb|A {{Weapon|Dual Cestra}} Riven mod.]]</option>
+<option>[[File:RivenFluxRifleMod.png|thumb|A {{Weapon|Flux Rifle}} Riven mod.]]</option>
+<option>[[File:RivenQuantaMod.png|thumb|A {{Weapon|Quanta}} Riven mod.]]</option>
+<option>[[File:RivenSpectraMod.png|thumb|A {{Weapon|Spectra}} Riven mod.]]</option>
+<option>[[File:RivenSybarisMod.png|thumb|A {{Weapon|Sybaris}} Riven mod.]]</option>
+</choose>
+Rivens are distinct from regular mods in that they are inconsistent in [[polarity]] (randomly chosen between {{Pol|Madurai}}, {{Pol|Naramon}}, or {{Pol|Vazarin}}), [[Mastery Rank|Mastery Rank requirement]] (chosen between MR 8-16), and attribute values, and they have between two and four attributes.<ref>{{Ref|title=This honestly feels worse than just getting an objective downgrade when cycling|author=Steelwrecker|year=2023|month=4|day=3|publisher=Reddit|url=https://www.reddit.com/r/Warframe/comments/12amnxh/this_honestly_feels_worse_than_just_getting_an/|access-date=2023-04-03|archive-url=https://web.archive.org/web/20230403192446/https://www.reddit.com/r/Warframe/comments/12amnxh/this_honestly_feels_worse_than_just_getting_an/|archive-date=2023-04-03|extra=Example of two Riven mods with the same name having different stats}}</ref> Two or three of these attributes will be positive, and one might be negative.
+
+=== Naming ===
+Riven mods draw their names from a pool of 31 options, indicated by the randomized/rerolled attributes that the new mod has. Names consist of a prefix and/or a core and suffix, and follow "Prefix-CoreSuffix" or "CoreSuffix" pattern.
+*Whether a stat is shown as a prefix, core, or suffix is determined by the magnitude of the randomized modifier on that stat. The prefix and core are determined by the stats with the highest and second highest randomized modifier, respectively. The suffix is always the stat with the lowest randomized modifier.
+**For example, Vectis Sati-critaata has [[Multishot]] as the highest stat, Critical Chance as the second highest stat, and Base Damage as the lowest stat.
+
+=== Attribute Value Formula ===
+The actual stat values for a riven are randomly chosen between 90% and 110% of the base value, multiplied by the weapon's Riven [[Riven Mods#Disposition|Disposition]], and then multiplied by the following weighted bonus or malus values.
+{| class="wikitable"
+|-
+! Type of Stats
+! Bonus
+! Malus/Negative/Curse
+|-
+| 2 Bonus, 0 Malus
+| 0.99
+| 0
+|-
+| 2 Bonus, 1 Malus
+| 1.2375
+| -0.495
+|-
+| 3 Bonus, 0 Malus
+| 0.75
+| 0
+|-
+| 3 Bonus, 1 Malus
+| 0.9375
+| -0.75
+|-
+|}
+
+=== Base Values ===
+The 32 attributes and their base values are as follows.
+
+{| class="wikitable sortable"
+|+ Attributes and their base value<ref>ExportUpgrades_en.json file from [[Public Export]]</ref>
+|-
+! Effect !! Prefix/Core !! Suffix !! Rifle !! Shotgun !! Pistol !! Archgun !! Melee / Zaw
+|-
+| Additional [[Melee#Combo Counter|Combo Count]] Chance<sup>1</sup>
+| Laci || Nus || – || – || – || – || 58.77%
+|-
+| Chance to Gain [[Melee#Combo Counter|Combo Count]]<sup>3</sup>
+| – || – || – || – || – || – || 104.85%
+|-
+| [[Ammo Maximum]]
+| Ampi || Bin || 49.95% || 90% || 90% || 99.9% || –
+|-
+| Damage vs. {{Faction|Corpus}}
+| Manti || Tron || x0.45 || x0.45 || x0.45 || x0.45 || x0.45
+|-
+| Damage vs. {{Faction|Grineer}}
+| Argi || Con || x0.45 || x0.45 || x0.45 || x0.45 || x0.45
+|-
+| Damage vs. {{Faction|Infested}}
+| Pura || Ada || x0.45 || x0.45 || x0.45 || x0.45 || x0.45
+|-
+| {{D|Cold}} Damage<sup>1</sup>
+| Geli || Do || 90% || 90% || 90% || 119.7% || 90%
+|-
+| [[Melee Combo#Combo Duration|Combo Duration]]
+| Tempi || Nem || – || – || – || – || 8.1s
+|-
+| [[Critical#Critical Hit Chance|Critical Chance]] /<br />Critical Chance (x2 for Heavy Attacks)
+| Crita || Cron || 149.99% || 90% || 149.99% || 99.9% || 180%
+|-
+| [[Critical#Critical Hit Chance|Critical Chance]] for [[Slide Attack]]
+| Pleci || Nent || – || – || – || – || 120%
+|-
+| [[Critical#Critical Damage Multiplier|Critical Damage]]
+| Acri || Tis || 119.997% || 90% || 90% || 80.1% || 90%
+|-
+| [[Damage]] / <br />Melee Damage<sup>1</sup>
+| Visi || Ata || 165% || 164.7% || 219.6% || 99.9% || 164.7%
+|-
+| {{D|Electricity}} Damage<sup>1</sup>
+| Vexi || Tio || 90% || 90% || 90% || 119.7% || 90%
+|-
+| {{D|Heat}} Damage<sup>1</sup>
+| Igni || Pha || 90% || 90% || 90% || 119.7% || 90%
+|-
+| [[Finisher]] Damage
+| Exi || Cta || – || – || – || – || 119.7%
+|-
+| [[Fire Rate]] (x2 for [[Bows]]) /<br />[[Attack Speed]]
+| Croni || Dra || 60.03% || 90% || 74.7% || 60.03% || 54.9%
+|-
+| [[Projectile Speed]]
+| Conci || Nak || 90% || 90% || 90% || – || –
+|-
+| [[Initial Combo]]
+| Para || Um || – || – || – || – || 24.5
+|-
+| {{D|Impact}} Damage<sup>2</sup>
+| Magna || Ton || 119.97% || 119.97% || 119.97% || 90% || 119.7%
+|-
+| [[Magazine Capacity]]
+| Arma || Tin || 49.995% || 49.995% || 49.995% || 60.3% || –
+|-
+| [[Heavy Attack Efficiency]]
+| Forti || Us || – || – || – || – || 73.44%
+|-
+| [[Multishot]]
+| Sati || Can || 90% || 119.7% || 119.7% || 60.3% || –
+|-
+| {{D|Toxin}} Damage<sup>1</sup>
+| Toxi || Tox || 90% || 90% || 90% || 119.7% || 90%
+|-
+| [[Punch Through]]<sup>1</sup>
+| Lexi || Nok || 2.7m || 2.7m || 2.7m || 2.7m || –
+|-
+| {{D|Puncture}} Damage<sup>2</sup>
+| Insi || Cak || 119.997% || 119.997% || 119.997% || 90% || 119.997%
+|-
+| [[Reload Speed]]
+| Feva || Tak || 49.995% || 49.995% || 49.995% || 99.9% || –
+|-
+| [[Range]]
+| Locti || Tor || – || – || – || – || 1.94m
+|-
+| {{D|Slash}} Damage<sup>2</sup>
+| Sci || Sus || 119.97% || 119.97% || 119.97% || 90% || 119.7%
+|-
+| [[Status Effect#Status Chance|Status Chance]]
+| Hexa || Dex || 90% || 90% || 90% || 60.3% || 90%
+|-
+| [[Status Duration]]
+| Deci || Des || 99.99% || 99.99% || 99.99% || 99.99% || 99.99%
+|-
+| [[Weapon Recoil]]
+| Zeti || Mag || 90% || 90% || 90% || 90% || –
+|-
+| [[Zoom]]
+| Hera || Lis || 59.99% || 41.994% || 80.1% || 59.99% || –
+|-
+|}
+; Legend/Notes&#58;
+<small>
+<sup>1</sup>Positive values only (i.e. these attributes will never be a negative trait)<br />
+<sup>2</sup>Weapons without more than 25% of a physical damage type usually cannot roll that respective attribute. For example, a {{Weapon|Simulor}} Riven will never have +/- {{D|Slash}} Damage stat. Exceptions exist on a case by case basis.<br />
+<sup>3</sup>Negative values only (i.e. these attributes will never be a positive trait)</small>
+
+Sentinel weapons use the base values of their associated weapon class (e.g. {{Weapon|Deconstructor}} = Melee, {{Weapon|Sweeper}} = Shotgun, etc.).
+
+=== Spliced Values ===
+Using a {{Resource|Riven Splicer}}, players can combine two predetermined stats into a spliced stat. Note that spliced stats will <u>'''always'''</u> be positive. The 18 spliced attributes and their base values are as follows.
+
+{| class="wikitable sortable"
+|+ Attributes and their base value<ref>ExportUpgrades_en.json file from [[Public Export]]</ref>
+|-
+! Effect !! Prefix/Core !! Suffix !! Rifle !! Shotgun !! Pistol !! Archgun !! Melee / Zaw
+|-
+| [[Ammo Efficiency]]
+| Parci || Pia || 45% || 45% || 45% || 45% || –
+|-
+| {{D|Blast}} Damage
+| Fraga || Tus || 90% || 90% || 90% || 90% || 90%
+|-
+| {{D|Corrosive}} Damage
+| Cori || Or || 90% || 90% || 90% || 90% || 90%
+|-
+| Damage vs. {{Faction|Orokin}}
+| Effi || Tas || x0.45 || x0.45 || x0.45 || x0.45 || x0.45
+|-
+| Damage vs. {{Faction|Scaldra}}
+| Exsi || Llo || x0.45 || x0.45 || x0.45 || x0.45 || x0.45
+|-
+| Damage vs. {{Faction|Techrot}}
+| Muti || Gia || x0.45 || x0.45 || x0.45 || x0.45 || x0.45
+|-
+| {{D|Gas}} Damage
+| Cali || Fel || 90% || 90% || 90% || 90% || 90%
+|-
+| [[Heavy Attack Wind Up Speed]]
+| Veri || Lus || – || – || – || – || 119.7%
+|-
+| {{D|Magnetic}} Damage
+| Magni || Bra || 90% || 90% || 90% || 90% || 90%
+|-
+| Melee Damage On Heavy Attack
+| Robi || Ndo || – || – || – || – || 119.7%
+|-
+| [[Melee#Blocking|Parry Angle]]<sup>1</sup>
+| Defi || So || – || – || – || – || 81%
+|-
+| {{D|Radiation}} Damage
+| Radi || Lo || 90% || 90% || 90% || 90% || 90%
+|-
+| [[Reload#Reloading While Holstered|Reload While Holstered]]
+| Auxi || Rro || 90% || 90% || 90% || – || –
+|-
+| Slam Attack Damage
+| Proci || Lam || – || – || – || – || 119.7%
+|-
+| [[Status Damage]]
+| Plaga || Mna || 90% || 90% || 90% || 90% || 90%
+|-
+| {{D|Viral}} Damage
+| Cari || Sco || 90% || 90% || 90% || 90% || 90%
+|-
+| Weakpoint Damage
+| Eni || Vo || 225% || 225% || 225% || 225% || –
+|-
+| Weakpoint Critical Chance
+| Exiti || Eus || 247.5% || 247.5% || 247.5% || 247.5% || –
+|}
+; Legend/Notes&#58;
+<small><sup>1</sup>Bonus is a percentage despite not being shown as such in-game.</small>
+
+== Disposition ==
+{{Quote|Modifies the performance of an equipped Riven mod. More dots indicates stronger stats.|In-game Description}}
+The randomized attributes for Riven mods are affected by '''Disposition''', a stat multiplier provided by the system that collates the usage popularity of a given weapon by players of high [[Mastery Rank]] and internal rankings based on the "strength" of a weapon.<ref>{{Ref|title=Riven Disposition Guidelines|first=Connor|last=Neumann|year=2022|month=3|day=28|publisher=Warframe Forums|url=https://forums.warframe.com/topic/1303780-riven-disposition-guidelines|access-date=2022-03-28|archive-url=https://web.archive.org/web/20220328171154/https://forums.warframe.com/topic/1303780-riven-disposition-guidelines/|archive-date=2022-03-28}}</ref> Disposition strength controls the range of the attributes available for each weapon. Disposition can be any value between 0.5 and 1.55, but in-game this is simplified to 5 categories:
+
+*<span style="font-size: 1.5em">●●●●●</span> (1.31-1.55): '''Strong''': Assigned to the least frequently-used weapons. Rivens with this disposition provide the greatest attributes.
+*<span style="font-size: 1.5em">●●●●○</span> (1.11-1.3): This Disposition is assigned to less popular weapons, Riven mods provide above-average attributes.
+*<span style="font-size: 1.5em">●●●○○</span> (0.9-1.1): '''Neutral''': Weapons that see average usage within the player base, resulting in average attributes.
+*<span style="font-size: 1.5em">●●○○○</span> (0.7-0.89): Slightly more popular weapons, these will yield a below-average attributes.
+*<span style="font-size: 1.5em">●○○○○</span> (0.5-0.69): '''Faint''': Assigned to the most frequently-used weapons, Rivens with this disposition provide the most restrained attributes. '''All newly released weapons start with this disposition.'''<ref>{{Ref|title=Riven Disposition Procedure for New Weapons|first=Connor|last=Neumann|year=2020|month=6|day=8|url=https://forums.warframe.com/topic/1199009-riven-disposition-procedure-for-new-weapons/|access-date=2022-04-18|archive-url=https://web.archive.org/web/20220418160158/https://forums.warframe.com/topic/1199009-riven-disposition-procedure-for-new-weapons/|archive-date=2022-04-18}}</ref>
+
+Disposition is '''not''' necessarily shared between all variants of a single weapon. For example, the {{Weapon|Telos Boltor}} shares the same disposition with its {{Weapon|Boltor Prime|Prime}} variant at 1.20. However, the standard {{Weapon|Boltor}} has a different disposition at 1.30.
+
+For '''Modular Weapons''', the disposition is tied to the Main Component of the weapon, i.e. the '''Strike''' for a [[Zaw]], and the '''Chamber''' for a [[Kitgun]] Secondary or Primary. For Kitguns, the Disposition of the Chamber can be different for Secondary and Primary versions.
+
+Disposition changes every three months, aligned with every new [[Prime Access]]. If a weapon's disposition is changed, the attributes on already unveiled Rivens for the weapon will be automatically adjusted to match the new disposition.
+
+A weapon's Disposition can be seen in the [[Arsenal]] under the ''Upgrade'' tab.
+
+===Weapon Disposition List===
+Below is a list of Weapons, Zaw Strikes and Kitgun Chambers by Disposition:
+{{PrettyCollapsible|Weapon Disposition
+|Width_Collapsed=85%
+|Width_Expanded=100%
+|Height=33px
+|Icon_Size=25px
+|Icon_Space=3px
+}}
+{{Transclude|Riven Mods/Weapon Dispos}}
+{{PrettyCollapsible/End}}
+{{anchor|Cycling}} {{anchor|Rerolling}}
+
+==Cycling (Rerolling)==
+Another unique aspect of a Riven mod's attributes is their ability to cycle (reroll) the attributes via the Cycle function in the [[Orbiter#Mods|Mods]] segment in the [[Orbiter]]. A Riven mod is cycled after spending [[Kuva]], found through [[Kuva Siphon]] objectives on planets close to the [[Kuva Fortress]] or as an uncommon reward for completing [[Bounty|Bounties]].
+
+Cycling a Riven mod affects the number of attributes, as well as the final numerical attribute, but not the current weapon designation, mod rank, [[polarity]] or [[Mastery Rank]] requirement. Dispositions belong to the weapons and not the mods, and thus a cycled riven will not have attributes outside its own range of values.
+
+After cycling a mod, both the old version of the mod and the new version are displayed, and players can choose to keep the version they prefer.
+
+Cycling a Riven mod starts off with {{kc|900}} [[Kuva]] for the first cycle and increases on subsequent cycles of the same mod, capped at {{kc|3500}} Kuva. The number of cycles is indicated by a counter-/anti-clockwise arrow at the bottom right of the Riven mod.
+
+{| class="wikitable" style="text-align:center;"
+!Cycle
+!Cost
+!Cumulative Cost
+!Approx. # [[Kuva Siphon]] Runs
+!Cumulative Runs
+|-
+| 1 || 900 || 900 || 1.4 || 1.4
+|-
+| 2 || 1,000 || 1,900 || 1.6 || 3.0
+|-
+| 3 || 1,200 || 3,100 ||1.9 || 5.0
+|-
+| 4 || 1,400 || 4,500 || 2.2 || 7.2
+|-
+| 5 || 1,700 || 6,200 || 2.7 || 9.9
+|-
+| 6 || 2,000 || 8,200 || 3.2 || 13.1
+|-
+| 7 || 2,350 || 10,550 ||3.8 || 16.9
+|-
+| 8 || 2,750 || 13,300 ||4.4 || 21.3
+|-
+| 9 || 3,150 || 16,450 ||5.1 || 26.4
+|-
+| 10+ || 3,500 || 19,950 || 5.8 || 32.2
+|-
+|}
+
+The total Kuva cost to cycle a Riven the first 9 times is {{kc|16,450}}. Cycling the same Riven another 9 times will cost an additional {{kc|31,500}}. Therefore players could potentially save {{kc|15,050}} if they then use a different, unrolled Riven.
+
+==Trait Locking==
+Traits can be locked when cycling Riven Mods to prevent them from being lost on subsequent cycles; however, the {{Resource|Kuva}} cycle cost is doubled if a trait is locked. This feature can only be accessed when in the '''''"Cycle Riven"''''' menu and only applies to the instance in which it is enabled; i.e., a locked trait will need to be re-locked each time the menu is opened. Locked traits will be displayed with grey text and [[File:IconLocked(xWhite).png|20px]] icons beside them. A Riven Mod with a locked trait will also prevent the number and layout of traits from changing on subsequent cycles, e.g., a Riven Mod with two positive traits and one negative trait will '''''always''''' have two positive traits and one negative trait until the lock is removed.
+
+{| class="wikitable" style="text-align:center;"
+!Cycle !!Regular Cost !!Locked Trait Cost !!Cumulative Locked Trait Cost
+|-
+| 1 || 900 || 1,800 || 1,800
+|-
+| 2 || 1,000 || 2,000 || 3,800
+|-
+| 3 || 1,200 || 2,400 || 6,200
+|-
+| 4 || 1,400 || 2,800 || 9,000
+|-
+| 5 || 1,700 || 3,400 || 12,400
+|-
+| 6 || 2,000 || 4,000 || 16,400
+|-
+| 7 || 2,350 || 4,700 || 21,100
+|-
+| 8 || 2,750 || 5,500 || 26,600
+|-
+| 9 || 3,150 || 6,300 || 32,900
+|-
+| 10+ || 3,500 || 7,000 || 39,000
+|}
+
+==Splicing==
+[[File:SplicedRivenExample.png|thumb|right|250px|A Spliced Riven for the {{Weapon|Hema}}, showing the spliced trait as [[File:IconLocked(xWhite).png|18px|link=]]'''Locked''']]
+With the introduction of the {{Resource|Riven Splicer}}, obtained exclusively in [[The Icebind]], certain traits can be combined to form new traits that are otherwise unobtainable within the normal trait pool. This feature can be accessed by selecting the '''''"Riven Splicing"''''' option when in the '''''"Riven"''''' section of the [[Mod]] menu. When selected, a menu of all owned Riven Mods with valid trait combinations will be displayed.
+
+Some important distinctions of note:<section begin=Spliceable_Details/>
+*Traits used to form a spliced trait are consumed.
+**These traits can, however, reappear on the same Riven Mod in subsequent cycles. For example, it is possible to have a Riven Mod with {{D|Viral}}, {{D|Cold}}, and {{D|Toxin}}.
+**A random trait will be added to maintain the number of traits on the Riven Mod; however, the layout of positive and negative traits is locked and will '''''not''''' change with subsequent cycles. For example, a Riven Mod with two positive traits and one negative trait will '''''always''''' have two positive traits and one negative trait until the spliced trait is removed.
+**If one of the consumed traits is negative, the random trait will also be negative. The spliced stat will '''''always''''' be positive.
+*It is possible for a Riven Mod to have multiple valid trait combinations, but '''only one spliced trait''' can be on a single Riven Mod.
+*Spliced traits are locked and will '''''not''''' change with subsequent cycles, but are not considered locked traits and will not double the {{Resource|Kuva}} cycle cost.
+**Since they are not considered locked traits, a separate trait can be locked.
+**The lock on the spliced trait can be removed, allowing it to be cycled off if desired.
+*The spliced trait inherits the higher random value out of the consumed stats, rather than generating a new one.
+**Community tools for assessing these random values will often flip the positive and negative end for negative traits, making lower values the "positive" end. The true random value of the negative is used when splicing however.<section end=Spliceable_Details/>
+<section begin="Spliceable_Stats" />{{clr}}
+{| class="wikitable sortable" style="width: 100%; text-align: center;"
+|+ [[Riven Splicer]] Splicing Recipes
+|-
+! Trait 1 !! Trait 2
+! Spliced Trait
+! Rifle !! Shotgun !! Pistol !! Archgun !! Melee
+|-
+| [[Magazine Capacity]] || [[Reload Speed]]
+| [[Ammo Efficiency]]
+| ✅️ || ✅️ || ✅️ || ✅️ || ❌
+|-
+| [[Weapon Recoil]] || [[Ammo Maximum]]
+| [[Ammo Efficiency]]
+| ✅️ || ✅️ || ✅️ || ✅️ || ❌
+|-
+| {{D|Heat}} Damage || {{D|Cold}} Damage
+| {{D|Blast}} Damage
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| {{D|Toxin}} Damage || {{D|Electricity}} Damage
+| {{D|Corrosive}} Damage
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| Damage vs. {{Faction|Grineer}} || Damage vs. {{Faction|Corpus}}
+| Damage vs. {{Faction|Orokin}}
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| Damage vs. {{Faction|Infested}} || Damage vs. {{Faction|Grineer}}
+| Damage vs. {{Faction|Scaldra}}
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| Damage vs. {{Faction|Corpus}} || Damage vs. {{Faction|Infested}}
+| Damage vs. {{Faction|Techrot}}
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| {{D|Toxin}} Damage || {{D|Heat}} Damage
+| {{D|Gas}} Damage
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| [[Heavy Attack]] Efficiency || [[Combo]] Duration
+| [[Heavy Attack]] Wind Up Speed
+| ❌ || ❌ || ❌ || ❌ || ✅️
+|-
+| {{D|Electricity}} Damage || {{D|Cold}} Damage
+| {{D|Magnetic}} Damage
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| [[Heavy Attack]] Efficiency || Additional [[Combo]] Count Chance
+| Melee Damage On [[Heavy Attack]]
+| ❌ || ❌ || ❌ || ❌ || ✅️
+|-
+| [[Attack Speed]] || [[Range]]
+| [[Parry]] Angle
+| ❌ || ❌ || ❌ || ❌ || ✅️
+|-
+| {{D|Heat}} Damage || {{D|Electricity}} Damage
+| {{D|Radiation}} Damage
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| [[Ammo Maximum]] || [[Reload Speed]]
+| Reload While [[Holster]]ed
+| ✅️ || ✅️ || ✅️ || ❌ || ❌
+|-
+| [[Ammo Maximum]] || [[Magazine Capacity]]
+| Reload While [[Holster]]ed
+| ✅️ || ✅️ || ✅️ || ❌ || ❌
+|-
+| Melee [[Damage]] || [[Attack Speed]]
+| [[Slam Attack]] Damage
+| ❌ || ❌ || ❌ || ❌ || ✅️
+|-
+| [[Damage]] / Melee Damage || [[Status Chance]]
+| [[Status Damage]]
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| {{D|Toxin}} Damage || {{D|Cold}} Damage
+| {{D|Viral}} Damage
+| ✅️ || ✅️ || ✅️ || ✅️ || ✅️
+|-
+| [[Critical Chance]] || [[Zoom]]
+| [[Weakpoint]] Critical Chance
+| ✅️ || ✅️ || ✅️ || ✅️ || ❌
+|-
+| [[Critical Chance]] || [[Multishot]]
+| [[Weakpoint]] Critical Chance
+| ✅️ || ✅️ || ✅️ || ✅️ || ❌
+|-
+| [[Damage]] || [[Zoom]]
+| [[Weakpoint]] Damage
+| ✅️ || ✅️ || ✅️ || ✅️ || ❌
+|-
+| [[Damage]] || [[Multishot]]
+| [[Weakpoint]] Damage
+| ✅️ || ✅️ || ✅️ || ✅️ || ❌
+|}<section end="Spliceable_Stats" />
+
+==Transmutation==
+If a player has excess Rivens and are comfortable with doing away with several of them, a {{Resource|Riven Transmuter}} allows them to sacrifice '''four''' Rivens in their inventory for a new, veiled Riven mod.
+
+Two '''Riven Transmuters''' are acquired from the capture of an [[Eidolon Hydrolyst]]. Alternatively, they may be purchased from [[Loid (Original)|Loid]] in [[Sanctum Anatomica]] for 180 {{Resource|Vessel Capillaries}} each, or from [[Palladino]] in [[Iron Wake]] on [[Earth]] for 10 {{Resource|Riven Sliver}}s each.
+
+The new Riven will always be of the same type as one of the transmuted Rivens. As a consequence, if four of the same type are transmuted (e.g. only rifle Rivens), then the new mod will be of the same weapon class. Upon transmutation, the four selected Riven mods and the '''Riven Transmuter''' will be consumed.
+
+<!-- ==Trade Data==
+[[Digital Extremes]] exposes in-game Riven Mods trade data through their website for third-party use, which is automatically updated weekly on Monday 00:00 UTC based on the prior week's trades.<ref>{{Ref|title=Riven Trading & Toolbuilders: Phase 1|first=Rebecca|last=Ford|year=2019|month=3|day=29|publisher=Warframe Forums|url=https://forums.warframe.com/topic/1077490-riven-trading-toolbuilders-phase-1/|access-date=2021-01-10|archive-url=https://web.archive.org/web/20230629204938/https://forums.warframe.com/topic/1077490-riven-trading-toolbuilders-phase-1/|archive-date=2023-06-29}}</ref> Note that this data only tracks Riven Mod and [[Platinum]] trades greater than {{Pc|1}}.
+
+Players can access this data from the following websites:
+
+*PC: https://www-static.warframe.com/repos/weeklyRivensPC.json
+*Playstation 4 & Playstation 5: https://www-static.warframe.com/repos/weeklyRivensPS4.json
+*Xbox One and Xbox Series X/S: https://www-static.warframe.com/repos/weeklyRivensXB1.json
+*Nintendo Switch: https://www-static.warframe.com/repos/weeklyRivensSWI.json
+
+===Schema===
+*"itemType" {string} Riven Mod type
+*"compatibility" {string} Name of item/family of items it can be equipped on in all capital case
+*"rerolled" {boolean} Whether or not this particular Riven Mod type is rerolled or not
+*"avg" {float} Average [[Platinum]] traded for this particular Riven Mod type in the past week (as in traded between players, not the same as price listings in chat)
+*"stddev" {float} [[wikipedia:Standard deviation|Standard deviation]] of Platinum traded for this particular Riven Mod type in the past week
+*"min" {int} Minimum Platinum traded for this particular Riven Mod type in the past week
+*"max" {int} Maximum Platinum traded for this particular Riven Mod type in the past week
+*"pop" {int} Popularity or ranking of this Riven Mod type being traded in relation to the most popular Riven Mod type in the list (value between 1 to 100 inclusive)
+*"median" {float} [[wikipedia:Median|Median]] Platinum traded for this particular Riven Mod type in the past week
+
+Sample entry for {{Weapon|Braton}} Riven Mods that have been rerolled at least once:
+<syntaxhighlight lang="json">
+	{
+		"itemType" : "Rifle Riven Mod",
+		"compatibility" : "BRATON",
+		"rerolled" : true,
+		"avg" : 287.85,
+		"stddev" : 635.15,
+		"min" : 10,
+		"max" : 2400,
+		"pop" : 1,
+		"median" : 34
+	},
+</syntaxhighlight>
+ -->
+
+==Notes ==
+*Riven mods are not saved in a player's [[Codex]].
+*It is possible to complete multiple Riven mod challenges within a single mission, assuming the player qualifies for them simultaneously.
+*While it is possible to equip a veiled Riven mod onto Robotic Weapons, the challenge will not appear for the player.
+*Typing [Riven mod] in the in-game chat and selecting the mod will let other players in the same chat channel see its bonuses.
+**Typing out the name of the actual Riven mod is an alternative way of representing the player's mod in chat.
+**Players cannot link Riven mods that they do not own.
+*Base (unranked) Endo value of Riven mods is affected by the [[Mastery Rank]] requirement, weapon type, and number of cycles.
+*A Riven Mod's chosen weapon is determined upon its ''unveiling''; thus a Riven mod can be obtained, saved, and unveil itself to be for a weapon that did not exist when the Riven mod itself was first obtained.
+*Riven mods can be used on variants of a particular weapon, including [[MK1]], [[Prime]], [[Vandal]], [[Wraith]], [[Dex]], [[Prisma]], [[Mara Detron|Mara]], and [[Syndicate]] variants.
+**Being entirely separate weapons, Riven mods for the {{Weapon|Mutalist Cernos}} and the {{Weapon|Mutalist Quanta}} are not compatible with the normal {{Weapon|Cernos}} or {{Weapon|Quanta}} respectively, and vice versa. The same restriction applies to [[Dual Sidearms]] and [[Single Sidearm]]s. Several Melee weapons such as {{Weapon|Dex Dakra}} and {{Weapon|Dakra Prime}}, {{Weapon|Nikana}} ([[Nikana Prime|Prime]]) and {{Weapon|Dragon Nikana}} are also considered separate melee weapons.
+*Riven mods will '''not''' generate for [[Exalted Weapon]]s.
+*If a Riven mod includes multiple elemental damage bonuses, the elements listed are applied in ''bottom-up'' order.
+** An elemental damage mod installed ''before'' the Riven mod will interact with the ''last'' element listed, rather than the first. 
+** An elemental damage mod installed ''after'' the Riven mod will only interact with the Riven if it has 1 or 3 elements, and will combine with the ''first'' one listed. This applies to the Valence bonus from an [[Adversary Weapons|Adversary Weapon]] as well.
+**For example, if a {{D|Heat}} mod is placed directly before a Riven mod that grants {{D|Electricity}} first and {{D|Cold}} second (which would provide {{D|Magnetic}} by itself), it will combine to provide {{D|Blast}} and {{D|Electricity}} rather than {{D|Radiation}} and {{D|Cold}}. Putting said {{D|Heat}} mod directly after the Riven mod will keep the {{D|Magnetic}} damage intact.
+*Currently, the lowest Mastery Rank requirement to equip, trade, or sell a Riven mod is '''8''', and the highest is '''16'''.
+*The total [[Endo]] gain from dissolving a Riven mod is equal to the following formula:<br />{{MathText|(100 {{mul}} (Riven Mastery Rank - 8)) + ⌊22.5 {{mul}} 2{{exp|Mod Rank}}⌋ + (200 {{mul}} Rerolls) - 7}}.
+**For example, the base value for an unranked, unrolled mod with a Mastery Rank requirement of 13 would be: {{Math|(100 {{mul}} (13 {{sub}} 8)) + ⌊22.5 {{mul}} 2^0⌋ + (200 {{mul}} 0) - 7|mt=y}}.
+* Since {{ver|23.8.2}}, trading Rivens requires mastery rank 8 or more.
+*As of {{ver|24.8}} veiled [[Archgun]] Rivens can be purchased from [[Arbitrations]] Honors for 35 [[Vitus Essence]].
+**Archgun Rivens can be equipped and unveiled with Atmospheric Archguns.
+*Although Beast Companions had their weapons separated in [[Update 37#Update 37.0|Update 37.0]], Veiled Companion Riven mods can still only become mods for Robotic Weapons.
+
+==Trivia==
+
+*Riven mods feature a dynamic image, which constantly shifts between the images of the bonuses. For example, a Riven Rifle mod that affects Critical chance and Critical damage (positively or negatively) will shift between {{M|Point Strike}}'s image and {{M|Vital Sense}}'s image.
+**Interestingly, Riven mods that affect Status Chance use the images of [[Thunderclap]], [[Crowd Control]], [[Stopping Power]], or [[Staggering Force]], as opposed to {{M|Rifle Aptitude}}, {{M|Shotgun Savvy}}, {{M|Sure Shot}}, or {{M|Melee Prowess}}.
+**Riven mods for [[Kitgun]]s will use images of Secondary mods even when equipped on Primary Kitguns.
+**Shotgun Riven mods that affect recoil will use {{M|Hydraulic Chamber}}'s image instead of {{M|Counterbalance}}'s, as the latter would not be introduced until {{ver|30.5}}.
+*''Riven'' is the past participle of the Middle English verb ''[[wiktionary:rive#English|Rive]]'', which means "to violently tear apart". 
+*Riven mods for [[Companion]] weapons were made unobtainable in {{ver|24}} but were brought back as [[Cephalon Simaris]]' offerings in {{ver|25.7}} for {{sc|100,000}} each. This was done to reduce reward pool dilution for Sortie-rewarded Riven Mods.
+**Prior to this, in {{ver|19.10.1|fix}}, {{Weapon|Artax}} Riven mods were made '''unobtainable''' from [[Sortie]]s. Given the short 5-day period between the weapon's introduction and the hotfix and the low chance of getting a specific Riven mod, Rivens for Artax were the rarest ones in circulation.
+*Taking into account the existence of 24 possible positive effects, the possibility of one negative effect, and that elemental damage and [[punch through]] cannot be negative attributes, also the fact that effects don't fall into the same category nor does order matter: there are '''5,083''' possible Riven mod stat combinations that have two positive effects and one or zero negative effects, and '''35,673''' possible Riven mod stat combinations that have three positive effects and one or zero negative effects, making a total of '''40,756''' different combinations for a single Rifle, Shotgun, or Pistol Riven.
+<!--
+Calculations, in case anybody wants to confirm:
+nCr(5,0) * nCr(19,3) * 17 + 
+nCr(5,1) * nCr(19,2) * 18 + 
+nCr(5,2) * nCr(19,1) * 19 + 
+nCr(5,3) * nCr(19,0) * 20
+= 35673
+
+nCr(5,0) * nCr(19,2) * 18 + 
+nCr(5,1) * nCr(19,1) * 19 + 
+nCr(5,2) * nCr(19,0) * 20
+= 5083
+-->
+
+*Digital Extremes have been exposing riven trading data for third-party use on https://www-static.warframe.com/repos/weeklyRivensPC.json but the data hasn't been updated since 13 May 2024.
+*Prior to the removal of [[Channeling]], the following stats used these prefix/core and suffix:
+
+{| class="wikitable sortable"
+|-
+!Effect
+! Prefix/Core
+!Suffix
+|-
+|[[Channeling]] Damage
+|Tori
+|Bo
+|-
+|[[Channeling]] Efficiency
+|Uti
+|Tia
+|}
+
+== Bugs ==
+
+*If you complete the objectives of 2 different Riven Mods in the same mission they can cancel each other and not open at all, but rather reset to the state they were in before the mission started.
+*The unveiling may display inflated values. Toggling the Show Ranked tick box will rectify this.
+*The challenge "Find [8-12] Syndicate Medallions" does not count Voidplume Quills dropped by [[Cephalon Melica]].
+
+==Media==
+{{PrettyCollapsible|Examples of Riven Mods
+|Width_Collapsed=100%}}
+<gallery position="center" widths="100%" spacing="small">
+Vulklok Manticon.png|Vulklok Manticon
+Paracyst Visi-magnatron.png|Paracyst Visi-magnatron
+Lanka Hexa-toxitio.jpg|Lanka Hexa-toxitio
+Tonkor critacan.png|Tonkor Critacan
+Cernos Hera-critadra.png|Cernos Hera-critadra
+MOD.jpg|Gorgon Argican
+WFRivenPenta.jpg|Penta Croni-heraada
+Soma riven.png|Soma Hexa-visisus
+Ogris Hexacan.png|Ogris Hexacan
+15032275 10205637006843620 2207266400186110966 n.jpg|Grinlok Mantides
+Zarr Toxi-hexado.PNG|Zarr Toxi-hexado
+Cattura.JPG|Vectis Hexa-scidra
+Warframe0017.jpg|Zhuge Fevaata
+Catturai.JPG|Latron Hexadra
+Screenshot 126.png|Dread Crita-acrido
+20161116144304 1.jpg|Torid Argitio
+Paris Visicron.jpg|Paris Visicron
+Sybaris Insipha.jpg|Sybaris Insipha
+Stradavar Manti-visiada.png|Stradavar Manti-visiada
+5c77b9e2d1101d4ab4ccc3b070e2d29a.png|A veiled Riven requiring sustained melee combo
+Karak Argi-visidex.png|Karak Argi-visidex
+111.jpg|Synapse Geli-vexiata
+Amprex Lexitis.PNG|Amprex Lexitis
+20161127061413 1.jpg|Tetra Visinak
+Braton Argitox.png|Braton Argitox
+Supra Toxi-hexaada.jpg|Supra Toxi-hexaada
+Glaxion riven.png|Glaxion Lexi-igniata
+Tiberon Manti-cronicron.jpg|Tiberon Manti-cronicron
+Aklex Vexi riven.png|Aklex Vexi-critaata
+Twin Gremlins Sati-Visicak.jpg|Twin Gremlins Sati-Visicak
+Magnus-Riven.png|Magnus Crit Riven
+Azimariven.PNG|Azima Sati-visipha
+Flux.PNG|Flux Rifle Lexi-argidex
+SheduRiven.png|Shedu Pura-acrides (3 bonuses, 1 malus)
+File:Pistol riv.jpg|A bugged Riven for "Pistol"
+</gallery>
+{{PrettyCollapsible/End}}
+{{VideoGallery
+|{{YouTube|hSiOPuPfPWs|size=300px}}
+|{{YouTube|t66oSX1BkLc|size=300px|caption=How To Get Riven Mods Explained}}
+}}
+''For more examples of Riven mods, see [[:Category:Riven Mod|here]].''
+
+==References==
+{{Reflist}}
+
+==Patch History==
+{{Main|Riven Mods/Patch History}}
+{{:Riven Mods/Patch History}}
+
+==See Also==
+*[[Cephalon Samodeus]], the creator of Riven Mods.
+*[https://empx.cc/ranges/ This third-party website], will let you see the maximum possible riven stats for a specific weapon.
+
+{{ModNav}}
+{{MechNav}}
+[[es:Mod agrietado]]
+[[it:Mod Riven]]
+[[ru:Моды разлома]]
+[[Category:Mods]]
+[[Category:Mechanics]]
+[[Category:Update 19]]
+[[Category:Sortie Reward]]
+[[Category:Real-World References]]
+__FORCETOC__

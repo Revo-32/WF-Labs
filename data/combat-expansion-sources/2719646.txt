@@ -1,0 +1,69 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|A balanced Zaw Strike for Nikana and Staff weapons. A steady blade for steady hands.|In game description}}
+
+The '''Sepfahn''' is a {{D|Slash}}-focused Strike used in [[Zaw]] construction, and is currently the only Strike able to make a Nikana.
+
+{{BuildRequire
+|buildcredits = 5,000
+|build1 = Condroc Wing
+|build1amount = 15
+|build2 = Fish Scales
+|build2amount = 55
+|build3 = Tear Azurite
+|build3amount = 10
+|build4 = Coprite Alloy
+|build4amount = 60
+|buildtime = 1
+|buildrush = 25
+|blueprint = 1,000
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+The Sepfahn blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This Strike primarily deals {{D|Slash}} damage.
+
+* '''10%''' {{D|Impact}}
+* '''25%''' {{D|Puncture}}
+* '''65%''' {{D|Slash}}
+This Strike also has a flat +2% Critical Chance bonus and a flat +2% [[status chance]] bonus.
+
+Compatible weapon types:
+*Nikana
+*Staff
+
+Gives a {{Pol|Madurai}} stance polarity.
+
+==Notes==
+*Has 10% base critical chance and [[status chance]], while other Zaw strikes, excluding Plague Keewar and Plague Kripath, have 8%.
+**Increases to 20% when gilded.
+
+==Trivia==
+*The text at the top of a sheath for a Zaw with this strike roughly translates as "Slash" from the Ostron language.
+*The text at the bottom of a sheath for a Zaw with this strike roughtly translates as "Kits" from the Ostron language
+
+==Gallery==
+<gallery widths="300" position="center" spacing="small">
+File:22.18Zaw.png|Promo art from {{ver|22.18}} showcasing Zaws using Sepfahn and Dokrahm
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|22.20}}
+*Fixed being unable to Chat link Sephfan Zaws.
+
+{{ver|22.18.5}}
+*Fixed an issue with Sepfahn Zaw part creating it's Nikana holster when used for a 2 handed grip.
+*Fixed an issue with the Sepfahn Zaw part making extra cloth dangles when made into a Nikana. 
+
+{{ver|22.18}}
+*Introduced
+}}
+{{ZawNav}}
+[[es:Sepfahn]]
+[[Category:Zaw]]
+[[Category:Update 22]]
+[[uk:Сепфан]]
+[[fr:Sepfahn]]

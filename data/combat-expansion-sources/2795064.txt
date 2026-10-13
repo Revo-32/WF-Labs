@@ -1,0 +1,59 @@
+{{ModBox|name=Hysteria}}
+<section begin=intro />
+'''Hysteria''' is a unique [[Stance]] exclusive to {{Weapon|Valkyr Talons}} that can only be acquired and used by activating {{WF|Valkyr}}'s fourth ability, {{A|Hysteria}}. This Stance overrides the Stance on any currently equipped melee weapon for as long as Hysteria remains active.
+<section end=intro />
+
+{{StanceTable|Name=Hysteria}}
+
+==Acquisition==
+*Hysteria is a [[:Category:Special Stance|unique stance]] which can only be temporarily obtained through the use of {{WF|Valkyr}}'s {{A|Hysteria}}. There are no other possible methods to obtain this stance.
+
+==Notes==
+*During this stance mode, Valkyr has increased mobility mid-air, performing continuous aerial somersaults.
+*The final four attacks of '''Fervor''' have Valkyr swipe around a full 360 degrees, allowing her to attack enemies around without needing to change directions. Due to Hysteria's high power nature, this can clear tightly-knit crowds quickly.
+*Unlike other weapons that use this slide attack, '''Launching Spring''' makes Valkyr spin quickly 3 to 4 times before delivering an uppercut, which can deal up to a 5-hit combo against a single target, or 4 hits against multiple enemies.
+*Unlike '''One Point''' utilized by other fist-using stances ([[Fist]]s, [[Claws]] and [[Sparring]]), '''Frenzy''' accelerates Valkyr downwards instead of letting her float in the air as she waits to strike the ground.
+*Some attacks do bonus {{D|Impact}} damage.
+**The first attack of '''Rise From Ashes''' does '''200%''' bonus {{D|Impact}} damage
+**'''Roaring Drums''' does '''25%''' bonus {{D|Impact}} damage.
+*Some attacks have increased [[Combo Count]]:
+**'''Fervor''': 3rd through 5th hits grant 2 Combo and the 6th hit grants 3 Combo
+**'''Delirium''': 3rd and 4th hits grant 2 Combo
+**'''Rage''': 1st hit grants 2 Combo and 2nd through 4th hits grants 3 Combo
+**'''Madness''': 1st through 4th hits grants 2 Combo and 5th and 6th hits grants 3 Combo
+*This stance can not be ranked up manually and instead ranks up with the ability rank of {{A|Hysteria}}. There is also no benefit to ranking up the stance.
+
+==Trivia==
+*The stance was previously categorized under "{{Weapon|Furax}}" instead of "Valkyr Talons".
+*Hysteria is one of five identified stance mods that are exclusive to a Warframe instead of a weapon type, the other four being {{WF|Excalibur}}'s {{A|Exalted Blade}}, {{WF|Wukong}}'s {{A|Primal Fury}}, {{WF|Baruuk}}'s {{A|Serene Storm}}, and {{WF|Sevagoth}}'s {{A|Exalted Shadow}}.
+*Oddly enough, before {{ver|14.0.6}}, the mod card appeared to be a background-less version of {{M|Voltaic Strike}}. This was changed as of {{ver|14.0.6}}, where the image was replaced with a grey-grid.
+*Although having lost characteristics where Valkyr would float mid-air when attacking during Hysteria pre-Update 14, if a player attacks off a downward slope, Hysteria will momentarily let Valkyr attack regularly while in mid-air, followed shortly with '''Frenzy'''.
+
+==Gallery==
+<gallery widths="300" position="center" spacing="small">
+Hysteria (Stance) Post-U14.06.jpg|Hysteria mod card as seen through combo menu.
+Hysteria Stance "Card".png|Stance mod card - Pre-U14.06.
+Valkyr-HysteriaMoveSet.png
+HysteriaStanceOld.png|Old stance mod card still categorized under the name "Furax".
+</gallery>
+
+==Media==
+{{VideoGallery
+|{{YouTube|xS3Qlcmgtzo|size=300px}}
+}}
+
+==See Also==
+*{{A|Hysteria}}
+*{{Weapon|Valkyr Talons}}, the exalted weapon that uses this stance.
+*{{WF|Valkyr}}
+
+{{StanceNav}}
+__NOTOC__
+[[de:Hysterie (Haltung)]]
+[[es:Histeria (Guardia)]]
+[[fr:Hystérie_(Posture)]]
+[[Category:Valkyr]]
+[[Category:Update 14]]
+[[Category:Special Stance]]
+[[Category:Exalted Weapon]]
+[[uk:Істерика (модифікатор)]]

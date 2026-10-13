@@ -1,0 +1,158 @@
+{
+  "retrievedAt": "2026-10-10",
+  "wiki": [
+    {
+      "title": "Critical Hit",
+      "revision": 2805152,
+      "timestamp": "2026-09-02T22:19:08Z",
+      "url": "https://wiki.warframe.com/w/Critical_Hit?oldid=2805152",
+      "sha256": "d4f2ff5b44c26173311d2c9bcd54ef2a3b7884295423f9fb45a7032732288591",
+      "selectedText": [
+        "When a weapon deals a critical hit, the damage is displayed as a yellow, orange, or red number on the [[HUD]] instead of the usual white coloring. However, critical hits on [[Shield|shields]] are still blue, and attacks benefitting from the [[Stealth#Stealth Damage Bonus|stealth damage bonus]] are always yellow even when they don't crit.",
+        "{{Quote|Chance that any given hit will do bonus Critical Damage.<br/>Values over 100% have a chance to become Big Critical Hits (orange), and over 200% have a chance to become Super Critical Hits (red).|In-game Description}}",
+        "{{Quote|The Damage Total is multiplied by this value when a critical hit is inflicted.<br/>The added Damage is doubled for Big Critical Hits (orange), and tripled for Super Critical Hits (red).|In-game Description}}",
+        "As an example, a {{Weapon|Braton}} with {{M|Vital Sense}} and {{M|Bladed Rounds}} has a critical damage multiplier of:",
+        ":{{Math|{{text||1.6|hover=Braton's base critical damage multiplier}} {{mul}} (1 + {{M|Vital Sense|120%}} + {{M|Bladed Rounds|120%}})|mt=y}}",
+        "BladedRoundsMod.png|link=Bladed Rounds|{{M|Bladed Rounds}}",
+        "| rowspan=\"2\" style=\"background:var(--normal-hit-color);color:var(--almost-black);font-weight: 600;text-shadow: .08em .08em var(--almost-white);\" |Tier 0",
+        "| rowspan=\"2\" | '''Chance''' for a <span style=\"color:var(--yellow-crit-color);font-weight: 600;\">yellow crit</span>",
+        "| rowspan=\"3\" style=\"background:var(--yellow-crit-color);color:var(--almost-black);font-weight: 600;text-shadow: .08em .08em var(--almost-white);\" |Tier 1",
+        "|All hits yellow crit",
+        "| rowspan=\"2\" |'''Chance''' for an <span style=\"color:var(--orange-crit-color);font-weight: 600;\">orange ('''Big''') crit</span>",
+        "| rowspan=\"3\" style=\" background:var(--orange-crit-color);color:var(--almost-black);font-weight: 600;text-shadow: .08em .08em var(--almost-white);\" | Tier 2",
+        "| rowspan=\"3\" style=\"background:var(--red-crit-color);color:var(--almost-black);font-weight: 600;text-shadow: .08em .08em var(--almost-white);\" |Tier 3",
+        "| rowspan=\"3\" style=\"background:var(--red-crit-color);color:var(--almost-black);font-weight: 600;text-shadow: .08em .08em var(--almost-white);\" |Tier 4",
+        "| rowspan=\"3\" style=\"background:var(--red-crit-color);color:var(--almost-black);font-weight: 600;text-shadow: .08em .08em var(--almost-white);\" |Tier 5",
+        "| rowspan=\"2\" style=\"background: var(--red-crit-color);color:var(--almost-black);font-weight: 600;text-shadow: .08em .08em var(--almost-white);\" |...",
+        "This means it will have a 25% chance to trigger an orange crit, while all other hits (75%) will yield a yellow crit.",
+        "As an example, a {{Weapon|Lenz}} with {{M|Point Strike}} and {{M|Vital Sense}} will have an orange critical multiplier of:",
+        ":{{Math|1 + {{text||2|hover=Orange hits indicate Critical Tier 2}} {{mul}} ({{text||2.0|hover=Lenz's base critical damage multiplier}} {{mul}} (1 + {{M|Vital Sense|120%}}) {{sub}} 1)|m=y|mt=y}}",
+        "As an example, a {{Weapon|Lanka}} with {{M|Vital Sense}}, and a headshot multiplier of 3.0 will have an orange critical damage multiplier of:",
+        ": {{Math|{{text||3.0|hover=Headshot Multiplier}} {{mul}} (1 + {{text||2|hover=Orange hits indicate Critical Tier 2}} {{mul}} (2 {{mul}} {{text||2.0|hover=Lanka's base critical damage multiplier}} {{mul}} (1 + {{M|Vital Sense|120%}}) {{sub}} 1))|m=y|mt=y}} ",
+        "So for a Paris without any critical mods, the damage is multiplied by 1.3 on average; yellow crits of 2x for 30% of the shots. <br>",
+        "With the 2 basic critical mods, the damage is multiplied by 3.55 on average; yellow crits of 4.4x for 75% of the shots.",
+        "*With Harrow's enhancement to Criticals, we have slightly tweaked the colour gradient in which Critical hits are displayed. Introducing: Orange Crits! These now occur in between Yellow and Red Crits. Before, Crits became Red when 100% Crit Chance was achieved. Now Crits will be ORANGE in the 100.01-200% range, and Red will start at 200.01%+! This is solely a visual change. ",
+        "1) a guaranteed critical damage value - this normally appears as a yellow value."
+      ]
+    },
+    {
+      "title": "Mastery Rank",
+      "revision": 2815199,
+      "timestamp": "2026-10-02T07:04:04Z",
+      "url": "https://wiki.warframe.com/w/Mastery_Rank?oldid=2815199",
+      "sha256": "2ea1ee1e0b1fbac60f8c053c8b0c81c2fb41d9fdd9a4a3cc1b8004be1b2b4de5",
+      "selectedText": [
+        "The player starts in the center of a room surrounded by several walls and platforms. From here they must survive for 1:30.",
+        "The player starts the test standing on a brightly lit circular platform in a dark room encircled with metallic spheres. The metallic spheres will act as targets during the test. The player's camera will be turned toward the first target at the beginning of each round. The sphere that is currently the target will glow red. Once the player shoots the first target, lines will connect unlit spheres in succession before stopping at another glowing red target. The player must follow the lines to find the new target to be shot. This process will repeat itself until the test has ended.",
+        "*Any accurate weapon with a large magazine size (to avoid wasted time reloading) will do nicely. Shotguns are also a viable option since the test counts one shot per round, not per pellets.",
+        "*Increasing field of view in the options helps in glancing around corners.",
+        "*''Second stage'': Four enemies, two at ground level and two on an elevated walkway. Run towards one of the pillars closest to you and jump up it; the lower two can't see you and you can jump down to kill them whenever it's convenient. Then move below the walkway, keeping the other two in view; they can't see you standing below them, so you can jump up behind them and kill them whenever they are far away from each other.",
+        ":This test requires players to eliminate enemies while being aware of their surroundings. ",
+        "Players start on a platform facing a carousel-like structure with two disks connected with a large pillar at their centers. Between the disks are a set of lasers which separate the quadrants of the disks and slowly rotate around the disks, essentially circling the \"carousel\".",
+        "Players start facing a number of platforms surrounded by walls which can be run across. Once the player touches a platform, it begins to flash increasingly rapidly and will disappear after a few seconds. The platforms are arranged with one in each corner, and three stacked vertically in the center.",
+        "Players have three tries to eliminate all enemies on surrounding platforms. Each fall counts as a try and returns all previously exhausted platforms.",
+        "*Using the {{Weapon|Akarius}} makes this test extremely inconsequential, since the homing rockets fired out of the gun explode upon hitting the ground and deal splash damage.",
+        "*Transference and Companions (except [[Venari]]) are disabled, so try to use a well-rounded loadout.",
+        "**'''Bug:''' After falling off the map the Gunblade may become unusable, and players can no longer aim glide. The only complete solution is to retake the trial since even failing the attempt in progress doesn't fix the issue. Workaround: assuming one managed to kill all the enemies beforehand, or at least the majority, it is possible to destroy an orb using jump kicks. One has to take a good running start, aim at the orb, run, bullet jump and press and hold crouch ({{Keybind|CTRL}}) while in the air until the orb is hit. This may not destroy it at first so it might take a few attempts. Moreover, the orb sometimes explodes spontaneously soon after hitting it.",
+        ":This test requires the player to kill 35 enemies before the timer runs out. The player must destroy several orbs with their melee weapon to extend the timer, which spawn in random locations around the map.",
+        ":This test consists of three rounds requiring the player to kill 12 / 18 / 24 [[Executioner]]s (level 40). The player is given 3 respawns before the mission will fail. Executioners will spawn in pairs, a maximum of 6 simultaneously. The first round has a speed boost modifier, the second round has a health drain modifier (drains 100 health periodically until you have 3 health, killing enemies restores all health) and the third round has a scaling enemies modifier. Falling out of the map uses one respawn.",
+        "*Ammo is not replenished between rounds; bring ammo efficient weapons.",
+        "*There are ammo, health, and energy spawns scattered around the map; energy is marked on the map with a blue circle, ammo and health have no markers.",
+        "*Loki trivializes this test. Put on Vitality to minimize accidental death in the second round due to health drain.",
+        "*The points can move very fast along certain paths, making it particularly difficult to aim at the surrounding enemies. Therefore, area-of-effect weapons and abilities are highly recommended.",
+        ":This test requires the player to collect 100 points and bank them within 5 minutes by moving around and grabbing points and banking them. The test will complete when the player has banked 100 points. Lvl25+ Grineer units will spawn during the mission, gradually increasing in level as time passes.",
+        "*The map is very open to grab points using frames like {{WF|Titania}}, {{WF|Zephyr}}, or {{WF|Nova}} to teleport around.",
+        "*Using [[Focus/Zenurik|Zenurik Tree]] on your [[Operator]] with max bound \"Void Flow\" to dash around is a fast way to complete this test.",
+        "*Orange orb locations are on the higher ground, worth 3 points each.",
+        "*Blue orb locations are on the lower ground and between platforms, worth 1 point each.",
+        "*Killing Grineer enemies marked with red color will drop an Orange orb worth 3 points.",
+        "*It is possible to keep enemies at low level during the whole 5 minutes by not killing them. Making them less dangerous while the player is running around collecting points.",
+        ":This test requires the player to kill in each of 5 stages (or waves) a number of level 60-100 enemies (colored in cyan) from all different factions, then level 90-130 [[Arbitration Shield Drone]] together with 1-9 level 100-140 [[Eximus]] \"bosses\" (colored in red and highlighted with a globally visible red \"target\" icon), and finally interact with the Life Support Capsule (highlighted with a globally visible yellow \"interact\" icon) all while under [[Survival]]-style conditions (albeit with a much accelerated depletion timer and an instant failure upon depletion). After killing the bosses, the player must activate a single use Life Support Capsule to trigger the next stage - including one final capsule after killing stage 5 bosses to pass the test.",
+        "** Mobs will occasionally drop Life Support Modules when killed (highlighted with a globally visible yellow icon; these can be picked up either by walking over them, or by walking nearby with {{M|Vacuum}}/{{M|Fetch}} equipped on the [[Companion]]), extending the timer when picked up by 10% (i.e. by 6.6 seconds).",
+        "** {{WF|Mesa}}'s {{A|Peacemaker}}, with good Health and energy sources ({{M|Rage}}, {{M|Hunter Adrenaline}}, {{WF|Protea}}'s {{A|Dispensary}}), can quickly dispose of mobs and most bosses, as long as they are not protected by the [[Arbitration Shield Drone]], which is not targetable by the Regulator pistols and thus are needed to be taken down by traditional means. Equipping {{M|Mesa's Waltz}} is recommended to help circle around obstacles to take out hiding enemies.",
+        "** {{WF|Saryn}}'s {{A|Spores}}, combined with high [[Ability Range]] and good [[Ability Strength]], can make short work of surrounding mobs, while {{A|Molt}} can help her move faster.",
+        "** {{WF|Garuda}} infused with {{A|Gloom}} can trivialize this test, as enemies around her are significantly slowed and leaving them extremely vulnerable to attacks. This is markedly better when combined with {{A|Bloodletting}} and high [[Ability Strength]].",
+        "** {{WF|Kullervo}} can very easily trivialize this test, as there are plenty of enemies around for him to build melee combo counter with before cutting them down with {{A|Wrathful Advance}}. They also tend to be grouped together enough for a single {{A|Collective Curse}} and {{A|Wrathful Advance}} combo and can easily be hit consistently by his daggers during {{A|Recompense}}, especially if you have the {{M|Volatile Recompense}} mod equipped. However, he can be very energy-hungry, and so if you're running this test with him, it's recommended to put {{M|Rage}} or {{M|Hunter Adrenaline}} on him to maximize any downtime on his overguard and build up energy, and to bring a Companion that can help top up his energy reserves.",
+        "*The {{Weapon|Trumna}}, especially if modded for both reload speed and multishot, is ideal for this test. On top of its high magazine size and the blast radius of its rounds, its ability to launch a bouncing grenade after five kills allows it to make short work of the enemies, though it's best to wait for them to be clumped together to take out more targets.",
+        "The player starts the test standing on a brightly lit circular platform in a dark room encircled with metallic spheres. The metallic spheres will act as targets during the test. The player's camera will be turned toward the first target at the beginning of each round. The sphere that is currently the target will glow red. Once the player shoots the first target, green lines will connect unlit spheres in succession, leading to the next glowing red target. The player must follow the lines to find the new target to be shot. This process will repeat itself until the test has ended.",
+        "This test has three 1-minute rounds.",
+        "| [[File:IconRank36.png|64x64px]] || Legendary 6 || 6 [[File:LegendaryIcon.png|class=icon]] || 147,500 || 3,135,000 || ''Legendary Target Tracking Test'' || ''Round 1: 30 seconds, Round 2: 45 seconds, Round 3: 60 seconds''",
+        "Higher Mastery Ranks grants several benefits. These include access to equipment and certain game content such as [[quest]]s, and raises the cap of certain limiters such as mod capacity, [[Void Traces]], [[Extractor]]s, [[Focus]], and [[Syndicate]].",
+        "*Every Mastery Rank increases base [[mod]] capacity on unranked equipment by 1.",
+        "**This also applies for Legendary ranks on equipment whose rank can be increased above 30. For example, Legendary 1 increases the minimum capacity to 31 (62 with an Orokin Reactor/Catalyst) as long as the item has been polarised the correct number of times.",
+        "*Fixed certain Mastery Rank-Up screens incorrectly indicating that players earn more Mod Capacity. ",
+        "**As of Update 38.5, players now earn Base Capacity every 2 Mastery Ranks. We’ve updated the affected Mastery Rank screens to reflect this change.",
+        "*Increased base Capacity on Unranked items from 0 to 15. ",
+        "**Capacity earned from Mastery Rank is now distributed every 2 Mastery Ranks, and is added to the new base Capacity.",
+        "***Example: an MR 4 player will now have 17 Capacity on a Rank 0 item (15 from base Capacity, and +2 from Mastery Rank).",
+        "*If a piece of equipment in a player’s loadout has 10+ unused Mod capacity and an unused Mod slot, a warning symbol will appear next to it in the Loadout section of the Navigation screen. This only applies to weapons with 10-30 unused Mod Capacity (or 10-40 for Lich/Sister weapons), and will not appear if you are Mastery Rank 6 or higher.",
+        "**The goal of this change is to encourage new players to Mod their equipment, and learn about Mod capacity as they continue to level up their equipment. ",
+        "*Fixed being able to hit negative Modding capacity after hitting the cap and then upgrading an equipped Mod beyond capacity as a Mastery Rank Legendary 1 player.",
+        "*Fixed some players having their Mastery Rank recalculated slightly lower than before as a result of moving nodes around in the Star Chart for the Disruption expansion.",
+        "*Increased time given by targets in the Round 11 Mastery Rank Test from 3.5 seconds to 5 seconds and added aim assist to targets to make them slightly easier to hit. "
+      ]
+    },
+    {
+      "title": "Orokin Catalyst",
+      "revision": 2815622,
+      "timestamp": "2026-10-03T17:25:34Z",
+      "url": "https://wiki.warframe.com/w/Orokin_Catalyst?oldid=2815622",
+      "sha256": "66c4d3d8f219ace470405ac83eb2a90c4ae808f4cbdc72426b46b65e91eecad2",
+      "selectedText": [
+        "{{Resource|Orokin Catalyst}} is an item used to [[Equipment#supercharger|supercharge]] all [[Weapons]], including [[Archgun]]s, [[Archmelee]], or [[Sentinel#Sentinel Weapons|Sentinel Weapons]], doubling their [[mod]] capacity.",
+        "An applied Orokin Catalyst will double the weapon's mod capacity. For an [[Mastery Rank|MR 10]] player, an unranked weapon with a Catalyst installed will have a capacity of 20, which will increase to 60 at rank 30. Catalysts can only be applied once, and cannot be removed once installed.",
+        "***Being unable to install a Reactor or Catalyst onto an ungilded modular item significantly slowed down progression on new Modular items. Players who were willing to make the investment into Modular items weren’t able to Mod them to their full capacity, which left their new gear feeling very underpowered. So we have removed that restriction!"
+      ]
+    },
+    {
+      "title": "Polarity",
+      "revision": 2814647,
+      "timestamp": "2026-09-30T16:48:14Z",
+      "url": "https://wiki.warframe.com/w/Polarity?oldid=2814647",
+      "sha256": "c04f99f091c59e8e6040add65786701e2d64848c1c18cdda3e6f84e32e8c5d62",
+      "selectedText": [
+        "A mod's Polarity is noted in the top right corner of its card, next to the drain cost. When a mod is placed into a slot with a matching Polarity, the cost of installing the mod will be reduced by 50%, rounding up to the nearest whole number. In contrast, placing a mod in a slot with a different polarity will increase its cost by 25%, rounded up.",
+        "For [[Aura]] and [[Stance]] mods, Polarities increase or decrease the amount of ''bonus'' mod capacity that the mod instead provides: matching polarities will increase the bonus mod points by 100%; while non-matching polarities reduce it by 20%.  ",
+        "*While polarizing an item resets their rank to 0, their minimum capacity is equal to the player's Mastery Rank (up to 30)",
+        "*If [[Mods]] are installed into an item that is being polarized, as many mods are left installed as possible with the resulting mod capacity: The rest will be uninstalled.",
+        "*Re-polarizing slots for which you are forced to pay a penalty is the most efficient use of the Forma. Instead of just doubling mod capacity for one slot, you are essentially getting double + 1 for a slot that you would otherwise be paying a penalty for.",
+        "*It is usually advised to first start with supercharging the equipment with an [[Orokin Reactor]] or [[Orokin Catalyst|Catalyst]] before polarizing slots, as the extra mod capacity is much more efficient than dividing the costs of mods.",
+        "**Orokin Reactors and Catalysts give you 30 extra capacity when the equipment is at rank 30. To match this with Formas, one would need to polarize 4 slots (consuming 4 [[Forma]]) - and these slots would need to be equipped with two 14-drain and two 16-drain mods, such as {{M|Redirection}}, {{M|Steel Fiber}}, {{M|Blind Rage}} and {{M|Transient Fortitude}}, as well as going through the re-levelling process every time. The extra mod capacity granted by supercharging is also more beneficial when going through the re-levelling.",
+        "**With their mostly low-drain mods and capacity-increasing [[Stance|Stances]], [[Melee|melee weapons]] can usually have fully ranked mods in every slot by just using a [[Orokin Catalyst|Catalyst]] - especially if they have innate [[Polarity|polarities]].",
+        "**Pre-Techrot Encore, Stances did not give Capacity to Exalted Melee weapons, meaning some players may have swapped its Polarity to another slot. Now that Stances do offer Capacity, we are removing this Ability since the Polarity is designed to match the associated Stance.",
+        "**Those who had swapped their Polarity before this hotfix should now see it returned, and have the Stance properly give Capacity to their Exalted Melee."
+      ]
+    },
+    {
+      "title": "Stance",
+      "revision": 2815208,
+      "timestamp": "2026-10-02T07:54:09Z",
+      "url": "https://wiki.warframe.com/w/Stance?oldid=2815208",
+      "sha256": "9cc6ce5e131febd4d2387b60da9f74a1245060d7c5c71f996ac941db0b900c0b",
+      "selectedText": [
+        "Similar to [[Aura]] mods, Stances can be slotted into a special Stance slot on melee weapons, and they increase a weapon's mod capacity. Stance mods with a matching polarity to the stance slot will double their mod capacity bonus, while non-matching polarities will have reduced capacity bonus. Leveling up Stance mods increases the amount of additional mod capacity they provide, as well as unlocks additional '''Melee Combos''' for use.",
+        "| Low hitting attack that hits in a 360° arc, hitting enemies that surround the player.",
+        "| Ground Finisher",
+        "| [[File:SparringComboFinisherGround.gif|64px|Sparring Ground Finisher]]",
+        "**Rarely, attacks may open enemies up to front/back or ground [[Finisher]]s like in the case of [[:Category:Dagger|Dagger]] heavy attacks.",
+        "| Round-house attacks and leaping fists",
+        "The following is a comparison of all PvE stance combos in the game, including shared combos amongst those of the same melee class (e.g. heavy, slide, aerial, wall, and ground finishers).",
+        "*All Stances provide a bonus mod capacity of 5 when maxed, doubling it to 10 when placed on the matching polarity.",
+        "*Most stance cards have portraits set within a [[Dojo]] garden, with the [[Decorations#Garden Arch|Garden Arch]] decoration in the background."
+      ]
+    }
+  ],
+  "weaponSource": {
+    "url": "https://raw.githubusercontent.com/WFCD/warframe-items/4a73b2fb016d7a79ec0694aec42a66778d762288/data/json/Melee.json",
+    "sha256": "5b07ce0588c3b1cc30c1362d7676ad00323652c10424930fcbca9791cb258407"
+  },
+  "stanceSource": {
+    "url": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+    "sha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+  },
+  "notes": [
+    "기본 슬롯은 원본의 극성 개수를 앞 슬롯부터 배치한 편집 초기값이며 실제 게임의 슬롯 좌표를 주장하지 않는다.",
+    "현재 스탠스 계산 및 수용량은 최대 랭크 기준이다.",
+    "일반 모드 불일치 비용은 최신 고정 Polarity revision 2814647의 rounded up을 적용한다. 과거 Fandom 사본의 가장 가까운 정수 설명과 다르다."
+  ]
+}

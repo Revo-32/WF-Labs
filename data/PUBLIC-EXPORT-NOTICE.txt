@@ -1,0 +1,15 @@
+WF Labs 공식 한국어 표시 데이터
+원본: Digital Extremes official Public Export (ko)
+수집: 2026-10-11
+
+고정 manifest URL·SHA-256: 소스 패키지 data/full-source-records.json의 exportSources.
+초기 선택 자료: data/localization-ko.json.
+무기·모드·아케인 이름과 설명을 내부 ID로 연결했습니다. 표시용 색상 태그를 제거하며
+대응 없는 항목은 임의로 번역하지 않고 원문 이름을 보존합니다.
+Warframe 이름·게임 데이터·극성 기호의 권리는 각 권리자에게 있습니다.
+
+극성 SVG: WARFRAME Wiki, data/polarity-icon-sources.json 참조.
+원본 path를 WPF 벡터로 렌더링하며 테마 색상을 적용합니다.
+https://wiki.warframe.com/w/File:Madurai_Pol(xBlack).svg
+https://wiki.warframe.com/w/File:Vazarin_Pol(xBlack).svg
+https://wiki.warframe.com/w/File:Naramon_Pol(xBlack).svg

@@ -1,0 +1,62 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapon|Weapon|Prime|Prime|Prime}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Punish those who test your restraint. The first strike in a combo stuns enemies when Cobra & Crane Prime are wielded by Baruuk.}}
+'''Cobra & Crane Prime''' is the [[Prime]]d counterpart of the {{Weapon|Cobra & Crane}} sword and shield, acting as a direct upgrade. Cobra & Crane Prime was released alongside {{WF|Baruuk Prime}} and {{Weapon|Afuris Prime}}.
+
+==Characteristics==
+*This weapon deals primarily {{D|Impact}} damage.
+*Aerial attacks throw the shield, knocking down enemies on hit.
+**This does reliably trigger {{Arcane|Melee Afflictions}}.
+*Blocking attacks stores a charge that increases [[critical chance]] and [[status chance]] by '''15%''' to the next attack. Up to '''4''' charges can be stacked before being consumed.
+**Critical Chance bonus is additive to {{M|True Steel}}, {{M|Blood Rush}}, and other similar buffs.
+**Status Chance Bonus is additive to {{M|Melee Prowess}}, {{M|Weeping Wounds}}, and other similar buffs.
+*When used by {{WF|Baruuk}}/{{WF|Baruuk Prime}}, the first strike of a combo will put the enemy to sleep for '''2''' seconds.
+**Hitting a Nullifier bubble will put the respective Nullifier or Corrupted Nullifier to sleep, regardless of weapon range.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+{{WeaponComparison|Cobra & Crane}}
+
+==Acquisition==
+{{PrimeTable}}
+{{BuildAutomatic|type=Weapon}}
+
+{{StanceTable|Name=Cobra & Crane|ComboType=Aerial}}
+
+==Notes==
+*When used by {{WF|Baruuk}}/{{WF|Baruuk Prime}}, every first hit on an enemy will be put to sleep for '''2''' seconds.
+**Sleeping enemies are open to [[Melee#Finishers|melee finishers]].
+**Can be used on groups of enemies for effective crowd control.
+*The throw attack is done by simply tapping the melee button while in mid-air; holding down the button is not necessary, which makes it very fluid.
+**The shield is thrown up to '''20''' meters, which is '''not''' affected by range mods.
+**The shield knocks down enemies, opening them up for ground finishers.
+*Throw attacks can be done both while the weapon is fully equipped or with a quick melee attack.
+*The thrown shield has a very slight homing effect, similar to thrown Glaives, though it is still very much capable of missing.
+*The throw attack can be done in any direction (dictated by your aim), and therefore the usual downward melee slam attack is done by looking straight down.
+*Attacks stagger enemies on every hit.
+*The thrown shield attack uses base model of {{Weapon|Cobra & Crane}} shield as a projectile.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+File:BaruukCobraAndCranePrime.png|Poster for Baruuk Prime and Cobra & Crane Prime
+File:AfurisCobraCranePoster.jpg|Poster for Afuris Prime and Cobra & Crane Prime
+File:Joel-wood-cobra2.jpg
+File:Joel-wood-cobra.jpg
+File:Joel-wood-crane.jpg
+File:Joel-wood-crane2.jpg
+File:Joel-wood-hpcobra.jpg</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|32.2.5}}
+*Introduced.
+}}
+
+{{WeaponNav}}
+[[uk:Кобра й Журавель-прайм]]

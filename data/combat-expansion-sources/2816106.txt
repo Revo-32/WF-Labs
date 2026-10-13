@@ -1,0 +1,57 @@
+{{Navigation|Whipclaw|Ensnare|Venari|Strangledome}}
+<onlyinclude>{{AbilityU10.3
+| name        = Ensnare
+| gameimage   = Ensnare130xWhite.png
+| cardimage   = EnsnareMod.png
+| hotkey      = 2
+| energy      = 50
+| description = Bind a helpless target in living metal, entangling others who stray too close. Whipclaw will refresh the trap allowing it to capture more enemies.
+| strength      = 
+| range       = 15 / 20 / 25 / 30 m (cast range)<br/>6 / 7 / 8 / 10 m (spread radius)
+| duration    = 10 / 12 / 13 / 15 s (duration)<br/>0.5 s (spread delay)
+| misc        = 2.0x (damage multiplier)<br/>1.5x (damage multiplier)<br/>75% (reduced duration)
+| subsumable  = true
+| cardonly    = {{{1|}}}
+| info        = 
+*Khora expends {{Stat|Ability Efficiency|icon=only}}'''50''' [[energy]] to thrash her whip at an enemy target within {{Stat|Ability Range|icon=only}}'''15 / 20 / 25 / 30''' meters, binding it in living metal for {{Stat|Ability Duration|icon=only}}'''10 / 12 / 13 / 15''' seconds. While ensnared, the target is completely disabled, as the living metal propagates and pulls in all nearby enemies within a {{Stat|Ability Range|icon=only}}'''6 / 7 / 8 / 10''' meters radius after a {{Stat|Ability Duration|icon=only}}'''0.5''' second delay.
+**Ensnare pulls enemies from behind obstacles and does '''not''' require line of sight.
+**Propagation always occur after the delay, regardless of any enemies actually being in range.
+*Enemies pulled by the ''initial target'' are disabled for <u>'''75%'''</u> of total duration, while extending the propagation effect to pull in and disable all unaffected enemies around them; enemies pulled by ''branch targets'' are disabled for <u>'''75%'''</u> of the previously reduced duration, but do '''not''' propagate.
+**Subsequently ensnared enemies cannot be affected by the same instance of Ensnare again once freed, including the propagation effect from both the initial and branch targets.
+*Cannot be recast on affected targets.
+*Casting Ensnare is a full-body animation that stops grounded movement and other actions.
+*The ensnared target is visually trapped within a cluster of spinning, living metal coils, while both the original target and branch targets glow faintly in Khora's chosen energy color.
+*When Ensnare propagates, living chains briefly lash out from the source enemy to pull in new targets before disappearing.
+*The living metal coils on the target are affected by Khora's chosen Appearance colors.
+| interactions = 
+* Ensnared enemies receive <u>'''200%'''</u> damage from {{A|Whipclaw}} and <u>'''150%'''</u> damage from {{Companion|Venari}}. Additionally, ensnared enemies hit by Whipclaw will propagate again to pull in new enemies.
+** Whipclaw propagation refresh is considered as a new instance of Ensnare, therefore it will affect enemies freed from a previous cast.
+| helminth =
+*Subsuming Khora to the [[Helminth]] will offer Ensnare and its augments to be used by other Warframes.
+|augment      =
+|tips         =
+*Take advantage of Ensnare's long cast range to trap a group of enemies before you, [[Khora/Abilities|Venari]], your other [[Companion]], or your teammates can reach them. Doing so ensures Ensnare has time to propagate after its delay.
+*Cast on key targets such as [[Bombard]]s to quickly disable them, while pulling any nearby enemies toward it.
+*Ensnared enemies stand upright and will not move while debuffed, making this ability great for performing consistent headshots.
+*Enemies around the initial target will have reduced durations on their debuff, lasting for a shorter time the farther out they are.
+*Ensnare can stop an [[Acolyte]] in [[The Steel Path]], rendering them defenseless.
+*Unlike {{A|Strangledome}}, Ensnare is capable of stunning a [[Demolisher]] however their disruption pulses every 5 seconds will remove Ensnare, so regular recasts will be needed to keep a Demolisher locked down.
+*Cast Ensnare and follow up with {{A|Whipclaw}} to deal double damage and apply [[Status Effect]]s to multiple enemies at once, while earning multiple hits toward the melee combo counter.
+*Ensnared enemies that survive Whipclaw's explosion have their propagation effects refreshed. This causes them to propagate after the delay to pull in new enemies around them.
+*Cast Ensnare on enemies near Venari or command her to attack a marked ensnared target for double damage.
+*Cast Ensnare on enemies trapped by {{A|Strangledome}} to spread its effects to nearby enemies, allowing Whipclaw and Venari to deal double damage to ensnared enemies.
+**When Strangledome ends, ensnared enemies will be pulled to the original target if the debuff is still active. Use this opportunity to attack them with weapons, {{A|Venari}}, and Whipclaw.
+<noinclude>
+|max = {{WFmax|main|khora2}}
+</noinclude>
+|bugs         =
+}}</onlyinclude>
+
+==See Also==
+*{{WF|Khora}}
+__NOTOC__
+[[es:Entrampar]]
+[[fr:Ronce de Fer]]
+[[Category:Khora]]
+[[uk:Капкан]]
+[[Category:Grouping]]

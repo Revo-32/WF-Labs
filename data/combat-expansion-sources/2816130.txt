@@ -1,0 +1,79 @@
+{{Navigation|Hall of Mirrors|Sleight of Hand|Eclipse|Prism}}
+<onlyinclude>{{AbilityU10.3
+| name = Hall of Mirrors
+| gameimage = HarlequinReflection.png
+| cardimage = PowerHallOfMirrors.png
+| hotkey = 1
+| energy = 25
+| description = Mirage creates an entourage of doppelgangers to confuse and distract the enemy.
+| strength = 5%×1 / 10%×2 / 15%×3 / 20%×4 (melee weapon damage)<br>5%×1 / 20%×1 / 22.5%×2 / 40%×2 (distance weapon damage)<br>0.05x / 0.2x / 0.225x / 0.4x Modified Critical and Status Chance
+| range = N/A
+| duration = 10 / 15 / 20 / 25 s
+| misc = 1 / 2 / 3 / 4 (holograms)
+| cardonly = {{{1|}}}
+| info = *Mirage expends {{Stat|Ability Efficiency|icon=only}}'''25''' [[energy]] to project <u>'''1 / 2 / 3 / 4'''</u> holographic mirror images that follow and mimic her actions for {{Stat|Ability Duration|icon=only}}'''10 / 15 / 20 / 25''' seconds. Each hologram is invulnerable to damage, draws enemy attention, and deals {{Stat|Ability Strength|icon=only}}'''5% / 10% / 15% / 20%''' of the current weapon's total damage.
+**Only a maximum of <u>'''1 / 1 / 2 / 2'''</u> holograms are able to fire primary and secondary weapons. As such, each Hologram that fires actually deals {{Stat|Ability Strength|icon=only}}'''5% / 20% / 22.5% / 40%''' of the current primary or secondary's total damage.
+***Damage percentage also multiplies Holograms critical chance and status chance, resulting in lower critical hit chance/status chance without additional {{Stat|Ability Strength}}.
+**<u>'''All'''</u> holograms will use melee attacks, but only do {{Stat|Ability Strength|icon=only}}'''5% / 10% / 15% / 20%''' of the melee's damage.
+***Damage percentage also multiplies Holograms critical chance and status chance, resulting in lower critical hit chance/status chance without additional {{Stat|Ability Strength}}.
+***Clones do '''not''' benefit from the [[Melee Combo]] Counter.
+***Clones can throw their glaives but not detonate them.
+**The stats of the hologram's weapons are inherited from the modded stats of the weapon.
+***Holograms do '''not''' benefit from [[Arcane Enhancement]]s and [[Galvanized Mods]].
+**** There are some exceptions to this, in cases where the Arcanes are applied as infinite-duration, simple buffs. {{Arcane|Melee Retaliation}} and {{Arcane|Melee Doughty}} will function based on the clones' stats.
+**** {{Arcane|Secondary Fortifier}} will deal increased damage to [[Overguard]], but will not give Mirage the overguard. 
+**Holograms do '''not''' benefit from the ability damage bonus granted by {{Resource|Emerald Archon Shard}}, {{Resource|Topaz Archon Shard}}, or {{Resource|Violet Archon Shard}}.
+**Melee weapons, including those with ranged capabilities such as [[:Category:Glaive|Glaives]], [[Gunblade]]s, {{Weapon|Zenistar}}, {{Weapon|Sigma & Octantis}} and others, will deal damage from '''all''' holograms.
+**All holograms deal [[Bullet Jump]] damage, modified by {{M|Rending Turn}} and other Bullet Jump mods.
+**Casting delay of '''1''' second, affected by [[Casting Speed]].
+*Once spawned, holograms remain fixed in position around Mirage.
+*Holograms partially fade from view when the HUD's targeting reticle is near them.
+*Holograms will mimic Mirage's aim which can shift away from the HUD's targeting reticle depending on their position.
+*Holograms do '''not''' path on terrain and are intangible, allowing them to phase through obstacles and walk on air.
+*Kills by holograms count as ability kills and give all [[Affinity]] to Mirage instead of the weapon used.
+**Incarnon weapons that gain incarnon charge from weapon hits do not gain incarnon charge from projectiles fired by holograms
+*Holograms cannot damage [[Blunt|Blunts]] with melee attacks.
+*Holograms will not retain any equipped accessories.
+*Holograms will be dispelled once they come into contact with [[Nullifier Crewman]] bubbles. When all the clones have been dispelled, this ability ends and it can be casted again.
+*Holograms can benefit from buffs that specify ally's like {{A|Nourish}} however not all apply buffs that can apply to allies such as {{M|Thermal Transfer}} which provides the holograms no benefit.
+| interactions = 
+* While Hall of Mirrors is active, casting {{A|Sleight of Hand}} will cause Mirage's clones to create additional smaller jewels with reduced effectiveness.
+** Holograms do not gain {{A|Eclipse}}'s Solar Eclipse damage bonus. However, they will if {{M|Total Eclipse}} is equipped, as they count as 'allies.'
+| augment = [[File:HallofMalevolenceMod.png|200px|left]]
+{{main|Hall of Malevolence}}
+{{#lst:Hall of Malevolence|intro}}
+{{#lsth:Hall of Malevolence|Stats}}
+{{clr}}
+| tips = *The damage from the {{M|Thunderbolt}} [[mod]] for Bows is unaffected by the damage penalty.
+*When low on health, using Hall of Mirrors will give you a better chance to survive because enemies will be more likely to target your holograms than you.
+*Drawing enemy fire while the holograms are fairly close to Mirage can prove to be disadvantageous in some instances, especially when dealing with [[Napalm]]s or [[Bombard]]s, as their explosive AoE weapons will hit the holograms and be close enough to still damage you.
+*Hall of Mirrors can be extremely useful when reviving a downed teammate.
+*Hall of Mirrors is great for large bosses and groups of enemies, as the slight spread from each hologram allows you to cover more area near your crosshair.
+*When used in conjunction with the {{Weapon|Paracyst}}'s [[Alternate Fire]], each hologram will fire its own hook capable of pulling an enemy.
+*When Mirage is inside {{WF|Limbo}}'s rift the doppelgangers are still able to damage enemies outside as long as they are outside themselves. Thus making it possible to destroy [[Nullifier Crewman]] shields without exposing yourself. (May only work as host and needs confirmation)
+*Bullet Jumps performed by holograms will still do damage and break containers, which can be useful when looting.
+*'''Melee weapon synergy:''' many melee weapons have special/unique effects on heavy/jump/slide/slam attacks. Below is a list of melee weapons, whose unique effects '''will''' be used/triggered by the doppelgangers.
+** {{Weapon|Zenistar}} creating its disc with heavy attack 
+** {{Weapon|Tenet Grigori}} creating discs on slide heavy/second heavy attack
+<noinclude>
+| max = {{WFmax|main|mirage1}}
+</noinclude>
+| bugs = *Arsenal incorrectly lists the damage as '''20%''' when it is actually '''40%'''. 
+*In some instances a group of illusions can "stick" in the same place, this is a client-side bug. But it still lowers framerate.
+*While clones are active can trigger all arcanes from any source of your loadout. This includes {{Arcane|Melee Influence}}, {{Arcane|Pax Seeker}}, etc.
+*After [[Syam]]'s continuous Slam Attack concludes, the holographic mirror images immediately perform an additional Slam Attack. The base value of this extra attack's holographic mirror images is one-fifth of their current base value.|
+}}
+
+</onlyinclude>
+
+== See Also==
+*{{WF|Mirage}}
+
+__NOTOC__
+[[de:Spiegelkabinett]]
+[[es:Salón de espejos]]
+[[ru:Зеркальная Галерея]]
+[[Category:Mirage]]
+[[Category:Update 14]]
+[[Category:Warframe Abilities]]
+[[uk:Дзеркальна зала]]

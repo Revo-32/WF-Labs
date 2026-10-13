@@ -1,0 +1,58 @@
+{{Top|Weapon|Weapons|Weapons|Grineer|Grineer|Grineer}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Rend enemies and up the heat with these mining tools repurposed into machine-tonfa. Building the Combo Multiplier overheats the Tonkkatts, setting enemies ablaze.}}
+'''Tonkkatt''' are {{Faction|Grineer}} mining tools that have been repurposed into [[Tonfa]]s. The weapon gains temporary {{D|Heat}} damage when increasing [[Melee Combo]] Multiplier.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Stance slot has {{Pol|Naramon}} polarity, matching {{M|Sovereign Outcast}}.
+*Innate {{Pol|Madurai}} polarity.
+*Increasing Combo Multiplier grants '''+4%''' {{D|Heat}} damage for '''15s'''. Stacks up to '''30x'''.
+**{{D|Heat}} damage does not combine with other elements.
+**Buff duration refreshes when gaining another stack.
+**All stacks are lost when the buff ends.
+{{Advantages|}}
+{{Disadvantages|}}
+
+{{Acquisition|Tonkkatt's blueprint and components are dropped by [[Ghoul Expired]] and [[Ghoul Rictus]] that appear in the [[Plains of Eidolon]], [[Ghoul Purge]] [[Bounty|Bounties]], and [[Disruption]] [[Olympus]] on [[Mars]].}}
+
+Acquisition Tip: Disruption mission on [[Olympus]], Mars is rich with ghouls. Also, there is a chance that one of the conduits will be "Ghoul Eruption" which will make the mission more like a ghoul arena. If this conduit is not the last one of the round, it is advised to let it be destroyed and continue farming without finishing the round. A [[Nekros]] equipped with Slash weapons will increase the drop chance. Nekros' [[Despoil]] mod may help for energy problem. Also, [[Tak & Lug]] parts will drop during this farm.{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*Increasing the combo multiplier, e.g. going from 2x Combo to 3x Combo, will grant '''+4%''' {{D|Heat}} damage for '''15''' seconds.
+**Buff stacks up to '''30x''', for a total of '''+120%''' {{D|Heat}} damage.
+**{{D|Heat}} damage will not combine with other elements.
+**Buff duration refreshes when gaining another stack.
+**All stacks are lost when the buff ends.
+**Reaching the maximum buff will require letting your combo multiplier expire or spent on Heavy Attack.
+
+==Tips==
+*Initial Combo (e.g. {{M|Corrupt Charge}}, {{M|Galvanized Reflex}}) also counts as combo multiplier increase and thus grant 1 buff stack for each combo multiplier recovered from spending on Heavy Attack. This makes repeated Heavy Attacks an effective way of building and maintaining stacks.
+**{{Arcane|Melee Crescendo}} synergizes very well once it has been fully stacked, allowing the weapon to gain 44% heat damage after each heavy attack. This makes reaching and maintaining the maximum buff value trivially easy.
+**Heavy Attack Efficiency discounts the combo spent, therefore reduce the combo multiplier recovered and reduce or prevent the stack gains.
+**Tennokai eliminates the combo cost on Heavy Attack entirely, making this technique ineffective.
+
+==Trivia==
+*Tonkkatt was first introduced in the Galleon of Ghouls [[Tactical Alert]], available from the the first and third weeks (May 2nd to May 5th, 2025 and May 16th to May 19th, 2025). The first completion of the first Alert awarded the main blueprint, attached to an inbox message from [[Councilor Vay Hek]], while every subsequent completion of the Alert awarded a random component.
+
+==Gallery==
+<gallery widths="300" position="center" spacing="small"></gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39.0.7}}
+*Fixed the Tonfa Hades Skin’s texture animating when it shouldn’t while equipped on the Tonkkatt. 
+
+{{ver|38.6}}
+*Added the Tonkkatt Blueprints and Components to the Grineer Ghoul drop tables.
+**If you missed out on the Galleon of Ghouls event, you can now earn these weapons by encountering them in the Plains of Eidolon, during regularly scheduled Ghoul Purge and in Olympus, Mars. 
+***''Our next Ghoul Purge kicks off this weekend! (May 24th)''
+
+{{ver|38.5.11}}
+*Introduced
+}}
+
+{{WeaponNav}}
+[[Category:Codex Secret]]

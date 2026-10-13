@@ -1,0 +1,47 @@
+name: 배포 초안 준비
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  draft:
+    if: github.ref == 'refs/heads/main'
+    runs-on: windows-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: global.json
+      - name: 업로드 대상 파일 검사
+        run: python -X utf8 tools/release-preflight.py
+      - name: 전체 검증
+        run: ./tools/validate.ps1 -Dotnet (Get-Command dotnet).Source
+      - name: 설치 파일 생성
+        env:
+          WF_REPOSITORY: ${{ github.repository }}
+        run: ./tools/package.ps1 -Dotnet (Get-Command dotnet).Source -RepositoryUrl "https://github.com/$env:WF_REPOSITORY" -OutputDirectory builds/release
+      - name: 패키지 무결성과 업데이트 연결 검사
+        run: python -X utf8 tools/verify-package.py builds/release
+      - name: GitHub Release 초안 업로드
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          [xml]$project=Get-Content src/TennoForge.Desktop/TennoForge.Desktop.csproj
+          $version=$project.Project.PropertyGroup.Version
+          $arguments=@('release','create',"v$version",'--draft','--target',$env:GITHUB_SHA,'--title',"WF Labs $version",'--notes-file','docs/RELEASE_NOTES.md')
+          if($version.Contains('-')){$arguments+='--prerelease'}
+          $arguments+=@(Get-ChildItem builds/release -File | ForEach-Object FullName)
+          & gh @arguments
+          if($LASTEXITCODE -ne 0){throw '배포 초안 업로드 실패'}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: release-validation
+          path: artifacts/validation/

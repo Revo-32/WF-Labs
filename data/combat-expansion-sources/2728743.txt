@@ -1,0 +1,128 @@
+{{Infobox
+| Box title=Attack Speed
+| image=FuryMod.png
+| caption=An example of an attack speed mod
+}}
+{{Quote|Modifies melee animation speed. The number of attacks per second varies by weapon type and Stance.|In-game Description}}
+'''Attack Speed''' is a statistic that modifies how fast a [[melee]]'s attack animation plays. '''True Attack Speed''', the rate at which melee weapons attack, is derived from three attributes:
+#The attack animation for the given weapon class and the [[Stance]] they have equipped
+#The weapon's listed attack speed multiplier (aka Attack Speed)
+#Attack Speed bonuses/penalties from sources like [[mods]] or [[abilities]]
+
+==Mechanics==
+Each general melee class follows a standard '''attack animation''' which controls baseline striking speed. [[Polearm]]s have a slower standard attack animation than the [[:Category:Sword|swords]], for example. Specific weapons (such as the {{Weapon|Cronus}} of the sword type) each have their own base '''attack speed multiplier''' which alters the rate of the attack animation. An Attack Speed of 1.0 runs its attacks at default speed. An Attack Speed of 1.2 executes 20% faster, while a speed of 0.8 runs 20% slower. Attack Speed is then further increased (or decreased) by Attack Speed mods and ability buffs, giving us the following basic equation:
+
+<math>
+\text{Modified Animation Length} = \frac{ \text{Base Attack Animation Length} }{ [{\text{Base Weapon Attack Speed} \times (1 + \text{Attack Speed Bonuses} )}] }
+</math>
+
+::''Where Base Attack Animation Length is based on the time it takes to complete an attack at Attack Speed of 1.0''
+
+Recall that attack animations vary between weapon types. Despite the {{Weapon|Fragor}} ([[Hammer]]) and {{Weapon|Karyst}} ([[Dagger]]) both having listed speeds of 0.8, the Karyst's actual speed is faster than the Fragor's due to daggers having a faster attack animation.
+
+Faster attack speeds enhance a melee weapon's overall damage potential and utility by:
+
+*producing more strikes at a given time, increasing damage per second dealt
+*quickening melee [[Melee Combo|Combo Counter]] gain for {{M|Blood Rush}} and {{M|Weeping Wounds}} and its heavy attack damage multiplier
+*giving more chances for [[Status Effect]] procs
+*hastening [[Stance]] attacks which knockback or disable the target through staggers/ragdolls (crowd control)
+
+Changes in Attack Speed apply to [[Melee 2.0#Finishers|finishers]], as well as the ''animation'' of [[Melee 2.0#Heavy Attack|heavy attacks]] but not the actual wind-up time (i.e. initial heavy attack charging animation will stay the same but the actual heavy attack swing will be sped up/slowed down). Weapons with ranged charge mechanics such as the {{Weapon|Glaive}} are '''not''' affected by Attack Speed and uses Heavy Attack Wind-Up Speed bonuses instead.
+
+All base weapon Attack Speeds are in fractions of X / 60. This means despite Attack Speed values listed in the UI, the true values have longer repeating decimals as they are represented as floating point integers.
+
+== Sources of Attack Speed Bonus ==
+
+=== Mods ===
+
+==== Positive ====
+The following [[Mods]] affect Attack Speed positively, increasing a Melee Weapon's rate of attack: 
+<div class="tabber-borderless">{{#tag:tabber|Normal={{(!}}
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+BerserkerFuryMod.png|link=Berserker Fury|{{M|Berserker Fury}}
+FurorMod.png|link=Furor|{{M|Furor}} (Arch-melee only)
+FuryMod.png|link=Fury|{{M|Fury}}
+GladiatorViceMod.png|link=Gladiator Vice|{{M|Gladiator Vice}}
+PrimedFuryMod.png|link=Primed Fury|{{M|Primed Fury}}
+QuickeningMod.png|link=Quickening|{{M|Quickening}}
+MagneticRushMod.png|link=Magnetic Rush|{{M|Magnetic Rush}}
+</gallery>
+{{!}}-{{!}}Charged/Heavy Attacks=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+AmalgamOrganShatterMod.png|link=Amalgam Organ Shatter|{{M|Amalgam Organ Shatter}}
+KillingBlowMod.png|link=Killing Blow|{{M|Killing Blow}}
+MeleeElementalistMod.png|link=Melee Elementalist|{{M|Melee Elementalist}}
+SwiftMomentumMod.png|link=Swift Momentum|{{M|Swift Momentum}}
+</gallery>
+}}</div>
+
+==== Negative ====
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+SpoiledStrikeMod.png|alt=Spoiled Strike{"Transmutable":false,"Type":"Melee","Description":"+100% Damage\r\n-20% Attack Speed","Tradable":true,"UpgradeTypes":["WEAPON_MELEE_DAMAGE","WEAPON_FIRE_RATE"],"BaseDrain":"4","MaxRank":"3","Icon":"SpoiledStrike.png","Link":"Spoiled Strike","Image":"SpoiledStrikeMod.png","Name":"Spoiled Strike","Introduced":"10.3","Polarity":"Madurai","Rarity":"Rare","InternalName":"/Lotus/Upgrades/Mods/Melee/DualStat/CorruptedDamageSpeedMod","CodexSecret":false}|link=Spoiled_Strike|{{M|Spoiled Strike}}
+</gallery>
+
+=== Abilities ===
+The following abilities affect Attack Speed positively, increasing a Melee Weapon's rate of attack:
+<div class="tabber-borderless">
+{{#tag:tabber|
+Gauss=
+{{:Redline}}
+{{!}}-{{!}}
+
+Harrow=
+{{:Penance}}
+{{!}}-{{!}}
+
+Valkyr=
+{{:Warcry}}
+{{!}}-{{!}}
+
+Volt=
+{{:Speed}}
+{{!}}-{{!}}
+
+Wisp=
+{{:Reservoirs}}
+{{!}}-{{!}}
+}}
+
+<!--
+==Maximum Possible Attack Speed==
+{{UpdateMe|Not true as of [[Helminth]] invogorations providing ability strength bonuses}}
+Note that all attack speed bonus is additive unless otherwise stated. This list does not take into account [[Riven Mods]].
+* +5% from the {{Weapon|Fragor}}'s [[Brokk]] skin
+* +10% from {{WF|Excalibur}}'s [[Excalibur/Abilities#Swordsmanship|Swordsmanship]] passive
+* +15% from {{Weapon|Lesion}}'s proc bonus
+* +30% from {{M|Gladiator Vice}}
+* +40% from {{M|Quickening}}
+* +60% from {{Arcane|Arcane Strike}}
+* +70% from {{M|Berserker Fury}}
+* +{{round|645.1575}}% from {{WF|Valkyr}}'s {{A|Warcry}} <!-- +1190.315% Power strength--><!--
+** [[Maximized Power Strength|Maximized]] via +399% Strength, +80% Strength from {{WF|Equinox}}'s [[Pacify & Provoke|Provoke]] [[Warframe Augment Mods|augmented]] with {{M|Peaceful Provocation}} (additive), and 2.485x Strength multiplier from {{WF|Nidus}}' {{A|Parasitic Link}} <!--Strength Mulitplier = 1 + (Strength Bonus × (1 + Ability Strength))--><!--
+**To achieve this, {{WF|Equinox}} must first cast {{A|Pacify & Provoke}} with {{M|Peaceful Provocation}} in Day form, then {{WF|Nidus}}' cast {{A|Parasitic Link}} onto {{WF|Valkyr}}.
+* +{{round|657.5825}}% from {{WF|Volt}}'s {{A|Speed}} <!-- +1215.165% Power strength--><!--
+** Maximized via +409% Strength, +80% Strength from {{WF|Equinox}}'s Provoke augmented with {{M|Peaceful Provocation}} (additive), and from 2.485x Strength multiplier from {{WF|Nidus}}' {{A|Parasitic Link}} 
+
+This amounts to a maximum possible bonus of:
+*'''{{Math|1 + (0.3 + 0.4 + 0.6 + 0.7 + 6.451575 + 6.575825)}}x''' (+{{Math|(0.3 + 0.4 + 0.6 + 0.7 + 6.451575 + 6.575825) * 100}}%) for the average Warframe
+*'''{{Math|1 + (0.05 + 0.3 + 0.4 + 0.6 + 0.7 + 6.451575 + 6.575825)}}x''' (+{{Math|(0.05 + 0.3 + 0.4 + 0.6 + 0.7 + 6.451575 + 6.575825) * 100}}%) for the Fragor (with any Warframe except {{WF|Excalibur}} equipped)
+*'''{{Math|1 + (0.1 + 0.3 + 0.4 + 0.6 + 0.7 + 6.451575 + 6.575825)}}x''' (+{{Math|(0.1 + 0.3 + 0.4 + 0.6 + 0.7 + 6.451575 + 6.575825) * 100}}%) for {{WF|Excalibur}}
+*'''{{Math|1 + (0.15 + 0.3 + 0.4 + 0.6 + 0.7 + 6.451575 + 6.575825)}}x''' (+{{Math|(0.15 + 0.3 + 0.4 + 0.6 + 0.7 + 6.451575 + 6.575825) * 100}}%) for the Lesion (with any Warframe except {{WF|Excalibur}} equipped)
+-->
+
+=== Other ===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ColdModBundleIcon.png|alt=Cold{"Negatives":["Tenno Shield","Techrot"],"GlyphImage":"ColdModBundleIcon.png","Link":"Damage/Cold Damage","Color":"#17658c","Positives":["Sentient"],"DarkModeColor":"#5bbcec","ColorBorder":"#1c638d","Name":"Cold","Icon":"DmgColdSmall64.png","Status":["Slowdown","Crit Damage +"],"ColorBackground":"#c3d5df","InternalName":"DT_FREEZE","ProcInternalName":"PT_CHILLED"} status (Slows attack speed)|link=Cold_Damage|{{D|Cold}} status (Slows attack speed)
+ArcaneStrike.png|alt=Arcane Strike{"Rarity":"Uncommon","Type":"Warframe","Description":"15% chance for +60% Attack Speed to Melee Weapons for 18s","Link":"Arcane Strike","Icon":"ArcaneStrike64x.png","UpgradeTypes":["WEAPON_FIRE_RATE","GAMEPLAY_FREE_REVIVE_COUNT"],"MaxRank":"5","IncompatibilityTags":["OPERATOR_SUIT"],"Dissolution":"21","Image":"ArcaneStrike.png","Name":"Arcane Strike","Introduced":"16","IsRefreshable":true,"Criteria":"On Hit","InternalName":"/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeSpeedOnHit","CodexSecret":true} (60%, additive)|link=Arcane_Strike|{{Arcane|Arcane Strike}} (60%, additive)
+</gallery>
+
+==External links==
+*[https://www.reddit.com/r/Warframe/comments/i10f4l/since_the_attack_speed_stat_in_the_arsenal_tells/ "Since the attack speed stat in the arsenal tells you almost nothing, I calculated the true attack speed for every melee combo in the game"] by u/GoldPhos
+
+==See also==
+*[[Fire Rate]], the equivalent game mechanic for ranged weapons.
+
+{{MechNav}}
+[[es:Velocidad de ataque]]
+
+[[Category:Mechanics]]

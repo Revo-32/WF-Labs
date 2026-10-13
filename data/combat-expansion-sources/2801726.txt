@@ -1,0 +1,56 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|An infested scythe or staff head strike that also deals {{D|Viral}} damage. Its heavy weight provides an increase in damage at the cost of speed.|In-game Description}}
+The '''Plague Keewar''' is an Infested Strike for [[Zaw]]s that grants {{D|Viral}} damage.
+
+{{BuildRequire
+|buildcredits = 5,000
+|build1 = Nano Spores
+|build1amount = 1,600
+|build2 = Plastids
+|build2amount = 700
+|build3 = Esher Devar
+|build3amount = 10
+|build4 = Coprite Alloy
+|build4amount = 60
+|buildtime = 1
+|buildrush = 25
+|blueprint = 2,000 + {{cc|3,500}}
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+*Plague Keewar is obtainable from limited-time events:
+**[[Operation: Plague Star]] sold Plague Keewar from [[Nakak]] for {{sc|2,000}} + {{cc|3,500}}, requiring '''Rank 3 - Champion''' with [[Operational Supply]].
+**The October 2020, 2022 and 2024 [[Nights of Naberus]] event sold Plague Keewar from [[Daughter]] for 25 {{Resource|Mother Token|Mother Tokens}} each.
+
+==Characteristics==
+This strike primarily deals {{D|Slash}} damage
+
+* '''29%''' {{D|Impact}}
+* '''18%''' {{D|Puncture}}
+* '''30%''' {{D|Slash}}
+* '''23%''' {{D|Viral}}
+This Strike also has a flat +4% [[status chance]] bonus.
+
+Compatible weapon types:
+*Scythe
+*Staff
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|22.4}}
+*Returned the Plague Keewar Strike to a Scythe Stance when used with one handed Grips.
+
+{{ver|22.3.5}}
+*Changed the Plague Keewar Infested Strike Stance to Machete from Scythe when using one-handed grips.
+
+{{ver|22.3}}
+*Introduced.
+}}
+{{ZawNav}}
+[[es:Keewar plaga]]
+[[fr:Fléau Keewar]]
+[[Category:Update 22]]
+[[Category:Zaw]]
+[[Category:Viral Damage Weapons]]
+[[uk:Моровий ківар]]

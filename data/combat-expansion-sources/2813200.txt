@@ -1,0 +1,81 @@
+{{ArcaneBox}}'''Magus Aggress''' is an [[Arcane Enhancement]] for the [[Operator]] that, on [[Warframe Melee Transfer]], causes [[Heavy Blade]]s and [[Hammer]]s to deal bonus [[Critical_Hit#Critical_Damage_(Critical_Multiplier)|Critical Damage]] for the next 4 attacks, with a 20 second cooldown.
+==Effect==
+{| class="emodtable"
+|-
+![[Arcane Enhancement#Rank|Rank]]
+!Critical Damage Bonus
+!Consecutive Attacks
+!Cooldown
+|-
+|0||+50%
+|4
+|20s
+|-
+|1||+100%
+|4
+|20s
+|-
+|2||+150%
+|4
+|20s
+|-
+|3||+200%
+|4
+|20s
+|-
+|4||+250%
+|4
+|20s
+|-
+|5||+300%
+|4
+|20s
+|-
+|}
+==Acquisition==
+*May appear as a [[The Circuit]]'s [[The Steel Path]] Tier 1, 2, 3, 4, 6, 7, 8, or +11 reward on a weekly rotational basis.
+*May be sold by [[Acrithis]] for 10 {{Resource|Pathos Clamp}} on a daily rotational basis, requiring [[Drifter/Intrinsics|Drifter Intrinsics]] [[Drifter/Intrinsics/Opportunity|Opportunity]] Rank 9 for the arcanes to appear in her shop.
+*May drop from Undercroft portals in The [[Duviri]] Experience while on Steel Path.
+
+==Notes==
+*Bonus is additive to mods such as {{M|Organ Shatter}}.
+*[[Exalted Weapon|Exalted Weapons]] don't benefit from the increased Critical Damage but also don't consume charges.
+*[[Exalted Weapon#Pseudo-Exalted|Pseudo Exalted Weapons]] don't benefit from the increased Critical Damage but still consume charges after 5 seconds.
+
+==Bugs==
+*Works on Hammers despite specifying Heavy Blades.  Does not work on [[Ghoulsaw]] or [[Heavy Scythe|Heavy Scythes]], the other weapons classified as "heavy" by DE.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|35.5.7}}
+*Fixed a script error in the Magus Aggress Arcane if the player was killed/respawned after initiating a Heavy Attack.
+
+{{ver|35.1}}
+*Fixed a combination of Magus Aggress and the Tenacious Bond Mod (when equipped on both Khora’s Venari and Companion) causing buff icons to disappear.
+
+{{ver|35.0.3}}
+*Fixed Magus Aggress’ description stating “Critical Chance” instead of “Critical Damage” as intended to the Arcane’s function since launch. Now reads: 
+**“On Warframe Melee Transference: Heavy Blades deal +300% '''Critical Damage''' for 4 consecutive attacks. Cooldown 20.”
+
+{{ver|35}}
+*Fixed Magus Aggress charges being unintentionally consumed by Companion attacks.
+
+{{ver|33.0.7}}
+*Fixed Clients not seeing Magus Agress’ cooldown timer in the HUD.
+
+{{ver|33}}
+*Introduced.}}
+{{ArcaneNav}}
+
+[[Category:Arcane Enhancements]]
+[[Category:Operator Arcanes]]
+[[Category:Uncommon Arcanes]]
+[[Category:Update 33]]
+[[Category:Components]]
+[[Category:Operator]]
+[[Category:Duviri]]
+[[Category:The Duviri Paradox]]
+[[uk:Маґус «Напад»]]
+[[ru:Агрессия Волхва]]
+[[Category:Duviri Arcanes]]
+[[Category:Magus Arcanes]]

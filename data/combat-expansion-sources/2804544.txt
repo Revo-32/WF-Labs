@@ -1,0 +1,83 @@
+{{Top|Enemy|Infested|Infested|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Leave your mark with these infected claws with increased heavy attack range. Heavy attack at max combo to keep the extended range and slam radius for three minutes.}}
+'''Keratinos''' are [[Infested]] claws that grow in length to perform a deadly spin attack for [[Heavy Attack]]s. The claws stay in their increased range for 3 minutes when a heavy attack is executed at full [[Melee#Combo|combo]].
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Vermillion Storm}}, {{M|Four Riders}}, {{M|Malicious Raptor}} and {{M|Scarlet Hurricane}} ([[Conclave]] only) stance.
+*It has a unique [[Heavy Attack]]:
+**The first attack consists of a spin with 6 hits. The first 3 hits do '''100% damage''', the next 3 do '''100%''' damage and have forced {{D|Slash}} procs.
+**The second attack is a lunge with one hit that does '''500%''' damage and has a forced {{D|Slash}} proc.
+**Heavy Attacking with 12x [[Melee#Combo|combo]] grants '''+2.8m''' range to all melee attacks for '''180''' seconds.
+
+{{Advantages|
+*Third highest base damage of all claws, behind {{Weapon|Garuda Talons}} and {{Weapon|Garuda Prime Talons}}.
+*Second highest [[status chance]] of all claws, behind Garuda Talons and Garuda Prime Talons.
+}}
+
+{{Disadvantages|}}
+
+==Acquisition==
+Keratinos are acquired by reaching '''Rank 0 - Neutral''' with the [[Entrati]]. [[Father]] sells the main blueprint for {{sc|1,000}} and component blueprints for {{sc|500}}; a total of {{sc|3,000}} is needed for all parts.
+
+{{BuildAutomatic|type=Weapon}}
+
+{{StanceTable|ComboType=Heavy}}
+
+==Notes==
+*One gauntlet and blades blueprints are required to reach '''Rank 2 - Acquaintance''' with the [[Entrati]].
+
+==Trivia==
+*The Keratinos' name is most likely derived from [https://en.wikipedia.org/wiki/Keratin Keratin], a fibrous protein which makes up the claws, nails, hair, feathers, and hooves of most animals.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Keratinos and Zymos.jpg|Keratinos wielded by Excalibur and Zymos wielded by Ember
+File:Infested claws.png
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39}}
+*Updated the description for the Keratinos to specify a single Heavy Attack with x Combo multiplier is required instead of the previously written “Heavy Attacks”. 
+
+{{ver|37.0.8}}
+*Fixed Keratinos missing a HUD buff icon when its Unique Trait is triggered.
+
+{{ver|37.0.7}}
+*Fixed Keratinos’ Unique trait allowing Melee Slam Radius to stack indefinitely when Heavy Attacking.
+
+{{ver|31}}
+*Fixed Deimos Claws Skin appearing incorrectly in mission when equipped to Keratinos.
+
+{{ver|30.5.3}}
+*Fixed Chat Links for the Keratinos lacking build/acquisition hints.
+
+{{ver|29.5}}
+*Fixed the Keratinos appearing backwards and snapping back while viewing the Deimos Infested Bundle in the in-game Market.
+
+{{ver|29.2.2}}
+*Fixed missing Blueprint locations for the Keratinos when viewing in the Market.
+
+{{ver|29.0.6}}
+*Fixed ability to contribute pending Keratinos Blueprints for Entrati Rank up without warning, which causes them to disappear in the Foundry.
+**''Pending Foundry Blueprints won’t be eligible for Syndicate Rank up.''
+
+{{ver|29.0.4}}
+*Tweaked the holstered idle pose of the Keratinos to avoid clipping.
+
+{{ver|29}}
+*Introduced.
+}}
+
+==See Also==
+*{{Weapon|Zymos}}, the secondary counterpart to this weapon.
+
+{{WeaponNav}}
+[[es:Keratinos]]
+[[fr:Keratinos]]
+[[Category:Weapons with Passives]]
+[[uk:Кератини]]

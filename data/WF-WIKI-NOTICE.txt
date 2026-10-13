@@ -1,0 +1,29 @@
+WF Labs 위키 자료 저작자·라이선스 안내 (v0.5, 2026-10-11)
+
+원저자: WARFRAME Wiki contributors
+출처: https://wiki.warframe.com/
+위키 siteinfo API의 라이선스: CC BY-NC-SA 3.0
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+무기 자료 8개 분할, 스탠스, 모드, 아케인 모듈의 URL·고정 개정·SHA-256은
+소스 패키지 data/full-source-records.json에 보존합니다.
+개별 전투 규칙의 출처·개정·선택 원문은 combat-rule-sources-v05.json에 있습니다.
+이전 버전의 stance-source-records.json, capacity-source-records.json,
+polarity-icon-sources.json도 보존합니다.
+
+변경: 사용자의 요청에 따라 WF Labs 데이터 구조로 정규화했습니다.
+전체 표를 AST로 읽고 공유 스탠스 동작을 상속하며, 원문 식별자·수치·주의 항목을
+보존했습니다. 공식 ko Public Export 표시는 별도 원본에서 내부 ID로 연결합니다.
+Reach 최대 랭크 등 검토 예외는 full-catalog-audit.json에 기록합니다.
+원격 Lua 코드는 실행하지 않습니다. 지원되지 않는 규칙을 임의 생성하지 않습니다.
+
+선택·변환한 위키 자료는 CC BY-NC-SA 3.0을 따릅니다.
+이 안내는 위키 자료에 관한 것이며 독립적으로 작성한 앱 코드의 라이선스가 아닙니다.
+
+추가 CO 타격별 수치의 원출처: Prof_Blocks_007 등의 공개 CO 자료 시트.
+https://docs.google.com/spreadsheets/d/1FJ_RIEG2mlFGBQ__szeGoFM6azj23n0CqelBFO_MGGw/edit
+WF Wiki Condition Overload (Mechanic) 문서의 인용 자료이며, 사용한 수치·행·SHA-256은 stance-hit-co-evidence.json에 보존합니다. 위키 라이선스 안내를 원출처 문서의 별도 라이선스 선언으로 해석하지 않습니다.
+
+0.6.2 적 자료: enemy-source-records.json에 적 모듈·레벨 성장·강철의 길·빙주령 등의 원본 18건을 보존합니다. enemy-catalog.json은 이 자료에서 선택·정규화한 일반 적 31종이며, 한국어 적 이름은 앱 표시명입니다. verify_enemy_sources.py로 내부 ID와 수치를 대조합니다.
+
+0.6.3 추가: 보존 원본 23건. Armor·Eximus·Overguard·정보창 Lua/JavaScript 원본의 개정·URL·SHA-256을 추가했습니다. 위키 정보창 rev.2816353의 빙주령 배율과 방어력 상한 순서를 참고하여 자체 C# 계산을 구현했습니다. 원격 코드를 실행하지 않았습니다.

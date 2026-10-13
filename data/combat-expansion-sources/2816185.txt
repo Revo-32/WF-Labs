@@ -1,0 +1,66 @@
+{{Navigation|Reap|Sow|Gloom|Exalted Shadow}}
+<onlyinclude>{{AbilityU10.3
+| name = Exalted Shadow
+| gameimage = ExaltedShadow130xWhite.png
+| cardimage = ExaltedShadowModx256.png
+| hotkey = 4
+| costType = Death Well
+| cost = ≥75%
+| description = When the Death Well fills to above 75%, Sevagoth’s Shadow form is ready to be released. Tear the enemy asunder with a collection of Melee-focused Abilities.
+<br/>'''Death Well Drain''': 1% s<sup>-1</sup>
+| strength = 100 / 150 / 200 / 250 ({{D|Impact}}, {{D|Puncture}}, and {{D|Slash}} physical damage)
+| misc = 5 s (Invincibility duration on cast)<br/>5 m (Shadow summoned propulsion)<br/>5 % (Death Well gain per enemy for Reap, Sow and Death's Harvest)<br/>0.1 %/s (Death Well gain per second per enemy for Gloom)<br/>1% HP (Death Well drain to health conversion)
+| cardonly = {{{1|}}}
+| info = 
+*Immortalized by his reaping of souls, Sevagoth passively collects the life essences of enemies affected by or slain by {{A|Reap}}, {{A|Sow}}, {{A|Gloom}}, or {{A|Death's Harvest}}, gradually filling the '''Death Well''' gauge displayed above his ability icons. Once <u>'''75%'''</u> of the gauge is filled, Sevagoth may leave his mortal body behind to transfer control into {{WF|Sevagoth's Shadow}}. Sevagoth's Shadow is [[Invulnerable]] for <u>'''5'''</u> seconds when cast and drains <u>'''1%'''</u> of the Death Well per second to remain summoned. Sevagoth's Shadow possesses four new Abilities: {{A|Embrace}}, {{A|Consume}}, {{A|Death's Harvest}}, and {{A|Reunite}}. Exalted Shadow will deactivate when the Death Well fully depletes, when the Shadow receives fatal damage, when [[Transference]] is initiated, when {{A|Reunite}} is cast, or an ability nullification effect comes into contact with Sevagoth's body, such as [[Nullifier Crewman]] or [[Isolator Bursa]].
+**Sevagoth's physical body is invulnerable to damage and untargetable by enemies while taking control of Shadow.
+***Any status effects applied to Sevagoth will remain active however; status effects are not removed from him when casting Exalted Shadow or {{A|Reunite}}.
+**The Shadow will always spawn with a 5 second of [[Invulnerability]] grace period, while fully restoring it's health, shields and initial [[Starting Energy]].
+***The Shadow can have its energy bar fully restored on each cast with {{M|Preparation}}
+**The Shadow is propelled forward for <u>'''5'''</u> meters when cast.
+***Propulsion from summoning the Shadow carries from the previous Shadow's momentum before casting {{A|Reunite}}. If aim gliding while casting this ability, Sevagoth's body will be propelled forward in an arcing trajectory instead.
+**When the Death Well reaches at least '''75%''', a sound indicator plays for the player, while the well's energy visually glows intensely, as energy veins emanate outside the well.
+*While controlling Sevagoth's Shadow, he arms himself with his melee [[Exalted Weapon]], the '''{{Weapon|Shadow Claws}}'''.
+**Exclusively uses the {{M|Ravenous Wraith}} Stance.
+**Base damage is {{Stat|Ability Strength|icon=only}}'''100 / 125 / 200 / 250''' damage distributed between '''30%''' {{D|Impact}}, '''20%''' {{D|Puncture}}, and '''50%''' {{D|Slash}}.
+**Attacks have a '''<u>38%</u>''' [[critical chance]], '''<u>2.6x</u>''' [[critical multiplier]], '''<u>24%</u>''' [[status chance]], '''<u>1.0</u>''' [[attack speed]], and a [[Melee#Range|range]] of '''<u>1.5</u>''' meters.
+**Shadow Claws can be equipped with melee mods and [[Arcane Enhancement]]s.
+***[[Riven Mods]] are '''not''' generated for Shadow Claws.
+**Because Shadow Claws are counted as a melee strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+**Primaries and secondaries equipped on Sevagoth can '''not''' be used by the Shadow.
+*Casting Exalted Shadow is a full-body animation that restricts movement and other actions.
+*Sevagoth visually summons his Shadow which materializes in front of him. Sevagoth's body remains stationary in a levitating stance.
+*While within an ability nullification sphere from enemies such as [[Nullifier Crewman]] or [[Isolator Bursa]], Sevagoth's Shadow receives damage to its [[Health]] pool as '''15%''' of its maximum health pool every '''0.5''' seconds.
+*Sevagoth's Shadow will benefit from [[Focus Schools]] and [[Archon Shard]]s slotted into Sevagoth himself.
+*Sevagoth's Shadow, and Shadow Claws, can benefit from Helminth [[Invigoration]]s applied to Sevagoth as they are both considered exalted weapons.
+**Any primary, secondary, and reload speed buff from invigorations will '''not''' have any benefit during Exalted Shadow as it uses melee exclusively.
+| attributes = 
+| weapon = [[File:ShadowClaws.png|200px|left]]
+{{main|Shadow Claws}}
+{{#lst:Shadow Claws|intro}}
+{{clr}}
+| stance = <!--[[File:RavenousWraithStance.png|200px|left]]-->
+{{main|Ravenous Wraith}}
+{{#lst:Ravenous Wraith|intro}}
+{{clr}}
+| interactions =
+* Sevagoth's Abilities will stay active during Exalted Shadow.
+* Each enemy affected then killed by any source, or directly killed by {{A|Reap}}'s Shadow, {{A|Sow}}, or {{A|Death's Harvest}} fills <u>'''5%'''</u> of the Death Well. Each enemy ''alive'' within {{A|Gloom}}'s radius fills <u>'''0.1%'''</u> per second of the Death Well.
+** The player must be directly controlling Sevagoth with Exalted Shadow deactivated to gain Death Well percentage from the eligible Abilities noted above.
+** Death Well gain stacks when Sown enemies die from Reap, but '''not''' vice-versa.
+* For ''each'' percent of the Death Well drained during Exalted Shadow, Sevagoth's health is healed by <u>'''1%'''</u> of his maximum health pool once {{A|Reunite}} is complete.
+| augment = 
+| tips = 
+*If Sevagoth would inevitably fall [[Out of Bounds]], the {{A|Exalted Shadow}} can be summoned to prevent [[Channeled Abilities]] or buffs like {{A|Gloom}} from turning off on Sevagoth.
+*Each {{A|Exalted Shadow}} and {{A|Reunite}} recast will respectively reset double-jumps, allowing easier combat against aerial units or bosses like the [[Hunhullus]].
+*Sevagoth and Shadow can benefit from multiple [[Unattributed Damage]] effects while controlling the {{A|Exalted Shadow}}.
+| bugs = |
+}}</onlyinclude>
+
+==See Also==
+*{{WF|Sevagoth}}
+__NOTOC__
+[[Category:Sevagoth]]
+[[Category:Invulnerability]]
+[[uk:Благородна тінь]]
+[[Category:Ability Weapons]]

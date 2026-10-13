@@ -1,0 +1,1637 @@
+{
+  "version": "wiki-cited-hit-co-1",
+  "source": {
+    "url": "https://docs.google.com/spreadsheets/d/1FJ_RIEG2mlFGBQ__szeGoFM6azj23n0CqelBFO_MGGw/edit",
+    "citedBy": "https://wiki.warframe.com/w/Condition_Overload_(Mechanic)?oldid=2815998#Stances",
+    "retrievedAt": "2026-10-10T19:46:43.590113+00:00",
+    "workbookSha256": "aa9dc81a1325b072ce3b8601e2a0f965897d1bc42553b4cfd1db261c4b0e602b",
+    "sheet": "Melee Stances sheet v2"
+  },
+  "rules": [
+    {
+      "stanceId": "Crimson Dervish",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 11
+    },
+    {
+      "stanceId": "Crimson Dervish",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 20
+    },
+    {
+      "stanceId": "Iron Phoenix",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 57
+    },
+    {
+      "stanceId": "Iron Phoenix",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 66
+    },
+    {
+      "stanceId": "Swooping Falcon",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.5
+      ],
+      "sourceRow": 94
+    },
+    {
+      "stanceId": "Swooping Falcon",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 103
+    },
+    {
+      "stanceId": "Swooping Falcon",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 112
+    },
+    {
+      "stanceId": "Swooping Falcon",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        0.3333333333333333,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 121
+    },
+    {
+      "stanceId": "Vengeful Revenant",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 140
+    },
+    {
+      "stanceId": "Vengeful Revenant",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 149
+    },
+    {
+      "stanceId": "Vengeful Revenant",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.3333333333333333,
+        2.0,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 158
+    },
+    {
+      "stanceId": "Vengeful Revenant",
+      "combo": "Block",
+      "factors": [
+        0.25,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 167
+    },
+    {
+      "stanceId": "Crossing Snakes",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 195
+    },
+    {
+      "stanceId": "Crossing Snakes",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "sourceRow": 204
+    },
+    {
+      "stanceId": "Crossing Snakes",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 213
+    },
+    {
+      "stanceId": "Carving Mantis",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        0.5
+      ],
+      "sourceRow": 250
+    },
+    {
+      "stanceId": "Carving Mantis",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 259
+    },
+    {
+      "stanceId": "Swirling Tiger",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.3333333333333333
+      ],
+      "sourceRow": 278
+    },
+    {
+      "stanceId": "Swirling Tiger",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 287
+    },
+    {
+      "stanceId": "Gnashing Payara",
+      "combo": "Neutral",
+      "factors": [
+        0.3333333333333333,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 324
+    },
+    {
+      "stanceId": "Gnashing Payara",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 333
+    },
+    {
+      "stanceId": "Gnashing Payara",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.3333333333333333,
+        0.5
+      ],
+      "sourceRow": 342
+    },
+    {
+      "stanceId": "Sinking Talon",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 370
+    },
+    {
+      "stanceId": "Sinking Talon",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 388
+    },
+    {
+      "stanceId": "Spinning Needle",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 416
+    },
+    {
+      "stanceId": "Spinning Needle",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 425
+    },
+    {
+      "stanceId": "Spinning Needle",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 434
+    },
+    {
+      "stanceId": "Spinning Needle",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 443
+    },
+    {
+      "stanceId": "Atlantis Vulcan",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 462
+    },
+    {
+      "stanceId": "Atlantis Vulcan",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 471
+    },
+    {
+      "stanceId": "Atlantis Vulcan",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        2.0,
+        1.0,
+        1.0,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "sourceRow": 480
+    },
+    {
+      "stanceId": "Atlantis Vulcan",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 489
+    },
+    {
+      "stanceId": "Defiled Snapdragon",
+      "combo": "Block",
+      "factors": [
+        1.0
+      ],
+      "sourceRow": 535
+    },
+    {
+      "stanceId": "Homing Fang",
+      "combo": "Neutral",
+      "factors": [
+        0.5,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        0.25
+      ],
+      "sourceRow": 554
+    },
+    {
+      "stanceId": "Homing Fang",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 563
+    },
+    {
+      "stanceId": "Homing Fang",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        0.3333333333333333
+      ],
+      "sourceRow": 572
+    },
+    {
+      "stanceId": "Pointed Wind",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "sourceRow": 600
+    },
+    {
+      "stanceId": "Stinging Thorn",
+      "combo": "Neutral",
+      "factors": [
+        0.3333333333333333,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.3333333333333333,
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 646
+    },
+    {
+      "stanceId": "Stinging Thorn",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 655
+    },
+    {
+      "stanceId": "Stinging Thorn",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 664
+    },
+    {
+      "stanceId": "Stinging Thorn",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.3333333333333333,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 673
+    },
+    {
+      "stanceId": "Vermillion Storm",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        1.0,
+        0.5,
+        0.25,
+        0.3333333333333333
+      ],
+      "sourceRow": 692
+    },
+    {
+      "stanceId": "Vermillion Storm",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 701
+    },
+    {
+      "stanceId": "Vermillion Storm",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.3333333333333333
+      ],
+      "sourceRow": 719
+    },
+    {
+      "stanceId": "Four Riders",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 738
+    },
+    {
+      "stanceId": "Four Riders",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 747
+    },
+    {
+      "stanceId": "Four Riders",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.25
+      ],
+      "sourceRow": 765
+    },
+    {
+      "stanceId": "Malicious Raptor",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        0.5,
+        0.5,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 784
+    },
+    {
+      "stanceId": "Malicious Raptor",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 793
+    },
+    {
+      "stanceId": "Malicious Raptor",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        1.0,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        0.3333333333333333
+      ],
+      "sourceRow": 802
+    },
+    {
+      "stanceId": "Malicious Raptor",
+      "combo": "Block",
+      "factors": [
+        0.5,
+        0.3333333333333333,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 811
+    },
+    {
+      "stanceId": "Decisive Judgement",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 830
+    },
+    {
+      "stanceId": "Decisive Judgement",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 839
+    },
+    {
+      "stanceId": "Decisive Judgement",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 848
+    },
+    {
+      "stanceId": "Decisive Judgement",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 857
+    },
+    {
+      "stanceId": "Blind Justice",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 876
+    },
+    {
+      "stanceId": "Blind Justice",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 885
+    },
+    {
+      "stanceId": "Blind Justice",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 894
+    },
+    {
+      "stanceId": "Blind Justice",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 903
+    },
+    {
+      "stanceId": "Tranquil Cleave",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 931
+    },
+    {
+      "stanceId": "Tranquil Cleave",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 940
+    },
+    {
+      "stanceId": "Tranquil Cleave",
+      "combo": "Block",
+      "factors": [
+        1.0
+      ],
+      "sourceRow": 949
+    },
+    {
+      "stanceId": "Fracturing Wind",
+      "combo": "Neutral",
+      "factors": [
+        0.5,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 968
+    },
+    {
+      "stanceId": "Fracturing Wind",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 977
+    },
+    {
+      "stanceId": "Fracturing Wind",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        1.0,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 986
+    },
+    {
+      "stanceId": "Fracturing Wind",
+      "combo": "Block",
+      "factors": [
+        0.3333333333333333,
+        0.2
+      ],
+      "sourceRow": 995
+    },
+    {
+      "stanceId": "Seismic Palm",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1023
+    },
+    {
+      "stanceId": "Seismic Palm",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 1032
+    },
+    {
+      "stanceId": "Seismic Palm",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "sourceRow": 1041
+    },
+    {
+      "stanceId": "Gaia's Tragedy",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1069
+    },
+    {
+      "stanceId": "Gaia's Tragedy",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1078
+    },
+    {
+      "stanceId": "Gaia's Tragedy",
+      "combo": "Block",
+      "factors": [
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1087
+    },
+    {
+      "stanceId": "Grim Fury",
+      "combo": "Neutral",
+      "factors": [
+        0.5,
+        1.0,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 1106
+    },
+    {
+      "stanceId": "Grim Fury",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1124
+    },
+    {
+      "stanceId": "Gleaming Talon",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 1262
+    },
+    {
+      "stanceId": "Sundering Weave",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1299
+    },
+    {
+      "stanceId": "Cyclone Kraken",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 1354
+    },
+    {
+      "stanceId": "Burning Wasp",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1428
+    },
+    {
+      "stanceId": "Burning Wasp",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 1437
+    },
+    {
+      "stanceId": "Burning Wasp",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1446
+    },
+    {
+      "stanceId": "Final Harbinger",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.3333333333333333,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 1492
+    },
+    {
+      "stanceId": "Final Harbinger",
+      "combo": "Block",
+      "factors": [
+        0.5,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1501
+    },
+    {
+      "stanceId": "Eleventh Storm",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.3333333333333333,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 1520
+    },
+    {
+      "stanceId": "Eleventh Storm",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1529
+    },
+    {
+      "stanceId": "Eleventh Storm",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1538
+    },
+    {
+      "stanceId": "Eleventh Storm",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1547
+    },
+    {
+      "stanceId": "Reaping Spiral",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.5
+      ],
+      "sourceRow": 1584
+    },
+    {
+      "stanceId": "Stalking Fan",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 1630
+    },
+    {
+      "stanceId": "Vulpine Mask",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1658
+    },
+    {
+      "stanceId": "Vulpine Mask",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 1676
+    },
+    {
+      "stanceId": "Vulpine Mask",
+      "combo": "Block",
+      "factors": [
+        0.5,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 1685
+    },
+    {
+      "stanceId": "Twirling Spire",
+      "combo": "Neutral",
+      "factors": [
+        0.3333333333333333,
+        0.5,
+        0.3333333333333333,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 1704
+    },
+    {
+      "stanceId": "Twirling Spire",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 1713
+    },
+    {
+      "stanceId": "Twirling Spire",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1722
+    },
+    {
+      "stanceId": "Twirling Spire",
+      "combo": "Block",
+      "factors": [
+        0.5,
+        1.0,
+        0.25,
+        1.0
+      ],
+      "sourceRow": 1731
+    },
+    {
+      "stanceId": "Bleeding Willow",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 1759
+    },
+    {
+      "stanceId": "Bleeding Willow",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.3333333333333333,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 1768
+    },
+    {
+      "stanceId": "Shimmering Blight",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 1796
+    },
+    {
+      "stanceId": "Shimmering Blight",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "sourceRow": 1814
+    },
+    {
+      "stanceId": "Clashing Forest",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 1943
+    },
+    {
+      "stanceId": "Clashing Forest",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 1952
+    },
+    {
+      "stanceId": "Flailing Branch",
+      "combo": "Neutral",
+      "factors": [
+        0.3333333333333333,
+        0.5,
+        1.0
+      ],
+      "sourceRow": 1980
+    },
+    {
+      "stanceId": "Flailing Branch",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "sourceRow": 1998
+    },
+    {
+      "stanceId": "Slicing Feathers",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2026
+    },
+    {
+      "stanceId": "Slicing Feathers",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2035
+    },
+    {
+      "stanceId": "Slicing Feathers",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 2044
+    },
+    {
+      "stanceId": "Slicing Feathers",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2053
+    },
+    {
+      "stanceId": "Votive Onslaught",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "sourceRow": 2072
+    },
+    {
+      "stanceId": "Votive Onslaught",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2081
+    },
+    {
+      "stanceId": "Votive Onslaught",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        1.0,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 2090
+    },
+    {
+      "stanceId": "Votive Onslaught",
+      "combo": "Block",
+      "factors": [
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        0.5
+      ],
+      "sourceRow": 2099
+    },
+    {
+      "stanceId": "Gemini Cross",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2127
+    },
+    {
+      "stanceId": "Sovereign Outcast",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2173
+    },
+    {
+      "stanceId": "Sovereign Outcast",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2182
+    },
+    {
+      "stanceId": "Sovereign Outcast",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.3333333333333333
+      ],
+      "sourceRow": 2191
+    },
+    {
+      "stanceId": "Cleaving Whirlwind",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2210
+    },
+    {
+      "stanceId": "Cleaving Whirlwind",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "sourceRow": 2219
+    },
+    {
+      "stanceId": "Cleaving Whirlwind",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2237
+    },
+    {
+      "stanceId": "Tempo Royale",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        0.5,
+        0.3333333333333333,
+        1.0,
+        0.5,
+        1.0,
+        0.25
+      ],
+      "sourceRow": 2256
+    },
+    {
+      "stanceId": "Tempo Royale",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2265
+    },
+    {
+      "stanceId": "Tempo Royale",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.2
+      ],
+      "sourceRow": 2274
+    },
+    {
+      "stanceId": "Tempo Royale",
+      "combo": "Block",
+      "factors": [
+        1.0
+      ],
+      "sourceRow": 2283
+    },
+    {
+      "stanceId": "Rending Crane",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2302
+    },
+    {
+      "stanceId": "Rending Crane",
+      "combo": "Block",
+      "factors": [
+        1.0
+      ],
+      "sourceRow": 2329
+    },
+    {
+      "stanceId": "Crushing Ruin",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        0.5,
+        0.3333333333333333,
+        1.0
+      ],
+      "sourceRow": 2348
+    },
+    {
+      "stanceId": "Crushing Ruin",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2357
+    },
+    {
+      "stanceId": "Crushing Ruin",
+      "combo": "Block",
+      "factors": [
+        0.3333333333333333,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 2375
+    },
+    {
+      "stanceId": "Shattering Storm",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        0.3333333333333333,
+        0.3333333333333333,
+        1.0,
+        0.5,
+        0.2
+      ],
+      "sourceRow": 2394
+    },
+    {
+      "stanceId": "Shattering Storm",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2403
+    },
+    {
+      "stanceId": "Butcher's Revelry",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2440
+    },
+    {
+      "stanceId": "Butcher's Revelry",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2449
+    },
+    {
+      "stanceId": "Butcher's Revelry",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.5,
+        0.3333333333333333
+      ],
+      "sourceRow": 2458
+    },
+    {
+      "stanceId": "Butcher's Revelry",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0,
+        0.5,
+        0.5,
+        1.0,
+        0.5,
+        0.25
+      ],
+      "sourceRow": 2467
+    },
+    {
+      "stanceId": "Wise Razor",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2495
+    },
+    {
+      "stanceId": "Wise Razor",
+      "combo": "Forward Block",
+      "factors": [
+        0.5,
+        0.5,
+        0.3333333333333333,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2504
+    },
+    {
+      "stanceId": "Galeforce Dawn",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2532
+    },
+    {
+      "stanceId": "Galeforce Dawn",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2541
+    },
+    {
+      "stanceId": "Galeforce Dawn",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        0.5,
+        1.0,
+        0.3333333333333333,
+        1.0,
+        0.5,
+        0.5
+      ],
+      "sourceRow": 2550
+    },
+    {
+      "stanceId": "Galeforce Dawn",
+      "combo": "Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2559
+    },
+    {
+      "stanceId": "Mountain's Edge",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2578
+    },
+    {
+      "stanceId": "Mountain's Edge",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2587
+    },
+    {
+      "stanceId": "Mountain's Edge",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2596
+    },
+    {
+      "stanceId": "Ravenous Wraith",
+      "combo": "Neutral",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        0.3333333333333333
+      ],
+      "sourceRow": 2670
+    },
+    {
+      "stanceId": "Ravenous Wraith",
+      "combo": "Forward",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2679
+    },
+    {
+      "stanceId": "Ravenous Wraith",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2688
+    },
+    {
+      "stanceId": "Primal Fury",
+      "combo": "Forward Block",
+      "factors": [
+        1.0,
+        1.0
+      ],
+      "sourceRow": 2826
+    }
+  ]
+}

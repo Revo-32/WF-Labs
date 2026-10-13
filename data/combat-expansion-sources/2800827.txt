@@ -1,0 +1,49 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|A [[Zaw]] Strike used for machete and polearm style weapons.|In-game description}}
+
+The '''Cyath''' is a {{D|Slash}}-focused bladed Strike used in [[Zaw]] construction.
+
+{{BuildRequire
+|buildcredits = 5,000
+|build1 = Breath Of The Eidolon
+|build1amount = 1
+|build2 = Fish Scales
+|build2amount = 55
+|build3 = Marquise Veridos
+|build3amount = 6
+|build4 = Fersteel Alloy
+|build4amount = 20
+|buildtime = 1
+|buildrush = 25
+|blueprint = 1,000
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+The Cyath blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This Strike primarily deals {{D|Slash}} damage.
+
+* '''20%''' {{D|Impact}}
+* '''5%''' {{D|Puncture}}
+* '''75%''' {{D|Slash}}
+
+Compatible weapon types:
+*Machete
+*Polearm
+
+== Trivia ==
+
+* The text on the blade of this Zaw strike roughly translates as "Cut" from the Ostron language
+
+==Bugs==
+*A Machete using Cyath as Strike has damage falloff on its [[Melee|Heavy Slam]].
+
+{{ZawNav}}
+[[es:Cyath]]
+[[de:Cyath]]
+[[fr:Cyath]]
+[[Category:Update 22]]
+[[Category:Zaw]]
+[[uk:Ціат]]

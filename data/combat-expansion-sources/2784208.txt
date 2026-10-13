@@ -1,0 +1,78 @@
+{{ArcaneBox}}
+{{Arcane|Melee Animosity}} is a Melee [[Arcane Enhancement]] that causes normal melee hits to increase the [[Critical Chance]] of the next [[Heavy Attack]] up to a certain amount. 
+
+==Effect==
+{| class="emodtable"
+|-
+!rowspan=2|Rank
+!colspan=3|[[Critical Chance]]
+|-
+!One Stack
+!Max Stacks
+|-
+|0||7%
+|70%
+|-
+|1||14%
+|140%
+|-
+|2||21%
+|210%
+|-
+|3||28%
+|280%
+|-
+|4||35%
+|350%
+|-
+|5||42%
+|420%
+|-
+|}
+
+{{Acquisition|*Awarded for killing [[The Fragmented]] on [[Effervo]], [[Deimos]].
+*Awarded for killing [[Whisper]]s in [[Albrecht's Laboratories]] missions.
+*Awarded for killing [[Gruzzling]]s in non-[[Disruption]] Albrecht's Laboratories mission.
+*Can be bought from [[Bird 3]] of {{Faction|Cavia}} for {{sc|7,500}}, requiring '''Rank 4 - Scholar'''.}}
+
+==Notes==
+*[[Critical Chance]] bonus is additive to mods like {{M|True Steel}}.
+*Only provides '''1''' stack per melee input, regardless of how many enemies are hit.
+*At all ranks, it requires '''10''' hits to reach the maximum critical chance bonus listed.
+*Only consumes stacks if the heavy attack connects with an enemy. Whiffing a heavy attack will preserve the critical chance bonus.
+*The bonus only procs on normal melee attacks. Slams and heavy attacks do not.
+
+==Bugs==
+*[[Glaive (Weapon Type)]] throws count as heavy attacks, <u>ground throws</u> '''will''' benefit from the bonus but will '''not''' consume stacks.
+**Same applies to explosions that do not use the heavy attack input (e.g. {{M|Volatile Rebound}}).
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40}}
+*The following Arcane Collections are now available for Vosfor in Loid’s Arcane Dissolution: 
+**Cavia Arcane Collection (includes the Cavia and Ascension Arcanes) 
+***Melee Animosity
+
+{{ver|35.5}}
+;NEW ENEMY&#58; GRUZZLING
+Greedy creatures born from The Indifference, these little Murmur tricksters love to steal Conduit Dockets and other coveted items from Albrecht's Laboratory.
+
+In any other Deimos/Albrecht’s Laboratory missions (including Netracells), these avaricious beings contain within them one of the following:
+*1x Common Entrati Melee Arcane:
+**Melee Animosity
+
+;Netracell Drop Table Changes
+In the same vein as the above change to make Archon Shards more accessible, we’ve made the following changes to the Netracell Drop Tables. 
+
+'''1. Removed all non-Legendary Arcanes (as listed below)'''
+*Melee Animosity
+
+{{ver|35.1}}
+*Fixed Melee Animosity no longer functioning after activating and deactivating Titania’s Razorwing. 
+*Fixed Melee Animosity not triggering on Glaive hits while dual wielding with Secondary weapon.
+
+{{ver|35}}
+*Introduced.
+}}
+
+{{ArcaneNav}}

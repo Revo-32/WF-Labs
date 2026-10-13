@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">WF Labs · Vector Core</title>
+  <desc id="desc">W와 F를 하나의 기하학적 흐름으로 연결한 WF Labs 로고</desc>
+  <path fill="#F0F5F8" fill-rule="nonzero" d="M47.683,61.262L71.055,160.98 97.79,117.694 118.605,118.385 140.57,159.874 150.448,124.751 173.552,131.249 155.552,195.249 133.395,197.615 107.199,148.133 76.21,198.306 54.317,194.738 24.317,66.738 47.683,61.262z" />
+  <path fill="#F0F5F8" fill-rule="nonzero" d="M180,52L224,52 224,76 189.091,76 171.302,139.249 148.198,132.751 168.448,60.751 180,52z" />
+  <path fill="#64D9F2" fill-rule="nonzero" d="M162,116L212,116 212,140 162,140 162,116z" />
+</svg>

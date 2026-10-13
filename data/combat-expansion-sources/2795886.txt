@@ -1,0 +1,545 @@
+{{Infobox
+| Box title=Enemy Level Scaling
+| image=StatScaling.png
+| caption=Normal stat scaling for health, shields, and armor
+}}
+All enemies encountered in ''[[WARFRAME]]'' have a certain level, which determines their strength by increasing some of their base statistics. The stats amplified by enemy level gain are [[Health]], [[Armor]], [[Shields]], [[Damage]] dealt, and [[Affinity]] on death. The purpose of this article is to show how exactly these stats '''scale with level''', how this translates to useful indicators such as effective health, and what implications this has towards player decision making such as [[Aura]] mods or damage type selection.
+
+Enemy levels are normally capped at the limit of 9999, but can be exceeded in [[Void Fissure]] missions. In addition, stats of regular enemies don't scale with squad size. Known exceptions are [[Demolisher]]s, [[Acolytes]] and [[Archon]]s.
+
+Also visit [[Effects Scaling With Enemy Stats]] for a list of abilities and other effects that scale up as enemy level increases.
+
+== Common Features of Stat Scaling ==
+Most fundamental enemy stats are obtained by multiplying a base value by a level-dependent multiplier. Each endpoint curve has the following general structure:
+
+:<math>
+f_i(x)=1+C_iq^{E_i}
+</math>
+
+Here, <math>C_i</math> and <math>E_i</math> are the coefficient and exponent of endpoint curve <math>i</math>. For most stats,
+
+:<math>
+q=\text{Current Level}-\text{Base Level}.
+</math>
+
+Overguard ignores the enemy's individual base level and instead uses <math>q=\text{Current Level}-1</math>. Affinity is a separate case and uses the current level directly.
+
+For a stat that uses a single curve, that curve is the stat multiplier. For a stat that uses two endpoint curves, the multiplier is obtained using the interpolation procedure described below.
+
+The current stat value is then:
+
+:<math>
+\text{Current Value}
+=
+\operatorname{f32}
+\left(
+\operatorname{f32}(\text{Base Value})
+\times
+\operatorname{f32}(\text{Multiplier})
+\right)
+</math>
+
+In these formulae, <math>\operatorname{f32}(z)</math> means that <math>z</math> is evaluated and stored as an IEEE 754 binary32 value. The coefficients, exponents, power results, and intermediate arithmetic results must be evaluated in binary32 in the displayed order when reproducing in-game values.
+
+== Scaling of Fundamental Stats ==
+As mentioned, all fundamental stats scale by the above formula structure and common features apply. A standardized graph is shown for each stat. When comparing the graphs, the different Y-axis scaling has to be considered. As of {{ver|27.2}} health, shield, and armor scaling follow an "S"-like curve, where below a universal level range these stats grow quickly, and above this range, the stats grow slower and begin to plateau.
+
+[[File:StatScaling.png|thumb|center|660px|Showing scaling of health, shields, and armor between level 1-200. Note that shield scaling will surpass health above level 2025.]][[File:EximusStatScaling.png|thumb|center|660px|Showing scaling of Eximus health, shields, and armor between level 1-200.]]
+
+Health, shields, armor, Overguard, and the modified Corpus, Grineer, and Techrot damage scaling use two endpoint curves. The two curves do not necessarily intersect. Instead, a smoothstep weight transitions the multiplier from the lower endpoint curve <math>f_1</math> to the upper endpoint curve <math>f_2</math>.
+
+For health, shields, and armor, the transition bounds are <math>L=70</math> and <math>U=80</math>. Overguard uses <math>L=45</math> and <math>U=50</math>. Modified Corpus, Grineer, and Techrot damage scaling uses <math>L=1</math> and <math>U=25</math>.
+
+Let <math>q</math> be the applicable level input defined above. The transition value is:
+
+:<math>
+t=
+\operatorname{clamp}
+\left(
+\operatorname{f32}
+\left(
+\frac{
+\operatorname{f32}(q-L)
+}{
+\operatorname{f32}(U-L)
+}
+\right),
+0,1
+\right)
+</math>
+
+The smoothstep weight is evaluated as:
+
+:<math>
+s=
+\operatorname{f32}
+\left(
+\operatorname{f32}(t\times t)
+\times
+\operatorname{f32}
+\left(
+3-\operatorname{f32}(2\times t)
+\right)
+\right)
+</math>
+
+The final multiplier is evaluated in the following exact order:
+
+:<math>
+\text{Multiplier}
+=
+\operatorname{f32}
+\left(
+f_1(x)
++
+\operatorname{f32}
+\left(
+\operatorname{f32}\left(f_2(x)-f_1(x)\right)
+\times s
+\right)
+\right)
+</math>
+
+Both endpoint curves are evaluated at every level, including when <math>s=0</math> or <math>s=1</math>. For exact binary32 results, the expression must not be rearranged as <math>f_1(x)(1-s)+f_2(x)s</math>, and <math>f_1</math> or <math>f_2</math> must not be substituted directly at either endpoint.
+
+
+=== Health ===
+
+For health, the ranges of level differences from base to current level at which scaling transitions is between 70 & 80. 
+
+<div class=tabber-dark><tabber>
+|-|Grineer, Scaldra=
+
+The formula by which Grineer and Scaldra health scales is as follows:
+:<math>f_1(x) = 1 + 0.015(x - \text{Base Level})^{2.12}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 10.7332(x - \text{Base Level})^{0.72}</math>
+::''Upper endpoint curve''
+
+
+|-|Corpus=
+
+The formula by which Corpus health scales is as follows:
+:<math>f_1(x) = 1 + 0.015(x - \text{Base Level})^{2.12}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 13.4165(x - \text{Base Level})^{0.55}</math>
+::''Upper endpoint curve''
+
+
+|-|Infested=
+
+The formula by which Infested health scales is as follows:
+:<math>f_1(x) = 1 + 0.0225(x - \text{Base Level})^{2.12}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 16.0998(x - \text{Base Level})^{0.72}</math>
+::''Upper endpoint curve''
+
+|-|Anarchs, Corrupted=
+
+The formula by which Corrupted health scales is as follows:
+:<math>f_1(x) = 1 + 0.015(x - \text{Base Level})^{2.1}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 10.7332(x - \text{Base Level})^{0.685}</math>
+::''Upper endpoint curve''
+
+
+|-|Murmur, Sentient, and Unaffiliated=
+
+The formula by which Murmur, Sentient, Anarchs, and Unaffiliated health scales is as follows:
+:<math>f_1(x) = 1 + 0.015(x - \text{Base Level})^2</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 10.7332(x - \text{Base Level})^{0.5}</math>
+::''Upper endpoint curve''
+
+|-|Techrot=
+The formula by which Techrot health scales is as follows:
+:<math>f_1(x) = 1 + 0.02(x - \text{Base Level})^{2.12}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 15.0998(x - \text{Base Level})^{0.7}</math>
+::''Upper endpoint curve''
+
+|-|Eximus=
+Eximus units use the health scaling of their respective factions, but have an additional, separate base health increase. This base health increase is dependent on level. Note that the health values listed in the [[Codex]] are <u>not</u> an Eximus unit's base health before this base health increase.
+
+For Eximus units with Shields or Armor, the base health increase is as follows:
+:<math>
+{
+\text{Eximus Health} = 
+\begin{cases}
+\max{\left( \text{Base Health} \times 1.1,\quad 0.25 \times \left( \text{Base Health} + 900 \right) \right)} & x \leq 15 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.25 \times \left( \text{Base Health} + 900 \right) \times [ 1 + 0.025 \times (x - 15) ] \right)} ,\; & 15 < x \leq 25 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.25 \times \left( \text{Base Health} + 900 \right) \times [ 1.25 + 0.125 \times (x - 25) ] \right)} ,\; & 25 < x \leq 35 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.25 \times \left( \text{Base Health} + 900 \right) \times [ 2.5 + \frac{2}{15} \times (x - 35) ] \right)} ,\; & 35 < x \leq 50 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.25 \times \left( \text{Base Health} + 900 \right) \times [ 4.5 + 0.03 \times (x - 50) ] \right)} \; & 50 < x \leq 100 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.25 \times \left( \text{Base Health} + 900 \right) \times 6 \right)} ,\; & x > 100 \\
+\end{cases}
+}
+</math>
+
+For Eximus units with '''No''' Shields or Armor, the base health increase is as follows:
+
+:<math>
+{
+\text{Eximus Health} = 
+\begin{cases}
+\max{\left( \text{Base Health} \times 1.1,\quad 0.375 \times \left( \text{Base Health} + 900 \right) \right)} & x \leq 15 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.375 \times \left( \text{Base Health} + 900 \right) \times [ 1 + 0.025 \times (x - 15) ] \right)} ,\; & 15 < x \leq 25 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.375 \times \left( \text{Base Health} + 900 \right) \times [ 1.25 + 0.125 \times (x - 25) ] \right)} ,\; & 25 < x \leq 35 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.375 \times \left( \text{Base Health} + 900 \right) \times [ 2.5 + \frac{2}{15} \times (x - 35) ] \right)} ,\; & 35 < x \leq 50 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.375 \times \left( \text{Base Health} + 900 \right) \times [ 4.5 + 0.03 \times (x - 50) ] \right)} \; & 50 < x \leq 100 \\
+\max{\left( \text{Base Health} \times 1.1,\quad 0.375 \times \left( \text{Base Health} + 900 \right) \times 6 \right)} ,\; & x > 100 \\
+\end{cases}
+}
+</math>
+</tabber></div>
+
+::''Where the Health Multiplier is the value that multiplies an enemy's base health to its current health.''
+[[File:HealthScaling.png|center|thumb|660px|Current health scaling at Base Level = 1.]]
+
+=== Shields ===
+
+For shields, the ranges of level differences at which scaling transitions is between 70 & 80.
+
+<div class=tabber-dark><tabber>
+|-|Corpus=
+
+The formula by which Corpus shields scale is as follows:
+
+:<math>f_1(x) = 1 + 0.02(x - \text{Base Level})^{1.76}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 2(x - \text{Base Level})^{0.76}</math>
+::''Upper endpoint curve''
+
+|-|Anarchs, Corrupted=
+
+The formula by which Corrupted shields scale is as follows:
+
+:<math>f_1(x) = 1 + 0.02(x - \text{Base Level})^{1.75}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 2(x - \text{Base Level})^{0.75}</math>
+::''Upper endpoint curve''
+
+|-|Grineer and Sentient=
+
+The formula by which Grineer and Sentient shields scale is as follows:
+
+:<math>f_1(x) = 1 + 0.02(x - \text{Base Level})^{1.75}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 1.6(x - \text{Base Level})^{0.75}</math>
+::''Upper endpoint curve''
+
+|-|Techrot=
+
+The formula by which Techrot shields scale is as follows:
+
+:<math>f_1(x) = 1 + 0.02(x - \text{Base Level})^{1.76}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 3.5(x - \text{Base Level})^{0.76}</math>
+::''Upper endpoint curve''
+
+|-|Eximus=
+Eximus units use the Shield scaling of their respective factions, but have an additional, separate base Shield increase. This base Shield increase is dependent on level. Note that the Shield values listed in the [[Codex]] are <u>not</u> an Eximus unit's base Shields before this base Shield increase.
+
+The base Shield increase is as follows:
+:<math>
+{
+\text{Eximus Shields} = 
+\begin{cases}
+\text{Base Shield} \times 1.1 & x \leq 15 \\
+\max{\left( \text{Base Shield} \times 1.1,\quad \text{Base Shield} \times [ 1 + 0.025 \times (x - 15) ] \right)} ,\; & 15 < x \leq 25 \\
+\max{\left( \text{Base Shield} \times 1.1,\quad \text{Base Shield} \times [ 1.25 + 0.125 \times (x - 25) ] \right)} ,\; & 25 < x \leq 35 \\
+\max{\left( \text{Base Shield} \times 1.1,\quad \text{Base Shield} \times [ 2.5 + \frac{2}{15} \times (x - 35) ] \right)} ,\; & 35 < x \leq 50 \\
+\max{\left( \text{Base Shield} \times 1.1,\quad \text{Base Shield} \times [ 4.5 + 0.03 \times (x - 50) ] \right)} \; & 50 < x \leq 100 \\
+\max{\left( \text{Base Shield} \times 1.1,\quad \text{Base Shield} \times 6 \right)} ,\; & x > 100 \\
+\end{cases}
+}
+</math>
+</tabber></div>
+
+::''Where the Shield Multiplier is the value that multiplies an enemy's base shields to its current shields.''
+[[File:ShieldScaling.png|center|thumb|660px|Current shield scaling at Base Level = 1.]]
+
+=== Armor ===
+Enemy armor produced by level scaling is hard capped at '''2,700''', granting '''90%''' [[Damage Reduction]] under the standard enemy armor formula.
+
+Enemies whose level-scaled armor would be less than '''200''' have their initial armor value set to the minimum cap of '''200''' instead. This minimum cap is only for the ''initial value'' of their armor, i.e. their armor can still be decreased below '''200''' through all normal means of armor removal.
+
+For armor, the ranges of level differences at which scaling transitions is between '''70''' & '''80'''. The formula by which enemy armor scales is as follows:
+:<math>f_1(x) = 1 + 0.005(x - \text{Base Level})^{1.75}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 0.4(x - \text{Base Level})^{0.75}</math>
+::''Upper endpoint curve''
+
+:<math>
+\text{Armor Multiplier}
+=
+\operatorname{f32}
+\left(
+f_1(\text{Current Level})
++
+\operatorname{f32}
+\left(
+\operatorname{f32}
+\left(
+f_2(\text{Current Level})-f_1(\text{Current Level})
+\right)
+\times s
+\right)
+\right)
+</math>
+
+
+::''Where the Armor Multiplier is the value that multiplies an enemy's base armor to its current armor.''
+[[File:ArmorScaling.png|center|thumb|660px|Current armor scaling at Base Level = 1.]]
+
+=== Overguard ===
+[[Overguard]] is a unique health buffer to Eximus, though normal units can get overguard in unique situations (like after a Overguard Exodamper is destroyed during [[Void Armageddon]]).<ref>{{Ref|title=[Confirmation needed]I did a little math on the Overguard, here is the result|author=chrookee|year=2022|month=5|day=2|publisher=Reddit|url=https://www.reddit.com/r/Warframe/comments/ugja1p/confirmation_neededi_did_a_little_math_on_the/|access-date=2022-05-03|archive-url=https://web.archive.org/web/20220503171029/https://www.reddit.com/r/Warframe/comments/ugja1p/confirmation_neededi_did_a_little_math_on_the/|archive-date=2022-05-03}}</ref> All Eximus units have a base Overguard of 12.
+
+:<math>f_1(x) = 1 + 0.0015(x - 1)^4</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 260(x - 1)^{0.9}</math>
+::''Upper endpoint curve''
+
+Stat scaling between 45-50 inclusive is interpolated from the two functions using [[wikipedia:Smoothstep|smoothstep]].
+
+:<math>
+\text{Overguard Multiplier}
+=
+\operatorname{f32}
+\left(
+f_1(\text{Current Level})
++
+\operatorname{f32}
+\left(
+\operatorname{f32}
+\left(
+f_2(\text{Current Level})-f_1(\text{Current Level})
+\right)
+\times s
+\right)
+\right)
+</math>
+::''Where the Overguard Multiplier is the value that multiplies an enemy's base overguard to its current overguard.''
+[[File:EximusOverguardScaling.png|center|thumb|660px|Current overguard scaling.]]
+
+=== Damage ===
+The formula by which enemy damage scales is as follows:
+:<math>\text{Damage Multiplier} = 1 + 0.015\times(\text{Current Level} - \text{Base Level})^{1.55}</math>
+[[File:DamageScaling.png|center|thumb|660px|Current damage scaling at Base Level = 1.]]
+
+{{Faction|Corpus}}, {{Faction|Grineer}}, and {{Faction|Techrot}} enemies have modified damage scaling, and use the following:
+
+:<math>f_1(x) = 1 + 0.015(x - \text{Base Level})^{1.75}</math>
+::''Lower endpoint curve''
+:<math>f_2(x) = 1 + 0.0075(x - \text{Base Level})^{1.55}</math>
+::''Upper endpoint curve''
+
+Stat scaling between 1-25 inclusive is interpolated from the two functions using [[wikipedia:Smoothstep|smoothstep]].
+
+:<math>
+\text{Damage Multiplier}
+=
+\operatorname{f32}
+\left(
+f_1(\text{Current Level})
++
+\operatorname{f32}
+\left(
+\operatorname{f32}
+\left(
+f_2(\text{Current Level})-f_1(\text{Current Level})
+\right)
+\times s
+\right)
+\right)
+</math>
+::''Where the Damage Multiplier is the value that multiplies an enemy's base damage to its current damage.''
+
+Additionally, {{Faction|Corpus}}, {{Faction|Grineer}}, and {{Faction|Techrot}} have a '''2x''' damage multiplier applied to their attacks. {{Faction|Infested}} have a '''3x''' damage multiplier applied to their attacks.
+
+*The base damage value of the enemy is equivalent to the damage dealt by this enemy to the player's Overguard when it is at level 1.
+
+=== Affinity ===
+The formula by which enemy affinity scales is as follows:
+:<math>\text{Affinity Multiplier} = 1 + 0.1425\times\text{Current Level}^{0.5}</math>
+:<math>\text{Eximus Affinity Multiplier} = 3 + 0.1425\times\text{Current Level}^{0.5}</math>
+
+Note that this is a special case: for the affinity scaling, base level is '''not''' subtracted from the current level. The base affinity multiplied by the Affinity Multiplier value is also '''rounded down''' to a whole number, e.g. 62.7 affinity will be rounded down to 62.
+[[File:AffinityScaling.png|center|thumb|660px|Current affinity scaling.]]
+
+== Scaling of Derived Stats ==
+From these fundamental stats, more meaningful stats can be derived.
+
+=== Effective Hitpoints ===
+Effective Hit-points is a stat that indicates how much gross damage must be dealt to a target until the net damage thereby inflicted depletes its entire health pool. Effective Hit-points is not a fixed stat for any given enemy, it is heavily dependent on the damage type used against the target, as well as the various buffs and debuffs in effect for both the attacker and the enemy in question. For the following considerations, however, these influences are disregarded, as they do not alter the course of the graphs except for clinching or stretching them as a whole, which manifests as a scaling of the Y-axis.
+
+==== For Enemies with Health only ====
+For targets without shields and armor, the standardized effective hit-point scaling is synonymous with standardized health scaling, the health graph and formula apply.
+
+==== For Enemies with Health and Shields ====
+The standardized effective hit-points of shielded enemies are simply the sum of their shields and health, except for the case when the {{D|Toxin}} damage portion of the gross damage depletes the target's health faster than the rest of the gross damage depletes its shield. Exact effective hit-point calculations considering damage types also become significantly more complex if {{D|Toxin}} damage is involved, but this is disregarded here. The level scaling of standardized effective hit-points of shielded enemies is influenced by the ratio of base shields to base health:
+
+:<math>\text{EHP Multiplier} = \text{Health Multiplier} + \text{Shield Multiplier}\times\frac{\text{Base Shields}}{\text{Base Health}}</math>
+
+In the cases where you are trying to one-shot shielded enemies without {{D|Toxin}} damage, their effective hit-points will actually be higher due to their [[Shield#Shield Gating|shield gate]] mechanic. Only 5% of total damage dealt will only damage the enemy's health when their shield gate is active. However, attacking enemy weakpoints ignores the shield gate.
+
+[[File:ShieldEHP.png|center|thumb|660px|Current EHP scaling with only Health and Shields at Base Level = 1.]]
+
+==== For Enemies with Health and Armor ====
+The standardized effective hit-points of armored enemies are simply the health divided by the compliment of the damage reduction granted from armor. Because armor adds damage reduction to incoming damage on health the level scaling of standardized effective hit-points of armored enemies is influenced by the base armor itself:
+
+:<math>\text{EHP Multiplier} = \text{Health Multiplier}\times\left( 1 + \frac{\text{Base Armor}\times\text{Armor Multiplier}}{300} \right)</math>
+[[File:ArmorEHP.png|center|thumb|660px|Current EHP scaling with only Health and Armor at Base Level = 1.]]
+
+==== For Enemies with Health, Shields, and Armor ====
+The standardized effective hit-points of enemies that are both armored and shielded are more complex than the simple EHP cases from the previous sections above. The level scaling of standardized effective hit-points of these enemies is influenced by the ratio of base shields to base health ''and'' base armor, making the formula at least 3 variable:
+
+:<math>\text{EHP Multiplier} = \text{Health Multiplier}\times\left( 1 + \frac{\text{Base Armor}\times\text{Armor Multiplier}}{300} \right) + \text{Shield Multiplier}\times\frac{\text{Base Shields}}{\text{Base Health}}</math>
+
+=== Shielding Ratio ===
+The shielding ratio of shielded, ''unarmored'' enemies is the ratio of their shield to their health. Since health and shield scale at different rates, this ratio changes with level. Pre-{{ver|27.2}} this ratio used to converge towards a 1:2 ratio, where the higher the level the enemies, the closer they were to having twice as much health as shields, regardless of base stats. Currently, the ratio follows this original trend up until level 70, where it suddenly dips below 1:2 then diverges off towards infinity. This is because unlike before when health and shield scaling had same exponents (2), the current shield scaling has an exponent 50% larger than health scaling (0.75 vs 0.5) once past level 80, so it will grow at a faster rate despite having a smaller coefficient. This means the shield ratio will also grow larger over levels rather than converging.
+
+The shielding ratio is relevant for evaluating and selecting damage types against shielded enemies, i.e. weighing benefits against shield types against benefits against health types. Eventually shielded enemies at high enough levels will have more shields than health, so assuming a lack of {{D|Toxin}} or {{D|True}} damage, effectiveness against shields may take more precedence in player builds than health effectiveness.
+[[File:ShieldRatio.png|center|thumb|660px|Current shield ratio scaling at Base Level = 1.]]
+
+The shielding ratio of shielded, ''armored'' enemies is the ratio of their shield to their armored EHP. Like before, since health and shield scale at different rates, this ratio changes with level, though more complexly since armor scaling will also make an impact. This ratio converges towards a 0:1 ratio, where, as long as the enemy has a base armor of at least one, the higher the level the enemies the closer they are to having a negligible amount of shields relative to their EHP due to armor. Though as seen above, if no armor is present then the ratio will diverge towards infinity. 
+[[File:ShieldRatiowArmor.png|center|thumb|660px|Current shield ratio scaling with Armor at Base Level = 1.]]
+
+=== Affinity Density ===
+The affinity density of an enemy is its affinity per effective hitpoints and a measure of its profitability for affinity farming.
+[[File:ADScaling.png|center|thumb|660px|Current affinity density scaling at Base Level = 1.]]
+[[File:ADwShields.png|center|thumb|660px|Current affinity density scaling accounting for Shields at Base Level = 1.]]
+[[File:ADwArmor.png|center|thumb|660px|Current affinity density scaling accounting for Armor at Base Level = 1.]]
+
+It is important to note the actual affinity farming profitability is significantly offset off the optimal area as implied by the affinity density function due to the two important practical influences of overkill and retargeting time, which both contribute to shifting the actual optimum from these implications towards higher levels.
+
+=== Reflective Kill Rate ===
+Reflective kill rate of an enemy is the ratio of its damage output and effective hit-points. This is inversely proportional to the amount of time or attacks an enemy would need to kill another of its kind. It's a measurement for the effectiveness of [[Damage Reflection|damage reflecting]] effects and abilities, such as the {{D|Radiation}} damage [[Status Effect|proc]], the {{M|Reflection}} mod, and abilities such as {{A|Link}}, {{A|Shadows of the Dead}}, {{A|Absorb}}, {{A|Chaos}} or {{A|Mind Control}}. 
+[[File:RKRScaling.png|center|thumb|660px|Current reflective killing rate scaling at Base Level = 1.]]
+[[File:RKRwShields.png|center|thumb|660px|Current reflective killing rate scaling accounting for Shields at Base Level = 1.]]
+[[File:RKRwArmor.png|center|thumb|660px|Current reflective killing rate scaling accounting for Armor at Base Level = 1.]]
+
+==Level Scaling During Endless Gameplay==
+{{UpdateMe}}
+During endless missions such as [[Survival]] and [[Defense]], enemy spawn level will increase the more reward rotations are completed, following an inconstant increment: it seems to be overall exponential until enemy level 5000, reached after four hours in Survival, later it becomes linear. Typically at around 8+ hours of in-mission time, players will reach the max enemy spawn level, equal to 9999. 
+
+In Disruption missions, to calculate the approximate spawn level at a particular conduit number:<ref>[https://docs.google.com/spreadsheets/d/1TIptHTeZh-rIGg07v-Er2Zq6q8vtGttuxDf_csGiRN0/edit#gid=0 Spreadsheet by --PG--SSJ.OneeChan--]</ref>
+
+<math>
+{
+\text{Level Increase From Previous Round} = L(x) = 2.59e^{0.139(\text{Round Number})}
+}
+</math>
+
+<math>
+{
+\text{Spawn Level} = \text{Starting Spawn Level} + \sum_{x=1}^{\text{Round Number}} L(x)
+}
+</math>
+
+==Effects That Indirectly Scale Off Enemy Level==
+See [[Effects Scaling With Enemy Stats]] and [[:Category:High Scalability]].
+
+==External Links==
+* [https://www.desmos.com/calculator/ndjb8sys9o Interactive calculator for most value multipliers]<ref>by [[User:Gigamicro]]</ref>
+
+==References==
+{{Reflist}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|36.1}}
+*Made the following changes to lower-level missions to offer more engaging combat. Our goal is to strike a balance between not being too punishing, but also encouraging players to adopt behaviors that will help them take on harder content -- ie. not just standing still and shooting folks. 
+**Increased enemy spawns on Mercury, Venus, Earth, Mars, Phobos, Ceres, and Jupiter (base version only, Steel Path remains the same).
+**Increased accuracy of Grineer and Corpus enemies below level 55. 
+**Adjusted Grineer Trooper behavior to work more closely within their effective weapon range. 
+**Increased base damage multiplier for Grineer and Corpus, but amended how it scales to compensate. The goal is to make them hit harder at lower levels, but keep things the same for higher difficulty content.
+
+{{ver|36}}
+;Armor Adjustments
+
+'''Important Note: We have not changed player Armor. This only applies to enemy Armor!'''
+
+Enemy Armor scaling in its previous current iteration meant that Armor Stripping was almost an all-or-nothing game, especially at higher levels. This resulted in players focusing on Armor Stripping as a way to tackle Grineer at higher difficulty content. Our goal is to reduce some of the extreme damage reduction offered by Armor at high levels, and make partial Armor Stripping more feasible. 
+
+To do so, we are making the following changes: 
+*Armor has a maximum cap of 2700 Armor (90% Damage Reduction).
+*Armor has a minimum cap of 200 Armor.
+*Steel Path no longer increases Armor values.
+*Grineer enemies have increased Health scaling.
+*Altered the formula for Armor Reduction to increase the effectiveness of Partial Armor Stripping.
+**For reference, currently around 50% of Damage Resistance came from just 300 Armor, which is why complete Armor Strip felt so needed at higher levels.
+
+Additionally, our goal was to make partial Armor Stripping a more valuable tool. By capping enemy Armor and adjusting how Armor is calculated, a partial Armor Strip will allow players to engage with high-level Grineer more easily - meaning max Corrosion stacks against an Armored enemy (reducing the Armor by 80%) will feel more impactful due to the new distribution of Damage Resistance from Armor values). 
+
+Full Armor Strip is still valuable, but we wanted to even the playing field so players didn’t feel forced to build around it.
+
+;Shield Adjustments
+
+'''Important note: We have not changed player Shields. This only applies to enemy Shields!'''
+
+The Grineer are tankier by design, but the Corpus try to make the difference through their Shields. However, Corpus Effective Hit Points (EHP) are significantly lower, making them often trivial to deal with by comparison. Our goal is to reduce the discrepancy between Grineer and Corpus time-to-kill (TTK) by making Corpus Shields a bit more challenging and interesting to fight. 
+
+'''Changes to Enemy Shields:'''
+*Shields now scale more quickly starting at level 80. This means stronger Shields than before as players fight higher-leveled Shielded enemies.
+*Shield Recharge Delay is now unified across all enemy types.
+*Shield Recharge Delay now has a minimum and maximum length depending on how much damage has been dealt to enemy Shields.
+**The more damage dealt, the slower enemy Shields will begin recharging, so if you can’t outpace enemy Shields right away, you can chip their Recharge Delay down within a maximum and a minimum.
+***For example, if enemy Shields break at any point, it automatically acts as if 200% damage (which becomes the maximum delay) has been inflicted on those Shields. However, if an enemy absorbs 99% damage (so 1% of their shields left), their accumulated damage taken now sets their Recharge Delay in the middle of their respective minimum and maximum delays. Should they Recharge and you deal another 99% damage to their Shields, they’ll have absorbed 198% damage, taking them to the maximum Recharge delay of what that scaled enemy can have.
+*Shield Recharge Rate scales with enemy level, recharging at a faster rate for higher-leveled enemies.
+**Shield Recharge Rate will also accelerate while Shields are actively Recharging.
+***Shield Recharge Acceleration Rate’s base multiplier greatly increases after level 80, resulting in faster Recharge rates at higher levels.
+*Steel Path Shields are now multiplied by 2.5x, in place of the previous 6.25x. Steel Path Shields were doubly-applying the multiplier unintentionally.
+
+;Effective Hit Points (EHP) Adjustments
+
+Enemy stat scalings, such as Health and Shields, now grow faster as enemy level increases, in compensation of the loss in Enemy Armor and to make Shields more engaging to deal with.
+
+'''Changes:'''
+*After Level 75-80, enemies receive increased stats, such as Health, at a slightly increased rate to prevent EHP stagnation.
+**It’s important to note that the increase in Health scaling is not meant to match the EHP values seen by previous levels of Armor. 
+
+{{ver|27.2}}
+; Armor and Damage Changes (Enemy)&#58;
+This section will go over before and after scenarios with our enemy Armor, Health, and Shield changes. Reading this section should give you a conceptual and on-paper understanding of what we’re changing and why, but practical experiences will tell the full story here. You may need to refresh some aspects of your Builds to truly optimize your power against your enemies. 
+
+Before: Armor, Shields and Health on an Exponential Curve<br>
+After: Armor Shields and Health on an S curve 
+
+;Damage Changes&#58;
+Enemy Damage output should still be close to what is currently on the Live version of the game, but we have made a few changes that will affect how players take Damage in-game.
+
+;Infested Damage&#58;
+We did not want to overlook the Infested in our review. Infested are close-range enemies that telegraph most attacks - and now if one of those attacks hits you, it simply does more damage. Stay agile, stay moving, and the mission is as good as won! 
+
+''Why: Having Infested simply deal more Damage encourages you to use mobility in ways that is not the norm for their ranged counterparts. Rewarding mobility is a key part of Warframe.''
+
+;AI Aimbots
+Up until now in Warframe, the higher the enemy level, the better their accuracy. High-level enemies would be pinned at the best Accuracy they are capable of - not quite 100%, but getting pretty close! Things like your movement and Mods would reduce accuracy, but the potential for bad ‘Aimbot’ moments was too high. We have spread this progression across a greater range of AI now We are decoupling enemy accuracy from level to reduce the overall ‘Aimbot’ like behaviours you face at higher levels. 
+
+''Why: This change allows us more accurate balancing of foes at higher levels. This change alone would be noticed by simply sometimes  ‘getting hit less’, but in conjunction with the numerous other changes we are making to enemies, it is part of a holistic Refresh to the underlying mechanics behind Warframe’s enemies.''
+
+{{ver|25.0.7}}
+*Eximus enemies are now capped at Level 9999 like regular enemies.
+
+{{ver|14}}
+*Enemies health is no longer capped at 65535.
+
+{{ver|11.5}}
+*Armour/Shield/Health/Damage curves have been modified. We’ve lowered the “bullet sponge” to high level enemies, but they now deal more damage. The armour curve was radically dropped. The health and shields curves dropped slightly as well. However, damage output went up.
+
+{{ver|11}}
+Source: https://forums.warframe.com/topic/132366-information-on-damage-20/
+;Enemy Levels
+
+Enemy levels now fall in a more compressed scale. Level 1 enemies are still the easiest, but the difficulty of a Level 40 enemy in Damage 2.0 will be comparable to a Level 100 enemy in Damage 1.0. Infinite mission types will still feature ever increasing enemy levels. Enemies will be wielding weapons that can inflict different types of damage and Procs on the Tenno, meaning the difficulty will come from a combination of their loadouts and their level.
+
+{{ver|7.7.1}}
+*Increased the curve of AI damage/shields for higher level enemies... but then:
+**After more testing, toned down those same curves for high level enemies (split the difference).
+}}
+{{MechNav}}
+[[es:Escalado de nivel del enemigo]]
+[[zh:敵方等級變化規律]]
+[[Category:Mechanics]]
+[[Category:Real-World References]]

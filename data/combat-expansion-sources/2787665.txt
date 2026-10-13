@@ -1,0 +1,63 @@
+{{ArcaneBox|name={{PAGENAME}}}} 
+
+'''{{PAGENAME}}'''   is a [[Melee]] [[Arcane Enhancement]] that increases [[Heavy Attack]] damage and restores [[Shield]]s on Heavy Attack kills for 20 seconds after the user's Shields break.
+
+== Effects ==
+{| class="emodtable"
+|-
+! [[Arcane Enhancement#Rank|Rank]]
+! Melee Damage on [[Heavy Attack]]s
+! [[Shield]]s Restored on [[Heavy Attack]] kills
+|-
+| 0 || +25% || +5%
+|-
+| 1 || +50% || +10%
+|-
+| 2 || +75% || +15%
+|-
+| 3 || +100% || +20%
+|-
+| 4 || +125% || +25%
+|-
+| 5 || +150% || +30%
+|-
+|}
+
+{{Acquisition|name={{PAGENAME}}}}
+
+Can be bought from [[Hunhow]] at [[Pontis Tower]] for 10 {{Resource|Emerald Talent}} and 10 {{Resource|Crimson Talent}}
+
+==Notes==
+*Melee Damage bonus is additive to mods like {{M|Pressure Point}}.
+*Does generate shields on heavy slams kills.
+*Shields gained is per enemy killed and therefore can generate full shields with 4 kills in a single heavy attack.
+*Special Heavy attacks that trigger shield generation on kill:
+**{{Weapon|Syam}} heavy attacks wave.
+**Detonation of Glaive throws (does not apply to kills from direct hits).
+**Gunblade heavy attacks projeciles.
+**{{Weapon|Tenet Agendus}} heavy attacks projectiles.
+**{{Weapon|Tenet Grigori}} heavy slide attack projectiles.
+**{{Weapon|Wolf Sledge}} detonation on throw.
+**{{Weapon|Argo & Vel}} heavy attack glaive and its kills with ricochet.
+**{{Weapon|Edun}} thrown heavy attack direct hits (does not trigger off explosion).
+**{{Weapon|Tak & Lug}} heavy attack explosion.
+**{{Weapon|Ceramic Dagger}} heavy attack projectile explosions (does not trigger off direct hit kills).
+*Only regenerates shields on kills from direct heavy attack damage similar to {{Arcane|Exodia Brave}}.
+**This in practice means it does not trigger from status damage caused by heavy attacks.
+*Scales off of maximum shields.
+*Does not generate overshields.
+*Does trigger from shield break caused by {{M|Empowered Blades}}.
+*Does trigger on mission start for builds using {{Arcane|Arcane Persistence}} but cannot refresh.
+**Does not trigger off Operator/Drifter shield break.
+*Only applies to the melee weapon with the arcane equipped.
+**This in practice means you cannot equip this arcane on an Exalted Weapon and have it trigger on the equipped melee weapon that isn’t using this arcane.
+*If equipped on an Exalted Weapon, the effect will only generate shields if triggered while the Exalted Weapon is active when shield break occurs.
+**Contrarily, if used on the equipped melee and shield break occurs while having an Exalted Weapon active, then deactivating the Exalted Weapon and using equipped melee will trigger shield generation on heavy kill within the buff window. This is independent of whether both weapons have this arcane or just the equipped melee weapon.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|43.0}}
+*Introduced.
+}}
+
+{{ArcaneNav}}

@@ -1,0 +1,78 @@
+{{Infobox
+|Box title=Galvanized Mods
+|image=GalvanizedChamberMod.png
+}}
+'''Galvanized Mods''' are alternative versions of some [[mod]]s. They have slightly lower base stats and higher maximum drain than their original counterparts, but provide additional stacking buffs from killing enemies.
+
+==Acquisition==
+Each mod can be purchased at rank 0 from the [[Arbitrations]] vendor for '''20 {{Resource|Vitus Essence}}''' in the [[Arbiters of Hexis]] room in any [[Relay]] (regardless of the player's personal standing with the Arbiters of Hexis). All of these mods can be [[Trading|traded]] between players.
+
+==List of Galvanized Mods==
+{| class="wikitable" width="100%"
+!Weapon Class!![[Multishot]]!![[Status Effect|Status Chance]] and<br />[[Damage]] per [[Status Effect|Status Type]]!![[Critical Hit|Critical Chance]]<br />when [[Zoom|Aiming]]!![[Projectile Speed]]<br />and Beam Range
+|-
+|[[Assault Rifle|Rifle]]||[[File:GalvanizedChamberMod.png|center|x200px|link=Galvanized Chamber]]||[[File:GalvanizedAptitudeMod.png|center|x200px|link=Galvanized Aptitude]]||[[File:GalvanizedScopeMod.png|center|x200px|link=Galvanized Scope]]||
+|-
+|[[Shotgun]]||[[File:GalvanizedHellMod.png|center|x200px|link=Galvanized Hell]]||[[File:GalvanizedSavvyMod.png|center|x200px|link=Galvanized Savvy]]|| ||[[File:GalvanizedAccelerationMod.png|center|x200px|link=Galvanized Acceleration]]
+|-
+|[[Pistol]]||[[File:GalvanizedDiffusionMod.png|center|x200px|link=Galvanized Diffusion]]||[[File:GalvanizedShotMod.png|center|x200px|link=Galvanized Shot]]||[[File:GalvanizedCrosshairsMod.png|center|x200px|link=Galvanized Crosshairs]]||
+|-
+!Weapon Class
+![[Status Damage]] and<br />[[Status Chance]]
+![[Melee Combo|Heavy Attack Efficiency]] & [[Melee Combo|Initial Combo]]
+![[Critical Hit|Critical Chance]] and [[Critical Hit|Critical Damage]]
+!
+|-
+|[[Melee]]
+|[[File:GalvanizedElementalistMod.png|center|x200px|link=Galvanized Elementalist]]
+|[[File:GalvanizedReflexMod.png|center|x200px|link=Galvanized Reflex]]
+|[[File:GalvanizedSteelMod.png|center|x200px|link=Galvanized Steel]]
+|
+|}
+
+==Notes==
+*Cannot be equipped with their other counterparts (e.g. {{M|Galvanized Diffusion}} cannot be equipped with {{M|Barrel Diffusion}} or {{M|Amalgam Barrel Diffusion}}).
+* In most Galvanized mods when their buffs time out, only ''one'' stack is lost and the buff duration resets.
+**{{M|Galvanized Scope}} and {{M|Galvanized Crosshairs}} behave differently in that each stack has its own duration.
+*Only kills from a weapon equipped with a Galvanized mod will give stacks, and only the weapon equipped with said mod will benefit from the buff. If the same mod is equipped on both a normal weapon and an [[Exalted Weapon]] (such as {{WF|Mesa}}'s {{Weapon|Regulators}} or {{WF|Hildryn}}'s {{Weapon|Balefire Charger}}), it will affect both weapons.
+**However, for some weapons the buffs are maintained separately with only the most recent application visible; equipping [[Galvanized Reflex]] on both [[Gara]]'s [[Shattered Lash (Weapon)|Shattered Lash]] and a normal melee weapon will result in either weapon only benefiting from their own stacks. The same applies to [[Galvanized Steel]].
+*Kills from status procs (including from {{M|Hunter Munitions}}) from a weapon equipped with a Galvanized mod will give stacks. 
+** However, kills from status procs on the target's head do '''not''' count as a headshot kill, with the exception of {{D|Electricity}} and {{D|Gas}}.
+*The shotgun mod {{M|Galvanized Acceleration}} currently has no rifle or pistol counterpart (for {{M|Terminal Velocity}} and {{M|Lethal Momentum}}, respectively). In the same manner, shotguns do not have a Galvanized version of {{M|Laser Sight}}, which the other two ranged weapons have (for {{M|Argon Scope}} and {{M|Hydraulic Crosshairs}}, respectively).
+*[[Robotic|Robotic companions]] may also make use of Galvanized mods on their equipped weapons. However, the player has to build stacks for the mods on the companion's behalf; for example, if the companion's weapon is using {{M|Galvanized Chamber}}, the player will need to use a rifle equipped with the same mod and achieve a kill for the companion to receive a stack.
+
+==Media==
+{| class="wikitable" style="text-align: center;"
+|+ Galvanized Mod Styling
+|-
+|
+| [[File:GalvanizedFrameTop.png|Galvanized Mod Top Border]]
+| [[File:SilverTopRightBacker.png|Uncommon Mod Rank/Polarity Backer]]
+|-
+| [[File:GalvanizedSideLight.png|Galvanized Mod Side Light]]
+| [[File:GalvanizedBackground.png|Galvanized Mod Background]]
+| [[File:GalvanizedSideLight.png|Galvanized Mod Side Light]]
+|-
+|
+| [[File:SilverLowerTab.png|Uncommon Mod Type Tab]]
+|
+|-
+| [[File:GalvanizedBottomLight.png|Galvanized Mod Bottom Light]]
+| [[File:GalvanizedFrameBottom.png|Galvanized Mod Bottom Border]]
+| [[File:GalvanizedBottomLight.png|Galvanized Mod Bottom Light]]
+|-
+|
+| [[File:RankCompleteLine.png|Mod Rank Line]]
+| [[File:RankSlotActive.png|Mod Rank Pip]]
+|-
+|}
+
+{{VideoGallery
+|{{YouTube|https://youtu.be/BkoDdjhWb-Y|size=300px}}
+}}
+
+{{ModNav}}
+[[Category:Mods]]
+[[Category:Update 30]]
+[[es:Categoría:Mod Galvanizado]]
+[[fr:Catégorie:Mods Galvanisés]]

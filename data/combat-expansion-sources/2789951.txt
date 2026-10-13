@@ -1,0 +1,73 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapon|Weapon}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Counter the dread of battle with a song of praise. Enemies cannot hurt your allies while wounded by Evensong’s arrows. Kills with Evensong empower ally weapons with Multishot.
+
+Experience the true power of Jade's Ensemble when Evensong, Cantare, and Harmony sing together.}}
+'''Evensong''' is {{WF|Jade}}'s [[Signature Weapon|signature]] bow and counterpart to [[Stalker]]'s {{Weapon|Dread}}. Shots apply empowered {{D|Puncture}} status effects and kills grant increased [[Multishot]].
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Fully charged shots explode in a '''4''' meter radius on impact with a surface or enemy.
+**Charged shot projectiles cannot benefit from [[Punch Through]], and will explode on the first surface or enemy hit.
+**Initial hit and explosion apply status separately.
+**Explosion does not need direct line of sight to deal damage and will penetrate walls.
+**Can benefit from {{M|Firestorm}} ({{M|Primed Firestorm|Primed}}) and {{M|Cautious Shot}}.
+**Can equip the bow-exclusive {{M|Thunderbolt}} mod.
+*[[Fire rate]] mods apply double their bonuses.
+*Direct hits and explosion apply '''7''' {{D|Puncture}} status effects (bypassing the normal limit of 5), reducing enemy damage by '''100%''' and increasing weapon [[Critical Chance]] that the victim receives by '''35%'''.
+*Kills grant '''Evensong Devotion''', increasing [[Multishot]] by '''35%''' for '''30''' seconds to all allies within [[Affinity Range]].
+**When combined with the effects of {{Weapon|Cantare}}, and {{Weapon|Harmony}}, all three buffs merge into '''Jade's Ensemble''', which lasts '''60''' seconds and increases the multishot bonus to '''70%'''.
+
+{{Advantages|class=Bow|
+}}
+
+{{Disadvantages|class=Bow|
+*Projectile has travel time with arcing.
+*Explosion inflicts [[Stagger|self-stagger]].
+*Explosion has a [[Enemy Body Parts|headshot]] multiplier of 1x and cannot trigger headshot conditions.
+*Explosion has linear [[Damage Falloff]] from 100% to 10% from central impact.
+}}
+
+{{Acquisition|Evensong's blueprint is obtained from [[Ascension]] on [[Brutus]], [[Uranus]], at a 5% drop rate.
+
+Alternatively, the blueprints can also be purchased from [[Ordis]] in the [[Drifter's Camp]] for 300 {{Resource|Vestigial Motes}}, awarded from Ascension in quantities of 11-13 (16-18 on [[The Steel Path]]) from mission completion and 5-7 (8-10 on The Steel Path) from the optional [[Sisters of Parvos]] objective.}}
+
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*Triggering '''Evensong Devotion''' while it is already active will refresh the duration.
+*Enemies killed with [[Status Effect|status effects]] inflicted by an Evensong arrow will trigger '''Evensong Devotion'''. 
+**This includes enemies killed by damage-over-time status effects inflicted by the charged radial attack. 
+**However, enemies killed by damage caused by area-of-effect status effects such as {{D|Gas}} clouds will not trigger it.
+*Enemies that are usually capped at 4 stacks of a status, such as [[Acolytes]] and enemies with [[Overguard]], will receive 5 stacks of {{D|Puncture}} from Evensong.
+*Blast radius of the radial charged attack can be increased by using {{M|Firestorm}}.
+**All enemies struck by the radial attack will be inflicted with 7 stacks of {{D|Puncture}}.
+**A fully charged projectile will despawn on causing a radial explosion, even if it had punch-through.
+*{{M|Thunderbolt}}'s explosions will apply Evensong's [[Puncture]] passive to enemies it hits, enabling uncharged shots to apply [[Puncture]] status in a 10m radius, albeit with only a 30% chance of an explosion per projectile.
+*When Evensong is shot into {{WF|Zephyr}}'s {{A|Tornado}}, instead of {{D|Puncture}} adding to the final critical chance of the weapon, it appears to get multiplied by critical chance mods.
+*The specter from [[Duality]] will not apply the 7 stacks of [[Puncture]] when hitting enemies with the Evensong.
+
+==Trivia==
+*[[Wikipedia:Evensong|Evensong]] is a Christian church service that involves singing.
+
+==Media==
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.0.8}}
+*Fixed edge cases of SFX abruptly cutting out for the Evensong.
+
+{{ver|36.0.5}}
+*Updated the Evensong location descriptions to indicate that Ordis is found in the Drifter Camp now that Operation: Belly of the Beast has concluded.
+
+{{ver|36.0.1}}
+*Updated Evensong’s VFX.
+*Fixed the Evensong being Conclave eligible (it is not balanced for Conclave).
+
+{{ver|36}}
+*Introduced.
+}}
+
+{{WeaponNav}}

@@ -1,0 +1,101 @@
+{{Top|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Baruuk's signature weapons: a sword of retribution, a shield of restraint. In Baruuk's hands, and his hands only, Cobra's first strike in a combo renders his foe unconscious.}}
+
+'''Cobra & Crane''' is {{WF|Baruuk}}'s [[Signature Weapon|signature]] [[Sword and Shield]], possessing a high [[status chance]] and its shield can be thrown similar to the {{Weapon|Sigma & Octantis}}. When used by Baruuk, the first strike of this weapon will put enemies to sleep.
+
+This weapon can be sold for {{cc|5,000}}.
+
+==Characteristics==
+*This weapon deals primarily {{D|Impact}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Eleventh Storm}}, {{M|Final Harbinger}} and {{M|Last Herald}} stance.
+*Aerial attacks throw the shield, knocking down enemies on hit.
+*Blocking attacks stores a charge that increases [[critical chance]] and [[status chance]] by '''15%''' to the next attack. Up to '''4''' charges can be stacked before being consumed.
+**Critical Chance bonus is additive to {{M|True Steel}}, {{M|Blood Rush}}, and other similar buffs.
+**Status Chance Bonus is additive to {{M|Melee Prowess}}, {{M|Weeping Wounds}}, and other similar buffs.
+*When used by {{WF|Baruuk}}/{{WF|Baruuk Prime}}, the first strike of a combo will put the enemy to sleep for '''2''' seconds.
+**Hitting a Nullifier bubble will put the respective Nullifier or Corrupted Nullifier to sleep, regardless of weapon range.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+{{WeaponComparison|Cobra & Crane Prime}}
+
+==Acquisition==
+The Cobra & Crane's blueprint can be purchased from the [[Market]].
+
+{{BuildAutomatic|type=Weapon|name=Cobra & Crane}}
+
+{{StanceTable|ComboType=Aerial}}
+
+==Notes==
+*When used by {{WF|Baruuk}}/{{WF|Baruuk Prime}}, every first hit on an enemy will be put to sleep for '''2''' seconds.
+**Sleeping enemies are open to [[Melee#Finishers|melee finishers]].
+**Can be used on groups of enemies for effective crowd control.
+*The throw attack is done by simply tapping the melee button while in mid-air; holding down the button is not necessary, which makes it very fluid.
+**The shield is thrown up to '''20''' meters, which is '''not''' affected by range mods.
+**The shield knocks down enemies, opening them up for ground finishers.
+*Throw attacks can be done both while the weapon is fully equipped or with a quick melee attack.
+*The thrown shield has a very slight homing effect, similar to thrown Glaives, though it is still very much capable of missing.
+*The throw attack can be done in any direction (dictated by your aim), and therefore the usual downward melee slam attack is done by looking straight down.
+*Attacks stagger enemies on every hit.
+
+==Media==
+
+
+<gallery widths="300" position="center" spacing="small">
+<!--videos-->
+</gallery>
+{{VideoGallery
+|{{YouTube|yyJ1EfQwXqs|size=300px}}
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37}}
+*Fixed enemies not being open to Finishers when put to sleep by the first hit from Cobra and Crane when wielded by Baruuk.
+
+{{ver|35}}
+*Cobra and Crane’s passive interaction with Baruuk (the first strike of this weapon will put enemies to sleep) now respects enemy CC immunity (Eximus, Bosses, Overguard, etc.).
+
+{{ver|34}}
+*Fixed rendering issues with the Cobra & Crane melee weapon when set to "Visible While Holstered”.
+
+{{ver|29.5.4}}
+*Fixed Melee Heavy Attacks not functioning for Cobra and Crane.
+
+{{ver|27.1}}
+*Fixed Follow-Through stat changing when the Cobra & Crane are equipped with a Stance Mod. 
+
+{{ver|26}}
+*Damage increased from 100 to 296
+*Physical damage changed from 90% Impact and 10% Puncture to 70% Impact and 30% Puncture.
+*Range increased from 1 to 2.6
+*Critical Chance increased from 10% to 15%
+*Slam Attack increased from 100 to 888.
+*Slide Attack increased from 214 to 296.
+*Parry Angle set to 70.
+
+{{ver|24.4}}
+*Sigma & Octantis and Cobra & Crane Shield throw animations have been shortened and speed increased. 
+
+{{ver|24.2}}
+*Introduced.
+}}
+{{Ver/Lu|26}}
+{{WeaponNav}}
+[[de:Cobra & Crane]]
+[[es:Cobra & Crane]]
+[[fr:Cobra & Crane]]
+[[Category:Weapons]]
+[[Category:Melee Weapons]]
+[[Category:Sword and Shield]]
+[[Category:Update 24]]
+[[Category:Weapons with Passives]]
+[[Category:Signature Weapons]]
+[[uk:Кобра й Журавель]]

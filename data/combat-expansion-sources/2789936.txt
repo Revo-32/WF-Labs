@@ -1,0 +1,59 @@
+{{Top|Weapon|Weapons|Weapons|Grineer|Grineer|Grineer}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Take active defense to new heights with this deadly flying shield and brutal blade. Throw the shield with a unique Heavy Attack, inflicting Blast Status Effects and dealing damage in a wide area.}}
+'''Tak & Lug''' is a {{Faction|Grineer}} [[Sword and Shield]]. [[Heavy Attack]] throws the shield which explodes thrice inflicting forced {{D|Blast}} [[proc]]s before returning.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage, has innate {{Pol|Vazarin}} polarity, and a [[#Unique Trait]].
+{{Advantages|}}
+{{Disadvantages|}}
+{{Acquisition|Tak & Lug's blueprint and components are dropped by {{E|Ghoul Auger}} and {{E|Ghoul Devourer}} that appear in the [[Plains of Eidolon]], [[Ghoul Purge]] [[Bounty|Bounties]], and [[Disruption]] [[Olympus]] on [[Mars]].}}
+Acquisition Tip: Distruption mission on [[Olympus]], Mars is rich with ghouls. Also, there is a chance that one of the conduits will be "Ghoul Eruption" which will make the mission more like a ghoul arena. If this conduit is not the last one of the round, it is advised to let it be destroyed and continue farming without finishing the round. A {{WF|Nekros}} equipped with {{D|Slash}} weapons will increase the drop chance. Also, {{Weapon|Tonkkatt}} parts will drop during this farm.{{BuildAutomatic|type=Weapon}}
+
+==Unique Trait==
+[[Heavy Attack]] throws the shield, which travels '''7m''' and explodes '''3''' times dealing damage in a '''3m''' radius around the shield as well as to enemies between the user and the shield, before returning. This is '''not''' considered a projectile, but a melee attack with a far-reaching hitbox. The shield aims where the warframe aims (which is not always where player camera is looking).
+*A '''Sliding Heavy''' attack ({{Keybind|W}}+{{Keybind|Ctrl}}+{{Keybind|MMB}}) does '''not''' throw the shield.
+*All three explosions inflict a forced {{D|Blast}} [[proc]].
+*The shield itself also deals damage but does not force a {{D|Blast}} [[proc]].
+*The shield is thrown horizontally in front of the warframe. If the warframe's elevation changes during the heavy attack, the shield will descend/ascend accordingly.
+*If the warframe pans right or left during the heavy attack animation, the shield will likewise sweep and can hit additional targets.
+**Panning the shield throw will worsen single-target damage as explosions are spread over an area.
+*To hit enemies above you, the shield can be foced into a vertical projectory by jank warframe animation exploits, namely '''Aerial Heavy Attack''':
+*#Start the '''Heavy''' attack ({{Keybind|MMB}}) wind-up animation.
+*#Perform a [[Bullet Jump]] ({{Keybind|W}}+{{Keybind|Ctrl}}+{{Keybind|Space}}) before the shield is thrown.
+**Aiming the bullet jump or varying the timing between steps '''1''' and '''2''' will change the angle at which the throw begins.
+**The warframe will usually start falling mid-throw, resulting in a hit above and below the starting angle and a downward bullet jump.
+***The post-throw bullet jump can be interrupted with a [[Slam Attack]], or end very quickly if the starting angle was low and the warframe remained close to the ground.
+*[[Attack Speed]] mods will make the throw, explosions, and return faster.
+*[[Melee Range]] mods will increase the distance traveled by the heavy attack, and radius of the explosion.
+
+==Notes==
+*The heavy attack is not an actual glaive throw, only a very long range melee strike. This results in unusual behavior such as it responding to post-throw reticle movement in the horizontal plane, range effecting the distance 'traveled' by the throw and AOE radius, and being locked to the player's current vertical position rather than displaying flight characteristics.
+
+==Trivia==
+*Tak & Lug was first introduced in the Galleon of Ghouls [[Tactical Alert]], available from the the second and third weeks (May 9th to May 12th, 2025 and May 16th to May 19th, 2025). The first completion of the second Alert awarded the main blueprint, attached to an inbox message from {{E|Councilor Vay Hek}}, while every subsequent completion of the Alert awarded a random component.
+
+==Bugs==
+*In-game, the Heavy Attack damage is displayed as '''1,773 x4''', the actual value is '''591 x4''' for a total of '''2,364''' damage.
+**'''1,773''' is the combined total damage of all 3 explosions that inflict {{D|Blast}} [[proc]]s.
+
+==Media==
+<gallery widths="300" position="center" spacing="small"></gallery>
+
+{{YouTube|https://youtu.be/yQJdZBIcNi4}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.6}}
+*Added the Tak & Lug Blueprints and Components to the Grineer Ghoul drop tables.
+**If you missed out on the Galleon of Ghouls event, you can now earn these weapons by encountering them in the Plains of Eidolon, during regularly scheduled Ghoul Purge and in Olympus, Mars. 
+***''Our next Ghoul Purge kicks off this weekend! (May 24th)''
+
+{{ver|38.5.11}}
+*Introduced
+}}
+
+{{WeaponNav}}
+[[Category:Codex Secret]]

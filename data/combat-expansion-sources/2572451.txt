@@ -1,0 +1,75 @@
+<onlyinclude>{{EditTab|Zaw Stats/Nikanas}}
+<div class="tabber-borderless">
+<tabber>All Nikanas=
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strikes
+|-
+| [[File:Sepfahn.png|center|thumb|100px]]'''[[Sepfahn]]'''
+|-
+|}
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTypeTable|Nikana|OneHanded}}
+|-|Sepfahn-Korb =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Sepfahn.png|center|thumb|100px]]'''[[Sepfahn]]'''
+| [[File:Korb.png|center|thumb|100px]]'''[[Korb]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Sepfahn|Korb}}
+|-|Sepfahn-Kwath =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Sepfahn.png|center|thumb|100px]]'''[[Sepfahn]]'''
+| [[File:Kwath.png|center|thumb|100px]]'''[[Kwath]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Sepfahn|Kwath}}
+|-|Sepfahn-Laka =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Sepfahn.png|center|thumb|100px]]'''[[Sepfahn]]'''
+| [[File:Laka.png|center|thumb|100px]]'''[[Laka]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Sepfahn|Laka}}
+|-|Sepfahn-Peye =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Sepfahn.png|center|thumb|100px]]'''[[Sepfahn]]'''
+| [[File:Peye.png|center|thumb|100px]]'''[[Peye]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Sepfahn|Peye}}
+|-|Sepfahn-Plague Akwin =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="1" rowspan="1" style="width:100px;" | Grip
+|-
+| [[File:Sepfahn.png|center|thumb|100px]]'''[[Sepfahn]]'''
+| [[File:PlagueAkwin.png|center|thumb|100px]]'''[[Plague Akwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTable|Sepfahn|Plague Akwin}}
+</tabber>
+</div>
+</onlyinclude>
+[[Category:Nikana]]
+[[fr:Stats des Zaws/Nikanas]]

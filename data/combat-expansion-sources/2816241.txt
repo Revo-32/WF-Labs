@@ -1,0 +1,66 @@
+{{Navigation|Celestial Twin|Cloud Walker|Defy|Primal Fury}}
+<onlyinclude>{{AbilityU10.3
+| cardonly = {{{1|}}}
+| name = Primal Fury
+| gameimage = PrimalFury130xWhite.png
+| cardimage = PrimalFury.png
+| hotkey = 4
+| energy = 10
+| description = Summon the Iron Staff and unleash fury.
+'''Energy Drain:''' 5 s<sup>-1</sup>
+| strength = 100 / 200 / 250 / 300 (damage)
+| range = N/A
+| duration = N/A
+| misc = 0.5 m (range increase per combo level)
+| info = *Wukong expends {{Stat|Ability Efficiency|icon=only}}'''10''' [[energy]] to equip his legendary '''{{Weapon|Iron Staff}}''' as his melee [[Exalted Weapon]]. [[Melee#Normal Attack|Normal attacks]] inflict {{Stat|Ability Strength|icon=only}}'''100 / 200 / 250 / 300''' damage with a <u>'''3.5'''</u> meter range.
+**Exclusively uses the {{M|Primal Fury}} Stance.
+**Damage is distributed between '''68%''' {{D|Impact}} damage and '''32%''' {{D|Slash}} damage.
+**Iron Staff's range increases by <u>'''0.5'''</u> meters per combo level, capping at <u>'''+5.5'''</u> meters of range at 12x combo.
+**Iron Staff has a <u>'''2x'''</u> [[critical multiplier]], <u>'''25%'''</u> [[critical chance]], and <u>'''30%'''</u> [[status chance]]. 
+**Iron Staff can be equipped with melee mods and [[Arcane Enhancement]]s.
+***[[Riven Mods]] are '''not''' generated for Iron Staff.
+**Because Primal Fury is counted as a melee strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+**Primal Fury consumes {{Stat|Ability Efficiency|icon=only}}{{Stat|Ability Duration|icon=only}}'''5''' energy per second while active and will remain active until Wukong's energy is depleted or the ability is deactivated by pressing the ability key again.
+***Wukong '''cannot''' replenish energy using {{A|Energy Vampire}}, {{A|Rally Point}}, [[Rift Plane]]'s innate energy regeneration, [[Squad Energy Restore]]s, {{M|Energy Siphon}}, {{M|Energy Nexus}}, {{M|Dreamer's Bond}}, and/or {{Focus|Wellspring}} while Primal Fury is active.
+***[[Energy Orb]]s, [[Orokin Void]] [[Orokin Tower#Death Orbs|Death Orb]]'s energy restores, {{M|Rage}}, {{M|Hunter Adrenaline}}, {{M|Spellbound Harvest}}, {{Arcane|Arcane Energize}}, and {{Arcane|Emergence Dissipate}}'s Energy Motes can still replenish Wukong's energy while Primal Fury is active.
+***Primal Fury's energy drain is '''not''' converted into shields by [[Set Mods#Augur Mod Set|Augur Mods]].
+*While Primal Fury is active, Iron Staff is the only melee weapon Wukong can use. However, his other weapons and abilities can still be cast normally.
+*Primal Fury comes installed with its own unique [[Primal Fury (Stance)|stance]]. Additional combos will be unlocked as Primal Fury increases in rank.
+*The ends of Iron Staff have portions made out of energy.
+**These portions are affected by Wukong's energy color.
+**With the range bonus active, these portions are elongated.
+*Primal Fury's attacks can damage enemies across the [[Rift Plane]].
+| interactions = 
+* When activating Primal Fury with an active {{A|Celestial Twin}}, the twin will also equip the Iron Staff.
+| weapon = [[File:IronStaff.png|200px|left]]
+{{main|Iron Staff}}
+{{#lst:Iron Staff|intro}}
+{{clr}}
+| stance = [[File:PrimalFuryStance.png|200px|left]]
+{{main|Primal Fury (Stance)}}
+{{#lst:Primal Fury (Stance)|intro}}
+{{clr}}
+| augment = [[File:PrimalRageMod.png|200px|left]]
+{{main|Primal Rage}}
+{{lst:Primal Rage|intro}}
+{{#lsth:Primal Rage|Stats}}
+{{clr}}
+| tips = 
+| bugs = 
+<noinclude>
+|max            = {{WFmax|main|wukong4}}
+</noinclude>|
+}}</onlyinclude>
+
+==See Also==
+*{{WF|Wukong}}
+__NOTOC__
+[[es:Furia primitiva]]
+[[fr:Fureur Primale]]
+[[Category:Ability Weapons]]
+[[Category:Channeled Abilities]]
+[[Category:Warframe Abilities]]
+[[Category:Update 17]]
+[[Category:Wukong]]
+[[Category:Exalted Weapon]]
+[[uk:Первісна лють]]

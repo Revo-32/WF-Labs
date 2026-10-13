@@ -1,0 +1,153 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Scorch enemies with blistering blows, or set them ablaze with the flying fire disc.}}
+The '''Zenistar''' is a flaming war axe obtained through [[Daily Tribute]]. Its secondary attack ejects a disc that deals {{D|Heat}} damage over time for a duration based on the current Combo Multiplier.
+
+This weapon '''cannot''' be sold.
+
+==Characteristics==
+*This weapon deals primarily {{D|Heat}} and {{D|Impact}} damage.
+*[[Heavy Attack]] releases a floating disc that deals {{D|Impact}} on contact and then releases a {{D|Heat}} explosion. The disc stays in place and radiates a damaging {{D|Heat}} aura with a base duration of '''10''' seconds and scales with [[Melee#Combo Multiplier|Combo Multiplier]].
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Rending Crane}} and {{M|Noble Cadence}} ([[Conclave]] only) stance.
+*Innate {{Pol|Madurai}} polarity.
+
+{{Advantages|
+*Third highest [[status chance]] of all heavy blades, behind {{Weapon|Vitrica}} and {{Weapon|Gram Prime}}.
+}}
+
+{{Disadvantages|
+*Tied with {{Weapon|Vitrica}} for the second slowest [[attack speed]] of all heavy blades, after {{Weapon|Gram Prime}}.
+}}
+
+==Acquisition==
+The Zenistar is exclusive to the [[Daily Tribute]] system. It will become available every 200 days, beginning at day 100, until chosen as the Milestone reward. It comes with a free weapon slot and pre-installed [[Orokin Catalyst]].
+
+Additional blueprints can be bought from [[Cephalon Simaris]] for {{sc|100,000}}.
+
+{{BuildAutomatic|type=Weapon}}
+
+{{StanceTable|ComboType=Heavy}}
+
+==Mechanics==
+*Performing a heavy attack with the Zenistar equipped launches the disc a distance of 9 meters in the direction of the reticle. While the disc is a projectile, it will deal '''75''' {{D|Impact}} damage on contact and '''350''' {{D|Heat}} damage when it explodes. Once it lands, it projects an aura with a '''4''' meter radius, dealing '''50''' {{D|Heat}} damage with '''50%''' status chance every '''0.8''' seconds. For clarity's sake, the Zenistar itself will be referred to as the "blade".
+**The disc has a base duration of '''10''' seconds, which scales with the player's Combo Multiplier.
+**The disc can be retrieved prematurely by performing another heavy attack, or getting around '''100''' meters away from where it is planted.
+***Launching or retrieving the disc will alert enemies up to '''10''' meters away.
+**When launching the disc into water, the disc will not bounce and stop immediately.
+**Regardless of the rotational position of the disc, the flames will always be horizontal.
+**Elemental mods will affect the disc's damage as normal, creating combination elements such as {{D|Blast}} or {{D|Radiation}}. {{D|Heat}} damage is added last unless a Heat mod is added.
+***While the disc is out and if a heat mod is not added, but another element is, then the standard attacks will gain that element instead of the combination one, allowing for unique combinations such as {{D|Blast}} on AoE and {{D|Cold}} on standard attacks (along with the regular physical damage).
+*The following Mods/abilities/etc. '''will''' work with the disc:
+**The disc's radius '''is''' affected by {{M|Motus Impact}}, ({{M|Primed Reach|Primed}}) {{M|Reach}}, {{M|Spring-Loaded Blade}}, and Riven Mod Range Stats.
+***With {{M|Motus Impact}} equipped, the disc radius will dynamically change depending on whether the player is currently in the air. The disc does '''not''' need to be thrown while in mid-air to gain the mod's effect.
+***The aura of the disc can trigger {{M|Spring-Loaded Blade}} continuously up to x2, resetting the timer and increasing the radius of the disc, even while the disc is deployed.
+**Status chance of the aura '''is''' affected by status mods.
+**The [[attack speed]] of the disc's aura '''is''' affected by bonuses such as ({{M|Primed Fury|Primed}}) {{M|Fury}}, {{Arcane|Arcane Strike}}, {{A|Warcry}} , {{A|Speed}} and {{M|Berserker Fury}}. 
+***Disc kills will extend Warcry's duration if {{M|Eternal War}} is installed, but ''only'' for {{WF|Valkyr}} or, by virtue of Warcry being [[Helminth#Ability Replacement|subsumable]], the Warframe who cast it; allied buffs can only be maintained with regular blade attacks.
+**The disc '''will''' apply the damage multiplier from [[Stealth#Stealth Attack|Stealth Attacks]].
+***{{WF|Wukong}}'s {{A|Cloud Walker}} counts as being invisible from enemies, allowing the Zenistar to deal bonus damage.
+**Damage buffs such as {{WF|Rhino}}'s {{A|Roar}} will only affect the disc's damage for as long as the buff is active.
+**As with almost all projectiles, the disc '''will''' be attracted to {{WF|Mag}}'s {{A|Magnetize}} if the disc makes contact with the bubble at any time after it has been launched. The disc will then proceed to circle around the inside of the bubble's circumference until either Magnetize expires or the disc expires (whichever comes first), affecting enemies radially as the disc moves. It is currently unknown whether this is by design or an unintentional bug, and may only be seen visually by the casting Mag user.
+** The disc's aura effect '''will''' damage [[Nullifier Crewman]] bubbles.
+**{{WF|Ivara}}'s {{A|Navigator}} fully works with the disc, though due to it bouncing off objects it may be difficult to control in some areas.
+**{{WF|Mirage}}'s {{A|Hall of Mirrors}} holograms will throw 4 additional discs that will expire when the ability does. They are unaffected by [[Combo multiplier]] and only last the base duration of 10 seconds.
+**{{WF|Kullervo}}'s {{A|Wrathful Advance}} will apply on the disc's aura '''only if''' the ability was active at the moment the disc is thrown ; activating it after the disc was already thrown won't retroactively grant the buff. However, the buff will persist on the disc even after {{A|Wrathful Advance}}'s duration expires. 
+**{{WF|Sirius & Orion}} can have two disks active at once, each matching energy color.
+**<!--**Both {{M|Sacrificial Steel}} and {{M|True Steel}}'s extra critical chance on heavy attack will affect the aura. | with in-game statistic test, is seems false-->{{M|Blood Rush}} and the [[Set Mods#Gladiator Mod Set|Gladiator mod set]] buff will affect the disc’s aura.
+**The disc '''will''' trigger {{Arcane|Melee Vortex}} and pull enemies.
+*The following Mods/abilities/etc. '''will not''' work with the disc:
+**{{m|Killing Blow}} '''does not''' affect the damage of the disc’s contact, explosion and aura damage.
+**{{M|Condition Overload}} '''does not''' affect the disc's damage output.
+**{{M|Life Strike}} will only heal the player while the heavy attack animation is playing when retrieving the disk.
+**Recurring damage via the disc's aura is '''unable''' to proc {{M|Healing Return}}.
+** The disc '''will not''' count hits towards the combo meter and the disc's damage '''does not''' benefit from combo damage multiplier.
+**The initial 9 meter launch distance '''will not''' be affected by {{M|Jet Stream}}.
+**{{m|Beguiling Lantern}} bonus melee damage '''does not''' affect Zenistar's disc.
+**{{M|Dispatch Overdrive}} and the [[Set Mods#Carnis Mod Set|Carnis mod set]] effect will '''not''' be triggered by enemies being hit with the disk's aura, however it '''will''' be triggered if an enemy is hit by the disk itself.
+
+==Trivia== 
+* The Zenistar's name likely stems from ''[[wikipedia:zenith|zenith]]'', whereas its design is inspired by a [[wikipedia:Sundial|sundial]].
+* The Zenistar is the first weapon in Warframe that changes its damage distribution: in this case heat is replaced by physical damage of the same amount when the disc is discharged from the weapon. This allows the weapon to be made for pure elemental builds (with the disc on) or have the ability to deal physical damage (like heavy slash procs) with the disc ejected.
+* The console version of the Zenistar had different stats upon release, being identical to those of the {{Weapon|Scindo Prime}}'s (with innate {{D|Heat}} damage instead of physical damage), but couldn't launch its disc, similar to how the {{Weapon|Azima}} couldn't launch its magazine when it was released on consoles.
+*Despite being a heavy blade, the Zenistar is held like a hammer by the Warframe.
+*When the [[Dominion Heavy Blade Skin]] is equipped on the Zenistar, the blade will appear to be extremely large. Though technically a bug, positive player feedback resulted in this "feature" being retained.
+
+==Bugs==
+*Sometimes the disc stays inside the Zenistar even when the disc has launched. This is only a visual bug and does not affect the weapon in any case.
+*Enemies who are dealt bonus stealth damage when in {{A|Cloud Walker}} may ''continue'' to receive this bonus damage even when leaving the ability. This is especially true when it is built for blast damage, for whatever reason.
+*Sometimes attempting to throw the disc will result in the disc not being ejected from the handle. Swapping to a different weapon and then swapping back might fix the issue.
+*The disk will return after 100 seconds, even if it was thrown at x11 or x12 [[Combo]] multiplier, with 10 or 20 seconds left on the timer.
+*With any Range mods equipped the visual radius of the disk effect becomes bigger than the actual damaging radius.
+*Disk consumes approximately 1 stack of {{Arcane|Magus Aggress}} every 2 seconds if any enemies are in range of the disk effect. Punching air with the Zenistar will increase the stack consumption rate.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+DiscSwordCodex.png|Zenistar in Codex.
+</gallery>
+
+{{VideoGallery
+|{{YouTube|JYQrpLxz_tM|size=300px}}
+}}
+
+{{clr}}
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|29.3.1}}
+*Fixed Zenistar disc not expiring when in Titania’s Razorwing mode.
+
+{{ver|28}}
+*Added login milestone reward blueprints to Simaris' Offerings.
+**''Blueprints for each only appear in his Offerings if they have already been previously selected as login rewards.''
+
+{{ver|26.0}}<br />
+''Actual patch notes made a mistake on old follow through.''
+*Damage increased from 130 Heat to 298 (80 Impact, 68 Slash, and 150 Heat).
+*Range increased from 1 to 2.6.
+*Status Chance increased from 25% to 30%.
+*Critical Chance increased from 5% to 10%.
+*Slam Attack increased from 260 to 894.
+*Slide Attack increased from 260 to 596.
+*Zenistar's disc Duration is now a base of 10 seconds and is increased by the Combo Multiplier.
+*Parry Angle set to 55.
+*Follow Through decreased from 0.9 to 0.6.
+
+{{ver|23.3.1}}
+*Fixed the Zenistar disc not deploying when using the Mortier Heavy Blade Skin.
+
+{{ver|The Index Preview 4}}
+*Fixed (for real this time) attaining free health by channeling as enemies pass through the Zenistar’s charge disc with Life Strike equipped.
+
+{{ver|The Index Preview 1}}
+*Fixed attaining free health by channeling as enemies pass through the Zenistar's charge disc with Life Strike equipped.
+*Fixed Limbo being able to damage enemies while remaining invincible in the Rift with the Zenistar charge attack.
+
+{{ver|The Vacuum Within 3}}
+*Fixed the Zenistar's charge disc range FX not increasing in size when equipping melee range Mods (i.e. Primed Reach).
+
+{{ver|The Silver Grove 4}}
+*Added a buff-icon and timer for the Zenistar's disc projectile.
+*Fixed the Zenistar's disc returning to AFK/dead players.
+
+{{ver|Specters of the Rail 1.0}}
+*Added to the Daily Tribute rewards.
+}}
+{{Ver/Lu|26}}
+
+== See Also==
+*{{Weapon|Azima}}, the sidearm counterpart.
+*{{Weapon|Zenith}}, the primary counterpart.
+
+{{WeaponNav}}
+[[es:Zenistar]]
+[[fr:Zenistar]]
+[[Category:Heavy Blade]]
+[[Category:Daily Tribute Rewards]]
+[[Category:Tenno]]
+[[Category:Melee Weapons]]
+[[Category:Heat Damage]]
+[[Category:Weapons]]
+[[Category:Slash Damage Weapons]]
+[[Category:Update 19]]
+[[uk:Зеністар]]

@@ -1,0 +1,102 @@
+{{UpdateMe}}
+{{ArcaneBox}}
+'''Exodia Epidemic''' is an [[Arcane Enhancement]] for [[Zaw]]s that unleashes a wave of Infested energy that suspends enemies caught in the blast radius, generated from the melee ground slam performed immediately after a [[Maneuvers|bullet jump]] or [[Maneuvers|double jump]].
+
+== Effect ==
+{| class="emodtable"
+!Rank
+!Duration
+|-
+|0 || 1 sec
+|-
+|1 || 2 sec
+|-
+|2 || 3 sec
+|-
+|3 || 4 sec
+|}
+
+==Acquisition==
+*Exodia Epidemic is obtainable from limited-time events:
+**[[Operation: Plague Star]] sold Exodia Epidemic from [[Nakak]] for {{sc|5,000}} + {{cc|1,500}}, requiring '''Rank 2 - Defender''' with [[Operational Supply]].
+**The October 2020, 2022 and 2024 [[Nights of Naberus]] event sold Exodia Epidemic from [[Daughter]] for 50 {{Resource|Mother Token|Mother Tokens}} each.
+
+==Notes==
+*Perform a bullet jump ({{Keybind|Ctrl}} + {{Keybind|Spacebar}}) or double jump ({{Keybind|Spacebar}} x2) then perform a ground slam (look downward and press {{Keybind|E}}) to create a wave of energy that applies the {{A|Rhino Stomp}}  effect to enemies.
+**Enemies affected by this effect take increased damage from {{A|Rhino Charge}} but will not restore overguard while {{M|Reinforcing Stomp}} is equipped.
+**This effect cannot activate the effects of the [[Saxum Set]] mods or {{Arcane|Melee Afflictions}}.
+**This effect does not add damage to weapons via [[Condition Overload (Mechanic)]].
+**Unaffected by [[Ability Strength]], [[Archon Shard]] ability damage bonuses,
+*The wave is ~'''5''' meters wide, and will travel forward for ~'''31''' meters, going over terrain elevations and passing through enemies, dealing 10 {{D|Blast}} Damage, before exploding at the end and dealing {{D|Viral}} damage in a ~'''7''' meters radius. Enemies hit by the wave will tumble backward and be suspended in the air similarly to {{A|Rhino Stomp}} for a short time period, up to 4 seconds with a full set.
+**This wave has 0% status chance, 0% crit chance and 1x crit multiplier and is unaffected by most modded Damage increases.
+***Multiplicative damage scaling when [[Condition Overload (Mechanic)]] and [[Universal Weapon Bonuses|Universal Damage Bonuses]] are combined.
+***Flat bonuses like {{M|Proton Snap}}, {{A|Wrathful Advance}}, {{Arcane|Arcane Avenger}}, and {{Arcane|Arcane Crepuscular}} apply normally.
+***Damage does NOT scale with [[Combo]] count.
+**The explosion is treated as a melee attack dealing ~30% damage distributed as 100% {{D|Viral}} damage that copies your Zaw's, Crit Chance, Crit Damage and Status Chance.
+***Modded damage, status chance, crit chance, crit damage all apply appropriately.
+***Damage does NOT scale with [[Combo]] count or [[Condition Overload (Mechanic)]].
+***Elemental mods such as {{M|Shocking Touch}} and {{M|Proton Snap}} have no effect and cannot inflict their status effects.
+***Damage scales additively with [[Universal Weapon Bonuses|Universal Damage Bonuses]].
+***Explosion can trigger {{Arcane|Melee Duplicate}} and {{Arcane|Melee Influence}} but will not add combo count or trigger {{Arcane|Melee Animosity}}.
+*[[Trading]] Exodia Epidemic requires the trader to be [[Mastery Rank]] 11 or higher.
+
+==Trivia==
+*Installing this arcane (or Exodia Contagion) on a Zaw will give the Zaw's Links an infested visual appearance.
+*Unlike other Exodia Arcanes, Exodia Epidemic depicts a symbol, instead of [[Ostron Language|inscription]].
+*Prior to {{ver|24.6}}, Exodia Epidemic was purchasable as a blueprint with the following requirements to build:
+
+{{BuildRequire
+|buildcredits= 7,500
+|build1= Neurodes
+|build1amount=5
+|build2= Cetus Wisp
+|build2amount=10
+|build3= Plastids
+|build3amount=800
+|build4= Heart Nyth
+|build4amount=3
+|buildtime=1
+|buildrush=10
+|blueprint=500 + {{cc|1,500}}
+|blueprintunit=Standing
+}}
+
+==Media==
+<gallery hideaddbutton="true" widths="300" position="center" spacing="small">
+</onlyinclude>
+</gallery>
+{{VideoGallery
+|{{YouTube|QMf07V3k7Eo|size=300px}}
+|{{YouTube|32bmWuCBeEo|size=300px}}
+}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|36}}
+*Trading Legendary Arcanes now requires you to be Mastery Rank 11.
+**It’s important to note that only the player trading requires MR 11 and not the receiver.
+***We needed to address an issue with exploitative Legendary Arcanes farming and ban-evasion account creation used to trade Legendary Arcanes. Other options we experimented with had the risk of innocent players getting caught in the crossfire of the ban-evasion subjects. When we took a look at Trading stats we found that a very small number of players below Mastery Rank 10 trade Legendary Arcanes, and therefore decided to go this route. This is purely a means of deterring the bad actors and ensuring legitimate trading for players.
+
+{{ver|24.6}}
+*Replaced Arcane Blueprints with Arcanes in Operational Supply Offerings meaning that Arcanes no longer need to be built.
+**Players that had previous Arcane Blueprints in Inventory were crafted on patch login for free.
+
+{{ver|22.19}}
+*Fixed Exodia Epidemic ground slam wave counting towards finisher damage instead of the intended explosion damage.
+
+{{ver|22.4}}
+*Fixes towards Exodia Epidemic causing enemies to get knocked down twice and remain permanently inactive.
+
+{{ver|22.3.5}}
+*Fixed Zaws with Covert Lethality and Exodia Epidemic unintentionally insta killing enemies. Covert Lethality does not carry over to projectiles or other effects created by weapons, and only applies on Melee finishers.
+
+{{ver|22.3}}
+*Introduced
+}}
+{{ver/Lu|22.19}}
+{{ArcaneNav}}
+[[es:Epidemia de Exodia]]
+[[Category:Update 22]]
+[[Category:Syndicate Offerings]]
+[[Category:Arcane Enhancements]]
+[[uk:Екзодія «Епідемія»]]

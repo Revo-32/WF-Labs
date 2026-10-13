@@ -1,0 +1,55 @@
+{{Infobox
+| Box title = Life Steal
+| image = LifeStrikeMod.png
+| caption = Example of a mod that provides Life Steal
+}}
+'''Life Steal''' is a mechanic that causes a percent of damage dealt to enemies to heal players.
+
+==Mechanics==
+Life Steal heals the player based on a percentage of damage dealt when hitting enemies. The amount healed is based on damage dealt after any [[Damage Reduction]] an enemy possesses.
+
+==Sources of Life Steal==
+
+===Abilities===
+{{#tag:tabber|
+Harrow =
+{{:Penance}}
+{{!}}-{{!}}
+Lavos =
+{{:Ophidian Bite}}
+{{!}}-{{!}}
+Sevagoth = {{:Gloom}}
+{{!}}-{{!}}
+Sevagoth's Shadow =
+{{:Consume}}
+{{!}}-{{!}}
+}}
+
+===Weapons===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:CodaHema.png|link=Coda_Hema|alt=Coda Hema|{{Weapon|Coda Hema}}
+File:CodaHirudo.png|link=Coda_Hirudo|alt=Coda Hirudo|{{Weapon|Coda Hirudo}}
+File:Hema.png|link=Hema|alt=Hema|{{Weapon|Hema}}
+File:Hirudo.png|link=Hirudo|alt=Hirudo|{{Weapon|Hirudo}}
+File:SanctiMagistar.png|{{Weapon|Sancti Magistar}}
+</gallery>
+
+===Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+AmalgamDaikyuTargetAcquiredMod.png|link=Amalgam Daikyu Target Acquired|{{M|Amalgam Daikyu Target Acquired}}|alt=Amalgam Daikyu Target Acquired
+LifeStrikeMod.png|link=Life Strike|{{M|Life Strike}}|alt=Life Strike
+WindsofPurityMod.png|link=Winds of Purity|{{M|Winds of Purity}}|alt=Winds of Purity
+</gallery>
+
+===Arcanes===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ExodiaMight.png|link=Exodia Might|{{Arcane|Exodia Might}}|alt=Exodia Might
+</gallery>
+
+===Other===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+LohkSurge.png|link=Lohk Surge|[[Lohk Surge]]
+</gallery>
+
+{{MechNav}}
+[[Category:Mechanics]]

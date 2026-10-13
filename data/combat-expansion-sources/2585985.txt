@@ -1,0 +1,40 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|A Zaw Strike used for sword and staff style weapons.|In-game description}}
+
+The '''Ooltha''' is a {{D|Slash}}-focused Strike used in [[Zaw]] construction.
+
+{{BuildRequire
+|buildcredits= 5,000
+|build1= Iradite
+|build1amount=20
+|build2= Fish Scales
+|build2amount=25
+|build3= Tear Azurite
+|build3amount=10
+|build4= Pyrotic Alloy
+|build4amount=60
+|buildtime=1
+|buildrush=25
+|blueprint=1,000
+|blueprintunit=Standing
+}}
+
+==Acquisition==
+The Ooltha blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This Strike deals primarily {{D|Slash}} damage.
+
+* '''10%''' {{D|Impact}}
+* '''40%''' {{D|Puncture}}
+* '''50%''' {{D|Slash}}
+
+Compatible weapon types:
+*Sword
+*Staff
+
+{{ZawNav}}
+[[es:Ooltha]]
+[[Category:Update 22]]
+[[Category:Zaw]]
+[[uk:Улта]]

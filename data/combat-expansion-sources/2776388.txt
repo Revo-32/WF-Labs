@@ -1,0 +1,91 @@
+{{ArcaneBox}}
+{{Arcane|Melee Exposure}} is a Melee [[Arcane Enhancement]].
+
+When you cast an [[Abilities|ability]], you will apply {{D|Corrosive}} Damage to melee strikes.
+
+==Effect==
+{| class="emodtable"
+|-
+!Rank
+!{{D|Corrosive}} Damage Buff
+!Duration
+!Limit
+|-
+|0||10%
+|25s
+|240%
+|-
+|1||20%
+|25s
+|240%
+|-
+|2||30%
+|25s
+|240%
+|-
+|3||40%
+|25s
+|240%
+|-
+|4||50%
+|25s
+|240%
+|-
+|5||60%
+|25s
+|240%
+|-
+|}
+
+{{Acquisition|*Awarded for killing [[The Fragmented]] on [[Effervo]], [[Deimos]].
+*Awarded for killing [[Whisper]]s in [[Albrecht's Laboratories]] missions.
+*Awarded for killing [[Gruzzling]]s in non-[[Disruption]] Albrecht's Laboratories mission.
+*Can be bought from [[Bird 3]] of {{Faction|Cavia}} for {{sc|7,500}}, requiring '''Rank 4 - Scholar'''.}}
+
+==Notes==
+*[[Transference]] nor Operator abilities count as an Ability Cast for triggering this Arcane as {{ver|37}} undocumented change/fix. 
+*Bonus stacks share the same duration, which refresh upon each trigger, and all will expire at once when the duration ends.
+*Affects [[Exalted]] and Pseudo-Exalted weapons when equipped on them such as:
+**{{WF|Ash}}'s {{Weapon|Shadow Clones}}
+**{{WF|Atlas}}'s {{Weapon|Landslide Fists}}
+**{{WF|Baruuk}}'s {{Weapon|Desert Wind}}
+**{{WF|Excalibur}}'s {{Weapon|Exalted Blade}}
+**{{WF|Excalibur}}'s {{A|Slash Dash}}
+**{{WF|Gara}}'s {{Weapon|Shattered Lash}}
+**{{WF|Garuda}}'s {{Weapon|Garuda Talons}}
+**{{WF|Khora}}'s {{Weapon|Whipclaw}}
+**{{WF|Sevagoth}}'s {{Weapon|Shadow Claws}}
+**{{WF|Titania}}'s {{Weapon|Diwata}}
+**{{WF|Valkyr}}'s {{Weapon|Valkyr Talons}}
+**{{WF|Wukong}}'s {{Weapon|Iron Staff}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40}}
+*The following Arcane Collections are now available for Vosfor in Loid’s Arcane Dissolution: 
+**Cavia Arcane Collection (includes the Cavia and Ascension Arcanes) 
+***Melee Exposure
+
+{{ver|35.5}}
+;NEW ENEMY&#58; GRUZZLING
+Greedy creatures born from The Indifference, these little Murmur tricksters love to steal Conduit Dockets and other coveted items from Albrecht's Laboratory.
+
+In any other Deimos/Albrecht’s Laboratory missions (including Netracells), these avaricious beings contain within them one of the following:
+*1x Common Entrati Melee Arcane:
+**Melee Exposure
+
+;Netracell Drop Table Changes
+In the same vein as the above change to make Archon Shards more accessible, we’ve made the following changes to the Netracell Drop Tables. 
+
+'''1. Removed all non-Legendary Arcanes (as listed below)'''
+*Melee Exposure
+
+{{ver|35.0.3}}
+*Fixed Melee Exposure counting Transference as an Ability cast.  
+**Similarly to Arcane Power Ramp, the Arcane requires an ability be cast (Energy consumed) in order to trigger the Corrosive Damage buff on Melee strikes.
+
+{{ver|35}}
+*Introduced.
+}}
+
+{{ArcaneNav}}

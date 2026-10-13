@@ -1,0 +1,132 @@
+{{Infobox
+| Box title=Damage Vulnerability
+| image=DamageVulnerabilityHealthBar.png
+| caption=Health bar of a vulnerable Heavy Gunner
+}}
+When a player or enemy receives [[damage]] to their [[Hit Points]], that damage may be increased by sources of '''Damage Vulnerability'''. In other words, players may temporarily deal more damage than the listed [[Arsenal]] value due to [[debuffs]] applied to an enemy, making them receive more damage than usual.
+
+Enemies affected by Damage Vulnerability possess a cracked health bar with a thin, white border.
+
+==Mechanics==
+Damage Vulnerability effects multiply the damage that a target receives. In other words, they stack multiplicatively with damage bonuses and buffs, including other sources of Damage Vulnerability.
+*However some specific Damage Vulnerability effects stack additively (see [[#Notes]]).
+*Damage Vulnerability effects can be conditional such as applying to [[Melee]] attacks only or specific damage types.
+*Because Damage Vulnerability applies to the target and not the player, it does not "double dip" in [[Damage over Time]] calculations.
+
+Damage Vulnerability is not same as positive [[Damage Type Modifier]]s which is an innate property to enemy health and vary between [[Factions]].
+
+==Sources of Damage Vulnerability==
+===Abilities===
+<div class="tabber-borderless">{{#tag:tabber|
+Atlas={{:Petrify}}
+{{!}}-{{!}}
+Atomicycle={{:Atomi-Barrage}}
+{{!}}-{{!}}
+Baruuk={{:Lull}}
+{{!}}-{{!}}
+Bonewidow={{:Firing Line}}
+{{!}}-{{!}}
+Caliban={{:Sentient Wrath}}
+{{!}}-{{!}}
+Equinox={{:Rest & Rage}}
+{{!}}-{{!}}
+Gara={{:Mass Vitrify}}
+{{:Splinter Storm}}
+{{!}}-{{!}}
+Jade={{:Jade/Abilities/Passive}}
+{{!}}-{{!}}
+Khora={{:Strangledome}}
+{{!}}-{{!}}
+Mag={{:Magnetize}}
+{{!}}-{{!}}
+Narin={{:Hakchum}}
+{{!}}-{{!}}
+Nezha={{:Blazing Chakram}}
+{{!}}-{{!}}
+Nova={{:Molecular Prime}}
+{{!}}-{{!}}
+Oraxia={{:Webbed Embrace}}
+{{!}}-{{!}}
+Operator={{Focus|Contamination Wave}}
+{{Focus|Sling Stun}}
+{{!}}-{{!}}
+Qorvex={{:Containment Wall}}
+{{!}}-{{!}}
+Sevagoth={{:Reap}}{{:Death's Harvest}}
+{{!}}-{{!}}
+Titania={{:Razorwing}}
+{{!}}-{{!}}
+Uriel={{:Demonium}}
+{{!}}-{{!}}
+Valkyr={{:Paralysis}}
+{{!}}-{{!}}
+Xaku={{:The Vast Untime}}
+{{!}}-{{!}}
+Yareli={{:Sea Snares}}
+{{!}}-{{!}}
+}}
+
+===Weapons===
+<gallery>
+DualCodaTorxica.png|link=Dual Coda Torxica|{{Weapon|Dual Coda Torxica}} (only on subsequent shots from this weapon)|alt=Dual Coda Torxica (only on subsequent shots from this weapon)
+</gallery>
+
+===Mods===
+<gallery>
+PreyofDynarMod.png|link=Prey of Dynar|{{M|Prey of Dynar}}|alt=Prey of Dynar
+BeguilingLanternMod.png|link=Beguiling Lantern|{{M|Beguiling Lantern}}<br />(weapon damage only)|alt=Beguiling Lantern(weapon damage only)
+SavageSilenceMod.png|link=Savage Silence|{{M|Savage Silence}}<br />({{D|Finisher}} only)|alt=Savage Silence( Finisher only)
+RadiantFinishMod.png|link=Radiant Finish|{{M|Radiant Finish}}<br />({{D|Finisher}} only)|alt=Radiant Finish( Finisher only)
+</gallery>
+
+===Arcanes===
+<gallery>
+MagusAccelerant.png|link=Magus Accelerant|{{Arcane|Magus Accelerant}}<br />({{D|Heat}} only)|alt=Magus Accelerant( Heat only)
+MagusDestruct.png|link=Magus Destruct|{{Arcane|Magus Destruct}}<br />({{D|Puncture}} only)|alt=Magus Destruct( Puncture only)
+TheoremContagion.png|link=Theorem Contagion|{{Arcane|Theorem Contagion}}|alt=Theorem Contagion
+</gallery>
+
+===Other===
+<gallery>
+EssentialMagneticGlyph.png|link=Damage/Magnetic Damage|{{D|Magnetic}} procs<br />(shields and overguard only)<br />see {{D|Magnetic}} page for sources|alt=Magnetic procs(shields and overguard only)see  Magnetic page for sources
+EssentialViralGlyph.png|link=Damage/Viral Damage|{{D|Viral}} procs <br />(health only)<br />see {{D|Viral}} page for sources|alt=Viral procs (health only)see  Viral page for sources
+</gallery>
+
+==Notes==
+*Certain Damage Vulnerability effects stack additively instead of multiplicatively. The following effects stack additively with each other:
+**{{A|Atomi-Barrage}}
+**{{A|Containment Wall}}
+**{{A|Petrify}}
+**{{WF|Jade|Jade's}} Judgement
+**{{M|Prey of Dynar}}
+**{{Arcane|Magus Accelerant}}
+**{{Arcane|Magus Destruct}}
+**{{Arcane|Theorem Contagion}}
+*Certain Damage Vulnerability effects only apply to certain damage types:
+**{{A|The Vast Untime}} only applies to {{D|Void}} damage.
+**{{A|Hakchum}} only applies to {{D|Cold}} damage.
+**{{A|Lull}} only applies to {{D|Finisher}} damage.
+**{{Focus|Sling Stun}} only applies to {{D|Finisher}} damage.
+**{{M|Savage Silence}} only applies to {{D|Finisher}} damage.
+**{{M|Radiant Finish}} only applies to {{D|Finisher}} damage.
+**{{Arcane|Magus Accelerant}} only applies to {{D|Heat}} damage.
+**{{Arcane|Magus Destruct}} only applies to {{D|Puncture}} damage.
+**{{Arcane|Theorem Contagion}} only applies to the damage type of the generated orb.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37}}
+*The following abilities now apply their Damage Vulnerability against enemy Shields and Overguard (previously they only applied to enemy Health): 
+**Xaku’s Vast Untime
+**Mag’s Magnetize
+**Titania’s Beguiling Lantern Augment
+**Bonewidow’s Firing Line
+**Gara’s Mass Vitrify
+**Gara’s Splinter Storm
+**Nezha’s Blazing Chakram
+**Nova’s Molecular Prime
+}}
+
+{{MechNav}}
+[[Category:Mechanics]]
+[[Category:Damage 2.0]]

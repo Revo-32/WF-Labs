@@ -1,0 +1,74 @@
+{{ModBox}}
+'''Amalgam Argonak Metal Auger''' is an Amalgam [[Weapon Augments]] mod exclusive to the {{Weapon|Argonak}}. It provides increased [[Punch Through]], [[armor]] stripping when using a [[:Category:Dagger|dagger]], and allows the Argonak's enemy highlighting to work through walls.
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! [[Punch Through]]
+! Armor Reduction
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || +0.5m || +1 || 6
+|-
+| 1 || +1m || +2 || 7
+|-
+| 2 || +1.5m || +3 || 8
+|-
+| 3 || +2m || +4 || 9
+|-
+| 4 || +2.5m || +5 || 10
+|-
+| 5 || +3m || +6 || 11
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+==Notes==
+*The special effect is only accessible while aiming Argonak and has a range of 100m.
+**Only enemies that are near your aiming reticle will be highlighted.
+**Enemies will be highlighted through walls even if you do not have enough punchthrough to hit them.
+*Armor reduction works like {{M|Shattering Impact}} and stacks additively with it.
+**All damage effects from daggers, including [[Status]] damage ({{D|Slash}}, {{D|Heat}}, {{D|Toxin}}, {{D|Electricity}}, {{D|Gas}} and {{D|Blast}} procs) will reduce armor.
+***{{D|Electricity}}'s chain damage, {{D|Gas}}'s damage cloud and {{D|Blast}}'s AoE explosion will trigger the armor reduction, allowing them to remove armor on multiple targets.
+***Damage from status effect transferred via {{Arcane|Melee Influence}} will trigger the armor reduction.
+*Not [[Trading|tradeable]].
+
+==Tips==
+*The {{M|Pointed Wind}} stance contains the two highest hit/sec combos of dagger stances (~3.2 hits/sec), however lacks the slashing of {{M|Stinging Thorn}} (~2.7 h/s on forward combo, ~2.5 h/s on neutral).
+
+==See also==
+*{{M|Metal Auger}}, the normal version of this mod.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|28}}
+*Fixed Amalgam Argonak Metal Auger FX Energy color covering the entire enemy in a solid color. It now envelopes the enemy is a ghostly FX!
+
+{{ver|25.4.1}}
+*Fixed Amalgam Argonak not applying to Dagger-type Zaws.
+
+{{ver|25.2.4}}
+*Fixed the Amalgam Argonak Metal Auger enemy highlighting not functioning if you aim at Gara's Mass Vitrify wall.
+
+{{ver|25.2.1}}
+*Removed the "+" from Amalgam Argonak Metal Auger Mod in "Reduces Armor by +X".
+
+{{ver|25.0.8}}
+*Fixed the Amalgam Argonak Metal Auger Mod not removing Armor with Dagger attacks.﻿
+
+{{ver|25.0}}
+*Introduced.
+}}
+{{AugmentedMods}}
+[[es:Taladro metálico de Argonak Amalgama]]
+[[fr:Pointe Métallique Argonak Amalgame]]
+[[ru:Металлический Бур Аргонака Амальгама]]
+[[Category:Update 25]]
+[[Category:Amalgam Mods]]
+[[Category:Augment Mods]]
+[[Category:Rifle Mods]]
+[[Category:Untransmutable Mods]]
+[[Category:Armor Reduction]]
+[[uk:Амальгамний металевий бур для Арґонака]]

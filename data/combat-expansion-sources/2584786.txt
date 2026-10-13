@@ -1,0 +1,41 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|A Zaw Strike used for rapier and polearm style weapons. Its light weight increases speed at the cost of damage.|In-game description}}
+
+The '''Dehtat''' is a {{D|Puncture}}-focused Strike used in [[Zaw]] construction.
+
+{{BuildRequire
+|buildcredits = 5,000
+|build1 = Maprico
+|build1amount = 2
+|build2 = Fish Scales
+|build2amount = 45
+|build3 = Marquise Veridos
+|build3amount = 8
+|build4 = Fersteel Alloy
+|build4amount = 40
+|buildtime = 1
+|buildrush = 25
+|blueprint = 1,000
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+The Dehtat blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This strike primarily deals {{D|Puncture}} damage
+
+* '''10%''' {{D|Impact}}
+* '''50%''' {{D|Puncture}}
+* '''40%''' {{D|Slash}}
+
+Compatible weapon types:
+*Rapier
+*Polearm
+
+{{ZawNav}}
+[[es:Dehtat]]
+[[fr:Dehtat]]
+[[Category:Update 22]]
+[[Category:Zaw]]
+[[uk:Дегтат]]

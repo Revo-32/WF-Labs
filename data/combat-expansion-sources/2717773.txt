@@ -1,0 +1,29 @@
+{{Infobox
+|Box title=Bayonet
+|image=Vinquibus.png
+}}
+'''Bayonet''' is a subclass of combined [[Primary]] and [[Melee]] weapons. It was first introduced with the {{Weapon|Vinquibus (Melee)}} in {{ver|41}}.
+
+==Characteristics==
+*Equipping a Bayonet will occupy both primary and melee weapon slots.
+**[[Affinity]] and [[Mastery Rank]] are shared between forms.
+**Primary and melee forms are modded separately, using [[Primary Mods]] and [[Melee Mods]] respectively.
+***[[Riven Mod]]s for primary and melee forms are generated separately.
+**{{Resource|Orokin Catalyst}}, [[Focus Lens]], {{Resource|Exilus Weapon Adapter}}, and {{Resource|Forma}}/[[Polarization]] are applied to both forms.
+**Does not appear as an available loadout option in [[Deep Archimedea]]/[[Temporal Archimedea]] or [[Duviri]].
+
+{{MeleeCategory|Bayonet}}
+
+==Stanceless Combos==
+{{StanceTable|Header=false}}
+
+==Trivia==
+*A [[Wikipedia:Bayonet|Bayonet]] is a bladed weapon attached to the barrel of a rifle.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|41}}
+*Introduced.}}
+
+{{WeaponNav}}
+[[Category:Update 41]]

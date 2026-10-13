@@ -1,0 +1,81 @@
+{{Navigation|Shattered Lash|Splinter Storm|Spectrorage|Mass Vitrify}}
+<onlyinclude>{{AbilityU10.3
+| name = Shattered Lash
+| gameimage = GaraShatteredLash.png
+| cardimage = ShatteredLash.png
+| hotkey = 1
+| energy = 25
+| description = Lash out with stream of shattered glass, or hold for an arcing strike. Stats are boosted by the equipped melee weapon's mods.
+| strength = 250 / 300 / 350 / 400 ({{D|Puncture}} and {{D|Slash}} damage)
+| range = 7 / 8 / 10 / 12 m (range)
+| duration = N/A
+| misc = 225° (sweep arc)<br />1.75 m (blade radius)
+| cardonly = {{{1|}}}
+| info = *Gara expends {{Stat|Ability Efficiency|icon=only}}'''25''' [[Energy]] to thrust her glass longsword with {{Stat|Ability Range|icon=only}}'''7 / 8 / 10 / 12''' meters range toward the aiming reticle, dealing {{Stat|Ability Strength|icon=only}}'''250 / 300 / 350 / 400''' {{D|Puncture}} damage and knocking back all enemies within '''<u>1.75</u>''' meters radius from the blade. Holding the ability key instead sweeps the glass longsword from left to right in a '''<u>225</u>'''° horizontal arc in front of Gara, dealing {{Stat|Ability Strength|icon=only}}'''250 / 300 / 350 / 400''' {{D|Slash}} damage to all enemies within reach and bashing them away in a {{D|Ragdoll}} state in the direction of the sweep.
+**Shattered Lash has innate [[punch through]], bypassing entities, walls, and obstacles in the environment.
+**Sweep is not perfectly aligned in a straight line and is similar to a wave-like pattern, allowing Shattered Lash to hit enemies on a slightly higher terrain elevation than Gara past ~'''90°'''.
+**Ability Strength is additive and multiplicative to base damage (e.g., {{M|Pressure Point}}, {{Arcane|Arcane Fury}}).
+**Shattered Lash has <u>'''20%'''</u> [[critical chance]], <u>'''2x'''</u> [[critical multiplier]], and <u>'''30%'''</u> [[status chance]].
+**Shattered Lash has a moddable Pseudo-[[Exalted Weapon]], '''{{Weapon|Shattered Lash}}''', which does not provide an actual equippable weapon but can be modded and slotted with [[Arcane Enhancement]]s to boost the ability's performance.
+***Cannot perform [[Melee#Blocking|blocking]] or [[Melee#Heavy Attack|heavy attacks]] and as such cannot equip related mods (e.g., {{M|Parry}}, {{M|Reflex Coil}}, {{M|Mentor's Legacy}}, {{Arcane|Melee Animosity}}) and does not have an Exilus Slot.
+****Cannot benefit from {{M|Carnis Mandible}}'s heavy attack set effect.
+***Speed is scaled by [[Cast Speed]], rather than [[Attack Speed]], and as such cannot equip {{M|Fury}}. 
+****This means that {{M|Spoiled Strike}} provides no downside.
+***Cannot perform [[Finisher]]s and as such cannot equip {{M|Finishing Touch}} and {{Arcane|Melee Crescendo}}.
+***[[Riven Mod]]s are '''not''' generated for Shattered Lash.
+**Shattered Lash can be recast within a '''5''' second window to perform a repeating combo chain, granting 20 [[Melee Combo#Ability Combo Counter|Ability Combo Counter]] points. Shattered Lash gains <u>'''1x'''</u> additional damage per combo multiplier, up to '''<u>12x</u>''' damage at 12x combo.
+***Ability Combo is functionally equivalent to Melee Combo and as such benefits from [[Melee Combo#Combo Duration|Combo Duration]] (e.g., {{M|Body Count}}, {{Arcane|Primary Dexterity}}), [[Melee Combo#Additional Combo Count Chance|Additional Combo Count Chance]] (e.g., {{M|Quickening}}, {{M|True Punishment}}, {{M|Relentless Combination}}) and [[Melee Combo#Initial Combo|Initial Combo]] (e.g., {{M|Corrupt Charge}}, {{M|Galvanized Reflex}}). It is also affected by [[Melee Combo#Combo Decay|Combo Decay]] from {{Focus|Naramon}}'s {{Focus|Power Spike}}.
+**Because Shattered Lash is counted as a melee strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+*Enemies crystallized by {{A|Mass Vitrify}} are '''not''' affected by Shattered Lash's ragdoll and knockback effects.
+*Shattered Lash's tap cast is a [[One-Handed Action|one-handed action]] that allows Gara to fire and reload weapons, as well as move and perform [[maneuvers]] during cast.
+**Hold cast is a two-handed animation that stops Gara's movement and other actions during cast.
+*Can be cast while in midair.
+*While ability is silent, it does not activate [[stealth]] multiplier.
+*The glass longsword is visually summoned from Gara's left palm and does not possess a grip. Glass shards will constantly break away and fall from the blade as a visual effect, while the longsword fades into and out of existence for the duration of the thrust or sweep. 
+**The longsword and its particle effects are affected by Gara's chosen Warframe energy color.
+*Shattered Lash can damage enemies across the [[Rift Plane]].
+*Shattered Lash is affected by and can trigger [[Arcane Enhancement#Warframe Arcanes|Warframe Arcanes]].
+| interactions = 
+* Gara's [[Gara/Abilities#Passive|Passive]] allows casting abilities to have a <u>'''15%'''</u> chance to {{D|Blind}} enemies within <u>'''12'''</u> meters for <u>'''10'''</u> seconds, exposing them to [[Finisher|Melee Finisher]] attacks. Blind chance increases by <u>'''20%'''</u> until the blind triggers.
+* Casting Shattered Lash on Gara's own {{A|Mass Vitrify}} glass barrier causes it to break and explode outward, dealing damage to enemies outside the barrier.
+** Damage type of the glass barrier explosion is determined by Shattered Lash's thrust or sweep used to shatter the barrier.
+** Explosion damage is affected by base damage mods (e.g. {{M|Pressure Point}}, {{M|Spoiled Strike}}) and elemental damage mods (e.g. {{M|North Wind}}, {{Arcane|Melee Exposure}}) and combo multiplier on {{A|Shattered Lash}}. Explosion damage is not affected by critical chance or status chance mods as it cannot crit or proc status effects.
+** If {{A|Splinter Storm}} is active and is within the explosion radius of the barrier, '''<u>50%</u>''' of the barrier explosion damage is permanently added to Splinter Storm's damage per second until its duration expires.
+** Shattered Lash also bypasses Gara's Mass Vitrify barrier, dealing damage from both the sword and the explosion to enemies struck.
+| augment = [[File:ShatteredStormMod.png|200px|left]]
+{{main|Shattered Storm}}
+{{#lst:Shattered Storm|intro}}
+{{#lsth:Shattered Storm|Stats}}
+{{clr}}
+| tips = *Tap {{Keybind|1}} for quick cast to thrust the glass sword where you aim, puncturing through all enemies in a line to inflict {{D|Puncture}} damage, knockdown and knockback. Thrust allows Gara to keep on the move, use [[Maneuvers]], as well as fire and reload weapons.
+*Hold the button for hold cast to sweep the sword, slashing all enemies in an arc to inflict {{D|Slash}} damage, body ragdoll and knockback. However, sweep locks Gara in place during cast.
+**Sweep is animation-locked and cannot be aimed upward or downward. However, because the sweep is in a wave-like pattern, it can hit enemies on a lower or higher terrain elevation than Gara depending on the troughs and crests of the wave. You can familiarize yourself with this pattern in [[Captura]] mode using the advance time function.
+**If enemies are standing on a higher elevation, use Aim Glide (default hold {{Keybind|RMB}} while in midair) and time your sweep to hit them with your blade.
+*Modify your melee weapon with base damage, elemental damage, and {{D|Puncture}} and {{D|Slash}} damage to maximize potential damage for Shattered Lash. Depending on your preferred attack method (thrust or sweep) and enemies you will face, you can specialize in {{D|Puncture}} or {{D|Slash}} damage mods to take advantage of damage type bonuses against different factions.
+**Base damage, elemental damage, and physical damage from melee mods do affect Shattered Lash, further amplifying its damage potential.
+*Use {{A|Splinter Storm}} on an enemy target to amplify Shattered Lash's damage on it.
+*Cast {{A|Spectrorage}} on a cluster of enemies or in the enemy's path to cause them to gather inside the carousel, then use Shattered Lash to thrust at specific targets in a line or sweep the entire group away.
+*Crystallize enemies using {{A|Mass Vitrify}} then attack them with Shattered Lash for increased damage.
+**Damage multipliers from Mass Vitrify and Splinter Storm can stack to produce even higher damage output for Shattered Lash.
+*Create a Mass Vitrify barrier and strike it down with Shattered Lash, destroying it in an explosion of glass fragments that damage enemies on the outside of the barrier. Thrust or sweep determines the physical damage type the explosion damage will adopt, allowing you to adjust its damage potential against different factions.
+<noinclude>
+| max = {{WFmax|main|gara1}}
+</noinclude>|
+}}
+
+</onlyinclude>
+
+==See Also==
+*{{WF|Gara}}
+__NOTOC__
+</noinclude>
+[[es:Latigazo quebrantado]]
+[[fr:Pique Cassante]]
+[[Category:Warframe Abilities]]
+[[Category:One-Handed Abilities]]
+[[Category:Gara]]
+[[Category:Update 22]]
+[[Category:Ability Weapons]]
+[[Category:Puncture Damage]]
+[[Category:Slash Damage]]
+[[uk:Осколковий випад]]

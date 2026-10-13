@@ -1,0 +1,337 @@
+{{ArcaneBox|name=Arcane Universal Fallout}}
+'''Arcane Universal Fallout''' is an [[Arcane Enhancement]] for the [[Warframe]] that gives enemies a chance to drop a large [[Pickups#Universal Orb|Universal Orb]] per {{D|Radiation}} Status Effect on death.
+
+==Effect==
+{| class="emodtable"
+|-
+! Rank
+!Chance per {{D|Radiation}} status
+!Chance (10 {{D|Radiation}} stacks)
+!Arcane Revives
+|-
+| 0 || 1%
+|10%
+|
+|-
+| 1 || 2%
+|20%
+|
+|-
+| 2 || 3%
+|30%
+|
+|-
+| 3 || 4%
+|40%
+| +1
+|-
+| 4 || 5%
+|50%
+| +1
+|-
+| 5 || 6%
+|60%
+| +1
+|-
+|}
+
+{{Acquisition|*A single copy can be bought each week from [[Kaya Velasco]] in [[Höllvania Central Mall]] for 5 {{resource|Pix Chip}}.
+*As a random reward from [[Temporal Archimedea]].}}
+
+==Notes==
+*Applying a {{D|Radiation}} status effect on an enemy '''<u>permanently</u>''' increases the chance for an enemy to drop a [[Pickups#Universal Orb|Universal Orb]] when killed.
+**Chance is capped at '''60%''' for all ranks of the arcane.
+**Drop chance increase persists after {{D|Radiation}} status effect wears off; No {{D|Radiation}} status effect need be present when an affected enemy is killed.
+*Universal orbs created from this Arcane give '''50''' health and '''50''' energy.
+*The following abilities can apply the {{D|Radiation}} status effects:
+
+{| class="wikitable sortable" width="100%"
+|-
+! Warframe
+! Ability
+! Notes
+|-
+| rowspan=1 | {{WF|Ash}}
+| {{A|Blade Storm}}
+|
+*Only when {{Weapon|Shadow Clones}} are modded for {{D|Radiation}} damage.
+|-
+| rowspan=2 |{{WF|Atlas}}
+| {{A|Landslide}}
+|
+*Only when {{Weapon|Landslide Fists}} are modded for {{D|Radiation}} damage.
+|-
+| {{A|Rumblers}}
+|
+*Only when {{M|Rumbled}} is used and modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 |{{WF|Baruuk}}
+| {{A|Serene Storm}}
+|
+*Only when {{Weapon|Desert Wind}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Cyte-09}}
+| {{A|Neutralize}}
+|
+*Only when {{Weapon|Neutralizer}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Dante}}
+| {{A|Noctua}}
+|
+*Only when {{Weapon|Noctua}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=2 | {{WF|Excalibur}}
+| {{A|Slash Dash}}
+|
+*Only when {{Weapon|Exalted Blade}} is modded for {{D|Radiation}} damage.
+|-
+| {{A|Exalted Blade}}
+|
+*Only when {{Weapon|Exalted Blade}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Gara}}
+| {{A|Shattered Lash}}
+|
+*Only when {{Weapon|Shattered Lash}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Hildryn}}
+| {{A|Balefire}}
+|
+*Only when {{Weapon|Balefire Charger}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Inaros}}
+| {{A|Sandstorm}}
+|
+*Requires {{M|Elemental Sandstorm}} and your melee to be modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Ivara}}
+| {{A|Artemis Bow}}
+|
+*Only when {{Weapon|Artemis Bow}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Jade}}
+| {{A|Glory on High}}
+|
+*Only when {{Weapon|Glory}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Khora}}
+| {{A|Whipclaw}}
+|
+*Only when {{Weapon|Whipclaw}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=2 | {{WF|Koumei}}
+| {{A|Kumihimo}}
+|
+|-
+| {{A|Bunraku}}
+|
+|-
+| rowspan=4 | {{WF|Lavos}}
+| {{A|Ophidian Bite}}
+|
+*Requires {{D|Radiation}} to be infused with his passive.
+|-
+| {{A|Vial Rush}}
+|
+*Requires {{D|Radiation}} to be infused with his passive.
+|-
+| {{A|Transmutation Probe}}
+|
+*Requires {{D|Radiation}} to be infused with his passive.
+|-
+| {{A|Catalyze}}
+|
+*Requires {{D|Radiation}} to be infused with his passive.
+|-
+| {{WF|Loki}}
+| {{A|Decoy}}
+|
+*Requires {{M|Damage Decoy}}
+|-
+| rowspan=1 | {{WF|Mesa}}
+| {{A|Peacemaker}}
+|
+*Only when {{Weapon|Regulators}} are modded for {{D|Radiation}} damage.
+|-
+| rowspan=2 | {{WF|Nyx}}
+| {{A|Psychic Bolts}}
+|
+*Requires {{M|Pacifying Bolts}}.
+|-
+| {{A|Chaos}}
+|
+|-
+| rowspan=3 | {{WF|Oberon}}
+| {{A|Smite}}
+|
+|-
+| {{A|Hallowed Ground}}
+|
+|-
+| {{A|Reckoning}}
+|
+|-
+| rowspan=4 | {{WF|Qorvex}}
+| {{A|Chyrinka Pillar}}
+|
+|-
+| {{A|Containment Wall}}
+|
+|-
+| {{A|Disometric Guard}}
+|
+|-
+| {{A|Crucible Blast}}
+|
+|-
+| rowspan=1 | {{WF|Sevagoth}}
+| {{A|Exalted Shadow}}
+|
+*Only when {{Weapon|Shadow Claws}} are modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Temple}}
+| {{A|Exalted Solo}}
+|
+*Only when {{Weapon|Lizzie}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Titania}}
+| {{A|Razorwing}}
+|
+*Only when {{Weapon|Dex Pixia}} or {{Weapon|Diwata}} are modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Valkyr}}
+| {{A|Hysteria}}
+|
+*Only when {{Weapon|Valkyr Talons}} are modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Voruna}}
+| {{A|Fangs of Raksh}}
+|
+|-
+| rowspan=2 | {{WF|Wisp}}
+| {{A|Breach Surge}}
+|
+|-
+| {{A|Sol Gate}}
+|
+|-
+| rowspan=2 | {{WF|Wukong}}
+| {{A|Celestial Twin}}
+|
+*Only when using {{Weapon|Iron Staff}} modded for {{D|Radiation}} damage.
+|-
+| {{A|Primal Fury}}
+|
+*Only when {{Weapon|Iron Staff}} is modded for {{D|Radiation}} damage.
+|-
+| rowspan=1 | {{WF|Zephyr}}
+| {{A|Tornado}}
+|
+*Only when tornadoes have adapted to {{D|Radiation}} damage.
+|-
+| rowspan=1 | [[Helminth]]
+| {{A|Marked For Death}}
+|
+|-
+| rowspan=1 | [[Robotic]]
+| {{M|Coolant Leak}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| rowspan=7 | [[Sentinel]]
+| {{M|Self Destruct}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Vaporize}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Electro Pulse}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Arc Coil}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Fatal Attraction}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Crowd Dispersion}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Molecular Conversion}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| rowspan=7 | [[Hound (Companion)|Hound]]
+| {{M|Repo Audit}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Equilibrium Audit}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Null Audit}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Reflex Denial}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Focused Prospectus}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Synergized Prospectus}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Aerial Prospectus}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| rowspan=4 | [[MOA (Companion)|MOA]]
+| {{M|Shockwave Actuators}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Anti-Grav Grenade}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Blast Shield}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+| {{M|Whiplash Mine}}
+|
+*Requires {{M|Manifold Bond}} and to mod your robotic companion's weapon for {{D|Radiation}} damage.
+|-
+|}
+*[[Trading]] Arcane Universal Fallout requires the trader to be [[Mastery Rank]] 11 or higher.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|40}}
+*The following Arcane Collections are now available for Vosfor in Loid’s Arcane Dissolution: 
+**Hӧllvania Arcane Collection (includes the Hex and Temporal Archimedea Arcanes) 
+***Arcane Universal Fallout 
+*(Undocumented) Rarity increased to Legendary.
+
+{{ver|39.0.1}}
+*Fixed radiation Status Effects from Nyx's Chaos not being counted for Arcane Universal Fallout.
+
+{{ver|38.5.2}}
+*Arcane Universal Fallout now applies to Exalted Weapon status effects — notably Mesa's Peacemaker.
+
+{{ver|38.5}}
+*Introduced.
+}}
+
+{{ArcaneNav}}

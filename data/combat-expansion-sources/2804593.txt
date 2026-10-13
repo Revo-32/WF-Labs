@@ -1,0 +1,333 @@
+{{Infobox
+| Box title = Toxin Damage
+| image = ToxinModBundleIcon.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Toxin_b.png|class=icon]] [[File:Toxin_w.png|class=icon]]
+}}
+{{Quote|'''DAMAGE EFFICACY'''<br/>
+'''{{text|green|x1.5}}''' damage to Narmer
+
+'''STATUS EFFECT'''<br/>
+{{D|Toxin}} allows damage to bypass enemy Shields and deal damage directly to their Health over a short duration.|In-game Description}}
+
+'''{{D|Toxin}} Damage''' is one of the four primary elemental damage types. Toxin deals increased damage to {{D|Narmer}}, and ignores enemy and player [[Shield|Shield]]s, but not [[Overguard|Overguard]]. Its [[Status Effect|Status Effect]] inflicts a poisonous [[DoT]].
+
+==[[Status Effect|Status Effect]]s==
+===General===
+The status effect of {{D|Toxin}} damage is '''Poison'''. It applies a {{Tooltip|DoT|Damage over Time}} effect after a '''1''' second delay, dealing a tick of damage every second for '''6''' seconds. Each tick deals {{D|Toxin}} damage equal to:
+:<math>
+{
+\begin{aligned}
+\text{Toxin Proc Damage per Tick} &= 0.5 \times \text{Modified Base Damage} \\
+&\qquad \times (1 + \text{Toxin Damage Bonuses}) \\
+&\qquad \times (1 + \text{Status Damage Bonuses}) \\
+&\qquad \times (1 + \text{Faction Damage Bonuses})
+\end{aligned}
+}
+</math>
+
+Where '''Modified Base Damage''' is calculated as:
+:<math>
+{
+\begin{aligned}
+\text{Modified Base Damage} &= \text{Un-modded Weapon Damage} \\
+&\qquad \times (1 + \text{Base Damage Bonuses}) \\
+&\qquad \times (1 + \text{Faction Damage Bonuses}) \\
+&\qquad \times \text{Additional Multipliers}
+\end{aligned}
+}
+</math>
+* Base Damage Bonuses include mods like {{M|Serration}} and abilities like {{A|Vex Armor|Vex Armor's}} Fury buff.
+* Faction Damage bonuses include mods like {{M|Bane of Grineer}} and {{WF|Rhino|Rhino's}} {{A|Roar}}.
+* Status Damage Bonuses include mods like {{M|Rifle Elementalist}} and the "Toxin Status Effects" option from {{Resource|Emerald Archon Shard|Emerald Archon Shards}}.
+* Additional Multipliers include modded critical multiplier on [[Critical Hit]], [[Enemy Body Parts]] multipliers, [[Damage Type Modifier]]s, and [[Damage Vulnerability]], which all stack multiplicatively with each other.
+* Note the lack of elemental bonuses in the Modified Base Damage formula. Mods that add {{D|Toxin}} damage only apply to the '''Toxin Proc Damage per Tick''' formula, and a mod like {{M|Magnetic Capacity}} has no effect on Toxin DoT damage at all.
+
+To give a concrete example, a non-critical body shot that procs {{D|Toxin}} against a {{E|Runner}} from a weapon that has an innate 100 {{D|Puncture}} damage and that's modded with {{M|Serration}}, {{M|Infected Clip}}, {{M|Rifle Elementalist}}, and {{M|Bane of Infested}} will be cause DoT ticks that deal:
+:Modified Base Damage = {{Math|100 {{mul}} (1 + 1.65) {{mul}} (1 + 0.3)|t=y|bf-a=y}}
+:Toxin DoT Multiplier = {{Math|(1 + 0.9) {{mul}} (1 + 0.9) {{mul}} (1 + 0.3)|t=y|bf-a=y|m=y}}
+:'''Tick Damage''' = {{Math|0.5 {{mul}} 344.5 {{mul}} 4.693|t = y|bf-a=y}}
+
+As can be seen in the above calculations for tick damage, Faction Damage is applied twice to Toxin ticks, making their effective bonus to tick damage equal to (1 + Faction Bonus)^2. Which is +69% for the 1.3x Faction Damage mods, and +140.25% for the 1.55x Primed Faction Damage mods.
+
+Multiple instances of the Toxin status effect can stack on the same target, with each instance having its own timer. To preserve game performance, a maximum of 10 tick numbers are shown at once.
+
+Enemies afflicted by a {{D|Toxin}} proc have a green sickly substance leaking from their bodies.
+{| class="wikitable"
+|+ Toxin tick damage and proc duration
+|-
+! Time from initial proc
+| 0s || 1s || 2s || 3s || 4s || 5s || 6s || 7s
+|-
+! Tick damage occured?
+| ✗ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✗
+|-
+|}
+
+===Railjack===
+{{Quote|Railjack <DT_POISON>Toxin Damage results in an Intoxicate Status Effect which confuses enemy ships to attack the nearest target, including allies.|In-Game Description}}
+The status effect of {{D|Toxin}} damage against [[Railjack|Railjack]] space enemies is '''Intoxicate''', changing the faction of the afflicted target for '''12''' seconds, allowing for '''[[Confusion|friendly fire]]''' between it and normally allied units, with subsequent procs refreshing the duration.
+
+==Elemental Combinations==
+*{{D|Toxin}} + {{D|Heat}} = {{D|Gas}}
+*{{D|Toxin}} + {{D|Cold}} = {{D|Viral}}
+*{{D|Toxin}} + {{D|Electricity}} = {{D|Corrosive}}
+
+==Toxin Sources==
+{{Main|:Category:Toxin Damage}}
+
+===Weapons===
+{{Main|:Category:Toxin Damage Weapons}}
+{{DamageTypeTable|Toxin}}
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Bubonico.png|link=Bubonico|{{Weapon|Bubonico}}<br />(Primary Fire)|alt=Bubonico(Primary Fire)
+MutalistCernos.png|link=Mutalist Cernos|{{Weapon|Mutalist Cernos}}<br />(Toxic Cloud)|alt=Mutalist Cernos(Toxic Cloud)
+DualToxocyst.png|link=Dual Toxocyst|{{Weapon|Dual Toxocyst}}<br>(adds {{D|Toxin}} damage to attacks upon headshot)|alt=Dual Toxocyst(adds  Toxin damage to attacks upon headshot)
+Hystrix.png|link=Hystrix|{{Weapon|Hystrix}}<br>(Poison quill, proc only)|alt=Hystrix(Poison quill, proc only)
+DarkSword.png|link=Dark Sword|{{Weapon|Dark Sword}}<br />(Slam Radial Damage)|alt=Dark Sword(Slam Radial Damage)
+Lesion.png|link=Lesion|{{Weapon|Lesion}}<br>(from buff triggered by a status proc)|alt=Lesion(from buff triggered by a status proc)
+Mios.png|link=Mios|{{Weapon|Mios}}<br />(Slam Radial Damage)|alt=Mios(Slam Radial Damage)
+Pathocyst.png|link=Pathocyst|{{Weapon|Pathocyst}}<br />(Slam Radial Damage)|alt=Pathocyst(Slam Radial Damage)
+Scoliac.png|link=Scoliac|{{Weapon|Scoliac}}<br />(Slam Radial Damage)|alt=Scoliac(Slam Radial Damage)
+</gallery>
+Do also note that [[Adversary#Adversary Weapons|adversary weapons]] such as the {{Weapon|Kuva Nukor}} may come with a Toxin damage benefit of up to 60% as long as the progenitor matches. In this case, {{WF|Saryn}} would be a valid Toxin progenitor amongst others, see [[Adversary#Progenitor Warframe|the progenitor list]] for all valid options.
+
+===Enemies===
+{{#tag:tabber|
+Enemies =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+GhoulDrillSergeant.png|link=Ghoul Auger|[[Ghoul Auger]]<br>creates Toxin cloud on death
+GhoulDevourer.png|link=Ghoul Devourer|[[Ghoul Devourer]]<br>creates Toxin cloud on death
+GhoulExpired.png|link=Ghoul Expired|[[Ghoul Expired]]<br>creates Toxin cloud on death
+GhoulSawman.png|link=Ghoul Rictus|[[Ghoul Rictus]]<br>creates Toxin cloud on death
+GrenadeAvatar.png|link=Lobber Crawler|[[Lobber Crawler]]<br>lobs grenades that pulse Toxin damage
+InfestedOsprey.png|link=Mutalist Osprey|[[Mutalist Osprey]]<br>rams players, emitting Toxin clouds
+NoxTemp.png|link=Nox|[[Nox]]<br>creates Toxin cloud on death
+ToxicAncient2DE.png|link=Toxic Ancient|[[Toxic Ancient]]<br>deals and can cause nearby enemies to deal Toxin damage
+ToxicCrawlerDE.png|link=Toxic Crawler|[[Toxic Crawler]]<br>creates Toxin cloud on death
+</gallery>
+{{!}}-{{!}}
+Bosses =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Juggernaut.png|link=Juggernaut|[[Juggernaut]]<br>launches a barrage of spores that release Toxin clouds
+JuggernautBoss.png|link=Juggernaut Behemoth|[[Juggernaut Behemoth]]<br>launches a barrage of spores that release Toxin clouds
+GolemFullAvatar.png|link=Lephantis|[[Lephantis]] ([[Lephantis#The Heads|Infested Head]])<br>spits grenades that create Toxin clouds
+InfestedAladV2.png|link=Mutalist Alad V|[[Mutalist Alad V]]<br>wields a {{Weapon|Paracyst}}
+</gallery>
+}}
+
+===Mods===
+<tabber>Rifle =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+InfectedClipMod.png|link=Infected Clip|{{M|Infected Clip}}
+MalignantForceMod.png|link=Malignant Force|{{M|Malignant Force}}
+</gallery>
+|-|Shotgun =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ContagiousSpreadMod.png|link=Contagious Spread|{{M|Contagious Spread}}
+ToxicBarrageMod.png|link=Toxic Barrage|{{M|Toxic Barrage}}
+</gallery>
+|-|Pistol =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+PathogenRoundsMod.png|link=Pathogen Rounds|{{M|Pathogen Rounds}}
+PistolPestilenceMod.png|link=Pistol Pestilence|{{M|Pistol Pestilence}}
+</gallery>
+|-|Melee =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+FeverStrikeMod.png|link=Fever Strike|{{M|Fever Strike}}
+PrimedFeverStrikeMod.png|link=Primed Fever Strike|{{M|Primed Fever Strike}}
+VirulentScourgeMod.png|link=Virulent Scourge|{{M|Virulent Scourge}}
+ToxicBlightMod.png|link=Toxic Blight|{{M|Toxic Blight}}
+ProtonSnapMod.png|link=Proton Snap|{{M|Proton Snap}}
+</gallery>
+|-|Archgun =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+VenomousClipMod.png|link=Venomous Clip|{{M|Venomous Clip}}
+PrimedVenomousClipMod.png|link=Primed Venomous Clip|{{M|Primed Venomous Clip}}
+ContaminationCasingMod.png|link=Contamination Casing|{{M|Contamination Casing}}
+</gallery>
+|-|Archmelee =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+PoisonousStingMod.png|link=Poisonous Sting|{{M|Poisonous Sting}}
+InfectiousInjectionMod.png|link=Infectious Injection|{{M|Infectious Injection}}
+</gallery>
+|-|Warframe =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+AfterburnMod.png|link=Afterburn|{{M|Afterburn}}
+ContagionCloudMod.png|link=Contagion Cloud|{{M|Contagion Cloud}}
+ExplosiveLegerdemainMod.png|link=Explosive Legerdemain|{{M|Explosive Legerdemain}}
+ToxicFlightMod.png|link=Toxic Flight|{{M|Toxic Flight}}
+LarvaBurstMod.png|link=Larva Burst|{{M|Larva Burst}}
+RerootRampageMod.png|link=Reroot Rampage|{{M|Reroot Rampage}}
+VenomousRiseMod.png|link=Venomous Rise|{{M|Venomous Rise}} ([[Conclave]] only-Cosmetic)
+</gallery>
+|-|Companion =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+VenomTeethMod.png|link=Venom Teeth|{{M|Venom Teeth}}
+</gallery>
+</tabber>
+
+===Abilities===
+{{#tag:tabber|
+Citrine =
+{{#tag:tabber|
+Prismatic Gem=
+{{:Prismatic Gem}}
+}}
+{{!}}-{{!}}
+Chroma (Toxic) =
+{{#tag:tabber|
+Spectral Scream =
+{{:Spectral Scream}}
+{{!}}-{{!}}
+Elemental Ward =
+{{:Elemental Ward}}
+{{!}}-{{!}}
+Effigy =
+{{:Effigy}}
+}}
+{{!}}-{{!}}
+Grendel =
+{{#tag:tabber|
+Feast =
+{{:Feast}}
+{{!}}-{{!}}
+Regurgitate =
+{{:Regurgitate}}
+{{!}}-{{!}}
+Pulverize =
+{{:Pulverize}}
+}}
+{{!}}-{{!}}
+Koumei = 
+{{#tag:tabber|
+Kumihimo =
+{{:Kumihimo}}
+{{!}}-{{!}}
+Omikuji =
+{{:Omikuji}}
+{{!}}-{{!}}
+Bunraku =
+{{:Bunraku}}
+}}
+{{!}}-{{!}}
+Lavos =
+{{#tag:tabber|
+Ophidian Bite =
+{{:Ophidian Bite}}
+}}
+{{!}}-{{!}}
+Nokko =
+{{#tag:tabber|
+Sporespring =
+{{:Sporespring}}
+}}
+{{!}}-{{!}}
+Oraxia =
+{{#tag:tabber|Mercy's Kiss =
+{{:Mercy's Kiss}}
+{{!}}-{{!}} Webbed Embrace =
+{{:Webbed Embrace}}
+{{!}}-{{!}}Widow's Brood =
+{{:Widow's Brood}}
+{{!}}-{{!}}Silken Stride =
+{{:Silken Stride}}
+}}
+{{!}}-{{!}}
+Saryn =
+{{#tag:tabber|
+Molt =
+{{:Molt}}
+{{!}}-{{!}}
+Toxic Lash =
+{{:Toxic Lash}}
+}}
+{{!}}-{{!}}
+Trinity =
+{{#tag:tabber|
+Link =
+{{:Link}}
+}}
+}}
+
+===Peely Pix===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:Sticker13.png|[[Peely Pix|Old Pizza]]: On Damaged: '''10% / 8% / 6%''' chance to receive {{D|Toxin}} status effect. Cooldown: '''5s'''.|link=File:Sticker13.png
+</gallery>
+
+==Sources of Toxin Resistances==
+===Arcanes===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ArcaneResistance.png|link=Arcane Resistance|{{Arcane|Arcane Resistance}}|alt=Arcane Resistance
+</gallery>
+
+===Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+AntitoxinMod.png|link=Antitoxin (Mod)|{{M|Antitoxin}}|alt=Antitoxin
+ToxinResistanceMod.png|link=Toxin Resistance|{{M|Toxin Resistance}}|alt=Toxin Resistance
+OrgoneTuningMatrixMod.png|link=Orgone Tuning Matrix|{{M|Orgone Tuning Matrix}}|alt=Orgone Tuning Matrix
+</gallery>
+
+===Enemies===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ToxicAncient2DE.png|link=Toxic Ancient|[[Toxic Ancient|Toxic Ancient]]: Has '''80%''' {{D|Toxin}} Resistance
+</gallery>
+
+===Abilities===
+{{#tag:tabber|
+Hildryn =
+{{#tag:tabber|
+Passive=
+{{#lsth:Hildryn/Abilities|Passive}}
+{{!}}-{{!}}
+Haven=
+{{:Haven}}
+}}
+}}
+
+===Peely Pix===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:Sticker21.png|[[Temporal Archimedea#Peely Pix|Breathless]]: Gain '''100%''' resistance to {{D|Gas}} and {{D|Toxin}} for '''30s'''. Collected Health Orbs add '''10s / 15s / 20s'''.|link=File:Sticker21.png
+</gallery>
+
+==Additional Effects==
+Some mods and Arcanes add additional effects when a {{D|Toxin}} proc occurs, or when dealing {{D|Toxin}} status damage.
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+ArchonContinuityMod.png|link=Archon Continuity|{{M|Archon Continuity}}|alt=Archon Continuity
+PrimaryBlight.png|link=Primary Blight|{{Arcane|Primary Blight}}|alt=Primary Blight
+EmeraldArchonShard.png|link=Emerald Archon Shard|{{Resource|Emerald Archon Shard}}|alt=Emerald Archon Shard
+</gallery>
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Screenshot_501.png|Toxin visuals on a melee weapon|link=File:Screenshot_501.png
+Screenshot_508.png|An enemy affected by a toxin proc|link=File:Screenshot_508.png
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|36}}
+;Simplified Faction Resistances
+*Narmer:
+**Vulnerable to '''Toxin'''
+
+{{ver|27.2}}
+*Toxin Damage used to apply to Armor with a 25% bonus. Now it is neutral. For role distinction, Toxin bypasses Shields (but not Armor) where as Slash Status bypasses Armor but not Shields.
+*Each Toxin Status has its own duration, but now we only show a maximum of 10 damage numbers in the HUD, damage is unaffected, but reducing how many damage events we show helps with performance
+*The base duration of a Toxin Status Effect now matches Slash for 6 seconds.
+
+{{ver|11}}
+*Introduced.
+}}
+{{DamageNav}}
+
+[[de:Schaden 2.0/Giftschaden]]
+[[es:Daño Toxina]]
+[[fr:Dégâts/Dégâts Poison]]
+[[ru:Урон/Токсин]]
+[[Category:Mechanics]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Toxin Damage]]
+[[Category:Update 11]]
+{{DISPLAYTITLE:Toxin Damage}}

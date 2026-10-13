@@ -1,0 +1,45 @@
+{{WeaponInfoboxAutomatic}}
+{{For|the character|Ballas}}
+{{Quote|A Zaw Strike used for dagger and staff style weapons. Its light weight increases speed at the cost of damage.|In game description}}
+
+The '''Balla''' is a {{D|Puncture}}-focused bladed Strike used in [[Zaw]] construction.
+
+{{BuildRequire
+|buildcredits = 5,000
+|build1 = Nistlepod
+|build1amount = 20
+|build2 = Fish Scales
+|build2amount = 15
+|build3 = Tear Azurite
+|build3amount = 10
+|build4 = Pyrotic Alloy
+|build4amount = 60
+|buildtime = 1
+|buildrush = 25
+|blueprint = 1,000
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+The Balla blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This Strike primarily deals {{D|Puncture}} damage.
+* '''5%''' {{D|Impact}}
+* '''60%''' {{D|Puncture}}
+* '''35%''' {{D|Slash}}
+
+Compatible weapon types:
+*Dagger
+*Staff
+==Trivia==
+*Should the player wish to name their weapon with the word 'Balla', as per the strike's name, the game will not let the player do so as it is considered profanity. Zaws created shortly after the release of {{ver|22.0}} ''can'' have that name before the game's profanity filters were updated.
+
+{{ZawNav}}
+
+[[es:Balla]]
+[[de:Balla]]
+[[fr:Balla]]
+[[Category:Update 22]]
+[[Category:Zaw]]
+[[uk:Балла]]

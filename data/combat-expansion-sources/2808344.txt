@@ -1,0 +1,250 @@
+{{ArcaneBox}}
+'''Exodia Contagion''' is an [[Arcane Enhancement]] for [[Zaw]]s that unleashes a projectile of Infested energy upon performing an aerial melee attack while [[Maneuvers|aim gliding]] after a [[Maneuvers|bullet jump]] or [[Double Jump|double jump]]. Increasing the Enhancement's Rank gives the projectile additional damage if it travels 30 meters before it contacts an enemy or a surface.
+
+==Effect==
+{| class="emodtable"
+|-
+! Rank
+! Damage (after 30m)
+! Explosion radius
+|-
+| 0 || 100% || 8m
+|-
+| 1 || 200% || 8m
+|-
+| 2 || 300% || 8m
+|-
+| 3 || 400% || 8m
+|}
+
+==Acquisition==
+*Exodia Contagion is obtainable from limited-time events:
+**[[Operation: Plague Star]] sold Exodia Contagion from [[Nakak]] for {{sc|5,000}} + {{cc|1,500}}, requiring '''Rank 2 - Defender''' with [[Operational Supply]].
+**The October 2020, 2022 and 2024 [[Nights of Naberus]] event sold Exodia Contagion from [[Daughter]] for 50 {{Resource|Mother Token|Mother Tokens}} each.
+
+==Mechanics==
+*Upon performing a mid-air attack while [[Maneuvers#Aim Glide|Aim Gliding]] after [[Maneuvers#Bullet Jump|Bullet Jumping]] or [[Maneuvers#Double Jump|Double Jumping]], an Infested projectile is launched. After traveling '''30''' meters, the damage of the projectile is increased by '''0% / 100% / 200% / 300%''' plus '''(combo level - 1) / 4 '''
+To be clear, all ranks benefit from combo.
+**The increased damage is indicated by a small burst of energy at that point.
+*The projectile is not limited by range. However, it is affected by [[Gravity]].
+*Base projectile damage, critical chance, critical damage, and status chance depends on the zaw's stats and equipped mods.
+*Weapon Stance affects the Explosion Damage Scaling of the thrown Zaw.
+
+{| class="wikitable sortable" cellpadding="2" cellspacing="0" style="text-align:center;border:1px solid black;font-size:12px;"
+|-
+! scope="col" style="width:20%" |Weapon Class
+! scope="col" style="width:25%" |Stance
+! scope="col" style="width:25%" data-sort-type=number |Multiplier
+|-
+|[[Dagger]] || None || 100% 
+|-
+|[[Dagger]] || {{M|Pointed Wind}} || 200%
+|-
+|[[Dagger]] || {{M|Homing Fang}} || 100%
+|-
+|[[Dagger]] || {{M|Stinging Thorn}} || 100%
+|-
+|[[Scythe]] || None || 200%
+|-
+|[[Scythe]] || {{M|Stalking Fan}} || 100%
+|-
+|[[Scythe]] || {{M|Reaping Spiral}} || 100%
+|-
+|[[Heavy Blade]] || None || 300%
+|-
+|[[Heavy Blade]] || {{M|Cleaving Whirlwind}} || 300%
+|-
+|[[Heavy Blade]] || {{M|Rending Crane}} || 400%
+|-
+|[[Heavy Blade]] || {{M|Tempo Royale}} || 300%
+|-
+|[[Hammer]] || None || 200%
+|-
+|[[Hammer]] || {{M|Crushing Ruin}} || 400%
+|-
+|[[Hammer]] || {{M|Shattering Storm}} || 400% 
+|-
+|[[Polearm]] || None  || 100%
+|-
+|[[Polearm]] || {{M|Bleeding Willow}} || 100%
+|-
+|[[Polearm]] || {{M|Shimmering Blight}} || 100%
+|-
+|[[Polearm]] || {{M|Twirling Spire}} || 100%
+|-
+|[[Staff]] || None  || 100%
+|-
+|[[Staff]] || {{M|Clashing Forest}} || 100%
+|-
+|[[Staff]] || {{M|Flailing Branch}} || 300%
+|-
+|[[Machete]] || None ||  100%
+|-
+|[[Machete]] || {{M|Cyclone Kraken}} || 300%
+|-
+|[[Machete]] || {{M|Sundering Weave}} || 200%
+|-
+|[[Nikana (Weapon Type)]] || None || 100%
+|-
+|[[Nikana (Weapon Type)]] || {{M|Blind Justice}} || 300%
+|-
+|[[Nikana (Weapon Type)]] || {{M|Decisive Judgement}} || 200%
+|-
+|[[Nikana (Weapon Type)]] || {{M|Tranquil Cleave}} || 100%
+|-
+|[[Sword]] || None  || 100%
+|-
+|[[Sword]] || {{M|Crimson Dervish}} || 300%
+|-
+|[[Sword]] || {{M|Iron Phoenix}} || 300%
+|-
+|[[Sword]] || {{M|Swooping Falcon}} || 300%
+|-
+|[[Sword]] || {{M|Vengeful Revenant}} || 300%
+|-
+|[[Rapier]] || None || 100%
+|-
+|[[Rapier]] || {{M|Vulpine Mask}} || 100%
+|-
+|}
+
+*Has multiple damage instances; projectile direct-hit, explosion, and direct-hit DoT.
+**Projectile direct-hit does '''2x''' the zaw's damage, with a damage distribution of '''33%''' {{D|Impact}}, '''33%''' {{D|Puncture}}, and '''33%''' {{D|Slash}} damage.
+**The explosion does '''5x''' the zaw's damage, with a damage distribution of '''100%''' {{D|Viral}} damage.
+***The '''8''' meter explosion radius is '''not''' affected by [[Range#Melees|Range]] mods.
+***The explosion has a forced {{D|Impact}} status effect.
+***After the projectile travels 30m, the explosion has a forced {{D|Ragdoll}} status effect.
+**The direct-hit DoT does '''1x''' the zaw's damage, with a damage distribution of '''100%''' {{D|Blast}} damage.
+*Direct hits on enemies makes the projectile stick to them, dealing damage and inflicting a forced {{D|Impact}} status effect each second for '''4''' seconds, after which it explodes on the 5th second.
+**If an enemy is instantly killed by the direct-hit instance of damage before the explosion, the projectile will continue traveling, as if going though air, and will only explode after hitting the level geometry or an enemy which survives the direct-hit. This is more noticeable when scoring [[headshot]]s.
+
+===Interactions===
+*{{M|Vigorous Swap}}, {{M|Holster Amp}}, {{Arcane|Arcane Arachne}} and {{A|Elemental Ward|Toxin Elemental Ward}} are multiplicative to melee damage (e.g. {{M|Pressure Point}}) on the projectile.
+*{{A|Vex Armor}}, {{A|Symphony of Mercy|Deathbringer}}, {{A|Amp}}, {{M|Rift Torrent}}, and [[Naramon#Lethal Levitation|Lethal Levitation]] apply twice to the projectile, once additive to melee damage (e.g. {{M|Pressure Point}}) and once to weapon damage (e.g. {{Arcane|Arcane Arachne}}). ([[Madurai#Void Strike|Void Strike]] is only added once to melee damage)
+**{{A|Eclipse}} and {{WF|Garuda}}'s Passive (Death's Gate) being unique multipliers that affect both melee and weapon damage apply twice to the projectile and are multiplicative both times.
+*Damage is affected by the [[Stealth#Stealth Damage Bonus|Stealth Multiplier]].
+*The speed of the projectile is affected by [[Attack Speed]] mods and buffs.
+**Unaffected by the zaw's base attack speed.
+*The projectile is treated as a melee attack.
+**Can trigger arcanes, and mods with conditional effects like {{M|Berserker Fury}}.
+**Kills from the projectile count as melee kills.
+*The projectile can trigger {{M|Shattering Impact}} on a direct hit. However, it will not trigger on the explosion as it has no {{D|Impact}} damage.
+*The projectile can be controlled by {{A|Navigator}}, but will disappear in the air a few seconds after hitting an enemy or {{A|Electric Shield}} if the ability is still in use.
+**If controlled by Navigator, the projectile will '''not''' gain the damage bonus after traveling 30m unless controlled after it has traveled 30m.
+*The projectile is '''not''' redirected by {{A|Magnetize}}.
+*The projectile and explosion can trigger both the activation and spread of {{Arcane|Melee Influence}}.
+
+==Notes==
+*[[Trading]] Exodia Contagion requires the trader to be [[Mastery Rank]] 11 or higher.
+*IPS mods such as {{M|Buzz Kill}} only increase the damage of direct hits, as the explosion does no IPS damage.
+
+==Trivia==
+*The projectile launched takes on the appearance of the Zaw's Strike, which will embed itself on the first surface it hits before disappearing after a few seconds.
+**If a skin is equipped, it will take on the appearance of the full weapon (minus the sheath for Nikanas) though any recoloring will not be present.
+*Installing this arcane (or [[Exodia Epidemic]]) on a Zaw will give the Zaw's Links an infested visual appearance.
+*Unlike other Exodia Arcanes, Exodia Contagion depicts a symbol, instead of [[Ostron Language|inscription]].
+*Prior to {{ver|24.6}}, Exodia Contagion was purchasable as a blueprint with the following requirements to build:
+
+{{BuildRequire
+|buildcredits= 7,500
+|build1= Neurodes
+|build1amount=5
+|build2= Cetus Wisp
+|build2amount=10
+|build3= Plastids
+|build3amount=800
+|build4= Radian Sentirum
+|build4amount=3
+|buildtime=1
+|buildrush=10
+|blueprint=500 + {{cc|1,500}}
+|blueprintunit=Standing
+}}
+
+==Bugs==
+*Projectiles fired using Exodia Contagion no longer have a transparent energy texture, and now fire the base model of your weapon with only the energy color applied, if visible on chosen skin. (See Media below for reference of how they used to look.)
+**Additionally, they now appear further into their impact surface, causing the impact cracks to only be partially visible when landing them at an angle on surfaces, around the edges.
+*{{M|Condition Overload}} is multiplicative to base damage (e.g. {{M|Pressure Point}}) on direct hits.
+**Embed and explosion are unaffected.
+*Occasionally the projectile will not disappear after the second explosion.
+*If fired on certain surfaces like small pools of water on Earth, the projectile will vanish on contact and not explode afterwards.
+*For the explosion to count as a heavy attack, you need to be in the heavy attack animation when the explosion hits enemies. Which means you have to be close enough so the projectile hits before the animation ends. Or you can use a normal attack, and right before the projectile explodes use a heavy attack to ground slam for example.
+**The effects of {{M|Killing Blow}} apply, same with any crit chance mod that has a '''2x''' bonus on heavy attacks. (e.g. {{M|True Steel}})
+**"On heavy attack" mod effects apply on direct hits and the explosion (e.g. {{M|Life Strike}}, {{M|Dispatch Overdrive}}, and {{M|Carnis Mandible}})
+==Media==
+<gallery widths="300" position="center" spacing="small">
+ZawProjectile Impacted.png|Exodia Contagion projectile take shape as a Zaw's strike.
+Screenshot_11  ,.png|Exodia Contagion visuals when a skin is equipped on the respective melee weapon
+Screenshot_12.png
+Screenshot_13,.png
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|36}}
+*Trading Legendary Arcanes now requires you to be Mastery Rank 11.
+**It’s important to note that only the player trading requires MR 11 and not the receiver.
+***We needed to address an issue with exploitative Legendary Arcanes farming and ban-evasion account creation used to trade Legendary Arcanes. Other options we experimented with had the risk of innocent players getting caught in the crossfire of the ban-evasion subjects. When we took a look at Trading stats we found that a very small number of players below Mastery Rank 10 trade Legendary Arcanes, and therefore decided to go this route. This is purely a means of deterring the bad actors and ensuring legitimate trading for players.
+
+{{ver|33.6.9}}
+*Fixed being able to buff Exodia Contagion's projectile damage with heavy attack multiplier by performing a series of specific parkour movements.
+**''The movements in question allowed for heavy attacks to be performed mid-air instead of triggering the intended ground slam, which then caused the Heavy Attack damage multiplier to be applied to the projectile. In this Hotfix, we’ve specifically removed the interaction that buffed its damage, as heavy attacking mid-air is not possible otherwise. We understand that this was a popular combination due to its ability to land wild damage numbers, but it was dependent on a movement animation bug and went beyond the original design for the Arcane.''
+
+{{ver|33.0.11}}
+*Fixed Arcane Contagion’s projectile having hexagonal VFX when equipped on a Zaw Polearm Melee using the Kalynex Polearm Skin.
+
+{{ver|30.5}}
+*A restriction was added to the Exodia Contagion Arcane for Zaws, where it can only activate once while you remain in the air. To use Contagion again you must touch the ground.
+
+{{ver|29.5}}
+*Fixed Exodia Contagion no longer inheriting base critical chance, critical damage, and status chance from equipped Zaw.
+*(Undocumented) Fixed clients not dealing Blast damage on the initial explosion.
+
+{{ver|28.3}}
+*(Undocumented) Projectile does not inherit base critical chance, critical damage, and status chance stats from equipped Zaw. Now has a fixed 20% critical chance and 2.0x critical multiplier. Projectile no longer explodes on final tick.
+
+{{ver|27.4.2}}
+*Fixed Exodia Contagion’s projectiles being invisible when a Skin is equipped.
+
+{{ver|27.4}}
+*Fixed Exodia Contagion projectiles ignoring Limbo’s Rift status of enemies/the player, letting it hit enemies across the Rift.
+**''This allowed for Limbo to attack from a position of invulnerability, where normally damage cannot cross the Rift unless it’s a Warframe ability of some kind. We intentionally did not fix this until after the Scarlet Spear event, but it is a bug.''
+*Fixed Volt's Shield causing Exodia Contagion's projectile to never explode.
+
+{{ver|27.3}}
+*Fixed Exodia Contagion not triggering if your weapon is out of Ammo.
+
+{{ver|24.6}}
+*Replaced Arcane Blueprints with Arcanes in Operational Supply Offerings meaning that Arcanes no longer need to be built.
+**Players that had previous Arcane Blueprints in Inventory were crafted on patch login for free.
+
+{{ver|24.4}}
+*Exodia Contagion now requires you to be Aim Gliding to launch the Infested energy projectile.
+
+{{ver|24.0.7}}
+*Fixed Zaws not applying negative damage modifiers to projectiles launched from the Exodia Contagion Arcane.
+
+{{ver|22.20}}
+*Exodia Contagion’s Infested projectile 30 meter damage multiplier now also takes into account your combo multiplier.
+
+{{ver|22.19}}
+*Fixed Exodia Contagion's interaction with Covert Lethality, resulting in the +100 damage being applied to the projectile damage multiplier instead of the base projectile damage.
+
+{{ver|22.6}}
+*Fixed the range increase from Iron Vault scaling with Exodia Contagion.
+
+{{ver|22.4}}
+*Fixed Ivara’s Navigator causing Exodia Contagion projectiles to get stuck floating in the air.
+*Fixed not being able to control Exodia Contagion projectiles with Ivara’s Navigator (enjoy, DK).
+
+{{ver|22.3}}
+*Introduced}}
+{{ver/Lu|22.19}}
+{{ArcaneNav}}
+[[es:Contagio de Exodia]]
+[[Category:Update 22]]
+[[Category:Syndicate Offerings]]
+[[Category:Arcane Enhancements]]
+[[Category:Self Damage Weapons]]
+[[Category:Self Interrupt Weapons]]
+[[uk:Екзодія «Зараження»]]

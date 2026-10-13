@@ -1,0 +1,38 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|A Zaw Strike used for sword and polearm style weapons. Its heavy weight increases damage at the cost of speed.|In-game description}}The '''Mewan''' is a {{D|Slash}}-focused large bladed Strike used in [[Zaw]] construction.{{BuildRequire
+|buildcredits = 5,000
+|build1 = Cetus Wisp
+|build1amount = 1
+|build2 = Fish Scales
+|build2amount = 55
+|build3 = Fersteel Alloy
+|build3amount = 20
+|build4 = Marquise Veridos
+|build4amount = 6
+|buildtime = 1
+|buildrush = 25
+|blueprint = 1,000
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+The Mewan blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This Strike primarily deals {{D|Slash}} damage.
+
+* '''25%''' {{D|Impact}}
+* '''35%''' {{D|Puncture}}
+* '''40%''' {{D|Slash}}
+
+Compatible weapon types:
+*Sword
+*Polearm
+
+== Trivia ==
+Mewan's shape appears to be based on an [https://www.medicalantiques.com/medical/medimage/tmnsaw.jpg old-fashioned bone saw].{{ZawNav}}
+[[es:Mewan]]
+[[fr:Mewan]]
+[[Category:Update 22]]
+[[Category:Zaw]]
+[[uk:Міван]]

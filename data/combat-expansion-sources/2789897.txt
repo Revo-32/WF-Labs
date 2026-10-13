@@ -1,0 +1,134 @@
+{{Top|Enemy|Corpus|Corpus|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Each successive kill from this massive electron hammer builds an electron charge that is unleashed on with slam attacks.}}
+'''Arca Titron''' is a {{Faction|Corpus}} hammer with high damage, [[critical chance]] and [[status chance]], but suffers in [[attack speed]]. Kills with the weapon increases the damage of the next [[Slam Attack]] while also applying an {{D|Electricity}} proc.
+
+This weapon can be sold for {{cc|5,000}}.
+
+==Characteristics==
+*This weapon deals primarily {{D|Impact}} damage.
+*This weapon has a [[#Unique Trait]].
+*Stance polarity {{Pol|Madurai}} matches {{M|Crushing Ruin}}.
+*Innate {{Pol|Madurai}} and {{Pol|Naramon}} polarities.
+{{Advantages|
+*Highest base damage of all melee weapons, tied with {{Weapon|Innodem}}.
+*Second highest [[status chance]] of all hammers, behind {{Weapon|Synoid Heliocor}}.
+}}
+{{Disadvantages|
+*Slowest [[attack speed]] of all hammers.
+}}
+
+==Acquisition==
+The Arca Titron's blueprint can be purchased from the [[Market]].
+{{BuildAutomatic|type=Weapon}}
+
+==Unique Trait==
+All Slam Attacks and stance combo slams inflict a forced {{D|Electricity}} [[proc]], '''1''' in the area and multiple with a direct hit.<br/>
+Kills with the weapon (including [[DoT]]s) grant the '''Slam Capacitor''' buff, increasing the damage of the next [[Slam Attack]] by '''250%''' and its range by '''2''' meter per charge (max '''5''' charges).
+*Unique trait does '''not''' affect non-slam attacks.
+*The slam explosion can kill {{E|Nullifier Crewman}} '''Projector Drones''', permanently disabling their bubbles.
+*Damage increase is ''multiplicative'' to {{M|Seismic Wave}} and the [[Nira's Set]] bonus, and ''additive'' to base damage (e.g. {{M|Pressure Point}}, {{Arcane|Arcane Fury}}).
+*Up to '''5''' charges can be collected, they have infinite duration and are only consumed on a slam attack.
+**Kills made with slam attacks do '''not''' grant '''Slam Capacitor''' charges, even on slams with no charges. However, kills from slam attack DoTs '''do''' grant charges.
+**Damage and range bonuses stack additively with each charge, for a maximum slam damage increase of '''+1250%''' and a slam range increase of '''+10m''' with '''5''' charges.
+**The charge amount can be seen with the electricity charged in the hammer. The current attack range is shown by an energy wave upon slamming.
+*Melee combos in both [[Hammer Stance]] mods have built-in slam attacks which do '''not''' consume '''Slam Capacitor''' charges but '''do''' benefit from them.
+**Those combo attacks perform true slams with innate '''8m''' range at ground level, which increases to '''18m''' with maximum '''Slam Capacitor''' charges.
+
+==Notes==
+*Normally this hammer benefits greatly from {{Arcane|Melee Afflictions}}, even more so with charged '''Slam Capacitor'''.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+ArcaTitronCodex.png|Arca Titron in Codex.
+File:Enrico-santi-enrico-santi-corpushammer1.jpg
+File:Sean-bigham-sb-corpus-hammer-005.jpg
+File:Sean-bigham-sb-corpus-hammer-003.jpg
+File:Sean-bigham-sb-corpus-hammer-001.jpg|Concept art
+</gallery>{{VideoGallery
+|{{YouTube|D-oW-kVL8Lk|size=300px}}
+|{{YouTube|WVThCuL5gV0|size=300px}}
+|{{YouTube|D0V8eZUFY9Q|size=300px}}
+|{{YouTube|CHPBSlilOJQ|size=300px}}
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42}}
+*Fixed the Arca Tritron’s Slam Capacitor HUD buff icons not stacking beyond 1x. 
+**This was only a visual bug!
+
+{{ver|35.5.6}}
+;Arca Titron “Slam Capacity” Trait Changes
+
+Arca Titron was an outlier to the Slam Attack rework in Dante Unbound, as its Unique Trait allowed for ludicrous damage numbers. We aimed to change its damage output to a more reasonable level, but as a result made the weapon too underpowered.
+
+To address this, we’ve made the following changes to the Titron based on the community feedback we received after the adjustments we made to the buff in last week’s Hotfix: 
+
+*Reduced the max charges from 10 to 5. 
+**We wanted to make it easier for players to achieve max charges so that they can benefit from the Slam Damage and Range increase more often. 
+*We’ve also adjusted the Slam Damage and Range per charge increase to accommodate for the change of max charges: 
+**Increased the Slam Damage increase per charge to +250% (was +100%) for a total of +1,250% (was +1,000%). 
+**Increased the Slam Range increase per charge to 2m (was 1m) for a total of 10m (same as before!). 
+*Fixed Slam Capacity’s guaranteed Electricity Status proc to Slam Attack not occurring.
+
+{{ver|35.5.3}}
+;Arca Triton’s “Slam Capacitor” Buff Changes & Fixes&#58;
+
+With the changes we made to Slam Attacks in the Dante Unbound Update, the Arcan Triton in particular benefitted from the overall buff to Slam Attacks thanks to its Unique Trait “Slam Capacitor.” Since Slam Attacks are now entirely Radial Damage, scale with Mods, and have a 2x Multiplier applied across all Melee weapons, Slam Attacking with the Arca Triton was leading to ludicrous damage numbers (even reaching into the billions). 
+
+With that in mind, we’ve made the following two changes to bring it back to a more balanced state: 
+
+'''1. Changed Slam Capacitor’s Slam Damage buff from multiplicative to additive.'''
+*Before: Each Slam Capacitor charge multiplied base Slam Damage by 2 up to a max of 10 charges, which would total out to a 1024x multiplier. A combination of the multiplier at max and the buffs we made to Slam Attacks allowed players to ramp up to those unruly damage numbers in no time.
+*Now: Each Slam Capacitor charge additively stacks the base Slam Damage up to a max of 10 charges. For comparison sake, it calculates similarly to the Seismic Wave Mod, but at max charges grants a +1000% damage Slam Damage increase.
+
+'''2. Changed Slam Capacitor’s charge duration from 20 seconds to infinite.'''
+*Before: Charges expired after 20 seconds unless they were refreshed by killing enemies or using them.
+*Now: Charges are now stored indefinitely, meaning you can use them at any point without having to constantly refresh them. 
+
+While we were investigating the Arca Triton for the above changes, we found other elements that we can change/fix: 
+
+*Slam Attacks performed in Stance Combos for the Arca Triton no longer consume Slam Capacitor charges.
+**They were always ineligible to receive the buff in the first place, which meant they were consuming charges without any benefit. So now, you can continue to perform your Combos without worrying about the charges being consumed accidentally.
+*Fixed an issue where one player doing a Slam Attack with the Arca Triton would clear everyone else's Arca Triton charges in the Squad. 
+
+{{ver|27.4}}
+*Fixed the Hammers Palatine skin changing sizes when equipped on the Arca Triton. It will now be the same size across the board.
+
+{{ver|27.3.13}}
+*Fixed Clients not seeing the "Slam Capacitors" buff being given when using the Arca Titron.
+
+{{ver|27.2}}
+*Fixed certain attacks with the Arca Titron and Crushing Ruin or Shattering Storm equipped not consuming Slam Capacitor charges but still getting the damage multipliers bonus.
+*Fixed Arca Titron consuming Slam Capacitor charges in Melee Combos with Slam attacks without releasing its AOE charge, as reported here: https://forums.warframe.com/topic/1156171-slam-capacitor-not-discharging-on-combo-slams/
+
+{{ver|26}}<br />
+''Actual patch notes made a mistake on old follow through.''
+*Damage increased from 180 to 360.
+*Range increased from 2 to 2.6.
+*Slam Attack increased from 360 to 1080.
+*Slide Attack increased from 360 to 720.
+*Parry Angle set to 50.
+*Follow Through decreased from 0.9 to 0.4.
+
+{{ver|21.7.1}}
+*Tweaked the Arca Titron’s handle to be longer.
+
+{{ver|21.7}}
+*Introduced.
+}}
+{{Ver/Lu|26}}
+
+==See Also==
+*{{Weapon|Arca Plasmor}}, the primary counterpart to this weapon.
+*{{Weapon|Arca Scisco}}, the secondary counterpart to this weapon.
+
+{{WeaponNav}}
+[[de:Arca Titron]]
+[[es:Titron Arca]]
+[[fr:Arca Titron]]
+[[Category:Weapons with Passives]]
+[[uk:Арка-Титрон]]

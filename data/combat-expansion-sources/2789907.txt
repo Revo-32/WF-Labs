@@ -1,0 +1,64 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapon|Weapon}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Roll Koumei's dice with every 30 hits from Amanata to empower yourself with 1 of 5 Koumei's blessings. Roll a 6 to receive all blessings at once.}}
+'''Amanata''' is {{WF|Koumei}}'s [[Signature Weapon|signature]] naginata polearm. Swinging the weapon 30 times rolls a six-sided dice to apply a random buff, with roll of six granting all buffs.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Grants '''Amanata's Rolls''' at the start of a mission, rolling a six-sided dice to apply a randomly selected buff. Buffs last '''indefinitely''' and are rerolled every '''30''' hits. Only one buff can be active at a time, each new application replacing the last.
+**1: '''40%''' Final [[Critical Hit|Critical Chance]]
+**2: '''30%''' Final [[Status Effect|Status Chance]]
+**3: '''30%''' Final [[Status Effect|Status Damage]]
+**4: '''1m''' [[Range]]
+**5: '''20%''' [[Attack Speed]]
+**6: All blessings at once.
+*Can use the Amanata-exclusive {{M|Amanata Pressure}} mod.
+*Innate {{Pol|V}} polarity.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+==Acquisition==
+Amanata's blueprint and components can be obtained from [[Shrine Defense]] on [[Saya's Visions]], [[Earth]]. Access requires completion of [[Saya's Vigil]] and [[Once Awake]].
+
+Alternatively they can be purchased from [[Koumei's Shrine]] in [[Cetus]] with {{Resource|Fate Pearl}}, which are dropped by the [[Infested Oni]] at the end of Shrine Defense in quantities of 14-18 (20-24 on [[The Steel Path]]). Each component blueprint require 45 and the main blueprint requires 135, totaling 270 Fate Pearls for the whole set.
+
+==Crafting==
+Amanata also requires {{Resource|Fate Pearl}} to craft; 14 per component (requires two Blades) and 5 for the main blueprint, to a total of 47 Fate Pearls. Assuming that one acquired all of the components and the blueprint by spending Fate Pearls in [[Koumei's Shrine]], the total amount required for purchase and crafting is 317 Fate Pearls.
+
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+Currently, Slam Attacks count towards the 30 hits even if the player didn't hit any enemies. (Bug?)
+
+==Media==
+<gallery>
+File:AmanataKeyart.jpg
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|41.0.6}}
+*Fixed the Amanata's passive no longer re-rolling its buff every 30 hits.
+
+{{ver|39}}
+*Fixed cloth physics issues on Amanata.
+
+{{ver|38}}
+*Fixed the Amanata playing a closed-to-open animation every time you selected a tint color.
+
+{{ver|37}}
+*Introduced.
+}}
+
+{{WeaponNav}}
+[[Category:Weapons]]
+[[Category:Melee Weapons]]
+[[Category:Polearm]]
+[[ru:Аманата]]
+[[Category:Update 37]]

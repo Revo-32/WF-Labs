@@ -1,0 +1,71 @@
+{{ModBox}}
+{{for|the [[Empyrean]] mission|Volatile}}
+{{for|the [[Predasite]] mod|Volatile Parasite}}
+{{for|the other Glaive mod|Volatile Rebound}}
+{{for|the [[Infested]] enemy|Volatile Runner}}
+'''Volatile Quick Return''' is a [[mod]] for [[Glaive (Weapon Type)|Glaives]] that reduces the number of thrown [[bounce]]s, increases explosion radius, and adds a chance for the glaive to explode on bouncing but disables [[punch through]].
+
+==Stats==
+{| class="emodtable"
+|-
+![[Mod#Mod Rank|Rank]]
+!Bounces
+!Blast Radius
+!Explosion Chance
+![[Mod#Attributes|Cost]]
+|-
+|0 || -1 || +0.8 || +25% || 2
+|-
+|1 || -2 || +1.5 || +50% || 3
+|-
+|2 || -3 || +2.3 || +75% || 4
+|-
+|3 || -4 || +3 || 100% || 5
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+==Notes==
+*Explosions do '''50%''' of [[Heavy Attack]] damage, doesn't benefit from the combo count damage multiplier, and does not consume it. 
+*Explosions from this mod do not inflict guaranteed procs unlike manual detonations. (bug? except the guaranteed impact proc from {{Weapon|Glaive Prime}}.) It can apply regular status proc depending of status chance.
+*Enemies that are hit only by the explosion ''but not the weapon itself'' do not increase the [[Melee Combo|combo count]].
+*After hitting and getting the regular explosion from this mod, the glaive can still be manually detonated for a Heavy Attack explosion during the same throw.
+*Cannot be equipped on {{Weapon|Deconstructor}} ({{Weapon|Deconstructor Prime|Prime}}), due to its lack of explosive properties.
+*Cannot be equipped with {{M|Quick Return}}, since it is considered a variant of this mod.
+*Cannot be equipped with {{M|Volatile Rebound}} or {{M|Rebound}}.
+{{clr}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|32.0.2}}
+*Fixed the wrong Puncture Depth on throwing weapons with Volatile Quick Return equipped. As reported here: https://forums.warframe.com/topic/1321482-wrong-puncture-depth-on-throwing-weapons-with-volatile-quick-return-equipped-investigating/#comment-12595665
+**''Glaive reflection explosion chance is no longer affected by line of sight (LoS), as it was the cause of this issue!''
+
+{{ver|29.5.3}}
+*Deconstructor can no longer equip Volatile Quick Return.
+**''Deconstructor projectiles do not have any explosive properties so the Mods did nothing.''
+*Changed Volatile Quick Return +100% Blast Radius to +3 Blast Radius
+**''Multiplicative radius increase was increasing Glaives with a high base radius to higher than intended ranges''.
+
+{{ver|29.5}}
+*Introduced.
+}}
+
+==See Also==
+*{{M|Quick Return}}, the normal counterpart of this mod.
+*{{M|Volatile Rebound}}, the opposite counterpart of this mod.
+
+{{MeleeMods}}
+
+
+[[de:Schnelle Rückkehr]]
+[[es:Devolución rápida volátil]]
+[[ru:Нестабильное Быстрое Возвращение]]
+[[Category:Mods]]
+[[Category:Melee Mods]]
+[[Category:Glaive Exclusive Mods]]
+[[Category:Uncommon Mods]]
+[[Category:Update 29]]
+[[Category:Naramon Mods]]
+[[uk:Летюче швидке повернення]]

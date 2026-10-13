@@ -1,0 +1,45 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapon|Weapon}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|The wrath of one who knows revenge is all about timing. Orion's signature Heavy Scythe.}}
+'''Wrath''' is {{WF|Orion}}'s [[Signature Weapon|signature]] Heavy Scythe. The weapon gains increased [[Critical Chance]] upon hitting enemies with a [[Slam]] Attack.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*[[Slam]] attacks grant the '''Gravitic Slash''' buff, increasing [[Critical Chance]] by '''15%''' (additive to mods such as {{M|True Steel}}) per enemy enemy hit, stacking up to '''10''' times for '''150%''' additional Critical Chance. Lasts '''10''' seconds and can be refreshed.
+*Innate {{Pol|Madurai}} polarity.
+{{Advantages|
+}}
+{{Disadvantages|}}
+{{WeaponComparison|Pride}}
+
+==Acquisition==
+{{Acquisition|header=no|Wrath's main and component blueprints can be obtained from [[Scoria's Angel]], [[Uranus Proxima]], as well as a {{Weapon|Pride}} Blade from [[The Kuva Wytch]]. Access requires completion of [[Jade Shadows: Constellations]].
+
+Alternatively Wrath and the Pride Blade's blueprints can be purchased from [[Pontis Tower]] with {{Resource|Crimson Talent}} and {{Resource|Emerald Talent}}, awarded from Scoria's Angel and The Kuva Wytch respectively in quantities of 12-16 (18-22 on [[The Steel Path]]) from mission completion plus shooting down targets from the Ramsled/Orowyrm minigame. Each component requires 45 and the main blueprint requires 90, totaling 180 {{Resource|Crimson Talent}} and 45 {{Resource|Emerald Talent}} for the whole set.}}
+
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+
+==Trivia==
+*{{Weapon|Pride}} and Wrath share the exact same design, with the only difference being which end is pointing upwards (in Wrath's case, the red end associated with Orion).
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+File:OrionAlone.png|{{WF|Orion}} wielding Wrath.
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|43}}
+*Introduced.
+}}
+
+==See also==
+*{{Weapon|Pride}}
+
+{{WeaponNav}}
+
+[[ru:Гнев (оружие)]]

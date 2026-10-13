@@ -1,0 +1,58 @@
+{{ModBox|}}
+'''Amanata Pressure''' is a [[Weapon Augments#Weapon Augment Mods|Weapon Augment Mod]] variant of {{M|Pressure Point}} for the {{Weapon|Amanata}} applies a random Status Effect to enemies upon Heavy Attacks when reaching 8x [[Melee Combo|combo]], as well as adding additional Melee Damage.
+
+==Stats==
+{| class="emodtable"
+|-
+![[Mods#Mod Rank|Rank]]
+!Melee Damage
+![[Mods#Mod Power Cost|Cost]]
+|- 
+|0|| +55%||6
+|-
+|1|| +110%||7
+|-
+|2|| +165%||8
+|-
+|3|| +220%||9
+|-
+|4|| +275%||10
+|-
+|5||+330%||11
+|}
+
+==Acquisition==
+*'''Amanata Pressure''' can be obtained by purchasing it from [[Koumei's Shrine]] on [[Cetus]], [[Earth]] for 150 {{Resource|Fate Pearl}}. The mod will only appear in the shop if the player has access to [[The Steel Path]].
+
+==Notes==
+*Cannot be equipped alongside {{M|Pressure Point}}, {{M|Primed Pressure Point}}, or {{M|Sacrificial Pressure}}.
+*The additional random status effect is only applied to the first enemy hit during the heavy attack animation.
+*Cannot inflict {{D|Void}} or {{D|Tau}} status effects.
+
+==Tips==
+*Inflicted status effects are spread by {{Arcane|Melee Influence}}.
+*{{Arcane|Melee Afflictions}} activates after the status is applied, immediately granting additional stacks.
+*{{M|Discipline's Merit}} synergizes well with the {{Weapon|Amanata}}'s innate attack speed buff and can enable consistent heavy attacks while preserving combo and thus more frequent applications of this mod's unique effect.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42}}
+*Fixed Amanata Pressure not being listed in the Codex.
+**Also fixed them not being chat-linkable. 
+
+{{ver|37}}
+*Introduced.
+}}
+
+==See Also==
+*{{M|Pressure Point}}, the base counterpart
+*{{M|Primed Pressure Point}}, the Primed counterpart
+*{{M|Sacrificial Pressure}}, the Sacrificial/Umbral counterpart
+*{{M|Higasa Serration}}, the Augment for the {{Weapon|Higasa}} that can be acquired from the same shop.
+{{AugmentedMods}}
+[[es:Presión Amanata]]
+[[Category:Mods]]
+[[Category:Amanata Mods]]
+[[Category:Madurai Mods]]
+[[Category:Update 37]]
+[[fr:Pression Amanata]]

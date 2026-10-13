@@ -1,0 +1,293 @@
+{{Infobox
+| Box title = Melee Combo
+| image = ComboCounter.jpg
+| caption = A 50-hit Combo Counter with a 3.0x Damage Multiplier
+}}
+{{For|stance combos|Stance}}
+{{For|the combo mechanic associated with Sniper Rifles|Sniper Rifle}}
+<section begin="intro" />
+'''Melee Combo''' is a gauge that tracks how many melee attacks you've performed in the last '''5''' seconds. As you increase your Melee Combo Count, you will also increment a '''Melee Combo Multiplier''' from '''2x''' to '''12x'''.
+<section end="intro" />
+
+==Mechanics==
+'''Melee Combo Multiplier does not multiply the damage of your normal attacks'''. Instead, you can spend Melee Combo Count to perform [[Melee#Heavy Attack|Heavy Attacks]]. By default, you will spend 100% of your Melee Combo Count to perform a Heavy Attack, which deals between '''2x''' and '''12x''' damage. Additionally, usage of [[Tennokai]] mods will allow you to use Heavy Attacks at no cost to Melee Combo Count if performed at the correct time. 
+
+Certain [[Melee Combo#Combo Scaling Effects|Warframe abilities, mods and other effects]] also scale with Melee Combo. Multiplier Ability Damage has a Melee Combo Multiplier of 1:0.25 and casting such abilities do not consume your Melee Combo Count, meaning such abilities will consistently deal '''1.5x''' to '''4x''' damage permitted your Melee Combo Count does not reset to 0. This is distinct from abilities that use the specific [[Melee Combo#Ability Combo Counter|Ability Combo Counter]] mechanic, which deal between 2x and 12x damage (the same as Melee Combo Multiplier).
+
+===Combo Points and Duration===
+Your [[Stance]] affects how many combo points are awarded by any given attack, which is affected by the number of enemies hit and can be further modified by '''Melee Combo Chance''' bonuses. You can also mod the amount of time you have before your Melee Combo resets to 0 ('''[[Melee Combo#Combo Duration|Melee Combo Duration]]'''), the amount of Melee Combo Counter consumed by Heavy Attacks ('''[[Melee Combo#Heavy Attack Efficiency|Heavy Attack Efficiency]]'''), and even the value that your Melee Combo Count resets to after Melee Combo resets ('''[[Melee Combo#Initial Combo|Initial Combo]]''').
+
+Certain abilities utilize [[Melee Combo#Ability Combo Counter|Ability Combo Counter]], which is identical in all respects, except that your Melee Combo Duration is also affected by [[Ability Duration]]. They are distinct because they track different actions and to enable independent timers. Only Melee Combo Mods installed on the ability's mod config will affect the Ability Combo stats.
+
+==Combo Gain==
+Attacking or blocking grants combo points dependent on different values and bonuses.
+
+===Stance Attacks===
+Stance attacks (that is, most melee attacks) add combo points, scaling with the attack's stance damage multiplier ('''100% stance damage multiplier = 1 point'''). For example, an attack with a '''300%''' damage multiplier, adds '''3''' combo points per hit. Only successful strikes against an enemy will award combo points. 
+
+''Some exceptions to these values exist, such as the last attack of {{M|Swirling Tiger}}'s Dancing Hunter combo or the first hit of {{M|Homing Fang}}'s Cutting Arches.''
+
+=== Blocking ===
+Each [[Melee#Blocking|blocked]] enemy attack adds 1 combo point, including each individual projectile.
+
+===Other Attacks===
+*Stealth and finisher attacks add varying amounts of points to the combo counter.
+*Melee hits against destructible objects, like [[Storage Container]]s, do '''not''' add to the combo counter.
+* The {{Weapon|Rauta}} generates '''2''' combo points for each [[Multishot|pellet]] that lands on an enemy, up to a maximum of '''28''' combo points spread across '''14''' pellets.
+
+===Additional Combo Count Chance===
+Certain mods supply Additional Combo Count Chance, awarding an extra combo point either on hit, on block, or under other specific circumstances. Additional Combo Count Chance starts at +0% and benefits additively from the following mods and effects.<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+EnduringStrikeMod.png|link=Enduring Strike|{{M|Enduring Strike}}
+GuardianDerisionMod.png|link=Guardian Derision|{{M|Guardian Derision}}
+QuickeningMod.png|link=Quickening|{{M|Quickening}}
+RelentlessCombinationMod.png|link=Relentless Combination|{{M|Relentless Combination}}
+TruePunishmentMod.png|link=True Punishment|{{M|True Punishment}}
+ExodiaTriumph.png|link=Exodia Triumph|{{Arcane|Exodia Triumph}}</br>([[Zaw]]s only)
+ExodiaValor.png|link=Exodia Valor|{{Arcane|Exodia Valor}}</br>(Zaws only)
+</gallery>
+
+===Other Sources of Combo Count===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:TandemBondMod.png|link=Tandem Bond|{{M|Tandem Bond}}
+RecompenseIcon.png|link=Recompense|{{A|Recompense}}
+StormofUkkoIcon.png|link=Storm of Ukko|{{A|Storm of Ukko}}
+FocusOpeningSlam.png|link=Opening Slam|{{Focus|Opening Slam}}
+FocusVexoricTauronStrike.png|link=Vexoric Tauron Strike|{{Focus|Vexoric Tauron Strike}}
+</gallery>
+
+==Combo Multiplier==
+The Bonus Damage Multiplier starts at 2.0x after 20 consecutive hits. The multiplier is increased by 1.0x every consecutive 20 hits until 220 consecutive hits have been made, at which point the bonus damage multiplier will cap at 12.0x. Heavy Attacks and certain [[#Ability Combo Counter|Warframe Abilities]] receive the full multiplier.
+
+{| class="wikitable" cellpadding="2" cellspacing="0"
+|-
+! Combo Counter Bonus Tier
+! Damage Multiplier
+! Minimum&nbsp;Consecutive<br />Hits Required
+! Notes
+|-
+|2||2.0x||20 ||
+|-
+|3||3.0x||40 ||
+|-
+|4||4.0x||60 ||
+|-
+|5||5.0x||80 ||
+|-
+|6||6.0x||100 ||
+|-
+|7||7.0x||120 ||
+|-
+|8||8.0x||140 ||
+|-
+|9||9.0x|||160 ||
+|-
+|10||10.0x||180 ||
+|-
+|11||11.0x||200 ||
+|-
+|12||12.0x||220 ||
+|-
+|13||13.0x||240|| Only with {{Weapon|Venka Prime}}
+|-
+|}
+*''{{Weapon|Venka Prime}} has a passive ability that allows it to reach 240 consecutive hits for a 13.0x multiplier.''</br>
+*''{{Weapon|Dex Nikana}} has a passive ability that reduces required hits per combo tier to 11 at the cost of lowering max multiplier to 11.0x at 110 hits.''
+
+==Combo Duration==
+{{Quote|Melee Combo resets after this time. Refresh the timer by adding to the Combo Count with melee hits or blocks.|In-game Description}}Combo Duration extends the combo timer from its default of '''5''' seconds, increasing the time a combo takes to reset. Visually, the combo timer is represented by a grey horizontal bar below the combo counter. 
+
+[[Riven Mods]] can include positive or negative combo duration. (See: [[Riven Mods#Attributes]] for values.) ''A zero or negative combo duration prevents increasing the combo counter.'' 
+
+Melee Combo duration cannot be reduced to below '''0.1''' seconds. 
+
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+AmalgamFuraxBodyCountMod.png|link=Amalgam Furax_Body Count|{{M|Amalgam Furax Body Count}}
+BodyCountMod.png|link=Body Count|{{M|Body Count}}
+ComboKillerMod.png|link=Combo Killer|{{M|Combo Killer}}
+DriftingContactMod.png|link=Drifting Contact|{{M|Drifting Contact}}
+GladiatorRushMod.png|link=Gladiator Rush|{{M|Gladiator Rush}}
+MeleeGuidanceMod.png|link=Melee Guidance|{{M|Melee Guidance}}
+RisingStormMod.png|link=Rising Storm|{{M|Rising Storm}}
+SwiftMomentumMod.png|link=Swift Momentum|{{M|Swift Momentum}}
+Rauta.png|link=Rauta|{{Weapon|Rauta}}</br>(only in {{WF|Kullervo}}'s hands)
+PrimaryDexterity.png|link=Primary Dexterity|{{Arcane|Primary Dexterity}}
+SecondaryDexterity.png|link=Secondary Dexterity|{{Arcane|Secondary Dexterity}}
+FocusPowerSpike.png|link=Power Spike|{{Focus|Power Spike}}
+</gallery>
+
+===Combo Decay===
+With the {{Focus|Power Spike}} passive from the {{Focus|Naramon}} focus school, the combo counter decays by 20 / 15 / 10 / 5 every reset instead of depleting completely. Whenever the counter goes below a multiplier threshold, it decreases the multiplier to the new value. At max rank without combo counter duration mods, it takes '''220''' seconds, or 44 reset ticks, to fully deplete. Combo duration mods greatly increase this time, as they apply to every reset tick. Replenishing the counter works the same as without the passive.
+
+===Exceptions===
+*{{Weapon|Xoris}} has infinite combo duration.
+*{{Weapon|Tenet Livia}} and {{Weapon|Tenet Grigori}} pause their combo timer while holstered.
+*{{Weapon|Anku}} with {{Resource|Anku Incarnon Genesis}} installed can pause their combo timer while holstered with Evolution III, Perk 1: '''Standoff'''.
+*{{Weapon|Ack & Brunt}} with {{Resource|Ack & Brunt Incarnon Genesis}} installed can pause their combo timer while holstered with Evolution III, Perk 2: '''Abiding Hold'''.
+*{{Weapon|Mk1-Furax}}/{{Weapon|Furax}}/{{Weapon|Furax Wraith}} with {{Resource|Furax Incarnon Genesis}} installed can pause their combo timer while holstered with Evolution III, Perk 3: '''Standoff'''.
+*{{Weapon|Okina}}/{{Weapon|Okina Prime}} with {{Resource|Okina Incarnon Genesis}} installed can pause their combo timer while holstered with Evolution III, Perk 2: '''Standoff'''.
+*{{Weapon|Guandao Prime}}  has an increased base combo duration of 6 seconds.
+*{{Weapon|Pulmonars}} has an increased base combo duration of 9 seconds.
+*{{Weapon|Vitrica}} has an increased base combo duration of 10 seconds.
+*Getting a kill with your secondary weapon with {{M|Combo Killer}} installed will reset your [[Glaive (Weapon Type)|Glaive's]] combo timer.
+
+==Initial Combo==
+Initial Combo grants a minimum value of combo points when idle or after a combo reset. Heavy attacks spend initial combo, which regenerates at a rate of 40 combo points per second. 
+
+[[Riven Mods]] can include positive initial combo, but not negative initial combo. (See: [[Riven Mods#Attributes]] for values.) Certain weapons also innately provide initial combo: the {{Weapon|Synoid Heliocor}}, {{Weapon|Furax Wraith}}, and {{Weapon|Fragor Prime}} give 20, 20, and 30 initial combo, respectively.
+
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:CorruptChargeMod.png|link=Corrupt Charge|{{M|Corrupt Charge}}
+CovertLethalityMod.png|link=Covert Lethality|{{M|Covert Lethality}}
+GalvanizedReflexMod.png|link=Galvanized Reflex|{{M|Galvanized Reflex}}
+ReadySteelMod.png|link=Ready Steel|{{M|Ready Steel}}
+MeleeCrescendo.png|link=Melee Crescendo|{{Arcane|Melee Crescendo}}
+</gallery>
+
+[[Incarnon]] melee weapons can also receive a bonus to Initial Combo through their Evolutions:
+
+{| class="wikitable"
+! Incarnon Weapon
+! Evolution
+! Effects
+|-
+| {{Resource|Magistar Incarnon Genesis}}
+| EVO 1 - Incarnon Form
+| +30 Initial Combo
+|-
+| {{Resource|Ceramic Dagger Incarnon Genesis}}
+| EVO 2 - Gun and Blade
+| On Primary Kill: +1 Initial Combo. Stacks up to 100x.
+|-
+| {{Resource|Ceramic Dagger Incarnon Genesis}}
+| EVO 3 - Adept Reflexes
+| +20 Initial Combo
+|-
+| {{Resource|Destreza Incarnon Genesis}}
+| EVO 3 - Adept Reflexes
+| +20 Initial Combo
+|-
+| {{Weapon|Praedos}}
+| EVO 3 - Adept Reflexes
+| +20 Initial Combo
+|-
+| {{Weapon|Ruvox}}
+| EVO 3 - Adept Reflexes
+| +20 Initial Combo
+|-
+| {{Weapon|Thalys}}
+| EVO 3 - Adept Reflexes
+| +20 Initial Combo
+|-
+| {{Resource|Hate Incarnon Genesis}}
+| EVO 3 - Stalker's Legacy
+| With {{Weapon|Dread}} and {{Weapon|Despair}} equipped, +30 Initial Combo
+|-
+| {{Resource|Sibear Incarnon Genesis}}
+| EVO 4 - Mounting Avalanche
+| On Killing Enemy With 3+ {{D|Cold}} Stacks: +15 Initial Combo for 10s. Stacks up to 4x.
+|}
+
+==Heavy Attack Efficiency==
+A Heavy Attack normally consumes all melee combo, but this can be reduced by increasing '''Heavy Attack Efficiency''' (previously known as "Combo Efficiency"). This stat increases combo retained after the attack, and is measured as a percentage of current combo. For example, if a weapon has 40% Heavy Attack Efficiency and makes a Heavy Attack while at 160 combo points (9x), the weapon will retain 40% of current combo, resulting in a melee combo of 64 points (4x) afterwards. This effect is capped at 90%.
+
+In [[Melee_Combo#Initial_Combo|Initial Combo]] Heavy Attack builds, this stat effectively '''enables more frequent attacks''', thereby increasing total damage output over time. After a Heavy Attack, an Initial Combo melee build takes time (40 combo per second) to rebuild the combo multiplier. If a Heavy Attack is made before the combo multiplier has been rebuilt, it will deal significantly less damage. By retaining some or most of the combo through Heavy Attack Efficiency, Heavy Attacks can be launched at full power more frequently.   
+
+*Without Heavy Attack Efficiency, it takes 3 seconds to rebuild a 7x combo, and 5.5 seconds to rebuild a 12x combo.
+**At 50% Heavy Attack Efficiency, it would take 1.5 seconds to rebuild 7x combo, and 2.75 seconds to rebuild 12x combo.
+**At 90% Heavy Attack Efficiency, it would take only 0.3 seconds and 0.55 seconds.
+<div class="tabber-borderless">
+{{#tag:tabber|
+Mods= 
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+FocusEnergyMod.png|link=Focus Energy|{{M|Focus Energy}}<br>+40% Efficiency
+FocusRadonMod.png|link=Focus Radon|{{M|Focus Radon}}<br>+40% Efficiency
+GalvanizedReflexMod.png|link=Galvanized Reflex|{{M|Galvanized Reflex}}<br>+50% Efficiency
+ReflexCoilMod.png|link=Reflex Coil|{{M|Reflex Coil}}<br>+60% Efficiency
+RivenModTemplate.png|link=Riven Mods|[[Riven Mods]]<br>+27.5% to +136% Efficiency
+</gallery>
+{{!}}-{{!}}
+
+Abilities=
+<div class="tabber-borderless">
+{{#tag:tabber|
+Kullervo=
+{{:Kullervo/Abilities/Passive}}
+{{!}}-{{!}}
+
+Voruna=
+{{:Lycath's Hunt}}
+{{!}}-{{!}}
+}}
+</div>
+{{!}}-{{!}}
+
+Weapons=
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+BoIncarnon.png|link=Bo Incarnon Genesis|{{Resource|Bo Incarnon Genesis}}<br>+50% Efficiency, Incarnon Form<br>+20% Efficiency, EVO 3 Overhand|alt=Bo Incarnon Genesis
+Corufell.png|link=Corufell|{{Weapon|Corufell}}<br>+20% Efficiency with {{WF|Citrine}} ({{WF|Citrine Prime|Prime}})|alt=Corufell
+DestrezaIncarnon.png|link=Destreza Incarnon Genesis|{{Resource|Destreza Incarnon Genesis}}<br>+30% Efficiency, EVO 3 Overhand|alt=Destreza Incarnon Genesis
+DualKeres.png|link=Dual Keres|{{Weapon|Dual Keres}} ({{Weapon|Dual Keres Prime|Prime}})<br>+20% Efficiency with {{WF|Khora}} ({{WF|Khora Prime|Prime}})|alt=Dual Keres
+FuraxWraithIncarnon.png|link=Furax Incarnon Genesis|{{Resource|Furax Incarnon Genesis}}<br>+90% Efficiency for [[Melee#Heavy Slams|Heavy Slams]] only, Incarnon Form<br>+20% Efficiency, EVO 3 Overhand|alt=Furax Incarnon Genesis
+Innodem.png|link=Innodem|{{Weapon|Innodem}}<br>+40% Efficiency on Finisher, EVO 5 Blood Anointed|alt=Innodem
+Praedos.png|link=Praedos|{{Weapon|Praedos}}<br>+50% Efficiency on Slide Kill, EVO 5 Transfigured Momentum|alt=Praedos
+Ruvox.png|link=Ruvox|{{Weapon|Ruvox}}<br>+40% Efficiency on Impaling 5 Enemies, EVO 5 Brutal Efficiency|alt=Ruvox
+SkanaIncarnon.png|link=Skana Incarnon Genesis|{{Resource|Skana Incarnon Genesis}}<br>+80% Efficiency with Overshields, EVO 2 Guardian's Promise|alt=Skana Incarnon Genesis
+</gallery>
+}}
+</div>
+
+==Melee Incarnon Weapons==
+Melee [[Incarnon]] weapons enter Incarnon form if a heavy attack is performed while Combo Tier is at 6x or higher (5x for {{Weapon|Innodem}} and {{Weapon|Praedos}}, or 3x with certain Evolutions). When an untransformed weapon with an Incarnon form reaches a Combo Tier high enough to transform, a high-pitched sound cue plays and the Melee Combo area of the UI begins to surge and overflow with Void energy. 
+
+This state alters the appearance of the weapon and unlocks unique offensive capabilities, such as the {{D|Heat}}-dealing spectral blades launched by {{Resource|Hate Incarnon Genesis}}'s forward and neutral combos, or the lingering fields of {{D|Cold}} created by the heavy slam attacks of {{Resource|Sibear Incarnon Genesis}}.
+
+Naturally Void-touched melee Incarnon weapons from the Zariman, Sanctum Anatomica, and Isleweaver typically receive +3 Range and +40 Attack Speed, and have a transformation lasting 90 seconds. An [[Incarnon#Acquisition|Incarnon Gensis Adapter]] can be applied to certain non-Void touched weapons, and those instead receive the following buffs during a melee weapon transformation lasting for 180 seconds:
+
+*+100% Melee Damage
+*+20% [[Sprint Speed]]
+*+20% [[Maneuvers#Parkour_Velocity|Parkour Velocity]]
+
+When the time is up, any transformation buffs are removed and the weapon returns to its original state. Transforming between modes does not reset the Melee Combo (other than any combo spent on the heavy attack), and the weapon may be instantly transformed back to its Incarnon mode if the melee combo is sufficiently high. 
+
+==Combo Scaling Effects==
+{{CleanUp|This list is missing examples of Warframe Abilities that scale with Melee Combo.}}
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+BloodRushMod.png|link=Blood_Rush|{{M|Blood Rush}}
+GladiatorAegisMod.png|link=Gladiator_Aegis|{{M|Gladiator Aegis}} set bonus
+GladiatorRushMod.png|link=Gladiator_Rush|{{M|Gladiator Rush}} set bonus
+GladiatorMightMod.png|link=Gladiator_Might|{{M|Gladiator Might}} set bonus
+GladiatorResolveMod.png|link=Gladiator_Resolve|{{M|Gladiator Resolve}} set bonus
+GladiatorFinesseMod.png|link=Gladiator_Finesse|{{M|Gladiator Finesse}} set bonus
+GladiatorViceMod.png|link=Gladiator_Vice|{{M|Gladiator Vice}} set bonus
+JugulusBarbsMod.png|link=Jugulus_Barbs|{{M|Jugulus Barbs}} set bonus
+JugulusCarapaceMod.png|link=Jugulus_Carapace|{{M|Jugulus Carapace}} set bonus
+JugulusSpinesMod.png|link=Jugulus_Spines|{{M|Jugulus Spines}} set bonus
+WeepingWoundsMod.png|link=Weeping_Wounds|{{M|Weeping Wounds}}
+Pennant.png|link=Pennant|{{Weapon|Pennant}}'s passive duration
+Ruvox.png|link=Ruvox|{{Weapon|Ruvox}}'s Gathering Momentum Evolution's sprint speed
+Tonkkatt.png|link=Tonkkatt|{{Weapon|Tonkkatt}}'s bonus {{D|Heat}} damage
+SecondaryOutburst.png|link=Secondary Outburst|{{Arcane|Secondary Outburst}}
+Lifted_b.png|link=Lifted|{{D|Lifted}} status effect's duration
+SlashDash.png|link=Slash Dash|{{A|Slash Dash}}
+</gallery>
+
+==Ability Combo Counter==
+Certain Warframe Abilities have their own unique '''Ability Combo Counter'''. They are functionally identical to Melee Combo Counter, and are affected by combo gain, duration, and scaling (but not initial) effects, but are exclusive to the abilities and function separately from the Melee Combo Counter. They have a base duration of 5 seconds that is affected by {{Stat|Ability Duration}} (verification needed, does not affect Blade Storm combo duration in arsenal stat view).
+
+The abilities with this trait are:
+
+*{{WF|Ash}}'s {{A|Blade Storm}}
+*{{WF|Atlas}}'s {{A|Landslide}}
+*{{WF|Gara}}'s {{A|Shattered Lash}}
+*{{WF|Khora}}'s  {{A|Whipclaw}}
+
+==Tips==
+*Tenno can reset their combo duration with no enemies nearby, by using a heavy attack paired with heavy attack efficiency (some points will still be spent), because the combo duration timer resets on heavy attack regardless of whether enemies are struck.
+
+==See Also==
+*[[Melee]]
+
+{{MechNav}}
+[[Category:Mechanics]]
+[[Category:Update 13]]
+[[fr:Combo de Mêlée]]

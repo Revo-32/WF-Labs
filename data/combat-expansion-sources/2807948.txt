@@ -1,0 +1,410 @@
+{{Infobox
+| Box title = Heat Damage
+| image = HeatModBundleIcon.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Heat_b.png|class=icon]] [[File:Heat_w.png|class=icon]]
+}}
+{{Quote|'''DAMAGE EFFICACY'''<br/>
+'''{{text|green|x1.5}}''' damage to Infested<br/>
+'''{{text|red|x0.5}}''' damage to Kuva Grineer
+
+'''STATUS EFFECT'''<br/>
+{{D|Heat}} sets enemies on fire causing them to panic and temporarily reduces their armor up to 50% with multiple stacks.|In-game Description}}
+'''{{D|Heat}} Damage''' is one of the four primary elemental damage types. Deals increased damage to {{D|Infested}} but reduced against {{D|Kuva Grineer}}. Its [[Status Effect]]s ignites enemies with [[Damage over Time]], causing them to panic and temporarily reduces [[Armor]].
+
+==[[Status Effect]]s==
+===General===
+The status effect of '''{{D|Heat}}''' damage is '''Ignite'''. It sets the enemy ablaze, which makes them panic, reduces their [[armor]] by up to '''50%''' and, after a 1 second delay, deals a tick of damage every second for '''6''' seconds.
+
+Enemies killed while under or by a Heat proc will be left in ashes, burning away shortly afterward.
+
+====Damage Over Time====
+Each tick deals {{D|Heat}} damage equal to:
+
+:<math>
+{
+\begin{aligned}
+\text{Heat Proc Damage per Tick} &= 0.5 \times \text{Modded Base Damage} \\
+&\qquad \times (1 + \text{Heat Damage Bonuses}) \\
+&\qquad \times (1 + \text{Faction Damage Bonuses}) \\
+&\qquad \times (1 + \text{Status Damage Bonuses}) \\
+&\qquad \times \text{Additional Multipliers}
+\end{aligned}
+}
+</math>
+:Additional Multipliers include modded critical multiplier on [[Critical Hit]] and multipliers on [[Enemy Body Parts]]; these stack multiplicatively with each other.
+:Modded Base Damage is not the same as normal damage calculations, ignoring physical and elemental damage bonuses and calculated as:
+::<math>
+{
+\begin{aligned}
+\text{Modded Base Damage} &= \text{Base Damage} \times (1 + \text{Base Damage Bonuses}) \times (1 + \text{Faction Damage Bonuses})
+\end{aligned}
+}
+</math>
+
+For example, tick damage for a weapon with an innate 100 damage, {{M|Serration}}, {{M|Hellfire}}, {{M|Bane of Grineer}}, and {{M|Rifle Elementalist}} will be:
+:Modded Damage = {{Math|100 {{mul}} (1 + 1.65) {{mul}} (1 + 0.3)|t=y|bf-a=y}}
+:Heat Mod Multiplier = {{Math|(1 + 0.9) {{mul}} (1 + 0.3)|t=y|bf-a=y|m=y}}
+:'''Tick Damage''' = {{Math|0.5 {{mul}} 344.5 {{mul}} 2.47 {{mul}} (1 + 0.9)|t = y|bf-a=y}}
+
+As can be seen in the above calculations for tick damage, Faction Damage is applied twice, making their effective bonus {{MathText|{{eql}} (1 + Faction Damage bonus)<sup>2</sup>}}. This is a 1.30*1.30 = 1.69 or +69% increase for the 30% Faction Damage mods and 1.55*1.55 = 2.4025 or +140.25% for the 55% Primed Faction Damage mods.
+
+{| class="wikitable"
+|+ Heat tick damage and proc duration
+|-
+! Time from initial proc
+| 0s || 1s || 2s || 3s || 4s || 5s || 6s || 7s
+|-
+! Tick damage occured?
+| ✗ || ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✗
+|-
+|}
+
+====Heat Inherit====
+{{Community|"Heat Inherit" is a community term}}
+{{UpdateMe|Clarify Heat inherit mechanic. There is no mention of first application's modded Heat percentage bonus and Faction Damage applying to all subsequent procs.}}
+'''"Heat Inherit"''' is a community-created term that describes the interaction of {{D|Heat}} status application between various weapons.  Repeated application of Heat procs do not stack tick damage in the same way other damage over time (DoT) [[Status Effect|status effects]] like {{D|Toxin}}, {{D|Electricity}}, or {{D|Slash}} do. Instead, a Heat proc both adds a stack '''and''' refreshes the duration of '''all''' currently active heat stacks on the target. This allows for ramping up Heat tick damage indefinitely (scaling up linearly) as long as heat status is kept refreshed within the 6 second effect duration (modified by [[Status Effect#Status Duration|Status Duration]]). Additionally, all Heat status stacks are automatically consolidated into one tick of damage per second, with new heat procs refreshing and further adding to this tick damage. 
+*Modded bonuses that can apply to the damage of the Heat status, such as {{M|Hellfire}} and [[Faction Damage Mods]], will be lost if the first Heat proc on the enemy is from a source without any such Heat modifiers, like Warframe abilities or [[Manifold Bond]], hindering the performance of Weapons that rely on Heat status to deal damage. 
+**To avoid this, the first Heat proc on the enemy must always come from a Weapon that has those modifiers.
+**Warframes that can widely apply Heat, such as [[Ember]], can make this a difficult task.
+**Status damage mods such as {{M|Rifle Elementalist}} are excepted, and will count towards the Heat status damage from their weapon regardless of modifiers on the first proc.
+*All heat procs on an enemy share the same remaining duration, and the longest [[Status Effect#Status Duration|Status Duration]] modifier is always used when resetting the duration. 
+**For example: A Tenno sets an enemy on fire using a secondary with no status duration mods. Each time it receives a new heat proc, the remaining durations of all existing heat procs are reset to 6 seconds. While the enemy is still burning, the Tenno switches to their primary, which has {{M|Continuous Misery}} equipped, and applies a heat proc: the remaining duration of all existing heat procs are reset to the updated max duration of 12 seconds. The Tenno switches back to their secondary and applies more heat procs; each time, the remaining duration resets to the max duration of 12 seconds, despite the secondary having no status duration mods.
+
+====Crowd Control====
+Enemies affected by a {{D|Heat}} proc are ignited in flames and will panic and flail around for a few seconds, preventing them from taking any other actions. The length of the panic animation depends on enemy type: approximately '''4''' seconds for humanoids, '''3''' for most Infested, and '''2''' for [[MOA]]s and [[Charger]]s. However, [[Osprey]]s, [[Bosses]], [[Tenno]], and enemies with [[Overguard]] are immune to this crowd controlling effect. Repeated application of {{D|Heat}} status will reapply the panic effect, and the effect will also trigger as soon as an enemy's Overguard breaks, even if new Heat procs are not being actively applied.
+
+====Armor Stripping====
+The {{D|Heat}} status effect's armor strip has a ramp-up time when it first procs, and a ramp-down time when the proc ends. Every 0.5 seconds '''after''' the initial proc, the enemy will have 15%, then 30%, 40%, and finally 50% of its armor stripped. It therefore takes 2 seconds to reach the maximum armor strip.<ref>[https://imgur.com/a/V2Oc6hl]</ref> Proccing more Heat status effects within this time frame will not speed up the armor stripping process.
+
+After the proc ends, the target will regain armor every 1.5 seconds for 6 seconds. The enemy's armor strip will decrease as follows: 50%, 40%, 30%, 15%, 0%.<ref>[https://imgur.com/a/Zfkv66b]</ref>
+
+Against an enemy with capped armor, giving 90% [[Armor#Enemy Damage Reduction Formula|damage reduction]] (such as level 57 [[Heavy Gunner]]), each tick of armor strip gives an effective damage increase of approximately '''x1.7''', '''x2.5''', '''x3''', '''x3.6''' respectively.<ref>https://www.desmos.com/calculator/fc3wqdepnc</ref>
+
+Status Duration mods will '''''slow down''''' the rate of armor strip. For example, having +100% Status Duration will make the amount armor strip ramp up every second, instead of every half second. As a result, the full 50% armor strip will only be achieved after 4 seconds. Similarly, -50% Status Duration modifier from a [[Riven Mod]] will make armor strip occur every 0.25 second, fully stripping an enemy in just 1 second. 
+
+{{D|Heat}} status [[armor]] reduction is '''multiplicative''' with other armor reduction sources. This can be expressed as the following:
+
+{{MathText|Armor after reduction {{eql}} (1 - {{Tooltip|50%|Heat status max armor reduction of 50% after 2 seconds.}}) {{mul}} [1 - ({{Tooltip|20%|Innate Corrosive status armor reduction.}} + {{Tooltip|6%|Corrosive status armor reduction of 6% per stack.}} {{mul}} Number of Corrosive stacks)] {{mul}} (1 - {{Tooltip|18%|18% armor reduction from one max-rank Corrosive Projection.}} {{mul}} Number Corrosive Projections)}}
+{{CustomCollapsible|View  detailed examples|ARI|&nbsp;}}
+For example, a full 4-player squad with max-rank {{M|Corrosive Projection|Corrosive Projections}}, an active {{D|Heat}} proc, and max stacked {{D|Corrosive}} proc will result in an enemy's armor being reduced to:
+:{{Math|(1 - 50%) {{mul}} [1 - (20% + 6% {{mul}} 10)] {{mul}} (1 - 18% {{mul}} 4)|mt=y|p=y}}.
+
+If only one player has a max-rank {{M|Corrosive Projection}} with the above statuses, an enemy's armor would instead be reduced to:
+:{{Math|(1 - 50%) {{mul}} [1 - (20% + 6% {{mul}} 10)] {{mul}} (1 - 18%)|mt=y|p=y}}.
+
+An active {{D|Heat}} proc, and max stacked {{D|Corrosive}} proc ''without'' {{M|Corrosive Projection}} would result in an enemy's armor being reduced to:
+:{{Math|(1 - 50%) {{mul}} [1 - (20% + 6% {{mul}} 10)]|mt=y|p=y}}.
+
+Currently, the only non-[[Abilities|ability]] method to ''completely'' remove armor is to use {{M|Shattering Impact}}, {{M|Sharpened Claws}}, or a [[Dagger]] with {{M|Amalgam Argonak Metal Auger}}.
+{{CustomCollapsible/End}}
+
+===Railjack===
+{{Quote|Railjack {{D|Heat}} Damage results in a Sear Status Effect which causes rounds to burn through enemy ships and deal Damage Over Time.|In-Game Description}}
+The status effect of {{D|Heat}} damage against [[Railjack]] space enemies is '''Sear''', dealing '''6''' ticks of damage over '''5''' seconds. Against the Tenno's [[Railjack]], it causes a '''Fire Hazard''' which causes ship [[Railjack/Armaments|armaments]] to overheat faster and cool down slower.
+
+'''Sear''' ticks deal '''100% {{mul}} {{Tooltip|''Modded Damage''|The innate Physical and/or Elemental damage of the weapon, including Vidar bonuses and Plexus bonuses to: Base damage, Critical damage, and bonuses on weak-spots}} {{mul}} (1 + Heat Damage bonuses)''' as {{D|Heat}} damage. Unlike standard heat, each proc has an independent duration and is not refreshed by additional heat procs.
+
+{| class="wikitable"
+|+ Sear tick damage and proc duration
+|-
+! Time from initial proc
+| 0s || 1s || 2s || 3s || 4s || 5s || 6s || 7s
+|-
+! Tick damage occured?
+| ✓ || ✓ || ✓ || ✓ || ✓ || ✓ || ✗ || ✗
+|-
+|}
+
+==Elemental Combinations==
+{{D|Heat}} damage mods can be combined with other elemental mods to create a new elemental damage type.
+*{{D|Heat}} + {{D|Cold}} = {{D|Blast}}
+*{{D|Heat}} + {{D|Toxin}} = {{D|Gas}}
+*{{D|Heat}} + {{D|Electricity}} = {{D|Radiation}}
+
+==Heat Sources==
+{{Main|:Category:Heat Damage}}
+
+===Weapons===
+{{Main|:Category:Heat Damage Weapons}}
+{{DamageTypeTable|Heat}}
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Basmu.png|link=Basmu|{{Weapon|Basmu}}<br />(Radial attack)|alt=Basmu(Radial attack)
+Shedu.png|link=Shedu|{{Weapon|Shedu}}<br />(Direct hit)|alt=Shedu(Direct hit)
+Catchmoon.png|link=Catchmoon|[[Catchmoon]] ([[Kitgun]] Chamber)
+Hystrix.png|link=Hystrix|{{Weapon|Hystrix}}<br />(Fire quill, {{D|Heat}} proc only)|alt=Hystrix(Fire quill,  Heat proc only)
+DualHeatSwords.png|link=Dual Heat Swords|{{Weapon|Dual Heat Swords}}<br />(Slam Radial Damage)|alt=Dual Heat Swords(Slam Radial Damage)
+HeatDagger.png|link=Heat Dagger|{{Weapon|Heat Dagger}}<br />(Slam Radial Damage)|alt=Heat Dagger(Slam Radial Damage)
+HeatSword.png|link=Heat Sword|{{Weapon|Heat Sword}}<br />(Slam Radial Damage)|alt=Heat Sword(Slam Radial Damage)
+Sheev.png|link=Sheev|{{Weapon|Sheev}}<br />(Slam Radial Damage)|alt=Sheev(Slam Radial Damage)
+</gallery>
+Do also note that [[Adversary#Adversary Weapons|adversary weapons]] such as the {{Weapon|Kuva Nukor}} may come with a Heat damage benefit of up to 60% as long as the progenitor matches. In this case, {{WF|Ember}} would be a valid Heat progenitor amongst others, see [[Adversary#Progenitor Warframe|the progenitor list]] for all valid options.
+
+===Enemies===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Flameblade.png|link=Flameblade|[[Flameblade]] wielding the {{Weapon|Twin Basolk}}
+FlameLancerAvatar.png|link=Scorch|[[Scorch]] wielding the {{Weapon|Ignis}}
+IncendiaryBombardAvatar.png|link=Napalm|[[Napalm]] wielding the [[Pyrotechnic Ogris]]
+GeneralSargasRukFK.png|link=General Sargas Ruk|[[General Sargas Ruk]] uses [[Blast Grenade]], [[Fire Blast (Ruk)|Fire Blast]], and [[Inferno]]
+LechKril.png|link=Lieutenant Lech Kril|[[Lieutenant Lech Kril]] (Phase 2) uses [[Fire Wave]]
+CatMaster.png|link=Hyekka Master|[[Hyekka Master]] wielding the {{Weapon|Ignis}} and can throw Fire Bombs
+ExploiterOrb.png|link=Exploiter Orb|[[Exploiter Orb]]
+MoaFusion.png|link=Fusion MOA|[[Fusion MOA]] firing a Plasma Beam
+DEHyenaNg.png|link=Hyena NG|[[Hyena NG]] uses [[Blast Grenade]] and [[Fire Wave]]
+OrokinMoaBipedAvatar.png|link=Corrupted MOA|[[Corrupted MOA]] firing a Plasma Beam
+CorpusMachinist.png|link=Machinist|[[Machinist]]
+</gallery>
+
+===Mods===
+{{#tag:tabber|Rifle =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+HellfireMod.png|link=Hellfire|{{M|Hellfire}}
+ThermiteRoundsMod.png|link=Thermite Rounds|{{M|Thermite Rounds}}
+WildfireMod.png|link=Wildfire|{{M|Wildfire}}
+</gallery>
+{{!}}-{{!}}Shotgun =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+IncendiaryCoatMod.png|link=Incendiary Coat|{{M|Incendiary Coat}}
+ScatteringInfernoMod.png|link=Scattering Inferno|{{M|Scattering Inferno}}
+BlazeMod.png|link=Blaze|{{M|Blaze}}
+</gallery>
+{{!}}-{{!}}Pistol =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+HeatedChargeMod.png|link=Heated Charge|{{M|Heated Charge}}
+PrimedHeatedChargeMod.png|link=Primed Heated Charge|{{M|Primed Heated Charge}}
+ScorchMod.png|link=Scorch (Mod)|{{M|Scorch}}
+</gallery>
+{{!}}-{{!}}Melee =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+MoltenImpactMod.png|link=Molten Impact|{{M|Molten Impact}}
+VolcanicEdgeMod.png|link=Volcanic Edge|{{M|Volcanic Edge}}
+</gallery>
+{{!}}-{{!}}Archgun =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+CombustionRoundsMod.png|link=Combustion Rounds|{{M|Combustion Rounds}}
+PrimedCombustionRoundsMod.png|link=Primed Combustion Rounds|{{M|Primed Combustion Rounds}}
+MagmaChamberMod.png|link=Magma Chamber|{{M|Magma Chamber}}
+</gallery>
+{{!}}-{{!}}Archmelee =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+BlazingSteelMod.png|link=Blazing Steel|{{M|Blazing Steel}}
+SearingSteelMod.png|link=Searing Steel|{{M|Searing Steel}}
+</gallery>
+{{!}}-{{!}}Warframe =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+AfterburnMod.png|link=Afterburn|{{M|Afterburn}}
+BlazingPillageMod.png|link=Blazing Pillage|{{M|Blazing Pillage}}
+FireballFrenzyMod.png|link=Fireball Frenzy|{{M|Fireball Frenzy}}
+FirewalkerMod.png|link=Firewalker|{{M|Firewalker}}
+NeutronStarMod.png|link=Neutron Star|{{M|Neutron Star}}
+ThermalTransferMod.png|link=Thermal Transfer|{{M|Thermal Transfer}} (Hold cast grants {{D|Heat}} damage)
+ValenceFormationMod.png|link=Valence Fomration|{{M|Valence Formation}}
+</gallery>
+{{!}}-{{!}}Companion =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+FiredUpMod.png|link=Fired Up|{{M|Fired Up}}
+FlameGlandMod.png|link=Flame Gland|{{M|Flame Gland}}
+BurningClawsMod.png|link=Burning Claws|{{M|Burning Claws}}
+</gallery>
+{{!}}-{{!}}Railjack =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+PhoenixBlazeMod.png|link=Phoenix Blaze|{{M|Phoenix Blaze}}
+</gallery>
+}}
+
+===Abilities===
+{{#tag:tabber|Ember =
+{{#tag:tabber|Fireball =
+{{:Fireball}}
+{{!}}-{{!}}Fire Blast =
+{{:Fire Blast}}
+{{!}}-{{!}}Inferno =
+{{:Inferno}}
+}}
+{{!}}-{{!}}Citrine =
+{{#tag:tabber|Prismatic Gem=
+{{:Prismatic Gem}}
+}}
+{{!}}-{{!}}Chroma (Heat) =
+{{#tag:tabber|Spectral Scream =
+{{:Spectral Scream}}
+{{!}}-{{!}}Elemental Ward =
+{{:Elemental Ward}}
+{{!}}-{{!}}Effigy =
+{{:Effigy}}
+}}
+{{!}}-{{!}}Gauss =
+{{#tag:tabber|Thermal Sunder =
+{{:Thermal Sunder}}
+}}
+{{!}}-{{!}}Jade =
+{{#tag:tabber|Light's Judgment =
+{{:Light's Judgment}}
+{{!}}-{{!}}Ophanim Eyes =
+{{:Ophanim Eyes}}
+{{!}}-{{!}}Glory On High =
+{{:Glory on High}}
+}}
+{{!}}-{{!}}Koumei =
+{{#tag:tabber|Kumihimo =
+{{:Kumihimo}}
+}}
+{{!}}-{{!}}Lavos =
+{{#tag:tabber|Catalyze =
+{{:Catalyze}}
+}}
+{{!}}-{{!}}Nezha =
+{{#tag:tabber|Fire Walker =
+{{:Fire Walker}}
+{{!}}-{{!}}Blazing Chakram =
+{{:Blazing Chakram}}
+}}
+{{!}}-{{!}}Protea =
+{{#tag:tabber|Blaze Artillery =
+{{:Blaze Artillery}}
+}}
+{{!}}-{{!}}Titania =
+{{#tag:tabber|Lantern =
+{{:Lantern}}
+}}
+{{!}}-{{!}}Temple =
+{{#tag:tabber|Pyrotechnics =
+{{:Pyrotechnics}}
+{{!}}-{{!}} Overdrive =
+{{:Overdrive}}
+{{!}}-{{!}}Ripper's Wail =
+{{:Ripper's Wail}}
+{{!}}-{{!}}Exalted Solo =
+{{:Exalted Solo}}
+}}
+{{!}}-{{!}}Uriel=
+{{#tag:tabber|Infernalis=
+{{:Infernalis}}
+{{!}}-{{!}}Remedium=
+{{:Remedium}}
+{{!}}-{{!}}Demonium=
+{{:Demonium}}
+{{!}}-{{!}}Brimstone=
+{{:Brimstone}}
+}}
+{{!}}-{{!}}Wisp=
+{{#tag:tabber|Sol Gate =
+{{:Sol Gate}}
+}}
+}}
+{{#tag:tabber|
+{{!}}-{{!}}Odonata (Archwing) =
+{{#tag:tabber|Energy Shell =
+{{:Energy Shell}}
+}}
+{{!}}-{{!}}Bonewidow (Necramech) =
+{{#tag:tabber| Exalted Ironbride =
+{{:Exalted Ironbride}}
+}}
+{{!}}-{{!}}Voidrig (Necramech) =
+{{#tag:tabber|Gravemines =
+{{:Gravemines}}
+{{!}}-{{!}}Guard Mode =
+{{:Guard Mode}}
+}}
+{{!}}-{{!}}Atomicycle =
+{{#tag:tabber|Atomi-Barrage =
+{{:Atomi-Barrage}}
+{{!}}-{{!}}Atomi-Bomb =
+{{:Atomi-Bomb}}
+}}
+}}
+
+===Arcanes===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+MagusMelt.png|link=Magus Melt|{{Arcane|Magus Melt}}|alt=Magus Melt
+VirtuosForge.png|link=Virtuos Forge|{{Arcane|Virtuos Forge}}|alt=Virtuos Forge
+Zid-AnUskos.png|link=Zid-An Uskos|{{Arcane|Zid-An Uskos}}|alt=Zid-An Uskos
+</gallery>
+
+===Ability Augments===
+Some abilities can cause {{D|Heat}} when an augment is equipped.<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+File:NeutronStarMod.png|{{M|Neutron Star}}
+File:ElementalSandstormMod.png|{{M|Elemental Sandstorm}}
+</gallery>
+
+==Sources of Heat Resistances==
+===Arcanes===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ArcaneIce.png|link=Arcane Ice|{{Arcane|Arcane Ice}}|alt=Arcane Ice
+</gallery>
+
+===Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+FlameRepellentMod.png|link=Flame Repellent|{{M|Flame Repellent}}|alt=Flame Repellent
+OrgoneTuningMatrixMod.png|link=Orgone Tuning Matrix|{{M|Orgone Tuning Matrix}}|alt=Orgone Tuning Matrix
+</gallery>
+
+===Enemies===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+CatMaster.png|link=Hyekka Master|[[Hyekka Master]] (80%)
+</gallery>
+
+==Additional Effects==
+Some mods and arcanes add additional effects when a {{D|Heat}} occurs or dealing {{D|Heat}} damage.
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+File:ArchonVitalityMod.png|link=Archon_Vitality|alt=Archon Vitality|{{M|Archon Vitality}}
+File:BurningHateMod.png|link=Burning_Hate|alt=Burning Hate|{{M|Burning Hate}}
+File:ArcaneHotShot.png|link=Arcane_Hot_Shot|alt=Arcane Hot Shot|{{Arcane|Arcane Hot Shot}}
+File:CascadiaFlare.png|link=Cascadia_Flare|alt=Cascadia Flare|{{Arcane|Cascadia Flare}}
+File:TopazArchonShard.png|link=Topaz_Archon_Shard|alt=Topaz Archon Shard|{{Resource|Topaz Archon Shard}}
+</gallery>
+
+==Notes==
+*Enemies killed while under the effect of a Heat proc will immolate, causing their body to burn to a crisp and vanish in a few seconds. This will cause {{A|Magnetize}} to stop pulling in more enemies.
+
+==Tips==
+*{{Arcane|Magus Accelerant}} is a rare case of resistance reduction that will multiply the effects of heat.
+*{{D|Heat}} damage and its status effects can make it a partial replacement for {{D|Corrosive}} damage when it comes to reducing armor.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Screenshot_495 ..png|Heat visuals on a melee weapon
+Screenshot_496..png|An enemy killed while affected by a heat proc
+Screenshot_510.png|An enemy under the effects of a heat proc
+File:HeatStatusEffectPhysXParticles.mp4
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42}}
+*Fixed Arcane Circumvent not fully stripping armor against enemies with Heat status.
+
+{{ver|38.5}}
+*Fixed dead Ancients, Brood Mothers, Thrashers, and Therids playing immolated animations before entering their death animation. 
+**Since the immolation animations were so long, players would waste valuable bullets and time trying to take down these foes, even though they were dead. 
+
+{{ver|36}}
+;Simplified Faction Resistances
+*Infested: Vulnerable to '''Heat'''
+*Kuva Grineer:
+**Resistant to '''Heat'''
+
+{{ver|26}}
+;Heat Status Proc Changes
+Heat Status procs now reduce targets' armor to 50% of the original value, with subsequent Heat procs refreshing the duration. Not hot enough for you? Applying the Status proc multiple times also turns up the Heat, dealing more damage per tick as the flames increase.
+
+{{ver|11}}
+*Introduced.
+}}
+
+==References==
+{{Reflist}}
+{{DamageNav}}
+
+[[de:Schaden/Feuerschaden]]
+[[es:Daño Calor]]
+[[fr:Dégâts/Dégâts Feu]]
+[[ru:Урон/Огонь]]
+{{DISPLAYTITLE:Heat Damage}}
+[[Category:Mechanics]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Heat Damage]]
+[[Category:Update 11]]
+[[Category:Armor Reduction]]

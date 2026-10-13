@@ -1,0 +1,66 @@
+{{ModBox}}
+'''Shattering Impact''' is a melee [[mod]] that permanently reduces an enemy's [[Armor#Enemy Armor|base armor]] by '''1''' per rank upon dealing {{D|Impact}} damage with a melee weapon.
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! Armor Reduction
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || +1 || 4
+|-
+| 1 || +2 || 5
+|-
+| 2 || +3 || 6
+|-
+| 3 || +4 || 7
+|-
+| 4 || +5 || 8
+|-
+| 5 || +6 || 9
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+==Notes==
+*Due to the nature of in-game [[Damage Quantization]], some melee weapons have such a low base {{D|Impact}} value that it is rounded to 0 damage, causing Shattering Impact to not apply. However, for the examples below, each weapon coincidentally deals pure {{D|Impact}} on slam hits, allowing certain attacks to reduce armor anyways.
+**{{Weapon|Destreza}}
+**{{Weapon|Galatine}}
+**{{Weapon|Galatine Prime}}
+*Shattering Impact takes effect on every melee hit from weapons with any Impact damage. It has no effect if the melee weapon's Impact damage is zero (for example ranged attacks of {{Weapon|Redeemer}}). Note that it is not necessary to proc the {{D|Impact}} status effect to trigger the armor reduction.
+*The amount of armor reduction per hit is a flat, constant value, independent of the amount of {{D|Impact}} damage inflicted. Since the reduction is applied to the target's base armor, for a given enemy type it will always take the same number of hits to completely drain the enemy's armor, regardless of its level.
+*Shattering Impact is applied before percentage-based base armor strips, such as {{M|Corrosive Projection}}, and so the number of shots required to fully strip will be unaffected.
+*Compared to {{D|Corrosive}} status effect, Shattering Impact has the ability to reduce a target's armor to 0 permanently, instead of just by 80% for the duration of the status effect. Corrosive, however, only needs 10 stacks of the status effect to achieve this, while Shattering Impact from weapons (other than certain Gunblades which are able to strip armor very quickly - in 2-4 ranged shots) may require a substantially higher amount of hits for the same effect on enemies with high base armor.
+*Shattering Impact is not considered a status effect and hence is able to affect status effect-immune enemies, such as bosses.
+*Shattering Impact does not affect [[Archon|Archons]] or [[Commandeered Prime|Commandeered Primes]].
+*As of {{ver|18.1.4}} Shattering Impact doesn't reduce enemy armor when used with the charge attacks of thrown weapons. The charge attack from a Blade and Whip type weapon ''will'' however reduce enemy armor.
+
+==Tips==
+*The mod is most useful either on certain Gunblades ({{Weapon|Sarpa}}, and {{Weapon|Vastilok}}) that can strip enemy armor in a few ranged shots, or against enemies with low amounts of base armor, and at high enemy levels.
+**Both ranged and Heavy Attacks of these Gunblades and {{Weapon|Arum Spinosa}} all fire multiple projectiles that have a portion of {{D|Impact}} damage, allowing players to strip armor quickly, and from a safer distance.
+*{{WF|Valkyr}}, {{WF|Volt}} and {{WF|Gauss}}, with proper mods, can deplete even high base armor in a short time using {{A|Warcry}}, {{A|Speed}} and {{A|Redline}}, and a stance with multi-hit combos.
+*The mod is most useful on melee weapons with high attack speed, and on [[Stance Mods|stances]] which involve applying multiple discrete instances of damage on the same keystroke. Due to its demand for high attack speed, this mod has good synergy with {{M|Fury}}, {{M|Berserker Fury}}, {{M|Quickening}} and {{M|Gladiator Vice}}.
+*The mod synergizes with {{Arcane|Melee Duplicate}}, which doubles the armor strip on base critical hits.
+
+==Bugs==
+*This mod does not have a description in the Polish Warframe Client.
+*Very often the armor reduction from Shattering Impact appears to only be able to be applied by the host as the health bar remains yellow for the clients. However, the actual effects from the armor stripping are applicable for the whole squad.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|17.0.5}}
+*Altered the text of the Shattering Impact Mod to be in line with the other parkour Mods.
+}}
+{{MeleeMods}}
+[[de:Zerschmetternder Einschlag]]
+[[es:Impacto devastador]]
+[[ru:Крушащий Удар]]
+[[Category:Mods]]
+[[Category:Update 17]]
+[[Category:Vazarin Mods]]
+[[Category:Common Mods]]
+[[Category:Melee Mods]]
+[[Category:Armor Reduction]]
+[[uk:Руйнівний удар]]

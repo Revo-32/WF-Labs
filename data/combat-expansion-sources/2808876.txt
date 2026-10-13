@@ -1,0 +1,128 @@
+{{Top|Weapon|Weapons|Weapons|Lotus|Tenno|Tenno|}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Deadly slashes from the Sigma sword are matched only by the force of the Octantis shield when thrown from the air.}}The '''Sigma & Octantis''' is a sword and shield combo, available through the [[Daily Tribute]] system. This weapon features a special shield throw attack, staggering enemies and opening them to finisher attacks for a brief period.
+
+This weapon '''cannot''' be sold.
+
+==Characteristics==
+*This weapon primarily deals {{D|Slash}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Eleventh Storm}}, {{M|Final Harbinger}} and {{M|Last Herald}} stance.
+*Blocking attacks stores a charge that increases critical and [[status chance]] by '''15%''' to the next attack. Up to '''4''' charges can be stacked before being consumed.
+**Critical Chance bonus is additive to {{M|True Steel}}, {{M|Blood Rush}}, and other similar buffs.
+**Status Chance Bonus is additive to {{M|Melee Prowess}}, {{M|Weeping Wounds}}, and other similar buffs.
+*Aerial attacks throw the shield, staggering enemies hit and opening them up to [[finisher]]s.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+==Acquisition==
+Sigma & Octantis is exclusive to the [[Daily Tribute]] system. It will become available every 200 days, beginning at day 300, until chosen as the Milestone reward. It comes with a free weapon slot and pre-installed [[Orokin Catalyst]].
+
+Additional blueprints can be bought from [[Cephalon Simaris]] for {{sc|100,000}}.
+
+{{BuildAutomatic|type=Weapon|name=Sigma & Octantis}}
+
+{{StanceTable|ComboType=Aerial}}
+
+==Notes==
+*The throw attack is done by simply tapping the melee button while in mid-air; holding down the button is not necessary, which makes it very fluid.
+**The shield can be thrown up to '''25''' meters away, which is '''not''' affected by range mods. The distance is, however, affected by the shield's flight speed and thus can be modified using mods that change projectile flight speed such as {{M|Jet Stream}}.
+**Holding the melee button will however make it easier to perform the finisher (if the melee button has been held down after performing an attack and an enemy is in a state where a finisher can be performed [unaware, staggered, or asleep] then the finisher will automatically occur when you enter within the appropriate range of the enemy).
+**Pressing the Heavy Attack button will create an explosion and cause the Shield to return to the user. This explosion has a base damage of '''50''' {{D|Blast}} and a '''4'''m radius. <!--Very low radius, 3 meters? Difficult to accurately test.-->
+*The thrown shield has a slight homing effect, similar to thrown Glaives, though it is still capable of missing.
+*The throw attack can be done in any direction (dictated by your aim), and therefore the usual downward melee slam attack is done by looking straight down.
+**The shield can, however, still be thrown straight down by holding {{Keybind|Down}}+ {{Keybind|E}} while looking down. This is due to the newer [[Melee|melee system]] allowing the user to force an aerial combo instead of performing a ground slam by using this technique, rather than a characteristic of this weapon in specific.
+*Throw attack's finisher window can be overwritten by almost all other animations or stuns (such as a [[Heavy Gunner]]'s ground slam animation, or elemental proc stuns like {{D|Electricity}} or {{D|Impact}}).
+*The throw attack statistics aren't affected by combo multiplier or combo multiplier mods.
+
+==Tips==
+*Equipping {{M|Final Harbinger}}, {{M|Blood Rush}} and [[Set Mods#Gladiator Mod Set|Gladiator Mods]] allows users to quickly boost the Sigma & Octantis's [[critical chance]].
+*The throw attack's stun can sometimes stagger enemies out of range of melee attacks, making it difficult to perform the finisher before the stagger wears off.
+*Throw attack seems to home in on the closest enemy rather than the enemy being aimed at, making precise targeting difficult.
+
+==Trivia==
+*'''Sigma & Octantis''' likely refers to the southern star [[wikipedia:Sigma_Octantis|σ Octantis (Sigma Octantis)]] whose position near the southern celestial pole makes it the southern hemisphere's pole star.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+StarShieldSword.png|Sigma & Octantis in Codex.
+</gallery>
+
+{{VideoGallery
+|{{YouTube|m94ntiONPxo|size=300px}}
+|{{YouTube|tQ9tjjZjtxE|size=300px}}
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37}}
+*Enabled Auto-Melee Aerial attacks for Glaive-like weapons that don’t have an Aerial throw, or don’t charge their Aerial throw moves, such as the Sigma & Octantis.
+*Fixed an issue where Glaive-like weapons, such as the Sigma & Octantis, lost Heavy Attack functionality while using Wukong’s “Cloud Walker” Ability, preventing players from Heavy Slamming for the duration of the Ability.
+
+{{ver|35.5}}
+*Fixed Sigma & Octantis not being able to activate Tennokai (combo counter was still being consumed).
+
+{{ver|30.1.1}}
+*Fixed Sigma & Octantis initial combo not working correctly on all Stances.
+
+{{ver|30.0.6}}
+*Fixed causing self damage when using the Sigma & Octantis Heavy Attack while airborne.
+
+{{ver|29.5.4}}
+*Fixed Melee Heavy Attacks not functioning for Sigma and Octantis.
+
+{{ver|28}}
+*Added login milestone reward blueprints to Simaris' Offerings.
+**''Blueprints for each only appear in his Offerings if they have already been previously selected as login rewards.''
+
+{{ver|27.1}}
+*Fixed Follow-Through stat changing when the Sigma & Octantis are equipped with a Stance Mod.
+
+{{ver|26}}
+*Damage increased from 60 to 174.
+*Range increased from 1 to 2.5.
+*Slam Attack increased from 120 to 522.
+*Slide Attack increased from 129 to 174.
+*Parry Angle set to 70.
+
+{{ver|24.4}}
+*Sigma & Octantis and Cobra & Crane Shield throw animations have been shortened and speed increased. 
+
+{{ver|22.20}}
+*Fixed the Sigma and Octantis scaling right down to 0.
+
+{{ver|22.8.3}}
+*Fixed not being able to Melee again upon throwing the Sigma & Octanis shield while using Exalted Blade on Excalibur, until you deactivate and reactivate the power. 
+*Fixed the Sigma & Octantis not having any Elemental FX or Energy trails.
+
+{{ver|22.2.4}}
+;Conclave
+*Reduced the damage and removed the forced stagger of the Sigma & Octantis shield throw.
+
+{{ver|22.2.2}}
+*Fixed the Sigma and Octantis not shrinking when in your Orbiter.
+
+{{ver|22.2.1}}
+*Fixed Clients not being able to throw the Sigma & Octantis if a Stance Mod is equipped.
+
+{{ver|22.1.2}}
+*Introduced.
+}}
+{{Ver/Lu|26}}
+{{WeaponNav}}
+[[de:Sigma & Octantis]]
+[[es:Sigma & Octantis]]
+[[fr:Sigma & Octantis]]
+[[Category:Sword and Shield]]
+[[Category:Melee Weapons]]
+[[Category:Tenno]]
+[[Category:Weapons]]
+[[Category:Daily Tribute Rewards]]
+[[Category:Update 22]]
+[[Category:Weapons with Passives]]
+[[uk:Сигма й Октант]]

@@ -1,0 +1,431 @@
+{{Infobox
+| Box title=Overguard
+| image=Eximus Overguard.png
+| caption=An Eximus unit with Overguard health
+|header text=Information
+|Row 1 title=Icon
+|Row 1 info=[[File:Overguard.png|class=icon light-invert]] [[File:OverguardOutlineDark_d.png|class=icon]]
+|Row 2 title=Introduced
+|Row 2 info={{Ver|31.5}}
+}}
+{{Quote|Overguard grants additional Health protection and Knockdown immunity as long as an amount remains.|In-Game Description}}
+'''Overguard''' is a special [[Hit Points|health buffer]] that grants immunity to most crowd control effects.
+__TOC__
+{{clr}}
+==Mechanics==
+{{HealthModifierTable|Overguard}}
+Overguard is an additional layer of defense that protects [[Health]] and/or [[Shield]]s from being damaged. It is neutral to all damage types except for a '''50%''' vulnerability from {{D|Void}} damage, though there are a few sources that increase damage dealt to Overguard:
+*{{D|Magnetic}} [[Status Effect]] amplifies all damage dealt to Overguard in the same way it does to Shields: '''100%''' damage on the first stack, '''25%''' on subsequent stacks up to a maximum of '''325%''' after 10 stacks. In addition, when Overguard breaks, the target receives {{D|Electricity}} damage equal to '''3%''' of their total Overguard per {{D|Magnetic}} stack up to a maximum of '''30%''' at 10 stacks.
+*[[Damage Vulnerability]] applies normally to Overguard.
+*Beast [[Companion]] ([[Kubrow]]s, [[Kavat]]s, [[Predasite]]s, and [[Vulpaphyla]]s)'s {{M|Assassin Posture}} increases their damage to Overguard by '''300%'''.
+*{{Companion|Sunika Kubrow}}'s {{M|Unleashed}} increases their damage to Overguard by '''300%'''.
+*{{WF|Oberon}}'s {{A|Smite}} instantly removes Overguard.
+*{{WF|Vauban}}'s {{A|Photon Strike}} deals '''200%''' more damage to Overguard.
+*[[Hound (Companion)|Hound]]'s {{M|Null Audit}} removes '''50%''' of an [[Eximus]]'s Overguard.
+*{{Arcane|Secondary Fortifier}} lets secondary weapons and [[Arch-gun]]s deal up to '''8x''' increased damage to enemy Overguard.
+
+Overguard is '''not''' affected by [[Damage Reduction]] from armor or abilities such as {{A|Splinter Storm}} or [[Damage Type Modifier|Damage type resistance]] effects such as {{M|Adaptation}} and {{WF|Caliban}}'s [[Caliban/Abilities#Passive|passive]]. However, abilities or effects with [[Damage Redirection]], such as {{A|Link}}, {{A|Warding Halo}}, or {{M|Shield of Shadows}} will apply their effect to Overguard. [[Maneuvers#Rolling|Rolling]] will also apply its damage reduction to Overguard. Enemies can still have their shields and [[armor]] stripped while their Overguard is active.
+
+===Player===
+On players, Overguard will negate all [[Status Effect]]s, including {{D|Stagger}} and {{D|Knockdown}}. It additionally has a '''0.5''' second invulnerability gate when fully depleted, preventing any excess damage from leaking into their shield or health pool. Even enemy crowd control effects that still affect players with {{M|Primed Sure Footed}} (such as fire waves by Arson Eximus) will be ignored with Overguard. However, grapple hooks from enemies such as a {{E|Scorpion}} will still interrupt the player for a moment and pull them in. 
+
+Only Warframes, [[Companion]]s, [[Specter]]s, and [[Eidolon Lure]]s are able to receive Overguard. Consequently, it '''cannot''' be given to [[Defense Objects]].
+
+If the user has no [[Shield]]s active ({{WF|Inaros}} and {{WF|Nidus}} by default), [[Energy]] conversion from damage to [[Health]] effects ({{M|Rage}}, {{M|Hunter Adrenaline}}, {{M|Necramech Rage}}, and {{M|Kinetic Diversion}}) will allow damage to Overguard granted from an ally to be converted to energy. {{WF|Kullervo}}, despite having no shields, cannot reliably benefit from this due to receiving Overguard for himself from {{A|Recompense}}.
+
+===Enemy===
+On enemies, they can receive [[Status Effect]]s but while their Overguard is active they will completely ignore the crowd control effects of {{D|Stagger}}, {{D|Knockdown}}, {{D|Stun}}, {{A|Mind Control}}, {{D|Confusion}} (including {{D|Radiation}} procs), {{D|Slow}}, {{D|Ragdoll}}, {{D|Blind}}, and {{D|Lifted}}, and can normally only receive a maximum of 4 {{D|Cold}} procs.<br>
+
+Enemies do not have any invulnerability gating when their Overguard is depleted.
+
+Overguard is independent of [[Enemy Level Scaling|enemy health and shield scaling]]. Overguard will scale by level but will be the same amount across all Eximus enemy types.
+
+Because of their immunity to crowd control, Overguarded enemies are a threat that should be prioritized; crowd control will still affect their allies and they will still target {{D|Confusion|Confused}} units which helps level the playing field. If afflicted by {{D|Radiation}}, their allies without Overguard can target them which in turn causes the Overguarded enemy to fire back. In the case of {{E|Ancient Protector}} and {{E|The Severed Warden}}, which provide Overguard to their own allies but not themselves while alive, they will still receive crowd control as normal and should be targeted instead. Shooting off a {{E|Nox}}'s helmet will immediately remove their Overguard.
+
+====Scaling====
+{{Transclude|Enemy Level Scaling#Overguard}}
+
+==Enemies with Overguard==
+*All [[Eximus]] except [[Archwing]], [[Warden]], and [[Guardsman#Prosecutor Variant|Prosecutor]] Eximus units. Their base Overguard is 12.
+*{{E|Ancient Protector}}/{{E|Corrupted Ancient}} - Grants itself and nearby enemies Overguard equal to 9x of the Ancient Protector's health.
+*{{E|Archon Amar}} - In [[Archon Hunt]]s, gains an extremely small amount of Overguard when protected by his clones and heat wall. Depleting the Overguard will cancel the ability.
+*{{E|Archon Boreal}} - In Archon Hunts, gains an extremely small amount of Overguard when protected by his screech. Depleting the Overguard will cancel the ability.
+*{{E|Archon Nira}} - In Archon Hunts, gains an extremely small amount of Overguard when protected by her frontal barrier and toxic field. Depleting the Overguard will cancel the ability.
+*{{E|Corpus Cestra Target}}
+*{{E|Corpus Sniper Target}}
+*{{E|Corpus Supra Target}}
+*{{E|Corpus Trencher Target}}
+*{{E|Dax Malleus}} - Only in [[The Undercroft]]/[[The Circuit]].
+*{{E|Kuva Trokarian}}
+*{{E|Nox}} (except {{E|Demolisher Nox}}) - Breaking the Nox's glass helmet will immediately remove all of its Overguard.
+*{{E|Scaldra Dedicant}} - Breaking the Dedicant's glass ampule on its abdomen will immediately remove all of its Overguard.
+*{{E|The Severed Warden}} - Grants and continually replenishes nearby enemies with Overguard. Cannot provide Overguard to themselves.
+*{{E|Thrax Centurion}}
+*{{E|Thrax Legatus}}
+*[[Deep Archimedea]]/[[Temporal Archimedea]] ("Bolstered Belligerents" Risk Variable) - All enemies have Overguard equal to 50% of their max health.
+*[[Void Armageddon]] - All Grineer and Corpus units receive Overguard upon destroying an Overguard Exodamper for the remainder of the round.
+
+==Crowd Control That Bypasses Overguard==
+{{UpdateMe}}
+*{{D|Cold}} procs (up to 4 stacks)
+*{{D|Void}} procs bullet effect
+*{{D|Silence}} status effect from {{WF|Banshee}}'s {{A|Silence}} or {{WF|Dante}}'s {{A|Noctua}} with {{M|Noctua Swarm}}. 
+**Will silence through Overguard, but does not apply the asssociated stun from those abilities. 
+*{{WF|Loki}}'s {{A|Switch Teleport}} - will not make enemy disoriented upon teleport
+*Effects that [[Taunt]] or have increased [[Threat Level]] (i.e. presence of Overguard will not affect [[Enemy Behavior]]):
+**{{WF|Loki}}'s {{A|Decoy}}
+**{{WF|Nyx}}'s {{A|Chaos}}
+**{{WF|Octavia}}'s {{A|Mallet}} 
+**{{WF|Titania}}'s {{A|Razorwing|Razorflies}}
+**{{WF|Dante}}'s {{M|Noctua Swarm}}
+*{{WF|Volt}}'s {{A|Discharge}} will stop enemy movement, but will not affect their actions.
+*{{WF|Follie}}'s {{A|Shadowgraph}} - Defense Capsule will distract part of enemies
+*[[Dax]] enemies ([[Dax Arcus]], [[Dax Equitem]], [[Dax Gladius]], [[Dax Herald]], and [[Dax Malleus]]) suffer a forced knockdown if their special attacks are interrupted by gunfire. Overguard does not stop this knockdown.
+*While {{D|Radiation}} can't directly affect enemies with Overguard, if another enemy without Overguard is irradiated and shoots the enemy with Overguard, they will turn to target them instead of the player. However, as soon as they stop firing at the Overguarded enemy, the Overguarded enemy will resume firing at players
+
+==Abilities That Have Unique Interactions With Overguard==
+This is a short list of Warframe abilities that will slow enemies with Overguard until it is removed, after which the ability will
+affect them like normal:
+
+*{{WF|Vauban}}'s {{A|Bastille}}'s Vortex 
+*{{WF|Zephyr}}'s {{A|Tornado}}s
+*{{WF|Gyre}}'s {{A|Coil Horizon}} Vortex
+
+==Sources of Player Overguard==
+;Abilities
+<tabber>
+|-|Dante=
+   {{#tag:tabber|
+      Light Verse={{:Light Verse}}
+      {{!}}-{{!}}
+      Final Verse={{:Final Verse}}
+   }}
+|-|Kullervo={{:Recompense}}
+|-|Narin={{:Naraemagi}}
+|-|Nyx={{:Psychic Bolts}}
+|-|Rhino={{:Iron Skin}}
+</tabber>
+
+;Mods
+<gallery captionalign="center" captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+IcyAvalancheMod.png               |link=Icy Avalanche         |{{M|Icy Avalanche}}|alt=Icy Avalanche
+IntrepidStandMod.png              |link=Intrepid Stand        |{{M|Intrepid Stand}}|alt=Intrepid Stand
+RumbledMod.png                    |link=Rumbled               |{{M|Rumbled}} ({{WF|Atlas}} only)|alt=Rumbled ( Atlas only)
+HealingFlameMod.png               |link=Healing Flame         |{{M|Healing Flame}} ({{WF|Ember}} only)|alt=Healing Flame ( Ember only)
+RhythmGuardMod.png                |link=Rhythm Guard          |{{M|Rhythm Guard}} ({{WF|Temple}} only)|alt=Rhythm Guard ( Temple only)
+PackLeaderMod.png                 |link=Pack Leader           |{{M|Pack Leader}} (Companion only)|alt=Pack Leader (Companion only)
+PrimedPackLeaderMod.png           |link=Primed Pack Leader    |{{M|Primed Pack Leader}} (Companion only)|alt=Primed Pack Leader (Companion only)
+</gallery>
+
+;Miscellaneous
+*{{Arcane|Arcane Circumvent}} - 50% of max enemy Overguard stolen on roll, max 10,000 Overguard
+*{{Arcane|Secondary Fortifier}} - 1% stolen Overguard on secondary weapon damage, max 15,000 Overguard
+*{{Gear|Archgun Deployer}} - 2,000 Overguard on deployment
+*[[Decree]] - Killer's Confidence
+*[[Riding Intrinsic]] Rank 6 - {{A|Steadfast Dismount}}
+*{{Focus|Rift Waters}}
+
+==Notes==
+*Players with Overguard will be immune to [[energy]] draining effects such as the [[Ancient Disruptor]]'s aura, [[Disruption]]'s energy drain debuff, [[Netracells]]' Exhaustion Keyglyph, [[Deep Archimedea|Deep]] and [[Temporal Archimedea]]'s Concussive Drain and Energy Exhaustion Personal Modifiers.
+*When a source of Overguard has a 'maximum' Overguard amount, that source cannot restore Overguard above that level. Combining multiple sources of Overguard does affect max Overguard. 
+
+==Sources of Crowd Control==
+{{UpdateMe}}
+Note that non-CC effects (e.g. damage, [[armor]]/[[shield]] removal) of these abilities will still apply to enemies with active Overguard.
+{{Transclude|Buff & Debuff/Debuffs/CC}}
+
+==Bugs==
+*Blocking with melee weapons will not build the combo counter or prevent damage while Overguard is active.
+*Auto block and manual block with melee equipped disabled during Overguard.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42}}
+*Fixed player Overguard being able to take damage during invulnerability caused by Nyx’s Absorb, Excalibur’s Slash Dash, Dagath’s Rakhali's Cavalry, and Qorvex’s Crucible Blast.
+*Fixed boss fights with multiple targets (ie. Prime Vanguard) sharing the same Overguard bar and Status Effects in their HUD health indicators, instead being visually distinct from one another. 
+**Also fixed vertical alignment issues between bosses’ health bars when changing resolution.
+
+{{ver|38.5}}
+*Bolstered Badguys gives 75% less Overguard to Techrot Babaus.
+*Reduced the duration of Overguard provided by Ancient Protectors from 20s to 15s. This Overguard will now also decay 3s after the Ancient has died, if the remaining duration is longer than 3s.
+**Also prevented all Ancients from receiving Overguard from Ancient Protectors (including the Ancient Protector themselves).
+**Enemies with innate Overguard can no longer receive Overguard from the Ancient Protector's ability.
+**Related fixes:
+***Fixed staggers and other animation-breaking states not preventing the Overguard ability from being cast.
+***Fixed Ancient Protectors being able to cast their Overguard ability while in Grendel's stomach.
+*Updated tooltip for Magnetic Status to communicate the bonus damage against Overguard.
+*Fixed Overguard not applying to The Severed Warden’s arms.
+
+{{ver|38.0.8}}
+*Fixed Ancient Protectors giving Overguard to the spectral forms of Thrax Centurion and Thrax Legatus.
+
+{{ver|38.0.6}}
+*Fixed Companions not dying after triggering Sacrifice and Martyr Symbiosis if they have Overguard.
+
+{{ver|37}}
+*Celestial Stomp no longer stuns crowd control-immune enemies, such as Eximus units, to bring Celestial Stomp in line with similar crowd-controlling abilities.
+*Molecular Prime Changes:
+**Added a Tap / Hold functionality: Tap to cast a Slowing effect on enemies. Hold to cast a Speed-Up effect instead.
+**Bonus damage multiplier now applies to Overguard, Health, and Shields.
+***Previously it only applied to enemy Health!
+***This multiplier has also been added to the Ability screen so players can better understand Molecular Prime’s mechanics. 
+**Speed-Up effect will bypass crowd control immunity (ex: enemies with Overguard).
+*Unleashed (SUNIKA Kubrow): 
+**Instead of targeting "VIP" enemies, a category which is somewhat poorly defined and doesn't come up very often, this will now target Eximus units, doing 300% damage against Overguard.
+*'''Beast melee Postures!''' Have you ever wished to have a little more control over specifically how your pet chooses to engage with enemies? Then check out these new melee Posture Mods that shape the behavior of your Beasts:
+**Assassin Posture: Your pet will prefer to attack Eximus and VIP enemies. Increases damage to Overguard done by your pet by 300%.
+***Can be acquired with Conservation tags from The Business’ “Trade Tags” menu in Fortuna, Venus. 
+*The following abilities now apply their Damage Vulnerability against enemy Shields and Overguard (previously they only applied to enemy Health): 
+**Xaku’s Vast Untime
+**Mag’s Magnetize
+**Titania’s Beguiling Lantern Augment
+**Bonewidow’s Firing Line
+**Gara’s Mass Vitrify
+**Gara’s Splinter Storm
+**Nezha’s Blazing Chakram
+**Nova’s Molecular Prime
+
+{{ver|36.0.5}}
+*Fixed Overguard preventing players from parrying.
+
+{{ver|36}}
+;Magnetic
+
+Magnetic has received a few buffs to increase its effectiveness against Shields and to hammer home the power fantasy of overloading enemy Shields.
+
+'''Magnetic Changes:'''
+*Upon Shield/Overguard Breaking a target, the enemy will now be dealt Electric Status damage for a percentage of Max Shields/Overguard per Magnetic stack while also forcing an Electric Status Effect.
+*Magnetic stacks on an enemy with Overguard now allow for bonus damage to Overguard, similar to how Magnetic affects Shields.
+
+;Ember Changes
+
+'''Fire Blast (3rd Ability):'''
+*'''Augment Mod Changes:'''
+**'''Healing Flame:''' Now converts all over healing (gaining Health points while as max Health) into Overguard. 
+***Description now reads: “Each enemy hit heals by 25 to 50 depending on current Immolation level. With Ember, over healing grants you Overguard.”
+***This only applies to Ember herself and not to Fire Blast on other Warframes via Helminth.
+
+;Stat UI Changes & Fixes
+
+*Added a Void Damage tooltip in the Operator stats UI to show its efficacy stat and Status Effect description. 
+**Now reads: “Damage Efficacy: X damage to Zariman.
+**Status Effect: Highly effective against enemies with Overguard Health and Sentients as it resets their damage adaptation. Void creates a bullet attractor sphere on the target that attracts and concentrates further attacks.”.
+**Added an Overguard tooltip to Rage, Archwing, Necramech and Hunter Adrenaline Mods, due to their new interactions with Overguard as of Update 35.5.6.
+
+;TOP FIXES
+
+*Fixed the Pack Leader Mod reducing the amount of Overguard on a Companion if they already have the Mod's max amount  (+1200).
+*Fixed being able to apply 5 Puncture Stacks to VIP enemies with Overguard, instead of the intended 3.
+
+{{ver|35.6}}
+*Fixed players with Overguard being affected by the Gruzzling’s slow AOE.
+
+{{ver|35.5.6}}
+;Updated Overguard Interactions With Vex Armor, Rage, & Hunter Adrenaline
+
+As announced last week, we’ve changed how Overguard interacts with effects that benefit from receiving damage on Warframe to make it more co-op friendly. Specifically, Chroma’s Vex Armor and the Rage and Hunter Adrenaline Mods. The conversations regarding Dante’s abilities with Overguard became a driving factor to look at these interactions and find ways in which we can make them work to benefit co-op play. Overall, these changes aim to create a harmonious arrangement between the often unpredictable Overguard gains from allies and Vex Armor, Rage, and Hunter Adrenaline.
+
+The following changes are '''in addition''' to their existing functionality. 
+
+'''Chroma’s Vex Armor'''
+
+Previously, Overguard would prevent Chroma from benefiting from his Vex Armor buffs (since it blocked damage on Health and Shields). So, we’ve made the following change to allow players to receive the buffs through all sources of Overguard:
+
+'''Now: Melee kills now grant a 15% Armor increase and ranged kills a 15% increase to Weapon Damage (doubled to 30% for ranged weak point kills).'''
+
+This has the additional perk of self-sufficiency where players have far more control over the buffs, instead of having to rely on the unpredictability of damage dealt by enemies.
+
+'''Rage and Hunter Adrenaline'''
+
+Previously, Overguard granted by allies could prevent you from gaining Energy from these Mods (since it blocked damage dealt to Health). So, in an effort to create a more co-op friendly experience between the two, we’ve made the following change:  
+
+'''Now, Rage and Hunter Adrenaline can convert the Damage on Overguard granted by allies to Energy while Shields are inactive.'''
+
+More specifically, they will trigger when the last source of Overguard originates from an ally (includes spawned allies, such as Specters). This allows shield-less Warframes, such as '''Inaros''' and '''Nidus''', to be able to regenerate Energy via these Mods when they would have previously been blocked by Overguard granted by allies.
+
+Here are the exact stat details:
+
+*'''Rage:''' +40% (same effectiveness as the base functionality) of Damage on Overguard granted by allies to Energy while Shields are inactive. 
+*'''Hunter Adrenaline:''' +45% (same effectiveness as the base functionality) of Damage on Overguard granted by allies to Energy while Shields are inactive.
+
+NOTE: Warframes that grant themselves Overguard, like Kullervo or Rhino, will not be able to trigger Rage and Hunter Adrenaline from their own Overguard. Only Overguard granted by allies is eligible because this is the only interaction that is potentially disruptive to your build (i.e your ally puts Overguard onto your Rage-Build Nidus). 
+
+'''Necramech Rage''' and '''Kinetic Diversion''' (Archwing) have also had the same changes applied to them with Overguard interactions: 
+*Necramech Rage: Convert +15% of Damage on Overguard gained from allies to Energy. 
+*Kinetic Diversion: Convert +40% of Damage on Overguard gained from allies to Energy. 
+
+'''General Overguard Change:'''
+*Frost’s Icy Avalanche Augment Mod will now grant Overguard to non-player allies in radius (i.e. Sentinels, Companions, Specters).
+
+{{ver|35.5.3}}
+;Missed Notes from Update 35.5.0&#58;
+Observant Tenno may have noticed some Abilities are no longer interacting with Crowd Control immune foes the same way. This is due to a change that went out with Dante Unbound, but was unfortunately missed in Patch Notes. These particular interactions fell outside of the intended design of CC immunity, so we have removed these outliers to restore expected behaviors.
+
+Enemies with Crowd Control immunity (ex: Overguard) have had the following interactions removed:
+*Frost's Ice Wave Impedance Augment (specifically the frozen trail that slows them)
+*Rhino’s Stomp (slow effect)
+*Primary Obstruct (weapon jamming)
+*Exodia Epidemic (enemy suspension)
+*Zenurik Temporal Drag (slow effect)
+*Wisp’s Breach Surge (blind)
+*Halikar (disarm)
+*Mesa’s Muzzle Flash (blind)
+*Proboscis Cernos (stun and pull)
+*Mag’s Counter Pulse Augment (robotics disabling and disarm)
+*Mag’s Fracturing Crush Augment (immobilization) 
+*Malicious Code (immobilization) 
+
+Player Overguard Changes:
+*Players with Overguard will no longer be pulled towards Trauma Clamps in the Undercroft. 
+
+{{ver|35.5}}
+*Fixed the Rakta Dark Dagger and Sancti Magistar not giving Shields and Health respectively for damage dealt to enemy Overguard (it previously only counted damage dealt to enemy Shields & Health). 
+
+{{ver|35.1.2}}
+*Players with Overguard are now immune to the slow effect from enemy Necramech’s Necraweb ability.
+*Fixed Overguard earned on Warframe in Duviri from the Killer’s Confidence Decree causing players to be indefinitely invulnerable in the Undercroft. 
+**''Now, Overguard earned from the Decree will be cleared from Warframe after entering the Undercroft.''
+
+{{ver|34.0.6}}
+*Fixed enemies with Overguard being pulled by Magus Anomaly. 
+**''Enemies with Overguard are immune to crowd control abilities/effects, and should not be affected by Magus Anomaly until after Overguard has been removed.''
+
+{{ver|34}}
+*Companions can now gain Overguard (behaves the same as player Overguard).
+*Gaining Overguard now provide more gradual feedback in the health bar instead of instantly changing.
+*Fixed Overguard disappearing from the UI while riding K-Drive/Merulina.
+*Fixed enemies with Overguard being affected by the Malicious Code Parazon Mod when they should be immune to crowd control effects.
+
+{{ver|33.6.4}}
+*Player Overguard now protects against Arctic Eximus’ slow auras.  
+*Overguard granted by Styanax’s Intrepid Stand Augment Mod is now capped at 15k (at 100% Ability Strength), which scales with Ability Strength. 
+**''Outside of maintaining the status quo (excluding Rhino’s Iron skin, which requires skillful timing to scale), the Augment allowed for infinite amounts of Overguard to be stacked effortlessly and quickly, which could trivialize challenging content and limit future design space. The survivability and team support element that players have been enjoying on Styanax is still preserved, just at a more practical level to encourage more dynamic play.''
+*Overguard granted by Frost’s Icy Avalanche Augment Mod now stacks on cast (up to 15k, which scales with Ability Strength) instead of keeping the highest value from the original or recast. 
+
+{{ver|33.6}}
+;Player Overguard Improvements
+With Duviri came the first instance of Warframes using Overguard, and The Seven Crimes of Kullervo solidified this mechanic as a part of various Warframes’ kits.
+
+Now that players have access to Overguard consistently, we have made some adjustments to improve the quality of life in this new health state:
+
+<u>Consistent Proc Immunity</u><br/>
+Due to the variety of sources of Overguard, there were occasionally inconsistencies in how it behaved in regard to Proc Immunity. With Echoes of Duviri, all sources of Player Overguard will offer Full Proc Immunity while active.
+
+<u>Overguard Depletion Protection</u><br/>
+Similar to Shields, Player Overguard will now offer a brief moment of invulnerability (currently 0.5s) once depleted. This window will prevent players with Overguard from being one-shot, as damage to Overguard will no longer carry over into your Health or Shield pool once depleted.
+
+Upon launch, we will closely monitor feedback on this mechanic change to see if further adjustments are needed.
+
+NOTE: This Overguard Depletion Protection applies only to Player Overguard, not Overguard seen on enemies.
+
+<u>Hit Impact Visuals</u><br/>
+Similar to taking damage to your Health or your Shields, Overguard now has its own unique appearance when attacked. Damage will no longer cause blood splatters while Overguard is active, and we have added a unique metallic hit effect that better communicates having a layered shell protecting you.
+
+Additionally, players will no longer flinch while taking damage with Overguard active.
+ 
+(NOTE: This has no gameplay function other than looking cool)
+
+{{ver|33.5.3}}
+*Fixed moving in slow motion after interacting with ally slowing effects (like Vauban’s Vortex and/or Zephyr’s Tornado) while Overguard is active. 
+**This was particularly prevalent with Rhino (Iron Skin), Frost (with the Icy Avalanche Augment Mod), Kullervo (Recompense), and Atlas (Rumbled Augment Mod) as their abilities grant Overguard.
+*Fixed several issues with Warframe Overguard reducing the effectiveness of the following supportive abilities/effects:
+**Fixed Gara’s Splinter Storm damage reduction being capped at 50% instead of the intended 90%. 
+**Fixed Trinity’s Blessing healing over time for a fixed amount instead of restoring the full intended amount on cast. 
+**Fixed Garuda’s Blood Altar not healing. 
+**Fixed Mirage’s Eclipse damage reduction being capped at 50% instead of the intended 95%. 
+**Fixed Hydroid’s Curative Undertow Augment Mod being capped at 100 Health.  
+**Fixed Nezha’s Warding Halo damage reduction being capped at 50% instead of the intended 90%. 
+**Fixed Volt’s Capacitance Augment Mod (Discharge) being capped at 250 Shields and not granting Overshields. 
+**Fixed Baruuk’s Desolate Hands damage reduction being capped at 50% instead of the intended 90%. 
+**Fixed Harrow’s Penance heal being capped at 50 health/s.
+**Fixed Equinox’ Mend & Maim heal being capped at 500 Health over 5 seconds.
+**Fixed Sancti Magistar’s heal being capped at 500 Health over 5 seconds.
+**Fixed Vazarin’s Protective Sling capping at 500 Health over 5 seconds and not providing damage immunity.
+
+{{ver|33.5}}
+;OVERGUARD ON WARFRAME ABILITIES
+
+Overguard as a Warframe defense mechanism was introduced in Drifter Intrinsics and Decrees with The Duviri Paradox update - it grants additional Health protection and provides Knockdown Immunity while active. 
+
+Overguard has virtually the same function (Health buffs and immunities*) as the listed abilities and Augment Mods, so in an effort to expose the mechanic more and establish familiarity with Overguard as a whole (as it also appears on enemies) we have made it the visual indicator for them. 
+
+*'''Rhino’s Iron Skin'''
+*'''Atlas’ Rumbled Augment Mod'''
+*'''Frost’s Icy Avalanche Augment Mod'''
+
+''*The base defensive properties of these abilities and Augment Mods have not changed!'' 
+
+This change also has the added benefit of allowing “On Damaged” Mods and Arcanes to apply to all of the above! Prior to this change, the aforementioned abilities would make the player "invulnerable" until the added survivability was depleted. Now, Mods and Arcanes like Adaptation and Arcane Avenger can now be triggered when damage is taken to Overguard, because it is treated similarly to Health and Shields.
+
+The HUD Overguard element has also had slight upgrades for the purposes of registering for these abilities and Augment Mods:
+
+{{ver|33.0.11}}
+*Fixed Grendel’s Regurgitate slowing enemies with Overguard. 
+**''Enemies with Overguard are intended to be immune to slow effects. However, if Overguard is cleared while Regurgitate’s slow is active, then it will apply to the target for the remaining duration.''
+
+{{ver|33}}
+*Fixed Dethcube’s Vaporize Mod not respecting Overguard’s crowd control immunity and bypassing their defenses to deal damage.
+
+{{ver|32.3}}
+*Fixed the Parazon Mercy Kill Health threshold UI indicator showing over Overguard if you hit an enemy with enough Impact procs (which was confusing since you cannot Mercy Kill enemies with Overguard active).
+
+{{ver|32.2.4}}
+*Fixed rare case of inconsistent damage being dealt to Overguard.
+
+{{ver|32.0.3}}
+*Updated the Overguard depletion sound FX on Eximus units.
+
+{{ver|32}}
+;OVERGUARD LIFESTEAL CHANGES&#58;
+On the introduction of Overguard, we mentioned that we would be improving how some ability mechanics function with Overguard, this is a continuation of those efforts. So we have made several changes, the majority of which cover how Overguard reacts with lifesteal. 
+
+*Fixed Garuda's Blending Talons Augment not triggering when hitting an enemy with Overguard is affected by a Slash Status Effect.
+*Fixed Gauss's Kinetic Plating not generating battery when melee attacking enemies with Overguard.
+*Fixed Protea's Temporal Anchor not counting damage to Overguard when building up damage for the temporal implosion blast.
+*Fixed Zephyr's Tailwind Target Fixation Augment not counting enemies with Overguard when building up extra damage.
+*Fixed Hema not restoring health on headshots against enemies with Overguard.
+*Fixed Hirudo not restoring health on critical hits against enemies with Overguard.
+*Fixed enemies affected by Frost’s Avalanche not losing any armor while Overguard is active. 
+
+If there are any other cases where Lifesteal isn’t applying from Overguard, please let us know on the Forums and we will take a look!
+
+{{ver|31.6}}
+*Modified Overguard ratios to bring Eximus Units Overguard down and slightly increase their Health/Shields to balance out the reduction.  
+**Reduced Eximus Overguard by 50% and transferred the 50% to their Health pool. 
+***''While this may read as a big increase to the Health pool, it is not a 1-to-1 trade due to the overall pool sizes of Overguard vs Health. Imagine you have a watermelon (Overguard) and half an orange (Health). I take away half a watermelon and I give you half an orange - and together we eat a fruit salad. For clarity: Overguard has a larger pool than Health, so reducing it by half still amounts to less HP across Eximus Units across all HP values. By increasing the amount of Health and Shields an Eximus Unit has, it also increases the window for successful Mercy kills.'' 
+**Increased Shield Scaling multiplier by 50%
+*Nox Eximus Helmets can now be destroyed when Overguard is active. Breaking their helmet will remove Overguard entirely!
+**''Note that Nox Damage resistance has been decreased and armor increased to balance this change. This change applies to both Nox Eximus and base Nox enemies.''
+*Fixed Overguard counting as Health and taking damage from Viral Status Effect.
+**''Overguard situates itself in a new category of “protection”. It differs from Shields, Armor, and Health. That said, Viral Status Effects affecting Overguard was unintentional and has been changed to not only fit the original design for Viral damage, but also Overguard.''
+***''We originally mentioned in the [https://forums.warframe.com/topic/1305472-eximus-reborn-dev-workshop/ Eximus Reborn Dev Workshop] that the only Status Effect that would work on Eximus while Overguard is present is Cold Status Effects (up to 4 stacks!).''
+*Lifesteal now works on damage dealt to Overguard.
+**''Considering Overguard is another health pool for an Eximus/Thrax and that Lifesteal already works on Health and Shields, Overguard is now susceptible to Lifesteal to give players another way to tactically engage with them. The fights with Eximus can be quite challenging, so having another avenue of survivability is always encouraged!''
+***''This change was also made in mind to Lifesteal survivability builds, it would be too difficult to lose all of your survivability when encountering many enemies with Overguard at one time (from either Void Armageddon or an Ancient Protector etc.)''
+***''Additionally, there are some Weapons and abilities that aren’t strictly classified as Lifesteal that won’t currently work, but will in a future update! This currently affects specific conditions for the:''
+****''Hema''
+****''Hirudo''
+****''Garuda’s Blending Talons augment''
+****''Gauss’ Kinetic Plating''
+****''Protea’s Temporal Anchor''
+****''Zephyr’s Target Fixation augment''
+***''If there are any other cases where Lifesteal isn’t applying from Overguard, please let us know on the Forums and we will take a look!''
+*Fixed Baruuk being unable to damage Eximus units with his Serene Storm waves.  
+*Kuva Trokarian enemies are receiving some changes to make them feel like more of a threat when they appear in-mission. 
+**''Similar to their Thrax compatriots, these foes are intended to add an extra level of difficulty to the player’s gameplay loop, so these tweaks are made with that goal in mind.''
+***Added Overguard to the Kuva Trokarian (but at a lesser value than the Eximus Overguard)
+
+{{ver|31.5.8}}
+*Fixed Equinox’s Maim being able to chain stagger Eximus units with Overguard active. 
+**Overguard as it was designed is resistant to CC, any form of stagger proc present with Warframe abilities is unintended at this time. It’s worth noting that we’re exploring some options on the topic of Overguard and its CC resistance.
+*Fixed the Aero mod set bonus putting to sleep ability immune enemies (Eximus with Overguard).
+
+{{ver|31.5}}
+*Introduced.
+}}
+
+{{MechNav}}
+[[es:Sobreguardia]]
+[[Category:Mechanics]]
+[[Category:Update 31]]
+[[Category:Damage]]

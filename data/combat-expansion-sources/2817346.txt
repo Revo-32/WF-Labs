@@ -1,0 +1,104 @@
+{{Navigation|Slash Dash|Radial Blind|Radial Javelin|Exalted Blade}}<onlyinclude>{{AbilityU10.3
+| cardonly = {{{1|}}}
+| name = Exalted Blade
+| gameimage = ExaltedBladeIcon.png
+| cardimage = ExaltedBlade.png
+| hotkey = 4
+| energy = 25
+| description = Summon a sword of pure light and immense power.<br>
+'''Drain per second:''' 2.5 s<sup>-1</sup><br>
+'''Drain per slide:''' 25
+| strength = 100 / 125 / 200 / 250 (damage)
+| range = 5 m (blind radius)
+| duration = 6 s (blind duration)
+| misc = 30 m/s (wave speed)<br>70 m (wave range)
+| info = 
+==Characteristics==
+{{Advantages|name=Exalted Blade}}
+{{Disadvantages|name=Exalted Blade}}
+==Notes==
+*Excalibur expends {{Stat|Ability Efficiency|icon=only}}'''25''' [[Energy]] to draw an ethereal Skana, the '''{{Weapon|Exalted Blade}}''', and wields it as his melee [[Exalted Weapon]]. [[Melee#Normal Attack|Normal attacks]] inflict {{Stat|Ability Strength|icon=only}}'''100 / 125 / 200 / 250''' damage within '''<u>2.5</u>''' meters.
+**Exclusively uses the {{M|Exalted Blade}} Stance.
+**Damage is distributed between '''15%''' {{D|Impact}}, '''15%''' {{D|Puncture}}, and '''70%''' {{D|Slash}}.
+**Normal, slide, and aerial attacks will emit a '''3''' meter-wide energy wave in the direction of aim. Energy waves have the same base damage as the attacks that release them, inflict {{D|Stagger}}, and fly at a constant speed of '''<u>30</u>''' m/s until they dissipate after 2.5s, which corresponds to a maximum distance of '''<u>75</u>''' meters.
+***The energy waves and Exalted Blade itself are considered separate entities and will both deal damage separately.
+***Energy waves can increase [[Melee#Combo Counter|Melee Combo Counter]] and trigger [[Tennokai]].
+***Energy waves will [[punch through]] and hit enemies and terrain regardless of thickness up to their maximum range.
+***Energy waves lose 40% of their damage per second; Wave damage falls off linearly with distance from 100% to 0% between 0 and 70m.
+***Energy waves lose 20% of their damage each time they hit an enemy; this decreases the projectile lifetime by 0.5s (range by 15m) for every enemy hit from the max lifetime of 2.5s (max range of 70m).
+**Performing a slide attack will also drain {{EFF|25}} energy to cast a '''Judged Severance''', a diminished version of {{A|Radial Blind}} that {{D|Blind|Blinds}} and {{D|Stun|Stuns}} enemies within {{RNG|5m}} for {{DUR|6}} seconds, as well as disabling security cameras.
+***This will occur even if Radial Blind is replaced via the [[Helminth]] system, which affords Excalibur access to 5 active abilities if you choose to replace his 2nd ability ({{keybind|2}}). The visual and sound effects are removed when this is done on {{WF|Excalibur}} and {{WF|Excalibur Prime}} but not on {{WF|Excalibur Umbra}}.
+***This effect does not trigger {{M|Brief Respite}} or the [[Augur Set]] bonus.
+**Heavy attacks will emit '''2''' energy waves in a cross pattern in the direction of aim. 
+***Waves are '''10''' meters wide, have the same base damage as the attacks that release them, inflict {{D|Lifted}}, and fly at a constant speed of '''<u>30</u>''' m/s until they dissipate after 2.5s, which corresponds to a maximum distance of '''<u>75</u>''' meters.
+***Energy waves lose 40% of their damage per second; Wave damage falls off linearly with distance from 100% to 0% between 0 and 70m.
+***Energy waves from the heavy attack do '''not''' lose 20% of their damage each time they hit an enemy, unlike normal waves.
+***Energy wave's damage does <u>'''not'''</u> scale off combo counter.
+**Attacks and energy waves have a <u>'''15%'''</u> [[critical chance]], <u>'''2.0x'''</u> [[critical multiplier]], and <u>'''15%'''</u> [[status chance]].
+**Exalted Blade can be equipped with melee mods and [[Arcane Enhancement]]s.
+***[[Riven Mods]] are '''not''' generated for Exalted Blade.
+**Because Exalted Blade is counted as a melee strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+**Radial damage from slam attacks diminishes with distance, does '''not''' have a critical chance, is '''not''' affected by the Melee Combo Counter, and will cause enemies within range to suffer a {{D|Knockdown}}.
+**[[Finisher#Ground Finisher|Ground finishers]] inflict '''400%''' of the total modified damage from normal attacks. Prompted [[Finisher]]s inflict '''3200%''' of the total modified damage from normal attacks as {{D|Finisher}} damage.
+**Exalted Blade consumes {{Stat|Ability Efficiency|icon=only}}{{Stat|Ability Duration|icon=only}}'''2.5''' energy per second while active and will remain active until Excalibur's energy is depleted or the ability is deactivated by pressing the ability key again.
+***Excalibur '''cannot''' replenish energy using {{A|Energy Vampire}}, {{A|Rally Point}}, [[Rift Plane]]'s innate energy regeneration, [[Squad Energy Restore]]s, {{M|Energy Siphon}}, {{M|Energy Nexus}}, {{M|Dreamer's Bond}}, {{M|Archon Stretch}} and/or {{Focus|Wellspring}} while Exalted Blade is active.
+***[[Energy Orb]]s, [[Orokin Void]] [[Orokin Tower#Death Orbs|Death Orb]]'s energy restores, {{M|Rage}}, {{M|Hunter Adrenaline}}, {{M|Spellbound Harvest}}, {{Arcane|Arcane Energize}}, and {{Arcane|Emergence Dissipate}}'s Energy Motes can still replenish Excalibur's energy while Exalted Blade is active.
+***Exalted Blade's energy drain is '''not''' converted into shields by [[Set Mods#Augur Mod Set|Augur Mods]].
+*Can be cast while moving or sprinting without interruption.
+| interactions =
+**Being a [[:Category:Sword|Sword]], Exalted Blade will ''always'' gain the '''10%''' damage and attack speed bonuses of Excalibur's [[Excalibur/Abilities#Passive|Passive]].
+**{{A|Slash Dash}} is affected by mods equipped on Exalted Blade, and each of its hits will release an energy wave when Exalted Blade is active, while adding hits to the Melee Combo Counter.
+| weapon = [[File:ExaltedBladeWeapon.png|200px|left]]
+{{main|Exalted Blade (Weapon)}}
+{{#lst:Exalted Blade (Weapon)|intro}}
+{{clr}}
+| stance = [[File:ExaltedBladeStance.png|200px|left]]
+{{main|Exalted Blade (Stance)}}
+{{#lst:Exalted Blade (Stance)|intro}}
+{{clr}}
+| augment = [[File:ChromaticBladeMod.png|200px|left]]
+{{main|Chromatic Blade}}
+{{#lst:Chromatic Blade|intro}}
+{{#lsth:Chromatic Blade|Stats}}
+{{clr}}
+| bugs = *Using this ability during an "Unarmed" bug will result in Exalted Blade having the same stats as your Melee Weapon, and sometimes will perform your Melee Weapon's Unsheathed attacks without the Waves.
+*If Excalibur enters [[Bleedout]] state while Exalted Blade is active, Excalibur will use his melee and sometimes primary weapon rather than his secondary.
+*Does not benefit from Violet Archon Shard Ability Damage.
+*Slams and heavy slams do not benefit from Chromatic Blade.
+**This can be used to get non-combinational elemental bonuses. An example being a {{D|Toxin}} only modded Exalted Blade with {{D|Heat}} emissive for only {{D|Gas}}, allowing slams to trigger toxin as well as corrosive with {{M|Archon Continuity}}. This is especially powerful with {{Arcane|Arcane Impetus}} since slams will trigger this effect, stacking each +6.
+| tips = *Due to Exalted Blade's waves being able to [[punch through]] up to its maximum range, Exalted Blade is well suited to taking out hordes of enemies, especially if they are huddled together.
+**Furthermore, Exalted Blade can be used to deal with enemies while in cover without requiring [[punch through]] mods.
+*The innate slide attack blind provides a cheaper alternative to Radial Blind, albeit with greatly reduced duration and range. (Note that the Radial Blind power is cheaper both per meter of range and per second of effect, despite having a higher cost per cast.)
+**Allows players to blind enemies and quickly deal with them without being delayed by finisher animations.
+*Combined with {{WF|Mag}}'s {{A|Magnetize}} or a {{D|Void}} status effect, the sword waves can be redirected to hit the enemies inside multiple times until its maximum range can be reached.
+*Crouching will allow the use of all Exalted Blade attacks while remaining entirely stationary; this can be extremely useful during boss fights, defense missions, survival, etc.
+*{{Arcane|Melee Afflictions}} synergies:
+**{{A|Slash Dash}} will trigger because of guaranteed {{D|Knockdown}}, even while [[Frozen]], which will trigger this arcane.
+**Normal slams will trigger because of guaranteed {{D|Ragdoll}} which will also work on [[Frozen]] enemies.
+**Heavy slams will trigger because of guaranteed {{D|Lifted}}.
+**Heavy attack waves will trigger because of guaranteed {{D|Lifted}}.
+**Neutral and Block Neutral can also trigger, but it is more efficient to rely on Tennokai and heavy attack waves.
+**Status effects stacked by {{Arcane|Melee Afflictions}} can fully stack {{Arcane|Arcane Impetus}}.
+***{{D|Void}} can be reapplied from enemies afflicted by {{D|Void}} status (does not stack).
+***{{D|Tau}} can be applied then stacked with sources like {{Weapon|Haalvu}} and {{Weapon|Venato Prime}}.
+<noinclude>
+|max = {{WFmax|main|excalibur4}}
+</noinclude>|
+}}</onlyinclude>
+
+==See Also==  
+*[[Conclave:Exalted Blade|Exalted Blade (Conclave)]]
+*{{WF|Excalibur}}
+[[de:Erhabene Klinge]]
+[[es:Espada exaltada]]
+[[fr:Lame Exaltée]]
+[[it:Exalted Blade]]
+[[ru:Величественный_Клинок]]
+[[Category:Warframe Abilities]]
+[[Category:Channeled Abilities]]
+[[Category:One-Handed Abilities]]
+[[Category:Ability Weapons]]
+[[Category:Update 16]]
+[[Category:Excalibur]]
+[[Category:Exalted Weapon]]
+[[uk:Благородний клинок]]

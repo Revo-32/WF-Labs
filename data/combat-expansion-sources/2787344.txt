@@ -1,0 +1,141 @@
+{{ResourceInfobox}}
+'''Ack & Brunt Incarnon Genesis''' is an item that is used to add [[Incarnon]] upgrades to the {{Weapon|Ack & Brunt}}.
+
+==Acquisition==
+*Upon completion of [[The Duviri Paradox]] and [[Angels of the Zariman]], and unlocking [[The Steel Path]], players can earn {{Resource|Ack & Brunt Incarnon Genesis}} from [[The Circuit]]'s Steel Path to place on their Ack & Brunt with the help of [[Cavalero]] in the [[Chrysalith]]. This [[Incarnon Genesis]] form grants it evolutions to a transformation and newfound strength.
+*Purchased from Cavalero for {{pc|120}}, complete with the resources used in its installation. This purchase can only be made '''once'''.
+
+==Incarnon Genesis==
+*Installing the Ack & Brunt Incarnon Genesis requires 20 {{Resource|Pathos Clamp|Pathos Clamps}}, 70 {{Resource|Dracroot|Dracroots}}, and 300 {{Resource|Ariette Scale|Ariette Scales}}.
+**When installed, the first Evolution tier is unlocked. Each challenge additionally grants 5,000 [[affinity]] to the weapon, affected by [[Affinity Booster]]s.
+
+===Overview===
+*Incarnon Form is charged by building [[Melee Combo]] to 6x, then using a [[Heavy Attack]]. Once activated, the Incarnon form lasts for '''180''' seconds.
+**Incarnon Form persists through all activities, such as holstering, [[bleedout]], or being [[disarm]]ed. However, Incarnon Form is removed upon [[death]].
+{{clr}}
+
+===Evolutions===
+{| class="wikitable sortable stickyHeader"
+|+
+|-
+! class=unsortable colspan="3" | Evolution
+! class=unsortable style="white-space: nowrap;" | {{Weapon|Ack & Brunt}}
+! class=unsortable | Notes
+|-
+! EVO1
+| style="white-space: nowrap; text-align:center;" | Incarnon Form [[File:HeavyAttacksSendOutSpectralAxeAndShield(xWhite).png|64px|center]]
+| 
+*Reach '''6x''' Combo and then [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form.
+*Send forth a spectral axe during aerial and slide attacks.
+**'''+100%''' Melee Damage
+**'''+20%''' Sprint Speed
+**'''+20%''' to Parkour Velocity
+| style="text-align:center" | -
+|
+*Spectral axes deal '''149''' damage on contact, then explode dealing '''303''' {{D|Heat}} damage with a forced {{D|Impact}} status effect in a '''5m''' radius. Axes launched by aerial attacks have '''2x''' damage.
+**{{D|Heat}} damage on explosions will combine with modded elements. For example, when modded for {{D|Electricity}}, axes will deal {{D|Electricity}} on direct hit and {{D|Radiation}} on explosion.
+**Spectral axe hits do '''not''' add to the melee combo counter.
+**Direct hits of spectral axes and explosions are affected by faction damage mods, elemental mods, status chance and status damage mods, critical hit mods and [[Universal damage]] bonuses.
+***Direct hits of spectral axes are affected by {{M|Condition Overload}}, while the explosions are not.
+**Direct hits of spectral axes and explosions are '''not''' affected by the [[stance mod]], [[combo multiplier]], damage increase on Evolution II perks or melee damage bonuses like Incarnon form's innate +100% melee damage, {{M|Pressure Point}}, and {{Arcane|Arcane Fury}}.
+*Lateral slam attack is '''replaced''' by the axe throw, reducing mobility. Slam attacks can only be performed directly downwards while Incarnon is active.
+|-
+! colspan="3" | Evolution Challenge !! colspan="2" | Complete a solo mission with this weapon equipped
+|-
+! rowspan="2" | EVO2
+| style="white-space: nowrap; text-align:center;" | '''Templar's Wrath''' [[File:HeavyEfficiencyWithArmour(xWhite).png|64px|center]]
+|
+*Increase Base Damage by '''+150'''.
+*With Armor Over '''450''': '''+70%''' Heavy Attack Efficiency.
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Shieldmaiden's Rush''' [[File:OnShieldBreakComboGainFromBlockedHits(xWhite).png|64px|center]]
+|
+*Increase Base Damage by '''+150'''.
+*On Shield Break: '''+300%''' Combo Count Chance while Blocking for '''11''' seconds.
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution Challenge !! colspan="2" | Activate this weapon's Incarnon form '''6''' times in a mission
+|-
+! rowspan="3" | EVO3
+| style="white-space: nowrap; text-align:center;" | '''Orokin Reach''' [[File:MoreRange(xWhite).png|64px|center]]
+| 
+* '''+0.7''' Range
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Abiding Hold''' [[File:IncarnonFireRate(xWhite).png|64px|center]]
+| 
+*Combo Timer pauses when weapon is [[holster|holstered]].
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Swift Break''' [[File:ComboCounterPausedWhenHolstered(xWhite).png|64px|center]]
+| 
+*'''+70%''' Heavy Attack Windup Speed
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution Challenge !! colspan="2" | Reach '''10x''' combo '''10''' times
+|-
+! rowspan="3" | EVO4
+| style="white-space: nowrap; text-align:center;" | '''Rogue Readiness''' [[File:ChanceToReplenishMagOnHeadshot(xWhite).png|64px|center]]
+|
+*On Kill: '''50%''' chance for Primary and Secondary weapons instantly reload.
+| style="text-align:center" | -
+|
+*The kill has to be by the Ack & Brunt.
+*This evolution does not generate ammo, i.e., reloaded ammo is taken from the weapons' ammo reserves.
+|-
+| style="white-space: nowrap; text-align:center;" | '''Absolute Valor''' [[File:HighCrit(xWhite).png|64px|center]]
+|
+*Increase Base Critical Chance by '''+17%'''.
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Versatile Creed''' [[File:XCritChanceYStatChance(xWhite).png|64px|center]]
+|
+*Increase Base Critical Chance by '''+9%'''.
+*Increase Base Status Chance by '''+9%'''.
+| style="text-align:center" | -
+| style="text-align:center" | -
+|}
+
+==Notes==
+*Spectral axes embed and explode a second time, but this is only visual.
+
+==Known Bugs==
+*Direct hits of spectral axes and explosions '''do not''' benefit from base damage sources like {{M|Primed Pressure Point}}, {{M|Spoiled Strike}}, {{M|Killing Blow}} and {{Arcane|Arcane Fury}}.
+*{{M|Condition Overload}} is multiplicative to base damage on spectral axes, while being additive to it on physical melee hits.
+*The '''+150''' damage of both Evolution II perks is '''not''' affected by [[Stance]] multipliers.
+**Evolution IV challenge counts 9x combo instead of 10x.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39}}
+*Incarnon Adapters available in the current Steel Path Circuit rotation are now available for Platinum Purchase in Cavalero’s store in the Chrysalith.
+**Purchasing these Incarnons for Platinum will reward players with both the Adapter and the required resources to install it.
+
+{{ver|37}}
+*Fixed Incarnon Geneses of the Ack & Brunt missing the custom Melee Incarnon reticle.
+
+{{ver|33.5}}
+*Fixed Melee Incarnon weapons (original and Genesis) missing their Incarnon Form stats in the Arsenal.
+
+{{ver|33.0.5}}
+*Fixed Melee Incarnon Weapons using the incorrect HUD indicator to state that Incarnon Mode was ready. 
+
+{{ver|33.0.3}}
+*Updated the VFX on the Ack & Brunt Incarnon Geneses.
+
+{{ver|33}}
+*Introduced.}}
+
+{{IncarnonNav}}
+
+[[Category:Duviri]]
+[[Category:Incarnon]]
+[[Category:Incarnon Geneses]]
+[[Category:Update 33]]

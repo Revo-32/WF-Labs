@@ -1,0 +1,83 @@
+{{WarframeTopNav}}
+<div class="tabber-borderless floatTabBox"><tabber>
+|-|Sirius={{WarframeInfobox|name=Sirius}}
+|-|Orion={{WarframeInfobox|name=Orion}}
+</tabber></div>
+{{Codex|Wield the power of stars in a constant battle for supremacy. The dueling sons, Sirius & Orion, occupy the space of a single Warframe, jockeying for position to rain down cosmic destruction upon foes.}}
+
+[[File:KIMCalendarIcon.png|25px]] '''Release Date:''' June 17th, 2026 
+
+Shining bright an emerald light, blazing wild his crimson starfire, twin bleak futures ignite from beyond Origin's past. Constellations shift in celestial realignment, bearing witness to the star-crossed personas' eternal feud. Fight valiantly and take flight as '''Sirius''', guided by [[Jade|mother]]'s prideful flame that uplifts comrades from death's embrace. Strike true and slay fiercely as '''Orion''', enraged with [[Stalker|father]]'s relentless wrath, dooming foes to gravity's grasp. Destinies collide when '''Sirius & Orion''', the Dueling Sons, clash in their rebellious ultimatum of cosmic consequence. The twins soared across the cosmos in {{ver|43}}: Jade Shadows: Constellations.
+
+'''{{WF|Sirius & Orion}}''' are a pair of constellation-themed [[Warframe]]s, customizable in the [[Arsenal]] separately, and switchable and controllable in-game as a singular Warframe with an assisting [[Specter (Tenno)|Specter]].
+
+*'''{{WF|Sirius}}''' takes after {{WF|Jade}}'s support. {{A|Coronal Ejection}} throws an energy scythe forward that deals {{D|Heat}} damage and boomerangs back any [[pickups]]. {{A|Jade Stars}} summons a crown of motes that flies towards enemies to deal {{D|Heat}} damage and recovers motes over time. {{A|Light's Sanctuary}} creates a dome with healing, [[Damage Reduction]], and revives anyone that enters [[Bleedout]] with a cooldown.
+*'''{{WF|Orion}}''' walks in the footsteps of {{WF|Stalker}}'s lethality. {{A|Gravitic Slash}} performs a powerful slice that deals {{D|Slash}} damage and strips enemy [[Armor]] and [[Shield]]s. If damage is received while in {{A|Astral Shell}} it creates a projection with heightened [[Threat Level]]. {{A|Event Horizon}} summons a mobile black hole that {{D|Ragdoll}} and pulls enemies toward it.
+
+Their [[Sirius & Orion/Abilities/Passive|Passive]] has switching provide the next two abilities with increased {{Stat|Ability Efficiency}}, as well as stealing [[energy]] from each other when casting abilities while below 50 energy. The abilities they cast fuels a gauge to activate {{A|Celestial Clash}}, their ultimate rivalry where Sirius and Orion begin to float into the air and collide their attacks to deal massive radial damage to their surroundings.
+
+{{Acquisition|name=Sirius & Orion|Sirius & Orion's main blueprint is acquired upon completion of the [[Jade Shadows: Constellations]] quest. Their component blueprints are obtained from [[Scoria's Angel]] or [[The Kuva Wytch]] on [[Uranus Proxima]] via [[Empyrean]] [[Railjack]].
+
+Alternatively, the blueprints can also be purchased from [[Hunhow]] in [[Pontis Tower]] with {{Resource|Emerald Talent}} or {{Resource|Crimson Talent}}, awarded from [[The Kuva Wytch]] and [[Scoria's Angel]] respectively in quantities of 12-16 (18-22 on [[The Steel Path]]) from mission completion plus shooting down targets from the [[Orowyrm]]/[[Ramsled]] minigame. Each component blueprint requires 90 and the main blueprint requires 275, totaling 545 Emerald/Crimson Talents.}}
+
+==Crafting==
+{{BuildAutomatic|type=Warframe|name=Sirius & Orion}}
+
+==Lore==
+{{Spoiler|Please finish [[Jade Shadows: Constellations]] before proceeding.}}
+{{CustomCollapsible|View hidden content|notlist=true}}
+===[[Jade Shadows]]===
+{{WF|Stalker|Sorren}} (now known as {{Faction|Stalker}}) and {{WF|Jade}} sired a child which was considered taboo by the {{Faction|Orokin}}, and while Jade was pregnant the pair were forcibly turned into Warframes by [[Ballas]]. Despite this, Jade managed to retain her sanity and devoted her entire lifetime into giving birth. Jade eventually succeeded in birthing a son, but passed away in the process, and Stalker was able to protect the newborn from [[Xeto]] and her {{Faction|Corpus}}.
+
+Remembering his promise to protect his family, Stalker named his son either Sirius or Orion.
+
+===[[Jade Shadows: Constellations]]===
+Due to [[Eternalism]], the [[Void]] creates a separate timeline in which the unchosen son exists in a doomed future, causing them to be at war with each other, which is heavily implied to be instigated by [[The Indifference]]. Both Future Sirius and Future Orion arrive from twenty years later to the present, along with their respective mentors [[Ryoku]] and [[Vena]], to retrieve {{Faction|Stalker}}.
+
+[[Hunhow]], who had his [[Natah|own]] [[Erra (Character)|travail]]s with fatherhood, devises a plan. He recruits {{WF|Excalibur Umbra}}, also a [[Isaah|father]], to watch over the present son, as Stalker incapacitates the mentors to lure the future sons together. Stalker then retrieves a Void Spark which Hunhow uses to sacrifice his own memories to end the eternal feud and create a haven in which both sons can coexist.
+
+The family wake up on [[Pontis Tower]], no longer at odds with each other and have dinner, with the future sons carrying each other's infant selves. The father tells the sons to stay together.
+{{CustomCollapsible/End}}
+
+==Notes==
+*Though presented as two separate Warframes, Sirius & Orion occupy a single Warframe [[slot]].
+**Sirius & Orion have separate upgrade menus, allowing them to have different [[Mod]]s, [[Aura]]s, [[Arcane Enhancement]]s, and other features. For more information, see [[Sirius & Orion/Abilities/Passive]].
+**Only one Orion can be owned, as Orion is technically an Exalted Warframe, regardless of which son is the primary. Rank, upgrades and appearances are shared between all Orions if multiple Sirius & Orions are owned.
+*Either Sirius or Orion will be the Primary Son. The Primary Son depends on which name was chosen at the end of [[Jade Shadows]], but can be freely changed after completing [[Jade Shadows: Constellations]] via [[Pontis Tower]]. If Jade Shadows is not completed and the Warframe is acquired through other means (such as being purchased with {{Resource|Platinum}}), Sirius becomes the default Primary Son.
+**Whichever Primary Son is selected will be the one initially controlled upon landing in a mission. The other becomes the Secondary Son, functioning as an [[Invulnerability|invulnerable]] AI-controlled ally similar to a [[Specter (Tenno)|Specter]] and continue to attack enemies.
+**Only the Primary Son can receive the [[Helminth]] Cyst, and the Secondary Son cannot be used nor swapped in [[Hub|player hubs]].
+*Currently, {{Weapon|Pride}} and {{Weapon|Wrath}} both lack a [[Signature Weapon]] bonus with Sirius & Orion.
+*If [[Stalker]], [[Shadow Stalker]], or [[Protector Stalker]] appears in the mission via [[Death Mark]] and Sirius & Orion are present, the Stalker has unique dialogue to their presence ("Show me you've learned") before attacking.
+*Weapons equipped by Sirius & Orion will have their appearances assigned differently (e.g. if config A is the chosen initial appearance for the weapon and Sirius is the Primary Son, the weapon he holds will appear as config A, while config B is wielded by Orion when swapped during a mission; if config B is chosen as the initial look, Orion's weapons use config C instead).
+
+==Trivia==
+*Sirius & Orion are together the 65th unique Warframe to be released.
+*[[Wikipedia:Orion (mythology)|Orion]] and [[Wikipedia:Sirius (mythology)|Sirius]] are two characters from Greek mythology that represent a huntsman and his faithful companion. 
+**In mythology, the duo was immortalized in the heavens as the constellation [[Wikipedia:Orion (constellation)|Orion]], and the star [[Wikipedia:Sirius|Sirius]], also known as the Dog Star, which is the brightest star in the night's sky and part of the constellation [[Wikipedia:Canis Major|Canis Major]]. The two are depicted in an eternal chase with the constellation of [[Wikipedia:Lepus (constellation)|The Hare]]. These designations are still recognized by the [[Wikipedia:IAU designated constellations|International Astronomical Union]], and can be observed in the Northern Hemisphere.
+*During [[Devstream 196]] which revealed their abilities, players compared Sirius & Orion to {{WF|Equinox}} due to their similar form-switching playstyle and having associated moves for each form. [DE]Rebecca clarifies their differences by addressing Equinox is like Zelda and Sheik from ''[[Wikipedia:The Legend of Zelda|The Legend of Zelda]]'' as being the same person with different identities, whereas Sirius & Orion are two co-existing entities separate from each other.
+*Unlike Equinox requiring two Neuroptics, Chassis, and Systems to build her, Sirius & Orion's component parts are considered one item (e.g. "Sirius & Orion Neuroptics").
+*Sirius & Orion are the second Warframes after {{WF|Sevagoth}} and {{WF|Sevagoth's Shadow}} that consists of two separately moddable "[[Exalted Weapon|Exalted]]" Warframes with distinct abilities between them.
+*Sirius & Orion are the fourth Warframes after {{WF|Protea}}, {{WF|Dante}}, and {{WF|Jade}} with a built-in {{Pol|Aura}} Universal polarity.
+**However, in their case it is among their normal polarities instead of their [[Aura]], though it can be moved to the Aura slot after [[Polarization]].
+**According to Pablo during Devstream 196, this is due to them inheriting it from Jade.
+*Lore-wise, Sirius & Orion are the first confirmed Warframes to be created during the modern "Warframe Era". All other Warframes with known origins are mostly created during the Orokin Era (except {{WF|Temple}}, who was created during [[1999]]). They are also the third ones after {{WF|Excalibur Umbra}} and {{WF|Stalker}} whose original selves remain alive at the current time period (although Umbra did briefly get [[The Sacrifice|killed]] until he was rebuilt).
+**Despite this, their playable versions are still copies of them as with most other Warframes, unlike Umbra who is the original.
+**The original {{WF|Jade}} also survived the modern era until she [[Jade Shadows|died]] giving birth to Sirius/Orion, while a few others such as {{WF|Chroma}}, {{WF|Kullervo}}, {{WF|Follie}} and {{WF|Nokko}} remains debatable whether their original selves are still active or not.
+*Sirius & Orion are currently the only known Warframes to have never been human, having been born as Warframes due to Jade having been converted while pregnant.
+*As Jade's sons, they inherit their mother's two aura passive<ref>https://x.com/PabloMakes/status/2061428707349188853</ref>. In gameplay, this is both Warframes having a single Aura slot each that is active simultaneously. Two of the same Aura mod will not stack their effects, but two different Auras will apply as expected.
+**{{M|Coaction Drift}} applies its effects to both sons' equipped Aura mods, and even applies twice when placed on both.
+*Unlike Jade's unique interaction wherein {{Faction|Stalker}} will instantly despawn rather than attack the squad if someone is playing her, he will still attack the squad if Sirius & Orion are present, with a [[Stalker/Quotes#Special_Interactions|unique dialogue line]] instead of his usual taunt.
+*Sirius & Orion technically do not have [[Helmet|alternate helmets]], instead being able to wear each other's helmets. This makes them the first Warframes since the original batch not to release with alternate helmets.
+*Sirius & Orion both perform [[Emotes]] upon selection, including Handshake emote when directly facing each other.
+
+==Bugs==
+*When using {{M|Ghost}}, it will function normally on the controlled Warframe, breaking invisibility when using weapons or through other means - however, when doing so and then switching to the uncontrolled Warframe, they will remain invisible indefinitely regardless of weapons used, abilities used, or enemy proximity.  
+**When Ghost's cooldown ends, if the visible Warframe is switched to, they will turn invisible again. This resets the interaction, allowing either Warframe to break invisibility again and render the other invisible indefinitely.
+*Rapidly swapping between the two twins while moving will cause a burst of acceleration that stacks every time one twin kicks out the other. This results in incredible speed when done a number of times. 
+*In the Perita Rebellion, Sirius & Orion will become input locked occasionally when the timer expires, resulting in both twins (though not companions) being rendered invincible. Both the uncontrolled twin and the companion (if modded for attacking) will be able to attack the boss but the player will be entirely input locked and must force close the game as menu inputs are also locked.
+*If going through a portal in Sanctuary Onslaught while using Celestial Clash the player will become able to only walk and aim in one of the twins, ending the mission fixes the issue.
+*Sirius & Orion's noble idle animation causes their fingers to clip through the {{Weapon|Grimoire}}
+*When entering a mission and swapping to the other brother, the abilities of that brother will sometimes be nullified (including Transference); making it impossible to swap to the other. This also makes it impossible to charge {{A|Celestial Clash}}
+
+==References==
+{{Reflist}}

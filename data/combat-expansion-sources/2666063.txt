@@ -1,0 +1,63 @@
+{{ModBox}}
+'''Rebound''' is a [[mod]] for [[Glaive (Weapon Type)|Glaives]] that increases the number of thrown [[bounce]]s.
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! Bounces
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || +1 || 4
+|-
+| 1 || +2 || 5
+|-
+| 2 || +3 || 6
+|-
+| 3 || +4 || 7
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+==Trivia==
+*The name of this mod and {{M|Quick Return}} were mistakenly switched before {{ver|10.0.5|fix}}.
+
+==Gallery==
+<gallery>
+ModRebound.png|Old appearance
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|Chains of Harrow}}
+*{{M|Quick Return}} and Rebound Mods are no longer usable in Conclave.
+
+{{ver|10.3}}
+*Fixed (switched) Glaive mod names of Quick Return and Rebound to match the function.
+*Fixed Glaive Rebound mod to have improved rebounding (must travel specified distance before auto-recall).
+
+{{ver|10.0.5}}
+*Fixed names for Rebound and Quick Return mods being switched.
+
+{{ver|10.0}}
+*Introduced
+}}
+
+==See Also==
+*[[Mods]]
+*{{M|Quick Return}}, the opposite counterpart of this mod.
+*{{M|Volatile Rebound}}, the Volatile counterpart of this mod that increases explosion chance.
+
+{{MeleeMods}}
+__NOTOC__
+[[de:Rückprall]]
+[[es:Rebote]]
+[[ru:Рикошет]]
+[[Category:Mods]]
+[[Category:Melee Mods]]
+[[Category:Glaive Exclusive Mods]]
+[[Category:Common Mods]]
+[[Category:Update 10]]
+[[Category:Naramon Mods]]
+[[uk:Рикошет]]

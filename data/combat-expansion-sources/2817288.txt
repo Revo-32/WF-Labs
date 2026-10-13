@@ -1,0 +1,109 @@
+{{Top|Enemy|Grineer|Grineer|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Tyl Regor's custom axe and shield are how he likes to eliminate 'frustrations'.}}
+The '''Ack & Brunt''' is an axe & shield set used by [[Tyl Regor]] that boasts a high critical hit chance in exchange for a low attack speed. It also has the unique ability to absorb [[Damage#Primary Elemental Damage|elemental]] attacks on [[Melee#Blocking|block]] to empower the weapon's next attack.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Blocking [[Damage#Primary Elemental Damage|elemental damage]] attacks stores a charge that grants '''+17.5%''' of the absorbed elemental damage to the next attack. The charge can stack up to '''4''' times before being consumed.
+*Can use the Ack & Brunt-exclusive {{M|Electromagnetic Shielding}} mod.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Eleventh Storm}}, {{M|Final Harbinger}} and {{M|Last Herald}} stance.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+==Acquisition==
+The Ack & Brunt's blueprint can be [[research]]ed from the [[Research/Chem Lab|Chem Lab]] in the [[dojo]].
+
+{{BuildAutomatic|type=Weapon|name = Ack & Brunt}}
+
+==Notes==
+*Blocking elemental damage attacks creates a stack that increases the damage of the next attack by '''17.5%''' stacks. The effect can stack up to '''4''' times before being consumed, increasing the damage up to '''70%'''.
+*The damage bonus increases additively with elemental mods, which can also combine with elemental mods from the weapon to became a combined elements. For example, if your Ack & Brunt is modded with {{D|Electricity}} damage (e.g. {{M|Shocking Touch}}), blocking {{D|Heat}} damage from a [[Flameblade]]'s {{Weapon|Twin Basolk}} will combine it into {{D|Radiation}} damage on the next attack.
+*Elemental damage taken by nearby allies via {{M|Electromagnetic Shielding}} can be converted to stacks.
+
+==Incarnon Genesis==
+{{Transclude|Ack & Brunt Incarnon Genesis#Acquisition}}
+
+{{Transclude|Ack & Brunt Incarnon Genesis#Incarnon Genesis}}
+
+==Tips==
+*{{M|Final Harbinger}} can offset the Ack & Brunt's low attack speed with its quick combos.
+*Using the Ack & Brunt with {{M|Final Harbinger}}, {{M|Blood Rush}} and/or [[Set Mods#Gladiator Mod Set|Gladiator Mods]] allows players to quickly gather hits for the [[Melee#Combo Counter|Combo Counter]], rapidly boosting the Ack & Brunt's critical chance.
+*Absorbing enemy attacks allows players to almost double the amount of damage they can deal.
+**This is useful when focusing on taking down heavy units in a crowd.
+**Do note however that stacks are expended if an enemy melee attack is parried.
+*([[Corrupted Bombard|Corrupted]]) [[Bombard]] rockets can add up to two stacks of elemental damage, allowing players to collect stacks faster.
+
+==Trivia==
+*This is the weapon of choice for Tyl Regor following {{ver|17}}, though instead of holding the weapon, Tyl Regor is able to attach the axe and shield to the ends of his cybernetic limbs in place of his {{Weapon|Knux}} hands. Regor, however, explicitly refers to Ack as a gavel.
+**Before {{ver|17}}, his weapon of choice was the {{Weapon|Skana}}.
+*Tyl Regor uses a different design for the shield, as it is normally part of his helmet/headdress (or perhaps vice-versa). The Tenno version presumably adapts the shield to collapse so that it does not take up as much room when stowed.
+*The Grineer text on the inner part of the shield translates to "MEAT PROTECTION".
+
+==Bugs==
+*When in its [[Incarnon]] form, the shield will never leave the players hand during stances that normally throw the shield. 
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Codex Ack & Brunt.jpg|Ack & Brunt in Codex
+Spartacalibur, proof that Ack n Brunt looks badass.jpg|Arsenal view
+ackandbrunt_deflect.jpg|Rhino Prime with Ack & Brunt
+</gallery>
+
+{{VideoGallery
+|{{YouTube|exEqaxi3DII|size=300px}}
+|{{YouTube|EWdJGV6fp1M|size=300px}}
+|{{YouTube|h_QgKQ1e11w|size=300px}}
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|34}}
+*Fixed the Ack & Brunt clipping through itself in Teshin’s Cave.
+
+{{ver|29.5}}
+*Fixed Ack & Brunt not fully unfolding when previewing it in the Arsenal.
+
+{{ver|26}}
+*Damage increased from 50 to 149.
+*Range increased from 1 to 2.5.
+*Slam Attack increased from 50 to 447.
+*Slide Attack increased from 107 to 149.
+*Parry Angle set to 70.
+
+{{ver|19}}
+*Blocking with the Ack and Brunt now absorbs elemental damage. Example: Block Electrical damage, gain + Electrical damage on top of base attacks.
+
+{{ver|17.1}}
+*Fixed Ack and Brunt’s shield open/close transition not playing properly.
+*Fixed some attacks from Ack and Brunt not flowing properly.
+
+{{ver|17}}
+*Introduced.
+}}
+{{ver/Lu|26}}
+
+==See also==
+*[[Tyl Regor]], the inventor and user of the Ack & Brunt.
+*[[Ack & Brunt Incarnon Genesis]], the Incarnon power-up for the Ack & Brunt.
+
+{{ResearchNav}}
+{{WeaponNav}}
+[[de:Ack & Brunt]]
+[[es:Ack & Brunt]]
+[[fr:Ack & Brunt]]
+[[Category:Weapons]]
+[[Category:Research]]
+[[Category:Melee Weapons]]
+[[Category:Sword and Shield]]
+[[Category:Grineer]]
+[[Category:Update 17]]
+[[Category:Slash Damage Weapons]]
+[[Category:Weapons with Passives]]
+[[uk:Ак і Брант]]

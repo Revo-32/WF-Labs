@@ -1,0 +1,53 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|A light Zaw Strike for Scythe or Heavy Blade weapons. Lightweight, for flash and bite.|In game description}}
+
+The '''Dokrahm''' is a {{D|Slash}}-focused Strike used in [[Zaw]] construction.
+
+{{BuildRequire
+|buildcredits = 5,000
+|build1 = Nistlepod
+|build1amount = 25
+|build2 = Fish Scales
+|build2amount = 45
+|build3 = Marquise Veridos
+|build3amount = 7
+|build4 = Pyrotic Alloy
+|build4amount = 60
+|buildtime = 1
+|buildrush = 25
+|blueprint = 1,000
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+The Dokrahm blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This Strike primarily deals {{D|Slash}} damage.
+
+* '''15%''' {{D|Impact}}
+* '''35%''' {{D|Puncture}}
+* '''50%''' {{D|Slash}}
+
+Compatible weapon types:
+*Scythe
+*Heavy Blade
+
+== Trivia ==
+
+* The text on the neck of this Zaw strike roughly translates as "Rip" from the Ostron language
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|22.20}}
+*Fixed being unable to Chat link Dokrahm Zaws.
+
+{{ver|22.18}}
+*Introduced.
+}}
+{{ZawNav}}
+[[es:Dokrahm]]
+[[fr:Dokrahm]]
+[[Category:Zaw]]
+[[Category:Update 22]]
+[[uk:Докрам]]

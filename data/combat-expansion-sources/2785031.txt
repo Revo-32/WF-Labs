@@ -1,0 +1,111 @@
+{{ArcaneBox}}
+'''Arcane Arachne''' is an [[Arcane Enhancement]] that increases the player's weapon damage for 30 seconds whenever they [[Maneuvers#Wall Latch|wall latch]]. This cannot be refreshed while active.
+
+Can be sold for {{cc|1,000}}.
+
+==Effect==
+{| class="emodtable"
+|-
+! [[Arcane Enhancement#Rank|Rank]]
+! Damage Bonus
+|-
+| 0 || +25%
+|-
+| 1 || +50%
+|-
+| 2 || +75%
+|-
+| 3 || +100%
+|-
+| 4 || +125%
+|-
+| 5 || +150%
+|}
+
+{{Clr}}
+{{Acquisition|*Awarded for killing or capturing the [[Eidolon Hydrolyst]].
+*Dropped in Rotation C of [[Orphix]] [[Pluto Proxima]] or [[Veil Proxima]] missions.
+*Awarded from the completion of a Side Objective Undercroft Portal.}}
+
+===History===
+*Arcane Arachne was first introduced in the [[Trial]] mission [[The Jordas Verdict]], which was retired in {{ver|22.14}}.
+*The [[Operation: Scarlet Spear]] event sold Arcane Arachne from [[Little Duck]] for 2,000 {{Resource|Scarlet Credits}}.
+*The [[Operation: Orphix Venom]] event sold Arcane Arachne from [[Father]] for 400 {{Resource|Phasic Cells}}.
+*The [[Operation: Gargoyle's Cry]] event sold Arcane Rage from the [[Jahu Gargoyle|Vigile Jahu Gargoyle]] for 6 {{Resource|Grotesque Splinter}}.
+*The [[Operation: Belly of the Beast]] event sold Arcane Arachne from [[Ordis]] for 5 {{Resource|Volatile Motes}}, with a purchase limit of 42.
+*The [[Operation: Eight Claw]] event sold Arcane Arachne from [[Dominus Thrax]] in bundles of 7, costing 4 {{Resource|Dominus Aureus}}, with a purchase limit of 3 (21 Arcanes in total).
+
+==Notes==
+*Stacks additively with mods like {{M|Serration}} and {{M|Hornet Strike}} as well as {{M|Holster Amp}} and {{M|Vigorous Swap}}.
+*The buff duration '''cannot''' be refreshed, and must be triggered again through a new wall latch, ''after'' it expires.
+
+===Special Interactions===
+{{main|Universal Weapon Bonuses}}
+*Does '''not''' apply to ''regular'' melee attacks or exalted melee weapons like {{A|Exalted Blade}}.
+**However, applies to certain melee ''projectiles''
+***Multiplicatively
+****{{Arcane|Exodia Contagion}} (but additively with mods that are multiplicatively on exodia contagion such as Vigorous Swap or Holster Amp).
+****Thrown [[Glaive (Weapon Type)|Glaive]] damage from direct hit and heavy explosion
+*****Stacks additively with {{M|Power Throw}}.
+***Additively
+****{{Arcane|Exodia Epidemic}}
+****{{Weapon|Tenet Agendus}}
+****{{Weapon|Tenet Grigori}}
+****{{Weapon|Wolf Sledge}}
+****{{Resource|Ceramic Dagger Incarnon Genesis|Ceramic Dagger Incarnon}}
+****{{Resource|Ack & Brunt Incarnon Genesis|Ack & Brunt Incarnon}}
+****{{Resource|Hate Incarnon Genesis|Hate Incarnon}}
+
+*Applies to certain abilities and is multiplicative to {{Stat|Ability Strength}}
+**{{A|Shuriken}}
+**{{A|Desolate Hands}}
+**{{A|Spectral Scream}}
+**{{A|Fireball}}
+**{{A|Radial Javelin}}
+**{{A|Dread Mirror}}'s explosion damage and {{A|Seeking Talons}}'s contact damage
+**{{A|Redline}}'s bolts
+**{{A|Kumihimo}}'s threads
+**{{A|Warding Halo}}'s damage
+**{{A|Null Star}}
+**{{A|Enthrall}}'s projectiles
+**{{A|Pyrotechnics}}
+**{{A|Razorwing}}'s [[Dex Pixia]], but not [[Diwata]]
+**{{A|Minelayer}} Tether-Flechette Orb's damage
+**{{A|Breach Surge}} sparks
+**{{A|Sol Gate}}'s basic ability and {{M|Cataclysmic Gate}} Augment
+**{{A|Final Stand}}
+**{{A|Widow's Brood}}'s darts
+
+==Trivia==
+*Prior to {{ver|24.2}}, Arcane Arachne damage multiplier could be stacked upon subsequent wall latches, allowing for a large damage increase on the next hit.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|31.6}}
+;ARCANE STAT CHANGES PER RANK
+
+We’ve adjusted the values of older Arcanes with the goal of making lower rank Arcanes more viable, and more desirable while collecting as a result. In short, there are three stats that each Arcane tends to have (speaking generally) -- for example, a percentage chance, a stat buff, and the duration of the buff.
+
+Certain Arcanes increase all of these stats per rank (making them scale exponentially), but we are changing it so that only one stat is affected by rank (making it scale linearly). The other stats will now be at the max-rank value regardless of the Arcane Rank, thereby buffing lower-rank Arcanes as a result.
+
+;Arcane Arachne
+On Wall Latch: +25/150% damage for 30s (was 5s)
+
+{{ver|24.2}}
+*Arcane Arachne changed to: On Wall Latch for 2 seconds: 100% Weapon Damage for 20 seconds.
+
+{{ver|17.9.1}}
+*Introduced with The Jordas Verdict.
+}}
+{{ArcaneNav}}
+__NOTOC__
+[[de:Arkana Arachnid]]
+[[es:Aracne arcano]]
+[[Category:Arcane Enhancements]]
+[[Category:Equipment]]
+[[Category:Mechanics]]
+[[Category:Update 17]]
+[[uk:Містична арахна]]
+[[Category:Eidolon Arcanes]]
+[[Category:Hydrolyst Arcanes]]
+[[category:Orphix Arcanes]]

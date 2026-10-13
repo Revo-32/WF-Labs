@@ -1,0 +1,109 @@
+{{Top|Weapon|Weapons|Weapons|Lotus|Tenno|Tenno}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Each charged attack turns the enemy's pain into a healing pulse that washes over allies. Also, creates resistance to status effects when held.}}
+The '''Sancti Magistar''' is the [[Syndicate]] variant of the {{Weapon|Magistar}}, available from {{Faction|New Loka}}. It has the unique ability to heal the wielder and nearby allies when connecting with a [[Melee#Heavy_Attacks|heavy attack]], and also gives a chance to resist [[Status Effect|status effects]] when it is wielded.
+
+==Characteristics==
+*This weapon deals primarily {{D|Impact}} damage.
+*Using [[Heavy Attack]] permanently grants <u>all</u> attacks from Sancti Magistar '''5%''' [[Life Steal]], plus an additional '''5%''' Life Steal per combo level. Healing is shared with all allies within '''15''' meters for the rest of the mission .
+*When held, the wielder receives '''20%''' chance to resist a [[Status Effect]].
+*Stance slot has {{Pol|Vazarin}} polarity, matching {{M|Shattering Storm}} and {{M|Crashing Havoc}} ([[Conclave]] only) stance.
+*Innate {{Pol|Madurai}} polarity.
+
+{{Advantages|
+}}
+
+{{Disadvantages|
+}}
+
+{{WeaponComparison|Magistar}}
+
+==Acquisition==
+*The Sancti Magistar can be acquired by reaching the Rank of '''Flawless''' with {{Faction|New Loka}} and purchasing from its offerings with {{sc|125,000}}. As with all Syndicate weapon offerings, the Sancti Magistar is '''not''' included as a free offering option for reaching its respective access rank.
+*Syndicate weapons can also be acquired by [[Trade System|trading]] with other players. Note that in order to be tradable, a weapon must be unranked, unused, with no [[Forma]] or [[Orokin Catalyst]] installed.
+*Players must reach [[Mastery Rank]] 8 or higher to acquire the Sancti Magistar, either by trading or through the Syndicates themselves.
+
+==Notes==
+*Executing an [[Heavy Attack]] '''permanently'''' grants <u>all</u> attacks from Sancti Magistar '''5%''' Life Steal, plus an additional '''5%''' Life Steal per combo level, for a maximum of '''60%''' Life Steal. Healing is shared with all allies within '''15''' meters for the rest of the mission .
+**Affected allies includes all Warframes, [[Companions]], [[Eidolon Lure]]s, summoned allied units such as [[Specter]]s, allied [[Invasion]] units, [[Rescue|Hostages]], [[Kavor Defector]]s, [[Sortie]] and [[Arbitrations]] Defense Operatives, and [[File:IconMissionMarkerDefend(xWhite).png|22px|link=Defense Objects]][[Defense Objects]].
+***[[File:IconMissionMarkerDefend(xWhite).png|22px|link=Defense Objects]][[Defense Objects]] will only be heal up to '''500''' health over '''5''' seconds which does not stack with similar restoration effects.
+*** On [[File:IconMissionMarkerDefend(xWhite).png|22px|link=Defense Objects]][[Defense Objects]] {{Weapon|Sancti Magistar}} healing will bypass the restriction that prevent any restorative effects if their normal {{stat|Health|Health Regeneration}} is paused .
+*When wielded, the Sancti Magistar gives a '''20%''' chance to resist most [[Status Effect|Status Effects]].
+**Does not include {{D|Impact}}, {{D|Void}}, {{D|Knockdown}}, {{D|Lifted}}, {{D|Ragdoll}}, {{D|Stagger}}, or {{D|Stun}}. Includes {{D|Microwave}}.
+<!-- need tests in training range *The healing area of effects seems to be bigger than stated or may be influanced by range mod-->
+==Incarnon Genesis==
+{{Transclude|Magistar Incarnon Genesis#Acquisition}}
+
+{{Transclude|Magistar Incarnon Genesis#Incarnon Genesis}}
+
+==Trivia==
+*The concept for the healing effect of the Sancti Magistar was designed by player (PS4)Sreza and the Design Council.
+*Prior to {{ver|26}}'s removal of [[Channeling]] and charged attacks, unchanneled charge attacks with the Sancti Magistar, regardless of mods or crits, used to always be capped off at 200 health per enemy hit. Channeling allowed you to heal beyond that cap.
+
+==Bugs==
+*Healing pulse occasionally does not take critical damage and combo counter into account.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+LokaHealHammer.png|Sancti Magistar in Codex.
+</gallery>
+
+{{VideoGallery
+
+}}
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|36.1}}
+*Fixed Sancti Magistar missing stats tab on-hover.
+
+{{ver|35.5}}
+*Fixed the Sancti Magistar not giving Health for damage dealt to enemy Overguard (it previously only counted damage dealt to enemy Shields & Health). 
+
+{{ver|33.5.3}}
+*Fixed several issues with Warframe Overguard reducing the effectiveness of the following supportive abilities/effects:
+**Fixed Sancti Magistar’s heal being capped at 500 Health over 5 seconds.
+
+{{ver|26}}<br />
+''Actual patch notes made a mistake on old follow through.''
+*Damage increased from 120 to 240.
+*Range increased from 1 to 2.6.
+*Status Chance increased from 10% to 20%.
+*Critical Chance increased from 20% to 30%
+*Slam Attack increased from 240 to 720.
+*Slide Attack increased from 240 to 480.
+*Parry Angle set to 50.
+*Follow Through decreased from 0.9 to 0.4.
+
+{{ver|The Silver Grove 3.0}}
+*Fixed blocking procs with the Sancti Magistar resulting in being stuck in place due to proc blocking, and can often be stuck until you are downed.
+
+{{ver|The Silver Grove 2.0}}
+*Introduced.
+}}
+{{Ver/Lu|26}}
+
+==See Also==
+*{{Weapon|Magistar}}, the base variant.
+**[[Magistar Incarnon Genesis]], the Incarnon power-up for the Magistar series.
+*{{Weapon|Sancti Castanas}}, the secondary weapon associated with New Loka.
+*{{Weapon|Sancti Tigris}}, the primary weapon associated with New Loka.
+*{{Faction|New Loka}}, the [[Syndicate]] that offers this weapon.
+*[[Syndicate Weapons]], for other weapons from the Syndicates.
+
+{{WeaponNav}}
+[[de:Sancti Magistar]]
+[[es:Magistar Sancti]]
+[[fr:Magistar Sancti]]
+[[Category:Hammer]]
+[[Category:Update 19]]
+[[Category:Syndicate Offerings]]
+[[Category:Weapons]]
+[[Category:Tenno]]
+[[Category:Special Weapons]]
+[[Category:Healing]]
+[[Category:Syndicate Weapons]]
+[[Category:Weapons with Passives]]
+[[uk:Маґістар-санкті]]

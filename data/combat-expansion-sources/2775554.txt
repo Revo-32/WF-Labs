@@ -1,0 +1,86 @@
+{{Top|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Whip the enemy out of their ill-gotten gains; double credit drops on kills.}}
+The '''Secura Lecta''' is the [[Syndicate]] variant of the {{Weapon|Lecta}}, exclusive to {{Faction|The Perrin Sequence}}. Enemies killed by this weapon will drop additional [[credits]], scaling with the user's [[Mastery Rank]].
+
+==Characteristics==
+*This weapon deals primarily {{D|Electricity}} damage.
+*Enemies killed by this weapon yield additional [[credits]].
+*Innate '''+50%''' [[Attack Speed]] for [[Finisher|Finishers]].
+*Stance slot has a {{Pol|Vazarin}} polarity, matching {{M|Burning Wasp}}.
+*Innate {{Pol|Vazarin}} polarity.
+
+{{Advantages|
+*Tied with Galvacord for the highest [[status chance]] of all whips.
+*Tied with {{Weapon|Scoliac}} for the fastest [[attack speed]] of all whips.
+}}
+
+{{Disadvantages|
+}}
+
+{{WeaponComparison|Lecta}}
+
+==Acquisition==
+*The Secura Lecta can be acquired by reaching the Rank of '''Partner''' with [[The Perrin Sequence]], and spending {{sc|125,000}} to purchase. As with all Syndicate Weapons, the Secura Lecta cannot be chosen as the free offering upon ranking up to Partner rank.
+*Syndicate weapons can also be acquired via [[Trade System|Trading]], but only for unranked copies without [[Forma]] or [[Orokin Catalyst]] installed.
+*Players must reach [[Mastery Rank]] 8 or higher to acquire the Secura Lecta, either by trading or through the Syndicates themselves.
+
+==Notes==
+*Bonus credits are gained from direct kills with the Secura Lecta equipped, or from [[Damage over Time]] effects caused by the Secura Lecta even if holstered.
+*The Credit Boost function for the Secura Lecta scales with Mastery Rank. At Mastery Rank 8, it gives an average 2x Credits from kills. This bonus increase with player Mastery Rank. At Mastery Rank 18 you'll get on average 4x Credits from kills.(capped)
+*Bonus credits stacks with any active [[Credit Booster]]s for increased payout.
+*Can be combined with {{WF|Hydroid}}'s {{M|Pilfering Swarm}} Augment to further increase earnings ({{WF|Nekros}}' {{A|Desecrate}} does not add to further increase earnings)
+*{{WF|Nova}}'s {{A|Molecular Prime}} does not have any negative impact on the credit boost, even if enemies get killed by Molecular Prime's explosion.
+*While the Secura Lecta will grant credits on kills made in [[Duviri]] and [[Undercroft|The Undercroft]], they will not be given to the player on mission completion. 
+
+==Trivia==
+*The concept for the innate effect of the Secura Lecta was designed by player Oranji.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+PerrinLecta.png|Secura Lecta in Codex.
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|42.0.10}}
+*The Secura Lecta's bonus Credits will now trigger if the enemy died while suffering Damage Over Time (DOT) effects from the weapon even if it's not currently equipped.
+**Also fixed edge-cases of the Secura Lecta's bonus Credits being triggered multiple times on one enemy.
+
+{{ver|26}}
+*Damage increased from 75 Electricity to 176 (30 Puncture, 66 Slash, and 80 Electricity).
+*Status Chance increased from 25% to 30%.
+*Critical Chance increased from 5% to 15%.
+*Slam Attack increased from 150 to 528.
+*Slide Attack increased from 161 to 352.
+*Parry Angle set to 45.
+*(Undocumented) Follow Through decreased from 0.8 to 0.5.
+
+{{ver|19.8}}
+*The Credit Boost function for the Secura Lecta has changed. Before, you could get on average 11.6x Credits from kills. This chance has changed and now scales with Mastery Rank. At Mastery Rank 8, you'll get on average 2x Credits from kills. This increase continues with your Mastery Rank. At Mastery Rank 18 you'll get on average 4x Credits from kills (capped).
+
+{{ver|The Silver Grove 2}}
+*Introduced.
+}}
+{{Ver/Lu|26}}
+
+==See Also==
+* {{Weapon|Lecta}}, the original counterpart.
+*{{Weapon|Secura Dual Cestra}}, the secondary weapon associated with The Perrin Sequence.
+*{{Weapon|Secura Penta}}, the primary weapon associated with The Perrin Sequence.
+*{{Faction|The Perrin Sequence}}, the [[Syndicate]] that offers this weapon.
+*[[Syndicate Weapons]], for other weapons from the Syndicates.
+
+{{WeaponNav}}
+__NOTOC__
+[[es:Lecta Secura]]
+[[it:Secura Lecta]]
+[[fr:Lecta Secura]]
+[[Category:Special Weapons]]
+[[Category:Syndicate Offerings]]
+[[Category:Whip]]
+[[Category:Syndicate Weapons]]
+[[Category:Weapons with Passives]]
+[[uk:Лекта-секура]]

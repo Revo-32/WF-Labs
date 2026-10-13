@@ -1,0 +1,99 @@
+{{Navigation|Rip Line|Warcry|Paralysis|Hysteria}}
+{{For|the stance|Hysteria (Stance)}}
+<onlyinclude>{{AbilityU10.3
+| name = Hysteria
+| gameimage = HysteriaPanel.png
+| cardimage = HysteriaModU15.jpeg
+| hotkey = 4
+| description = Valkyr bares her deadly claws, unleashing devastating attacks that also heal her. Valkyr becomes immune to Status Effects and her Armor bonus from Warcry is multiplied while using the claws.<br>
+'''Energy Drain:''' 5 s<sup>-1</sup>
+| cost = 25
+| strength = 100 / 125 / 200 / 250 damage<br>70 / 80 / 90 / 100 health restore per hit
+| range = 
+| duration = 
+| misc = 
+| cardonly = {{{1|}}}
+| info = 
+*Overcome with rage, {{WF|Valkyr}} expends {{Stat|Ability Efficiency|icon=only}}'''25''' [[energy]] to unleash a pair of energy talons, the '''{{Weapon|Valkyr Talons}}''', as her melee [[Exalted Weapon]], while also becoming immune to [[Status Effect]]s. [[Melee#Normal Attack|Normal attacks]] deal {{Stat|Ability Strength|icon=only}}'''100 / 125 / 200 / 250''' damage within <u>'''2.15'''</u> meters and all of Valkyr's attacks restore {{Stat|Ability Strength|icon=only}}'''70 / 80 / 90 / 100''' {{Stat|Health}} per hit.
+**Enemies that are immune to damage but can take hits (e.g. {{E|Arbitration Shield Drone}}) will also restore Valkyr's health.
+**Exclusively uses the {{M|Hysteria}} Stance.
+**Damage is distributed between '''25%''' {{D|Puncture}} and '''75%''' {{D|Slash}}.
+**[[Melee#Wall Attack|Wall attacks]] and [[Melee#Slide Attack|slide attacks]] inflict {{Stat|Ability Strength|icon=only}}'''300 / 375 / 600 / 750''' damage for each strike.
+**[[Melee#Aerial Attack|Aerial attacks]] inflict {{Stat|Ability Strength|icon=only}}'''200 / 250 / 400 / 500''' damage.
+**[[Melee#Slam Attack|Slam attacks]] inflict {{Stat|Ability Strength|icon=only}}'''300''' damage within <u>'''5'''</u> meters. 
+**Attacks have a <u>'''2x'''</u> [[critical multiplier]], <u>'''50%'''</u> [[critical chance]], and <u>'''10%'''</u> [[status chance]].
+**Valkyr Talons can be equipped with melee mods and [[Arcane Enhancement]]s.
+***[[Riven Mod]]s are '''not''' generated for Valkyr Talons.
+**Because attacks with Valkyr Talons are counted as melee strikes, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+**Hysteria consumes {{Stat|Ability Efficiency|icon=only}}{{Stat|Ability Duration|icon=only}}'''5''' energy per second while active and will remain active until either Valkyr's energy is depleted or the ability is deactivated by pressing the ability key again.
+***Valkyr '''cannot''' replenish energy using {{A|Energy Vampire}}, {{A|Rally Point}}, [[Rift Plane]]'s innate energy regeneration, [[Squad Energy Restore]]s, {{M|Energy Siphon}}, {{M|Energy Nexus}}, {{M|Dreamer's Bond}}, and/or {{Focus|Wellspring}} while Hysteria is active.
+***[[Energy Orb]]s, [[Orokin Void]] [[Orokin Tower#Death Orbs|Death Orb]]'s energy restores, {{M|Spellbound Harvest}}, {{Arcane|Arcane Energize}}, and {{Arcane|Emergence Dissipate}}'s Energy Motes can still replenish Valkyr's energy during Hysteria.
+***Hysteria's energy drain is '''not''' converted into shields by [[Set Mods#Augur Mod Set|Augur Mods]].
+*While Hysteria is active, Valkyr can cast other abilities and use primary and secondary weapons. However, switching weapons will disable Hysteria's effects, including the status immunity, health restore, and Warcry's tripled armor, while continuing to drain energy over time.
+*Cast time of '''1''' second is affected by [[Casting Speed]].
+*Hysteria's attacks can damage enemies across the [[Rift Plane]].
+*Movement-boosting passives from [[Incarnon]] melee weapons typically continue to function while Hysteria is active. A few examples include:
+**[[Praedos#Evolution_II|Drifting Grace]] (+20% Sprint Speed, +20% Slide)
+**[[Praedos#Evolution_IV|Evolved Ascension]] (+30% Parkour Velocity)
+**[[Innodem#Evolution_II|Striking Swiftness]] (+30% Sprint Speed)
+**[[Okina#Evolution_III|Swordsman's Celerity]] (+30% Movement Speed)
+*Mods that boost [[Melee#Wind_Up|Wind Up Speed]] equipped on your regular melee weapon benefit heavy attacks done with Valkyr Talons.
+**This ''stacks'' with Wind Up Speed mods on Valkyr Talons itself.
+| interactions =
+*While channeling Hysteria, {{A|Warcry}} grants <u>'''3x'''</u> additional {{Stat|Armor}}.
+*{{M|Hysteria}}'s '''Slide''' attack does '''6''' hits, rapidly gaining [[Valkyr/Abilities/Passive|Rage]], which increases the damage of {{Weapon|Valkyr Talons}}.
+| stance = [[File:HysteriaStanceMod.png|200px|left]]
+{{main|Hysteria (Stance)}}
+{{#lst:Hysteria (Stance)|intro}}
+{{clr}}
+| weapon = [[File:ValkyrTalons.png|200px|left]]
+{{main|Valkyr Talons}}
+{{#lst:Valkyr Talons|intro}}
+{{clr}}
+| augment = [[File:HystericalAssaultMod.png|200px|left]]
+{{main|Hysterical Assault}}
+{{#lst:Hysterical Assault|intro}}
+{{#lsth:Hysterical Assault|Stats}}
+----
+[[File:EnragedMod.png|200px|left]]
+{{main|Enraged}}
+{{#lst:Enraged|intro}}
+{{#lsth:Enraged|Stats}}
+{{clr}}
+| tips = 
+*The health generation and high armor stat synergize greatly with {{Arcane|Arcane Persistence}}, you just need to add max health.
+*There may be a dark red hue for the duration of Hysteria, making it difficult to see enemies. This is especially problematic if Infested Parasites are nearby.
+**Turning 'Color Correction' off in Options > Display can alleviate this issue.
+*Considered alone, {{M|Steel Charge}} adds more damage to Hysteria than {{M|Growing Power}}, but this changes when using {{M|Condition Overload}}. 
+**Having enough status effects on the target causes CO's damage boost to vastly reduce Steel Charge's overall benefit, since they stack additively, while Growing Power's boost stacks with CO multiplicatively.
+**Steel Charge does grant an extra 4 mod capacity to Valkyr herself, though.
+**Even with Steel Charge equipped, using {{M|Power Drift}} will still add more damage than {{M|Coaction Drift}}.
+*Heavy Attacks in Hysteria open enemies to [[Finisher]]s, allowing you to reliably use the damage boost without spending energy on her {{A|Paralysis}} ability.
+**This finisher also knocks enemies down, allowing for a successive [[Finisher#Ground Finisher|ground finisher]] for a quick burst of high damage.
+*The opening heavy attack in Hysteria's two-attack heavy combo is considered a slam, and thus benefits from {{M|Seismic Wave}}.
+<noinclude>
+| max = {{WFmax|main|valkyr4}}
+</noinclude>
+| bugs = *Using Hysteria the moment you are downed by enemies will trigger a bug. Sometimes, you'll only be able to use your actual melee weapon, but it will swing as though it's your claws. In other instances, you may be able to use your other weapons, while also being invincible. You must wait until the effect ends for the bug to clear.
+*If only a melee weapon is equipped in the player's loadout, casting Hysteria while holding either a [[Codex Scanner|Codex]] or [[Synthesis Scanner]] will cause Hysteria's attacks to instead use the equipped melee weapon's quick-attacks, while also making it impossible to use combos or to block.|
+}}
+
+</onlyinclude>
+
+==See Also==
+*{{WF|Valkyr}}
+__NOTOC__
+[[de:Hysterie]]
+[[es:Histeria]]
+[[ru:Истерия]]
+[[Category:Valkyr]]
+[[Category:Warframe Abilities]]
+[[Category:Ability Weapons]]
+[[Category:Channeled Abilities]]
+[[Category:Healing]]
+[[Category:Mechanics]]
+[[Category:Update 11]]
+[[Category:Exalted Weapon]]
+[[Category:Line Of Sight Abilities]]
+[[Category:Invulnerability]]
+[[uk:Істерика]]

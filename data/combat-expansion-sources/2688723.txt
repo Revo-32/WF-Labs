@@ -1,0 +1,64 @@
+{{ModBox}}
+'''Static Discharge''' is a [[Melee Mods|Melee Mod]] for the {{Weapon|Prova}} and {{Weapon|Prova Vandal}} that causes Heavy Attacks to deal AoE {{D|Electricity}} damage to nearby enemies.
+
+== Stats ==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! % of Weapon Damage
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || 30 || 2
+|-
+| 1 || 40 || 3
+|-
+| 2 || 50 || 4
+|-
+| 3 || 60 || 5
+|-
+| 4 || 70 || 6
+|-
+| 5 || 80 || 7
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+==Notes==
+*With this mod equipped, all enemies within '''4''' meters of the player will be dealt damage when heavy attacking.
+**Deals a 1 damage {{D|Electricity}} proc at the start of the windup animation.
+*Damage depends on which heavy attack is used to start.
+**Starting with heavy attack one (the spin) then following up with heavy attack two (the overhead strike) will deal '''24%''' damage hitting every '''0.2''' seconds while in the first heavy attack animation, then a single hit dealing '''800%''' damage while in the second heavy attack animation.
+**Starting with heavy attack two (the overhead strike) then following up heavy attack one (the spin) will deal '''80%''' damage hitting every '''0.2''' seconds while in the first heavy attack animation, then a single hit dealing '''240%''' damage while in the second heavy attack animation..
+*Can trigger [[Melee Influence]] without needing to have electricity damage on the weapon. (The only weapons that can equip this augment are base electric damage, regardless)
+*Shock range is centered on the player, not the melee.
+**Range cannot be increased.
+
+==Media==
+{{VideoGallery
+|{{YouTube|pveFG99eGtU|size=300px}}
+}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|19}}
+*Reduced the damage of the Static Discharge Mod due to the Prova dealing (at least) 5 ticks of damage during the charge attack.
+
+{{ver|The Index Preview}}
+*Introduced.
+}}
+{{AugmentedMods}}
+__NOTOC__
+[[de:Statische Entladung]]
+[[es:Descarga estática]]
+[[fr:Décharge Statique]]
+[[ru:Статический Разрядник]]
+[[Category:Augment Mods]]
+[[Category:Update 19]]
+[[Category:Naramon Mods]]
+[[Category:Rare Mods]]
+[[Category:Index Mods]]
+[[Category:Melee Mods]]
+[[Category:The Index]]
+[[Category:Electricity Damage]]
+[[uk:Статичне розряджання]]

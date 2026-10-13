@@ -1,0 +1,90 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Azothane calls the visionary warrior to turn the tides of battle. Block and melee attack at the same time to plunge Azothane into the ground, damaging nearby enemies with a shockwave and adding to the combo counter.}}
+
+The '''Azothane''' is a [[Duviri]] [[Two-Handed Nikana]] wielded by [[Dax Equitem]]s. It has a unique [[Blocking]] combo that emits a {{D|Heat}} shockwave around the user.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Wise Razor}} stance.
+*Unique Blocking Combo releases a '''10''' meter shockwave centered around the impact point, dealing '''85''' {{D|Heat}} damage with a guaranteed {{D|Impact}} proc.
+===Drifter Combat===
+*Power Strike (blocking + heavy attack, default {{Keybind|RMB}} + {{Keybind|MMB}}) plunges the blade into the ground to release five energy waves forward in a cone, dealing {{D|Cold}} damage with guaranteed procs.
+**This indirectly increases the subsequent coming crit damage as Cold status enhances the critical multipliers received on the enemies.
+
+{{Advantages|
+*Tied with {{Weapon|War}} for the longest reach of all non-exalted melee weapons.
+}}
+{{Disadvantages|}}
+
+==Acquisition==
+The Blueprint for Azothane can be purchased in [[Teshin's Cave]] for 50 {{Resource|Pathos Clamp}} or {{pc|250}}. Purchasing using the former will unlock the [[Drifter]]-compatible version and the blueprint for a [[Warframes|Warframe]]-compatible version; purchasing using the latter will unlock both versions.
+
+Additional Warframe-compatible blueprint copies can be purchased from [[Cephalon Simaris]] for {{sc|100,000}}.
+
+{{BuildAutomatic|type=Weapon}}
+
+{{StanceTable|ComboType=Block}}
+
+==Notes==
+===Shockwave===
+*For each enemy hit, the shockwave will add 4 hits to the [[Melee Combo]]
+*Shockwave damage is 50% of the '''Slam Radial Damage''' listed under the Primary section of the Arsenal.
+*Shockwave does '''not''' have any damage fall-off.
+*Damage is only affected sources of slam damage, such as {{M|Seismic Wave}}.
+
+==Tips==
+
+* The Azothane's shockwave passive will proc {{M|Tek Gravity}}.
+
+==Trivia==
+
+== Bugs ==
+
+* The second [[Heavy Attack]] only hits one time instead of two with half of the expected damage.
+** This bug still exists in game as of [[Update 39|Update 39.1.3]].
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+<!--images-->
+</gallery><gallery>
+File:Liger-inuzuka-dax-presentation.jpg
+</gallery><gallery widths="300" position="center" spacing="small">
+<!--videos-->
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|33.6.4}}
+*Fixed the Azothane missing several SFX with various Melee Stances.
+
+{{ver|33.5}}
+*Fixed Warframe suddenly moving in slow motion when using Drifter Melee weapons.
+*Fixed the Azothane not displaying the proper energy colors when performing a ground slam.
+
+{{ver|33.0.11}}
+*Fixed the following issues when melee blocking as Warframe using Drifter Melee weapons: 
+**Fixed damage from enemy projectiles not being 100% blocked while blocking.
+**Fixed enemy projectile weapons bouncing back at whoever fired them (intended only for Drifter for Parrying Dax arrows).
+
+{{ver|33.0.4}}
+*Added the Azothane Blueprints (for Warframe use) to Cephalon Simaris’ Offerings for those who accidentally sell theirs.
+
+{{ver|33.0.1}}
+*Fixed Azothane’s special shockwave attack (blocking + Melee Strike) not contributing to combo counter (when equipped on Warframe).
+
+{{ver|33}}
+*Introduced.
+}}
+
+==See Also==
+*{{Weapon|Syam}}
+*{{Weapon|Edun}}
+*{{Weapon|Sampotes}}
+*{{Weapon|Cinta}}
+{{WeaponNav}}
+[[Category:Weapons]]
+[[Category:Melee Weapons]]
+[[uk:Азотан]]

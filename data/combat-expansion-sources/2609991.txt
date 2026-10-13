@@ -1,0 +1,40 @@
+{{WeaponInfoboxAutomatic}}
+{{Quote|A Zaw Strike used for machete and polearm style weapons. Its heavy weight increases damage at the cost of speed.|In game description}}
+
+The '''Kronsh''' is an {{D|Impact}}-focused Strike used in [[Zaw]] construction.
+
+{{BuildRequire
+|buildcredits = 5,000
+|build1 = Grokdrul
+|build1amount = 20
+|build2 = Fish Scales
+|build2amount = 45
+|build3 = Esher Devar
+|build3amount = 10
+|build4 = Coprite Alloy
+|build4amount = 60
+|buildtime = 1
+|buildrush = 25
+|blueprint = 1,000
+|blueprintunit = Standing
+}}
+
+==Acquisition==
+The Kronsh blueprint can be acquired after reaching the Rank of '''Neutral''' with the [[Ostron]]s and buying it from [[Hok]] for {{sc|1,000}}.
+
+==Characteristics==
+This Strike primarily deals {{D|Impact}} damage.
+
+* '''70%''' {{D|Impact}}
+* '''30%''' {{D|Slash}}
+
+Compatible weapon types:
+*Machete
+*Polearm
+
+{{ZawNav}}
+[[es:Kronsh]]
+[[fr:Kronsh]]
+[[Category:Update 22]]
+[[Category:Zaw]]
+[[uk:Кронш]]

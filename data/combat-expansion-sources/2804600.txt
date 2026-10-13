@@ -1,0 +1,315 @@
+{{Infobox
+| Box title = Blast Damage
+| image     = EssentialBlastGlyph.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Blast_b.png|class=icon]] [[File:Blast_w.png|class=icon]]
+}}
+{{Quote|'''DAMAGE EFFICACY'''<br/>
+'''{{text|green|x1.5}}''' damage to Infested Deimos<br/>
+'''{{text|red|x0.5}}''' damage to Corpus Amalgam
+
+'''STATUS EFFECT'''<br/>
+Created by combining {{D|Heat}} and {{D|Cold}} damage.
+
+{{D|Blast}} deals 30% of base damage after 1.5 seconds as an explosion. At 10 stacks or on death, stacks deal their damage simultaneously to enemies within 5m while staggering them.|In-game Description}}
+'''{{D|Blast}} Damage''' is one of the six secondary elemental damage types, composed of {{D|Heat}} and {{D|Cold}} elements. Deals increased damage to {{D|Infested Deimos}}, but reduced on {{D|Corpus Amalgam}}. Its status effect causes enemies to detonate an area of effect.
+
+==[[Status Effect]]s==
+===General===
+The status effect of {{D|Blast}} damage is '''Detonate''', which has a single-target portion and an AoE portion:
+
+'''Single Target Damage''': '''1.5s''' after inflicting blast status on an enemy, the blast stack will detonate, dealing '''30%''' weapon base damage to the target. Each blast stack has its own '''1.5s''' fuse time before detonation. However, reaching '''10''' blast stacks will cause all stacks to detonate early, dealing '''10''' hits of '''30%''' base damage to the target at once, for a total of '''300%''' base damage.
+
+'''AoE Damage''': Upon reaching '''10''' blast stacks OR the target dying, all current stacks will be detonated early and cause a single '''5m''' AoE explosion, dealing '''300%''' weapon base damage '''per stack''' (max '''3000%''') to surrounding enemies. The initial target of the blast procs is '''not''' dealt this AoE damage, only the single target damage explained above. The blast radius is unaffected by {{M|Firestorm}} or {{M|Fulmination}}.
+
+Enemies affected by a {{D|Blast}} proc will have a small jet of sparks (like those from a firework) appear where the attack impacted.
+
+====Status Damage====
+Upon expiring normally, each proc deals {{D|Blast}} damage equal to:
+
+<math>{
+\begin{aligned}
+\text{Modded Base Damage} &= \text{Base Damage} \times (1 + \text{Base Damage Bonuses}) \times (1 + \text{Faction Damage Bonuses})
+\end{aligned}
+}</math>
+::''Notice that modded base damage calculation used for proc damage is not the same as normal damage calculations, ignoring physical and elemental damage bonuses.''
+
+<math>{
+\begin{aligned}
+\text{Blast Proc Damage} &= 0.3 \times \text{Modded Base Damage} \\
+&\qquad \times (1 + \text{Faction Damage Bonuses}) \\
+&\qquad \times (1 + \text{Status Damage Bonuses}) \\
+&\qquad \times  \text{Additional Multipliers}
+\end{aligned}
+}</math>
+
+Upon expiring early, either by reaching maximum stacks or by killing the target, each proc will also deal {{D|Blast}} damage in a '''5m''' radius:
+
+<math>{
+\begin{aligned}
+\text{Radial Damage} &= 3 \times \text{Modded Base Damage} \\
+&\qquad \times (1 + \text{Faction Damage Bonuses}) \\
+&\qquad \times (1 + \text{Status Damage Bonuses}) \\
+&\qquad \times \text{Additional Multipliers}
+\end{aligned}
+}</math>
+::''{{M|Valence Formation}} or {{M|Thermal Transfer}} does '''not''' increase {{D|Blast}} status damage''
+::''Additional Multipliers include modded critical multiplier on [[Critical Hit]] and multipliers on [[Enemy Body Parts]]; these stack multiplicatively with each other.''
+
+The radial damage of all procs will be combined into one damage instance. This radial damage does not affect the initial target, which will only take the normal expiration damage of all procs.
+
+====Notes====
+* Blast procs only deal 30% base damage per stack to their initial target, making blast '''significantly weaker for single target damage than any other damaging status effect'''. Instead, blast excels at dealing AoE damage, but only if the weapon is capable of getting a kill or reaching 10 blast stacks within the short 1.5s fuse time.
+* The 5m AoE damage has '''no falloff'''. The blast radius is unaffected by {{M|Firestorm}} or {{M|Fulmination}}.
+* Each blast stack has its own 1.5s duration, or "fuse," which is affected by [[Status Duration]]. Unlike other forms of Status Damage, {{D|Detonate}} will always deal damage even if total Status Duration is '''below 0%'''. 
+* '''Killing blows that inflict at least 1  Blast proc will still activate the full 5 meter, 300% damage explosion''', even if the enemy had no blast stacks on them before the killing blow. Likewise, the killing blow does not need to proc blast so long as the enemy already has any blast stacks on them before they are killed.
+* Like other damaging statuses, '''[[Faction Damage Bonus]]es apply twice''' to Blast procs, making it a very powerful damage multiplier.
+* Unlike other damaging statuses, adding more '''elemental damage ({{D|Heat}} and {{D|Cold}}) will not increase the Blast proc damage'''. However {{D|Heat}} and {{D|Cold}} mods can still increase the chance that a status proc will be a Blast proc.
+* '''Damage multipliers from weakpoint hits, critical hits, and even [[Critical Hit#Critical Headshots|"Headcrits"]] are all applied to Blast proc single target and AoE damage'''. 
+** The AoE damage from 10-stack and on-kill detonations will also account for these damage multipliers, summing up the total damage from each individual blast stack. This makes critical headshot kills with a blast weapon incredibly strong for crowd clearing, due to their ability to apply the critical headshot multiplier in an AoE.
+*'''Interaction with''' {{A|Xata's Whisper}}:
+**When an enemy is afflicted with one or more {{D|Blast}} stacks, Xata's whisper will trigger off the detonation(s). Additionally, the [[Faction Damage Bonus]] will be applied again (effectively triple-dipping), and Elemental Bonuses will apply to Xata's Whisper damage (despite {{D|Blast}} not being affected by Elemental Damage Bonuses).
+***Consider the following example: A gun deals '''100 damage''' per bullet, and we have {{M|Thermite Rounds}}, {{M|Rime Rounds}}, {{M|Stormbringer}}, {{M|Primed Bane of Grineer}}, and Xata's whisper at base strength: The initial hit will deal {{Math|100 {{mul}} (1 + 0.6 + 0.6 + 0.9) {{mul}} (1 + 0.55)|mt=y}} damage, and Xata's whisper will deal {{Math|0.26 {{mul}} 480.5 {{mul}} (1 + 0.55) |mt=y}} damage (the [[Faction Damage Bonus]] is applied again). If the hit proc'd {{D|Blast}}, then the detonation damage will be {{Math|0.3 {{mul}} 100 {{mul}} (1 + 0.55)^2|mt=y}} (Elemental Damage doesn't apply to {{D|Blast}} detonations and the  [[Faction Damage Bonus]] is applied again). Then, Xata's whisper '''will trigger off said detonation''', dealing {{Math|0.26 {{mul}} 72.075 {{mul}} (1 + 0.55) {{mul}} (1 + 0.6 + 0.6 + 0.9)|mt=y}} damage (as you can see, the [[Faction Damage Bonus]] is applied yet again, and the Elemental Damage Bonus is applied '''even though {{D|Blast}} detonations don't scale off Elemental Damage Bonuses.'''
+
+===Railjack===
+{{D|Blast}} does not have a [[Railjack]] space counterpart and is thus not able to proc any status effect nor is it included in calculations for status proc weighting.
+
+==Blast Sources==
+{{Main|:Category:Blast Damage}}
+
+===Weapons===
+{{Main|:Category:Blast Damage Weapons}}
+{{DamageTypeTable|Blast}}
+
+<gallery>
+Corinth.png|link=Corinth|{{Weapon|Corinth}}<br>(Alternate Fire)|alt=Corinth(Alternate Fire)
+CorinthPrime.png|link=Corinth Prime|{{Weapon|Corinth Prime}}<br>(Alternate Fire)|alt=Corinth Prime(Alternate Fire)
+SybarisIncarnonGenesis.png|link=Sybaris Incarnon Genesis|{{Weapon|Sybaris}} w/ {{Resource|Sybaris Incarnon Genesis}}
+Quanta.png|link=Quanta|{{Weapon|Quanta}}<br>(Alternate Fire)|alt=Quanta(Alternate Fire)
+QuantaVandal.png|link=Quanta Vandal|{{Weapon|Quanta Vandal}}<br>(Alternate Fire)|alt=Quanta Vandal(Alternate Fire)
+VaykorHek.png|link=Vaykor Hek|{{Weapon|Vaykor Hek}}<br>(Justice effect)|alt=Vaykor Hek(Justice effect)
+Zarr.png|link=Zarr|{{Weapon|Zarr}}<br>(Primary Fire)|alt=Zarr(Primary Fire)
+VaykorMarelok.png|link=Vaykor Marelok|{{Weapon|Vaykor Marelok}}<br>(Justice Effect)|alt=Vaykor Marelok(Justice Effect)
+Glaive.png|link=Glaive|{{Weapon|Glaive}}<br>(Throw Attacks)|alt=Glaive(Throw Attacks)
+GlaivePrime.png|link=Glaive Prime|{{Weapon|Glaive Prime}}<br>(Throw Attacks)|alt=Glaive Prime(Throw Attacks)
+Halikar.png|link=Halikar|{{Weapon|Halikar}}<br>(Throw Attacks)|alt=Halikar(Throw Attacks)
+JatKittag.png|link=Jat Kittag|{{Weapon|Jat Kittag}}<br>(Slam Radial Damage)|alt=Jat Kittag(Slam Radial Damage)
+JatKusar.png|link=Jat Kusar|{{Weapon|Jat Kusar}}<br>(Heavy Attack Radial Damage)|alt=Jat Kusar(Heavy Attack Radial Damage)
+Kestrel.png|link=Kestrel|{{Weapon|Kestrel}}<br>(Throw Attacks)|alt=Kestrel(Throw Attacks)
+Orthos.png|link=Orthos|{{Weapon|Orthos}}<br>(Slam Radial Damage)|alt=Orthos(Slam Radial Damage)
+OrthosPrime.png|link=Orthos Prime|{{Weapon|Orthos Prime}}<br>(Slam Radial Damage)|alt=Orthos Prime(Slam Radial Damage)
+Redeemer.png|link=Redeemer|{{Weapon|Redeemer}}<br>(Charge Attack)|alt=Redeemer(Charge Attack)
+RedeemerPrime.png|link=Redeemer Prime|{{Weapon|Redeemer Prime}}<br>(Charge Attack)|alt=Redeemer Prime(Charge Attack)
+Serro.png|link=Serro|{{Weapon|Serro}}<br>(Slam Radial Damage)|alt=Serro(Slam Radial Damage)
+Sydon.png|link=Sydon|{{Weapon|Sydon}}<br>(Slam Radial Damage)|alt=Sydon(Slam Radial Damage)
+VaykorSydon.png|link=Vaykor Sydon|{{Weapon|Vaykor Sydon}}<br>(Slam Radial Damage)|alt=Vaykor Sydon(Slam Radial Damage)
+</gallery>
+
+===Enemies===
+{{#tag:tabber|Grineer = <gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+BombardDE.png|link=Bombard|[[Bombard]] wielding the [[AT Ogris]]
+LancerDE.png|link=Lancer|[[Lancer]] can throw [[Plasma Grenade]]s
+EliteRifleLancerAvatar.png|link=Elite Lancer|[[Elite Lancer]] can throw [[Plasma Grenade]]s
+Frontier Trooper.png|link=Trooper|[[Trooper]] can throw [[Plasma Grenade]]s
+HellionDE.png|link=Hellion|[[Hellion]] can launch a rocket barrage when airborne
+DEShik.png|link=The Grustrag Three|[[Shik Tal]] is armed with a modified {{Weapon|Marelok}} that fires rockets
+GrnSkiffMissile.png|link=Hellion Dargyn|[[Hellion Dargyn]] can launch homing rockets
+GrnSkiffMissileShield.png|link=Shield-Hellion Dargyn|[[Shield-Hellion Dargyn]] can launch homing rockets
+SquidFrogLancer.png|link=Darek Draga|[[Darek Draga]] wielding the {{Weapon|Kulstar}}
+WaterMineDrone.png|link=Sikula|[[Sikula]] can deploy sea mines
+</gallery>
+{{!}}-{{!}} Corpus =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+AmalgamKucumatz.png|link=Amalgam Kucumatz|[[Amalgam Kucumatz]]'s main gun deals {{D|Blast}} damage
+CrewmanNormal.png|link=Crewman|[[Crewman]] can throw [[Plasma Grenade]]s
+JackalDE2.png|link=Jackal|[[Jackal]] can fire [[Plasma Grenade Cluster]]s
+JetpackCrewmanPenta.png|link=Penta Ranger|[[Penta Ranger]] wielding {{Weapon|Penta}}
+</gallery>
+{{!}}-{{!}} Corrupted =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+CorruptedBombardNew.png|link=Corrupted Bombard|[[Corrupted Bombard]] wielding [[AT Ogris]]
+OrokinRifleSpacemanAvatar.png|link=Corrupted Crewman|[[Corrupted Crewman]] can throw [[Plasma Grenade]]s
+OrokinRifleLancerAvatar.png|link=Corrupted Lancer|[[Corrupted Lancer]] can throw [[Plasma Grenade]]s
+</gallery>
+{{!}}-{{!}} Environment =
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+ExplosiveBarrel.png|link=Explosive Barrel|[[Explosive Barrel]]s rupture when struck
+</gallery>
+}}
+
+===Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+File:ConcealedExplosivesMod.png|link=Concealed_Explosives|alt=Concealed Explosives|{{M|Concealed Explosives}}
+File:ConcentratedArrowMod.png|link=Concentrated_Arrow|alt=Concentrated Arrow|{{M|Concentrated Arrow}}
+File:JusticeBladesMod.png|link=Justice_Blades|alt=Justice Blades|{{M|Justice Blades}}
+File:NeutralizingJusticeMod.png|link=Neutralizing_Justice|alt=Neutralizing Justice|{{M|Neutralizing Justice}}
+File:ScatteredJusticeMod.png|link=Scattered_Justice|alt=Scattered Justice|{{M|Scattered Justice}}
+File:ShatteringJusticeMod.png|link=Shattering_Justice|alt=Shattering Justice|{{M|Shattering Justice}}
+File:ThunderboltMod.png|link=Thunderbolt|alt=Thunderbolt|{{M|Thunderbolt}}
+File:ValenceFormationMod.png|alt=Valence Formation|{{M|Valence Formation}}
+File:VolatileRecompenseMod.png|alt=Volatile Recompense|{{M|Volatile Recompense}}
+File:VulcanBlitzMod.png|{{M|Vulcan Blitz}}|alt=Vulcan Blitz
+</gallery>
+
+===Abilities===
+{{#tag:tabber|Banshee = 
+{{:Sound Quake}}
+{{!}}-{{!}}
+Gauss =
+{{:Thermal Sunder}}
+{{!}}-{{!}}
+Mag =
+{{:Magnetize}}
+{{!}}-{{!}}
+Nova =
+{{:Null Star}}
+{{:Antimatter Drop}}
+{{:Molecular Prime}}
+{{!}}-{{!}}
+Octavia =
+{{:Mallet}}
+{{!}}-{{!}}
+Rhino =
+{{:Rhino Stomp}}
+{{!}}-{{!}}
+Sevagoth =
+{{:Reap}}
+{{:Sow}}
+{{!}}-{{!}}
+Styanax =
+{{:Axios Javelin}}
+{{:Final Stand}}
+{{!}}-{{!}}
+Vauban =
+The {{D|Blast}} damage comes from the projectile used to launch these abilities, not the abilities' main effects:
+{{:Tesla Nervos}}
+{{:Minelayer}}
+{{:Photon Strike}}
+{{:Bastille}}
+{{!}}-{{!}}
+Elytron (Archwing) = 
+{{:Bloomer}}
+{{:Thumper (Elytron)}}
+{{:Warhead (Ability)}}
+{{!}}-{{!}}
+Itzal (Archwing) =
+{{:Cosmic Crush}}
+{{:Fighter Escort}}
+{{!}}-{{!}}
+Odonata (Archwing) =
+{{:Seeking Fire}}
+{{!}}-{{!}}
+Bonewidow (Necramech) =
+{{:Exalted Ironbride}}
+{{!}}-{{!}}
+Voidrig (Necramech) =
+{{:Necraweb}}
+{{:Guard Mode}}
+}}
+
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+SeekerVolleyMod.png|link=Seeker Volley|{{M|Seeker Volley}}|alt=Seeker Volley
+ShatterBurstMod.png|link=Shatter Burst|{{M|Shatter Burst}}|alt=Shatter Burst
+TetherMod.png|link=Tether|{{M|Tether}}|alt=Tether
+</gallery>
+
+==Additional Effects==
+Some mods add additional effects when a {{D|Blast}} occurs or for dealing {{D|Blast}} damage.
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+AfterburnerMod.png|link=Afterburner|{{M|Afterburner}}|alt=Afterburner
+TopazArchonShard.png|link=Topaz Archon Shard|{{Resource|Topaz Archon Shard}}|alt=Topaz Archon Shard
+VexingRetaliationMod.png|link=Vexing Retaliation|{{M|Vexing Retaliation}}|alt=Vexing Retaliation
+</gallery>
+
+==Notes==
+*Enemies killed while under the effect of a Blast proc will vaporize, making the body unable to be used by {{A|Desecrate}} and will cause {{A|Magnetize}} to stop pulling in more enemies. 
+*Damage dealt from blast status effects can trigger the attacks of '''Wordwarden''' from {{WF|Dante}}'s {{A|Final Verse}}.
+==Trivia==
+*The {{D|Blast}} property of the mixture of {{D|Cold}} and {{D|Heat}} is likely a reference to the ''thermite ice bomb''; where [[Wikipedia:Thermite|thermite]] can burn so hot that it will melt the ice, boil the water, and ultimately decompose the vapor into hydrogen and oxygen. This in turn fuels the fire and cues the explosive property.
+**It could also be [[Wikipedia:Thermal shock|thermal shock]], a fracturing that happens when cold items are rapidly heated or hot things are rapidly cooled. On the molecular level, solid objects expand when heated and contract when cooled, and if subject to a huge temperature change in a short period of time, many materials break down from the energetic motion. This phenomenon commonly occurs (violently) when rinsing a hot glass in a cold sink.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Screenshot_504.png|Blast visuals on a melee weapon
+Screenshot_507.png
+BlastStatusVisual.png|Blast proc on an enemy. Notice the sparks; the number of sparks will increase as more stacks of Blast status are applied.
+ 
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37}}
+*Fixed Abilities or sources that could cleanse Status Effects unintentionally triggering Blast Detonate damage.
+
+{{ver|36.0.8}}
+*Fixed entering Bleedout (instead of the intended Spectral form) with Dagath’s Grave Spirit active if the fatal blow dealt Blast damage.
+
+{{ver|36.0.5}}
+*Fixed Clients receiving self-damage from enemies dying from Blast’s detonation AoE.
+*Fixed a crash caused by Blast Status Effects. 
+*Fixed some rare crashes when hitting Blast’s max stack count on enemies who are liable to become immune to Status Effects on damage.
+*Fixes towards a crash caused by Blast Damage Status Effect. 
+
+{{ver|36.0.4}}
+*Drastically reduced VFX from Blast Procs to address performance issues.
+**This is a temporary change in response to reports of crashes and overall performance issues. Unfortunately this does not fix the issue completely, but it should help improve the situation until it can be addressed properly in a Cert update. 
+
+{{ver|36.0.3}}
+*Fixed Clients receiving self-damage from enemies dying from Blast’s detonation AoE.
+*Fixed a crash caused by Blast Status Effects. 
+*Fixed some rare crashes when hitting Blast’s max stack count on enemies who are liable to become immune to Status Effects on damage. 
+
+{{ver|36.0.2}}
+*Fixed Blast Status Effects causing performance drops and crashes.
+
+{{ver|36.0.1}}
+*Fixes towards a crash caused by Blast Damage Status Effect.
+
+{{ver|36}}
+;Simplified Faction Resistances
+*Corpus Amalgam:
+**Resistant to '''Blast'''
+*Deimos Infested:
+**Vulnerable to '''Blast'''
+
+;Status Effect Reworks
+
+'''Blast'''
+
+Our goal with Blast is to invoke an immediate and on-death effect to emphasize explosions. 
+
+Now, instead of enemy inaccuracy, you '''detonate''' your enemies! When dealing a Blast Status Effect to an enemy, the following will happen:
+
+'''Blast Changes:'''
+*Upon inflicting a Blast Status Effect, individual stacks will cause a mini-explosion, and a max stack count of 10 will inflict combined damage in a 5m radius
+**After 1.5 seconds, an individually incurred Blast Status Effect deals a percentage of base-inflicted damage per stack-explosion and over 100% of base-inflicted damage for a full (10 stack) explosion.
+*Status Duration will increase the delay before the Status Effect applies and depletes.
+*Removed the previous Status Effect of inaccuracy.
+
+{{ver|35}}
+*Fixed the HUD filling up with Blast icons if hit with Blast Damage while riding Merulina.
+
+{{ver|30.8}}
+*Made FX improvements to Blast proc explosions.
+
+{{ver|27.2}}
+*Status proc changed from "Knockdown" to "Inaccuracy".
+**Grants the Blast Status Effect a single target. Blast Status reduces enemy accuracy by 30% base. Subsequent Blast Status Effects add +5% inaccuracy for for 75% total at 10 stacks. Each Blast Status has a 6 second Duration.
+
+{{ver|11}}
+*Introduced.
+}}
+
+==See also==
+*[[Justice]]
+
+{{DamageNav}}
+[[es:Daño Explosión]]
+[[fr:Dégâts/Dégâts Explosif]]
+[[ru:Урон/Взрыв]]
+{{DISPLAYTITLE:Blast Damage}}
+[[Category:Blast Damage]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Mechanics]]
+[[Category:Update 36]]

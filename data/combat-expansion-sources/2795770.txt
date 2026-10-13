@@ -1,0 +1,5 @@
+<!--To edit go to individual subpages like Sirius & Orion/Main-->
+{{WarframePage|ru = Сириус и Орион}}
+[[Category:Males]]
+[[Category:Warframes]]
+[[Category:Warframes without Primes]]

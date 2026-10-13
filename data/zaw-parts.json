@@ -1,0 +1,494 @@
+{
+  "version": "wiki-zaw-2807750",
+  "source": {
+    "title": "Zaw",
+    "revision": 2807750,
+    "timestamp": "2026-09-13T11:17:29Z",
+    "url": "https://wiki.warframe.com/w/Zaw?oldid=2807750",
+    "sha256": "7d5f69753942e1318530aa99ab5165e4012f1acfb019e689baf47e4d8c6a2af2",
+    "file": "2807750.txt"
+  },
+  "strikes": [
+    {
+      "id": "Balla",
+      "one": {
+        "type": "Dagger",
+        "polarity": "Madurai",
+        "range": 1.7,
+        "slide": 2.142857
+      },
+      "two": {
+        "type": "Staff",
+        "polarity": "Madurai",
+        "range": 3.0,
+        "slide": 2.142857
+      },
+      "damage": {
+        "Impact": 11.2,
+        "Puncture": 134.4,
+        "Slash": 78.4,
+        "Viral": 0
+      },
+      "speed": 0.083,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.18,
+      "disposition": 0.8,
+      "twoHandedFactor": 1
+    },
+    {
+      "id": "Cyath",
+      "one": {
+        "type": "Machete",
+        "polarity": "Zenurik",
+        "range": 2.6,
+        "slide": 3
+      },
+      "two": {
+        "type": "Polearm",
+        "polarity": "Naramon",
+        "range": 3.0,
+        "slide": 2.222222
+      },
+      "damage": {
+        "Impact": 46.0,
+        "Puncture": 11.5,
+        "Slash": 172.5,
+        "Viral": 0
+      },
+      "speed": 0.0,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.18,
+      "disposition": 0.95,
+      "twoHandedFactor": 1.08
+    },
+    {
+      "id": "Dehtat",
+      "one": {
+        "type": "Rapier",
+        "polarity": "Naramon",
+        "range": 2.5,
+        "slide": 2.142857
+      },
+      "two": {
+        "type": "Polearm",
+        "polarity": "Naramon",
+        "range": 3.0,
+        "slide": 2.222222
+      },
+      "damage": {
+        "Impact": 22.4,
+        "Puncture": 112.0,
+        "Slash": 89.6,
+        "Viral": 0
+      },
+      "speed": 0.083,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.18,
+      "disposition": 1.2,
+      "twoHandedFactor": 1.09
+    },
+    {
+      "id": "Dokrahm",
+      "one": {
+        "type": "Scythe",
+        "polarity": "Zenurik",
+        "range": 1.7,
+        "slide": 2
+      },
+      "two": {
+        "type": "Heavy Blade",
+        "polarity": "Madurai",
+        "range": 3.0,
+        "slide": 2
+      },
+      "damage": {
+        "Impact": 46.4,
+        "Puncture": 108.1,
+        "Slash": 154.5,
+        "Viral": 0
+      },
+      "speed": 0.083,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.18,
+      "disposition": 0.75,
+      "twoHandedFactor": 0.93
+    },
+    {
+      "id": "Kronsh",
+      "one": {
+        "type": "Machete",
+        "polarity": "Zenurik",
+        "range": 2.6,
+        "slide": 3
+      },
+      "two": {
+        "type": "Polearm",
+        "polarity": "Naramon",
+        "range": 3.0,
+        "slide": 2.222222
+      },
+      "damage": {
+        "Impact": 163.8,
+        "Puncture": 0,
+        "Slash": 70.2,
+        "Viral": 0
+      },
+      "speed": -0.067,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.18,
+      "disposition": 1.3,
+      "twoHandedFactor": 1.07
+    },
+    {
+      "id": "Mewan",
+      "one": {
+        "type": "Sword",
+        "polarity": "Madurai",
+        "range": 2.5,
+        "slide": 2.142857
+      },
+      "two": {
+        "type": "Polearm",
+        "polarity": "Naramon",
+        "range": 3.0,
+        "slide": 2.222222
+      },
+      "damage": {
+        "Impact": 56.0,
+        "Puncture": 78.4,
+        "Slash": 89.6,
+        "Viral": 0
+      },
+      "speed": -0.067,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.18,
+      "disposition": 1.1,
+      "twoHandedFactor": 1.09
+    },
+    {
+      "id": "Ooltha",
+      "one": {
+        "type": "Sword",
+        "polarity": "Madurai",
+        "range": 2.5,
+        "slide": 2.142857
+      },
+      "two": {
+        "type": "Staff",
+        "polarity": "Madurai",
+        "range": 3.0,
+        "slide": 2.142857
+      },
+      "damage": {
+        "Impact": 22.4,
+        "Puncture": 89.6,
+        "Slash": 112.0,
+        "Viral": 0
+      },
+      "speed": 0.0,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.18,
+      "disposition": 1.25,
+      "twoHandedFactor": 1
+    },
+    {
+      "id": "Rabvee",
+      "one": {
+        "type": "Machete",
+        "polarity": "Zenurik",
+        "range": 2.6,
+        "slide": 3
+      },
+      "two": {
+        "type": "Hammer",
+        "polarity": "Madurai",
+        "range": 3.0,
+        "slide": 2
+      },
+      "damage": {
+        "Impact": 140.4,
+        "Puncture": 11.7,
+        "Slash": 81.9,
+        "Viral": 0
+      },
+      "speed": -0.067,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.18,
+      "disposition": 1.3,
+      "twoHandedFactor": 1.08
+    },
+    {
+      "id": "Sepfahn",
+      "one": {
+        "type": "Nikana",
+        "polarity": "Madurai",
+        "range": 2.5,
+        "slide": 2.142857
+      },
+      "two": {
+        "type": "Staff",
+        "polarity": "Madurai",
+        "range": 3.0,
+        "slide": 2.142857
+      },
+      "damage": {
+        "Impact": 22.6,
+        "Puncture": 56.5,
+        "Slash": 146.9,
+        "Viral": 0
+      },
+      "speed": 0.0,
+      "criticalChance": 0.2,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.2,
+      "disposition": 0.7,
+      "twoHandedFactor": 1
+    },
+    {
+      "id": "Plague Keewar",
+      "one": {
+        "type": "Scythe",
+        "polarity": "Zenurik",
+        "range": 1.7,
+        "slide": 2
+      },
+      "two": {
+        "type": "Staff",
+        "polarity": "Madurai",
+        "range": 3.0,
+        "slide": 2.142857
+      },
+      "damage": {
+        "Impact": 88.0,
+        "Puncture": 57.0,
+        "Slash": 91.0,
+        "Viral": 70.0
+      },
+      "speed": -0.033,
+      "criticalChance": 0.18,
+      "criticalMultiplier": 2.0,
+      "statusChance": 0.22,
+      "disposition": 0.85,
+      "twoHandedFactor": 0.85
+    },
+    {
+      "id": "Plague Kripath",
+      "one": {
+        "type": "Rapier",
+        "polarity": "Naramon",
+        "range": 2.5,
+        "slide": 2.142857
+      },
+      "two": {
+        "type": "Polearm",
+        "polarity": "Naramon",
+        "range": 3.0,
+        "slide": 2.222222
+      },
+      "damage": {
+        "Impact": 30.0,
+        "Puncture": 70.0,
+        "Slash": 49.0,
+        "Viral": 64.0
+      },
+      "speed": 0.033,
+      "criticalChance": 0.22,
+      "criticalMultiplier": 2.2,
+      "statusChance": 0.18,
+      "disposition": 0.6,
+      "twoHandedFactor": 1.08
+    }
+  ],
+  "grips": [
+    {
+      "id": "Jayap",
+      "twoHanded": true,
+      "damage": 0.0,
+      "speed": 0.917
+    },
+    {
+      "id": "Korb",
+      "twoHanded": false,
+      "damage": 28.0,
+      "speed": 0.783
+    },
+    {
+      "id": "Kroostra",
+      "twoHanded": true,
+      "damage": 14.0,
+      "speed": 0.85
+    },
+    {
+      "id": "Kwath",
+      "twoHanded": false,
+      "damage": 14.0,
+      "speed": 0.85
+    },
+    {
+      "id": "Laka",
+      "twoHanded": false,
+      "damage": 0.0,
+      "speed": 0.917
+    },
+    {
+      "id": "Peye",
+      "twoHanded": false,
+      "damage": -4.0,
+      "speed": 1.0
+    },
+    {
+      "id": "Seekalla",
+      "twoHanded": true,
+      "damage": -4.0,
+      "speed": 1.0
+    },
+    {
+      "id": "Shtung",
+      "twoHanded": true,
+      "damage": 28.0,
+      "speed": 0.783
+    },
+    {
+      "id": "Plague Akwin",
+      "twoHanded": false,
+      "damage": -2.0,
+      "speed": 0.95
+    },
+    {
+      "id": "Plague Bokwin",
+      "twoHanded": true,
+      "damage": 7.0,
+      "speed": 0.883
+    }
+  ],
+  "links": [
+    {
+      "id": "Jai",
+      "speed": 0.083,
+      "criticalChance": 0.0,
+      "statusChance": 0.0,
+      "damage": -4.0
+    },
+    {
+      "id": "Ruhang",
+      "speed": -0.067,
+      "criticalChance": 0.0,
+      "statusChance": 0.0,
+      "damage": 14.0
+    },
+    {
+      "id": "Jai II",
+      "speed": 0.167,
+      "criticalChance": 0.0,
+      "statusChance": 0.0,
+      "damage": -8.0
+    },
+    {
+      "id": "Ruhang II",
+      "speed": -0.133,
+      "criticalChance": 0.0,
+      "statusChance": 0.0,
+      "damage": 28.0
+    },
+    {
+      "id": "Vargeet Jai",
+      "speed": 0.083,
+      "criticalChance": 0.07,
+      "statusChance": -0.04,
+      "damage": -4.0
+    },
+    {
+      "id": "Vargeet Ruhang",
+      "speed": -0.067,
+      "criticalChance": 0.07,
+      "statusChance": -0.04,
+      "damage": 14.0
+    },
+    {
+      "id": "Ekwana Jai",
+      "speed": 0.083,
+      "criticalChance": -0.04,
+      "statusChance": 0.07,
+      "damage": -4.0
+    },
+    {
+      "id": "Ekwana Ruhang",
+      "speed": -0.067,
+      "criticalChance": -0.04,
+      "statusChance": 0.07,
+      "damage": 14.0
+    },
+    {
+      "id": "Vargeet II Jai",
+      "speed": 0.083,
+      "criticalChance": 0.14,
+      "statusChance": -0.08,
+      "damage": -4.0
+    },
+    {
+      "id": "Vargeet II Ruhang",
+      "speed": -0.067,
+      "criticalChance": 0.14,
+      "statusChance": -0.08,
+      "damage": 14.0
+    },
+    {
+      "id": "Ekwana II Jai",
+      "speed": 0.083,
+      "criticalChance": -0.08,
+      "statusChance": 0.14,
+      "damage": -4.0
+    },
+    {
+      "id": "Ekwana II Ruhang",
+      "speed": -0.067,
+      "criticalChance": -0.08,
+      "statusChance": 0.14,
+      "damage": 14.0
+    },
+    {
+      "id": "Vargeet Jai II",
+      "speed": 0.167,
+      "criticalChance": 0.07,
+      "statusChance": -0.04,
+      "damage": -8.0
+    },
+    {
+      "id": "Vargeet Ruhang II",
+      "speed": -0.133,
+      "criticalChance": 0.07,
+      "statusChance": -0.04,
+      "damage": 28.0
+    },
+    {
+      "id": "Ekwana Jai II",
+      "speed": 0.167,
+      "criticalChance": -0.04,
+      "statusChance": 0.07,
+      "damage": -8.0
+    },
+    {
+      "id": "Ekwana Ruhang II",
+      "speed": -0.133,
+      "criticalChance": -0.04,
+      "statusChance": 0.07,
+      "damage": 28.0
+    }
+  ],
+  "moduleSource": {
+    "title": "Module:Modular/data",
+    "revision": 2787806,
+    "timestamp": "2026-06-22T05:27:50Z",
+    "url": "https://wiki.warframe.com/w/Module%3AModular/data?oldid=2787806",
+    "sha256": "d8d24a13d7124c1a6c430727e45138f9a03324f5bd5f5fc5dc6e7ce2d6147eb2",
+    "file": "2787806.txt"
+  }
+}

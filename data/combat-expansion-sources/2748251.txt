@@ -1,0 +1,70 @@
+{{ArcaneBox}}
+'''Arcane Fury''' is an [[Arcane Enhancement]] that provides a 60% chance upon delivering a critical hit to increase [[Melee]] Damage for 18 seconds.    
+
+Can be sold for {{cc|1,000}}.
+
+==Effect==
+{| class="emodtable"
+|-
+! [[Arcane Enhancement#Rank|Rank]]
+! Melee Damage Bonus
+|-
+| 0 || +30%
+|-
+| 1 || +60%
+|-
+| 2 || +90%
+|-
+| 3 || +120%
+|-
+| 4 || +150%
+|-
+| 5 || +180%
+|}
+
+{{Clr}}
+{{Acquisition|*Awarded for killing or capturing the [[Eidolon Hydrolyst]].
+*Dropped in Rotation C of [[Orphix]] [[Neptune Proxima]] or [[Veil Proxima]] missions.
+*Sometimes offered as weekly rewards for completing Infernums in [[The Descendia]].}}
+
+===History===
+*Arcane Fury was first introduced in the [[Trial]] mission [[The Jordas Verdict]], which was retired in {{ver|22.14}}.
+*The [[Operation: Scarlet Spear]] event sold Arcane Fury from [[Little Duck]] for 2,000 {{Resource|Scarlet Credits}}.
+*The [[Operation: Orphix Venom]] event sold Arcane Fury from [[Father]] for 400 {{Resource|Phasic Cells}}.
+*The [[Operation: Gargoyle's Cry]] event sold Arcane Fury from the [[Jahu Gargoyle|Vigile Jahu Gargoyle]] for 6 {{Resource|Grotesque Splinter}}.
+*The [[Operation: Belly of the Beast]] event sold Arcane Fury from [[Ordis]] for 5 {{Resource|Volatile Motes}} in the first run of the event, and 6 Motes in the second, with a purchase limit of 42.
+*The [[Operation: Eight Claw]] event sold Arcane Fury from [[Dominus Thrax]] in bundles of 7, costing 4 {{Resource|Dominus Aureus}}, with a purchase limit of 3 (21 Arcanes in total).
+
+==Notes==
+*The increase in damage stacks additively with mods that increase base damage e.g. {{M|Pressure Point}}.
+*Can be triggered by critical hits from almost any source, including all weapon types, beast and sentinel attacks, and even Warframe abilities (such as {{WF|Wisp}}'s {{A|Breach Surge}} sparks and all of {{WF|Gyre}}'s damaging abilities)
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|31.6}}
+;ARCANE STAT CHANGES PER RANK
+
+We’ve adjusted the values of older Arcanes with the goal of making lower rank Arcanes more viable, and more desirable while collecting as a result. In short, there are three stats that each Arcane tends to have (speaking generally) -- for example, a percentage chance, a stat buff, and the duration of the buff.
+
+Certain Arcanes increase all of these stats per rank (making them scale exponentially), but we are changing it so that only one stat is affected by rank (making it scale linearly). The other stats will now be at the max-rank value regardless of the Arcane Rank, thereby buffing lower-rank Arcanes as a result.
+
+;Arcane Fury
+On Critical Hit: 60% (was 10%) chance for +30%/180% Melee Damage to Melee Weapons for 18s (was 3s).
+
+{{ver|22.12}}
+*Now has a base value of 30% with a base chance of 10%.
+
+{{ver|17.9.1}}
+*Introduced with The Jordas Verdict.
+}}
+{{ArcaneNav}}
+[[de:Arkana Furie]]
+[[es:Furia arcana]]
+[[Category:Arcane Enhancements]]
+[[Category:Equipment]]
+[[Category:Mechanics]]
+[[Category:Update 17]]
+[[uk:Містична лють]]
+[[Category:Eidolon Arcanes]]
+[[Category:Hydrolyst Arcanes]]
+[[Category:Orphix Arcanes]]

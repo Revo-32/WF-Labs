@@ -1,0 +1,52 @@
+{{UpdateMe|Mechanics of sleep status}}
+{{Infobox
+| Box title=Sleep
+| image = -
+Bipedal = SleepingEliteLancer.jpg
+Quadrupedal = SleepingCharger.jpg
+| caption=A sleeping enemy
+}}
+'''Sleep''' is a unique [[Status Effect]] where enemies go into a trance, being unable to perform any actions while they stand still. Depending on the source that applied the Sleep effect, enemies may wake up prematurely before the duration ends.<br><br>
+Sleep may also be used as a capture method on [[Conservation]] targets in lieu of using the [[Tranq Rifle]].
+
+==Sources of Sleep==
+===Abilities===
+{{#tag:tabber|
+Baruuk=
+{{:Lull|cardonly}}
+{{!}}-{{!}}
+Equinox=
+{{:Rest & Rage|cardonly}}
+{{!}}-{{!}}
+Ivara=
+{{:Quiver|cardonly}}
+{{!}}-{{!}}
+Nokko=
+{{:Stinkbrain|cardonly}}
+{{!}}-{{!}}
+Revenant=
+{{:Mesmer Skin|cardonly}}
+{{!}}-{{!}}
+}}
+
+===Weapons===
+*Using {{Weapon|Cobra & Crane}} as {{WF|Baruuk}}: the first strike of a combo will put the enemy to sleep for 2 seconds.
+
+===Mods===
+{{#tag:tabber|
+Aero Set=
+{{Transclude|Aero Set}}
+'''Set Bonus'''
+{{Transclude|Aero Set#Set Bonus}}
+{{!}}-{{!}}
+Augments=
+<gallery>
+EndlessLullabyMod.png|{{M|Endless Lullaby}} augment Mod for {{WF|Baruuk}}
+</gallery>
+{{!}}-{{!}}
+}}
+
+===Gear===
+* The '''Dreamers''' [[Air Support]] ability from the [[Nightwave (Landing Craft)]] deploys a device that releases a '''10''' meter field that deals damage and puts enemies to [[sleep]], lasting for '''20''' seconds. Sleeping enemies are also opened to [[Finisher]] attacks.
+
+{{DamageNav}}

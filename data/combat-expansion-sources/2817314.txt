@@ -1,0 +1,230 @@
+{{Top|Lotus|Tenno|Tenno|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Orokin elites admired farmers in conquered regions, because they had learned to fight with modified farming tools despite being forbidden to own weapons. For their voyage, the Zariman were presented with Praedos in recognition of Zariman tenacity. The Void reinforces the strength of the spirited individual by fortifying the Praedos.}}
+'''Praedos''' is an [[Incarnon]] ceremonial [[tonfa]]. Once its Incarnon form is unlocked, Tenno can transform this weapon in battle by executing a [[Heavy Attack]] with a [[Melee Combo]] of 5x or higher, increasing the weapon's range and attack speed.
+
+==Characteristics==
+*This weapon deals primarily {{D|Slash}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Gemini Cross}} and {{M|Star Divide}} ([[Conclave]] only) stance.
+*As an [[Incarnon]] weapon, Praedos has '''5''' evolution tiers with different perks that allow players to customize their Praedos' stats.
+**Activate Incarnon form by executing a [[Heavy Attack]] with a [[Melee Combo]] of 5x or higher (3x with '''Swift Transmute'''). 
+***When the transformation is ready, the combo counter will shimmer with Void energy.
+***Incarnon form lasts for '''90''' seconds and behaves as follows:
+****'''+3''' [[Range]] 
+****'''+40%''' [[Attack Speed]]. 
+***The transformation persists through all states such as holstering, [[bleedout]] and [[disarm]], but is removed upon [[death]]. 
+
+{{Advantages|}}
+{{Disadvantages|}}
+
+==Acquisition==
+Praedos' main blueprint is purchased from [[Cavalero]] of [[The Holdfasts]] at '''Rank 4 - Seraph''' for {{sc|9,000}} Standing. The blueprint can be [[Trading|traded]].
+{{BuildAutomatic|type=Weapon|name=Praedos}}
+
+==Incarnon Form==
+When newly acquired from the [[Foundry]], players must acquire '''100''' kills with the Praedos in order to gain access to its Incarnon transformation. Each challenge additionally grants 5,000 [[affinity]] to the weapon, affected by [[Affinity Booster]]s. The following Evolution tiers, their requirements for unlocking them, and their related perks, are shown below.
+
+=== Overview ===
+* Incarnon Form is charged by building [[Melee Combo]] to 5x, then using a [[Heavy Attack]]. Once activated, the Incarnon form lasts for '''90''' seconds.
+** Incarnon Form persists through all activities, such as holstering, [[bleedout]], or being [[disarm]]ed. However, Incarnon Form is removed upon [[death]].
+
+=== Evolutions ===
+{| class="wikitable"
+|+
+|-
+! colspan="3" | Evolution
+! Notes
+|-
+! colspan="3" | Evolution I Challenge !! Kill '''100''' enemies with the Praedos.
+|-
+! EVO1
+| style="white-space: nowrap; text-align:center;" | '''Incarnon Form''' [[File:EvolutionIncarnonFormBlade.png|64px|center]]
+| 
+* Reach '''5x''' Combo and then [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form.
+** '''+3''' [[Melee#Range|Range]]
+** '''+40%''' [[Attack Speed]]
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution II Challenge !! Activate Incarnon Form '''6''' times in a mission
+|-
+! rowspan="3" | EVO2
+| style="white-space: nowrap; text-align:center;" | '''Seismic Slam''' [[File:EvolutionSeismicSlam.png|64px|center]]
+|
+* '''+50%''' [[Melee#Slam Attack|Slam]] Radius
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Whirling Flurry''' [[File:EvolutionAttackSpeed.png|64px|center]]
+|
+* '''+20%''' [[Attack Speed]]
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Drifting Grace''' [[File:EvolutionDriftingGrace.png|64px|center]]
+|
+* '''+20%''' [[Sprint Speed]]
+* '''+20%''' [[Movement#Slide & Friction|Slide]]
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution III Challenge !! Complete '''3''' Heavy Attacks on [[Thrax Centurion]]s or [[Thrax Legatus|Legates]]
+|-
+! rowspan="3" | EVO3
+| style="white-space: nowrap; text-align:center;" | '''Shockwave Synergy''' [[File:EvolutionShockwaveSynergy.png|64px|center]]
+| 
+* For each enemy hit by [[Melee#Slam Attack|Slam]] radius, gain '''4''' [[Combo]] Count
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Reaching Lunge''' [[File:EvolutionReachingLunge.png|64px|center]]
+| 
+* '''+1.5m''' [[Melee#Slide Attack|Slide Attack]] Range
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Adept Reflexes''' [[File:EvolutionAdeptReflexes.png|64px|center]]
+| 
+* '''+20''' Initial [[Combo]]
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution IV Challenge !! Close '''12''' Ruptures in [[Void Flood]]
+|-
+! rowspan="3" | EVO4
+| style="white-space: nowrap; text-align:center;" | '''Swift Transmute''' [[File:EvolutionSwiftTransmute.png|64px|center]]
+|
+* Reach '''3x''' [[Combo]] and [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Evolved Ascension''' [[File:EvolutionEvolvedAscension.png|64px|center]]
+|
+* '''+30%''' [[Maneuvers#Parkour Velocity|Parkour Velocity]]
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Vaulting Leap''' [[File:EvolutionVaultingLeap.png|64px|center]]
+|
+* Increase [[Maneuvers#Double Jump|Double Jump]] strength by '''+100%'''
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution V Challenge !! Complete a Solo mission with an Incarnon Weapon equipped in every slot.
+|-
+! rowspan="3" | EVO5
+| style="white-space: nowrap; text-align:center;" | '''Transfigured Momentum''' [[File:EvolutionTransfiguredMomentum.png|64px|center]]
+|
+* On [[Movement#Slide & Friction|Slide]] Kill: '''+50%''' [[Melee Combo#Heavy Attack Efficiency|Heavy Attack Efficiency]] for '''30s'''
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Kinetic Harmony''' [[File:EvolutionKineticHarmony.png|64px|center]]
+|
+* '''+100%''' Heavy Attack [[Melee#Wind Up|Wind Up]] Speed
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Universal Readiness''' [[File:EvolutionAmmoToCombo.png|64px|center]]
+| 
+* Collecting ammo grants '''5''' Melee [[Combo]] counter
+| style="text-align:center" | -
+|-
+|}
+
+
+==Tips==
+*Combining {{M|Corrupt Charge}} and '''Adept Reflexes''' grants a passive minimum 3x [[Melee Combo]], allowing '''Swift Transmute''' to immediately transform Praedos at will.
+*{{M|True Punishment}} affects '''Shockwave Synergy''', effectively doubling the Combo Count gain from 4 to 8 per enemy hit by the Slam radius. It is also affected by other sources that grant additional combo count chance.
+*Using an [[Exalted Weapon]] will negate Evolution V challenge.
+*Incarnon Genesis weapons are counted for Evolution V challenge.
+*The increase to Parkour Velocity from '''Evolved Ascension''' is passive, and does not require the Praedos to be held to be active.
+
+==Trivia==
+*Praedo means ''robber'' or ''plunderer'' in Latin.
+*While in Incarnon form, Praedos will exude a turquoise aura.
+
+==Media==
+;Whooshes
+*{{Audio|ZarimanVoidTonfaWhooshA.ogg}} {{Audio|ZarimanVoidTonfaWhooshB.ogg}} {{Audio|ZarimanVoidTonfaWhooshC.ogg}} {{Audio|ZarimanVoidTonfaWhooshD.ogg}} {{Audio|ZarimanVoidTonfaWhooshE.ogg}} {{Audio|ZarimanVoidTonfaWhooshF.ogg}}
+
+<gallery widths="300" position="center" spacing="small">
+File:Excalibur with Preados1.jpg
+File:Excalibur with Preados2.jpg
+File:Preados.png
+File:Preados incarnon.png
+File:Kaz-adams-Praedos-concept.jpeg|Concept art
+PraedosDefault&Evo.png|Default VS Incarnon Form
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|41.1}}
+*Fixed alternative Holster Styles for the following Incarnons missing offsets:
+**Praedos
+
+{{ver|39}}
+*Updated the Evolution I description for the Praedos to specify a single Heavy Attack with x Combo multiplier is required instead of the previously written “Heavy Attacks”.
+*Increased the Initial Combo from Evolution III Adept Reflexes perk from 15 to 20 for the Praedos.
+**The goal with the change was to ensure that the perk can provide at least a full 2x damage. 
+
+{{ver|36}}
+*Fixed repeatedly hovering over Praedos’ “Drifting Grace” Incarnon Evolution incorrectly increasing a Warframe’s Sprint Speed stat in the Arsenal UI.
+
+{{ver|33.6.4}}
+*Fixed the Evolution V Incarnon Challenge (Complete a mission with an Incarnon Weapon in every slot) not completing for the Praedos when using weapons with Incarnon Geneses installed.
+
+{{ver|33}}
+;CHANGES
+*Changed Incarnon Weapons’ “DAMAGE” stat to “Incarnon Form” when viewing the Incarnon Form damage values in the Arsenal.
+
+;FIXES
+*Fixed being able to refresh Praedos’ Incarnon Form timer by performing a heavy ground slam.
+**''All other Incarnon Melee weapons trigger their Incarnon Form via heavy attack and do not have the ability to refresh their Incarnon Form timer. So Praedos has been fixed to remove this unintended functionality.''
+*Fixed Praedos losing their Incarnon Form after entering Arsenal in the Simulacrum. 
+*Fixed Incarnon weapons reverting to their default form not being visible to other players in the squad until it is shot again. 
+
+{{ver|32.2.5}}
+*Fixed Incarnon Weapons losing their crosshair when flying around in Archwing in open landscape areas.
+
+{{ver|32.2.4}}
+*Fixes towards script error with Incarnon Weapons’ HUD.
+
+{{ver|32.2.1}}
+*(Hot-dropped earlier today) Fixed certain players getting a “failed to update account” error while trying to complete Incarnon Weapon challenges in mission.
+*Fixed script error when hovering over Incarnon Weapon upgrades in the Arsenal UI.
+
+{{ver|32}}
+*Fixed the default Arching Reticle overlapping the custom Incarnon Weapon Reticle when in Archwing.
+*Fixed Incarnon Weapon reticles being visible in Captura Scenes.
+
+{{ver|31.7.2}}
+*You can now search for Incarnon weapons in your Inventory by typing “Incarnon”.
+
+{{ver|31.6}}
+*Updated Incarnon Weapon Evolution screen to include stat comparisons when selecting Evolution perks in Cavalero’s evolve screen. From the original known bugs list.
+*Made some slight adjustments to framing of Incarnon weapons in Cavalero’s Evolution screen. 
+*Updated Praedos transformation Sound with Void FX.
+*Fixed Incarnon weapons using Skins in Incarnon form. From the original known bugs list.
+*Fixed cases of Evolution perks not working for Clients. 
+*Fixed Incarnon Evolutions UI persisting in the Loadouts screen. 
+*Fixed the Praedos’ Evolution III challenge working on non-Thrax enemies.
+
+{{ver|31.5.9}}
+*Fixed the Incarnon Weapon Evolution UI elements persisting in the Loadout screen.
+
+{{ver|31.5.5}}
+*Fixed being unable to trigger Transmutation on Incarnon weapons with alt-fire/heavy attack after Host migration.
+
+{{ver|31.5.4}}
+*Added custom icon for the ‘Incarnon Challenges’ category in the in-mission Challenge Progress window.
+
+{{ver|31.5.3}}
+*Fixed script error related to checking challenge progress for Incarnon Weapons while in mission.
+
+{{ver|31.5}}
+*Introduced.
+}}
+
+==See Also==
+*[[Incarnon]]
+**{{Weapon|Laetum}}
+**{{Weapon|Phenmor}}
+**{{Weapon|Felarx}}
+**{{Weapon|Innodem}}
+**{{Weapon|Thalys}}
+
+{{WeaponNav}}
+{{IncarnonNav}}
+[[uk:Пред]]
+[[fr:Praedos]]

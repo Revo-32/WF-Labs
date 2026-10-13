@@ -1,0 +1,68 @@
+{{ArcaneBox}}
+'''Exodia Triumph''' is an [[Arcane Enhancement]] for [[Zaw]]s that grants a chance to gain additional Combo Count from melee attacks.
+
+==Effect==
+{| class="emodtable"
+|-
+! Rank
+! Chance
+|-
+| 0 || 12.5%
+|-
+| 1 || 25%
+|-
+| 2 || 37.5%
+|-
+| 3 || 50%
+|}
+
+==Acquisition==
+Can be bought from [[Hok]] for {{sc|10,000}} 
+per arcane upon reaching the rank of '''Kin''' with the [[Ostron]]s.
+
+==Notes==
+*Melee-based warframe abilities, such as [[Atlas|Atlas's]] [[Landslide]], can generate extra combo through the use of this arcane.
+
+==Trivia==
+Prior to {{ver|24.6}}, {{PAGENAME}} was purchasable as a blueprint with the following requirements to build:
+
+{{BuildRequire
+|buildcredits= 7,500
+|build1= Breath Of The Eidolon
+|build1amount=10
+|build2= Cetus Wisp
+|build2amount=10
+|build3= Mortus Horn
+|build3amount=5
+|build4= Heart Nyth
+|build4amount=3
+|buildtime=1
+|buildrush=10
+|blueprint=12,500
+|blueprintunit=Standing
+}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|26}}
+*Have been changed to +50% chance to increase the Combo Counter on hit.
+
+{{ver|24.6}}
+*Replaced Arcane Blueprints with Arcanes in Hok Offerings meaning that Arcanes no longer need to be built.
+**Players that had previous Arcane Blueprints in Inventory were crafted on patch login for free.
+
+{{ver|22.2.4}}
+*Reduced the component cost in certain crafting recipes.
+**EXODIA TRIUMPH: Breath of the Eidolon from 20 to 10.
+**EXODIA TRIUMPH: Mortus Horn from 10 to 5.
+
+{{ver|Plains of Eidolon}}
+*Introduced.
+}}
+{{ArcaneNav}}
+__NOTOC__
+[[es:Triunfo de Exodia]]
+[[Category:Update 22]]
+[[Category:Syndicate Offerings]]
+[[Category:Arcane Enhancements]]
+[[uk:Екзодія «Тріумф»]]

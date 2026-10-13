@@ -1,0 +1,25 @@
+{{WarframeTopNav}}
+==Passive==
+{{Transclude|Valkyr/Abilities/Passive}}
+
+==Abilities==
+{{WarframePage/Abilities
+| Rip Line | Warcry | Paralysis | Hysteria |
+| ability1icon      = RipLineIcon(xWhite).png
+| ability1strength  = true
+| ability1duration  = true
+| ability1range     = true
+| ability2icon      = WarcryIcon(xWhite).png
+| ability2strength  = true
+| ability2duration  = true
+| ability2range     = 
+| ability3icon      = ParalysisIcon(xWhite).png
+| ability3strength  = true
+| ability3duration  = true
+| ability3range     = true
+| ability4icon      = HysteriaIcon(xWhite).png
+| ability4strength  = true
+| ability4duration  = true
+| ability4range     = 
+}}
+[[Category:Update 11]]

@@ -1,0 +1,1147 @@
+{
+  "source": {
+    "title": "Finisher",
+    "revision": 2812039,
+    "timestamp": "2026-09-23T13:24:49Z",
+    "url": "https://wiki.warframe.com/w/Finisher?oldid=2812039",
+    "sha256": "5ede39b71c97189aa674ee8bcab404a6e8aa24a27ca50148b1dd46d9fd6c2b02"
+  },
+  "rules": [
+    {
+      "weaponClass": "Assault Saw",
+      "kind": "Back",
+      "hits": [
+        10.0
+      ],
+      "issue": "",
+      "sourceText": "10x"
+    },
+    {
+      "weaponClass": "Assault Saw",
+      "kind": "Front",
+      "hits": [
+        10.0
+      ],
+      "issue": "",
+      "sourceText": "10x"
+    },
+    {
+      "weaponClass": "Assault Saw",
+      "kind": "Universal",
+      "hits": [
+        1.0
+      ],
+      "issue": "",
+      "sourceText": "1x"
+    },
+    {
+      "weaponClass": "Bayonet",
+      "kind": "Back",
+      "hits": [
+        12.0
+      ],
+      "issue": "",
+      "sourceText": "12x"
+    },
+    {
+      "weaponClass": "Bayonet",
+      "kind": "Front",
+      "hits": [
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "2x"
+    },
+    {
+      "weaponClass": "Bayonet",
+      "kind": "Universal",
+      "hits": [
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "2x"
+    },
+    {
+      "weaponClass": "Bayonet",
+      "kind": "Stealth",
+      "hits": [
+        12.0
+      ],
+      "issue": "개별 표와 비교표의 타격 정보가 다릅니다: 12x / 2x",
+      "sourceText": "12x"
+    },
+    {
+      "weaponClass": "Blade and Whip",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Blade and Whip",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Blade and Whip",
+      "kind": "Universal",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Blade and Whip",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Claws",
+      "kind": "Back",
+      "hits": [
+        0.8,
+        1.6,
+        5.6
+      ],
+      "issue": "",
+      "sourceText": "8x (0.8x + 1.6x + 5.6x)"
+    },
+    {
+      "weaponClass": "Claws",
+      "kind": "Front",
+      "hits": [
+        0.8,
+        1.6,
+        5.6
+      ],
+      "issue": "",
+      "sourceText": "8x (0.8x + 1.6x + 5.6x)"
+    },
+    {
+      "weaponClass": "Claws",
+      "kind": "Universal",
+      "hits": [
+        0.8,
+        1.6
+      ],
+      "issue": "",
+      "sourceText": "2.4x (0.8x + 1.6x)"
+    },
+    {
+      "weaponClass": "Claws",
+      "kind": "Stealth",
+      "hits": [
+        0.8,
+        1.6,
+        5.6
+      ],
+      "issue": "",
+      "sourceText": "8x (0.8x + 1.6x + 5.6x)"
+    },
+    {
+      "weaponClass": "Dagger",
+      "kind": "Back",
+      "hits": [
+        2.0,
+        4.0
+      ],
+      "issue": "",
+      "sourceText": "6x (2x + 4x)"
+    },
+    {
+      "weaponClass": "Dagger",
+      "kind": "Front",
+      "hits": [
+        2.0,
+        4.0
+      ],
+      "issue": "",
+      "sourceText": "6x (2x + 4x)"
+    },
+    {
+      "weaponClass": "Dagger",
+      "kind": "Universal",
+      "hits": [
+        2.0,
+        4.0
+      ],
+      "issue": "",
+      "sourceText": "6x (2x + 4x)"
+    },
+    {
+      "weaponClass": "Dagger",
+      "kind": "Stealth",
+      "hits": [
+        2.0,
+        4.0
+      ],
+      "issue": "",
+      "sourceText": "6x (2x + 4x)"
+    },
+    {
+      "weaponClass": "Dual Daggers",
+      "kind": "Back",
+      "hits": [
+        1.8,
+        4.2
+      ],
+      "issue": "",
+      "sourceText": "6x (1.8x + 4.2x)"
+    },
+    {
+      "weaponClass": "Dual Daggers",
+      "kind": "Front",
+      "hits": [
+        1.8,
+        4.2
+      ],
+      "issue": "",
+      "sourceText": "6x (1.8x + 4.2x)"
+    },
+    {
+      "weaponClass": "Dual Daggers",
+      "kind": "Universal",
+      "hits": [
+        1.8,
+        4.2,
+        6.0,
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "18x (1.8x + 4.2x + 6x + 6x)"
+    },
+    {
+      "weaponClass": "Dual Daggers",
+      "kind": "Stealth",
+      "hits": [
+        1.8,
+        4.2
+      ],
+      "issue": "",
+      "sourceText": "6x (1.8x + 4.2x)"
+    },
+    {
+      "weaponClass": "Dual Swords",
+      "kind": "Back",
+      "hits": [
+        2.4,
+        5.6
+      ],
+      "issue": "",
+      "sourceText": "8x (2.4x + 5.6x)"
+    },
+    {
+      "weaponClass": "Dual Swords",
+      "kind": "Front",
+      "hits": [
+        4.0,
+        4.0
+      ],
+      "issue": "",
+      "sourceText": "8x (4x × 2 hits)"
+    },
+    {
+      "weaponClass": "Dual Swords",
+      "kind": "Universal",
+      "hits": [
+        4.0,
+        4.0
+      ],
+      "issue": "",
+      "sourceText": "8x (4x × 2 hits)"
+    },
+    {
+      "weaponClass": "Dual Swords",
+      "kind": "Stealth",
+      "hits": [
+        2.4,
+        5.6
+      ],
+      "issue": "",
+      "sourceText": "8x (2.4x + 5.6x)"
+    },
+    {
+      "weaponClass": "Exalted Blade",
+      "kind": "Back",
+      "hits": [
+        6.0,
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Exalted Blade",
+      "kind": "Front",
+      "hits": [
+        6.0,
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "8x (6x + 2x)"
+    },
+    {
+      "weaponClass": "Exalted Blade",
+      "kind": "Universal",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Exalted Blade",
+      "kind": "Stealth",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x + 8x)"
+    },
+    {
+      "weaponClass": "Fist",
+      "kind": "Back",
+      "hits": [
+        1.6,
+        6.4
+      ],
+      "issue": "개별 표와 비교표의 타격 정보가 다릅니다: 8x (1.6x + 6.4x) / 8x (4x × 2 hits)",
+      "sourceText": "8x (1.6x + 6.4x)"
+    },
+    {
+      "weaponClass": "Fist",
+      "kind": "Front",
+      "hits": [
+        1.2,
+        1.2,
+        5.6
+      ],
+      "issue": "",
+      "sourceText": "8x (1.2x + 1.2x + 5.6x)"
+    },
+    {
+      "weaponClass": "Fist",
+      "kind": "Universal",
+      "hits": [
+        1.2,
+        1.2
+      ],
+      "issue": "",
+      "sourceText": "2.4x (1.2x × 2 hits)"
+    },
+    {
+      "weaponClass": "Fist",
+      "kind": "Stealth",
+      "hits": [
+        1.6,
+        6.4
+      ],
+      "issue": "",
+      "sourceText": "8x (1.6x + 6.4x)"
+    },
+    {
+      "weaponClass": "Glaive",
+      "kind": "Back",
+      "hits": [
+        1.6,
+        6.4
+      ],
+      "issue": "",
+      "sourceText": "8x (1.6x + 6.4x)"
+    },
+    {
+      "weaponClass": "Glaive",
+      "kind": "Front",
+      "hits": [
+        1.6,
+        6.4
+      ],
+      "issue": "",
+      "sourceText": "8x (1.6x + 6.4x)"
+    },
+    {
+      "weaponClass": "Glaive",
+      "kind": "Universal",
+      "hits": [
+        1.6,
+        6.4
+      ],
+      "issue": "",
+      "sourceText": "8x (1.6x + 6.4x)"
+    },
+    {
+      "weaponClass": "Glaive",
+      "kind": "Stealth",
+      "hits": [
+        1.6,
+        6.4
+      ],
+      "issue": "",
+      "sourceText": "8x (1.6x + 6.4x)"
+    },
+    {
+      "weaponClass": "Gunblade",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Gunblade",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Gunblade",
+      "kind": "Universal",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Gunblade",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Hammer",
+      "kind": "Back",
+      "hits": [
+        12.0,
+        12.0
+      ],
+      "issue": "",
+      "sourceText": "24x (12x × 2 hits)"
+    },
+    {
+      "weaponClass": "Hammer",
+      "kind": "Front",
+      "hits": [
+        12.0
+      ],
+      "issue": "",
+      "sourceText": "12x"
+    },
+    {
+      "weaponClass": "Hammer",
+      "kind": "Universal",
+      "hits": [
+        12.0
+      ],
+      "issue": "",
+      "sourceText": "12x"
+    },
+    {
+      "weaponClass": "Hammer",
+      "kind": "Stealth",
+      "hits": [
+        4.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "12x (4x + 8x)"
+    },
+    {
+      "weaponClass": "Heavy Blade",
+      "kind": "Back",
+      "hits": [
+        2.0,
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "8x (2x + 6x)"
+    },
+    {
+      "weaponClass": "Heavy Blade",
+      "kind": "Front",
+      "hits": [
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "2x"
+    },
+    {
+      "weaponClass": "Heavy Blade",
+      "kind": "Universal",
+      "hits": [
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "2x"
+    },
+    {
+      "weaponClass": "Heavy Blade",
+      "kind": "Stealth",
+      "hits": [
+        4.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "12x (4x + 8x)"
+    },
+    {
+      "weaponClass": "Heavy Scythe",
+      "kind": "Back",
+      "hits": [
+        2.0,
+        4.0
+      ],
+      "issue": "",
+      "sourceText": "6x (2x + 4x)"
+    },
+    {
+      "weaponClass": "Heavy Scythe",
+      "kind": "Front",
+      "hits": [
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "2x"
+    },
+    {
+      "weaponClass": "Heavy Scythe",
+      "kind": "Universal",
+      "hits": [
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "2x"
+    },
+    {
+      "weaponClass": "Heavy Scythe",
+      "kind": "Stealth",
+      "hits": [
+        4.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "12x (4x + 8x)"
+    },
+    {
+      "weaponClass": "Machete",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Machete",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Machete",
+      "kind": "Universal",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Machete",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Nikana",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Nikana",
+      "kind": "Front",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Nikana",
+      "kind": "Universal",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Nikana",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Nunchaku",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Nunchaku",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Nunchaku",
+      "kind": "Universal",
+      "hits": [
+        6.0,
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "12x (6x × 2 hits)"
+    },
+    {
+      "weaponClass": "Nunchaku",
+      "kind": "Stealth",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Polearm",
+      "kind": "Back",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Polearm",
+      "kind": "Front",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Polearm",
+      "kind": "Universal",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Polearm",
+      "kind": "Stealth",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Rapier",
+      "kind": "Back",
+      "hits": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "24 (8x × 3 hits)"
+    },
+    {
+      "weaponClass": "Rapier",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Rapier",
+      "kind": "Universal",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Rapier",
+      "kind": "Stealth",
+      "hits": [
+        0.5,
+        1.5,
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "8x (0.5x + 1.5x + 6x)"
+    },
+    {
+      "weaponClass": "Scythe",
+      "kind": "Back",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Scythe",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Scythe",
+      "kind": "Universal",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Scythe",
+      "kind": "Stealth",
+      "hits": [
+        4.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "12x (4x + 8x)"
+    },
+    {
+      "weaponClass": "Sparring",
+      "kind": "Back",
+      "hits": [
+        1.6,
+        5.4
+      ],
+      "issue": "원문 총 배율 8과 분할 타격 합 7이 다릅니다: 8x (1.6x +5.4x)",
+      "sourceText": "8x (1.6x +5.4x)"
+    },
+    {
+      "weaponClass": "Sparring",
+      "kind": "Front",
+      "hits": [
+        1.2,
+        1.2,
+        5.6
+      ],
+      "issue": "",
+      "sourceText": "8x (1.2x + 1.2x + 5.6x)"
+    },
+    {
+      "weaponClass": "Sparring",
+      "kind": "Universal",
+      "hits": [
+        1.2,
+        1.2
+      ],
+      "issue": "",
+      "sourceText": "2.4x (1.2 × 2 hits)"
+    },
+    {
+      "weaponClass": "Sparring",
+      "kind": "Stealth",
+      "hits": [
+        1.6,
+        6.4
+      ],
+      "issue": "",
+      "sourceText": "8x (1.6x + 6.4x)"
+    },
+    {
+      "weaponClass": "Staff",
+      "kind": "Back",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Staff",
+      "kind": "Front",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Staff",
+      "kind": "Universal",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Staff",
+      "kind": "Stealth",
+      "hits": [
+        6.0
+      ],
+      "issue": "",
+      "sourceText": "6x"
+    },
+    {
+      "weaponClass": "Sword",
+      "kind": "Back",
+      "hits": [
+        6.0,
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Sword",
+      "kind": "Front",
+      "hits": [
+        6.0,
+        2.0
+      ],
+      "issue": "",
+      "sourceText": "8x (6x + 2x)"
+    },
+    {
+      "weaponClass": "Sword",
+      "kind": "Universal",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Sword",
+      "kind": "Stealth",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x"
+    },
+    {
+      "weaponClass": "Sword and Shield",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Sword and Shield",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Sword and Shield",
+      "kind": "Universal",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Sword and Shield",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Tonfa",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Tonfa",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Tonfa",
+      "kind": "Universal",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Tonfa",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Two-Handed Nikana",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Two-Handed Nikana",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Two-Handed Nikana",
+      "kind": "Universal",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Two-Handed Nikana",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Valkyr Talons",
+      "kind": "Back",
+      "hits": [
+        16.0
+      ],
+      "issue": "",
+      "sourceText": "16x"
+    },
+    {
+      "weaponClass": "Valkyr Talons",
+      "kind": "Front",
+      "hits": [
+        16.0
+      ],
+      "issue": "",
+      "sourceText": "16x"
+    },
+    {
+      "weaponClass": "Valkyr Talons",
+      "kind": "Universal",
+      "hits": [
+        0.8,
+        1.6
+      ],
+      "issue": "",
+      "sourceText": "2.4x (0.8x + 1.6x)"
+    },
+    {
+      "weaponClass": "Valkyr Talons",
+      "kind": "Stealth",
+      "hits": [
+        4.0
+      ],
+      "issue": "",
+      "sourceText": "4x"
+    },
+    {
+      "weaponClass": "Warfan",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Warfan",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Warfan",
+      "kind": "Universal",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Warfan",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Whip",
+      "kind": "Back",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Whip",
+      "kind": "Front",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Whip",
+      "kind": "Universal",
+      "hits": [
+        8.0,
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "16x (8x × 2 hits)"
+    },
+    {
+      "weaponClass": "Whip",
+      "kind": "Stealth",
+      "hits": [
+        8.0
+      ],
+      "issue": "",
+      "sourceText": "8x"
+    },
+    {
+      "weaponClass": "Rumblejack",
+      "kind": "Back",
+      "hits": [
+        0.4,
+        10.0
+      ],
+      "issue": "",
+      "sourceText": "10.4x (0.4x + 10x)"
+    },
+    {
+      "weaponClass": "Rumblejack",
+      "kind": "Front",
+      "hits": [
+        0.4,
+        10.0
+      ],
+      "issue": "",
+      "sourceText": "10.4x (0.4x + 10x)"
+    },
+    {
+      "weaponClass": "Rumblejack",
+      "kind": "Universal",
+      "hits": [],
+      "issue": "원문에 이 마무리 동작이 없습니다.",
+      "sourceText": "None"
+    },
+    {
+      "weaponClass": "Rumblejack",
+      "kind": "Stealth",
+      "hits": [
+        0.4,
+        10.0
+      ],
+      "issue": "",
+      "sourceText": "10.4x (0.4x + 10x)"
+    }
+  ]
+}

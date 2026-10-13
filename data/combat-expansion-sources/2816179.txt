@@ -1,0 +1,58 @@
+{{Navigation|Rhino Charge|Iron Skin|Roar|Rhino Stomp}}
+<onlyinclude>{{AbilityU10.3
+| gameimage = RadialBlast.png
+| name = Roar
+| energy = 75
+| hotkey = 3
+| cardimage = RoarModU15.jpeg
+| description = Grants all nearby Warframes increased damage to any faction for a short duration.
+| strength = 10 / 15 / 25 / 50 %
+| range = 15 / 20 / 22 / 25 m
+| duration = 30 s
+| subsumable = true
+| cardonly = {{{1|}}}
+| info = *Rhino expends {{Stat|Ability Efficiency|icon=only}}'''75''' [[energy]] to let out a forceful roar, increasing the damage output of himself and his allies within {{Stat|Ability Range|icon=only}}'''15 / 20 / 22 / 25''' meters. Rhino and affected allies gain {{Stat|Ability Strength|icon=only}}'''10% / 15% / 25% / 50%''' bonus damage to all weapons and abilities over a duration of {{Stat|Ability Duration|icon=only}}'''30''' seconds.
+**The damage buff is considered [[Faction Damage Bonus]], additive with other sources of Faction Damage, and multiplicative with other types of bonus of damage.
+***For example with a Warframe modded with maxed {{M|Intensify}}, and weapon that inflicts 100 damage per shot, a max rank Roar will increase the total damage to {{Math|100 {{mul}} (1 + 0.5 {{mul}} (1 + 0.3))|mt=y}}.
+***With a weapon modded with maxed {{M|Serration}}, which inflicts 100 damage per shot, a max rank Roar will increase the weapon's total damage to {{Math|100 {{mul}} (1 + 1.65) {{mul}} (1 + 0.5)|mt=y}}.
+***With a weapon modded with maxed {{M|Serration}} and maxed {{M|Bane of Grineer}}, which inflicts 100 damage per shot, on a {{Faction|Grineer}}, a max rank Roar will increase the weapon's total damage to {{Math|100 {{mul}} (1 + 1.65) {{mul}} (1 + 0.5 + 0.3)|mt=y}}.
+**As faction bonus damage, the bonus is used twice in the calculation of status damage.
+***For example, with a weapon that inflicts 100 damage per shot, that procs a slash status, a max rank Roar will increase the damage per tick from the slash to : {{Math|0.35 {{mul}} 100 {{mul}} (1 + 0.5) {{mul}} (1 + 0.5) |mt=y}}. 
+***With a Warframe modded with maxed {{M|Intensify}}, and weapon that inflicts 100 damage per shot, modded with maxed {{M|Serration}} and maxed {{M|Bane of Orokin}}, that procs a slash status on an {{Faction|Orokin}}, a max rank Roar will increase the damage per tick from the slash to {{Math| 0.35 {{mul}} 100 {{mul}} (1 + 1.65) {{mul}} (1 + 0.5 {{mul}} (1 + 0.3) + 0.3) {{mul}}  (1 + 0.5 {{mul}} (1 + 0.3) + 0.3) |mt=y}}. 
+*The effects of Roar are applied to Rhino, allied [[Warframes]], [[Companions]], [[Rescue|Hostages]], [[Shadows Of The Dead|Shadows]], [[Specter]]s, and [[MOA Cabinet Spawner|hacked]] [[Shockwave MOA]]s.
+*Allies only need to be in range at the time Roar is cast to gain its effects.
+*Roar '''cannot''' be recast while active (except with the mod augment {{M|Piercing Roar}}).
+| helminth =
+*Subsuming Rhino to the [[Helminth]] will offer Roar and its augments to be used by other Warframes.
+**However, Subsumed Roar's damage bonus is reduced to {{Stat|Ability Strength|icon=only}}'''2% / 9% / 15% / 30%'''.
+**For example, With 253%{{Stat|Ability Strength|icon=only}} Can only get 75.9% bonus
+**When placed on {{WF|Chroma}}, {{WF|Cyte-09}}, {{WF|Mirage}}, {{WF|Octavia}}, {{WF|Temple}}, {{WF|Xaku}}, {{WF|Oraxia}}, and {{WF|Uriel}}, Subsumed Roar can only replace {{A|Vex Armor}}, {{A|Resupply}}, {{A|Eclipse}}, {{A|Amp}}, {{A|Ripper's Wail}}, {{A|Xata's Whisper}}, {{A|Silken Stride}}, and {{A|Demonium}} respectively.
+| augment = [[File:PiercingRoarMod.png|200px|left]]
+{{main|Piercing Roar}}
+{{#lst:Piercing Roar|intro}}
+{{#lsth:Piercing Roar|Stats}}
+{{clr}}
+| tips = *Increases the damage any ally deals from any source, so weapon damage as well as ability damage for the duration of the skill.
+**To gain the buff the ally needs be in range at the time of casting, entering it afterward will not grant the damage boost.
+**The ally does not need to stay in range to keep the buff for its full duration.
+**Regardless of the range the caster will always get the buff.
+**All Sources also include the tick damage of status procs like slash or gas, which means that DoT status procs -- [[Damage/Slash Damage|slash]], [[Damage/Heat Damage|heat]], [[Damage/Toxin Damage|toxin]], and [[Damage/Gas Damage|gas clouds]] -- all get affected twice, in the same way as faction-specific modifiers would affect status effects.
+*Multiple Roars do not stack.
+**A stronger Roar will overwrite a weaker one.
+**However if a weaker is cast, so that it last longer than a stronger (i.e., it is cast right before the stronger ran out or has higher duration due to increased Ability Duration) it will boost the damage after the stronger ran out.
+<noinclude>
+|max = {{WFmax|main|rhino3}}
+</noinclude>|
+}}</onlyinclude>
+
+==See Also==
+* {{WF|Rhino}}
+__NOTOC__
+[[de:Brüllen]]
+[[es:Rugido]]
+[[fr:Rugissement]]
+[[it:Roar]]
+[[ru:Рёв]]
+[[Category:Rhino]]
+[[Category:Warframe Abilities]]
+[[uk:Ревіння]]

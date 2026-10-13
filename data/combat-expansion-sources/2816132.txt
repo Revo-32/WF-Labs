@@ -1,0 +1,57 @@
+{{Navigation|Hall of Mirrors|Sleight of Hand|Eclipse|Prism}}
+<onlyinclude>{{AbilityU10.3
+| name = Eclipse
+| gameimage = HarlequinLightDark.png
+| cardimage = PowerEclipse.png
+| drain = 
+| hotkey = 3
+| energy = 25
+| description = (TAP) Temporarily reduce the damage Mirage takes from enemies.<br>(HOLD) Temporarily increase Mirage's weapon damage.
+| strength = 25 / 40 / 60 / 75 % (damage reduction)<br>50 / 100 / 150 / 200 % (damage bonus)
+| range = N/A
+| duration = 10 / 15 / 20 / 25 s
+| misc = 90 % (damage reduction cap)
+| subsumable = true
+| cardonly = {{{1|}}}
+| info = *Mirage expends {{Stat|Ability Efficiency|icon=only}}'''25''' [[Energy]] to adapt to lighting conditions for {{Stat|Ability Duration|icon=only}} '''10 / 15 / 20 / 25''' seconds.
+**'''Tap''' down the ability key to receive '''Lunar Eclipse''', bathing Mirage in shadows to gain {{Stat|Ability Strength|icon=only}}'''25% / 40% / 60% / 75%''' [[Damage Reduction]] and reducing enemy accuracy.
+***Damage reduction is capped at <u>'''90%'''</u>.
+**'''Hold''' the ability key to receive '''Solar Eclipse''', bathing Mirage in light to gain {{Stat|Ability Strength|icon=only}}'''50% / 100% / 150% / 200%''' weapon damage.
+***The damage buff is an unique multiplier. E.g., A weapon with 250 base damage, {{M|Serration}} and a Solar Eclipse  with a maxed {{M|Intensify}} will increase the weapon's damage to {{Math|250 {{mul}} ( 1 +{{M|Serration|1.65}}) {{mul}} (1 + 2 {{mul}} [1 + {{M|Intensify|0.3}}])|mt=y}}.
+****However this is not multiplied by [[Condition_Overload_(Mechanic)|condition overload]] mods on weapons that have additive condition overload. Base damage is multiplied separately and then added together.
+***The buff affects both initial and status effect damage. Unlike faction damage, which double dips for status effects, the one from Eclipse is applied once.
+*Has a casting delay of '''1''' second, affected by [[Casting Speed]].
+*Can be recast while active to refresh the duration.
+*[[Companions]] and Holograms from {{A|Hall of Mirrors}} do '''not''' normally gain Eclipse's damage bonus, but '''will''' with the {{M|Total Eclipse}} augment.
+*Applies twice on {{Arcane|Exodia Contagion}} and glaive explosions.
+*As it applies universally, it can affect [[Universal Weapon Bonuses#List of Abilities Affected by Universal Bonuses|certain abilities]].
+| interactions = 
+* {{A|Eclipse}} provides benefits to {{A|Prism}}:
+** '''Lunar Eclipse''' (tap cast) <u>'''halves'''</u> Prism's base energy cost to {{Stat|Ability Efficiency|icon=only}}'''25''' [[energy]] and base energy drain to {{Stat|Ability Efficiency|icon=only}}{{Stat|Ability Duration|icon=only}}'''5''' energy per second.
+** '''Solar Eclipse''' (hold cast) <u>'''doubles'''</u> Prism's damage bonus per hit to <u>'''+50%'''</u>.
+| helminth = 
+*Subsuming Mirage to the [[Helminth]] will offer Eclipse and its augments to be used by other Warframes.
+**However, Subsumed Eclipse's damage reduction caps at <u>'''75%'''</u> and damage bonus is reduced to {{Stat|Ability Strength|icon=only}}'''2% / 9% / 15% / 30%'''.
+**When placed on {{WF|Chroma}}, {{WF|Cyte-09}}, {{WF|Octavia}}, {{WF|Oraxia}}, {{WF|Rhino}}, {{WF|Temple}}, {{WF|Xaku}}, and {{WF|Uriel}}, Subsumed Eclipse can only replace {{A|Vex Armor}}, {{A|Resupply}}, {{A|Amp}}, {{A|Silken Stride}}, {{A|Roar}}, {{A|Ripper's Wail}}, {{A|Xata's Whisper}}, and {{A|Demonium}} respectively.
+| augment = [[File:TotalEclipseMod.png|200px|left]]
+{{main|Total Eclipse}}
+{{#lst:Total Eclipse|intro}}
+{{#lsth:Total Eclipse|Stats}}
+{{clr}}
+| tips = <noinclude>
+|max = {{WFmax|main|mirage3}}
+</noinclude>|
+}}</onlyinclude>
+
+==See Also==
+* {{WF|Mirage}}
+__NOTOC__
+[[de:Eklipse]]
+[[es:Eclipse]]
+[[ru:Затмение]]
+[[Category:Mirage]]
+[[Category:Mechanics]]
+[[Category:Update 14]]
+[[Category:Warframe Abilities]]
+[[Category:Damage Reduction]]
+[[uk:Затемнення]]

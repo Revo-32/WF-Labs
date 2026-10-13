@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Madurai",
+    "url": "https://wiki.warframe.com/w/File:Madurai_Pol(xBlack).svg",
+    "sha256": "159c257b9a9465460c7bb9a2a96071fd19b4c6b7b486af59e2771e8a56f82607"
+  },
+  {
+    "name": "Vazarin",
+    "url": "https://wiki.warframe.com/w/File:Vazarin_Pol(xBlack).svg",
+    "sha256": "8b98498256b705f91c7d31efe9d577b4cb419e50a2be75c37c28c191bf613556"
+  },
+  {
+    "name": "Naramon",
+    "url": "https://wiki.warframe.com/w/File:Naramon_Pol(xBlack).svg",
+    "sha256": "9215cb217da44ea638979ce7a977ea70c3a395d9874f39e1d8a5323da29ef7fa"
+  }
+]

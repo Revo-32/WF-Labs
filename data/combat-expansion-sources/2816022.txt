@@ -1,0 +1,95 @@
+{{Navigation|Elude|Lull|Desolate Hands|Serene Storm}}
+<onlyinclude>{{AbilityU10.3
+| name        = Serene Storm
+| gameimage   = SereneStorm130xWhite.png
+| cardimage   = SereneStormModx256.png
+| hotkey      = 4
+| energy      = 0
+| description = With his Restraint eroded, Baruuk commands the Desert Wind to deliver powerful radial strikes with his fists and feet. Each moment commanding the storm restores his Restraint.
+<br>
+'''Restraint Restore on Activation:''' 4%
+<br>
+'''Restraint Restore Channelling Cost:''' 0.80% s<sup>-1</sup>
+| strength      = 100 / 125 / 200 / 250 ({{D|Impact}} damage)<br>10% / 15% / 20% / 25% (damage reduction)
+| misc        = 40% (damage reduction cap)<br/>? % (disarm chance on hit)<br/>100 % (wind wave projectile deflection)
+| cardonly    = {{{1|}}}
+| info        = 
+*Baruuk foregoes his restraints to empower his fists with volatile energies, commanding the '''{{Weapon|Desert Wind}}''' and wielding it as his melee [[Exalted Weapon]]. While Serene Storm is active, Baruuk also receives {{Stat|Ability Strength|icon=only}}'''10% / 15% / 20% / 25%''' [[Damage Reduction]] against enemy attacks, and slows enemies within a '''3''' meter radius by '''50%'''.
+**Exclusively uses the {{M|Serene Storm}} Stance.
+**Damage reduction is capped at <u>'''40%'''</u>.
+**Damage reduction only applies when Desert Wind is the active weapon.
+**Slow amount and radius are <u>not</u> affected by mods.
+*Rather than using [[energy]], Baruuk regenerates his [[Baruuk/Abilities#Passive|Restraint]], recovering <u>'''4%'''</u> Restraint on activation and then restores <u>'''0.80%'''</u> Restraint per second.
+**Baruuk can still erode his Restraint while Serene Storm is active by using his other abilities.
+**Baruuk does not need to have completely eroded his Restraint meter to use Serene Storm.  He is free to activate it as long as he has '''96%''' Restraint, and can deactivate it at any time to stop restoring his Restraint if he wishes.
+
+<div class="tabber-borderless" ><tabber>
+|-|Desert Wind =
+*[[Melee#Normal Attack|Normal attacks]] deal {{Stat|Ability Strength|icon=only}}'''100 / 125 / 200 / 250''' damage within <u>'''1.2'''</u> meters.
+**Damage is '''purely''' {{D|Impact}}.
+**[[Melee#Wall Attack|Wall attacks]] and [[Melee#Slide Attack|slide attacks]] inflict {{Stat|Ability Strength|icon=only}}'''300 / 375 / 600 / 750''' damage for each strike.
+**[[Melee#Aerial Attack|Aerial attacks]] inflict {{Stat|Ability Strength|icon=only}}'''200 / 250 / 400 / 500''' damage.
+**[[Melee#Slam Attack|Slam attacks]] inflict {{Stat|Ability Strength|icon=only}}'''250''' damage within <u>'''8'''</u> meters.
+**Attacks and wind waves have a <u>'''35%'''</u> [[critical chance]], <u>'''2.0x'''</u> [[critical multiplier]], and <u>'''15%'''</u> [[status chance]].
+**Desert Wind can be equipped with melee mods and [[Arcane Enhancement]]s.
+***[[Riven Mods]] are '''not''' generated for Desert Wind.
+**Because Serene Storm is counted as a melee strike, it is affected by mods and Warframe Arcanes such as {{M|Steel Charge}} and {{Arcane|Arcane Fury}}.
+**Radial damage from slam attacks diminishes with distance, does '''not''' have a critical chance, is '''not''' affected by the Melee Combo Counter, and will cause enemies within range to suffer a [[knockdown]].
+**[[Finisher#Ground Finisher|Ground finishers]] inflict '''1600%''' of the total modified damage from normal attacks. Prompted [[Finisher|finishers]] inflict '''6400%''' of the total modified damage from normal attacks as {{D|True}} Damage.
+***The damage composition of a ground finisher is the same as a modified normal attack; however, {{D|Impact}} damage from ground finishers is multiplied by '''125%'''.
+***The finisher multipliers for both attacks are affected by {{M|Finishing Touch}}.
+**Each attack adds to the Melee Combo Counter; however, radial damage from slam attacks does '''not'''.
+|-| Wind Waves = 
+*Normal attacks will emit a wind wave in the direction of aim that travel '''20''' meters. Wind waves have the same base damage as the melee attacks that release them.
+**The wind waves and Serene Storm itself are considered separate entities and will both deal damage separately.
+**Wind waves will [[Punch Through]] and hit enemies and terrain up to their maximum range, but requires enemies to be in [[Line of Sight]] to deal damage.
+**Wave damage does '''not''' fall off with distance.
+**Wave range and flight speed are '''not''' affected by mods.
+**Wave hits can increase [[Melee#Combo Counter|Melee Combo Counter]] and trigger [[Tennokai]].
+**Enemies hit by the waves will suffer a stagger.
+**Enemy projectiles hit by the waves have a '''100%''' chance to be redirected toward their originating direction.
+*Serene Storm comes installed with its own unique [[Serene Storm (Stance)|stance]]. Additional combos will be unlocked as Serene Storm increases in rank.
+**Forward melee combo thrusts Baruuk's fists toward his enemies to generate a powerful push that inflicts damage, stagger, and ragdoll effects. 
+**Hold melee combo creates an upward draft that drifts forward and gradually lifts enemies high into the air.
+**Block melee combo creates a suctioning pull to drag enemies toward Baruuk. 
+**Slide melee combo bends gravity around Baruuk to radially lift all nearby enemies into the air. 
+**Slam melee combo creates a radial blast that knocks back all enemies in range.
+**Slam melee combo while blocking creates a radial vortex that pulls in all enemies in range.
+*Any hits made directly by the impact of Baruuk's fist or the waves of energy caused by Desert Wind, will permanently {{D|Disarmed|Disarm}} the enemy '''only if''' applying any of the following status effects:
+**{{D|Knockdown}}
+**{{D|Lifted}}
+**{{D|Ragdoll}}
+**{{D|Stagger}}
+</tabber></div>
+|weapon =
+[[File:DesertWind.png|200px|left]]
+{{main|Desert Wind}}
+{{#lst:Desert Wind|intro}}
+{{clr}}
+|stance =
+[[File:SereneStormStance.png|200px|left]]
+{{main|Serene Storm (Stance)}}
+{{#lst:Serene Storm (Stance)|intro}}
+{{clr}}
+|augment      =
+[[File:ReactiveStormMod.png|200px|left]]
+{{main|Reactive Storm}}
+{{#lst:Reactive Storm|intro}}
+{{#lsth:Reactive Storm|Stats}}
+{{clr}}
+|tips         =
+<noinclude>
+|max          = {{WFmax|main|baruuk4}}
+</noinclude>
+}}</onlyinclude>
+==See Also==
+*{{WF|Baruuk}}
+__NOTOC__
+[[es:Tormenta apacible]]
+[[fr:Tempête Reposante]]
+[[Category:Warframe Abilities]]
+[[Category:Baruuk]]
+[[Category:Ability Weapons]]
+[[Category:Impact Damage]]
+[[Category:Damage Reduction]]
+[[uk:Вибух спокою]]

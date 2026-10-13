@@ -1,0 +1,61 @@
+{{ArcaneBox}}
+'''Arcane Blade Charger''' is an [[Arcane Enhancement]] that provides a 30% chance on killing an enemy with a primary weapon to increase the damage of melee for 12 seconds.
+
+Can be sold for {{cc|‍1,000}}.
+
+==Effect==
+{| class="emodtable"
+|-
+! [[Arcane Enhancement#Rank|Rank]]
+! Melee Damage Bonus
+|-
+| 0 || +50%
+|-
+| 1 || +100%
+|-
+| 2 || +150%
+|-
+| 3 || +200%
+|-
+| 4 || +250%
+|-
+| 5 || +300%
+|}
+
+{{Clr}}
+{{Acquisition|
+*Awarded from [[Arbitrations]] missions.
+*Can be purchased from the Arbitrations vendor in the {{Faction|Arbiters of Hexis}} room in [[Relay]]s for 10 {{Resource|Vitus Essence}}.}}
+
+==Notes==
+*The buff is additive to damage mods.
+**For example, {{Weapon|Skana}} with max {{M|Pressure Point}} and 200% bonus from {{Arcane|Arcane Blade Charger}} will have: {{Math|120.0 {{mul}} (1 + 120% + 200%)|mt=y}} damage
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.6}}
+*Arbitration rotation rewards (excluding Omni Forma) have been added to the Arbitration store (Arbiters of Hexis in the Relay) to provide players an easier path to these items via Vitus Essence.
+
+{{ver|31.6}}
+;ARCANE STAT CHANGES PER RANK
+
+We’ve adjusted the values of older Arcanes with the goal of making lower rank Arcanes more viable, and more desirable while collecting as a result. In short, there are three stats that each Arcane tends to have (speaking generally) -- for example, a percentage chance, a stat buff, and the duration of the buff.
+
+Certain Arcanes increase all of these stats per rank (making them scale exponentially), but we are changing it so that only one stat is affected by rank (making it scale linearly). The other stats will now be at the max-rank value regardless of the Arcane Rank, thereby buffing lower-rank Arcanes as a result.
+
+;Arcane Blade Charger
+On Primary Weapon Kill: 30% (was 5%) chance for +50%/300% Melee Damage for 12s (was 2s)
+
+{{ver|25.7.7}}
+*Fixed Arcane Blade Charger not listing “+1 Arcane Revive” at max Rank.
+
+{{ver|25.7.6}}
+*Introduced.
+}}
+{{ArcaneNav}}
+[[es:Cargador de hoja arcano]]
+[[fr:Arcane Chargeur de Lame]]
+[[Category:Arcane Enhancements]]
+[[Category:Update 25]]
+[[uk:Містичний наснажувач клинків]]
+[[Category:Arbitration Arcanes]]

@@ -1,0 +1,41 @@
+<onlyinclude>
+<div class="tabber-borderless" >
+{{#tag:tabber|
+{{!-!}}Rage=
+{{for|the mod|Rage}}
+
+Driven by fury, {{WF|Valkyr}} builds '''Rage''' from meleeing and killing enemies, gaining up to <u>'''300%'''</u> additional melee damage bonus. Additionally, if Valkyr receives a fatal hit while at or above <u>'''150%'''</u> Rage, all of it is consumed to prevent [[death]], grant her <u>'''5'''</u> seconds of [[Invulnerable|invulnerability]] and regenerate '''100%''' health. This ability has no cooldown.
+
+*Valkyr gains Rage from:
+**Melee attack: <u>'''3%'''</u> per hit
+**Melee kill or assisted kill: <u>'''12%'''</u>
+**[[Finisher]] or [[Parazon]] Mercy Kill: <u>'''27%'''</u>
+*After not building Rage for <u>'''5'''</u> seconds, the damage bonus decays at a non-linear rate dependent on the amount of Rage Valkyr has, with the following formula:
+**<math>
+{\begin{aligned}
+\lambda &= 0.016 \\
+n &= \frac{\ln\left(1000\lambda\right)}{\lambda} \\
+d(t) &=
+\begin{cases} 
+e^{-\lambda t},\; & \text{if } 0 \le t \le n \\
+e^{-\lambda n} - 0.001(t - n),\; & \text{if } t > n 
+\end{cases} \\
+\text{Bonus}(t) &= \left\lfloor 300 \cdot d(t) \right\rfloor
+\end{aligned}}
+</math>
+***Above <u>'''18%'''</u>, the meter decays by '''half''' over 43 seconds. Below <u>'''18%'''</u>, the meter decays by <u>'''0.3%'''</u> every second.
+*Bonus damage is additive with mods like {{M|Pressure Point}} and {{M|Condition Overload}}.
+*Damage bonus is displayed above the ability bars as a stylized UI, along with a gauge beneath it to represent the death prevention meter.
+*Rage's value persists when inside [[Nullifier]] bubbles and when recovering from falling [[Out of Bounds]].
+*Works in [[Archwing]] missions.
+*Hits from [[Melee Duplicate]] do not generate Rage. Likewise, damage from [[status effects]] will not contribute to Rage, although killing enemies with either source still counts as a melee kill, granting the usual <u>'''12%'''</u> Rage. The same goes for [[Melee Influence]].
+*Hitting invulnerable enemies that can take hits (e.g. {{E|Arbitration Shield Drone}}) will generate Rage.
+<noinclude>[[Category:Death Gating]]</noinclude>
+
+{{!-!}}Nimble=
+Valkyr is immune to [[Hard Landing]]s, landing with no touchdown delay, without the need to roll, slide, or aim-glide beforehand.
+*Valkyr's immunity to hard landings prevents her from triggering {{M|Heavy Impact}}.
+}}</div>
+</onlyinclude>
+
+[[Category:Death Gating]]

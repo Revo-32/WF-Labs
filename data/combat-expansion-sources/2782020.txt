@@ -1,0 +1,52 @@
+{{ModBox}}
+'''Spring-Loaded Blade''' is a [[mod]] that temporarily increases the [[range]] of a melee weapon's attacks after inflicting a [[Status Effect]] with that weapon.
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! Effect
+! Duration
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || +0.2m || +4s || 4
+|-
+| 1 || +0.3m || +8s || 5
+|-
+| 2 || +0.5m || +12s || 6
+|-
+| 3 || +0.7m || +16s || 7
+|-
+| 4 || +0.8m || +20s || 8
+|-
+| 5 || +1.0m || +24s || 9
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+{{clr}}
+
+==Notes==
+*When using this mod on {{Weapon|Zenistar}} the range bonus can be triggered both by the disc and melee attacks and the disc will update range without having to redeploy it.
+*Range bonus is additive to other range mods.
+*Can stack twice, for a max increase of +2m. The stacks have independent timers that decay separately.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|26}}
+*Now gives a flat +1m range for 24s on status effect (previously +30% range for 24s on status effect).
+
+{{ver|Plains of Eidolon}}
+*Introduced.
+}}
+{{MeleeMods}}
+
+[[de:Gefederte Klinge]]
+[[es:Hoja con resorte]]
+[[ru:Пружинное Лезвие]]
+[[Category:Update 22]]
+[[Category:Melee Mods]]
+[[Category:Plains of Eidolon]]
+[[Category:Vazarin Mods]]
+[[uk:Пружнє лезо]]

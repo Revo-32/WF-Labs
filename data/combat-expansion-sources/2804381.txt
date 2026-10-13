@@ -1,0 +1,30 @@
+{{WarframeTopNav}}
+==Passive==
+{{D|Slash}} procs inflicted by {{WF|Ash}}'s weapons and abilities deal <u>'''25%'''</u> more damage and last <u>'''50%'''</u> longer.
+*Damage bonus stacks additively with other [[Status Damage]].
+**For example, when using {{WF|Ash}}, a weapon that deals 100 damage with {{M|Bane of Grineer}} will have a {{D|Slash}} proc that deals {{MathText|(100 * (1 + {{M|Bane of Grineer|0.3}})) * 0.35 * (1 + {{M|Bane of Grineer|0.3}}) * (1 + {{WF|Ash|0.25}}) {{eql}} 73.94}} damage per tick.
+*Bleed duration bonus stacks additively with status duration mods such as {{M|Lingering Torment}}.
+*Works in [[Archwing]] missions. Note that [[Railjack]] {{D|Slash}} status effect {{D|Tear}} has a base '''20s''' duration and is '''not''' a DoT.
+
+==Abilities==
+{{WarframePage/Abilities| Shuriken | Smoke Screen | Teleport | Blade Storm |test={{{test|}}}
+| ability1icon      = ShurikenIcon(xWhite).png
+| ability1strength  = true
+| ability1duration  = 
+| ability1range     = 
+| ability2icon      = SmokeScreenIcon(xWhite).png
+| ability2strength  = 
+| ability2duration  = true
+| ability2range     = true
+| ability3icon      = TeleportIcon(xWhite).png
+| ability3strength  = 
+| ability3duration  = 
+| ability3range     = true
+| ability4icon      = BladeStormIcon(xWhite).png
+| ability4strength  = true
+| ability4duration  = 
+| ability4range     = true
+}}
+
+[[fr:Ash/Capacités]]
+[[Category:Ash]]

@@ -1,0 +1,74 @@
+{{Top|Enemy|Coda|Coda|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|Enhanced by Technocyte mutations, the Coda Pathocyst comes with increased Damage, Critical Chance, Critical Multiplier and Status Chance. While in-flight or on contact with the enemy, it will occasionally spawn enhanced, enemy-seeking miasmites.}}
+'''Coda Pathocyst''' is the [[Coda]] variant of the Infested {{Weapon|Pathocyst}} glaive. In addition to higher damage, [[critical chance]], [[critical multiplier]], and [[status chance]], it can spawn stronger [[Techrot Miasmite]]s with a larger explosion radius.
+
+==Characteristics==
+*This weapon deals primarily {{D|Viral}} damage.
+*Can be wielded in-tandem with a single-handed secondary weapon.
+*Holding the melee button throws the glaive, which can [[bounce]] up to three times or travels up to '''30''' meters before returning to the user, damaging anyone in its path. Meleeing while the glaive is in mid-flight commands it to return.
+**Primary and secondary weapons can be fired and reloaded normally with a thrown glaive, and retrieving the glaive does not interrupt these actions. Additional throws can also be "buffered" while the glaive is in mid-flight.
+**Thrown glaive is [[silent]].
+**Thrown glaive has no [[punch through]].
+**[[Heavy Attack]]s while the glaive is in mid-flight produce a '''4.9''' meter explosion and forces the glaive to return.
+***Explosion inflicts a guaranteed {{D|Viral}} proc.
+***Explosion does not need direct line of sight to deal damage and will penetrate walls.
+***No [[Damage Falloff]].
+***Explosion inflicts [[Stagger|self-stagger]].
+***Explosion has a [[Enemy Body Parts|headshot]] multiplier of 1x and cannot trigger headshot conditions.
+**Cannot use melee attacks or block while the glaive is in mid-flight.
+**During flight or when striking an enemy, the glaive drops Infested pods which quickly hatch into [[Techrot Miasmite|Maggots]] that last for 7 seconds and will fight alongside the player before exploding in a '''?''' radius.
+***Maggots can latch onto enemies and stagger them.
+***Maggots may also appear on any normal attack done to enemies.
+***Maggots alerts enemies, despite the weapon being silent.
+*Can use the Glaive-exclusive mods {{M|Combo Fury}}, {{M|Combo Killer}},{{M|Mark of the Beast}} {{M|Power Throw}}, {{M|Quick Return}} ({{M|Volatile Quick Return|Volatile}}), {{M|Rebound}} ({{M|Volatile Rebound|Volatile}}), and {{M|Whirlwind}}.
+*Stance slot has {{Pol|Naramon}} polarity, matching {{M|Gleaming Talon}}, {{M|Astral Twilight}} and {{M|Celestial Nightfall}} ([[Conclave]] only) stance.
+*Innate {{Pol|Madurai}} and {{Pol|Vazarin}} polarities.
+*Adversary Weapon:
+**Comes with an additional bonus {{D|Impact}}, {{D|Heat}}, {{D|Cold}}, {{D|Electricity}}, {{D|Toxin}}, {{D|Magnetic}}, or {{D|Radiation}} damage, which increases the listed base damage of the weapon by 25%-60%.
+***[[Valence Fusion]] can optionally change the resulting output damage type, and can upgrade the bonus increase (up to 60%).
+**[[Polarization|Polarizing]] the weapon increases its max [[rank]] by '''2''', capping at rank '''40''' after '''5''' polarizations, granting the weapon additional mod capacity.
+**{{Resource|Elemental Vice}} can be applied to the weapon after it has reached rank 40, allowing the bonus damage type to be swapped freely.
+**Unlike [[Kuva (Variant)|Kuva]] and [[Tenet]] weapons directly acquired from a [[Kuva Lich]] or [[Sisters of Parvos]], the listed [[Mastery Rank]] requirement '''is''' enforced.
+
+{{Advantages|class=Glaive|
+}}
+
+{{Disadvantages|class=Glaive|
+}}
+{{WeaponComparison|Pathocyst}}
+
+==Acquisition==
+{{Transclude|Lich System/Weapons#Coda Acquisition}}
+
+==Notes==
+{{Transclude|Adversary System#Notes}}
+
+==Tips==
+
+==Trivia==
+Miasmites' forced viral status triggers {{Arcane|Arcane Impetus}} (possibly a bug)
+==Media==
+<gallery widths="300" position="center" spacing="small">
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.6}}
+*Fixed script error after Polarizing a Coda Weapon and then swapping to another weapon in the Arsenal.
+
+{{ver|38.5.7}}
+*Coda weapons now have a Coda icon next to their name in the Arsenal, to match their Kuva and Tenet counterparts.
+
+{{ver|38.5.6}}
+*Fixed the Coda Pathocyst using the incorrect model when thrown.
+
+{{ver|38.5}}
+*Introduced.
+}}
+
+{{WeaponNav}}
+
+[[ru:Патоцист Кода]]

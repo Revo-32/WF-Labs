@@ -1,0 +1,157 @@
+{{ResourceInfobox}}
+''' Ceramic Dagger Incarnon Genesis''' is an item that is used to add [[Incarnon]] upgrades to the {{Weapon|Ceramic Dagger}}.
+
+==Acquisition==
+*Upon completion of [[The Duviri Paradox]] and [[Angels of the Zariman]], and unlocking [[The Steel Path]], players can earn {{Resource|1=Ceramic Dagger Incarnon Genesis}} from [[The Circuit]]'s Steel Path to place on their Ceramic Dagger with the help of [[Cavalero]] in the [[Chrysalith]]. This [[Incarnon Genesis]] form grants it evolutions to a transformation and newfound strength.
+*Purchased from Cavalero for {{pc|120}}, complete with the resources used in its installation. This purchase can only be made '''once'''.
+
+== Incarnon Genesis ==
+*Installing the Ceramic Dagger Incarnon Genesis requires 20 {{Resource|Pathos Clamp|Pathos Clamps}}, 70 {{Resource|Dracroot}}, and 80 {{Resource|Connla Sprout|Connla Sprouts}}.
+**When installed, the first Evolution tier is unlocked. Each challenge additionally grants 5,000 [[affinity]] to the weapon, affected by [[Affinity Booster]]s.
+
+=== Overview ===
+*Incarnon Form is charged by building [[Melee Combo]] to 6x, then using a [[Heavy Attack]]. Once activated, the Incarnon form lasts for '''180''' seconds.
+**Incarnon Form persists through all activities, such as holstering, [[bleedout]], or being [[disarm]]ed. However, Incarnon Form is removed upon [[death]].
+{{clr}}
+
+===Evolutions===
+{| class="wikitable sortable stickyHeader"
+|+
+|-
+! class=unsortable colspan="3" | Evolution
+! class=unsortable style="white-space: nowrap;" | {{Weapon|Ceramic Dagger}}
+! class=unsortable | Notes
+|-
+! EVO1
+| style="white-space: nowrap; text-align:center;" | Incarnon Form [[File:HeavyAttacksThrowSpectralDaggers(xWhite).png|64px|center]]
+| 
+*Reach '''6x''' Combo and then [[Melee#Heavy Attack|Heavy Attack]] to activate Incarnon Form.
+*Heavy Attacks sends forth spectral daggers.
+**'''+100%''' Melee Damage
+**'''+25%''' Sprint Speed
+**'''+25%''' to Parkour Velocity
+| style="text-align:center" | -
+|
+*Heavy Attack in Incarnon Form will fire a flurry of '''2''' spectral daggers towards the crosshair that explode on impact, dealing {{D|Heat}} damage with a forced {{D|Impact}} status effect.
+**Direct hits can headshot.
+**Projectiles and explosions are silent.
+**Direct hits of spectral daggers and explosions are affected by universal base damage sources like {{M|Vigorous Swap}}, {{M|Holster Amp}}, {{Arcane|Arcane Arachne}}, {{A|Vex Armor}} and {{A|Amp}}.
+***Direct hit damage is affected by {{M|Condition Overload}}, but not the explosions.
+**Damage is <u>'''not'''</u> affected by the melee damage increase on Evolution 2, Incarnon form's innate +100% melee damage, or melee damage bonuses like {{M|Pressure Point}}.
+|-
+! colspan="3" | Evolution Challenge !! colspan="2" | Complete a solo mission with this weapon equipped
+|-
+! rowspan="2" | EVO2
+| style="white-space: nowrap; text-align:center;" | '''Gun and Blade''' [[File:InitialComboPerKillWithPrimaryWeapon(xWhite).png|64px|center]]
+|
+*Increase Base Damage by '''+100'''.
+*On Primary Kill: '''+1''' Initial Combo. Stacks up to '''100x'''.
+| style="text-align:center" | -
+|
+*Initial Combo Increase stacks shows as a buff, which lasts permanently throughout the mission but are lost on death.
+*Maximum stacks allows Ceramic Dagger to activate Incarnon Form without building any additional combo.
+|-
+| style="white-space: nowrap; text-align:center;" | '''Breacher's Opportunity''' [[File:DamageOnShieldBreak(xWhite).png|64px|center]]
+|
+*Increase Base Damage by '''+120'''.
+*On Shield Break: Increase Base Damage by '''+80''' for '''8s'''.
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution Challenge !! colspan="2" | Activate this weapon's Incarnon form '''6''' times in a mission
+|-
+! rowspan="3" | EVO3
+| style="white-space: nowrap; text-align:center;" | '''Orokin Reach''' [[File:MoreRange(xWhite).png|64px|center]]
+| 
+* '''+1''' Range
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Adept Reflexes''' [[File:InitialComboCount(xWhite).png|64px|center]]
+| 
+*'''+20''' Initial Combo
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Rogue Readiness''' [[File:ChanceToReplenishMagOnHeadshot(xWhite).png|64px|center]]
+| 
+*On Kill: '''40%''' chance for Instantly Reload Primary and Secondary weapons.
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+! colspan="3" | Evolution Challenge !! colspan="2" | Kill '''20''' unalerted enemies with a Finisher Attack
+|-
+! rowspan="3" | EVO4
+| style="white-space: nowrap; text-align:center;" | '''Red Right Hand''' [[File:CritDamageOnFirstAttackFromAGunEquipped(xWhite).png|64px|center]]
+|
+*On First Attack With Primary Equipped: Increase Base Critical Damage Multiplier by '''+2x'''.
+| style="text-align:center" | -
+|
+*Applies to the first attack from quickswap melee.
+|-
+| style="white-space: nowrap; text-align:center;" | '''Absolute Dominion''' [[File:HighStatus(xWhite).png|64px|center]]
+|
+*Increase Base Status Chance by '''+30%'''.
+| style="text-align:center" | -
+| style="text-align:center" | -
+|-
+| style="white-space: nowrap; text-align:center;" | '''Absolute Valor''' [[File:HighCrit(xWhite).png|64px|center]]
+|
+*Increase Base Critical Chance by '''+30%'''.
+| style="text-align:center" | -
+| style="text-align:center" | -
+|}
+
+
+==Known Bugs==
+*Direct hits of spectral daggers and explosions '''do not''' benefit from base damage sources like {{M|Primed Pressure Point}}, {{M|Spoiled Strike}}, {{M|Killing Blow}} and {{Arcane|Arcane Fury}}.
+**The '''+100''' and '''+120''' damage bonuses of Gun and Blade and Breacher's Opportunity do not apply either, however the '''+80''' damage from Breacher's Opportunity does.
+**{{D|Impact}}, {{D|Puncture}}, {{D|Slash}} and elemental damage mods work as intended.
+*{{M|Condition Overload}} is multiplicative to base damage bonuses on spectral daggers, while being additive to them on physical melee hits.
+*Evolution II: '''Gun and Blade'''
+**{{M|Condition Overload}} ignores the '''+100''' innate damage.
+*Evolution II: '''Breacher's Opportunity'''
+**{{M|Condition Overload}} ignores the '''+120''' innate damage.
+*Evolution IV: '''Red Right Hand'''
+**Does not affect spectral dagger explosions.
+**Affects only one of the two spectral daggers.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|39}}
+*Incarnon Adapters available in the current Steel Path Circuit rotation are now available for Platinum Purchase in Cavalero’s store in the Chrysalith.
+**Purchasing these Incarnons for Platinum will reward players with both the Adapter and the required resources to install it.
+
+{{ver|37}}
+*Fixed Incarnon Geneses of the Ceramic Dagger missing the custom Melee Incarnon reticle.
+
+{{ver|36}}
+*Fixed the Incarnon Ceramic Dagger upgrade Gun and Blade triggering when killing enemies with a Secondary weapon.
+
+{{ver|35.5.3}}
+*Fixed Ceramic Dagger Incarnon’s Gun and Blade Evolution Perk using the wrong description and Breacher’s Opportunity being blank.
+
+{{ver|33.6}}
+*Fixed being able to self-stagger using the Ceramic Dagger Incarnon heavy attack.
+
+{{ver|33.5.3}} 
+*Fixed challenge descriptions appearing as a file path for the following Incarnon Geneses weapons:
+**Ceramic Dagger’s Evolution IV
+
+{{ver|33.5}}
+*Fixed Melee Incarnon weapons (original and Genesis) missing their Incarnon Form stats in the Arsenal.
+
+{{ver|33.0.5}}
+*Fixed Melee Incarnon Weapons using the incorrect HUD indicator to state that Incarnon Mode was ready. 
+
+{{ver|33.0.7}}
+*Fixed Ceramic Dagger’s Incarnon Evolution II upgrades “Gun and Blade” and “Butcher’s Opportunity” not applying their damage bonuses.
+
+{{ver|33}}
+*Introduced}}
+
+{{IncarnonNav}}
+[[Category:Duviri]]
+[[Category:Incarnon]]
+[[Category:Incarnon Geneses]]
+[[Category:Update 33]]

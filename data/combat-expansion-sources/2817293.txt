@@ -1,0 +1,125 @@
+{{Top|Weapon|Weapons|Weapons}}
+{{WeaponInfoboxAutomatic}}
+{{Codex|This short blade weapon was built using ceramic. It has limited range but comes out fast.}}
+The '''Ceramic Dagger''' is a dagger with the highest [[attack speed]] of all [[Dagger|single daggers]] coupled with good [[status chance]], but has otherwise low stats and deals no {{D|Slash}} damage.
+
+The Ceramic Dagger can be sold for {{cc|5,000}}.
+
+==Characteristics==
+*This weapon deals primarily {{D|Puncture}} damage.
+*Stance slot has {{Pol|Madurai}} polarity, matching {{M|Stinging Thorn}} and {{M|Pointed Wind}} stance.
+
+{{Advantages|
+*Grants a '''10%''' [[Movement Speed]] bonus when held (i.e. melee mode or quick melee).
+}}
+
+{{Disadvantages|}}
+
+==Acquisition==
+The Ceramic Dagger's blueprint can be bought from [[Nightwave]] [[Nightwave/Offerings|Offerings]] for {{Nc|50}}
+
+{{BuildAutomatic|type=Weapon}}
+
+==Notes==
+*When equipped without a [[Stance]] mod, the Ceramic Dagger adds a 4th lunging stab to its normal attack combo, which propels the Warframe a good distance forward, which is useful in catching up to moving enemies. It also has a 100% chance of inflicting {{D|Slash}} bleed proc. This effect is lost if one uses the {{M|Pointed Wind}} stance, which replaces the lunge with a sweeping slash.
+**If the lunge lands behind an unalerted enemy, a stealth attack will be performed instead.
+
+==Incarnon Genesis==
+{{Transclude|Ceramic Dagger Incarnon Genesis#Acquisition}}
+
+{{Transclude|Ceramic Dagger Incarnon Genesis#Incarnon Genesis}}
+
+==Trivia==
+*Prior to {{ver|22.20}}, the Ceramic Dagger shared its model with the {{Weapon|Cronus}}, only scaled down and with a much lower-resolution texture. It was eventually given a similar-but-unique model that resembles a scaled-down [[Wikipedia:Scimitar|Scimitar]] in shape.
+*The blueprint used to drop from [[Jupiter]]'s boss [[J3-Golem]], however this method of obtaining the blueprint is no longer available.
+*Ironically, despite having a curved blade that would be ideal for slashing, the Ceramic Dagger deals mainly {{D|Puncture}} and no {{D|Slash}} damage.
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+CeramicDagger1.jpg
+CeramicDagger2.jpg
+CeramicDaggerOld.png|Pre-U22.20 appearance
+</gallery>
+
+{{SkinGallery}}
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|35.5.1}}
+*Fixed Ceramic Dagger Incarnon’s Gun and Blade Evolution Perk using the wrong description and Breacher’s Opportunity being blank.
+
+{{ver|33.6}}
+*Fixed being able to self-stagger using the Ceramic Dagger Incarnon heavy attack.
+
+{{ver|33.0.7}}
+*Fixed Ceramic Dagger’s Incarnon Evolution II upgrades “Gun and Blade” and “Butcher’s Opportunity” not applying their damage bonuses.
+
+{{ver|33}}
+*In this update, the following weapons (including all of their variants, such as MK-1, Vandal, Prime, etc.) are eligible to be upgraded with Incarnon Genesis. We are planning on adding more eligible weapons in the future!
+**Melee:
+***Ceramic Dagger
+
+{{ver|31.6.1}}
+*Fixed Innodem being able to equip Ceramic Dagger Rivens.
+
+{{ver|26}}
+*Damage increased from 35 to 140.
+*Range increased from 1 to 1.8.
+*Status Chance increased from 10% to 20%.
+*Critical Chance increased from 5% to 10%.
+*Slam Attack increased from 70 to 280.
+*Slide Attack increased from 75 to 280.
+*Parry Angle set to 45.
+*Follow Through increased from 0.3 to 0.9.
+
+{{ver|22.20.3}}
+*Scaled the Ceramic Dagger to a more reasonable size. Ceramic Dagger-But-Long-Like-A-Sword didn’t have a nice ring to it.
+
+{{ver|22.20}}
+*The Ceramic Dagger has received a new look! Previously it was identical to the Cronus.
+
+{{ver|18.6.3}}
+*Fixed an issue causing dagger weapons to endlessly loop its equip animation.
+
+{{ver|18.5}}
+*Increased the damage of daggers and their Stances in Conclave.
+
+{{ver|17.3}}
+*The Ceramic Dagger can now be used in Conclave.
+
+{{ver|17}}
+*Fixed Radiation damage effects on daggers lingering after the proc has expired.
+
+{{ver|15.13}}
+*Fixed Ceramic Dagger's weapon trail not quite lining up with the blade.
+
+{{ver|13.1.2}}
+*Tweaked a number of Dagger parry sound effects.
+
+{{ver|5.4.1}}
+*Fix elemental effects not showing on many crafted Daggers.
+
+{{ver|5.2}}
+*Dagger attack animations have been improved.
+
+{{ver|Vanilla}}
+*Introduced
+}}
+{{Ver/Lu|35.5.1}}
+
+==See Also==
+*{{Weapon|Cronus}}, a similar weapon in terms of design.
+**[[Ceramic Dagger Incarnon Genesis]], the Incarnon power-up for the Ceramic Dagger.
+
+{{WeaponNav}}
+[[de:Keramikdolch]]
+[[es:Daga cerámica]]
+[[fr:Dague en Céramique]]
+[[Category:Dagger]]
+[[Category:Tenno]]
+[[Category:Melee Weapons]]
+[[Category:Closed Beta]]
+[[Category:Weapons]]
+[[Category:Puncture Damage Weapons]]
+[[uk:Керамічний кинджал]]
+[[Category:Update 5]]

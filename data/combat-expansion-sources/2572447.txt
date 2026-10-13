@@ -1,0 +1,124 @@
+<onlyinclude>{{EditTab|Zaw Stats/Staves}}
+<div class="tabber-borderless">
+<tabber>All Staves=
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="4" rowspan="1" style="width:100px;" | Strikes
+|-
+| [[File:Balla.png|center|thumb|100px]]'''[[Balla]]'''
+| [[File:Ooltha.png|center|thumb|100px]]'''[[Ooltha]]'''
+| [[File:Sepfahn.png|center|thumb|100px]]'''[[Sepfahn]]'''
+| [[File:PlagueKeewar.png|center|thumb|100px]]'''[[Plague Keewar]]'''
+|-
+|}
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Jayap.png|center|thumb|100px]]'''[[Jayap]]'''
+| [[File:Kroostra.png|center|thumb|100px]]'''[[Kroostra]]'''
+| [[File:Seekalla.png|center|thumb|100px]]'''[[Seekalla]]'''
+| [[File:Shtung.png|center|thumb|100px]]'''[[Shtung]]'''
+| [[File:PlagueBokwin.png|center|thumb|100px]]'''[[Plague Bokwin]]'''
+|-
+|}
+{{#invoke:Modular|getZawTypeTable|Staff|TwoHanded}}
+|-|Balla =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Balla.png|center|thumb|100px]]'''[[Balla]]'''
+| [[File:Jayap.png|center|thumb|100px]]'''[[Jayap]]'''
+| [[File:Kroostra.png|center|thumb|100px]]'''[[Kroostra]]'''
+| [[File:Seekalla.png|center|thumb|100px]]'''[[Seekalla]]'''
+| [[File:Shtung.png|center|thumb|100px]]'''[[Shtung]]'''
+| [[File:PlagueBokwin.png|center|thumb|100px]]'''[[Plague Bokwin]]'''
+|-
+|}
+{{#tag:tabber|Jayap =
+{{#invoke:Modular|getZawTable|Balla|Jayap}}
+{{!}}-{{!}}Kroostra =
+{{#invoke:Modular|getZawTable|Balla|Kroostra}}
+{{!}}-{{!}}Seekalla =
+{{#invoke:Modular|getZawTable|Balla|Seekalla}}
+{{!}}-{{!}}Shtung =
+{{#invoke:Modular|getZawTable|Balla|Shtung}}
+{{!}}-{{!}}Plague Bokwin =
+{{#invoke:Modular|getZawTable|Balla|Plague Bokwin}}
+}}
+|-|Ooltha =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Ooltha.png|center|thumb|100px]]'''[[Ooltha]]'''
+| [[File:Jayap.png|center|thumb|100px]]'''[[Jayap]]'''
+| [[File:Kroostra.png|center|thumb|100px]]'''[[Kroostra]]'''
+| [[File:Seekalla.png|center|thumb|100px]]'''[[Seekalla]]'''
+| [[File:Shtung.png|center|thumb|100px]]'''[[Shtung]]'''
+| [[File:PlagueBokwin.png|center|thumb|100px]]'''[[Plague Bokwin]]'''
+|-
+|}
+{{#tag:tabber|Jayap =
+{{#invoke:Modular|getZawTable|Ooltha|Jayap}}
+{{!}}-{{!}}Kroostra =
+{{#invoke:Modular|getZawTable|Ooltha|Kroostra}}
+{{!}}-{{!}}Seekalla =
+{{#invoke:Modular|getZawTable|Ooltha|Seekalla}}
+{{!}}-{{!}}Shtung =
+{{#invoke:Modular|getZawTable|Ooltha|Shtung}}
+{{!}}-{{!}}Plague Bokwin =
+{{#invoke:Modular|getZawTable|Ooltha|Plague Bokwin}}
+}}
+|-|Sepfahn =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:Sepfahn.png|center|thumb|100px]]'''[[Sepfahn]]'''
+| [[File:Jayap.png|center|thumb|100px]]'''[[Jayap]]'''
+| [[File:Kroostra.png|center|thumb|100px]]'''[[Kroostra]]'''
+| [[File:Seekalla.png|center|thumb|100px]]'''[[Seekalla]]'''
+| [[File:Shtung.png|center|thumb|100px]]'''[[Shtung]]'''
+| [[File:PlagueBokwin.png|center|thumb|100px]]'''[[Plague Bokwin]]'''
+|-
+|}
+{{#tag:tabber|Jayap =
+{{#invoke:Modular|getZawTable|Sepfahn|Jayap}}
+{{!}}-{{!}}Kroostra =
+{{#invoke:Modular|getZawTable|Sepfahn|Kroostra}}
+{{!}}-{{!}}Seekalla =
+{{#invoke:Modular|getZawTable|Sepfahn|Seekalla}}
+{{!}}-{{!}}Shtung =
+{{#invoke:Modular|getZawTable|Sepfahn|Shtung}}
+{{!}}-{{!}}Plague Bokwin =
+{{#invoke:Modular|getZawTable|Sepfahn|Plague Bokwin}}
+}}
+|-|Plague Keewar =
+{| class="wikitable" style="width:100%;text-align:center;"
+! colspan="1" rowspan="1" style="width:100px;" | Strike
+! colspan="5" rowspan="1" style="width:100px;" | Grips
+|-
+| [[File:PlagueKeewar.png|center|thumb|100px]]'''[[Plague Keewar]]'''
+| [[File:Jayap.png|center|thumb|100px]]'''[[Jayap]]'''
+| [[File:Kroostra.png|center|thumb|100px]]'''[[Kroostra]]'''
+| [[File:Seekalla.png|center|thumb|100px]]'''[[Seekalla]]'''
+| [[File:Shtung.png|center|thumb|100px]]'''[[Shtung]]'''
+| [[File:PlagueBokwin.png|center|thumb|100px]]'''[[Plague Bokwin]]'''
+|-
+|}
+{{#tag:tabber|Jayap =
+{{#invoke:Modular|getZawTable|Plague Keewar|Jayap}}
+{{!}}-{{!}}Kroostra =
+{{#invoke:Modular|getZawTable|Plague Keewar|Kroostra}}
+{{!}}-{{!}}Seekalla =
+{{#invoke:Modular|getZawTable|Plague Keewar|Seekalla}}
+{{!}}-{{!}}Shtung =
+{{#invoke:Modular|getZawTable|Plague Keewar|Shtung}}
+{{!}}-{{!}}Plague Bokwin =
+{{#invoke:Modular|getZawTable|Plague Keewar|Plague Bokwin}}
+}}
+</tabber>
+</div>
+</onlyinclude>
+[[Category:Zaw]]
+[[fr:Stats des Zaws/Bâtons]]

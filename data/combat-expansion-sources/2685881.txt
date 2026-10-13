@@ -1,0 +1,111 @@
+{{For|the Berserker Warframe|Valkyr}}
+{{ModBox}}
+'''Berserker Fury''' is a [[mod]] that temporarily increases a melee weapon's [[attack speed]] for 10 to 20 seconds on killing an enemy, stacking up to two times.
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! [[Attack speed]]
+! Duration
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || +5.8% || +10s || 4
+|-
+| 1 || +11.7% || +10s || 5
+|-
+| 2 || +17.5% || +10s || 6
+|-
+| 3 || +23.3% || +10s || 7
+|-
+| 4 || +29.2% || +10s || 8
+|-
+| 5 || +35% || +10s || 9
+|}
+<br/>
+{| class="emodtable"
+|+ [[Flawed Mods|Flawed]]
+|-
+! [[Mods#Mod Rank|Rank]]
+! [[Attack speed]]
+! Duration
+! [[Mods#Mod Power Cost|Cost]]
+|-  
+| 0 || - || - || -
+|-
+| 1 || - || - || -
+|-
+| 2 || - || - || -
+|-
+| 3 || +23.3% || +10s || 7
+|}
+
+==Drop Locations==
+{{DropLocations}}
+
+==Notes==
+*Cannot be equipped with {{M|Fury}} ({{M|Primed Fury|Primed}}).
+*The [[attack speed]] buff from Berserker Fury is additive with all other sources of attack speed, including mods and abilities.
+**For example, a full Berserker bonus in combination with {{M|Spoiled Strike}} will modify the weapon's [[attack speed]] to be {{Math| {{text||1.0|hover=Base Weapon Attack Speed}} {{mul}} (1 - {{M|Spoiled Strike|0.2}} + {{M|Berserker Fury|0.7}})|mt=y|p=y}} of its base.
+*Stack duration fully refreshes upon killing and only expires one stack at a time, granting the mod an effective duration of 20 seconds.
+
+==Tips==
+*Berserker will match {{M|Fury}} and {{M|Gladiator Vice}} in effectiveness with just a single kill, and will surpass {{M|Primed Fury}} and {{M|Quickening}} with two stacks, making it potentially more valuable than other attack speed mods so long as you sustain the bonus.
+*More effective in missions with high kill rates. Less effective for some bosses where few weak enemies may spawn.
+
+==Trivia==
+*When it was first introduced, Berserker Fury was known simply as Berserker and increased attack speed on critical hits, even if they did not kill. This was changed in {{ver|30.5}} as part of a series of nerfs to melee mods as a whole.
+**Prior to {{ver|13.8.1|fix}}, Berserker would treat melee [[Stealth]] Finisher Damage as a critical hit, activating or refreshing the speed bonus. However, despite their damage numbers still displaying as yellow, finishing attacks are no longer automatically considered critical hits.
+*On April Fool's Day 2018, the mod card was changed to read out "MY LOVE FOR YOU IS LIKE A TRUCK!", in reference to the song ''Berserker'' by alternative rock band [[wikipedia:Love Among Freaks|Love Among Freaks]]. The mod's effects were otherwise unchanged.
+
+==Gallery==
+<gallery widths="300" position="center" spacing="small">
+OldBerserkerFury.png|Berserker Fury's effects prior to Update 30.5
+Berserker.png|Old appearance
+BerserkerAprilFools.png|Berserker's mod card on April Fool's Day 2018.
+</gallery>
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|30.5}}
+;<u>Melee Mod Nerfs</u>
+
+Attack Speed increases for Melee are part of what makes it so dominant. This is especially true when the conditions to reach animation-breaking Attack Speed are as simple as current Berserker: ‘on Critical Hit’. Infinite Attack-Speed Uptime is possible with a single Mod, and the result is animation noise with no distinction between hits, coupled with massive Damage output. 
+
+We still want to support the ability to increase your Melee Attack Speed and Damage Output, just not to the levels you currently can. 
+
+Berserker is changing from:<br/>
++30% Attack Speed (Max 75%) for 24s on Critical Hit
+
+To:<br/>
+Berserker Fury, cannot stack with Fury.<br/>
+On Melee Kill: +35% Attack Speed (Max 70%)  for 10s. Stacks up to 2x. 
+
+This is important because:<br />
+- It decouples it from Critical Chance.<br />
+- Adds a more defined ramp up using ‘On Kill’ instead of On Crit (which frequently meant 0 to ‘Max’ in one swing hitting 3 enemies).<br />
+- Renamed to Berserker Fury to communicate that it can no longer be equipped with Fury / Primed Fury. 
+
+*(Undocumented) Stacks additively with other attack speed bonuses instead of multiplicatively.
+
+{{ver|10}}
+*Introduced
+}}
+
+==See Also==
+*{{M|Fury}} ({{M|Primed Fury|Primed}}), the passive version of this mod.
+*{{M|Gladiator Vice}}, another passive version of this mod.
+*{{M|Quickening}}, a dual-stat passive version of this mod.
+
+{{MeleeMods}}
+
+[[de:Berserker]]
+[[es:Furia berserker]]
+[[pt:Berserker]]
+[[ru:Ярость Берсерка]]
+[[uk:Берсеркова лють]]
+[[Category:Mods]]
+[[Category:Melee Mods]]
+[[Category:Rare Mods]]
+[[Category:Update 10]]
+[[Category:Madurai Mods]]

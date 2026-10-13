@@ -1,0 +1,213 @@
+{{Infobox
+| Box title = Magnetic Damage
+| image     = EssentialMagneticGlyph.png
+| Row 1 title = Icon
+| Row 1 info  = [[File:Magnetic_b.png|class=icon]] [[File:Magnetic_w.png|class=icon]]
+}}
+{{Quote|'''DAMAGE EFFICACY'''<br/>
+'''{{text|green|x1.5}}''' damage to Corpus<br/>
+'''{{text|green|x1.5}}''' damage to Corpus Amalgam<br/>
+'''{{text|green|x1.5}}''' damage to Techrot<br/>
+'''{{text|red|x0.5}}''' damage to Narmer
+
+'''STATUS EFFECT'''<br/>
+Created by combining {{D|Cold}} and {{D|Electricity}} damage.
+
+{{D|Magnetic}} increases Shield and Overguard damage by up to 325% with multiple stacks and disables the target's Shield regeneration for a short duration. When Shield or Overguard breaks, deal Electricity Damage for 3% of enemy's Max Shield or Overguard per stack with a forced {{D|Electricity}} Status Effect.|In-game Description}}
+'''{{D|Magnetic}} Damage''' is one of the six secondary elemental damage types, composed of {{D|Cold}} and {{D|Electricity}} elements. Deals increased damage to {{D|Corpus}}, {{D|Corpus Amalgam}}, and {{D|Techrot}} enemies, but reduced damage against {{D|Narmer}} enemies. It is particularly effective at destroying [[Nullifier Crewman|nullifier bubbles]], and its [[Status Effect]] increases damage dealt to [[Shield]]s and {{D|Overguard}}, negates shield regeneration, and inflicts an {{D|Electricity}} proc upon removing all defenses.
+
+==[[Status Effect]]s==
+===General===
+{{for|the game mode|Disruption}}
+
+The status effect of {{D|Magnetic}} damage is '''Disrupt'''. It amplifies damage to the [[Shield]]s and {{D|Overguard}} of the afflicted target by '''100%''' and reduces natural shield regeneration for '''6''' seconds. Subsequent procs add '''25%''' increased damage to Shields/Overguard up to '''325%''' in total after '''10''' stacks, with each stack having their own duration. Any stacks applied after the 10th will replace the oldest stack.
+
+<math>
+{
+\begin{aligned}
+\text{Resultant Damage to Shields} &= \text{Modded Damage} \times [2 + (0.25 \times (\text{Number of Magnetic Stacks} - 1) ) ]
+\end{aligned}
+}
+</math>
+::''Calculating resultant damage if at least one Magnetic proc is on target. [[Damage Vulnerability]] provided by Magnetic procs are multiplicative with other damage bonuses.''
+
+Upon breaking of the Shields/Overguard the target receives a forced {{D|Electricity}} proc that deals a total of '''3%''' of the target's maximum Shields/Overguard per {{D|Magnetic}} status effect, to a maximum of '''30%''' at full stacks, over a period of '''6 seconds'''. 
+The damage of the forced {{D|Electricity}} proc is determined by the weapon or ability that applied the magnetic status.
+*Base damage mods like {{M|Serration}} mods have '''no''' effect.
+*Status damage mods like {{M|Pistol Elementalist}} are applied '''twice''', multiplying the damage by '''3.61'''
+*Faction damage modifiers like {{M|Expel Corpus}} are applied twice.
+*Electric damage mods like {{M|Convulsion}} are applied like normal even if they are combined into another status effect.
+*Status duration mods are applied like normal and are a final multiplier to the total damage.
+*[[Archon Stretch]] Will apply when the forced [[electricity]] proc from breaking [[Overguard]] is applied but only from abilities that can apply [[Magnetic status]]
+
+Effects that restore shields, such as {{E|Shield Osprey|Shield Osprey's}} and {{E|Orokin Drone|Orokin Drone's}} shield links, will bypass {{D|Magnetic}}'s recharge penalty.
+
+Affected [[Tenno]] suffer additional effects: their [[HUD]]s will be distorted and have '''30''' {{D|Energy Drain}} damage dealt to them per second for '''3''' seconds; The first tick is dealt instantly, resulting in '''4''' ticks in total. {{D|Energy Drain}} is dealt directly to the players energy bar, resulting in a loss of '''30''' [[energy]] per tick, for a total energy loss of '''120''' energy over the duration of the status effect. Status cleanse will stop the energy drain and the HUD static.
+
+{{D|Magnetic}} procs will show blue rings matching the shape of the affected target moving from top to bottom.
+
+===Railjack===
+{{D|Magnetic}} does not have a [[Railjack]] space counterpart and is thus not able to proc any status effect nor is it included in calculations for status proc weighting.
+
+==Magnetic Sources==
+{{Main|:Category:Magnetic Damage}}
+
+===Weapons===
+{{Main|:Category:Magnetic Damage Weapons}}
+{{DamageTypeTable|Magnetic}}
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+Opticor.png|link=Opticor|{{Weapon|Opticor}} (Explosion)|alt=Opticor (Explosion)
+OpticorVandal.png|link=Opticor Vandal|{{Weapon|Opticor Vandal}} (Explosion)|alt=Opticor Vandal (Explosion)
+Halikar.png|link=Halikar|{{Weapon|Halikar}} (Slam Attack)|alt=Halikar (Slam Attack)
+Kogake.png|link=Kogake|{{Weapon|Kogake}} ([[Kogake Prime|Prime]]) (Wall Attack)|alt=Kogake (Prime) (Wall Attack)
+Kestrel.png|link=Kestrel|{{Weapon|Kestrel}} ([[Kestrel Prime|Prime]]) (Slam Attack)|alt=Kestrel (Slam Attack)
+</gallery>
+Do also note that [[Adversary#Adversary Weapons|adversary weapons]] such as the {{Weapon|Kuva Nukor}} may come with a Magnetic damage benefit of up to 60% as long as the progenitor matches. In this case, {{WF|Mag}} would be a valid Magnetic progenitor amongst others, see [[Adversary#Progenitor Warframe|the progenitor list]] for all valid options.
+
+===Enemies===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+DisrupterAncientDE.png|link=Ancient Disruptor|[[Ancient Disruptor]]
+EnergyLeechEximus.png|link=Eximus#Energy Leech / Parasitic|[[Eximus#Energy Leech / Parasitic|Eximus Energy Leech/Parasitic]]
+KytaRaknoid.png|link=Kyta Raknoid|[[Kyta Raknoid]]<br />(Radial Laser)
+Teralyst.png|link=Teralyst|[[Eidolon Teralyst]]
+TeralystBig.png|link=Gantulyst|[[Eidolon Gantulyst]]
+TeralystRain.png|link=Hydrolyst|[[Eidolon Hydrolyst]]
+ThraxCenturion.png|link=Thrax Centurion|[[Thrax Centurion]]
+ThraxLegatus.png|link=Thrax Legatus|[[Thrax Legatus]]
+VayHekPortrait.png|link=Councilor Vay Hek|[[Councilor Vay Hek]]<br />(Drone Form)
+DoorSensor.png|link=Sensor Bar|[[Sensor Bar]]
+DEHyenaTh.png|link=Hyena_Pack#Hyena_TH_(Thorium)|[[Hyena_Pack#Hyena_TH_(Thorium)|Hyena Pack TH (Thorium)]]<br>Forced Magnetic procs in 10m aura
+</gallery>
+
+===Mods===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="false" position="center" bordersize="none" bordercolor="#FFFFFF">
+EntropyBurstMod.png|link=Entropy Burst|{{M|Entropy Burst}}|alt=Entropy Burst
+EntropyDetonationMod.png|link=Entropy Detonation|{{M|Entropy Detonation}}|alt=Entropy Detonation
+EntropyFlightMod.png|link=Entropy Flight|{{M|Entropy Flight}}|alt=Entropy Flight
+EntropySpikeMod.png|link=Entropy Spike|{{M|Entropy Spike}}|alt=Entropy Spike
+MagneticCapacityMod.png|link=Magnetic Capacity|{{M|Magnetic Capacity}}|alt=Magnetic Capacity
+MagneticClawsMod.png|link=Magnetic Claws|{{M|Magnetic Claws}}|alt=Magnetic Claws
+MagneticMightMod.png|link=Magnetic Might|{{M|Magnetic Might}}|alt=Magnetic Might
+MagneticRushMod.png|link=Magnetic Rush|{{M|Magnetic Rush}}|alt=Magnetic Rush
+MagneticStrafeMod.png|link=Magnetic Strafe|{{M|Magnetic Strafe}}|alt=Magnetic Strafe
+MagneticWeltMod.png|link=Magnetic Welt|{{M|Magnetic Welt}}|alt=Magnetic Welt
+MagnetizedCoreMod.png|link=Magnetized Core|{{M|Magnetized Core}}|alt=Magnetized Core
+MagnetizedCycleMod.png|link=Magnetized Cycle|{{M|Magnetized Cycle}}|alt=Magnetized Cycle
+ThermagneticShellsMod.png|link=Thermagnetic Shells|{{M|Thermagnetic Shells}}|alt=Thermagnetic Shells
+BioticRoundsMod.png|link=Biotic Rounds|{{M|Biotic Rounds}} (on Weak Point Kill)|alt=Biotic Rounds (on Weak Point Kill)
+</gallery>
+
+===Abilities===
+{{#tag:tabber|
+Revenant =
+{{:Danse Macabre}}
+Only applies {{D|Magnetic}} damage on [[shield]]ed enemies.
+{{!}}-{{!}}
+Mag =
+{{#tag:tabber|Pull =
+{{:Pull}}
+{{!}}-{{!}}
+Shield Polarize =
+{{:Shield Polarize}}
+{{!}}-{{!}}
+Crush =
+{{:Crush}}
+}}
+{{!}}-{{!}}
+Vauban =
+{{:Bastille}}
+{{!}}-{{!}}
+}}
+
+==Sources of Magnetic Resistances==
+===Arcanes===
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+ArcaneNullifier.png|link=Arcane Nullifier|{{Arcane|Arcane Nullifier}}|alt=Arcane Nullifier
+</gallery>
+
+==Additional Effects==
+Some arcanes add additional effects when a {{D|Magnetic}} occurs or dealing {{D|Magnetic}} damage.
+<gallery captionposition="below" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF" captionalign="center">
+MeleeVortex.png|link=Melee Vortex|{{Arcane|Melee Vortex}}|alt=Melee Vortex
+PrimaryObstruct.png|link=Primary Obstruct|{{Arcane|Primary Obstruct}}|alt=Primary Obstruct
+</gallery>
+
+== Trivia ==
+Being a combination of {{D|Cold}} and{{D|Electricity}}, it's likely that {{D|Magnetic}} is derived from [[w:Superconductivity|superconductors]], materials that conduct electricity with high efficiency at low temperature. 
+
+==Media==
+<gallery widths="300" position="center" spacing="small">
+Screenshot_518.png|Magnetic proc on an enemy
+Screenshot_517.png|Magnetic visuals on a melee weapon, with effects similar to those of cold and electric
+</gallery>
+{{VideoGallery
+|{{YouTube|AaE6VXtxMRw|size=300px}}
+}}
+
+== Bugs ==
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.5}}
+*Updated tooltip for Magnetic Status to communicate the bonus damage against Overguard.
+
+{{ver|36}}
+;Simplified Faction Resistances
+*Corpus: Vulnerable to '''Magnetic'''
+*Narmer:
+**Resistant to '''Magnetic'''
+*Corpus Amalgam:
+**Resistant to '''Magnetic'''
+
+;Status Effect Reworks
+
+'''Magnetic'''
+
+Magnetic has received a few buffs to increase its effectiveness against Shields and to hammer home the power fantasy of overloading enemy Shields.
+
+'''Magnetic Changes:'''
+*Damage to Nullifier Bubbles has been increased
+**Minimum Damage raised to 300 Damage per shot.
+**Maximum Damage raised to 1200 Damage per shot.
+***Additionally, we now show the minimum and maximum damage numbers against Nullifier Bubbles, with Magnetic attacks displaying the buffed damage shown above, while non-Magnetic sources will display the original, unbuffed damage.
+****Known issue: Clients see the incorrectly unbuffed damage from Magnetic sources, which is strictly a UI/visual bug. Magnetic sources will continue to deal increased damage towards Nullifier Bubbles despite the incorrect numbers displayed. We will look to resolve this in a future Hotfix/Update. 
+*Reduced Shield Regeneration by a percentage per Magnetic stack against affected targets.
+*Upon Shield/Overguard Breaking a target, the enemy will now be dealt Electric Status damage for a percentage of Max Shields/Overguard per Magnetic stack while also forcing an Electric Status Effect.
+*Magnetic stacks on an enemy with Overguard now allow for bonus damage to Overguard, similar to how Magnetic affects Shields.
+
+{{ver|35}}
+*Reduced the duration of Magnetic Status Effects when applied to players from 6 to 3 seconds and decreased the total Energy drain from 120 to 90. 
+**In addition to general feedback on Magnetic Damage being a bit harsh, the new tileset has many Magnetic Damage sources so the following changes were made to ensure it still had an impact without becoming unmanageable. 
+
+{{ver|31.6}}
+*Reduced the Energy drain from Magnetic procs from 50 to 20 per tick. 
+**This not only applies to Thrax enemies, but to Magnetic damage across the game (laser doors, magnetic water in the Plains of Eidolon, etc.)! A default Magnetic proc used to drain 250 Energy, now it will do 100.
+
+{{ver|27.2}}
+*New Status Effect entirely: enhanced Damage! First Magnetic Status Effect deals 100% additional Shield damage, subsequent Magnetic Status add +25% for a total of 325% (capped). Enemies under a Magnetic Status Effect cannot regenerate Shields. Magnetic Status Duration is now 6 seconds.
+
+{{ver|22}}
+*Magnetic Damage Status Effects now drain energy over time as opposed to completely draining all energy.
+
+{{ver|19}}
+* Fixed an issue where a Magnetic Status Effect would typically lower the victim's Shields further upon expiry (rather than restore them properly) if it had re-triggered the Status Effect.
+
+{{ver|11}}
+*Introduced.
+}}
+
+==See Also==
+*[[Entropy]]
+
+{{DamageNav}}
+
+[[es:Daño Magnético]]
+[[fr:Dégâts/Dégâts Magnétique]]
+[[ru:Урон/Магнит]]
+{{DISPLAYTITLE:Magnetic Damage}}
+[[Category:Magnetic Damage]]
+[[Category:Damage 3.0]]
+[[Category:Damage]]
+[[Category:Mechanics]]
+[[Category:Update 11]]
+[[Category:Damage Vulnerability]]

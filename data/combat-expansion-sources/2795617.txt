@@ -1,0 +1,104 @@
+{{ModBox}}
+<section begin=intro />
+'''Reactive Storm''' is a [[Warframe Augment Mod]] for {{WF|Baruuk}}'s {{A|Serene Storm}} to increase {{Weapon|Desert Wind}}'s [[status chance]] and alters its damage type to match enemy weaknesses.<section end=intro />
+==Stats==
+{| class="emodtable"
+|-
+! [[Mods#Mod Rank|Rank]]
+! {{Stat|Ability Strength|icon=only}}Status Chance
+! [[Mods#Mod Power Cost|Cost]]
+|-
+| 0 || 100% || 6
+|-
+| 1 || 150% || 7
+|-
+| 2 || 200% || 8
+|-
+| 3 || 250% || 9
+|}
+
+==Acquisition==
+*This mod can be acquired by attaining the rank of '''Flawless''' under {{Faction|New Loka}}, or the rank of '''Maxim''' under the {{Faction|Arbiters of Hexis}}, and spending {{sc|25,000}} to purchase.
+*This mod can periodically be acquired from [[The Circuit]].
+
+==Notes==
+*The [[status chance]] increase granted by this augment is affected by [[Ability Strength]] and additive with any other status chance mods.
+**For example, using a maxed {{M|Intensify}}, {{M|Drifting Contact}}, and Reactive Storm results in:<br />{{MathText|Base status chance {{mul}} [1 + (Reactive Storm Bonus {{mul}} (1 + Strength Mods)) + Status Mods] {{eql}} 0.15 {{mul}} [1 + (2.5 {{mul}} 1.3) + 0.4] {{eql}} 69.7% status chance}}
+**To achieve 100% status chance without any status chance mods, Ability Strength must be at least '''227%'''.
+*Only Desert Wind's {{D|Impact}} damage is altered to match as enemies weakest damage type.
+**Melee {{D|Impact}} mods such as {{M|Primed Heavy Trauma}}, increase the amount of altered elemental damage, but do not retain an {{D|Impact}} damage type after alteration.
+**If damage becomes a primary element, it will not combine with other modded primary elements.
+*To adapt damage types, Baruuk can strike with both his fists/feet at close range or {{Weapon|Desert Wind}}'s long-range waves.
+**Once set (by the last enemy struck by fists), the new damage type will affect the waves.
+**Damage type will reset to {{D|Impact}} when {{A|Serene Storm}} deactivates.
+*Damage type will prioritize combined and non-physical elements and the ''first'' element a given faction is vulnerable to based on the in-game UI, limiting its potential damage conversions to the following:
+**{{D|Heat}} ({{D|Infested}})
+**{{D|Electricity}} ({{D|Anarchs}})
+**{{D|Toxin}} ({{D|Narmer}})
+**{{D|Corrosive}} ({{D|Grineer}}, {{D|Kuva Grineer}}, {{D|Zariman}}, and {{D|Scaldra}})
+**{{D|Magnetic}} ({{D|Corpus}}, {{D|Corpus Amalgam}}, and {{D|Techrot}})
+**{{D|Viral}} ({{D|Orokin}})
+**{{D|Radiation}} ({{D|Sentient}} and {{D|The Murmur}})
+**{{D|Gas}} ({{D|Infested Deimos}})
+*Damage Resistance reduction by {{Arcane|Magus Accelerant}}, {{Arcane|Magus Destruct}} or {{A|Petrify}} will influence the new damage type.
+*Damage type does not change in response to [[Sentient]] damage adaptation. It will adapt as normal to a Sentient's weaknesses, but will not change if the Sentient adapts.
+*Damage remains {{D|Impact}} as when adapting to an enemy without any health type, or while {{D|Overguard}} is present.
+
+==Tips==
+*Due to the large [[status chance]] boost this augment gives, it pairs well with {{M|Condition Overload}}. Furthermore, players can forgo dual status-elemental mods, such as {{M|Volcanic Edge}}, and use mods that only increase Elemental Damage, like {{M|Molten Impact}}, to further increase Desert Wind's total damage.
+*The status chance boost also simplifies creating a Crit-Status hybrid build as status chance mods are no longer necessary.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|38.5.5}}
+*Fixed Baruuk’s Reactive Storm Augment transforming all Melee damage into the enemy’s weakness type, instead of just the base Impact Damage.
+*Removed a feature of Baruuk’s Reactive Storm Augment that tried to build towards the enemy faction weakness that you modded for.
+**The enemy weakness targeted will now be consistent regardless of Mods, prioritizing Combined Elemental Damage types, and never choosing a Physical Damage type.
+**This also fixes an issue where Impact Damage was always prioritized instead of Corrosive Damage when fighting Grineer and Scaldra.
+*Fixed Baruuk’s Reactive Storm Augment combining base Elemental weaknesses with modded base Elements.
+
+{{ver|38.5.3}}
+*Baruuk’s Serene Storm:
+**Baruuk's Reactive Storm Augment will now prioritize Desert Wind's dominant damage type if it matches an enemy's weakness. 
+***If there are no matches, it will now prioritize the Combined Elemental damage type (Viral, Corrosive, etc.)
+
+{{ver|36}}
+;Baruuk Reactive Storm Changes
+
+We’ve updated his “Serene Storm” Augment to properly adapt to the new Vulnerabilities, rather than the optimal Health Type as was before.
+
+*Adjusted Baruuk’s Reactive Storm to utilize the new Vulnerabilities system rather than the Health Type system - Reactive Storm will behave the same way it did before, but we’re just ensuring it works properly with the new system!
+
+{{ver|31.1.5}}
+*Fixed Baruuk’s Reactive Storm Augment doing astronomical amounts of damage that ripped through time and space, and would eventually cause him to stop doing damage altogether, as reported here: https://forums.warframe.com/topic/1300588-baruuks-over-damage
+
+{{ver|27.2.2}}
+*Increased the base Status Chance of Desert Wind to 15% (from 10%), while also changing the Reactive Storm Augment to stack in the same manner other Status Mods do. This was missed in the Status changes but is a necessary change now. The following reflects the new Maximum:
+**Reactive Storm 35% to 250% Status Chance
+
+{{ver|27.2}}
+*Baruuk’s Reactive Storm Augment Mod will now also apply its Status Chance and damage type matching to enemy weakness on Serene Storm’s AOE attacks. 
+**''Previously the Augment was only applying to close-combat attacks - we decided to extend this to Serene Storm’s AOE waves to give more flexibility to the Augment’s use. We'll be monitoring the change as you play and test it for any potential adjustments.''
+
+{{ver|27.1.0.1}}
+*Fixed Baruuk's Reactive Storm Augment resetting the Status Chance back to non-Augmented values after a direct punch to someone.
+
+{{ver|27.1}}
+*Introduced.
+}}
+{{ver/Lu|27.2}}
+
+{{AugmentNav}}
+
+[[es:Tormenta reactiva]]
+[[fr:Tempête Réactive]]
+[[ru:Реактивный Шторм]]
+[[Category:Mods]]
+[[Category:Rare Mods]]
+[[Category:Warframe Mods]]
+[[Category:Augment Mods]]
+[[Category:Syndicate Offerings]]
+[[Category:Update 27]]
+[[Category:Zenurik Mods]]
+[[Category:Baruuk]]
+[[uk:Наростальна буря]]

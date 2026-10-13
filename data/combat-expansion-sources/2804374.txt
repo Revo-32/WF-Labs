@@ -1,0 +1,209 @@
+{{UpdateMe|We might need a better definition of DoT for non-Status classification. Is {{A|Crush}}, {{A|Magnetize}}, and {{A|Tornado}} DoT?}}
+'''Damage over Time''' (or '''DoT''') describes effects that periodically deal [[damage]] to targets over a set period of time. As opposed to applying damaging effects upon hitting the target's [[hitbox]], DoT effects will deal damage per tick until the DoT duration ends. A DoT tick typically lasts 1 second and may be applied upon DoT trigger without delay.
+
+DoT damage can be ignored if the target becomes [[invulnerable]] during the DoT effect or if the associated Status Effect is cleansed prematurely.
+
+The total damage a DoT deals from [[Status Effect]]s is indicated by a green indicator on the target's [[Health]]/[[Shield]]/{{D|Overguard}} bar, which darkens if enough DoTs are applied to kill the target.
+
+==Damage over Time Effects==
+===Status Effects===
+These [[Status Effect]]s deal DoT when procced:
+{| class="wikitable"
+|-
+! Damage Type !! Status Effect !! Base Duration !! Delay? !! Refreshable? !! Max # Stacks !! Notes
+|-
+| {{D|Slash}} || {{D|Bleed}} || 6-seconds || 1-second delay || DoT not refreshable || No limit || Single-target
+|-
+| {{D|Heat}} || {{D|Ignite}} || 6-seconds || 1-second delay || DoT instance can be refreshed || No limit || Single-target, unique stacking mechanic
+|-
+| {{D|Toxin}} || {{D|Poison}} || 6-seconds || 1-second delay || DoT not refreshable || No limit || Single-target
+|-
+| {{D|Electricity}} || {{D|Tesla Chain}} || 6-seconds || No delay, last tick deals no damage || DoT not refreshable || No limit || [[Area of Effect]]
+|-
+| {{D|Blast}} || {{D|Detonate}} || 1.5-seconds || 1.5-second delay, last tick does damage || DoT not refreshable || 10 || Not true damage over time. Technically each Blast proc instance is delayed damage.
+|-
+| {{D|Gas}} || {{D|Gas Cloud}} || 6-seconds || No delay, last tick deals no damage || DoT not refreshable || 10 || [[Area of Effect]]
+|-
+|}
+
+{| class="wikitable"
+|+ Damage Tick and Proc Duration
+|-
+! colspan=2 | Time From Initial Proc
+| 0s || 1s || 2s || 3s || 4s || 5s || 6s 
+|-
+! rowspan=6 style="writing-mode: sideways-lr; white-space: nowrap; min-width: 20px;" | Damage Tick<br />Occurred?
+! {{D|Slash}}
+| ❌ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ 
+|-
+! {{D|Heat}}
+| ❌ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ 
+|-
+! {{D|Toxin}}
+| ❌ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ 
+|-
+! {{D|Electricity}}
+| ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ❌ 
+|-
+! {{D|Blast}}
+| ❌ || ❌ || ✔️ || ❌ || ❌ || ❌ || ❌
+|-
+! {{D|Gas}}
+| ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ✔️ || ❌ 
+|-
+|}
+
+====In Empyrean====
+In [[Empyrean]] gamemode, damage types have different behavior:
+
+{| class="wikitable"
+|-
+! Damage Type !! Status Effect !! Base Duration !! Delay? !! Refreshable?
+|-
+| {{D|Slash}} || colspan=4 | Not DoT
+|-
+| {{D|Heat}} || {{D|Sear}} || 5-seconds || No delay || DoT instance can be refreshed
+|-
+| {{D|Toxin}} || colspan=4 | Not DoT
+|-
+| {{D|Electricity}} || colspan=4 | Not DoT
+|-
+| {{D|Blast}} || colspan=4 | Not available
+|-
+| {{D|Gas}} || colspan=4 | Not available
+|-
+|}
+
+===Weapons===
+Some [[Weapons]] have unique mechanics that apply a DoT effect independent of Status Effects.
+<gallery>
+Purgator1.png|link=Purgator 1|{{Weapon|Purgator 1}} ({{D|Gas}} proc on direct kill)
+Torid.png|link=Torid|{{Weapon|Torid}} (10 ticks over 10 seconds, 1-second delay)
+Stug.png|link=Stug|{{Weapon|Stug}} ({{D|Corrosive}} DoT, 2 ticks over 1 seconds, no delay)
+Pox.png|link=Pox|{{Weapon|Pox}} (4 ticks over 4 seconds, 1-second delay)
+CodaPox.png|link=CodaPox|{{Weapon|Coda Pox}} (4 ticks over 4 seconds, 1-second delay)
+Tysis.png|link=Tysis|{{Weapon|Tysis}} ({{D|Corrosive}} DoT, 3 ticks over 2 seconds, no delay)
+CodaTysis.png|link=Coda Tysis|{{Weapon|Coda Tysis}} ({{D|Corrosive}} DoT, 3 ticks over 2 seconds, no delay)
+Cryotra.png|link=Cryotra|{{Weapon|Cryotra}} (6 ticks over 5 seconds, no delay)
+Stinger.png|link=Stinger|{{Weapon|Stinger}} (3 ticks over 2 seconds, no delay)
+</gallery>
+
+===Abilities===
+*{{A|Desiccation}}, deal {{D|True}} damage over time
+*{{A|Discharge}}, deal {{D|Electricity}} damage over time (not proc)
+*{{A|Elemental Ward|Heat Elemental Ward}}, deal {{D|Heat}} damage over time (not proc)
+*{{A|Elemental Ward|Toxin Elemental Ward}}, deal % of an enemy's maximum health as {{D|Toxin}} damage over time (not proc)
+*{{A|Fire Walker}}, deal {{D|Heat}} damage over time to enemies standing in an AoE (not proc)
+*{{A|Hallowed Ground}}, deal {{D|Radiation}} damage over time to enemies standing in an AoE
+*{{A|Magnetize}}, deal {{D|Magnetic}} damage over time in an AoE
+*{{A|Scarab Swarm}}, deal % of max health as {{D|Corrosive}} damage over time
+*{{A|Shuriken}}, inflict forced {{D|Slash}} proc
+*{{A|Spores}}, deal scaling {{D|Corrosive}} damage over time based on active Spores
+*{{A|Seeking Talons}}, inflict {{D|Slash}} procs
+*{{A|Sow}}, deal {{D|True}} damage over time
+*{{A|Tentacle Swarm}}, deal {{D|Corrosive}} damage over time on captured enemies
+*{{A|Virulence}}, deal {{D|Viral}} damage over time to enemies standing in an AoE
+
+===Ability Augments===
+<gallery>
+CataclysmicGateMod.png|link=Cataclysmic Gate|{{M|Cataclysmic Gate}}
+ContagionCloudMod.png|link=Contagion Cloud|{{M|Contagion Cloud}}
+HallowedReckoningMod.png|link=Hallowed Reckoning|{{M|Hallowed Reckoning}}
+</gallery>
+
+===Other===
+<gallery>
+ExodiaContagion.png|link=Exodia Contagion|{{Arcane|Exodia Contagion}} (on direct hit, {{D|Blast}} DoT, 4 ticks over 4 seconds, 1-second delay)
+ResidualShock.png|link=Residual Shock|{{Arcane|Residual Shock}} ({{D|Electricity}} DoT)
+ResidualViremia.png|link=Residual Viremia|{{Arcane|Residual Viremia}} ({{D|Toxin}} DoT)
+InternalBleedingMod.png|link=Internal Bleeding|{{M|Internal Bleeding}}
+HemorrhageMod.png|link=Hemorrhage|{{M|Hemorrhage}}
+EndoparasiticVectorMod.png|link=Endoparasitic Vector|{{M|Endoparasitic Vector}}
+</gallery>
+
+==Increasing DoT Duration==
+These only affect DoT from Status Effects:
+<gallery captionposition="below" captionalign="center" hideaddbutton="true" spacing="small" navigation="true" position="center" bordersize="none" bordercolor="#FFFFFF">
+AugurSeekerMod.png|link=Augur Seeker|{{M|Augur Seeker}}
+ContinuousMiseryMod.png|link=Continuous Misery|{{M|Continuous Misery}}
+FrenziedPostureMod.png|link=Frenzied Posture|{{M|Frenzied Posture}}
+HunterTrackMod.png|link=Hunter Track|{{M|Hunter Track}}
+LastingStingMod.png|link=Lasting Sting|{{M|Lasting Sting}}
+LingeringTormentMod.png|link=Lingering Torment|{{M|Lingering Torment}}
+PerpetualAgonyMod.png|link=Perpetual Agony|{{M|Perpetual Agony}}
+RapidResilienceMod.png|link=Rapid Resilience|{{M|Rapid Resilience}}
+ToxicSequenceMod.png|link=Toxic Sequence|{{M|Toxic Sequence}}
+</gallery>
+
+===Duplicating Stacks===
+While not exactly increasing the base DoT duration, {{A|Sickening Pulse}} will extend active DoT Status Effects by creating a new proc instance with new timers.
+
+==Calculating Damage Over Time==
+{{Main|Damage/Calculation#Damage Over Time Final Calculations}}
+{| class="wikitable"
+|-
+|
+<math>{
+\text{Total Ticks} = \lfloor \text{Tick Rate} \times (\text{Duration} - \text{Delay Time}) \rfloor + 1
+}</math>
+|
+*Tick Rate for most effects is 1 tick per second.
+|-
+|
+<math>{
+\text{Total Damage over Time} = \text{Damage per Tick} \times \text{Total Ticks}
+}</math>
+|
+*Damage per Tick is affected by sources of Status Damage bonus
+|-
+|}
+
+For example, when an ability deals 600 damage per tick and it ticks twice per second, the ability will deal 1,200 damage per second. In other words, the ability has a DoT of 1,200.
+
+Tick rates vary across DoT sources. In the example above the tick rate was 2s<sup>-1</sup>, which is a common rate for DoT from Warframe abilities. For {{D|Bleed}} DoT, damage ticks 6 times over a 6 second duration; this results in a tick rate of 1s<sup>-1</sup>, and the same applies to all DoT from Status Effects.
+
+If the tick rate does not divide into the total duration evenly, the total number of ticks dealt is rounded down. For example, with a tick rate of 2s<sup>-1</sup> and a total duration of 3.4s, the first tick will occur at 0 seconds, with each subsequent tick occurring every 0.5 seconds until 3 seconds have passed. The last tick occurs here because the 3.4 second duration ends before the next tick can occur at the 3.5 second mark. As such, the total number of ticks that occurred is 7.
+
+==DoT Damage Scaling==
+If the initial hit is affected by the following, a resulting damage-dealing effect will also benefit accordingly:
+*[[Buff & Debuff|Damage Buffs]] and relevant [[Mods]].
+**This includes for example total damage multipliers (e.g. {{M|Furious Javelin}}, {{A|Eclipse}}), additive damage bonuses (e.g. {{M|Serration}} or {{A|Vex Armor}}), and enemy debuffs (e.g. {{A|Molecular Prime}}, {{A|Rest & Rage}}).
+***Weakspots generated by {{A|Sonar}} or {{M|Detect Vulnerability}} only increase damage of the initial hit, '''not''' the resulting proc damage.
+*Relevant elemental damage [[Mods]] (e.g. {{M|Hellfire}}, {{M|Malignant Force}}).
+**This only applies to <u>elemental</u> status effects, mods like {{M|Sawtooth Clip}} do not buff {{D|Slash}} status damage.
+**DoTs of <u>combined</u> status effects (i.e. {{D|Gas}}, {{D|Blast}}) are '''not''' buffed by their component mods (e.g. {{M|Thermite Rounds}}+{{M|Infected Clip}}).
+***The only way to buff them is by using literal elemental damage (e.g. {{M|Leaded Gas}}, {{M|Valence Formation}}, {{M|Thermal Transfer}}).
+***This also works in reverse. For example: using {{A|Toxic Lash}} with {{D|Corrosive}} mods (e.g. {{M|Infected Clip}} and {{M|Stormbringer}}) '''will''' buff the forced {{D|Toxin}} DoT.
+*[[Critical Hit]]s and [[Stealth#Stealth Damage Bonus|Stealth Damage Bonus]].
+*[[Status Damage]] bonuses (e.g. {{M|Rifle Elementalist}}).
+*[[Melee#Combo Counter|Melee Combo Counter]] and [[Sniper Rifle|Sniper Combo Counter]].
+*[[Enemy Body Parts|Body part multipliers]].
+*[[Faction Damage Bonus]] (e.g. {{M|Bane of Infested}}, {{A|Roar}}).
+**Due to the nature of Faction Damage Bonuses, they are applied once more during the calculation of damaging status effects, even though they already affect the initial hit. 
+***For example: a weapon with an innate '''100''' damage modded with {{M|Serration}} and {{M|Bane of Grineer}}, a {{D|Slash}} proc will deal the following damage per tick:<!-- 
+--><br/>'''{{Math|Bleed per tick {{eql}} 100 {{mul}} (1 + {{M|Serration|1.65}}) {{mul}} {{text||0.35|hover=0.35 is the multiplier for Bleed ticks.}} {{mul}} (1 + {{M|Bane of Grineer|0.3}}) {{text||^2|hover=Faction Damage gets applied twice for this.}} {{mul}} (1 + {{M|Rifle Elementalist|0.9}})|t=y}}'''
+
+==DoT Detonation==
+DoT effects may end prematurely but apply all of their damage ticks in a single damage instance under these effects:
+*{{A|Expedite Suffering}}
+*{{A|Final Verse}} (Tragedy)
+*{{M|Divine Retribution}}
+*{{Weapon|Harmony}} Heavy Attack
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|43}}
+;Damage Over Time Preview
+
+Damage Over Time (DOT) Status Effects are now reflected by a new “Damage Over Time Preview” indicator on healthbars, showcasing the exact amount of damage they will deal over their duration.
+
+*This new indicator will display the damage that will be dealt across Health, Shields, and/or Overguard.
+*Damage Over Time that applies lethal damage will result in a black outline around the health bar. 
+*This indicator only applies to DOT from Status Effects, not Abilities that deal damage over time.
+**Ex: Damage from Saryn’s Spores will not be reflected in this new indicator, but damage from the Status Effects dealt by Koumei’s Bunraku will. 
+*Players can change the color of this indicator via the Customize Hud Colors screen in the Accessibility settings. 
+}}
+
+{{DamageNav}}
+[[Category:Mechanics]]
+[[Category:Damage]]

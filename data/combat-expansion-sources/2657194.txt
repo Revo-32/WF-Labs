@@ -1,0 +1,59 @@
+{{ModBox}}
+'''Galvanized Reflex''' is the [[Galvanized Mods|Galvanized]] variant of {{M|Reflex Coil}}, increasing [[Heavy Attack Efficiency]] while increasing [[Initial Combo]] on kill.
+
+==Stats==
+* Note: The in-game mod description rounds the value. The true values are as follows:
+{| class="emodtable"
+|-
+![[Mods#Mod Rank|Rank]]
+!Heavy Attack Efficiency
+!Initial Combo
+!Max Bonus
+![[Mods#Mod Power Cost|Cost]]
+|-
+|0|| +4.5%|| +1.85|| +7.4||2
+|-
+|1|| +9.1%|| +3.7|| +14.8||3
+|-
+|2|| +13.6%|| +5.55|| +22.2||4
+|-
+|3|| +18.2%|| +7.4|| +29.6||5
+|-
+|4|| +22.7%|| +9.25|| +37||6
+|-
+|5|| +27.3%|| +11.1|| +44.4||7
+|-
+|6|| +31.8%|| +12.95|| +51.8||8
+|-
+|7|| +36.4%|| +14.8|| +59.2||9
+|-
+|8|| +40.9%|| +16.65|| +66.2||10
+|-
+|9|| +45.5%|| +18.5|| +74||11
+|-
+|10||+50%||+20.35|| +81.4||12
+|}
+
+==Acquisition==
+This mod can be bought from the [[Arbitrations]] vendor in the [[Arbiters of Hexis]] room in [[Relay]]s for 20 {{Resource|Vitus Essence}}.
+
+==Notes==
+==Known Bugs==
+*Killing enemies with [[Archmelee]]s also increase the stack, but the bonus does not apply.
+==Trivia==
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|37.0.1}}
+*Fixed the Galvanized Reflex Mod having the incorrect Fusion Endo cost (10k) to bring them to max rank. 
+**It will now cost 30k Endo, as intended, to match other Galvanized mods. For those of you who fused it to max before this hotfix, put the Endo you saved into a piggy bank!
+
+{{ver|37}}
+*Introduced.
+}}
+
+{{MeleeMods}}
+[[es:Reflejo galvanizado]]
+[[Category:Galvanized Mods]]
+[[Category:Melee Mods]]
+[[Category:Update 37]]

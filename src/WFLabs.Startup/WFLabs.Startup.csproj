@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><AssemblyName>WFLabs.Startup</AssemblyName><ApplicationIcon>../TennoForge.Desktop/Assets/Brand/wf-labs.ico</ApplicationIcon></PropertyGroup>
+  <ItemGroup><Compile Include="../TennoForge.Desktop/ClientPreferences.cs" Link="ClientPreferences.cs" /></ItemGroup>
+</Project>

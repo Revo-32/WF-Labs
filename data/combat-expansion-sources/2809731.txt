@@ -1,0 +1,58 @@
+{{ModBox}}
+<section begin=intro />
+'''Rubble Heap''' is a [[Warframe Augment Mod]] for {{WF|Atlas}}' [[Atlas/Abilities#Passive|passive]] that makes {{A|Landslide}} cost no energy, increases its damage, and increases its speed when his Rubble count is above a threshold of '''1400'''.
+<section end=intro />
+
+==Stats==
+{| class="emodtable"
+|-
+! [[Mod#Mod Rank|Rank]]
+! Damage & speed multiplier
+! [[Mod#Attributes|Cost]]
+|-
+| 0 || 1.25x || 6
+|-
+| 1 || 1.5x || 7
+|-
+| 2 || 1.75x || 8
+|-
+| 3 || 2x || 9
+|}
+
+==Acquisition==
+*This mod can be acquired by attaining the rank of '''General''' under {{Faction|Steel Meridian}}, or the rank of '''Exalted''' under the {{Faction|Red Veil}}, and spending {{sc|25,000}} to purchase.
+*This mod can periodically be acquired from [[The Circuit]].
+
+==Notes==
+*Damage bonus is additive to the one provided by [[Ability Strength]] (equivalent to +100% Ability Strength).
+**This diminishes the effectiveness of modding for Ability Strength alongside the Augment.
+*Landslide dash range is extended 2x further, targeting enemies up to 24m away.
+**Speed is doubled, so travel time is the same.
+*Rubble requirement, damage bonus and dash range are '''not''' affected by mods.
+*Landslide attack speed and cast time is unchanged.
+*Energy cost becomes zero, and no energy is needed to cast landslide.
+*Synergizes well with {{M|Path of Statues}}, which eliminates the need to recast {{A|Petrify}} in target-rich environments. This can be used to remove any reliance on your energy pool.
+
+==Patch History==
+{{Scrollbox/Article|
+{{ver|32}}
+*Fixed Zenurik’s Inner Might causing Atlas’ Rubble Heap Augment Mod to cost Energy even when you have over 1400 rubble.
+
+{{ver|31.6}}
+*Fixed the Rubble Heap Augment mod not granting free casts of Atlas’ Landslide if Inner Might was equipped.
+
+{{ver|28.0.6}}
+*Fixed Atlas ‘Rubble Heap’ Augment for Client players insisting that you needed energy to cast Landslide even though it was free.
+
+{{ver|27.5.4}}
+*Introduced.
+}}
+{{AugmentNav}}
+[[es:Montón de escombros]]
+[[ru:Груда Булыжников]]
+__NOTOC__
+[[Category:Atlas]]
+[[Category:Warframe Mods]]
+[[Category:Augment Mods]]
+[[Category:Update 27]]
+[[uk:Купа щебеню]]

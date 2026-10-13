@@ -1,0 +1,60 @@
+<tabber>
+|-|Valence Block=<div style="display:none;">'''Valence Block'''<br></div>
+Purifying himself from all ailments, {{WF|Lavos}} cleanses all active negative [[Status Effect]]s and gains status immunity for <u>'''10'''</u> seconds upon collecting an Energy or Universal [[Pickups#Orbs|Orb]]. Picking up an Energy or Universal Orb has a cooldown of <u>'''5'''</u> seconds.
+*Buff duration is renewed to full upon collecting a new orb.
+*Valence Block buff icon and timer are shown beside Lavos' shield and health indicators.
+*While activated, three serpent-like energy particle effects encircle Lavos' body.
+*If Lavos is injured with missing health, Universal Orbs are collectible to heal him with no cooldown period in between.
+*When Lavos' [[Companion]] is equipped with {{M|Synth Fiber}}, all nearby Health and Universal Orbs will be collected, bypassing Lavos' innate orb pickup cooldown entirely.
+
+|-|Special Casting=<div style="display:none;">'''Special Casting'''<br></div>
+==Stats and Modding==
+{{WF|Lavos}} has no [[energy]] capacity and his abilities do not use any resource to activate. Instead, each of his abilities are free to cast with a '''cooldown''' in between uses. The {{Stat|Ability Efficiency}} stat will instead affect the cooldown reduction effect from {{A|Transmutation Probe}} and {{M|Swift Bite}}.
+*Mods which convert energy spent on abilities to shields, such as {{M|Brief Respite}} or the [[Set Mods#Augur Mod Set|Augur Mod Set]], do '''not''' replenish shields.
+*Because Lavos can still pick up energy orbs, mods or arcanes that benefit from picking up energy, such as {{M|Equilibrium}}, {{M|Energy Conversion}}, and {{Arcane|Arcane Energize}}, still function.
+*While piloting a [[Railjack]], all [[Plexus#Battle|Battle Mods]] will have a <u>'''10'''</u> second cooldown.
+*Subsumed abilities injected into Lavos via the [[Helminth]] system will cost <u>'''0'''</u> energy, but instead incur a <u>'''10'''</u> second cooldown after cast and disable the elemental imbuement hold-function (see below) associated with the ability button.
+**On non-recastable abilities (e.g. {{A|Roar}}), the cooldown begins after the ability's duration expires, unless modded with an augment that allows it to be recastable (e.g. {{M|Piercing Roar}}).
+**On channeled abilities (e.g. {{A|Gloom}}), they instead have a {{Stat|Ability Duration|icon=only}}'''12''' second base duration.
+
+The {{Stat|Ability Duration}} stat will also affect the '''Status Duration''' stat uniquely innate to Lavos, which extends or shortens the duration of all status effects created by Lavos using his weapons and abilities.
+*Bonus is additive with other sources of Status Duration.
+
+==Elemental Imbuement==
+Experiment and unleash volatile mixtures of the deadly elements. '''Hold''' down one of the four ability buttons (default {{Keybind|1}},{{Keybind|2}},{{Keybind|3}},{{Keybind|4}}) to imbue a Primary Elemental damage type ({{D|Toxin}}, {{D|Cold}}, {{D|Electricity}}, and {{D|Heat}} respectively) into the mixing vial displayed above Lavos' ability icons. Imbuement has no cost nor cooldown between uses.
+*Elemental imbuement is available by default to Lavos at Warframe Rank 0 without requiring his abilities to be fully unlocked.
+*Primary Elements are shown in the four smaller diamond-shaped icons below the mixing vial. When an ability button is held down, its diamond icon is briefly highlighted until the element is mixed in.
+*Combine with a different element to produce a Secondary Elemental damage type: {{D|Blast}} ({{Keybind|2}}+{{Keybind|4}}), {{D|Corrosive}} ({{Keybind|1}}+{{Keybind|3}}), {{D|Gas}} ({{Keybind|1}}+{{Keybind|4}}), {{D|Magnetic}} ({{Keybind|2}}+{{Keybind|3}}), {{D|Radiation}} ({{Keybind|3}}+{{Keybind|4}}), and {{D|Viral}} ({{Keybind|1}}+{{Keybind|2}}).
+**Inputs can be in any order, or the hotkeys can be held down together to instantly produce a Secondary Elemental damage type.
+*The Imbued Primary or Secondary Element is shown in the vial with a colorcoded emblem and plays a unique sound effect upon mixing.
+*With an element in the mixing vial, Lavos' next ability cast drains the vial to add the Primary or Secondary Elemental damage type, onto the chosen ability dealing an extra instance of damage and status proc.
+**The same Primary Elemental damage type can be imbued onto an ability that already inflicts that damage type (e.g. {{A|Ophidian Bite}} imbued with {{D|Toxin}}, {{A|Vial Rush}} imbued with {{D|Cold}}, etc) to double the damage and status proc.
+**Imbued Primary Elemental damage types do '''not''' merge with the ability's innate damage type.
+**Non-damaging status effects inflicted by all of Lavos' abilities ({{D|Cold}}, {{D|Corrosive}}, {{D|Magnetic}}, {{D|Radiation}}, and {{D|Viral}}) will proc <u>'''3'''</u> stacks in a single application of elemental status.
+***{{D|Blast}}, despite being damaging, still exhibits this behavior as well.
+**Lavos' mixing vial is only cleared of its elemental contents upon imbuing an ability.
+**Elements can be imbued even if Lavos cannot use the ability.
+*Because imbuement is only available from Lavos' original abilities, a subsumed ability replacement from the [[Helminth]] system will disable the associated element.
+**For example, applying a subsumed ability over top of Lavos's first ability will disable imbuement of Toxin.
+**Imbued elements also cannot be applied to subsumed abilities.
+
+|-|Rank Bonuses=<div style="display:none;">'''Rank Bonuses'''<br></div>
+When Lavos ranks up, he receives a special set of rank bonuses which are indicated at the top-left of the Warframe Upgrade screen:
+
+*'''+20''' Base [[Health]] every three ranks, starting at rank '''1'''.
+*'''+10''' Base [[Shield]] every three ranks, starting at rank '''2'''.
+*'''+10''' Base [[Armor]] every three ranks, starting at rank '''3'''.
+
+At rank '''30''', this results in a total of:
+*'''+200''' Base Health
+*'''+100''' Base Shield
+*'''+100''' Base Armor
+</tabber>
+
+{{#tag:tabber|
+{{!}}-{{!}} Augment = 
+[[File:ValenceFormationMod.png|200px|left]]
+{{main|Valence Formation}}
+{{#lst:Valence Formation|intro}}
+{{#lsth:Valence Formation|Stats}}
+}}
