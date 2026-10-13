@@ -1,0 +1,12 @@
+# 고정 원문과 근거 자료는 체크아웃에서도 바이트를 그대로 보존한다.
+data/** -text
+*.cs text eol=lf
+*.csproj text eol=lf
+*.props text eol=lf
+*.ps1 text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+*.ttf binary
+*.ico binary
+*.png binary
