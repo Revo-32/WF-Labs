@@ -24,7 +24,9 @@ jobs:
       - name: 업로드 대상 파일 검사
         run: python -X utf8 tools/release-preflight.py
       - name: 계산 및 실제 WPF 화면 검증
-        run: ./tools/validate.ps1 -Dotnet (Get-Command dotnet).Source
+        run: |
+          ./tools/prepare-ci-display.ps1
+          ./tools/validate.ps1 -Dotnet (Get-Command dotnet).Source
       - name: 설치·업데이트 패키지 생성
         env:
           WF_REPOSITORY: ${{ github.repository }}
