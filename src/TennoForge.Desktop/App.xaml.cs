@@ -17,6 +17,16 @@ public partial class App : Application
         Theme.Apply(true);
         UiFonts.PersistChanges=!e.Args.Any(a=>a.StartsWith("--")&&(a.Contains("check")||a.Contains("smoke")||a.Contains("preview")||a=="--layout-probe"));
         UiFonts.Apply(UiFonts.PersistChanges?UiFonts.Read().Id:"jamsil");
+        if(!UiFonts.PersistChanges&&!e.Args.Contains("--monitor-check"))
+            EventManager.RegisterClassHandler(typeof(MainWindow),FrameworkElement.LoadedEvent,new RoutedEventHandler((sender,loaded)=>
+            {
+                // A headless Windows runner can expose a 1024x768 desktop. WPF's
+                // native maximum tracking size otherwise silently shrinks our offscreen
+                // 1760x920 fixtures. Keep the real HWND at the requested test size;
+                // production and physical-monitor checks still obey MonitorWorkArea.
+                if(sender is MainWindow window&&ReferenceEquals(loaded.OriginalSource,window))
+                {window.MinWidth=Math.Max(1760,window.Width);window.MinHeight=Math.Max(920,window.Height);window.UpdateLayout();}
+            }));
         if(e.Args.Length>=2&&e.Args[0] is "--native-file-check" or "--monitor-check" or "--workspace-produce-check" or "--workspace-restore-check")
         {
             var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
@@ -464,6 +474,19 @@ public partial class App : Application
         =>Render((FrameworkElement)w.Content,path,width,height,scale,w as MainWindow);
     internal static void Render(FrameworkElement root,string path,int width,int height,double scale=1,MainWindow? previewWindow=null)
     {
+        var nativePreview=Window.GetWindow(root) is MainWindow {IsVisible:true} host&&ReferenceEquals(host.Content,root);
+        if(nativePreview&&Window.GetWindow(root) is {} native)
+        {
+            // Whole-window previews must measure the requested viewport, not leave
+            // a desktop-sized image in the corner of a larger PNG canvas.
+            native.MinWidth=width;native.MinHeight=height;
+            // A prior larger minimum can clamp an earlier Width assignment while
+            // retaining its requested value. Force a fresh native resize after lowering it.
+            native.ClearValue(Window.WidthProperty);native.ClearValue(Window.HeightProperty);
+            native.Width=width;native.Height=height;
+            native.Dispatcher.Invoke(()=>{},System.Windows.Threading.DispatcherPriority.ApplicationIdle);
+            native.UpdateLayout();
+        }
         Visual visualRoot=root;
         while(VisualTreeHelper.GetParent(visualRoot) is Visual parent)visualRoot=parent;
         VisualTreeHelper.SetRootDpi(visualRoot,new DpiScale(scale,scale));
@@ -475,6 +498,8 @@ public partial class App : Application
         }
         Invalidate(root);
         root.Measure(new Size(width, height)); root.Arrange(new Rect(0, 0, width, height)); root.UpdateLayout();
+        if(nativePreview&&(Math.Abs(root.ActualWidth-width)>2||Math.Abs(root.ActualHeight-height)>2))
+            throw new InvalidOperationException($"검수 창 크기 불일치: 요청 {width}×{height}, 실제 {root.ActualWidth}×{root.ActualHeight}, window={Window.GetWindow(root)?.Width}×{Window.GetWindow(root)?.Height}, min={Window.GetWindow(root)?.MinWidth}×{Window.GetWindow(root)?.MinHeight}, actual={Window.GetWindow(root)?.ActualWidth}×{Window.GetWindow(root)?.ActualHeight}, scale={scale}");
         previewWindow?.SettleScenarioPreviewForCheck();root.UpdateLayout();
         var bitmap = new RenderTargetBitmap((int)(width*scale), (int)(height*scale), 96*scale, 96*scale, PixelFormats.Pbgra32); bitmap.Render(root);
         var encoder = new PngBitmapEncoder(); encoder.Frames.Add(BitmapFrame.Create(bitmap));

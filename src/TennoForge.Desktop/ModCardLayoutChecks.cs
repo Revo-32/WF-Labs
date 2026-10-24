@@ -13,6 +13,21 @@ public sealed partial class MainWindow
         var checks=new List<string>();var originalFont=UiFonts.Current.Id;
         try
         {
+            // Reproduce the CI runner's native window constraint on any desktop.
+            // The exported viewport must really be 1760x920, not a small window
+            // surrounded by empty pixels in a larger PNG.
+            var maximumWidth=MaxWidth;var maximumHeight=MaxHeight;
+            try
+            {
+                MinWidth=0;MinHeight=0;MaxWidth=1044;MaxHeight=788;Width=1044;Height=788;
+                UpdateLayout();await Dispatcher.InvokeAsync(()=>{},DispatcherPriority.ApplicationIdle);
+                render((FrameworkElement)Content,"native-viewport-small-desktop",1760,920,1);
+                if(Math.Abs(((FrameworkElement)Content).ActualWidth-1760)>2||Math.Abs(((FrameworkElement)Content).ActualHeight-920)>2)
+                    throw new Exception("작은 데스크톱 제약이 검수용 뷰포트를 축소함");
+                CheckModdingLayout("작은 데스크톱 제약 · 실제 1760×920");
+                checks.Add("작은 데스크톱의 native 창 제약에서도 요청한 검수 뷰포트와 보관함 두 줄 유지");
+            }
+            finally{MaxWidth=maximumWidth;MaxHeight=maximumHeight;}
             // Exercise the real card factory, with every finish and the reported name,
             // against the independently measured safe area of the 160 x 104 frame.
             foreach(var font in UiFonts.Choices)
