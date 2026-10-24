@@ -15,7 +15,7 @@ internal static class Backdrop
         var hwnd = new WindowInteropHelper(window).Handle;
         if (hwnd == IntPtr.Zero) return false;
         var useDark=dark?1:0;DwmSetWindowAttribute(hwnd,20,ref useDark,sizeof(int));
-        if (HwndSource.FromHwnd(hwnd)?.CompositionTarget is { } target) target.BackgroundColor = (Color)ColorConverter.ConvertFromString(dark?"#0C131D":"#F0F5F8");
+        if (HwndSource.FromHwnd(hwnd)?.CompositionTarget is { } target) target.BackgroundColor = (Color)ColorConverter.ConvertFromString(dark?"#101112":"#F4F4F2");
         var margins = new Margins();
         DwmExtendFrameIntoClientArea(hwnd, ref margins);
         var corners = 2; DwmSetWindowAttribute(hwnd, 33, ref corners, sizeof(int));

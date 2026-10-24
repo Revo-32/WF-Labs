@@ -11,7 +11,7 @@ internal static class EntryPoint
             .OnBeforeUpdateFastCallback(_=>ClientIntegration.StopOwnedWatcher())
             .OnAfterUpdateFastCallback(_=>ClientIntegration.RestoreStartup())
             .OnBeforeUninstallFastCallback(_=>ClientIntegration.RemoveStartup()).Run();
-        var check=args.Any(a=>a.EndsWith("smoke",StringComparison.Ordinal)||a.Contains("preview",StringComparison.Ordinal)||a.Contains("check",StringComparison.Ordinal));
+        var check=args.Any(a=>a=="--layout-probe"||a.EndsWith("smoke",StringComparison.Ordinal)||a.Contains("preview",StringComparison.Ordinal)||a.Contains("check",StringComparison.Ordinal));
         var identity=WindowsIdentity.GetCurrent().User!.Value;
         using var singleton=new Mutex(true,@"Local\WFLabs.App."+identity,out var owner);
         if(!owner&&!check){try{using var signal=EventWaitHandle.OpenExisting(@"Local\WFLabs.Show."+identity);signal.Set();}catch(WaitHandleCannotBeOpenedException){}return;}

@@ -1,4 +1,4 @@
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using TennoForge.Core;
@@ -13,7 +13,7 @@ public sealed partial class MainWindow
         {
             var args=new KeyEventArgs(Keyboard.PrimaryDevice,PresentationSource.FromVisual(this),0,key){RoutedEvent=Keyboard.PreviewKeyDownEvent};box.QueryInput.RaiseEvent(args);
         }
-        foreach(var box in new[]{weapon,rivenWeapon})
+        foreach(var box in new[]{weapon})
         {
             if(box==weapon)ShowModding();else ShowRivens();
             UpdateLayout();box.ApplyTemplate();

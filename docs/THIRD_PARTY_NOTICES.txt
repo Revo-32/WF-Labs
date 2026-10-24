@@ -9,6 +9,9 @@ Warframe 관련 이름·게임 자료의 권리는 원권리자에게 있습니�
 - Digital Extremes Public Export: PUBLIC-EXPORT-NOTICE.txt 참조.
 
 폰트:
+- 더잠실체: Copyright 롯데쇼핑(주)롯데마트사업부. Fonts/THE-JAMSIL-LICENSE.txt,
+  Fonts/The_Jamsil_LICENSE_Korean.pdf 및 Fonts/THE-JAMSIL-SOURCE.json 참조.
+  공식 TTF 원본을 수정·포맷 변환 없이 앱 UI에 내장합니다.
 - Wanted Sans: Fonts/OFL.txt 및 Fonts/SOURCE.txt 참조.
 - 수학 공식은 시스템에 설치된 Cambria Math를 참조하며 해당 폰트 파일을 재배포하지 않습니다.
 
@@ -24,3 +27,13 @@ Warframe 관련 이름·게임 자료의 권리는 원권리자에게 있습니�
 WF Labs 자체 소스는 공개 열람용이며 별도의 재사용 라이선스를 부여하지 않았습니다.
 COPYRIGHT.md를 참조하세요.
 이 문서는 타사 자료의 권리나 사용 조건을 변경하지 않습니다.
+
+Pretendard v1.3.9 — Copyright (c) 2021, Kil Hyung-jin (https://github.com/orioncactus/pretendard).
+SIL Open Font License 1.1. 원본 Regular/SemiBold/Bold TTF를 수정 없이 내장합니다.
+라이선스: Fonts/PRETENDARD-LICENSE.txt; 출처·해시: Fonts/PRETENDARD-SOURCE.json
+
+극성 아이콘:
+- WARFRAME Wiki의 Madurai/Vazarin/Naramon 및 Umbra/Zenurik/Unairu/Penjaga SVG.
+  Warframe 게임 문양의 권리는 원권리자에게 있으며, WF Labs의 자체 코드 라이선스에 포함되지 않습니다.
+  추가 원본 URL·해시: src/TennoForge.Desktop/Assets/Polarities/sources-2026-10-24.json.
+  위키 콘텐츠 고지는 WF-WIKI-NOTICE.txt를 따릅니다. 원본 SVG를 수정하지 않고 UI에서 크기·색상만 적용합니다.

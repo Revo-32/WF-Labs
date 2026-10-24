@@ -1,0 +1,36 @@
+[
+  {
+    "weaponId": "wiki:primary/Ogris",
+    "parent": 1,
+    "child": 2,
+    "kind": "NightwatchNapalm",
+    "baseDamage": 150,
+    "statusChance": 0.68,
+    "statusDuration": 3,
+    "source": {
+      "title": "Nightwatch Napalm",
+      "revision": 2810155,
+      "timestamp": "2026-09-20T06:33:02Z",
+      "sha256": "824d114c2d63c2a99a5c455b14186ff5b343f227b4c0e93c38c63039fcf3df00",
+      "url": "https://wiki.warframe.com/w/Nightwatch_Napalm?oldid=2810155",
+      "batch": "5c70d3b6420543cc.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Ogris",
+    "parent": 1,
+    "child": 2,
+    "kind": "NightwatchNapalm",
+    "baseDamage": 150,
+    "statusChance": 0.68,
+    "statusDuration": 3,
+    "source": {
+      "title": "Nightwatch Napalm",
+      "revision": 2810155,
+      "timestamp": "2026-09-20T06:33:02Z",
+      "sha256": "824d114c2d63c2a99a5c455b14186ff5b343f227b4c0e93c38c63039fcf3df00",
+      "url": "https://wiki.warframe.com/w/Nightwatch_Napalm?oldid=2810155",
+      "batch": "5c70d3b6420543cc.json"
+    }
+  }
+]

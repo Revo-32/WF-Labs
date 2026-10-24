@@ -1,4 +1,4 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using TennoForge.Core;
@@ -14,10 +14,10 @@ public sealed partial class MainWindow
         try
         {
             var id=catalog.Weapons.Single(w=>w.EnglishName=="Nikana Prime").Id;
-            var roll=new RivenRoll(id,8,[new(RivenStat.Damage,97.8),new(RivenStat.StatusChance,53.5)],RivenValues.Version,BaseDrain:6,Polarity:"AP_ATTACK");
+            var roll=new RivenRoll(id,8,[new(RivenStat.Damage,195.7),new(RivenStat.StatusChance,106.9)],RivenValues.Version,BaseDrain:6,Polarity:"AP_ATTACK");
             board.ClearMods();ApplyRivenWorkbench(roll);ShowRivens();
             rivenPage!.Measure(new Size(1760,840));rivenPage.Arrange(new Rect(0,0,1760,840));rivenPage.UpdateLayout();
-            Descendants(rivenPage!).OfType<Button>().Single(b=>b.Content is string s&&s=="선택한 슬롯에 장착").RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Button.ClickEvent));
+            Descendants(rivenPage!).OfType<Button>().Single(b=>b.Content is string s&&s=="현재 근접 모딩에 가정 적용").RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Button.ClickEvent));
             Yes(page.Content==modPage&&ReadBuild().Riven?.Traits.SequenceEqual(roll.Traits)==true&&board.Slots[0]?.Rank==8&&current is not null,"리벤 실제 버튼 클릭 → 슬롯 장착·계산·모딩 복귀");
             var restored=JsonSerializer.Deserialize<Build>(JsonSerializer.Serialize(ReadBuild(),Catalog.Json),Catalog.Json)!;
             ApplyBuild(saved);ApplyBuild(restored);Yes(ReadBuild().Riven!.Traits.SequenceEqual(roll.Traits)&&ReadBuild().Riven!.BaseDrain==6,"리벤 수치·코스트·극성 저장 복원");
@@ -821,4 +821,3 @@ public sealed partial class MainWindow
         return encounterInputRows;
     }
 }
-

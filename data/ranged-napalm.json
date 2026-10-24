@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "title": "Napalm Grenades",
+      "revision": 2789386,
+      "timestamp": "2026-06-26T14:35:57Z",
+      "sha256": "9e78d9e7382145f15ff1a283a0376507c85d09daa163b872d301c502b674c2eb",
+      "url": "https://wiki.warframe.com/w/Napalm_Grenades?oldid=2789386",
+      "batch": "5c70d3b6420543cc.json"
+    },
+    {
+      "title": "Adhesive Blast",
+      "revision": 2721908,
+      "timestamp": "2026-01-11T23:18:47Z",
+      "sha256": "f6c42f8268ec0a03e23aa746cb6e5470b15c0c1a913f79d7d03998a1e5eef228",
+      "url": "https://wiki.warframe.com/w/Adhesive_Blast?oldid=2721908",
+      "batch": "b4199e11c4779a2f.json"
+    }
+  ],
+  "supplement": {
+    "url": "https://wikiwiki.jp/warframe/CARMINE%20PENTA",
+    "sha256": "ee1fee8384835578002599cd03f5d5ff23c9541666f65fe3e494b79370d74e02",
+    "retrievedAt": "2026-10-15T20:08:14.497173+00:00",
+    "evidence": "基礎ダメージを直撃 Heat 325、爆風 Heat 325に変更する。",
+    "artifact": "artifacts\\napalm-carmine-source.html"
+  },
+  "rules": "Secura example and Carmine supplementary source both 325 Heat direct and 325 Heat explosion. Patch: main Wiki says status on entry, no direct damage; supplementary 50/s damage conflicts, NOT adopted. Flat status +0.30 after mods."
+}

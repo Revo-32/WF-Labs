@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      "title": "Voltage Sequence",
+      "revision": 2655102,
+      "timestamp": "2025-01-06T23:49:36Z",
+      "sha256": "0a35924d99354e6ba13d8d06355f6cc93e6ab904d832751cc38a2e3a20f7c964",
+      "url": "https://wiki.warframe.com/w/Voltage_Sequence?oldid=2655102",
+      "batch": "8d6acc32d8d8f7db.json"
+    },
+    {
+      "title": "Arc Trap",
+      "revision": 2794509,
+      "timestamp": "2026-07-18T07:46:41Z",
+      "sha256": "765a7507f54053da4d9e7e5c0b1fb9870541c83da8784fa55bb873e371744861",
+      "url": "https://wiki.warframe.com/w/Arc_Trap?oldid=2794509",
+      "batch": "7774728aad08f940.json"
+    }
+  ],
+  "rules": "Voltage Sequence allied traps use 4m and rank duration, NOT enemy Arc Trap 8m/3s. 60Hz, 6–7 fixed Electricity, 100% status. Unknown cap/landing/damage distribution explicitly selected."
+}

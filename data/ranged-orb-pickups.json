@@ -1,0 +1,26 @@
+{
+  "Pickups": {
+    "title": "Pickups",
+    "revision": 2794089,
+    "timestamp": "2026-07-16T19:04:56Z",
+    "sha256": "373e8b684766b553d41c703f05ab852e27f07bd6bc2123fcce71708932ce6717",
+    "url": "https://wiki.warframe.com/w/Pickups?oldid=2794089",
+    "batch": "3ccc1104d47205d7.json"
+  },
+  "Mending Shot": {
+    "title": "Mending Shot",
+    "revision": 2813205,
+    "timestamp": "2026-09-25T23:14:08Z",
+    "sha256": "4cafef9bbff06e615478ae4135ac9dbdb27f646e68ccb75c9cdd4883230917e0",
+    "url": "https://wiki.warframe.com/w/Mending_Shot?oldid=2813205",
+    "batch": "4076bce93788d4fa.json"
+  },
+  "Energizing Shot": {
+    "title": "Energizing Shot",
+    "revision": 2694197,
+    "timestamp": "2025-08-18T19:48:51Z",
+    "sha256": "c039d3425750e1e7c10075cc064732da70f5d6286fa19ce40ca24b74a5015f8d",
+    "url": "https://wiki.warframe.com/w/Energizing_Shot?oldid=2694197",
+    "batch": "65ef989bc57a704e.json"
+  }
+}

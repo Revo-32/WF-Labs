@@ -6,7 +6,7 @@ public record SpliceValues(SpliceCandidate Candidate,EncounterRange Value,Encoun
 /// <summary>Displayed magnitudes, not hidden rolls or drop percentiles. Pinned Wiki revision 2817521.</summary>
 public static class RivenValues
 {
-    public const string Version="wiki-riven-2817521";
+    public const string Version=RivenBalance.Version;
     public const string Source="https://wiki.warframe.com/w/Riven_Mods?oldid=2817521";
     public static readonly IReadOnlyDictionary<RivenStat,double> Bases=new Dictionary<RivenStat,double>
     {
@@ -26,12 +26,12 @@ public static class RivenValues
     public static bool IsSpliced(RivenStat stat)=>RivenEngine.Recipes.Any(r=>r.Result==stat);
     public static string Unit(RivenStat stat)=>stat is RivenStat.Range?"m":stat is RivenStat.ComboDuration?"초":stat is RivenStat.InitialCombo?"":"%";
     public static string ModId(string weaponId)=>MeleeRuleCatalog.Load().Mods.Single(m=>m.Name==(ZawCatalog.IsZaw(weaponId)?"Zaw Riven Mod":"Melee Riven Mod")).Id;
-    public static double Disposition(string weaponId)=>MeleeRuleCatalog.Load().Weapon(weaponId).Raw.Number("Disposition");
+    public static double Disposition(string weaponId){_=MeleeRuleCatalog.Load().Weapon(weaponId);return RivenBalance.Multiplier;}
     public static void Validate(RivenRoll roll,bool values=true)
     {
         if(roll is null||roll.Traits is null||roll.Traits.Any(t=>t is null)||string.IsNullOrWhiteSpace(roll.WeaponId))throw new ArgumentException("리벤 무기·옵션 데이터가 비어 있습니다.");
         if(roll.Rank is <0 or >8||roll.RulesVersion!="44.1.0")throw new ArgumentException("리벤 랭크 또는 규칙 버전 오류");
-        if(roll.DispositionVersion!=Version)throw new ArgumentException("리벤 기질·수치 기준을 현재 위키 자료로 확인하세요.");
+        if(roll.DispositionVersion!=Version)throw new ArgumentException(RivenBalance.LegacyMessage);
         var p=roll.Traits.Count(t=>!t.Negative);var n=roll.Traits.Count(t=>t.Negative);
         if(p is <2 or >3||n>1||roll.Traits.Select(t=>t.Stat).Distinct().Count()!=roll.Traits.Length||roll.Traits.Count(t=>t.Spliced)>1)throw new ArgumentException("리벤은 중복 없이 양옵 2~3개, 음옵 최대 1개, 접합 최대 1개입니다.");
         foreach(var t in roll.Traits)

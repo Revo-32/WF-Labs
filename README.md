@@ -1,19 +1,29 @@
 # WF Labs
 
-## 0.8.0-preview.2 · 모딩·리벤 분석과 클라이언트 업데이트
+## 0.9.0-preview.1 · 주무기·보조무기와 리벤 확장
 
-근접 리벤의 수치 범위·14종 접합 예상, 쿠바 예산, 일반/접합 옵션 고정, 순환 예시 유지·채택, 작업 파일 저장/복원과 같은 모딩 조건의 DPS/TTK 비교를 제공한다. 추첨 예시는 가정이며 실제 게임 획득 확률이 아니다. [리벤 기능과 계산 근거](docs/RIVEN_WORKSHOP.md)를 참조한다.
+PC 한국어용 Warframe 빌드 분석 앱입니다. 근접·주무기·보조무기의 모딩, 적과 교전 조건, DPS·TTK와 A/B 비교를 제공합니다. 리벤의 종류별 수치 범위·접합·순환과 같은 빌드에서의 피해 비교도 연결되어 있습니다. 확정 규칙, 사용자 입력 시나리오, 근사는 결과에서 구분합니다.
 
-Windows x64 설치 파일은 [GitHub Releases](https://github.com/Revo-32/WF-Labs/releases)에서 제공한다. `WFLabs-win-Setup.exe`를 설치하면 .NET을 별도로 설치할 필요가 없다. 앱 상단 **업데이트**에서 새 버전 확인·다운로드·설치 후 재시작이 가능하다. 자동 확인·자동 다운로드와 Windows 로그인/Warframe 실행 자동 시작을 각각 설정할 수 있다. [설치·업데이트 문서](docs/DISTRIBUTION.md)에 배포·검증 절차를 정리했다.
+Windows x64 설치 파일은 [GitHub Releases](https://github.com/Revo-32/WF-Labs/releases/tag/v0.9.0-preview.1)에서 제공합니다. `WFLabs-win-Setup.exe`에는 .NET 런타임이 포함됩니다. 기존 설치본은 상단 **업데이트 → 확인/다운로드 → 설치 후 다시 시작**으로 갱신할 수 있습니다. 작업 중 강제 재시작하지 않습니다.
 
-자체 코드는 **공개 열람용**이며 별도의 수정·재사용·재배포 라이선스를 부여하지 않았다. [소스 공개와 권리](COPYRIGHT.md)를 참조한다. 위키 데이터·폰트 등은 기존 권리와 라이선스를 유지한다.
+- 검정·노랑 테마, 모딩/결과 5:5 배치, 하단 상황 설정 패널
+- 주·보조·근접 공통 모드 카드와 반투명 드래그, 한국어 명칭, 세 가지 내장 글꼴
+- 리벤 공통 배율 1.2, 접합·순환·쿠바 예산, DPS·TTK 비교
+- 일반 재실행/업데이트의 빌드·비교 기준·미완성 리벤 입력 보존
+- 클라이언트 업데이트 확인/다운로드, Windows 로그인/Warframe 실행 자동 시작 설정
+
+[이번 변경](docs/RELEASE_NOTES.md) · [설치·업데이트](docs/DISTRIBUTION.md) · [계산 근사](docs/RANGED_APPROXIMATIONS.md) · [원문 공백](docs/RANGED_SOURCE_GAPS.md) · [다음 기능 계획](docs/NEXT_FEATURES.md)
+
+자체 코드는 **공개 열람용**이며 별도의 수정·재사용·재배포 라이선스를 부여하지 않았습니다. [소스 공개와 권리](COPYRIGHT.md)를 참조하세요. 위키 데이터·폰트 등은 기존 권리와 라이선스를 유지합니다.
 
 ```powershell
 ./tools/validate.ps1
 ./tools/package.ps1
 ```
 
-기본 생성 위치: `builds/WF-Labs-0.8.0-preview.2/`. `release-config.json`은 `Revo-32/WF-Labs` 공개 Release에 연결한다. 미리보기 설치본은 공개된 미리보기와 정식 버전을 확인한다. draft Release는 업데이트 대상이 아니다.
+기본 생성 위치는 `builds/WF-Labs-0.9.0-preview.1/`입니다. 공개 Release의 feed와 전체 패키지로 업데이트하며 draft는 업데이트 대상이 아닙니다. 미리보기 설치본은 공개된 미리보기와 정식 버전을 확인합니다. 알려진 환경 검증 한계는 배포 문서에 기록합니다.
+
+아래 내용은 과거 버전의 작업 기록입니다. 현재 지원 범위는 위 문서와 [최신 구현 상태](docs/IMPLEMENTATION_STATUS.md)를 우선합니다.
 
 ## 2026-10-12 개발 작업본
 

@@ -1,11 +1,27 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Text.Json;
 using TennoForge.Core;
 
 var catalog = Catalog.Load();
+if(args.Length==2&&args[0]=="--ranged-extended-audit"){RangedCoverageAudit.Combat(args[1],true,true);return;}
+if(args.Length==2&&args[0]=="--ranged-approximation-audit"){RangedCoverageAudit.Combat(args[1],true);return;}
+if(args.Length==2&&args[0]=="--ranged-audit"){RangedCoverageAudit.Write(args[1]);return;}
+if(args.Length==2&&args[0]=="--ranged-combat-audit"){RangedCoverageAudit.Combat(args[1]);return;}
+if(args.Length>0&&args[0]=="--approximation-only")
+{
+ var errors=new List<string>();var passed=0;RangedApproximationChecks.Run((name,body)=>{if(args.Length>2&&!name.Contains(args[2]))return;try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);}});var approximationReport=JsonSerializer.Serialize(new{passed,failed=errors},Catalog.Json);if(args.Length>1)File.WriteAllText(args[1],approximationReport);Console.WriteLine(approximationReport);Environment.ExitCode=errors.Count==0?0:1;return;
+}
+if(args.Length>0&&args[0]=="--ranged-only")
+{
+    var errors=new List<string>();var passed=new List<string>();
+    RangedChecks.Run((name,body)=>{try{body();passed.Add(name);Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);Console.WriteLine("실패: "+name+": "+e.Message);}});
+    var rangedReport=JsonSerializer.Serialize(new{passed=passed.Count,failed=errors,tests=passed},Catalog.Json);
+    if(args.Length>1)File.WriteAllText(args[1],rangedReport);Console.WriteLine(rangedReport);Environment.ExitCode=errors.Count==0?0:1;return;
+}
 if(args.Length>0&&args[0]=="--riven-only")
 {
     var errors=new List<string>();var passed=0;
+    RangedRivenWorkshopChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);}});
     RivenWorkshopChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);}});
     Console.WriteLine(JsonSerializer.Serialize(new{passed,failed=errors},Catalog.Json));Environment.ExitCode=errors.Count==0?0:1;return;
 }
@@ -20,6 +36,9 @@ Build Build(params Mod[] mods) { var slots = new ModSlot?[8]; for (var i = 0; i 
 Calculation Calc(Build b) => DamageEngine.Calculate(catalog, b);
 var naked = Build();
 RivenWorkshopChecks.Run(Check);
+RangedRivenWorkshopChecks.Run(Check);
+RangedChecks.Run(Check);
+RangedApproximationChecks.Run(Check);
 Check("카탈로그 식별자 유일성", () => { Yes(catalog.Mods.Select(x=>x.Id).Distinct().Count()==122); Yes(catalog.Weapons.Length==229);Yes(catalog.Weapons.Select(w=>w.Id).Distinct().Count()==catalog.Weapons.Length); });
 Check("니카나 무모드 타격: 198 × (1 + 0.28 × 1.4)", () => Near(Calc(naked).ExpectedHit, 275.616));
 Check("크로넨 정상 피해 합계", () => Near(Calc(naked with {WeaponId=catalog.Weapons[1].Id}).Damage.Values.Sum(),212));

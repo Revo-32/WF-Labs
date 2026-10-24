@@ -1,0 +1,23 @@
+{
+  "page": "https://company.lottemart.com/company/font_jamsil.asp",
+  "download": "https://company.lottemart.com/company/file/The_Jamsil_TTF_2024.zip",
+  "files": [
+    {
+      "file": "The Jamsil 3 Regular.ttf",
+      "sha256": "ae6caf55e7f4e47d70712c37f962ba671b41b643e38dc78e927342a0f44cef1f"
+    },
+    {
+      "file": "The Jamsil 4 Medium.ttf",
+      "sha256": "028d1329a3ea35f7222d5e15f4fcbbd1f26b6e0dd389850299542f9ffcbbfb44"
+    },
+    {
+      "file": "The Jamsil 5 Bold.ttf",
+      "sha256": "cd9c49ca0c83f53742eec586c9a7ff32a2da16b9614a5c23e04c47c014998266"
+    },
+    {
+      "file": "The_Jamsil_LICENSE_Korean.pdf",
+      "sha256": "e38725fdc7260a2e290e718a74ca1c7bd51dad16baabe9c93f8209dfb24ffb3c"
+    }
+  ],
+  "note": "공식 TTF 원본을 수정·변환 없이 앱 리소스로 포함. 원본 라이선스 PDF 동봉."
+}

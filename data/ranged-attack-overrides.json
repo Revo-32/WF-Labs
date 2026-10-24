@@ -1,0 +1,67 @@
+[
+  {
+    "weaponId": "wiki:primary/Hind",
+    "attack": 1,
+    "values": {
+      "ShotType": "Hit-Scan"
+    },
+    "reason": "본문의 일반 탄환 보조 사격. 원본 모듈에서 ShotType만 누락됨.",
+    "source": {
+      "title": "Hind",
+      "revision": 2791912,
+      "timestamp": "2026-07-08T01:31:01Z",
+      "sha256": "1b4b40cda0727b8dfbeae68e3d9d969b35531ee1061bbda20119ae6e5a7ff8f7",
+      "url": "https://wiki.warframe.com/w/Hind?oldid=2791912",
+      "batch": "51ef13457a76413a.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Pandero Prime",
+    "attack": 1,
+    "values": {
+      "ShotType": "Hit-Scan"
+    },
+    "reason": "본문의 일반 탄환 보조 사격. 원본 모듈에서 ShotType만 누락됨.",
+    "source": {
+      "title": "Pandero Prime",
+      "revision": 2784085,
+      "timestamp": "2026-06-07T18:36:32Z",
+      "sha256": "1248aff873aafbd1cecd4c8094ddd6c8e445c19b672197a3664cc3896ef1d6cd",
+      "url": "https://wiki.warframe.com/w/Pandero_Prime?oldid=2784085",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Paracyst",
+    "attack": 1,
+    "values": {
+      "Trigger": "Charge"
+    },
+    "reason": "작살 충전 0.25초와 명중 후 4초간 5틱을 본문에 맞춰 연결.",
+    "source": {
+      "title": "Paracyst",
+      "revision": 2785461,
+      "timestamp": "2026-06-16T02:21:23Z",
+      "sha256": "96c24dd33f86fa244939bbc26c6d1ecc89763ee56face5bd8f4053cb1fbe1799",
+      "url": "https://wiki.warframe.com/w/Paracyst?oldid=2785461",
+      "batch": "908ead252b087ddb.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Paracyst",
+    "attack": 2,
+    "values": {
+      "ShotType": "DoT",
+      "Trigger": "Semi-Auto"
+    },
+    "reason": "작살 충전 0.25초와 명중 후 4초간 5틱을 본문에 맞춰 연결.",
+    "source": {
+      "title": "Paracyst",
+      "revision": 2785461,
+      "timestamp": "2026-06-16T02:21:23Z",
+      "sha256": "96c24dd33f86fa244939bbc26c6d1ecc89763ee56face5bd8f4053cb1fbe1799",
+      "url": "https://wiki.warframe.com/w/Paracyst?oldid=2785461",
+      "batch": "908ead252b087ddb.json"
+    }
+  }
+]

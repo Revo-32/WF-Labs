@@ -12,7 +12,7 @@ namespace TennoForge.Desktop;
 public sealed partial class MainWindow
 {
     private record CatalogRow(string Name,string EnglishName,string Category,string Source,object Item)
-    { public string Display=>Name+(Name==EnglishName?"":"  ·  "+EnglishName)+"\n"+Category; }
+    { public string Display=>Name+(Name==EnglishName?"":"  ·  "+EnglishName)+"\n"+Category+(Item is ReferenceWeapon{Localized:false} or ReferenceMod{Localized:false} or ArcaneDefinition{Localized:false}?" · 한국어 미확인 / 원문":""); }
     private FrameworkElement? catalogPage;
     private readonly ComboBox catalogKind=new(){ItemsSource=new[]{"무기","스탠스·공통 동작","아케인","모드","검증 기록"},SelectedIndex=0,Width=160};
     private readonly ComboBox catalogCategory=new(){Width=170};
@@ -27,9 +27,7 @@ public sealed partial class MainWindow
     {
         var root=new Grid();root.RowDefinitions.Add(new(){Height=GridLength.Auto});root.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});
         var toolbar=new DockPanel();DockPanel.SetDock(catalogKind,Dock.Left);toolbar.Children.Add(catalogKind);DockPanel.SetDock(catalogCategory,Dock.Left);catalogCategory.Margin=new(8,0,8,0);toolbar.Children.Add(catalogCategory);catalogSearch.ToolTip="한국어·영문 이름 또는 무기군 검색";
-        var searchHost=new Grid();searchHost.Children.Add(catalogSearch);
-        var placeholder=T("이름 · 무기군 검색",14,"#596B85");placeholder.Margin=new(11,0,0,0);placeholder.VerticalAlignment=VerticalAlignment.Center;placeholder.IsHitTestVisible=false;searchHost.Children.Add(placeholder);
-        catalogSearch.TextChanged+=(_,_)=>placeholder.Visibility=catalogSearch.Text.Length==0?Visibility.Visible:Visibility.Collapsed;toolbar.Children.Add(searchHost);
+        toolbar.Children.Add(new SearchField(catalogSearch,"이름 · 무기군 검색"));
         root.Children.Add(Stack(T("전체 자료",20),toolbar,Spacer(10),catalogCount));
         catalogList.SetResourceReference(Control.BackgroundProperty,"SolidSurfaceBrush");catalogList.SetResourceReference(Control.ForegroundProperty,"TextBrush");
         VirtualizingPanel.SetIsVirtualizing(catalogList,true);VirtualizingPanel.SetVirtualizationMode(catalogList,VirtualizationMode.Recycling);ScrollViewer.SetCanContentScroll(catalogList,true);
@@ -43,8 +41,8 @@ public sealed partial class MainWindow
     {
         var source=ReferenceCatalog.Load();
         catalogRows=catalogKind.SelectedIndex switch{
-            0=>source.Weapons.Select(w=>new CatalogRow(w.Name,w.EnglishName,Category(w.Category)+" / "+w.WeaponType,w.Source,w)).ToArray(),
-            1=>stanceCatalog.Stances.Select(s=>new CatalogRow(s.Name,s.Id,s.WeaponType+(s.ConclaveOnly?" / 콘클레이브":s.IsDefault?" / 기본":s.UniqueToWeapon?" / 무기 전용":" / 스탠스"),s.Source,s)).ToArray(),
+            0=>source.Weapons.Select(w=>new CatalogRow(w.Name,w.EnglishName,Category(w.Category)+" / "+KoreanPresentation.WeaponClass(w.WeaponType),w.Source,w)).ToArray(),
+            1=>stanceCatalog.Stances.Select(s=>new CatalogRow(s.Name,s.Id,KoreanPresentation.WeaponClass(s.WeaponType)+(s.ConclaveOnly?" / 콘클레이브":s.IsDefault?" / 기본":s.UniqueToWeapon?" / 무기 전용":" / 스탠스"),s.Source,s)).ToArray(),
             2=>source.Arcanes.Select(a=>new CatalogRow(a.Name,a.EnglishName,Category(a.Category),a.Source,a)).ToArray(),
             3=>source.Mods.Select(m=>new CatalogRow(m.Name,m.EnglishName,m.Category,m.Source,m)).ToArray(),
             _=>source.Sources.Concat(MeleeRuleCatalog.Load().Sources).DistinctBy(s=>(s.Title,s.Revision)).Select(s=>new CatalogRow(s.Title,s.Title,"고정 위키 원본",s.Url,s)).ToArray()};
@@ -76,11 +74,12 @@ public sealed partial class MainWindow
                     if(coverage.Implemented.Length+coverage.Remaining.Length+coverage.SourceIssues.Length>0)text.AppendLine("위 범위는 고유 효과별 지원입니다. 기본 공격 지원이 무기 전체 구현 완료를 뜻하지는 않습니다.");
                 }
                 if(!w.Localized)text.AppendLine("공식 한국어 식별자 대응 없음 · 원문 이름 표시");
-                foreach(var (key,label) in new[]{("Mastery","마스터리"),("MaxRank","최대 랭크"),("Disposition","리벤 기질"),("MeleeRange","근접 사거리"),("Magazine","탄창"),("Reload","재장전")})if(w.Raw.TryGetProperty(key,out var v))text.AppendLine(label+": "+v);
+                foreach(var (key,label) in new[]{("Mastery","마스터리"),("MaxRank","최대 랭크"),("MeleeRange","근접 사거리"),("Magazine","탄창"),("Reload","재장전")})if(w.Raw.TryGetProperty(key,out var v))text.AppendLine(label+": "+v);
+                text.AppendLine("리벤 공통 배율: 1.2 · Hotfix 44.1.3");
                 if(w.Raw.TryGetProperty("Attacks",out var attacks)&&attacks.ValueKind==JsonValueKind.Array)
                 foreach(var a in attacks.EnumerateArray())
                 {
-                    text.AppendLine("\n"+(a.TryGetProperty("AttackName",out var n)?n.ToString():"공격"));
+                    text.AppendLine("\n"+(a.TryGetProperty("AttackName",out var n)?KoreanPresentation.Attack(n.ToString()):"공격"));
                     if(a.TryGetProperty("Damage",out var d)&&d.ValueKind==JsonValueKind.Object)text.AppendLine(string.Join(" · ",d.EnumerateObject().Select(x=>(Enum.TryParse<DamageType>(x.Name,out var type)?Labels.Damage(type):x.Name)+" "+x.Value)));
                     foreach(var (key,label) in new[]{("CritChance","치명타 확률"),("CritMultiplier","치명타 배수"),("StatusChance","상태 확률"),("FireRate","공격 속도"),("Multishot","멀티샷")})if(a.TryGetProperty(key,out var v)&&v.ValueKind==JsonValueKind.Number)text.Append(label+" "+(key is "CritChance" or "StatusChance"?v.GetDouble().ToString("P1"):v.GetDouble().ToString("0.###"))+"   ");
                     text.AppendLine();
@@ -114,7 +113,7 @@ public sealed partial class MainWindow
         foreach(var action in catalogDetailPanel.Children.OfType<Button>())action.Margin=new(0,8,0,16);
     }
     private static void AppendRanks(StringBuilder text,string[][] ranks,string fallback)
-    {if(ranks.Length==0){text.AppendLine(fallback);return;}for(var i=0;i<ranks.Length;i++)text.AppendLine($"\n랭크 {i}\n"+string.Join("\n",ranks[i]));}
+    {if(ranks.Length==0){text.AppendLine("공식 한국어 랭크별 설명 없음 · 아래는 위키 원문입니다.");text.AppendLine(fallback);return;}for(var i=0;i<ranks.Length;i++)text.AppendLine($"\n랭크 {i}\n"+string.Join("\n",ranks[i]));}
     private static string Category(string category)=>category switch{"primary" or "Primary"=>"주무기","secondary" or "Secondary"=>"보조무기","melee" or "Melee"=>"근접","archwing"=>"아크윙","companion"=>"동반자","railjack"=>"레일잭","modular"=>"조립식 부품","misc"=>"기타","Warframe"=>"워프레임","Operator"=>"오퍼레이터",_=>category};
     public void CatalogPreviewForCheck(int kind){ShowCatalog();catalogKind.SelectedIndex=kind;catalogSearch.Text="";}
     private void RunExpandedSmokeChecks()

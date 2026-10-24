@@ -35,6 +35,14 @@ public sealed partial class MainWindow
     private Dictionary<string,double> preservedConditions=[];
     private FrameworkElement? lichFields,stanceActionField,singleAttackField;
     private Expander? dynamicExpander,weaponEffectsExpander;
+    private FrameworkElement CreateValenceFields()
+    {
+        var row=new DockPanel{Margin=new(0,4,0,4),Visibility=Visibility.Collapsed};
+        var label=T("베일런스",14);label.Margin=new(0,0,10,0);label.VerticalAlignment=VerticalAlignment.Center;row.Children.Add(label);
+        var unit=T("%",14);unit.Margin=new(6,0,0,0);unit.VerticalAlignment=VerticalAlignment.Center;DockPanel.SetDock(unit,Dock.Right);row.Children.Add(unit);
+        CompactInput(bonusPercent,32);bonusPercent.Width=80;bonusPercent.ToolTip="게임에 표시된 보너스 피해 25–60%";DockPanel.SetDock(bonusPercent,Dock.Right);row.Children.Add(bonusPercent);
+        CompactInput(bonusElementChoice,32);bonusElementChoice.Margin=new(0,0,8,0);bonusElementChoice.ToolTip="보너스 원소 · 없음은 비교용";row.Children.Add(bonusElementChoice);return row;
+    }
     private FrameworkElement CreateMeleeView()
     {
         var panel=new StackPanel();
@@ -49,7 +57,7 @@ public sealed partial class MainWindow
         WatchEquationSource(tennokaiChoice,"condition",()=> ("tennokai","텐노카이"));
         var geometry=Columns(Field("거리 (m)",attackDistance),Field("관통 대상 순서",new ContentControl{Content=Stepper(targetOrder,1,100,1,"관통 대상 순서")}));panel.Children.Add(new Expander{Header="거리 · 관통",Content=geometry});
         comboDurationOverride.ToolTip="위키에 시간이 없는 동작에만 사용합니다. 빈칸이면 시간을 추정하지 않습니다.";
-        var bonus=Columns(Field("리치 추가 원소",bonusElementChoice),Field("추가 피해 (%)",bonusPercent));panel.Children.Add(bonus);lichFields=bonus;
+        lichFields=CreateValenceFields();
         bonusElementChoice.ItemsSource=new[]{"없음","충격","화염","냉기","전기","독성","자성","방사능"};bonusElementChoice.SelectedIndex=0;
         exilusChoice.ItemsSource=new[]{new ExilusChoice(null)}.Concat(catalog.Mods.Where(m=>ReferenceCatalog.Load().Mods.Single(r=>r.Id==m.Id).Raw.TryGetProperty("IsExilus",out var value)&&value.ValueKind==System.Text.Json.JsonValueKind.True).Select(m=>new ExilusChoice(m))).ToArray();exilusChoice.SelectedIndex=0;
         WatchEquationSource(exilusChoice,"mod",()=> (exilusChoice.SelectedItem as ExilusChoice)?.Mod is {} m?(m.Id,m.Name):null);

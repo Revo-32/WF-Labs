@@ -1,0 +1,10 @@
+{
+  "note": "Public Export에 항목이 없는 경우 공식 한국어 패치 노트에서 직접 확인한 표시 이름입니다. 내부 식별자와 계산 데이터는 변경하지 않습니다.",
+  "records": {
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/StaffCmbOneMeleeTree": {
+      "name": "클래싱 포레스트",
+      "source": "https://www.warframe.com/ko/patch-notes/pc/39-0-0",
+      "evidence": "목성 교차점: 보상: 클래싱 포레스트 (0랭크)"
+    }
+  }
+}

@@ -715,6 +715,75 @@
       "eximusShields": null,
       "eximusArmor": null,
       "eximusOverguard": null
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/CorpusShipRemastered/ShipCrewmanNullifierAgent",
+      "name": "주노 널리파이어 크루맨",
+      "englishName": "Juno Nullifier Crewman",
+      "faction": "Corpus",
+      "scalingFaction": "Corpus",
+      "baseLevel": 15,
+      "health": 400,
+      "armor": 0,
+      "shields": 200,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      },
+      "wikiUrl": "https://wiki.warframe.com/w/Juno_Nullifier_Crewman",
+      "eximusHealth": 400,
+      "eximusShields": 200,
+      "eximusArmor": null,
+      "eximusOverguard": null
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/Spaceman/AIWeek/NullifySpacemanAgent",
+      "name": "널리파이어 크루맨",
+      "englishName": "Nullifier Crewman",
+      "faction": "Corpus",
+      "scalingFaction": "Corpus",
+      "baseLevel": 1,
+      "health": 90,
+      "armor": 0,
+      "shields": 40,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      },
+      "wikiUrl": "https://wiki.warframe.com/w/Nullifier_Crewman",
+      "eximusHealth": 90,
+      "eximusShields": 40,
+      "eximusArmor": null,
+      "eximusOverguard": null
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Orokin/OrokinNullifySpacemanAgent",
+      "name": "커럽티드 널리파이어",
+      "englishName": "Corrupted Nullifier",
+      "faction": "Orokin",
+      "scalingFaction": "Corrupted",
+      "baseLevel": 15,
+      "health": 50,
+      "armor": 0,
+      "shields": 40,
+      "source": {
+        "title": "Module:Enemies/data/orokin",
+        "revision": 2816758,
+        "timestamp": "2026-10-08T01:54:49Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/orokin",
+        "sha256": "d96dca7eefe7f98c85aefb26a88553a440db15b0f2b5b55a38710dc94e3df04a"
+      },
+      "wikiUrl": "https://wiki.warframe.com/w/Corrupted_Nullifier",
+      "eximusHealth": 90,
+      "eximusShields": 40,
+      "eximusArmor": null,
+      "eximusOverguard": null
     }
   ],
   "sources": [

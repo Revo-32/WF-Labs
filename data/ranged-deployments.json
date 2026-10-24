@@ -1,0 +1,124 @@
+[
+  {
+    "weaponId": "wiki:primary/Penta",
+    "limit": 5,
+    "directAttack": 0,
+    "fireModes": [
+      0
+    ],
+    "allowBatchOverflow": true,
+    "source": {
+      "title": "Penta",
+      "revision": 2814711,
+      "timestamp": "2026-09-30T19:11:50Z",
+      "sha256": "d840f05905ebfb41133d6d917e0f2e9f14abb76c0aa12b3f9344d8d48a675975",
+      "url": "https://wiki.warframe.com/w/Penta?oldid=2814711",
+      "batch": "908ead252b087ddb.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Carmine Penta",
+    "limit": 5,
+    "directAttack": 0,
+    "fireModes": [
+      0
+    ],
+    "allowBatchOverflow": true,
+    "source": {
+      "title": "Carmine Penta",
+      "revision": 2785496,
+      "timestamp": "2026-06-16T03:38:51Z",
+      "sha256": "ac01293e6cdf671d9cd9152ce5ec0b6bb0dc50e72f82b25a2735ba98fef33d4a",
+      "url": "https://wiki.warframe.com/w/Carmine_Penta?oldid=2785496",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Secura Penta",
+    "limit": 5,
+    "directAttack": 0,
+    "fireModes": [
+      0
+    ],
+    "allowBatchOverflow": true,
+    "source": {
+      "title": "Secura Penta",
+      "revision": 2785498,
+      "timestamp": "2026-06-16T03:39:06Z",
+      "sha256": "c4eac16ae8848190bd0800a6ee067655298bc5810010b929672900fc9af838cc",
+      "url": "https://wiki.warframe.com/w/Secura_Penta?oldid=2785498",
+      "batch": "b963fdc84b01a6d1.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Aegrit",
+    "limit": 4,
+    "directAttack": 0,
+    "fireModes": [
+      0
+    ],
+    "allowBatchOverflow": false,
+    "source": {
+      "title": "Aegrit",
+      "revision": 2804696,
+      "timestamp": "2026-09-01T12:07:37Z",
+      "sha256": "49c196620558857cca6ec924b14cd67dc649046cce2e2239c6b307ac1c269dd1",
+      "url": "https://wiki.warframe.com/w/Aegrit?oldid=2804696",
+      "batch": "301db9aaf8fd8b57.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Castanas",
+    "limit": 6,
+    "directAttack": -1,
+    "fireModes": [
+      0,
+      1
+    ],
+    "allowBatchOverflow": false,
+    "source": {
+      "title": "Castanas",
+      "revision": 2784091,
+      "timestamp": "2026-06-07T18:38:55Z",
+      "sha256": "b83c6fb585e239a5c95afe9e38dc783c056fc94002978dda4f4388306090536c",
+      "url": "https://wiki.warframe.com/w/Castanas?oldid=2784091",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Sancti Castanas",
+    "limit": 6,
+    "directAttack": -1,
+    "fireModes": [
+      0,
+      1
+    ],
+    "allowBatchOverflow": false,
+    "source": {
+      "title": "Sancti Castanas",
+      "revision": 2676723,
+      "timestamp": "2025-04-05T16:49:58Z",
+      "sha256": "24d5cb7d22b3def75963461ff3a435acb394b79e067f88c0814445d089eeaa5d",
+      "url": "https://wiki.warframe.com/w/Sancti_Castanas?oldid=2676723",
+      "batch": "4e57bd78a1646bbe.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Talons",
+    "limit": 8,
+    "directAttack": -1,
+    "fireModes": [
+      0,
+      1
+    ],
+    "allowBatchOverflow": false,
+    "source": {
+      "title": "Talons",
+      "revision": 2813932,
+      "timestamp": "2026-09-28T12:28:43Z",
+      "sha256": "6faf2373bcbc37705587d043e86ed43f9eb2310819ac94a958a97474108e1721",
+      "url": "https://wiki.warframe.com/w/Talons?oldid=2813932",
+      "batch": "07d75b0b385044e3.json"
+    }
+  }
+]

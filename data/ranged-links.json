@@ -1,0 +1,2413 @@
+[
+  {
+    "weaponId": "wiki:secondary/Angstrum",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Angstrum",
+      "revision": 2816957,
+      "timestamp": "2026-10-08T12:21:53Z",
+      "sha256": "18b224d0773b850964beefe16661df54a21dd201a548e986808a7183f5e68bf4",
+      "url": "https://wiki.warframe.com/w/Angstrum?oldid=2816957",
+      "batch": "bf7230c5d01b4384.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Prisma Angstrum",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Prisma Angstrum",
+      "revision": 2817257,
+      "timestamp": "2026-10-09T09:38:46Z",
+      "sha256": "dd171876bb04b6cfc5763276917ab161f599168124f05f40b38bbd786248e9de",
+      "url": "https://wiki.warframe.com/w/Prisma_Angstrum?oldid=2817257",
+      "batch": "7ab348178585bb45.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Enkaus",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Enkaus",
+      "revision": 2813154,
+      "timestamp": "2026-09-25T18:12:58Z",
+      "sha256": "629b66102b152d2d057d87dc1408b32f9a5fb3f72af1db81590978de7b44ab7b",
+      "url": "https://wiki.warframe.com/w/Enkaus?oldid=2813154",
+      "batch": "5deb96d54131f4f9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Atomos",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Atomos",
+      "revision": 2817258,
+      "timestamp": "2026-10-09T09:39:31Z",
+      "sha256": "d134d4b46260ed4165cafd5b038d6dc601ff2eca8c40cc736d81932686c1aba3",
+      "url": "https://wiki.warframe.com/w/Atomos?oldid=2817258",
+      "batch": "26bd5427549f6814.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/EFV-8 Mars",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "EFV-8 Mars",
+      "revision": 2814664,
+      "timestamp": "2026-09-30T17:18:03Z",
+      "sha256": "221746952639431aabd07ce4fda4dfe5aefff66985c1f33f9e38d5ae87da7beb",
+      "url": "https://wiki.warframe.com/w/EFV-8_Mars?oldid=2814664",
+      "batch": "5deb96d54131f4f9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Strun",
+      "revision": 2816893,
+      "timestamp": "2026-10-08T09:52:38Z",
+      "sha256": "bcaed864670e56d71e211c4c3fdf9982c57016336ec21433e90764c65a508c7a",
+      "url": "https://wiki.warframe.com/w/Strun?oldid=2816893",
+      "batch": "9d13567ad4085c6e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun Prime",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Strun Prime",
+      "revision": 2816895,
+      "timestamp": "2026-10-08T09:54:05Z",
+      "sha256": "5fda125c0c1cb17556b30d83e018938f7d0280568c50a87f5e3a0242201cc5e4",
+      "url": "https://wiki.warframe.com/w/Strun_Prime?oldid=2816895",
+      "batch": "9d13567ad4085c6e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun Wraith",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Strun Wraith",
+      "revision": 2816896,
+      "timestamp": "2026-10-08T09:54:45Z",
+      "sha256": "2b388f6182aa9377a8bd305f06dc11b9d3e504845b63de090271386a0a3afaa9",
+      "url": "https://wiki.warframe.com/w/Strun_Wraith?oldid=2816896",
+      "batch": "9d13567ad4085c6e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mk1-Strun",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Mk1-Strun",
+      "revision": 2816894,
+      "timestamp": "2026-10-08T09:53:25Z",
+      "sha256": "9405967f6ef0b57873b1efbb49b4d5ae413b921201a91148a2c9163a3a17b23f",
+      "url": "https://wiki.warframe.com/w/Mk1-Strun?oldid=2816894",
+      "batch": "08a6b1e57a6cf21b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Catabolyst",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Catabolyst",
+      "revision": 2785507,
+      "timestamp": "2026-06-16T04:37:01Z",
+      "sha256": "de3cfd89cd40963471fe14cf75abea0a8cdf5638a3f9ee7bde4bab19fbf3c9a6",
+      "url": "https://wiki.warframe.com/w/Catabolyst?oldid=2785507",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Catabolyst",
+    "parent": 3,
+    "child": 4,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Catabolyst",
+      "revision": 2785507,
+      "timestamp": "2026-06-16T04:37:01Z",
+      "sha256": "de3cfd89cd40963471fe14cf75abea0a8cdf5638a3f9ee7bde4bab19fbf3c9a6",
+      "url": "https://wiki.warframe.com/w/Catabolyst?oldid=2785507",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Coda Catabolyst",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Coda Catabolyst",
+      "revision": 2795795,
+      "timestamp": "2026-07-29T00:04:10Z",
+      "sha256": "b5ae14fccdb0f917089f887212f48f369d96da60851bb56e18023aa0676a1be3",
+      "url": "https://wiki.warframe.com/w/Coda_Catabolyst?oldid=2795795",
+      "batch": "d93f68f7400bafa3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Coda Catabolyst",
+    "parent": 3,
+    "child": 4,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Coda Catabolyst",
+      "revision": 2795795,
+      "timestamp": "2026-07-29T00:04:10Z",
+      "sha256": "b5ae14fccdb0f917089f887212f48f369d96da60851bb56e18023aa0676a1be3",
+      "url": "https://wiki.warframe.com/w/Coda_Catabolyst?oldid=2795795",
+      "batch": "d93f68f7400bafa3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Gaze (Primary)",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Gaze",
+      "revision": 2787802,
+      "timestamp": "2026-06-22T05:23:54Z",
+      "sha256": "7148d285f625e9241d1c1962aae8ddaa1a20e089b022077f9ea6f74812eabd95",
+      "url": "https://wiki.warframe.com/w/Gaze?oldid=2787802",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Sporelacer (Primary)",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Sporelacer",
+      "revision": 2757746,
+      "timestamp": "2026-04-03T08:16:02Z",
+      "sha256": "ac27524938980a06554f632eb160ddac17432aa7889ed9afed09a54c3826aab2",
+      "url": "https://wiki.warframe.com/w/Sporelacer?oldid=2757746",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Sporelacer (Secondary)",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Sporelacer",
+      "revision": 2757746,
+      "timestamp": "2026-04-03T08:16:02Z",
+      "sha256": "ac27524938980a06554f632eb160ddac17432aa7889ed9afed09a54c3826aab2",
+      "url": "https://wiki.warframe.com/w/Sporelacer?oldid=2757746",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Sporelacer (Secondary)",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Sporelacer",
+      "revision": 2757746,
+      "timestamp": "2026-04-03T08:16:02Z",
+      "sha256": "ac27524938980a06554f632eb160ddac17432aa7889ed9afed09a54c3826aab2",
+      "url": "https://wiki.warframe.com/w/Sporelacer?oldid=2757746",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Tombfinger (Primary)",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tombfinger",
+      "revision": 2657912,
+      "timestamp": "2025-01-31T15:43:34Z",
+      "sha256": "366567575a34aebd6fc665e43963b7ab8de5e5c7925df7efd88e6c00af224a44",
+      "url": "https://wiki.warframe.com/w/Tombfinger?oldid=2657912",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Tombfinger (Primary)",
+    "parent": 3,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tombfinger",
+      "revision": 2657912,
+      "timestamp": "2025-01-31T15:43:34Z",
+      "sha256": "366567575a34aebd6fc665e43963b7ab8de5e5c7925df7efd88e6c00af224a44",
+      "url": "https://wiki.warframe.com/w/Tombfinger?oldid=2657912",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Onos",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Onos",
+      "revision": 2816914,
+      "timestamp": "2026-10-08T10:15:32Z",
+      "sha256": "e246d55086b2d7b036a3cdde6827705283c6ded1893d79d5d1da2c8fbc56d731",
+      "url": "https://wiki.warframe.com/w/Onos?oldid=2816914",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Zarr",
+      "revision": 2813913,
+      "timestamp": "2026-09-28T10:57:48Z",
+      "sha256": "6e1e5d68a61f032250ae0d9dc092a962182559750f638f6dbca3219b5a022d4a",
+      "url": "https://wiki.warframe.com/w/Zarr?oldid=2813913",
+      "batch": "8d6acc32d8d8f7db.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Zarr",
+      "revision": 2813913,
+      "timestamp": "2026-09-28T10:57:48Z",
+      "sha256": "6e1e5d68a61f032250ae0d9dc092a962182559750f638f6dbca3219b5a022d4a",
+      "url": "https://wiki.warframe.com/w/Zarr?oldid=2813913",
+      "batch": "8d6acc32d8d8f7db.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Zarr",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kuva Zarr",
+      "revision": 2791899,
+      "timestamp": "2026-07-08T01:27:58Z",
+      "sha256": "68327e22cf441e76d18a082295a45eb6f8ba7c6b39cde2f4ca644e624bf7073f",
+      "url": "https://wiki.warframe.com/w/Kuva_Zarr?oldid=2791899",
+      "batch": "d6377b10b591ed99.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Zarr",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kuva Zarr",
+      "revision": 2791899,
+      "timestamp": "2026-07-08T01:27:58Z",
+      "sha256": "68327e22cf441e76d18a082295a45eb6f8ba7c6b39cde2f4ca644e624bf7073f",
+      "url": "https://wiki.warframe.com/w/Kuva_Zarr?oldid=2791899",
+      "batch": "d6377b10b591ed99.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Bramma",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kuva Bramma",
+      "revision": 2817463,
+      "timestamp": "2026-10-10T17:49:58Z",
+      "sha256": "d7aa57c881a2255fbe208c526262b977f6fc6cd23ea4dafcfd097097a2ad9ce1",
+      "url": "https://wiki.warframe.com/w/Kuva_Bramma?oldid=2817463",
+      "batch": "d79d4872042f3cc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Bramma",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kuva Bramma",
+      "revision": 2817463,
+      "timestamp": "2026-10-10T17:49:58Z",
+      "sha256": "d7aa57c881a2255fbe208c526262b977f6fc6cd23ea4dafcfd097097a2ad9ce1",
+      "url": "https://wiki.warframe.com/w/Kuva_Bramma?oldid=2817463",
+      "batch": "d79d4872042f3cc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Kulstar",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kulstar",
+      "revision": 2813903,
+      "timestamp": "2026-09-28T10:02:37Z",
+      "sha256": "69f8de733dcb7a0fe4b019abb6ca769ec279259778b30fde9c1629d60f28aa75",
+      "url": "https://wiki.warframe.com/w/Kulstar?oldid=2813903",
+      "batch": "d79d4872042f3cc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Kulstar",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kulstar",
+      "revision": 2813903,
+      "timestamp": "2026-09-28T10:02:37Z",
+      "sha256": "69f8de733dcb7a0fe4b019abb6ca769ec279259778b30fde9c1629d60f28aa75",
+      "url": "https://wiki.warframe.com/w/Kulstar?oldid=2813903",
+      "batch": "d79d4872042f3cc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Miter",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Miter",
+      "revision": 2816887,
+      "timestamp": "2026-10-08T09:47:35Z",
+      "sha256": "cc86813221b84e6065c653c7f377ccede7aafa8ec0c4fa6c164805914401809b",
+      "url": "https://wiki.warframe.com/w/Miter?oldid=2816887",
+      "batch": "82f4148f87e30ae8.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Acceltra",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 7,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Acceltra",
+      "revision": 2774017,
+      "timestamp": "2026-05-03T08:45:57Z",
+      "sha256": "5c51824ad49bd034447620e09699ccc70735469f524877db8e23f2f95ad3a101",
+      "url": "https://wiki.warframe.com/w/Acceltra?oldid=2774017",
+      "batch": "301db9aaf8fd8b57.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Acceltra Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 7,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Acceltra Prime",
+      "revision": 2789297,
+      "timestamp": "2026-06-26T02:49:25Z",
+      "sha256": "149a27e0ce0455be550f5e588d918b1134e3f8a557a85e665fe03807eba79248",
+      "url": "https://wiki.warframe.com/w/Acceltra_Prime?oldid=2789297",
+      "batch": "301db9aaf8fd8b57.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Aeolak",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Aeolak",
+      "revision": 2813572,
+      "timestamp": "2026-09-27T12:16:00Z",
+      "sha256": "7a562b947df23bfd7d9b4d03b4aa110aa8d405388fdb45132bd3c51a22e4d1a7",
+      "url": "https://wiki.warframe.com/w/Aeolak?oldid=2813572",
+      "batch": "301db9aaf8fd8b57.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Astilla",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Astilla",
+      "revision": 2789966,
+      "timestamp": "2026-06-30T01:04:47Z",
+      "sha256": "718bebcfbdae16ac43cfc1fe60dfe55c50b965e4ee92a3610a3700dd98346d1b",
+      "url": "https://wiki.warframe.com/w/Astilla?oldid=2789966",
+      "batch": "26bd5427549f6814.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Astilla Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Astilla Prime",
+      "revision": 2789967,
+      "timestamp": "2026-06-30T01:05:05Z",
+      "sha256": "8ec70c0c8a87406861b84c4442a9d41a450d22060382723a1e6a6719d11836cd",
+      "url": "https://wiki.warframe.com/w/Astilla_Prime?oldid=2789967",
+      "batch": "26bd5427549f6814.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Basmu",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Basmu",
+      "revision": 2815127,
+      "timestamp": "2026-10-02T03:44:35Z",
+      "sha256": "47447266be8b1bc2afaab1de8f1d5932bbb7cf5fc2153f801d32d30a4cee0fc0",
+      "url": "https://wiki.warframe.com/w/Basmu?oldid=2815127",
+      "batch": "d9466ea55cbdeb90.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Bubonico",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Bubonico",
+      "revision": 2817661,
+      "timestamp": "2026-10-11T19:43:26Z",
+      "sha256": "06ee686154819565c41073935eaec6d25a7b26c2f89e8b0b48bf72e90b4fc830",
+      "url": "https://wiki.warframe.com/w/Bubonico?oldid=2817661",
+      "batch": "55b053f26f169fca.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Coda Bubonico",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Coda Bubonico",
+      "revision": 2817672,
+      "timestamp": "2026-10-11T20:12:21Z",
+      "sha256": "c33e9fc173e21a65089dba77b0b41a8059f360f9bdadee009f3e51e678d9d9a1",
+      "url": "https://wiki.warframe.com/w/Coda_Bubonico?oldid=2817672",
+      "batch": "d93f68f7400bafa3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Chakkhurr",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kuva Chakkhurr",
+      "revision": 2789964,
+      "timestamp": "2026-06-30T01:02:58Z",
+      "sha256": "b38f6755b632a5b6c2ae0d83fd2951b8084db83ae303e912d1c86253ab226795",
+      "url": "https://wiki.warframe.com/w/Kuva_Chakkhurr?oldid=2789964",
+      "batch": "d79d4872042f3cc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Ogris",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kuva Ogris",
+      "revision": 2813923,
+      "timestamp": "2026-09-28T12:09:09Z",
+      "sha256": "ddfb50c789fc928b74825074624c6d4aa7c2c71cb6cb1ec30ba06982ddfc4c03",
+      "url": "https://wiki.warframe.com/w/Kuva_Ogris?oldid=2813923",
+      "batch": "d6377b10b591ed99.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ogris",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Ogris",
+      "revision": 2814708,
+      "timestamp": "2026-09-30T19:09:44Z",
+      "sha256": "4d059e8c1c7c75067eb126d396989132646cce60ba367caecfe32d9aa3133daa",
+      "url": "https://wiki.warframe.com/w/Ogris?oldid=2814708",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Tonkor",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kuva Tonkor",
+      "revision": 2785491,
+      "timestamp": "2026-06-16T03:37:58Z",
+      "sha256": "1b0cb5101ae2d8b1cbe9ca805f927e5c80d4b26e35ba2fd95e1e19d6794cad51",
+      "url": "https://wiki.warframe.com/w/Kuva_Tonkor?oldid=2785491",
+      "batch": "d6377b10b591ed99.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tonkor",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 7.5,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tonkor",
+      "revision": 2814723,
+      "timestamp": "2026-09-30T19:23:47Z",
+      "sha256": "97f7e8c7dc0cad74770bb740b6e7b866a381eefe9f49c01b2da8b7ac42b81ed6",
+      "url": "https://wiki.warframe.com/w/Tonkor?oldid=2814723",
+      "batch": "d4a34f4a056b29be.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Akarius",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Akarius",
+      "revision": 2762114,
+      "timestamp": "2026-04-11T18:55:08Z",
+      "sha256": "570bc5a88741d5e9a78d4c074cf32ccdd2484c29839a9359dc6209cd04e388da",
+      "url": "https://wiki.warframe.com/w/Akarius?oldid=2762114",
+      "batch": "eb38deda3aa033dd.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Akarius Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Akarius Prime",
+      "revision": 2789318,
+      "timestamp": "2026-06-26T02:56:50Z",
+      "sha256": "86336bbbc3623afbde4693033b29635cb1454199047b30afc9e21d164faeb4cf",
+      "url": "https://wiki.warframe.com/w/Akarius_Prime?oldid=2789318",
+      "batch": "eb38deda3aa033dd.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Kuva Seer",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kuva Seer",
+      "revision": 2790014,
+      "timestamp": "2026-06-30T01:38:25Z",
+      "sha256": "02df293fd3e3dd9ef9fbf42c06303b435b66591548e0c3b2b769a6469c768209",
+      "url": "https://wiki.warframe.com/w/Kuva_Seer?oldid=2790014",
+      "batch": "d6377b10b591ed99.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Epitaph",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Epitaph",
+      "revision": 2818327,
+      "timestamp": "2026-10-14T07:13:39Z",
+      "sha256": "96cbe721931e888738a4fb674dd14c62649a37c1da73212b5acc35684ea788fd",
+      "url": "https://wiki.warframe.com/w/Epitaph?oldid=2818327",
+      "batch": "5deb96d54131f4f9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Epitaph Prime",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Epitaph Prime",
+      "revision": 2818328,
+      "timestamp": "2026-10-14T07:14:22Z",
+      "sha256": "518f5512462a15a2c9e32782fdae58f139ed00c01bacd8704efdaead860fe8b4",
+      "url": "https://wiki.warframe.com/w/Epitaph_Prime?oldid=2818328",
+      "batch": "5deb96d54131f4f9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Tenet Spirex",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tenet Spirex",
+      "revision": 2673826,
+      "timestamp": "2025-03-24T17:15:37Z",
+      "sha256": "dff48ae0fe64fdfeacc9da52d19fa4b5ba9e0a0f049e9caa724064d32d383590",
+      "url": "https://wiki.warframe.com/w/Tenet_Spirex?oldid=2673826",
+      "batch": "34e255fa5450dd70.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Envoy",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tenet Envoy",
+      "revision": 2808878,
+      "timestamp": "2026-09-18T02:41:33Z",
+      "sha256": "5279fe8f9e383dd959d71924a388d10b33f00d87d279d652c10fe7c4ceb8d00b",
+      "url": "https://wiki.warframe.com/w/Tenet_Envoy?oldid=2808878",
+      "batch": "07d75b0b385044e3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Tetra",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tenet Tetra",
+      "revision": 2789961,
+      "timestamp": "2026-06-30T00:53:46Z",
+      "sha256": "36a58fc2fdba5116ed2f5f63d5e8a50674c3144c600e7fa38938631fc841eb89",
+      "url": "https://wiki.warframe.com/w/Tenet_Tetra?oldid=2789961",
+      "batch": "34e255fa5450dd70.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Shedu",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Shedu",
+      "revision": 2799940,
+      "timestamp": "2026-08-16T19:50:41Z",
+      "sha256": "9df982406fc79a2369eb338f00ddff67787365f6cd5862ed089ececfa83709fe",
+      "url": "https://wiki.warframe.com/w/Shedu?oldid=2799940",
+      "batch": "44cde92b9f44c531.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Stahlta",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Stahlta",
+      "revision": 2791907,
+      "timestamp": "2026-07-08T01:29:49Z",
+      "sha256": "174264d15f34e7c26996ee3e4d8190b356086a16c9aec759ed4d896f695ef8ab",
+      "url": "https://wiki.warframe.com/w/Stahlta?oldid=2791907",
+      "batch": "03bb40d5d618360b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Cyanex",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Cyanex",
+      "revision": 2795374,
+      "timestamp": "2026-07-25T08:43:48Z",
+      "sha256": "dd094619c9fd73f7f968876c34ce97b1f834a58c2c7d2f89ecf1f0f596a0d053",
+      "url": "https://wiki.warframe.com/w/Cyanex?oldid=2795374",
+      "batch": "f5faffe45c1752ed.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Sonicor",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Sonicor",
+      "revision": 2818041,
+      "timestamp": "2026-10-13T07:47:30Z",
+      "sha256": "1d336c45446427d3d68768e024d32ac51039599911604f96044625dc6d388863",
+      "url": "https://wiki.warframe.com/w/Sonicor?oldid=2818041",
+      "batch": "cf172a893f0db017.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Staticor",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Staticor",
+      "revision": 2785083,
+      "timestamp": "2026-06-14T22:45:45Z",
+      "sha256": "5298e0c5f331a52c8d3dff529d9c2ce217c152238df09bcc545fc28364b3c9b7",
+      "url": "https://wiki.warframe.com/w/Staticor?oldid=2785083",
+      "batch": "03bb40d5d618360b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Staticor",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Staticor",
+      "revision": 2785083,
+      "timestamp": "2026-06-14T22:45:45Z",
+      "sha256": "5298e0c5f331a52c8d3dff529d9c2ce217c152238df09bcc545fc28364b3c9b7",
+      "url": "https://wiki.warframe.com/w/Staticor?oldid=2785083",
+      "batch": "03bb40d5d618360b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Evensong",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Evensong",
+      "revision": 2789951,
+      "timestamp": "2026-06-30T00:39:19Z",
+      "sha256": "62abf283357a167fea0b852ff3eb5b0cf1cc98e945d6f825fe6c60832dec699a",
+      "url": "https://wiki.warframe.com/w/Evensong?oldid=2789951",
+      "batch": "a148e5a7fadf42ac.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Braton",
+      "revision": 2816872,
+      "timestamp": "2026-10-08T09:33:29Z",
+      "sha256": "2cf45c749427e7b8202488efb0f9a6ea6f8ed242a24dcef8fa3f0e842a5fb11f",
+      "url": "https://wiki.warframe.com/w/Braton?oldid=2816872",
+      "batch": "33c2c2e30e31c63b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mk1-Braton",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Mk1-Braton",
+      "revision": 2816875,
+      "timestamp": "2026-10-08T09:35:30Z",
+      "sha256": "036b7263fb6b5e349ce2cfc6297aaa41791c5687ddad6c5465809a0d8760f185",
+      "url": "https://wiki.warframe.com/w/Mk1-Braton?oldid=2816875",
+      "batch": "82f4148f87e30ae8.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton Prime",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Braton Prime",
+      "revision": 2816873,
+      "timestamp": "2026-10-08T09:34:14Z",
+      "sha256": "ca4806c26ed834621ae4394b3a6491dadb3245bf64d813c199ecbec1f0de61a7",
+      "url": "https://wiki.warframe.com/w/Braton_Prime?oldid=2816873",
+      "batch": "33c2c2e30e31c63b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton Vandal",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Braton Vandal",
+      "revision": 2816874,
+      "timestamp": "2026-10-08T09:34:58Z",
+      "sha256": "ac24dd507811934aa6451952bb59bbcae18222d85e2b8e1a4e205641e009fbe9",
+      "url": "https://wiki.warframe.com/w/Braton_Vandal?oldid=2816874",
+      "batch": "33c2c2e30e31c63b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Burston",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Burston",
+      "revision": 2816876,
+      "timestamp": "2026-10-08T09:36:26Z",
+      "sha256": "53452bbb436a48664148acf3861e3d9315fcacdd59a89649c6d48b0652b59dcc",
+      "url": "https://wiki.warframe.com/w/Burston?oldid=2816876",
+      "batch": "55b053f26f169fca.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Burston Prime",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Burston Prime",
+      "revision": 2816877,
+      "timestamp": "2026-10-08T09:37:00Z",
+      "sha256": "51e33f89cfe11c1e500f162e4acd7413a49f0f8111c03f3ebe5247914e3c31e8",
+      "url": "https://wiki.warframe.com/w/Burston_Prime?oldid=2816877",
+      "batch": "55b053f26f169fca.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Laetum",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Laetum",
+      "revision": 2816909,
+      "timestamp": "2026-10-08T10:10:36Z",
+      "sha256": "2ccbf0c0b7db83b0bf84a29ee80aa0a657c1402c4446dbd9cb82eff7200302a0",
+      "url": "https://wiki.warframe.com/w/Laetum?oldid=2816909",
+      "batch": "d6377b10b591ed99.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Zylok",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Zylok",
+      "revision": 2817286,
+      "timestamp": "2026-10-09T10:00:56Z",
+      "sha256": "8cae4eb8f86087231cde001fc112f1186e0f1cc159d6bdc377ee2ffb86cf57a7",
+      "url": "https://wiki.warframe.com/w/Zylok?oldid=2817286",
+      "batch": "e7c7ac65ab902fed.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Zylok Prime",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Zylok Prime",
+      "revision": 2817287,
+      "timestamp": "2026-10-09T10:01:05Z",
+      "sha256": "4b6f0a90be24893c64295f4ab2de03c440d618ba96a151ada5831b111834fa58",
+      "url": "https://wiki.warframe.com/w/Zylok_Prime?oldid=2817287",
+      "batch": "e7c7ac65ab902fed.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Trumna",
+      "revision": 2805022,
+      "timestamp": "2026-09-02T20:48:13Z",
+      "sha256": "1f18a1ebf62379418f383f6d42902f17a610675ddf00175da7fc70d7aab63fe6",
+      "url": "https://wiki.warframe.com/w/Trumna?oldid=2805022",
+      "batch": "abcc97bb813f1730.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Trumna",
+      "revision": 2805022,
+      "timestamp": "2026-09-02T20:48:13Z",
+      "sha256": "1f18a1ebf62379418f383f6d42902f17a610675ddf00175da7fc70d7aab63fe6",
+      "url": "https://wiki.warframe.com/w/Trumna?oldid=2805022",
+      "batch": "abcc97bb813f1730.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Trumna Prime",
+      "revision": 2777545,
+      "timestamp": "2026-05-19T12:02:12Z",
+      "sha256": "f8728b4bc3e8876b777888ea70cd8984e9119add0851b5fe4d1b584d3137a053",
+      "url": "https://wiki.warframe.com/w/Trumna_Prime?oldid=2777545",
+      "batch": "abcc97bb813f1730.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna Prime",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Trumna Prime",
+      "revision": 2777545,
+      "timestamp": "2026-05-19T12:02:12Z",
+      "sha256": "f8728b4bc3e8876b777888ea70cd8984e9119add0851b5fe4d1b584d3137a053",
+      "url": "https://wiki.warframe.com/w/Trumna_Prime?oldid=2777545",
+      "batch": "abcc97bb813f1730.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Opticor",
+      "revision": 2797828,
+      "timestamp": "2026-08-10T20:59:45Z",
+      "sha256": "dde01e5cf6110e15a69b47332b12c83afd34fb0caffb22d0de1c4d0cf80f1301",
+      "url": "https://wiki.warframe.com/w/Opticor?oldid=2797828",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Opticor",
+      "revision": 2797828,
+      "timestamp": "2026-08-10T20:59:45Z",
+      "sha256": "dde01e5cf6110e15a69b47332b12c83afd34fb0caffb22d0de1c4d0cf80f1301",
+      "url": "https://wiki.warframe.com/w/Opticor?oldid=2797828",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor Vandal",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Opticor Vandal",
+      "revision": 2738207,
+      "timestamp": "2026-03-05T10:58:59Z",
+      "sha256": "e6ad70248fe05385821ab8354f38a01971f78ea389b87595157bc0ce18275eea",
+      "url": "https://wiki.warframe.com/w/Opticor_Vandal?oldid=2738207",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor Vandal",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Opticor Vandal",
+      "revision": 2738207,
+      "timestamp": "2026-03-05T10:58:59Z",
+      "sha256": "e6ad70248fe05385821ab8354f38a01971f78ea389b87595157bc0ce18275eea",
+      "url": "https://wiki.warframe.com/w/Opticor_Vandal?oldid=2738207",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ferrox",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Ferrox",
+      "revision": 2813180,
+      "timestamp": "2026-09-25T19:26:23Z",
+      "sha256": "3da0c9da02f483f53d5cf8e5eb07317a66767381285207a7a2d9f16327039fa2",
+      "url": "https://wiki.warframe.com/w/Ferrox?oldid=2813180",
+      "batch": "7e9c28ccf8f4c270.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Ferrox",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tenet Ferrox",
+      "revision": 2818534,
+      "timestamp": "2026-10-14T21:08:20Z",
+      "sha256": "38bd800fdfdd2384c81a93be6cd2d4cbf6f98210b83ab777f95b5e3d96561a70",
+      "url": "https://wiki.warframe.com/w/Tenet_Ferrox?oldid=2818534",
+      "batch": "34e255fa5450dd70.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ambassador",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Ambassador",
+      "revision": 2797561,
+      "timestamp": "2026-08-08T23:51:13Z",
+      "sha256": "1b7d8b518bc761607d350ccbe74af9771c66d8e48fe8231d75812d6ec1bac5ef",
+      "url": "https://wiki.warframe.com/w/Ambassador?oldid=2797561",
+      "batch": "2dae79a62e9270c5.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Battacor",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Battacor",
+      "revision": 2814677,
+      "timestamp": "2026-09-30T18:43:16Z",
+      "sha256": "e19792cf576518be9bd4b3f92d9879ccba921ef7a9dec118319f55a485122cf6",
+      "url": "https://wiki.warframe.com/w/Battacor?oldid=2814677",
+      "batch": "d9466ea55cbdeb90.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Panthera Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Panthera Prime",
+      "revision": 2784001,
+      "timestamp": "2026-06-07T16:15:28Z",
+      "sha256": "bd5625302d8ec7111153936a7fcd07f8fce3d15f3c3e3fe0ffeb790264180bdd",
+      "url": "https://wiki.warframe.com/w/Panthera_Prime?oldid=2784001",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Javlok",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Javlok",
+      "revision": 2814698,
+      "timestamp": "2026-09-30T19:02:44Z",
+      "sha256": "19c3e62b854e7af99601f0de4c7d0a0b5d73265433a2478aa6c8e115089f4167",
+      "url": "https://wiki.warframe.com/w/Javlok?oldid=2814698",
+      "batch": "aca1b779a2ecfdd4.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Javlok",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Javlok",
+      "revision": 2814698,
+      "timestamp": "2026-09-30T19:02:44Z",
+      "sha256": "19c3e62b854e7af99601f0de4c7d0a0b5d73265433a2478aa6c8e115089f4167",
+      "url": "https://wiki.warframe.com/w/Javlok?oldid=2814698",
+      "batch": "aca1b779a2ecfdd4.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Scourge",
+      "revision": 2785146,
+      "timestamp": "2026-06-15T02:09:43Z",
+      "sha256": "f7474f389679b654df47a568cf460bf9dde06ad1eca7ce93f70ae935408e07d3",
+      "url": "https://wiki.warframe.com/w/Scourge?oldid=2785146",
+      "batch": "4e57bd78a1646bbe.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Scourge",
+      "revision": 2785146,
+      "timestamp": "2026-06-15T02:09:43Z",
+      "sha256": "f7474f389679b654df47a568cf460bf9dde06ad1eca7ce93f70ae935408e07d3",
+      "url": "https://wiki.warframe.com/w/Scourge?oldid=2785146",
+      "batch": "4e57bd78a1646bbe.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Scourge Prime",
+      "revision": 2789314,
+      "timestamp": "2026-06-26T02:55:41Z",
+      "sha256": "68cb323dff60a8e172d3521bfc1ee6f8740910cf02d71c8a4d45d697e8ed1d5c",
+      "url": "https://wiki.warframe.com/w/Scourge_Prime?oldid=2789314",
+      "batch": "4e57bd78a1646bbe.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge Prime",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Scourge Prime",
+      "revision": 2789314,
+      "timestamp": "2026-06-26T02:55:41Z",
+      "sha256": "68cb323dff60a8e172d3521bfc1ee6f8740910cf02d71c8a4d45d697e8ed1d5c",
+      "url": "https://wiki.warframe.com/w/Scourge_Prime?oldid=2789314",
+      "batch": "4e57bd78a1646bbe.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Cedo",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Cedo",
+      "revision": 2796667,
+      "timestamp": "2026-08-02T09:39:13Z",
+      "sha256": "20c3a707f8dbe76e99f2fb5bad155c7e3c9a8b3924adc6970eddd1a641c7e8fa",
+      "url": "https://wiki.warframe.com/w/Cedo?oldid=2796667",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Cedo Prime",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Cedo Prime",
+      "revision": 2796668,
+      "timestamp": "2026-08-02T09:39:59Z",
+      "sha256": "d212f38f9e9d85c55d8e3e0c5a518aef2034b391a95f355ab20bc8d205805680",
+      "url": "https://wiki.warframe.com/w/Cedo_Prime?oldid=2796668",
+      "batch": "0971887d57a24e89.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Latron",
+      "revision": 2816884,
+      "timestamp": "2026-10-08T09:46:00Z",
+      "sha256": "2d15d54bb24c1ff2f2de9ad362008cbe60326ddc6d1fef9fe35ad62d1a348ef7",
+      "url": "https://wiki.warframe.com/w/Latron?oldid=2816884",
+      "batch": "882ad2a21087417f.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron Wraith",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Latron Wraith",
+      "revision": 2816886,
+      "timestamp": "2026-10-08T09:46:58Z",
+      "sha256": "f3dcfc4bfc770229c0b64a926d5e346577b0568d608338a7ca3de81c58924983",
+      "url": "https://wiki.warframe.com/w/Latron_Wraith?oldid=2816886",
+      "batch": "882ad2a21087417f.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron Prime",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Latron Prime",
+      "revision": 2816885,
+      "timestamp": "2026-10-08T09:46:29Z",
+      "sha256": "9284c9966861c983edf4dace55ae9aba5c45f03ea6117651ef2e9162e84b63b0",
+      "url": "https://wiki.warframe.com/w/Latron_Prime?oldid=2816885",
+      "batch": "882ad2a21087417f.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Grimoire",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Grimoire",
+      "revision": 2808287,
+      "timestamp": "2026-09-17T01:40:48Z",
+      "sha256": "dba711818b407a19f7ab2d3bbbfa1808342dc95f9598cd9f119a88d0c4ab570c",
+      "url": "https://wiki.warframe.com/w/Grimoire?oldid=2808287",
+      "batch": "720dadb5909d514a.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Sepulcrum",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Sepulcrum",
+      "revision": 2790003,
+      "timestamp": "2026-06-30T01:32:12Z",
+      "sha256": "f023812ac8dc6503debffe55d0ff1d4cb25976b5361d73ed706be23fdcc9b2b9",
+      "url": "https://wiki.warframe.com/w/Sepulcrum?oldid=2790003",
+      "batch": "b963fdc84b01a6d1.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Sepulcrum",
+    "parent": 2,
+    "child": 3,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Sepulcrum",
+      "revision": 2790003,
+      "timestamp": "2026-06-30T01:32:12Z",
+      "sha256": "f023812ac8dc6503debffe55d0ff1d4cb25976b5361d73ed706be23fdcc9b2b9",
+      "url": "https://wiki.warframe.com/w/Sepulcrum?oldid=2790003",
+      "batch": "b963fdc84b01a6d1.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Penta",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": true,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Penta",
+      "revision": 2814711,
+      "timestamp": "2026-09-30T19:11:50Z",
+      "sha256": "d840f05905ebfb41133d6d917e0f2e9f14abb76c0aa12b3f9344d8d48a675975",
+      "url": "https://wiki.warframe.com/w/Penta?oldid=2814711",
+      "batch": "908ead252b087ddb.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Carmine Penta",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": true,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Carmine Penta",
+      "revision": 2785496,
+      "timestamp": "2026-06-16T03:38:51Z",
+      "sha256": "ac01293e6cdf671d9cd9152ce5ec0b6bb0dc50e72f82b25a2735ba98fef33d4a",
+      "url": "https://wiki.warframe.com/w/Carmine_Penta?oldid=2785496",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Secura Penta",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": true,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Secura Penta",
+      "revision": 2785498,
+      "timestamp": "2026-06-16T03:39:06Z",
+      "sha256": "c4eac16ae8848190bd0800a6ee067655298bc5810010b929672900fc9af838cc",
+      "url": "https://wiki.warframe.com/w/Secura_Penta?oldid=2785498",
+      "batch": "b963fdc84b01a6d1.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Aegrit",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": true,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Aegrit",
+      "revision": 2804696,
+      "timestamp": "2026-09-01T12:07:37Z",
+      "sha256": "49c196620558857cca6ec924b14cd67dc649046cce2e2239c6b307ac1c269dd1",
+      "url": "https://wiki.warframe.com/w/Aegrit?oldid=2804696",
+      "batch": "301db9aaf8fd8b57.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Gorgon",
+    "parent": 1,
+    "child": 2,
+    "delay": 1.1,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Gorgon",
+      "revision": 2816881,
+      "timestamp": "2026-10-08T09:39:38Z",
+      "sha256": "8ecf468cf8ce21a2e4d8abeb7b96014b8694eaa0d49ce68e0fbd2346096acd70",
+      "url": "https://wiki.warframe.com/w/Gorgon?oldid=2816881",
+      "batch": "720dadb5909d514a.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Gorgon Wraith",
+    "parent": 1,
+    "child": 2,
+    "delay": 0.9,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Gorgon Wraith",
+      "revision": 2816882,
+      "timestamp": "2026-10-08T09:40:05Z",
+      "sha256": "6e9e0e95581356e10dafc09881fe82c96e810809a239b73cf9def53e1ebe65c4",
+      "url": "https://wiki.warframe.com/w/Gorgon_Wraith?oldid=2816882",
+      "batch": "720dadb5909d514a.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Gorgon",
+    "parent": 1,
+    "child": 2,
+    "delay": 0.8,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Prisma Gorgon",
+      "revision": 2816883,
+      "timestamp": "2026-10-08T09:40:39Z",
+      "sha256": "2b7e70a15f7271e3b2b57aa570768e798c375d7a3df0dab66c6f9b6fb37b2d86",
+      "url": "https://wiki.warframe.com/w/Prisma_Gorgon?oldid=2816883",
+      "batch": "7ab348178585bb45.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Lenz",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Lenz",
+      "revision": 2685444,
+      "timestamp": "2025-06-16T19:19:18Z",
+      "sha256": "a195414ec9b545ecdd2d96f8ca56812449e2d28ed97e1dc69dfb4ee969df8e44",
+      "url": "https://wiki.warframe.com/w/Lenz?oldid=2685444",
+      "batch": "a7a398b9209d46c3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Lenz",
+    "parent": 0,
+    "child": 2,
+    "delay": 1.3,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Lenz",
+      "revision": 2685444,
+      "timestamp": "2025-06-16T19:19:18Z",
+      "sha256": "a195414ec9b545ecdd2d96f8ca56812449e2d28ed97e1dc69dfb4ee969df8e44",
+      "url": "https://wiki.warframe.com/w/Lenz?oldid=2685444",
+      "batch": "a7a398b9209d46c3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Lenz",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Prisma Lenz",
+      "revision": 2785199,
+      "timestamp": "2026-06-15T02:34:53Z",
+      "sha256": "0d03736727719f8f66cf6dc2ada1637d6885135945b00caf5c57053c9c9af1f1",
+      "url": "https://wiki.warframe.com/w/Prisma_Lenz?oldid=2785199",
+      "batch": "7ab348178585bb45.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Lenz",
+    "parent": 0,
+    "child": 2,
+    "delay": 1.3,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Prisma Lenz",
+      "revision": 2785199,
+      "timestamp": "2026-06-15T02:34:53Z",
+      "sha256": "0d03736727719f8f66cf6dc2ada1637d6885135945b00caf5c57053c9c9af1f1",
+      "url": "https://wiki.warframe.com/w/Prisma_Lenz?oldid=2785199",
+      "batch": "7ab348178585bb45.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Zakti",
+    "parent": 0,
+    "child": 1,
+    "delay": 1,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Zakti",
+      "revision": 2790016,
+      "timestamp": "2026-06-30T01:41:02Z",
+      "sha256": "3eba1bb73ee590d491f69a6d5b327e3d3c8de305d625355271555c3ac17a01fa",
+      "url": "https://wiki.warframe.com/w/Zakti?oldid=2790016",
+      "batch": "8d6acc32d8d8f7db.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Zakti Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 1,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Zakti Prime",
+      "revision": 2790017,
+      "timestamp": "2026-06-30T01:41:21Z",
+      "sha256": "7dec27143ba978b4319bd5590ef9107a0fb1b4e9f11ac4a657c04fd7ae2e86af",
+      "url": "https://wiki.warframe.com/w/Zakti_Prime?oldid=2790017",
+      "batch": "8d6acc32d8d8f7db.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Kompressa",
+    "parent": 0,
+    "child": 1,
+    "delay": 0.6,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kompressa",
+      "revision": 2760940,
+      "timestamp": "2026-04-09T23:02:24Z",
+      "sha256": "7a269d5eed0e11ac44fe28f6bad70faa2c9ab89cdb2db18dc76544aa621cd543",
+      "url": "https://wiki.warframe.com/w/Kompressa?oldid=2760940",
+      "batch": "f0e21d4eb777faad.json"
+    },
+    "maximumDelay": 0.8
+  },
+  {
+    "weaponId": "wiki:secondary/Kompressa Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0.6,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Kompressa Prime",
+      "revision": 2789998,
+      "timestamp": "2026-06-30T01:26:26Z",
+      "sha256": "225bae45a5e36b618bdb716251b3ae914d4b9680169df6e1499533f4cc2a501a",
+      "url": "https://wiki.warframe.com/w/Kompressa_Prime?oldid=2789998",
+      "batch": "d79d4872042f3cc9.json"
+    },
+    "maximumDelay": 0.8
+  },
+  {
+    "weaponId": "wiki:secondary/Tenet Plinx",
+    "parent": 1,
+    "child": 2,
+    "delay": 0.8,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tenet Plinx",
+      "revision": 2805127,
+      "timestamp": "2026-09-02T21:21:24Z",
+      "sha256": "22124d0c3d54a94151e7798638a04c25a5dbd82dc3cdbb54315dbf755e18421d",
+      "url": "https://wiki.warframe.com/w/Tenet_Plinx?oldid=2805127",
+      "batch": "34e255fa5450dd70.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Afentis",
+    "parent": 0,
+    "child": 1,
+    "delay": 0.8,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Afentis",
+      "revision": 2804695,
+      "timestamp": "2026-09-01T12:06:44Z",
+      "sha256": "9a12cc40530fe4f7a57594fd27c738163dd2e79d6c89d0f16c4414497def1622",
+      "url": "https://wiki.warframe.com/w/Afentis?oldid=2804695",
+      "batch": "301db9aaf8fd8b57.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Afentis Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0.4,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Afentis Prime",
+      "revision": 2796108,
+      "timestamp": "2026-07-30T12:39:22Z",
+      "sha256": "9169060fd3ce57e0fda6598133dd500757cd1a09f056a72e80a52b8c5bb33862",
+      "url": "https://wiki.warframe.com/w/Afentis_Prime?oldid=2796108",
+      "batch": "301db9aaf8fd8b57.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zhuge Prime",
+    "parent": 0,
+    "child": 1,
+    "delay": 0.6,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Zhuge Prime",
+      "revision": 2789300,
+      "timestamp": "2026-06-26T02:50:00Z",
+      "sha256": "b0ef269612a877d50d80bc2f126b665e3ee9e4cae87588b70ec9946dc0baf58c",
+      "url": "https://wiki.warframe.com/w/Zhuge_Prime?oldid=2789300",
+      "batch": "e7c7ac65ab902fed.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Despair",
+    "parent": 1,
+    "child": 2,
+    "delay": 0.5,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Despair",
+      "revision": 2817269,
+      "timestamp": "2026-10-09T09:54:18Z",
+      "sha256": "378d9d095d4051c44d13a2ddd5196c9cea806a52debb6017affcdfbdf0f088da",
+      "url": "https://wiki.warframe.com/w/Despair?oldid=2817269",
+      "batch": "09a645c5e75becc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Gammacor",
+    "parent": 1,
+    "child": 2,
+    "delay": 1.2,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Gammacor",
+      "revision": 2817273,
+      "timestamp": "2026-10-09T09:56:55Z",
+      "sha256": "658ef6c2951395236c26e1632bf574f41c0637ad44c948c0f3a45528edebb46d",
+      "url": "https://wiki.warframe.com/w/Gammacor?oldid=2817273",
+      "batch": "50cf9f0758730f85.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Synoid Gammacor",
+    "parent": 1,
+    "child": 2,
+    "delay": 1.2,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Synoid Gammacor",
+      "revision": 2817274,
+      "timestamp": "2026-10-09T09:57:03Z",
+      "sha256": "bc046bf207fc2da58883ed77eef8dfc6288fbd47a39580f14052253bd15f3c70",
+      "url": "https://wiki.warframe.com/w/Synoid_Gammacor?oldid=2817274",
+      "batch": "4982998346fc3632.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Torid",
+    "parent": 0,
+    "child": 1,
+    "delay": 1,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 1,
+    "tickCount": 10,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Torid",
+      "revision": 2816901,
+      "timestamp": "2026-10-08T09:58:55Z",
+      "sha256": "895aa001d212bc83699cb6cd29232f944e28fbff6b1788aee48e36776551e5de",
+      "url": "https://wiki.warframe.com/w/Torid?oldid=2816901",
+      "batch": "d4a34f4a056b29be.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Tysis",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 1,
+    "tickCount": 3,
+    "singleTickOnPierce": true,
+    "source": {
+      "title": "Tysis",
+      "revision": 2785069,
+      "timestamp": "2026-06-14T22:40:24Z",
+      "sha256": "53eadc52536bcefdaa4a1f8b952cc216b72b12688bccc8c30ab7d17c19c05d01",
+      "url": "https://wiki.warframe.com/w/Tysis?oldid=2785069",
+      "batch": "818e40976d670e04.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Coda Tysis",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 1,
+    "tickCount": 3,
+    "singleTickOnPierce": true,
+    "source": {
+      "title": "Coda Tysis",
+      "revision": 2795802,
+      "timestamp": "2026-07-29T00:07:23Z",
+      "sha256": "9fd41548c17975310afd4313c5960ffc064702f77ea3911d1dd3319a5c94561e",
+      "url": "https://wiki.warframe.com/w/Coda_Tysis?oldid=2795802",
+      "batch": "d93f68f7400bafa3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Sporothrix",
+    "parent": 0,
+    "child": 1,
+    "delay": 0.9,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Sporothrix",
+      "revision": 2814718,
+      "timestamp": "2026-09-30T19:21:04Z",
+      "sha256": "f16c2f7d372dc6f5e7d3ee5831ece869efd58e776089199d99b3e1dfaddd84a1",
+      "url": "https://wiki.warframe.com/w/Sporothrix?oldid=2814718",
+      "batch": "fa2aab18b94d9fd3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Coda Sporothrix",
+    "parent": 0,
+    "child": 1,
+    "delay": 0.9,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Coda Sporothrix",
+      "revision": 2797795,
+      "timestamp": "2026-08-10T14:02:50Z",
+      "sha256": "7b31559495f4cc067555f55c69bf00133409873c6cd3e6ee4e40d8d2e646dd56",
+      "url": "https://wiki.warframe.com/w/Coda_Sporothrix?oldid=2797795",
+      "batch": "d93f68f7400bafa3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Phantasma",
+      "revision": 2791922,
+      "timestamp": "2026-07-08T01:33:52Z",
+      "sha256": "b037fdb83234f17732258111b7390d5182f144755c13eedecc7a51d418c2143d",
+      "url": "https://wiki.warframe.com/w/Phantasma?oldid=2791922",
+      "batch": "ff2efc83d81af0c0.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma",
+    "parent": 3,
+    "child": 4,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Phantasma",
+      "revision": 2791922,
+      "timestamp": "2026-07-08T01:33:52Z",
+      "sha256": "b037fdb83234f17732258111b7390d5182f144755c13eedecc7a51d418c2143d",
+      "url": "https://wiki.warframe.com/w/Phantasma?oldid=2791922",
+      "batch": "ff2efc83d81af0c0.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma Prime",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Phantasma Prime",
+      "revision": 2791923,
+      "timestamp": "2026-07-08T01:33:59Z",
+      "sha256": "1583812fa00f848a6a0069b2ea1b73d4d36a3cd28633fb33926625b0a9aa165c",
+      "url": "https://wiki.warframe.com/w/Phantasma_Prime?oldid=2791923",
+      "batch": "ff2efc83d81af0c0.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma Prime",
+    "parent": 3,
+    "child": 4,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Phantasma Prime",
+      "revision": 2791923,
+      "timestamp": "2026-07-08T01:33:59Z",
+      "sha256": "1583812fa00f848a6a0069b2ea1b73d4d36a3cd28633fb33926625b0a9aa165c",
+      "url": "https://wiki.warframe.com/w/Phantasma_Prime?oldid=2791923",
+      "batch": "ff2efc83d81af0c0.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Tombfinger (Secondary)",
+    "parent": 0,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "manualDetonation": false,
+    "tickInterval": 0,
+    "tickCount": 1,
+    "singleTickOnPierce": false,
+    "source": {
+      "title": "Tombfinger",
+      "revision": 2657912,
+      "timestamp": "2025-01-31T15:43:34Z",
+      "sha256": "366567575a34aebd6fc665e43963b7ab8de5e5c7925df7efd88e6c00af224a44",
+      "url": "https://wiki.warframe.com/w/Tombfinger?oldid=2657912",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Komorex",
+    "parent": 2,
+    "child": 1,
+    "delay": 0,
+    "minimumDistance": 0,
+    "source": {
+      "title": "Komorex",
+      "revision": 2793464,
+      "timestamp": "2026-07-15T08:04:55Z",
+      "sha256": "cdc2be7e3617b1532ec37572d4fb4603f926f1514fa285857f76f02818e2cffa",
+      "url": "https://wiki.warframe.com/w/Komorex?oldid=2793464",
+      "batch": "f0e21d4eb777faad.json"
+    },
+    "tickInterval": 0,
+    "tickCount": 1
+  },
+  {
+    "weaponId": "wiki:primary/Paracyst",
+    "parent": 1,
+    "child": 2,
+    "delay": 0,
+    "minimumDistance": 0,
+    "source": {
+      "title": "Paracyst",
+      "revision": 2785461,
+      "timestamp": "2026-06-16T02:21:23Z",
+      "sha256": "96c24dd33f86fa244939bbc26c6d1ecc89763ee56face5bd8f4053cb1fbe1799",
+      "url": "https://wiki.warframe.com/w/Paracyst?oldid=2785461",
+      "batch": "908ead252b087ddb.json"
+    },
+    "tickInterval": 1,
+    "tickCount": 5
+  }
+]

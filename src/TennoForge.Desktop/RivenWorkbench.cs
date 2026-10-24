@@ -1,4 +1,4 @@
-using System.Globalization;
+﻿using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
 using TennoForge.Core;
@@ -18,51 +18,59 @@ public sealed partial class MainWindow
     private readonly TextBlock[] rivenGrades=new TextBlock[4];
     private readonly TextBlock rivenInfo=T("",14);
     private bool changingRiven;
+    private readonly FrameworkElement[] rivenEndpoints=new FrameworkElement[4];
+    private RivenSections? rivenSections;
+    private RivenReferenceBrowser? rivenReference;
     private record RivenOption(RivenStat? Stat,string Name);
     private FrameworkElement CreateRivenWorkbench()
     {
         var editor=new StackPanel();var output=new StackPanel();
         rivenWeapon.ItemsSource=catalog.Weapons;rivenWeapon.SelectedItem=weapon.SelectedItem;
-        editor.Children.Add(T("리벤",22));editor.Children.Add(Field("무기 · 변형별 기질",rivenWeapon));
-        editor.Children.Add(Columns(Field("리벤 랭크",rivenRank),Field("장착할 모드 슬롯",rivenDestination)));
-        editor.Children.Add(Columns(Field("표시 코스트",rivenCost),Field("리벤 극성",rivenPolarity)));
-        var options=new[]{new RivenOption(null,"선택 안 함")}.Concat(Enum.GetValues<RivenStat>().Select(s=>new RivenOption(s,RivenEngine.Label(s)+(RivenValues.IsSpliced(s)?" · 접합":"")))).ToArray();
+        editor.Children.Add(T("내 리벤",22));editor.Children.Add(T("게임에 표시된 옵션 순서대로 입력",14,"#596B85"));editor.Children.Add(Field("리벤 랭크 · 수치 범위에 적용",rivenRank));
+        var options=new[]{new RivenOption(null,"옵션 선택")}.Concat(Enum.GetValues<RivenStat>().Select(s=>new RivenOption(s,RivenEngine.Label(s)+(RivenValues.IsSpliced(s)?" · 접합":"")))).ToArray();
         for(var i=0;i<4;i++)
         {
             traits[i]=new(){ItemsSource=options,DisplayMemberPath="Name",SelectedIndex=0};
             negatives[i]=new(){Content="음옵",Margin=new(12,0,0,0),VerticalAlignment=VerticalAlignment.Center};
-            rivenValues[i]=new(){ToolTip="게임에 표시된 수치의 크기. 음수 부호는 음옵 스위치로 선택합니다."};
+            rivenValues[i]=new(){ToolTip="게임에 표시된 수치의 크기 · 부호는 옆에서 선택"};
             rivenGrades[i]=T("",14,"#596B85");rivenGrades[i].TextWrapping=TextWrapping.Wrap;
-            var valueRow=new DockPanel();DockPanel.SetDock(negatives[i],Dock.Right);valueRow.Children.Add(negatives[i]);valueRow.Children.Add(rivenValues[i]);
-            var traitRow=Columns(traits[i],valueRow,1.3,1);traitRow.Margin=new(0,4,0,6);
-            rivenGrades[i].Margin=new(0,0,0,12);
-            editor.Children.Add(traitRow);editor.Children.Add(rivenGrades[i]);
+            rivenGrades[i].Margin=new(0,0,0,4);
+            var index=i;
+            var endpoints=new WrapPanel{Margin=new(0,0,0,8)};var endpointDetails=new Expander{Header="최소·최대값으로 시험",Content=endpoints};rivenEndpoints[i]=endpointDetails;
+            foreach(var maximum in new[]{false,true}){var end=maximum;var quick=Button(end?"최대값 입력":"최소값 입력",()=>SetRivenEndpoint(index,end));quick.Padding=new(8,3,8,3);quick.Margin=new(0,0,6,0);quick.ToolTip="선택한 구성의 경계값으로 비교할 가정을 입력합니다.";endpoints.Children.Add(quick);}
+            editor.Children.Add(new RivenOptionInput(i,traits[i],rivenValues[i],RivenOptionInput.SignFor(negatives[i]),rivenGrades[i],endpointDetails));
             traits[i].SelectionChanged+=(_,_)=>RefreshRivenWorkbench();negatives[i].Checked+=(_,_)=>RefreshRivenWorkbench();negatives[i].Unchecked+=(_,_)=>RefreshRivenWorkbench();rivenValues[i].TextChanged+=(_,_)=>RefreshRivenWorkbench();
         }
         rivenWeapon.SelectionChanged+=(_,_)=>{if(!changingRiven){rivenSession=null;rivenBaseline=null;rivenCycles.Text="0";}RefreshRivenWorkbench();};rivenRank.SelectionChanged+=(_,_)=>RefreshRivenWorkbench();
-        editor.Children.Add(Button("선택한 슬롯에 장착",()=>
+        var equipDetails=new Expander{Header="장착 설정 · 슬롯 / 코스트 / 극성",Content=Stack(Field("장착할 모드 슬롯",rivenDestination),Columns(Field("표시 코스트",rivenCost),Field("리벤 극성",rivenPolarity))),Margin=new(0,4,0,12)};editor.Children.Add(equipDetails);
+        editor.Children.Add(Button("현재 근접 모딩에 가정 적용",()=>
         {
             try
             {
                 var roll=ReadRivenWorkbench();RivenValues.Validate(roll);
                 var cost=Integer(rivenCost,"리벤 코스트")-roll.Rank;
                 if(cost<0||cost>30||rivenPolarity.SelectedValue is not string polarity)throw new ArgumentException("표시 코스트와 극성을 확인하세요.");
-                roll=roll with {BaseDrain=cost,Polarity=polarity};equippedRiven=roll;board.SetRiven(roll);
-                weaponClass.SelectedIndex=0;weapon.SelectedItem=catalog.Weapons.Single(w=>w.Id==roll.WeaponId);
+                roll=roll with {WeaponId=((Weapon)weapon.SelectedItem).Id,BaseDrain=cost,Polarity=polarity};equippedRiven=roll;board.SetRiven(roll);
+
                 var mod=catalog.Mods.Single(m=>m.Id==RivenValues.ModId(roll.WeaponId));
                 var slots=board.Slots;for(var i=0;i<slots.Length;i++)if(slots[i]?.ModId==mod.Id)slots[i]=null;
                 slots[(int)rivenDestination.SelectedItem-1]=new(mod.Id,roll.Rank);board.SetSlots(slots);ShowModding();
             }
-            catch(ArgumentException ex){rivenInfo.Text=ex.Message;}
+            catch(ArgumentException ex){rivenInfo.Text=ex.Message;if(string.IsNullOrWhiteSpace(rivenCost.Text)||rivenPolarity.SelectedValue is null){equipDetails.IsExpanded=true;rivenCost.BringIntoView();rivenCost.Focus();}}
         }));
         editor.Children.Add(Button("장착한 리벤 불러오기",()=>{if(equippedRiven is {} r)ApplyRivenWorkbench(r);else rivenInfo.Text="아직 장착한 리벤이 없습니다.";}));
         foreach(var action in editor.Children.OfType<Button>())action.Margin=new(0,8,0,0);
-        output.Children.Add(T("수치 범위 · 접합 예상",22));rivenInfo.TextWrapping=TextWrapping.Wrap;output.Children.Add(rivenInfo);output.Children.Add(T("옵션별 수치 위치",18));output.Children.Add(T("범위 내 위치이며 획득 확률·빌드 점수가 아닙니다. 세로 표시와 옅은 띠는 현재 값과 반올림 오차 범위입니다.",14,"#596B85"));output.Children.Add(rivenRangeCharts);output.Children.Add(T("접합 예상",18));output.Children.Add(spliceResults);
-        var note=T("표시 수치의 반올림을 고려한 범위입니다. 범위 내 위치는 획득 확률이 아닙니다. 음옵은 크기가 낮을수록 불이익이 작지만, 접합에는 부호를 뒤집지 않은 원래 롤이 사용됩니다.\n\n접합은 높은 롤을 계승합니다. 대체 옵션은 무작위이므로 결과를 확정해 장착하지 않습니다. 실제 결과 또는 비교할 가정의 수치를 왼쪽에 입력하면 모딩에 적용할 수 있습니다.",14,"#596B85");note.TextWrapping=TextWrapping.Wrap;
-        output.Children.Add(new Expander{Header="수치 범위 · 접합 계산 기준",Margin=new(0,0,0,20),Content=SpacedStack(12,note,Button("위키 계산 근거",()=>System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(RivenValues.Source){UseShellExecute=true})))});
+        UiHierarchy.Primary(editor.Children.OfType<Button>().First());
+        output.Children.Add(T("옵션 수치 분석",24));rivenInfo.TextWrapping=TextWrapping.Wrap;CollapseEmpty(rivenInfo);output.Children.Add(rivenRangeCharts);
+        var note=T("표시 수치의 반올림을 고려한 범위입니다. 범위 내 위치는 획득 확률이 아닙니다. 음옵은 절대 크기를 비교하며 실제 유불리는 옵션마다 다릅니다. 접합에는 부호를 뒤집지 않은 원래 롤이 사용됩니다.\n\n접합은 높은 롤을 계승합니다. 대체 옵션은 무작위이므로 결과를 확정해 장착하지 않습니다. 실제 결과 또는 비교할 가정의 수치를 왼쪽에 입력하면 모딩에 적용할 수 있습니다.",14,"#596B85");note.TextWrapping=TextWrapping.Wrap;
+        output.Children.Add(new Expander{Header="수치 범위 · 접합 계산 기준",Margin=new(0,0,0,20),Content=SpacedStack(12,note,Button("44.1.3 공식 패치",()=>System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(RivenBalance.Source){UseShellExecute=true})),Button("위키 계산 근거",()=>System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(RivenValues.Source){UseShellExecute=true})))});
         rivenComparison.Text="현재 리벤을 비교 기준으로 지정한 뒤 후보를 비교하세요.";
-        var session=CreateRivenSessionPanel();RefreshRivenWorkbench();
-        return Columns(Scroll(editor),Columns(Scroll(output),Scroll(session)),1,2);
+        var session=CreateRivenSessionPanel();
+        rivenReference=new RivenReferenceBrowser(MeleeReferenceRanges,RivenEngine.Recipes.Select(r=>(RivenEngine.Label(r.A)+" + "+RivenEngine.Label(r.B),RivenEngine.Label(r.Result))));
+        var splicePage=Stack(T("접합 미리보기",24),T("소비되는 옵션 두 개 → 계승되는 접합 옵션",16),T("왼쪽에 실제 수치를 입력하면 가능한 조합과 계승 범위가 표시됩니다. 전체 조합표는 옵션 도감에서 확인할 수 있습니다.",14,"#596B85"),spliceResults);
+        rivenSections=new RivenSections(("수치 확인",Scroll(output)),("접합",Scroll(splicePage)),("옵션 도감",rivenReference),("비교 · 순환",Scroll(session)));
+        var workspace=new Grid();workspace.RowDefinitions.Add(new(){Height=GridLength.Auto});workspace.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});workspace.Children.Add(rivenInfo);Grid.SetRow(rivenSections,1);workspace.Children.Add(rivenSections);
+        rivenSections.Select(0);RefreshRivenWorkbench();return Columns(Scroll(editor),workspace,1,2.35);
     }
     private RivenRoll ReadRivenWorkbench(bool requireValues=true)
     {
@@ -72,36 +80,63 @@ public sealed partial class MainWindow
             values.Add(new(stat,requireValues?Number(rivenValues[i],RivenEngine.Label(stat)):0,negatives[i].IsChecked==true,RivenValues.IsSpliced(stat)));
         return new(selected.Id,(int)rivenRank.SelectedItem,values.ToArray(),RivenValues.Version);
     }
-    private void RefreshRivenWorkbench()
+    private void RefreshRivenWorkbench(bool invalidateComparison=true)
     {
         if(changingRiven||rivenValues.Any(x=>x is null))return;
-        InvalidateRivenComparison();
+        if(invalidateComparison)InvalidateRivenComparison();
+        rivenReference?.Refresh();
         RefreshRivenLocks();
+        for(int i=0;i<4;i++){var selected=(traits[i].SelectedItem as RivenOption)?.Stat is not null;rivenEndpoints[i].Visibility=selected?Visibility.Visible:Visibility.Collapsed;rivenEndpoints[i].IsEnabled=rivenSession?.Pending is null;rivenGrades[i].Visibility=selected?Visibility.Visible:Visibility.Collapsed;}
         rivenRangeCharts.Children.Clear();spliceResults.Children.Clear();foreach(var grade in rivenGrades)grade.Text="";
         try
         {
             var shape=ReadRivenWorkbench(false);RivenValues.Validate(shape,false);
-            rivenInfo.Text=$"기질 {RivenValues.Disposition(shape.WeaponId):0.00} · 랭크 {shape.Rank}/8 · 위키 개정 2817521";
+            rivenReference?.FollowComposition(shape.Traits.Count(t=>!t.Negative),shape.Traits.Count(t=>t.Negative));
+            rivenInfo.Text=$"공통 배율 1.2 · 랭크 {shape.Rank}/8 · Hotfix 44.1.3";
             var n=0;
             for(var i=0;i<4;i++)if((traits[i].SelectedItem as RivenOption)?.Stat is {} stat)
             {
                 var trait=shape.Traits[n++];var range=RivenValues.Range(shape,trait);var unit=RivenValues.Unit(stat);
                 rivenGrades[i].Text=$"가능 범위 {range.Minimum:0.###}–{range.Maximum:0.###}{unit}";
-                if(double.TryParse(rivenValues[i].Text,NumberStyles.Float,CultureInfo.InvariantCulture,out var v))
-                {var grade=RivenEngine.Grade(v,range.Minimum,range.Maximum);AddRivenRangeChart(trait,v,range.Minimum,range.Maximum,grade);rivenGrades[i].Text+=$" · 범위 위치 {grade.Position:P1}"+(trait.Negative?(grade.MinCompatible?" · 최소 불이익 표시값 가능":" · 낮을수록 불이익 감소"):(grade.MaxCompatible?" · 최대 표시값 가능":""));}
+                var hasValue=double.TryParse(rivenValues[i].Text,NumberStyles.Float,CultureInfo.InvariantCulture,out var v);
+                rivenRangeCharts.Children.Add(RivenPresentation.Range(RivenEngine.Label(stat),unit,range.Minimum,range.Maximum,hasValue?v:null,trait.Negative));
+                if(hasValue)try{var grade=RivenEngine.Grade(v,range.Minimum,range.Maximum);rivenGrades[i].Text+=$" · 범위 위치 {grade.Position:P1}";}catch(ArgumentException){rivenGrades[i].Text+=" · 범위 밖의 값";}
+
             }
             var roll=ReadRivenWorkbench();RivenValues.Validate(roll);
             foreach(var prediction in RivenValues.Predict(roll))
             {
                 var candidate=prediction.Candidate;
-                var text=T($"{RivenEngine.Label(candidate.Result)}\n{prediction.Value.Low:0.###}–{prediction.Value.High:0.###}{RivenValues.Unit(candidate.Result)}\n{RivenEngine.Label(roll.Traits[candidate.First].Stat)} + {RivenEngine.Label(roll.Traits[candidate.Second].Stat)} 소비\n대체 {(candidate.RandomIsNegative?"음옵":"양옵")} 1개 · 종류와 수치 무작위",16);text.TextWrapping=TextWrapping.Wrap;spliceResults.Children.Add(Card(text));
+                spliceResults.Children.Add(RivenPresentation.Recipe(RivenEngine.Label(roll.Traits[candidate.First].Stat)+" + "+RivenEngine.Label(roll.Traits[candidate.Second].Stat),RivenEngine.Label(candidate.Result),$"{prediction.Value.Low:0.###}–{prediction.Value.High:0.###}{RivenValues.Unit(candidate.Result)}",candidate.RandomIsNegative));
                 var action=Button("이 접합으로 예시 만들기",()=>WorkshopAction(s=>RivenWorkshop.SpliceExample(s,candidate,Random.Shared)));
                 action.Margin=new(0,0,0,20);spliceResults.Children.Add(action);
             }
             if(spliceResults.Children.Count==0)spliceResults.Children.Add(T(roll.Traits.Any(t=>t.Spliced)?"접합 옵션이 이미 있습니다. 재접합 전 기존 접합을 해제해야 합니다.":"현재 옵션으로 가능한 접합 없음",14));
         }
-        catch(ArgumentException ex){rivenInfo.Text=ex.Message;}
+        catch(ArgumentException ex)
+        {
+            rivenInfo.Text=traits.All(t=>(t.SelectedItem as RivenOption)?.Stat is null)?"":ex.Message;
+            if(spliceResults.Children.Count==0)spliceResults.Children.Add(T("옵션 2~3개와 게임 표시값을 입력하면 접합을 확인할 수 있습니다.",16));
+            if(rivenRangeCharts.Children.Count==0)rivenRangeCharts.Children.Add(UiHierarchy.RivenStart(()=>{traits[0].BringIntoView();traits[0].Focus();traits[0].IsDropDownOpen=true;},()=>rivenSections?.Select(2)));
+        }
     }
+    private void SetRivenEndpoint(int index,bool maximum)
+    {
+        if(!rivenValues[index].IsEnabled)return;
+        try{var shape=ReadRivenWorkbench(false);RivenValues.Validate(shape,false);if((traits[index].SelectedItem as RivenOption)?.Stat is not {} stat)return;var t=shape.Traits.Single(t=>t.Stat==stat);var range=RivenValues.Range(shape,t);rivenValues[index].Text=Math.Round(maximum?range.Maximum:range.Minimum,1).ToString(CultureInfo.InvariantCulture);}catch(ArgumentException ex){rivenInfo.Text=ex.Message;}
+    }
+    private IEnumerable<RivenReferenceEntry> MeleeReferenceRanges(int positive,int negative,bool isNegative,bool spliced)
+    {
+        var selected=(Weapon?)rivenWeapon.SelectedItem??throw new ArgumentException("무기를 선택하세요.");
+        // Only composition counts are consumed by Range. The synthetic shape never enters the user's build.
+        var shape=new RivenRoll(selected.Id,(int)rivenRank.SelectedItem,Enumerable.Range(0,positive).Select(_=>new RivenTrait(RivenStat.Range,0)).Concat(Enumerable.Range(0,negative).Select(_=>new RivenTrait(RivenStat.StatusDuration,0,true))).ToArray(),RivenValues.Version);
+        foreach(var stat in RivenValues.Bases.Keys.Where(s=>RivenValues.IsSpliced(s)==spliced))
+        {
+            if(isNegative&&(spliced||stat is RivenStat.Damage or RivenStat.Heat or RivenStat.Cold or RivenStat.Electricity or RivenStat.Toxin))continue;
+            var range=RivenValues.Range(shape,new(stat,0,isNegative,spliced));yield return new(RivenEngine.Label(stat),stat.ToString(),RivenValues.Unit(stat),range.Minimum,range.Maximum);
+        }
+    }
+    internal void SelectRivenSectionForCheck(int index)=>rivenSections!.Select(index);
     private void ApplyRivenWorkbench(RivenRoll roll)
     {
         changingRiven=true;

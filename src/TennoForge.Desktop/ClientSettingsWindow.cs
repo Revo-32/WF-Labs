@@ -18,7 +18,7 @@ internal sealed class ClientSettingsWindow : Window
     {
         this.saveRecovery=saveRecovery;this.updates=updates??new(new VelopackUpdateFeed());ownsUpdates=updates is null;
         Title="WF Labs · 실행 및 업데이트";Width=560;Height=660;ResizeMode=ResizeMode.NoResize;
-        FontFamily=(System.Windows.Media.FontFamily)Application.Current.Resources["Wanted"];WindowStartupLocation=WindowStartupLocation.CenterOwner;
+        SetResourceReference(FontFamilyProperty,"AppFont");WindowStartupLocation=WindowStartupLocation.CenterOwner;
         var root=new Grid();root.RowDefinitions.Add(new(){Height=new(64)});root.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});
         var controls=WindowFrame.Controls(this);controls.Children.RemoveAt(1);controls.Children.RemoveAt(0);controls.HorizontalAlignment=HorizontalAlignment.Right;root.Children.Add(controls);
         var panel=new StackPanel{Margin=new(24,8,24,24)};

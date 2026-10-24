@@ -13,6 +13,7 @@ public sealed partial class MainWindow
         void Yes(bool x,string name){if(!x)throw new Exception(name);checks.Add(name);}
         try
         {
+            scenarioDrawer!.SetOpen(true,false);UpdateLayout();
             attackMode.SelectedIndex=1;encounterChoice.SelectedValue=EncounterMode.Primer;
             clearStatusButton.RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Button.ClickEvent));var before=current!.TargetDps;
             statusButtons[DamageType.Slash].RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Button.ClickEvent));
@@ -31,7 +32,7 @@ public sealed partial class MainWindow
             var rackPosition=board.RackView.TranslatePoint(new Point(),root);var equationPosition=equationView.TranslatePoint(new Point(),root);
             scenarioScroller!.ScrollToBottom();scenarioScroller.UpdateLayout();
             Yes(board.RackView.TranslatePoint(new Point(),root)==rackPosition&&equationView.TranslatePoint(new Point(),root)==equationPosition,"상황 설정 독립 스크롤");
-            ApplyBuild(saved);UpdateLayout();
+            scenarioDrawer!.SetOpen(false,false);ApplyBuild(saved);UpdateLayout();
             var card=board.SlotForCheck(0);var originalOpacity=card.Opacity;
             using(var preview=ModDragPreview.Start(card)??throw new Exception("드래그 미리보기 레이어 없음"))
             {
@@ -44,7 +45,7 @@ public sealed partial class MainWindow
             Yes(card.Opacity==originalOpacity,"드래그 종료·취소 시 원본 투명도 복원");
             return new{passed=true,checks};
         }
-        finally{ApplyBuild(saved);scenarioScroller?.ScrollToTop();ResetChartsScroll();SettleSimulationForPreview();}
+        finally{ApplyBuild(saved);scenarioDrawer!.SetOpen(false,false);scenarioScroller?.ScrollToTop();ResetChartsScroll();SettleSimulationForPreview();}
     }
     public void DragPreviewForCheck(bool show)
     {

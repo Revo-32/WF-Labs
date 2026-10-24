@@ -1,0 +1,124 @@
+[
+  {
+    "weaponId": "wiki:primary/Battacor",
+    "primary": [
+      0
+    ],
+    "alternate": [
+      1,
+      2
+    ],
+    "capacity": 3,
+    "required": 1,
+    "damagePerCharge": true,
+    "noAmmo": false,
+    "lockTargets": 1,
+    "blockSeconds": 0,
+    "source": {
+      "title": "Battacor",
+      "revision": 2814677,
+      "timestamp": "2026-09-30T18:43:16Z",
+      "sha256": "e19792cf576518be9bd4b3f92d9879ccba921ef7a9dec118319f55a485122cf6",
+      "url": "https://wiki.warframe.com/w/Battacor?oldid=2814677",
+      "batch": "d9466ea55cbdeb90.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Higasa",
+    "primary": [
+      0
+    ],
+    "alternate": [
+      1
+    ],
+    "capacity": 10,
+    "required": 10,
+    "damagePerCharge": false,
+    "noAmmo": true,
+    "lockTargets": 1,
+    "blockSeconds": 2,
+    "source": {
+      "title": "Higasa",
+      "revision": 2814696,
+      "timestamp": "2026-09-30T18:57:46Z",
+      "sha256": "6a33d532858d440f301a79ab2f777e457e29937a2aa49fb2be9436765a97d92c",
+      "url": "https://wiki.warframe.com/w/Higasa?oldid=2814696",
+      "batch": "e5d32decb82e8b83.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna",
+    "primary": [
+      0,
+      1
+    ],
+    "alternate": [
+      2,
+      3
+    ],
+    "capacity": 5,
+    "required": 5,
+    "damagePerCharge": false,
+    "noAmmo": true,
+    "lockTargets": 1,
+    "blockSeconds": 0,
+    "source": {
+      "title": "Trumna",
+      "revision": 2805022,
+      "timestamp": "2026-09-02T20:48:13Z",
+      "sha256": "1f18a1ebf62379418f383f6d42902f17a610675ddf00175da7fc70d7aab63fe6",
+      "url": "https://wiki.warframe.com/w/Trumna?oldid=2805022",
+      "batch": "abcc97bb813f1730.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna Prime",
+    "primary": [
+      0,
+      1
+    ],
+    "alternate": [
+      2,
+      3
+    ],
+    "capacity": 5,
+    "required": 5,
+    "damagePerCharge": false,
+    "noAmmo": true,
+    "lockTargets": 1,
+    "blockSeconds": 0,
+    "source": {
+      "title": "Trumna Prime",
+      "revision": 2777545,
+      "timestamp": "2026-05-19T12:02:12Z",
+      "sha256": "f8728b4bc3e8876b777888ea70cd8984e9119add0851b5fe4d1b584d3137a053",
+      "url": "https://wiki.warframe.com/w/Trumna_Prime?oldid=2777545",
+      "batch": "abcc97bb813f1730.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Sepulcrum",
+    "primary": [
+      0,
+      1
+    ],
+    "alternate": [
+      2,
+      3
+    ],
+    "capacity": 5,
+    "required": 5,
+    "damagePerCharge": false,
+    "noAmmo": true,
+    "lockTargets": 5,
+    "blockSeconds": 0,
+    "source": {
+      "title": "Sepulcrum",
+      "revision": 2790003,
+      "timestamp": "2026-06-30T01:32:12Z",
+      "sha256": "f023812ac8dc6503debffe55d0ff1d4cb25976b5361d73ed706be23fdcc9b2b9",
+      "url": "https://wiki.warframe.com/w/Sepulcrum?oldid=2790003",
+      "batch": "b963fdc84b01a6d1.json"
+    }
+  }
+]

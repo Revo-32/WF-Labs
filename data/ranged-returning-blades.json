@@ -1,0 +1,19 @@
+[
+  {
+    "weaponId": "wiki:secondary/Cantare",
+    "limit": 30,
+    "criticalChance": 3,
+    "reloadBonus": 0.2,
+    "duration": 30,
+    "ensembleBonus": 0.6,
+    "ensembleDuration": 60,
+    "source": {
+      "title": "Cantare",
+      "revision": 2797776,
+      "timestamp": "2026-08-10T05:54:59Z",
+      "sha256": "cb93e8348e806071ae4b7b453041cd013907edcd9fd000ec2dff5a44f50a8e01",
+      "url": "https://wiki.warframe.com/w/Cantare?oldid=2797776",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  }
+]

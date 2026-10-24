@@ -8,6 +8,7 @@ namespace TennoForge.Desktop;
 public sealed partial class MainWindow
 {
     private Grid? moddingEditor;
+    private ScenarioDrawer? scenarioDrawer;
     private Border? equipmentCard;
     private FrameworkElement? equipmentActions;
     private readonly ComboBox attackMode = new(){ItemsSource=new[]{"스탠스 콤보","단일 공격"},SelectedIndex=0};
@@ -31,9 +32,9 @@ public sealed partial class MainWindow
     private FrameworkElement CreateModPage()
     {
         var left=new Grid();moddingEditor=left;left.RowDefinitions.Add(new(){Height=GridLength.Auto});left.RowDefinitions.Add(new(){Height=GridLength.Auto});left.RowDefinitions.Add(new(){Height=GridLength.Auto});left.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});
-        weapon.ItemsSource=catalog.Weapons;weapon.DisplayMemberPath="Name";weapon.SelectedIndex=0;
+        weapon.SuggestionFilter=w=>!ZawCatalog.IsZaw(w.Id);weapon.ItemsSource=catalog.Weapons;weapon.DisplayMemberPath="Name";weapon.SelectedIndex=0;
         weapon.ToolTip="무기 검색 · 한국어 / English";
-        weaponClass.ItemsSource=new[]{"전체 무기군"}.Concat(catalog.Weapons.Select(w=>w.WeaponType).Distinct().Order()).ToArray();weaponClass.SelectedIndex=0;
+        weaponClass.ItemTemplate=KoreanPresentation.ClassTemplate();weaponClass.ItemsSource=new[]{"전체 무기군"}.Concat(catalog.Weapons.Select(w=>w.WeaponType).Distinct().OrderBy(KoreanPresentation.WeaponClass)).ToArray();weaponClass.SelectedIndex=0;
         weaponClass.SelectionChanged+=(_,_)=>{var previous=weapon.SelectedItem as Weapon;var list=catalog.Weapons.Where(w=>weaponClass.SelectedIndex==0||w.WeaponType==weaponClass.SelectedItem as string).ToArray();weapon.ItemsSource=list;weapon.SelectedItem=list.FirstOrDefault(w=>w.Id==previous?.Id)??list.FirstOrDefault();};
         stance.DisplayMemberPath="SelectionLabel";stanceCombo.DisplayMemberPath="InputLabel";
         void RefreshCombos()
@@ -66,9 +67,10 @@ public sealed partial class MainWindow
         string[] defaults=["pressure","bloodrush","shatter","fury","virulent","vicious","weeping","overload"];
         board.SetSlots(defaults.Select(f=>{var m=catalog.Mods.First(x=>x.Family==f);return (ModSlot?)new ModSlot(m.Id,m.MaxRank);}).ToArray(),false);
         board.Changed+=Recalculate;Grid.SetRow(board.RackView,1);left.Children.Add(board.RackView);
-        var libraryCard=Card(board.LibraryView,0);libraryCard.Padding=new(0,12,0,0);libraryCard.BorderThickness=new(0,1,0,0);libraryCard.Margin=new(0,8,0,0);Grid.SetRow(libraryCard,3);left.Children.Add(libraryCard);
+        var libraryCard=Card(board.LibraryView,0);libraryCard.Padding=new(0,10,0,0);libraryCard.BorderThickness=new(0,1,0,0);libraryCard.Margin=new(0,2,0,0);Grid.SetRow(libraryCard,3);left.Children.Add(libraryCard);
 
         var scenario=CreateCombatPanel();
+        ((StackPanel)equipmentCard.Child).Children.Insert(1,lichFields!);
         var upgrades=CreateEquipmentSlots();Grid.SetRow(upgrades,2);left.Children.Add(upgrades);
         var right=new StackPanel();
         var resultTitle=new DockPanel{Margin=new(0,0,0,10)};var resultHeading=T("계산 결과",20);resultHeading.Margin=new(0,0,0,2);scopeLabel.Margin=new(0);resultTitle.Children.Add(Stack(resultHeading,scopeLabel));right.Children.Add(resultTitle);error.SetResourceReference(TextBlock.ForegroundProperty,"ErrorBrush");right.Children.Add(error);CollapseEmpty(error);compare.Visibility=Visibility.Collapsed;right.Children.Add(compare);right.Children.Add(CreateEncounterResults());
@@ -84,7 +86,7 @@ public sealed partial class MainWindow
         heroes.Children.Add(Metric("직접 피해 TTK · 중앙값",ttkMetric,ttkCaption));
         void ReflowMetrics(double width)
         {
-            var singleRow=width>=800;heroes.Columns=singleRow?4:2;
+            var singleRow=width>=960;heroes.Columns=singleRow?4:2;
             foreach(var value in new[]{rawMetric,targetMetric,hitMetric}){value.FontSize=singleRow?28:32;value.LineHeight=40;}
             ttkMetric.FontSize=singleRow?20:28;ttkMetric.LineHeight=40;
         }
@@ -121,10 +123,10 @@ public sealed partial class MainWindow
         var dashboard=new Border{Child=resultGrid};dashboard.SetResourceReference(Border.BackgroundProperty,"ResultsBackgroundBrush");
         dashboard.SetResourceReference(Border.BorderBrushProperty,"ResultsStrokeBrush");resultsDashboard=dashboard;
         var split=new Grid();
-        foreach(var size in new[]{new GridLength(1,GridUnitType.Star),new GridLength(24),new GridLength(1,GridUnitType.Star),new GridLength(24),new GridLength(2,GridUnitType.Star)})split.ColumnDefinitions.Add(new(){Width=size});
-        foreach(var col in new[]{1,3}){var line=new Border{Width=1,HorizontalAlignment=HorizontalAlignment.Center};line.SetResourceReference(Border.BackgroundProperty,"StrokeBrush");Grid.SetColumn(line,col);split.Children.Add(line);}
-        split.Children.Add(left);Grid.SetColumn(scenario,2);split.Children.Add(scenario);Grid.SetColumn(resultsDashboard,4);split.Children.Add(resultsDashboard);
-        return split;
+        foreach(var size in new[]{new GridLength(1,GridUnitType.Star),new GridLength(40),new GridLength(1,GridUnitType.Star)})split.ColumnDefinitions.Add(new(){Width=size});
+        var line=new Border{Width=1,HorizontalAlignment=HorizontalAlignment.Center};line.SetResourceReference(Border.BackgroundProperty,"StrokeBrush");Grid.SetColumn(line,1);split.Children.Add(line);
+        split.Children.Add(left);Grid.SetColumn(resultsDashboard,2);split.Children.Add(resultsDashboard);
+        scenarioDrawer=new ScenarioDrawer(split,scenario);scenarioDrawer.SetStatusSource(error);return scenarioDrawer;
     }
     private static void CollapseEmpty(TextBlock text)
     {

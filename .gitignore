@@ -13,3 +13,5 @@ Releases/
 .env.*
 !.env.example
 *.wfriven
+
+.venv/

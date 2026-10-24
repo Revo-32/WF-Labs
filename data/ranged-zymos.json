@@ -1,0 +1,11 @@
+{
+  "source": {
+    "title": "Zymos",
+    "revision": 2814068,
+    "timestamp": "2026-09-28T20:04:00Z",
+    "sha256": "fafecdf57d8a0e25ba14790ea45bd50a31b85cf716ba58010df7cc750008f798",
+    "url": "https://wiki.warframe.com/w/Zymos?oldid=2814068",
+    "batch": "7774728aad08f940.json"
+  },
+  "rules": "Normal 23 + body 61 Toxin; head 1.1 sec 953 Toxin + six spores. Spore contact SC0, forced Impact beyond 7m, target20m. Spore explosion333 excludes baseDamage mods. Double CD mods and double flatCC; critical chance mod squaring text is HTML-commented out and NOT treated as current rule."
+}

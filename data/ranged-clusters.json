@@ -1,0 +1,107 @@
+[
+  {
+    "weaponId": "wiki:modular/Sporelacer (Secondary)",
+    "parent": 0,
+    "contact": 2,
+    "explosion": 3,
+    "count": 3,
+    "source": {
+      "title": "Sporelacer",
+      "revision": 2757746,
+      "timestamp": "2026-04-03T08:16:02Z",
+      "sha256": "ac27524938980a06554f632eb160ddac17432aa7889ed9afed09a54c3826aab2",
+      "url": "https://wiki.warframe.com/w/Sporelacer?oldid=2757746",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "parent": 0,
+    "contact": 2,
+    "explosion": 3,
+    "count": 6,
+    "source": {
+      "title": "Zarr",
+      "revision": 2813913,
+      "timestamp": "2026-09-28T10:57:48Z",
+      "sha256": "6e1e5d68a61f032250ae0d9dc092a962182559750f638f6dbca3219b5a022d4a",
+      "url": "https://wiki.warframe.com/w/Zarr?oldid=2813913",
+      "batch": "8d6acc32d8d8f7db.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Zarr",
+    "parent": 0,
+    "contact": 2,
+    "explosion": 3,
+    "count": 3,
+    "source": {
+      "title": "Kuva Zarr",
+      "revision": 2791899,
+      "timestamp": "2026-07-08T01:27:58Z",
+      "sha256": "68327e22cf441e76d18a082295a45eb6f8ba7c6b39cde2f4ca644e624bf7073f",
+      "url": "https://wiki.warframe.com/w/Kuva_Zarr?oldid=2791899",
+      "batch": "d6377b10b591ed99.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Bramma",
+    "parent": 0,
+    "contact": 2,
+    "explosion": 3,
+    "count": 3,
+    "source": {
+      "title": "Kuva Bramma",
+      "revision": 2817463,
+      "timestamp": "2026-10-10T17:49:58Z",
+      "sha256": "d7aa57c881a2255fbe208c526262b977f6fc6cd23ea4dafcfd097097a2ad9ce1",
+      "url": "https://wiki.warframe.com/w/Kuva_Bramma?oldid=2817463",
+      "batch": "d79d4872042f3cc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Kulstar",
+    "parent": 0,
+    "contact": 2,
+    "explosion": 3,
+    "count": 3,
+    "source": {
+      "title": "Kulstar",
+      "revision": 2813903,
+      "timestamp": "2026-09-28T10:02:37Z",
+      "sha256": "69f8de733dcb7a0fe4b019abb6ca769ec279259778b30fde9c1629d60f28aa75",
+      "url": "https://wiki.warframe.com/w/Kulstar?oldid=2813903",
+      "batch": "d79d4872042f3cc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma",
+    "parent": 1,
+    "contact": 3,
+    "explosion": 4,
+    "count": 5,
+    "source": {
+      "title": "Phantasma",
+      "revision": 2791922,
+      "timestamp": "2026-07-08T01:33:52Z",
+      "sha256": "b037fdb83234f17732258111b7390d5182f144755c13eedecc7a51d418c2143d",
+      "url": "https://wiki.warframe.com/w/Phantasma?oldid=2791922",
+      "batch": "ff2efc83d81af0c0.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma Prime",
+    "parent": 1,
+    "contact": 3,
+    "explosion": 4,
+    "count": 5,
+    "source": {
+      "title": "Phantasma Prime",
+      "revision": 2791923,
+      "timestamp": "2026-07-08T01:33:59Z",
+      "sha256": "1583812fa00f848a6a0069b2ea1b73d4d36a3cd28633fb33926625b0a9aa165c",
+      "url": "https://wiki.warframe.com/w/Phantasma_Prime?oldid=2791923",
+      "batch": "ff2efc83d81af0c0.json"
+    }
+  }
+]

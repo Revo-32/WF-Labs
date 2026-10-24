@@ -1,0 +1,169 @@
+[
+  {
+    "weaponId": "wiki:primary/Mutalist Cernos",
+    "parents": [
+      0,
+      1
+    ],
+    "child": 2,
+    "spawnDelay": 0.25,
+    "duration": 10,
+    "interval": 1,
+    "explosion": -1,
+    "single": false,
+    "fireRateScales": false,
+    "unmoddedCriticalStatus": false,
+    "source": {
+      "title": "Mutalist Cernos",
+      "revision": 2723726,
+      "timestamp": "2026-01-17T06:31:10Z",
+      "sha256": "781a687782ae32983f59e664b59d9ff3f58eea84fe7e808e3533e87df48a9695",
+      "url": "https://wiki.warframe.com/w/Mutalist_Cernos?oldid=2723726",
+      "batch": "08a6b1e57a6cf21b.json"
+    },
+    "repeatAfterReload": false,
+    "blockedByDefenses": false
+  },
+  {
+    "weaponId": "wiki:primary/Alternox",
+    "parents": [
+      1
+    ],
+    "child": 2,
+    "spawnDelay": 0,
+    "duration": 10,
+    "interval": 1,
+    "explosion": 3,
+    "single": true,
+    "fireRateScales": false,
+    "unmoddedCriticalStatus": false,
+    "source": {
+      "title": "Alternox",
+      "revision": 2791901,
+      "timestamp": "2026-07-08T01:29:00Z",
+      "sha256": "e2e618cce83c18847c487d5c7c61c647f709bfb820ce4fb6825944fbc7c489bb",
+      "url": "https://wiki.warframe.com/w/Alternox?oldid=2791901",
+      "batch": "2dae79a62e9270c5.json"
+    },
+    "repeatAfterReload": false,
+    "blockedByDefenses": false
+  },
+  {
+    "weaponId": "wiki:primary/Alternox Prime",
+    "parents": [
+      1
+    ],
+    "child": 2,
+    "spawnDelay": 0,
+    "duration": 10,
+    "interval": 1,
+    "explosion": 3,
+    "single": true,
+    "fireRateScales": false,
+    "unmoddedCriticalStatus": false,
+    "source": {
+      "title": "Alternox Prime",
+      "revision": 2817423,
+      "timestamp": "2026-10-10T08:31:45Z",
+      "sha256": "2304e2a8450c68eb09b89a9223065a325ea0fc2b58ced1d98de08472a1541896",
+      "url": "https://wiki.warframe.com/w/Alternox_Prime?oldid=2817423",
+      "batch": "2dae79a62e9270c5.json"
+    },
+    "repeatAfterReload": false,
+    "blockedByDefenses": false
+  },
+  {
+    "weaponId": "wiki:primary/Ferrox",
+    "parents": [
+      2
+    ],
+    "child": 3,
+    "spawnDelay": 0,
+    "duration": 30,
+    "interval": 2,
+    "explosion": -1,
+    "single": true,
+    "fireRateScales": true,
+    "unmoddedCriticalStatus": true,
+    "source": {
+      "title": "Ferrox",
+      "revision": 2813180,
+      "timestamp": "2026-09-25T19:26:23Z",
+      "sha256": "3da0c9da02f483f53d5cf8e5eb07317a66767381285207a7a2d9f16327039fa2",
+      "url": "https://wiki.warframe.com/w/Ferrox?oldid=2813180",
+      "batch": "7e9c28ccf8f4c270.json"
+    },
+    "repeatAfterReload": false,
+    "blockedByDefenses": false
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Ferrox",
+    "parents": [
+      2
+    ],
+    "child": 3,
+    "spawnDelay": 0,
+    "duration": 30,
+    "interval": 2,
+    "explosion": -1,
+    "single": true,
+    "fireRateScales": true,
+    "unmoddedCriticalStatus": true,
+    "source": {
+      "title": "Tenet Ferrox",
+      "revision": 2818534,
+      "timestamp": "2026-10-14T21:08:20Z",
+      "sha256": "38bd800fdfdd2384c81a93be6cd2d4cbf6f98210b83ab777f95b5e3d96561a70",
+      "url": "https://wiki.warframe.com/w/Tenet_Ferrox?oldid=2818534",
+      "batch": "34e255fa5450dd70.json"
+    },
+    "repeatAfterReload": true,
+    "blockedByDefenses": true
+  },
+  {
+    "weaponId": "wiki:secondary/Pox",
+    "parents": [
+      0
+    ],
+    "child": 1,
+    "spawnDelay": 0,
+    "duration": 5,
+    "interval": 1,
+    "explosion": -1,
+    "single": false,
+    "fireRateScales": false,
+    "unmoddedCriticalStatus": false,
+    "source": {
+      "title": "Pox",
+      "revision": 2785080,
+      "timestamp": "2026-06-14T22:45:01Z",
+      "sha256": "9af0e7fcaa8639c3ae601f3f14c305d9a299b04b100f81062f3ca62706f4fe50",
+      "url": "https://wiki.warframe.com/w/Pox?oldid=2785080",
+      "batch": "7d7b57ba598b8400.json"
+    },
+    "requireDuration": true
+  },
+  {
+    "weaponId": "wiki:secondary/Coda Pox",
+    "parents": [
+      0
+    ],
+    "child": 1,
+    "spawnDelay": 0,
+    "duration": 5,
+    "interval": 1,
+    "explosion": -1,
+    "single": false,
+    "fireRateScales": false,
+    "unmoddedCriticalStatus": false,
+    "source": {
+      "title": "Coda Pox",
+      "revision": 2795796,
+      "timestamp": "2026-07-29T00:04:33Z",
+      "sha256": "721291656176ea587a037878e0d892b886b08fb1de36579d2f6145285ef1dc8e",
+      "url": "https://wiki.warframe.com/w/Coda_Pox?oldid=2795796",
+      "batch": "d93f68f7400bafa3.json"
+    },
+    "requireDuration": true
+  }
+]

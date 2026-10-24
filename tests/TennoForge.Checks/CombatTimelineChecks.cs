@@ -494,7 +494,7 @@ internal static class CombatTimelineChecks
             var b=B();Near(C(b,8).StatusDamage,C(b,8).StatusDamage);using var token=new CancellationTokenSource();token.Cancel();try{CombatTimeline.Calculate(catalog,b,stances,8,token.Token);throw new Exception("취소 미반영");}catch(OperationCanceledException){}try{C(b with {Encounter=new(EncounterMode.FiveSeconds,Inputs:[new(double.NaN,"AbilityCast")])});throw new Exception("NaN 허용");}catch(ArgumentException){}
         });
         check("조우: 셉판·피예·바르기트 II 자이 수치 손계산",()=>{
-            var w=ZawCatalog.Weapon(ZawCatalog.Id("Sepfahn","Peye","Vargeet II Jai"));Near(w.Damage.Values.Sum(),218);Near(w.CriticalChance,.34);Near(w.StatusChance,.12);Near(w.AttackSpeed,1.083);Yes(w.WeaponType=="Nikana");Near(RivenValues.Disposition(w.Id),.7);
+            var w=ZawCatalog.Weapon(ZawCatalog.Id("Sepfahn","Peye","Vargeet II Jai"));Near(w.Damage.Values.Sum(),218);Near(w.CriticalChance,.34);Near(w.StatusChance,.12);Near(w.AttackSpeed,1.083);Yes(w.WeaponType=="Nikana");Near(RivenValues.Disposition(w.Id),1.2);
         });
         check("조우: 양손 도크람 피해 보정 0.93 및 분포 보존",()=>{
             var w=ZawCatalog.Weapon(ZawCatalog.Id("Dokrahm","Seekalla","Jai"));Near(w.Damage.Values.Sum(),(309-4-4)*.93);Near(w.Damage[DamageType.Slash]/w.Damage.Values.Sum(),.5);Yes(w.WeaponType=="Heavy Blade");
@@ -559,27 +559,27 @@ internal static class CombatTimelineChecks
             var b=B();b=b with{Scenario=b.Scenario with {BaseInterval=65d/60}};var c=C(b,1);Yes(c.Events.Count(e=>e.Kind=="hit")==5);Yes(!c.Events.Any(e=>e.Kind=="hit"&&e.Time>=5));
         });
         RivenRoll R(params RivenTrait[] traits)=>new(B().WeaponId,8,traits,RivenValues.Version,BaseDrain:6,Polarity:"AP_ATTACK");
-        check("리벤: 무기 기질×양옵 가중치×0.9~1.1 손계산",()=>{
-            var r=R(new(RivenStat.Damage,0),new(RivenStat.StatusChance,0));var range=RivenValues.Range(r,r.Traits[0]);Near(range.Minimum,164.7*.6*.99*.9);Near(range.Maximum,164.7*.6*.99*1.1);
+        check("리벤: 공통 1.2 배율×양옵 가중치×0.9~1.1 손계산",()=>{
+            var r=R(new(RivenStat.Damage,0),new(RivenStat.StatusChance,0));var range=RivenValues.Range(r,r.Traits[0]);Near(range.Minimum,164.7*1.2*.99*.9);Near(range.Maximum,164.7*1.2*.99*1.1);
         });
         check("리벤: 음옵 콤보 확률은 별도 기본값 104.85",()=>{
-            var r=R(new(RivenStat.Damage,0),new(RivenStat.StatusChance,0),new(RivenStat.ComboChance,0,true));Near(RivenValues.Range(r,r.Traits[^1]).Minimum,104.85*.6*.495*.9);
+            var r=R(new(RivenStat.Damage,0),new(RivenStat.StatusChance,0),new(RivenStat.ComboChance,0,true));Near(RivenValues.Range(r,r.Traits[^1]).Minimum,104.85*1.2*.495*.9);
         });
         check("리벤: 접합은 두 숨은 롤의 높은 값 계승·반올림 구간 보존",()=>{
-            var r=R(new(RivenStat.Damage,101.8),new(RivenStat.StatusChance,52.4));var p=RivenValues.Predict(r).Single();Yes(p.Candidate.Result==RivenStat.StatusDamage);var inherited=101.8/(164.7*.6*.99);Near((p.Value.Low+p.Value.High)/2,90*.6*.99*inherited);Yes(p.Value.High>p.Value.Low);
+            var r=R(new(RivenStat.Damage,203.6),new(RivenStat.StatusChance,104.8));var p=RivenValues.Predict(r).Single();Yes(p.Candidate.Result==RivenStat.StatusDamage);var inherited=203.6/(164.7*1.2*.99);Near((p.Value.Low+p.Value.High)/2,90*1.2*.99*inherited);Yes(p.Value.High>p.Value.Low);
         });
         check("리벤: 부적합 음옵·중복 접합·기질 버전 거부",()=>{
             foreach(var r in new[]{R(new(RivenStat.Damage,1,true),new(RivenStat.StatusChance,1),new(RivenStat.Range,1)),R(new(RivenStat.Viral,1,Spliced:true),new(RivenStat.Gas,1,Spliced:true)),R(new(RivenStat.Damage,1),new(RivenStat.StatusChance,1)) with {DispositionVersion="old"}}){try{RivenValues.Validate(r);throw new Exception("부적합 리벤 허용");}catch(ArgumentException){}}
         });
         check("리벤: 실제 모딩 브라켓 및 저장 복원",()=>{
-            var r=R(new(RivenStat.Damage,97.8),new(RivenStat.StatusChance,53.5));var b=B();var m=catalog.Mods.Single(m=>m.Id==RivenValues.ModId(b.WeaponId));b=b with {Slots=[new(m.Id,8),null,null,null,null,null,null,null],Riven=r};var c=MeleeEngine.Calculate(catalog,b);Near(c.Damage.Values.Sum(),198*1.978);Near(c.StatusChance,.28*1.535);var loaded=JsonSerializer.Deserialize<Build>(JsonSerializer.Serialize(b,Catalog.Json),Catalog.Json)!;Near(MeleeEngine.Calculate(catalog,loaded).ExpectedHit,c.ExpectedHit);
+            var r=R(new(RivenStat.Damage,195.7),new(RivenStat.StatusChance,106.9));var b=B();var m=catalog.Mods.Single(m=>m.Id==RivenValues.ModId(b.WeaponId));b=b with {Slots=[new(m.Id,8),null,null,null,null,null,null,null],Riven=r};var c=MeleeEngine.Calculate(catalog,b);Near(c.Damage.Values.Sum(),198*2.957);Near(c.StatusChance,.28*2.069);var loaded=JsonSerializer.Deserialize<Build>(JsonSerializer.Serialize(b,Catalog.Json),Catalog.Json)!;Near(MeleeEngine.Calculate(catalog,loaded).ExpectedHit,c.ExpectedHit);
         });
         check("리벤: 슬롯 위치 및 옵션 아래부터 원소 결합",()=>{
-            var r=R(new(RivenStat.Heat,53.5),new(RivenStat.Cold,53.5));var b=B("Nikana Prime","Fever Strike");var m=catalog.Mods.Single(m=>m.Id==RivenValues.ModId(b.WeaponId));b=b with {Slots=[b.Slots[0],new(m.Id,8),null,null,null,null,null,null],Riven=r};var c=MeleeEngine.Calculate(catalog,b);Yes(c.Damage.ContainsKey(DamageType.Viral)&&c.Damage.ContainsKey(DamageType.Heat)&&!c.Damage.ContainsKey(DamageType.Gas));
+            var r=R(new(RivenStat.Heat,106.9),new(RivenStat.Cold,106.9));var b=B("Nikana Prime","Fever Strike");var m=catalog.Mods.Single(m=>m.Id==RivenValues.ModId(b.WeaponId));b=b with {Slots=[b.Slots[0],new(m.Id,8),null,null,null,null,null,null],Riven=r};var c=MeleeEngine.Calculate(catalog,b);Yes(c.Damage.ContainsKey(DamageType.Viral)&&c.Damage.ContainsKey(DamageType.Heat)&&!c.Damage.ContainsKey(DamageType.Gas));
             b=b with {Slots=[new(m.Id,8),b.Slots[0],null,null,null,null,null,null]};c=MeleeEngine.Calculate(catalog,b);Yes(c.Damage.ContainsKey(DamageType.Blast)&&c.Damage.ContainsKey(DamageType.Toxin));
         });
         check("리벤: 실제 극성과 코스트를 포르마 슬롯 용량에 사용",()=>{
-            var r=R(new(RivenStat.Damage,97.8),new(RivenStat.StatusChance,53.5));var b=B();var m=catalog.Mods.Single(m=>m.Id==RivenValues.ModId(b.WeaponId));b=b with {Slots=[new(m.Id,8),null,null,null,null,null,null,null],Riven=r,Capacity=b.Capacity! with {SlotPolarities=Enumerable.Repeat("AP_ATTACK",8).ToArray()}};Near(CapacityEngine.Calculate(catalog,b).Used,7);try{MeleeEngine.Calculate(catalog,b with{Riven=r with {BaseDrain=null}});throw new Exception("리벤 수용량 미입력 허용");}catch(ArgumentException){}
+            var r=R(new(RivenStat.Damage,195.7),new(RivenStat.StatusChance,106.9));var b=B();var m=catalog.Mods.Single(m=>m.Id==RivenValues.ModId(b.WeaponId));b=b with {Slots=[new(m.Id,8),null,null,null,null,null,null,null],Riven=r,Capacity=b.Capacity! with {SlotPolarities=Enumerable.Repeat("AP_ATTACK",8).ToArray()}};Near(CapacityEngine.Calculate(catalog,b).Used,7);try{MeleeEngine.Calculate(catalog,b with{Riven=r with {BaseDrain=null}});throw new Exception("리벤 수용량 미입력 허용");}catch(ArgumentException){}
         });
     }
 }

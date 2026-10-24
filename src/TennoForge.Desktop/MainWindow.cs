@@ -19,6 +19,7 @@ public sealed partial class MainWindow : Window
     private readonly Catalog catalog = Catalog.LoadMelee();
     private readonly Grid root = new();
     private readonly ContentControl page = new();
+    private readonly ScrollViewer workspaceViewport=new(){HorizontalScrollBarVisibility=ScrollBarVisibility.Auto,VerticalScrollBarVisibility=ScrollBarVisibility.Auto,CanContentScroll=false,Padding=new(0),Focusable=false};
     private readonly StackPanel buildActions = new() { Orientation = Orientation.Horizontal, VerticalAlignment = VerticalAlignment.Center };
     private readonly List<RadioButton> navigation = [];
     private readonly CheckBox performanceSwitch = new() { Content = "경량 모드", Margin = new Thickness(0, 0, 0, 10) };
@@ -42,21 +43,36 @@ public sealed partial class MainWindow : Window
 
     public MainWindow()
     {
-        Title = "WF Labs"; MinWidth = 1760; MinHeight = 920; Width = Math.Max(MinWidth,Math.Min(1920,SystemParameters.WorkArea.Width-24)); Height = Math.Max(MinHeight,Math.Min(1000,SystemParameters.WorkArea.Height-24));
+        Title = "WF Labs"; MinWidth = Math.Min(1760,SystemParameters.WorkArea.Width); MinHeight = Math.Min(920,SystemParameters.WorkArea.Height); Width = Math.Max(MinWidth,Math.Min(1920,SystemParameters.WorkArea.Width-24)); Height = Math.Max(MinHeight,Math.Min(1000,SystemParameters.WorkArea.Height-24));
         board = new ModBoard(catalog);
-        FontFamily = (FontFamily)Application.Current.Resources["Wanted"]; FontSize = 14;
+        SetResourceReference(FontFamilyProperty,"AppFont"); FontSize = 14;
         Background = Brushes.Transparent; WindowStartupLocation = WindowStartupLocation.CenterScreen;
         UseLayoutRounding = true;
         root.Background = BackgroundBrush();
         root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(WindowFrame.HeaderHeight) });
+        root.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
         root.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
         root.Children.Add(CreateHeader());
         performanceSwitch.Checked += (_, _) => SetLightMode(true); performanceSwitch.Unchecked += (_, _) => SetLightMode(false);
         themeSwitch.Checked += (_, _) => SetDarkTheme(false); themeSwitch.Unchecked += (_, _) => SetDarkTheme(true);
-        page.Margin = new Thickness(20, 16, 20, 20); Grid.SetRow(page, 1); root.Children.Add(page);
+        workspaceViewport.Margin=new(20,8,20,8);workspaceViewport.Content=page;Grid.SetRow(workspaceViewport,2);root.Children.Add(workspaceViewport);
+        void FitWorkspace()
+        {
+            // Decide from the full allocation, before scrollbar gutters. Otherwise
+            // shrinking a wide window can leave two Auto bars keeping each other alive.
+            bool fits=workspaceViewport.ActualWidth>=1718-1&&workspaceViewport.ActualHeight>=798-1;
+            var bars=fits?ScrollBarVisibility.Disabled:ScrollBarVisibility.Auto;
+            workspaceViewport.HorizontalScrollBarVisibility=bars;workspaceViewport.VerticalScrollBarVisibility=bars;
+            page.Width=fits?workspaceViewport.ActualWidth:Math.Max(1718,workspaceViewport.ViewportWidth);
+            page.Height=fits?workspaceViewport.ActualHeight:Math.Max(798,workspaceViewport.ViewportHeight);
+        }
+        workspaceViewport.SizeChanged+=(_,_)=>FitWorkspace();
+        workspaceViewport.ScrollChanged+=(_,e)=>{if(e.ViewportWidthChange!=0||e.ViewportHeightChange!=0)FitWorkspace();};FitWorkspace();
+        Grid.SetRow(workflowBar,1);root.Children.Insert(1,workflowBar);
         WindowFrame.Attach(this, root);
+        MonitorWorkArea.Attach(this);
         modPage = CreateModPage(); rivenPage = CreateRivenPage(); ShowModding();
-        board.EditRiven+=()=>{if(equippedRiven is {} r)ApplyRivenWorkbench(r);ShowRivens();};
+        board.EditRiven+=()=>{if(equippedRiven is {} r)ApplyRivenWorkbench(r);OpenRivenClass("Melee");};
         SourceInitialized += (_, _) => Backdrop.Apply(this, lightMode, Theme.IsDark);
         Closed += (_, _) => { generation++; debounce.Stop(); encounterCancellation?.Cancel(); };
         Deactivated+=(_,_)=>{equationSource=null;equationView.Highlight([]);};
@@ -64,7 +80,7 @@ public sealed partial class MainWindow : Window
         initializing = false; SetLightMode(false); Recalculate();
     }
     private static SolidColorBrush B(string value) { var b = new SolidColorBrush((Color)ColorConverter.ConvertFromString(value)); b.Freeze(); return b; }
-    private static TextBlock T(string text, double size = 14, string color = "#172539")
+    private static TextBlock T(string text, double size = 15, string color = "#172539")
     {
         size=Math.Max(14,size);
         var lineHeight=size<=12?16:size<=14?20:size<=16?24:size<=20?28:size<=24?32:size<=28?36:40;
@@ -79,7 +95,7 @@ public sealed partial class MainWindow : Window
     {
         var b = new Button { Content = text }; b.Click += (_, _) => action(); return b;
     }
-    private static Brush BackgroundBrush() => B(Theme.IsDark ? "#0C131D" : "#F0F5F8");
+    private static Brush BackgroundBrush() => B(Theme.IsDark ? "#101112" : "#F4F4F2");
     private Border Card(UIElement content, double padding = 20)
     {
         var border = new Border { Child = content, Padding = new Thickness(0, 8, 0, padding), BorderThickness = new Thickness(0, 0, 0, 1), Margin = new Thickness(0, 0, 0, 16) };
@@ -154,7 +170,7 @@ public sealed partial class MainWindow : Window
                 notice.Text=(sc.Duration is null?"동작의 타격별 피해와 강제 상태 순서를 표시합니다. 동작 시간이 없어 초당 피해와 처치 시간은 계산하지 않습니다.":"직접 피해 DPS는 선택한 상태를 고정한 콤보 기준입니다. 개별 타격 시각은 위키에 없어 상태 피해를 포함한 정밀 TTK를 추정하지 않습니다.")+"\n\n"+string.Join("\n\n",c.Limitations);
             }
             notice.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");
-            error.Text = ""; ttkMetric.Text = "계산 중…"; spread.Text = ""; PrepareEncounterResults();UpdateComparison(); debounce.Start();
+            error.Text = ""; ttkMetric.Text = "계산 중…"; spread.Text = ""; PrepareEncounterResults();UpdateComparison(); debounce.Start();ScheduleWorkspaceSave();
         }
         catch (Exception ex) when (ex is ArgumentException or InvalidOperationException)
         {
@@ -214,20 +230,21 @@ public sealed partial class MainWindow : Window
     private void SaveBuild()
     {
         if (current is null) return;
-        var dialog = new SaveFileDialog { Filter = "WF Labs 빌드 (*.json)|*.json", FileName = "WF-Labs-build.json" };
-        if (dialog.ShowDialog(this) == true) try { File.WriteAllText(dialog.FileName, JsonSerializer.Serialize(ReadBuild(), Catalog.Json)); } catch (IOException ex) { error.Text = ex.Message; }
+        var dialog = new SaveFileDialog { Title="근접 빌드 저장", Filter = "WF Labs 빌드 (*.json)|*.json", FileName = "WF-Labs-build.json" };
+        if (dialog.ShowDialog(this) == true) try { AtomicJsonFile.Write(dialog.FileName, ReadBuild()); } catch (Exception ex) when(ex is IOException or UnauthorizedAccessException) { error.Text = "저장 실패: "+ex.Message; }
     }
     private void LoadBuild()
     {
-        var dialog = new OpenFileDialog { Filter = "WF Labs 빌드 (*.json)|*.json" };
+        var dialog = new OpenFileDialog { Title="근접 빌드 불러오기", Filter = "WF Labs 빌드 (*.json)|*.json" };
         if (dialog.ShowDialog(this) != true) return;
         try
         {
             if (new FileInfo(dialog.FileName).Length > 1000000) throw new ArgumentException("빌드 파일은 1MB 이하여야 합니다.");
             var b = JsonSerializer.Deserialize<Build>(File.ReadAllText(dialog.FileName), Catalog.Json) ?? throw new ArgumentException("빌드 파일이 비어 있습니다.");
+            if(b.Slots is not {Length:8}||b.Scenario is null)throw new ArgumentException("근접 빌드의 슬롯 또는 교전 조건을 확인하세요.");
             var migrated=b.DataVersion!=catalog.Version||b.SchemaVersion!=5||b.Melee?.RulesVersion!=MeleeEngine.RulesVersion;b=BuildMigration.ToMelee(catalog,b);EvaluateBuild(b); ApplyBuild(b);if(migrated)error.Text="이전 빌드를 확장 근접 규칙으로 변환하고 다시 계산했습니다. 저장된 슬롯·랭크·극성·스탠스·아케인은 유지했습니다.";
         }
-        catch (Exception ex) when (ex is JsonException or IOException or ArgumentException or InvalidOperationException) { error.Text = "불러오기 실패: " + ex.Message; }
+        catch (Exception ex) when (ex is JsonException or IOException or ArgumentException or InvalidOperationException or UnauthorizedAccessException) { error.Text = "불러오기 실패: " + ex.Message; }
     }
     private void ApplyBuild(Build b)
     {
@@ -259,31 +276,72 @@ public sealed partial class MainWindow : Window
         Recalculate();
     }
     private FrameworkElement CreateRivenPage()=>CreateRivenWorkbench();
-    public void ShowRivens() { InvalidateRivenComparison();page.Content = rivenPage; SelectPage(1); }
+    private readonly Dictionary<string,RangedRivenWorkbench> rangedRivenPages=[];
+    internal Task<object> CheckRangedWorkshop(string category)=>rangedRivenPages[category].CheckWorkshop();
+    public void ShowRivens()
+    {
+        InvalidateRivenComparison();
+        if(equipmentKind?.SelectedIndex is 1 or 2)
+        {
+            var category=equipmentKind.SelectedIndex==1?"primary":"secondary";
+            if(!rangedRivenPages.TryGetValue(category,out var workshop))rangedRivenPages[category]=workshop=new RangedRivenWorkbench(category,(roll,slot)=>{ShowRanged(category);rangedPages[category].EquipRiven(roll,slot);},()=>rangedPages.TryGetValue(category,out var ranged)?ranged.Capture().Riven:null,()=>rangedPages.TryGetValue(category,out var current)?current.Capture():throw new ArgumentException("모딩 화면에서 무기와 대상을 먼저 설정하세요."));
+            workshop.ContextChanged=()=>{RefreshWorkflowBar();ScheduleWorkspaceSave();};page.Content=workshop;workshop.RefreshContext();
+        }
+        else page.Content=rivenPage;
+        SelectPage(1);
+    }
     private void ShowRoadmap()
     {
         if (roadmapPage is not null) { page.Content = roadmapPage; SelectPage(3); return; }
-        var p = Stack(T("개발 계획", 20), T("v0.6.0 미리보기 · 2026-10-11", 12, "#596B85"), Spacer(12));
+        var version=T($"v{VelopackUpdateFeed.AppVersion} · 개발 미리보기",14);version.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");
+        var p = Stack(T("개발 계획", 20), version, Spacer(12));
         string[] milestones = [
-            "01  현재 구현\n자료: 무기·변형·부품 911개, 스탠스 표 134개, 아케인 166개, 모드 1,550개 · 일반 근접 229개의 기본 직접 피해 · 정지/전진/방어 콤보 · 지원 아케인의 고정 조건 계산 · 수용량·포르마·저장 복원",
-            "02  확장 근접 엔진\n공격별 피해 브라켓, 강공격·슬램·개별 투사체, 인카논 진화, 기존 상태·팩션·실드·오버가드의 고정 조건 계산을 추가했습니다. 상태 피해는 별도 표로 제공합니다. 동적 상태 TTK·조우 조립·엑절티드·일부 고유 기믹은 남아 있으며, 미반영 효과는 결과에 표시합니다.",
-            "03  리벤 시뮬레이터\n무기별 기질 · 양옵/음옵 구성별 범위 · 표시 반올림 구간 · 접합 수치 분포 · 고정/순환 상태 · 일반 모딩에 반영 · 출처 규칙 대조",
-            "04  화면 인식과 성장 계획\n한국어 모딩 화면 읽기 · 성유물 보상 OCR + 마켓 시세 · 보유/마스터리 기록 · 제작 재료와 랭작 효율",
-            "성능 기준\n상시 폴링과 애니메이션 없이 변경 시 계산. 기본 계산과 반복 시뮬레이션 분리. 화면 인식은 영역/주기를 제한. 실제 게임 병행 CPU·GPU·메모리 측정 후 목표 확정."
+            "현재  모딩·교전·리벤 분석\n근접·주무기·보조무기 모딩과 DPS·TTK 비교, 조우·키트건 조립, 아케인·인카논·베일런스, 리벤 범위·접합·순환을 제공합니다. 확정 규칙·입력 시나리오·근사는 결과에서 구분합니다.",
+            "다음  성유물 보상 인식·시세 비교\n보상 화면에서 단축키 → 후보 인식 → 플래티넘·듀캇 비교. 먼저 한국어 스크린샷에서 품목을 식별하고 마켓 조회를 연결합니다. 낮은 인식 신뢰도·조회 시각·오프라인 상태를 표시합니다.",
+            "이후  마스터리 제작·랭작 계획\n보유·숙련 장비 표시 → 지금 제작 가능한 장비 → 부족 재료·선행 장비 확인. 추천 이유와 다음 행동을 함께 보여주고 조립식·40랭크 장비의 예외를 검증합니다.",
+            "이후  모딩 화면 인식\n게임 화면에서 무기·모드·랭크·리벤 후보를 읽고 사용자가 확인한 뒤 적용합니다. 기존 빌드와 비교하고 되돌릴 수 있도록 합니다.",
+            "별도 단계  익절티드·워프레임 어빌리티\n전체 시전·자원·분신 시뮬레이션은 후속 단계입니다. 현재 로어·이클립스 같은 단순 외부 버프는 유지합니다.",
+            "지속 검증\n게임 패치·위키 개정 대조, 계산 회귀와 UI 검수를 각 배포에 포함합니다. 정확도와 세부 계산을 유지한 뒤 최적화하며, 화면 인식은 사용자 요청 시점에 제한합니다."
         ];
         foreach (var m in milestones) p.Children.Add(Card(T(m, 16)));
         roadmapPage = Scroll(p); page.Content = roadmapPage; SelectPage(3);
     }
-    public void ShowModding() { InvalidateRivenComparison();page.Content = modPage; SelectPage(0); }
+    public void ShowModding() { lastModdingKind=0;InvalidateRivenComparison();page.Content = modPage; SelectPage(0);if(!switchingEquipment&&equipmentKind is not null){switchingEquipment=true;equipmentKind.SelectedIndex=0;switchingEquipment=false;}RefreshWorkflowBar(); }
+    private readonly Dictionary<string,RangedPage> rangedPages=[];
+    internal void ShowRanged(string category)
+    {
+        lastModdingKind=category=="primary"?1:2;
+        if(!rangedPages.TryGetValue(category,out var ranged))rangedPages[category]=ranged=CreateRangedPage(category);
+        switchingEquipment=true;try{SelectPage(0);page.Content=ranged;equipmentKind.SelectedIndex=category=="primary"?1:2;buildActions.Visibility=Visibility.Collapsed;}finally{switchingEquipment=false;}RefreshWorkflowBar();
+    }
+    internal void PrepareRangedCombatAudit(string category)=>rangedPages[category].PrepareCombatAudit();
+    internal void PrepareRangedRivenAudit(string category)=>rangedPages[category].PrepareRivenAudit();
+    internal void PrepareRangedRivenWorkbenchAudit(string category)
+    {
+        ShowRanged(category);var roll=rangedPages[category].Capture().Riven??throw new InvalidOperationException("작업실 검사 리벤 없음");ShowRivens();
+        rangedRivenPages[category].Set(roll);rangedRivenPages[category].CheckAndEquip();
+        var result=rangedPages[category].Capture();if(result.Slots[3]?.ModId!=RangedRivens.Mod(RangedEngine.Weapons.Single(w=>w.Id==roll.WeaponId)).Id||!result.Riven!.Traits.SequenceEqual(roll.Traits))throw new InvalidOperationException("총기 작업실→모딩 리벤 장착 결과 오류");
+        ShowRivens();if(page.Content!=rangedRivenPages[category]||navigation[1].IsChecked!=true)throw new InvalidOperationException("총기 리벤 탭 전환 오류");
+    }
+    internal void SelectRangedRivenSectionForCheck(string category,int index)=>rangedRivenPages[category].SelectSectionForCheck(index);
+    internal void CloseRangedRivenAudit(string category)=>rangedPages[category].CloseRivenAudit();
+    internal void PrepareRangedMechanicsAudit(string category,bool details)=>rangedPages[category].PrepareMechanicsAudit(details);
+    internal Window? KitgunDialogForCheck()=>rangedPages["primary"].CreateKitgunDialog();
+    internal void PrepareRangedSceneAudit(string category,string name)=>rangedPages[category].PrepareSceneAudit(name);
+    internal void CheckRangedPage(string category){rangedPages[category].Check();}
     private void SelectPage(int index)
     {
+        PopupLayout.Close(this);
+        workspaceViewport.Margin=new(20,8,20,index==0?0:8);
+        scenarioDrawer?.SetOpen(false,false);foreach(var ranged in rangedPages.Values)ranged.DrawerForCheck.SetOpen(false,false);
         if (navigation[index].IsChecked != true) navigation[index].IsChecked = true;
         buildActions.Visibility = index == 0 ? Visibility.Visible : Visibility.Collapsed;
+        RefreshWorkflowBar();
     }
     public void SetDarkTheme(bool dark)
     {
         if (themeSwitch.IsChecked != !dark) { themeSwitch.IsChecked = !dark; return; }
-        Theme.Apply(dark); SetLightMode(lightMode); RefreshRivenWorkbench();
+        Theme.Apply(dark); SetLightMode(lightMode); RefreshRivenWorkbench(false);
         equationView.Retheme();
         if(current is not null)RefreshDashboard(current,currentStance);
     }
@@ -291,7 +349,7 @@ public sealed partial class MainWindow : Window
     {
         if (performanceSwitch.IsChecked != enabled) { performanceSwitch.IsChecked = enabled; return; }
         lightMode = enabled; root.Background = BackgroundBrush();
-        equationView.ReduceMotion=enabled;
+        equationView.ReduceMotion=enabled;ScenarioDrawer.ReduceMotion=enabled;UiMotion.ReduceMotion=enabled;
         Backdrop.Apply(this, enabled, Theme.IsDark);
         damageDonut.InvalidateVisual();armorPlot.InvalidateVisual();hitPlot.InvalidateVisual();
     }
@@ -360,7 +418,7 @@ public sealed partial class MainWindow : Window
         var legacy=ReadBuild() with{SchemaVersion=1,Capacity=null};if(legacy.Stance is not null)throw new Exception("이전 저장 스키마 호환 실패");ApplyBuild(legacy);ApplyBuild(original);
         if(currentStance is null||ReadBuild().SchemaVersion!=5)throw new Exception("스탠스/극성 저장 복원 실패");
         debounce.Stop();if(currentStance is {} sc)ShowStanceTtk(StanceEngine.Simulate(sc,original.Scenario.Enemy!.Health));else ShowTtk(DamageEngine.Simulate(current!,original.Scenario.Enemy!.Health));
-        ApplyRivenWorkbench(new(catalog.Weapons.Single(w=>w.EnglishName=="Nikana Prime").Id,8,[new(RivenStat.Damage,97.8),new(RivenStat.StatusChance,53.5)],RivenValues.Version,BaseDrain:6,Polarity:"AP_ATTACK"));
+        ApplyRivenWorkbench(new(catalog.Weapons.Single(w=>w.EnglishName=="Nikana Prime").Id,8,[new(RivenStat.Damage,195.7),new(RivenStat.StatusChance,106.9)],RivenValues.Version,BaseDrain:6,Polarity:"AP_ATTACK"));
         if(spliceResults.Children.Count!=2||!rivenGrades[0].Text.Contains("범위 위치"))throw new Exception("무기별 리벤 범위·접합 예상 UI 갱신 실패");
         RunExpandedSmokeChecks();
         SetDarkTheme(false);SetDarkTheme(true);SetLightMode(false);

@@ -1,0 +1,561 @@
+{
+  "version": "ranged-riven-2818366",
+  "source": {
+    "title": "Riven Mods",
+    "revision": 2818366,
+    "timestamp": "2026-10-14T12:34:12Z",
+    "sha256": "1b5f88429eafc71a4095647f74fa09e4785cb8a5389c4d1d79508cbf3e0b6ff8",
+    "url": "https://wiki.warframe.com/w/Riven_Mods?oldid=2818366",
+    "batch": "44cde92b9f44c531.json"
+  },
+  "attributes": [
+    {
+      "key": "Damage",
+      "name": "피해",
+      "bases": {
+        "Rifle": 165,
+        "Shotgun": 164.7,
+        "Pistol": 219.6
+      },
+      "positiveOnly": true,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "CriticalChance",
+      "name": "치명타 확률",
+      "bases": {
+        "Rifle": 149.99,
+        "Shotgun": 90,
+        "Pistol": 149.99
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "CriticalDamage",
+      "name": "치명타 피해",
+      "bases": {
+        "Rifle": 119.997,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Multishot",
+      "name": "멀티샷",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 119.7,
+        "Pistol": 119.7
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "FireRate",
+      "name": "연사력",
+      "bases": {
+        "Rifle": 60.03,
+        "Shotgun": 90,
+        "Pistol": 74.7
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "StatusChance",
+      "name": "상태 확률",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "StatusDuration",
+      "name": "상태 지속 시간",
+      "bases": {
+        "Rifle": 99.99,
+        "Shotgun": 99.99,
+        "Pistol": 99.99
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Magazine",
+      "name": "탄창 용량",
+      "bases": {
+        "Rifle": 49.995,
+        "Shotgun": 49.995,
+        "Pistol": 49.995
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "ReloadSpeed",
+      "name": "재장전 속도",
+      "bases": {
+        "Rifle": 49.995,
+        "Shotgun": 49.995,
+        "Pistol": 49.995
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "AmmoMaximum",
+      "name": "최대 탄약",
+      "bases": {
+        "Rifle": 49.95,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "ProjectileSpeed",
+      "name": "투사체 속도",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "PunchThrough",
+      "name": "관통 거리",
+      "bases": {
+        "Rifle": 2.7,
+        "Shotgun": 2.7,
+        "Pistol": 2.7
+      },
+      "positiveOnly": true,
+      "spliced": false,
+      "unit": "m"
+    },
+    {
+      "key": "Recoil",
+      "name": "반동 감소",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Zoom",
+      "name": "줌",
+      "bases": {
+        "Rifle": 59.99,
+        "Shotgun": 41.994,
+        "Pistol": 80.1
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Impact",
+      "name": "충격",
+      "bases": {
+        "Rifle": 119.97,
+        "Shotgun": 119.97,
+        "Pistol": 119.97
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Puncture",
+      "name": "관통 피해",
+      "bases": {
+        "Rifle": 119.997,
+        "Shotgun": 119.997,
+        "Pistol": 119.997
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Slash",
+      "name": "베기",
+      "bases": {
+        "Rifle": 119.97,
+        "Shotgun": 119.97,
+        "Pistol": 119.97
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Heat",
+      "name": "화염",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Cold",
+      "name": "냉기",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Electricity",
+      "name": "전기",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "Toxin",
+      "name": "독성",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "FactionCorpus",
+      "name": "코퍼스 대상 피해",
+      "bases": {
+        "Rifle": 45,
+        "Shotgun": 45,
+        "Pistol": 45
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "FactionGrineer",
+      "name": "그리니어 대상 피해",
+      "bases": {
+        "Rifle": 45,
+        "Shotgun": 45,
+        "Pistol": 45
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "FactionInfested",
+      "name": "인페스티드 대상 피해",
+      "bases": {
+        "Rifle": 45,
+        "Shotgun": 45,
+        "Pistol": 45
+      },
+      "positiveOnly": false,
+      "spliced": false,
+      "unit": "%"
+    },
+    {
+      "key": "AmmoEfficiency",
+      "name": "탄약 효율",
+      "bases": {
+        "Rifle": 45,
+        "Shotgun": 45,
+        "Pistol": 45
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "HolsterReload",
+      "name": "수납 중 재장전",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "WeakpointDamage",
+      "name": "약점 피해",
+      "bases": {
+        "Rifle": 225,
+        "Shotgun": 225,
+        "Pistol": 225
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "WeakpointCriticalChance",
+      "name": "약점 치명타 확률",
+      "bases": {
+        "Rifle": 247.5,
+        "Shotgun": 247.5,
+        "Pistol": 247.5
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "StatusDamage",
+      "name": "상태 피해",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "Blast",
+      "name": "폭발",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "Corrosive",
+      "name": "부식",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "Gas",
+      "name": "가스",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "Magnetic",
+      "name": "자성",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "Radiation",
+      "name": "방사능",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "Viral",
+      "name": "바이러스",
+      "bases": {
+        "Rifle": 90,
+        "Shotgun": 90,
+        "Pistol": 90
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "FactionOrokin",
+      "name": "오로킨 대상 피해",
+      "bases": {
+        "Rifle": 45,
+        "Shotgun": 45,
+        "Pistol": 45
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "FactionScaldra",
+      "name": "스칼드라 대상 피해",
+      "bases": {
+        "Rifle": 45,
+        "Shotgun": 45,
+        "Pistol": 45
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    },
+    {
+      "key": "FactionTechrot",
+      "name": "테크롯 대상 피해",
+      "bases": {
+        "Rifle": 45,
+        "Shotgun": 45,
+        "Pistol": 45
+      },
+      "positiveOnly": true,
+      "spliced": true,
+      "unit": "%"
+    }
+  ],
+  "recipes": [
+    {
+      "first": "Damage",
+      "second": "Zoom",
+      "result": "WeakpointDamage"
+    },
+    {
+      "first": "Damage",
+      "second": "Multishot",
+      "result": "WeakpointDamage"
+    },
+    {
+      "first": "CriticalChance",
+      "second": "Zoom",
+      "result": "WeakpointCriticalChance"
+    },
+    {
+      "first": "CriticalChance",
+      "second": "Multishot",
+      "result": "WeakpointCriticalChance"
+    },
+    {
+      "first": "AmmoMaximum",
+      "second": "ReloadSpeed",
+      "result": "HolsterReload"
+    },
+    {
+      "first": "AmmoMaximum",
+      "second": "Magazine",
+      "result": "HolsterReload"
+    },
+    {
+      "first": "Magazine",
+      "second": "ReloadSpeed",
+      "result": "AmmoEfficiency"
+    },
+    {
+      "first": "Recoil",
+      "second": "AmmoMaximum",
+      "result": "AmmoEfficiency"
+    },
+    {
+      "first": "Damage",
+      "second": "StatusChance",
+      "result": "StatusDamage"
+    },
+    {
+      "first": "Toxin",
+      "second": "Heat",
+      "result": "Gas"
+    },
+    {
+      "first": "Toxin",
+      "second": "Electricity",
+      "result": "Corrosive"
+    },
+    {
+      "first": "Toxin",
+      "second": "Cold",
+      "result": "Viral"
+    },
+    {
+      "first": "Heat",
+      "second": "Electricity",
+      "result": "Radiation"
+    },
+    {
+      "first": "Heat",
+      "second": "Cold",
+      "result": "Blast"
+    },
+    {
+      "first": "Electricity",
+      "second": "Cold",
+      "result": "Magnetic"
+    },
+    {
+      "first": "FactionCorpus",
+      "second": "FactionGrineer",
+      "result": "FactionOrokin"
+    },
+    {
+      "first": "FactionCorpus",
+      "second": "FactionInfested",
+      "result": "FactionTechrot"
+    },
+    {
+      "first": "FactionInfested",
+      "second": "FactionGrineer",
+      "result": "FactionScaldra"
+    }
+  ]
+}

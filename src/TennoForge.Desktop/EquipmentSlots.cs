@@ -1,4 +1,4 @@
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Automation;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -65,9 +65,7 @@ public sealed partial class MainWindow
         var close=Button("✕",CloseEquipmentPicker);close.Width=30;close.Height=30;close.Padding=new(0);DockPanel.SetDock(close,Dock.Right);heading.Children.Add(close);
         heading.Children.Add(T(isExilus?"엑실러스 모드":isZaw?"조우 아케인":"근접 아케인",18));panel.Children.Add(heading);
         var choices=new StackPanel();var search=new TextBox{Height=34,Margin=new(0,4,0,8),ToolTip="이름 검색"};AutomationProperties.SetName(search,"장비 이름 검색");
-        var searchGrid=new Grid();searchGrid.Children.Add(search);
-        var placeholder=T(isExilus?"엑실러스 모드 검색":"아케인 검색",14,"#596B85");placeholder.Margin=new(11,4,0,8);placeholder.VerticalAlignment=VerticalAlignment.Center;placeholder.IsHitTestVisible=false;searchGrid.Children.Add(placeholder);
-        search.TextChanged+=(_,_)=>placeholder.Visibility=search.Text.Length==0?Visibility.Visible:Visibility.Collapsed;panel.Children.Add(searchGrid);
+        panel.Children.Add(new SearchField(search,isExilus?"엑실러스 모드 검색":"아케인 검색"));
         var scroll=new ScrollViewer{Content=choices,Height=264,VerticalScrollBarVisibility=ScrollBarVisibility.Auto};panel.Children.Add(scroll);
         var rankHost=new StackPanel{Margin=new(0,10,0,0)};pickerRankHost=rankHost;
         if(!isZaw)
@@ -103,8 +101,8 @@ public sealed partial class MainWindow
             if(choices.Children.Count==0)choices.Children.Add(T("검색 결과가 없습니다.",14,"#596B85"));
         }
         search.TextChanged+=(_,_)=>Fill();Fill();
-        var border=new Border{Child=panel,Padding=new(14),Width=420,BorderThickness=new(1)};border.SetResourceReference(Border.BackgroundProperty,"ResultsBackgroundBrush");border.SetResourceReference(Border.BorderBrushProperty,"StrokeBrush");
-        var popup=new Popup{Child=border,PlacementTarget=anchor,Placement=PlacementMode.Top,StaysOpen=false,AllowsTransparency=false};equipmentPicker=popup;
+        var border=new Border{Child=new ScrollViewer{Content=panel,VerticalScrollBarVisibility=ScrollBarVisibility.Auto,HorizontalScrollBarVisibility=ScrollBarVisibility.Disabled},Padding=new(14),Width=420,BorderThickness=new(1)};border.SetResourceReference(Border.BackgroundProperty,"ResultsBackgroundBrush");border.SetResourceReference(Border.BorderBrushProperty,"StrokeBrush");
+        var popup=new Popup{Child=border,PlacementTarget=anchor,Placement=PlacementMode.Top,StaysOpen=false,AllowsTransparency=false};equipmentPicker=popup;PopupLayout.Configure(popup,this);
         popup.Closed+=(_,_)=>{DetachPickerInputs();rankHost.Children.Clear();if(equipmentPicker==popup){equipmentPicker=null;pickerRankHost=null;}};
         if(show){popup.IsOpen=true;search.Focus();}
     }

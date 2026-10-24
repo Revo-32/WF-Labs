@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "source": {
+    "title": "Pax Seeker",
+    "revision": 2791739,
+    "timestamp": "2026-07-07T10:59:55Z",
+    "sha256": "3056e21c89b3c3454868052320c11ba7c78cdbc1dbeff8fac3b99192b3bce75d",
+    "url": "https://wiki.warframe.com/w/Pax_Seeker?oldid=2791739",
+    "batch": "1325b011ce8beec7.json"
+  },
+  "formulaChambers": [
+    "Gaze",
+    "Rattleguts",
+    "Tombfinger",
+    "Catchmoon"
+  ],
+  "unknownFormulaChambers": [
+    "Sporelacer",
+    "Vermisplicer"
+  ],
+  "damageDistribution": {
+    "Slash": 0.5,
+    "Puncture": 0.5
+  },
+  "criticalModBonusMultiplier": 2,
+  "coBracket": "Multiplicative",
+  "forcedStatus": "Impact",
+  "countByRank": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "flightAndTargetPath": "scenario",
+  "recursiveTrigger": "unknown"
+}

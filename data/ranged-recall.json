@@ -1,0 +1,16 @@
+[
+  {
+    "weaponId": "wiki:secondary/Riot-848",
+    "contact": 0,
+    "explosion": 1,
+    "limit": 32,
+    "source": {
+      "title": "Riot-848",
+      "revision": 2797777,
+      "timestamp": "2026-08-10T05:55:42Z",
+      "sha256": "a49c7c79582528ff7ae3d87ab3013a98d650e0764b57edec7125b213e737530e",
+      "url": "https://wiki.warframe.com/w/Riot-848?oldid=2797777",
+      "batch": "54a78b6215d0f40f.json"
+    }
+  }
+]

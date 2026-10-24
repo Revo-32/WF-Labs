@@ -1,4 +1,4 @@
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
@@ -12,15 +12,17 @@ public sealed partial class MainWindow
         var checks=new List<string>();var scrolls=0;var actionGaps=0;
         IEnumerable<DependencyObject> Tree(DependencyObject node)
         {yield return node;for(var i=0;i<VisualTreeHelper.GetChildrenCount(node);i++)foreach(var child in Tree(VisualTreeHelper.GetChild(node,i)))yield return child;}
+        bool Presented(DependencyObject node)
+        {for(DependencyObject? current=node;current is not null;current=VisualTreeHelper.GetParent(current))if(current is UIElement element&&element.Visibility!=Visibility.Visible)return false;return true;}
         void Capture(FrameworkElement content,string name,int width=1760,int height=920,bool bottom=true,bool natural=false)
         {
             if(natural){content.Measure(new Size(width,height));height=Math.Min(height,(int)Math.Ceiling(content.DesiredSize.Height));}
             render(content,name,width,height);
-            var viewers=Tree(content).OfType<ScrollViewer>().Where(s=>s.Visibility==Visibility.Visible&&s.VerticalScrollBarVisibility is ScrollBarVisibility.Auto or ScrollBarVisibility.Visible&&s.ViewportHeight>0&&s.ScrollableHeight>1).ToArray();
+            var viewers=Tree(content).OfType<ScrollViewer>().Where(s=>Presented(s)&&s.VerticalScrollBarVisibility is ScrollBarVisibility.Auto or ScrollBarVisibility.Visible&&s.ViewportHeight>0&&s.ScrollableHeight>1).ToArray();
             foreach(var s in viewers)
             {
                 s.ScrollToEnd();s.UpdateLayout();
-                if(Math.Abs(s.VerticalOffset-s.ScrollableHeight)>.1)throw new Exception(name+": 스크롤 끝에 도달하지 못했습니다.");
+                if(Math.Abs(s.VerticalOffset-s.ScrollableHeight)>.1)throw new Exception(name+": 스크롤 끝에 도달하지 못했습니다. offset="+s.VerticalOffset+", end="+s.ScrollableHeight+", viewport="+s.ViewportHeight+", content="+s.Content?.GetType().Name);
                 var bar=Tree(s).OfType<ScrollBar>().FirstOrDefault(b=>b.Orientation==Orientation.Vertical&&b.Visibility==Visibility.Visible);
                 if(bar is null||bar.ActualWidth<6||bar.ActualHeight<20)throw new Exception(name+": 세로 스크롤바 누락/잘림");
                 scrolls++;
@@ -42,7 +44,7 @@ public sealed partial class MainWindow
         {
             SetDarkTheme(dark);var theme=dark?"dark":"light";
             void Main(string name)=>Capture((FrameworkElement)Content,theme+"-"+name);
-            ShowModding();Main("modding");
+            ShowModding();Main("modding");scenarioDrawer!.SetOpen(true,false);Main("scenario");
             foreach(var section in Tree((FrameworkElement)page.Content).OfType<Expander>().ToArray())section.IsExpanded=true;
             Main("modding-expanded");
             if(dark)
@@ -53,6 +55,7 @@ public sealed partial class MainWindow
                 scroller.ScrollToTop();
             }
             foreach(var section in Tree((FrameworkElement)page.Content).OfType<Expander>().ToArray())section.IsExpanded=false;
+            scenarioDrawer.SetOpen(false,false);
             FormaForCheck(true);Main("forma");FormaForCheck(false);
             Capture((FrameworkElement)settingsPopup.Child,theme+"-settings",320,610,natural:true);
             Capture((FrameworkElement)capacityPopup!.Child,theme+"-capacity",380,440,natural:true);
@@ -63,18 +66,20 @@ public sealed partial class MainWindow
             var stanceWindow=StanceForCheck();Capture((FrameworkElement)stanceWindow.Content,theme+"-stance",620,480);
             ShowRivens();
             var id=catalog.Weapons.Single(w=>w.EnglishName=="Nikana Prime").Id;
-            SetWorkshop(new(new(id,8,[new(RivenStat.Damage,97.8),new(RivenStat.StatusChance,53.5)],RivenValues.Version,BaseDrain:6,Polarity:"AP_ATTACK")));
+            SetWorkshop(new(new(id,8,[new(RivenStat.Damage,195.7),new(RivenStat.StatusChance,106.9)],RivenValues.Version,BaseDrain:6,Polarity:"AP_ATTACK")));
             Main("riven");PendingRivenForCheck();Main("riven-pending");SetWorkshop(rivenSession! with{Pending=null});
-            var editable=(TextBox?)rivenWeapon.Template.FindName("Query",rivenWeapon);
-            if(editable is null||editable.Visibility!=Visibility.Visible)throw new Exception("검색 가능한 무기 입력 템플릿 누락");
+            SelectRivenSectionForCheck(3);Main("riven-comparison");
             var dropdown=(Popup)rivenLock.Template.FindName("PART_Popup",rivenLock);
             Capture((FrameworkElement)dropdown.Child,theme+"-dropdown",520,320,natural:true);
-            var weapons=(Popup)rivenWeapon.Template.FindName("PART_Popup",rivenWeapon);
+            ShowModding();Main("search-host");weapon.ApplyTemplate();
+            var editable=(TextBox?)weapon.Template.FindName("Query",weapon);
+            if(editable is null||editable.Visibility!=Visibility.Visible)throw new Exception("검색 가능한 무기 입력 템플릿 누락");
+            var weapons=(Popup)weapon.Template.FindName("PART_Popup",weapon);
             Capture((FrameworkElement)weapons.Child,theme+"-weapon-dropdown",560,320,natural:true);
-            rivenWeapon.Filter("니카나");rivenWeapon.Suggestions.SelectedIndex=1;
+            weapon.Filter("니카나");weapon.Suggestions.SelectedIndex=1;
             Capture((FrameworkElement)weapons.Child,theme+"-weapon-search",560,320,natural:true);
-            rivenWeapon.Filter("존재하지않는무기zz");
-            Capture((FrameworkElement)weapons.Child,theme+"-weapon-search-empty",560,160,natural:true);
+            weapon.Filter("존재하지않는무기zz");
+            Capture((FrameworkElement)weapons.Child,theme+"-weapon-search-empty",560,160,natural:true);weapon.CancelSearch();weapon.Filter("");
             for(var i=0;i<5;i++){CatalogPreviewForCheck(i);Main("catalog-"+i);}
             catalogSearch.Text="존재하지 않는 검색어";Main("catalog-empty");catalogSearch.Text="";
             ShowRoadmap();Main("roadmap");

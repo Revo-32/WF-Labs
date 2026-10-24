@@ -1,0 +1,596 @@
+[
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/AmmoEfficiencyOnSliding",
+    "name": "아킴보 슬립 샷",
+    "code": "AkimboSlip",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Akimbo Slip Shot",
+      "revision": 2796630,
+      "timestamp": "2026-08-01T19:09:49Z",
+      "sha256": "ffae8e3ec6752d1ffe8c10a28d7c1b99e1c64252388dd4bd86981c4f3000bf8b",
+      "url": "https://wiki.warframe.com/w/Akimbo_Slip_Shot?oldid=2796630",
+      "batch": "0f3816b6f3b4bb3b.json"
+    },
+    "description": "While sliding or aim gliding: Gain 65% ammo efficiency with Dual Pistols."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnRollCritChanceOnHeadshot",
+    "name": "캐스케디아 어큐러시",
+    "code": "Accuracy",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 4,
+    "source": {
+      "title": "Cascadia Accuracy",
+      "revision": 2813628,
+      "timestamp": "2026-09-27T16:47:20Z",
+      "sha256": "e3b5a91715c0557d33e4cee00ce9cf4a4e1ab3c5c99ec5e854b5a00b4a03fe8b",
+      "url": "https://wiki.warframe.com/w/Cascadia_Accuracy?oldid=2813628",
+      "batch": "ef3fb1ef07719381.json"
+    },
+    "description": "On Roll:\n+300% Critical Chance on Weak Point Hits for 4s"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnStatusProcBonusDamage",
+    "name": "캐스케디아 임파워드",
+    "code": "Empowered",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Cascadia Empowered",
+      "revision": 2817098,
+      "timestamp": "2026-10-08T20:49:50Z",
+      "sha256": "051a9d95ee3ffa797c7131b18ef722092c47bd4640c60606d3b8948212d89604",
+      "url": "https://wiki.warframe.com/w/Cascadia_Empowered?oldid=2817098",
+      "batch": "ef3fb1ef07719381.json"
+    },
+    "description": "On Status Effect:\nDeals +750 Damage matching the Damage Type of the Status Effect"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnHeatProc",
+    "name": "캐스케디아 플레어",
+    "code": "Flare",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 40,
+    "duration": 10,
+    "source": {
+      "title": "Cascadia Flare",
+      "revision": 2806564,
+      "timestamp": "2026-09-09T22:20:02Z",
+      "sha256": "20261dc0efbdee4194a5e1e30c40c7cf56589f1bfc084ed1715b53a39a97c766",
+      "url": "https://wiki.warframe.com/w/Cascadia_Flare?oldid=2806564",
+      "batch": "ef3fb1ef07719381.json"
+    },
+    "description": "On Heat Status Effect:\n+12% Damage for 10s. Stacks up to 480%."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnOvershieldCritChance",
+    "name": "캐스케디아 오버차지",
+    "code": "Overcharge",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Cascadia Overcharge",
+      "revision": 2763451,
+      "timestamp": "2026-04-12T18:17:33Z",
+      "sha256": "b75557eb847fda89107d7bbeea323a76e90a00957c8a79720c0a7048642c8ad0",
+      "url": "https://wiki.warframe.com/w/Cascadia_Overcharge?oldid=2763451",
+      "batch": "ef3fb1ef07719381.json"
+    },
+    "description": "While Overshields Active: +300% Critical Chance"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryReloadSpeedAndMultishotOnElectricProc",
+    "name": "컨정션 볼티지",
+    "code": "Voltage",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 40,
+    "duration": 12,
+    "source": {
+      "title": "Conjunction Voltage",
+      "revision": 2797464,
+      "timestamp": "2026-08-07T15:30:25Z",
+      "sha256": "5e59cd15218f9207c1017107e7f42e80150add68c18fe4a8049844c2791640d3",
+      "url": "https://wiki.warframe.com/w/Conjunction_Voltage?oldid=2797464",
+      "batch": "7b64291a7cf572f8.json"
+    },
+    "description": "On Electricity Status Effect:\n+1.5% Reload Speed and +3% Multishot for 12s. Stacks up to 40x."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/LongbowDamageOnHeadshot",
+    "name": "롱보우 샤프샷",
+    "code": "Sharpshot",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Longbow Sharpshot",
+      "revision": 2812722,
+      "timestamp": "2026-09-24T14:34:47Z",
+      "sha256": "1e8d1035e54ef04f5dc852f9e263f52706a6069b77a73733bf471f47dc0231f9",
+      "url": "https://wiki.warframe.com/w/Longbow_Sharpshot?oldid=2812722",
+      "batch": "69bb206e126d69c3.json"
+    },
+    "description": "On Weak Point Hit: Gain +300% damage on your next shot."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryHeadshotCritMultOnHeadshot",
+    "name": "프라이머리 블라이트",
+    "code": "Blight",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 40,
+    "duration": 12,
+    "source": {
+      "title": "Primary Blight",
+      "revision": 2797465,
+      "timestamp": "2026-08-07T15:33:43Z",
+      "sha256": "68b5f1dec57c483157a8ccd09c5a661f227bb360478a35096a8c471017f06a12",
+      "url": "https://wiki.warframe.com/w/Primary_Blight?oldid=2797465",
+      "batch": "7d7b57ba598b8400.json"
+    },
+    "description": "On Toxin Status Effect:\n+3.6% Critical Damage and +1.8% Multishot for 12s. Stacks up to 40x."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/DamageForBonusArmour",
+    "name": "프라이머리 불워크",
+    "code": "Bulwark",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Primary Bulwark",
+      "revision": 2760947,
+      "timestamp": "2026-04-10T00:08:50Z",
+      "sha256": "7196a65de6cd2e0763f18486c80b181b65b8d8066ecd4898e9a3cd8678d9e08f",
+      "url": "https://wiki.warframe.com/w/Primary_Bulwark?oldid=2760947",
+      "batch": "7d7b57ba598b8400.json"
+    },
+    "description": "Gain +1% damage for each unit of armor past 1,000, up to a max of +500%."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Utility/ConvergeRadialAttackOnAim",
+    "name": "프라이머리 컴프레션",
+    "code": "Compression",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On aim: x0.2 explosion radius, +100% damage and +5.5% ammo efficiency for every 1m radius lost."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/StatusAndAmmoEfficiencyOnWeakpointHit",
+    "name": "프라이머리 크럭스",
+    "code": "Crux",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 10,
+    "duration": 10,
+    "source": {
+      "title": "Primary Crux",
+      "revision": 2816961,
+      "timestamp": "2026-10-08T12:55:59Z",
+      "sha256": "bab772b1f561fbdd95ba06957e298b6eb95112111e929e9b970a2b7fcb6e218a",
+      "url": "https://wiki.warframe.com/w/Primary_Crux?oldid=2816961",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On Weak Point Hit: Gain +30% Status Chance and +6% Ammo Efficiency for 10s. Stacks up to 10x."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamageOnNoMelee",
+    "name": "프라이머리 데드헤드",
+    "code": "Deadhead",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 3,
+    "duration": 24,
+    "source": {
+      "title": "Primary Deadhead",
+      "revision": 2812724,
+      "timestamp": "2026-09-24T14:42:28Z",
+      "sha256": "6fd6bc840ee78197fb524a6e3206811c67b6a9321046aa3e69efda6f6ddc3421",
+      "url": "https://wiki.warframe.com/w/Primary_Deadhead?oldid=2812724",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On Weak Point Kill:\n+120% Damage for 24s. Stacks up to 3x.\n+30% to Headshot Multiplier\n-50% Weapon Recoil"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SplitStatusProcsOnStackedStatusHit",
+    "name": "프라이머리 디빌리테이트",
+    "code": "Debilitate",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Primary Debilitate",
+      "revision": 2815888,
+      "timestamp": "2026-10-05T00:44:40Z",
+      "sha256": "a74446fbecb2d4aec2e75d7a0899010c850db64ed62e1f978fbb6754d60f263d",
+      "url": "https://wiki.warframe.com/w/Primary_Debilitate?oldid=2815888",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "If an enemy has 10 stacks of a combined Status Effect, inflicting the same Status Effect again has a 100% chance to inflict one of the base Status Effects it is composed of."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamageOnMeleeKill",
+    "name": "프라이머리 덱스터리티",
+    "code": "Dexterity",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 6,
+    "duration": 20,
+    "source": {
+      "title": "Primary Dexterity",
+      "revision": 2790062,
+      "timestamp": "2026-06-30T08:02:23Z",
+      "sha256": "100e60679adb615632775220db88cc2ecad0a27fe52b7e706152537ab7d6746b",
+      "url": "https://wiki.warframe.com/w/Primary_Dexterity?oldid=2790062",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On Melee Kill:\n+60% Damage for 20s. Stacks up to 6x.\n+7.5s Combo Duration"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryEnergyRegenOnImpactProc",
+    "name": "프라이머리 익질러레이트",
+    "code": "Exhilarate",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 3,
+    "duration": 10,
+    "source": {
+      "title": "Primary Exhilarate",
+      "revision": 2697806,
+      "timestamp": "2025-09-23T04:15:01Z",
+      "sha256": "8266c4128fe726043d388c4e2512f3ab31e59fa84d8f5c6926d99dad497162ae",
+      "url": "https://wiki.warframe.com/w/Primary_Exhilarate?oldid=2697806",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On Weapon Impact Status Effect:\n+1.2 Energy Regen/s for 10s. Stacks up to 3x."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryCritDmgAndMultishotOnColdProc",
+    "name": "프라이머리 프로스트바이트",
+    "code": "Frostbite",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 40,
+    "duration": 12,
+    "source": {
+      "title": "Primary Frostbite",
+      "revision": 2816990,
+      "timestamp": "2026-10-08T16:10:10Z",
+      "sha256": "40b5e4341400dd8ae60def44de559d6bc6ed53fd69a3d561c890a7c2e9133a12",
+      "url": "https://wiki.warframe.com/w/Primary_Frostbite?oldid=2816990",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On Cold Status Effect:\n+3% Critical Damage and +2.25% Multishot for 12s. Stacks up to 40x."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamageOnKill",
+    "name": "프라이머리 머시리스",
+    "code": "Merciless",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 12,
+    "duration": 4,
+    "source": {
+      "title": "Primary Merciless",
+      "revision": 2797369,
+      "timestamp": "2026-08-07T02:06:10Z",
+      "sha256": "1c59d7a1dff0236379e60049e894fff7202998ee25e00d74f301e76c4059c5c9",
+      "url": "https://wiki.warframe.com/w/Primary_Merciless?oldid=2797369",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On Kill:\n+30% Damage for 4s. Stacks up to 12x.\n+30% Reload Speed"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryJamEnemyWeaponsOnMagneticProc",
+    "name": "프라이머리 옵스트럭트",
+    "code": "Obstruct",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Primary Obstruct",
+      "revision": 2775087,
+      "timestamp": "2026-05-06T17:06:48Z",
+      "sha256": "a26cccfd641712d2e9ea811fa176f6204c7d6e9e955cea8c968c0fecff5aedf3",
+      "url": "https://wiki.warframe.com/w/Primary_Obstruct?oldid=2775087",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On Weapon Magnetic Status Effect: Enemy weapons jam within 15m of target. Cooldown 10s."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/MultishotForMaxEnergy",
+    "name": "프라이머리 오버차지",
+    "code": "EnergyMultishot",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Primary Overcharge",
+      "revision": 2793350,
+      "timestamp": "2026-07-14T07:15:22Z",
+      "sha256": "f80ecba051a496da53243dbd69b670a898c6b379b0025cc043d70785111a16de",
+      "url": "https://wiki.warframe.com/w/Primary_Overcharge?oldid=2793350",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "While at or above 90% Energy: Gain 35% of Max Energy as Multishot, capped at 350%."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/PrimaryDamagePerAmmoOnReload",
+    "name": "프라이머리 플레이티드 라운드",
+    "code": "PlatedRound",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 10,
+    "source": {
+      "title": "Primary Plated Round",
+      "revision": 2812592,
+      "timestamp": "2026-09-24T09:14:38Z",
+      "sha256": "2e3b35a52218a503ceb71f78d573037d9f10cc81c287bc6574f54ce2c0bbfbd0",
+      "url": "https://wiki.warframe.com/w/Primary_Plated_Round?oldid=2812592",
+      "batch": "a0a41d70fc27910e.json"
+    },
+    "description": "On Reload: Deal increased damage per round loaded based on max magazine size. Lasts for 10s."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryColdOnPuncture",
+    "name": "세컨더리 크라이오제닉",
+    "code": "Cryogenic",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Secondary Cryogenic",
+      "revision": 2791798,
+      "timestamp": "2026-07-07T20:09:06Z",
+      "sha256": "5a867936486d872e183c961811ce97a6083d718fc4ca8278d52d1a7b49c39042",
+      "url": "https://wiki.warframe.com/w/Secondary_Cryogenic?oldid=2791798",
+      "batch": "4e57bd78a1646bbe.json"
+    },
+    "description": "On Puncture: Apply 3 Cold stacks on targets within 15m."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnNoMelee",
+    "name": "세컨더리 데드헤드",
+    "code": "Deadhead",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 3,
+    "duration": 24,
+    "source": {
+      "title": "Secondary Deadhead",
+      "revision": 2812725,
+      "timestamp": "2026-09-24T14:44:43Z",
+      "sha256": "67c92f2b52b7ae3e1b1edd8ab4f7cfc6dbba2caa09078d5dc0f36fc4b9492870",
+      "url": "https://wiki.warframe.com/w/Secondary_Deadhead?oldid=2812725",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "On Weak Point Kill:\n+120% Damage for 24s. Stacks up to 3x.\n+30% to Headshot Multiplier\n-50% Weapon Recoil"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnMeleeKill",
+    "name": "세컨더리 덱스터리티",
+    "code": "Dexterity",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 6,
+    "duration": 20,
+    "source": {
+      "title": "Secondary Dexterity",
+      "revision": 2790065,
+      "timestamp": "2026-06-30T08:04:14Z",
+      "sha256": "1a08fed9ee428b77b2910ed4c3d93bf8d38ae637c746e9ae6df6ba501281e5fc",
+      "url": "https://wiki.warframe.com/w/Secondary_Dexterity?oldid=2790065",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "On Melee Kill:\n+60% Damage for 20s. Stacks up to 6x.\n+7.5s Combo Duration\n"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Utility/ExtraProcOnProc",
+    "name": "세컨더리 인컴버",
+    "code": "Encumber",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Secondary Encumber",
+      "revision": 2818427,
+      "timestamp": "2026-10-14T17:15:20Z",
+      "sha256": "7741854841a3adc0958c97c9acc1097dc973de25ee127f0aa6b8655536d74107",
+      "url": "https://wiki.warframe.com/w/Secondary_Encumber?oldid=2818427",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "On Status Effect: +24% chance to trigger a second random Status Effect."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryCritOnHit",
+    "name": "세컨더리 에너베이트",
+    "code": "Enervate",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1000,
+    "duration": 0,
+    "source": {
+      "title": "Secondary Enervate",
+      "revision": 2816628,
+      "timestamp": "2026-10-07T20:27:07Z",
+      "sha256": "9fe9f762e088b075d76b75e52ff2192b12cc69c0c3484a7eb7636c59c6a29ed8",
+      "url": "https://wiki.warframe.com/w/Secondary_Enervate?oldid=2816628",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "On Hit: Increase Critical Chance by 10%. Resets after 6 Big Critical Hit."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/OverguardSteal",
+    "name": "세컨더리 포티파이어",
+    "code": "Fortifier",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Secondary Fortifier",
+      "revision": 2805642,
+      "timestamp": "2026-09-05T04:26:10Z",
+      "sha256": "692d98640298b667a5005f41b481f0a4fa7e7e30da0461351aeb4afd21c1fd97",
+      "url": "https://wiki.warframe.com/w/Secondary_Fortifier?oldid=2805642",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "Gain 1 Overguard for every 100 Damage dealt to an enemy's Overguard.\nDeals x8 Extra Damage to Overguard."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/RadialDamageOnMaxRadiationStackHit",
+    "name": "세컨더리 이레디에이트",
+    "code": "Irradiate",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Secondary Irradiate",
+      "revision": 2816319,
+      "timestamp": "2026-10-06T17:45:34Z",
+      "sha256": "a06f6f62c7e558000ae413791c663cb7d152d20be9714c6d86e4671bdcc374f9",
+      "url": "https://wiki.warframe.com/w/Secondary_Irradiate?oldid=2816319",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "On hitting enemies afflicted by 10 stacks of Radiation: Deal 180% of the hit damage to enemies within 7m."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryCritChancePerBuff",
+    "name": "세컨더리 킨쉽",
+    "code": "Kinship",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1000,
+    "duration": 0,
+    "source": {
+      "title": "Secondary Kinship",
+      "revision": 2807252,
+      "timestamp": "2026-09-11T01:02:38Z",
+      "sha256": "09871fbf231b86b2c668739f2ebf1cefbd243438e43f8f71276f3a5d92874efa",
+      "url": "https://wiki.warframe.com/w/Secondary_Kinship?oldid=2807252",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "While Buffing Ally Warframes: +20% Critical Chance per buff"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryDamageOnKill",
+    "name": "세컨더리 머시리스",
+    "code": "Merciless",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 12,
+    "duration": 4,
+    "source": {
+      "title": "Secondary Merciless",
+      "revision": 2797368,
+      "timestamp": "2026-08-07T02:02:34Z",
+      "sha256": "c8445a2dccf8696432fca24e23f446b2b9c8822acf471c20aef89e952164f90a",
+      "url": "https://wiki.warframe.com/w/Secondary_Merciless?oldid=2797368",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "On Kill:\n+30% Damage for 4s. Stacks up to 12x.\n+30% Reload Speed"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/MultishotForCombo",
+    "name": "세컨더리 아웃버스트",
+    "code": "Outburst",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 13,
+    "duration": 30,
+    "source": {
+      "title": "Secondary Outburst",
+      "revision": 2800571,
+      "timestamp": "2026-08-19T15:31:17Z",
+      "sha256": "4d44a507b904db3ba9f6f22099fd4a4e4a31a9cea6f4a4cb9b960949e96424e7",
+      "url": "https://wiki.warframe.com/w/Secondary_Outburst?oldid=2800571",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "On swapping to Secondary Weapon, consume all Combo Multipliers to increase Secondary Weapon Critical Chance and Critical Damage by 20% per Combo consumed for 30s."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/SecondaryExtraDamagePerFreezeStack",
+    "name": "세컨더리 쉬버",
+    "code": "Shiver",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 10,
+    "duration": 0,
+    "source": {
+      "title": "Secondary Shiver",
+      "revision": 2804477,
+      "timestamp": "2026-08-31T16:15:00Z",
+      "sha256": "a8dab1d0f1eada22cdd7b9a00342760ea68dd49256fe285f235415582ab5dfb3",
+      "url": "https://wiki.warframe.com/w/Secondary_Shiver?oldid=2804477",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "Enemies take +45% damage per Cold Status"
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/BonusDamageNextShotForCurEnergy",
+    "name": "세컨더리 서지",
+    "code": "Surge",
+    "category": "secondary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 0,
+    "source": {
+      "title": "Secondary Surge",
+      "revision": 2818417,
+      "timestamp": "2026-10-14T16:02:41Z",
+      "sha256": "662964fb83da1b2ae19a8bfdc9688c445129de9e01d7dd011601ce92b6567c57",
+      "url": "https://wiki.warframe.com/w/Secondary_Surge?oldid=2818417",
+      "batch": "75a128e2fce13308.json"
+    },
+    "description": "On Ability Cast: Next shot gains a Damage Multiplier for every 200 current Energy, up to x8."
+  },
+  {
+    "id": "/Lotus/Upgrades/CosmeticEnhancers/Offensive/ShotgunMultishotAndReloadSpeedOnCloseKill",
+    "name": "샷건 벤데타",
+    "code": "Vendetta",
+    "category": "primary",
+    "maxRank": 5,
+    "cap": 1,
+    "duration": 15,
+    "source": {
+      "title": "Shotgun Vendetta",
+      "revision": 2701080,
+      "timestamp": "2025-10-21T18:34:30Z",
+      "sha256": "28684817e357115339ee84ee9bbb680f1c155fd95da42cbfe8a2f45c93050baa",
+      "url": "https://wiki.warframe.com/w/Shotgun_Vendetta?oldid=2701080",
+      "batch": "a3295f983f72ef39.json"
+    },
+    "description": "On shotgun kill within 5m of target:\n+180% Multishot and +75% Reload Speed for 15s."
+  }
+]

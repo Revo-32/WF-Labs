@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "source": {
+    "title": "Vermisplicer",
+    "revision": 2792155,
+    "timestamp": "2026-07-09T04:51:54Z",
+    "sha256": "92b6106ec3d39aab7223478c702b230d025a69a51fd0e5e990f6b8f5d7545deb",
+    "url": "https://wiki.warframe.com/w/Vermisplicer?oldid=2792155",
+    "batch": "1325b011ce8beec7.json"
+  },
+  "primary": {
+    "chains": 3,
+    "radius": 6,
+    "damage": 0.7,
+    "origin": "furthest eligible primary hit",
+    "excludePrimaryHits": true
+  },
+  "secondary": {
+    "tendrils": 5,
+    "autoAimBody": true,
+    "punchThrough": 1
+  },
+  "acquisitionTime": "not specified; consumes ammo",
+  "failedLocks": "explicit per-tendril scenario"
+}

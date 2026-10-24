@@ -4,9 +4,147 @@
   "aliases": {
     "/Lotus/Weapons/Tenno/Melee/Warfan/TnBrokenFrameWarfan/TnBrokenFramePrimeWarfanWeapon": {
       "exportId": "/Lotus/Weapons/Tenno/Melee/Warfan/PrimeQuassus/PrimeQuassusWeapon",
-      "wikiSource": "https://wiki.warframe.com/w/Quassus_Prime?oldid=2677504",
+      "wikiSource": "https://wiki.warframe.com/w/Quassus_Prime",
       "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportWeapons_ko.json!00_EbjufCglVfIC1GSoqzqSNg",
       "exportSha256": "fd6c06b73131ebecc5723fcc6208794349ea0c9e815a73811ed847871d11696f"
+    },
+    "/Lotus/Powersuits/Oraxia/OraxiaSpidersAugmentCard": {
+      "exportId": "/Lotus/Powersuits/Oraxia/BroodAugmentCard",
+      "wikiSource": "https://wiki.warframe.com/w/Brood's_Oversurge",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Weapons/Tenno/Melee/MeleeTrees/AssaultSawMeleeTree": {
+      "exportId": "/Lotus/Weapons/Tenno/Melee/MeleeTrees/SawBladeCmbOneMeleeTree",
+      "wikiSource": "https://wiki.warframe.com/w/Butcher's_Revelry",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Powersuits/Frost/IceShieldAugment2Card": {
+      "exportId": "/Lotus/Powersuits/Frost/IceShieldAugmentTwoCard",
+      "wikiSource": "https://wiki.warframe.com/w/Cold_Front",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponColdDamageModBeginner": {
+      "exportId": "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponFreezeDamageModBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Chilling_Grasp",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponFactionDamageCorpusBeginner": {
+      "exportId": "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponShotgunFactionDamageCorpusBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Cleanse_Corpus",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponFactionDamageGrineerBeginner": {
+      "exportId": "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponShotgunFactionDamageGrineerBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Cleanse_Grineer",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponFactionDamageInfestedBeginner": {
+      "exportId": "/Lotus/Upgrades/Mods/Shotgun/Beginner/WeaponShotgunFactionDamageInfestedBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Cleanse_Infested",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Rifle/Beginner/WeaponStunChanceModBeginner": {
+      "exportId": "/Lotus/Upgrades/Mods/Rifle/Beginner/WeaponStatusChanceModBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Rifle_Aptitude",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Pistol/Beginner/WeaponStunChanceModBeginner": {
+      "exportId": "/Lotus/Upgrades/Mods/Pistol/Beginner/WeaponStatusChanceModBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Sure_Shot",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Interface/Cards/Images/Melee/MagneticAttackSpeedMeleeMod": {
+      "exportId": "/Lotus/Upgrades/Mods/Melee/DualStat/MagneticAttackSpeedMeleeMod",
+      "wikiSource": "https://wiki.warframe.com/w/Magnetic_Rush",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Language/Upgrades/MagneticFireRateShotgunMod": {
+      "exportId": "/Lotus/Upgrades/Mods/Shotgun/DualStat/MagneticFireRateShotgunMod",
+      "wikiSource": "https://wiki.warframe.com/w/Magnetic_Strafe",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Archwing/Rifle/PrimedArchwingDamageAfterReloadMod": {
+      "exportId": "/Lotus/Upgrades/Mods/Archwing/Rifle/PrimedArchwingDamageOnReloadMod",
+      "wikiSource": "https://wiki.warframe.com/w/Primed_Deadly_Efficiency",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Warframe/AvatarShieldMaxModExpert": {
+      "exportId": "/Lotus/Upgrades/Mods/Warframe/Expert/AvatarShieldMaxModExpert",
+      "wikiSource": "https://wiki.warframe.com/w/Primed_Redirection",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Pistol/WeaponRecoilReductionModExpert": {
+      "exportId": "/Lotus/Upgrades/Mods/Pistol/Expert/WeaponRecoilReductionModExpert",
+      "wikiSource": "https://wiki.warframe.com/w/Primed_Steady_Hands",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Powersuits/Alchemist/AlchemistSerpentAugmentCard": {
+      "exportId": "/Lotus/Powersuits/Alchemist/SerpentAugmentCard",
+      "wikiSource": "https://wiki.warframe.com/w/Swift_Bite",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Powersuits/BrokenFrame/BrokenEmbraceAugmentCard": {
+      "exportId": "/Lotus/Powersuits/BrokenFrame/EmbraceAugmentCard",
+      "wikiSource": "https://wiki.warframe.com/w/The_Relentless_Lost",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Powersuits/BrokenFrame/BrokenGraspAugmentCard": {
+      "exportId": "/Lotus/Powersuits/BrokenFrame/GraspAugmentCard",
+      "wikiSource": "https://wiki.warframe.com/w/Vampiric_Grasp",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerDuals": {
+      "exportId": "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerHybridWeapon",
+      "wikiSource": "https://wiki.warframe.com/w/Dark_Split-Sword",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportWeapons_ko.json!00_EbjufCglVfIC1GSoqzqSNg",
+      "exportSha256": "fd6c06b73131ebecc5723fcc6208794349ea0c9e815a73811ed847871d11696f"
+    },
+    "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerSingle": {
+      "exportId": "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkSwordDaggerHybridWeapon",
+      "wikiSource": "https://wiki.warframe.com/w/Dark_Split-Sword",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportWeapons_ko.json!00_EbjufCglVfIC1GSoqzqSNg",
+      "exportSha256": "fd6c06b73131ebecc5723fcc6208794349ea0c9e815a73811ed847871d11696f"
+    },
+    "/Lotus/Weapons/Grineer/Melee/GrnGhoulSaw/GrnKuvaGhoulSawPlayer": {
+      "exportId": "/Lotus/Weapons/Grineer/KuvaLich/Melee/Ghoulsaw/KuvaGhoulSaw",
+      "wikiSource": "https://wiki.warframe.com/w/Kuva_Ghoulsaw",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportWeapons_ko.json!00_EbjufCglVfIC1GSoqzqSNg",
+      "exportSha256": "fd6c06b73131ebecc5723fcc6208794349ea0c9e815a73811ed847871d11696f"
+    },
+    "/Lotus/Upgrades/Mods/Melee/Beginner/AvatarParryMeleeModBeginner": {
+      "exportId": "/Lotus/Upgrades/Mods/Warframe/Beginner/AvatarParryMeleeModBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Parry",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Melee/Beginner/WeaponMeleeChargeRateModBeginner": {
+      "exportId": "/Lotus/Upgrades/Mods/Melee/Beginner/WeaponMeleeChannelingEfficiencyModBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Reflex_Coil",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
+    },
+    "/Lotus/Upgrades/Mods/Melee/Beginner/WeaponArmorPiercingDamageMod": {
+      "exportId": "/Lotus/Upgrades/Mods/Melee/Beginner/WeaponArmorPiercingDamageModBeginner",
+      "wikiSource": "https://wiki.warframe.com/w/Sundering_Strike",
+      "exportSource": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+      "exportSha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6"
     }
   }
 }

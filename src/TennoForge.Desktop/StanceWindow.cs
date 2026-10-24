@@ -10,7 +10,7 @@ public sealed class StanceWindow : Window
     public StanceWindow(Stance stance,StanceCatalog catalog)
     {
         Title=$"WF Labs · {stance.Name}";Width=840;Height=760;MinWidth=620;MinHeight=480;
-        FontFamily=(FontFamily)Application.Current.Resources["Wanted"];WindowStartupLocation=WindowStartupLocation.CenterOwner;
+        SetResourceReference(FontFamilyProperty,"AppFont");WindowStartupLocation=WindowStartupLocation.CenterOwner;
         SourceInitialized+=(_,_)=>Backdrop.Apply(this,false,Theme.IsDark);
         var p=new StackPanel{Margin=new(26,8,26,26)};
         p.Children.Add(Label(stance.Name,26));p.Children.Add(Label(stance.Id+" · WF Wiki 기준",14,"AccentBrush"));

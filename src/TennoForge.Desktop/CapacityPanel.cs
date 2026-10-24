@@ -1,4 +1,4 @@
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
@@ -37,6 +37,7 @@ public sealed partial class MainWindow
         var popupBody=new Border{Child=new ScrollViewer{Content=settings,VerticalScrollBarVisibility=ScrollBarVisibility.Auto,MaxHeight=420},Width=380,Padding=new(16),CornerRadius=new(6),BorderThickness=new(1)};
         popupBody.SetResourceReference(Border.BackgroundProperty,"PopupBrush");popupBody.SetResourceReference(Border.BorderBrushProperty,"StrokeBrush");
         capacityPopup=new Popup{Child=popupBody,PlacementTarget=details,Placement=PlacementMode.Bottom,VerticalOffset=6,StaysOpen=false,AllowsTransparency=true};
+        PopupLayout.Configure(capacityPopup,this);
         popupBody.PreviewKeyDown+=(_,e)=>{if(e.Key==Key.Escape){capacityPopup.IsOpen=false;details.Focus();e.Handled=true;}};
         foreach(var input in new[]{weaponRank,masteryRank})input.TextChanged+=(_,_)=>Recalculate();
         catalyst.Checked+=(_,_)=>Recalculate();catalyst.Unchecked+=(_,_)=>Recalculate();

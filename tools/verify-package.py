@@ -42,7 +42,7 @@ with ZipFile(package) as archive:
     value = lambda key: metadata.findtext(".//{*}" + key)
     require(value("rid") == "win-x64" and value("machineArchitecture") == "x64", "설치·업데이트 아키텍처 메타데이터")
     require(value("version") == asset["Version"], "패키지와 feed 버전 일치")
-    for name in ["COPYRIGHT.md", "THIRD_PARTY_NOTICES.txt", "WF-WIKI-NOTICE.txt", "PUBLIC-EXPORT-NOTICE.txt", "WFCD-LICENSE.txt", "VELOPACK-LICENSE.txt", "Fonts/OFL.txt", "WFLabs.Startup.exe", "coreclr.dll", "PresentationFramework.dll"]:
+    for name in ["COPYRIGHT.md", "THIRD_PARTY_NOTICES.txt", "WF-WIKI-NOTICE.txt", "PUBLIC-EXPORT-NOTICE.txt", "WFCD-LICENSE.txt", "VELOPACK-LICENSE.txt", "Fonts/OFL.txt", "Fonts/PRETENDARD-LICENSE.txt", "Fonts/PRETENDARD-SOURCE.json", "Fonts/THE-JAMSIL-LICENSE.txt", "Fonts/The_Jamsil_LICENSE_Korean.pdf", "Fonts/THE-JAMSIL-SOURCE.json", "WFLabs.Startup.exe", "coreclr.dll", "PresentationFramework.dll"]:
         require("lib/app/" + name in archive.namelist(), "배포 구성요소 포함 · " + name)
     config = json.loads(archive.read("lib/app/release-config.json").decode("utf-8-sig"))
     require(config["RepositoryUrl"] == "https://github.com/Revo-32/WF-Labs", "공개 업데이트 저장소 연결")

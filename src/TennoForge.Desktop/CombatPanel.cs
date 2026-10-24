@@ -24,21 +24,22 @@ public sealed partial class MainWindow
 
     private FrameworkElement CreateCombatPanel()
     {
-        var body=new StackPanel();body.Children.Add(CreateTargetMeleeView());primaryDebuffs=CreateDebuffEditor();body.Children.Add(SectionTitle("공격과 교전"));body.Children.Add(CreateEncounterChoice());
+        TextBlock ColumnTitle(string text){var title=T(text,16);title.Margin=new(0,0,0,8);return title;}
+        var body=new StackPanel();body.Children.Add(CreateTargetMeleeView());primaryDebuffs=CreateDebuffEditor();body.Children.Add(ColumnTitle("공격과 교전"));body.Children.Add(CreateEncounterChoice());
         attackMode.Width=double.NaN;attackMode.Margin=new(0);body.Children.Add(Field("공격 방식",attackMode));
         comboChoice.DisplayMemberPath="Name";comboChoice.SelectedValuePath="Value";CompactInput(comboChoice,32);
         comboChoice.SelectionChanged+=(_,_)=>{if(!updatingCombat&&comboChoice.SelectedValue is int n)combo.Text=n.ToString();};
         AutomationProperties.SetName(comboChoice,"교전 시작 콤보 배수");comboChoice.ToolTip="교전 시작 시점의 콤보 배수. 예열 계산에서는 명중에 따라 콤보가 누적됩니다.";WatchEquationSource(comboChoice,"condition",()=> ("combo","시작 콤보 배수"));
         stanceCombo.Margin=new(0);stanceActionField=(FrameworkElement)Field("스탠스 동작",stanceCombo);singleAttackField=(FrameworkElement)Field("공격 동작",meleeAttack);body.Children.Add(stanceActionField);body.Children.Add(singleAttackField);
         body.Children.Add(Field("공격 시작 시 콤보 배수",comboChoice));
-        body.Children.Add(SectionTitle("버프 · 추가 조건"));body.Children.Add(CreateWeaponBuffPanel());
+        var buffsHeading=ColumnTitle("버프 · 추가 조건");body.Children.Add(buffsHeading);body.Children.Add(CreateWeaponBuffPanel());
         body.Children.Add(CreateAttackSequence());
 
         weaponStatusPreset=Button("모든 속성 적용",ApplyWeaponStatuses);clearStatusButton=Button("상태 없음",ClearTargetStatuses);
         weaponStatusPreset.ToolTip="최대치 비교용: 현재 무기가 부여할 수 있는 모든 상태를 동시에 1중첩씩 가정합니다. 실전 예열 결과가 아닙니다.";
         var presetRow=new WrapPanel{Margin=new(0,6,0,6)};
         foreach(var button in new[]{weaponStatusPreset,clearStatusButton}){button.Padding=new(10,5,10,5);button.Margin=new(0,0,6,0);presetRow.Children.Add(button);}
-        var primer=Stack(SectionTitle("프라이머 · 미리 걸어 둔 상태"),selectedStatusText,presetRow,statusChips);primerControls=primer;body.Children.Add(primer);
+        var primer=Stack(SectionTitle("프라이머 · 미리 걸어 둔 상태"),selectedStatusText,presetRow,statusChips);primerControls=primer;body.Children.Insert(3,primer);
         coState.Margin=new(0,8,0,8);primer.Children.Add(coState);WatchEquationSource(coState,"condition",()=> ("status","대상 상태이상"));
         liftedTarget.Checked+=(_,_)=>{if(!updatingCombat){preservedConditions["Lifted"]=1;preservedConditions["Knockdown"]=0;Recalculate();}};
         liftedTarget.Unchecked+=(_,_)=>{if(!updatingCombat){preservedConditions["Lifted"]=0;Recalculate();}};
@@ -76,14 +77,16 @@ public sealed partial class MainWindow
         var advanced=Columns(Field("타격 배율",motion),Field("기본 간격 (초)",interval));
         body.Children.Add(new Expander{Header="고급 · 직접 계산 조건",Content=Stack(advanced,Field("위키 미기재 콤보 시간 (초)",comboDurationOverride),Field("적 기본 방어력 · 섀터링 임팩트",enemyBaseArmor))});
         body.Children.Add(CreateCombatTimeInputs());
-        var panel=new Grid();panel.RowDefinitions.Add(new(){Height=GridLength.Auto});panel.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});
-        var heading=T("대상 · 교전 설정",18);heading.Margin=new(0,0,0,12);panel.Children.Add(heading);
-        scenarioScroller=Scroll(body);Grid.SetRow(scenarioScroller,1);panel.Children.Add(scenarioScroller);
+        var targetColumn=new StackPanel();var attackColumn=new StackPanel();var detailColumn=new StackPanel();
+        var items=body.Children.Cast<UIElement>().ToArray();body.Children.Clear();var inDetails=false;
+        for(var i=0;i<items.Length;i++){if(items[i]==buffsHeading)inDetails=true;(i==0?targetColumn:inDetails?detailColumn:attackColumn).Children.Add(items[i]);}
+        scenarioScroller=Scroll(detailColumn);var panel=ScenarioDrawer.Columns(Scroll(targetColumn),Scroll(attackColumn),scenarioScroller);
         scenarioPanel=panel;RefreshEncounterChoice();return panel;
     }
     private record ComboLevel(int Value){public string Name=>Value==1?"1× · 콤보 없음":$"{Value}× · 콤보 누적 상태";}
     private void RefreshCombatState(Build build,Calculation c,StanceCalculation? stanceResult)
     {
+        scenarioDrawer?.SetSummary($"{(enemyChoice.SelectedItem as EnemyChoice)?.Name??"대상"} · Lv. {enemyLevel.Text}{(enemyEximus.IsChecked==true?" · 엑시무스":"")} · {selectedEnemyDifficulty switch{EnemyDifficulty.SteelPath=>"강철의 길",EnemyDifficulty.Icebind=>"빙주령",_=>"일반"}} · {(encounterChoice.SelectedItem as EncounterChoice)?.Name}");
         updatingCombat=true;
         try
         {

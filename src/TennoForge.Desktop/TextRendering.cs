@@ -5,13 +5,14 @@ namespace TennoForge.Desktop;
 
 internal static class TextRendering
 {
-    // UI text uses pixel-aligned metrics at every monitor scale. Formula text can
-    // explicitly request Ideal metrics. ClearType requires an opaque paint surface.
-    internal static TextFormattingMode Formatting(DpiScale dpi)=>TextFormattingMode.Display;
+    // Natural glyph metrics preserve curved/diagonal outlines instead of GDI-style
+    // pixel fitting. ClearType uses the matching natural filter on opaque surfaces;
+    // WPF falls back to grayscale coverage where subpixel rendering is unavailable.
+    internal static TextFormattingMode Formatting(DpiScale dpi)=>TextFormattingMode.Ideal;
     internal static void Apply(DependencyObject target,DpiScale dpi)
     {
         TextOptions.SetTextFormattingMode(target,Formatting(dpi));
-        TextOptions.SetTextRenderingMode(target,TextRenderingMode.Auto);
+        TextOptions.SetTextRenderingMode(target,TextRenderingMode.ClearType);
         TextOptions.SetTextHintingMode(target,TextHintingMode.Fixed);
     }
 }

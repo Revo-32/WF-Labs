@@ -1,0 +1,142 @@
+{
+  "version": "ranged-44.1.3-audit",
+  "officialPatch": "https://www.warframe.com/en/patch-notes/pc/44-1-3",
+  "sources": {
+    "Azima": {
+      "title": "Azima",
+      "revision": 2816627,
+      "timestamp": "2026-10-07T20:26:57Z",
+      "sha256": "459d3f9d9554301727851fcecf11ed2fb777896a6f89cbb722ba45221cb158b9",
+      "url": "https://wiki.warframe.com/w/Azima?oldid=2816627",
+      "batch": "26bd5427549f6814.json"
+    },
+    "Residual Boils": {
+      "title": "Residual Boils",
+      "revision": 2642684,
+      "timestamp": "2024-10-15T19:32:11Z",
+      "sha256": "e615ee2671e19da105f1b2c86d91ce11df1e75c55aefbab612944d9528940fb8",
+      "url": "https://wiki.warframe.com/w/Residual_Boils?oldid=2642684",
+      "batch": "507f41ebe5848093.json"
+    },
+    "Residual Malodor": {
+      "title": "Residual Malodor",
+      "revision": 2642685,
+      "timestamp": "2024-10-15T19:32:12Z",
+      "sha256": "73322094936d9e567c4437b64c69a110d33db3daae5d57f7e755107ee2178adb",
+      "url": "https://wiki.warframe.com/w/Residual_Malodor?oldid=2642685",
+      "batch": "507f41ebe5848093.json"
+    },
+    "Residual Shock": {
+      "title": "Residual Shock",
+      "revision": 2642687,
+      "timestamp": "2024-10-15T19:32:13Z",
+      "sha256": "8eed6b41bed1663b9f8573708f58bda4e0c5d2109ed3a4460cf781d8c0660d44",
+      "url": "https://wiki.warframe.com/w/Residual_Shock?oldid=2642687",
+      "batch": "507f41ebe5848093.json"
+    },
+    "Residual Viremia": {
+      "title": "Residual Viremia",
+      "revision": 2642688,
+      "timestamp": "2024-10-15T19:32:14Z",
+      "sha256": "da5ee8461b7638a0642ce0ed260c66bfe13a51410df0f9b92a3936dada380b1b",
+      "url": "https://wiki.warframe.com/w/Residual_Viremia?oldid=2642688",
+      "batch": "507f41ebe5848093.json"
+    },
+    "Arcane Pistoleer": {
+      "title": "Arcane Pistoleer",
+      "revision": 2820946,
+      "timestamp": "2026-10-22T19:21:59Z",
+      "sha256": "3f0dd4e56b6eb867e8322f13f3f4148a9f396f1f5ef2aa40dc5d8b2f0b578ded",
+      "url": "https://wiki.warframe.com/w/Arcane_Pistoleer?oldid=2820946",
+      "batch": "ee1f4aa7afa57fdb.json"
+    },
+    "Perigale": {
+      "title": "Perigale",
+      "revision": 2785202,
+      "timestamp": "2026-06-15T02:35:59Z",
+      "sha256": "f7bcb1bcad36f2899e0a7122660dae78c2de60784c34bc891eebbdc4cd9497e4",
+      "url": "https://wiki.warframe.com/w/Perigale?oldid=2785202",
+      "batch": "908ead252b087ddb.json"
+    },
+    "Perigale Prime": {
+      "title": "Perigale Prime",
+      "revision": 2806301,
+      "timestamp": "2026-09-08T16:16:00Z",
+      "sha256": "7b79380ebd7efd213e605416f34fba1fd877bb63c9adc5af370f54cfc443c4e1",
+      "url": "https://wiki.warframe.com/w/Perigale_Prime?oldid=2806301",
+      "batch": "908ead252b087ddb.json"
+    },
+    "Simulor": {
+      "title": "Simulor",
+      "revision": 2814713,
+      "timestamp": "2026-09-30T19:15:42Z",
+      "sha256": "b9ccebf218e593eb337a5f7a856add766dd2018c7bdf1a5d6851756587e67551",
+      "url": "https://wiki.warframe.com/w/Simulor?oldid=2814713",
+      "batch": "a3295f983f72ef39.json"
+    },
+    "Synoid Simulor": {
+      "title": "Synoid Simulor",
+      "revision": 2723712,
+      "timestamp": "2026-01-17T06:30:16Z",
+      "sha256": "71296cd3c8a00ae50983dadb9458107b159a554ee1b24996bd73d849611f5838",
+      "url": "https://wiki.warframe.com/w/Synoid_Simulor?oldid=2723712",
+      "batch": "4982998346fc3632.json"
+    },
+    "Spontaneous Singularity": {
+      "title": "Spontaneous Singularity",
+      "revision": 2729669,
+      "timestamp": "2026-02-12T14:20:34Z",
+      "sha256": "48438209294fd16ad55ba6e294bf58be5ae195abad4dc325e7c3e01e77631430",
+      "url": "https://wiki.warframe.com/w/Spontaneous_Singularity?oldid=2729669",
+      "batch": "fa2aab18b94d9fd3.json"
+    },
+    "Penta": {
+      "title": "Penta",
+      "revision": 2814711,
+      "timestamp": "2026-09-30T19:11:50Z",
+      "sha256": "d840f05905ebfb41133d6d917e0f2e9f14abb76c0aa12b3f9344d8d48a675975",
+      "url": "https://wiki.warframe.com/w/Penta?oldid=2814711",
+      "batch": "908ead252b087ddb.json"
+    },
+    "Tether Grenades": {
+      "title": "Tether Grenades",
+      "revision": 2673609,
+      "timestamp": "2025-03-23T19:23:54Z",
+      "sha256": "3d15def776f6680fcf39ab321789e9400c586c63016d04af6d4fb9b1a9d98ff6",
+      "url": "https://wiki.warframe.com/w/Tether_Grenades?oldid=2673609",
+      "batch": "34e255fa5450dd70.json"
+    },
+    "Mutalist Quanta": {
+      "title": "Mutalist Quanta",
+      "revision": 2814707,
+      "timestamp": "2026-09-30T19:09:00Z",
+      "sha256": "657239126deb4b21bf53124fd8050cf139a7f58f7bc28c4354cebe444cc3b294",
+      "url": "https://wiki.warframe.com/w/Mutalist_Quanta?oldid=2814707",
+      "batch": "08a6b1e57a6cf21b.json"
+    },
+    "Neutralizing Justice": {
+      "title": "Neutralizing Justice",
+      "revision": 2657911,
+      "timestamp": "2025-01-31T15:43:33Z",
+      "sha256": "e2b36352c4091ee03f64dd544b227cd48f587f3a8037e5a758202edc8cef8bea",
+      "url": "https://wiki.warframe.com/w/Neutralizing_Justice?oldid=2657911",
+      "batch": "5c70d3b6420543cc.json"
+    },
+    "Cannonade": {
+      "title": "Cannonade",
+      "revision": 2760502,
+      "timestamp": "2026-04-09T14:57:31Z",
+      "sha256": "2c64922c80d91459c699241e3f33f224247d8ea406927ec6d801301c6179a8ed",
+      "url": "https://wiki.warframe.com/w/Cannonade?oldid=2760502",
+      "batch": "55b053f26f169fca.json"
+    },
+    "Trumna": {
+      "title": "Trumna",
+      "revision": 2805022,
+      "timestamp": "2026-09-02T20:48:13Z",
+      "sha256": "1f18a1ebf62379418f383f6d42902f17a610675ddf00175da7fc70d7aab63fe6",
+      "url": "https://wiki.warframe.com/w/Trumna?oldid=2805022",
+      "batch": "abcc97bb813f1730.json"
+    }
+  }
+}

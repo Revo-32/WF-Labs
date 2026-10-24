@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -19,6 +19,7 @@ public sealed class WeaponSearchBox : Control
         set{items=value?.Cast<object>().ToArray()??[];if(selectedItem is not null&&!items.Contains(selectedItem))SelectedItem=null;Filter("");}
     }
     public IList Items=>items;
+    public Func<Weapon,bool>? SuggestionFilter {get;set;}
     [System.Diagnostics.CodeAnalysis.AllowNull]
     public object SelectedItem
     {
@@ -50,18 +51,18 @@ public sealed class WeaponSearchBox : Control
         Template=(ControlTemplate)XamlReader.Parse("""
         <ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" TargetType="Control">
           <Grid x:Name="Shell">
-            <Border Background="{DynamicResource ControlBrush}" BorderBrush="{DynamicResource StrokeBrush}" BorderThickness="1" CornerRadius="5">
+            <Border x:Name="SearchBorder" Background="{DynamicResource ControlBrush}" BorderBrush="{DynamicResource StrokeBrush}" BorderThickness="1" CornerRadius="5">
               <Grid>
                 <TextBox x:Name="Query" Margin="10,0,32,0" Padding="0" Background="Transparent" VerticalContentAlignment="Center">
                   <TextBox.Template><ControlTemplate TargetType="TextBox"><ScrollViewer x:Name="PART_ContentHost"/></ControlTemplate></TextBox.Template>
                 </TextBox>
                 <ToggleButton x:Name="Open" Width="32" HorizontalAlignment="Right" Focusable="False" IsChecked="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}">
-                  <ToggleButton.Template><ControlTemplate TargetType="ToggleButton"><Border Background="Transparent"><Path Data="M 0 0 L 4 4 L 8 0" Stroke="{DynamicResource MutedBrush}" StrokeThickness="1.5" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border></ControlTemplate></ToggleButton.Template>
+                  <ToggleButton.Template><ControlTemplate TargetType="ToggleButton"><Border Background="Transparent"><Path x:Name="Chevron" Data="M 0 0 L 4 4 L 8 0" Width="8" Height="4" Stretch="Fill" Stroke="{DynamicResource MutedBrush}" StrokeThickness="1.5" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border></ControlTemplate></ToggleButton.Template>
                 </ToggleButton>
               </Grid>
             </Border>
             <Popup x:Name="PART_Popup" Placement="Bottom" IsOpen="{Binding IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}" AllowsTransparency="True" Focusable="False" StaysOpen="True">
-              <Border MinWidth="{Binding ActualWidth, RelativeSource={RelativeSource TemplatedParent}}" MaxHeight="360" Background="{DynamicResource PopupBrush}" BorderBrush="{DynamicResource StrokeBrush}" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,4,0,0">
+              <Border Width="{Binding ActualWidth, RelativeSource={RelativeSource TemplatedParent}}" MaxHeight="360" Background="{DynamicResource PopupBrush}" BorderBrush="{DynamicResource StrokeBrush}" BorderThickness="1" CornerRadius="5" Padding="5" Margin="0,4,0,0">
                 <Grid>
                   <ListBox x:Name="Suggestions" Background="Transparent" BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled" KeyboardNavigation.TabNavigation="None" Focusable="False">
                     <ListBox.ItemTemplate><DataTemplate><StackPanel><TextBlock Text="{Binding Name}" TextWrapping="Wrap"/><TextBlock Text="{Binding EnglishName}" Foreground="{DynamicResource MutedBrush}" FontSize="12" Margin="0,3,0,0"/></StackPanel></DataTemplate></ListBox.ItemTemplate>
@@ -71,7 +72,7 @@ public sealed class WeaponSearchBox : Control
               </Border>
             </Popup>
           </Grid>
-          <ControlTemplate.Triggers><Trigger Property="IsEnabled" Value="False"><Setter TargetName="Shell" Property="Opacity" Value="0.45"/></Trigger></ControlTemplate.Triggers>
+          <ControlTemplate.Triggers><Trigger Property="IsEnabled" Value="False"><Setter TargetName="Shell" Property="Opacity" Value="0.45"/></Trigger><Trigger Property="IsKeyboardFocusWithin" Value="True"><Setter TargetName="SearchBorder" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/></Trigger></ControlTemplate.Triggers>
         </ControlTemplate>
         """);
         Loaded+=(_,_)=>
@@ -90,6 +91,7 @@ public sealed class WeaponSearchBox : Control
         suggestions.SelectionChanged+=(_,e)=>e.Handled=true;
         query.TextChanged+=(_,_)=>{if(syncing)return;Filter(query.Text);IsDropDownOpen=true;};
         query.GotKeyboardFocus+=(_,_)=>query.SelectAll();
+        query.PreviewMouseLeftButtonDown+=(_,e)=>{if(!query.IsKeyboardFocusWithin){query.Focus();query.SelectAll();e.Handled=true;}};
         TextCompositionManager.AddPreviewTextInputStartHandler(query,(_,_)=>composing=true);
         query.AddHandler(TextCompositionManager.TextInputEvent,new TextCompositionEventHandler((_,_)=>composing=false),true);
         query.PreviewKeyDown+=HandleKey;
@@ -99,6 +101,8 @@ public sealed class WeaponSearchBox : Control
             if(row?.Content is Weapon w){Commit(w);e.Handled=true;}
         };
         ((ToggleButton)Template.FindName("Open",this)).Click+=(_,_)=>{if(IsDropDownOpen){Filter("");query.Focus();query.SelectAll();}};
+        var toggle=(ToggleButton)Template.FindName("Open",this);toggle.ApplyTemplate();
+        if(toggle.Template.FindName("Chevron",toggle) is FrameworkElement arrow)UiMotion.Attach(SearchPopup,arrow);
         SearchPopup.Closed+=(_,_)=>{composing=false;SyncText();};
         SyncText();Filter("");
     }
@@ -137,7 +141,7 @@ public sealed class WeaponSearchBox : Control
     {
         if(suggestions is null)return;
         var q=Normalize(text);
-        var matches=Items.Cast<Weapon>().Where(w=>Normalize(w.Name).Contains(q)||Normalize(w.EnglishName).Contains(q))
+        var matches=Items.Cast<Weapon>().Where(w=>SuggestionFilter?.Invoke(w)??true).Where(w=>Normalize(w.Name).Contains(q)||Normalize(w.EnglishName).Contains(q))
             .OrderBy(w=>q.Length==0?0:Normalize(w.Name)==q||Normalize(w.EnglishName)==q?0:Normalize(w.Name).StartsWith(q)||Normalize(w.EnglishName).StartsWith(q)?1:2)
             .ThenBy(w=>w.Name,StringComparer.CurrentCulture).ToArray();
         suggestions.ItemsSource=matches;suggestions.SelectedIndex=-1;

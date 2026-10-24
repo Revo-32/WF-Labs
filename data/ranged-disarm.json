@@ -1,0 +1,405 @@
+[
+  {
+    "enemyId": "/Lotus/Types/Enemies/Grineer/AIWeek/MinigunBombard",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Grineer/AIWeek/RifleLancer",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Grineer/AIWeek/BladeSawman",
+    "canDisarm": false,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Grineer/AIWeek/ShotgunLancer",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Grineer/AIWeek/EliteRifleLancer",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Grineer/AIWeek/RocketBombard",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Grineer/Fortress/FortressRifleLancer",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Grineer/Fortress/FortressMinigunBombard",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Corpus/Spaceman/AIWeek/RifleSpacemanAgent",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Corpus/BipedRobot/AIWeek/LaserCannonBipedAgent",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Corpus/Spaceman/EliteSpacemanAgent",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Corpus/Spaceman/AIWeek/DeployableSpacemanAgent",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Corpus/Spaceman/AIWeek/MeleeSpacemanAgent",
+    "canDisarm": false,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Corpus/Amalgams/AmalgamMoaAgent",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Infested/AiWeek/Quadrupeds/Quadruped",
+    "canDisarm": false,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Infested/AiWeek/Runners/MeleeRunner",
+    "canDisarm": true,
+    "visualOnly": true,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Infested/AiWeek/Runners/LeapingRunner",
+    "canDisarm": true,
+    "visualOnly": true,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Infested/InfestedMicroplanet/MeleeMicroPlanetRunner",
+    "canDisarm": true,
+    "visualOnly": true,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Infested/InfestedMicroplanet/QuadrupedMicroPlanet",
+    "canDisarm": false,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Orokin/RifleLancer",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Orokin/RifleSpacemanAgent",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Orokin/OrokinRocketBombard",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Orokin/OrokinMinigunBombard",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/ManInTheWall/Octopede/Leg/BipedalLegs/MITWOctopedeBipedalLegsAgent",
+    "canDisarm": false,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/WF1999Lasrian/LasrianRifleLancer/LasrianLancer1999Agent",
+    "canDisarm": true,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/WF1999Lasrian/LasrianButcher/LasrianButcher1999Agent",
+    "canDisarm": null,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/WF1999Infested/InfestedUndazoa/InfestedUndazoa1999Agent",
+    "canDisarm": null,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/WF1999Infested/InfestedMutalist/InfestedMutalist1999Agent",
+    "canDisarm": null,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/WF1999Infested/InfestedJugulus/TechrotBoneBladeAgent",
+    "canDisarm": null,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Tau/Dax/TauDaxArcher/AnarchTauDaxArcherAgent",
+    "canDisarm": false,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "enemyId": "/Lotus/Types/Enemies/Tau/Dax/TauDaxSwordsman/AnarchTauDaxSwordsmanAgent",
+    "canDisarm": false,
+    "visualOnly": false,
+    "source": {
+      "title": "Disarm",
+      "revision": 2768169,
+      "timestamp": "2026-04-18T23:31:32Z",
+      "sha256": "33f3f95dae7c51c3c6f069dedf6634d3353333dce0ec1fba87c9a06bee601b57",
+      "url": "https://wiki.warframe.com/w/Disarm?oldid=2768169",
+      "batch": "7774728aad08f940.json"
+    }
+  }
+]

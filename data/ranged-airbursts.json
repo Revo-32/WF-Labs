@@ -1,0 +1,30 @@
+[
+  {
+    "weaponId": "wiki:primary/Corinth",
+    "attack": 2,
+    "lifetime": 0.25,
+    "manual": false,
+    "source": {
+      "title": "Corinth",
+      "revision": 2804717,
+      "timestamp": "2026-09-01T12:32:16Z",
+      "sha256": "b058e7ceede08ffa624cc917415fe7f4935c2db7ed76199dc1ff6d82b9a1e07a",
+      "url": "https://wiki.warframe.com/w/Corinth?oldid=2804717",
+      "batch": "7b64291a7cf572f8.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Corinth Prime",
+    "attack": 2,
+    "lifetime": 2,
+    "manual": true,
+    "source": {
+      "title": "Corinth Prime",
+      "revision": 2804716,
+      "timestamp": "2026-09-01T12:31:43Z",
+      "sha256": "9a6437c1f0e2a68420660a603d4491dc7a4cacdae9422b160ce651086273d91f",
+      "url": "https://wiki.warframe.com/w/Corinth_Prime?oldid=2804716",
+      "batch": "7b64291a7cf572f8.json"
+    }
+  }
+]

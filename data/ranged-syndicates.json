@@ -1,0 +1,566 @@
+{
+  "rules": [
+    {
+      "weaponId": "wiki:primary/Vaykor Hek",
+      "code": "Justice",
+      "damageType": "Blast",
+      "source": {
+        "title": "Justice",
+        "revision": 2681358,
+        "timestamp": "2025-05-13T21:20:16Z",
+        "sha256": "fdd8358c9eb8ad3f278a9c44729882c3f1bb6b2db4d16af0a33e24e9a157d183",
+        "url": "https://wiki.warframe.com/w/Justice?oldid=2681358",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:secondary/Vaykor Marelok",
+      "code": "Justice",
+      "damageType": "Blast",
+      "source": {
+        "title": "Justice",
+        "revision": 2681358,
+        "timestamp": "2025-05-13T21:20:16Z",
+        "sha256": "fdd8358c9eb8ad3f278a9c44729882c3f1bb6b2db4d16af0a33e24e9a157d183",
+        "url": "https://wiki.warframe.com/w/Justice?oldid=2681358",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:primary/Telos Boltor",
+      "code": "Truth",
+      "damageType": "Gas",
+      "source": {
+        "title": "Truth",
+        "revision": 2774555,
+        "timestamp": "2026-05-05T12:24:11Z",
+        "sha256": "0f45e28ac75a9bb04973ba563394697ce7cec54ba3151a5211e3d613d59a7851",
+        "url": "https://wiki.warframe.com/w/Truth?oldid=2774555",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:secondary/Telos Akbolto",
+      "code": "Truth",
+      "damageType": "Gas",
+      "source": {
+        "title": "Truth",
+        "revision": 2774555,
+        "timestamp": "2026-05-05T12:24:11Z",
+        "sha256": "0f45e28ac75a9bb04973ba563394697ce7cec54ba3151a5211e3d613d59a7851",
+        "url": "https://wiki.warframe.com/w/Truth?oldid=2774555",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:primary/Synoid Simulor",
+      "code": "Entropy",
+      "damageType": "Magnetic",
+      "source": {
+        "title": "Entropy",
+        "revision": 2613598,
+        "timestamp": "2024-04-03T15:05:40Z",
+        "sha256": "d6ae9901c1bd56f58605411ae33999d54d0ec1200dd437da31f11e59fd51ff8a",
+        "url": "https://wiki.warframe.com/w/Entropy?oldid=2613598",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:secondary/Synoid Gammacor",
+      "code": "Entropy",
+      "damageType": "Magnetic",
+      "source": {
+        "title": "Entropy",
+        "revision": 2613598,
+        "timestamp": "2024-04-03T15:05:40Z",
+        "sha256": "d6ae9901c1bd56f58605411ae33999d54d0ec1200dd437da31f11e59fd51ff8a",
+        "url": "https://wiki.warframe.com/w/Entropy?oldid=2613598",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:primary/Secura Penta",
+      "code": "Sequence",
+      "damageType": "Radiation",
+      "source": {
+        "title": "Sequence",
+        "revision": 2796275,
+        "timestamp": "2026-07-30T23:10:48Z",
+        "sha256": "0dc48b96c6b967641c5638053bf8056ab9cc26ad0854d767301577695fbd8c08",
+        "url": "https://wiki.warframe.com/w/Sequence?oldid=2796275",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:secondary/Secura Dual Cestra",
+      "code": "Sequence",
+      "damageType": "Radiation",
+      "source": {
+        "title": "Sequence",
+        "revision": 2796275,
+        "timestamp": "2026-07-30T23:10:48Z",
+        "sha256": "0dc48b96c6b967641c5638053bf8056ab9cc26ad0854d767301577695fbd8c08",
+        "url": "https://wiki.warframe.com/w/Sequence?oldid=2796275",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:primary/Rakta Cernos",
+      "code": "Blight",
+      "damageType": "Viral",
+      "source": {
+        "title": "Blight",
+        "revision": 2710548,
+        "timestamp": "2025-12-06T14:37:21Z",
+        "sha256": "809ee571e2041d7262dce0e6ea1395deb9f61b8fbc72289dae93a3ae1d8ee3a5",
+        "url": "https://wiki.warframe.com/w/Blight?oldid=2710548",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:secondary/Rakta Ballistica",
+      "code": "Blight",
+      "damageType": "Viral",
+      "source": {
+        "title": "Blight",
+        "revision": 2710548,
+        "timestamp": "2025-12-06T14:37:21Z",
+        "sha256": "809ee571e2041d7262dce0e6ea1395deb9f61b8fbc72289dae93a3ae1d8ee3a5",
+        "url": "https://wiki.warframe.com/w/Blight?oldid=2710548",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:primary/Sancti Tigris",
+      "code": "Purity",
+      "damageType": "Corrosive",
+      "source": {
+        "title": "Purity",
+        "revision": 2790871,
+        "timestamp": "2026-07-03T00:36:53Z",
+        "sha256": "2b028f4230a4b7071a02769e3cbb147e4a2107df83cdc56e8ed595207ea4a81e",
+        "url": "https://wiki.warframe.com/w/Purity?oldid=2790871",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    },
+    {
+      "weaponId": "wiki:secondary/Sancti Castanas",
+      "code": "Purity",
+      "damageType": "Corrosive",
+      "source": {
+        "title": "Purity",
+        "revision": 2790871,
+        "timestamp": "2026-07-03T00:36:53Z",
+        "sha256": "2b028f4230a4b7071a02769e3cbb147e4a2107df83cdc56e8ed595207ea4a81e",
+        "url": "https://wiki.warframe.com/w/Purity?oldid=2790871",
+        "batch": "51a53bf9e2864a23.json"
+      }
+    }
+  ],
+  "enemies": [
+    {
+      "id": "/Lotus/Types/Enemies/Grineer/AIWeek/MinigunBombard",
+      "baseAffinity": 500,
+      "source": {
+        "title": "Module:Enemies/data/grineer",
+        "revision": 2800568,
+        "timestamp": "2026-08-19T14:46:16Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/grineer",
+        "sha256": "5cb3288d8d9c0158826d7b0079956d6030deb9a5eff976f1527485f9a516c3e7"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Grineer/AIWeek/RifleLancer",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/grineer",
+        "revision": 2800568,
+        "timestamp": "2026-08-19T14:46:16Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/grineer",
+        "sha256": "5cb3288d8d9c0158826d7b0079956d6030deb9a5eff976f1527485f9a516c3e7"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Grineer/AIWeek/BladeSawman",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/grineer",
+        "revision": 2800568,
+        "timestamp": "2026-08-19T14:46:16Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/grineer",
+        "sha256": "5cb3288d8d9c0158826d7b0079956d6030deb9a5eff976f1527485f9a516c3e7"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Grineer/AIWeek/ShotgunLancer",
+      "baseAffinity": 100,
+      "source": {
+        "title": "Module:Enemies/data/grineer",
+        "revision": 2800568,
+        "timestamp": "2026-08-19T14:46:16Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/grineer",
+        "sha256": "5cb3288d8d9c0158826d7b0079956d6030deb9a5eff976f1527485f9a516c3e7"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Grineer/AIWeek/EliteRifleLancer",
+      "baseAffinity": 150,
+      "source": {
+        "title": "Module:Enemies/data/grineer",
+        "revision": 2800568,
+        "timestamp": "2026-08-19T14:46:16Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/grineer",
+        "sha256": "5cb3288d8d9c0158826d7b0079956d6030deb9a5eff976f1527485f9a516c3e7"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Grineer/AIWeek/RocketBombard",
+      "baseAffinity": 500,
+      "source": {
+        "title": "Module:Enemies/data/grineer",
+        "revision": 2800568,
+        "timestamp": "2026-08-19T14:46:16Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/grineer",
+        "sha256": "5cb3288d8d9c0158826d7b0079956d6030deb9a5eff976f1527485f9a516c3e7"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Grineer/Fortress/FortressRifleLancer",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/grineer",
+        "revision": 2800568,
+        "timestamp": "2026-08-19T14:46:16Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/grineer",
+        "sha256": "5cb3288d8d9c0158826d7b0079956d6030deb9a5eff976f1527485f9a516c3e7"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Grineer/Fortress/FortressMinigunBombard",
+      "baseAffinity": 500,
+      "source": {
+        "title": "Module:Enemies/data/grineer",
+        "revision": 2800568,
+        "timestamp": "2026-08-19T14:46:16Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/grineer",
+        "sha256": "5cb3288d8d9c0158826d7b0079956d6030deb9a5eff976f1527485f9a516c3e7"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/Spaceman/AIWeek/RifleSpacemanAgent",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/BipedRobot/AIWeek/LaserCannonBipedAgent",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/Spaceman/EliteSpacemanAgent",
+      "baseAffinity": 150,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/Spaceman/AIWeek/DeployableSpacemanAgent",
+      "baseAffinity": 500,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/Spaceman/AIWeek/MeleeSpacemanAgent",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/Amalgams/AmalgamMoaAgent",
+      "baseAffinity": 500,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Infested/AiWeek/Quadrupeds/Quadruped",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/infestation",
+        "revision": 2807729,
+        "timestamp": "2026-09-13T04:26:29Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/infestation",
+        "sha256": "cbc05484352073528957efb78585fb69be471d4439ff13f540314bf14686b809"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Infested/AiWeek/Runners/MeleeRunner",
+      "baseAffinity": 35,
+      "source": {
+        "title": "Module:Enemies/data/infestation",
+        "revision": 2807729,
+        "timestamp": "2026-09-13T04:26:29Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/infestation",
+        "sha256": "cbc05484352073528957efb78585fb69be471d4439ff13f540314bf14686b809"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Infested/AiWeek/Runners/LeapingRunner",
+      "baseAffinity": 35,
+      "source": {
+        "title": "Module:Enemies/data/infestation",
+        "revision": 2807729,
+        "timestamp": "2026-09-13T04:26:29Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/infestation",
+        "sha256": "cbc05484352073528957efb78585fb69be471d4439ff13f540314bf14686b809"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Infested/InfestedMicroplanet/MeleeMicroPlanetRunner",
+      "baseAffinity": 35,
+      "source": {
+        "title": "Module:Enemies/data/infestation",
+        "revision": 2807729,
+        "timestamp": "2026-09-13T04:26:29Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/infestation",
+        "sha256": "cbc05484352073528957efb78585fb69be471d4439ff13f540314bf14686b809"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Infested/InfestedMicroplanet/QuadrupedMicroPlanet",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/infestation",
+        "revision": 2807729,
+        "timestamp": "2026-09-13T04:26:29Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/infestation",
+        "sha256": "cbc05484352073528957efb78585fb69be471d4439ff13f540314bf14686b809"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Orokin/RifleLancer",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/orokin",
+        "revision": 2816758,
+        "timestamp": "2026-10-08T01:54:49Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/orokin",
+        "sha256": "d96dca7eefe7f98c85aefb26a88553a440db15b0f2b5b55a38710dc94e3df04a"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Orokin/RifleSpacemanAgent",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/orokin",
+        "revision": 2816758,
+        "timestamp": "2026-10-08T01:54:49Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/orokin",
+        "sha256": "d96dca7eefe7f98c85aefb26a88553a440db15b0f2b5b55a38710dc94e3df04a"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Orokin/OrokinRocketBombard",
+      "baseAffinity": 500,
+      "source": {
+        "title": "Module:Enemies/data/orokin",
+        "revision": 2816758,
+        "timestamp": "2026-10-08T01:54:49Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/orokin",
+        "sha256": "d96dca7eefe7f98c85aefb26a88553a440db15b0f2b5b55a38710dc94e3df04a"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Orokin/OrokinMinigunBombard",
+      "baseAffinity": 500,
+      "source": {
+        "title": "Module:Enemies/data/orokin",
+        "revision": 2816758,
+        "timestamp": "2026-10-08T01:54:49Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/orokin",
+        "sha256": "d96dca7eefe7f98c85aefb26a88553a440db15b0f2b5b55a38710dc94e3df04a"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/ManInTheWall/Octopede/Leg/BipedalLegs/MITWOctopedeBipedalLegsAgent",
+      "baseAffinity": 150,
+      "source": {
+        "title": "Module:Enemies/data/themurmur",
+        "revision": 2731757,
+        "timestamp": "2026-02-24T22:10:01Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/themurmur",
+        "sha256": "985450a9e3e2ece1d1de6ff003ba875c50ac3669eb351b083a9dc770253049f5"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/WF1999Lasrian/LasrianRifleLancer/LasrianLancer1999Agent",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/scaldra",
+        "revision": 2817147,
+        "timestamp": "2026-10-08T22:41:26Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/scaldra",
+        "sha256": "2e51f40dc11de6843e8b3365e4a5c6306e7e776950b3dcaa37856930f17222c0"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/WF1999Lasrian/LasrianButcher/LasrianButcher1999Agent",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/scaldra",
+        "revision": 2817147,
+        "timestamp": "2026-10-08T22:41:26Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/scaldra",
+        "sha256": "2e51f40dc11de6843e8b3365e4a5c6306e7e776950b3dcaa37856930f17222c0"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/WF1999Infested/InfestedUndazoa/InfestedUndazoa1999Agent",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/techrot",
+        "revision": 2802587,
+        "timestamp": "2026-08-24T22:19:18Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/techrot",
+        "sha256": "33bf7d4a96811de571314d9c45d3205bfa3b469b736d6bc05e5d923309b39114"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/WF1999Infested/InfestedMutalist/InfestedMutalist1999Agent",
+      "baseAffinity": 50,
+      "source": {
+        "title": "Module:Enemies/data/techrot",
+        "revision": 2802587,
+        "timestamp": "2026-08-24T22:19:18Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/techrot",
+        "sha256": "33bf7d4a96811de571314d9c45d3205bfa3b469b736d6bc05e5d923309b39114"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/WF1999Infested/InfestedJugulus/TechrotBoneBladeAgent",
+      "baseAffinity": 750,
+      "source": {
+        "title": "Module:Enemies/data/techrot",
+        "revision": 2802587,
+        "timestamp": "2026-08-24T22:19:18Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/techrot",
+        "sha256": "33bf7d4a96811de571314d9c45d3205bfa3b469b736d6bc05e5d923309b39114"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Tau/Dax/TauDaxArcher/AnarchTauDaxArcherAgent",
+      "baseAffinity": -1,
+      "source": {
+        "title": "Module:Enemies/data/anarchs",
+        "revision": 2757862,
+        "timestamp": "2026-04-03T20:33:54Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/anarchs",
+        "sha256": "856db5a1bb68b62f9b549d6cf6660f1f6c76d5e56a74bcc14f5f13d76c15d514"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Tau/Dax/TauDaxSwordsman/AnarchTauDaxSwordsmanAgent",
+      "baseAffinity": -1,
+      "source": {
+        "title": "Module:Enemies/data/anarchs",
+        "revision": 2757862,
+        "timestamp": "2026-04-03T20:33:54Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/anarchs",
+        "sha256": "856db5a1bb68b62f9b549d6cf6660f1f6c76d5e56a74bcc14f5f13d76c15d514"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/CorpusShipRemastered/ShipCrewmanNullifierAgent",
+      "baseAffinity": 150,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Corpus/Spaceman/AIWeek/NullifySpacemanAgent",
+      "baseAffinity": 150,
+      "source": {
+        "title": "Module:Enemies/data/corpus",
+        "revision": 2794561,
+        "timestamp": "2026-07-18T17:29:47Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/corpus",
+        "sha256": "f71a163c483d6857912f904b9b987c642da3e16ba6c80afe1d4ff231ad4bccaf"
+      }
+    },
+    {
+      "id": "/Lotus/Types/Enemies/Orokin/OrokinNullifySpacemanAgent",
+      "baseAffinity": 150,
+      "source": {
+        "title": "Module:Enemies/data/orokin",
+        "revision": 2816758,
+        "timestamp": "2026-10-08T01:54:49Z",
+        "url": "https://wiki.warframe.com/w/Module:Enemies/data/orokin",
+        "sha256": "d96dca7eefe7f98c85aefb26a88553a440db15b0f2b5b55a38710dc94e3df04a"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Syndicate Radial Effects",
+      "revision": 2777323,
+      "timestamp": "2026-05-18T11:35:56Z",
+      "sha256": "cd9b5a8142bca711d0248416e06f0900d9236300c7de54898207f0f6cda482f1",
+      "url": "https://wiki.warframe.com/w/Syndicate_Radial_Effects?oldid=2777323",
+      "batch": "51a53bf9e2864a23.json"
+    },
+    {
+      "title": "Affinity",
+      "revision": 2804196,
+      "timestamp": "2026-08-28T23:09:29Z",
+      "sha256": "58406e05c18fe0e5317fdba7df724002455e5a1ffe536c78f75d8afc8e0f91d3",
+      "url": "https://wiki.warframe.com/w/Affinity?oldid=2804196",
+      "batch": "51a53bf9e2864a23.json"
+    },
+    {
+      "title": "Enemy Level Scaling",
+      "revision": 2795886,
+      "timestamp": "2026-07-29T08:52:16Z",
+      "sha256": "01080a09ce7bf5182d1af1e85fca89c8145c910b55e5fce053ef57de9893b931",
+      "url": "https://wiki.warframe.com/w/Enemy_Level_Scaling?oldid=2795886",
+      "batch": "51a53bf9e2864a23.json"
+    }
+  ],
+  "notes": [
+    "Justice 개별 문서의 Blast 상태와 총괄 문서의 상태 없음이 충돌하므로 선택 조건을 요구한다.",
+    "숙련도 레벨 공식은 현재 레벨을 사용하며 기본 레벨을 빼지 않는다."
+  ]
+}

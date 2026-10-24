@@ -1,0 +1,30 @@
+{
+  "retrievedAt": "2026-10-24",
+  "purpose": "Warframe polarity identification in the fan tool; game imagery remains with its respective owners.",
+  "assets": [
+    {
+      "file": "Umbra.svg",
+      "source": "https://wiki.warframe.com/images/Umbra_Pol%28xBlack%29.svg?008d1",
+      "description": "https://wiki.warframe.com/w/File:Umbra_Pol(xBlack).svg",
+      "sha256": "5d4c94478a9ddf42f42c4199beb94bffdff768ed90aaeae0b0f55ba44127e905"
+    },
+    {
+      "file": "Zenurik.svg",
+      "source": "https://wiki.warframe.com/images/Zenurik_Pol%28xBlack%29.svg?8b7f2",
+      "description": "https://wiki.warframe.com/w/File:Zenurik_Pol(xBlack).svg",
+      "sha256": "7e49aad888f41f18119982613d952ed6f0c4f812f04f13d87d29fcbb3cddbab4"
+    },
+    {
+      "file": "Unairu.svg",
+      "source": "https://wiki.warframe.com/images/Unairu_Pol%28xBlack%29.svg?b9372",
+      "description": "https://wiki.warframe.com/w/File:Unairu_Pol(xBlack).svg",
+      "sha256": "cb6fe2c2511365d91cf56f20d4a168b1e7c0c2a5aa48dd53a254d699615beae8"
+    },
+    {
+      "file": "Penjaga.svg",
+      "source": "https://wiki.warframe.com/images/Penjaga_Pol%28xBlack%29.svg?39944",
+      "description": "https://wiki.warframe.com/w/File:Penjaga_Pol(xBlack).svg",
+      "sha256": "f85bd20a0a7fdabdc5f4cecc5c9fb6564b9c45ccc3702775f98ad42364e85668"
+    }
+  ]
+}

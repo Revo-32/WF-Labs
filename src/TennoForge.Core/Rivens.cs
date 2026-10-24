@@ -46,7 +46,7 @@ public static class RivenEngine
         if (!double.IsFinite(displayed) || !double.IsFinite(min) || !double.IsFinite(max) || max <= min || decimals < 0 || decimals > 6)
             throw new ArgumentException("유효한 표시값과 최솟값 < 최댓값 범위를 입력하세요.");
         var half = .5 * Math.Pow(10, -decimals);
-        if (displayed + half < min || displayed - half > max) throw new ArgumentException("표시값이 기준 범위를 벗어납니다. 기질·옵션 구성·랭크·단위를 확인하세요.");
+        if (displayed + half < min || displayed - half > max) throw new ArgumentException("표시값이 기준 범위를 벗어납니다. 패치 버전·옵션 구성·랭크·단위를 확인하세요.");
         double P(double value) => Math.Clamp((value - min) / (max - min), 0, 1);
         return new(P(displayed), P(displayed - half), P(displayed + half), displayed + half >= max, displayed - half <= min);
     }

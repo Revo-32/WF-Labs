@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
@@ -59,6 +59,12 @@ public sealed partial class MainWindow
         if(cost<0||cost>30||rivenPolarity.SelectedValue is not string polarity)throw new ArgumentException("표시 코스트와 극성을 입력하세요.");
         return roll with{BaseDrain=cost,Polarity=polarity};
     }
+    private RivenRoll ReadRivenForWorkshop()
+    {
+        var roll=ReadRivenWorkbench();RivenValues.Validate(roll);int? drain=null;
+        if(!string.IsNullOrWhiteSpace(rivenCost.Text)){drain=Integer(rivenCost,"리벤 코스트")-roll.Rank;if(drain<0||drain>30)throw new ArgumentException("표시 코스트를 확인하세요.");}
+        return roll with{BaseDrain=drain,Polarity=rivenPolarity.SelectedValue as string};
+    }
     private void RefreshWorkshopSummary()
     {
         try
@@ -78,9 +84,9 @@ public sealed partial class MainWindow
     {
         try
         {
-            var currentRoll=ReadCostedRiven();var state=rivenSession??new(currentRoll);
+            var currentRoll=ReadRivenForWorkshop();var state=rivenSession??new(currentRoll);
             state=state with{Current=currentRoll,Cycles=Integer(rivenCycles,"순환 횟수"),Locked=rivenLock.SelectedValue as RivenStat?,PreserveSplice=preserveSplice.IsChecked==true};
-            rivenBaseline??=currentRoll;SetWorkshop(action(state));
+            rivenBaseline??=currentRoll;SetWorkshop(action(state));rivenSections?.Select(rivenSession?.Pending is null?0:3);
         }catch(ArgumentException ex){rivenInfo.Text=ex.Message;}
     }
     private void SetWorkshop(RivenWorkshopState state)
@@ -101,7 +107,7 @@ public sealed partial class MainWindow
     {
         try
         {
-            var state=(rivenSession??new(ReadCostedRiven())) with{Current=ReadCostedRiven(),Cycles=Integer(rivenCycles,"순환 횟수"),Locked=rivenLock.SelectedValue as RivenStat?,PreserveSplice=preserveSplice.IsChecked==true};RivenWorkshop.Validate(state);
+            var state=(rivenSession??new(ReadRivenForWorkshop())) with{Current=ReadRivenForWorkshop(),Cycles=Integer(rivenCycles,"순환 횟수"),Locked=rivenLock.SelectedValue as RivenStat?,PreserveSplice=preserveSplice.IsChecked==true};RivenWorkshop.Validate(state);
             var dialog=new SaveFileDialog{Filter="WF Labs 리벤 작업|*.wfriven",FileName="리벤 작업.wfriven"};
             if(dialog.ShowDialog(this)==true)File.WriteAllText(dialog.FileName,JsonSerializer.Serialize(state,Catalog.Json));
         }catch(Exception ex)when(ex is ArgumentException or IOException or UnauthorizedAccessException){rivenInfo.Text=ex.Message;}
@@ -120,7 +126,7 @@ public sealed partial class MainWindow
         try
         {
             var after=ReadCostedRiven();var before=rivenBaseline??throw new ArgumentException("먼저 비교 기준 리벤을 지정하세요.");var build=ReadBuild();
-            if(before.WeaponId!=after.WeaponId||after.WeaponId!=build.WeaponId)throw new ArgumentException("모드 탭의 무기와 두 리벤의 대상 무기를 맞춰 주세요.");
+            before=before with{WeaponId=build.WeaponId};after=after with{WeaponId=build.WeaponId};
             var destination=(int)rivenDestination.SelectedItem-1;
             Build With(RivenRoll roll)
             {

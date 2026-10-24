@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "title": "Adhesive Blast",
+      "revision": 2721908,
+      "timestamp": "2026-01-11T23:18:47Z",
+      "sha256": "f6c42f8268ec0a03e23aa746cb6e5470b15c0c1a913f79d7d03998a1e5eef228",
+      "url": "https://wiki.warframe.com/w/Adhesive_Blast?oldid=2721908",
+      "batch": "b4199e11c4779a2f.json"
+    },
+    {
+      "title": "Tonkor",
+      "revision": 2814723,
+      "timestamp": "2026-09-30T19:23:47Z",
+      "sha256": "97f7e8c7dc0cad74770bb740b6e7b866a381eefe9f49c01b2da8b7ac42b81ed6",
+      "url": "https://wiki.warframe.com/w/Tonkor?oldid=2814723",
+      "batch": "d4a34f4a056b29be.json"
+    },
+    {
+      "title": "Zarr",
+      "revision": 2813913,
+      "timestamp": "2026-09-28T10:57:48Z",
+      "sha256": "6e1e5d68a61f032250ae0d9dc092a962182559750f638f6dbca3219b5a022d4a",
+      "url": "https://wiki.warframe.com/w/Zarr?oldid=2813913",
+      "batch": "8d6acc32d8d8f7db.json"
+    },
+    {
+      "title": "Napalm Grenades",
+      "revision": 2789386,
+      "timestamp": "2026-06-26T14:35:57Z",
+      "sha256": "9e78d9e7382145f15ff1a283a0376507c85d09daa163b872d301c502b674c2eb",
+      "url": "https://wiki.warframe.com/w/Napalm_Grenades?oldid=2789386",
+      "batch": "5c70d3b6420543cc.json"
+    }
+  ],
+  "rankChance": [
+    0.17,
+    0.34,
+    0.51,
+    0.68,
+    0.85,
+    1
+  ],
+  "ordinaryFuse": 4,
+  "zarrFuse": 3,
+  "tonkorFuseApproximateFromLaunch": 7,
+  "pentaOrdinaryFuse": null,
+  "napalmFuseConflict": [
+    4,
+    5
+  ],
+  "noAdditionalDamage": true,
+  "fieldDelayUnknown": [
+    "Torid",
+    "Tenet Ferrox"
+  ]
+}

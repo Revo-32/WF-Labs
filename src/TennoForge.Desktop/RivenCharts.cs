@@ -19,23 +19,7 @@ public sealed partial class MainWindow
     }
     private void AddRivenRangeChart(RivenTrait trait,double value,double min,double max,RollGrade grade)
     {
-        var unit=RivenValues.Unit(trait.Stat);
-        var name=T(RivenEngine.Label(trait.Stat)+(trait.Negative?" · 음옵":""),16);
-        name.Margin=new(0,0,0,4);
-        var valueLabel=T($"{(trait.Negative?"−":"+")}{value:0.###}{unit}",20);
-        valueLabel.SetResourceReference(TextBlock.ForegroundProperty,"AccentBrush");valueLabel.Margin=new(0);
-        var strip=ProportionalTrack(grade.Position,"AccentBrush");
-        // Marker is the displayed value; band shows the interval hidden by rounding.
-        var band=new Border{Background=new SolidColorBrush(Color.FromArgb(95,100,217,242)),Height=18,VerticalAlignment=VerticalAlignment.Center,HorizontalAlignment=HorizontalAlignment.Left};
-        var marker=new Border{Width=3,Height=18,VerticalAlignment=VerticalAlignment.Center,HorizontalAlignment=HorizontalAlignment.Left};
-        marker.SetResourceReference(Border.BackgroundProperty,"TextBrush");
-        Grid.SetColumnSpan(band,2);Grid.SetColumnSpan(marker,2);strip.Children.Add(band);strip.Children.Add(marker);
-        strip.SizeChanged+=(_,_)=>{band.Width=Math.Max(2,strip.ActualWidth*(grade.PositionHigh-grade.PositionLow));band.Margin=new(Math.Min(strip.ActualWidth-band.Width,strip.ActualWidth*grade.PositionLow),0,0,0);marker.Margin=new(Math.Clamp(strip.ActualWidth*grade.Position-1.5,0,Math.Max(0,strip.ActualWidth-3)),0,0,0);};
-        var ends=new DockPanel();var high=T($"최대 {max:0.###}{unit}",14,"#596B85");high.HorizontalAlignment=HorizontalAlignment.Right;DockPanel.SetDock(high,Dock.Right);ends.Children.Add(high);ends.Children.Add(T($"최소 {min:0.###}{unit}",14,"#596B85"));
-        var explanation=trait.Negative?$"불이익 감소 방향 ← · 범위 위치 {grade.Position:P1}":$"수치 증가 방향 → · 범위 위치 {grade.Position:P1}";
-        if(trait.Negative&&grade.MinCompatible)explanation+=" · 최소 표시값";
-        if(!trait.Negative&&grade.MaxCompatible)explanation+=" · 최대 표시값";
-        var row=Stack(Columns(name,valueLabel,2,1),strip,ends,T(explanation,14,"#596B85"));row.Margin=new(0,0,0,16);rivenRangeCharts.Children.Add(row);
+        rivenRangeCharts.Children.Add(RivenPresentation.Range(RivenEngine.Label(trait.Stat),RivenValues.Unit(trait.Stat),min,max,value,trait.Negative));
     }
     private void UpdateRivenComparisonChart(EncounterResult baseline,EncounterResult candidate)
     {
@@ -47,7 +31,7 @@ public sealed partial class MainWindow
         var values=new[]{(a.DirectDamage+a.StatusDamage)/(dps?a.Seconds:1),(b.DirectDamage+b.StatusDamage)/(dps?b.Seconds:1)};
         var max=values.Max();var timelines=new[]{a,b};
         rivenDpsCharts.Children.Add(T(dps?"직접 + 상태 평균 DPS":"첫 접촉 피해",18));
-        rivenDpsCharts.Children.Add(T("같은 모딩 · 적 · 교전 조건 | 직접 피해 ■ 시안 · 상태 피해 ■ 보라",14,"#596B85"));
+        rivenDpsCharts.Children.Add(T("같은 모딩 · 적 · 교전 조건 | 직접 피해 ■ 노랑 · 상태 피해 ■ 보라",14,"#596B85"));
         for(var i=0;i<2;i++)
         {
             var t=timelines[i];var total=t.DirectDamage+t.StatusDamage;

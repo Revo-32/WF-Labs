@@ -15,6 +15,16 @@ $startupBefore=Read-StartupValue
 $preferences=Join-Path ([Environment]::GetFolderPath('LocalApplicationData')) 'WF Labs/client-settings.json'
 function Read-SettingsHash { if(Test-Path -LiteralPath $preferences){(Get-FileHash -LiteralPath $preferences).Hash}else{''} }
 $settingsBefore=Read-SettingsHash
+$profileFolder=Split-Path -Parent $preferences
+function Read-WorkspaceHashes {
+    $state=[ordered]@{}
+    foreach($name in @('workspace.json','workspace.json.bak','update-workspace.json','update-workspace.json.restored','appearance.json')) {
+        $path=Join-Path $profileFolder $name
+        $state[$name]=if(Test-Path -LiteralPath $path){(Get-FileHash -LiteralPath $path).Hash}else{''}
+    }
+    $state | ConvertTo-Json -Compress
+}
+$workspaceBefore=Read-WorkspaceHashes
 $uninstalled=$false
 try {
     $args=@('--silent','--installto',('"'+$install+'"'),'--log',('"'+(Join-Path $qa 'setup.log')+'"'))
@@ -24,7 +34,13 @@ try {
     $checkArgs=@('--installed-update-check',('"'+$feed+'"'),('"'+$report+'"'),'--apply')
     Start-Process -FilePath (Join-Path $install 'current/WFLabs.exe') -ArgumentList $checkArgs -WindowStyle Hidden | Out-Null
     $deadline=[DateTime]::UtcNow.AddMinutes(2)
-    while(-not(Test-Path -LiteralPath $after) -and [DateTime]::UtcNow -lt $deadline){Start-Sleep -Milliseconds 500}
+    while(-not(Test-Path -LiteralPath $after) -and [DateTime]::UtcNow -lt $deadline){
+        if(Test-Path -LiteralPath $report){
+            try{$currentResult=Get-Content -LiteralPath $report -Raw | ConvertFrom-Json}catch{$currentResult=$null}
+            if($null -ne $currentResult -and -not $currentResult.passed){throw "업데이트 진단 실패: $($currentResult.error)"}
+        }
+        Start-Sleep -Milliseconds 500
+    }
     if(-not(Test-Path -LiteralPath $after)){throw '업데이트 후 재시작 보고서가 없습니다.'}
     $beforeResult=Get-Content -LiteralPath $report -Raw | ConvertFrom-Json
     $afterResult=Get-Content -LiteralPath $after -Raw | ConvertFrom-Json
@@ -40,5 +56,6 @@ try {
     }
 }
 if((Read-StartupValue) -ne $startupBefore -or (Read-SettingsHash) -ne $settingsBefore){throw '제거 후 사용자 설정이 바뀌었습니다.'}
-@{passed=$true;installedVersion=$beforeResult.currentVersion;updatedVersion=$afterResult.currentVersion;downloaded=$beforeResult.downloaded;restarted=$true;uninstalled=$uninstalled;startupSettingsPreserved=$true;helperPresent=$afterResult.helperPresent;recoveryVerified=$afterResult.recoveryVerified} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $qa 'installer-verification.json') -Encoding utf8NoBOM
+if((Read-WorkspaceHashes) -ne $workspaceBefore){throw '격리 설치 검증이 실제 사용자 작업 파일을 변경했습니다.'}
+@{passed=$true;installedVersion=$beforeResult.currentVersion;updatedVersion=$afterResult.currentVersion;downloaded=$beforeResult.downloaded;restarted=$true;uninstalled=$uninstalled;startupSettingsPreserved=$true;userWorkspacePreserved=$true;helperPresent=$afterResult.helperPresent;recoveryVerified=$afterResult.recoveryVerified} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $qa 'installer-verification.json') -Encoding utf8NoBOM
 Get-Content -LiteralPath (Join-Path $qa 'installer-verification.json')

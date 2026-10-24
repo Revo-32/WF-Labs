@@ -1,0 +1,25 @@
+{
+  "weaponId": "wiki:primary/Synoid Simulor",
+  "source": {
+    "title": "Synoid Simulor",
+    "revision": 2723712,
+    "timestamp": "2026-01-17T06:30:16Z",
+    "sha256": "71296cd3c8a00ae50983dadb9458107b159a554ee1b24996bd73d849611f5838",
+    "url": "https://wiki.warframe.com/w/Synoid_Simulor?oldid=2723712",
+    "batch": "4982998346fc3632.json"
+  },
+  "rules": {
+    "unstackedLifetime": 1,
+    "stackedLifetime": 20,
+    "maximumActive": 4,
+    "fullValue": 4,
+    "unstackableValue": 5,
+    "explosionDamagePerValue": 240,
+    "explosionDamageCap": 960,
+    "mergeDamage": 125,
+    "equalTwoMergeDamage": 150,
+    "vortexRadius": 5,
+    "vortexDamage": 50,
+    "vortexInterval": 0.25
+  }
+}

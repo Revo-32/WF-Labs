@@ -8,7 +8,7 @@ internal sealed class ConfirmationWindow : Window
     internal ConfirmationWindow(string title,string message,string accept)
     {
         Title="WF Labs · "+title;Width=520;Height=320;WindowStartupLocation=WindowStartupLocation.CenterOwner;
-        FontFamily=(FontFamily)Application.Current.Resources["Wanted"];
+        SetResourceReference(FontFamilyProperty,"AppFont");
         var root=new Grid{Margin=new(24)};
         root.RowDefinitions.Add(new(){Height=GridLength.Auto});root.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});root.RowDefinitions.Add(new(){Height=GridLength.Auto});
         root.Children.Add(new TextBlock{Text=title,FontSize=22,Margin=new(0,4,0,20)});

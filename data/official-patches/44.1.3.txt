@@ -1,0 +1,940 @@
+
+function OptanonWrapper(){}
+if (typeof analytics === 'object') {
+analytics.enable_gtm('GTM-KVZL9RQ', 'metrics.warframe.com', '');
+analytics.enable_google_adwords('AW-706066714', 'en', false);
+analytics.set_brand('warframe');
+analytics.enable_google_analytics();
+analytics.enable_amplitude();
+}
+    let locale = window.locale = 'en';
+    let userSpecificData = null;
+    window.isLoggedIn = false;
+    const queryParams = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+    });
+        let _rollbarConfig = {
+            accessToken: "03ffb0fa6aae4095827dadb5552e0395",
+            captureUncaught: true,
+            captureUnhandledRejections: true,
+            hostSafeList: ["www.warframe.com", "www-static.warframe.com"], // + optional metrics domain?
+            payload: {
+                environment: 'production',
+                client: {
+                    javascript: {
+                        source_map_enabled: true,
+                        guess_uncaught_frames: true
+                    }
+                }
+            }
+        };
+        !function(){"use strict";function r(r,o,n){if(o.hasOwnProperty&&o.hasOwnProperty("addEventListener")){for(var e=o.addEventListener;e._rollbarOldAdd&&e.belongsToShim;)e=e._rollbarOldAdd;var t=function(o,n,t){e.call(this,o,r.wrap(n),t)};t._rollbarOldAdd=e,t.belongsToShim=n,o.addEventListener=t;for(var a=o.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,o,n){a.call(this,r,o&&o._rollbar_wrapped||o,n)};l._rollbarOldRemove=a,l.belongsToShim=n,o.removeEventListener=l}}function o(r,n){this.impl=r(n,this),this.options=n,function(r){for(var o=function(r){return function(){var o=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,o)}},n="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),e=0;e
+Warframe: Iceblade of Narin: The Icebind: Hotfix 44.1.3
+What's New
+Updates
+            Jade Shadows: Constellations
+            Iceblade of Narin
+New!
+            Tau
+Coming Soon
+Events
+                PMCFQ 2026
+        Game
+            About
+            Latest News
+            Patch Notes
+            Warframes
+Download Game
+            Support
+        Store
+            Platinum & Bundles
+            Currencies
+            Gemini Collection
+            Heirloom Collection
+            Prime Access
+            Prime Resurgence
+            Supporter Packs
+            New Player Packs
+            Official Merch
+Redeem Code
+        Community
+            Community
+            Global Community Stats
+New!
+-->
+            Forums
+            Warframe Creators
+            Referral Program
+            Warframe Volunteers
+            Charity
+            Official Discord Server
+                Twitch Channel
+                Twitter
+        Guides
+            New Player Guide
+            Returning Player Guide
+            Quest Guide
+New!
+-->
+            Warframe Wiki
+            Quick Start Guide
+            Cross Platform Play Guide
+        Media
+Play Free Now
+Log In
+Play Free Now
+Log In
+--
+MR 
+0
+LR 
+0
+Cross Platform Save 
+Link your account!
+Twitch
+ – Linked
+Link your account!
+2025 Year In Review
+Active Coupon
+0
+% off all Platinum
+Active Coupon
+                +
+0
+% Bonus Platinum on select packs
+Your Platinum
+•
+Buy Now
+Account Management
+Download Game
+Redeem Code
+Log Out
+            {
+                const header = document.getElementById("header");
+                // Inline storage pull to reduce flickering
+                try {
+                    const rawHeaderState = sessionStorage.getItem("WF_GlobalNavState");
+                    if (rawHeaderState) {
+                        const headerState = JSON.parse(rawHeaderState);
+                        if (header) {
+                            header.classList.toggle('is-collapsed', headerState.collapsed);
+                            header.classList.toggle('is-mobile', headerState.mobile);
+                        }
+                    }
+                } catch (e) {
+                    // Do nothing
+                }
+            }
+        window.PatchNotes = window.PatchNotes || {};
+        window.PatchNotes.query = null;
+                                    Hotfix
+Update 44.1.0: Iceblade of Narin: The Icebind
+pc
+Iceblade of Narin: The Icebind: Hotfix 44.1.3
+Arsenal Retuning Inbox Message
+ This hotfix brings changes to Ammo Efficiency, Riven Mods, and hot-off-the-presses Acid Shell interactions, so all players who log in after today’s update will receive the following (until December 31st 2026 at 11:59pm ET):
+2 Built Forma + 100,000 Kuva
+NOTE: To ensure all players receive the inbox as intended, it will be delivered at 3:30pm ET. 
+Players who have installed a Riven Splicer in a Riven Mod prior to today’s hotfix will also receive the following in a separate inbox as a thank you for being an early adopter:
+1 Riven Splicer + 100,000 Kuva
+NOTE: This inbox requires a script to run, which we will do shortly after the hotfix launches. 
+Ammo Efficiency Changes
+ Our recent introduction of Ammo Efficiency traits to Riven mods via Riven Splicers has made this stat more accessible to players, and led to much discussion internally on how the availability of infinite ammo builds affects Warframe’s game balance. 
+Warframe is about the power fantasy, and infinite ammo is the epitome of that. Shooting endlessly into hordes of enemies can feel incredible, and we want players to be able to experience that — sometimes. The recent introduction of Riven Splicers has changed that “sometimes” for infinite ammo into a much more guaranteed thing, which has brought around this the following changes:
+Ammo Efficiency is now capped at 75%. 
+For those unfamiliar with the Ammo Efficiency mechanic, this means only 1 in 4 shots will consume ammo. 
+This applies to Ammo Efficiency increases from multiple sources — they will only increase the stat up to this cap. 
+The Ammo Efficiency cap applies to all equipment that uses Ammo, including Necramechs and Amps.
+Sources that intentionally gave 100% Ammo Efficiency (ex: Void Relic cracking buffs) have now been rephrased to indicate they give Infinite Ammo.
+There are other Mods, Arcanes, and Incarnon Evolutions that come with their own edge-cases, which we’ll explain in detail below.
+Sources of Infinite Ammo
+These mechanics remain unchanged, but their buff descriptions have been updated to specify that they give Infinite Ammo
+Void Relic Cracking Buffs
+Akmagnus Prime and Magnus Prime unique trait: Chamber Cascade
+Athodai (Prime) unique trait: Overdrive
+Dual Toxocyst unique trait: Frenzy
+Knell (Prime) unique trait: Death Knell
+Perigale (Prime) unique trait: Gale Force
+Vasto Incarnon evolution: Reaper’s Plenty
+Changes to Sources of Ammo Efficiency
+AX-52:
+Was
+: Hip-fired shots have +60% Ammo Efficiency.
+Now
+: Hip-fired shots have +75% Ammo Efficiency.
+Eternal Logistics: 
+Note: the following change is a minor buff to the Arcane as its max rank Ammo Efficiency value was just below the cap. 
+Was
+: On Void Sling:+72% Amp Ammo Efficiency for 8s
+Now
+: On Void Sling: +75% Amp Ammo Efficiency for 8s 
+Arcane Pistoleer
+Was
+: On Pistol Weak Point Kill: 60% chance for +102% (+17% at Unranked) Ammo Efficiency for 12s
+Now
+: On Pistol Weak Point Kill: 60% (10% at Unranked) Chance for Infinite Ammo for 12s
+Brain Storm Augment (Grakata)
+Was
+: On Headshot: +100% (25% at Unranked) Ammo Efficiency for 0.5s (0.125s at Unranked)
+Now
+: On Headshot: 40% (10% at Unranked) Chance for Infinite Ammo for 2s (0.5s at Unranked)
+Skull Shots Augment (Viper)
+Was
+: On Headshot: 100% Ammo Efficiency (25% at Unranked) for 2.0s (0.5s at Unranked)
+Now
+: On Headshot: 40% Chance for Infinite Ammo (10% chance at Unranked) for 2.0s (0.5s at Unranked)
+Incarnon Evolution “Enough for Everyone” (Bronco)
+Was
+: +80% Ammo efficiency when 6 enemies are within 6m.
+Now
+: +75% Ammo efficiency when 6 enemies are within 6m.
+Incarnon Evolution “Crimson Overture” (Dera and Boltor)
+Was
+: On Kill: +20% Ammo Efficiency for 5 seconds. Stacks up to 4x.
+Now
+: On Kill: +25% Ammo Efficiency for 5 seconds. Stacks up to 3x.
+Note: the increase to Base Damage is unchanged.
+Lyon’s “Flowing Slayer” blessing in The Descendia
+Was
+: Gain +90% Ammo Efficiency while Sliding or Crouching, but receive -30% Ammo Efficiency otherwise.
+Now
+: Gain +75% Ammo Efficiency while Sliding or Crouching, but receive -25% Ammo Efficiency otherwise.
+Also fixed this Blessing not applying properly in-mission.
+Recursive “Explode on Death” Changes
+ Acid Shells has been a hot topic of late — for those unaware, it’s a Sobek Augment that causes enemies to explode on death and deals radial damage that scales with enemy health. Alone, it’s powerful, but it was made even more so via a niche interaction with Elemental Ammo, most commonly used with Cyte-09 (but also seen with Grendel, Oraxia, and Saryn, among others). These Elemental Ammo upgrades could cause Acid Shells to recursively trigger — meaning the one-time death explosion from a shot could instead be triggered infinitely if there were enough enemies to sustain it.
+This build type has been on our radar for a while, but we didn’t feel it was the right time to address it. As developers, we’ve been pretty transparent about our threshold to “nerf” content; the Cyte-09 and Acid Shells build never felt dominant or disruptive enough to warrant a closer look, but over the past few weeks that has changed. Arbitrations, discussions about Ammo Efficiency, and the introduction of the Epoch Operation: Taubound have rapidly increased the popularity of this build, to the point where we feel we need to address it.
+For the sake of consistency, we have reviewed all death detonation effects as part of the following changes, since this mechanic is not unique to Acid Shells: 
+Fixed status effects caused by Elemental Ammo on “enemies explode on death” effects being able to retrigger the death explosion effects for the following Mods:
+Note: these Mods will
+ still benefit from increased damage and status effects gained from Elemental Ammo
+ — they just won’t retrigger the death effects infinitely.
+Acid Shells
+Amalgam Furax Body Count
+Vulcan Blitz
+Explosive Demise
+Combustion Beam
+Thermagnetic Shells
+Entropy Detonation
+Reduced Acid Shells’ explosion radius from 15m to 10m.
+Riven Mod Changes
+ First introduced alongside the launch of Rivens in 2016, Riven Dispositions were internal multipliers that guided how strong Rivens would be on individual weapons — ranging from 0.5 on popular weapons, up to 1.55 on those lesser-used.  
+The intent of these Dispositions was to incentivize players to use less powerful weapons, but ultimately we saw that investment was still focused on making powerful weapons more powerful. Incarnons were a more successful attempt at breathing life into older outdated weapons, and the overlapping of these systems only multiplied their power further.
+With all that in mind, we are making the following change:
+Removed Riven Dispositions.
+All Rivens now use the same multiplier for their possible value ranges, the equivalent of 1.2 Disposition in the old system.
+For more information on the history behind this decision, please review our 
+Dev Workshop
+. 
+Restored the ability to trade Riven Mods.
+⮞
+ Rifle Disposition Changes
+Acceltra: 0.65->1.2
+Acceltra Prime: 0.55->1.2
+Aeolak: No changes
+Afentis: 1.05->1.2
+Afentis Prime: 0.65->1.2
+Alternox: No changes
+Alternox Prime: 0.95->1.2
+Ambassador: 1.15->1.2
+Amprex: 0.85->1.2
+Argonak: 1.25->1.2
+Attica: 1.42->1.2
+AX-52: 0.85->1.2
+Basmu: No changes
+Battacor: 1.1->1.2
+Baza: 1.05->1.2
+Baza Prime: 1->1.2
+Boltor: 1.3->1.2
+ Telos Boltor: No changes
+Boltor Prime: No changes
+MK1-Braton: 1.35->1.2
+Braton: 1.35->1.2
+Braton Prime: 1.25->1.2
+Braton Vandal: 1.3->1.2
+Burston: 1.45->1.2
+Burston Prime: 1.35->1.2
+Buzlok: 1.45->1.2
+Catchmoon (primary): 1.1->1.2
+Cernos: 1.3->1.2
+Rakta Cernos: 1.25->1.2
+Cernos Prime: 1.25->1.2
+Cinta: 1.25->1.2
+Daikyu: 1.3->1.2
+Daikyu Prime: 1->1.2
+Dera: 1.4->1.2
+Dera Vandal: 1.35->1.2
+Dread: 1.3->1.2
+EFV-5 Jupiter: 1.05->1.2
+Enkaus: 0.8->1.2
+Evensong: No changes
+Ferrox: 1.25->1.2
+Tenet Ferrox: 1.15->1.2
+Fulmin: 1->1.2
+Fulmin Prime: 0.75->1.2
+Flux Rifle: 1.55->1.2
+ Tenet Flux Rifle: No changes
+Gaze (primary): 1.1->1.2
+Glaxion: 1.3->1.2
+Glaxion Vandal: 1.25->1.2
+Tenet Glaxion: 0.65->1.2
+Gorgon: 1.4->1.2
+Gorgon Wraith: 1.35->1.2
+Prisma Gorgon: 1.3->1.2
+Gotva Prime: 0.85->1.2
+Grakata: 1.35->1.2
+Prisma Grakata: 1.3->1.2
+Grinlok: 1.3->1.2
+Prisma Grinlok: 1.25->1.2
+Haalvu: 0.6->1.2
+Harpak: 1.55->1.2
+Hema: 1.3->1.2
+Coda Hema: 1->1.2
+Higasa: 1.25->1.2
+Hind: 1.42->1.2
+Kuva Hind: 1.1->1.2
+Ignis: 0.7->1.2
+Ignis Wraith: 0.65->1.2
+Javlok: 1.3->1.2
+Karak: 1.35->1.2
+Karak Wraith: 1.28->1.2
+Kuva Karak: 1.05->1.2
+Lanka: 1.05->1.2
+Latron: 1.4->1.2
+Latron Prime: 1.3->1.2
+Latron Wraith: 1.35->1.2
+Lenz: 1.05->1.2
+Prisma Lenz: 1->1.2
+Miter: 1.5->1.2
+Mutalist Cernos: 1.35->1.2
+Mutalist Quanta: 1.5->1.2
+Nagantaka: 1.3->1.2
+Nagantaka Prime: 1.15->1.2
+Nataruk: 0.65->1.2
+Nunchasa: 0.5->1.2
+Ogris: 1.3->1.2
+Kuva Ogris: 0.7->1.2
+Opticor: 1.15->1.2
+Opticor Vandal: 1.1->1.2
+Panthera: 1.4->1.2
+Panthera Prime: 1.25->1.2
+Paracyst: 1.3->1.2
+MK1-Paris: 1.45->1.2
+Paris: 1.4->1.2
+Paris Prime: 1.35->1.2
+Penta: 1.35->1.2
+Carmine Penta: 1.3->1.2
+Secura Penta: 1.3->1.2
+Perigale: 1.15->1.2
+Perigale Prime: 0.8->1.2
+Phenmor: 0.6->1.2
+Proboscis Cernos: 0.9->1.2
+Purgator 1: No changes
+Quanta: 1.4->1.2
+Quanta Vandal: 1.4->1.2
+Tenet Quanta: 0.85->1.2
+Quartakk: 1.25->1.2
+Kuva Quartakk: 1.1->1.2
+Quellor: 1.15->1.2
+Rattleguts (primary): 1->1.2
+Reconifex: 1->1.2
+Rubico: 0.95->1.2
+Rubico Prime: 0.7->1.2
+Scourge: No changes
+Scourge Prime: 1.1->1.2
+Shedu: 0.75->1.2
+Simulor: 1.25->1.2
+Synoid Simulor: No changes
+Snipetron: 1.3->1.2
+Snipetron Vandal: 1.25->1.2
+Soma: 1.15->1.2
+Soma Prime: 1.1->1.2
+Sporelacer (primary): 1.15->1.2
+Sporothrix: 1.3->1.2
+Coda Sporothrix: 0.95->1.2
+Stahlta: 1.05->1.2
+Stradavar: 1.1->1.2
+Stradavar Prime: 1.1->1.2
+Supra: 1.1->1.2
+Supra Vandal: 1->1.2
+Sybaris: 1.3->1.2
+Dex Sybaris: 1.3->1.2
+Sybaris Prime: No changes
+Synapse: 1.31->1.2
+Coda Synapse: 0.9->1.2
+Tenet Envoy: 0.65->1.2
+Tetra: 1.5->1.2
+Prisma Tetra: 1.45->1.2
+Tenet Tetra: 1.25->1.2
+Tenora: 1.1->1.2
+Tenora Prime: 1.05->1.2
+Thornbak: No changes
+Tiberon: 1.1->1.2
+Tiberon Prime: 1->1.2
+Tombfinger (primary): 1->1.2
+Tonkor: 1.3->1.2
+Kuva Tonkor: 0.9->1.2
+Torid: 1.3->1.2
+Trumna: 0.85->1.2
+Trumna Prime: 0.65->1.2
+Vadarya Prime: 0.8->1.2
+Vectis: 1.15->1.2
+Vectis Prime: 1->1.2
+Veldt: 1.3->1.2
+Vermisplicer (primary): 0.9->1.2
+Vinquibus (rifle): 0.6->1.2
+Vulkar: 1.45->1.2
+Vulkar Wraith: 1.4->1.2
+Zarr: 1.15->1.2
+Kuva Zarr: 0.7->1.2
+Zenith: 1.1->1.2
+Zhuge: No changes
+Zhuge Prime: 1.15->1.2
+⮞ 
+Shotgun Disposition Changes
+Arca Plasmor: 0.95->1.2
+Tenet Arca Plasmor: 0.6->1.2
+Astilla: 1.3->1.2
+Astilla Prime: No changes
+Boar: 1.45->1.2
+Boar Prime: 1.34->1.2
+Bubonico: 0.75->1.2
+Coda Bubonico: 0.6->1.2
+Cedo: 0.65->1.2
+Cedo Prime: 0.55->1.2
+Coda Bassocyst: 0.6->1.2
+Convectrix: 1.46->1.2
+Corinth: 1.15->1.2
+Corinth Prime: 1->1.2
+Drakgoon: 1.4->1.2
+Kuva Drakgoon: 1.15->1.2
+Exergis: 1.1->1.2
+Felarx: 0.6->1.2
+Hek: No changes
+Vaykor Hek: 1.15->1.2
+Kuva Hek: 1->1.2
+Kohm: 1.3->1.2
+Kuva Kohm: 0.9->1.2
+Phage: 1.46->1.2
+Phantasma: 1.1->1.2
+Phantasma Prime: 0.8->1.2
+Rauta: 1.1->1.2
+Sobek: 1.33->1.2
+Kuva Sobek: 0.8->1.2
+Steflos: 1.25->1.2
+Steflos Prime: 0.5->1.2
+MK1-Strun: 1.45->1.2
+Strun: 1.4->1.2
+Strun Wraith: 1.35->1.2
+Strun Prime: No changes
+Tigris: 1.1->1.2
+Sancti Tigris: 1->1.2
+Tigris Prime: 0.95->1.2
+⮞ 
+Secondary Disposition Changes
+Acrid: 1.33->1.2
+Aegrit: 1->1.2
+Afuris: 1.45->1.2
+Dex Furis: 1.39->1.2
+Afuris Prime: 1.1->1.2
+Akarius: 1.05->1.2
+Akarius Prime: 0.65->1.2
+Akbolto: 1.3->1.2
+Telos Akbolto: 1.25->1.2
+Akbolto Prime: No changes
+Akbronco: 1.35->1.2
+Akbronco Prime: 1.3->1.2
+Akjagara: 1.1->1.2
+Akjagara Prime: 1->1.2
+Aklato: 1.52->1.2
+Aklex: 1.05->1.2
+Aklex Prime: 0.95->1.2
+Akmagnus: 1.35->1.2
+Akmagnus Prime: 1.1->1.2
+Aksomati: 1.25->1.2
+Aksomati Prime: 1.1->1.2
+Aksondol: 0.5->1.2
+Akstiletto: 0.95->1.2
+Akstiletto Prime: 0.85->1.2
+Akvasto: 1.25->1.2
+Akvasto Prime: No changes
+Akzani: 1.52->1.2
+Angstrum: 1.35->1.2
+Prisma Angstrum: 1.3->1.2
+Arca Scisco: 1.1->1.2
+Athodai: 1.05->1.2
+Athodai Prime: 0.65->1.2
+Atomos: 0.95->1.2
+Azima: 1.25->1.2
+Ballistica: 1.25->1.2
+Rakta Ballistica: No changes
+Ballistica Prime: No changes
+Bolto: 1.51->1.2
+Brakk: 1.25->1.2
+Kuva Brakk: 0.95->1.2
+Bronco: 1.45->1.2
+Bronco Prime: 1.4->1.2
+Cantare: 1.05->1.2
+Castanas: 1.4->1.2
+Sancti Castanas: 1.35->1.2
+Catabolyst: No changes
+Coda Catabolyst: 0.7->1.2
+Catchmoon (secondary): 0.75->1.2
+Cestra: 1.52->1.2
+Cyanex: 1->1.2
+Cycron: No changes
+Tenet Cycron: 0.7->1.2
+Despair: 1.3->1.2
+Detron: 1.15->1.2
+Mara Detron: 1.15->1.2
+Tenet Detron: 1->1.2
+Dual Cestra: 1.35->1.2
+Secura Dual Cestra: 1.3->1.2
+Dual Coda Torxica: 0.55->1.2
+Dual Toxocyst: 1.35->1.2
+EFV-8 Mars: 1.05->1.2
+Embolist: 1.4->1.2
+Epitaph: 0.6->1.2
+Epitaph Prime: 0.55->1.2
+Euphona Prime: 0.95->1.2
+Furis: 1.35->1.2
+Fusilai: 1.35->1.2
+Gammacor:1.15->1.2
+Synoid Gammacor: 1.1->1.2
+Gaze (secondary): 1.05->1.2
+Grimoire: 0.6->1.2
+Hikou: 1.3->1.2
+Hikou Prime: 1.25->1.2
+Hystrix: No changes
+Hystrix Prime: 1.05->1.2
+Knell: 1.25->1.2
+Knell Prime: 0.85->1.2
+Kohmak: 1.35->1.2
+Kompressa: 1.15->1.2
+Kompressa Prime: 0.6->1.2
+Kraken: 1.53->1.2
+Kuva Kraken: 1.1->1.2
+Kulstar: 1.3->1.2
+MK1-Kunai: 1.51->1.2
+Kunai: 1.51->1.2
+Kuva Twin Stubbas: 1->1.2
+Laetum: 0.5->1.2
+Lato: 1.4->1.2
+Lato Prime: 1.35->1.2
+Lato Vandal: 1.35->1.2
+Lex: 1.25->1.2
+Lex Prime: No changes
+Magnus: 1.53->1.2
+Magnus Prime: 1.25->1.2
+Marelok: No changes
+Vaykor Marelok: 1.1->1.2
+Nukor: 1.45->1.2
+Kuva Nukor: 0.5->1.2
+Ocucor: No changes
+Onos: 0.85->1.2
+Pandero: No changes
+Pandero Prime: 1.1->1.2
+Plinx: No changes
+Tenet Plinx: 0.75->1.2
+Pox: No changes
+Coda Pox: 1.05->1.2
+Pyrana: 0.95->1.2
+Pyrana Prime: 0.65->1.2
+Quatz: No changes
+Rattleguts (secondary): 1->1.2
+Riot-848: 1->1.2
+Sagek Prime: 0.9->1.2
+Scyotid: 0.75->1.2
+Seer: 1.5->1.2
+Kuva Seer: 1.1->1.2
+Sepulcrum: 1.1->1.2
+Sicarus: No changes
+Sicarus Prime: 1.15->1.2
+Sonicor: 1.15->1.2
+Spectra: 1.49->1.2
+Spectra Vandal: 1.45->1.2
+Spira: 1.35->1.2
+Spira Prime: 1.25->1.2
+Sporelacer (secondary): 0.6->1.2
+Staticor: 0.9->1.2
+Stubba: 1.35->1.2
+Stug: 1.48->1.2
+Talons: 1.44->1.2
+Tenet Diplos: 0.8->1.2
+Tenet Spirex: 1.05->1.2
+Tombfinger (secondary): 0.9->1.2
+Twin Gremlins: No changes
+Prisma Twin Gremlins: 1.15->1.2
+Twin Kohmak: 1.25->1.2
+Twin Rogga: 1.3->1.2
+Twin Vipers: 1.45->1.2
+Twin Vipers Wraith: 1.41->1.2
+Tysis: 1.45->1.2
+Coda Tysis: 1->1.2
+Vasto 1.4->1.2
+Vasto Prime: 1.35->1.2
+Velox: 1.25->1.2
+Velox Prime: 0.85->1.2
+Vermisplicer (secondary): 1.15->1.2
+Vesper 77: 0.8->1.2
+Viper: 1.45->1.2
+Viper Wraith: 1.4->1.2
+Zakti: 1.25->1.2
+Zakti Prime: 1.1->1.2
+Zylok: 1.25->1.2
+Zylok Prime: 0.95->1.2
+Zymos: No changes
+⮞ 
+Melee Disposition Changes
+Ack & Brunt: 1.35-1.2
+Amanata: 0.85->1.2
+Amphis: 1.5->1.2
+Anku: 1.46->1.2
+Ankyros: 1.5->1.2
+Ankyros Prime: 1.45->1.2 
+Arca Titron: 1.3->1.2
+Argo & Vel: 1.15->1.2
+Arum Spinosa: 1.25->1.2
+Atterax: 1.15->1.2
+Azothane: 1.1->1.2
+Balla: 0.8->1.2
+MK1-Bo: 1.4->1.2
+Bo: 1.35->1.2
+Bo Prime: 1.35->1.2
+Boltace: 1.25->1.2
+Telos Boltace: 1.1->1.2
+Broken Scepter: 1.4->1.2
+Broken War: 1.15->1.2
+Cadus: 1.29->1.2
+Cassowar: 1.35->1.2
+Caustacyst: 1.3->1.2
+Coda Caustacyst: 0.85->1.2
+Ceramic Dagger: 1.43->1.2
+Cerata: 1.25->1.2
+Cobra & Crane: 1.35->1.2 
+Cobra & Crane Prime: No changes
+Coda Motovore: 0.8->1.2
+Corufell: 1.05->1.2
+Corufell Prime: 0.5->1.2
+Cronus: 1.48->1.2
+Cyath: 1.05->1.2
+Dakra Prime: 1.1->1.2
+Dark Dagger: 1.1->1.2
+Rakta Dark Dagger: 1->1.2
+Dark Split-Sword: 1.3->1.2
+Dark Sword: 1.48->1.2
+Dehtat: 1.25->1.2
+Destreza: 1.25->1.2
+Destreza Prime: 1.14->1.2
+Dex Dakra: 1.35->1.2
+Dokrahm: 0.75->1.2
+Dorrclave: 1.1->1.2
+Dragon Nikana: 1.15->1.2
+Dual Cleavers: No changes
+Prisma Dual Cleavers: 1.1->1.2
+Dual Ether: 1.45->1.2
+Dual Heat Swords: 1.44->1.2 
+Dual Ichor: 1.25->1.2 
+Dual Kamas: 1.35->1.2 
+Dual Kama Prime: 1.25->1.2 
+Dual Keres: 1.1->1.2 
+Dual Keres Prime: 0.8->1.2 
+Dual Raza: 1.4->1.2 
+Dual Skana: 1.48->1.2 
+Dual Viciss: 0.8->1.2 
+Dual Zoren: 1.44->1.2 
+Dual Zoren Prime: 0.95->1.2 
+Edun: 1.15->1.2
+Ekhein: No changes
+Endura: 1.4->1.2
+Ether Daggers: 1.49->1.2
+Ether Reaper: 1.45->1.2
+Ether Sword: 1.44->1.2
+Falcor: 1.3->1.2
+Fang: 1.36->1.2
+Fang Prime: 1.3->1.2
+Fragor: No changes
+Fragor Prime: 1.05->1.2
+Mk1-Furax: 1.45->1.2
+Furax: 1.38->1.2
+Furax Wraith: 1.15->1.2 
+Galariak Prime: 0.9->1.2
+Galatine: 1.05->1.2
+Galatine Prime: 0.9->1.2
+Galvacord: 1.35->1.2
+Gazal Machete: 1.4->1.2
+Ghoulsaw: 1.25->1.2
+Kuva Ghoulsaw: 0.8->1.2 
+Glaive: 1.3->1.2
+Glaive Prime: 0.7->1.2
+Gram: 1.44->1.2
+Gram Prime: 0.8->1.2
+Guandao: 1.05->1.2
+Guandao Prime: 0.7->1.2
+Gunsen: 1.35->1.2
+Gunsen Prime: 1->1.2
+Halikar: 1.44->1.2
+Halikar Wraith: No changes
+Harmony: 0.6->1.2
+Hate: 1.1->1.2
+Heat Dagger: 1.44->1.2
+Heat Sword: 1.48->1.2
+Heliocor: 1.35->1.2
+Synoid Heliocor: 1.35->1.2
+Hespar: 1.05->1.2
+Hirudo: 1.15->1.2
+Coda Hirudo: 0.75->1.2
+Innodem: 0.65->1.2
+Jat Kittag: 1.35->1.2
+Jat Kusar: No changes
+Jaw Sword: 1.4->1.2
+Kama: 1.47->1.2
+Karyst: 1.35->1.2
+Karyst Prime: 1.15->1.2
+Keratinos: 1.05->1.2
+Kesheg: 1.35->1.2
+Kestrel: 1.45->1.2
+Kestrel Prime: 0.85->1.2
+Kogake: 1.46->1.2
+Kogake Prime: 1.4->1.2
+Korrudo: 1.35->1.2
+Korrum: 1.1->1.2
+Kreska: 1.35->1.2
+Krohkur: 1.35->1.2
+Kronen: 1.43->1.2
+Kronen Prime: 0.7->1.2
+Kronsh: 1.3->1.2
+Kuva Shildeg: 0.85->1.2
+Lacera: 1.31->1.2
+Ceti Lacera: No changes
+Lecta: 1.25->1.2
+Secura Lecta: No changes
+Lesion: 0.85->1.2
+Machete: 1.45->1.2
+Machete Wraith: 1.4->1.2
+Prisma Machete: 1.45->1.2
+Magistar: 1.35->1.2
+Sancti Magistar: 1.25->1.2
+Masseter: 1.25->1.2
+Masseter Prime: 1->1.2
+Mewan: 1.15->1.2
+Mios: 1.3->1.2
+Mire: 1.3->1.2
+Coda Mire: 0.75->1.2
+Nami Skyla: 1.3->1.2
+Nami Skyla Prime: 1->1.2
+Nami Solo: 1.43->1.2
+Nepheri: 0.95->1.2
+Nikana: 0.95->1.2
+Dex Nikana: 1.1->1.2
+Nikana Prime: 0.6->1.2
+Ninkondi: 1.41->1.2
+Ninkondi Prime: 1.1->1.2
+Obex: 1.3->1.2
+Prisma Obex: 1.25->1.2
+Ohma: 1.25->1.2
+Prisma Ohma: 0.95->1.2
+Okina: 1.4->1.2
+Okina Prime: 0.7->1.2
+Ooltha: 1.3->1.2
+Orthos: 1->1.2
+Orthos Prime: 0.7->1.2
+Orvius: 1.35->1.2
+Pangolin Sword: 1.47->1.2
+Pangolin Prime: 1.05->1.2
+Paracesis: 0.65->1.2
+Pathocyst: 1.35->1.2
+Coda Pathocyst: 0.65->1.2
+Pennant: 0.95->1.2
+Plague Keewar: 0.9->1.2
+Plague Kripath: 0.65->1.2
+Plasma Sword: 1.48->1.2
+Praedos: 0.6->1.2
+Pride: 0.7->1.2
+Prova: 1.4->1.2
+Prova Vandal: 1.35->1.2
+Pulmonars: No changes
+Pupacyst: 1.35->1.2
+Quassus: 1.15->1.2
+Quassus Prime: 0.9->1.2
+Rabvee: 1.3->1.2
+Reaper Prime: 0.8->1.2
+Redeemer: 1.05->1.2
+Redeemer Prime: 0.65->1.2
+Ripkas: 1.3->1.2
+Rumblejack: No changes
+Ruvox: 0.9->1.2
+Sampotes: 1->1.2
+Sarofang: 1.15->1.2
+Sarofang Prime: 0.75->1.2
+Sarpa: No changes
+Scindo: 1.35->1.2
+Scindo Prime: 1.3->1.2
+Scoliac: 1.3->1.2
+Sepfahn: 0.7->1.2
+Serro: 1.38->1.2
+Shaku: 1.35->1.2
+Sheev: 1.35->1.2
+Sibear: 1.35->1.2
+Sigma & Octantis: 1.1->1.2
+Silva & Aegis: 1.15->1.2
+Silva & Aegis Prime: 1.05->1.2
+Skana: 1.3->1.2
+Skana Prime: No changes
+Prisma Skana: No changes
+Skiajati: 0.9->1.2
+Slaytra: 1.05->1.2
+Spinnerex: 0.85->1.2
+Stropha: 0.65->1.2
+Sun & Moon: 0.8->1.2
+Syam: 0.75->1.2
+Sydon: 1.35->1.2
+Vaykor Sydon: 1.3->1.2
+Tak & Lug: 1.05->1.2
+Tatsu: 1.05->1.2
+Tatsu Prime: 0.9->1.2
+Tekko: 1.4->1.2
+Tekko Prime: 1.3->1.2
+Tenet Agendus: 0.9->1.2
+Tenet Exec: 0.8->1.2
+Tenet Grigori: 0.95->1.2
+Tenet Livia: 0.95->1.2
+Thalys: 0.65->1.2
+Tipedo: 1.31->1.2
+Tipedo Prime: 1.25->1.2
+Tonbo: 1.38->1.2
+Tonkkatt: 0.95->1.2
+Twin Basolk: 1.3->1.2
+Twin Krohkur: No changes
+Vastilok: 0.9->1.2
+Venato: 1.3->1.2
+Venato Prime: 0.65->1.2
+Venka: 1.1->1.2
+Venka Prime: 0.85->1.2
+Verdilac: 1.1->1.2
+Vericres: 1.15->1.2
+Vinquibus (Melee): 0.7->1.2
+Vitrica: 1.1->1.2
+Volnus: 1.4->1.2
+Volnus Prime: 1.3->1.2
+War: 1.05->1.2
+War Prime: 0.65->1.2
+Wolf Sledge: 1.25->1.2
+Wrath: 0.7->1.2
+Xoris: 0.65->1.2
+Zenistar: 1.15->1.2
+⮞
+ Archgun Disposition Changes
+Arbucep: 0.7->1.2
+Cortege: 1->1.2
+Corvas: No changes
+Corvas Prime: 1->1.2
+Dual Decurion: 1.3->1.2
+Prisma Dual Decurions: 1.25->1.2
+Cyngas: 1.3->1.2
+Fluctus: 1.3->1.2
+Grattler: 1.1->1.2
+Kuva Grattler: 0.7->1.2
+Imperator: 1.1->1.2
+Imperator Vandal: 0.95->1.2
+Kuva Ayanga: 0.95->1.2
+Larkspur: 1.05->1.2
+Larkspur Prime: 0.8->1.2
+Mandonel: 1.1->1.2
+Mausolon: 0.5->1.2
+Morgha: 1->1.2
+Phaedra: 1.25->1.2
+Velocitus: 1.1->1.2
+⮞ 
+Companion Weapon Disposition Changes
+Akaten: 1->1.2
+Artax: 1->1.2
+Batoten: 1->1.2
+Burst Laser: 1.45->1.2
+Prisma Burst Laser: 1.45->1.2
+Burst Laser Prime: 1.45->1.2
+Cryotra: 1->1.2
+Deconstructor: 1.25->1.2
+Deconstructor Prime: 1.25->1.2
+Deth Machine Rifle: 1.46->1.2
+Deth Machine Rifle Prime: 1.46->1.2
+Helstrum: 1->1.2
+Lacerten: 1->1.2
+Laser Rifle: 1.21->1.2
+Prime Laser Rifle: 1.21->1.2
+Multron: 1->1.2
+Stinger 1.32->1.2
+Sweeper: 1->1.2
+Sweeper Prime: 1->1.2
+Tazicor: 1->1.2
+Verglas: 1.3->1.2
+Verglas Prime: 1.3->1.2
+Vulcax: 1->1.2
+Vulklok: 1.25->1.2
+General Additions & Changes 
+Added the new Axi C13 Relic to mission drop tables to address the Braton Prime Receiver unintentionally being vaulted.
+The search function in the Peely Pix menu now also searches Peely Pix descriptions.
+Credit Bundles now have a multiple purchase option (notably for the Credit Bundles in Praghasa's wares).
+Fixes
+Fixed casting the Void of the Lotus ability with specific controller inputs causing players to experience extreme slow mode in the Lua quest.
+Fixed the Vessel's Gaze dealing no damage if the ability was used before a specific segment in the Vessel quest.
+Fixed being unable to chatlink Riven Splicers.
+Fixed the Security Bypass terminal waypoint disappearing once Yareli mounts Merulina.
+Fixed performance issues caused by Yareli casting Jade Stars while on Merulina.
+Fixed the gas clouds spawned by Toxic Amphors dealing damage to players.
+Fixed the Adarza and Smeeta Kavats missing their hair tufts.
+Fixed the Lotus' Epoch Operation: Taubound inbox message not specifying that Praghasa is found on Eris.
+Fixed upgrading Boreal's Hatred sometimes displaying incorrect stats if certain Numerical Separator settings were applied.
+Fixed subtitles for a certain character during the Lua quest not indicating they are a foe.
+Fixed rare cases of players not receiving the Vessel quest key upon completion of the Lua quest in the Prologue to Tau series. 
+A small number of players were affected by this issue, and should see the missing quest key in their inventories.
+Fixed the End of Mission cinematic zooming in too closely to the squad in The Icebind.
+Fixed being unable to use Fast Travel while in the hallway leading to the Dark Refractory in the Sanctum Anatomica.
+Fixed ambient music not stopping when returning to the Mountain Pass in The War Within quest.
+Script Error Fixes
+Script errors mean that something went wrong when the game client was executing a script, which can have various outcomes. Usually it means the related content didn’t function properly under specific circumstances — often we don’t actually know what the error outcome was, so we list it as a Script Error fix to indicate it was addressing an unintended behaviour.
+Fixed a script error related to Market search sorting.
+Fixed a script error caused by the electric traps in the Kuva Fortress tileset.
+Fixed a script error related to the Belfri Ephemera.
+For a list of known issues that are on our radar, visit our dedicated thread: 
+https://forums.warframe.com/topic/1523875-known-issues-iceblade-of-narin
+Discuss in our forums
+Read release 44.1.2
+Back to Patch Notes Index
+Hotfixes
+Newest
+Iceblade of Narin: The Icebind: Hotfix 44.1.3
+Iceblade of Narin: The Icebind: Hotfix 44.1.2 + 2.1
+Iceblade of Narin: The Icebind: Hotfix 44.1.1
+Update 44.1.0: Iceblade of Narin: The Icebind
+Connect with other Tenno
+Support
+Press
+Terms of Use
+Privacy Policy
+EULA
+Cookie Settings
+English
+Deutsch
+Русский
+Français
+Español
+日本語
+Português
+Türkçe
+Polski
+한국어
+Italiano
+简体中文
+繁體中文
+Українська
+ไทย
+                ©2026 Digital Extremes Ltd. All rights reserved.
+                All trademarks are the property of their respective owners.
+폭력성
+window.recaptchaReady = window.recaptchaReady || function() {}
+window._AutofillCallbackHandler = window._AutofillCallbackHandler || function(){}
+        try {
+            const mightBeLoggedIn = !!(sessionStorage && sessionStorage.getItem("wfSessionShouldBeLoggedIn") === "isLoggedIn");
+            document.body.classList.toggle('logged-in', mightBeLoggedIn);
+            document.body.classList.toggle('logged-out', !mightBeLoggedIn);
+        } catch(_) {}

@@ -16,7 +16,7 @@ public sealed partial class MainWindow
     {
         foreach(var choice in new[]{new SampleChoice(512,"512회"),new SampleChoice(2048,"2,048회 · 기본"),new SampleChoice(4096,"4,096회")})sampleChoice.Items.Add(choice);
         sampleChoice.SelectedValue=2048;
-        sampleChoice.SelectionChanged+=(_,_)=>Recalculate();
+        sampleChoice.SelectionChanged+=(_,_)=>{foreach(var ranged in rangedPages.Values)ranged.RefreshSampling();Recalculate();};
         var hint=T("표본을 늘리면 통계 오차가 줄어듭니다.\n경량 모드에서도 표본 수는 유지됩니다.",14,"#596B85");hint.TextWrapping=TextWrapping.Wrap;
         return Stack(T("계산",16),Field("전투 표본 수",sampleChoice),hint);
     }

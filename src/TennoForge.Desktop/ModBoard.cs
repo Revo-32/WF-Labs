@@ -7,7 +7,7 @@ using TennoForge.Core;
 
 namespace TennoForge.Desktop;
 
-public sealed class ModBoard
+public sealed partial class ModBoard
 {
     private const string DragFormat = "WFLabs.ModCard.v1";
     private readonly Catalog catalog;
@@ -22,6 +22,7 @@ public sealed class ModBoard
     private readonly System.Windows.Shapes.Path sortArrow=new(){Width=18,Height=18,StrokeThickness=1.5,StrokeStartLineCap=PenLineCap.Round,StrokeEndLineCap=PenLineCap.Round,Stretch=Stretch.None};
     private readonly ComboBox filter = new() { ItemsSource=new[]{"전체 모드","피해","치명타","원소","공격 속도","상태이상"},SelectedIndex=0,Width=108 };
     private readonly TextBlock count=Text("",12,"MutedBrush"), message=Text("",12,"MutedBrush");
+    private readonly TextBlock noResults=new(){Text="검색 결과 없음",HorizontalAlignment=HorizontalAlignment.Center,VerticalAlignment=VerticalAlignment.Top,Margin=new(12,22,12,0),IsHitTestVisible=false,Visibility=Visibility.Collapsed};
     private ModSlot?[] slots = new ModSlot?[8];
     private string[] slotPolarities=Enumerable.Repeat("None",8).ToArray();
     private bool formaEditing;
@@ -66,18 +67,17 @@ public sealed class ModBoard
         DockPanel.SetDock(filter,Dock.Right);searchbar.Children.Add(filter);
         search.Margin=new(0,0,8,0);search.ToolTip="한국어 또는 영문 모드 이름 검색";
         search.SetValue(System.Windows.Automation.AutomationProperties.NameProperty,"모드 검색");
-        var searchGrid=new Grid();searchGrid.Children.Add(search);
-        var placeholder=Text("모드 검색",14,"MutedBrush");placeholder.Margin=new(12,0,0,0);placeholder.VerticalAlignment=VerticalAlignment.Center;placeholder.IsHitTestVisible=false;searchGrid.Children.Add(placeholder);
-        search.TextChanged+=(_,_)=>placeholder.Visibility=search.Text.Length==0?Visibility.Visible:Visibility.Collapsed;
+        var searchGrid=new SearchField(search,"모드 검색");
         searchbar.Children.Add(searchGrid);
         var toolbar=new StackPanel();toolbar.Children.Add(titlebar);toolbar.Children.Add(searchbar);tray.Children.Add(toolbar);
         libraryScroller.Content=library;Grid.SetRow(libraryScroller,1);tray.Children.Add(libraryScroller);
+        noResults.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");Grid.SetRow(noResults,1);tray.Children.Add(noResults);
         libraryScroller.PreviewDragOver+=(_,e)=>{var y=e.GetPosition(libraryScroller).Y;if(y<24)libraryScroller.ScrollToVerticalOffset(libraryScroller.VerticalOffset-16);else if(y>libraryScroller.ActualHeight-24)libraryScroller.ScrollToVerticalOffset(libraryScroller.VerticalOffset+16);};
         library.SizeChanged+=(_,_)=>SizeLibraryCards();
         tray.AllowDrop=true;
         tray.DragOver+=(_,e)=>{e.Effects=ReadDrag(e)is{SourceSlot:not null}?DragDropEffects.Move:DragDropEffects.None;e.Handled=true;};
         tray.Drop+=(_,e)=>{if(ReadDrag(e)is{}payload)ReturnToLibrary(payload);e.Handled=true;};
-        var panel=new Grid();panel.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});panel.RowDefinitions.Add(new(){Height=GridLength.Auto});panel.Children.Add(tray);Grid.SetRow(count,1);count.Margin=new(0,4,0,0);panel.Children.Add(count);LibraryView=panel;
+        var panel=new Grid();panel.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});panel.RowDefinitions.Add(new(){Height=GridLength.Auto});panel.Children.Add(tray);Grid.SetRow(count,1);count.Margin=new(0,4,0,4);panel.Children.Add(count);LibraryView=panel;
         search.TextChanged+=(_,_)=>RenderLibrary();filter.SelectionChanged+=(_,_)=>RenderLibrary();sort.SelectionChanged+=(_,_)=>RenderLibrary();
         RenderRack();RenderLibrary();
     }
@@ -118,7 +118,7 @@ public sealed class ModBoard
         for(var i=0;i<8;i++)
         {
             var index=i;var slot=slots[i];var mod=slot is null?null:catalog.Mods.Single(m=>m.Id==slot.ModId);
-            var card=CreateCard(mod,slot?.Rank??0,index);card.Margin=new(0,0,index%4==3?0:6,6);card.AllowDrop=true;card.Focusable=true;
+            var card=CreateCard(mod,slot?.Rank??0,index);card.Margin=new(0,0,index%4==3?0:12,8);card.AllowDrop=true;card.Focusable=true;
             card.SetValue(System.Windows.Automation.AutomationProperties.NameProperty,$"장착 슬롯 {i+1}: {mod?.Name??"비어 있음"}");
             card.PreviewMouseDown+=(_,e)=>
             {
@@ -155,8 +155,10 @@ public sealed class ModBoard
     }
     private Border CreateCard(Mod? mod,int rank,int? index,bool libraryCard=false)
     {
-        var card=new Border{CornerRadius=new(5),BorderThickness=new(1),Padding=new(8,6,8,6),Height=libraryCard?80:120,Cursor=Cursors.Hand};
+        var card=new Border{CornerRadius=new(5),BorderThickness=new(1),Cursor=Cursors.Hand};
         var finish=mod is null?ModFinish.Neutral:ModAppearance.For(mod);card.Tag=finish;
+        ModCardLayout.Apply(card,libraryCard,finish);
+        if(formaEditing&&index is not null)card.Height+=6;
         if(mod is not null)
         {
             card.MouseEnter+=(_,_)=>HoveredModChanged?.Invoke(mod);card.MouseLeave+=(_,_)=>HoveredModChanged?.Invoke(null);
@@ -171,16 +173,12 @@ public sealed class ModBoard
         }
         var actualRiven=IsRiven(mod)&&riven is not null&&mod.Id==RivenValues.ModId(riven.WeaponId);
         if(actualRiven&&riven!.BaseDrain is not null&&riven.Polarity is not null)mod=CapacityEngine.ResolvedMod(mod,riven);
-        var p=new Grid();p.RowDefinitions.Add(new(){Height=GridLength.Auto});p.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});
-        var header=new StackPanel{Orientation=Orientation.Horizontal,HorizontalAlignment=HorizontalAlignment.Right,Margin=new(0,0,0,2)};
         var drain=index is {} equipped?CapacityEngine.SlotCost(mod,rank,slotPolarities[equipped]):mod.BaseDrain+rank;
         var unknownDrain=IsRiven(mod)&&(!actualRiven||riven!.BaseDrain is null||riven.Polarity is null);
-        var cost=Text(unknownDrain?"?":drain.ToString(),12,drain<mod.BaseDrain+rank?"CapacityGoodBrush":drain>mod.BaseDrain+rank?"ErrorBrush":"AccentBrush");cost.Margin=new(0,0,4,0);header.Children.Add(cost);header.Children.Add(PolarityIcon.Create(mod.Polarity));p.Children.Add(header);
+        var header=ModCardLayout.Header(unknownDrain?"?":drain.ToString(),mod.Polarity,drain<mod.BaseDrain+rank?"CapacityGoodBrush":drain>mod.BaseDrain+rank?"ErrorBrush":"AccentBrush");
+        var p=new ModCardFace(mod.Name,header,libraryCard);
         if(formaEditing&&index is {} slotIndex)p.Children.Add(PolarityButton(slotIndex));
-        var body=new StackPanel{VerticalAlignment=VerticalAlignment.Top};
-        var name=Text(mod.Name,14);name.FontWeight=FontWeights.SemiBold;name.LineHeight=20;name.Height=40;name.TextTrimming=TextTrimming.CharacterEllipsis;name.Margin=new(0,0,0,libraryCard?0:4);body.Children.Add(name);
-        if(!libraryCard){var effect=Text(IsRiven(mod)?RivenDescription():DescribeCompact(mod,rank),13,"MutedBrush");effect.Margin=new(0);effect.MaxHeight=40;effect.TextTrimming=TextTrimming.CharacterEllipsis;body.Children.Add(effect);}
-        Grid.SetRow(body,1);p.Children.Add(body);card.Child=p;
+        card.Child=p;
         if(index is {} i)
         {
             var menu=new ContextMenu();var remove=new MenuItem{Header="모드 해제 (Delete)"};remove.Click+=(_,_)=>ReturnToLibrary(new(mod.Id,i));menu.Items.Add(remove);card.ContextMenu=menu;
@@ -200,9 +198,9 @@ public sealed class ModBoard
     {card.SetResourceReference(Border.BorderBrushProperty,selected?"AccentBrush":ModAppearance.StrokeKey(card.Tag is ModFinish finish?finish:ModFinish.Neutral));}
     private Button PolarityButton(int index)
     {
-        var line=new StackPanel{Orientation=Orientation.Horizontal};var number=Text($"{index+1}",12);number.Margin=new(0,0,4,0);line.Children.Add(number);
-        var symbol=PolarityIcon.Create(slotPolarities[index]);symbol.Width=12;symbol.Height=12;line.Children.Add(symbol);
-        var button=new Button{Content=line,Padding=new(4,2,4,2),Height=24,HorizontalAlignment=HorizontalAlignment.Left,VerticalAlignment=VerticalAlignment.Top,Margin=new(-5,-4,0,0),ToolTip=$"슬롯 {index+1} 극성: {PolarityLabel(slotPolarities[index])}"};
+        var line=new StackPanel{Orientation=Orientation.Horizontal};var number=Text($"{index+1}",13);number.LineHeight=18;number.Height=18;number.Margin=new(0,0,4,0);line.Children.Add(number);
+        var symbol=PolarityIcon.Create(slotPolarities[index]);line.Children.Add(symbol);
+        var button=new Button{Content=line,Padding=new(4,1,4,1),Height=24,HorizontalAlignment=HorizontalAlignment.Left,VerticalAlignment=VerticalAlignment.Top,Margin=new(0),ToolTip=$"슬롯 {index+1} 극성: {PolarityLabel(slotPolarities[index])}"};
         button.Click+=(_,e)=>
         {
             var menu=new ContextMenu{PlacementTarget=button};
@@ -275,7 +273,7 @@ public sealed class ModBoard
             card.KeyDown+=(_,e)=>{if(e.Key==Key.Enter){Equip(mod);e.Handled=true;}};
             library.Children.Add(card);
         }
-        VisibleLibraryCount=list.Length;count.Text=$"{list.Length}개 · 최대 랭크 코스트 · 효과는 마우스 오버";SizeLibraryCards();
+        VisibleLibraryCount=list.Length;noResults.Visibility=list.Length==0?Visibility.Visible:Visibility.Collapsed;count.Text=$"{list.Length}개 · 최대 랭크 코스트 · 효과는 마우스 오버";SizeLibraryCards();
     }
     private void UpdateSortPresentation()
     {
@@ -287,7 +285,7 @@ public sealed class ModBoard
     private void SizeLibraryCards()
     {
         if(library.ActualWidth<=0)return;
-        var columns=Math.Max(1,(int)Math.Floor((library.ActualWidth+6)/125));
+        var columns=ModCardLayout.LibraryColumns(library.ActualWidth);
         // Round down so WPF layout rounding cannot push the last card to an extra row.
         var width=Math.Floor(library.ActualWidth/columns)-6;
         foreach(Border card in library.Children)card.Width=Math.Max(1,width);

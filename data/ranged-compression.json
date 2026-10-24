@@ -1,0 +1,3138 @@
+[
+  {
+    "weaponId": "wiki:primary/Acceltra",
+    "attackIndex": 0,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Acceltra",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Acceltra Prime",
+    "attackIndex": 0,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Acceltra Prime",
+    "attackIndex": 1,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Aeolak",
+    "attackIndex": 1,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Aeolak",
+    "attackIndex": 2,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Afentis",
+    "attackIndex": 0,
+    "radius": 3,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Afentis",
+    "attackIndex": 1,
+    "radius": 3,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Afentis Prime",
+    "attackIndex": 0,
+    "radius": 5.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Afentis Prime",
+    "attackIndex": 1,
+    "radius": 5.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Alternox",
+    "attackIndex": 1,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Alternox",
+    "attackIndex": 2,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Alternox",
+    "attackIndex": 3,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Alternox Prime",
+    "attackIndex": 1,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Alternox Prime",
+    "attackIndex": 2,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Alternox Prime",
+    "attackIndex": 3,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ambassador",
+    "attackIndex": 1,
+    "radius": 6,
+    "mode": "Add",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ambassador",
+    "attackIndex": 2,
+    "radius": 6,
+    "mode": "Add",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Astilla",
+    "attackIndex": 0,
+    "radius": 2.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Astilla",
+    "attackIndex": 1,
+    "radius": 2.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Astilla Prime",
+    "attackIndex": 0,
+    "radius": 2.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Astilla Prime",
+    "attackIndex": 1,
+    "radius": 2.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Basmu",
+    "attackIndex": 0,
+    "radius": 1.7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Basmu",
+    "attackIndex": 1,
+    "radius": 1.7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton",
+    "attackIndex": 1,
+    "radius": 3,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton",
+    "attackIndex": 2,
+    "radius": 3,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mk1-Braton",
+    "attackIndex": 1,
+    "radius": 3,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mk1-Braton",
+    "attackIndex": 2,
+    "radius": 3,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton Prime",
+    "attackIndex": 1,
+    "radius": 3,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton Prime",
+    "attackIndex": 2,
+    "radius": 3,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton Vandal",
+    "attackIndex": 1,
+    "radius": 3,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Braton Vandal",
+    "attackIndex": 2,
+    "radius": 3,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Burston",
+    "attackIndex": 1,
+    "radius": 2,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Burston",
+    "attackIndex": 2,
+    "radius": 2,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Burston Prime",
+    "attackIndex": 1,
+    "radius": 2,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Burston Prime",
+    "attackIndex": 2,
+    "radius": 2,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Gorgon",
+    "attackIndex": 1,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Gorgon",
+    "attackIndex": 2,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Gorgon Wraith",
+    "attackIndex": 1,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Gorgon Wraith",
+    "attackIndex": 2,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Gorgon",
+    "attackIndex": 1,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Gorgon",
+    "attackIndex": 2,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron",
+    "attackIndex": 2,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron Prime",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron Prime",
+    "attackIndex": 2,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron Wraith",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron Wraith",
+    "attackIndex": 2,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Miter",
+    "attackIndex": 1,
+    "radius": 0.2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Miter",
+    "attackIndex": 2,
+    "radius": 3,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Miter",
+    "attackIndex": 3,
+    "radius": 3,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun",
+    "attackIndex": 2,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun Prime",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun Prime",
+    "attackIndex": 2,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun Wraith",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Strun Wraith",
+    "attackIndex": 2,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mk1-Strun",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mk1-Strun",
+    "attackIndex": 2,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Bubonico",
+    "attackIndex": 1,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Bubonico",
+    "attackIndex": 2,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Coda Bubonico",
+    "attackIndex": 1,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Coda Bubonico",
+    "attackIndex": 2,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Cedo",
+    "attackIndex": 1,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Cedo",
+    "attackIndex": 2,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Cedo Prime",
+    "attackIndex": 1,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Cedo Prime",
+    "attackIndex": 2,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Chakkhurr",
+    "attackIndex": 0,
+    "radius": 2.9,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Chakkhurr",
+    "attackIndex": 1,
+    "radius": 2.9,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Corinth",
+    "attackIndex": 1,
+    "radius": 9.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Corinth",
+    "attackIndex": 2,
+    "radius": 9.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Corinth Prime",
+    "attackIndex": 1,
+    "radius": 9.8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Corinth Prime",
+    "attackIndex": 2,
+    "radius": 9.8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Envoy",
+    "attackIndex": 0,
+    "radius": 8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Envoy",
+    "attackIndex": 1,
+    "radius": 8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ferrox",
+    "attackIndex": 0,
+    "radius": 3.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ferrox",
+    "attackIndex": 1,
+    "radius": 3.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Ferrox",
+    "attackIndex": 0,
+    "radius": 4,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Ferrox",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Javlok",
+    "attackIndex": 0,
+    "radius": 2.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Javlok",
+    "attackIndex": 1,
+    "radius": 2.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Javlok",
+    "attackIndex": 2,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Javlok",
+    "attackIndex": 3,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Evensong",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Evensong",
+    "attackIndex": 2,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Lenz",
+    "attackIndex": 0,
+    "radius": 7.2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Lenz",
+    "attackIndex": 1,
+    "radius": 7.2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Lenz",
+    "attackIndex": 2,
+    "radius": 7.2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Lenz",
+    "attackIndex": 0,
+    "radius": 7.2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Lenz",
+    "attackIndex": 1,
+    "radius": 7.2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Lenz",
+    "attackIndex": 2,
+    "radius": 7.2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Bramma",
+    "attackIndex": 0,
+    "radius": 8.3,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Bramma",
+    "attackIndex": 1,
+    "radius": 8.3,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ogris",
+    "attackIndex": 0,
+    "radius": 7.1,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ogris",
+    "attackIndex": 1,
+    "radius": 7.1,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Ogris",
+    "attackIndex": 0,
+    "radius": 7.9,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Ogris",
+    "attackIndex": 1,
+    "radius": 7.9,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor",
+    "attackIndex": 0,
+    "radius": 6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor",
+    "attackIndex": 1,
+    "radius": 6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor Vandal",
+    "attackIndex": 0,
+    "radius": 4.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor Vandal",
+    "attackIndex": 1,
+    "radius": 4.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor",
+    "attackIndex": 2,
+    "radius": 6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor",
+    "attackIndex": 3,
+    "radius": 6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor Vandal",
+    "attackIndex": 2,
+    "radius": 4.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Opticor Vandal",
+    "attackIndex": 3,
+    "radius": 4.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Panthera Prime",
+    "attackIndex": 0,
+    "radius": 1.6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Panthera Prime",
+    "attackIndex": 1,
+    "radius": 1.6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Penta",
+    "attackIndex": 0,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Penta",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Secura Penta",
+    "attackIndex": 0,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Secura Penta",
+    "attackIndex": 1,
+    "radius": 6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Carmine Penta",
+    "attackIndex": 0,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Carmine Penta",
+    "attackIndex": 1,
+    "radius": 4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma",
+    "attackIndex": 1,
+    "radius": 4.8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma",
+    "attackIndex": 2,
+    "radius": 4.8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma Prime",
+    "attackIndex": 1,
+    "radius": 4.8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma Prime",
+    "attackIndex": 2,
+    "radius": 4.8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Quanta",
+    "attackIndex": 1,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Quanta",
+    "attackIndex": 2,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Quanta",
+    "attackIndex": 3,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Quanta Vandal",
+    "attackIndex": 1,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Quanta Vandal",
+    "attackIndex": 2,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Quanta Vandal",
+    "attackIndex": 3,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Quanta",
+    "attackIndex": 1,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Quanta",
+    "attackIndex": 2,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Quanta",
+    "attackIndex": 3,
+    "radius": 0.5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mutalist Quanta",
+    "attackIndex": 1,
+    "radius": 4.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mutalist Quanta",
+    "attackIndex": 2,
+    "radius": 4.4,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge",
+    "attackIndex": 0,
+    "radius": 1.7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge",
+    "attackIndex": 1,
+    "radius": 1.7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge Prime",
+    "attackIndex": 0,
+    "radius": 1.7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge Prime",
+    "attackIndex": 1,
+    "radius": 1.7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge",
+    "attackIndex": 2,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge",
+    "attackIndex": 3,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge Prime",
+    "attackIndex": 2,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Scourge Prime",
+    "attackIndex": 3,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Shedu",
+    "attackIndex": 0,
+    "radius": 6.6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": false,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Shedu",
+    "attackIndex": 1,
+    "radius": 6.6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": false,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Simulor",
+    "attackIndex": 0,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Simulor",
+    "attackIndex": 1,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Simulor",
+    "attackIndex": 2,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Synoid Simulor",
+    "attackIndex": 0,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Synoid Simulor",
+    "attackIndex": 1,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Synoid Simulor",
+    "attackIndex": 2,
+    "radius": 5,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Sporothrix",
+    "attackIndex": 0,
+    "radius": 1.7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Sporothrix",
+    "attackIndex": 1,
+    "radius": 1.7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Coda Sporothrix",
+    "attackIndex": 0,
+    "radius": 2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Coda Sporothrix",
+    "attackIndex": 1,
+    "radius": 2,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Tetra",
+    "attackIndex": 1,
+    "radius": 8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Tetra",
+    "attackIndex": 2,
+    "radius": 8,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tonkor",
+    "attackIndex": 0,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tonkor",
+    "attackIndex": 1,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Tonkor",
+    "attackIndex": 0,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Tonkor",
+    "attackIndex": 1,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Torid",
+    "attackIndex": 0,
+    "radius": 3,
+    "mode": "Multiply",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Torid",
+    "attackIndex": 1,
+    "radius": 3,
+    "mode": "Multiply",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna",
+    "attackIndex": 0,
+    "radius": 1.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": false,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna",
+    "attackIndex": 1,
+    "radius": 1.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": false,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna Prime",
+    "attackIndex": 0,
+    "radius": 1.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": false,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna Prime",
+    "attackIndex": 1,
+    "radius": 1.6,
+    "mode": "Add",
+    "shrink": true,
+    "rangeMod": false,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "attackIndex": 0,
+    "radius": 4.9,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "attackIndex": 1,
+    "radius": 4.9,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Zarr",
+    "attackIndex": 0,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Zarr",
+    "attackIndex": 1,
+    "radius": 7,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zhuge Prime",
+    "attackIndex": 0,
+    "radius": 2.6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zhuge Prime",
+    "attackIndex": 1,
+    "radius": 2.6,
+    "mode": "Multiply",
+    "shrink": true,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Afentis",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Afentis Prime",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mutalist Cernos",
+    "attackIndex": 0,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mutalist Cernos",
+    "attackIndex": 1,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Mutalist Cernos",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Bramma",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Bramma",
+    "attackIndex": 3,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Enkaus",
+    "attackIndex": 1,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Enkaus",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ignis",
+    "attackIndex": 0,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Ignis Wraith",
+    "attackIndex": 0,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Komorex",
+    "attackIndex": 0,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Komorex",
+    "attackIndex": 1,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Neutralizer",
+    "attackIndex": 0,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Neutralizer",
+    "attackIndex": 1,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Stahlta",
+    "attackIndex": 1,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Stahlta",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Torid",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "attackIndex": 3,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "attackIndex": 4,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Zarr",
+    "attackIndex": 2,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Zarr",
+    "attackIndex": 3,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Zarr",
+    "attackIndex": 4,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma",
+    "attackIndex": 0,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma",
+    "attackIndex": 3,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma",
+    "attackIndex": 4,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma Prime",
+    "attackIndex": 0,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma Prime",
+    "attackIndex": 3,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Phantasma Prime",
+    "attackIndex": 4,
+    "radius": 0,
+    "mode": "None",
+    "shrink": false,
+    "rangeMod": true,
+    "source": {
+      "title": "Primary Compression",
+      "revision": 2818425,
+      "timestamp": "2026-10-14T17:02:12Z",
+      "sha256": "8609e4183f5278f76a883730833e30f54741565a9a52d33ae4967ac349d820d7",
+      "url": "https://wiki.warframe.com/w/Primary_Compression?oldid=2818425",
+      "batch": "a0a41d70fc27910e.json"
+    }
+  }
+]

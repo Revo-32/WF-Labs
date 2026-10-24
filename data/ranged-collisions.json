@@ -1,0 +1,394 @@
+[
+  {
+    "weaponId": "wiki:primary/Ogris",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Ogris",
+      "revision": 2814708,
+      "timestamp": "2026-09-30T19:09:44Z",
+      "sha256": "4d059e8c1c7c75067eb126d396989132646cce60ba367caecfe32d9aa3133daa",
+      "url": "https://wiki.warframe.com/w/Ogris?oldid=2814708",
+      "batch": "b38501ebf9d30c9b.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Envoy",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Tenet Envoy",
+      "revision": 2808878,
+      "timestamp": "2026-09-18T02:41:33Z",
+      "sha256": "5279fe8f9e383dd959d71924a388d10b33f00d87d279d652c10fe7c4ceb8d00b",
+      "url": "https://wiki.warframe.com/w/Tenet_Envoy?oldid=2808878",
+      "batch": "07d75b0b385044e3.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Torid",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Torid",
+      "revision": 2816901,
+      "timestamp": "2026-10-08T09:58:55Z",
+      "sha256": "895aa001d212bc83699cb6cd29232f944e28fbff6b1788aee48e36776551e5de",
+      "url": "https://wiki.warframe.com/w/Torid?oldid=2816901",
+      "batch": "d4a34f4a056b29be.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Ferrox",
+    "attacks": [
+      2
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Tenet Ferrox",
+      "revision": 2818534,
+      "timestamp": "2026-10-14T21:08:20Z",
+      "sha256": "38bd800fdfdd2384c81a93be6cd2d4cbf6f98210b83ab777f95b5e3d96561a70",
+      "url": "https://wiki.warframe.com/w/Tenet_Ferrox?oldid=2818534",
+      "batch": "34e255fa5450dd70.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tonkor",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Tonkor",
+      "revision": 2814723,
+      "timestamp": "2026-09-30T19:23:47Z",
+      "sha256": "97f7e8c7dc0cad74770bb740b6e7b866a381eefe9f49c01b2da8b7ac42b81ed6",
+      "url": "https://wiki.warframe.com/w/Tonkor?oldid=2814723",
+      "batch": "d4a34f4a056b29be.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Zarr",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Zarr",
+      "revision": 2813913,
+      "timestamp": "2026-09-28T10:57:48Z",
+      "sha256": "6e1e5d68a61f032250ae0d9dc092a962182559750f638f6dbca3219b5a022d4a",
+      "url": "https://wiki.warframe.com/w/Zarr?oldid=2813913",
+      "batch": "8d6acc32d8d8f7db.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Sporelacer (Primary)",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 3,
+    "source": {
+      "title": "Sporelacer",
+      "revision": 2757746,
+      "timestamp": "2026-04-03T08:16:02Z",
+      "sha256": "ac27524938980a06554f632eb160ddac17432aa7889ed9afed09a54c3826aab2",
+      "url": "https://wiki.warframe.com/w/Sporelacer?oldid=2757746",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:modular/Sporelacer (Secondary)",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Sporelacer",
+      "revision": 2757746,
+      "timestamp": "2026-04-03T08:16:02Z",
+      "sha256": "ac27524938980a06554f632eb160ddac17432aa7889ed9afed09a54c3826aab2",
+      "url": "https://wiki.warframe.com/w/Sporelacer?oldid=2757746",
+      "batch": "1325b011ce8beec7.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Penta",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 0,
+    "source": {
+      "title": "Penta",
+      "revision": 2814711,
+      "timestamp": "2026-09-30T19:11:50Z",
+      "sha256": "d840f05905ebfb41133d6d917e0f2e9f14abb76c0aa12b3f9344d8d48a675975",
+      "url": "https://wiki.warframe.com/w/Penta?oldid=2814711",
+      "batch": "908ead252b087ddb.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Secura Penta",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 0,
+    "source": {
+      "title": "Secura Penta",
+      "revision": 2785498,
+      "timestamp": "2026-06-16T03:39:06Z",
+      "sha256": "c4eac16ae8848190bd0800a6ee067655298bc5810010b929672900fc9af838cc",
+      "url": "https://wiki.warframe.com/w/Secura_Penta?oldid=2785498",
+      "batch": "b963fdc84b01a6d1.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Carmine Penta",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 0,
+    "source": {
+      "title": "Carmine Penta",
+      "revision": 2785496,
+      "timestamp": "2026-06-16T03:38:51Z",
+      "sha256": "ac01293e6cdf671d9cd9152ce5ec0b6bb0dc50e72f82b25a2735ba98fef33d4a",
+      "url": "https://wiki.warframe.com/w/Carmine_Penta?oldid=2785496",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Zymos",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Zymos",
+      "revision": 2814068,
+      "timestamp": "2026-09-28T20:04:00Z",
+      "sha256": "fafecdf57d8a0e25ba14790ea45bd50a31b85cf716ba58010df7cc750008f798",
+      "url": "https://wiki.warframe.com/w/Zymos?oldid=2814068",
+      "batch": "7774728aad08f940.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Cedo",
+    "attacks": [
+      1
+    ],
+    "maximumContacts": 11,
+    "source": {
+      "title": "Cedo",
+      "revision": 2796667,
+      "timestamp": "2026-08-02T09:39:13Z",
+      "sha256": "20c3a707f8dbe76e99f2fb5bad155c7e3c9a8b3924adc6970eddd1a641c7e8fa",
+      "url": "https://wiki.warframe.com/w/Cedo?oldid=2796667",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Cedo Prime",
+    "attacks": [
+      1
+    ],
+    "maximumContacts": 11,
+    "source": {
+      "title": "Cedo Prime",
+      "revision": 2796668,
+      "timestamp": "2026-08-02T09:39:59Z",
+      "sha256": "d212f38f9e9d85c55d8e3e0c5a518aef2034b391a95f355ab20bc8d205805680",
+      "url": "https://wiki.warframe.com/w/Cedo_Prime?oldid=2796668",
+      "batch": "0971887d57a24e89.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna",
+    "attacks": [
+      2
+    ],
+    "maximumContacts": 7,
+    "source": {
+      "title": "Trumna",
+      "revision": 2805022,
+      "timestamp": "2026-09-02T20:48:13Z",
+      "sha256": "1f18a1ebf62379418f383f6d42902f17a610675ddf00175da7fc70d7aab63fe6",
+      "url": "https://wiki.warframe.com/w/Trumna?oldid=2805022",
+      "batch": "abcc97bb813f1730.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Trumna Prime",
+    "attacks": [
+      2
+    ],
+    "maximumContacts": 7,
+    "source": {
+      "title": "Trumna Prime",
+      "revision": 2777545,
+      "timestamp": "2026-05-19T12:02:12Z",
+      "sha256": "f8728b4bc3e8876b777888ea70cd8984e9119add0851b5fe4d1b584d3137a053",
+      "url": "https://wiki.warframe.com/w/Trumna_Prime?oldid=2777545",
+      "batch": "abcc97bb813f1730.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron",
+    "attacks": [
+      1
+    ],
+    "maximumContacts": 6,
+    "source": {
+      "title": "Latron Incarnon Genesis",
+      "revision": 2815036,
+      "timestamp": "2026-10-01T17:34:23Z",
+      "sha256": "df217456a5cfe74b0adbb9d2b1bc952635b90158f8974198603a81e08da28240",
+      "url": "https://wiki.warframe.com/w/Latron_Incarnon_Genesis?oldid=2815036",
+      "batch": "882ad2a21087417f.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron Wraith",
+    "attacks": [
+      1
+    ],
+    "maximumContacts": 6,
+    "source": {
+      "title": "Latron Incarnon Genesis",
+      "revision": 2815036,
+      "timestamp": "2026-10-01T17:34:23Z",
+      "sha256": "df217456a5cfe74b0adbb9d2b1bc952635b90158f8974198603a81e08da28240",
+      "url": "https://wiki.warframe.com/w/Latron_Incarnon_Genesis?oldid=2815036",
+      "batch": "882ad2a21087417f.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Latron Prime",
+    "attacks": [
+      1
+    ],
+    "maximumContacts": 6,
+    "source": {
+      "title": "Latron Incarnon Genesis",
+      "revision": 2815036,
+      "timestamp": "2026-10-01T17:34:23Z",
+      "sha256": "df217456a5cfe74b0adbb9d2b1bc952635b90158f8974198603a81e08da28240",
+      "url": "https://wiki.warframe.com/w/Latron_Incarnon_Genesis?oldid=2815036",
+      "batch": "882ad2a21087417f.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Miter",
+    "attacks": [
+      0,
+      1
+    ],
+    "maximumContacts": 6,
+    "source": {
+      "title": "Miter",
+      "revision": 2816887,
+      "timestamp": "2026-10-08T09:47:35Z",
+      "sha256": "cc86813221b84e6065c653c7f377ccede7aafa8ec0c4fa6c164805914401809b",
+      "url": "https://wiki.warframe.com/w/Miter?oldid=2816887",
+      "batch": "82f4148f87e30ae8.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Drakgoon",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 2,
+    "source": {
+      "title": "Drakgoon",
+      "revision": 2814682,
+      "timestamp": "2026-09-30T18:47:19Z",
+      "sha256": "7382fad5c5d11f8fe1a23265445065c99f95fc868eabdd8b5afe072ed80774b2",
+      "url": "https://wiki.warframe.com/w/Drakgoon?oldid=2814682",
+      "batch": "13992f9358f93e0d.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Drakgoon",
+    "attacks": [
+      1
+    ],
+    "maximumContacts": 3,
+    "source": {
+      "title": "Drakgoon",
+      "revision": 2814682,
+      "timestamp": "2026-09-30T18:47:19Z",
+      "sha256": "7382fad5c5d11f8fe1a23265445065c99f95fc868eabdd8b5afe072ed80774b2",
+      "url": "https://wiki.warframe.com/w/Drakgoon?oldid=2814682",
+      "batch": "13992f9358f93e0d.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Kuva Drakgoon",
+    "attacks": [
+      0,
+      1
+    ],
+    "maximumContacts": 2,
+    "source": {
+      "title": "Kuva Drakgoon",
+      "revision": 2789972,
+      "timestamp": "2026-06-30T01:07:22Z",
+      "sha256": "78e1a0e1c29080e9844528c9e7ce20fb4fb3debeed5c1c8e478435595e2f7f06",
+      "url": "https://wiki.warframe.com/w/Kuva_Drakgoon?oldid=2789972",
+      "batch": "d79d4872042f3cc9.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tetra",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Tetra",
+      "revision": 2814720,
+      "timestamp": "2026-09-30T19:22:23Z",
+      "sha256": "a0dc483b416a2fafd40f028950aca78d2b6be41b2e584883dd114280c11fc8cb",
+      "url": "https://wiki.warframe.com/w/Tetra?oldid=2814720",
+      "batch": "34e255fa5450dd70.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Prisma Tetra",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Prisma Tetra",
+      "revision": 2784019,
+      "timestamp": "2026-06-07T18:04:17Z",
+      "sha256": "83b3873d0bc7e4a9bb9c243ef15b3d0f086f5d746a5594a313826ca866d832ca",
+      "url": "https://wiki.warframe.com/w/Prisma_Tetra?oldid=2784019",
+      "batch": "7ab348178585bb45.json"
+    }
+  },
+  {
+    "weaponId": "wiki:primary/Tenet Tetra",
+    "attacks": [
+      0
+    ],
+    "maximumContacts": 1,
+    "source": {
+      "title": "Tenet Tetra",
+      "revision": 2789961,
+      "timestamp": "2026-06-30T00:53:46Z",
+      "sha256": "36a58fc2fdba5116ed2f5f63d5e8a50674c3144c600e7fa38938631fc841eb89",
+      "url": "https://wiki.warframe.com/w/Tenet_Tetra?oldid=2789961",
+      "batch": "34e255fa5450dd70.json"
+    }
+  }
+]

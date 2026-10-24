@@ -25,7 +25,8 @@ public partial class App
             File.WriteAllText(report,JsonSerializer.Serialize(data,new JsonSerializerOptions{WriteIndented=true}));
             if(updates.Phase==ClientUpdatePhase.Ready&&args.Contains("--apply"))
             {
-                var window=new MainWindow();updates.Apply(()=>window.SaveWorkspaceForUpdateCheck(workspacePath),()=>{});
+                var window=new MainWindow();await window.PrepareWorkspaceForUpdateCheck();
+                updates.Apply(()=>window.SaveWorkspaceForUpdateCheck(workspacePath),()=>{});
                 if(updates.Phase!=ClientUpdatePhase.Applying)throw new InvalidOperationException(updates.Status);
             }
             else Shutdown(0);

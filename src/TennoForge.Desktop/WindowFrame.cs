@@ -20,7 +20,8 @@ internal static class WindowFrame
         window.UseLayoutRounding = true;
         TextRendering.Apply(window,VisualTreeHelper.GetDpi(window));
         window.SourceInitialized+=(_,_)=>TextRendering.Apply(window,VisualTreeHelper.GetDpi(window));
-        window.DpiChanged+=(_,e)=>TextRendering.Apply(window,e.NewDpi);
+        window.DpiChanged+=(_,e)=>{TextRendering.Apply(window,e.NewDpi);PopupLayout.Close(window);};
+        window.LocationChanged+=(_,_)=>PopupLayout.Close(window);
         TextOptions.SetTextHintingMode(window, TextHintingMode.Fixed);
         var systemCorners = OperatingSystem.IsWindowsVersionAtLeast(10, 0, 22000);
         WindowChrome.SetWindowChrome(window, new WindowChrome

@@ -1,0 +1,4292 @@
+{
+  "version": "wiki-kitgun-2787806",
+  "sources": [
+    {
+      "title": "Module:Modular/data",
+      "revision": 2787806,
+      "timestamp": "2026-06-22T05:27:50Z",
+      "sha256": "d8d24a13d7124c1a6c430727e45138f9a03324f5bd5f5fc5dc6e7ce2d6147eb2",
+      "url": "https://wiki.warframe.com/w/Module%3AModular/data?oldid=2787806",
+      "batch": "fd97cf4684cf66b3.json"
+    },
+    {
+      "title": "Module:Modular",
+      "revision": 2813993,
+      "timestamp": "2026-09-28T16:22:40Z",
+      "sha256": "31f8fa336ab0fbd807461a316cf455fd8bb374e12f677e6c296848f178b8f73b",
+      "url": "https://wiki.warframe.com/w/Module%3AModular?oldid=2813993",
+      "batch": "fd97cf4684cf66b3.json"
+    },
+    {
+      "title": "Pax Charge",
+      "revision": 2702151,
+      "timestamp": "2025-10-26T20:32:24Z",
+      "sha256": "22a51df71c6b545e7bb3b6ce45b96cec484b8482eb227db36b61acd96be1679c",
+      "url": "https://wiki.warframe.com/w/Pax_Charge?oldid=2702151",
+      "batch": "1325b011ce8beec7.json"
+    },
+    {
+      "title": "Pax Soar",
+      "revision": 2793291,
+      "timestamp": "2026-07-13T18:27:29Z",
+      "sha256": "9074df4980fc6c3f4ba8dda27dd7206e34c5491db3b669ca4e130b1643d2845b",
+      "url": "https://wiki.warframe.com/w/Pax_Soar?oldid=2793291",
+      "batch": "1325b011ce8beec7.json"
+    },
+    {
+      "title": "Pax Bolt",
+      "revision": 2702149,
+      "timestamp": "2025-10-26T20:31:55Z",
+      "sha256": "45d9d9a258a3d5c27688ca65efa95f704e29971ab024db9e4406c5b24dd7c740",
+      "url": "https://wiki.warframe.com/w/Pax_Bolt?oldid=2702149",
+      "batch": "1325b011ce8beec7.json"
+    },
+    {
+      "title": "Pax Seeker",
+      "revision": 2791739,
+      "timestamp": "2026-07-07T10:59:55Z",
+      "sha256": "3056e21c89b3c3454868052320c11ba7c78cdbc1dbeff8fac3b99192b3bce75d",
+      "url": "https://wiki.warframe.com/w/Pax_Seeker?oldid=2791739",
+      "batch": "1325b011ce8beec7.json"
+    }
+  ],
+  "weapons": [
+    {
+      "weaponId": "wiki:modular/Catchmoon (Primary)",
+      "chamber": "Catchmoon",
+      "category": "primary",
+      "template": {
+        "id": "wiki:modular/Catchmoon (Primary)",
+        "internalId": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart",
+        "name": "캐치문",
+        "englishName": "Catchmoon (Primary)",
+        "category": "modular",
+        "weaponType": "Shotgun",
+        "source": "https://wiki.warframe.com/w/Catchmoon",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 22.2,
+          "AmmoMax": 70,
+          "AmmoPickup": 15,
+          "AmmoType": "Primary",
+          "Attacks": [
+            {
+              "AmmoCost": 1,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Heat": 0,
+                "Impact": 0
+              },
+              "ExtraHeadshotDmg": -2,
+              "Falloff": {
+                "EndRange": 40,
+                "Reduction": 0.9416,
+                "StartRange": 20
+              },
+              "FireRate": 0,
+              "ForcedProcs": [
+                "Impact"
+              ],
+              "IsSilent": false,
+              "MaxSpread": 6,
+              "MinSpread": 3,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 42,
+              "ShotSpeed": 100,
+              "ShotType": "Projectile",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Shotgun",
+          "CompatibilityTags": [
+            "MODULAR_GUN",
+            "SEMI_AUTO"
+          ],
+          "Conclave": false,
+          "Disposition": 1.1,
+          "ExilusPolarity": "Madurai",
+          "Family": "Catchmoon",
+          "Image": "Catchmoon.png",
+          "InternalName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart",
+          "Introduced": "28",
+          "Link": "Catchmoon",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Catchmoon (Primary)",
+          "Reload": 0,
+          "Slot": "Primary",
+          "Trigger": "Auto",
+          "_IgnoreInMasteryCount": true,
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 22.2,
+        "AmmoCost": 1,
+        "AmmoMax": 70,
+        "AmmoPickup": 15,
+        "CompatibilityTags": [
+          "MODULAR_GUN",
+          "SEMI_AUTO"
+        ],
+        "CritChance": 0.21,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Heat": 167,
+            "Impact": 89
+          },
+          "Brash": {
+            "Heat": 73,
+            "Impact": 37
+          },
+          "Palmaris": {
+            "Heat": 76,
+            "Impact": 40
+          },
+          "Shrewd": {
+            "Heat": 79,
+            "Impact": 43
+          },
+          "Steadyslam": {
+            "Heat": 105.5,
+            "Impact": 69.5
+          },
+          "Tremor": {
+            "Heat": 126,
+            "Impact": 90
+          }
+        },
+        "Disposition": 1.05,
+        "Falloff": {
+          "StartRange": 20,
+          "EndRange": 40,
+          "Reduction": 0.9416
+        },
+        "FireRate": {
+          "Brash": 5.67,
+          "Palmaris": 5.17,
+          "Shrewd": 4.67,
+          "Steadyslam": 3.33,
+          "Tremor": 3
+        },
+        "ForcedProcs": [
+          "Impact"
+        ],
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 39,
+          "High": 11,
+          "Highest": 13,
+          "Low": 7,
+          "Lowest": 5,
+          "Med": 9,
+          "MegaHighest": 23,
+          "SuperHighest": 17
+        },
+        "MaxSpread": 6,
+        "MinSpread": 3,
+        "Multishot": 1,
+        "Name": "Catchmoon",
+        "Range": 42,
+        "StatusChance": 0.21,
+        "Trigger": "Auto",
+        "ShotType": "Projectile"
+      },
+      "grips": {
+        "Brash": {
+          "Name": "Brash",
+          "Recoil": -0.5
+        },
+        "Palmaris": {
+          "Name": "Palmaris",
+          "Recoil": 0
+        },
+        "Shrewd": {
+          "Name": "Shrewd",
+          "Recoil": 0
+        },
+        "Steadyslam": {
+          "Name": "Steadyslam",
+          "Recoil": 0.5
+        },
+        "Tremor": {
+          "Name": "Tremor",
+          "Recoil": 1
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Catchmoon",
+        "revision": 2658209,
+        "timestamp": "2025-01-31T15:49:55Z",
+        "sha256": "a8ee70de2bb5fbeffc9be78d55229c5e45131de28f1c9e17fce18ba9e59ef75e",
+        "url": "https://wiki.warframe.com/w/Catchmoon?oldid=2658209",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Gaze (Primary)",
+      "chamber": "Gaze",
+      "category": "primary",
+      "template": {
+        "id": "wiki:modular/Gaze (Primary)",
+        "internalId": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelDPart",
+        "name": "게이즈",
+        "englishName": "Gaze (Primary)",
+        "category": "modular",
+        "weaponType": "Rifle",
+        "source": "https://wiki.warframe.com/w/Gaze",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 100,
+          "AmmoMax": 200,
+          "AmmoPickup": 40,
+          "AmmoType": "Primary",
+          "Attacks": [
+            {
+              "AmmoCost": 0.5,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Radiation": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "MaxSpread": 0,
+              "MinSpread": 0,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 0,
+              "ShotType": "Hit-Scan",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 2,
+              "AttackName": "Area of Effect",
+              "AttackParentIndex": 1,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Radiation": 0
+              },
+              "Falloff": {
+                "EndRange": 3,
+                "Reduction": 0,
+                "StartRange": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 3,
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Rifle",
+          "CompatibilityTags": [
+            "BEAM"
+          ],
+          "Conclave": false,
+          "Disposition": 1.1,
+          "ExilusPolarity": "Madurai",
+          "Family": "Gaze",
+          "Image": "Gaze.png",
+          "InternalName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelDPart",
+          "Introduced": "28",
+          "Link": "Gaze",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Gaze (Primary)",
+          "Reload": 0,
+          "Slot": "Primary",
+          "Trigger": "Held",
+          "_IgnoreInMasteryCount": true,
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 100,
+        "AmmoCost": 0.5,
+        "AmmoMax": 200,
+        "AmmoPickup": 40,
+        "CompatibilityTags": [
+          "BEAM"
+        ],
+        "CritChance": 0.25,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Radiation": 11
+          },
+          "Brash": {
+            "Radiation": 29
+          },
+          "Palmaris": {
+            "Radiation": 30
+          },
+          "Shrewd": {
+            "Radiation": 31
+          },
+          "Steadyslam": {
+            "Radiation": 35
+          },
+          "Tremor": {
+            "Radiation": 37
+          }
+        },
+        "Disposition": 1,
+        "FireRate": {
+          "Brash": 12,
+          "Palmaris": 12,
+          "Shrewd": 12,
+          "Steadyslam": 12,
+          "Tremor": 12
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 113,
+          "High": 43,
+          "Highest": 51,
+          "Low": 31,
+          "Lowest": 23,
+          "Med": 37,
+          "MegaHighest": 85,
+          "SuperHighest": 49
+        },
+        "MaxSpread": 0,
+        "MinSpread": 0,
+        "Multishot": 1,
+        "Name": "Gaze",
+        "Range": {
+          "Brash": 30,
+          "Palmaris": 28,
+          "Shrewd": 26,
+          "Steadyslam": 20,
+          "Tremor": 16
+        },
+        "StatusChance": 0.25,
+        "Trigger": "Held",
+        "ShotType": "Hit-Scan"
+      },
+      "grips": {
+        "Brash": {
+          "Name": "Brash",
+          "Recoil": -0.5
+        },
+        "Palmaris": {
+          "Name": "Palmaris",
+          "Recoil": 0
+        },
+        "Shrewd": {
+          "Name": "Shrewd",
+          "Recoil": 0
+        },
+        "Steadyslam": {
+          "Name": "Steadyslam",
+          "Recoil": 0.5
+        },
+        "Tremor": {
+          "Name": "Tremor",
+          "Recoil": 1
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Gaze",
+        "revision": 2787802,
+        "timestamp": "2026-06-22T05:23:54Z",
+        "sha256": "7148d285f625e9241d1c1962aae8ddaa1a20e089b022077f9ea6f74812eabd95",
+        "url": "https://wiki.warframe.com/w/Gaze?oldid=2787802",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Rattleguts (Primary)",
+      "chamber": "Rattleguts",
+      "category": "primary",
+      "template": {
+        "id": "wiki:modular/Rattleguts (Primary)",
+        "internalId": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelCPart",
+        "name": "래틀것",
+        "englishName": "Rattleguts (Primary)",
+        "category": "modular",
+        "weaponType": "Rifle",
+        "source": "https://wiki.warframe.com/w/Rattleguts",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 20,
+          "AmmoMax": 700,
+          "AmmoPickup": 80,
+          "AmmoType": "Primary",
+          "Attacks": [
+            {
+              "AmmoCost": 1,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Impact": 0,
+                "Puncture": 0,
+                "Radiation": 0,
+                "Slash": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "MaxSpread": 6,
+              "MinSpread": 4,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 0,
+              "ShotType": "Hit-Scan",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Rifle",
+          "Conclave": false,
+          "Disposition": 1,
+          "ExilusPolarity": "Madurai",
+          "Family": "Rattleguts",
+          "Image": "Rattleguts.png",
+          "InternalName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelCPart",
+          "Introduced": "28",
+          "Link": "Rattleguts",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Rattleguts (Primary)",
+          "Reload": 0,
+          "Slot": "Primary",
+          "Trigger": "Auto",
+          "_IgnoreInMasteryCount": true,
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 20,
+        "AmmoCost": 1,
+        "AmmoMax": 700,
+        "AmmoPickup": 80,
+        "CritChance": 0.19,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Impact": 2,
+            "Puncture": 10,
+            "Radiation": 13,
+            "Slash": 8
+          },
+          "Brash": {
+            "Impact": 1.5,
+            "Puncture": 4.5,
+            "Radiation": 8.5,
+            "Slash": 2.5
+          },
+          "Palmaris": {
+            "Impact": 1.7,
+            "Puncture": 4.8,
+            "Radiation": 8.9,
+            "Slash": 2.7
+          },
+          "Shrewd": {
+            "Impact": 1.8,
+            "Puncture": 4.8,
+            "Radiation": 8.8,
+            "Slash": 2.8
+          },
+          "Steadyslam": {
+            "Impact": 4.3,
+            "Puncture": 7.3,
+            "Radiation": 11.3,
+            "Slash": 5.3
+          },
+          "Tremor": {
+            "Impact": 6.5,
+            "Puncture": 9.5,
+            "Radiation": 13.5,
+            "Slash": 7.5
+          }
+        },
+        "Disposition": 1,
+        "FireRate": {
+          "Brash": 17,
+          "Palmaris": 15.5,
+          "Shrewd": 14,
+          "Steadyslam": 10,
+          "Tremor": 9
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 153,
+          "High": 64,
+          "Highest": 83,
+          "Low": 45,
+          "Lowest": 29,
+          "Med": 57,
+          "MegaHighest": 111,
+          "SuperHighest": 75
+        },
+        "MaxSpread": 6,
+        "MinSpread": 4,
+        "Multishot": 1,
+        "Name": "Rattleguts",
+        "StatusChance": 0.19,
+        "Trigger": "Auto",
+        "ShotType": "Hit-Scan"
+      },
+      "grips": {
+        "Brash": {
+          "Name": "Brash",
+          "Recoil": -0.5
+        },
+        "Palmaris": {
+          "Name": "Palmaris",
+          "Recoil": 0
+        },
+        "Shrewd": {
+          "Name": "Shrewd",
+          "Recoil": 0
+        },
+        "Steadyslam": {
+          "Name": "Steadyslam",
+          "Recoil": 0.5
+        },
+        "Tremor": {
+          "Name": "Tremor",
+          "Recoil": 1
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Rattleguts",
+        "revision": 2584578,
+        "timestamp": "2023-05-28T05:04:01Z",
+        "sha256": "0bed865ffcecfd9adab1d03a68cea19eb7bce1c7c44ed95066587edf36786570",
+        "url": "https://wiki.warframe.com/w/Rattleguts?oldid=2584578",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Sporelacer (Primary)",
+      "chamber": "Sporelacer",
+      "category": "primary",
+      "template": {
+        "id": "wiki:modular/Sporelacer (Primary)",
+        "internalId": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelEgg/InfModularBarrelEggPart",
+        "name": "스포어레이서",
+        "englishName": "Sporelacer (Primary)",
+        "category": "modular",
+        "weaponType": "Shotgun",
+        "source": "https://wiki.warframe.com/w/Sporelacer",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 5.9,
+          "AmmoMax": 60,
+          "AmmoPickup": 15,
+          "AmmoType": "Primary",
+          "Attacks": [
+            {
+              "AmmoCost": 1,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Impact": 0
+              },
+              "Falloff": {
+                "EndRange": 16,
+                "Reduction": 0,
+                "StartRange": 8
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "MaxSpread": 22,
+              "MinSpread": 12,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "ShotSpeed": 50,
+              "ShotType": "Projectile",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 2,
+              "AttackName": "Explosion",
+              "AttackParentIndex": 1,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Toxin": 0
+              },
+              "Falloff": {
+                "EndRange": 2.1,
+                "Reduction": 0.2,
+                "StartRange": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 2.1,
+              "ShotType": "AoE",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Shotgun",
+          "CompatibilityTags": [
+            "MODULAR_GUN",
+            "SEMI_AUTO"
+          ],
+          "Conclave": false,
+          "Disposition": 1.15,
+          "ExilusPolarity": "Madurai",
+          "Family": "Sporelacer",
+          "Image": "Sporelacer.png",
+          "InternalName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelEgg/InfModularBarrelEggPart",
+          "Introduced": "29.5",
+          "Link": "Sporelacer",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Sporelacer (Primary)",
+          "Polarities": [],
+          "Reload": 0,
+          "Slot": "Primary",
+          "Traits": [
+            "Infested",
+            "Kitgun"
+          ],
+          "Trigger": "Auto",
+          "_IgnoreInMasteryCount": true,
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 5.9,
+        "AmmoCost": 1,
+        "AmmoMax": 60,
+        "AmmoPickup": 15,
+        "CompatibilityTags": [
+          "MODULAR_GUN",
+          "SEMI_AUTO"
+        ],
+        "CritChance": 0.21,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Impact": 21,
+            "Toxin": 69
+          },
+          "Brash": {
+            "Impact": 21,
+            "Toxin": 69
+          },
+          "Palmaris": {
+            "Impact": 27,
+            "Toxin": 75
+          },
+          "Shrewd": {
+            "Impact": 33,
+            "Toxin": 81
+          },
+          "Steadyslam": {
+            "Impact": 86,
+            "Toxin": 134
+          },
+          "Tremor": {
+            "Impact": 127,
+            "Toxin": 175
+          }
+        },
+        "Disposition": 1,
+        "Falloff": {
+          "StartRange": 8,
+          "EndRange": 16,
+          "Reduction": 0.922
+        },
+        "FireRate": {
+          "Brash": 5.67,
+          "Palmaris": 5.17,
+          "Shrewd": 4.67,
+          "Steadyslam": 3.33,
+          "Tremor": 3
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 39,
+          "High": 11,
+          "Highest": 13,
+          "Low": 7,
+          "Lowest": 5,
+          "Med": 9,
+          "MegaHighest": 23,
+          "SuperHighest": 17
+        },
+        "MaxSpread": 22,
+        "MinSpread": 12,
+        "Multishot": 1,
+        "Name": "Sporelacer",
+        "StatusChance": 0.21,
+        "Trigger": "Auto",
+        "ShotType": "Projectile"
+      },
+      "grips": {
+        "Brash": {
+          "Name": "Brash",
+          "Recoil": -0.5
+        },
+        "Palmaris": {
+          "Name": "Palmaris",
+          "Recoil": 0
+        },
+        "Shrewd": {
+          "Name": "Shrewd",
+          "Recoil": 0
+        },
+        "Steadyslam": {
+          "Name": "Steadyslam",
+          "Recoil": 0.5
+        },
+        "Tremor": {
+          "Name": "Tremor",
+          "Recoil": 1
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Sporelacer",
+        "revision": 2757746,
+        "timestamp": "2026-04-03T08:16:02Z",
+        "sha256": "ac27524938980a06554f632eb160ddac17432aa7889ed9afed09a54c3826aab2",
+        "url": "https://wiki.warframe.com/w/Sporelacer?oldid=2757746",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Tombfinger (Primary)",
+      "chamber": "Tombfinger",
+      "category": "primary",
+      "template": {
+        "id": "wiki:modular/Tombfinger (Primary)",
+        "internalId": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelBPart",
+        "name": "툼핑거",
+        "englishName": "Tombfinger (Primary)",
+        "category": "modular",
+        "weaponType": "Launcher",
+        "source": "https://wiki.warframe.com/w/Tombfinger",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 50,
+          "AmmoMax": 120,
+          "AmmoPickup": 20,
+          "AmmoType": "Primary",
+          "Attacks": [
+            {
+              "AmmoCost": 1,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Impact": 0,
+                "Radiation": 0
+              },
+              "FireRate": 0,
+              "ForcedProcs": [
+                "Impact"
+              ],
+              "IsSilent": false,
+              "MaxSpread": 3,
+              "MinSpread": 1,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "ShotSpeed": 90,
+              "ShotType": "Projectile",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 2,
+              "AttackName": "Quick Shot Explosion",
+              "AttackParentIndex": 1,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Radiation": 0
+              },
+              "Falloff": {
+                "EndRange": 1.7,
+                "Reduction": 0.25,
+                "StartRange": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 1.7,
+              "ShotType": "AoE",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 3,
+              "AttackName": "Charged Shot Explosion",
+              "AttackParentIndex": 1,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Radiation": 0
+              },
+              "Falloff": {
+                "EndRange": 6.2,
+                "Reduction": 0.7,
+                "StartRange": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 6.2,
+              "ShotType": "AoE",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Launcher",
+          "CompatibilityTags": [
+            "PROJECTILE",
+            "AOE",
+            "MODULAR_GUN",
+            "SEMI_AUTO"
+          ],
+          "Conclave": false,
+          "Disposition": 1,
+          "Family": "Tombfinger",
+          "ExilusPolarity": "Madurai",
+          "Image": "Tombfinger.png",
+          "InternalName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelBPart",
+          "Introduced": "28",
+          "Link": "Tombfinger",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Tombfinger (Primary)",
+          "Reload": 0,
+          "Slot": "Primary",
+          "Trigger": "Charge",
+          "_IgnoreInMasteryCount": true,
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 50,
+        "AmmoCost": 1,
+        "AmmoMax": 120,
+        "AmmoPickup": 20,
+        "ChargeTime": {
+          "Brash": 0.5,
+          "Palmaris": 0.5,
+          "Shrewd": 0.8,
+          "Steadyslam": 1.1,
+          "Tremor": 1.4
+        },
+        "CompatibilityTags": [
+          "PROJECTILE",
+          "AOE",
+          "MODULAR_GUN",
+          "SEMI_AUTO"
+        ],
+        "CritChance": 0.24,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Impact": 40,
+            "Radiation": 18
+          },
+          "Brash": {
+            "Impact": 30,
+            "Radiation": 8
+          },
+          "Palmaris": {
+            "Impact": 32.5,
+            "Radiation": 10.5
+          },
+          "Shrewd": {
+            "Impact": 35,
+            "Radiation": 13
+          },
+          "Steadyslam": {
+            "Impact": 54.5,
+            "Radiation": 32.5
+          },
+          "Tremor": {
+            "Impact": 69,
+            "Radiation": 47
+          }
+        },
+        "Disposition": 1,
+        "FireRate": {
+          "Brash": 3.77,
+          "Palmaris": 3.45,
+          "Shrewd": 3.13,
+          "Steadyslam": 2.32,
+          "Tremor": 2.13
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 49,
+          "High": 23,
+          "Highest": 29,
+          "Low": 15,
+          "Lowest": 9,
+          "Med": 19,
+          "MegaHighest": 35,
+          "SuperHighest": 31
+        },
+        "MaxSpread": 3,
+        "MinSpread": 1,
+        "Multishot": 1,
+        "Name": "Tombfinger",
+        "StatusChance": 0.24,
+        "Trigger": "Charge",
+        "ShotType": "Projectile"
+      },
+      "grips": {
+        "Brash": {
+          "Name": "Brash",
+          "Recoil": -0.5
+        },
+        "Palmaris": {
+          "Name": "Palmaris",
+          "Recoil": 0
+        },
+        "Shrewd": {
+          "Name": "Shrewd",
+          "Recoil": 0
+        },
+        "Steadyslam": {
+          "Name": "Steadyslam",
+          "Recoil": 0.5
+        },
+        "Tremor": {
+          "Name": "Tremor",
+          "Recoil": 1
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Tombfinger",
+        "revision": 2657912,
+        "timestamp": "2025-01-31T15:43:34Z",
+        "sha256": "366567575a34aebd6fc665e43963b7ab8de5e5c7925df7efd88e6c00af224a44",
+        "url": "https://wiki.warframe.com/w/Tombfinger?oldid=2657912",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Vermisplicer (Primary)",
+      "chamber": "Vermisplicer",
+      "category": "primary",
+      "template": {
+        "id": "wiki:modular/Vermisplicer (Primary)",
+        "internalId": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelBeam/InfModularBarrelBeamPart",
+        "name": "버미스플라이서",
+        "englishName": "Vermisplicer (Primary)",
+        "category": "modular",
+        "weaponType": "Rifle",
+        "source": "https://wiki.warframe.com/w/Vermisplicer",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 80,
+          "AmmoMax": 90,
+          "AmmoPickup": 40,
+          "AmmoType": "Primary",
+          "Attacks": [
+            {
+              "AmmoCost": 0.5,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Impact": 0,
+                "Puncture": 0,
+                "Slash": 0,
+                "Toxin": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "MaxSpread": 1.5,
+              "MinSpread": 1,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "ShotType": "Hit-Scan",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 2,
+              "AttackName": "Tendril",
+              "AttackParentIndex": 1,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Impact": 0,
+                "Puncture": 0,
+                "Slash": 0,
+                "Toxin": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 6,
+              "ShotType": "Hit-Scan",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Rifle",
+          "CompatibilityTags": [
+            "BEAM"
+          ],
+          "Conclave": false,
+          "Disposition": 0.9,
+          "Family": "Vermisplicer",
+          "ExilusPolarity": "Madurai",
+          "Image": "Vermisplicer.png",
+          "InternalName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelBeam/InfModularBarrelBeamPart",
+          "Introduced": "29.5",
+          "Link": "Vermisplicer",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Vermisplicer (Primary)",
+          "Reload": 0,
+          "Slot": "Primary",
+          "Traits": [
+            "Infested",
+            "Kitgun"
+          ],
+          "Trigger": "Held",
+          "_IgnoreInMasteryCount": true,
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 80,
+        "AmmoCost": 0.5,
+        "AmmoMax": 90,
+        "AmmoPickup": 40,
+        "CompatibilityTags": [
+          "BEAM"
+        ],
+        "CritChance": 0.25,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Impact": 5,
+            "Puncture": 6,
+            "Slash": 10,
+            "Toxin": 12
+          },
+          "Brash": {
+            "Impact": 5,
+            "Puncture": 6,
+            "Slash": 10,
+            "Toxin": 12
+          },
+          "Palmaris": {
+            "Impact": 5.3,
+            "Puncture": 6.3,
+            "Slash": 10.3,
+            "Toxin": 12.3
+          },
+          "Shrewd": {
+            "Impact": 5.5,
+            "Puncture": 6.5,
+            "Slash": 10.5,
+            "Toxin": 12.5
+          },
+          "Steadyslam": {
+            "Impact": 5,
+            "Puncture": 6,
+            "Slash": 10,
+            "Toxin": 12
+          },
+          "Tremor": {
+            "Impact": 6.5,
+            "Puncture": 7.5,
+            "Slash": 11.5,
+            "Toxin": 13.5
+          }
+        },
+        "Disposition": 0.9,
+        "FireRate": {
+          "Brash": 12,
+          "Palmaris": 12,
+          "Shrewd": 12,
+          "Steadyslam": 12,
+          "Tremor": 12
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 113,
+          "High": 43,
+          "Highest": 51,
+          "Low": 31,
+          "Lowest": 23,
+          "Med": 37,
+          "MegaHighest": 85,
+          "SuperHighest": 49
+        },
+        "MaxSpread": 1.5,
+        "MinSpread": 1,
+        "Multishot": 1,
+        "Name": "Vermisplicer",
+        "Range": {
+          "Brash": 30,
+          "Palmaris": 28,
+          "Shrewd": 26,
+          "Steadyslam": 20,
+          "Tremor": 16
+        },
+        "StatusChance": 0.25,
+        "Trigger": "Held",
+        "ShotType": "Hit-Scan"
+      },
+      "grips": {
+        "Brash": {
+          "Name": "Brash",
+          "Recoil": -0.5
+        },
+        "Palmaris": {
+          "Name": "Palmaris",
+          "Recoil": 0
+        },
+        "Shrewd": {
+          "Name": "Shrewd",
+          "Recoil": 0
+        },
+        "Steadyslam": {
+          "Name": "Steadyslam",
+          "Recoil": 0.5
+        },
+        "Tremor": {
+          "Name": "Tremor",
+          "Recoil": 1
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Vermisplicer",
+        "revision": 2792155,
+        "timestamp": "2026-07-09T04:51:54Z",
+        "sha256": "92b6106ec3d39aab7223478c702b230d025a69a51fd0e5e990f6b8f5d7545deb",
+        "url": "https://wiki.warframe.com/w/Vermisplicer?oldid=2792155",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Catchmoon (Secondary)",
+      "chamber": "Catchmoon",
+      "category": "secondary",
+      "template": {
+        "id": "wiki:modular/Catchmoon (Secondary)",
+        "internalId": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart",
+        "name": "캐치문",
+        "englishName": "Catchmoon (Secondary)",
+        "category": "modular",
+        "weaponType": "Pistol",
+        "source": "https://wiki.warframe.com/w/Catchmoon",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 5.9,
+          "AmmoMax": 70,
+          "AmmoPickup": 20,
+          "AmmoType": "Secondary",
+          "Attacks": [
+            {
+              "AmmoCost": 1,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Heat": 0,
+                "Impact": 0
+              },
+              "ExtraHeadshotDmg": -2,
+              "Falloff": {
+                "EndRange": 16,
+                "Reduction": 0.9375,
+                "StartRange": 8
+              },
+              "FireRate": 0,
+              "ForcedProcs": [
+                "Impact"
+              ],
+              "IsSilent": false,
+              "MaxSpread": 22,
+              "MinSpread": 12,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 20,
+              "ShotSpeed": 100,
+              "ShotType": "Projectile",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Pistol",
+          "CompatibilityTags": [
+            "MODULAR_GUN",
+            "SEMI_AUTO"
+          ],
+          "Conclave": false,
+          "Disposition": 0.75,
+          "ExilusPolarity": "Madurai",
+          "Family": "Catchmoon",
+          "Image": "Catchmoon.png",
+          "InternalName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelAPart",
+          "Introduced": "24",
+          "Link": "Catchmoon",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Catchmoon (Secondary)",
+          "Reload": 0,
+          "Slot": "Secondary",
+          "Trigger": "Semi-Auto",
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 5.9,
+        "AmmoCost": 1,
+        "AmmoMax": 70,
+        "AmmoPickup": 20,
+        "CompatibilityTags": [
+          "MODULAR_GUN",
+          "SEMI_AUTO"
+        ],
+        "CritChance": 0.21,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Heat": 167,
+            "Impact": 89
+          },
+          "Gibber": {
+            "Heat": 119,
+            "Impact": 41
+          },
+          "Haymaker": {
+            "Heat": 269,
+            "Impact": 191
+          },
+          "Lovetap": {
+            "Heat": 218,
+            "Impact": 140
+          },
+          "Ramble": {
+            "Heat": 143,
+            "Impact": 65
+          },
+          "Ulnaris": {
+            "Heat": 184,
+            "Impact": 106
+          }
+        },
+        "Disposition": 0.5,
+        "Falloff": {
+          "StartRange": 8,
+          "EndRange": 16,
+          "Reduction": 0.9375
+        },
+        "FireRate": {
+          "Gibber": 3.17,
+          "Haymaker": 1.17,
+          "Lovetap": 1.5,
+          "Ramble": 2.5,
+          "Ulnaris": 1.83
+        },
+        "ForcedProcs": [
+          "Impact"
+        ],
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 39,
+          "High": 11,
+          "Highest": 13,
+          "Low": 7,
+          "Lowest": 5,
+          "Med": 9,
+          "MegaHighest": 23,
+          "SuperHighest": 17
+        },
+        "MaxSpread": 22,
+        "MinSpread": 12,
+        "Multishot": 1,
+        "Name": "Catchmoon",
+        "Range": 20,
+        "StatusChance": 0.21,
+        "Trigger": "Semi-Auto",
+        "ShotType": "Projectile"
+      },
+      "grips": {
+        "Gibber": {
+          "Name": "Gibber",
+          "Recoil": -0.5
+        },
+        "Haymaker": {
+          "Name": "Haymaker",
+          "Recoil": 1
+        },
+        "Lovetap": {
+          "Name": "Lovetap",
+          "Recoil": 0.5
+        },
+        "Ramble": {
+          "Name": "Ramble",
+          "Recoil": 0
+        },
+        "Ulnaris": {
+          "Name": "Ulnaris",
+          "Recoil": 0
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Catchmoon",
+        "revision": 2658209,
+        "timestamp": "2025-01-31T15:49:55Z",
+        "sha256": "a8ee70de2bb5fbeffc9be78d55229c5e45131de28f1c9e17fce18ba9e59ef75e",
+        "url": "https://wiki.warframe.com/w/Catchmoon?oldid=2658209",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Gaze (Secondary)",
+      "chamber": "Gaze",
+      "category": "secondary",
+      "template": {
+        "id": "wiki:modular/Gaze (Secondary)",
+        "internalId": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelDPart",
+        "name": "게이즈",
+        "englishName": "Gaze (Secondary)",
+        "category": "modular",
+        "weaponType": "Pistol",
+        "source": "https://wiki.warframe.com/w/Gaze",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 100,
+          "AmmoMax": 200,
+          "AmmoPickup": 20,
+          "AmmoType": "Secondary",
+          "Attacks": [
+            {
+              "AmmoCost": 0.5,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Puncture": 0,
+                "Radiation": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "MaxSpread": 0,
+              "MinSpread": 0,
+              "Multishot": 1,
+              "PunchThrough": 1,
+              "Range": 0,
+              "ShotType": "Hit-Scan",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Pistol",
+          "CompatibilityTags": [
+            "BEAM"
+          ],
+          "Conclave": false,
+          "Disposition": 1.05,
+          "ExilusPolarity": "Madurai",
+          "Family": "Gaze",
+          "Image": "Gaze.png",
+          "InternalName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelDPart",
+          "Introduced": "24",
+          "Link": "Gaze",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Gaze (Secondary)",
+          "Reload": 0,
+          "Slot": "Secondary",
+          "Trigger": "Held",
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 100,
+        "AmmoCost": 0.5,
+        "AmmoMax": 200,
+        "AmmoPickup": 20,
+        "CompatibilityTags": [
+          "BEAM"
+        ],
+        "CritChance": 0.25,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Puncture": 7,
+            "Radiation": 11
+          },
+          "Gibber": {
+            "Puncture": 6,
+            "Radiation": 10
+          },
+          "Haymaker": {
+            "Puncture": 8,
+            "Radiation": 12
+          },
+          "Lovetap": {
+            "Puncture": 7.5,
+            "Radiation": 11.5
+          },
+          "Ramble": {
+            "Puncture": 6.5,
+            "Radiation": 10.5
+          },
+          "Ulnaris": {
+            "Puncture": 7,
+            "Radiation": 11
+          }
+        },
+        "Disposition": 0.9,
+        "FireRate": {
+          "Gibber": 12,
+          "Haymaker": 12,
+          "Lovetap": 12,
+          "Ramble": 12,
+          "Ulnaris": 12
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 113,
+          "High": 43,
+          "Highest": 51,
+          "Low": 31,
+          "Lowest": 23,
+          "Med": 37,
+          "MegaHighest": 85,
+          "SuperHighest": 49
+        },
+        "MaxSpread": 0,
+        "MinSpread": 0,
+        "Multishot": 1,
+        "Name": "Gaze",
+        "PunchThrough": 1,
+        "Range": {
+          "Gibber": 41,
+          "Haymaker": 22,
+          "Lovetap": 25,
+          "Ramble": 38,
+          "Ulnaris": 30
+        },
+        "StatusChance": 0.25,
+        "Trigger": "Held",
+        "ShotType": "Hit-Scan"
+      },
+      "grips": {
+        "Gibber": {
+          "Name": "Gibber",
+          "Recoil": -0.5
+        },
+        "Haymaker": {
+          "Name": "Haymaker",
+          "Recoil": 1
+        },
+        "Lovetap": {
+          "Name": "Lovetap",
+          "Recoil": 0.5
+        },
+        "Ramble": {
+          "Name": "Ramble",
+          "Recoil": 0
+        },
+        "Ulnaris": {
+          "Name": "Ulnaris",
+          "Recoil": 0
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Gaze",
+        "revision": 2787802,
+        "timestamp": "2026-06-22T05:23:54Z",
+        "sha256": "7148d285f625e9241d1c1962aae8ddaa1a20e089b022077f9ea6f74812eabd95",
+        "url": "https://wiki.warframe.com/w/Gaze?oldid=2787802",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Rattleguts (Secondary)",
+      "chamber": "Rattleguts",
+      "category": "secondary",
+      "template": {
+        "id": "wiki:modular/Rattleguts (Secondary)",
+        "internalId": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelCPart",
+        "name": "래틀것",
+        "englishName": "Rattleguts (Secondary)",
+        "category": "modular",
+        "weaponType": "Pistol",
+        "source": "https://wiki.warframe.com/w/Rattleguts",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 20,
+          "AmmoMax": 700,
+          "AmmoPickup": 40,
+          "AmmoType": "Secondary",
+          "Attacks": [
+            {
+              "AmmoCost": 1,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Puncture": 0,
+                "Radiation": 0,
+                "Slash": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "MaxSpread": 6,
+              "MinSpread": 4,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 0,
+              "ShotType": "Hit-Scan",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Pistol",
+          "Conclave": false,
+          "Disposition": 1,
+          "ExilusPolarity": "Madurai",
+          "Family": "Rattleguts",
+          "Image": "Rattleguts.png",
+          "InternalName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelCPart",
+          "Introduced": "24",
+          "Link": "Rattleguts",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Rattleguts (Secondary)",
+          "Reload": 0,
+          "Slot": "Secondary",
+          "Trigger": "Auto",
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 20,
+        "AmmoCost": 1,
+        "AmmoMax": 700,
+        "AmmoPickup": 40,
+        "CritChance": 0.19,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Impact": 2,
+            "Puncture": 10,
+            "Radiation": 13,
+            "Slash": 8
+          },
+          "Gibber": {
+            "Impact": 0,
+            "Puncture": 7,
+            "Radiation": 10,
+            "Slash": 5
+          },
+          "Haymaker": {
+            "Impact": 11.5,
+            "Puncture": 19.5,
+            "Radiation": 22.5,
+            "Slash": 17.5
+          },
+          "Lovetap": {
+            "Impact": 6.75,
+            "Puncture": 14.75,
+            "Radiation": 17.75,
+            "Slash": 12.75
+          },
+          "Ramble": {
+            "Impact": 0.5,
+            "Puncture": 8.5,
+            "Radiation": 11.5,
+            "Slash": 6.5
+          },
+          "Ulnaris": {
+            "Impact": 3.5,
+            "Puncture": 11.5,
+            "Radiation": 14.5,
+            "Slash": 9.5
+          }
+        },
+        "Disposition": 0.75,
+        "FireRate": {
+          "Gibber": 11,
+          "Haymaker": 3.67,
+          "Lovetap": 5.17,
+          "Ramble": 8.83,
+          "Ulnaris": 6.67
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 153,
+          "High": 64,
+          "Highest": 83,
+          "Low": 45,
+          "Lowest": 29,
+          "Med": 57,
+          "MegaHighest": 111,
+          "SuperHighest": 75
+        },
+        "MaxSpread": 6,
+        "MinSpread": 4,
+        "Multishot": 1,
+        "Name": "Rattleguts",
+        "StatusChance": 0.19,
+        "Trigger": "Auto",
+        "ShotType": "Hit-Scan"
+      },
+      "grips": {
+        "Gibber": {
+          "Name": "Gibber",
+          "Recoil": -0.5
+        },
+        "Haymaker": {
+          "Name": "Haymaker",
+          "Recoil": 1
+        },
+        "Lovetap": {
+          "Name": "Lovetap",
+          "Recoil": 0.5
+        },
+        "Ramble": {
+          "Name": "Ramble",
+          "Recoil": 0
+        },
+        "Ulnaris": {
+          "Name": "Ulnaris",
+          "Recoil": 0
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Rattleguts",
+        "revision": 2584578,
+        "timestamp": "2023-05-28T05:04:01Z",
+        "sha256": "0bed865ffcecfd9adab1d03a68cea19eb7bce1c7c44ed95066587edf36786570",
+        "url": "https://wiki.warframe.com/w/Rattleguts?oldid=2584578",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Sporelacer (Secondary)",
+      "chamber": "Sporelacer",
+      "category": "secondary",
+      "template": {
+        "id": "wiki:modular/Sporelacer (Secondary)",
+        "internalId": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelEgg/InfModularBarrelEggPart",
+        "name": "스포어레이서",
+        "englishName": "Sporelacer (Secondary)",
+        "category": "modular",
+        "weaponType": "Pistol",
+        "source": "https://wiki.warframe.com/w/Sporelacer",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 5.9,
+          "AmmoMax": 130,
+          "AmmoPickup": 20,
+          "AmmoType": "Secondary",
+          "Attacks": [
+            {
+              "AmmoCost": 1,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Impact": 0
+              },
+              "Falloff": {
+                "EndRange": 26,
+                "Reduction": 0,
+                "StartRange": 13
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "MaxSpread": 22,
+              "MinSpread": 12,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "ShotSpeed": 57,
+              "ShotType": "Projectile",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 2,
+              "AttackName": "Explosion",
+              "AttackParentIndex": 1,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Toxin": 0
+              },
+              "Falloff": {
+                "EndRange": 4.7,
+                "Reduction": 0.5,
+                "StartRange": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 4.7,
+              "ShotType": "AoE",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 3,
+              "AttackName": "Bomblet Impact",
+              "AttackParentIndex": 2,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Toxin": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "ShotSpeed": 3,
+              "ShotType": "Projectile",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 4,
+              "AttackName": "Bomblet Explosion",
+              "AttackParentIndex": 3,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Toxin": 0
+              },
+              "Falloff": {
+                "EndRange": 2.1,
+                "Reduction": 0.8,
+                "StartRange": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 2.1,
+              "ShotType": "AoE",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Pistol",
+          "CompatibilityTags": [
+            "MODULAR_GUN",
+            "SEMI_AUTO"
+          ],
+          "Conclave": false,
+          "Disposition": 0.6,
+          "ExilusPolarity": "Madurai",
+          "Family": "Sporelacer",
+          "Image": "Sporelacer.png",
+          "InternalName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelEgg/InfModularBarrelEggPart",
+          "Introduced": "29.5",
+          "Link": "Sporelacer",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Sporelacer (Secondary)",
+          "Polarities": [],
+          "Reload": 0,
+          "Slot": "Secondary",
+          "Traits": [
+            "Infested",
+            "Kitgun"
+          ],
+          "Trigger": "Semi-Auto",
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 5.9,
+        "AmmoCost": 1,
+        "AmmoMax": 130,
+        "AmmoPickup": 20,
+        "CompatibilityTags": [
+          "MODULAR_GUN",
+          "SEMI_AUTO"
+        ],
+        "CritChance": 0.21,
+        "CritMultiplier": 3,
+        "Damage": {
+          "Base": {
+            "Impact": 21,
+            "Toxin": 69
+          },
+          "Gibber": {
+            "Toxin": 103
+          },
+          "Haymaker": {
+            "Impact": 261,
+            "Toxin": 403
+          },
+          "Lovetap": {
+            "Impact": 159,
+            "Toxin": 301
+          },
+          "Ramble": {
+            "Impact": 9,
+            "Toxin": 151
+          },
+          "Ulnaris": {
+            "Impact": 91,
+            "Toxin": 233
+          }
+        },
+        "Disposition": 0.55,
+        "Falloff": {
+          "StartRange": 13,
+          "EndRange": 26,
+          "Reduction": 0.9
+        },
+        "FireRate": {
+          "Gibber": 3.17,
+          "Haymaker": 1.17,
+          "Lovetap": 1.5,
+          "Ramble": 2.5,
+          "Ulnaris": 1.83
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 39,
+          "High": 11,
+          "Highest": 13,
+          "Low": 7,
+          "Lowest": 5,
+          "Med": 9,
+          "MegaHighest": 23,
+          "SuperHighest": 17
+        },
+        "MaxSpread": 22,
+        "MinSpread": 12,
+        "Multishot": 1,
+        "Name": "Sporelacer",
+        "StatusChance": 0.21,
+        "Trigger": "Semi-Auto",
+        "ShotType": "Projectile"
+      },
+      "grips": {
+        "Gibber": {
+          "Name": "Gibber",
+          "Recoil": -0.5
+        },
+        "Haymaker": {
+          "Name": "Haymaker",
+          "Recoil": 1
+        },
+        "Lovetap": {
+          "Name": "Lovetap",
+          "Recoil": 0.5
+        },
+        "Ramble": {
+          "Name": "Ramble",
+          "Recoil": 0
+        },
+        "Ulnaris": {
+          "Name": "Ulnaris",
+          "Recoil": 0
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Sporelacer",
+        "revision": 2757746,
+        "timestamp": "2026-04-03T08:16:02Z",
+        "sha256": "ac27524938980a06554f632eb160ddac17432aa7889ed9afed09a54c3826aab2",
+        "url": "https://wiki.warframe.com/w/Sporelacer?oldid=2757746",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Tombfinger (Secondary)",
+      "chamber": "Tombfinger",
+      "category": "secondary",
+      "template": {
+        "id": "wiki:modular/Tombfinger (Secondary)",
+        "internalId": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelBPart",
+        "name": "툼핑거",
+        "englishName": "Tombfinger (Secondary)",
+        "category": "modular",
+        "weaponType": "Pistol",
+        "source": "https://wiki.warframe.com/w/Tombfinger",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 50,
+          "AmmoMax": 210,
+          "AmmoPickup": 20,
+          "AmmoType": "Secondary",
+          "Attacks": [
+            {
+              "AmmoCost": 1,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Impact": 0,
+                "Puncture": 0,
+                "Radiation": 0
+              },
+              "FireRate": 0,
+              "ForcedProcs": [
+                "Impact"
+              ],
+              "IsSilent": false,
+              "MaxSpread": 3,
+              "MinSpread": 1,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "ShotSpeed": 180,
+              "ShotType": "Projectile",
+              "StatusChance": 0
+            },
+            {
+              "AttackIndex": 2,
+              "AttackName": "Explosion",
+              "AttackParentIndex": 1,
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Radiation": 0
+              },
+              "Falloff": {
+                "EndRange": 1.9,
+                "Reduction": 0.3,
+                "StartRange": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "Multishot": 1,
+              "PunchThrough": 0,
+              "Range": 1.9,
+              "ShotType": "AoE",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Pistol",
+          "CompatibilityTags": [
+            "PROJECTILE",
+            "AOE",
+            "MODULAR_GUN",
+            "SEMI_AUTO"
+          ],
+          "Conclave": false,
+          "Disposition": 0.9,
+          "ExilusPolarity": "Madurai",
+          "Family": "Tombfinger",
+          "Image": "Tombfinger.png",
+          "InternalName": "/Lotus/Weapons/SolarisUnited/Secondary/SUModularSecondarySet1/Barrel/SUModularSecondaryBarrelBPart",
+          "Introduced": "24",
+          "Link": "Tombfinger",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Tombfinger (Secondary)",
+          "Reload": 0,
+          "Slot": "Secondary",
+          "Trigger": "Semi-Auto",
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 50,
+        "AmmoCost": 1,
+        "AmmoMax": 210,
+        "AmmoPickup": 20,
+        "CompatibilityTags": [
+          "PROJECTILE",
+          "AOE",
+          "MODULAR_GUN",
+          "SEMI_AUTO"
+        ],
+        "CritChance": 0.24,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Impact": 16,
+            "Puncture": 9,
+            "Radiation": 59
+          },
+          "Gibber": {
+            "Impact": 8,
+            "Puncture": 1,
+            "Radiation": 27
+          },
+          "Haymaker": {
+            "Impact": 32,
+            "Puncture": 25,
+            "Radiation": 123
+          },
+          "Lovetap": {
+            "Impact": 24,
+            "Puncture": 17,
+            "Radiation": 91
+          },
+          "Ramble": {
+            "Impact": 12,
+            "Puncture": 5,
+            "Radiation": 43
+          },
+          "Ulnaris": {
+            "Impact": 18.67,
+            "Puncture": 11.67,
+            "Radiation": 69.67
+          }
+        },
+        "Disposition": 0.7,
+        "FireRate": {
+          "Gibber": 4.5,
+          "Haymaker": 2.17,
+          "Lovetap": 2.5,
+          "Ramble": 3.67,
+          "Ulnaris": 2.83
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 49,
+          "High": 23,
+          "Highest": 29,
+          "Low": 15,
+          "Lowest": 9,
+          "Med": 19,
+          "MegaHighest": 35,
+          "SuperHighest": 31
+        },
+        "MaxSpread": 3,
+        "MinSpread": 1,
+        "Multishot": 1,
+        "Name": "Tombfinger",
+        "StatusChance": 0.24,
+        "Trigger": "Semi-Auto",
+        "ShotType": "Projectile"
+      },
+      "grips": {
+        "Gibber": {
+          "Name": "Gibber",
+          "Recoil": -0.5
+        },
+        "Haymaker": {
+          "Name": "Haymaker",
+          "Recoil": 1
+        },
+        "Lovetap": {
+          "Name": "Lovetap",
+          "Recoil": 0.5
+        },
+        "Ramble": {
+          "Name": "Ramble",
+          "Recoil": 0
+        },
+        "Ulnaris": {
+          "Name": "Ulnaris",
+          "Recoil": 0
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Tombfinger",
+        "revision": 2657912,
+        "timestamp": "2025-01-31T15:43:34Z",
+        "sha256": "366567575a34aebd6fc665e43963b7ab8de5e5c7925df7efd88e6c00af224a44",
+        "url": "https://wiki.warframe.com/w/Tombfinger?oldid=2657912",
+        "batch": "1325b011ce8beec7.json"
+      }
+    },
+    {
+      "weaponId": "wiki:modular/Vermisplicer (Secondary)",
+      "chamber": "Vermisplicer",
+      "category": "secondary",
+      "template": {
+        "id": "wiki:modular/Vermisplicer (Secondary)",
+        "internalId": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelBeam/InfModularBarrelBeamPart",
+        "name": "버미스플라이서",
+        "englishName": "Vermisplicer (Secondary)",
+        "category": "modular",
+        "weaponType": "Pistol",
+        "source": "https://wiki.warframe.com/w/Vermisplicer",
+        "localized": true,
+        "calculable": false,
+        "limitations": [
+          "근접 외 공격·모드 규칙은 자료 열람 단계입니다."
+        ],
+        "raw": {
+          "Accuracy": 5.4,
+          "AmmoMax": 90,
+          "AmmoPickup": 20,
+          "AmmoType": "Secondary",
+          "Attacks": [
+            {
+              "AmmoCost": 0.5,
+              "AttackIndex": 1,
+              "AttackName": "Normal Attack",
+              "CritChance": 0,
+              "CritMultiplier": 0,
+              "Damage": {
+                "Impact": 0,
+                "Puncture": 0,
+                "Slash": 0,
+                "Toxin": 0
+              },
+              "FireRate": 0,
+              "IsSilent": false,
+              "MaxSpread": 37,
+              "MinSpread": 0,
+              "Multishot": 5,
+              "PunchThrough": 1,
+              "ShotType": "Hit-Scan",
+              "StatusChance": 0
+            }
+          ],
+          "Class": "Pistol",
+          "CompatibilityTags": [
+            "BEAM"
+          ],
+          "Conclave": false,
+          "Disposition": 1.15,
+          "ExilusPolarity": "Madurai",
+          "Family": "Vermisplicer",
+          "Image": "Vermisplicer.png",
+          "InternalName": "/Lotus/Weapons/Infested/Pistols/InfKitGun/Barrels/InfBarrelBeam/InfModularBarrelBeamPart",
+          "Introduced": "29.5",
+          "Link": "Vermisplicer",
+          "Magazine": 0,
+          "Mastery": 0,
+          "MaxRank": 30,
+          "Name": "Vermisplicer (Secondary)",
+          "Reload": 0,
+          "Slot": "Secondary",
+          "Traits": [
+            "Infested",
+            "Kitgun"
+          ],
+          "Trigger": "Held",
+          "_TooltipAttackDisplay": 1
+        }
+      },
+      "stats": {
+        "Accuracy": 80,
+        "AmmoCost": 0.5,
+        "AmmoMax": 90,
+        "AmmoPickup": 20,
+        "CompatibilityTags": [
+          "BEAM"
+        ],
+        "CritChance": 0.25,
+        "CritMultiplier": 2,
+        "Damage": {
+          "Base": {
+            "Impact": 1.5,
+            "Puncture": 3.5,
+            "Slash": 4.5,
+            "Toxin": 4.5
+          },
+          "Gibber": {
+            "Impact": 1.5,
+            "Puncture": 3.5,
+            "Slash": 4.5,
+            "Toxin": 4.5
+          },
+          "Haymaker": {
+            "Impact": 2.5,
+            "Puncture": 4.5,
+            "Slash": 5.5,
+            "Toxin": 5.5
+          },
+          "Lovetap": {
+            "Impact": 2.25,
+            "Puncture": 4.25,
+            "Slash": 5.25,
+            "Toxin": 5.25
+          },
+          "Ramble": {
+            "Impact": 1.75,
+            "Puncture": 3.75,
+            "Slash": 4.75,
+            "Toxin": 4.75
+          },
+          "Ulnaris": {
+            "Impact": 2,
+            "Puncture": 4,
+            "Slash": 5,
+            "Toxin": 5
+          }
+        },
+        "Disposition": 1,
+        "FireRate": {
+          "Gibber": 12,
+          "Haymaker": 12,
+          "Lovetap": 12,
+          "Ramble": 12,
+          "Ulnaris": 12
+        },
+        "IsSilent": false,
+        "Magazine": {
+          "GigaHighest": 113,
+          "High": 43,
+          "Highest": 51,
+          "Low": 31,
+          "Lowest": 23,
+          "Med": 37,
+          "MegaHighest": 85,
+          "SuperHighest": 49
+        },
+        "MaxSpread": 37,
+        "MinSpread": 0,
+        "Multishot": 5,
+        "Name": "Vermisplicer",
+        "PunchThrough": 1,
+        "Range": {
+          "Gibber": 31,
+          "Haymaker": 12,
+          "Lovetap": 15,
+          "Ramble": 28,
+          "Ulnaris": 21
+        },
+        "StatusChance": 0.25,
+        "Trigger": "Held",
+        "ShotType": "Hit-Scan"
+      },
+      "grips": {
+        "Gibber": {
+          "Name": "Gibber",
+          "Recoil": -0.5
+        },
+        "Haymaker": {
+          "Name": "Haymaker",
+          "Recoil": 1
+        },
+        "Lovetap": {
+          "Name": "Lovetap",
+          "Recoil": 0.5
+        },
+        "Ramble": {
+          "Name": "Ramble",
+          "Recoil": 0
+        },
+        "Ulnaris": {
+          "Name": "Ulnaris",
+          "Recoil": 0
+        }
+      },
+      "loaders": {
+        "Arcroid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "Med",
+          "Name": "Arcroid",
+          "Reload": 1.5,
+          "StatusChance": 0.03
+        },
+        "Bashrack": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "High",
+          "Name": "Bashrack",
+          "Reload": 1.7,
+          "StatusChance": -0.04
+        },
+        "Bellows": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Highest",
+          "Name": "Bellows",
+          "Reload": 2.1,
+          "StatusChance": 0
+        },
+        "Deepbreath": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "High",
+          "Name": "Deepbreath",
+          "Reload": 1.7,
+          "StatusChance": 0
+        },
+        "Flutterfire": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "Low",
+          "Name": "Flutterfire",
+          "Reload": 1.3,
+          "StatusChance": 0.14
+        },
+        "Killstream": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "Low",
+          "Name": "Killstream",
+          "Reload": 1.3,
+          "StatusChance": -0.08
+        },
+        "Macro Arcroid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "GigaHighest",
+          "Name": "Macro Arcroid",
+          "Reload": 3.1,
+          "StatusChance": 0
+        },
+        "Macro Thymoid": {
+          "CritChance": 0.03,
+          "CritMultiplier": 0,
+          "Magazine": "MegaHighest",
+          "Name": "Macro Thymoid",
+          "Reload": 2.9,
+          "StatusChance": 0.03
+        },
+        "Ramflare": {
+          "CritChance": -0.08,
+          "CritMultiplier": -0.3,
+          "Magazine": "High",
+          "Name": "Ramflare",
+          "Reload": 1.7,
+          "StatusChance": 0.14
+        },
+        "Slap": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Low",
+          "Name": "Slap",
+          "Reload": 1.3,
+          "StatusChance": 0
+        },
+        "Slapneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Low",
+          "Name": "Slapneedle",
+          "Reload": 1.3,
+          "StatusChance": -0.04
+        },
+        "Sparkfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "High",
+          "Name": "Sparkfire",
+          "Reload": 1.7,
+          "StatusChance": 0.07
+        },
+        "Splat": {
+          "CritChance": 0.14,
+          "CritMultiplier": 0.3,
+          "Magazine": "High",
+          "Name": "Splat",
+          "Reload": 1.7,
+          "StatusChance": -0.08
+        },
+        "Stitch": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Highest",
+          "Name": "Stitch",
+          "Reload": 2.1,
+          "StatusChance": -0.04
+        },
+        "Swiftfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Low",
+          "Name": "Swiftfire",
+          "Reload": 1.3,
+          "StatusChance": 0.07
+        },
+        "Thunderdrum": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Highest",
+          "Name": "Thunderdrum",
+          "Reload": 2.1,
+          "StatusChance": 0.07
+        },
+        "Thymoid": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "SuperHighest",
+          "Name": "Thymoid",
+          "Reload": 2.3,
+          "StatusChance": 0
+        },
+        "Zip": {
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "Magazine": "Lowest",
+          "Name": "Zip",
+          "Reload": 0.9,
+          "StatusChance": 0
+        },
+        "Zipfire": {
+          "CritChance": -0.04,
+          "CritMultiplier": -0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipfire",
+          "Reload": 0.9,
+          "StatusChance": 0.07
+        },
+        "Zipneedle": {
+          "CritChance": 0.07,
+          "CritMultiplier": 0.1,
+          "Magazine": "Lowest",
+          "Name": "Zipneedle",
+          "Reload": 0.9,
+          "StatusChance": -0.04
+        }
+      },
+      "source": {
+        "title": "Vermisplicer",
+        "revision": 2792155,
+        "timestamp": "2026-07-09T04:51:54Z",
+        "sha256": "92b6106ec3d39aab7223478c702b230d025a69a51fd0e5e990f6b8f5d7545deb",
+        "url": "https://wiki.warframe.com/w/Vermisplicer?oldid=2792155",
+        "batch": "1325b011ce8beec7.json"
+      }
+    }
+  ]
+}

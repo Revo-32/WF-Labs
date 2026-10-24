@@ -1,0 +1,26 @@
+[
+  {
+    "weaponId": "wiki:secondary/Catabolyst",
+    "count": 1,
+    "source": {
+      "title": "Catabolyst",
+      "revision": 2785507,
+      "timestamp": "2026-06-16T04:37:01Z",
+      "sha256": "de3cfd89cd40963471fe14cf75abea0a8cdf5638a3f9ee7bde4bab19fbf3c9a6",
+      "url": "https://wiki.warframe.com/w/Catabolyst?oldid=2785507",
+      "batch": "ef3fb1ef07719381.json"
+    }
+  },
+  {
+    "weaponId": "wiki:secondary/Coda Catabolyst",
+    "count": 3,
+    "source": {
+      "title": "Coda Catabolyst",
+      "revision": 2795795,
+      "timestamp": "2026-07-29T00:04:10Z",
+      "sha256": "b5ae14fccdb0f917089f887212f48f369d96da60851bb56e18023aa0676a1be3",
+      "url": "https://wiki.warframe.com/w/Coda_Catabolyst?oldid=2795795",
+      "batch": "d93f68f7400bafa3.json"
+    }
+  }
+]

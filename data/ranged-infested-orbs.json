@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      "title": "Mutalist Quanta",
+      "revision": 2814707,
+      "timestamp": "2026-09-30T19:09:00Z",
+      "sha256": "657239126deb4b21bf53124fd8050cf139a7f58f7bc28c4354cebe444cc3b294",
+      "url": "https://wiki.warframe.com/w/Mutalist_Quanta?oldid=2814707",
+      "batch": "08a6b1e57a6cf21b.json"
+    },
+    {
+      "title": "Bursting Mass",
+      "revision": 2729960,
+      "timestamp": "2026-02-14T00:25:28Z",
+      "sha256": "f4aa22fdb1c1d78b29b702590281fd4a988e6d94ac03f9c2e54325a26059058f",
+      "url": "https://wiki.warframe.com/w/Bursting_Mass?oldid=2729960",
+      "batch": "55b053f26f169fca.json"
+    }
+  ],
+  "rules": "Pulse 20 Radiation, 100% status, no crit, radius 1m; expiration 9s after stop; stacks up to 3, no refresh; stored separate radius 15m no crit/status, faction only."
+}

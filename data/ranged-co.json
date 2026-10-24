@@ -1,0 +1,1068 @@
+{
+  "source": {
+    "title": "Condition Overload (Mechanic)",
+    "revision": 2815998,
+    "timestamp": "2026-10-05T21:00:03Z",
+    "sha256": "f1838f8322651bfd72a0a1699e068942beb1ac1189135bc58fd2c80a5e1aefcc",
+    "url": "https://wiki.warframe.com/w/Condition_Overload_%28Mechanic%29?oldid=2815998",
+    "batch": "7b64291a7cf572f8.json"
+  },
+  "rules": [
+    {
+      "weaponId": "wiki:modular/Catchmoon (Primary)",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:modular/Catchmoon (Secondary)",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:modular/Tombfinger (Primary)",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:modular/Tombfinger (Primary)",
+      "attackIndex": 3,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:modular/Tombfinger (Secondary)",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:modular/Sporelacer (Primary)",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Aeolak",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Aeolak",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Alternox",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Alternox Prime",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Arca Plasmor",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Tenet Arca Plasmor",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Basmu",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Battacor",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Bubonico",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Bubonico",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Buzlok",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Buzlok",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Cedo",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Cedo Prime",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Coda Bassocyst",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Coda Hema",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Mutalist Cernos",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Cinta",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Cinta",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Cinta",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Dread",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Exergis",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Felarx",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Felarx",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Fulmin",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Harpak",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Hema",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Javlok",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Latron",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Latron Prime",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Miter",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Nataruk",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Nataruk",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Nunchasa",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Paracyst",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Phantasma",
+      "attackIndex": 3,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Phantasma Prime",
+      "attackIndex": 3,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Quellor",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Scourge",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Scourge Prime",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Shedu",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Stahlta",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Stahlta",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Steflos",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Tenet Envoy",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Torid",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Torid",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Trumna",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Akarius Prime",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Aegrit",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Angstrum",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Prisma Angstrum",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Ballistica Prime",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Catabolyst",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Catabolyst",
+      "attackIndex": 3,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Coda Catabolyst",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Coda Catabolyst",
+      "attackIndex": 3,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Cyanex",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Cyanex",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Epitaph",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Epitaph",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Kunai",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Mk1-Kunai",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Tenet Plinx",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Seer",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Kuva Seer",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Sepulcrum",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Sepulcrum",
+      "attackIndex": 2,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Tenet Diplos",
+      "attackIndex": 1,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Tenet Spirex",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Zakti",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Zakti Prime",
+      "attackIndex": 0,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Zymos",
+      "attackIndex": 3,
+      "mode": "Multiplicative",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Acceltra",
+      "attackIndex": 0,
+      "mode": "Additive",
+      "ratio": 0.7428571428571429,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Cernos",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Cernos Prime",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Rakta Cernos",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Mutalist Cernos",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Daikyu Prime",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Drakgoon",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5714285714285714,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Kuva Drakgoon",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Dread",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Evensong",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.65,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Lanka",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.38095238095238093,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Miter",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.4,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Paris",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Paris Prime",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Mk1-Paris",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Zarr",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 1.6666666666666667,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Kuva Zarr",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 3.3333333333333335,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Ballistica",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.25,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Ballistica Prime",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Rakta Ballistica",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 0.25,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Kulstar",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 2.6666666666666665,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Pox",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 2.5,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Ambassador",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 0.75,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Ferrox",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 3.5,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Tenet Ferrox",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 3.3333333333333335,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Opticor",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 2.5,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Opticor Vandal",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 2.0,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Trumna",
+      "attackIndex": 1,
+      "mode": "Additive",
+      "ratio": 1.64,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Braton",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 1.0,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Mk1-Braton",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 1.0,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Braton Prime",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 1.0,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Braton Vandal",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 1.0,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Burston",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 1.0,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Burston Prime",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 1.0,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Zylok",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 0.6666666666666666,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Zylok Prime",
+      "attackIndex": 2,
+      "mode": "Additive",
+      "ratio": 0.7142857142857143,
+      "multishotIndependent": true,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Coda Bassocyst",
+      "attackIndex": 1,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Ferrox",
+      "attackIndex": 3,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:primary/Tenet Ferrox",
+      "attackIndex": 3,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Azima",
+      "attackIndex": 1,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Stug",
+      "attackIndex": 0,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Stug",
+      "attackIndex": 1,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Stug",
+      "attackIndex": 2,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Stug",
+      "attackIndex": 3,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Stug",
+      "attackIndex": 4,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Sonicor",
+      "attackIndex": 0,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Sonicor",
+      "attackIndex": 1,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Scyotid",
+      "attackIndex": 1,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Tysis",
+      "attackIndex": 1,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Coda Tysis",
+      "attackIndex": 1,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Grimoire",
+      "attackIndex": 2,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Grimoire",
+      "attackIndex": 3,
+      "mode": "None",
+      "ratio": 0,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 1
+    },
+    {
+      "weaponId": "wiki:secondary/Tenet Detron",
+      "attackIndex": 0,
+      "mode": "Additive",
+      "ratio": 1,
+      "multishotIndependent": false,
+      "extraProjectileRatio": 0.65
+    }
+  ]
+}

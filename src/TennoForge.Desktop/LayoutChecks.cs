@@ -10,9 +10,9 @@ public sealed partial class MainWindow
         Rect Bounds(FrameworkElement element)=>element.TransformToAncestor(root).TransformBounds(new Rect(element.RenderSize));
         var area=Bounds(page);var equipment=Bounds(equipmentCard!);var rack=Bounds(board.RackView);var tray=Bounds(board.LibraryView);
         var category=Bounds(weaponClass);var weaponName=Bounds(weapon);var stanceBounds=Bounds(stance);var actions=Bounds(equipmentActions!);
-        var editor=Bounds(moddingEditor!);var scenario=Bounds(scenarioPanel!);var results=Bounds(resultsDashboard!);
-        if(!InsideColumn(editor)||!InsideColumn(scenario)||!InsideColumn(results))throw new Exception(name+": 3열이 창 밖으로 밀림");
-        if(Math.Abs(editor.Width-scenario.Width)>1||Math.Abs(results.Width/editor.Width-2)>.01||editor.Right>=scenario.Left||scenario.Right>=results.Left)throw new Exception(name+": 1:1:2 열 비율 또는 분리 실패");
+        var editor=Bounds(moddingEditor!);var results=Bounds(resultsDashboard!);
+        if(!InsideColumn(editor)||!InsideColumn(results))throw new Exception(name+": 모딩·결과 열이 창 밖으로 밀림");
+        if(Math.Abs(results.Width/editor.Width-1)>.01||editor.Right>=results.Left)throw new Exception(name+": 5:5 열 비율 또는 분리 실패");
         bool InsideColumn(Rect r)=>r.Left>=area.Left-.5&&r.Right<=area.Right+.5&&r.Top>=area.Top-.5&&r.Bottom<=area.Bottom+.5;
         var geometry=board.MeasureLibrary(root);
         bool Inside(Rect r)=>r.Left>=area.Left-.5&&r.Right<=area.Right+.5&&r.Top>=area.Top-.5&&r.Bottom<=area.Bottom+.5;
@@ -31,7 +31,7 @@ public sealed partial class MainWindow
             if(!IsPresented(value)||!strip.Contains(Bounds(value))||value.FontSize<24)throw new Exception(name+": 치확·상확 등 핵심 능력치가 바로 보이지 않음");
         var header=CheckHeaderLayout();
         var typography=new{scale=System.Windows.Media.VisualTreeHelper.GetDpi(root).PixelsPerDip,format=System.Windows.Media.TextOptions.GetTextFormattingMode(root).ToString(),smoothing=System.Windows.Media.TextOptions.GetTextRenderingMode(root).ToString()};
-        return new{name,width=root.ActualWidth,height=root.ActualHeight,columns=new{editor=editor.Width,scenario=scenario.Width,results=results.Width,ratio="1:1:2"},equipmentHeight=equipment.Height,attackModeHeight=attackMode.ActualHeight,library=geometry,header,typography,passed=true};
+        return new{name,width=root.ActualWidth,height=root.ActualHeight,columns=new{editor=editor.Width,results=results.Width,ratio="5:5 · 하단 상황 설정"},equipmentHeight=equipment.Height,attackModeHeight=attackMode.ActualHeight,library=geometry,header,typography,passed=true};
     }
     public void SettleSimulationForPreview()
     {

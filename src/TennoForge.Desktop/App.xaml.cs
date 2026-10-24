@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 using System.Windows;
@@ -9,10 +9,89 @@ using TennoForge.Core;
 namespace TennoForge.Desktop;
 public partial class App : Application
 {
+    private void OnComboBoxLoaded(object sender,RoutedEventArgs e)=>UiMotion.ConnectComboBox((System.Windows.Controls.ComboBox)sender);
     protected override void OnStartup(StartupEventArgs e)
     {
         base.OnStartup(e);
+        UiMotion.Initialize();
         Theme.Apply(true);
+        UiFonts.PersistChanges=!e.Args.Any(a=>a.StartsWith("--")&&(a.Contains("check")||a.Contains("smoke")||a.Contains("preview")||a=="--layout-probe"));
+        UiFonts.Apply(UiFonts.PersistChanges?UiFonts.Read().Id:"jamsil");
+        if(e.Args.Length>=2&&e.Args[0] is "--native-file-check" or "--monitor-check" or "--workspace-produce-check" or "--workspace-restore-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{await Dispatcher.InvokeAsync(()=>{},System.Windows.Threading.DispatcherPriority.ContextIdle);object report=e.Args[0] switch{
+                "--native-file-check"=>await window.CheckNativeFiles(dir),
+                "--monitor-check"=>await NativeSessionChecks.Monitors(window,dir),
+                _=>await window.CheckWorkspaceProcess(dir,e.Args[0]=="--workspace-restore-check")};
+                File.WriteAllText(Path.Combine(dir,e.Args[0][2..]+".json"),JsonSerializer.Serialize(report,Catalog.Json));window.Close();Shutdown(0);
+            }catch(Exception ex){File.WriteAllText(Path.Combine(dir,e.Args[0][2..]+".error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--search-interaction-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckSearchInteractions((element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--mod-card-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckModCardLayouts((element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--ranged-workflow-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckRangedWorkflow((element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--approximation-ui-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckApproximationUx((element,name,scale)=>Render(element,Path.Combine(dir,name+".png"),1760,920,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--interaction-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckInteractions((element,name,width,height)=>Render(element,Path.Combine(dir,name+".png"),width,height));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--weapon-entry-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            try{var window=new MainWindow();var result=window.CheckWeaponEntries((element,name,width,height)=>{if(element is Window w)Render(w,Path.Combine(dir,name+".png"),width,height);else Render(element,Path.Combine(dir,name+".png"),width,height);});File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(result,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--text-smoothing-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            try{TextSmoothingChecks.Run(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--typography-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            try{
+            File.WriteAllText(Path.Combine(dir,"font-check.json"),JsonSerializer.Serialize(TypographyReview.CheckSelection(dir),Catalog.Json));
+            foreach(var scale in new[]{1d,1.25,1.5})Render(TypographyReview.Create(),Path.Combine(dir,$"comparison-{scale}.png"),1100,800,scale);
+            Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--riven-file-check")
+        {
+            try{File.WriteAllText(Path.GetFullPath(e.Args[1]),JsonSerializer.Serialize(RangedRivenEditor.CheckFileUx(),Catalog.Json));Shutdown(0);}
+            catch(Exception ex){File.WriteAllText(Path.GetFullPath(e.Args[1])+".error",ex.ToString());Shutdown(1);}return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--ranged-smoke")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            try {var w=new MainWindow();foreach(var dark in new[]{true,false})foreach(var category in new[]{"primary","secondary"})foreach(var scale in new[]{1d,1.25,1.5}){w.SetDarkTheme(dark);w.ShowRanged(category);Render(w,Path.Combine(dir,$"{category}-{dark}-{scale}.png"),1760,920,scale);w.CheckRangedPage(category);}foreach(var dark in new[]{true,false})foreach(var category in new[]{"primary","secondary"})foreach(var details in new[]{false,true}){w.SetDarkTheme(dark);w.ShowRanged(category);w.PrepareRangedMechanicsAudit(category,details);Render(w,Path.Combine(dir,$"mechanics-{category}-{dark}-{details}.png"),1760,920,1);}
+            foreach(var dark in new[]{true,false})foreach(var category in new[]{"primary","secondary"}){w.SetDarkTheme(dark);w.ShowRanged(category);w.PrepareRangedMechanicsAudit(category,false);w.PrepareRangedCombatAudit(category);Render(w,Path.Combine(dir,$"combat-{category}-{dark}.png"),1760,920,1);}
+            foreach(var dark in new[]{true,false})foreach(var category in new[]{"primary","secondary"}){w.SetDarkTheme(dark);w.ShowRanged(category);w.PrepareRangedRivenAudit(category);Render(w,Path.Combine(dir,$"riven-{category}-{dark}.png"),1760,920,1.25);w.CloseRangedRivenAudit(category);}
+            foreach(var dark in new[]{true,false})foreach(var category in new[]{"primary","secondary"}){w.SetDarkTheme(dark);w.PrepareRangedRivenWorkbenchAudit(category);Render(w,Path.Combine(dir,$"workshop-{category}-{dark}.png"),1760,920,1.25);}
+            foreach(var dark in new[]{true,false})foreach(var name in new[]{"Azima","ResidualBoils","ResidualMalodor","ResidualShock","ResidualViremia","Simulor","Singularity ally","Nullifier","Perigale","Cedo","Trumna","Zarr","Alternox","Grimoire","Ocucor","Onos","Gaze (Primary)","Rattleguts (Primary)","Catabolyst","Tenet Ferrox","Cantare","Corinth Prime","Kompressa","Kuva Ogris","Synoid Simulor","Grakata","Velox","Stug","Vectis Prime","Vaykor Hek","Rakta Ballistica","Pox","Hema","Dread","Battacor","Kuva Drakgoon","Tenet Tetra","Flux Rifle","Higasa","EFV-5 Jupiter","Quanta","Tenet Quanta","Embolist","Hikou","Evensong","Boltor","Bolto","Proboscis Cernos","Scyotid","Penta","Lato","Mutalist Quanta","Lanka","Zymos","Secura Penta","Prisma Gorgon","Sporelacer (Secondary)","Rattleguts (Secondary)","Vermisplicer (Primary)","Vermisplicer (Secondary)"}){var category=name is "Azima" or "Vermisplicer (Secondary)" or "Rattleguts (Secondary)" or "Sporelacer (Secondary)" or "Zymos" or "Lato" or "Scyotid" or "Bolto" or "Embolist" or "Hikou" or "Grimoire" or "Ocucor" or "Onos" or "Catabolyst" or "Cantare" or "Kompressa" or "Velox" or "Stug" or "Rakta Ballistica" or "Pox"?"secondary":"primary";w.SetDarkTheme(dark);w.ShowRanged(category);w.PrepareRangedSceneAudit(category,name);Render(w,Path.Combine(dir,$"scene-{name}-{dark}.png"),1760,920,1);}
+            foreach(var dark in new[]{true,false}){w.SetDarkTheme(dark);w.ShowRanged("primary");w.PrepareRangedSceneAudit("primary","Rattleguts (Primary)");var dialog=w.KitgunDialogForCheck()!;Render(dialog,Path.Combine(dir,$"kitgun-parts-{dark}.png"),420,700);}
+            File.WriteAllText(Path.Combine(dir,"ranged-ui.json"),JsonSerializer.Serialize(new{passed=true,states=Directory.EnumerateFiles(dir,"*.png").Count()},Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}return;
+        }
         if(e.Args.Length>=2&&e.Args[0]=="--client-update-check")
         {
             var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
@@ -65,6 +144,76 @@ public partial class App : Application
             }catch(Exception ex){File.WriteAllText(Path.Combine(dir,"usability-error.txt"),ex.ToString());Shutdown(1);}return;
         }
         if(e.Args.Length>=3&&e.Args[0]=="--installed-update-check"){RunInstalledUpdateCheck(e.Args);return;}
+        if(e.Args.Length>=2&&e.Args[0]=="--popup-layout-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Left=20,Top=20,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false,Opacity=0};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckPopupLayout();File.WriteAllText(Path.Combine(dir,"popup-check.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--font-layout-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            try{
+                foreach(var font in UiFonts.Choices)foreach(var scale in new[]{1d,1.25,1.5})
+                {
+                    UiFonts.Apply(font.Id);Theme.Apply(true);
+                    var folder=Path.Combine(dir,font.Id,scale.ToString(System.Globalization.CultureInfo.InvariantCulture));Directory.CreateDirectory(folder);
+                    var window=new MainWindow();var report=window.ProbeLayouts((element,name,width,height)=>Render(element,Path.Combine(folder,name+".png"),width,height,scale));
+                    File.WriteAllText(Path.Combine(folder,"issues.json"),JsonSerializer.Serialize(report,Catalog.Json));
+                    if(report.Values.Any(issues=>issues.Length>0))throw new Exception($"{font.Label} {scale:P0}: 레이아웃 겹침 또는 텍스트 잘림 발견");
+                }
+                Shutdown(0);
+            }catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--layout-probe")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            try{
+                foreach(var scale in new[]{1d,1.25,1.5})
+                {
+                    var window=new MainWindow();var result=window.ProbeLayouts((element,name,width,height)=>Render(element,Path.Combine(dir,name+"-"+scale+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"issues-"+scale+".json"),JsonSerializer.Serialize(result,Catalog.Json));
+                    if(result.Values.Any(issues=>issues.Length>0))throw new Exception($"{scale:P0} 배율에서 레이아웃 겹침 또는 텍스트 잘림 발견. issues-{scale}.json 확인.");
+                }
+                Shutdown(0);
+            }
+            catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--scenario-flow-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            try{var window=new MainWindow();Render(window,Path.Combine(dir,"closed.png"),1760,920);
+                File.WriteAllText(Path.Combine(dir,"enemy.json"),JsonSerializer.Serialize(window.CheckEnemyUx(),Catalog.Json));
+                File.WriteAllText(Path.Combine(dir,"combat.json"),JsonSerializer.Serialize(window.CheckCombatUx(),Catalog.Json));
+                File.WriteAllText(Path.Combine(dir,"equation.json"),JsonSerializer.Serialize(window.CheckEquationInteractions(),Catalog.Json));
+                window.EnemyPreviewForCheck("primer");window.ScrollEncounterControlsForCheck();Render(window,Path.Combine(dir,"primer.png"),1760,920);window.EnemyPreviewForCheck("normal");
+                File.WriteAllText(Path.Combine(dir,"layout.json"),JsonSerializer.Serialize(window.CheckModdingLayout("scenario flow"),Catalog.Json));Shutdown(0);
+            }catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--drawer-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,ShowActivated=false,ShowInTaskbar=false,WindowStartupLocation=WindowStartupLocation.Manual,Left=-30000,Top=-30000};
+            window.Loaded+=async(_,_)=>{try{File.WriteAllText(Path.Combine(dir,"drawer-check.json"),JsonSerializer.Serialize(await window.CheckScenarioDrawers(),Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--workflow-smoke")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,ShowActivated=false,ShowInTaskbar=false,WindowStartupLocation=WindowStartupLocation.Manual,Left=-30000,Top=-30000};
+            window.Loaded+=(_,_)=>
+            {
+                try
+                {
+                    File.WriteAllText(Path.Combine(dir,"workflow-check.json"),JsonSerializer.Serialize(window.CheckWorkflowUx(),Catalog.Json));
+                    foreach(var kind in new[]{"primary","secondary","mod-melee","Rifle","Shotgun","Pistol","Melee"})foreach(var dark in new[]{true,false})foreach(var scale in new[]{1d,1.25,1.5})
+                    {
+                        window.SetDarkTheme(dark);window.WorkflowPreview(kind);Render(window,Path.Combine(dir,$"{kind}-{dark}-{scale}.png"),1760,920,scale);
+                        if(kind is "primary" or "secondary")window.CheckRangedPage(kind);
+                        if(kind=="mod-melee")File.WriteAllText(Path.Combine(dir,$"layout-{dark}-{scale}.json"),JsonSerializer.Serialize(window.CheckModdingLayout(kind),Catalog.Json));
+                    }
+                    Shutdown(0);
+                }catch(Exception ex){File.WriteAllText(Path.Combine(dir,"workflow-error.txt"),ex.ToString());Shutdown(1);}
+            };window.Show();return;
+        }
         if(e.Args.Length>=2&&e.Args[0]=="--riven-smoke")
         {
             var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
@@ -75,6 +224,17 @@ public partial class App : Application
                 {
                     File.WriteAllText(Path.Combine(dir,"riven-workshop-check.json"),JsonSerializer.Serialize(await window.CheckRivenWorkshopUx(),Catalog.Json));
                     Render(window,Path.Combine(dir,"WF-Labs-riven-workshop.png"),1760,920);
+                    foreach(var dark in new[]{true,false})foreach(var scale in new[]{1d,1.5})for(int tab=0;tab<4;tab++){window.SetDarkTheme(dark);window.SelectRivenSectionForCheck(tab);Render(window,Path.Combine(dir,$"melee-{dark}-{scale}-{tab}.png"),1760,920,scale);}
+                    foreach(var category in new[]{"primary","secondary"})
+                    {
+                        window.ShowRanged(category);
+                        foreach(var dark in new[]{true,false})foreach(var scale in new[]{1d,1.25,1.5}){window.SetDarkTheme(dark);Render(window,Path.Combine(dir,$"modding-{category}-{dark}-{scale}.png"),1760,920,scale);window.CheckRangedPage(category);}
+                        window.PrepareRangedRivenAudit(category);Render(window,Path.Combine(dir,$"modal-{category}.png"),1760,920);window.CloseRangedRivenAudit(category);window.PrepareRangedRivenWorkbenchAudit(category);
+                        File.WriteAllText(Path.Combine(dir,$"{category}-workshop-check.json"),JsonSerializer.Serialize(await window.CheckRangedWorkshop(category),Catalog.Json));
+                        foreach(var dark in new[]{true,false})foreach(var scale in new[]{1d,1.25,1.5})for(int tab=0;tab<4;tab++){window.SetDarkTheme(dark);window.SelectRangedRivenSectionForCheck(category,tab);Render(window,Path.Combine(dir,$"{category}-{dark}-{scale}-{tab}.png"),1760,920,scale);}
+                    }
+                    File.WriteAllText(Path.Combine(dir,"ranged-riven-recovery.json"),JsonSerializer.Serialize(window.CheckRangedRivenRecovery(),Catalog.Json));
+                    window.ShowModding();window.ShowRivens();window.SetDarkTheme(true);window.SelectRivenSectionForCheck(3);
                     window.PendingRivenForCheck();Render(window,Path.Combine(dir,"WF-Labs-riven-pending.png"),1760,920);
                     Render(new ClientSettingsWindow(()=>{}),Path.Combine(dir,"WF-Labs-client-settings.png"),560,540);
                     Shutdown(0);
@@ -290,7 +450,7 @@ public partial class App : Application
                 window.SetDarkTheme(true); window.SetLightMode(true); Render(window, Path.Combine(dir, "WF-Labs-performance.png"));
                 File.WriteAllText(Path.Combine(dir, "window-check.json"), JsonSerializer.Serialize(WindowFrameChecks.Run(window,Path.Combine(dir,"WF-Labs-native-window.png")), Catalog.Json));
                 var typeface = new Typeface(window.FontFamily, FontStyles.Normal, FontWeights.Normal, FontStretches.Normal);
-                if (!typeface.TryGetGlyphTypeface(out var glyphs) || !glyphs.CharacterToGlyphMap.ContainsKey('한')) throw new Exception("Wanted Sans 한글 글리프 확인 실패");
+                if (!typeface.TryGetGlyphTypeface(out var glyphs) || !glyphs.CharacterToGlyphMap.ContainsKey('한')) throw new Exception("더잠실체 한글 글리프 확인 실패");
                 var p = Process.GetCurrentProcess();
                 File.WriteAllText(Path.Combine(dir, "ui-check.json"), JsonSerializer.Serialize(new { passed=true, font= glyphs.FamilyNames.Values.ToArray(), glyphs.FontUri, workingSetMiB=p.WorkingSet64/1048576d, renderTier=RenderCapability.Tier>>16, note="비표시 WPF 레이아웃·상호작용 검사. 실제 게임 병행 성능 측정은 별도 필요." }, Catalog.Json));
                 Shutdown(0);
@@ -298,11 +458,11 @@ public partial class App : Application
             catch (Exception ex) { File.WriteAllText(Path.Combine(e.Args[1], "ui-error.txt"), ex.ToString()); Shutdown(1); }
             return;
         }
-        var main=new MainWindow();main.RestoreUpdateRecovery();main.Show();main.StartUpdateChecks();
+        var main=new MainWindow();main.EnableWorkspacePersistence();main.RestoreUpdateRecovery();main.Show();main.StartUpdateChecks();
     }
     private static void Render(Window w, string path,int width=1920,int height=1000,double scale=1)
         =>Render((FrameworkElement)w.Content,path,width,height,scale,w as MainWindow);
-    private static void Render(FrameworkElement root,string path,int width,int height,double scale=1,MainWindow? previewWindow=null)
+    internal static void Render(FrameworkElement root,string path,int width,int height,double scale=1,MainWindow? previewWindow=null)
     {
         Visual visualRoot=root;
         while(VisualTreeHelper.GetParent(visualRoot) is Visual parent)visualRoot=parent;

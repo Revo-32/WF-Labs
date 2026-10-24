@@ -16,6 +16,7 @@ public sealed partial class MainWindow
         void Yes(bool condition,string name){if(!condition)throw new Exception(name);checks.Add(name);}
         try
         {
+            scenarioDrawer!.SetOpen(true,false);UpdateLayout();
             factionChoice.SelectedValue="Corpus";enemyLevel.Text="200";
             Yes(enemyChoice.Items.Cast<EnemyChoice>().Where(c=>c.Enemy is not null).All(c=>c.Enemy!.Faction=="Corpus"),"팩션 선택 → 해당 팩션 적만 표시");
             Yes(ReadBuild().Melee!.Shields>0&&ReadBuild().Scenario.Enemy!.Armor==0&&manualEnemyFields!.Visibility==Visibility.Collapsed,"코퍼스 선택 → 실드·체력 자동 계산, 수치 입력 숨김");
@@ -56,7 +57,7 @@ public sealed partial class MainWindow
             toggle.IsChecked=false;Yes(!expander.IsExpanded,"상세 영역 접기 → 헤더 전체 토글 동작");
             return new{passed=true,checks};
         }
-        finally{ApplyBuild(saved);scenarioScroller?.ScrollToTop();SettleSimulationForPreview();}
+        finally{ApplyBuild(saved);scenarioScroller?.ScrollToTop();scenarioDrawer!.SetOpen(false,false);SettleSimulationForPreview();}
     }
     private static IEnumerable<DependencyObject> Descendants(DependencyObject node)
     {
@@ -64,6 +65,7 @@ public sealed partial class MainWindow
     }
     public void EnemyPreviewForCheck(string mode)
     {
+        scenarioDrawer!.SetOpen(mode!="normal",false);UpdateLayout();
         factionChoice.SelectedValue="Grineer";RefreshEnemyChoices(EnemyCatalog.Load().Enemies.Single(e=>e.EnglishName=="Heavy Gunner").Id);enemyLevel.Text="200";enemySquad.SelectedItem=6;
         enemyEximus.IsChecked=mode=="eximus";
         enemyDifficulties[mode=="ice"?EnemyDifficulty.Icebind:mode=="steel"?EnemyDifficulty.SteelPath:EnemyDifficulty.Normal].IsChecked=true;
@@ -73,7 +75,7 @@ public sealed partial class MainWindow
     }
     public void ScrollEncounterControlsForCheck()
     {
-        scenarioScroller!.UpdateLayout();var field=(FrameworkElement)encounterButtons[SelectedEncounter].Parent;
-        scenarioScroller.ScrollToVerticalOffset(field.TransformToAncestor((Visual)scenarioScroller.Content).Transform(new Point()).Y);scenarioScroller.UpdateLayout();
+        scenarioDrawer!.SetOpen(true,false);UpdateLayout();var field=(FrameworkElement)encounterButtons[SelectedEncounter].Parent;
+        field.BringIntoView();UpdateLayout();
     }
 }

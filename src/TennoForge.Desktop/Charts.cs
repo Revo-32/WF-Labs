@@ -26,7 +26,7 @@ internal static class ChartPalette
         DamageType.Blast=>"#E9BB6B",DamageType.Radiation=>"#D6C779",DamageType.Gas=>"#83B5A2",DamageType.Magnetic=>"#83AFEB",
         DamageType.Viral=>"#BF92DF",DamageType.Corrosive=>"#C3D65F",_=>"#FFFFFF"
     });
-    internal static Brush Accent=>Color(Theme.IsDark?"#64D9F2":"#006B83");
+    internal static Brush Accent=>Color(Theme.IsDark?"#F2CB57":"#795900");
     internal static Brush Comparison=>Color(Theme.IsDark?"#ADB9CC":"#576B86");
     internal static string Number(double n)=>n>=1_000_000?$"{n/1_000_000:0.#}M":n>=1000?$"{n/1000:0.#}k":$"{n:0.#}";
 }
@@ -38,6 +38,7 @@ internal abstract class Plot : FrameworkElement
     protected Plot()
     {
         Height=190;Focusable=true;UseLayoutRounding=true;SnapsToDevicePixels=true;
+        TextRendering.Apply(this,VisualTreeHelper.GetDpi(this));
         tip=CursorTooltip.Attach(this,point=>(object)(Targets.FirstOrDefault(x=>x.Area.Contains(point)).Text??Summary),120);
     }
     protected string Summary { get; set; }="데이터 없음";
@@ -47,7 +48,7 @@ internal abstract class Plot : FrameworkElement
     protected void Label(DrawingContext dc,string text,Point at,double size=13,Brush? brush=null,bool right=false,bool bold=false,bool centered=false)
     {
         var dpi=VisualTreeHelper.GetDpi(this);
-        var t=new FormattedText(text,CultureInfo.CurrentCulture,FlowDirection.LeftToRight,new Typeface((FontFamily)Application.Current.Resources["Wanted"],FontStyles.Normal,bold?FontWeights.SemiBold:FontWeights.Normal,FontStretches.Normal),size,brush??Muted,null,TextRendering.Formatting(dpi),dpi.PixelsPerDip);
+        var t=new FormattedText(text,CultureInfo.CurrentCulture,FlowDirection.LeftToRight,new Typeface((FontFamily)Application.Current.Resources[bold?"AppFontMedium":"AppFont"],FontStyles.Normal,bold?FontWeights.Medium:FontWeights.Normal,FontStretches.Normal),size,brush??Muted,null,TextRendering.Formatting(dpi),dpi.PixelsPerDip);
         var x=right?at.X-t.Width:centered?at.X-t.Width/2:at.X;
         dc.DrawText(t,new Point(Math.Round(x*dpi.DpiScaleX)/dpi.DpiScaleX,Math.Round(at.Y*dpi.DpiScaleY)/dpi.DpiScaleY));
     }
