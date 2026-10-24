@@ -6,6 +6,8 @@
 
 Windows x64용 `WFLabs-win-Setup.exe`를 실행하면 사용자 계정 범위에 설치한다. .NET 8과 Windows Desktop Runtime을 포함하므로 사용자가 개발 SDK를 설치할 필요가 없다. `WFLabs-win-Portable.zip`은 압축 배포본이며 압축을 푼 최상위의 `WF Labs.exe`로 실행한다. WF Labs의 앱 내 업데이트 버튼은 설치형 버전에서 제공한다.
 
+현재 공개 버전은 [0.9.0-preview.1](https://github.com/Revo-32/WF-Labs/releases/tag/v0.9.0-preview.1)이다. 기존 설치본은 상단 **업데이트 → 확인/다운로드 → 설치 후 다시 시작**으로 갱신한다. 자동 확인·다운로드를 켜 놓았다면 다운로드 완료 뒤 설치를 선택하면 된다.
+
 상단 **업데이트** 또는 **설정 → 앱 실행 · 업데이트**에서 Windows 로그인 자동 시작과 Warframe 실행 자동 시작을 각각 켜고 저장한다. 기본값은 모두 꺼져 있다.
 
 - Windows 자동 시작: HKCU Run의 `WF Labs` 항목으로 작은 `WFLabs.Startup.exe --login` 도우미가 앱을 실행한다.
@@ -55,6 +57,14 @@ python -X utf8 tools/release-preflight.py
 Velopack 1.2.161 Setup의 진단용 `-- EXE_ARGS` 전달에서 오류를 관찰해, 검증 스크립트는 설치를 마친 뒤 진단 앱을 별도로 실행한다. 일반 설치·업데이트 적용/재시작은 이 경로에 의존하지 않는다. 실제 Windows 로그아웃/로그인 및 실제 Warframe 실행을 동반한 종단 검증은 이 자동 테스트와 구분한다.
 
 참고: [Velopack C# 통합](https://docs.velopack.io/getting-started/csharp), [GitHub 배포](https://docs.velopack.io/distributing/github-actions), [Setup 명령](https://docs.velopack.io/reference/cli/content/setup-windows).
+
+## 0.9.0-preview.1 공개 배포와 검증
+
+2026-10-24에 소스 `7131a3995f847d9c6ed65516479d4e89089efe9b`를 기준으로 공개했다. 최종 파일은 `builds/WF-Labs-0.9.0-preview.1-verified/`에 있다. Setup·Portable·전체 업데이트 패키지·feed·체크섬 7개를 제공하며, 공개 서버의 크기와 SHA-256이 최종 로컬 검증본과 일치한다.
+
+[최종 Windows CI](https://github.com/Revo-32/WF-Labs/actions/runs/40068661779)에서 전체 계산·실제 WPF UI 검사와 패키지 생성·검증을 통과했다. 별도 설치 ID를 사용한 구 공개 버전 및 새 기능 QA 두 경로에서 실제 설치·업데이트·재시작·작업 복원을 검증했다. 온라인 검사는 인증 없이 `0.8.0-preview.2`에서 새 버전을 찾고 82,628,803바이트 nupkg를 다운로드해 해시를 확인했으며, 최신 버전에서 재업데이트가 제안되지 않는지 확인했다.
+
+44.1.3 이전 규칙의 리벤을 포함한 작업은 자동 복원이 중단될 수 있다. 원본은 보존하고 패치 후 게임 표시 수치를 다시 입력해야 한다. 구형 리벤 자동 변환은 이번 배포의 완료 항목이 아니다. 설치 파일은 Authenticode 서명이 없다. 전체 검사 수치와 실제 환경 검증의 한계는 [0.9.0 배포 검증](RELEASE_0_9_0_VERIFICATION.md)에 기록한다. 아래 0.8.0 기록은 과거 배포 이력이다.
 
 ## 0.8.0-preview.2 로컬 배포 검증
 
