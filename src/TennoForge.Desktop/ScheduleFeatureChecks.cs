@@ -47,7 +47,7 @@ internal sealed partial class SchedulePage
         {
             Theme.Apply(dark);await Tab(tab);dialog.MinWidth=960;dialog.MinHeight=650;dialog.Width=size.Width;dialog.Height=size.Height;await Dispatcher.Yield(DispatcherPriority.ApplicationIdle);dialog.UpdateLayout();
             render(root,$"schedule-feature-dialog-{tab}-{dark}-{scale:0.##}-{size.Width}",size.Width,size.Height,scale);
-            Yes(Math.Abs(root.ActualWidth-size.Width)<2&&Math.Abs(root.ActualHeight-size.Height)<2,"설정 창 실제 HWND와 렌더링 크기 일치");
+            Yes(Math.Abs(root.ActualWidth-size.Width)<2&&Math.Abs(root.ActualHeight-size.Height)<2&&Math.Abs(dialog.ActualWidth-size.Width)<2&&Math.Abs(dialog.ActualHeight-size.Height)<2,"설정 창 실제 HWND와 렌더링 크기 일치");
             var issues=LayoutDiagnostics.Inspect(root);if(issues.Length>0)File.WriteAllText(Path.Combine(directory,"feature-layout-failure.json"),JsonSerializer.Serialize(issues,Catalog.Json));Yes(issues.Length==0,$"오버레이·알림 창 {dark} 배율 {scale} 글자·컨트롤 경계");
             foreach(var s in LayoutDiagnostics.Tree(root).OfType<ScrollViewer>().Where(s=>s.IsVisible&&s.ScrollableHeight>0).ToArray()){s.ScrollToEnd();await Dispatcher.Yield(DispatcherPriority.ContextIdle);s.UpdateLayout();Yes(Math.Abs(s.VerticalOffset-s.ScrollableHeight)<1,"설정 창 스크롤 끝 도달");s.ScrollToTop();}
         }

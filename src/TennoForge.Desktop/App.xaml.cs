@@ -613,7 +613,7 @@ public partial class App : Application
         =>Render((FrameworkElement)w.Content,path,width,height,scale,w as MainWindow);
     internal static void Render(FrameworkElement root,string path,int width,int height,double scale=1,MainWindow? previewWindow=null)
     {
-        var nativePreview=Window.GetWindow(root) is MainWindow {IsVisible:true} host&&ReferenceEquals(host.Content,root);
+        var nativePreview=Window.GetWindow(root) is {IsVisible:true} host&&ReferenceEquals(host.Content,root);
         if(nativePreview&&Window.GetWindow(root) is {} native)
         {
             // Whole-window previews must measure the requested viewport, not leave

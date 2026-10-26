@@ -29,3 +29,5 @@
 - 패키지의 Core 버전 0.10.0과 검사 실행기의 기본 참조 버전 1.0.0이 달랐던 첫 시도는 검사 실행기도 같은 버전으로 빌드해 수정했다. 이후 배포 Core DLL로 1,707개를 통과했다.
 
 초기 실패 산출물은 로컬 artifacts의 `release-validation`, `release-installer`, `release-core-first-attempt.log`에 보존했다. 후속 통과 결과와 구분한다.
+
+첫 GitHub Windows CI는 계산 1,707개를 통과했으나 1024×768 가상 데스크톱의 최대 추적 크기가 설정 창을 1044px로 줄여, 1100px 검수 콘텐츠가 창 경계를 넘었다. MainWindow에만 적용하던 검수 창 크기 보장을 실제 표시 중인 모든 Window의 콘텐츠로 확장했고, 설정 창의 실제 Window 크기도 요청 크기와 대조한다. 제품 UI를 작게 줄이거나 경계 검사 허용치를 완화하지 않았다. 첫 기록은 [40255008875](https://github.com/Revo-32/WF-Labs/actions/runs/40255008875)에 있다.
