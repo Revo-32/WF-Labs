@@ -88,6 +88,11 @@ public sealed class WeaponSearchBox : Control
         query=(TextBox)Template.FindName("Query",this);
         suggestions=(ListBox)Template.FindName("Suggestions",this);
         empty=(TextBlock)Template.FindName("Empty",this);
+        ((Border)Template.FindName("SearchBorder",this)).PreviewMouseLeftButtonDown+=(_,e)=>
+        {
+            if(IsDropDownOpen)return;
+            OpenSearch();e.Handled=true;
+        };
         suggestions.SelectionChanged+=(_,e)=>e.Handled=true;
         query.TextChanged+=(_,_)=>{if(syncing)return;Filter(query.Text);IsDropDownOpen=true;};
         query.GotKeyboardFocus+=(_,_)=>query.SelectAll();
@@ -100,7 +105,7 @@ public sealed class WeaponSearchBox : Control
             var row=ItemsControl.ContainerFromElement(suggestions,e.OriginalSource as DependencyObject) as ListBoxItem;
             if(row?.Content is Weapon w){Commit(w);e.Handled=true;}
         };
-        ((ToggleButton)Template.FindName("Open",this)).Click+=(_,_)=>{if(IsDropDownOpen){Filter("");query.Focus();query.SelectAll();}};
+        ((ToggleButton)Template.FindName("Open",this)).Click+=(_,_)=>{if(IsDropDownOpen)OpenSearch();};
         var toggle=(ToggleButton)Template.FindName("Open",this);toggle.ApplyTemplate();
         if(toggle.Template.FindName("Chevron",toggle) is FrameworkElement arrow)UiMotion.Attach(SearchPopup,arrow);
         SearchPopup.Closed+=(_,_)=>{composing=false;SyncText();};
@@ -151,4 +156,5 @@ public sealed class WeaponSearchBox : Control
     {if(query is null)return;syncing=true;try{query.Text=(SelectedItem as Weapon)?.Name??"";}finally{syncing=false;}}
     private void Commit(Weapon w){SelectedItem=w;IsDropDownOpen=false;SyncText();query?.Focus();query?.SelectAll();}
     internal void CancelSearch(){IsDropDownOpen=false;SyncText();}
+    private void OpenSearch(){Filter("");query?.Focus();query?.SelectAll();IsDropDownOpen=true;}
 }

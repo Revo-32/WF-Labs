@@ -43,7 +43,7 @@ public sealed partial class MainWindow : Window
 
     public MainWindow()
     {
-        Title = "WF Labs"; MinWidth = Math.Min(1760,SystemParameters.WorkArea.Width); MinHeight = Math.Min(920,SystemParameters.WorkArea.Height); Width = Math.Max(MinWidth,Math.Min(1920,SystemParameters.WorkArea.Width-24)); Height = Math.Max(MinHeight,Math.Min(1000,SystemParameters.WorkArea.Height-24));
+        Title = "WF Labs"; MinWidth = Math.Min(1280,SystemParameters.WorkArea.Width); MinHeight = Math.Min(720,SystemParameters.WorkArea.Height); Width = Math.Max(MinWidth,Math.Min(1920,SystemParameters.WorkArea.Width-24)); Height = Math.Max(MinHeight,Math.Min(1000,SystemParameters.WorkArea.Height-24));
         board = new ModBoard(catalog);
         SetResourceReference(FontFamilyProperty,"AppFont"); FontSize = 14;
         Background = Brushes.Transparent; WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -58,13 +58,13 @@ public sealed partial class MainWindow : Window
         workspaceViewport.Margin=new(20,8,20,8);workspaceViewport.Content=page;Grid.SetRow(workspaceViewport,2);root.Children.Add(workspaceViewport);
         void FitWorkspace()
         {
-            // Decide from the full allocation, before scrollbar gutters. Otherwise
-            // shrinking a wide window can leave two Auto bars keeping each other alive.
-            bool fits=workspaceViewport.ActualWidth>=1718-1&&workspaceViewport.ActualHeight>=798-1;
-            var bars=fits?ScrollBarVisibility.Disabled:ScrollBarVisibility.Auto;
-            workspaceViewport.HorizontalScrollBarVisibility=bars;workspaceViewport.VerticalScrollBarVisibility=bars;
-            page.Width=fits?workspaceViewport.ActualWidth:Math.Max(1718,workspaceViewport.ViewportWidth);
-            page.Height=fits?workspaceViewport.ActualHeight:Math.Max(798,workspaceViewport.ViewportHeight);
+            if(workspaceViewport.ActualWidth<=0||workspaceViewport.ActualHeight<=0)return;
+            var availableHeight=ActualHeight>0?ActualHeight:Height;bool compact=availableHeight<860;double captionHeight=availableHeight<740?52:compact?56:WindowFrame.HeaderHeight;
+            root.RowDefinitions[0].Height=new(captionHeight);workspaceViewport.Margin=new(20,compact?4:8,20,compact?4:8);workflowBar.Margin=new(20,compact?0:4,20,0);
+            if(System.Windows.Shell.WindowChrome.GetWindowChrome(this) is {} chrome&&chrome.CaptionHeight!=captionHeight)chrome.CaptionHeight=captionHeight;
+            // Pages own their scrolling; the workstation itself always fits the window.
+            workspaceViewport.HorizontalScrollBarVisibility=ScrollBarVisibility.Disabled;workspaceViewport.VerticalScrollBarVisibility=ScrollBarVisibility.Disabled;
+            page.Width=Math.Max(0,workspaceViewport.ActualWidth);page.Height=Math.Max(0,workspaceViewport.ActualHeight);
         }
         workspaceViewport.SizeChanged+=(_,_)=>FitWorkspace();
         workspaceViewport.ScrollChanged+=(_,e)=>{if(e.ViewportWidthChange!=0||e.ViewportHeightChange!=0)FitWorkspace();};FitWorkspace();
@@ -74,7 +74,10 @@ public sealed partial class MainWindow : Window
         modPage = CreateModPage(); rivenPage = CreateRivenPage(); ShowModding();
         board.EditRiven+=()=>{if(equippedRiven is {} r)ApplyRivenWorkbench(r);OpenRivenClass("Melee");};
         SourceInitialized += (_, _) => Backdrop.Apply(this, lightMode, Theme.IsDark);
+        SourceInitialized += (_, _) => InitializeRelicHotkey();
+        SourceInitialized += (_, _) => InitializeRivenCapture();
         Closed += (_, _) => { generation++; debounce.Stop(); encounterCancellation?.Cancel(); };
+        Loaded+=(_,_)=>{EnsureSchedulePage();schedulePage!.StartMonitoring();};
         Deactivated+=(_,_)=>{equationSource=null;equationView.Highlight([]);};
         debounce.Tick += (_, _) => { debounce.Stop(); StartSimulation(); };
         initializing = false; SetLightMode(false); Recalculate();
@@ -297,8 +300,8 @@ public sealed partial class MainWindow : Window
         var p = Stack(T("개발 계획", 20), version, Spacer(12));
         string[] milestones = [
             "현재  모딩·교전·리벤 분석\n근접·주무기·보조무기 모딩과 DPS·TTK 비교, 조우·키트건 조립, 아케인·인카논·베일런스, 리벤 범위·접합·순환을 제공합니다. 확정 규칙·입력 시나리오·근사는 결과에서 구분합니다.",
-            "다음  성유물 보상 인식·시세 비교\n보상 화면에서 단축키 → 후보 인식 → 플래티넘·듀캇 비교. 먼저 한국어 스크린샷에서 품목을 식별하고 마켓 조회를 연결합니다. 낮은 인식 신뢰도·조회 시각·오프라인 상태를 표시합니다.",
-            "이후  마스터리 제작·랭작 계획\n보유·숙련 장비 표시 → 지금 제작 가능한 장비 → 부족 재료·선행 장비 확인. 추천 이유와 다음 행동을 함께 보여주고 조립식·40랭크 장비의 예외를 검증합니다.",
+            "현재  성유물 보상 인식·시세 비교\n한국어 보상 화면·파일·붙여넣기 → 후보 확인 → 플래티넘·두캇 비교. 애매한 이름은 직접 선택하며 원본 확대·영역 재인식, 마켓 접속 조건·조회 시각·오프라인 캐시를 제공합니다.",
+            "현재  마스터리 제작·랭작 계획\n보유·숙련 장비와 진행률, 제작·구매 추천 순서, 부족 재료·선행 장비·획득처·구매 호가를 제공합니다. 보유 성유물의 개봉·정련 효율도 함께 비교합니다.",
             "이후  모딩 화면 인식\n게임 화면에서 무기·모드·랭크·리벤 후보를 읽고 사용자가 확인한 뒤 적용합니다. 기존 빌드와 비교하고 되돌릴 수 있도록 합니다.",
             "별도 단계  익절티드·워프레임 어빌리티\n전체 시전·자원·분신 시뮬레이션은 후속 단계입니다. 현재 로어·이클립스 같은 단순 외부 버프는 유지합니다.",
             "지속 검증\n게임 패치·위키 개정 대조, 계산 회귀와 UI 검수를 각 배포에 포함합니다. 정확도와 세부 계산을 유지한 뒤 최적화하며, 화면 인식은 사용자 요청 시점에 제한합니다."
@@ -341,7 +344,7 @@ public sealed partial class MainWindow : Window
     public void SetDarkTheme(bool dark)
     {
         if (themeSwitch.IsChecked != !dark) { themeSwitch.IsChecked = !dark; return; }
-        Theme.Apply(dark); SetLightMode(lightMode); RefreshRivenWorkbench(false);
+        Theme.Apply(dark); SetLightMode(lightMode); RefreshRivenWorkbench(false);schedulePage?.Tick();
         equationView.Retheme();
         if(current is not null)RefreshDashboard(current,currentStance);
     }

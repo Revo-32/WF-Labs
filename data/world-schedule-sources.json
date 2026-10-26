@@ -1,0 +1,51 @@
+{
+  "retrievedUtc": "2026-10-25T14:52:15.729389+00:00",
+  "sources": [
+    {
+      "url": "https://browse.wf/arbys.txt",
+      "sha256": "007b46e6cf4d879e20f815ccc1e03b6dad4a58018959f8541fad37f385ee2cb4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/calamity-inc/browse.wf/senpai/supplemental-data/arbyTiers.js",
+      "sha256": "aa25e300f709feca277b2600336a600224e63e12f0ba1f9039ad589cb156bc30"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/ExportRegions.json",
+      "sha256": "56baa9b44520e1cadb4e045dd3af065edf8f15287257e4b3f48a40d153822072"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/ExportVendors.json",
+      "sha256": "5dbcc887574dd15f7a8d59c14a1ac9dc1beceb999f9643909942cc21c872b7fc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/dict.ko.json",
+      "sha256": "cb9ff3d336b12e8aaa9ae2e0d710ff1968265623f0a392840d5aa1f6989d8d7f"
+    },
+    {
+      "title": "Coda Weapons",
+      "revision": 2821059,
+      "timestamp": "2026-10-23T00:56:34Z",
+      "url": "https://wiki.warframe.com/w/Coda_Weapons?oldid=2821059",
+      "sha256": "39f4536377625d1339b6d4faf3ddc16fcd1c923d415b76047bb330ec68fd41ca"
+    },
+    {
+      "title": "Tenet Weapons",
+      "revision": 2820686,
+      "timestamp": "2026-10-22T00:40:26Z",
+      "url": "https://wiki.warframe.com/w/Tenet_Weapons?oldid=2820686",
+      "sha256": "a358ce07773da7e7ebecc0b3172a019ab0ad4df74e4651f9d7195c9e2a602437"
+    }
+  ],
+  "notes": [
+    "중재 등급과 예측 일정: Arbitration Goons / browse.wf. https://browse.wf/about 의 Raw Data / Arbitrations 이용 고지에 따라 출처를 표시한다.",
+    "지구 숲의 예전 4시간 낮밤 API 필드는 사용하지 않고 Update 38.5의 평원 동기화 규칙을 따른다.",
+    "코다 기준점은 현재 위키 주기식을 따른다. 초기 출시 공지의 첫 교체 날짜와 차이가 있어 위키 기준 예상으로 표시한다.",
+    "원소·보너스는 제보값이며 해당 회차에서 값이 변경된 근거가 있을 때만 현회차 제보로 표시한다.",
+    "주기 API가 지연되면 공식 CetusSyndicate 의뢰 만료를 이용해 평원·캠비온만 보완한다. 다른 지역의 기준 시각을 갱신한 것으로 표시하지 않는다."
+  ],
+  "officialRules": [
+    "https://www.warframe.com/en/patch-notes/pc/38-5-0"
+  ],
+  "worldState": "https://api.warframestat.us/pc?language=ko",
+  "officialWorldState": "https://api.warframe.com/cdn/worldState.php"
+}

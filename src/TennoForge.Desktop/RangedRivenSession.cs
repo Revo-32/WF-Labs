@@ -90,7 +90,7 @@ internal sealed partial class RangedRivenEditor
         RangedRivenWorkshop.Validate(state);session=state;applyingWorkshop=true;
         try
         {
-            var roll=state.Current;rank.SelectedIndex=roll.Rank;cost.Text=roll.BaseDrain?.ToString()??"";polarity.SelectedItem=polarity.Items.Cast<Choice>().SingleOrDefault(c=>c.Key==roll.Polarity);
+            var roll=state.Current;rank.SelectedIndex=roll.Rank;cost.Text=(roll.BaseDrain+roll.Rank)?.ToString()??"";polarity.SelectedItem=polarity.Items.Cast<Choice>().SingleOrDefault(c=>c.Key==roll.Polarity);
             for(int i=0;i<4;i++){var trait=roll.Traits.ElementAtOrDefault(i);rows[i].Stat.SelectedItem=rows[i].Stat.Items.Cast<Choice>().Single(c=>c.Key==(trait?.Stat??""));rows[i].Value.Text=trait?.Value.ToString(CultureInfo.InvariantCulture)??"";rows[i].Sign.SelectedIndex=trait?.Negative==true?1:0;}
             cycles.Text=state.Cycles.ToString();preserve.IsChecked=state.PreserveSplice;
         }

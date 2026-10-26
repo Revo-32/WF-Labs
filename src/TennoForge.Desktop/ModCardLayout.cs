@@ -32,7 +32,7 @@ internal static class ModCardLayout
             var horizontal=Math.Max(library?10:14,Math.Ceiling(card.ActualWidth*edge+2));
             // Reserve a quiet band below the upper rim for cost/polarity and
             // below the two-line name for the lower corner ornaments.
-            set(new(horizontal,14,horizontal,12));
+            var compact=card.Height<=70;set(new(horizontal,compact?12:14,horizontal,compact?10:12));
         }
         Update();card.SizeChanged+=(_,e)=>{if(e.WidthChanged)Update();};
     }

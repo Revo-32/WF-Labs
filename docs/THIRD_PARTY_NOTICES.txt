@@ -28,6 +28,40 @@ WF Labs 자체 소스는 공개 열람용이며 별도의 재사용 라이선스
 COPYRIGHT.md를 참조하세요.
 이 문서는 타사 자료의 권리나 사용 조건을 변경하지 않습니다.
 
+일정·지역 주기·상점:
+
+- 중재 예측 일정: browse.wf / Calamity, Inc. · 중재 등급: Arbitration Goons.
+  게임 공식 등급이 아닙니다. 데이터 이용·출처 안내: https://browse.wf/about
+  BROWSE-WF-NOTICE.txt 및 Data/world-schedule-sources.json 참조.
+- 노드·상점 품목·한국어 태그: warframe-public-export-plus, MIT License.
+  일정 오버레이의 Data/schedule-regions.json에도 같은 원본을 사용합니다.
+  PUBLIC-EXPORT-PLUS-LICENSE.txt에 원문을 보존합니다.
+  https://github.com/calamity-inc/warframe-public-export-plus
+- 지역 주기 기준 자료: warframestat.us PC world state API.
+  지구 숲 주기는 Digital Extremes Update 38.5의 평원 동기화 규칙을 적용합니다.
+- 테넷·코다 판매 주기/제보: WARFRAME Wiki의 Tenet Weapons / Coda Weapons.
+  개정 번호·원문 해시는 Data/world-schedule-sources.json에 기록합니다.
+  내장 규칙의 위키 콘텐츠는 기존 WF-WIKI-NOTICE.txt의 권리를 따릅니다.
+
+성유물 보상 인식과 시세:
+
+- wfkor.traineddata는 tessdata_best 한국어 LSTM 모델을 추가 학습한 파일입니다. 기반 모델의 Apache-2.0 고지와 라이선스는 Assets/Ocr/TESSDATA-LICENSE.txt에 보존하며, 기반 모델 URL·해시·학습 및 평가 범위는 Assets/Ocr/wfkor.model.json에 기록합니다. 원본 게임 이미지와 합성에 사용한 글꼴 파일을 새 모델 배포 파일에 추가하지 않았습니다.
+- Warframe.market: WARFRAME-MARKET-NOTICE.txt 참조. 품목 메타데이터의 출처·원문 해시를 보존합니다.
+- Tesseract .NET wrapper 5.2.0, Tesseract OCR, tessdata_best 한국어·영어 LSTM 모델:
+  Apache License 2.0. Assets/Ocr/TESSERACT-NET-LICENSE.txt,
+  TESSERACT-LICENSE.txt, TESSDATA-LICENSE.txt 및 SOURCES.json 참조.
+- Leptonica 1.82.0: Assets/Ocr/LEPTONICA-LICENSE.txt 참조.
+- 한국어 PP-OCRv5 mobile 인식 모델: PaddlePaddle/PaddleOCR, RapidAI/RapidOCR의
+  ONNX 변환 배포본(v3.9.2)을 내장합니다. Apache License 2.0.
+  Assets/Ocr/PADDLEOCR-LICENSE.txt, RAPIDOCR-LICENSE.txt 및
+  korean-line-v5.model.json의 원본 URL·SHA-256·용도를 참조하세요.
+  WF Labs가 이 모델을 추가 학습했다고 표시하지 않습니다.
+- Microsoft.ML.OnnxRuntime 1.22.1: MIT License.
+  Assets/Ocr/ONNXRUNTIME-LICENSE.txt 및 ONNXRUNTIME-THIRD-PARTY-NOTICES.txt 참조. CPU로 로컬 추론하며 Python이나
+  PaddlePaddle 런타임, GPU 실행 공급자는 앱에 포함하지 않습니다.
+- OCR 네이티브 라이브러리는 Microsoft Visual C++ 2015–2022 x64 런타임을 필요로 합니다.
+  이 런타임은 .NET self-contained 포함 여부와 별개이며, 시스템 DLL을 복사해 재배포하지 않습니다.
+
 Pretendard v1.3.9 — Copyright (c) 2021, Kil Hyung-jin (https://github.com/orioncactus/pretendard).
 SIL Open Font License 1.1. 원본 Regular/SemiBold/Bold TTF를 수정 없이 내장합니다.
 라이선스: Fonts/PRETENDARD-LICENSE.txt; 출처·해시: Fonts/PRETENDARD-SOURCE.json
@@ -37,3 +71,16 @@ SIL Open Font License 1.1. 원본 Regular/SemiBold/Bold TTF를 수정 없이 내
   Warframe 게임 문양의 권리는 원권리자에게 있으며, WF Labs의 자체 코드 라이선스에 포함되지 않습니다.
   추가 원본 URL·해시: src/TennoForge.Desktop/Assets/Polarities/sources-2026-10-24.json.
   위키 콘텐츠 고지는 WF-WIKI-NOTICE.txt를 따릅니다. 원본 SVG를 수정하지 않고 UI에서 크기·색상만 적용합니다.
+2026-10-26 인벤토리 획득처 보강:
+data/inventory-acquisition.json 및 inventory-acquisition-provenance.json은
+WARFRAME Wiki contributors의 개정별 획득처를 정규화한 파생 자료입니다.
+위키 자료의 기존 CC BY-NC-SA 3.0 및 WFCD/public-export 원본 라이선스를 유지합니다.
+각 원문의 URL·개정·해시와 렌더링 응답의 해시는 provenance 파일에 있습니다.
+FrameForge의 공개 설명은 로컬 데이터 형식 조사에 참고했으며 소스 코드를 복사하지 않았습니다.
+
+2026-10-26 인카논 순환표:
+data/incarnon-rotations.json은 WARFRAME Wiki contributors의 Incarnon 문서
+개정 2821396의 9주·45개 어댑터 표를 정규화했습니다. 위키 자료의 CC BY-NC-SA 3.0을
+유지합니다. 공식 EndlessXpSchedule의 주간 선택지·기간과 비교해 기준 주차를 연결했으며,
+정규화 파일에 원본 URL·개정·SHA-256을 보존합니다. 한국어 품목명·내부 ID는
+기존 Public Export 데이터와 연결합니다. WF-WIKI-NOTICE.txt 및 PUBLIC-EXPORT 관련 고지를 따릅니다.

@@ -18,10 +18,12 @@ public sealed partial class MainWindow
         var slots=new UniformGrid{Columns=3,Margin=new(0,8,0,0)};
         Button Slot(string title,TextBlock name,TextBlock detail,Action open)
         {
-            var label=T(title,13,"#596B85");label.Margin=new(0,0,0,4);
+            var label=T(title,13,"#596B85");label.Margin=new(0);
             name.TextWrapping=TextWrapping.Wrap;name.TextTrimming=TextTrimming.CharacterEllipsis;name.Height=40;name.Margin=new(0);
             detail.Margin=new(0);detail.SetResourceReference(TextBlock.ForegroundProperty,"AccentBrush");
-            var button=Button("",open);button.Content=Stack(label,name,detail);button.Padding=new(9,7,9,7);button.Height=100;button.Margin=new(0,0,6,0);button.HorizontalContentAlignment=HorizontalAlignment.Stretch;
+            var band=new DockPanel{LastChildFill=true};DockPanel.SetDock(detail,Dock.Right);band.Children.Add(detail);band.Children.Add(label);
+            var body=new Grid();body.RowDefinitions.Add(new(){Height=GridLength.Auto});body.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});body.Children.Add(band);Grid.SetRow(name,1);body.Children.Add(name);
+            var button=Button("",open);button.Content=body;button.Padding=new(9,7,9,7);button.Height=100;button.Margin=new(0,0,6,0);button.HorizontalContentAlignment=HorizontalAlignment.Stretch;
             AutomationProperties.SetName(button,title+" 슬롯 · 변경");slots.Children.Add(button);return button;
         }
         exilusSlotButton=Slot("엑실러스",exilusSlotName,exilusSlotRank,()=>OpenEquipmentPicker("exilus"));

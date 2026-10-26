@@ -1,0 +1,339 @@
+{
+  "version": 1,
+  "retrievedUtc": "2026-10-25T23:56:08.129219+00:00",
+  "anchorUtc": "2026-10-19T00:00:00+00:00",
+  "anchorWeek": 8,
+  "wikiUrl": "https://wiki.warframe.com/w/Incarnon?oldid=2821396",
+  "revision": 2821396,
+  "weeks": [
+    {
+      "week": 1,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Rifle/Rifle",
+          "name": "브래튼",
+          "englishName": "Braton",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/Pistol",
+          "name": "라토",
+          "englishName": "Lato",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/LongSword/LongSword",
+          "name": "스카나",
+          "englishName": "Skana",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Bows/HuntingBow",
+          "name": "패리스",
+          "englishName": "Paris",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/Kunai",
+          "name": "쿠나이",
+          "englishName": "Kunai",
+          "category": "Secondary"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Shotgun/FullAutoShotgun",
+          "name": "보어",
+          "englishName": "Boar",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSDroidArray",
+          "name": "감마코어",
+          "englishName": "Gammacor",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/CorpusHandRocketLauncher",
+          "name": "앙스트럼",
+          "englishName": "Angstrum",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Rifle/HeavyRifle",
+          "name": "고르곤",
+          "englishName": "Gorgon",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Scythe/ParisScythe/ParisScythe",
+          "name": "안쿠",
+          "englishName": "Anku",
+          "category": "Melee"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Staff/Staff",
+          "name": "보",
+          "englishName": "Bo",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Rifle/SemiAutoRifle",
+          "name": "래트론",
+          "englishName": "Latron",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/AutoPistol",
+          "name": "퓨리스",
+          "englishName": "Furis",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Fist/Fist",
+          "name": "퓨랙스",
+          "englishName": "Furax",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Shotgun/Shotgun",
+          "name": "스트런",
+          "englishName": "Strun",
+          "category": "Primary"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/HeavyPistol",
+          "name": "렉스",
+          "englishName": "Lex",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Maces/PaladinMace/PaladinMaceWeapon",
+          "name": "마기스타",
+          "englishName": "Magistar",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Rifle/BoltoRifle",
+          "name": "볼터",
+          "englishName": "Boltor",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/HandShotGun",
+          "name": "브롱코",
+          "englishName": "Bronco",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Dagger/CeramicDagger",
+          "name": "세라믹 대거",
+          "englishName": "Ceramic Dagger",
+          "category": "Melee"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/ClanTech/Bio/BioWeapon",
+          "name": "토리드",
+          "englishName": "Torid",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Infested/Pistols/InfVomitGun/InfVomitGunWep",
+          "name": "듀얼 톡소시스트",
+          "englishName": "Dual Toxocyst",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Axe/DualInfestedAxesWeapon",
+          "name": "듀얼 이코르",
+          "englishName": "Dual Ichor",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Grineer/LongGuns/GrineerSawbladeGun/SawBladeGun",
+          "name": "마이터",
+          "englishName": "Miter",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Grineer/Pistols/HeatGun/GrnHeatGun",
+          "name": "아토모스",
+          "englishName": "Atomos",
+          "category": "Secondary"
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/Grineer/Melee/GrineerTylAxeAndBoar/RegorAxeShield",
+          "name": "아크 & 브런트",
+          "englishName": "Ack & Brunt",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Rifle/TennoAR",
+          "name": "소마",
+          "englishName": "Soma",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/RevolverPistol",
+          "name": "바스토",
+          "englishName": "Vasto",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/TennoCutlass",
+          "name": "나미 솔로",
+          "englishName": "Nami Solo",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Rifle/BurstRifle",
+          "name": "버스튼",
+          "englishName": "Burston",
+          "category": "Primary"
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol",
+          "name": "자일락",
+          "englishName": "Zylok",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Hammer/IceHammer/IceHammer",
+          "name": "시비어",
+          "englishName": "Sibear",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Bows/StalkerBow",
+          "name": "드레드",
+          "englishName": "Dread",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/ThrowingWeapons/StalkerKunai",
+          "name": "디스페어",
+          "englishName": "Despair",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Scythe/StalkerScytheWeapon",
+          "name": "헤이트",
+          "englishName": "Hate",
+          "category": "Melee"
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/ClanTech/Energy/EnergyRifle",
+          "name": "데라",
+          "englishName": "Dera",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/LongGuns/TnoLeverAction/TnoLeverActionRifle",
+          "name": "시바리스",
+          "englishName": "Sybaris",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun",
+          "name": "세스트라",
+          "englishName": "Cestra",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistol/BurstPistol",
+          "name": "시카루스",
+          "englishName": "Sicarus",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Swords/TennoSai/TennoSais",
+          "name": "오키나",
+          "englishName": "Okina",
+          "category": "Melee"
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "weapons": [
+        {
+          "id": "/Lotus/Weapons/Tenno/Rifle/TennoSniperRifle",
+          "name": "벡티스",
+          "englishName": "Vectis",
+          "category": "Primary"
+        },
+        {
+          "id": "/Lotus/Weapons/Grineer/Pistols/GrineerCrossbow/GrineerGooGun",
+          "name": "스터그",
+          "englishName": "Stug",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Pistols/AutomaticHandCrossbow/AutoCrossBow",
+          "name": "발리스티카",
+          "englishName": "Ballistica",
+          "category": "Secondary"
+        },
+        {
+          "id": "/Lotus/Weapons/Tenno/Melee/Swords/TnoRapier/TnoRapier",
+          "name": "데스트레자",
+          "englishName": "Destreza",
+          "category": "Melee"
+        },
+        {
+          "id": "/Lotus/Weapons/Corpus/Melee/KickAndPunch/KickPunchWeapon",
+          "name": "오벡스",
+          "englishName": "Obex",
+          "category": "Melee"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://wiki.warframe.com/w/Incarnon",
+      "sha256": "5591b9d503645785d10cbfe9fbd9e7aa520fe0228013ad9eb70b1f356de27bad"
+    },
+    {
+      "url": "https://wiki.warframe.com/api.php",
+      "sha256": "a1a7d2202c0049f627da7b74ba975e354b2f6af3f1ced071f63f59baf857ff51"
+    },
+    {
+      "url": "https://api.warframe.com/cdn/worldState.php",
+      "sha256": "dc963833fe688b658c4f4d9fb39c16200575f7778f10dd8e046172a0c0e2a650"
+    }
+  ]
+}

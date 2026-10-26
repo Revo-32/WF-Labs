@@ -46,7 +46,7 @@ internal sealed partial class RangedPage
             }
             foreach(var scale in new[]{1d,1.25,1.5})render((FrameworkElement)Window.GetWindow(this).Content,"settings",scale);
             scenarioDrawer?.SetOpen(false,false);await Settle();
-            attack.SelectedIndex=name=="Tombfinger (Secondary)"?1:3;await Settle();Yes(calculateButton.Content as string=="전체 공격 DPS · TTK 계산","파생 구성요소 선택 시 전체 공격 버튼 표시");
+            attack.SelectedIndex=name=="Tombfinger (Secondary)"?1:3;await Settle();Yes((calculateButton.Content as string)?.StartsWith("전체 공격 DPS·TTK ")==true,"파생 구성요소 선택 시 전체 공격 버튼 표시");
             var before=combatResultHost.Content;
             ((IInvokeProvider)UIElementAutomationPeer.CreatePeerForElement(calculateButton)!.GetPattern(PatternInterface.Invoke)).Invoke();
             var timeout=Stopwatch.StartNew();

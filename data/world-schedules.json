@@ -1,0 +1,941 @@
+{
+  "version": 1,
+  "retrievedUtc": "2026-10-25T14:52:15.729389+00:00",
+  "nodes": [
+    {
+      "id": "ClanNode0",
+      "name": "Romula",
+      "planet": "금성",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode1",
+      "name": "Malva",
+      "planet": "금성",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode10",
+      "name": "Memphis",
+      "planet": "포보스",
+      "mission": "탈주",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode11",
+      "name": "Zeugma",
+      "planet": "포보스",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode12",
+      "name": "Caracol",
+      "planet": "토성",
+      "mission": "탈주",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode13",
+      "name": "Piscinas",
+      "planet": "토성",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode14",
+      "name": "Amarna",
+      "planet": "세드나",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode15",
+      "name": "Sangeru",
+      "planet": "세드나",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "D"
+    },
+    {
+      "id": "ClanNode16",
+      "name": "Ur",
+      "planet": "천왕성",
+      "mission": "교란",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode17",
+      "name": "Assur",
+      "planet": "천왕성",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode18",
+      "name": "Akkad",
+      "planet": "에리스",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "B"
+    },
+    {
+      "id": "ClanNode19",
+      "name": "Zabala",
+      "planet": "에리스",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode2",
+      "name": "Coba",
+      "planet": "지구",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "C"
+    },
+    {
+      "id": "ClanNode20",
+      "name": "Yursa",
+      "planet": "해왕성",
+      "mission": "탈주",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode21",
+      "name": "Kelashin",
+      "planet": "해왕성",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode22",
+      "name": "Seimeni",
+      "planet": "세레스",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "B"
+    },
+    {
+      "id": "ClanNode23",
+      "name": "Gabii",
+      "planet": "세레스",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode24",
+      "name": "Sechura",
+      "planet": "명왕성",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "B"
+    },
+    {
+      "id": "ClanNode25",
+      "name": "Hieracon",
+      "planet": "명왕성",
+      "mission": "발굴",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode3",
+      "name": "Tikal",
+      "planet": "지구",
+      "mission": "발굴",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode4",
+      "name": "Sinai",
+      "planet": "목성",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "D"
+    },
+    {
+      "id": "ClanNode5",
+      "name": "Cameria",
+      "planet": "목성",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode6",
+      "name": "Larzac",
+      "planet": "유로파",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "C"
+    },
+    {
+      "id": "ClanNode7",
+      "name": "Cholistan",
+      "planet": "유로파",
+      "mission": "발굴",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "ClanNode8",
+      "name": "Kadesh",
+      "planet": "화성",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "C"
+    },
+    {
+      "id": "ClanNode9",
+      "name": "Wahiba",
+      "planet": "화성",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "SettlementNode11",
+      "name": "Gulliver",
+      "planet": "포보스",
+      "mission": "방어",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SettlementNode3",
+      "name": "Stickney",
+      "planet": "포보스",
+      "mission": "생존",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode100",
+      "name": "Elara",
+      "planet": "목성",
+      "mission": "생존",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode101",
+      "name": "Kiliken",
+      "planet": "금성",
+      "mission": "발굴",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode106",
+      "name": "Alator",
+      "planet": "화성",
+      "mission": "감청",
+      "faction": "그리니어",
+      "tier": "S"
+    },
+    {
+      "id": "SolNode118",
+      "name": "Laomedeia",
+      "planet": "해왕성",
+      "mission": "교란",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode122",
+      "name": "Stephano",
+      "planet": "천왕성",
+      "mission": "방어",
+      "faction": "그리니어",
+      "tier": "C"
+    },
+    {
+      "id": "SolNode123",
+      "name": "V Prime",
+      "planet": "금성",
+      "mission": "생존",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode125",
+      "name": "Io",
+      "planet": "목성",
+      "mission": "방어",
+      "faction": "코퍼스",
+      "tier": "D"
+    },
+    {
+      "id": "SolNode130",
+      "name": "Lares",
+      "planet": "수성",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "D"
+    },
+    {
+      "id": "SolNode146",
+      "name": "Draco",
+      "planet": "세레스",
+      "mission": "생존",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode147",
+      "name": "Cinxia",
+      "planet": "세레스",
+      "mission": "감청",
+      "faction": "그리니어",
+      "tier": "A"
+    },
+    {
+      "id": "SolNode149",
+      "name": "Casta",
+      "planet": "세레스",
+      "mission": "방어",
+      "faction": "그리니어",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode16",
+      "name": "Augustus",
+      "planet": "화성",
+      "mission": "발굴",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode164",
+      "name": "Kala-azar",
+      "planet": "에리스",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode166",
+      "name": "Nimus",
+      "planet": "에리스",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode167",
+      "name": "Oestrus",
+      "planet": "에리스",
+      "mission": "인페스티드 인양",
+      "faction": "인페스티드",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode17",
+      "name": "Proteus",
+      "planet": "해왕성",
+      "mission": "방어",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode172",
+      "name": "Xini",
+      "planet": "에리스",
+      "mission": "감청",
+      "faction": "인페스티드",
+      "tier": "A"
+    },
+    {
+      "id": "SolNode177",
+      "name": "Kappa",
+      "planet": "세드나",
+      "mission": "교란",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode18",
+      "name": "Rhea",
+      "planet": "토성",
+      "mission": "감청",
+      "faction": "그리니어",
+      "tier": "D"
+    },
+    {
+      "id": "SolNode185",
+      "name": "Berehynia",
+      "planet": "세드나",
+      "mission": "감청",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode187",
+      "name": "Selkie",
+      "planet": "세드나",
+      "mission": "생존",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode195",
+      "name": "Hydron",
+      "planet": "세드나",
+      "mission": "방어",
+      "faction": "그리니어",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode211",
+      "name": "Ose",
+      "planet": "유로파",
+      "mission": "감청",
+      "faction": "코퍼스",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode212",
+      "name": "Paimon",
+      "planet": "유로파",
+      "mission": "방어",
+      "faction": "코퍼스",
+      "tier": "C"
+    },
+    {
+      "id": "SolNode216",
+      "name": "Valefor",
+      "planet": "유로파",
+      "mission": "발굴",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode22",
+      "name": "Tessera",
+      "planet": "금성",
+      "mission": "방어",
+      "faction": "코퍼스",
+      "tier": "C"
+    },
+    {
+      "id": "SolNode224",
+      "name": "Odin",
+      "planet": "수성",
+      "mission": "감청",
+      "faction": "그리니어",
+      "tier": "C"
+    },
+    {
+      "id": "SolNode23",
+      "name": "Cytherean",
+      "planet": "금성",
+      "mission": "감청",
+      "faction": "코퍼스",
+      "tier": "A"
+    },
+    {
+      "id": "SolNode230",
+      "name": "에버뷰 반원로",
+      "planet": "자리만",
+      "mission": "보이드 홍수",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode232",
+      "name": "투불 광장",
+      "planet": "자리만",
+      "mission": "보이드 범람",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode233",
+      "name": "오로 작업장",
+      "planet": "자리만",
+      "mission": "보이드 대격전",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode25",
+      "name": "Callisto",
+      "planet": "목성",
+      "mission": "감청",
+      "faction": "코퍼스",
+      "tier": "S"
+    },
+    {
+      "id": "SolNode26",
+      "name": "Lith",
+      "planet": "지구",
+      "mission": "방어",
+      "faction": "그리니어",
+      "tier": "C"
+    },
+    {
+      "id": "SolNode30",
+      "name": "Olympus",
+      "planet": "화성",
+      "mission": "교란",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode302",
+      "name": "Tycho",
+      "planet": "루아",
+      "mission": "생존",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode305",
+      "name": "Stöfler",
+      "planet": "루아",
+      "mission": "방어",
+      "faction": "그리니어",
+      "tier": "D"
+    },
+    {
+      "id": "SolNode308",
+      "name": "Apollo",
+      "planet": "루아",
+      "mission": "교란",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode309",
+      "name": "유바리움",
+      "planet": "루아",
+      "mission": "회합 생존",
+      "faction": "오로킨",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode39",
+      "name": "Everest",
+      "planet": "지구",
+      "mission": "발굴",
+      "faction": "그리니어",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode402",
+      "name": "Taranis",
+      "planet": "보이드",
+      "mission": "방어",
+      "faction": "오로킨",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode405",
+      "name": "Ani",
+      "planet": "보이드",
+      "mission": "생존",
+      "faction": "오로킨",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode408",
+      "name": "Belenus",
+      "planet": "보이드",
+      "mission": "방어",
+      "faction": "오로킨",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode409",
+      "name": "Mot",
+      "planet": "보이드",
+      "mission": "생존",
+      "faction": "오로킨",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode412",
+      "name": "Mithra",
+      "planet": "보이드",
+      "mission": "감청",
+      "faction": "오로킨",
+      "tier": "C"
+    },
+    {
+      "id": "SolNode42",
+      "name": "Helene",
+      "planet": "토성",
+      "mission": "방어",
+      "faction": "그리니어",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode43",
+      "name": "Cerberus",
+      "planet": "명왕성",
+      "mission": "감청",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode450",
+      "name": "Tyana Pass",
+      "planet": "화성",
+      "mission": "거울상 방어",
+      "faction": "그리니어·코퍼스",
+      "tier": "S"
+    },
+    {
+      "id": "SolNode46",
+      "name": "Spear",
+      "planet": "화성",
+      "mission": "방어",
+      "faction": "그리니어",
+      "tier": "C"
+    },
+    {
+      "id": "SolNode6",
+      "name": "Despina",
+      "planet": "해왕성",
+      "mission": "발굴",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode64",
+      "name": "Umbriel",
+      "planet": "천왕성",
+      "mission": "감청",
+      "faction": "그리니어",
+      "tier": "S"
+    },
+    {
+      "id": "SolNode707",
+      "name": "Hyf",
+      "planet": "데이모스",
+      "mission": "방어",
+      "faction": "인페스티드",
+      "tier": "B"
+    },
+    {
+      "id": "SolNode711",
+      "name": "Terrorem",
+      "planet": "데이모스",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode718",
+      "name": "Cambire",
+      "planet": "데이모스",
+      "mission": "연금술",
+      "faction": "속삭임",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode719",
+      "name": "MUNIO",
+      "planet": "데이모스",
+      "mission": "거울상 방어",
+      "faction": "속삭임",
+      "tier": "S"
+    },
+    {
+      "id": "SolNode72",
+      "name": "Outer Terminus",
+      "planet": "명왕성",
+      "mission": "방어",
+      "faction": "코퍼스",
+      "tier": "C"
+    },
+    {
+      "id": "SolNode81",
+      "name": "Palus",
+      "planet": "명왕성",
+      "mission": "생존",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode85",
+      "name": "Gaia",
+      "planet": "지구",
+      "mission": "감청",
+      "faction": "그리니어",
+      "tier": "D"
+    },
+    {
+      "id": "SolNode87",
+      "name": "Ganymede",
+      "planet": "목성",
+      "mission": "교란",
+      "faction": "코퍼스",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode94",
+      "name": "Apollodorus",
+      "planet": "수성",
+      "mission": "생존",
+      "faction": "인페스티드",
+      "tier": "F"
+    },
+    {
+      "id": "SolNode96",
+      "name": "Titan",
+      "planet": "토성",
+      "mission": "생존",
+      "faction": "그리니어",
+      "tier": "F"
+    }
+  ],
+  "offers": [
+    {
+      "id": "/Lotus/Weapons/Corpus/Melee/ShieldAndSword/CrpHammerShield/CrpHammerShield",
+      "name": "테넷 아젠더스",
+      "englishName": "Tenet Agendus",
+      "shop": "tenet",
+      "batch": "",
+      "price": 40,
+      "currency": "커럽티드 홀로키",
+      "masteryRequired": 14
+    },
+    {
+      "id": "/Lotus/Weapons/Tenno/Melee/Swords/CrpBigSlash/CrpBigSlash",
+      "name": "테넷 엑제크",
+      "englishName": "Tenet Exec",
+      "shop": "tenet",
+      "batch": "",
+      "price": 40,
+      "currency": "커럽티드 홀로키",
+      "masteryRequired": 16
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Melee/CrpBriefcase2HKatana/CrpBriefcase2HKatana",
+      "name": "테넷 리비아",
+      "englishName": "Tenet Livia",
+      "shop": "tenet",
+      "batch": "",
+      "price": 40,
+      "currency": "커럽티드 홀로키",
+      "masteryRequired": 14
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/Melee/CrpBriefcaseScythe/CrpBriefcaseScythe",
+      "name": "테넷 그리고리",
+      "englishName": "Tenet Grigori",
+      "shop": "tenet",
+      "batch": "",
+      "price": 40,
+      "currency": "커럽티드 홀로키",
+      "masteryRequired": 14
+    },
+    {
+      "id": "/Lotus/Weapons/Corpus/BoardExec/Primary/CrpBEFerrox/CrpBEFerrox",
+      "name": "테넷 페록스",
+      "englishName": "Tenet Ferrox",
+      "shop": "tenet",
+      "batch": "",
+      "price": 40,
+      "currency": "커럽티드 홀로키",
+      "masteryRequired": 16
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/1999InfShotgun/1999InfShotgunWeapon",
+      "name": "코다 바소시스트",
+      "englishName": "Coda Bassocyst",
+      "shop": "coda",
+      "batch": "B",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaTysis",
+      "name": "코다 타이시스",
+      "englishName": "Coda Tysis",
+      "shop": "coda",
+      "batch": "B",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaCaustacyst/CodaCaustacyst",
+      "name": "코다 커스타시스트",
+      "englishName": "Coda Caustacyst",
+      "shop": "coda",
+      "batch": "B",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSynapse",
+      "name": "코다 시냅스",
+      "englishName": "Coda Synapse",
+      "shop": "coda",
+      "batch": "B",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaHirudo",
+      "name": "코다 히루도",
+      "englishName": "Coda Hirudo",
+      "shop": "coda",
+      "batch": "B",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaPathocyst/CodaPathocyst",
+      "name": "코다 패소시스트",
+      "englishName": "Coda Pathocyst",
+      "shop": "coda",
+      "batch": "B",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaBubonico/CodaBubonicoCannon",
+      "name": "코다 뷰보니코",
+      "englishName": "Coda Bubonico",
+      "shop": "coda",
+      "batch": "B",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaHema",
+      "name": "코다 헤마",
+      "englishName": "Coda Hema",
+      "shop": "coda",
+      "batch": "A",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Pistols/1999InfSporePistol/1999InfSporePistolWeapon",
+      "name": "듀얼 코다 톡시카",
+      "englishName": "Dual Coda Torxica",
+      "shop": "coda",
+      "batch": "A",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Melee/InfestedHammer/InfLichHammerWeapon",
+      "name": "코다 모토보어",
+      "englishName": "Coda Motovore",
+      "shop": "coda",
+      "batch": "A",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/LongGuns/CodaSporothrix",
+      "name": "코다 스포로트릭스",
+      "englishName": "Coda Sporothrix",
+      "shop": "coda",
+      "batch": "A",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaCatabolyst",
+      "name": "코다 카타볼리스트",
+      "englishName": "Coda Catabolyst",
+      "shop": "coda",
+      "batch": "A",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Melee/CodaMire",
+      "name": "코다 마이어",
+      "englishName": "Coda Mire",
+      "shop": "coda",
+      "batch": "A",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    },
+    {
+      "id": "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaPox",
+      "name": "코다 폭스",
+      "englishName": "Coda Pox",
+      "shop": "coda",
+      "batch": "A",
+      "price": 10,
+      "currency": "라이브 심장 세포",
+      "masteryRequired": 17
+    }
+  ],
+  "tenetEpoch": "2015-12-03T00:00:00Z",
+  "codaEpoch": "2025-03-18T00:00:00Z",
+  "tierSource": "Arbitration Goons / browse.wf",
+  "sources": [
+    {
+      "url": "https://browse.wf/arbys.txt",
+      "sha256": "007b46e6cf4d879e20f815ccc1e03b6dad4a58018959f8541fad37f385ee2cb4"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/calamity-inc/browse.wf/senpai/supplemental-data/arbyTiers.js",
+      "sha256": "aa25e300f709feca277b2600336a600224e63e12f0ba1f9039ad589cb156bc30"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/ExportRegions.json",
+      "sha256": "56baa9b44520e1cadb4e045dd3af065edf8f15287257e4b3f48a40d153822072"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/ExportVendors.json",
+      "sha256": "5dbcc887574dd15f7a8d59c14a1ac9dc1beceb999f9643909942cc21c872b7fc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/dict.ko.json",
+      "sha256": "cb9ff3d336b12e8aaa9ae2e0d710ff1968265623f0a392840d5aa1f6989d8d7f"
+    },
+    {
+      "title": "Coda Weapons",
+      "revision": 2821059,
+      "timestamp": "2026-10-23T00:56:34Z",
+      "url": "https://wiki.warframe.com/w/Coda_Weapons?oldid=2821059",
+      "sha256": "39f4536377625d1339b6d4faf3ddc16fcd1c923d415b76047bb330ec68fd41ca"
+    },
+    {
+      "title": "Tenet Weapons",
+      "revision": 2820686,
+      "timestamp": "2026-10-22T00:40:26Z",
+      "url": "https://wiki.warframe.com/w/Tenet_Weapons?oldid=2820686",
+      "sha256": "a358ce07773da7e7ebecc0b3172a019ab0ad4df74e4651f9d7195c9e2a602437"
+    }
+  ]
+}

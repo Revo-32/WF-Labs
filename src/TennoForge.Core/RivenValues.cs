@@ -52,14 +52,19 @@ public static class RivenValues
         var center=basis*weight*disposition*(roll.Rank+1)/9;
         return new(.9*center,1.1*center,disposition,basis,weight);
     }
-    public static SpliceValues[] Predict(RivenRoll roll)
+    public static SpliceValues[] Predict(RivenRoll roll,IReadOnlyList<int>? displayedDecimals=null)
     {
-        Validate(roll);
+        Validate(roll,displayedDecimals is null);
+        if(displayedDecimals is not null)
+        {
+            if(displayedDecimals.Count!=roll.Traits.Length)throw new ArgumentException("표시 정밀도 개수가 옵션과 다릅니다.");
+            for(int i=0;i<roll.Traits.Length;i++){var r=Range(roll,roll.Traits[i]);RivenEngine.Grade(roll.Traits[i].Value,r.Minimum,r.Maximum,displayedDecimals[i]);}
+        }
         if(roll.Traits.Any(t=>t.Spliced))return [];
         return RivenEngine.Preview(roll).Select(candidate=>
         {
             EncounterRange Hidden(int i)
-            {var t=roll.Traits[i];var range=Range(roll,t);var center=range.Minimum/.9;return new(Math.Max(.9,(t.Value-.05)/center),Math.Min(1.1,(t.Value+.05)/center));}
+            {var t=roll.Traits[i];var range=Range(roll,t);var center=range.Minimum/.9;var half=.5*Math.Pow(10,-(displayedDecimals?[i]??1));return new(Math.Max(.9,(t.Value-half)/center),Math.Min(1.1,(t.Value+half)/center));}
             var a=Hidden(candidate.First);var b=Hidden(candidate.Second);
             var inherited=new EncounterRange(Math.Max(a.Low,b.Low),Math.Max(a.High,b.High));
             var result=new RivenTrait(candidate.Result,0,Spliced:true);var baseValue=Range(roll,result).Minimum/.9;

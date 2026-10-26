@@ -1,0 +1,1141 @@
+[
+  {
+    "name": "innodem-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-2026-10-25/innodem-real.png",
+    "full": false,
+    "options": [
+      {
+        "key": "StatusDuration",
+        "value": 118.8,
+        "negative": false
+      },
+      {
+        "key": "StatusChance",
+        "value": 108.1,
+        "negative": false
+      },
+      {
+        "key": "Heat",
+        "value": 106.4,
+        "negative": false
+      },
+      {
+        "key": "SlideCriticalChance",
+        "value": 100,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "innodem-full",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-2026-10-25/innodem-real.png",
+    "full": true,
+    "options": [
+      {
+        "key": "StatusDuration",
+        "value": 118.8,
+        "negative": false
+      },
+      {
+        "key": "StatusChance",
+        "value": 108.1,
+        "negative": false
+      },
+      {
+        "key": "Heat",
+        "value": 106.4,
+        "negative": false
+      },
+      {
+        "key": "SlideCriticalChance",
+        "value": 100,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "hirudo-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-range-2026-10-25/hirudo.png",
+    "full": false,
+    "options": [
+      {
+        "key": "Electricity",
+        "value": 101.1,
+        "negative": false
+      },
+      {
+        "key": "AttackSpeed",
+        "value": 63.9,
+        "negative": false
+      },
+      {
+        "key": "Range",
+        "value": 2,
+        "negative": false
+      },
+      {
+        "key": "VsCorpus",
+        "value": 41,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "hirudo-full",
+    "domain": "riven",
+    "image": "artifacts/riven-range-2026-10-25/hirudo.png",
+    "full": true,
+    "options": [
+      {
+        "key": "Electricity",
+        "value": 101.1,
+        "negative": false
+      },
+      {
+        "key": "AttackSpeed",
+        "value": 63.9,
+        "negative": false
+      },
+      {
+        "key": "Range",
+        "value": 2,
+        "negative": false
+      },
+      {
+        "key": "VsCorpus",
+        "value": 41,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "fang-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-labels-2026-10-25/fang.png",
+    "full": false,
+    "options": [
+      {
+        "key": "StatusDamage",
+        "value": 141.8,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 140.7,
+        "negative": false
+      },
+      {
+        "key": "FinisherDamage",
+        "value": 76.1,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "fang-full",
+    "domain": "riven",
+    "image": "artifacts/riven-labels-2026-10-25/fang.png",
+    "full": true,
+    "options": [
+      {
+        "key": "StatusDamage",
+        "value": 141.8,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 140.7,
+        "negative": false
+      },
+      {
+        "key": "FinisherDamage",
+        "value": 76.1,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "siam-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-refresh-2026-10-25/siam.png",
+    "full": false,
+    "options": [
+      {
+        "key": "CriticalDamage",
+        "value": 110.3,
+        "negative": false
+      },
+      {
+        "key": "StatusDamage",
+        "value": 108.6,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 95.2,
+        "negative": false
+      },
+      {
+        "key": "VsInfested",
+        "value": 42,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "siam-full",
+    "domain": "riven",
+    "image": "artifacts/riven-refresh-2026-10-25/siam.png",
+    "full": true,
+    "options": [
+      {
+        "key": "CriticalDamage",
+        "value": 110.3,
+        "negative": false
+      },
+      {
+        "key": "StatusDamage",
+        "value": 108.6,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 95.2,
+        "negative": false
+      },
+      {
+        "key": "VsInfested",
+        "value": 42,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "riven-inventory-negative",
+    "domain": "riven",
+    "image": "artifacts/riven-refresh-2026-10-25/inventory.png",
+    "options": []
+  },
+  {
+    "name": "relic-live-four",
+    "domain": "relic",
+    "image": "artifacts/relic-auto-live-2026-10-25-02/reward-capture.png",
+    "live": true,
+    "slugs": [
+      "athodai_prime_blueprint",
+      "bronco_prime_receiver",
+      "paris_prime_blueprint",
+      "sarofang_prime_handle"
+    ]
+  },
+  {
+    "name": "relic-wrapped",
+    "domain": "relic",
+    "image": "artifacts/relic-wrapped-2026-10-25/wrapped-orthos-rewards.png",
+    "live": true,
+    "slugs": [
+      "orthos_prime_blade",
+      "dual_zoren_prime_handle",
+      "sarofang_prime_handle",
+      "cedo_prime_barrel"
+    ]
+  },
+  {
+    "name": "legacy-opening.png",
+    "domain": "relic",
+    "image": "artifacts/relic-real-2026-10-24/opening.png",
+    "slugs": [
+      "daikyu_prime_lower_limb",
+      "paris_prime_upper_limb",
+      "gara_prime_neuroptics_blueprint",
+      "local:forma-blueprint"
+    ],
+    "minimumAutomatic": 4
+  },
+  {
+    "name": "legacy-red-game-rewards.png",
+    "domain": "relic",
+    "image": "artifacts/relic-real-2026-10-24/red-game-rewards.png",
+    "slugs": [
+      "protea_prime_neuroptics_blueprint",
+      "kestrel_prime_grip",
+      "dual_zoren_prime_handle",
+      "dual_zoren_prime_handle"
+    ],
+    "minimumAutomatic": 4
+  },
+  {
+    "name": "legacy-reward-full-dark.png",
+    "domain": "relic",
+    "image": "artifacts/relic-real-2026-10-24/reward-full-dark.png",
+    "slugs": [
+      "sevagoth_prime_neuroptics_blueprint",
+      "lavos_prime_neuroptics_blueprint",
+      "baza_prime_receiver",
+      "velox_prime_barrel"
+    ],
+    "minimumAutomatic": 3
+  },
+  {
+    "name": "legacy-reward-full-bright.png",
+    "domain": "relic",
+    "image": "artifacts/relic-real-2026-10-24/reward-full-bright.png",
+    "slugs": [
+      "shade_prime_systems",
+      "bronco_prime_blueprint",
+      "tatsu_prime_blade",
+      "local:forma-blueprint"
+    ],
+    "minimumAutomatic": 4
+  },
+  {
+    "name": "legacy-combat-negative.png",
+    "domain": "relic",
+    "image": "artifacts/relic-real-2026-10-24/combat-negative.png",
+    "slugs": [],
+    "minimumAutomatic": 0
+  },
+  {
+    "name": "legacy-bright-combat-negative.png",
+    "domain": "relic",
+    "image": "artifacts/relic-real-2026-10-24/bright-combat-negative.png",
+    "slugs": [],
+    "minimumAutomatic": 0
+  },
+  {
+    "name": "legacy-reward-row.png",
+    "domain": "relic",
+    "image": "artifacts/relic-real-2026-10-24/reward-row.png",
+    "slugs": [],
+    "minimumAutomatic": 0
+  },
+  {
+    "name": "wolf-sledge-unseen-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-kind-2026-10-25/wolf-sledge.png",
+    "full": true,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "options": [
+      {
+        "key": "Electricity",
+        "value": 88.4,
+        "negative": false
+      },
+      {
+        "key": "Toxin",
+        "value": 79.6,
+        "negative": false
+      },
+      {
+        "key": "CriticalChance",
+        "value": 155.9,
+        "negative": false
+      }
+    ]
+  },
+  {
+    "name": "innodem-auto-kind-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-2026-10-25/innodem-real.png",
+    "full": false,
+    "options": [
+      {
+        "key": "StatusDuration",
+        "value": 118.8,
+        "negative": false
+      },
+      {
+        "key": "StatusChance",
+        "value": 108.1,
+        "negative": false
+      },
+      {
+        "key": "Heat",
+        "value": 106.4,
+        "negative": false
+      },
+      {
+        "key": "SlideCriticalChance",
+        "value": 100,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "innodem-full-kind-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-2026-10-25/innodem-real.png",
+    "full": true,
+    "options": [
+      {
+        "key": "StatusDuration",
+        "value": 118.8,
+        "negative": false
+      },
+      {
+        "key": "StatusChance",
+        "value": 108.1,
+        "negative": false
+      },
+      {
+        "key": "Heat",
+        "value": 106.4,
+        "negative": false
+      },
+      {
+        "key": "SlideCriticalChance",
+        "value": 100,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "hirudo-auto-kind-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-range-2026-10-25/hirudo.png",
+    "full": false,
+    "options": [
+      {
+        "key": "Electricity",
+        "value": 101.1,
+        "negative": false
+      },
+      {
+        "key": "AttackSpeed",
+        "value": 63.9,
+        "negative": false
+      },
+      {
+        "key": "Range",
+        "value": 2,
+        "negative": false
+      },
+      {
+        "key": "VsCorpus",
+        "value": 41,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "hirudo-full-kind-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-range-2026-10-25/hirudo.png",
+    "full": true,
+    "options": [
+      {
+        "key": "Electricity",
+        "value": 101.1,
+        "negative": false
+      },
+      {
+        "key": "AttackSpeed",
+        "value": 63.9,
+        "negative": false
+      },
+      {
+        "key": "Range",
+        "value": 2,
+        "negative": false
+      },
+      {
+        "key": "VsCorpus",
+        "value": 41,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "fang-auto-kind-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-labels-2026-10-25/fang.png",
+    "full": false,
+    "options": [
+      {
+        "key": "StatusDamage",
+        "value": 141.8,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 140.7,
+        "negative": false
+      },
+      {
+        "key": "FinisherDamage",
+        "value": 76.1,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "fang-full-kind-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-labels-2026-10-25/fang.png",
+    "full": true,
+    "options": [
+      {
+        "key": "StatusDamage",
+        "value": 141.8,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 140.7,
+        "negative": false
+      },
+      {
+        "key": "FinisherDamage",
+        "value": 76.1,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "siam-auto-kind-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-refresh-2026-10-25/siam.png",
+    "full": false,
+    "options": [
+      {
+        "key": "CriticalDamage",
+        "value": 110.3,
+        "negative": false
+      },
+      {
+        "key": "StatusDamage",
+        "value": 108.6,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 95.2,
+        "negative": false
+      },
+      {
+        "key": "VsInfested",
+        "value": 42,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "siam-full-kind-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-refresh-2026-10-25/siam.png",
+    "full": true,
+    "options": [
+      {
+        "key": "CriticalDamage",
+        "value": 110.3,
+        "negative": false
+      },
+      {
+        "key": "StatusDamage",
+        "value": 108.6,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 95.2,
+        "negative": false
+      },
+      {
+        "key": "VsInfested",
+        "value": 42,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "wolf-sledge-footer-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-kind-2026-10-25/wolf-sledge.png",
+    "full": false,
+    "options": [
+      {
+        "key": "Electricity",
+        "value": 88.4,
+        "negative": false
+      },
+      {
+        "key": "Toxin",
+        "value": 79.6,
+        "negative": false
+      },
+      {
+        "key": "CriticalChance",
+        "value": 155.9,
+        "negative": false
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "riven-list-negative",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-kind-2026-10-25/riven-list-negative.png",
+    "options": []
+  },
+  {
+    "name": "modding-negative",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-kind-2026-10-25/modding-negative.png",
+    "options": []
+  },
+  {
+    "name": "innodem-animated-live-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-auto-fix-2026-10-25/live-ready/game.png",
+    "full": false,
+    "options": [
+      {
+        "key": "StatusDuration",
+        "value": 118.8,
+        "negative": false
+      },
+      {
+        "key": "StatusChance",
+        "value": 108.1,
+        "negative": false
+      },
+      {
+        "key": "Heat",
+        "value": 106.4,
+        "negative": false
+      },
+      {
+        "key": "SlideCriticalChance",
+        "value": 100,
+        "negative": true
+      }
+    ],
+    "readKind": "Auto",
+    "expectedKind": "Melee"
+  },
+  {
+    "name": "sun-and-moon-full",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/sun-and-moon.png",
+    "full": true,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "options": [
+      {
+        "key": "ComboChance",
+        "value": 56,
+        "negative": false
+      },
+      {
+        "key": "Range",
+        "value": 1.8,
+        "negative": false
+      },
+      {
+        "key": "Toxin",
+        "value": 84.1,
+        "negative": false
+      }
+    ]
+  },
+  {
+    "name": "sun-and-moon-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/sun-and-moon.png",
+    "full": false,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "options": [
+      {
+        "key": "ComboChance",
+        "value": 56,
+        "negative": false
+      },
+      {
+        "key": "Range",
+        "value": 1.8,
+        "negative": false
+      },
+      {
+        "key": "Toxin",
+        "value": 84.1,
+        "negative": false
+      }
+    ]
+  },
+  {
+    "name": "tatsu-full",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/tatsu.png",
+    "full": true,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "options": [
+      {
+        "key": "Range",
+        "value": 1.8,
+        "negative": false
+      },
+      {
+        "key": "Cold",
+        "value": 81.9,
+        "negative": false
+      },
+      {
+        "key": "VsInfested",
+        "value": 40,
+        "negative": false
+      }
+    ]
+  },
+  {
+    "name": "tatsu-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/tatsu.png",
+    "full": false,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "options": [
+      {
+        "key": "Range",
+        "value": 1.8,
+        "negative": false
+      },
+      {
+        "key": "Cold",
+        "value": 81.9,
+        "negative": false
+      },
+      {
+        "key": "VsInfested",
+        "value": 40,
+        "negative": false
+      }
+    ]
+  },
+  {
+    "name": "kohm-full",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/kohm.png",
+    "full": true,
+    "readKind": "Auto",
+    "expectedKind": "Shotgun",
+    "options": [
+      {
+        "key": "StatusDuration",
+        "value": 103.9,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 92.7,
+        "negative": false
+      },
+      {
+        "key": "AmmoEfficiency",
+        "value": 51.8,
+        "negative": false
+      },
+      {
+        "key": "Magazine",
+        "value": 43.4,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "kohm-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/kohm.png",
+    "full": false,
+    "readKind": "Auto",
+    "expectedKind": "Shotgun",
+    "options": [
+      {
+        "key": "StatusDuration",
+        "value": 103.9,
+        "negative": false
+      },
+      {
+        "key": "Electricity",
+        "value": 92.7,
+        "negative": false
+      },
+      {
+        "key": "AmmoEfficiency",
+        "value": 51.8,
+        "negative": false
+      },
+      {
+        "key": "Magazine",
+        "value": 43.4,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "strun-full",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/strun.png",
+    "full": true,
+    "readKind": "Auto",
+    "expectedKind": "Shotgun",
+    "options": [
+      {
+        "key": "Toxin",
+        "value": 145.7,
+        "negative": false
+      },
+      {
+        "key": "Multishot",
+        "value": 179.1,
+        "negative": false
+      },
+      {
+        "key": "Impact",
+        "value": 64.6,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "strun-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/strun.png",
+    "full": false,
+    "readKind": "Auto",
+    "expectedKind": "Shotgun",
+    "options": [
+      {
+        "key": "Toxin",
+        "value": 145.7,
+        "negative": false
+      },
+      {
+        "key": "Multishot",
+        "value": 179.1,
+        "negative": false
+      },
+      {
+        "key": "Impact",
+        "value": 64.6,
+        "negative": true
+      }
+    ]
+  },
+  {
+    "name": "two-real-crops-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/two-real-crops-fhd.png",
+    "full": false,
+    "readKind": "Auto",
+    "expectedKind": "Shotgun",
+    "cardOptions": [
+      [
+        {
+          "key": "StatusDuration",
+          "value": 103.9,
+          "negative": false
+        },
+        {
+          "key": "Electricity",
+          "value": 92.7,
+          "negative": false
+        },
+        {
+          "key": "AmmoEfficiency",
+          "value": 51.8,
+          "negative": false
+        },
+        {
+          "key": "Magazine",
+          "value": 43.4,
+          "negative": true
+        }
+      ],
+      [
+        {
+          "key": "Toxin",
+          "value": 145.7,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 179.1,
+          "negative": false
+        },
+        {
+          "key": "Impact",
+          "value": 64.6,
+          "negative": true
+        }
+      ]
+    ]
+  },
+  {
+    "name": "two-real-crops-full",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/two-real-crops-fhd.png",
+    "full": true,
+    "readKind": "Auto",
+    "expectedKind": "Shotgun",
+    "cardOptions": [
+      [
+        {
+          "key": "StatusDuration",
+          "value": 103.9,
+          "negative": false
+        },
+        {
+          "key": "Electricity",
+          "value": 92.7,
+          "negative": false
+        },
+        {
+          "key": "AmmoEfficiency",
+          "value": 51.8,
+          "negative": false
+        },
+        {
+          "key": "Magazine",
+          "value": 43.4,
+          "negative": true
+        }
+      ],
+      [
+        {
+          "key": "Toxin",
+          "value": 145.7,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 179.1,
+          "negative": false
+        },
+        {
+          "key": "Impact",
+          "value": 64.6,
+          "negative": true
+        }
+      ]
+    ]
+  },
+  {
+    "name": "two-centered-mr-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/two-centered-mr-fhd.png",
+    "full": false,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "cardOptions": [
+      [
+        {
+          "key": "ComboChance",
+          "value": 56,
+          "negative": false
+        },
+        {
+          "key": "Range",
+          "value": 1.8,
+          "negative": false
+        },
+        {
+          "key": "Toxin",
+          "value": 84.1,
+          "negative": false
+        }
+      ],
+      [
+        {
+          "key": "Range",
+          "value": 1.8,
+          "negative": false
+        },
+        {
+          "key": "Cold",
+          "value": 81.9,
+          "negative": false
+        },
+        {
+          "key": "VsInfested",
+          "value": 40,
+          "negative": false
+        }
+      ]
+    ]
+  },
+  {
+    "name": "two-centered-mr-full",
+    "domain": "riven",
+    "image": "artifacts/riven-comparison-2026-10-25/two-centered-mr-fhd.png",
+    "full": true,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "cardOptions": [
+      [
+        {
+          "key": "ComboChance",
+          "value": 56,
+          "negative": false
+        },
+        {
+          "key": "Range",
+          "value": 1.8,
+          "negative": false
+        },
+        {
+          "key": "Toxin",
+          "value": 84.1,
+          "negative": false
+        }
+      ],
+      [
+        {
+          "key": "Range",
+          "value": 1.8,
+          "negative": false
+        },
+        {
+          "key": "Cold",
+          "value": 81.9,
+          "negative": false
+        },
+        {
+          "key": "VsInfested",
+          "value": 40,
+          "negative": false
+        }
+      ]
+    ]
+  },
+  {
+    "name": "real-dim-reroll-auto",
+    "domain": "riven",
+    "image": "artifacts/riven-real-reroll-2026-10-25/real-reroll.png",
+    "full": false,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "cardOptions": [
+      [
+        {
+          "key": "StatusDuration",
+          "value": 118.8,
+          "negative": false
+        },
+        {
+          "key": "StatusChance",
+          "value": 108.1,
+          "negative": false
+        },
+        {
+          "key": "Heat",
+          "value": 106.4,
+          "negative": false
+        },
+        {
+          "key": "SlideCriticalChance",
+          "value": 100,
+          "negative": true
+        }
+      ],
+      [
+        {
+          "key": "Cold",
+          "value": 107.1,
+          "negative": false
+        },
+        {
+          "key": "StatusChance",
+          "value": 108.1,
+          "negative": false
+        },
+        {
+          "key": "AttackSpeed",
+          "value": 61.5,
+          "negative": false
+        },
+        {
+          "key": "VsInfested",
+          "value": 38,
+          "negative": true
+        }
+      ]
+    ]
+  },
+  {
+    "name": "real-dim-reroll-full",
+    "domain": "riven",
+    "image": "artifacts/riven-real-reroll-2026-10-25/real-reroll.png",
+    "full": true,
+    "readKind": "Auto",
+    "expectedKind": "Melee",
+    "cardOptions": [
+      [
+        {
+          "key": "StatusDuration",
+          "value": 118.8,
+          "negative": false
+        },
+        {
+          "key": "StatusChance",
+          "value": 108.1,
+          "negative": false
+        },
+        {
+          "key": "Heat",
+          "value": 106.4,
+          "negative": false
+        },
+        {
+          "key": "SlideCriticalChance",
+          "value": 100,
+          "negative": true
+        }
+      ],
+      [
+        {
+          "key": "Cold",
+          "value": 107.1,
+          "negative": false
+        },
+        {
+          "key": "StatusChance",
+          "value": 108.1,
+          "negative": false
+        },
+        {
+          "key": "AttackSpeed",
+          "value": 61.5,
+          "negative": false
+        },
+        {
+          "key": "VsInfested",
+          "value": 38,
+          "negative": true
+        }
+      ]
+    ]
+  }
+]

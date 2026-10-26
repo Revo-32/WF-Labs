@@ -1,0 +1,8 @@
+중재 예측 일정: browse.wf / Calamity, Inc.
+중재 등급: Arbitration Goons. 게임 공식 등급이 아닙니다.
+https://browse.wf/arbys
+https://browse.wf/about
+https://github.com/calamity-inc/browse.wf
+공개 데이터의 이용·출처 표시 안내: https://browse.wf/about
+게임 명칭·자료의 권리는 Digital Extremes에 있습니다.
+원본 URL·개정·SHA-256: Data/world-schedule-sources.json

@@ -18,6 +18,9 @@ public sealed partial class ModBoard
     private readonly ComboBox sort = new() { ItemsSource=new[]{"이름순","코스트순","극성순"},SelectedIndex=0,Width=108 };
     private readonly DockPanel rankEditor = new();
     private bool descending;
+    private bool compact;
+    private Action<bool>? setToolbarDensity;
+    public void SetCompact(bool value){if(compact==value)return;compact=value;setToolbarDensity?.Invoke(value);RenderRack();RenderLibrary();}
     private readonly Button direction;
     private readonly System.Windows.Shapes.Path sortArrow=new(){Width=18,Height=18,StrokeThickness=1.5,StrokeStartLineCap=PenLineCap.Round,StrokeEndLineCap=PenLineCap.Round,Stretch=Stretch.None};
     private readonly ComboBox filter = new() { ItemsSource=new[]{"전체 모드","피해","치명타","원소","공격 속도","상태이상"},SelectedIndex=0,Width=108 };
@@ -70,6 +73,19 @@ public sealed partial class ModBoard
         var searchGrid=new SearchField(search,"모드 검색");
         searchbar.Children.Add(searchGrid);
         var toolbar=new StackPanel();toolbar.Children.Add(titlebar);toolbar.Children.Add(searchbar);tray.Children.Add(toolbar);
+        var compactTools=new Grid{Margin=new(0,0,0,6)};foreach(var width in new[]{new GridLength(1,GridUnitType.Star),new GridLength(108),new GridLength(38),new GridLength(108)})compactTools.ColumnDefinitions.Add(new(){Width=width});
+        setToolbarDensity=value=>
+        {
+            titlebar.Children.Clear();searchbar.Children.Clear();compactTools.Children.Clear();toolbar.Children.Clear();
+            if(value)
+            {
+                var controls=new FrameworkElement[]{searchGrid,sort,direction,filter};for(int i=0;i<controls.Length;i++){Grid.SetColumn(controls[i],i);compactTools.Children.Add(controls[i]);}toolbar.Children.Add(compactTools);
+            }
+            else
+            {
+                titlebar.Children.Add(direction);titlebar.Children.Add(sort);titlebar.Children.Add(label);searchbar.Children.Add(filter);searchbar.Children.Add(searchGrid);toolbar.Children.Add(titlebar);toolbar.Children.Add(searchbar);
+            }
+        };
         libraryScroller.Content=library;Grid.SetRow(libraryScroller,1);tray.Children.Add(libraryScroller);
         noResults.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");Grid.SetRow(noResults,1);tray.Children.Add(noResults);
         libraryScroller.PreviewDragOver+=(_,e)=>{var y=e.GetPosition(libraryScroller).Y;if(y<24)libraryScroller.ScrollToVerticalOffset(libraryScroller.VerticalOffset-16);else if(y>libraryScroller.ActualHeight-24)libraryScroller.ScrollToVerticalOffset(libraryScroller.VerticalOffset+16);};
@@ -158,6 +174,7 @@ public sealed partial class ModBoard
         var card=new Border{CornerRadius=new(5),BorderThickness=new(1),Cursor=Cursors.Hand};
         var finish=mod is null?ModFinish.Neutral:ModAppearance.For(mod);card.Tag=finish;
         ModCardLayout.Apply(card,libraryCard,finish);
+        if(compact){card.Height=62;card.Padding=new(card.Padding.Left,12,card.Padding.Right,10);}
         if(formaEditing&&index is not null)card.Height+=6;
         if(mod is not null)
         {
@@ -177,6 +194,7 @@ public sealed partial class ModBoard
         var unknownDrain=IsRiven(mod)&&(!actualRiven||riven!.BaseDrain is null||riven.Polarity is null);
         var header=ModCardLayout.Header(unknownDrain?"?":drain.ToString(),mod.Polarity,drain<mod.BaseDrain+rank?"CapacityGoodBrush":drain>mod.BaseDrain+rank?"ErrorBrush":"AccentBrush");
         var p=new ModCardFace(mod.Name,header,libraryCard);
+        if(compact){p.ModName.Height=20;p.ModName.FontSize=15;p.ModName.LineHeight=20;p.ModName.TextWrapping=TextWrapping.NoWrap;}
         if(formaEditing&&index is {} slotIndex)p.Children.Add(PolarityButton(slotIndex));
         card.Child=p;
         if(index is {} i)

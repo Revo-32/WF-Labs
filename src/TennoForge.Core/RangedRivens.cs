@@ -53,17 +53,23 @@ public static class RangedRivens
         var effects=roll.Traits.Reverse().ToDictionary(t=>t.Stat,t=>t.Value*(t.Negative?-1:1)*(t.Stat=="Recoil"?-1:1)/(t.Stat=="PunchThrough"?1:100)*9/(roll.Rank+1));
         return mod with{MaxRank=8,BaseDrain=roll.BaseDrain!.Value,Polarity=roll.Polarity!,Effects=effects,Limitations=[],Description=string.Join("\n",roll.Traits.Select(t=>$"{Attribute(t.Stat).Name} {(t.Negative?"−":"+")}{t.Value:0.###}{Attribute(t.Stat).Unit}"))};
     }
-    public static RangedSplicePreview[] Predict(RangedRivenRoll roll)
+    public static RangedSplicePreview[] Predict(RangedRivenRoll roll,IReadOnlyList<int>? displayedDecimals=null)
     {
-        Validate(roll,requireMetadata:false);if(roll.Traits.Any(t=>t.Spliced))return [];
+        Validate(roll,values:displayedDecimals is null,requireMetadata:false);
+        if(displayedDecimals is not null)
+        {
+            if(displayedDecimals.Count!=roll.Traits.Length)throw new ArgumentException("표시 정밀도 개수가 옵션과 다릅니다.");
+            for(int i=0;i<roll.Traits.Length;i++){var r=Range(roll,roll.Traits[i]);RivenEngine.Grade(roll.Traits[i].Value,r.Minimum,r.Maximum,displayedDecimals[i]);}
+        }
+        if(roll.Traits.Any(t=>t.Spliced))return [];
         var previews=new List<RangedSplicePreview>();
         for(int i=0;i<roll.Traits.Length;i++)for(int j=i+1;j<roll.Traits.Length;j++)foreach(var recipe in Table.Recipes)
         {
             var first=roll.Traits[i];var second=roll.Traits[j];
             if(!((first.Stat==recipe.First&&second.Stat==recipe.Second)||(first.Stat==recipe.Second&&second.Stat==recipe.First)))continue;
-            EncounterRange Hidden(RangedRivenTrait trait)
-            {var center=Range(roll,trait).Minimum/.9;return new(Math.Max(.9,(trait.Value-.05)/center),Math.Min(1.1,(trait.Value+.05)/center));}
-            var a=Hidden(first);var b=Hidden(second);var inherited=new EncounterRange(Math.Max(a.Low,b.Low),Math.Max(a.High,b.High));
+            EncounterRange Hidden(RangedRivenTrait trait,int index)
+            {var center=Range(roll,trait).Minimum/.9;var half=.5*Math.Pow(10,-(displayedDecimals?[index]??1));return new(Math.Max(.9,(trait.Value-half)/center),Math.Min(1.1,(trait.Value+half)/center));}
+            var a=Hidden(first,i);var b=Hidden(second,j);var inherited=new EncounterRange(Math.Max(a.Low,b.Low),Math.Max(a.High,b.High));
             var basis=Range(roll,new(recipe.Result,0,Spliced:true)).Minimum/.9;
             previews.Add(new(i,j,recipe.Result,new(basis*inherited.Low,basis*inherited.High),inherited,first.Negative||second.Negative));
         }

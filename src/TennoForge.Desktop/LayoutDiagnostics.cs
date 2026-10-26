@@ -126,6 +126,7 @@ public sealed partial class MainWindow
         SelectRivenSectionForCheck(2);InputStates("melee-riven");
         for(int i=0;i<5;i++){CatalogPreviewForCheck(i);Main("catalog-"+i);}
         ShowRoadmap();Main("roadmap");
+        ShowRelics();Main("relics");
         ShowModding();Capture((FrameworkElement)Content,"small-workarea",1280,680);
         var client=new ClientSettingsWindow(()=>{});Capture((FrameworkElement)client.Content,"client",560,540);client.PreviewForAudit(false);Capture((FrameworkElement)client.Content,"client-error",560,540);
         return reports;

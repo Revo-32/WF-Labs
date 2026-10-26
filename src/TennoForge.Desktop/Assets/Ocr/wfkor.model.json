@@ -1,0 +1,148 @@
+{
+  "id": "wfkor-20261025-v1",
+  "trainedUtc": "2026-10-25T02:32:55.527369+00:00",
+  "sha256": "d1e3939e745fdc010cff94ca2b1e2a57f4579a32f2f8e9e3573cacc483a588c4",
+  "base": {
+    "url": "https://github.com/tesseract-ocr/tessdata_best/blob/main/kor.traineddata",
+    "sha256": "f888d4038348a0c3d25151e7f452bda0d74ca275b18cab146798bcbb94084fff",
+    "licenseFile": "TESSDATA-LICENSE.txt"
+  },
+  "characterSet": {
+    "configuredCharacters": 11307,
+    "hangulSyllables": 11172,
+    "allCharactersTrained": false
+  },
+  "dataset": {
+    "samples": {
+      "train": 810,
+      "validation": 80,
+      "test": 82
+    },
+    "realSources": {
+      "train": [
+        "hirudo",
+        "innodem",
+        "wrapped"
+      ],
+      "validation": [
+        "siam"
+      ],
+      "test": [
+        "fang",
+        "relic-live"
+      ]
+    },
+    "sourceHashes": {
+      "artifacts/riven-auto-2026-10-25/innodem-real.png": "eef83ade17224da09e0cdd2d8206ebc4d213508cf22c39f1d649a821d5442a32",
+      "artifacts/riven-range-2026-10-25/hirudo.png": "f070ecf5b8ce01bc8374151564bf44acebb14dc6310e83679f5d79233d0c5b82",
+      "artifacts/riven-labels-2026-10-25/fang.png": "33cad11d5c2a06f866b46c77f40d138a3995a0eac37886e3f2f504f79e9e2085",
+      "artifacts/riven-refresh-2026-10-25/siam.png": "6935873e8008ee2835a7d63783e471847f107c3b1032d20f4f4c45c319879192",
+      "artifacts/relic-wrapped-2026-10-25/wrapped-orthos-rewards.png": "741054a9a3a7b65ca5161a818b3a31695767de4f6125c7bae5d49b7d80071987",
+      "artifacts/relic-auto-live-2026-10-25-02/reward-capture.png": "efd9dea5810c9defe0f29af8be037770e85346eed8487a2aec63b9685505e0fb"
+    },
+    "manifestSha256": "36c909283e3f0a3909aeb5db56d2b93336b3ea00cd1b05bc168e15b061ed23a4",
+    "exactImageLeakage": false,
+    "gameFontExtracted": false,
+    "syntheticFonts": [
+      "Noto Sans CJK KR",
+      "Malgun Gothic",
+      "Pretendard"
+    ]
+  },
+  "training": {
+    "tools": "Tesseract 5.5.3 (training), 5.5.0 (charset tools)",
+    "runtimeWrapper": "Tesseract .NET 5.2.0",
+    "passes": [
+      {
+        "name": "extended charset",
+        "iterations": 4000,
+        "learningRate": 0.0001,
+        "realWeight": 5
+      },
+      {
+        "name": "real screenshot emphasis",
+        "learningRate": 0.0003,
+        "realWeight": 16,
+        "selection": "intermediate exported snapshot selected on validation; final continuation not selected"
+      }
+    ],
+    "skippedUnsupportedCharacters": 0
+  },
+  "evaluation": {
+    "normalization": "Whitespace ignored; × and x, − and - treated as equivalent. Other characters remain errors.",
+    "validationBaseline": {
+      "all": {
+        "lines": 80,
+        "cer": 0.01437908496732026,
+        "exact": 72
+      },
+      "real": {
+        "lines": 5,
+        "cer": 0.10416666666666667,
+        "exact": 3
+      },
+      "synthetic": {
+        "lines": 75,
+        "cer": 0.008368200836820083,
+        "exact": 69
+      }
+    },
+    "validationSelected": {
+      "all": {
+        "lines": 80,
+        "cer": 0.00522875816993464,
+        "exact": 76
+      },
+      "real": {
+        "lines": 5,
+        "cer": 0.020833333333333332,
+        "exact": 4
+      },
+      "synthetic": {
+        "lines": 75,
+        "cer": 0.0041841004184100415,
+        "exact": 72
+      }
+    },
+    "testBaseline": {
+      "all": {
+        "lines": 82,
+        "cer": 0.019417475728155338,
+        "exact": 69
+      },
+      "real": {
+        "lines": 7,
+        "cer": 0.08450704225352113,
+        "exact": 4
+      },
+      "synthetic": {
+        "lines": 75,
+        "cer": 0.013280212483399735,
+        "exact": 65
+      }
+    },
+    "testSelected": {
+      "all": {
+        "lines": 82,
+        "cer": 0.0048543689320388345,
+        "exact": 78
+      },
+      "real": {
+        "lines": 7,
+        "cer": 0.014084507042253521,
+        "exact": 6
+      },
+      "synthetic": {
+        "lines": 75,
+        "cer": 0.00398406374501992,
+        "exact": 72
+      }
+    }
+  },
+  "sources": {
+    "trainingGuide": "https://github.com/tesseract-ocr/tesstrain",
+    "languageData": "https://github.com/tesseract-ocr/langdata_lstm",
+    "syntheticFont": "https://github.com/notofonts/noto-cjk"
+  },
+  "scope": "Shared Korean glyph model; relic names and Riven options/values/signs still require separate verification."
+}

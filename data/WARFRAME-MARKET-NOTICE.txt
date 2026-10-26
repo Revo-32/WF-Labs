@@ -1,0 +1,19 @@
+Warframe.market 연동 고지
+
+품목 ID, slug, gameRef, 한국어/영어 품목명, 듀캇, 분류, 랭크 메타데이터:
+https://api.warframe.market/v2/items (Language: ko)
+수집 시각·API 버전·원문 SHA-256: data/relic-market-items.json
+정규화 도구: tools/import_relic_catalog.py
+
+Warframe.market은 Digital Extremes 및 WF Labs와 별개의 커뮤니티 서비스입니다.
+WF Labs의 성유물 보상 비교는 공식 Warframe.market 제품이 아닙니다.
+품목 메타데이터의 권리를 WF Labs 자체 코드 라이선스로 변경하지 않습니다.
+사용자 주문과 현재 가격은 소스 데이터셋에 내장하지 않으며 요청 시 조회합니다.
+수집된 화면은 로컬 OCR에서만 처리하고 서버에 전송하지 않습니다.
+
+API 문서: https://docs.warframe.market/docs/intro/
+API 규칙: https://docs.warframe.market/docs/rules/overview/
+이용약관: https://warframe.market/tos
+고유 User-Agent, 한국어·PC·Crossplay 헤더, 전역 요청 간격, 캐시,
+429/509 대기 처리와 출처 링크를 사용합니다. 거래 게시/메시지/주문 수정은 하지 않습니다.
+이 기능의 공개 배포 전 운영진 사전 연락 조건을 별도 확인해야 합니다.

@@ -1,0 +1,91 @@
+{
+  "source": "Digital Extremes Public Export / ko (stat wording, not Riven-specific roll values)",
+  "url": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_ENNXpFrEP+1o4eixKHFDhg",
+  "sha256": "19482c0ec838586e8f7e459215e4f7dd513d8756b2e65212d256438b478a1da6",
+  "retrievedUtc": "2026-10-24T21:57:18.778346+00:00",
+  "records": [
+    {
+      "key": "FinisherDamage",
+      "mod": "피니싱 터치",
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponMeleeFinisherDamageMod",
+      "officialFirstRankText": [
+        "+15% 마무리 일격 피해"
+      ]
+    },
+    {
+      "key": "ComboDuration",
+      "mod": "바디 카운트",
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/Event/ComboDurationMod",
+      "officialFirstRankText": [
+        "연속기 지속 시간 +2초"
+      ]
+    },
+    {
+      "key": "InitialCombo",
+      "mod": "커럽트 차지",
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/CorruptedHeavyDamageChargeSpeedMod",
+      "officialFirstRankText": [
+        "+7.5 기본 연속기",
+        "연속기 지속 시간 -12.5%"
+      ]
+    },
+    {
+      "key": "ComboChance",
+      "mod": "리플렉스 가드",
+      "uniqueName": "/Lotus/Upgrades/Mods/Warframe/AvatarAutoParryMod",
+      "officialFirstRankText": [
+        "막기 도중 +9.1% 연속기 카운트 확률"
+      ]
+    },
+    {
+      "key": "AmmoMaximum",
+      "mod": "애모 드럼",
+      "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponAmmoMaxMod",
+      "officialFirstRankText": [
+        "+15% 탄약 최대량"
+      ]
+    },
+    {
+      "key": "ProjectileSpeed",
+      "mod": "터미널 벨로시티",
+      "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponProjectileSpeedMod",
+      "officialFirstRankText": [
+        "+15% 발사체 속도"
+      ]
+    },
+    {
+      "key": "PunchThrough",
+      "mod": "메탈 어거",
+      "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponPunctureDepthMod",
+      "officialFirstRankText": [
+        "+0.4 두께 꿰뚫기"
+      ]
+    },
+    {
+      "key": "Zoom",
+      "mod": "이글 아이",
+      "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponZoomFovMod",
+      "officialFirstRankText": [
+        "+10% 확대율 증가"
+      ]
+    },
+    {
+      "key": "Range",
+      "mod": "리치",
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/WeaponMeleeRangeIncMod",
+      "officialFirstRankText": [
+        "+0.4 사거리"
+      ]
+    }
+  ],
+  "additionalRivenScreenshotEvidence": [
+    {
+      "sourceKind": "user-provided Korean game screenshot",
+      "image": "artifacts/riven-comparison-2026-10-25/sun-and-moon.png",
+      "sha256": "a42ca75af9ee66dd997712ed56ac35b0ef0bb6158b76e6f3e18e2ead3f034d8f",
+      "key": "ComboChance",
+      "observedText": "+56% 추가 연속기 카운트 확률",
+      "note": "실제 리벤 표기 확인. 기존 Public Export 원문과 별개의 출처이며 수치 범위 근거로 사용하지 않음"
+    }
+  ]
+}

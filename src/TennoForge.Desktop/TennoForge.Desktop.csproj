@@ -6,7 +6,7 @@
     <AssemblyName>WFLabs</AssemblyName>
     <Product>WF Labs</Product>
     <Title>WF Labs</Title>
-    <Version>0.9.0-preview.1</Version>
+    <Version>0.10.0-preview.1</Version>
     <StartupObject>TennoForge.Desktop.EntryPoint</StartupObject>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets/Brand/wf-labs.ico</ApplicationIcon>
@@ -14,11 +14,15 @@
   <ItemGroup>
     <ProjectReference Include="../TennoForge.Core/TennoForge.Core.csproj" />
     <Resource Include="Fonts/*.ttf" />
+    <Content Include="Assets/Ocr/*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <Resource Include="Assets/Polarities/*.svg" />
     <Resource Include="Assets/Brand/wf-labs-symbol.svg" />
     <Resource Include="Assets/Brand/wf-labs.ico" />
+    <EmbeddedResource Include="Assets/Audio/schedule-notification.wav" LogicalName="WFLabs.schedule-notification.wav" />
+    <Content Include="Assets/Audio/schedule-notification.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <Content Include="release-config.json" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="../../data/PUBLIC-EXPORT-NOTICE.txt" Link="PUBLIC-EXPORT-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/WARFRAME-MARKET-NOTICE.txt" Link="WARFRAME-MARKET-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fonts/PRETENDARD-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fonts/PRETENDARD-SOURCE.json" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fonts/OFL.txt" CopyToOutputDirectory="PreserveNewest" />
@@ -27,9 +31,18 @@
     <Content Include="Fonts/THE-JAMSIL-SOURCE.json" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fonts/The_Jamsil_LICENSE_Korean.pdf" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="../../data/WFCD-LICENSE.txt" Link="WFCD-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/inventory-sources.json" Link="Data/inventory-sources.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/inventory-acquisition.json" Link="Data/inventory-acquisition.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/inventory-acquisition-provenance.json" Link="Data/inventory-acquisition-provenance.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/inventory-market-items.json" Link="Data/inventory-market-items.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/world-schedule-sources.json" Link="Data/world-schedule-sources.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/BROWSE-WF-NOTICE.txt" Link="BROWSE-WF-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/PUBLIC-EXPORT-PLUS-LICENSE.txt" Link="PUBLIC-EXPORT-PLUS-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="../../data/WF-WIKI-NOTICE.txt" Link="WF-WIKI-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.22.1" />
+    <PackageReference Include="Tesseract" Version="5.2.0" />
     <PackageReference Include="Velopack" Version="1.2.161" />
   </ItemGroup>
 </Project>

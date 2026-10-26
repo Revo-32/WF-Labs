@@ -1,0 +1,2541 @@
+{
+  "nodes": [
+    {
+      "id": "SolNode94",
+      "name": "Apollodorus",
+      "englishName": "Apollodorus",
+      "planet": "수성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode130",
+      "name": "Lares",
+      "englishName": "Lares",
+      "planet": "수성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode119",
+      "name": "Caloris",
+      "englishName": "Caloris",
+      "planet": "수성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode12",
+      "name": "Elion",
+      "englishName": "Elion",
+      "planet": "수성",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode103",
+      "name": "M Prime",
+      "englishName": "M Prime",
+      "planet": "수성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode28",
+      "name": "Terminus",
+      "englishName": "Terminus",
+      "planet": "수성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode108",
+      "name": "Tolstoj",
+      "englishName": "Tolstoj",
+      "planet": "수성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode223",
+      "name": "Boethius",
+      "englishName": "Boethius",
+      "planet": "수성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode224",
+      "name": "Odin",
+      "englishName": "Odin",
+      "planet": "수성",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode225",
+      "name": "Suisei",
+      "englishName": "Suisei",
+      "planet": "수성",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode226",
+      "name": "Pantheon",
+      "englishName": "Pantheon",
+      "planet": "수성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode129",
+      "name": "오브 협곡",
+      "englishName": "Orb Vallis",
+      "planet": "금성",
+      "mission": "MT_LANDSCAPE"
+    },
+    {
+      "id": "SolNode123",
+      "name": "V Prime",
+      "englishName": "V Prime",
+      "planet": "금성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode61",
+      "name": "Ishtar",
+      "englishName": "Ishtar",
+      "planet": "금성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode2",
+      "name": "Aphrodite",
+      "englishName": "Aphrodite",
+      "planet": "금성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode23",
+      "name": "Cytherean",
+      "englishName": "Cytherean",
+      "planet": "금성",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode128",
+      "name": "E Gate",
+      "englishName": "E Gate",
+      "planet": "금성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode109",
+      "name": "Linea",
+      "englishName": "Linea",
+      "planet": "금성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode104",
+      "name": "Fossa",
+      "englishName": "Fossa",
+      "planet": "금성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode66",
+      "name": "Unda",
+      "englishName": "Unda",
+      "planet": "금성",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "ClanNode1",
+      "name": "Malva",
+      "englishName": "Malva",
+      "planet": "금성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode107",
+      "name": "Venera",
+      "englishName": "Venera",
+      "planet": "금성",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode22",
+      "name": "Tessera",
+      "englishName": "Tessera",
+      "planet": "금성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode101",
+      "name": "Kiliken",
+      "englishName": "Kiliken",
+      "planet": "금성",
+      "mission": "MT_EXCAVATE"
+    },
+    {
+      "id": "ClanNode0",
+      "name": "Romula",
+      "englishName": "Romula",
+      "planet": "금성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode239",
+      "name": "베스퍼 릴레이",
+      "englishName": "Vesper Relay",
+      "planet": "금성",
+      "mission": "MT_PAINT_FLOOD"
+    },
+    {
+      "id": "SolNode902",
+      "name": "Montes",
+      "englishName": "Montes",
+      "planet": "금성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode63",
+      "name": "Mantle",
+      "englishName": "Mantle",
+      "planet": "지구",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode27",
+      "name": "E Prime",
+      "englishName": "E Prime",
+      "planet": "지구",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode79",
+      "name": "Cambria",
+      "englishName": "Cambria",
+      "planet": "지구",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode39",
+      "name": "Everest",
+      "englishName": "Everest",
+      "planet": "지구",
+      "mission": "MT_EXCAVATE"
+    },
+    {
+      "id": "SolNode15",
+      "name": "Pacific",
+      "englishName": "Pacific",
+      "planet": "지구",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode26",
+      "name": "Lith",
+      "englishName": "Lith",
+      "planet": "지구",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode89",
+      "name": "Mariana",
+      "englishName": "Mariana",
+      "planet": "지구",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode85",
+      "name": "Gaia",
+      "englishName": "Gaia",
+      "planet": "지구",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode59",
+      "name": "Eurasia",
+      "englishName": "Eurasia",
+      "planet": "지구",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode75",
+      "name": "Cervantes",
+      "englishName": "Cervantes",
+      "planet": "지구",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode24",
+      "name": "Oro",
+      "englishName": "Oro",
+      "planet": "지구",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "ClanNode2",
+      "name": "Coba",
+      "englishName": "Coba",
+      "planet": "지구",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode903",
+      "name": "Erpo",
+      "englishName": "Erpo",
+      "planet": "지구",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "ClanNode3",
+      "name": "Tikal",
+      "englishName": "Tikal",
+      "planet": "지구",
+      "mission": "MT_EXCAVATE"
+    },
+    {
+      "id": "SolNode228",
+      "name": "아이돌론 평원",
+      "englishName": "Plains of Eidolon",
+      "planet": "지구",
+      "mission": "MT_LANDSCAPE"
+    },
+    {
+      "id": "SolNode451",
+      "name": "사야의 예지몽",
+      "englishName": "Saya's Visions",
+      "planet": "지구",
+      "mission": "MT_OFFERING"
+    },
+    {
+      "id": "SolNode30",
+      "name": "Olympus",
+      "englishName": "Olympus",
+      "planet": "화성",
+      "mission": "MT_ARTIFACT"
+    },
+    {
+      "id": "SolNode113",
+      "name": "Ares",
+      "englishName": "Ares",
+      "planet": "화성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode46",
+      "name": "Spear",
+      "englishName": "Spear",
+      "planet": "화성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode68",
+      "name": "Vallis",
+      "englishName": "Vallis",
+      "planet": "화성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode58",
+      "name": "Hellas",
+      "englishName": "Hellas",
+      "planet": "화성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode106",
+      "name": "Alator",
+      "englishName": "Alator",
+      "planet": "화성",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode41",
+      "name": "Arval",
+      "englishName": "Arval",
+      "planet": "화성",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode14",
+      "name": "Ultor",
+      "englishName": "Ultor",
+      "planet": "화성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode16",
+      "name": "Augustus",
+      "englishName": "Augustus",
+      "planet": "화성",
+      "mission": "MT_EXCAVATE"
+    },
+    {
+      "id": "SolNode45",
+      "name": "Ara",
+      "englishName": "Ara",
+      "planet": "화성",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode36",
+      "name": "Martialis",
+      "englishName": "Martialis",
+      "planet": "화성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "ClanNode8",
+      "name": "Kadesh",
+      "englishName": "Kadesh",
+      "planet": "화성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode99",
+      "name": "War",
+      "englishName": "War",
+      "planet": "화성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode65",
+      "name": "Gradivus",
+      "englishName": "Gradivus",
+      "planet": "화성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "ClanNode9",
+      "name": "Wahiba",
+      "englishName": "Wahiba",
+      "planet": "화성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode11",
+      "name": "Tharsis",
+      "englishName": "Tharsis",
+      "planet": "화성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode904",
+      "name": "Syrtis",
+      "englishName": "Syrtis",
+      "planet": "화성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode450",
+      "name": "Tyana Pass",
+      "englishName": "Tyana Pass",
+      "planet": "화성",
+      "mission": "MT_MIRROR_DEFENSE"
+    },
+    {
+      "id": "SolNode87",
+      "name": "Ganymede",
+      "englishName": "Ganymede",
+      "planet": "목성",
+      "mission": "MT_ARTIFACT"
+    },
+    {
+      "id": "SolNode88",
+      "name": "Adrastea",
+      "englishName": "Adrastea",
+      "planet": "목성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode97",
+      "name": "Amalthea",
+      "englishName": "Amalthea",
+      "planet": "목성",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode126",
+      "name": "Metis",
+      "englishName": "Metis",
+      "planet": "목성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode125",
+      "name": "Io",
+      "englishName": "Io",
+      "planet": "목성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode100",
+      "name": "Elara",
+      "englishName": "Elara",
+      "planet": "목성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode10",
+      "name": "Thebe",
+      "englishName": "Thebe",
+      "planet": "목성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode25",
+      "name": "Callisto",
+      "englishName": "Callisto",
+      "planet": "목성",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode121",
+      "name": "Carpo",
+      "englishName": "Carpo",
+      "planet": "목성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode53",
+      "name": "Themisto",
+      "englishName": "Themisto",
+      "planet": "목성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode74",
+      "name": "Carme",
+      "englishName": "Carme",
+      "planet": "목성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode740",
+      "name": "로팔로리스트",
+      "englishName": "The Ropalolyst",
+      "planet": "목성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "ClanNode4",
+      "name": "Sinai",
+      "englishName": "Sinai",
+      "planet": "목성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode73",
+      "name": "Ananke",
+      "englishName": "Ananke",
+      "planet": "목성",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode905",
+      "name": "Galilea",
+      "englishName": "Galilea",
+      "planet": "목성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "ClanNode5",
+      "name": "Cameria",
+      "englishName": "Cameria",
+      "planet": "목성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode42",
+      "name": "Helene",
+      "englishName": "Helene",
+      "planet": "토성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode19",
+      "name": "Enceladus",
+      "englishName": "Enceladus",
+      "planet": "토성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode96",
+      "name": "Titan",
+      "englishName": "Titan",
+      "planet": "토성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode67",
+      "name": "Dione",
+      "englishName": "Dione",
+      "planet": "토성",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode93",
+      "name": "Keeler",
+      "englishName": "Keeler",
+      "planet": "토성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode32",
+      "name": "Tethys",
+      "englishName": "Tethys",
+      "planet": "토성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode18",
+      "name": "Rhea",
+      "englishName": "Rhea",
+      "planet": "토성",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode20",
+      "name": "Telesto",
+      "englishName": "Telesto",
+      "planet": "토성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode70",
+      "name": "Cassini",
+      "englishName": "Cassini",
+      "planet": "토성",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode31",
+      "name": "Anthe",
+      "englishName": "Anthe",
+      "planet": "토성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode50",
+      "name": "Numa",
+      "englishName": "Numa",
+      "planet": "토성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode82",
+      "name": "Calypso",
+      "englishName": "Calypso",
+      "planet": "토성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode906",
+      "name": "Pandora",
+      "englishName": "Pandora",
+      "planet": "토성",
+      "mission": "MT_PURSUIT"
+    },
+    {
+      "id": "ClanNode13",
+      "name": "Piscinas",
+      "englishName": "Piscinas",
+      "planet": "토성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "ClanNode12",
+      "name": "Caracol",
+      "englishName": "Caracol",
+      "planet": "토성",
+      "mission": "MT_EVACUATION"
+    },
+    {
+      "id": "SolNode33",
+      "name": "Ariel",
+      "englishName": "Ariel",
+      "planet": "천왕성",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode105",
+      "name": "Titania",
+      "englishName": "Titania",
+      "planet": "천왕성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode64",
+      "name": "Umbriel",
+      "englishName": "Umbriel",
+      "planet": "천왕성",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode69",
+      "name": "Ophelia",
+      "englishName": "Ophelia",
+      "planet": "천왕성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode83",
+      "name": "Cressida",
+      "englishName": "Cressida",
+      "planet": "천왕성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode98",
+      "name": "Desdemona",
+      "englishName": "Desdemona",
+      "planet": "천왕성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode9",
+      "name": "Rosalind",
+      "englishName": "Rosalind",
+      "planet": "천왕성",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode60",
+      "name": "Caliban",
+      "englishName": "Caliban",
+      "planet": "천왕성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode114",
+      "name": "Puck",
+      "englishName": "Puck",
+      "planet": "천왕성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "ClanNode16",
+      "name": "Ur",
+      "englishName": "Ur",
+      "planet": "천왕성",
+      "mission": "MT_ARTIFACT"
+    },
+    {
+      "id": "SolNode34",
+      "name": "Sycorax",
+      "englishName": "Sycorax",
+      "planet": "천왕성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode122",
+      "name": "Stephano",
+      "englishName": "Stephano",
+      "planet": "천왕성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode907",
+      "name": "Caelus",
+      "englishName": "Caelus",
+      "planet": "천왕성",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "ClanNode17",
+      "name": "Assur",
+      "englishName": "Assur",
+      "planet": "천왕성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode49",
+      "name": "Larissa",
+      "englishName": "Larissa",
+      "planet": "해왕성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode1",
+      "name": "Galatea",
+      "englishName": "Galatea",
+      "planet": "해왕성",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode17",
+      "name": "Proteus",
+      "englishName": "Proteus",
+      "planet": "해왕성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode78",
+      "name": "Triton",
+      "englishName": "Triton",
+      "planet": "해왕성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode6",
+      "name": "Despina",
+      "englishName": "Despina",
+      "planet": "해왕성",
+      "mission": "MT_EXCAVATE"
+    },
+    {
+      "id": "SolNode57",
+      "name": "Sao",
+      "englishName": "Sao",
+      "planet": "해왕성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode62",
+      "name": "Neso",
+      "englishName": "Neso",
+      "planet": "해왕성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode908",
+      "name": "Salacia",
+      "englishName": "Salacia",
+      "planet": "해왕성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode127",
+      "name": "Psamathe",
+      "englishName": "Psamathe",
+      "planet": "해왕성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode118",
+      "name": "Laomedeia",
+      "englishName": "Laomedeia",
+      "planet": "해왕성",
+      "mission": "MT_ARTIFACT"
+    },
+    {
+      "id": "SolNode84",
+      "name": "Nereid",
+      "englishName": "Nereid",
+      "planet": "해왕성",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "ClanNode20",
+      "name": "Yursa",
+      "englishName": "Yursa",
+      "planet": "해왕성",
+      "mission": "MT_EVACUATION"
+    },
+    {
+      "id": "ClanNode21",
+      "name": "Kelashin",
+      "englishName": "Kelashin",
+      "planet": "해왕성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode4",
+      "name": "Acheron",
+      "englishName": "Acheron",
+      "planet": "명왕성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode72",
+      "name": "Outer Terminus",
+      "englishName": "Outer Terminus",
+      "planet": "명왕성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode48",
+      "name": "Regna",
+      "englishName": "Regna",
+      "planet": "명왕성",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode21",
+      "name": "Narcissus",
+      "englishName": "Narcissus",
+      "planet": "명왕성",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode76",
+      "name": "Hydra",
+      "englishName": "Hydra",
+      "planet": "명왕성",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode51",
+      "name": "Hades",
+      "englishName": "Hades",
+      "planet": "명왕성",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode38",
+      "name": "Minthe",
+      "englishName": "Minthe",
+      "planet": "명왕성",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode56",
+      "name": "Cypress",
+      "englishName": "Cypress",
+      "planet": "명왕성",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode43",
+      "name": "Cerberus",
+      "englishName": "Cerberus",
+      "planet": "명왕성",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode81",
+      "name": "Palus",
+      "englishName": "Palus",
+      "planet": "명왕성",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "ClanNode24",
+      "name": "Sechura",
+      "englishName": "Sechura",
+      "planet": "명왕성",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode102",
+      "name": "Oceanum",
+      "englishName": "Oceanum",
+      "planet": "명왕성",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "ClanNode25",
+      "name": "Hieracon",
+      "englishName": "Hieracon",
+      "planet": "명왕성",
+      "mission": "MT_EXCAVATE"
+    },
+    {
+      "id": "SolNode131",
+      "name": "Pallas",
+      "englishName": "Pallas",
+      "planet": "세레스",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode135",
+      "name": "Thon",
+      "englishName": "Thon",
+      "planet": "세레스",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode132",
+      "name": "Bode",
+      "englishName": "Bode",
+      "planet": "세레스",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode139",
+      "name": "Lex",
+      "englishName": "Lex",
+      "planet": "세레스",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode141",
+      "name": "Ker",
+      "englishName": "Ker",
+      "planet": "세레스",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode137",
+      "name": "Nuovo",
+      "englishName": "Nuovo",
+      "planet": "세레스",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode140",
+      "name": "Kiste",
+      "englishName": "Kiste",
+      "planet": "세레스",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode138",
+      "name": "Ludi",
+      "englishName": "Ludi",
+      "planet": "세레스",
+      "mission": "MT_RETRIEVAL"
+    },
+    {
+      "id": "SolNode144",
+      "name": "Exta",
+      "englishName": "Exta",
+      "planet": "세레스",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode149",
+      "name": "Casta",
+      "englishName": "Casta",
+      "planet": "세레스",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode147",
+      "name": "Cinxia",
+      "englishName": "Cinxia",
+      "planet": "세레스",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode146",
+      "name": "Draco",
+      "englishName": "Draco",
+      "planet": "세레스",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "ClanNode23",
+      "name": "Gabii",
+      "englishName": "Gabii",
+      "planet": "세레스",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "ClanNode22",
+      "name": "Seimeni",
+      "englishName": "Seimeni",
+      "planet": "세레스",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode153",
+      "name": "Brugia",
+      "englishName": "Brugia",
+      "planet": "에리스",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode164",
+      "name": "Kala-azar",
+      "englishName": "Kala-azar",
+      "planet": "에리스",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode162",
+      "name": "Isos",
+      "englishName": "Isos",
+      "planet": "에리스",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode171",
+      "name": "Saxis",
+      "englishName": "Saxis",
+      "planet": "에리스",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode167",
+      "name": "Oestrus",
+      "englishName": "Oestrus",
+      "planet": "에리스",
+      "mission": "MT_PURIFY"
+    },
+    {
+      "id": "SolNode166",
+      "name": "Nimus",
+      "englishName": "Nimus",
+      "planet": "에리스",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode173",
+      "name": "Solium",
+      "englishName": "Solium",
+      "planet": "에리스",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "ClanNode18",
+      "name": "Akkad",
+      "englishName": "Akkad",
+      "planet": "에리스",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode172",
+      "name": "Xini",
+      "englishName": "Xini",
+      "planet": "에리스",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "ClanNode19",
+      "name": "Zabala",
+      "englishName": "Zabala",
+      "planet": "에리스",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode175",
+      "name": "Naeglar",
+      "englishName": "Naeglar",
+      "planet": "에리스",
+      "mission": "MT_HIVE"
+    },
+    {
+      "id": "SolNode177",
+      "name": "Kappa",
+      "englishName": "Kappa",
+      "planet": "세드나",
+      "mission": "MT_ARTIFACT"
+    },
+    {
+      "id": "SolNode184",
+      "name": "Rusalka",
+      "englishName": "Rusalka",
+      "planet": "세드나",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode181",
+      "name": "Adaro",
+      "englishName": "Adaro",
+      "planet": "세드나",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode183",
+      "name": "Vodyanoi",
+      "englishName": "Vodyanoi",
+      "planet": "세드나",
+      "mission": "MT_ARENA"
+    },
+    {
+      "id": "SolNode190",
+      "name": "Nakki",
+      "englishName": "Nakki",
+      "planet": "세드나",
+      "mission": "MT_ARENA"
+    },
+    {
+      "id": "SolNode185",
+      "name": "Berehynia",
+      "englishName": "Berehynia",
+      "planet": "세드나",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode187",
+      "name": "Selkie",
+      "englishName": "Selkie",
+      "planet": "세드나",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode191",
+      "name": "Marid",
+      "englishName": "Marid",
+      "planet": "세드나",
+      "mission": "MT_RETRIEVAL"
+    },
+    {
+      "id": "SolNode188",
+      "name": "Kelpie",
+      "englishName": "Kelpie",
+      "planet": "세드나",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode189",
+      "name": "Naga",
+      "englishName": "Naga",
+      "planet": "세드나",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode199",
+      "name": "Yam",
+      "englishName": "Yam",
+      "planet": "세드나",
+      "mission": "MT_ARENA"
+    },
+    {
+      "id": "SolNode193",
+      "name": "Merrow",
+      "englishName": "Merrow",
+      "planet": "세드나",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode196",
+      "name": "Charybdis",
+      "englishName": "Charybdis",
+      "planet": "세드나",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode195",
+      "name": "Hydron",
+      "englishName": "Hydron",
+      "planet": "세드나",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "ClanNode14",
+      "name": "Amarna",
+      "englishName": "Amarna",
+      "planet": "세드나",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "ClanNode15",
+      "name": "Sangeru",
+      "englishName": "Sangeru",
+      "planet": "세드나",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode203",
+      "name": "Abaddon",
+      "englishName": "Abaddon",
+      "planet": "유로파",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode204",
+      "name": "Armaros",
+      "englishName": "Armaros",
+      "planet": "유로파",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode209",
+      "name": "Morax",
+      "englishName": "Morax",
+      "planet": "유로파",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode210",
+      "name": "Naamah",
+      "englishName": "Naamah",
+      "planet": "유로파",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode205",
+      "name": "Baal",
+      "englishName": "Baal",
+      "planet": "유로파",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode216",
+      "name": "Valefor",
+      "englishName": "Valefor",
+      "planet": "유로파",
+      "mission": "MT_EXCAVATE"
+    },
+    {
+      "id": "SolNode214",
+      "name": "Sorath",
+      "englishName": "Sorath",
+      "planet": "유로파",
+      "mission": "MT_RETRIEVAL"
+    },
+    {
+      "id": "SolNode211",
+      "name": "Ose",
+      "englishName": "Ose",
+      "planet": "유로파",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SolNode215",
+      "name": "Valac",
+      "englishName": "Valac",
+      "planet": "유로파",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode212",
+      "name": "Paimon",
+      "englishName": "Paimon",
+      "planet": "유로파",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode217",
+      "name": "Orias",
+      "englishName": "Orias",
+      "planet": "유로파",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "ClanNode6",
+      "name": "Larzac",
+      "englishName": "Larzac",
+      "planet": "유로파",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode220",
+      "name": "Kokabiel",
+      "englishName": "Kokabiel",
+      "planet": "유로파",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "ClanNode7",
+      "name": "Cholistan",
+      "englishName": "Cholistan",
+      "planet": "유로파",
+      "mission": "MT_EXCAVATE"
+    },
+    {
+      "id": "SolNode400",
+      "name": "Teshub",
+      "englishName": "Teshub",
+      "planet": "보이드",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode401",
+      "name": "Hepit",
+      "englishName": "Hepit",
+      "planet": "보이드",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode402",
+      "name": "Taranis",
+      "englishName": "Taranis",
+      "planet": "보이드",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode403",
+      "name": "Tiwaz",
+      "englishName": "Tiwaz",
+      "planet": "보이드",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode404",
+      "name": "Stribog",
+      "englishName": "Stribog",
+      "planet": "보이드",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode405",
+      "name": "Ani",
+      "englishName": "Ani",
+      "planet": "보이드",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode406",
+      "name": "Ukko",
+      "englishName": "Ukko",
+      "planet": "보이드",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode407",
+      "name": "Oxomoco",
+      "englishName": "Oxomoco",
+      "planet": "보이드",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode408",
+      "name": "Belenus",
+      "englishName": "Belenus",
+      "planet": "보이드",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode409",
+      "name": "Mot",
+      "englishName": "Mot",
+      "planet": "보이드",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode410",
+      "name": "Aten",
+      "englishName": "Aten",
+      "planet": "보이드",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode411",
+      "name": "Marduk",
+      "englishName": "Marduk",
+      "planet": "보이드",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode412",
+      "name": "Mithra",
+      "englishName": "Mithra",
+      "planet": "보이드",
+      "mission": "MT_TERRITORY"
+    },
+    {
+      "id": "SettlementNode1",
+      "name": "Roche",
+      "englishName": "Roche",
+      "planet": "포보스",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SettlementNode3",
+      "name": "Stickney",
+      "englishName": "Stickney",
+      "planet": "포보스",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SettlementNode2",
+      "name": "Skyresh",
+      "englishName": "Skyresh",
+      "planet": "포보스",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SettlementNode12",
+      "name": "Monolith",
+      "englishName": "Monolith",
+      "planet": "포보스",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SettlementNode10",
+      "name": "Kepler",
+      "englishName": "Kepler",
+      "planet": "포보스",
+      "mission": "MT_RACE"
+    },
+    {
+      "id": "SettlementNode15",
+      "name": "Sharpless",
+      "englishName": "Sharpless",
+      "planet": "포보스",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SettlementNode11",
+      "name": "Gulliver",
+      "englishName": "Gulliver",
+      "planet": "포보스",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SettlementNode14",
+      "name": "Shklovsky",
+      "englishName": "Shklovsky",
+      "planet": "포보스",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "ClanNode10",
+      "name": "Memphis",
+      "englishName": "Memphis",
+      "planet": "포보스",
+      "mission": "MT_EVACUATION"
+    },
+    {
+      "id": "SettlementNode20",
+      "name": "Iliad",
+      "englishName": "Iliad",
+      "planet": "포보스",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "ClanNode11",
+      "name": "Zeugma",
+      "englishName": "Zeugma",
+      "planet": "포보스",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode706",
+      "name": "Horend",
+      "englishName": "Horend",
+      "planet": "데이모스",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode707",
+      "name": "Hyf",
+      "englishName": "Hyf",
+      "planet": "데이모스",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode708",
+      "name": "Phlegyas",
+      "englishName": "Phlegyas",
+      "planet": "데이모스",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode709",
+      "name": "Dirus",
+      "englishName": "Dirus",
+      "planet": "데이모스",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode710",
+      "name": "Formido",
+      "englishName": "Formido",
+      "planet": "데이모스",
+      "mission": "MT_SABOTAGE"
+    },
+    {
+      "id": "SolNode711",
+      "name": "Terrorem",
+      "englishName": "Terrorem",
+      "planet": "데이모스",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode712",
+      "name": "Magnacidium",
+      "englishName": "Magnacidium",
+      "planet": "데이모스",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode713",
+      "name": "Exequias",
+      "englishName": "Exequias",
+      "planet": "데이모스",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode229",
+      "name": "캠비온 퇴적지",
+      "englishName": "Cambion Drift",
+      "planet": "데이모스",
+      "mission": "MT_LANDSCAPE"
+    },
+    {
+      "id": "SolNode715",
+      "name": "Effervo",
+      "englishName": "Effervo",
+      "planet": "데이모스",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode716",
+      "name": "Nex",
+      "englishName": "Nex",
+      "planet": "데이모스",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode717",
+      "name": "Persto",
+      "englishName": "Persto",
+      "planet": "데이모스",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode718",
+      "name": "Cambire",
+      "englishName": "Cambire",
+      "planet": "데이모스",
+      "mission": "MT_ALCHEMY"
+    },
+    {
+      "id": "SolNode719",
+      "name": "MUNIO",
+      "englishName": "Munio",
+      "planet": "데이모스",
+      "mission": "MT_MIRROR_DEFENSE"
+    },
+    {
+      "id": "SolNode721",
+      "name": "Armatus",
+      "englishName": "Armatus",
+      "planet": "데이모스",
+      "mission": "MT_ARTIFACT"
+    },
+    {
+      "id": "SolNode300",
+      "name": "Plato",
+      "englishName": "Plato",
+      "planet": "루아",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode306",
+      "name": "Pavlov",
+      "englishName": "Pavlov",
+      "planet": "루아",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode302",
+      "name": "Tycho",
+      "englishName": "Tycho",
+      "planet": "루아",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode305",
+      "name": "Stöfler",
+      "englishName": "Stöfler",
+      "planet": "루아",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode304",
+      "name": "Copernicus",
+      "englishName": "Copernicus",
+      "planet": "루아",
+      "mission": "MT_CAPTURE"
+    },
+    {
+      "id": "SolNode301",
+      "name": "Grimaldi",
+      "englishName": "Grimaldi",
+      "planet": "루아",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode307",
+      "name": "Zeipel",
+      "englishName": "Zeipel",
+      "planet": "루아",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode308",
+      "name": "Apollo",
+      "englishName": "Apollo",
+      "planet": "루아",
+      "mission": "MT_ARTIFACT"
+    },
+    {
+      "id": "SolNode309",
+      "name": "유바리움",
+      "englishName": "Yuvarium",
+      "planet": "루아",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode310",
+      "name": "서큘러스",
+      "englishName": "Circulus",
+      "planet": "루아",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode741",
+      "name": "Koro",
+      "englishName": "Koro",
+      "planet": "쿠바 요새",
+      "mission": "MT_ASSAULT"
+    },
+    {
+      "id": "SolNode742",
+      "name": "Nabuk",
+      "englishName": "Nabuk",
+      "planet": "쿠바 요새",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode743",
+      "name": "Rotuma",
+      "englishName": "Rotuma",
+      "planet": "쿠바 요새",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode744",
+      "name": "Taveuni",
+      "englishName": "Taveuni",
+      "planet": "쿠바 요새",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode745",
+      "name": "Tamu",
+      "englishName": "Tamu",
+      "planet": "쿠바 요새",
+      "mission": "MT_ARTIFACT"
+    },
+    {
+      "id": "SolNode746",
+      "name": "Dakata",
+      "englishName": "Dakata",
+      "planet": "쿠바 요새",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode747",
+      "name": "Pago",
+      "englishName": "Pago",
+      "planet": "쿠바 요새",
+      "mission": "MT_INTEL"
+    },
+    {
+      "id": "SolNode748",
+      "name": "Garus",
+      "englishName": "Garus",
+      "planet": "쿠바 요새",
+      "mission": "MT_RESCUE"
+    },
+    {
+      "id": "SolNode230",
+      "name": "에버뷰 반원로",
+      "englishName": "Everview Arc",
+      "planet": "자리만",
+      "mission": "MT_CORRUPTION"
+    },
+    {
+      "id": "SolNode231",
+      "name": "할라코 외곽",
+      "englishName": "Halako Perimeter",
+      "planet": "자리만",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode232",
+      "name": "투불 광장",
+      "englishName": "Tuvul Commons",
+      "planet": "자리만",
+      "mission": "MT_VOID_CASCADE"
+    },
+    {
+      "id": "SolNode233",
+      "name": "오로 작업장",
+      "englishName": "Oro Works",
+      "planet": "자리만",
+      "mission": "MT_ARMAGEDDON"
+    },
+    {
+      "id": "SolNode235",
+      "name": "녹색 산책로",
+      "englishName": "The Greenway",
+      "planet": "자리만",
+      "mission": "MT_MOBILE_DEFENSE"
+    },
+    {
+      "id": "SolNode236",
+      "name": "두비리에서의 경험",
+      "englishName": "The Duviri Experience",
+      "planet": "두비리",
+      "mission": "MT_LANDSCAPE"
+    },
+    {
+      "id": "SolNode237",
+      "name": "홀로 흐르는 이야기",
+      "englishName": "The Lone Story",
+      "planet": "두비리",
+      "mission": "MT_LANDSCAPE"
+    },
+    {
+      "id": "SolNode238",
+      "name": "순환로",
+      "englishName": "The Circuit",
+      "planet": "두비리",
+      "mission": "MT_ENDLESS_DUVIRI"
+    },
+    {
+      "id": "SolNode850",
+      "name": "레가사이트 수확",
+      "englishName": "Legacyte Harvest",
+      "planet": "홀바니아",
+      "mission": "MT_ENDLESS_CAPTURE"
+    },
+    {
+      "id": "SolNode851",
+      "name": "헬스크럽: 스칼드라",
+      "englishName": "Hell-Scrub: Scaldra",
+      "planet": "홀바니아",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode852",
+      "name": "헬스크럽: 테크병",
+      "englishName": "Hell-Scrub: Techrot",
+      "planet": "홀바니아",
+      "mission": "MT_SURVIVAL"
+    },
+    {
+      "id": "SolNode853",
+      "name": "섬멸: 스칼드라",
+      "englishName": "Exterminate: Scaldra",
+      "planet": "홀바니아",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode854",
+      "name": "섬멸: 테크병",
+      "englishName": "Exterminate: Techrot",
+      "planet": "홀바니아",
+      "mission": "MT_EXTERMINATION"
+    },
+    {
+      "id": "SolNode855",
+      "name": "경합: 분대 VS 분대",
+      "englishName": "Faceoff: Squad VS Squad",
+      "planet": "홀바니아",
+      "mission": "MT_PVPVE"
+    },
+    {
+      "id": "SolNode856",
+      "name": "암살: H-09 탱크",
+      "englishName": "Assassinate: H-09 Tank",
+      "planet": "홀바니아",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode857",
+      "name": "경합: 단독 분대",
+      "englishName": "Faceoff: Single Squad",
+      "planet": "홀바니아",
+      "mission": "MT_PVPVE"
+    },
+    {
+      "id": "SolNode858",
+      "name": "솔스티스 광장",
+      "englishName": "Solstice Square",
+      "planet": "홀바니아",
+      "mission": "MT_DEFENSE"
+    },
+    {
+      "id": "SolNode250",
+      "name": "회상: 헌훌루스",
+      "englishName": "Recall: Hunhullus",
+      "planet": "데이모스, 다크 리프랙토리",
+      "mission": "MT_TAU_WAR"
+    },
+    {
+      "id": "SolNode251",
+      "name": "회상: 닥톨리스트",
+      "englishName": "Recall: Dactolyst",
+      "planet": "데이모스, 다크 리프랙토리",
+      "mission": "MT_TAU_WAR"
+    },
+    {
+      "id": "SolNode252",
+      "name": "회상: 선발대",
+      "englishName": "Recall: Vanguard",
+      "planet": "데이모스, 다크 리프랙토리",
+      "mission": "MT_TAU_WAR"
+    },
+    {
+      "id": "SolNode253",
+      "name": "강하",
+      "englishName": "Descend",
+      "planet": "데이모스, 다크 리프랙토리",
+      "mission": "MT_DESCENT"
+    },
+    {
+      "id": "SolNode254",
+      "name": "마리의 성역으로부터 강하",
+      "englishName": "Descend from Marie's Sanctuary",
+      "planet": "데이모스, 다크 리프랙토리",
+      "mission": "MT_DESCENT"
+    },
+    {
+      "id": "SolNode255",
+      "name": "리온의 성역으로부터 강하",
+      "englishName": "Descend from Lyon's Sanctuary",
+      "planet": "데이모스, 다크 리프랙토리",
+      "mission": "MT_DESCENT"
+    },
+    {
+      "id": "SolNode256",
+      "name": "로스의 망각",
+      "englishName": "Roathe's Oblivion",
+      "planet": "데이모스, 다크 리프랙토리",
+      "mission": "MT_DESCENT"
+    },
+    {
+      "id": "SolNode257",
+      "name": "죄인",
+      "englishName": "The Guilty",
+      "planet": "데이모스, 다크 리프랙토리",
+      "mission": "MT_TAU_WAR"
+    },
+    {
+      "id": "SolNode801",
+      "name": "생츄어리 맹습",
+      "englishName": "Sanctuary Onslaught",
+      "planet": "미션 통제실",
+      "mission": "MT_ENDLESS_EXTERMINATION"
+    },
+    {
+      "id": "SolNode802",
+      "name": "엘리트 생츄어리 맹습",
+      "englishName": "Elite Sanctuary Onslaught",
+      "planet": "미션 통제실",
+      "mission": "MT_ENDLESS_EXTERMINATION"
+    },
+    {
+      "id": "PvpNode0",
+      "name": "세팔론 쟁탈전",
+      "englishName": "Cephalon Capture",
+      "planet": "토성",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "PvpNode9",
+      "name": "팀 절멸전",
+      "englishName": "Team Annihilation",
+      "planet": "토성",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "PvpNode10",
+      "name": "절멸전",
+      "englishName": "Annihilation",
+      "planet": "토성",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "MercuryHUB",
+      "name": "라룬다 릴레이",
+      "englishName": "Larunda Relay",
+      "planet": "수성",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "SolarisUnitedHub1",
+      "name": "포르투나",
+      "englishName": "Fortuna",
+      "planet": "금성",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "NokkoColony",
+      "name": "지하 광산",
+      "englishName": "Deepmines",
+      "planet": "금성",
+      "mission": "MT_LANDSCAPE"
+    },
+    {
+      "id": "VenusToMercuryJunction",
+      "name": "수성 교차점",
+      "englishName": "MERCURY JUNCTION",
+      "planet": "금성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "CetusHub4",
+      "name": "시터스",
+      "englishName": "Cetus",
+      "planet": "지구",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "EarthToVenusJunction",
+      "name": "금성 교차점",
+      "englishName": "VENUS JUNCTION",
+      "planet": "지구",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "EarthToMarsJunction",
+      "name": "화성 교차점",
+      "englishName": "MARS JUNCTION",
+      "planet": "지구",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "EarthHUB",
+      "name": "스트라타 릴레이",
+      "englishName": "Strata Relay",
+      "planet": "지구",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "IronwakeHUB3",
+      "name": "아이언 웨이크",
+      "englishName": "Iron Wake",
+      "planet": "지구",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "TradeHUB1",
+      "name": "마루의 암시장",
+      "englishName": "Maroo's Bazaar",
+      "planet": "화성",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "MarsToCeresJunction",
+      "name": "세레스 교차점",
+      "englishName": "CERES JUNCTION",
+      "planet": "화성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "MarsToPhobosJunction",
+      "name": "포보스 교차점",
+      "englishName": "PHOBOS JUNCTION",
+      "planet": "화성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "DeimosHub",
+      "name": "네크랄리스크",
+      "englishName": "Necralisk",
+      "planet": "데이모스",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "EntratiLabHub",
+      "name": "해부의 성역",
+      "englishName": "Sanctum Anatomica",
+      "planet": "데이모스",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "SolNode720",
+      "name": "Testudo",
+      "englishName": "Testudo",
+      "planet": "데이모스",
+      "mission": "MT_VAULTS"
+    },
+    {
+      "id": "CeresToJupiterJunction",
+      "name": "목성 교차점",
+      "englishName": "JUPITER JUNCTION",
+      "planet": "데이모스",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "JupiterToEuropaJunction",
+      "name": "유로파 교차점",
+      "englishName": "EUROPA JUNCTION",
+      "planet": "목성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "JupiterToSaturnJunction",
+      "name": "토성 교차점",
+      "englishName": "SATURN JUNCTION",
+      "planet": "목성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "SaturnToUranusJunction",
+      "name": "천왕성 교차점",
+      "englishName": "URANUS JUNCTION",
+      "planet": "토성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "SaturnHUB",
+      "name": "크로니아 릴레이",
+      "englishName": "Kronia Relay",
+      "planet": "토성",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "SolNode723",
+      "name": "Brutus",
+      "englishName": "Brutus",
+      "planet": "천왕성",
+      "mission": "MT_ASCENSION"
+    },
+    {
+      "id": "UranusToNeptuneJunction",
+      "name": "해왕성 교차점",
+      "englishName": "NEPTUNE JUNCTION",
+      "planet": "천왕성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "SolNode761",
+      "name": "인덱스 : 엔듀런스 (저 위험도)",
+      "englishName": "THE INDEX: ENDURANCE (LOW RISK)",
+      "planet": "해왕성",
+      "mission": "MT_ARENA"
+    },
+    {
+      "id": "SolNode762",
+      "name": "인덱스 : 엔듀런스 (중 위험도)",
+      "englishName": "THE INDEX: ENDURANCE (MEDIUM RISK)",
+      "planet": "해왕성",
+      "mission": "MT_ARENA"
+    },
+    {
+      "id": "SolNode763",
+      "name": "인덱스 : 엔듀런스 (고 위험도)",
+      "englishName": "THE INDEX: ENDURANCE (HIGH RISK)",
+      "planet": "해왕성",
+      "mission": "MT_ARENA"
+    },
+    {
+      "id": "EventNode763",
+      "name": "인덱스: 엔듀런스",
+      "englishName": "The Index: Endurance",
+      "planet": "해왕성",
+      "mission": "MT_ARENA"
+    },
+    {
+      "id": "NeptuneToPlutoJunction",
+      "name": "명왕성 교차점",
+      "englishName": "PLUTO JUNCTION",
+      "planet": "해왕성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "PlutoToErisJunction",
+      "name": "에리스 교차점",
+      "englishName": "ERIS JUNCTION",
+      "planet": "명왕성",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "PlutoHUB",
+      "name": "오르커스 릴레이",
+      "englishName": "Orcus Relay",
+      "planet": "명왕성",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "SolNode701",
+      "name": "조르다스 골렘 암살",
+      "englishName": "Jordas Golem Assassinate",
+      "planet": "에리스",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "SolNode705",
+      "name": "뮤탈리스트 알라드 V 암살",
+      "englishName": "Mutalist Alad V Assassinate",
+      "planet": "에리스",
+      "mission": "MT_ASSASSINATION"
+    },
+    {
+      "id": "ErisToSednaJunction",
+      "name": "세드나 교차점",
+      "englishName": "SEDNA JUNCTION",
+      "planet": "에리스",
+      "mission": "MT_JUNCTION"
+    },
+    {
+      "id": "ZarimanHub",
+      "name": "크리살리스",
+      "englishName": "Chrysalith",
+      "planet": "자리만",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "SolNode234",
+      "name": "도미존",
+      "englishName": "Dormizone",
+      "planet": "자리만",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "1999Hub",
+      "name": "홀바니아 중앙 쇼핑몰",
+      "englishName": "Höllvania Central Mall",
+      "planet": "홀바니아",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "CrewBattleNode559",
+      "name": "테크노사이트 코다 콘서트",
+      "englishName": "TECHNOCYTE CODA CONCERT",
+      "planet": "지구 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode556",
+      "name": "자유 비행",
+      "englishName": "Free Flight",
+      "planet": "지구 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode502",
+      "name": "Sover Strait",
+      "englishName": "Sover Strait",
+      "planet": "지구 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode509",
+      "name": "Iota Temple",
+      "englishName": "Iota Temple",
+      "planet": "지구 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode518",
+      "name": "Ogal Cluster",
+      "englishName": "Ogal Cluster",
+      "planet": "지구 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode519",
+      "name": "Korm's Belt",
+      "englishName": "Korm's Belt",
+      "planet": "지구 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode522",
+      "name": "Bendar Cluster",
+      "englishName": "Bendar Cluster",
+      "planet": "지구 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode511",
+      "name": "Beacon Shield Ring",
+      "englishName": "Beacon Shield Ring",
+      "planet": "금성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode513",
+      "name": "Vesper Strait",
+      "englishName": "Vesper Strait",
+      "planet": "금성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode515",
+      "name": "Luckless Expanse",
+      "englishName": "Luckless Expanse",
+      "planet": "금성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode514",
+      "name": "Falling Glory",
+      "englishName": "Falling Glory",
+      "planet": "금성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode503",
+      "name": "Bifrost Echo",
+      "englishName": "Bifrost Echo",
+      "planet": "금성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode512",
+      "name": "Orvin-Haarc",
+      "englishName": "Orvin-Haarc",
+      "planet": "금성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode557",
+      "name": "쿠바 리치 결전",
+      "englishName": "Kuva Lich Confrontation",
+      "planet": "토성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode501",
+      "name": "Mordo Cluster",
+      "englishName": "Mordo Cluster",
+      "planet": "토성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode534",
+      "name": "Lupal Pass",
+      "englishName": "Lupal Pass",
+      "planet": "토성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode533",
+      "name": "Nodo Gap",
+      "englishName": "Nodo Gap",
+      "planet": "토성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode535",
+      "name": "Vand Cluster",
+      "englishName": "Vand Cluster",
+      "planet": "토성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode530",
+      "name": "Kasio's Rest",
+      "englishName": "Kasio's Rest",
+      "planet": "토성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode558",
+      "name": "파보스의 자매 결전",
+      "englishName": "Sister of Parvos Confrontation",
+      "planet": "해왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode504",
+      "name": "Arva Vector",
+      "englishName": "Arva Vector",
+      "planet": "해왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode516",
+      "name": "Nu-gua Mines",
+      "englishName": "Nu-gua Mines",
+      "planet": "해왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode523",
+      "name": "Mammon's Prospect",
+      "englishName": "Mammon's Prospect",
+      "planet": "해왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode525",
+      "name": "Brom Cluster",
+      "englishName": "Brom Cluster",
+      "planet": "해왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode521",
+      "name": "Enkidu Ice Drifts",
+      "englishName": "Enkidu Ice Drifts",
+      "planet": "해왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode524",
+      "name": "Sovereign Grasp",
+      "englishName": "Sovereign Grasp",
+      "planet": "해왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode526",
+      "name": "Khufu Envoy",
+      "englishName": "Khufu Envoy",
+      "planet": "명왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode527",
+      "name": "Seven Sirens",
+      "englishName": "Seven Sirens",
+      "planet": "명왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode528",
+      "name": "Obol Crossing",
+      "englishName": "Obol Crossing",
+      "planet": "명왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode531",
+      "name": "Fenton's Field",
+      "englishName": "Fenton's Field",
+      "planet": "명왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode529",
+      "name": "Profit Margin",
+      "englishName": "Profit Margin",
+      "planet": "명왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode536",
+      "name": "Peregrine Axis",
+      "englishName": "Peregrine Axis",
+      "planet": "명왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode550",
+      "name": "Nsu Grid",
+      "englishName": "Nsu Grid",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode555",
+      "name": "R-9 Cloud",
+      "englishName": "R-9 Cloud",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode554",
+      "name": "H-2 Cloud",
+      "englishName": "H-2 Cloud",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode553",
+      "name": "Flexa",
+      "englishName": "Flexa",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode538",
+      "name": "Calabash",
+      "englishName": "Calabash",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode539",
+      "name": "Numina",
+      "englishName": "Numina",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode540",
+      "name": "Arc Silver",
+      "englishName": "Arc Silver",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode541",
+      "name": "Erato",
+      "englishName": "Erato",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode542",
+      "name": "Lu-yan",
+      "englishName": "Lu-yan",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode543",
+      "name": "Sabmir Cloud",
+      "englishName": "Sabmir Cloud",
+      "planet": "베일 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "JadeShadows2HUB",
+      "name": "폰티스 탑",
+      "englishName": "Pontis Tower",
+      "planet": "천왕성 프록시마",
+      "mission": "MT_PVP"
+    },
+    {
+      "id": "CrewBattleNode561",
+      "name": "스코리아의 천사",
+      "englishName": "Scoria's Angel",
+      "planet": "천왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    },
+    {
+      "id": "CrewBattleNode560",
+      "name": "쿠바의 마녀",
+      "englishName": "The Kuva Wytch",
+      "planet": "천왕성 프록시마",
+      "mission": "MT_RAILJACK"
+    }
+  ],
+  "missions": {
+    "MT_SURVIVAL": "생존",
+    "MT_DEFENSE": "방어",
+    "MT_RESCUE": "구출",
+    "MT_CAPTURE": "생포",
+    "MT_EXTERMINATION": "섬멸",
+    "MT_SABOTAGE": "파괴공작",
+    "MT_ASSASSINATION": "암살",
+    "MT_MOBILE_DEFENSE": "이동 방어",
+    "MT_TERRITORY": "감청",
+    "MT_INTEL": "첩보활동",
+    "MT_LANDSCAPE": "자유 탐험",
+    "MT_EXCAVATE": "발굴",
+    "MT_PAINT_FLOOD": "폴리의 사냥",
+    "MT_OFFERING": "신사 방어",
+    "MT_ARTIFACT": "교란",
+    "MT_MIRROR_DEFENSE": "거울상 방어",
+    "MT_PURSUIT": "추적",
+    "MT_EVACUATION": "탈주",
+    "MT_RETRIEVAL": "탈취",
+    "MT_PURIFY": "인페스티드 인양",
+    "MT_HIVE": "하이브",
+    "MT_ARENA": "아레나",
+    "MT_RACE": "돌진",
+    "MT_ALCHEMY": "연금술",
+    "MT_ASSAULT": "맹공",
+    "MT_CORRUPTION": "보이드 홍수",
+    "MT_VOID_CASCADE": "보이드 범람",
+    "MT_ARMAGEDDON": "보이드 대격전",
+    "MT_ENDLESS_DUVIRI": "순환로",
+    "MT_ENDLESS_CAPTURE": "레가사이트 수확",
+    "MT_PVPVE": "경합",
+    "MT_TAU_WAR": "페리타 반란",
+    "MT_DESCENT": "디센디아",
+    "MT_ENDLESS_EXTERMINATION": "생츄어리 맹습",
+    "MT_PVP": "콘클레이브",
+    "MT_JUNCTION": "솔라 레일 교차점",
+    "MT_VAULTS": "네트라셀",
+    "MT_ASCENSION": "상승",
+    "MT_RAILJACK": "접전 + 암살"
+  },
+  "sources": [
+    {
+      "file": "ExportRegions.json",
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/ExportRegions.json",
+      "sha256": "56baa9b44520e1cadb4e045dd3af065edf8f15287257e4b3f48a40d153822072"
+    },
+    {
+      "file": "dict.ko.json",
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/dict.ko.json",
+      "sha256": "cb9ff3d336b12e8aaa9ae2e0d710ff1968265623f0a392840d5aa1f6989d8d7f"
+    },
+    {
+      "file": "dict.en.json",
+      "url": "https://raw.githubusercontent.com/calamity-inc/warframe-public-export-plus/senpai/dict.en.json",
+      "sha256": "ab82babcde2cb4b2c741d33db1d99b4a523695988768a8cc91d7d6b9465ae9d0"
+    }
+  ],
+  "generatedUtc": "2026-10-25T20:19:41.283139+00:00"
+}

@@ -1,0 +1,109 @@
+[
+  {
+    "image": "opening.png",
+    "expectedSlugs": [
+      "daikyu_prime_lower_limb",
+      "paris_prime_upper_limb",
+      "gara_prime_neuroptics_blueprint",
+      "local:forma-blueprint"
+    ],
+    "note": "실제 금색 한국어 보상 화면, 작성자 설명 문구가 추가된 공개 가이드 이미지",
+    "inputSha256": "4eafae0d9983505a19da76ebd86ef683a30b53b252eef877f173e844becd88bc",
+    "synthetic": false,
+    "sourcePage": "https://joynplay.kr/워프레임-프라임-캐릭터-프라임-무기-파밍-얻는-방법/",
+    "originalSha256": "fca347532298aa140bb40bbc4e9725cbad79610067cd2ac25605e713e916f98f",
+    "sourceImage": "https://joynplay.kr/wp-content/uploads/2026/08/%EC%84%B1%EC%9C%A0%EB%AC%BC-%EA%B0%9C%EB%B0%A91.webp",
+    "preparation": "WebP를 PNG로 무손실 변환",
+    "minimumAutomatic": 4
+  },
+  {
+    "image": "red-game-rewards.png",
+    "expectedSlugs": [
+      "protea_prime_neuroptics_blueprint",
+      "kestrel_prime_grip",
+      "dual_zoren_prime_handle",
+      "dual_zoren_prime_handle"
+    ],
+    "note": "실제 붉은 UI 보상 행. 타 프로그램의 OCR 결과 오버레이가 있는 하단은 제외",
+    "inputSha256": "bc1382ef63e61e2f47d38c4f36acffe10952425c598217950e2267283b200cd5",
+    "synthetic": false,
+    "sourcePage": "https://gall.dcinside.com/mgallery/board/view?id=ordis&no=437481",
+    "originalSha256": "7d67b36206eb0d627e529174e157c93c67dd286584fdfb705f4bf33536e0a12f",
+    "preparation": "dc-6.png 원본 850×331에서 (0,0)-(850,217) 자르기: 다른 앱 OCR/가격 오버레이 제외",
+    "minimumAutomatic": 4
+  },
+  {
+    "image": "reward-full-dark.png",
+    "expectedSlugs": [
+      "sevagoth_prime_neuroptics_blueprint",
+      "lavos_prime_neuroptics_blueprint",
+      "baza_prime_receiver",
+      "velox_prime_barrel"
+    ],
+    "note": "실제 640×360 플레이 영상 5861535의 2초 원본 프레임, 다른 앱 오버레이 표시 전",
+    "inputSha256": "affbebdbcc88d2499caea48df2ec56a598c8ff0243e0ff8c4bcfdabe573f6ac4",
+    "synthetic": false,
+    "sourcePage": "https://gall.dcinside.com/mgallery/board/view?id=ordis&no=429163",
+    "originalSha256": "eaa6d0b659c94cde666eea5c4e5e08fc720a478a011db6dd2ec49b68bd93c8b9",
+    "sourceVideoId": "5861535",
+    "timestampSeconds": 2,
+    "preparation": "원본 640×360 영상에서 프레임 추출. 확대·합성 없음. 다른 앱 OCR 오버레이 표시 전.",
+    "minimumAutomatic": 3
+  },
+  {
+    "image": "reward-full-bright.png",
+    "expectedSlugs": [
+      "shade_prime_systems",
+      "bronco_prime_blueprint",
+      "tatsu_prime_blade",
+      "local:forma-blueprint"
+    ],
+    "note": "실제 640×360 플레이 영상 5862553의 1.3초 프레임, 포르마 2개는 품목 기준 검증",
+    "inputSha256": "3311b2ea77ea66dbc7cf6def45417be68aa4b729c8ce0edef970f8f18bd561f3",
+    "synthetic": false,
+    "sourcePage": "https://gall.dcinside.com/mgallery/board/view?id=ordis&no=429163",
+    "originalSha256": "36a7cb96465e10e099a782130886425939f5961937429eaf5f4e6d46b23bc75f",
+    "sourceVideoId": "5862553",
+    "timestampSeconds": 1.3,
+    "preparation": "원본 640×360 영상에서 프레임 추출. 확대·합성 없음. 다른 앱 OCR 오버레이 표시 전.",
+    "minimumAutomatic": 4
+  },
+  {
+    "image": "combat-negative.png",
+    "expectedSlugs": [],
+    "note": "보상 화면이 아닌 실제 전투 프레임",
+    "inputSha256": "040690e04f3a6df11717683d46f9ff8300f90cd5610570ff9cc4357e8f7bead3",
+    "synthetic": false,
+    "sourcePage": "https://gall.dcinside.com/mgallery/board/view?id=ordis&no=429163",
+    "originalSha256": "eaa6d0b659c94cde666eea5c4e5e08fc720a478a011db6dd2ec49b68bd93c8b9",
+    "sourceVideoId": "5861535",
+    "timestampSeconds": 0,
+    "preparation": "원본 640×360 영상에서 프레임 추출. 확대·합성 없음. 다른 앱 OCR 오버레이 표시 전.",
+    "minimumAutomatic": 0
+  },
+  {
+    "image": "bright-combat-negative.png",
+    "expectedSlugs": [],
+    "note": "보상 화면 전 밝은 전투 프레임",
+    "inputSha256": "e5bd13a664e96d7ab09e7b2eca05282aeb267ae3c79de803f7425a5c1d912058",
+    "synthetic": false,
+    "sourcePage": "https://gall.dcinside.com/mgallery/board/view?id=ordis&no=429163",
+    "originalSha256": "36a7cb96465e10e099a782130886425939f5961937429eaf5f4e6d46b23bc75f",
+    "sourceVideoId": "5862553",
+    "timestampSeconds": 0,
+    "preparation": "원본 640×360 영상에서 프레임 추출. 확대·합성 없음. 다른 앱 OCR 오버레이 표시 전.",
+    "minimumAutomatic": 0
+  },
+  {
+    "image": "reward-row.png",
+    "expectedSlugs": [],
+    "note": "보상 화면이 아닌 보이드 잔영 툴팁",
+    "inputSha256": "a6c3d43a52d08af01f2c7dc8581df661e370bb9240e9b5ddbb0097874a915c07",
+    "synthetic": false,
+    "sourcePage": "https://joynplay.kr/워프레임-프라임-캐릭터-프라임-무기-파밍-얻는-방법/",
+    "originalSha256": "911faeb0974854fbf20e3ef424082a4699f229cd6f7a36229acae508712a3d79",
+    "sourceImage": "https://joynplay.kr/wp-content/uploads/2026/08/%EB%B3%B4%EC%9D%B4%EB%93%9C-%EC%9E%94%EC%98%81%EB%AC%BC.webp",
+    "preparation": "WebP를 PNG로 무손실 변환",
+    "minimumAutomatic": 0
+  }
+]

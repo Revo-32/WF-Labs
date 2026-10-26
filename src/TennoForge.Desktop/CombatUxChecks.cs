@@ -13,6 +13,9 @@ public sealed partial class MainWindow
         void Yes(bool x,string name){if(!x)throw new Exception(name);checks.Add(name);}
         try
         {
+            // The public starter build need not contain CO. Test this mechanic
+            // with an explicit fixture rather than relying on first-run defaults.
+            var fixture=board.Slots;var co=catalog.Mods.First(m=>m.Family=="overload");fixture[7]=new(co.Id,co.MaxRank);board.SetSlots(fixture);
             scenarioDrawer!.SetOpen(true,false);UpdateLayout();
             attackMode.SelectedIndex=1;encounterChoice.SelectedValue=EncounterMode.Primer;
             clearStatusButton.RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Button.ClickEvent));var before=current!.TargetDps;

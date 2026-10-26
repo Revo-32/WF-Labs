@@ -1,0 +1,122 @@
+{
+  "retrievedUtc": "2026-10-25T06:01:13.368809+00:00",
+  "sources": {
+    "ExportWeapons": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportWeapons_ko.json!00_9S8lJkDIJHre9oYxP1FhJA",
+      "sha256": "f6586c32fdfb18c313a9c89415749b925034e14a9fe5cc43bc2504e61b3edfb8"
+    },
+    "ExportWarframes": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportWarframes_ko.json!00_QFVtxgRBSL8gQEdykt4m6A",
+      "sha256": "67351be02428128d7c3764fb27909141484c8f7c4cabb5d11063e1edeb96192e"
+    },
+    "ExportResources": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportResources_ko.json!00_bpv5nAfVUnv9x4HDBwi6Jw",
+      "sha256": "3743ef64e93e1b629f1ec46704f9cbdc79fa735891d1ce86988be6f29ddd3888"
+    },
+    "ExportSentinels": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportSentinels_ko.json!00_dt+3G4-R-cf2hAOlCde9VA",
+      "sha256": "6ed033269bfefd28e2a183250b5afcfc9c8b97911ec307cc7611fe701ea8dd62"
+    },
+    "ExportRelicArcane": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportRelicArcane_ko.json!00_ULm+uHT2tj+X2Ec4NmVAQg",
+      "sha256": "0c5f17631e51c772e57d907856cb7234ce6fbf4a98cc4b93381731df7358770f"
+    },
+    "ExportRecipes": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportRecipes_ko.json!00_oac+LCAtIyqDxZF8Qe1ZZA",
+      "sha256": "c6259273a2e138d0b10e6133ac425d03cf87f6f0beac197fbe56ee8f29fc8ef3"
+    },
+    "ExportUpgrades": {
+      "url": "https://content.warframe.com/PublicExport/Manifest/ExportUpgrades_ko.json!00_FKhmE3IOPRSIhNtklI-uPw",
+      "sha256": "6fafdac9fcdd585e024ba08e18a21158e39f8b935a8e89c4d8bc0058d4c98d92"
+    },
+    "WFCD:Primary": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Primary.json",
+      "sha256": "d531e96c474fecabe3f146dd0bb1e76367b2b5b1554152a4ad559646f358b1f7",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Secondary": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Secondary.json",
+      "sha256": "c5adaa44161e499037a04f850798e597eb7daab07f74846143a2c03b8e209a23",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Melee": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Melee.json",
+      "sha256": "fb8f1a1b3305a395e7605bec6bfac82d6c10ddb6f3ddcc34526eeff66bdc4996",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Warframes": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Warframes.json",
+      "sha256": "36a17e007a751cd10ca0a78c35ac655032f30ba24c14130d044202a24c2762b9",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Archwing": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Archwing.json",
+      "sha256": "ebe76f869ddd1509ae19cf45e27ad3f1e3ae20449be7f17f978b63dd31abd169",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Arch-Gun": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Arch-Gun.json",
+      "sha256": "9287ba7a9e26039d5b316a7edcff7559fc843b8e4effa0af3e45a1d174c70d9c",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Arch-Melee": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Arch-Melee.json",
+      "sha256": "6b8812dec2457b378417b44d68de250f8baa6bcd4e622dd3a04c1c69b21c3b31",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Sentinels": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Sentinels.json",
+      "sha256": "3ba97ec86e7c80aef7c1a743c3c0272099457635544dfc5cfe37108f3ff9615f",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:SentinelWeapons": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/SentinelWeapons.json",
+      "sha256": "08daf216004d390073f1e2b257fcda3cedba22498ef2753d05d2374a36e96229",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Pets": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Pets.json",
+      "sha256": "a5eb5b8c4bde0c292b2808e18a687d2deaa27de41346a99a60077cf40d908326",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Misc": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Misc.json",
+      "sha256": "c6df3316e1bdef1fd2a43b9acf624a554c4304f975e85330e28a3661d3ace6b8",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Components": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Components.json",
+      "sha256": "9af4946592aec3c3376cc54e22e4a14df649ac751390c18190934088c5600d84",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Resources": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Resources.json",
+      "sha256": "fb848f79f7766088c936d2f447134c9524a3ee0bcb41f68e2607f23cf524d933",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    },
+    "WFCD:Relics": {
+      "url": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/json/Relics.json",
+      "sha256": "45d1e7cec24cbc5de46660613d396c4e6ac1198914bd0a2dfb6ccee72d4c9dae",
+      "revision": "bb5937b4cd65500c5437978d1c014f954d22816b"
+    }
+  },
+  "masteryRules": [
+    "https://support.warframe.com/hc/en-us/articles/218718097-Mastery-Basics",
+    "https://wiki.warframe.com/w/Mastery_Rank"
+  ],
+  "reviewedOverrides": [
+    {
+      "field": "maxRank",
+      "type": "Necramech",
+      "value": 40,
+      "source": "https://wiki.warframe.com/w/Rank"
+    },
+    {
+      "field": "pointsPerRank",
+      "category": "Pets",
+      "value": 200,
+      "note": "모아·하운드 헤드의 productCategory=Pistols를 마스터리 분류로 사용하지 않음"
+    }
+  ],
+  "refinementRules": "https://www.warframe.com/fr/patch-notes/pc/20-7-4"
+}
