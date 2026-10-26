@@ -12,7 +12,7 @@ public sealed partial class MainWindow
     private readonly TextBlock zawSlotName=T("조우 전용",14),zawSlotRank=T("",13);
     private FrameworkElement WeaponWithZawBuilder()
     {
-        var row=new DockPanel();var open=Button("조우",()=>OpenZawBuilder());open.ToolTip="타격부 · 손잡이 · 연결부로 조우 조립";open.Margin=new(4,0,0,0);CompactInput(open,32);DockPanel.SetDock(open,Dock.Right);row.Children.Add(open);row.Children.Add(weapon);return row;
+        var row=new DockPanel();var open=Button("조우",()=>OpenZawBuilder());open.ToolTip="타격부 · 손잡이 · 연결부로 조우 조립";open.Margin=new(4,0,0,0);CompactInput(open,32);DockPanel.SetDock(open,Dock.Right);row.Children.Add(open);DockPanel.SetDock(incarnonMenu,Dock.Right);row.Children.Add(incarnonMenu);row.Children.Add(weapon);return row;
     }
     private FrameworkElement OpenZawBuilder(bool show=true)
     {

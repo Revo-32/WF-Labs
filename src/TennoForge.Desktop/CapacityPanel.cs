@@ -73,6 +73,7 @@ public sealed partial class MainWindow
     private void UpdateCapacity(CapacityResult result)
     {
         capacityResult=result;capacityValue.Text=$"{result.Used} / {result.Total}";
+        planningResult.Text=result.Fits?"":"계획용 결과 · 수용량 초과로 실제 장착 불가";
         var key=result.Fits?"CapacityGoodBrush":"ErrorBrush";capacityValue.SetResourceReference(TextBlock.ForegroundProperty,key);capacityFill.SetResourceReference(Border.BackgroundProperty,key);capacityHint.SetResourceReference(TextBlock.ForegroundProperty,key);
         capacityHint.Text=result.Fits?$"{result.Remaining} 남음":$"{-result.Remaining} 초과 · 장착 불가";
         capacityHint.ToolTip=$"기본 {result.BaseCapacity} + 스탠스 {result.StanceBonus}"+(result.Fits?"":" · 계획용 피해 계산");

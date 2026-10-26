@@ -1,5 +1,9 @@
 # Windows 배포 준비
 
+## 0.10.0-preview.1 후보
+
+2026-10-26 릴리즈 준비는 별도 `release/0.10.0-preview.1` 작업 트리에서 진행한다. [0.10.0 검수 기록](RELEASE_0_10_0_VERIFICATION.md)과 [릴리즈 노트](RELEASE_NOTES.md)를 기준으로 하며 아래 0.9.0 공개 링크는 이전 배포다. 새 설치 프로그램은 .NET 런타임 외에 OCR의 Visual C++ x64 런타임도 확인한다. GitHub 초안은 공개 전까지 기존 클라이언트의 업데이트 목록에 나타나지 않는다.
+
 앱 표시 이름은 **WF Labs**, GitHub 저장소는 `https://github.com/Revo-32/WF-Labs`다. 소스 공개 및 설치·업데이트 배포를 같은 저장소에서 관리한다. 자체 코드는 공개 열람용이며 별도의 재사용 라이선스를 부여하지 않는다. `COPYRIGHT.md`를 참조한다.
 
 ## 설치와 실행

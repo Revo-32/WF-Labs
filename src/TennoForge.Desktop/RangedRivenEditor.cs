@@ -11,7 +11,7 @@ internal sealed partial class RangedRivenEditor : Border
     private readonly ReferenceWeapon weapon;
     private readonly bool bindToCurrentBuild;
     private readonly ComboBox rank=new(){ItemsSource=Enumerable.Range(0,9).ToArray(),SelectedIndex=8};
-    private readonly TextBox cost=new(){Text="10"};
+    private readonly TextBox cost=new(){Text="18",ToolTip="현재 랭크에서 게임에 표시된 코스트"};
     private readonly ComboBox polarity=new(){ItemsSource=new[]{new Choice("Madurai","마두라이"),new Choice("Vazarin","바자린"),new Choice("Naramon","나라몬")},DisplayMemberPath="Name",SelectedIndex=0};
     private readonly (ComboBox Stat,TextBox Value,ComboBox Sign)[] rows=new (ComboBox,TextBox,ComboBox)[4];
     private readonly StackPanel charts=new(),splices=new();
@@ -46,25 +46,29 @@ internal sealed partial class RangedRivenEditor : Border
             foreach(var maximum in new[]{false,true}){bool end=maximum;var button=new Button{Content=end?"최대값 입력":"최소값 입력",Padding=new(8,3,8,3),Margin=new(0,0,6,0),ToolTip="선택한 구성의 경계값으로 비교할 가정을 입력합니다."};button.Click+=(_,_)=>SetEndpoint(index,end);actions.Children.Add(button);}
             body.Children.Add(new RivenOptionInput(i,attribute,value,sign,endpointDetails));
         }
-        body.Children.Add(new Expander{Header="장착 설정 · 코스트 / 극성",Content=Stack(Text("0랭크 코스트"),cost,Text("극성"),polarity),Margin=new(0,4,0,12)});
+        body.Children.Add(new Expander{Header="장착 설정 · 코스트 / 극성",Content=Stack(Text("현재 랭크 표시 코스트"),cost,Text("극성"),polarity),Margin=new(0,4,0,12)});
         reference=new RivenReferenceBrowser(ReferenceRanges,RangedRivens.Table.Recipes.Select(r=>(RangedRivens.Attribute(r.First).Name+" + "+RangedRivens.Attribute(r.Second).Name,RangedRivens.Attribute(r.Result).Name)));
         var overview=Stack(Text("옵션 수치 분석",24),charts);
         var splice=Stack(Text("접합",24),Text("계승 범위를 확인하고, 대체 옵션이 포함된 예시를 만들어 비교하세요."),splices);
         sections=new RivenSections(("수치 확인",Scroll(overview)),("접합",Scroll(splice)),("옵션 도감",reference),("비교 · 순환",Scroll(CreateWorkshop())));
         var columns=new Grid();columns.ColumnDefinitions.Add(new(){Width=new(inline?1:1.05,GridUnitType.Star)});columns.ColumnDefinitions.Add(new(){Width=new(28)});columns.ColumnDefinitions.Add(new(){Width=new(inline?2.35:1.6,GridUnitType.Star)});
         columns.Children.Add(Scroll(body));Grid.SetColumn(sections,2);columns.Children.Add(sections);Grid.SetRow(columns,1);root.Children.Add(columns);
-        var footer=new DockPanel{LastChildFill=false,Margin=new(0,16,0,0)};DockPanel.SetDock(apply,Dock.Right);footer.Children.Add(apply);
+        var footer=new DockPanel{LastChildFill=true,Margin=new(0,16,0,0)};DockPanel.SetDock(apply,Dock.Right);footer.Children.Add(apply);
+        var mountSummary=Text("",13);mountSummary.TextWrapping=TextWrapping.Wrap;mountSummary.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");
+        void UpdateMountSummary()=>mountSummary.Text=$"표시 코스트 {(string.IsNullOrWhiteSpace(cost.Text)?"미입력":cost.Text)} · {(polarity.SelectedItem as Choice)?.Name??"극성 미선택"} · 장착 설정에서 변경";
+        cost.TextChanged+=(_,_)=>UpdateMountSummary();polarity.SelectionChanged+=(_,_)=>UpdateMountSummary();UpdateMountSummary();footer.Children.Add(mountSummary);
         var sources=new WrapPanel();foreach(var (label,url) in new[]{("위키 수치 기준",RangedRivens.Table.Source.Url),("44.1.3 패치",RivenBalance.Source)}){var button=new Button{Content=label,HorizontalAlignment=HorizontalAlignment.Left,Margin=new(0,0,8,8),Padding=new(12,8,12,8)};button.Click+=(_,_)=>System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(url){UseShellExecute=true});sources.Children.Add(button);}
         overview.Children.Add(new Expander{Header="수치 범위 · 출처",Content=Stack(Text("전 무기 공통 배율 1.2 · Hotfix 44.1.3"),Text("막대는 최소·최대 사이의 위치입니다. 획득 확률이나 빌드 점수가 아닙니다."),sources),Margin=new(0,14,0,0)});
         Grid.SetRow(footer,2);root.Children.Add(footer);apply.Click+=(_,_)=>{try{if(valid is {} roll)accept(roll);}catch(ArgumentException ex){message.Text=ex.Message;message.Visibility=Visibility.Visible;}};
         if(initial is not null)
         {
-            rank.SelectedIndex=initial.Rank;cost.Text=initial.BaseDrain?.ToString()??"";polarity.SelectedItem=polarity.Items.Cast<Choice>().SingleOrDefault(p=>p.Key==initial.Polarity);
+            rank.SelectedIndex=initial.Rank;cost.Text=(initial.BaseDrain+initial.Rank)?.ToString()??"";polarity.SelectedItem=polarity.Items.Cast<Choice>().SingleOrDefault(p=>p.Key==initial.Polarity);
             for(int i=0;i<Math.Min(initial.Traits.Length,4);i++){var t=initial.Traits[i];rows[i].Stat.SelectedItem=choices.Single(a=>a.Key==t.Stat);rows[i].Value.Text=t.Value.ToString(CultureInfo.InvariantCulture);rows[i].Sign.SelectedIndex=t.Negative?1:0;}
         }
-        foreach(var row in rows){row.Stat.SelectionChanged+=(_,_)=>Refresh();row.Sign.SelectionChanged+=(_,_)=>Refresh();row.Value.TextChanged+=(_,_)=>Refresh();}rank.SelectionChanged+=(_,_)=>Refresh();cost.TextChanged+=(_,_)=>Refresh();polarity.SelectionChanged+=(_,_)=>Refresh();Refresh();sections.Select(0);
+        foreach(var row in rows){row.Stat.SelectionChanged+=(_,_)=>Refresh();row.Sign.SelectionChanged+=(_,_)=>Refresh();row.Value.TextChanged+=(_,_)=>Refresh();}
+        rank.SelectionChanged+=(_,e)=>{if(!applyingWorkshop&&e.RemovedItems.Count>0&&e.RemovedItems[0] is int previous&&int.TryParse(cost.Text,out var displayed)&&displayed-previous is >=0 and <=30)cost.Text=(displayed-previous+rank.SelectedIndex).ToString();Refresh();};cost.TextChanged+=(_,_)=>Refresh();polarity.SelectionChanged+=(_,_)=>Refresh();Refresh();sections.Select(0);
     }
-    private RangedRivenRoll Read()=>new(weapon.Id,rank.SelectedIndex,rows.Where(r=>r.Stat.SelectedItem is Choice {Key:not ""}).Select(r=>{var key=((Choice)r.Stat.SelectedItem).Key;return new RangedRivenTrait(key,double.TryParse(r.Value.Text,NumberStyles.Float,CultureInfo.InvariantCulture,out var v)?v:double.NaN,r.Sign.SelectedIndex==1,RangedRivens.Attribute(key).Spliced);}).ToArray(),RangedRivens.Table.Version,int.TryParse(cost.Text,out var drain)?drain:null,(polarity.SelectedItem as Choice)?.Key);
+    private RangedRivenRoll Read()=>new(weapon.Id,rank.SelectedIndex,rows.Where(r=>r.Stat.SelectedItem is Choice {Key:not ""}).Select(r=>{var key=((Choice)r.Stat.SelectedItem).Key;return new RangedRivenTrait(key,double.TryParse(r.Value.Text,NumberStyles.Float,CultureInfo.InvariantCulture,out var v)?v:double.NaN,r.Sign.SelectedIndex==1,RangedRivens.Attribute(key).Spliced);}).ToArray(),RangedRivens.Table.Version,int.TryParse(cost.Text,out var drain)?drain-rank.SelectedIndex:null,(polarity.SelectedItem as Choice)?.Key);
     private void Refresh()
     {
         if(applyingWorkshop)return;

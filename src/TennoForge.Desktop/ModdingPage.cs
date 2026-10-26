@@ -7,6 +7,7 @@ using TennoForge.Core;
 namespace TennoForge.Desktop;
 public sealed partial class MainWindow
 {
+    private readonly TextBlock calculationContext=T("",13),planningResult=T("",13);
     private Grid? moddingEditor;
     private ScenarioDrawer? scenarioDrawer;
     private Border? equipmentCard;
@@ -64,8 +65,8 @@ public sealed partial class MainWindow
         equipmentRow.Children.Add(weaponClass);var weaponInput=WeaponWithZawBuilder();Grid.SetColumn(weaponInput,2);equipmentRow.Children.Add(weaponInput);
         equipmentActions=CreateModActions();equipmentActions.Margin=new(0,4,0,4);
         equipmentCard=Card(Stack(equipmentRow,equipmentActions,CreateCapacityView()),0);equipmentCard.Padding=new(0);equipmentCard.BorderThickness=new(0);equipmentCard.Margin=new(0,0,0,12);left.Children.Add(equipmentCard);
-        string[] defaults=["pressure","bloodrush","shatter","fury","virulent","vicious","weeping","overload"];
-        board.SetSlots(defaults.Select(f=>{var m=catalog.Mods.First(x=>x.Family==f);return (ModSlot?)new ModSlot(m.Id,m.MaxRank);}).ToArray(),false);
+        string[] defaults=["pressure","shatter","fury"];
+        var starterSlots=new ModSlot?[8];for(var i=0;i<defaults.Length;i++){var m=catalog.Mods.First(x=>x.Family==defaults[i]);starterSlots[i]=new(m.Id,m.MaxRank);}board.SetSlots(starterSlots,false);
         board.Changed+=Recalculate;Grid.SetRow(board.RackView,1);left.Children.Add(board.RackView);
         var libraryCard=Card(board.LibraryView,0);libraryCard.Padding=new(0,10,0,0);libraryCard.BorderThickness=new(0,1,0,0);libraryCard.Margin=new(0,2,0,0);Grid.SetRow(libraryCard,3);left.Children.Add(libraryCard);
 
@@ -73,7 +74,7 @@ public sealed partial class MainWindow
         ((StackPanel)equipmentCard.Child).Children.Insert(1,lichFields!);
         var upgrades=CreateEquipmentSlots();Grid.SetRow(upgrades,2);left.Children.Add(upgrades);
         var right=new StackPanel();
-        var resultTitle=new DockPanel{Margin=new(0,0,0,10)};var resultHeading=T("계산 결과",20);resultHeading.Margin=new(0,0,0,2);scopeLabel.Margin=new(0);resultTitle.Children.Add(Stack(resultHeading,scopeLabel));right.Children.Add(resultTitle);error.SetResourceReference(TextBlock.ForegroundProperty,"ErrorBrush");right.Children.Add(error);CollapseEmpty(error);compare.Visibility=Visibility.Collapsed;right.Children.Add(compare);right.Children.Add(CreateEncounterResults());
+        var resultTitle=new DockPanel{Margin=new(0,0,0,10)};var resultHeading=T("계산 결과",20);resultHeading.Margin=new(0,0,0,2);scopeLabel.Margin=new(0);planningResult.SetResourceReference(TextBlock.ForegroundProperty,"ErrorBrush");CollapseEmpty(planningResult);calculationContext.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");resultTitle.Children.Add(Stack(resultHeading,calculationContext,planningResult,scopeLabel));right.Children.Add(resultTitle);error.SetResourceReference(TextBlock.ForegroundProperty,"ErrorBrush");right.Children.Add(error);CollapseEmpty(error);compare.Visibility=Visibility.Collapsed;right.Children.Add(compare);right.Children.Add(CreateEncounterResults());
         var heroes=new UniformGrid{Columns=2,Margin=new(-10,0,-10,0)};
         Border Metric(string label,TextBlock value,UIElement caption)
         {
@@ -126,6 +127,16 @@ public sealed partial class MainWindow
         foreach(var size in new[]{new GridLength(1,GridUnitType.Star),new GridLength(40),new GridLength(1,GridUnitType.Star)})split.ColumnDefinitions.Add(new(){Width=size});
         var line=new Border{Width=1,HorizontalAlignment=HorizontalAlignment.Center};line.SetResourceReference(Border.BackgroundProperty,"StrokeBrush");Grid.SetColumn(line,1);split.Children.Add(line);
         split.Children.Add(left);Grid.SetColumn(resultsDashboard,2);split.Children.Add(resultsDashboard);
+        left.SizeChanged+=(_,_)=>
+        {
+            bool compact=left.ActualHeight<710;board.SetCompact(compact);split.ColumnDefinitions[1].Width=new(split.ActualWidth<1550?24:40);
+            foreach(var slot in new[]{exilusSlotButton,meleeSlotButton,zawSlotButton})if(slot is not null)
+            {
+                slot.Height=compact?48:100;slot.Padding=compact?new(8,6,8,6):new(9,7,9,7);
+                if(slot.Content is Grid content&&content.Children[0] is DockPanel band)foreach(var text in band.Children.OfType<TextBlock>()){text.FontSize=compact?12:13;text.LineHeight=compact?16:20;text.Margin=new(0);}
+            }
+            foreach(var name in new[]{exilusSlotName,meleeSlotName,zawSlotName})name.Height=compact?20:40;
+        };
         scenarioDrawer=new ScenarioDrawer(split,scenario);scenarioDrawer.SetStatusSource(error);return scenarioDrawer;
     }
     private static void CollapseEmpty(TextBlock text)
@@ -143,8 +154,6 @@ public sealed partial class MainWindow
         cycleDamageLabel.Text=sc is null?"단일 타격 피해":"콤보 전체 피해";durationLabel.Text=sc is null?"타격 간격":"콤보 시간";
         cycleDamageValue.Text=(sc?.ExpectedComboDamage??c.ExpectedHit).ToString("N0");durationValue.Text=sc is {Duration:null}?"위키 미기재":$"{sc?.Duration??c.HitInterval:0.00}초";
         scopeLabel.Text=sc is null?"사용자 지정 타격 · 직접 피해":$"{sc.Stance.Name} · {sc.Combo.InputLabel} · {directHitCount}타";
-        if(ReadEnemySelection() is {} selection){var enemy=EnemyCatalog.Load().Get(selection.EnemyId);var difficulty=selection.Difficulty switch{EnemyDifficulty.SteelPath=>"강철의 길",EnemyDifficulty.Icebind=>$"빙주령 {selection.SquadSize}인",_=>"일반"};scopeLabel.Text+=$"\n{enemy.Name}{(selection.Eximus?" 엑시무스":"")} · Lv. {selection.Level} · {difficulty}";}
-        else scopeLabel.Text+="\n대상 수치 직접 입력";
         scopeLabel.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");
         ttkCaption.Text=sc is null?"반복 타격 시뮬레이션":"처치 타격이 속한 콤보의 시간 범위";
         if(c.Melee!.ExtraDamage>0)ttkCaption.Text+=" · 시작 충전1회 소비·재충전 없음";

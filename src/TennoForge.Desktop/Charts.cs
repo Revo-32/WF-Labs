@@ -116,7 +116,7 @@ internal sealed class SeriesPlot : Plot
     internal void Clear(){points=[];Summary="데이터 없음";Changed();}
     protected override void OnRender(DrawingContext dc)
     {
-        Background(dc);if(points.Length==0){Label(dc,"계산할 빌드를 선택하세요.",new(8,64));return;}
+        Background(dc);if(ActualWidth<110)return;if(points.Length==0){Label(dc,"계산할 빌드를 선택하세요.",new(8,64));return;}
         var plot=new Rect(54,26,Math.Max(1,ActualWidth-72),Height-76);
         var largest=points.Max(p=>p.Y);var power=Math.Pow(10,Math.Floor(Math.Log10(Math.Max(largest,1))));var ceiling=Math.Max(1,Math.Ceiling(largest/power*2)/2*power);
         Point Position(PlotPoint p)=>new(plot.Left+(p.X-minX)/Math.Max(1,maxX-minX)*plot.Width,plot.Bottom-p.Y/ceiling*plot.Height);

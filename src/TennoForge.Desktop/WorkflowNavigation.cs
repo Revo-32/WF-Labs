@@ -32,6 +32,7 @@ public sealed partial class MainWindow
             string current=page.Content is RangedRivenWorkbench w?w.RivenClass:"Melee";
             foreach(var (label,kind) in new[]{("소총","Rifle"),("산탄총","Shotgun"),("권총","Pistol"),("근접","Melee")})Tab(label,current==kind,()=>OpenRivenClass(kind));
             var back=Button("← 모딩으로",ReturnToModding);back.Margin=new(24,0,0,0);back.Height=32;back.Padding=new(12,4,12,4);workflowBar.Children.Add(back);
+            var scan=Button("화면 인식 · 오버레이",()=>ShowRivenCapture(current));scan.Margin=new(8,0,0,0);scan.Height=32;scan.Padding=new(12,4,12,4);workflowBar.Children.Add(scan);
             var note=T("공통 배율 1.2 · 종류별 옵션 범위",13);note.Margin=new(20,0,0,0);note.VerticalAlignment=VerticalAlignment.Center;workflowBar.Children.Add(note);
             if(current=="Melee"&&weapon.SelectedItem is Weapon melee){var target=T("DPS 비교 · "+melee.Name,13);target.Margin=new(20,0,0,0);target.VerticalAlignment=VerticalAlignment.Center;workflowBar.Children.Add(target);}
         }

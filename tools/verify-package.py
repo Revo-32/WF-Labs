@@ -44,8 +44,30 @@ with ZipFile(package) as archive:
     require(value("version") == asset["Version"], "패키지와 feed 버전 일치")
     for name in ["COPYRIGHT.md", "THIRD_PARTY_NOTICES.txt", "WF-WIKI-NOTICE.txt", "PUBLIC-EXPORT-NOTICE.txt", "WFCD-LICENSE.txt", "VELOPACK-LICENSE.txt", "Fonts/OFL.txt", "Fonts/PRETENDARD-LICENSE.txt", "Fonts/PRETENDARD-SOURCE.json", "Fonts/THE-JAMSIL-LICENSE.txt", "Fonts/The_Jamsil_LICENSE_Korean.pdf", "Fonts/THE-JAMSIL-SOURCE.json", "WFLabs.Startup.exe", "coreclr.dll", "PresentationFramework.dll"]:
         require("lib/app/" + name in archive.namelist(), "배포 구성요소 포함 · " + name)
+    if 'lib/app/Data/world-schedule-sources.json' in archive.namelist():
+        for name in ['BROWSE-WF-NOTICE.txt', 'PUBLIC-EXPORT-PLUS-LICENSE.txt', 'WF-WIKI-NOTICE.txt']:
+            require('lib/app/' + name in archive.namelist(), '일정 자료 출처·라이선스 포함 · ' + name)
     config = json.loads(archive.read("lib/app/release-config.json").decode("utf-8-sig"))
+    if tuple(map(int, asset['Version'].split('-', 1)[0].split('.')[:2])) >= (0, 10):
+        for name in ['WARFRAME-MARKET-NOTICE.txt', 'Tesseract.dll', 'x64/tesseract50.dll', 'x64/leptonica-1.82.0.dll',
+                     'Assets/Ocr/kor.traineddata', 'Assets/Ocr/eng.traineddata', 'Assets/Ocr/SOURCES.json',
+                     'Assets/Ocr/TESSERACT-NET-LICENSE.txt', 'Assets/Ocr/TESSERACT-LICENSE.txt',
+                     'Assets/Ocr/TESSDATA-LICENSE.txt', 'Assets/Ocr/LEPTONICA-LICENSE.txt']:
+            require('lib/app/' + name in archive.namelist(), '성유물 인식 구성요소 포함 · ' + name)
     require(config["RepositoryUrl"] == "https://github.com/Revo-32/WF-Labs", "공개 업데이트 저장소 연결")
+    if 'lib/app/Microsoft.ML.OnnxRuntime.dll' in archive.namelist():
+        for name in ['Assets/Ocr/korean-line-v5.onnx', 'Assets/Ocr/korean-line-v5.model.json',
+                     'Assets/Ocr/PADDLEOCR-LICENSE.txt', 'Assets/Ocr/RAPIDOCR-LICENSE.txt',
+                     'Assets/Ocr/ONNXRUNTIME-LICENSE.txt', 'Assets/Ocr/ONNXRUNTIME-THIRD-PARTY-NOTICES.txt']:
+            require('lib/app/' + name in archive.namelist(), '한국어 보조 인식 구성요소 포함 · ' + name)
+        model = json.loads(archive.read('lib/app/Assets/Ocr/korean-line-v5.model.json').decode('utf-8'))
+        require(hashlib.sha256(archive.read('lib/app/Assets/Ocr/korean-line-v5.onnx')).hexdigest() == model['sha256'],
+                '한국어 보조 인식 모델 SHA-256 일치')
+    if tuple(map(int, asset['Version'].split('-', 1)[0].split('.')[:2])) >= (0, 10):
+        model = json.loads(archive.read('lib/app/Assets/Ocr/wfkor.model.json').decode('utf-8'))
+        require(hashlib.sha256(archive.read('lib/app/Assets/Ocr/wfkor.traineddata')).hexdigest() == model['sha256'],
+                '추가 학습 한국어 OCR 모델 SHA-256 일치')
+        require('vcredist143-x64' in value('runtimeDependencies'), '설치 시 OCR Visual C++ 런타임 확인')
     require(config["Prerelease"] == ("-" in asset["Version"]), "미리보기 업데이트 채널")
     require(x64(archive.read("lib/app/WFLabs.exe")), "앱 실행 파일 Windows x64")
 with ZipFile(folder / "WFLabs-win-Portable.zip") as archive:

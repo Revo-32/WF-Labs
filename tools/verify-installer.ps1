@@ -1,8 +1,9 @@
 param([string]$ExpectedVersion='0.8.0-qa.2',[string]$QaDirectory='artifacts/installer-qa')
 $ErrorActionPreference='Stop'
 $root=Split-Path -Parent $PSScriptRoot
-$qa=[IO.Path]::GetFullPath((Join-Path $root $QaDirectory))
+$qa=[IO.Path]::GetFullPath($(if([IO.Path]::IsPathRooted($QaDirectory)){$QaDirectory}else{Join-Path $root $QaDirectory}))
 if(-not $qa.StartsWith([IO.Path]::GetFullPath((Join-Path $root 'artifacts'))+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw '검증 폴더는 프로젝트 artifacts 내부여야 합니다.'}
+trap{if($qa -and (Test-Path -LiteralPath $qa)){($_ | Out-String) | Set-Content -LiteralPath (Join-Path $qa 'installer-error.txt') -Encoding utf8NoBOM};exit 1}
 $install=Join-Path $qa ('installed-' + [Guid]::NewGuid().ToString('N'))
 $setup=Join-Path $qa 'v1/WFLabs.Verify-win-Setup.exe'
 $feed=Join-Path $qa 'v2'

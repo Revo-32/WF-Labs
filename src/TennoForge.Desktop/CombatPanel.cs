@@ -86,7 +86,9 @@ public sealed partial class MainWindow
     private record ComboLevel(int Value){public string Name=>Value==1?"1× · 콤보 없음":$"{Value}× · 콤보 누적 상태";}
     private void RefreshCombatState(Build build,Calculation c,StanceCalculation? stanceResult)
     {
-        scenarioDrawer?.SetSummary($"{(enemyChoice.SelectedItem as EnemyChoice)?.Name??"대상"} · Lv. {enemyLevel.Text}{(enemyEximus.IsChecked==true?" · 엑시무스":"")} · {selectedEnemyDifficulty switch{EnemyDifficulty.SteelPath=>"강철의 길",EnemyDifficulty.Icebind=>"빙주령",_=>"일반"}} · {(encounterChoice.SelectedItem as EncounterChoice)?.Name}");
+        var targetContext=ReadEnemySelection() is {} selection?$"{(enemyChoice.SelectedItem as EnemyChoice)?.Name??"대상"} · Lv. {selection.Level}{(selection.Eximus?" · 엑시무스":"")} · {selection.Difficulty switch{EnemyDifficulty.SteelPath=>"강철의 길",EnemyDifficulty.Icebind=>$"빙주령 {selection.SquadSize}인",_=>"일반"}}":"대상 수치 직접 입력";
+        var context=targetContext+" · "+(encounterChoice.SelectedItem as EncounterChoice)?.Name;
+        scenarioDrawer?.SetSummary(context);calculationContext.Text=context+" · 교전 결과 자동 갱신";
         updatingCombat=true;
         try
         {

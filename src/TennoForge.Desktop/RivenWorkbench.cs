@@ -41,9 +41,9 @@ public sealed partial class MainWindow
             editor.Children.Add(new RivenOptionInput(i,traits[i],rivenValues[i],RivenOptionInput.SignFor(negatives[i]),rivenGrades[i],endpointDetails));
             traits[i].SelectionChanged+=(_,_)=>RefreshRivenWorkbench();negatives[i].Checked+=(_,_)=>RefreshRivenWorkbench();negatives[i].Unchecked+=(_,_)=>RefreshRivenWorkbench();rivenValues[i].TextChanged+=(_,_)=>RefreshRivenWorkbench();
         }
-        rivenWeapon.SelectionChanged+=(_,_)=>{if(!changingRiven){rivenSession=null;rivenBaseline=null;rivenCycles.Text="0";}RefreshRivenWorkbench();};rivenRank.SelectionChanged+=(_,_)=>RefreshRivenWorkbench();
-        var equipDetails=new Expander{Header="장착 설정 · 슬롯 / 코스트 / 극성",Content=Stack(Field("장착할 모드 슬롯",rivenDestination),Columns(Field("표시 코스트",rivenCost),Field("리벤 극성",rivenPolarity))),Margin=new(0,4,0,12)};editor.Children.Add(equipDetails);
-        editor.Children.Add(Button("현재 근접 모딩에 가정 적용",()=>
+        rivenWeapon.SelectionChanged+=(_,_)=>{if(!changingRiven){rivenSession=null;rivenBaseline=null;rivenCycles.Text="0";}RefreshRivenWorkbench();};rivenRank.SelectionChanged+=(_,e)=>{if(!changingRiven&&e.RemovedItems.Count>0&&e.RemovedItems[0] is int previous&&int.TryParse(rivenCost.Text,out var displayed)&&displayed-previous is >=0 and <=30)rivenCost.Text=(displayed-previous+(int)rivenRank.SelectedItem).ToString();RefreshRivenWorkbench();};
+        var equipDetails=new Expander{Header="장착 설정 · 슬롯 / 코스트 / 극성",Content=Stack(Field("장착할 모드 슬롯",rivenDestination),Columns(Field("현재 랭크 표시 코스트",rivenCost),Field("리벤 극성",rivenPolarity))),Margin=new(0,4,0,12)};editor.Children.Add(equipDetails);
+        var applyRiven=Button("현재 근접 모딩에 가정 적용",()=>
         {
             try
             {
@@ -57,10 +57,13 @@ public sealed partial class MainWindow
                 slots[(int)rivenDestination.SelectedItem-1]=new(mod.Id,roll.Rank);board.SetSlots(slots);ShowModding();
             }
             catch(ArgumentException ex){rivenInfo.Text=ex.Message;if(string.IsNullOrWhiteSpace(rivenCost.Text)||rivenPolarity.SelectedValue is null){equipDetails.IsExpanded=true;rivenCost.BringIntoView();rivenCost.Focus();}}
-        }));
-        editor.Children.Add(Button("장착한 리벤 불러오기",()=>{if(equippedRiven is {} r)ApplyRivenWorkbench(r);else rivenInfo.Text="아직 장착한 리벤이 없습니다.";}));
-        foreach(var action in editor.Children.OfType<Button>())action.Margin=new(0,8,0,0);
-        UiHierarchy.Primary(editor.Children.OfType<Button>().First());
+        });
+        var mountSummary=T("",13);mountSummary.TextWrapping=TextWrapping.Wrap;mountSummary.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");
+        void UpdateMountSummary()=>mountSummary.Text=$"슬롯 {rivenDestination.SelectedItem} · 코스트 {(string.IsNullOrWhiteSpace(rivenCost.Text)?"미입력":rivenCost.Text)} · {(rivenPolarity.SelectedItem as RivenPolarityChoice)?.Name??"극성 미선택"}";
+        rivenDestination.SelectionChanged+=(_,_)=>UpdateMountSummary();rivenCost.TextChanged+=(_,_)=>UpdateMountSummary();rivenPolarity.SelectionChanged+=(_,_)=>UpdateMountSummary();UpdateMountSummary();
+        var footer=Stack(mountSummary,applyRiven,Button("장착한 리벤 불러오기",()=>{if(equippedRiven is {} r)ApplyRivenWorkbench(r);else rivenInfo.Text="아직 장착한 리벤이 없습니다.";}));
+        footer.Margin=new(0,12,12,0);foreach(var action in footer.Children.OfType<Button>())action.Margin=new(0,8,0,0);UiHierarchy.Primary(applyRiven);
+        var left=new Grid();left.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});left.RowDefinitions.Add(new(){Height=GridLength.Auto});left.Children.Add(Scroll(editor));Grid.SetRow(footer,1);left.Children.Add(footer);
         output.Children.Add(T("옵션 수치 분석",24));rivenInfo.TextWrapping=TextWrapping.Wrap;CollapseEmpty(rivenInfo);output.Children.Add(rivenRangeCharts);
         var note=T("표시 수치의 반올림을 고려한 범위입니다. 범위 내 위치는 획득 확률이 아닙니다. 음옵은 절대 크기를 비교하며 실제 유불리는 옵션마다 다릅니다. 접합에는 부호를 뒤집지 않은 원래 롤이 사용됩니다.\n\n접합은 높은 롤을 계승합니다. 대체 옵션은 무작위이므로 결과를 확정해 장착하지 않습니다. 실제 결과 또는 비교할 가정의 수치를 왼쪽에 입력하면 모딩에 적용할 수 있습니다.",14,"#596B85");note.TextWrapping=TextWrapping.Wrap;
         output.Children.Add(new Expander{Header="수치 범위 · 접합 계산 기준",Margin=new(0,0,0,20),Content=SpacedStack(12,note,Button("44.1.3 공식 패치",()=>System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(RivenBalance.Source){UseShellExecute=true})),Button("위키 계산 근거",()=>System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(RivenValues.Source){UseShellExecute=true})))});
@@ -70,7 +73,7 @@ public sealed partial class MainWindow
         var splicePage=Stack(T("접합 미리보기",24),T("소비되는 옵션 두 개 → 계승되는 접합 옵션",16),T("왼쪽에 실제 수치를 입력하면 가능한 조합과 계승 범위가 표시됩니다. 전체 조합표는 옵션 도감에서 확인할 수 있습니다.",14,"#596B85"),spliceResults);
         rivenSections=new RivenSections(("수치 확인",Scroll(output)),("접합",Scroll(splicePage)),("옵션 도감",rivenReference),("비교 · 순환",Scroll(session)));
         var workspace=new Grid();workspace.RowDefinitions.Add(new(){Height=GridLength.Auto});workspace.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});workspace.Children.Add(rivenInfo);Grid.SetRow(rivenSections,1);workspace.Children.Add(rivenSections);
-        rivenSections.Select(0);RefreshRivenWorkbench();return Columns(Scroll(editor),workspace,1,2.35);
+        rivenSections.Select(0);RefreshRivenWorkbench();return Columns(left,workspace,1,2.35);
     }
     private RivenRoll ReadRivenWorkbench(bool requireValues=true)
     {

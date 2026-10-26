@@ -83,6 +83,7 @@ public sealed partial class MainWindow
             for(var i=0;i<5;i++){CatalogPreviewForCheck(i);Main("catalog-"+i);}
             catalogSearch.Text="존재하지 않는 검색어";Main("catalog-empty");catalogSearch.Text="";
             ShowRoadmap();Main("roadmap");
+            ShowRelics();Main("relics");
             var client=new ClientSettingsWindow(()=>{});Capture((FrameworkElement)client.Content,theme+"-client",560,540);
             client.PreviewForAudit(true);Capture((FrameworkElement)client.Content,theme+"-client-download",560,540);
             client.PreviewForAudit(false);Capture((FrameworkElement)client.Content,theme+"-client-error",560,540);

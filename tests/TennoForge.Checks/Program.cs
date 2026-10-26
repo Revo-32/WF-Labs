@@ -3,6 +3,39 @@ using System.Text.Json;
 using TennoForge.Core;
 
 var catalog = Catalog.Load();
+if(args.Length>0&&args[0]=="--inventory-only")
+{
+    var errors=new List<string>();int passed=0;InventoryChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);}});
+    var inventoryReport=JsonSerializer.Serialize(new{passed,failed=errors},Catalog.Json);if(args.Length>1)File.WriteAllText(args[1],inventoryReport);Console.WriteLine(inventoryReport);Environment.ExitCode=errors.Count==0?0:1;return;
+}
+if(args.Length==3&&args[0]=="--market-snapshot-sync")
+{
+    using var stop=new CancellationTokenSource(TimeSpan.FromMinutes(15));
+    using var market=new RelicMarketClient(args[1],snapshotMode:true);
+    MarketSnapshotProgress? last=null;int updated=0;var clock=Stopwatch.StartNew();long reported=-1000;
+    try
+    {
+        await MarketPriceSnapshot.RunAsync(market,true,p=>
+        {
+            last=p;
+            if(!p.Running||clock.ElapsedMilliseconds-reported>2000)
+            {reported=clock.ElapsedMilliseconds;File.WriteAllText(args[2],JsonSerializer.Serialize(new{progress=p,updated,requests=market.RequestCount,elapsedSeconds=clock.Elapsed.TotalSeconds},Catalog.Json));}
+            if(!p.Running)stop.Cancel();
+        },_=>updated++,stop.Token);
+    }
+    catch(OperationCanceledException){}
+    Environment.ExitCode=last is {Running:false,Failed:0}?0:1;return;
+}
+if(args.Length>0&&args[0]=="--schedule-only")
+{
+    var errors=new List<string>();var passed=0;ScheduleFeatureChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e);}});WorldScheduleChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e);}});
+    var scheduleReport=JsonSerializer.Serialize(new{passed,failed=errors},Catalog.Json);if(args.Length>1)File.WriteAllText(args[1],scheduleReport);Console.WriteLine(scheduleReport);Environment.ExitCode=errors.Count==0?0:1;return;
+}
+if(args.Length>0&&args[0]=="--relic-only")
+{
+    var errors=new List<string>();var passed=0;RelicChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e);}});
+    var relicReport=JsonSerializer.Serialize(new{passed,failed=errors},Catalog.Json);if(args.Length>1)File.WriteAllText(args[1],relicReport);Console.WriteLine(relicReport);Environment.ExitCode=errors.Count==0?0:1;return;
+}
 if(args.Length==2&&args[0]=="--ranged-extended-audit"){RangedCoverageAudit.Combat(args[1],true,true);return;}
 if(args.Length==2&&args[0]=="--ranged-approximation-audit"){RangedCoverageAudit.Combat(args[1],true);return;}
 if(args.Length==2&&args[0]=="--ranged-audit"){RangedCoverageAudit.Write(args[1]);return;}
@@ -21,6 +54,7 @@ if(args.Length>0&&args[0]=="--ranged-only")
 if(args.Length>0&&args[0]=="--riven-only")
 {
     var errors=new List<string>();var passed=0;
+    RivenScanChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);}});
     RangedRivenWorkshopChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);}});
     RivenWorkshopChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);}});
     Console.WriteLine(JsonSerializer.Serialize(new{passed,failed=errors},Catalog.Json));Environment.ExitCode=errors.Count==0?0:1;return;
@@ -36,6 +70,10 @@ Build Build(params Mod[] mods) { var slots = new ModSlot?[8]; for (var i = 0; i 
 Calculation Calc(Build b) => DamageEngine.Calculate(catalog, b);
 var naked = Build();
 RivenWorkshopChecks.Run(Check);
+WorldScheduleChecks.Run(Check);
+IncarnonRotationChecks.Run(Check);
+ScheduleFeatureChecks.Run(Check);
+RivenScanChecks.Run(Check);
 RangedRivenWorkshopChecks.Run(Check);
 RangedChecks.Run(Check);
 RangedApproximationChecks.Run(Check);
@@ -163,6 +201,8 @@ Check("이전 저장 형식에 수용량을 혼합하지 않음",()=>{Reject(()=
 Check("버전 3 JSON 극성·카탈리스트·랭크 왕복",()=>{var b=WithCapacity(stanceNaked,capDefault with{WeaponRank=12,MasteryRank=20,Catalyst=false,StanceSlotPolarity="Universal"});var restored=JsonSerializer.Deserialize<Build>(JsonSerializer.Serialize(b,Catalog.Json),Catalog.Json)!;Yes(restored.Capacity!.SlotPolarities.SequenceEqual(b.Capacity!.SlotPolarities));Yes(!restored.Capacity.Catalyst);Near(Capacity(restored).Total,30);Near(StanceCalc(restored).RawDps,StanceCalc(stanceNaked).RawDps);});
 
 CoverageChecks.Run(catalog,Check);
+RelicChecks.Run(Check);
+InventoryChecks.Run(Check);
 MeleeChecks.Run(Catalog.LoadMelee(),Check);
 EncounterChecks.Run(Check);
 EnemyChecks.Run(Check);

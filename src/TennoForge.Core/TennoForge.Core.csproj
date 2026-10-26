@@ -12,4 +12,14 @@
   <ItemGroup><EmbeddedResource Include="../../data/ranged-penetration.json" LogicalName="TennoForge.Core.ranged-penetration.json" /></ItemGroup>
   <ItemGroup><EmbeddedResource Include="../../data/ranged-disarm.json" LogicalName="TennoForge.Core.ranged-disarm.json" /></ItemGroup>
   <ItemGroup><EmbeddedResource Include="../../data/ranged-discharge.json" LogicalName="TennoForge.Core.ranged-discharge.json" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../data/relic-market-items.json" LogicalName="TennoForge.Core.relic-market-items.json" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../data/inventory-catalog.json" LogicalName="TennoForge.Core.inventory-catalog.json" /></ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../data/world-schedules.json" LogicalName="TennoForge.Core.world-schedules.json" />
+    <EmbeddedResource Include="../../data/arbitration-schedule.csv" LogicalName="TennoForge.Core.arbitration-schedule.csv" />
+  </ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../data/inventory-acquisition.json" LogicalName="TennoForge.Core.inventory-acquisition.json" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../data/inventory-market-items.json" LogicalName="TennoForge.Core.inventory-market-items.json" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../data/schedule-regions.json" LogicalName="TennoForge.Core.schedule-regions.json" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../data/incarnon-rotations.json" LogicalName="TennoForge.Core.incarnon-rotations.json" /></ItemGroup>
 </Project>

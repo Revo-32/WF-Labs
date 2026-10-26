@@ -52,14 +52,57 @@
     </ControlTemplate.Triggers>
    </ControlTemplate></Setter.Value></Setter>
   </Style>
+  <Style x:Key="ScheduleFilterChip" TargetType="ToggleButton" BasedOn="{StaticResource {x:Type Control}}">
+   <Setter Property="Padding" Value="12,6"/><Setter Property="MinHeight" Value="34"/><Setter Property="Cursor" Value="Hand"/><Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+   <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="ToggleButton"><Grid>
+    <Border x:Name="Chip" Background="{DynamicResource SurfaceBrush}" BorderBrush="{DynamicResource StrokeBrush}" BorderThickness="1" CornerRadius="3" Padding="{TemplateBinding Padding}"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border><Border x:Name="Line" Height="2" VerticalAlignment="Bottom" Margin="6,0" Background="Transparent"/>
+    </Grid><ControlTemplate.Triggers><Trigger Property="IsChecked" Value="True"><Setter TargetName="Chip" Property="Background" Value="{DynamicResource AccentSurfaceBrush}"/><Setter Property="Foreground" Value="{DynamicResource AccentBrush}"/></Trigger><Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Line" Property="Background" Value="{DynamicResource AccentBrush}"/></Trigger></ControlTemplate.Triggers>
+   </ControlTemplate></Setter.Value></Setter>
+  </Style>
+  <Style x:Key="ScheduleAction" TargetType="Button" BasedOn="{StaticResource {x:Type Control}}">
+   <Setter Property="Padding" Value="12,6"/><Setter Property="MinHeight" Value="34"/><Setter Property="Cursor" Value="Hand"/><Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+   <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Grid>
+    <Border x:Name="Shell" Background="{DynamicResource SurfaceBrush}" BorderBrush="{DynamicResource StrokeBrush}" BorderThickness="1" CornerRadius="3" Padding="{TemplateBinding Padding}"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+    <Border x:Name="FocusLine" Height="2" VerticalAlignment="Bottom" Margin="6,0" Background="Transparent"/>
+    </Grid><ControlTemplate.Triggers><Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Shell" Property="Background" Value="{DynamicResource HoverBrush}"/></Trigger><Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="FocusLine" Property="Background" Value="{DynamicResource AccentBrush}"/></Trigger><Trigger Property="IsEnabled" Value="False"><Setter Property="Opacity" Value="0.45"/></Trigger></ControlTemplate.Triggers>
+   </ControlTemplate></Setter.Value></Setter>
+  </Style>
+  <Style x:Key="ScheduleSlider" TargetType="Slider" BasedOn="{StaticResource {x:Type Control}}">
+   <Setter Property="IsMoveToPointEnabled" Value="True"/><Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+   <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Slider">
+    <Grid Height="24" Background="Transparent"><Border Height="3" Margin="7,0" Background="{DynamicResource StrokeBrush}" VerticalAlignment="Center"/>
+     <Track x:Name="PART_Track" Minimum="{TemplateBinding Minimum}" Maximum="{TemplateBinding Maximum}" Value="{Binding Value,RelativeSource={RelativeSource TemplatedParent},Mode=TwoWay}" IsDirectionReversed="{TemplateBinding IsDirectionReversed}">
+      <Track.DecreaseRepeatButton><RepeatButton Command="Slider.DecreaseLarge" Focusable="False"><RepeatButton.Template><ControlTemplate TargetType="RepeatButton"><Border Height="3" Background="{DynamicResource AccentBrush}" VerticalAlignment="Center"/></ControlTemplate></RepeatButton.Template></RepeatButton></Track.DecreaseRepeatButton>
+      <Track.IncreaseRepeatButton><RepeatButton Command="Slider.IncreaseLarge" Focusable="False"><RepeatButton.Template><ControlTemplate TargetType="RepeatButton"><Border Background="Transparent"/></ControlTemplate></RepeatButton.Template></RepeatButton></Track.IncreaseRepeatButton>
+      <Track.Thumb><Thumb Width="14" Height="14"><Thumb.Template><ControlTemplate TargetType="Thumb"><Ellipse Fill="{DynamicResource AccentBrush}" Stroke="{DynamicResource ResultsBackgroundBrush}" StrokeThickness="1"/></ControlTemplate></Thumb.Template></Thumb></Track.Thumb>
+     </Track>
+    </Grid>
+   </ControlTemplate></Setter.Value></Setter>
+  </Style>
+  <Style x:Key="ChecklistItem" TargetType="CheckBox" BasedOn="{StaticResource {x:Type Control}}">
+   <Setter Property="Cursor" Value="Hand"/><Setter Property="MinHeight" Value="28"/><Setter Property="FontSize" Value="14"/><Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+   <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="CheckBox">
+    <Grid Background="Transparent"><Grid.ColumnDefinitions><ColumnDefinition Width="18"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+     <Border x:Name="Box" Width="16" Height="16" BorderThickness="1" CornerRadius="2" Background="{DynamicResource ControlBrush}" BorderBrush="{DynamicResource MutedBrush}" VerticalAlignment="Center">
+      <Path x:Name="Tick" Data="M 2,7 L 5,10 L 11,3" Stroke="{DynamicResource SwitchKnobBrush}" StrokeThickness="2" Visibility="Collapsed"/>
+     </Border>
+     <ContentPresenter Grid.Column="1" Margin="8,0,0,0" VerticalAlignment="Center"/>
+    </Grid>
+    <ControlTemplate.Triggers>
+     <Trigger Property="IsChecked" Value="True"><Setter TargetName="Box" Property="Background" Value="{DynamicResource AccentBrush}"/><Setter TargetName="Box" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/><Setter TargetName="Tick" Property="Visibility" Value="Visible"/></Trigger>
+     <Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Box" Property="BorderThickness" Value="2"/><Setter TargetName="Box" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/></Trigger>
+     <Trigger Property="IsEnabled" Value="False"><Setter Property="Opacity" Value="0.45"/></Trigger>
+    </ControlTemplate.Triggers>
+   </ControlTemplate></Setter.Value></Setter>
+  </Style>
   <Style x:Key="NavigationItem" TargetType="RadioButton" BasedOn="{StaticResource {x:Type Control}}">
    <Setter Property="Cursor" Value="Hand"/><Setter Property="FocusVisualStyle" Value="{x:Null}"/><Setter Property="Foreground" Value="{DynamicResource MutedBrush}"/>
    <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="RadioButton">
-    <Grid><Border x:Name="Nav" Background="Transparent" BorderBrush="Transparent" BorderThickness="1" CornerRadius="4" Margin="4,2,4,4"><ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/></Border><Border x:Name="Indicator" Height="2" Margin="16,0" VerticalAlignment="Bottom" Background="Transparent"/></Grid>
+    <Grid><Border x:Name="Nav" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" CornerRadius="4" Margin="4,2,4,4"><ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/></Border><Border x:Name="Indicator" Height="2" Margin="16,0" VerticalAlignment="Bottom" Background="Transparent"/></Grid>
     <ControlTemplate.Triggers>
      <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Nav" Property="Background" Value="{DynamicResource HoverBrush}"/></Trigger>
      <Trigger Property="IsChecked" Value="True"><Setter TargetName="Indicator" Property="Background" Value="{DynamicResource AccentBrush}"/><Setter Property="Foreground" Value="{DynamicResource AccentBrush}"/><Setter Property="FontWeight" Value="SemiBold"/></Trigger>
-     <Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Nav" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/></Trigger>
+     <Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="Indicator" Property="Background" Value="{DynamicResource AccentBrush}"/><Setter TargetName="Indicator" Property="Height" Value="3"/></Trigger>
     </ControlTemplate.Triggers>
    </ControlTemplate></Setter.Value></Setter>
   </Style>

@@ -13,8 +13,18 @@ namespace TennoForge.Desktop;
 
 internal sealed partial class RangedPage : Grid
 {
+    private readonly TextBlock calculationContext=Text("",13);
+    private bool compactLayout;
+    private bool hadCombatResults;
+    internal int LibraryRowsForCheck()
+    {
+        var origin=libraryScroller.TranslatePoint(new Point(),this);var viewport=new Rect(origin,new Size(libraryScroller.ViewportWidth,libraryScroller.ViewportHeight));viewport.Intersect(new Rect(RenderSize));
+        var cards=library.Children.Cast<FrameworkElement>().Select(c=>new Rect(c.TranslatePoint(new Point(),this),c.RenderSize)).ToArray();
+        return cards.GroupBy(r=>Math.Round(r.Top,1)).Count(g=>g.All(r=>r.Top>=viewport.Top-.5&&r.Bottom<=viewport.Bottom+.5));
+    }
     private readonly string category;
     private readonly WeaponSearchBox weapon=new();
+    private readonly IncarnonMenu incarnonMenu=new();
     private sealed record ArcaneChoice(string Id,string Name);
     private readonly ComboBox attack=new(),arcane=new(){DisplayMemberPath="Name"},stacks=new(){ItemsSource=Enumerable.Range(0,13).ToArray(),SelectedIndex=0},arcaneRank=new(){ItemsSource=Enumerable.Range(0,6).ToArray(),SelectedIndex=5};
     private readonly TextBox distance=new(){Text="0"},query=new();
@@ -88,7 +98,7 @@ internal sealed partial class RangedPage : Grid
         var left=new Grid{Margin=new(0,0,20,0)};left.RowDefinitions.Add(new(){Height=GridLength.Auto});left.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});
         var toolbar=new WrapPanel();toolbar.Children.Add(Button("저장",Save));toolbar.Children.Add(Button("불러오기",Load));toolbar.Children.Add(Button("8칸 비우기",()=>{Array.Clear(slots);RefreshConditionControls();Refresh();}));
         kitgunButton.Click+=(_,_)=>EditKitgun();kitgunButton.ToolTip="챔버 · 그립 · 로더로 키트건 조립";
-        var weaponRow=new DockPanel();DockPanel.SetDock(kitgunButton,Dock.Right);weaponRow.Children.Add(kitgunButton);weaponRow.Children.Add(weapon);
+        var weaponRow=new DockPanel();DockPanel.SetDock(kitgunButton,Dock.Right);weaponRow.Children.Add(kitgunButton);DockPanel.SetDock(incarnonMenu,Dock.Right);weaponRow.Children.Add(incarnonMenu);weaponRow.Children.Add(weapon);
         weapon.SuggestionFilter=w=>RangedKitguns.Get(w.Id) is null;
         query.ToolTip="모드 검색 · 한국어 / English";query.SetValue(System.Windows.Automation.AutomationProperties.NameProperty,"모드 검색");
         arcane.ItemsSource=new[]{new ArcaneChoice("None","아케인 없음")};arcane.SelectedIndex=0;
@@ -106,7 +116,15 @@ internal sealed partial class RangedPage : Grid
         var libraryTools=new Grid();libraryTools.ColumnDefinitions.Add(new(){Width=new(1,GridUnitType.Star)});libraryTools.ColumnDefinitions.Add(new(){Width=new(108)});libraryTools.ColumnDefinitions.Add(new(){Width=GridLength.Auto});var searchField=new SearchField(query,"모드 검색");libraryTools.Children.Add(searchField);Grid.SetColumn(sort,1);libraryTools.Children.Add(sort);sort.Margin=new(6,0,6,0);var direction=Button("↑",()=>{});direction.Click+=(_,_)=>{descending=!descending;direction.Content=descending?"↓":"↑";direction.ToolTip=descending?"내림차순":"오름차순";RefreshLibrary();};direction.Margin=new(0);direction.ToolTip="오름차순";Grid.SetColumn(direction,2);libraryTools.Children.Add(direction);
         var valence=new DockPanel{Margin=new(0,4,0,4)};var valenceLabel=Text("베일런스",14);valenceLabel.VerticalAlignment=VerticalAlignment.Center;valenceLabel.Margin=new(0,0,10,0);valence.Children.Add(valenceLabel);var percentUnit=Text("%",14);percentUnit.VerticalAlignment=VerticalAlignment.Center;percentUnit.Margin=new(6,0,0,0);DockPanel.SetDock(percentUnit,Dock.Right);valence.Children.Add(percentUnit);bonusPercent.Width=80;bonusPercent.Height=32;bonusPercent.Padding=new(8,3,8,3);bonusPercent.ToolTip="게임에 표시된 보너스 피해 25–60%";DockPanel.SetDock(bonusPercent,Dock.Right);valence.Children.Add(bonusPercent);progenitor.Height=32;progenitor.MinHeight=32;progenitor.Margin=new(0,0,8,0);progenitor.ToolTip="보너스 원소";valence.Children.Add(progenitor);bonusRow=valence;
         var actions=new DockPanel();capacity.VerticalAlignment=VerticalAlignment.Center;capacity.Margin=new(12,0,0,0);DockPanel.SetDock(capacity,Dock.Right);actions.Children.Add(capacity);actions.Children.Add(toolbar);
-        left.Children.Add(Stack(weaponRow,bonusRow,new Border{Height=8},actions,slotsPanel,slotEditor,exilusRow,new Border{Height=10},arcaneRow,catalyst,new Border{Height=8},Text("모드 보관함",17),libraryTools));
+        var gearHost=new Grid();gearHost.Children.Add(exilusRow);gearHost.Children.Add(arcaneRow);var libraryHeading=Text("모드 보관함",17);
+        void SetGearDensity(bool compact)
+        {
+            gearHost.ColumnDefinitions.Clear();gearHost.RowDefinitions.Clear();gearHost.ColumnDefinitions.Add(new(){Width=new(1,GridUnitType.Star)});gearHost.RowDefinitions.Add(new(){Height=GridLength.Auto});
+            if(compact){gearHost.ColumnDefinitions.Add(new(){Width=new(1,GridUnitType.Star)});Grid.SetRow(arcaneRow,0);Grid.SetColumn(arcaneRow,1);arcaneRow.Margin=new(12,0,0,0);}
+            else{gearHost.RowDefinitions.Add(new(){Height=GridLength.Auto});Grid.SetRow(arcaneRow,1);Grid.SetColumn(arcaneRow,0);arcaneRow.Margin=new(0,10,0,0);}
+            libraryHeading.Visibility=compact?Visibility.Collapsed:Visibility.Visible;
+        }
+        SetGearDensity(false);left.Children.Add(Stack(weaponRow,bonusRow,new Border{Height=8},actions,slotsPanel,slotEditor,gearHost,catalyst,new Border{Height=8},libraryHeading,libraryTools));
         var libScroll=libraryScroller=Scroll(library);libScroll.Margin=new(0,8,0,0);Grid.SetRow(libScroll,1);left.Children.Add(libScroll);Children.Add(left);
         noResults.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");Grid.SetRow(noResults,1);left.Children.Add(noResults);
         var controls=new WrapPanel();calculateButton=Button("DPS · TTK 계산",()=>StartCombat());UiHierarchy.Primary(calculateButton);calculateButton.Margin=new(0,0,8,0);controls.Children.Add(calculateButton);cancelButton=Button("취소",()=>simulation?.Cancel());cancelButton.Visibility=Visibility.Collapsed;controls.Children.Add(cancelButton);
@@ -117,10 +135,15 @@ internal sealed partial class RangedPage : Grid
         conditionScroller=Scroll(Stack(Text("버프 · 추가 조건",18),conditionPanel,new Expander{Header="처치로 얻는 시작 버프",Content=Field("교전 전에 처치한 적 수",killStacks)}));
         var center=ScenarioDrawer.Columns(Scroll(targetSettings),Scroll(attackSettings),conditionScroller);
         var right=new Grid{Margin=new(20,0,0,0)};right.RowDefinitions.Add(new(){Height=GridLength.Auto});right.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});
-        var heading=new DockPanel();DockPanel.SetDock(controls,Dock.Right);heading.Children.Add(controls);heading.Children.Add(Text("계산 결과",22));right.Children.Add(Stack(heading,BuildComparisonTools(),BuildAccuracyStatus(),progressText,message));
+        var heading=new DockPanel();DockPanel.SetDock(controls,Dock.Right);heading.Children.Add(controls);heading.Children.Add(Text("계산 결과",22));right.Children.Add(Stack(heading,calculationContext,BuildComparisonTools(),BuildAccuracyStatus(),progressText,message));
         var resultScroll=resultScroller=Scroll(results);Grid.SetRow(resultScroll,1);right.Children.Add(resultScroll);Grid.SetColumn(right,2);Children.Add(right);
         var workspace=new Grid();foreach(var column in ColumnDefinitions)workspace.ColumnDefinitions.Add(new(){Width=column.Width});var workspaceItems=Children.Cast<UIElement>().ToArray();Children.Clear();ColumnDefinitions.Clear();foreach(var item in workspaceItems)workspace.Children.Add(item);
         scenarioDrawer=new ScenarioDrawer(workspace,center);scenarioDrawer.SetStatusSource(message);Children.Add(scenarioDrawer);
+        void ApplyDensity(bool compact){if(compactLayout==compact)return;compactLayout=compact;SetGearDensity(compact);RefreshSlots();RefreshLibrary();}
+        SizeChanged+=(_,_)=>{left.Margin=new(0,0,ActualWidth<1550?12:20,0);right.Margin=new(ActualWidth<1550?12:20,0,0,0);ApplyDensity(ActualHeight<750);};
+        // Font metrics and wrapped equipment labels can consume a few extra pixels
+        // without changing the page size. Keep two real rows, even at those DPIs.
+        libScroll.SizeChanged+=(_,e)=>{if(!compactLayout&&e.NewSize.Height>0&&e.NewSize.Height<2*ModCardLayout.LibraryHeight+12)ApplyDensity(true);};
         weapon.ItemsSource=RangedEngine.Weapons.Where(w=>w.Category==category).Select(w=>new Weapon(w.Id,w.Name,w.EnglishName,[],0,1,0,1,w.WeaponType)).ToArray();
         weapon.SelectionChanged+=(_,_)=>SelectWeapon();attack.SelectionChanged+=(_,_)=>{if(!loading){storedConditions=storedConditions with{Collisions=null};RefreshConditionControls();Refresh();}};arcane.SelectionChanged+=(_,_)=>{var id=(arcane.SelectedItem as ArcaneChoice)?.Id;var rule=RangedArcanes.Rules.SingleOrDefault(a=>a.Id==id);stacks.ItemsSource=Enumerable.Range(0,(rule?.Cap??0)+1).ToArray();stacks.SelectedIndex=0;arcane.ToolTip=KoreanPresentation.ArcaneDescription(rule,Math.Max(0,arcaneRank.SelectedIndex));Refresh();};arcaneRank.SelectionChanged+=(_,_)=>Refresh();stacks.SelectionChanged+=(_,_)=>Refresh();distance.TextChanged+=(_,_)=>Refresh();catalyst.Checked+=(_,_)=>Refresh();catalyst.Unchecked+=(_,_)=>Refresh();query.TextChanged+=(_,_)=>RefreshLibrary();sort.SelectionChanged+=(_,_)=>RefreshLibrary();
         encounter.SelectionChanged+=(_,_)=>{if(encounter.SelectedIndex!=0)primer.Clear();RefreshPrimer();Refresh();};killStacks.SelectionChanged+=(_,_)=>Refresh();RefreshPrimer();
@@ -131,6 +154,12 @@ internal sealed partial class RangedPage : Grid
         faction.SelectionChanged+=(_,_)=>{enemy.ItemsSource=EnemyCatalog.Load().Enemies.Where(e=>e.Faction==(faction.SelectedItem as EnemyDamageProfile)?.Id).ToArray();enemy.SelectedIndex=0;};
         enemy.SelectionChanged+=(_,_)=>{eximus.IsEnabled=(enemy.SelectedItem as EnemyDefinition)?.SupportsEximus==true;if(!eximus.IsEnabled)eximus.IsChecked=false;if(!loading){storedConditions=storedConditions with{Nullifier=null};RefreshConditionControls();}Refresh();};level.TextChanged+=(_,_)=>Refresh();difficulty.SelectionChanged+=(_,_)=>{if(difficulty.SelectedIndex==2)level.Text="999";Refresh();};eximus.Checked+=(_,_)=>Refresh();eximus.Unchecked+=(_,_)=>Refresh();faction.SelectedIndex=0;
         weapon.SelectedItem=weapon.Items.Cast<Weapon>().FirstOrDefault(w=>w.EnglishName==(category=="primary"?"Braton":"Lato"))??weapon.Items.Cast<Weapon>().First();
+    }
+    internal void SelectInventoryWeapon(string id)
+    {
+        var item=weapon.Items.Cast<Weapon>().FirstOrDefault(w=>w.Id==id);
+        if(item is null)throw new InvalidOperationException("선택한 장비가 이 모딩 구분에 없습니다.");
+        weapon.SelectedItem=item;
     }
     private void SelectWeapon()
     {
@@ -177,9 +206,13 @@ internal sealed partial class RangedPage : Grid
         }
         var rule=Selected is {} w?RangedPassives.Get(w.Id):null;
         if(rule?.Zooms.Length>0){var zoom=new ComboBox{ItemsSource=rule.Zooms.Select(z=>z.Name).ToArray(),SelectedIndex=c.ZoomIndex};zoom.SelectionChanged+=(_,_)=>{storedConditions=storedConditions with{ZoomIndex=zoom.SelectedIndex};Refresh();};conditionPanel.Children.Add(Field("조준경 배율",zoom));}
+        incarnonMenu.SetState(RangedIncarnons.Get(Selected.Id) is not null,RangedIncarnons.IsForm(Selected,attack.SelectedIndex));
         if(Selected is {} selected&&RangedIncarnons.Get(selected.Id) is {} incarnon)
         {
             var evolutionPanel=new StackPanel();
+            var form=new ComboBox{ItemsSource=new[]{"일반 형태","인카논 형태"},SelectedIndex=RangedIncarnons.IsForm(selected,attack.SelectedIndex)?1:0};
+            form.SelectionChanged+=(_,_)=>{if(form.SelectedIndex>=0)attack.SelectedIndex=form.SelectedIndex==1?incarnon.Forms[0]:0;};
+            evolutionPanel.Children.Add(Field("교전 시작 형태",form));
             foreach(var group in incarnon.Perks.GroupBy(p=>p.Stage))
             {
                 var choices=new[]{new ArcaneChoice("None","선택 안 함")}.Concat(group.Select(p=>new ArcaneChoice(p.Id,p.Name))).ToArray();var selector=new ComboBox{DisplayMemberPath="Name",ItemsSource=choices};selector.SelectedItem=choices.FirstOrDefault(p=>evolutions.Contains(p.Id))??choices[0];
@@ -202,7 +235,7 @@ internal sealed partial class RangedPage : Grid
             evolutionPanel.Children.Add(Number("인카논 시작 탄약 · 0은 완충",incarnonAmmo??0,v=>incarnonAmmo=v==0?null:(int)v));
             evolutionPanel.Children.Add(Number("시작 전 연속 발사 횟수",c.FiringStacks,v=>storedConditions=storedConditions with{FiringStacks=(int)v}));
             evolutionPanel.Children.Add(Number("빈 탄창 재장전 · 시작 중첩",c.EmptyReloadStacks,v=>storedConditions=storedConditions with{EmptyReloadStacks=(int)v}));
-            conditionPanel.Children.Add(new Expander{Header="인카논 진화 · 변신",Content=evolutionPanel,Margin=new(0,4,0,12)});
+            incarnonMenu.SetEditor(evolutionPanel);
         }
         if(slots.OfType<ModSlot>().Any(slot=>RangedEngine.ModCatalog.Mods.Single(m=>m.Id==slot.ModId).Effects.GetValueOrDefault("DoubleTapDamage")>0))
             conditionPanel.Children.Add(new Expander{Header="더블 탭 · 시작 상태",Content=Stack(Number("시작 적중 중첩 (0–20)",c.DoubleTapStacks,v=>storedConditions=storedConditions with{DoubleTapStacks=(int)v}),Number("마지막 명중 이후 (초)",c.DoubleTapAge,v=>storedConditions=storedConditions with{DoubleTapAge=v}))});
@@ -387,14 +420,14 @@ internal sealed partial class RangedPage : Grid
     private RangedBuild Read()=>new(Selected?.Id??"",attack.SelectedIndex,slots.ToArray(),polarities.ToArray(),catalyst.IsChecked==true,(arcane.SelectedItem as ArcaneChoice)?.Id??"None",stacks.SelectedIndex,double.TryParse(distance.Text,out var d)?d:double.NaN,Enemy:enemy.SelectedItem is EnemyDefinition e?new(e.Id,int.TryParse(level.Text,out var l)?l:0,(EnemyDifficulty)difficulty.SelectedIndex,Eximus:eximus.IsChecked==true):null,Conditions:storedConditions with {Statuses=new(primer),Kills=killStacks.SelectedIndex},ArcaneRank:arcaneRank.SelectedIndex,Progenitor:bonusRow.Visibility==Visibility.Visible?new(((ElementChoice)progenitor.SelectedItem).Type,double.TryParse(bonusPercent.Text,out var percent)?percent/100:double.NaN):null,EncounterMode:encounter.SelectedIndex,Exilus:exilusMod.SelectedItem is ExilusChoice {Id:not "None"} em?new(em.Id,exilusRank.SelectedIndex):null,ExilusPolarity:exilusPolarity.SelectedValue as string??"None",Evolutions:evolutions.ToArray(),AutoTransform:autoTransform,IncarnonAmmo:incarnonAmmo,Riven:riven,Kitgun:kitgun);
     private void Refresh()
     {
-        if(loading||Selected is null)return;InvalidateCombat();RefreshSlots();RefreshLibrary();results.Children.Clear();combatResultHost.Content=null;progressText.Text="모딩 수치 갱신됨 · 교전 결과는 DPS · TTK 계산으로 갱신";
+        if(loading||Selected is null)return;InvalidateCombat();RefreshSlots();RefreshLibrary();results.Children.Clear();combatResultHost.Content=null;progressText.Text=hadCombatResults?"모딩 변경됨 · 교전 결과 재계산 필요":"모딩 수치 자동 갱신 · DPS·TTK는 계산 버튼으로 확인";
         exilusRank.IsEnabled=exilusMod.SelectedItem is ExilusChoice {Id:not "None"};
         arcaneRank.IsEnabled=arcane.SelectedItem is ArcaneChoice {Id:not "None"};arcane.ToolTip=KoreanPresentation.ArcaneDescription(RangedArcanes.Rules.SingleOrDefault(a=>a.Id==(arcane.SelectedItem as ArcaneChoice)?.Id),Math.Max(0,arcaneRank.SelectedIndex));stacks.IsEnabled=arcaneRank.IsEnabled&&stacks.Items.Count>1;
-        scenarioDrawer?.SetSummary($"{(enemy.SelectedItem as EnemyDefinition)?.Name??"대상"} · Lv. {level.Text}{(eximus.IsChecked==true?" · 엑시무스":"")} · {difficulty.SelectedItem} · {encounter.SelectedItem}");
+        calculationContext.Text=$"{(enemy.SelectedItem as EnemyDefinition)?.Name??"대상"} · Lv. {level.Text}{(eximus.IsChecked==true?" · 엑시무스":"")} · {difficulty.SelectedItem} · {encounter.SelectedItem}";scenarioDrawer?.SetSummary(calculationContext.Text);
         try
         {
-            var firingAttack=RangedAttackSelection.FiringAttack(Selected,attack.SelectedIndex);calculateButton.Content=firingAttack!=attack.SelectedIndex?"전체 공격 DPS · TTK 계산":"DPS · TTK 계산";
-            var r=RangedEngine.Calculate(Read());SetAccuracy(r.Scope,false);results.Children.Add(approximationDetails);RefreshComparison();capacity.Text=$"수용량  {r.Drain} / {r.Capacity}"+(r.Drain>r.Capacity?" · 초과 / 계획용 계산":"");
+            var firingAttack=RangedAttackSelection.FiringAttack(Selected,attack.SelectedIndex);calculateButton.Content=(firingAttack!=attack.SelectedIndex?"전체 공격 ":"")+"DPS·TTK "+(hadCombatResults?"다시 계산":"계산");
+            var r=RangedEngine.Calculate(Read());SetAccuracy(r.Scope,false);results.Children.Add(approximationDetails);RefreshComparison();capacity.Text=$"수용량  {r.Drain} / {r.Capacity}"+(r.Drain>r.Capacity?" · 초과 / 계획용 계산":"");if(r.Drain>r.Capacity)calculationContext.Text+=" · 계획용 결과 · 실제 장착 불가";
             var selectedBuild=Read();var carrier=RangedSimulor.Applies(Selected)&&selectedBuild.AttackIndex==0||RangedStug.Launch(Selected,selectedBuild.AttackIndex);
             var turret=RangedAzima.Applies(Selected)&&selectedBuild.AttackIndex==2;
             var presented=turret?RangedEngine.Calculate(selectedBuild with{AttackIndex=0}):carrier?RangedEngine.Calculate(selectedBuild with{AttackIndex=RangedSimulor.Applies(Selected)?2:selectedBuild.AttackIndex==2?3:1}):r;
@@ -446,11 +479,12 @@ internal sealed partial class RangedPage : Grid
             if(m is not null&&RangedRivens.IsRiven(m)&&riven is not null)m=RangedRivens.Resolve(m,riven,Selected!.Id,slots[i]!.Rank);
             var b=Button(m is null?$"{i+1}\n＋":m.Name,()=>{active=index;RefreshSlots();});b.Height=ModCardLayout.EquippedHeight;b.Margin=new(0,0,i%4==3?0:12,8);b.Content=new TextBlock{Text=b.Content.ToString(),TextWrapping=TextWrapping.Wrap,HorizontalAlignment=HorizontalAlignment.Center,VerticalAlignment=VerticalAlignment.Center};b.ToolTip=m is null?"모드를 놓거나 보관함에서 선택":KoreanPresentation.ModDescription(m,slots[i]!.Rank);b.BorderThickness=new(1);b.AllowDrop=true;
             b.Drop+=(_,e)=>{if(e.Data.GetData("WFLabs.RangedSlot") is int from)CommitDrop(from,null,index,false);else if(e.Data.GetData("WFLabs.RangedMod") is string id)CommitDrop(null,id,index,false);e.Handled=true;};
-            var menu=new ContextMenu();var remove=new MenuItem{Header="해제",IsEnabled=m is not null};remove.Click+=(_,_)=>{slots[index]=null;RefreshConditionControls();Refresh();};menu.Items.Add(remove);
-            if(m is not null&&RangedRivens.IsRiven(m)){var edit=new MenuItem{Header="리벤 옵션 편집"};edit.Click+=(_,_)=>{active=index;OpenRiven();};menu.Items.Add(edit);}
-            else if(m is not null){var rank=new MenuItem{Header="모드 랭크"};for(int n=0;n<=m.MaxRank;n++){int value=n;var item=new MenuItem{Header=n.ToString(),IsChecked=slots[index]!.Rank==n};item.Click+=(_,_)=>{slots[index]=slots[index]! with {Rank=value};Refresh();};rank.Items.Add(item);}menu.Items.Add(rank);}
-            var polarity=new MenuItem{Header="포르마 · 슬롯 극성"};foreach(var p in new[]{"None","Madurai","Vazarin","Naramon","Zenurik"}){var item=new MenuItem{Header=p switch{"Madurai"=>"마두라이","Vazarin"=>"바자린","Naramon"=>"나라몬","Zenurik"=>"제누릭",_=>"극성 없음"},IsChecked=polarities[index]==p};item.Click+=(_,_)=>{polarities[index]=p;Refresh();};polarity.Items.Add(item);}menu.Items.Add(polarity);b.ContextMenu=menu;
+            var menu=new ContextMenu();var remove=new MenuItem{Header="해제",IsEnabled=m is not null};remove.Click+=(_,_)=>{menu.IsOpen=false;slots[index]=null;RefreshConditionControls();Refresh();};menu.Items.Add(remove);
+            if(m is not null&&RangedRivens.IsRiven(m)){var edit=new MenuItem{Header="리벤 옵션 편집"};edit.Click+=(_,_)=>{menu.IsOpen=false;active=index;OpenRiven();};menu.Items.Add(edit);}
+            else if(m is not null){var rank=new MenuItem{Header="모드 랭크"};for(int n=0;n<=m.MaxRank;n++){int value=n;var item=new MenuItem{Header=n.ToString(),IsChecked=slots[index]!.Rank==n};item.Click+=(_,_)=>{menu.IsOpen=false;slots[index]=slots[index]! with {Rank=value};Refresh();};rank.Items.Add(item);}menu.Items.Add(rank);}
+            var polarity=new MenuItem{Header="포르마 · 슬롯 극성"};foreach(var p in new[]{"None","Madurai","Vazarin","Naramon","Zenurik"}){var item=new MenuItem{Header=p switch{"Madurai"=>"마두라이","Vazarin"=>"바자린","Naramon"=>"나라몬","Zenurik"=>"제누릭",_=>"극성 없음"},IsChecked=polarities[index]==p};item.Click+=(_,_)=>{menu.IsOpen=false;polarities[index]=p;Refresh();};polarity.Items.Add(item);}menu.Items.Add(polarity);b.ContextMenu=menu;
             if(m is not null)Decorate(b,m,slots[i]!.Rank,SlotDrain(m,slots[i]!.Rank,polarities[i]));else ModCardLayout.Apply(b,false,ModFinish.Neutral);
+            if(compactLayout)CompactFace(b);
             if(active==i)b.SetResourceReference(Control.BorderBrushProperty,"AccentBrush");
             System.Windows.Automation.AutomationProperties.SetName(b,$"슬롯 {i+1} · {m?.Name??"빈 슬롯"}");
             if(m is not null)Drag(b,"WFLabs.RangedSlot",index);slotsPanel.Children.Add(Stack(b));
@@ -520,7 +554,7 @@ internal sealed partial class RangedPage : Grid
             if(source.IsCancellationRequested||simulation!=source)return;
             var without=await Task.Run(()=>RangedCombat.Simulate(b with{Conditions=(b.Conditions??new()) with{DisableConditionOverload=true}},settings,source.Token),source.Token);
             if(source.IsCancellationRequested||simulation!=source)return;
-            lastCombat=new(rawBuild,result,settings,without);ShowCombat(result,without,settings);SetAccuracy(result.Notes,true);pinComparison.IsEnabled=true;RefreshComparison();resultScroller.ScrollToTop();progressText.Text=$"교전 분석 완료 · {settings.Trials:N0}표본";WorkspaceChanged?.Invoke();
+            hadCombatResults=true;lastCombat=new(rawBuild,result,settings,without);ShowCombat(result,without,settings);SetAccuracy(result.Notes,true);pinComparison.IsEnabled=true;RefreshComparison();resultScroller.ScrollToTop();progressText.Text=$"교전 분석 완료 · {settings.Trials:N0}표본";WorkspaceChanged?.Invoke();
         }
         catch(OperationCanceledException){if(simulation==source){progressText.Text="계산 취소 · 다시 계산할 수 있습니다";accuracyStatus.Text=accuracyStatus.Text.Replace("계산 중","계산 취소 · 결과 없음");}}
         catch(ArgumentException ex){if(simulation==source){progressText.Text="교전 계산에 필요한 조건 확인";message.Text=ex.Message;SetAccuracy([],false,true);}}
@@ -556,7 +590,7 @@ internal sealed partial class RangedPage : Grid
         if(Selected is not {} w)return;library.Children.Clear();var mods=RangedEngine.ModCatalog.Mods.Where(m=>RangedEngine.Compatible(m,w)&&(m.Name.Contains(query.Text,StringComparison.OrdinalIgnoreCase)||m.EnglishName.Contains(query.Text,StringComparison.OrdinalIgnoreCase)));
         mods=sort.SelectedIndex switch{1=>mods.OrderBy(m=>m.Limitations.Length>0).ThenBy(m=>m.BaseDrain+m.MaxRank),2=>mods.OrderBy(m=>m.Limitations.Length>0).ThenBy(m=>m.Polarity),_=>mods.OrderBy(m=>m.Limitations.Length>0).ThenBy(m=>m.Name)};
         if(descending)mods=mods.Reverse();
-        foreach(var m in mods){var b=Button("",()=>{CommitDrop(null,m.Id,active,false);});Decorate(b,m,m.MaxRank,libraryCard:true);b.IsEnabled=m.Limitations.Length==0||RangedRivens.IsRiven(m);ToolTipService.SetShowOnDisabled(b,true);b.ToolTip=m.Name+"\n"+(RangedRivens.IsRiven(m)?"내 리벤의 옵션과 수치 입력":string.Join("\n",new[]{KoreanPresentation.ModDescription(m,m.MaxRank)}.Concat(m.Limitations)));if(b.IsEnabled)Drag(b,"WFLabs.RangedMod",m.Id);library.Children.Add(b);}
+        foreach(var m in mods){var b=Button("",()=>{CommitDrop(null,m.Id,active,false);});Decorate(b,m,m.MaxRank,libraryCard:true);if(compactLayout){b.Height=70;CompactFace(b);}b.IsEnabled=m.Limitations.Length==0||RangedRivens.IsRiven(m);ToolTipService.SetShowOnDisabled(b,true);b.ToolTip=m.Name+"\n"+(RangedRivens.IsRiven(m)?"내 리벤의 옵션과 수치 입력":string.Join("\n",new[]{KoreanPresentation.ModDescription(m,m.MaxRank)}.Concat(m.Limitations)));if(b.IsEnabled)Drag(b,"WFLabs.RangedMod",m.Id);library.Children.Add(b);}
         noResults.Visibility=library.Children.Count==0?Visibility.Visible:Visibility.Collapsed;
     }
     internal void EquipRiven(RangedRivenRoll roll,int destination)
@@ -589,6 +623,7 @@ internal sealed partial class RangedPage : Grid
         var meta=ModCardLayout.Header(cost.ToString(),mod.Polarity switch{"Madurai"=>"AP_ATTACK","Vazarin"=>"AP_DEFENSE","Naramon"=>"AP_TACTIC",_=>mod.Polarity},cost<mod.BaseDrain+rank?"CapacityGoodBrush":cost>mod.BaseDrain+rank?"ErrorBrush":"AccentBrush");
         button.Content=new ModCardFace(mod.Name,meta,libraryCard);button.ToolTip=mod.Name+"\n"+KoreanPresentation.ModDescription(mod,rank);
     }
+    private static void CompactFace(Button button){button.Height=62;button.Padding=new(button.Padding.Left,12,button.Padding.Right,10);if(button.Content is ModCardFace face){face.ModName.Height=20;face.ModName.FontSize=15;face.ModName.LineHeight=20;face.ModName.TextWrapping=TextWrapping.NoWrap;}}
     private void Save(){var d=new SaveFileDialog{Title="총기 빌드 저장",Filter="WF Labs 총기 빌드|*.wfgun.json",FileName="총기 빌드.wfgun.json"};if(d.ShowDialog(Window.GetWindow(this))!=true)return;try{AtomicJsonFile.Write(d.FileName,Capture());message.Text="빌드를 저장했습니다.";}catch(Exception e)when(e is ArgumentException or IOException or UnauthorizedAccessException){message.Text="저장 실패: "+e.Message;}}
     private void Load(){var d=new OpenFileDialog{Title="총기 빌드 불러오기",Filter="WF Labs 총기 빌드|*.wfgun.json"};if(d.ShowDialog(Window.GetWindow(this))!=true)return;try{Restore(AtomicJsonFile.Read<RangedBuild>(d.FileName,1024*1024));message.Text="빌드를 불러왔습니다.";}catch(Exception e)when(e is ArgumentException or IOException or JsonException or InvalidOperationException or UnauthorizedAccessException){message.Text="불러오기 실패: "+e.Message;}}
     internal (ReferenceWeapon Weapon,RangedRivenRoll? Riven) RivenContext => (Selected??throw new ArgumentException("모딩할 무기를 선택하세요."),riven);
@@ -632,7 +667,7 @@ internal sealed partial class RangedPage : Grid
     internal void Check()
     {
         if(Selected is null||results.Children.Count<5||library.Children.Count<10)throw new Exception("총기 모딩 화면 구성 실패");
-        if(library.ActualWidth<250||ActualHeight<700)throw new Exception("총기 보관함 최소 공간 실패");
+        if(library.ActualWidth<250||ActualHeight<700)throw new Exception($"총기 보관함 최소 공간 실패: page={ActualWidth:0.##}×{ActualHeight:0.##}, library={library.ActualWidth:0.##}×{library.ActualHeight:0.##}, window={Window.GetWindow(this)?.ActualWidth:0.##}×{Window.GetWindow(this)?.ActualHeight:0.##}");
         DependencyObject? ancestor=VisualTreeHelper.GetParent(library);while(ancestor is not null&&ancestor is not ScrollViewer)ancestor=VisualTreeHelper.GetParent(ancestor);
         if(ancestor is not ScrollViewer viewport||library.Children.Count<library.Columns*2)throw new Exception("총기 보관함 스크롤 구조 오류");
         var secondRow=(FrameworkElement)library.Children[library.Columns];var bounds=secondRow.TransformToAncestor(viewport).TransformBounds(new Rect(secondRow.RenderSize));

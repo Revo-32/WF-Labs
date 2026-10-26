@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 using System.Windows;
@@ -25,8 +25,150 @@ public partial class App : Application
                 // 1760x920 fixtures. Keep the real HWND at the requested test size;
                 // production and physical-monitor checks still obey MonitorWorkArea.
                 if(sender is MainWindow window&&ReferenceEquals(loaded.OriginalSource,window))
-                {window.MinWidth=Math.Max(1760,window.Width);window.MinHeight=Math.Max(920,window.Height);window.UpdateLayout();}
+                {
+                    var width=Math.Max(1760,window.Width);var height=Math.Max(920,window.Height);
+                    window.MinWidth=width;window.MinHeight=height;
+                    window.ClearValue(Window.WidthProperty);window.ClearValue(Window.HeightProperty);
+                    window.Width=width;window.Height=height;window.UpdateLayout();
+                }
             }));
+        if(e.Args.Length>=2&&e.Args[0]=="--inventory-live-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await InventoryLiveCheck.Run(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--ux-review-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            AppDomain.CurrentDomain.UnhandledException+=(_,args)=>File.WriteAllText(Path.Combine(dir,"startup-error.txt"),args.ExceptionObject.ToString());
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckIndependentUx(dir,(name,width,height,scale)=>Render(window,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--schedule-marquee-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await ScheduleMarqueeChecks.Run(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--schedule-alpha-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await ScheduleAlphaChecks.Run(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--schedule-live-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await ScheduleLiveCheck.Run(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--schedule-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckSchedules(dir,(element,name,width,height,scale)=>Render(element is Window w?(FrameworkElement)w.Content:element,Path.Combine(dir,name+".png"),width,height,scale,element as MainWindow));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--inventory-live-workflow-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckLiveInventoryWorkflow(dir,(element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--inventory-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckInventory(dir,(element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0] is "--relic-live-check" or "--relic-auto-live-check")
+        {
+            ShutdownMode=ShutdownMode.OnExplicitShutdown;RelicLiveCheck.Arm(e.Args[1],e.Args[0]=="--relic-auto-live-check");return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--relic-auto-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckRelicAuto(dir,(element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--relic-resolution-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckRelicResolution(dir);File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--riven-capture-once-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await RivenProbeLiveCheck.Once(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--riven-auto-live-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{var host=new MainWindow();await host.CheckRivenAutoLive(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=3&&e.Args[0]=="--riven-probe-replay-check")
+        {
+            var dir=Path.GetFullPath(e.Args[2]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await RivenProbeLiveCheck.Replay(Path.GetFullPath(e.Args[1]),dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--riven-probe-live-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await RivenProbeLiveCheck.Run(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=3&&e.Args[0]=="--ocr-benchmark-check")
+        {
+            var dir=Path.GetFullPath(e.Args[2]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await OcrBenchmarkChecks.Run(e.Args[1],dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=3&&e.Args[0]=="--riven-image-check")
+        {
+            var input=Path.GetFullPath(e.Args[1]);var dir=Path.GetFullPath(e.Args[2]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            RivenOcr.DiagnosticImage=(bitmap,name)=>{var encoder=new PngBitmapEncoder();encoder.Frames.Add(BitmapFrame.Create(bitmap));using var stream=File.Create(Path.Combine(dir,name+".png"));encoder.Save(stream);};
+            Dispatcher.BeginInvoke(async()=>{try{var image=RelicOcr.Load(input);var clock=Stopwatch.StartNew();var probe=RivenVisualProbe.Analyze(image);File.WriteAllText(Path.Combine(dir,"probe.json"),JsonSerializer.Serialize(new{probe.Regions,milliseconds=clock.Elapsed.TotalMilliseconds},Catalog.Json));var result=await RivenOcr.ReadAsync(image,"Melee",8,default);File.WriteAllText(Path.Combine(dir,"recognition.json"),JsonSerializer.Serialize(result,Catalog.Json));var cropped=await RivenOcr.ReadAsync(RivenVisualProbe.Crop(image,probe.Regions),"Melee",8,default);File.WriteAllText(Path.Combine(dir,"cropped-recognition.json"),JsonSerializer.Serialize(cropped,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--riven-capture-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckRivenCapture(dir,(element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--relic-overlay-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckRelicOverlay(dir,(element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--relic-performance-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckRelicPerformance(dir,(element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--weapon-selection-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckWeaponSelection((element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=3&&e.Args[0]=="--relic-workflow-check")
+        {
+            var manifest=Path.GetFullPath(e.Args[1]);var dir=Path.GetFullPath(e.Args[2]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckRelicImages(manifest,dir,(element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale));File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=3&&e.Args[0] is "--relic-image-check" or "--relic-live-image-check")
+        {
+            var input=Path.GetFullPath(e.Args[1]);var dir=Path.GetFullPath(e.Args[2]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{var started=Stopwatch.StartNew();var result=await RelicOcr.RecognizeAsync(RelicOcr.Load(input),RelicCatalog.Bundled(),default,dir,live:e.Args[0]=="--relic-live-image-check");File.WriteAllText(Path.Combine(dir,"recognition.json"),JsonSerializer.Serialize(new{input,elapsedSeconds=started.Elapsed.TotalSeconds,result},Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--relic-capture-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{var report=await TennoForge.Desktop.MainWindow.CheckGameCapture(dir);File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0] is "--relic-check" or "--relic-online-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,WindowStartupLocation=WindowStartupLocation.Manual,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckRelics(dir,(element,name,width,height,scale)=>Render(element,Path.Combine(dir,name+".png"),width,height,scale),e.Args[0]=="--relic-online-check");File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
         if(e.Args.Length>=2&&e.Args[0] is "--native-file-check" or "--monitor-check" or "--workspace-produce-check" or "--workspace-restore-check")
         {
             var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
@@ -468,13 +610,15 @@ public partial class App : Application
             catch (Exception ex) { File.WriteAllText(Path.Combine(e.Args[1], "ui-error.txt"), ex.ToString()); Shutdown(1); }
             return;
         }
-        var main=new MainWindow();main.EnableWorkspacePersistence();main.RestoreUpdateRecovery();main.Show();main.StartUpdateChecks();
+        var main=new MainWindow();main.EnableWorkspacePersistence();main.RestoreUpdateRecovery();
+        if(e.Args.Contains("--background")){main.ShowActivated=false;main.WindowState=WindowState.Minimized;}
+        main.Show();main.StartUpdateChecks();
     }
     private static void Render(Window w, string path,int width=1920,int height=1000,double scale=1)
         =>Render((FrameworkElement)w.Content,path,width,height,scale,w as MainWindow);
     internal static void Render(FrameworkElement root,string path,int width,int height,double scale=1,MainWindow? previewWindow=null)
     {
-        var nativePreview=Window.GetWindow(root) is MainWindow {IsVisible:true} host&&ReferenceEquals(host.Content,root);
+        var nativePreview=Window.GetWindow(root) is {IsVisible:true} host&&ReferenceEquals(host.Content,root);
         if(nativePreview&&Window.GetWindow(root) is {} native)
         {
             // Whole-window previews must measure the requested viewport, not leave

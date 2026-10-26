@@ -24,6 +24,7 @@ public sealed partial class MainWindow
     private readonly ComboBox abilityRankInput=new(){ItemsSource=new[]{0,1,2,3},SelectedIndex=3};
     private readonly TextBox bonusPercent=new(){Text="25"},targetShields=new(){Text="0"},targetOverguard=new(){Text="0"},attackDistance=new(){Text="0"},targetOrder=new(){Text="1"},comboDurationOverride=new(){Text=""};
     private readonly StackPanel evolutionFields=new(),dynamicConditions=new();
+    private readonly IncarnonMenu incarnonMenu=new();
     private readonly Dictionary<int,ComboBox> evolutionChoices=[];
     private readonly Dictionary<string,TextBox> meleeConditions=[];
     private readonly Dictionary<DamageType,TextBox> targetStatuses=[];
@@ -53,7 +54,8 @@ public sealed partial class MainWindow
         abilityStrengthInput.ToolTip="섀도우 클로는 섀도우 소환 당시 세바고스의 위력을 사용합니다. 섀도우 자체의 위력 모드는 클로 기본 피해를 올리지 않습니다.";
         abilityRankInput.SelectionChanged+=(_,_)=>{if(!changingMelee)Recalculate();};
         panel.Children.Add(tennokaiChoice);
-        panel.Children.Add(incarnonChoice);incarnonTimeField=(FrameworkElement)Field("시작 인카논 잔여 시간 (초)",incarnonRemaining);panel.Children.Add(incarnonTimeField);panel.Children.Add(evolutionFields);
+        incarnonTimeField=(FrameworkElement)Field("시작 인카논 잔여 시간 (초)",incarnonRemaining);
+        incarnonMenu.SetEditor(Stack(incarnonChoice,incarnonTimeField,evolutionFields));
         WatchEquationSource(tennokaiChoice,"condition",()=> ("tennokai","텐노카이"));
         var geometry=Columns(Field("거리 (m)",attackDistance),Field("관통 대상 순서",new ContentControl{Content=Stepper(targetOrder,1,100,1,"관통 대상 순서")}));panel.Children.Add(new Expander{Header="거리 · 관통",Content=geometry});
         comboDurationOverride.ToolTip="위키에 시간이 없는 동작에만 사용합니다. 빈칸이면 시간을 추정하지 않습니다.";
@@ -100,6 +102,7 @@ public sealed partial class MainWindow
         tennokaiChoice.Content=SelectedEncounter is EncounterMode.FirstHit or EncounterMode.Primer?"텐노카이 강공격":"첫 강공격을 텐노카이로 시작";
         tennokaiChoice.ToolTip="시간 교전에서는 시작 1회만 적용합니다. 이후 기회는 실제 명중으로 생성되며 전투 중 행동에서 사용할 시각을 지정할 수 있습니다.";
         incarnonChoice.Visibility=incarnonChoice.IsEnabled?Visibility.Visible:Visibility.Collapsed;
+        incarnonMenu.SetState(incarnonChoice.IsEnabled,incarnonChoice.IsChecked==true);
         if(incarnonTimeField is not null)incarnonTimeField.Visibility=incarnonChoice.IsEnabled&&incarnonChoice.IsChecked==true?Visibility.Visible:Visibility.Collapsed;
         if(lichFields is not null)lichFields.Visibility=bonusElementChoice.IsEnabled?Visibility.Visible:Visibility.Collapsed;
     }
@@ -135,7 +138,7 @@ public sealed partial class MainWindow
             }
         }
         finally{changingMelee=false;}
-        RefreshMeleeConditions();RefreshArcaneConditions();
+        RefreshAttackVisibility();RefreshMeleeConditions();RefreshArcaneConditions();
         if(!initializing)Recalculate();
     }
     private void RefreshMeleeConditions()

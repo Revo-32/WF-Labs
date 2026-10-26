@@ -24,11 +24,11 @@ public sealed partial class MainWindow
             if(!font.TryGetGlyphTypeface(out var glyph)||!new[]{'∑','×','÷','0','1','9'}.All(c=>glyph.CharacterToGlyphMap.ContainsKey(c)))throw new Exception("수학 글꼴의 실제 글리프 확인 실패");
             foreach(var item in new[]{(0,"damage"),(1,"critical"),(2,"time"),(3,"types")})
             {
-                board.HoverSlotForCheck(item.Item1,true);SettleEquationAnimation();
+                board.HoverSlotForCheck(item.Item1,true);SettleEquationAnimation(()=>equationView.Highlighted.SequenceEqual(new[]{item.Item2})&&equationView.FontSizeFor(item.Item2)>=23.99);
                 if(!equationView.Highlighted.SequenceEqual(new[]{item.Item2})||equationView.FontSizeFor(item.Item2)<23.9)throw new Exception("모드 호버 계산식 강조 실패: "+names[item.Item1]);
                 UpdateLayout();if(equationView.RenderSize!=initialSize||equationView.TranslatePoint(new Point(),root)!=initialPosition)throw new Exception("수식 강조로 레이아웃이 움직임");
-                board.HoverSlotForCheck(item.Item1,false);SettleEquationAnimation();
-                if(equationView.Highlighted.Length!=0||Math.Abs(equationView.FontSizeFor(item.Item2)-20)>.01)throw new Exception("수식 강조 복귀 실패");
+                board.HoverSlotForCheck(item.Item1,false);SettleEquationAnimation(()=>equationView.Highlighted.Length==0&&Math.Abs(equationView.FontSizeFor(item.Item2)-20)<=.01);
+                if(equationView.Highlighted.Length!=0||Math.Abs(equationView.FontSizeFor(item.Item2)-20)>.01)throw new Exception($"수식 강조 복귀 실패: {item.Item2}, 크기 {equationView.FontSizeFor(item.Item2):F4}, 강조 {string.Join(',',equationView.Highlighted)}");
                 cases.Add(new{source=names[item.Item1],stage=item.Item2,font=equationView.FontNameFor(item.Item2),layoutStable=true});
             }
             board.HoverSlotForCheck(4,true);if(equationView.Highlighted.Length!=0)throw new Exception("상태 피해 모드가 직접 DPS를 강조함");board.HoverSlotForCheck(4,false);
@@ -57,9 +57,11 @@ public sealed partial class MainWindow
         if(source=="stance")SetEquationSource("stance",((Stance)stance.SelectedItem).Id,((Stance)stance.SelectedItem).Name);
         else {var mod=catalog.Mods.Single(m=>m.EnglishName==source);SetEquationSource("mod",mod.Id,mod.Name);}
     }
-    private static void SettleEquationAnimation()
+    private static void SettleEquationAnimation(Func<bool>? complete=null)
     {
-        var frame=new DispatcherFrame();var timer=new DispatcherTimer(DispatcherPriority.Background){Interval=TimeSpan.FromMilliseconds(230)};
-        timer.Tick+=(_,_)=>{timer.Stop();frame.Continue=false;};timer.Start();Dispatcher.PushFrame(frame);
+        // Let the real animation reach its target, with a bounded deadline. A fixed
+        // wall-clock delay can end between composition frames on an isolated desktop.
+        var watch=System.Diagnostics.Stopwatch.StartNew();int stable=0;var frame=new DispatcherFrame();var timer=new DispatcherTimer(DispatcherPriority.Background){Interval=TimeSpan.FromMilliseconds(33)};
+        timer.Tick+=(_,_)=>{stable=(complete?.Invoke()??watch.ElapsedMilliseconds>=230)?stable+1:0;if(stable>=2||watch.ElapsedMilliseconds>=1800){timer.Stop();frame.Continue=false;}};timer.Start();Dispatcher.PushFrame(frame);
     }
 }

@@ -48,10 +48,11 @@ try {
         if(-not(Get-ChildItem -LiteralPath $notices -File)){throw '런타임 고지 파일이 비어 있습니다.'}
     }
     $shortcuts = if ($NoShortcuts) { 'None' } else { 'Desktop,StartMenuRoot' }
-    & $Dotnet vpk pack --packId $PackageId --packVersion $Version --packDir $publish --packTitle 'WF Labs' --packAuthors 'WF Labs' --mainExe WFLabs.exe --runtime win-x64 --icon src/TennoForge.Desktop/Assets/Brand/wf-labs.ico --shortcuts $shortcuts --outputDir $OutputDirectory --releaseNotes docs/RELEASE_NOTES.md
+    & $Dotnet vpk pack --packId $PackageId --packVersion $Version --packDir $publish --packTitle 'WF Labs' --packAuthors 'WF Labs' --mainExe WFLabs.exe --runtime win-x64 --framework vcredist143-x64 --icon src/TennoForge.Desktop/Assets/Brand/wf-labs.ico --shortcuts $shortcuts --outputDir $OutputDirectory --releaseNotes docs/RELEASE_NOTES.md
     if ($LASTEXITCODE -ne 0) { throw '설치 파일 생성 실패' }
     $hashes = Get-ChildItem -LiteralPath $OutputDirectory -File | Where-Object Name -ne 'SHA256SUMS.txt' | ForEach-Object { $hash=Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256; "$($hash.Hash.ToLowerInvariant())  $($_.Name)" }
     $hashes | Set-Content -LiteralPath (Join-Path $OutputDirectory 'SHA256SUMS.txt') -Encoding utf8NoBOM
+    @{version=$Version;packageId=$PackageId;publish=$publish;output=$OutputDirectory;prerequisite='vcredist143-x64';createdUtc=[DateTimeOffset]::UtcNow.ToString('o')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $stage 'build.json') -Encoding utf8NoBOM
     Write-Output "설치·업데이트 패키지: $OutputDirectory"
     Write-Output "검증용 앱 폴더: $publish"
 } finally { Pop-Location }

@@ -54,7 +54,7 @@ public sealed partial class MainWindow
         }
         finally{changingRiven=false;}
         comparisonBuild=workspace.Comparison;UpdateComparison();SetDarkTheme(!workspace.Light);SetLightMode(workspace.Performance);
-        if(workspace.ActivePage is >=0 and <4)navigation[workspace.ActivePage].IsChecked=true;
+        if(workspace.ActivePage>=0&&workspace.ActivePage<navigation.Count)navigation[workspace.ActivePage].IsChecked=true;
         foreach(var (category,build) in workspace.Ranged??[]){if(category is not ("primary" or "secondary"))throw new ArgumentException("총기 복구 구분 오류");if(!rangedPages.TryGetValue(category,out var ranged))rangedPages[category]=ranged=CreateRangedPage(category);ranged.Restore(build);}
         foreach(var (category,workshop) in workspace.RangedRivens??[])
         {
@@ -68,6 +68,9 @@ public sealed partial class MainWindow
             case 1:ShowRivens();break;
             case 2:ShowCatalog();break;
             case 3:ShowRoadmap();break;
+            case 4:ShowRelics();break;
+            case 5:ShowInventory();break;
+            case 6:ShowSchedules();break;
         }
         lastModdingKind=workspace.LastModdingKind??workspace.EquipmentKind;RefreshWorkflowBar();
         RefreshRivenWorkbench();
@@ -131,8 +134,14 @@ public sealed partial class MainWindow
                 rangedPages[category].CheckUpdatedComparison(saved.RangedComparisons[category]);
         }
         foreach(var (category,draft) in saved.RangedRivens??[])
-            if(JsonSerializer.Serialize(draft,Catalog.Json)!=JsonSerializer.Serialize(restored.RangedRivens![category],Catalog.Json))
+        {
+            // 0.9 saves base drain; the new editor persists the displayed cost.
+            // Compare the migrated representation while checking every other
+            // draft/session field. A correct migration is not lost user input.
+            var migrated=draft with{Drafts=draft.Drafts.Select(d=>d with{Cost=!d.DisplayedCost&&int.TryParse(d.Cost,out var drain)?(drain+d.Rank).ToString():d.Cost,DisplayedCost=true}).ToArray()};
+            if(JsonSerializer.Serialize(migrated,Catalog.Json)!=JsonSerializer.Serialize(restored.RangedRivens![category],Catalog.Json))
                 throw new InvalidOperationException(category+" 업데이트 후 미채택 순환·리벤 초안 불일치");
+        }
         return true;
     }
 }
