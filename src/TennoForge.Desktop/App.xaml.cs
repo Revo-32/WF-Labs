@@ -25,7 +25,12 @@ public partial class App : Application
                 // 1760x920 fixtures. Keep the real HWND at the requested test size;
                 // production and physical-monitor checks still obey MonitorWorkArea.
                 if(sender is MainWindow window&&ReferenceEquals(loaded.OriginalSource,window))
-                {window.MinWidth=Math.Max(1760,window.Width);window.MinHeight=Math.Max(920,window.Height);window.UpdateLayout();}
+                {
+                    var width=Math.Max(1760,window.Width);var height=Math.Max(920,window.Height);
+                    window.MinWidth=width;window.MinHeight=height;
+                    window.ClearValue(Window.WidthProperty);window.ClearValue(Window.HeightProperty);
+                    window.Width=width;window.Height=height;window.UpdateLayout();
+                }
             }));
         if(e.Args.Length>=2&&e.Args[0]=="--inventory-live-check")
         {

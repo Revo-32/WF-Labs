@@ -70,7 +70,10 @@ public sealed partial class MainWindow : Window
         workspaceViewport.ScrollChanged+=(_,e)=>{if(e.ViewportWidthChange!=0||e.ViewportHeightChange!=0)FitWorkspace();};FitWorkspace();
         Grid.SetRow(workflowBar,1);root.Children.Insert(1,workflowBar);
         WindowFrame.Attach(this, root);
-        MonitorWorkArea.Attach(this);
+        // Private validation desktops have an unrelated, often 1024x768 monitor.
+        // Their requested native viewport must not race with production work-area
+        // clamping. Real clients and physical-monitor checks retain that policy.
+        if(UiFonts.PersistChanges||Environment.GetEnvironmentVariable("WF_LABS_NONINTERACTIVE")!="1"||Environment.GetCommandLineArgs().Contains("--monitor-check"))MonitorWorkArea.Attach(this);
         modPage = CreateModPage(); rivenPage = CreateRivenPage(); ShowModding();
         board.EditRiven+=()=>{if(equippedRiven is {} r)ApplyRivenWorkbench(r);OpenRivenClass("Melee");};
         SourceInitialized += (_, _) => Backdrop.Apply(this, lightMode, Theme.IsDark);

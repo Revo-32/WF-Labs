@@ -667,7 +667,7 @@ internal sealed partial class RangedPage : Grid
     internal void Check()
     {
         if(Selected is null||results.Children.Count<5||library.Children.Count<10)throw new Exception("총기 모딩 화면 구성 실패");
-        if(library.ActualWidth<250||ActualHeight<700)throw new Exception("총기 보관함 최소 공간 실패");
+        if(library.ActualWidth<250||ActualHeight<700)throw new Exception($"총기 보관함 최소 공간 실패: page={ActualWidth:0.##}×{ActualHeight:0.##}, library={library.ActualWidth:0.##}×{library.ActualHeight:0.##}, window={Window.GetWindow(this)?.ActualWidth:0.##}×{Window.GetWindow(this)?.ActualHeight:0.##}");
         DependencyObject? ancestor=VisualTreeHelper.GetParent(library);while(ancestor is not null&&ancestor is not ScrollViewer)ancestor=VisualTreeHelper.GetParent(ancestor);
         if(ancestor is not ScrollViewer viewport||library.Children.Count<library.Columns*2)throw new Exception("총기 보관함 스크롤 구조 오류");
         var secondRow=(FrameworkElement)library.Children[library.Columns];var bounds=secondRow.TransformToAncestor(viewport).TransformBounds(new Rect(secondRow.RenderSize));

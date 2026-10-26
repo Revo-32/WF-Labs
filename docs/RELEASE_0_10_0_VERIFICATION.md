@@ -31,3 +31,5 @@
 초기 실패 산출물은 로컬 artifacts의 `release-validation`, `release-installer`, `release-core-first-attempt.log`에 보존했다. 후속 통과 결과와 구분한다.
 
 첫 GitHub Windows CI는 계산 1,707개를 통과했으나 1024×768 가상 데스크톱의 최대 추적 크기가 설정 창을 1044px로 줄여, 1100px 검수 콘텐츠가 창 경계를 넘었다. MainWindow에만 적용하던 검수 창 크기 보장을 실제 표시 중인 모든 Window의 콘텐츠로 확장했고, 설정 창의 실제 Window 크기도 요청 크기와 대조한다. 제품 UI를 작게 줄이거나 경계 검사 허용치를 완화하지 않았다. 첫 기록은 [40255008875](https://github.com/Revo-32/WF-Labs/actions/runs/40255008875)에 있다.
+
+두 번째 CI는 설정 창과 카드 검사를 통과했으나 첫 전체 렌더링 전 상호작용 검사에서 모니터 작업 영역 정책이 검수 창 최소 크기를 다시 줄였다. 비대화형 검수 데스크톱에서만 실제 모니터 작업 영역 제한을 분리하고 Loaded 시 native 크기를 명시한다. 일반 실행과 실제 모니터 이동 검사는 기존 정책을 유지한다. 검사 기준인 보관함 두 줄과 실제 공간을 줄이지 않았다. 두 번째 기록은 [40255806501](https://github.com/Revo-32/WF-Labs/actions/runs/40255806501)에 있다.
