@@ -2,12 +2,21 @@ name: Windows 검증 및 설치 파일
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'README.md'
+      - 'docs/assets/github/**'
+      - 'docs/history/**'
   pull_request:
+    paths-ignore:
+      - 'README.md'
+      - 'docs/assets/github/**'
+      - 'docs/history/**'
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: windows-${{ github.ref }}
+  # PR 검증과 같은 브랜치의 수동 검증은 한 번만 실행한다.
+  group: windows-${{ github.event.pull_request.head.ref || github.ref_name }}
   cancel-in-progress: true
 jobs:
   verify:
