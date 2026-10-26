@@ -1,8 +1,10 @@
 # Windows 배포 준비
 
-## 0.10.0-preview.1 후보
+## 0.10.0-preview.1 공개 미리보기
 
-2026-10-26 릴리즈 준비는 별도 `release/0.10.0-preview.1` 작업 트리에서 진행한다. [0.10.0 검수 기록](RELEASE_0_10_0_VERIFICATION.md)과 [릴리즈 노트](RELEASE_NOTES.md)를 기준으로 하며 아래 0.9.0 공개 링크는 이전 배포다. 새 설치 프로그램은 .NET 런타임 외에 OCR의 Visual C++ x64 런타임도 확인한다. GitHub 초안은 공개 전까지 기존 클라이언트의 업데이트 목록에 나타나지 않는다.
+[공개 배포·익명 다운로드·온라인 업데이트 검증 결과](history/RELEASE_0_10_0_PUBLICATION.md)
+
+2026-10-26, [0.10.0-preview.1](https://github.com/Revo-32/WF-Labs/releases/tag/v0.10.0-preview.1)을 공개 미리보기로 배포한다. [0.10.0 검수 기록](RELEASE_0_10_0_VERIFICATION.md)과 [릴리즈 노트](RELEASE_NOTES.md)를 참조한다. 설치 프로그램은 .NET 런타임 외에 OCR의 Visual C++ x64 런타임도 확인한다. 아래 버전별 기록은 과거 배포의 검수 이력이다.
 
 앱 표시 이름은 **WF Labs**, GitHub 저장소는 `https://github.com/Revo-32/WF-Labs`다. 소스 공개 및 설치·업데이트 배포를 같은 저장소에서 관리한다. 자체 코드는 공개 열람용이며 별도의 재사용 라이선스를 부여하지 않는다. `COPYRIGHT.md`를 참조한다.
 
@@ -10,7 +12,7 @@
 
 Windows x64용 `WFLabs-win-Setup.exe`를 실행하면 사용자 계정 범위에 설치한다. .NET 8과 Windows Desktop Runtime을 포함하므로 사용자가 개발 SDK를 설치할 필요가 없다. `WFLabs-win-Portable.zip`은 압축 배포본이며 압축을 푼 최상위의 `WF Labs.exe`로 실행한다. WF Labs의 앱 내 업데이트 버튼은 설치형 버전에서 제공한다.
 
-현재 공개 버전은 [0.9.0-preview.1](https://github.com/Revo-32/WF-Labs/releases/tag/v0.9.0-preview.1)이다. 기존 설치본은 상단 **업데이트 → 확인/다운로드 → 설치 후 다시 시작**으로 갱신한다. 자동 확인·다운로드를 켜 놓았다면 다운로드 완료 뒤 설치를 선택하면 된다.
+현재 공개 버전은 [0.10.0-preview.1](https://github.com/Revo-32/WF-Labs/releases/tag/v0.10.0-preview.1)이다. 기존 설치본은 상단 **업데이트 → 확인/다운로드 → 설치 후 다시 시작**으로 갱신한다. 자동 확인·다운로드를 켜 놓았다면 다운로드 완료 뒤 설치를 선택하면 된다.
 
 상단 **업데이트** 또는 **설정 → 앱 실행 · 업데이트**에서 Windows 로그인 자동 시작과 Warframe 실행 자동 시작을 각각 켜고 저장한다. 기본값은 모두 꺼져 있다.
 

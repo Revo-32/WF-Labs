@@ -5,7 +5,7 @@
 </picture>
 
 <p align="center">
-  <a href="https://github.com/Revo-32/WF-Labs/releases/tag/v0.9.0-preview.1"><strong>Windows 설치 파일 받기 ↗</strong></a>
+  <a href="https://github.com/Revo-32/WF-Labs/releases/tag/v0.10.0-preview.1"><strong>Windows 설치 파일 받기 ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="docs/DISTRIBUTION.md">설치·업데이트</a>
   &nbsp; · &nbsp;
@@ -14,8 +14,8 @@
 
 **WF Labs**는 워프레임 PC 한국어 사용자를 위한 빌드 분석 도구입니다. 모드를 배치하고, 적과 교전 조건을 설정하면 피해량·DPS·TTK를 비교할 수 있습니다. 리벤 분석부터 다음에 할 활동을 고르는 과정까지 한 앱에서 이어갑니다.
 
-> **현재 공개 버전 · 0.9.0-preview.1**<br>
-> **다음 버전 · 0.10.0-preview.1 준비 중** — 한국어 OCR·게임 오버레이·일정·마스터리 도우미를 확장합니다. 아래 새 화면과 기능은 0.10 개발본 기준입니다. [변경 사항과 준비 현황 보기 →](https://github.com/Revo-32/WF-Labs/pull/1)
+> **현재 공개 버전 · 0.10.0-preview.1**<br>
+> 한국어 성유물·리벤 OCR, 게임 오버레이, 일정과 마스터리 도우미를 추가한 공개 미리보기입니다. [릴리즈 노트와 설치 파일 보기 →](https://github.com/Revo-32/WF-Labs/releases/tag/v0.10.0-preview.1)
 
 ## 모딩에서 비교까지, 한 화면에서
 
@@ -23,7 +23,7 @@
 
 ![WF Labs 모딩 화면: 왼쪽 무기·모드 배치, 오른쪽 확률과 피해 분석](docs/assets/github/modding-preview.png)
 
-<sub>0.10 개발본의 실제 앱 렌더링입니다. 예시 빌드와 고정 검수 데이터를 사용했습니다.</sub>
+<sub>0.10 배포 후보의 실제 앱 렌더링입니다. 예시 빌드와 고정 검수 데이터를 사용했습니다.</sub>
 
 ## 필요한 정보를, 필요한 순간에
 
@@ -42,7 +42,7 @@
 
 수율과 F~SSS 등급은 **가능한 수치 범위 내 품질**을 뜻합니다. 획득 확률이나 DPS 점수와는 구분합니다. 접합 후 새 무작위 옵션은 범위로 표시합니다.
 
-<sub>0.10 개발본 · 예시 리벤 입력을 사용한 실제 앱 렌더링.</sub>
+<sub>0.10 배포 후보 · 예시 리벤 입력을 사용한 실제 앱 렌더링.</sub>
 
 </details>
 
@@ -53,13 +53,13 @@
 
 상점 교체와 인카논 순환을 함께 확인합니다. 미래 구성·저장 자료의 예상과 공식 확인 자료는 화면에서 구분합니다. 일정 오버레이는 시계를 고정하고 긴 목록만 천천히 세로로 순환합니다.
 
-<sub>0.10 개발본 · 고정 시각·검수용 일정 데이터. 현재 실제 판매 목록을 뜻하지 않습니다.</sub>
+<sub>0.10 배포 후보 · 고정 시각·검수용 일정 데이터. 현재 실제 판매 목록을 뜻하지 않습니다.</sub>
 
 </details>
 
 ## 설치와 업데이트
 
-1. [공개 릴리즈](https://github.com/Revo-32/WF-Labs/releases/tag/v0.9.0-preview.1)에서 `WFLabs-win-Setup.exe`를 받아 설치합니다. Windows x64용이며 .NET 런타임을 포함합니다.
+1. [공개 릴리즈](https://github.com/Revo-32/WF-Labs/releases/tag/v0.10.0-preview.1)에서 `WFLabs-win-Setup.exe`를 받아 설치합니다. Windows x64용이며 .NET 런타임을 포함합니다. 설치 시 OCR에 필요한 Visual C++ x64 런타임을 확인합니다.
 2. 앱 상단 **업데이트**에서 확인·다운로드하고, **설치 후 다시 시작**으로 적용합니다. 작업 중 강제로 재시작하지 않습니다.
 3. **설정**에서 자동 업데이트 확인·다운로드, Windows 로그인 시 실행, 워프레임 시작 시 실행을 선택합니다.
 
