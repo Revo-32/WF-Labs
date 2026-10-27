@@ -22,4 +22,5 @@
   <ItemGroup><EmbeddedResource Include="../../data/inventory-market-items.json" LogicalName="TennoForge.Core.inventory-market-items.json" /></ItemGroup>
   <ItemGroup><EmbeddedResource Include="../../data/schedule-regions.json" LogicalName="TennoForge.Core.schedule-regions.json" /></ItemGroup>
   <ItemGroup><EmbeddedResource Include="../../data/incarnon-rotations.json" LogicalName="TennoForge.Core.incarnon-rotations.json" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../data/inventory-market-bundles.json" LogicalName="TennoForge.Core.inventory-market-bundles.json" /></ItemGroup>
 </Project>

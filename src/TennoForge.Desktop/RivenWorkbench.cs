@@ -8,6 +8,8 @@ namespace TennoForge.Desktop;
 public sealed partial class MainWindow
 {
     private RivenRoll? equippedRiven;
+    private RivenRoll? rivenValidOptions;
+    private Button? rivenApplyButton,rivenLoadEquippedButton;
     private readonly WeaponSearchBox rivenWeapon=new();
     private readonly ComboBox rivenRank=new(){ItemsSource=Enumerable.Range(0,9),SelectedItem=8};
     private readonly ComboBox rivenDestination=new(){ItemsSource=Enumerable.Range(1,8),SelectedItem=1};
@@ -54,14 +56,17 @@ public sealed partial class MainWindow
 
                 var mod=catalog.Mods.Single(m=>m.Id==RivenValues.ModId(roll.WeaponId));
                 var slots=board.Slots;for(var i=0;i<slots.Length;i++)if(slots[i]?.ModId==mod.Id)slots[i]=null;
-                slots[(int)rivenDestination.SelectedItem-1]=new(mod.Id,roll.Rank);board.SetSlots(slots);ShowModding();
+                slots[(int)rivenDestination.SelectedItem-1]=new(mod.Id,roll.Rank);board.SetSlots(slots);RefreshRivenMountActions();ShowModding();
             }
             catch(ArgumentException ex){rivenInfo.Text=ex.Message;if(string.IsNullOrWhiteSpace(rivenCost.Text)||rivenPolarity.SelectedValue is null){equipDetails.IsExpanded=true;rivenCost.BringIntoView();rivenCost.Focus();}}
         });
+        rivenApplyButton=applyRiven;ToolTipService.SetShowOnDisabled(applyRiven,true);
         var mountSummary=T("",13);mountSummary.TextWrapping=TextWrapping.Wrap;mountSummary.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");
-        void UpdateMountSummary()=>mountSummary.Text=$"슬롯 {rivenDestination.SelectedItem} · 코스트 {(string.IsNullOrWhiteSpace(rivenCost.Text)?"미입력":rivenCost.Text)} · {(rivenPolarity.SelectedItem as RivenPolarityChoice)?.Name??"극성 미선택"}";
+        void UpdateMountSummary(){mountSummary.Text=$"슬롯 {rivenDestination.SelectedItem} · 코스트 {(string.IsNullOrWhiteSpace(rivenCost.Text)?"미입력":rivenCost.Text)} · {(rivenPolarity.SelectedItem as RivenPolarityChoice)?.Name??"극성 미선택"}";RefreshRivenMountActions();}
         rivenDestination.SelectionChanged+=(_,_)=>UpdateMountSummary();rivenCost.TextChanged+=(_,_)=>UpdateMountSummary();rivenPolarity.SelectionChanged+=(_,_)=>UpdateMountSummary();UpdateMountSummary();
-        var footer=Stack(mountSummary,applyRiven,Button("장착한 리벤 불러오기",()=>{if(equippedRiven is {} r)ApplyRivenWorkbench(r);else rivenInfo.Text="아직 장착한 리벤이 없습니다.";}));
+        rivenLoadEquippedButton=Button("장착한 리벤 불러오기",()=>{if(HasMountedMeleeRiven()&&equippedRiven is {} r)ApplyRivenWorkbench(r);else rivenInfo.Text="현재 모딩에 장착한 리벤이 없습니다.";});
+        ToolTipService.SetShowOnDisabled(rivenLoadEquippedButton,true);
+        var footer=Stack(mountSummary,applyRiven,rivenLoadEquippedButton);
         footer.Margin=new(0,12,12,0);foreach(var action in footer.Children.OfType<Button>())action.Margin=new(0,8,0,0);UiHierarchy.Primary(applyRiven);
         var left=new Grid();left.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});left.RowDefinitions.Add(new(){Height=GridLength.Auto});left.Children.Add(Scroll(editor));Grid.SetRow(footer,1);left.Children.Add(footer);
         output.Children.Add(T("옵션 수치 분석",24));rivenInfo.TextWrapping=TextWrapping.Wrap;CollapseEmpty(rivenInfo);output.Children.Add(rivenRangeCharts);
@@ -73,7 +78,8 @@ public sealed partial class MainWindow
         var splicePage=Stack(T("접합 미리보기",24),T("소비되는 옵션 두 개 → 계승되는 접합 옵션",16),T("왼쪽에 실제 수치를 입력하면 가능한 조합과 계승 범위가 표시됩니다. 전체 조합표는 옵션 도감에서 확인할 수 있습니다.",14,"#596B85"),spliceResults);
         rivenSections=new RivenSections(("수치 확인",Scroll(output)),("접합",Scroll(splicePage)),("옵션 도감",rivenReference),("비교 · 순환",Scroll(session)));
         var workspace=new Grid();workspace.RowDefinitions.Add(new(){Height=GridLength.Auto});workspace.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});workspace.Children.Add(rivenInfo);Grid.SetRow(rivenSections,1);workspace.Children.Add(rivenSections);
-        rivenSections.Select(0);RefreshRivenWorkbench();return Columns(left,workspace,1,2.35);
+        rivenSections.Select(0);RefreshRivenWorkbench();var workbench=Columns(left,workspace,1,2.35);
+        workbench.IsVisibleChanged+=(_,e)=>{if(e.NewValue is true)RefreshRivenMountActions();};return workbench;
     }
     private RivenRoll ReadRivenWorkbench(bool requireValues=true)
     {
@@ -86,6 +92,7 @@ public sealed partial class MainWindow
     private void RefreshRivenWorkbench(bool invalidateComparison=true)
     {
         if(changingRiven||rivenValues.Any(x=>x is null))return;
+        rivenValidOptions=null;
         if(invalidateComparison)InvalidateRivenComparison();
         rivenReference?.Refresh();
         RefreshRivenLocks();
@@ -106,7 +113,7 @@ public sealed partial class MainWindow
                 if(hasValue)try{var grade=RivenEngine.Grade(v,range.Minimum,range.Maximum);rivenGrades[i].Text+=$" · 범위 위치 {grade.Position:P1}";}catch(ArgumentException){rivenGrades[i].Text+=" · 범위 밖의 값";}
 
             }
-            var roll=ReadRivenWorkbench();RivenValues.Validate(roll);
+            var roll=ReadRivenWorkbench();RivenValues.Validate(roll);rivenValidOptions=roll;
             foreach(var prediction in RivenValues.Predict(roll))
             {
                 var candidate=prediction.Candidate;
@@ -121,6 +128,32 @@ public sealed partial class MainWindow
             rivenInfo.Text=traits.All(t=>(t.SelectedItem as RivenOption)?.Stat is null)?"":ex.Message;
             if(spliceResults.Children.Count==0)spliceResults.Children.Add(T("옵션 2~3개와 게임 표시값을 입력하면 접합을 확인할 수 있습니다.",16));
             if(rivenRangeCharts.Children.Count==0)rivenRangeCharts.Children.Add(UiHierarchy.RivenStart(()=>{traits[0].BringIntoView();traits[0].Focus();traits[0].IsDropDownOpen=true;},()=>rivenSections?.Select(2)));
+        }
+        RefreshRivenMountActions();
+    }
+    private bool HasMountedMeleeRiven()=>equippedRiven is {} roll&&board.Slots.Any(s=>s?.ModId==RivenValues.ModId(roll.WeaponId));
+    private void RefreshRivenMountActions()
+    {
+        if(rivenApplyButton is not null)
+        {
+            bool available=false;string hint;
+            try
+            {
+                if(rivenSession?.Pending is not null)throw new ArgumentException("현재 옵션 유지 또는 새 결과 채택을 먼저 선택하세요.");
+                var roll=rivenValidOptions??throw new ArgumentException("옵션과 게임에 표시된 수치를 입력하세요.");
+                int cost=Integer(rivenCost,"리벤 코스트")-roll.Rank;
+                if(cost<0||cost>30||rivenPolarity.SelectedValue is not string)throw new ArgumentException("장착 설정에서 현재 랭크의 표시 코스트와 극성을 입력하세요.");
+                if(rivenDestination.SelectedItem is not int slot||slot is <1 or >8)throw new ArgumentException("장착할 모드 슬롯을 선택하세요.");
+                available=true;hint="입력한 리벤을 선택한 슬롯에 가정 적용합니다.";
+            }
+            catch(ArgumentException ex){hint=ex.Message;}
+            rivenApplyButton.IsEnabled=available;rivenApplyButton.ToolTip=hint;
+        }
+        if(rivenLoadEquippedButton is not null)
+        {
+            rivenLoadEquippedButton.IsEnabled=rivenSession?.Pending is null&&HasMountedMeleeRiven();
+            rivenLoadEquippedButton.ToolTip=rivenSession?.Pending is not null?"현재 옵션 유지 또는 새 결과 채택을 먼저 선택하세요.":
+                rivenLoadEquippedButton.IsEnabled?"현재 근접 모딩 슬롯에 장착된 리벤을 가져옵니다.":"현재 근접 모딩 슬롯에 장착된 리벤이 없습니다.";
         }
     }
     private void SetRivenEndpoint(int index,bool maximum)

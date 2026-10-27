@@ -18,6 +18,24 @@ public sealed partial class MainWindow
     {
         var checks=new List<string>();var recognitions=new List<object>();
         void Yes(bool ok,string name){if(!ok)throw new InvalidOperationException(name);checks.Add(name);}
+        var manualWindow=new RivenCaptureWindow(new(Automatic:true));
+        try
+        {
+            Yes(!manualWindow.CancelButton.IsEnabled&&manualWindow.LoadButton.IsEnabled&&manualWindow.PasteButton.IsEnabled,"리벤 대기 상태에서는 수동 인식 취소 비활성");
+            Yes(manualWindow.Status.Text.Contains("자동 인식 켜짐"),"리벤 인식 창 초기 안내가 실제 자동 인식 설정과 일치");
+            var started=new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
+            var canceled=new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
+            manualWindow.ClipboardImage=()=>BitmapSource.Create(1,1,96,96,PixelFormats.Bgra32,null,new byte[4],4);
+            manualWindow.ReadImage=async(_,_,_,token)=>{started.TrySetResult();try{await Task.Delay(Timeout.Infinite,token);}finally{canceled.TrySetResult();}throw new InvalidOperationException("완료되지 않는 검수용 판독");};
+            static void InvokeManual(Button button)=>((IInvokeProvider)new ButtonAutomationPeer(button).GetPattern(PatternInterface.Invoke)).Invoke();
+            InvokeManual(manualWindow.PasteButton);await started.Task.WaitAsync(TimeSpan.FromSeconds(3));
+            Yes(manualWindow.CancelButton.IsEnabled&&!manualWindow.LoadButton.IsEnabled&&!manualWindow.PasteButton.IsEnabled,"실제 클립보드 읽기 버튼에서 수동 인식 진행·중복 시작 차단");
+            InvokeManual(manualWindow.CancelButton);await canceled.Task.WaitAsync(TimeSpan.FromSeconds(3));await System.Windows.Threading.Dispatcher.Yield();
+            Yes(!manualWindow.CancelButton.IsEnabled&&manualWindow.LoadButton.IsEnabled&&manualWindow.PasteButton.IsEnabled&&manualWindow.Status.Text.Contains("취소했습니다"),"실제 수동 취소 버튼에서 취소 전달·입력 복구");
+            Yes(manualWindow.Automatic.IsChecked==true,"수동 파일·클립보드 취소가 자동 인식 설정을 끄지 않음");
+            render((FrameworkElement)manualWindow.Content,"manual-canceled",1100,780,1);
+        }
+        finally{manualWindow.Close();}
         var prepared=RivenOcr.PrepareAsync();
         Yes(Enumerable.Range(0,20).All(_=>ReferenceEquals(prepared,RivenOcr.PrepareAsync())),"모델 준비: 반복 감지 20회에도 백그라운드 작업은 한 번만 생성");await prepared;
         var legacyPreferences=JsonSerializer.Deserialize<RivenCapturePreferences>("{\"Kind\":\"Melee\",\"Rank\":8,\"Automatic\":true}")!;
@@ -36,6 +54,8 @@ public sealed partial class MainWindow
         Yes(!RivenOcr.CorroboratedBy(left,[left,damage,RivenScan.Parse("+106.9 상태이상 확률","Melee",8)]),"단위 없는 판독으로 정상 수치를 보충하지 않음");
         var impossible=RivenScan.Parse("+195.79% 근접 피해","Melee",8);var impossibleAgain=RivenScan.Parse("+195.79% 근접 피해","Melee",8);
         Yes(RivenOcr.CorroboratedBy(left,[left,damage,status,impossible,impossibleAgain]),"표시할 수 없는 두 자리 소수는 근거·유효한 숫자 충돌로 세지 않음");
+        var extra=RivenScan.Parse("+76.9% 강 공격 효율","Melee",8);
+        Yes(!RivenOcr.CorroboratedBy(left,[left,damage,status,extra]),"별도 판독에서 추가 옵션을 읽으면 일부 옵션만 있는 후보를 완전한 카드로 확정하지 않음");
         var right=RivenScan.Parse("+185.3% 근접 피해\n+101.3% 화염\n+101.3% 냉기\n-81.0% 치명타 피해","Melee",8);
         Yes(left.Valid&&right.Valid,"검수용 실제 범위 수치 유효");
         RivenOcrResult? example=null;
@@ -46,7 +66,16 @@ public sealed partial class MainWindow
             var replay=Path.Combine(directory,"animated-replay");Directory.CreateDirectory(replay);
             Yes(await RivenProbeLiveCheck.Replay(liveFrames,replay)==1,"실전 배경 애니메이션 16프레임: 첫 인식 성공·같은 옵션 추가 OCR 없음");
         }
-        var actualPath=Path.Combine(Environment.CurrentDirectory,"artifacts","riven-auto-2026-10-25","innodem-real.png");
+        var realFixture=Path.Combine(Environment.CurrentDirectory,"tests","fixtures","riven");
+        var actualPath=Path.Combine(realFixture,"innodem-real.png");
+        if(!File.Exists(actualPath))throw new InvalidOperationException("필수 실제 리벤 검수 자료가 없습니다.");
+        using(var provenance=JsonDocument.Parse(File.ReadAllText(Path.Combine(realFixture,"provenance.json"))))
+            foreach(var entry in provenance.RootElement.EnumerateArray())
+            {
+                var file=Path.Combine(realFixture,entry.GetProperty("image").GetString()!);
+                using var stream=File.OpenRead(file);var hash=Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(stream));
+                Yes(hash.Equals(entry.GetProperty("sha256").GetString(),StringComparison.OrdinalIgnoreCase),"실제 OCR fixture SHA-256 · "+entry.GetProperty("image").GetString());
+            }
         if(File.Exists(actualPath))
         {
             var source=RelicOcr.Load(actualPath);var probe=RivenVisualProbe.Analyze(source);
@@ -78,6 +107,63 @@ public sealed partial class MainWindow
             Yes(RivenScan.Opportunities(actual.Cards[0].Report).All(o=>rightLabels.Any(t=>t.Contains(o.ResultName))),"우측 실제 카드: 현재 옵션으로 파생되는 접합 가능성 모두 표시");
             var badges=new StackPanel{Orientation=Orientation.Horizontal};foreach(var score in new[]{.1,.3,.5,.7,.85,.94,.99})badges.Children.Add(RivenGradePresentation.Badge(score));render(badges,"grade-palette",540,60,1);
         }
+        var pairFrame=RelicOcr.Load(Path.Combine(realFixture,"reroll-pair.png"));var pairProbe=RivenVisualProbe.Analyze(pairFrame);
+        var realPair=await RivenOcr.ReadAutomaticAsync(pairFrame,pairProbe.Regions,"Auto",8,default);
+        Yes(realPair.Cards.Length==2&&realPair.Cards.All(c=>c.Corroborated&&c.Report.Valid),"실제 순환 전후: 두 카드 모두 교차 확인");
+        var expectedPair=new[]{new[]{218.3,110.1,177.7,65.7},new[]{56.6,110.1,99.3,116.4}};
+        for(int index=0;index<2;index++)Yes(realPair.Cards[index].Report.Options.Select(o=>o.Value).SequenceEqual(expectedPair[index])&&realPair.Cards[index].Report.Options[^1].Negative,"실제 순환 전후: 수치·음옵·좌우 카드 유지 · "+index);
+        File.WriteAllText(Path.Combine(directory,"actual-pair-recognition.json"),JsonSerializer.Serialize(realPair,Catalog.Json));
+        var lockedSource=RelicOcr.Load(Path.Combine(realFixture,"innodem-two-locks-real.png"));
+        using(var lockedProvenance=JsonDocument.Parse(File.ReadAllText(Path.Combine(realFixture,"innodem-two-locks-provenance.json"))))
+            Yes(Convert.ToHexString(System.Security.Cryptography.SHA256.HashData(File.ReadAllBytes(Path.Combine(realFixture,"innodem-two-locks-real.png")))).Equals(lockedProvenance.RootElement.GetProperty("sha256").GetString(),StringComparison.OrdinalIgnoreCase),"두 잠금 실제 카드의 원본 crop 해시 고정");
+        var lockedRead=await RivenOcr.ReadAutomaticAsync(lockedSource,RivenVisualProbe.Analyze(lockedSource).Regions,"Auto",8,default);
+        Yes(lockedRead.Cards is [var lockedCard]&&lockedCard.Corroborated&&lockedCard.Report.Valid&&lockedCard.Report.Kind=="Melee"&&lockedCard.Report.Options.Select(o=>o.Key).SequenceEqual(new[]{"Electricity","StatusDamage","HeavyEfficiency","SlashDamage"})&&lockedCard.Report.Options.Select(o=>o.Value).SequenceEqual(new[]{110.6,110.1,76.9,117.5})&&lockedCard.Report.Options.Select(o=>o.Negative).SequenceEqual(new[]{false,false,false,true}),"두 줄 제목·흰 잠금 두 옵션: 전기 포함 네 옵션·수치·부호·종류를 정확히 교차 확인");
+        File.WriteAllText(Path.Combine(directory,"actual-two-locks-recognition.json"),JsonSerializer.Serialize(lockedRead,Catalog.Json));
+        BitmapSource EditFirst(bool label,bool pair=false,bool outside=false)
+        {
+            int width=pair?lockedSource.PixelWidth*2+32:lockedSource.PixelWidth;var visual=new DrawingVisual();
+            using(var drawing=visual.RenderOpen())
+            {
+                drawing.DrawImage(lockedSource,new Rect(0,0,lockedSource.PixelWidth,lockedSource.PixelHeight));
+                if(pair)drawing.DrawImage(lockedSource,new Rect(lockedSource.PixelWidth+32,0,lockedSource.PixelWidth,lockedSource.PixelHeight));
+                var area=outside?new Rect(2,2,20,20):label?new Rect(350,378,66,35):new Rect(145,378,140,35);
+                drawing.DrawRectangle(new SolidColorBrush(Color.FromRgb(16,16,23)),null,area);
+                if(!outside)drawing.DrawText(new FormattedText(label?"냉기":"+105.6%",CultureInfo.InvariantCulture,FlowDirection.LeftToRight,new Typeface("Malgun Gothic"),27,Brushes.White,1),area.TopLeft);
+            }
+            var image=new RenderTargetBitmap(width,lockedSource.PixelHeight,96,96,PixelFormats.Pbgra32);image.Render(visual);image.Freeze();return image;
+        }
+        var lockedBounds=lockedRead.Cards[0].Bounds;
+        bool DetectFirstChange(BitmapSource before,BitmapSource after,Rect[] regions)
+        {
+            // The production probe receives a landscape game preview. A tight
+            // portrait crop intentionally resembles the inventory-wide guard.
+            int originX=(1920-before.PixelWidth)/2,originY=180;
+            BitmapSource Screen(BitmapSource card)
+            {
+                var visual=new DrawingVisual();using(var drawing=visual.RenderOpen()){drawing.DrawRectangle(Brushes.Black,null,new Rect(0,0,1920,1080));drawing.DrawImage(card,new Rect(originX,originY,card.PixelWidth,card.PixelHeight));}
+                var frame=new RenderTargetBitmap(1920,1080,96,96,PixelFormats.Pbgra32);frame.Render(visual);frame.Freeze();return frame;
+            }
+            var mapped=regions.Select(r=>new Rect((originX+r.X*before.PixelWidth)/1920d,(originY+r.Y*before.PixelHeight)/1080d,r.Width*before.PixelWidth/1920d,r.Height*before.PixelHeight/1080d)).ToArray();
+            var old=RivenVisualProbe.Analyze(Screen(before),mapped);var next=RivenVisualProbe.Analyze(Screen(after),mapped);
+            File.WriteAllText(Path.Combine(directory,"first-white-change-metrics.json"),JsonSerializer.Serialize(new{before.PixelWidth,before.PixelHeight,regions=mapped,difference=RivenWatchState.Difference(old.Signature,next.Signature),aligned=RivenWatchState.AlignedDifference(old.Signature,next.Signature,640),oldInk=old.Signature.Count(p=>p!=0),newInk=next.Signature.Count(p=>p!=0)},Catalog.Json));
+            Save(after,Path.Combine(directory,"first-white-changed.png"));
+            var watch=new RivenWatchState(640);watch.Prime(old.Signature,0);
+            return Enumerable.Range(0,5).Any(i=>watch.Observe(true,next.Signature,3000+i*750,true)==RivenWatchAction.Read);
+        }
+        Yes(DetectFirstChange(lockedSource,EditFirst(false),[lockedBounds]),"첫 흰색 옵션의 숫자만 변경해도 재인식");
+        Yes(DetectFirstChange(lockedSource,EditFirst(true),[lockedBounds]),"첫 흰색 옵션의 이름만 변경해도 재인식");
+        var beforePair=new DrawingVisual();using(var drawing=beforePair.RenderOpen()){drawing.DrawImage(lockedSource,new Rect(0,0,lockedSource.PixelWidth,lockedSource.PixelHeight));drawing.DrawImage(lockedSource,new Rect(lockedSource.PixelWidth+32,0,lockedSource.PixelWidth,lockedSource.PixelHeight));}
+        var pairImage=new RenderTargetBitmap(lockedSource.PixelWidth*2+32,lockedSource.PixelHeight,96,96,PixelFormats.Pbgra32);pairImage.Render(beforePair);pairImage.Freeze();
+        double fixturePairWidth=pairImage.PixelWidth;var pairBounds=new[]{new Rect(lockedBounds.X*lockedSource.PixelWidth/fixturePairWidth,lockedBounds.Y,lockedBounds.Width*lockedSource.PixelWidth/fixturePairWidth,lockedBounds.Height),new Rect((lockedSource.PixelWidth+32+lockedBounds.X*lockedSource.PixelWidth)/fixturePairWidth,lockedBounds.Y,lockedBounds.Width*lockedSource.PixelWidth/fixturePairWidth,lockedBounds.Height)};
+        Yes(DetectFirstChange(pairImage,EditFirst(false,true),pairBounds),"두 카드에서 왼쪽 첫 흰색 숫자만 바뀌어도 재인식");
+        Yes(!DetectFirstChange(lockedSource,EditFirst(false,outside:true),[lockedBounds]),"옵션 밖의 커서·장식 변화는 재인식하지 않음");
+        var incompleteText="+110.070\n+110.1% 상태 이상 피해\n+76.9% 강 공격 효율\n-117.5% 베기";
+        var incompleteReport=RivenKindDetection.Resolve(incompleteText,8,"인노뎀 Vexi-plagaus");
+        var incompleteResult=new RivenOcrResult([new(incompleteText,incompleteReport,false,new Rect(0,0,1,1))],0,"옵션 구성 확인 필요");
+        var incompletePanel=RivenOverlay.BuildSide(incompleteResult,false);render(incompletePanel,"incomplete-card-no-grade",360,560,1);
+        var incompleteLabels=Descendants(incompletePanel).OfType<TextBlock>().Select(t=>t.Text).ToArray();
+        Yes(incompleteLabels.Contains("읽힌 옵션 3개 · 수율 계산 대기")&&incompleteLabels.Contains("+110.1%")&&incompleteLabels.Contains("+76.9%")&&incompleteLabels.Contains("−117.5%"),"부분 인식 오버레이는 읽힌 세 수치를 보존하고 수율 평가를 보류");
+        Yes(!incompleteLabels.Any(t=>System.Text.RegularExpressions.Regex.IsMatch(t,@"품질\s+\d")||t.Contains("범위 밖")),"구성 미확정 수치에 잘못된 등급·연쇄 범위 오류를 붙이지 않음");
         foreach(var scale in new[]{1d,1.5d})
         {
             var source=Fixture(left,right,scale);var file=Path.Combine(directory,$"synthetic-riven-{scale:0.0}.png");Save(source,file);
@@ -94,7 +180,7 @@ public sealed partial class MainWindow
         var reward=Path.Combine(Environment.CurrentDirectory,"artifacts","relic-wrapped-2026-10-25","reward.png");
         if(File.Exists(reward))Yes(RivenVisualProbe.Analyze(RelicOcr.Load(reward)).Regions.Length==0,"실제 성유물 보상 화면에서 리벤 OCR 시작하지 않음");
         OpenRivenClass("Melee");await Idle();
-        Click(Descendants(this).OfType<Button>().Single(b=>Equals(b.Content,"화면 인식 · 오버레이")));await Idle();
+        Click(RivenRecognitionBar.SettingsButton);await Idle();
         Yes(rivenCaptureWindow is {IsVisible:true},"상단 화면 인식 버튼으로 실제 창 열림");
         var window=rivenCaptureWindow!;
         Yes(window.Kind.SelectedIndex==0&&window.Preferences.ReadKind=="Auto","작업실 종류와 무관하게 화면 인식은 자동 판별 기본");

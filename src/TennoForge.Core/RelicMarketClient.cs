@@ -26,7 +26,7 @@ public sealed class RelicMarketClient : IDisposable
         SnapshotMode=snapshotMode;
         folder=cacheFolder;http=handler is null?new HttpClient():new HttpClient(handler);
         http.Timeout=TimeSpan.FromSeconds(5);http.BaseAddress=new("https://api.warframe.market/v2/");
-        http.DefaultRequestHeaders.UserAgent.ParseAdd("WF-Labs/0.10.0 (+https://github.com/Revo-32/WF-Labs)");
+        http.DefaultRequestHeaders.UserAgent.ParseAdd(ClientIdentity.UserAgent);
         http.DefaultRequestHeaders.Add("Language","ko");http.DefaultRequestHeaders.Add("Platform","pc");
     }
     public async Task<(RelicCatalog Catalog,string? Notice)> CatalogAsync(bool refresh,CancellationToken token)
@@ -127,6 +127,10 @@ public sealed class RelicMarketClient : IDisposable
             }
         }
         catch(Exception e)when(e is IOException or UnauthorizedAccessException or JsonException or KeyNotFoundException or InvalidOperationException){}
+        // Goal sets (including non-Prime crafted equipment) share the same
+        // 12-hour store. Append them after reward items; OCR never awaits this.
+        items.AddRange(FarmingMarket.Document.Bundles.Select(b=>b.Item));
+        items.AddRange(FarmingMarket.Document.Bundles.SelectMany(b=>b.Parts).Select(p=>p.Item));
         return items.DistinctBy(i=>i.Id).ToArray();
     }
     private async Task<JsonDocument> GetAsync(string path,bool crossplay,CancellationToken token)

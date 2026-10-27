@@ -84,10 +84,22 @@ def ancestor_meta(id):
   if m.get('wikiaUrl') and items.get(current,{}).get('masterable'):return m
   queue.extend(used_by.get(current,[]))
  return {}
+# A component consumed by another Warframe still belongs to its own blueprint
+# family. E.g. Chroma consumes Volt Neuroptics, but does not define its source.
+component_owner={}
+for main in catalog['recipes']:
+ if '/WarframeRecipes/' not in main['blueprintId'] or not items.get(main['resultId'],{}).get('masterable'):continue
+ stem=main['blueprintId'].removesuffix('Blueprint').lower()
+ for ingredient in main['ingredients']:
+  child=recipes.get(ingredient['id'])
+  if child and child['blueprintId'].lower().startswith(stem):
+   component_owner[child['blueprintId']]=main['resultId']
+
 def get(id):
  if id in entries:return entries[id]
  meta=wf.get(id,{});parent=wf.get(bpresult.get(id,''),{});info=meta if meta.get('wikiaUrl') else parent or meta
  if not info or info.get('name') in ['Night Aspect','Day Aspect','Harness','Wings']:info=ancestor_meta(bpresult.get(id,id)) or info
+ if id in component_owner:info=wf.get(component_owner[id],info)
  title,rev,raw,text=page_for(info);url='https://wiki.warframe.com/w/'+urllib.parse.quote(title.replace(' ','_'),safe='/')
  if rev.get('revid'):url+='?oldid='+str(rev['revid']);source_records[title]={'url':url,'revision':rev['revid'],'timestamp':rev['timestamp'],'sha256':hashlib.sha256(rev.get('slots',{}).get('main',{}).get('content','').encode()).hexdigest()}
  entry=dict(id=id,wikiUrl=url,revision=rev.get('revid',0),summary='',original=clean(raw)[:1100],routes=[],builtPlatinum=meta.get('marketCost'),blueprintCredits=items.get(id,{}).get('blueprintCredits'))

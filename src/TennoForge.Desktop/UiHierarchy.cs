@@ -14,6 +14,13 @@ internal static class UiHierarchy
         button.FontWeight=FontWeights.SemiBold;
     }
 
+    internal static void SetPrimary(Button button,bool value)
+    {
+        if(value){Primary(button);return;}
+        button.ClearValue(Control.BackgroundProperty);button.ClearValue(Control.BorderBrushProperty);
+        button.ClearValue(Control.ForegroundProperty);button.ClearValue(Control.FontWeightProperty);
+    }
+
     internal static FrameworkElement Heading(string title)
     {
         var text=RivenPresentation.Text(title,17);text.Margin=new(0);
@@ -23,12 +30,12 @@ internal static class UiHierarchy
 
     internal static FrameworkElement RivenStart(Action focusInput,Action openReference)
     {
-        var enter=new Button{Content="내 리벤 입력",Padding=new(14,8,14,8),Margin=new(0,0,8,8)};
+        var enter=new Button{Content="옵션 선택",Padding=new(14,8,14,8),Margin=new(0,0,8,8)};
         Primary(enter);enter.Click+=(_,_)=>focusInput();
-        var browse=new Button{Content="옵션 범위 찾아보기",Padding=new(14,8,14,8),Margin=new(0,0,0,8)};
+        var browse=new Button{Content="옵션 도감",Padding=new(14,8,14,8),Margin=new(0,0,0,8)};
         browse.Click+=(_,_)=>openReference();
         var actions=new WrapPanel{Margin=new(0,10,0,0)};actions.Children.Add(enter);actions.Children.Add(browse);
-        return RivenPresentation.Stack(RivenPresentation.Text("내 리벤은 어느 정도일까?",20),
+        return RivenPresentation.Stack(RivenPresentation.Text("분석할 리벤이 없습니다",20),
             RivenPresentation.Text("옵션과 수치를 입력하면 최소·최대 범위와 현재 위치가 표시됩니다.",15,"MutedBrush"),actions);
     }
 }

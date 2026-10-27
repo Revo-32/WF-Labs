@@ -78,12 +78,19 @@ public static class RivenScan
             if(!match.Success)
             {
                 var normalized=Normalize(line);
-                if(Regex.IsMatch(line,@"\d.*(%|초|m)")||Keys(kind).Any(k=>Aliases(kind,k).Any(a=>normalized==Normalize(a)||Regex.IsMatch(line,@"\d")&&normalized.Contains(Normalize(a)))))issues.Add("부호·수치 또는 옵션 확인: "+line);
+                bool incompleteOption=Regex.IsMatch(line,@"\d.*(%|초|m)")||Keys(kind).Any(k=>Aliases(kind,k).Any(a=>normalized==Normalize(a)||Regex.IsMatch(line,@"\d")&&normalized.Contains(Normalize(a))));
+                // OCR may render a Latin title suffix as digits or %. An exact
+                // known weapon prefix identifies a header, not a missing stat.
+                if(incompleteOption&&RivenKindDetection.WeaponKind(line) is null)issues.Add("부호·수치 또는 옵션 확인: "+line);
                 continue;
             }
             var name=OptionLabel(Regex.Replace(line.Remove(match.Index,match.Length),@"\([^)]*\)",""));
             var keys=Keys(kind).Where(k=>Aliases(kind,k).Any(a=>Normalize(a)==name)).ToArray();
-            if(keys.Length!=1){issues.Add("옵션 이름 확인: "+line);continue;}
+            if(keys.Length!=1)
+            {
+                if(match.Index>0&&RivenKindDetection.WeaponKind(line[..match.Index]) is not null)continue;
+                issues.Add("옵션 이름 확인: "+line);continue;
+            }
             var key=keys[0];var value=double.Parse(match.Groups["value"].Value.Replace(',','.'),CultureInfo.InvariantCulture);
             if(match.Groups["factor"].Success)
             {
@@ -106,7 +113,7 @@ public static class RivenScan
     public static string NormalizeOcrLabels(string text,string kind)
     {
         var aliases=Keys(kind).SelectMany(key=>Aliases(kind,key).Select(label=>(Key:key,Label:label,Normal:Normalize(label)))).ToArray();
-        return string.Join("\n",LogicalLines(text,kind).Select(line=>
+        return string.Join("\n",LogicalLines(text,kind,normalizeAliasNoise:true).Select(line=>
         {
             var numbers=Number.Matches(line);if(numbers.Count!=1)return line;var number=numbers[0];
             var label=OptionLabel(Regex.Replace(line.Remove(number.Index,number.Length),@"\([^)]*\)",""));
@@ -135,7 +142,7 @@ public static class RivenScan
     }
     // A displayed option may wrap before or after its signed value. Join only when
     // the result has exactly one number and a complete, known option label.
-    public static string[] LogicalLines(string text,string kind)
+    public static string[] LogicalLines(string text,string kind,bool normalizeAliasNoise=false)
     {
         var lines=text.Split('\n',StringSplitOptions.RemoveEmptyEntries).Select(s=>s.Trim()).ToArray();var result=new List<string>();
         for(int i=0;i<lines.Length;i++)
@@ -146,7 +153,13 @@ public static class RivenScan
                 if(count>1)joined+=" "+lines[i+count-1];var matches=Number.Matches(joined);if(matches.Count>1)break;
                 if(matches.Count!=1)continue;var match=matches[0];
                 var label=OptionLabel(Regex.Replace(joined.Remove(match.Index,match.Length),@"\([^)]*\)",""));
-                if(Keys(kind).Any(k=>Aliases(kind,k).Any(a=>Normalize(a)==label)))
+                bool known=Keys(kind).Any(k=>Aliases(kind,k).Any(a=>Normalize(a)==label));
+                if(!known&&normalizeAliasNoise&&label.Length>=5)
+                {
+                    var close=Keys(kind).Where(k=>Aliases(kind,k).Any(a=>Normalize(a).Length>=5&&OneEdit(label,Normalize(a)))).ToArray();
+                    known=close.Length==1;
+                }
+                if(known)
                 {result.Add(joined);i+=count-1;found=true;break;}
             }
             if(!found)result.Add(lines[i]);
@@ -159,6 +172,14 @@ public static class RivenScan
     {
         _=KindName(kind);var errors=new List<string>(issues??[]);var values=new List<RivenScanValue>();var recipes=new List<RivenScanRecipe>();
         var report=new RivenScanReport(kind,rank,options,[],[],[]);
+        if(errors.Count>0)
+        {
+            // A skipped option changes the positive/negative count and therefore
+            // every range. Keep the recognized input, but never grade a partial
+            // card as though its remaining options were the complete shape.
+            errors.Add("옵션 구성 확인 전에는 수율을 계산하지 않습니다.");
+            return report with{Issues=errors.Distinct().ToArray()};
+        }
         try
         {
             if(kind=="Melee")RivenValues.Validate(Melee(report),false);else RangedRivens.Validate(Ranged(report),false,false);

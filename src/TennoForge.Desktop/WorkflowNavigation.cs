@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
 using TennoForge.Core;
 
@@ -13,6 +13,8 @@ public sealed partial class MainWindow
         workflowBar.Children.Clear();
         bool mod=navigation.Count>0&&navigation[0].IsChecked==true;
         bool riven=navigation.Count>1&&navigation[1].IsChecked==true;
+        RivenRecognitionBar.Visibility=riven?Visibility.Visible:Visibility.Collapsed;
+        SyncRivenRecognition();
         workflowBar.Visibility=mod||riven?Visibility.Visible:Visibility.Collapsed;
         if(!mod&&!riven)return;
         var title=T(mod?"모딩":"리벤 종류",14);title.Margin=new(0,0,16,0);title.VerticalAlignment=VerticalAlignment.Center;workflowBar.Children.Add(title);
@@ -26,13 +28,14 @@ public sealed partial class MainWindow
         {
             Tab("주무기",lastModdingKind==1,()=>ShowRanged("primary"));Tab("보조무기",lastModdingKind==2,()=>ShowRanged("secondary"));Tab("근접",lastModdingKind==0,ShowModding);
             var analyze=Button("리벤 분석 →",OpenCurrentRiven);analyze.Margin=new(24,0,0,0);analyze.Height=32;analyze.Padding=new(12,4,12,4);workflowBar.Children.Add(analyze);
+            var target=Button("제작 목표 +",AddCurrentFarmingGoal);target.Margin=new(8,0,0,0);target.Height=32;target.Padding=new(12,4,12,4);workflowBar.Children.Add(target);
         }
         else
         {
             string current=page.Content is RangedRivenWorkbench w?w.RivenClass:"Melee";
             foreach(var (label,kind) in new[]{("소총","Rifle"),("산탄총","Shotgun"),("권총","Pistol"),("근접","Melee")})Tab(label,current==kind,()=>OpenRivenClass(kind));
             var back=Button("← 모딩으로",ReturnToModding);back.Margin=new(24,0,0,0);back.Height=32;back.Padding=new(12,4,12,4);workflowBar.Children.Add(back);
-            var scan=Button("화면 인식 · 오버레이",()=>ShowRivenCapture(current));scan.Margin=new(8,0,0,0);scan.Height=32;scan.Padding=new(12,4,12,4);workflowBar.Children.Add(scan);
+            RivenRecognitionBar.SetSettingsAction(()=>ShowRivenCapture(current));
             var note=T("공통 배율 1.2 · 종류별 옵션 범위",13);note.Margin=new(20,0,0,0);note.VerticalAlignment=VerticalAlignment.Center;workflowBar.Children.Add(note);
             if(current=="Melee"&&weapon.SelectedItem is Weapon melee){var target=T("DPS 비교 · "+melee.Name,13);target.Margin=new(20,0,0,0);target.VerticalAlignment=VerticalAlignment.Center;workflowBar.Children.Add(target);}
         }

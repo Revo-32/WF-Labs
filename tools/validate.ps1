@@ -10,6 +10,18 @@ try {
     if($LASTEXITCODE -ne 0){throw 'Release 빌드 실패'}
     & $Dotnet tests/TennoForge.Checks/bin/Release/net8.0/TennoForge.Checks.dll (Join-Path $report 'checks.json')
     if($LASTEXITCODE -ne 0){throw '계산 검증 실패'}
+    & (Join-Path $PSScriptRoot 'run-isolated-ui-check.ps1') -Mode --ocr-pixel-check -Output (Join-Path $report 'ocr-pixels')
+    if($LASTEXITCODE -ne 0){throw 'OCR 직접 픽셀·DPI·MR 준비 동등성 검증 실패'}
+    & (Join-Path $PSScriptRoot 'run-isolated-ui-check.ps1') -Mode --equipment-navigation-check -Output (Join-Path $report 'equipment-navigation')
+    if($LASTEXITCODE -ne 0){throw '장비 획득·구매 추천·자동인식 조작 검증 실패'}
+    & (Join-Path $PSScriptRoot 'run-isolated-ui-check.ps1') -Mode --inventory-check -Output (Join-Path $report 'inventory')
+    if($LASTEXITCODE -ne 0){throw '인벤토리·마스터리·목록 복원 검증 실패'}
+    & (Join-Path $PSScriptRoot 'run-isolated-ui-check.ps1') -Mode --relic-auto-check -Output (Join-Path $report 'relic-auto')
+    if($LASTEXITCODE -ne 0){throw '성유물 자동 감지·게임 전경·중복 방지 검증 실패'}
+    & (Join-Path $PSScriptRoot 'run-isolated-ui-check.ps1') -Mode --riven-capture-check -Output (Join-Path $report 'riven-capture')
+    if($LASTEXITCODE -ne 0){throw '리벤 자동 판독·전후 비교·옵션 분류 검증 실패'}
+    & (Join-Path $PSScriptRoot 'run-isolated-ui-check.ps1') -Mode --farming-check -Output (Join-Path $report 'farming')
+    if($LASTEXITCODE -ne 0){throw '목표·예약·세트 구매·성유물 연동 검증 실패'}
     & (Join-Path $PSScriptRoot 'run-isolated-ui-check.ps1') -Mode --schedule-check -Output (Join-Path $report 'schedules')
     if($LASTEXITCODE -ne 0){throw '일정·중재·상점 실제 UI 검증 실패'}
     & (Join-Path $PSScriptRoot 'run-isolated-ui-check.ps1') -Mode --ranged-smoke -Output (Join-Path $report 'ranged')

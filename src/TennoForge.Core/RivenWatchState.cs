@@ -4,7 +4,7 @@ public enum RivenWatchAction { None, Read, Clear }
 
 // Bounded state machine: stable entry/change -> one read; unchanged frames -> none.
 // A short retry budget handles reveal animations without continually re-running OCR.
-public sealed class RivenWatchState(int signatureWidth=0)
+public sealed class RivenWatchState(int signatureWidth=0,int minimumReadIntervalMilliseconds=1800)
 {
     private byte[]? previous,read;private int stable,missing,retries;private long lastRead=-10000;
     private bool engaged;private int candidates,changedFrames;
@@ -17,6 +17,7 @@ public sealed class RivenWatchState(int signatureWidth=0)
     public static double AlignedDifference(byte[] a,byte[] b,int width)
     {
         if(width<=0||a.Length!=b.Length||a.Length%width!=0)return Difference(a,b);
+        if(a.AsSpan().SequenceEqual(b))return 0;
         int height=a.Length/width,minX=width,maxX=-1,minY=height,maxY=-1;
         for(int i=0;i<a.Length;i++)if(a[i]!=0||b[i]!=0){int x=i%width,y=i/width;minX=Math.Min(minX,x);maxX=Math.Max(maxX,x);minY=Math.Min(minY,y);maxY=Math.Max(maxY,y);}
         if(maxX<0)return 0;double best=1;
@@ -47,7 +48,7 @@ public sealed class RivenWatchState(int signatureWidth=0)
         changedFrames++;
         // Before the first OCR, candidate bounds can contain animated decoration.
         // Two visual detections may bootstrap one read; subsequent changes use only text.
-        if((stable<2&&!(allowInitialRead&&!engaged&&candidates>=2)&&!(engaged&&changedFrames>=3))||now-lastRead<1800)return RivenWatchAction.None;
+        if((stable<2&&!(allowInitialRead&&!engaged&&candidates>=2)&&!(engaged&&changedFrames>=3))||now-lastRead<Math.Max(0,minimumReadIntervalMilliseconds))return RivenWatchAction.None;
         if(read is not null)retries=0;read=signature;engaged=true;lastRead=now;return RivenWatchAction.Read;
     }
 }

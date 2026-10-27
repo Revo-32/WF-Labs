@@ -1,0 +1,27 @@
+{
+  "convertedUtc": "2026-10-27T04:35:21.883076+00:00",
+  "method": "Tesseract runtime integer quantization",
+  "additionalTraining": false,
+  "models": {
+    "wfkor.traineddata": {
+      "sha256": "34b17336633c8c300ad63f06fa6ef340f2728b4f6ddb5fdef88642ab1c7bb8bf",
+      "floatSourceSha256": "d1e3939e745fdc010cff94ca2b1e2a57f4579a32f2f8e9e3573cacc483a588c4",
+      "integer": true,
+      "additionalTraining": false
+    },
+    "eng.traineddata": {
+      "sha256": "651409a6c81603f8565bceb773e3d34f1a77d3fa4e42c6a8458db04810f3bfb2",
+      "floatSourceSha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba",
+      "integer": true,
+      "additionalTraining": false
+    }
+  },
+  "heldOutKorean": {
+    "validationLines": 80,
+    "testLines": 82,
+    "realLines": 12,
+    "rawOutputChanges": 0,
+    "existingErrors": 8
+  },
+  "notice": "가중치를 정수형으로 변환한 런타임 모델. 원본 가중치·학습 정보·라이선스는 보존. 평가한 자료 밖에서 문자 오류가 없다는 보증은 아님."
+}

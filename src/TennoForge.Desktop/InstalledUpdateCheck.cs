@@ -19,12 +19,13 @@ public partial class App
             await updates.CheckAsync(automatic:true);
             if(updates.Phase is not (ClientUpdatePhase.Current or ClientUpdatePhase.Ready))throw new InvalidOperationException(updates.Status);
             var workspacePath=Path.Combine(Path.GetDirectoryName(report)!,"qa-update-workspace.json");
-            var recoveryVerified=false;
-            if(!args.Contains("--apply")){var window=new MainWindow();recoveryVerified=window.RestoreWorkspaceForUpdateCheck(workspacePath);}
-            var data=new{passed=true,manager.AppId,manager.IsInstalled,manager.IsPortable,currentVersion=manager.CurrentVersion?.ToString(),availableVersion=updates.Release?.Version,downloaded=updates.Phase==ClientUpdatePhase.Ready,helperPresent=File.Exists(Path.Combine(AppContext.BaseDirectory,"WFLabs.Startup.exe")),recoveryVerified,controllerState=updates.Phase.ToString()};
+            var recoveryVerified=false;bool planningVerified=false;
+            if(!args.Contains("--apply")){var window=new MainWindow();recoveryVerified=window.RestoreWorkspaceForUpdateCheck(workspacePath);planningVerified=InstalledPlanningCheck.Verify(Path.GetDirectoryName(report)!);}
+            var data=new{passed=true,manager.AppId,manager.IsInstalled,manager.IsPortable,currentVersion=manager.CurrentVersion?.ToString(),availableVersion=updates.Release?.Version,downloaded=updates.Phase==ClientUpdatePhase.Ready,helperPresent=File.Exists(Path.Combine(AppContext.BaseDirectory,"WFLabs.Startup.exe")),recoveryVerified,planningVerified,controllerState=updates.Phase.ToString()};
             File.WriteAllText(report,JsonSerializer.Serialize(data,new JsonSerializerOptions{WriteIndented=true}));
             if(updates.Phase==ClientUpdatePhase.Ready&&args.Contains("--apply"))
             {
+                InstalledPlanningCheck.Prepare(Path.GetDirectoryName(report)!);
                 var window=new MainWindow();await window.PrepareWorkspaceForUpdateCheck();
                 updates.Apply(()=>window.SaveWorkspaceForUpdateCheck(workspacePath),()=>{});
                 if(updates.Phase!=ClientUpdatePhase.Applying)throw new InvalidOperationException(updates.Status);

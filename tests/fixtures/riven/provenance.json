@@ -1,0 +1,18 @@
+[
+  {
+    "image": "innodem-real.png",
+    "sha256": "eef83ade17224da09e0cdd2d8206ebc4d213508cf22c39f1d649a821d5442a32",
+    "synthetic": false,
+    "source": "사용자 제공 게임 스크린샷",
+    "note": "사용자가 제공한 한국어 리벤 단일 카드 화면. 계정명·채팅·인벤토리 목록 없음.",
+    "copyright": "게임 이미지의 권리는 Digital Extremes 등에 있으며 자체 코드 라이선스로 재허가하지 않습니다."
+  },
+  {
+    "image": "reroll-pair.png",
+    "sha256": "4900974988e7e7dc208478379bc30ace311cb569d586712e23fd7215108a97cc",
+    "synthetic": false,
+    "source": "사용자 제공 게임 스크린샷",
+    "note": "사용자가 제공한 한국어 리벤 순환 전후 화면. 계정명·채팅·인벤토리 목록 없음.",
+    "copyright": "게임 이미지의 권리는 Digital Extremes 등에 있으며 자체 코드 라이선스로 재허가하지 않습니다."
+  }
+]

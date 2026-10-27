@@ -96,6 +96,7 @@
    </ControlTemplate></Setter.Value></Setter>
   </Style>
   <Style x:Key="NavigationItem" TargetType="RadioButton" BasedOn="{StaticResource {x:Type Control}}">
+   <Setter Property="MinHeight" Value="40"/>
    <Setter Property="Cursor" Value="Hand"/><Setter Property="FocusVisualStyle" Value="{x:Null}"/><Setter Property="Foreground" Value="{DynamicResource MutedBrush}"/>
    <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="RadioButton">
     <Grid><Border x:Name="Nav" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" CornerRadius="4" Margin="4,2,4,4"><ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/></Border><Border x:Name="Indicator" Height="2" Margin="16,0" VerticalAlignment="Bottom" Background="Transparent"/></Grid>

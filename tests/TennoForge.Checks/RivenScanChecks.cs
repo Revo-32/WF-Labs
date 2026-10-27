@@ -5,6 +5,14 @@ internal static class RivenScanChecks
     internal static void Run(Action<string,Action> check)
     {
         void Yes(bool value){if(!value)throw new Exception("리벤 인식 분석 결과 불일치");}
+        check("리벤 빠른 변경 감지 · 두 프레임 확인·순간 변화 무시·반복 OCR 방지",()=>
+        {
+            var watch=new RivenWatchState(0,600);var old=Enumerable.Repeat((byte)1,100).ToArray();var next=new byte[100];next[0]=1;
+            watch.Prime(old,0);Yes(watch.Observe(true,next,400,true)==RivenWatchAction.None);Yes(watch.Observe(true,old,800,true)==RivenWatchAction.None);
+            Yes(watch.Observe(true,next,1200,true)==RivenWatchAction.None);Yes(watch.Observe(true,next,1600,true)==RivenWatchAction.Read);
+            watch.Prime(next,2000);for(int n=1;n<=100;n++)Yes(watch.Observe(true,next,2000+400*n,true)==RivenWatchAction.None);
+            Yes(watch.Observe(false,[],42400,true)==RivenWatchAction.None);Yes(watch.Observe(false,[],42800,true)==RivenWatchAction.Clear);
+        });
         check("리벤 전환 · 표시 창 유지·새 카드 재판독·목록 이탈",()=>
         {
             var watch=new RivenWatchState();var old=Enumerable.Repeat((byte)1,100).ToArray();var next=new byte[100];next[0]=1;
@@ -119,6 +127,41 @@ internal static class RivenScanChecks
             Yes(!RivenScan.Parse(text.Replace("+2 사거리","+2% 사거리"),"Melee",8).Valid);
             Yes(!RivenScan.Parse(text.Replace("+63.9%","+63.9"),"Melee",8).Valid);
             Yes(RivenScan.Parse(text.Replace("+2 사거리","+2\n사거리"),"Melee",8).Valid);
+        });
+        check("리벤 인노뎀 · 두 잠금 행·3양1음·부분 판독은 수율 보류·수정 후 복구",()=>
+        {
+            const string text="🔒 +110.6% ⚡ 전기\n🔒 +110.1% 상태 이상 피해\n+76.9% 강 공격 효율\n-117.5% 베기";
+            var complete=RivenScan.Parse(text,"Melee",8);
+            Yes(complete.Valid&&complete.Options.Select(o=>o.Key).SequenceEqual(new[]{"Electricity","StatusDamage","HeavyEfficiency","SlashDamage"}));
+            Yes(complete.Options.Select(o=>o.Value).SequenceEqual(new[]{110.6,110.1,76.9,117.5})&&complete.Options.Select(o=>o.Negative).SequenceEqual(new[]{false,false,false,true}));
+            Yes(complete.Values.Length==4&&complete.Values.All(v=>v.Grade is not null)&&complete.Recipes.Length==0);
+            var traits=RivenScan.Melee(complete).Traits;
+            Yes(!traits[0].Spliced&&traits[1].Spliced); // Ordinary lock is not a second splice.
+            foreach(var damaged in new[]{text.Replace("+110.6% ⚡ 전기","+110.070 전기"),text.Replace("⚡ 전기","미식별옵션")})
+            {
+                var partial=RivenScan.Parse(damaged,"Melee",8);
+                Yes(!partial.Valid&&partial.Options.SequenceEqual(complete.Options.Skip(1))&&partial.Values.Length==0&&partial.Recipes.Length==0);
+                Yes(partial.Issues.Any(i=>i.Contains("옵션 구성 확인 전"))&&!partial.Issues.Any(i=>i.Contains("범위 밖")));
+                Yes(partial.Issues.Any(i=>i.Contains("+110.070 전기")||i.Contains("미식별옵션")));
+                Yes(RivenScan.Opportunities(partial).Length==0);
+                var detected=RivenKindDetection.Resolve(damaged,8,"인노뎀 Vexi-plagaus");
+                Yes(detected.Kind=="Melee"&&!detected.Valid&&detected.Options.SequenceEqual(partial.Options)&&detected.Values.Length==0);
+            }
+            var restored=RivenScan.Parse(RivenScan.Editable(complete),"Melee",8);
+            Yes(restored.Valid&&restored.Options.SequenceEqual(complete.Options)&&restored.Values.Length==4&&restored.Issues.Length==0);
+            foreach(var title in new[]{"인노뎀 16%3-","인노뎀 +16%3-"})
+            {
+                var noisyTitle=RivenScan.Parse(title+"\n"+text,"Melee",8);
+                Yes(noisyTitle.Valid&&noisyTitle.Options.SequenceEqual(complete.Options));
+            }
+            Yes(!RivenScan.Parse("+110.6% 인노뎀\n"+text,"Melee",8).Valid); // A signed stat is never discarded as a title.
+            var wrappedNoise=RivenScan.NormalizeOcrLabels("+118.8% 상태 이상 지속 시간\n+108.1% 상태 이상 확률\n+106.4% 화염\n슬라이드 공격에 치명타\n흐확률 -100% 추가","Melee");
+            var wrappedReport=RivenScan.Parse(wrappedNoise,"Melee",8);
+            Yes(wrappedReport.Valid&&wrappedReport.Options[^1].Key=="SlideCriticalChance"&&wrappedReport.Options[^1].Value==100&&wrappedReport.Options[^1].Negative);
+            // Callers also ask for a structurally known shape using placeholder
+            // values. Those ranges remain available when parsing had no errors.
+            var shape=RivenScan.Analyze(complete.Options.Select(o=>o with{Value=0}).ToArray(),"Melee",8);
+            Yes(!shape.Valid&&shape.Values.Length==4);
         });
         check("리벤 시암 · 잠긴 접합·원소 아이콘·줄바꿈 팩션 배율·반올림 정밀도",()=>
         {

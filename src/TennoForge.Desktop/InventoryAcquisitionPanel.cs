@@ -19,9 +19,9 @@ internal sealed partial class InventoryPage
         expander.Expanded+=(_,_)=>
         {
             if(body.Children.Count>0)return;
-            var batch=MasteryBatchPlanner.Recommend(CatalogData,Snapshot,prices);
+            var batch=MasteryBatchPlanner.Recommend(CatalogData,Snapshot,prices,reservations:Farming.Plan);
             body.Children.Add(Text($"최대 12개 추천 · 마스터리 +{batch.MasteryPoints:N0} · 추가 {batch.Credits:N0} 크레딧",16,"AccentBrush"));
-            body.Children.Add(Text("동일 재료·크레딧을 중복 사용하지 않습니다. 설계도 구매·해금 조건은 각 획득처를 확인하세요. 재료 수집·실제 랭작 시간은 제작 대기시간과 별도입니다.",14,"MutedBrush"));
+            body.Children.Add(Text("목표에 예약된 재료·크레딧은 제외하고 동일 재료를 중복 사용하지 않습니다. 설계도 구매·해금 조건은 각 획득처를 확인하세요. 재료 수집·실제 랭작 시간은 제작 대기시간과 별도입니다.",14,"MutedBrush"));
             body.Children.Add(Text($"동시 제작 시 가장 긴 제작 대기 {TimeSpan.FromSeconds(batch.ParallelBuildSeconds):g} · 제작시간의 가중치는 낮게 적용",14,"MutedBrush"));
             if(batch.Plans.Length==0)body.Children.Add(Text("현재 재료로 준비가 끝나는 새 장비가 없습니다. 보유 장비 랭작과 위 추천의 부족한 재료를 먼저 확인하세요.",15));
             foreach(var plan in batch.Plans)

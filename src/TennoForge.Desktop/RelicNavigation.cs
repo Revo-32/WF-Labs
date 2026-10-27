@@ -14,26 +14,30 @@ public sealed partial class MainWindow
     private CancellationTokenSource? automaticCapture;
     private bool automaticOverlay;
     private int autoGeneration;
-    private string autoStatus="자동 인식 꺼짐";
+    private string autoStatus="";
     private void EnsureRelicPage()
     {
         if(relicPage is null)
         {
             relicPage=new RelicPage();relicPage.CaptureRequested=CaptureRelicAsync;relicPage.GameReturnRequested=ReturnToGame;relicPage.HotkeyChanged=SetRelicHotkey;
-            relicPage.AutomaticChanged=SetRelicAutomatic;relicPage.AutoStatus.Text=autoStatus;
+            relicPage.FarmingHint=Farming.Reward;
+            relicPage.AutomaticChanged=SetRelicAutomatic;relicPage.AutoStatus.Text=string.IsNullOrWhiteSpace(autoStatus)?relicPage.Automatic.IsChecked==true?"워프레임 보상 화면을 기다립니다.":"자동인식을 켜면 보상 화면에서 시세가 자동으로 표시됩니다.":autoStatus;
             relicPage.Shortcut.IsChecked=relicHotkey?.Registered==true;
             if(UiFonts.PersistChanges&&RelicPreferences.Read().Hotkey&&relicHotkey?.Registered!=true)relicPage.Status.Text="단축키가 다른 프로그램과 충돌했습니다. 게임 화면 읽기를 사용하거나 단축키를 다시 켜세요.";
             if(UiFonts.PersistChanges)_=InitializePrices();
+            if(UiFonts.PersistChanges&&Farming.Document.Goals.Any(g=>g.Enabled&&g.Notify)){EnsureSchedulePage();schedulePage!.StartMonitoring();}
             async Task InitializePrices(){await relicPage.RefreshCatalogAsync(false);relicPage.StartPriceRefresh();}
             Closed+=(_,_)=>{relicHotkey?.Dispose();if(relicOverlay is {Dismissed:false})relicOverlay.Close();relicPage.Dispose();};
         }
     }
     internal void ShowRelics()
     {
-        EnsureRelicPage();page.Content=relicPage;SelectPage(4);
+        EnsureRelicHub();page.Content=relicHub;SelectPage(4);
     }
     private void SetRelicAutomatic(bool enabled)
     {
+        autoStatus=enabled?"자동 인식 대기 · 워프레임 보상 화면을 기다립니다.":"자동인식을 켜면 보상 화면에서 시세가 자동으로 표시됩니다.";
+        if(relicPage is not null)relicPage.AutoStatus.Text=autoStatus;
         if(!UiFonts.PersistChanges)return;
         var generation=++autoGeneration;relicAuto?.Dispose();relicAuto=null;StopAutomaticCapture();
         (RelicPreferences.Read() with{Automatic=enabled}).Save();
@@ -114,7 +118,7 @@ public sealed partial class MainWindow
         {
             var game=RelicCapture.GameWindow();
             // Construct the page before hiding the main window, without activating it.
-            ShowRelics();
+            ShowRelicRewards();
             // The pixels are captured before showing WF Labs; never read the foreground browser/desktop instead.
             if(IsVisible){Hide();hidden=true;await Task.Delay(180);}
             if(RelicCapture.IsMinimized(game))RelicCapture.ShowWindow(game,9);
@@ -129,9 +133,9 @@ public sealed partial class MainWindow
                 await relicPage.ReadAsync(image,operation:operation,live:true);return;
             }
             if(hidden){Show();WindowState=oldState;}if(WindowState==WindowState.Minimized)WindowState=WindowState.Normal;
-            ShowRelics();Activate();await relicPage!.ReadAsync(image,operation:operation);
+            ShowRelicRewards();Activate();await relicPage!.ReadAsync(image,operation:operation);
         }
-        catch(Exception e){if(hidden){Show();WindowState=oldState;}ShowRelics();relicPage!.Status.Text=e.Message;}
+        catch(Exception e){if(hidden){Show();WindowState=oldState;}ShowRelicRewards();relicPage!.Status.Text=e.Message;}
         finally{capturingRelic=false;}
     }
     private void ReturnToGame()

@@ -47,9 +47,11 @@ public sealed partial class MainWindow
             Yes(inventoryPage.RelicInputError.Visibility==Visibility.Visible&&inventoryPage.RelicEmpty.Text.Contains("입력 확인"),"잔영 오류를 입력 옆과 추천 영역에 표시 "+width);
             inventoryPage.Traces.Text="100";Yes(inventoryPage.RelicInputError.Visibility==Visibility.Collapsed,"잔영 입력 복구 "+width);inventoryPage.RelicOptions.IsExpanded=false;
             ShowRelics();Capture("relic-"+width,width,height,scale);var card=relicPage!.Cards[0];
-            Yes(Equals(card.Correct.Content,"보상 선택"),"빈 성유물 카드 보상 선택 행동 "+width);card.Search.ApplyTemplate();
-            Yes(card.Search.Template.FindName("Placeholder",card.Search) is TextBlock {Text:"보상 이름 검색",Visibility:Visibility.Visible},"검색 placeholder 표시 "+width);
-            card.Search.QueryInput.Focus();await Dispatcher.Yield();Yes(((TextBlock)card.Search.Template.FindName("Placeholder",card.Search)).Visibility==Visibility.Collapsed,"검색 초점에서 placeholder·커서 겹침 없음 "+width);KeyboardClear();
+            Yes(relicPage.EmptyState.IsVisible&&!relicPage.CardGrid.IsVisible,"읽기 전 성유물 빈 상태 "+width);
+            Click(LayoutDiagnostics.Tree(relicPage.EmptyState).OfType<Button>().Single(b=>Equals(b.Content,"보상 직접 선택")));await Dispatcher.Yield();card=relicPage.Cards[0];
+            Yes(Equals(card.Correct.Content,"보상 선택")&&card.Search.IsDropDownOpen,"빈 성유물에서 직접 선택 한 번으로 후보 열기 "+width);card.Search.CancelSearch();await Dispatcher.Yield();Click(card.Correct);await Dispatcher.Yield();
+            Yes(card.Search.Template.FindName("Placeholder",card.Search) is TextBlock {Text:"보상 이름 검색",Visibility:Visibility.Collapsed},"검색 초점에서 placeholder·커서 겹침 없음 "+width);card.Search.CancelSearch();await Dispatcher.Yield();
+            Yes(!card.Search.IsVisible,"직접 선택 취소 뒤 기본 읽기 상태 복귀 "+width);KeyboardClear();Click(card.Remove);await Dispatcher.Yield();
             ShowSchedules();Capture("schedule-"+width,width,height,scale);
             if(height<720)
             {

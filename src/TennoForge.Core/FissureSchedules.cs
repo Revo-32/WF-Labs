@@ -93,6 +93,10 @@ public sealed record SchedulePreferences
     public double ShadowStrength {get;init;}=.75;
     public double TextScale {get;init;}=1;
     public bool ShowCurrentFissures {get;init;}=true;
+    public bool NotifyFarmingGoals {get;init;}=true;
+    public bool ShowFarmingFissures {get;init;}=true;
+    public int FarmingMode {get;init;}
+    public string[] FarmingExcludedMissions {get;init;}=[];
     public int FissureView {get;init;}
     public bool ShowGameAlerts {get;init;}=true;
     public bool NotifyGameAlerts {get;init;}
@@ -101,6 +105,6 @@ public sealed record SchedulePreferences
     public double Y {get;init;}=.12;
     public double Width {get;init;}=480;
     public double Height {get;init;}=620;
-    public SchedulePreferences Sanitize()=>this with{ExcludedMissions=ExcludedMissions??[],OverlayItems=(OverlayItems??[]).Distinct().Take(100).ToArray(),FissureRules=(FissureRules??[]).Where(r=>r is not null&&r.Missions is not null).Take(20).ToArray(),X=Finite(X,0,1,.02),Y=Finite(Y,0,1,.12),Width=Finite(Width,320,1100,480),Height=Finite(Height,260,1100,620),SoundVolume=Finite(SoundVolume,0,1,.65),BackgroundOpacity=Finite(BackgroundOpacity,0,1,.82),ShadowStrength=Finite(ShadowStrength,0,1,.75),TextScale=Finite(TextScale,.85,1.3,1),FissureView=Math.Clamp(FissureView,0,4)};
+    public SchedulePreferences Sanitize()=>this with{ExcludedMissions=ExcludedMissions??[],FarmingExcludedMissions=FarmingExcludedMissions??[],FarmingMode=Math.Clamp(FarmingMode,0,3),OverlayItems=(OverlayItems??[]).Distinct().Take(100).ToArray(),FissureRules=(FissureRules??[]).Where(r=>r is not null&&r.Missions is not null).Take(20).ToArray(),X=Finite(X,0,1,.02),Y=Finite(Y,0,1,.12),Width=Finite(Width,320,1100,480),Height=Finite(Height,260,1100,620),SoundVolume=Finite(SoundVolume,0,1,.65),BackgroundOpacity=Finite(BackgroundOpacity,0,1,.82),ShadowStrength=Finite(ShadowStrength,0,1,.75),TextScale=Finite(TextScale,.85,1.3,1),FissureView=Math.Clamp(FissureView,0,5)};
     private static double Finite(double value,double min,double max,double fallback)=>double.IsFinite(value)?Math.Clamp(value,min,max):fallback;
 }

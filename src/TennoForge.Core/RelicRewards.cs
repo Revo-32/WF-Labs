@@ -1,5 +1,7 @@
 using System.Globalization;
+using System.Buffers;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
 
@@ -18,6 +20,50 @@ public sealed record RecognizedReward(string RawText,RewardText Bounds,RelicCand
 public sealed record RewardEvidence(string Family,RecognizedReward Reward);
 public sealed record RelicCatalog(DateTimeOffset RetrievedUtc,RelicItem[] Items)
 {
+    private sealed class IndexedName
+    {
+        internal readonly string Normalized,Jamo;
+        internal readonly string? PrimePrefix,PrimeComponent;
+        internal readonly int PrimePrefixJamoLength;
+        internal IndexedName(string name)
+        {
+            Normalized=Normalize(name);Jamo=Normalized.Normalize(NormalizationForm.FormD);
+            var split=Normalized.Split("프라임",StringSplitOptions.None);
+            if(split.Length==2&&split[0].Length>=2&&split[1].Length>=3&&split[1]!="설계도")
+            {
+                PrimePrefix=split[0];PrimeComponent=split[1].Normalize(NormalizationForm.FormD);
+                PrimePrefixJamoLength=PrimePrefix.Normalize(NormalizationForm.FormD).Length;
+            }
+        }
+    }
+    private sealed record IndexedItem(RelicItem Item,IndexedName Korean,IndexedName English);
+    private sealed class CatalogIndex
+    {
+        internal readonly IndexedItem[] Entries;
+        internal CatalogIndex(RelicItem[] items)=>Entries=items.Select(item=>new IndexedItem(item,new(item.Name),new(item.EnglishName))).ToArray();
+        internal bool Matches(RelicItem[] items)
+        {
+            if(items.Length!=Entries.Length)return false;
+            for(int i=0;i<items.Length;i++)if(!ReferenceEquals(items[i],Entries[i].Item))return false;
+            return true;
+        }
+    }
+    // Weak keys prevent replaced catalogs from retaining their normalized names.
+    // The index is not a record field: a `with` clone must not copy stale entries.
+    private static readonly ConditionalWeakTable<RelicCatalog,CatalogIndex> Indexes=new();
+    private CatalogIndex Index()
+    {
+        var index=Indexes.GetValue(this,static catalog=>new(catalog.Items));
+        if(index.Matches(Items))return index;
+        // Items is an exposed array. Also invalidate if an element is replaced,
+        // even though normal catalog refreshes create a new catalog instance.
+        lock(Indexes)
+        {
+            index=Indexes.GetValue(this,static catalog=>new(catalog.Items));
+            if(!index.Matches(Items)){Indexes.Remove(this);index=new(Items);Indexes.Add(this,index);}
+            return index;
+        }
+    }
     public static RelicCatalog Bundled()
     {
         using var stream=Assembly.GetExecutingAssembly().GetManifestResourceStream("TennoForge.Core.relic-market-items.json")!;
@@ -49,7 +95,8 @@ public sealed record RelicCatalog(DateTimeOffset RetrievedUtc,RelicItem[] Items)
     public RelicCandidate[] Search(string query,int count=8)
     {
         var q=Normalize(query);if(q.Length==0)return [];
-        return Items.Select(item=>new RelicCandidate(item,Score(q,item)))
+        var jamo=q.Normalize(NormalizationForm.FormD);
+        return Index().Entries.Select(entry=>new RelicCandidate(entry.Item,Score(q,jamo,entry,true)))
             .Where(x=>x.Similarity>=.42).OrderByDescending(x=>x.Similarity).ThenBy(x=>x.Item.Name,StringComparer.Ordinal).Take(count).ToArray();
     }
     public static string Normalize(string value)=>string.Concat(value.Normalize(NormalizationForm.FormKC).Where(char.IsLetterOrDigit)).ToUpperInvariant();
@@ -65,36 +112,43 @@ public sealed record RelicCatalog(DateTimeOffset RetrievedUtc,RelicItem[] Items)
             }
         return Normalize(value);
     }
-    private static double Score(string query,RelicItem item,bool partial=true)
+    private static double Score(string query,string queryJamo,IndexedItem item,bool partial)
     {
-        double Best(string name)
+        double Best(IndexedName name)
         {
-            name=Normalize(name);if(name==query)return 1;
-            if(partial&&name.Contains(query,StringComparison.Ordinal))return .86+.1*query.Length/name.Length;
+            if(name.Normalized==query)return 1;
+            if(partial&&name.Normalized.Contains(query,StringComparison.Ordinal))return .86+.1*query.Length/name.Normalized.Length;
             // Korean syllables decomposed into jamo give useful near-name candidates, never a probability.
-            var a=query.Normalize(NormalizationForm.FormD);var b=name.Normalize(NormalizationForm.FormD);
-            var similarity=1-(double)Distance(a,b)/Math.Max(a.Length,b.Length);
-            if(!partial&&name.Contains("프라임")&&!query.Contains("프라임"))
+            var similarity=1-(double)Distance(queryJamo,name.Jamo)/Math.Max(queryJamo.Length,name.Jamo.Length);
+            if(!partial&&name.PrimePrefix is not null&&!query.Contains("프라임")&&query.StartsWith(name.PrimePrefix,StringComparison.Ordinal))
             {
-                var split=name.Split("프라임",StringSplitOptions.None);
                 // A missing common Prime token is recoverable only when the distinct item prefix
                 // is intact AND a specific component (not just generic Blueprint) is readable.
-                if(split.Length==2&&split[0].Length>=2&&split[1].Length>=3&&split[1]!="설계도"&&query.StartsWith(split[0],StringComparison.Ordinal))
-                {
-                    var tail=query[split[0].Length..].Normalize(NormalizationForm.FormD);var component=split[1].Normalize(NormalizationForm.FormD);
-                    var match=1-(double)Distance(tail,component)/Math.Max(tail.Length,component.Length);
-                    if(match>=.85)similarity=Math.Max(similarity,.97*(.4+.6*match));
-                }
+                var tail=queryJamo.AsSpan(name.PrimePrefixJamoLength);var component=name.PrimeComponent!;
+                var match=1-(double)Distance(tail,component)/Math.Max(tail.Length,component.Length);
+                if(match>=.85)similarity=Math.Max(similarity,.97*(.4+.6*match));
             }
             return similarity;
         }
-        return Math.Max(Best(item.Name),Best(item.EnglishName));
+        return Math.Max(Best(item.Korean),Best(item.English));
     }
-    private static int Distance(string a,string b)
+    private static int Distance(ReadOnlySpan<char> a,ReadOnlySpan<char> b)
     {
-        var previous=Enumerable.Range(0,b.Length+1).ToArray();var next=new int[b.Length+1];
-        for(int i=1;i<=a.Length;i++) {next[0]=i;for(int j=1;j<=b.Length;j++)next[j]=Math.Min(Math.Min(next[j-1]+1,previous[j]+1),previous[j-1]+(a[i-1]==b[j-1]?0:1));(previous,next)=(next,previous);}
-        return previous[b.Length];
+        int columns=b.Length+1,size=columns*2;int[]? rented=null;
+        Span<int> rows=size<=512?stackalloc int[size]:(rented=ArrayPool<int>.Shared.Rent(size));
+        try
+        {
+            var previous=rows[..columns];var next=rows.Slice(columns,columns);
+            for(int j=0;j<columns;j++)previous[j]=j;
+            for(int i=1;i<=a.Length;i++)
+            {
+                next[0]=i;
+                for(int j=1;j<=b.Length;j++)next[j]=Math.Min(Math.Min(next[j-1]+1,previous[j]+1),previous[j-1]+(a[i-1]==b[j-1]?0:1));
+                var swap=previous;previous=next;next=swap;
+            }
+            return previous[b.Length];
+        }
+        finally{if(rented is not null)ArrayPool<int>.Shared.Return(rented);}
     }
     // One capture may produce hundreds of overlapping OCR strings. Cache complete rankings
     // within that capture only; candidate scores, ordering and confirmation rules are unchanged.
@@ -102,14 +156,17 @@ public sealed record RelicCatalog(DateTimeOffset RetrievedUtc,RelicItem[] Items)
     {
         internal readonly Dictionary<string,RelicCandidate[]> Rankings=new(StringComparer.Ordinal);
         internal RelicCatalog? Owner;
+        internal object? Index;
     }
-    public RecognizedReward[] Recognize(IReadOnlyList<RewardText> lines,MatchSession? session=null)
+    public RecognizedReward[] Recognize(IReadOnlyList<RewardText> lines,MatchSession? session=null,Func<RecognizedReward,bool>? corroborated=null)
     {
-        if(session is not null&&!ReferenceEquals(session.Owner,this)){session.Rankings.Clear();session.Owner=this;}
+        var index=Index();
+        if(session is not null&&(!ReferenceEquals(session.Owner,this)||!ReferenceEquals(session.Index,index))){session.Rankings.Clear();session.Owner=this;session.Index=index;}
         RelicCandidate[] Rank(string normalized)
         {
             if(session is not null&&session.Rankings.TryGetValue(normalized,out var cached))return cached;
-            var ranked=Items.Select(item=>new RelicCandidate(item,Score(normalized,item,false))).OrderByDescending(x=>x.Similarity).Take(8).ToArray();
+            var jamo=normalized.Normalize(NormalizationForm.FormD);
+            var ranked=index.Entries.Select(entry=>new RelicCandidate(entry.Item,Score(normalized,jamo,entry,false))).OrderByDescending(x=>x.Similarity).Take(8).ToArray();
             if(session is not null)session.Rankings[normalized]=ranked;return ranked;
         }
         var proposals=new List<RecognizedReward>();
@@ -142,7 +199,7 @@ public sealed record RelicCatalog(DateTimeOffset RetrievedUtc,RelicItem[] Items)
         {
             var result=new List<RecognizedReward>();
             foreach(var p in proposals.Where(x=>Math.Abs(x.Bounds.Y-anchor.Bounds.Y)<.065)
-                .OrderByDescending(x=>x.Candidates[0].Similarity).ThenByDescending(x=>x.Confident).ThenByDescending(x=>x.Bounds.Confidence))
+                .OrderByDescending(x=>x.Candidates[0].Similarity).ThenByDescending(x=>corroborated?.Invoke(x)??false).ThenByDescending(x=>x.Confident).ThenByDescending(x=>x.Bounds.Confidence))
                 if(!result.Any(x=>SameCard(x.Bounds,p.Bounds)))result.Add(p);
             return result.Take(4).ToList();
         }

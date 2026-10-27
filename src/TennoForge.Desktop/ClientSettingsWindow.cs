@@ -1,3 +1,5 @@
+using System.IO;
+using Microsoft.Win32;
 using System.Windows;
 using System.Windows.Controls;
 using WFLabs.Client;
@@ -14,6 +16,8 @@ internal sealed class ClientSettingsWindow : Window
     private readonly ClientUpdates updates;
     private readonly bool ownsUpdates;
     private readonly Action saveRecovery;
+    internal Func<string?>? ChooseDiagnosticFile;
+    internal readonly Button ExportDiagnostics=new(){Content="진단 정보 저장",HorizontalAlignment=HorizontalAlignment.Left};
     internal ClientSettingsWindow(Action saveRecovery,ClientUpdates? updates=null)
     {
         this.saveRecovery=saveRecovery;this.updates=updates??new(new VelopackUpdateFeed());ownsUpdates=updates is null;
@@ -24,6 +28,8 @@ internal sealed class ClientSettingsWindow : Window
         var panel=new StackPanel{Margin=new(24,8,24,24)};
         var scroll=new ScrollViewer{Content=panel,VerticalScrollBarVisibility=ScrollBarVisibility.Auto,HorizontalScrollBarVisibility=ScrollBarVisibility.Disabled};Grid.SetRow(scroll,1);root.Children.Add(scroll);
         panel.Children.Add(new TextBlock{Text="업데이트",FontSize=22,Margin=new(0,0,0,16)});
+        var channel=new TextBlock{Text="업데이트 채널 · "+VelopackUpdateFeed.ConfiguredChannel,Margin=new(0,0,0,10)};
+        channel.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");panel.Children.Add(channel);
         panel.Children.Add(version);panel.Children.Add(checkedAt);panel.Children.Add(status);panel.Children.Add(progress);
         progress.SetResourceReference(ProgressBar.ForegroundProperty,"AccentBrush");progress.SetResourceReference(ProgressBar.BackgroundProperty,"StrokeBrush");
         checkedAt.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");
@@ -52,6 +58,16 @@ internal sealed class ClientSettingsWindow : Window
                 await this.updates.CheckAsync(automatic:true);
             }
             catch(Exception ex){settingsStatus.Text="설정을 저장하지 못했습니다: "+ex.Message;settingsStatus.Visibility=Visibility.Visible;}
+        };
+        panel.Children.Add(new TextBlock{Text="문제 진단",FontSize=18,Margin=new(0,24,0,10)});
+        var diagnosis=new TextBlock{Text="앱·Windows·OCR 구성 상태를 파일로 저장합니다. 계정·인벤토리·화면·인식 원문은 포함하지 않습니다.",TextWrapping=TextWrapping.Wrap,LineHeight=22,Margin=new(0,0,0,12)};panel.Children.Add(diagnosis);
+        panel.Children.Add(ExportDiagnostics);
+        ExportDiagnostics.Click+=(_,_)=>
+        {
+            var picker=new SaveFileDialog{Title="진단 정보 저장",FileName="WF-Labs-diagnostics-"+DateTime.Now.ToString("yyyyMMdd-HHmmss")+".json",Filter="진단 JSON|*.json",AddExtension=true};
+            var path=ChooseDiagnosticFile is {} choose?choose():picker.ShowDialog(this)==true?picker.FileName:null;if(path is null)return;
+            try{ClientDiagnostics.Save(path);diagnosis.Text="진단 정보를 저장했습니다. 문제 제보에 첨부할 수 있습니다.";}
+            catch(Exception ex)when(ex is IOException or UnauthorizedAccessException){diagnosis.Text="파일을 저장하지 못했습니다. 다른 폴더를 선택해 주세요.";}
         };
         check.Click+=async(_,_)=>await this.updates.CheckAsync();
         download.Click+=async(_,_)=>

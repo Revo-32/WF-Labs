@@ -1,0 +1,11 @@
+{
+  "source": "2026-10-27 사용자 제공 한국어 보상 화면",
+  "sourceSha256": "921eb18b349bdc22f1ae2476f0d70e10499f838031d25ed7f03fc7ce61728064",
+  "imageSha256": "ba1c748dfa4fd23467e84f5ad5310d8ffe7dc8924355c625d6f3393e738a549d",
+  "preparation": "원본의 (300,405)-(1274,478) 보상 이름 행만 보존. 나머지는 검정으로 마스킹하고 3440×1440 캔버스 (1218,547)에 배치. 실제 글자 픽셀은 확대·변형하지 않음. 전체 게임 캡처가 아닌 위치 재구성 회귀 자료. 계정 이름·오버레이 제외.",
+  "expectedSlugs": [
+    "yareli_prime_neuroptics_blueprint",
+    "styanax_prime_chassis_blueprint",
+    "paris_prime_string"
+  ]
+}

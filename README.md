@@ -9,7 +9,9 @@
   &nbsp; · &nbsp;
   <a href="docs/DISTRIBUTION.md">설치·업데이트</a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/Revo-32/WF-Labs/issues">문제 제보</a>
+  <a href="docs/SUPPORT.md">도움말·문제 제보</a>
+  &nbsp; · &nbsp;
+  <a href="docs/PRIVACY.md">데이터 처리</a>
 </p>
 
 **WF Labs**는 워프레임 PC 한국어 사용자를 위한 빌드 분석 도구입니다. 모드를 배치하고, 적과 교전 조건을 설정하면 피해량·DPS·TTK를 비교할 수 있습니다. 리벤 분석부터 다음에 할 활동을 고르는 과정까지 한 앱에서 이어갑니다.

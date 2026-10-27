@@ -88,6 +88,16 @@ internal sealed partial class RivenOverlay : Window
             string classification=report.DetectedKind&&report.KindCandidates.Length!=1?"종류 확인 필요":RivenScan.KindName(report.Kind)+(report.DetectedKind?" · 자동 판별":"");
             panel.Children.Add(Text($"{classification} · {report.Rank}랭크 기준",12,Brushes.LightGray));
             if(!reliable)panel.Children.Add(Text("인식 확인 필요 · 앱에서 수정",14,Brushes.Salmon));
+            if(!spliceOnly&&report.Values.Length==0&&report.Options.Length>0)
+            {
+                panel.Children.Add(Text($"읽힌 옵션 {report.Options.Length}개 · 수율 계산 대기",12,Brushes.LightGray));
+                foreach(var option in report.Options)
+                {
+                    panel.Children.Add(Text(option.Name+(option.Negative?" · 음옵":""),14));
+                    bool displayedNegative=option.Key=="Recoil"?!option.Negative:option.Negative;
+                    panel.Children.Add(Text($"{(displayedNegative?"−":"+")}{option.Value:0.###}{option.Unit}",18,accent));
+                }
+            }
             if(!spliceOnly)foreach(var value in report.Values)
             {
                 var o=value.Option;bool compact=result.Cards.Length>1;

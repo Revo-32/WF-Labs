@@ -84,3 +84,6 @@ data/incarnon-rotations.json은 WARFRAME Wiki contributors의 Incarnon 문서
 유지합니다. 공식 EndlessXpSchedule의 주간 선택지·기간과 비교해 기준 주차를 연결했으며,
 정규화 파일에 원본 URL·개정·SHA-256을 보존합니다. 한국어 품목명·내부 ID는
 기존 Public Export 데이터와 연결합니다. WF-WIKI-NOTICE.txt 및 PUBLIC-EXPORT 관련 고지를 따릅니다.
+
+2026-10-26 거래 세트 구성:
+data/inventory-market-bundles.json은 warframe.market v2 공개 품목 API의 세트 구성·수량을 정규화합니다. 원본 URL·응답 SHA-256을 데이터에 보존합니다. 기존 WARFRAME-MARKET-NOTICE 및 Public Export 한국어 명칭 고지를 따르며, 자체 코드의 권리 고지를 외부 데이터에 적용하지 않습니다.

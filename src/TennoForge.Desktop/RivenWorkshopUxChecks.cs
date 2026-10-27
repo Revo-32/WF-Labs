@@ -32,13 +32,16 @@ public sealed partial class MainWindow
         rivenRangeCharts.Children.Clear();AddRivenRangeChart(negative,rounded,range.Minimum,range.Maximum,grade);
         Yes(Descendants(rivenRangeCharts).OfType<TextBlock>().Any(t=>t.Text.Contains("최소 표시값")),"음옵 그래프: 낮은 크기가 최소 불이익이며 반올림 최솟값 표시");
         ShowRivens();ApplyRivenWorkbench(roll);
+        checks.AddRange(await CheckMeleeRivenMountActions(roll));
+        checks.AddRange(await RangedRivenEditor.CheckApplyActionsAsync(host=>page.Content=host));
+        checks.AddRange(await CheckRangedRivenImportActions());ShowRivens();ApplyRivenWorkbench(roll);
         var unchanged=ReadRivenWorkbench();rivenReference!.CheckFilters();
         Yes(ReadRivenWorkbench().Traits.SequenceEqual(unchanged.Traits),"도감 검색·구성 선택은 내 리벤을 수정하지 않음");
         var originalValue=rivenValues[0].Text;rivenValues[0].Text="";
         Yes(rivenRangeCharts.Children.Count==2,"수치 미입력 상태에서도 선택 옵션의 최소·최대 표시");
         SetRivenEndpoint(0,true);var endpoint=ReadRivenWorkbench();RivenValues.Validate(endpoint);
         Yes(RivenEngine.Grade(endpoint.Traits[0].Value,RivenValues.Range(endpoint,endpoint.Traits[0]).Minimum,RivenValues.Range(endpoint,endpoint.Traits[0]).Maximum).MaxCompatible,"최대값 버튼은 반올림 허용 범위 안의 값 입력");rivenValues[0].Text=originalValue;
-        checks.AddRange(CheckWeaponSearchUx());ShowRivens();ApplyRivenWorkbench(roll);
+        checks.AddRange(await CheckWeaponSearchUx());ShowRivens();ApplyRivenWorkbench(roll);
         Yes(rivenRangeCharts.Children.Count==2,"선택한 옵션별 범위 그래프 표시");
         Click("현재 리벤을 비교 기준으로 지정");Yes(rivenBaseline?.Traits.SequenceEqual(roll.Traits)==true,"실제 비교 기준 버튼");
         Click("순환 예시 생성");Yes(rivenSession is{Pending:not null,Cycles:1,KuvaSpent:900}&&!rivenWeapon.IsEnabled,"순환 버튼: 미채택 결과·비용 표시·편집 잠금");

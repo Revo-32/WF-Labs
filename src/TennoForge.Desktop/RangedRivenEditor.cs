@@ -31,6 +31,7 @@ internal sealed partial class RangedRivenEditor : Border
         if(initial is not null&&initial.Version!=RivenBalance.Version)throw new ArgumentException(RivenBalance.LegacyMessage);
         this.weapon=weapon;bindToCurrentBuild=inline;captureBuild=capture;captureDestination=destination??(()=>0);Width=1180;MaxHeight=810;Padding=new(24);BorderThickness=new(1);CornerRadius=new(6);
         if(inline){apply.Content="현재 모딩에 가정 적용";Width=double.NaN;MaxHeight=double.PositiveInfinity;BorderThickness=new(0);Padding=new(0);}UiHierarchy.Primary(apply);
+        ToolTipService.SetShowOnDisabled(apply,true);
         SetResourceReference(BackgroundProperty,"ResultsBackgroundBrush");SetResourceReference(BorderBrushProperty,"StrokeBrush");
         var root=new Grid();root.RowDefinitions.Add(new(){Height=GridLength.Auto});root.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});root.RowDefinitions.Add(new(){Height=GridLength.Auto});Child=root;
         var header=new DockPanel{Margin=new(0,0,0,12)};var dismiss=new Button{Content="×",Padding=new(10,4,10,4),ToolTip="닫기"};dismiss.Click+=(_,_)=>close();DockPanel.SetDock(dismiss,Dock.Right);if(!inline)header.Children.Add(dismiss);header.Children.Add(Text(weapon.Name+" · 리벤",22));if(inline)header.Visibility=Visibility.Collapsed;root.Children.Add(Stack(header,message));
@@ -94,6 +95,8 @@ internal sealed partial class RangedRivenEditor : Border
         }
         message.Visibility=string.IsNullOrEmpty(message.Text)?Visibility.Collapsed:Visibility.Visible;
         RefreshWorkshopControls();
+        apply.ToolTip=apply.IsEnabled?"입력한 리벤을 선택한 모딩 슬롯에 가정 적용합니다.":session?.Pending is not null?
+            "현재 옵션 유지 또는 새 결과 채택을 먼저 선택하세요.":string.IsNullOrWhiteSpace(message.Text)?"옵션과 게임 표시 수치, 장착 코스트·극성을 입력하세요.":message.Text;
     }
     private void SetEndpoint(int index,bool maximum)
     {

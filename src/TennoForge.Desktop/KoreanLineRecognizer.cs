@@ -46,7 +46,11 @@ internal static class KoreanLineRecognizer
         for(int y=0;y<height;y++)for(int x=0;x<resizedWidth;x++)for(int c=0;c<3;c++)
             input[(c*height+y)*width+x]=pixels[Math.Min(y,bgra.PixelHeight-1)*stride+Math.Min(x,bgra.PixelWidth-1)*4+c]/127.5f-1;
         using var outputs=session.Run(new[]{NamedOnnxValue.CreateFromTensor(session.InputMetadata.Keys.First(),tensor)});
-        var output=outputs.First().AsTensor<float>();var logits=output.ToArray();int classes=output.Dimensions[2];var tokens=new List<(string Text,float Score)>();int previous=-1;
+        var output=outputs.First().AsTensor<float>();
+        // ORT exposes dense output memory while outputs is alive. Do not clone
+        // the entire Korean character matrix for each line's CTC decode.
+        ReadOnlySpan<float> logits=output is DenseTensor<float> dense?dense.Buffer.Span:output.ToArray().AsSpan();
+        int classes=output.Dimensions[2];var tokens=new List<(string Text,float Score)>();int previous=-1;
         for(int t=0;t<output.Dimensions[1];t++)
         {
             int offset=t*classes,best=0;float score=logits[offset];

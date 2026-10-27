@@ -1,7 +1,7 @@
 {
-  "id": "wfkor-20261025-v1",
+  "id": "wfkor-20261027-int-v2",
   "trainedUtc": "2026-10-25T02:32:55.527369+00:00",
-  "sha256": "d1e3939e745fdc010cff94ca2b1e2a57f4579a32f2f8e9e3573cacc483a588c4",
+  "sha256": "34b17336633c8c300ad63f06fa6ef340f2728b4f6ddb5fdef88642ab1c7bb8bf",
   "base": {
     "url": "https://github.com/tesseract-ocr/tessdata_best/blob/main/kor.traineddata",
     "sha256": "f888d4038348a0c3d25151e7f452bda0d74ca275b18cab146798bcbb94084fff",
@@ -144,5 +144,18 @@
     "languageData": "https://github.com/tesseract-ocr/langdata_lstm",
     "syntheticFont": "https://github.com/notofonts/noto-cjk"
   },
-  "scope": "Shared Korean glyph model; relic names and Riven options/values/signs still require separate verification."
+  "scope": "Shared Korean glyph model; relic names and Riven options/values/signs still require separate verification.",
+  "quantization": {
+    "convertedUtc": "2026-10-27T04:35:21.883076+00:00",
+    "method": "lstmtraining --stop_training --convert_to_int",
+    "tool": "Tesseract 5.5.3.20260724",
+    "floatSourceSha256": "d1e3939e745fdc010cff94ca2b1e2a57f4579a32f2f8e9e3573cacc483a588c4",
+    "additionalTraining": false,
+    "heldOutLines": 162,
+    "heldOutRealLines": 12,
+    "rawOutputChanges": 0,
+    "normalizedOutputChanges": 0,
+    "knownCharacterErrorsInBoth": 8,
+    "evaluationNotice": "기존 float와 validation80/test82 원문 출력 동일. 실제 전사 12줄의 제한된 평가이며 전체 환경의 무오류를 뜻하지 않음."
+  }
 }

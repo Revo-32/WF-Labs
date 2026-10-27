@@ -19,7 +19,7 @@ public sealed class WorldScheduleClient : IDisposable
     public WorldScheduleData Current=>current;
     public WorldScheduleClient(string folder,HttpMessageHandler? handler=null)
     {
-        this.folder=folder;catalog=ScheduleCatalog.Load();http=handler is null?new():new(handler);http.Timeout=TimeSpan.FromSeconds(8);http.DefaultRequestHeaders.UserAgent.ParseAdd("WF-Labs/0.10.0 (+https://github.com/Revo-32/WF-Labs)");
+        this.folder=folder;catalog=ScheduleCatalog.Load();http=handler is null?new():new(handler);http.Timeout=TimeSpan.FromSeconds(8);http.DefaultRequestHeaders.UserAgent.ParseAdd(ClientIdentity.UserAgent);
         var table=ArbitrationSchedule.Bundled(catalog);arbitrationFetched=table.RetrievedUtc;
         try{var p=Path.Combine(folder,"arbitrations.json");if(File.Exists(p)){using var doc=JsonDocument.Parse(File.ReadAllText(p));arbitrationFetched=doc.RootElement.GetProperty("retrievedUtc").GetDateTimeOffset();table=ArbitrationSchedule.Parse(doc.RootElement.GetProperty("csv").GetString()!,arbitrationFetched,"browse.wf · 저장 일정표");}}
         catch(Exception e)when(e is IOException or UnauthorizedAccessException or JsonException or InvalidDataException or FormatException or KeyNotFoundException){}
