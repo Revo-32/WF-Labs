@@ -94,7 +94,10 @@ internal sealed partial class SchedulePage
         Yes(Preferences.FarmingMode==2&&OverlayData(now).Fissures.Length==0,"목표 미션 경로 필터 · 일반만 선택 시 강길 제외");await Mode(1);
         var toggle=LayoutDiagnostics.Tree(root).OfType<CheckBox>().Single(b=>AutomationProperties.GetName(b)=="내 목표 성유물 미션 알림");((IToggleProvider)new CheckBoxAutomationPeer(toggle).GetPattern(PatternInterface.Toggle)).Toggle();
         Yes(!Preferences.NotifyFarmingGoals,"목표 알림 실제 토글 · 설정 반영");((IToggleProvider)new CheckBoxAutomationPeer(toggle).GetPattern(PatternInterface.Toggle)).Toggle();
-        render(featureWindow,"goal-mission-notifications",1100,780,1);Yes(LayoutDiagnostics.Inspect(root).Length==0,"목표 알림 설정 · 스크롤·글자·경계 검사");featureWindow.Close();
+        render(featureWindow,"goal-mission-notifications",1100,780,1);
+        var layoutIssues=LayoutDiagnostics.Inspect(root);File.WriteAllText(Path.Combine(directory,"goal-notification-layout.json"),JsonSerializer.Serialize(layoutIssues,Catalog.Json));
+        Yes(Math.Abs(featureWindow.ActualWidth-1100)<2&&Math.Abs(featureWindow.ActualHeight-780)<2,"목표 알림 설정의 실제 HWND와 검수 크기 일치");
+        Yes(layoutIssues.Length==0,"목표 알림 설정 · 스크롤·글자·경계 검사");featureWindow.Close();
         return checks.ToArray();
     }
 }

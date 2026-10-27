@@ -640,9 +640,11 @@ public partial class App : Application
         =>Render((FrameworkElement)w.Content,path,width,height,scale,w as MainWindow);
     internal static void Render(FrameworkElement root,string path,int width,int height,double scale=1,MainWindow? previewWindow=null)
     {
-        // MainWindow's root fills the client viewport. Dialog roots can have
-        // intentional margins and native chrome, so they are rendered as elements.
-        var nativePreview=Window.GetWindow(root) is MainWindow {IsVisible:true} host&&ReferenceEquals(host.Content,root);
+        // Borderless dialogs have the same native maximum tracking size as the
+        // main window on a headless runner. Resize the actual HWND before
+        // rendering its whole content; inner/native-chrome previews keep their
+        // intentional content dimensions.
+        var nativePreview=Window.GetWindow(root) is {IsVisible:true,WindowStyle:WindowStyle.None} host&&ReferenceEquals(host.Content,root);
         if(nativePreview&&Window.GetWindow(root) is {} native)
         {
             // Whole-window previews must measure the requested viewport, not leave
