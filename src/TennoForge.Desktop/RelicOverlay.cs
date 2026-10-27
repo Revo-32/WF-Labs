@@ -24,6 +24,7 @@ internal sealed class RelicOverlay : Window
     private readonly RelicPage page;
     private bool closed;
     internal bool Dismissed=>closed;
+    internal FrameworkElement PreviewForCheck(){Update();return (FrameworkElement)Content;}
     internal RelicOverlay(IntPtr game,RelicPage page)
     {
         this.game=game;this.page=page;
@@ -50,7 +51,8 @@ internal sealed class RelicOverlay : Window
         if(closed)return;var bounds=RelicCapture.ClientBounds(game);
         // Physical pixels avoid incorrect placement when the game moves between DPI scales.
         var dpi=VisualTreeHelper.GetDpi(this);
-        int width=Math.Min(bounds.Width-32,1440),height=Math.Min((int)Math.Ceiling(184*dpi.DpiScaleY),bounds.Height-48);
+        int logicalHeight=page.Cards.Any(c=>page.FarmingHint?.Invoke(c.Item) is not null)?208:184;
+        int width=Math.Min(bounds.Width-32,1440),height=Math.Min((int)Math.Ceiling(logicalHeight*dpi.DpiScaleY),bounds.Height-48);
         positioner.Apply(new WindowInteropHelper(this).Handle,new Int32Rect(bounds.X+(bounds.Width-width)/2,bounds.Y+bounds.Height-height-24,width,height));
     }
     private void Update()
@@ -65,6 +67,7 @@ internal sealed class RelicOverlay : Window
             var name=new TextBlock{Text=card.Item is null?"이름 확인 필요":card.Item.Name,FontSize=14,LineHeight=20,Height=40,TextWrapping=TextWrapping.Wrap,TextTrimming=TextTrimming.CharacterEllipsis,Foreground=Brushes.White};panel.Children.Add(name);
             var value=card.Item is null?"—":card.Item.Tradable?(card.Quote?.SellMin?.ToString("0.##")??"—")+" P   ·   "+card.Item.Ducats+" 두캇":"거래 불가";
             panel.Children.Add(new TextBlock{Text=value,FontSize=20,FontWeight=FontWeights.SemiBold,Foreground=new SolidColorBrush(Color.FromRgb(242,203,87)),Margin=new(0,4,0,4)});
+            if(page.FarmingHint?.Invoke(card.Item) is {} hint)panel.Children.Add(new TextBlock{Text=hint.Text,FontSize=13,LineHeight=17,TextTrimming=TextTrimming.CharacterEllipsis,Foreground=hint.Highlight?new SolidColorBrush(Color.FromRgb(242,203,87)):Brushes.LightGray,Margin=new(0,0,0,3)});
             string detail=card.Item is null?"앱에서 이름 수정":card.Item.Tradable&&card.Quote is null?"시세 조회 중…":card.Quote is {Stale:true}?"오래된 시세 · 현재가 아님":card.Quote?.Error is not null?"연결 실패 · 두캇으로 비교":card.Quote is {SellOrders:0}?"판매 주문 없음":card.Best.Text;
             if(card.Quote is {Snapshot:true,Error:not null,Stale:false})detail="저장 시세 준비 중 · 두캇으로 비교";
             if(card.Quote is {Error:null} q)detail+=(detail.Length>0?" · ":"")+q.FetchedUtc.LocalDateTime.ToString("MM-dd HH:mm")+(q.Snapshot?" 저장 시세":q.Cached?" 캐시":"");

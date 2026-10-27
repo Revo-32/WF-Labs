@@ -28,6 +28,7 @@ internal static class RelicOcr
     }
     internal static async Task<RelicRecognition> RecognizeAsync(BitmapSource image,RelicCatalog catalog,CancellationToken token,string? diagnosticsDirectory=null,Action<RelicItem[]>? onCandidates=null,bool live=false,Action<RelicRecognition>? onProgress=null)
     {
+        using var activity=OcrActivity.Enter();token.ThrowIfCancellationRequested();
         Validate(image);
         // BitmapFrame may retain a dispatcher-bound decoder even after Freeze.
         // Cross the worker boundary with pixels, never with a WIC decoder graph.
@@ -40,7 +41,7 @@ internal static class RelicOcr
     {
         var total=Stopwatch.StartNew();double ocrMilliseconds=0,matchingMilliseconds=0;int reads=0;
         var matching=new RelicCatalog.MatchSession();
-        RecognizedReward[] Match(RewardText[] lines){var watch=Stopwatch.StartNew();var result=catalog.Recognize(lines,matching);matchingMilliseconds+=watch.Elapsed.TotalMilliseconds;return result;}
+        RecognizedReward[] Match(RewardText[] lines,Func<RecognizedReward,bool>? corroborated=null){var watch=Stopwatch.StartNew();var result=catalog.Recognize(lines,matching,corroborated);matchingMilliseconds+=watch.Elapsed.TotalMilliseconds;return result;}
         RelicTiming Timing()=>new(total.Elapsed.TotalMilliseconds,ocrMilliseconds,matchingMilliseconds,reads);
         var scale=Math.Min(3,Math.Min(3840d/source.PixelWidth,Math.Max(1,2880d/source.PixelWidth)));
         var scaled=new TransformedBitmap(source,new ScaleTransform(scale,scale));
@@ -55,6 +56,7 @@ internal static class RelicOcr
             var passes=new List<(RewardText[] Lines,RecognizedReward[] Rewards)>();
             var fullPasses=new List<(RewardText[] Lines,RecognizedReward[] Rewards)>();
             var evidence=new List<RewardEvidence>();
+            RelicRecognition? cachedSnapshot=null;int snapshotPasses=-1,snapshotEvidence=-1;
             string published="";
             var languageLines=new Dictionary<string,List<RewardText>>{{"mixed",[]},{"ko",[]}};
             // Reward names occupy the central region. A narrow first pass avoids processing
@@ -79,7 +81,9 @@ internal static class RelicOcr
                     Read(InvertedValue(upper),PageSegMode.SparseText,"fast-upper-inverted",upperY,upperX,koreanOnly:true);
                 }
                 var compact=TryComplete();if(compact is not null)return compact;
-                var locatedNames=Snapshot().Rewards.Where(r=>r.Candidates.FirstOrDefault()?.Similarity>=.82).ToArray();
+                var compactRow=Snapshot().Rewards;
+                bool preferNativeRow=compactRow.Length is >=2 and <=3&&compactRow.Any(r=>!r.Confident);
+                var locatedNames=compactRow.Where(r=>r.Candidates.FirstOrDefault()?.Similarity>=.82).ToArray();
                 if(locatedNames.Length<2)
                 {
                     // Cropped captures and large UI scales move the name row.
@@ -88,6 +92,80 @@ internal static class RelicOcr
                     var search=new CroppedBitmap(image,new(0,y,image.PixelWidth,end-y));
                     Read(BrightText(search),PageSegMode.SparseText,"locate-bright",y,koreanOnly:true);
                     locatedNames=Snapshot().Rewards.Where(r=>r.Candidates.FirstOrDefault()?.Similarity>=.82).ToArray();
+                }
+                if(locatedNames.Length<2)
+                {
+                    // A locator band can end between a name and Blueprint. Such
+                    // fragments may not rank highly yet, but two aligned Prime
+                    // labels still locate the row; they are never confirmations.
+                    var primeMarkers=passes.SelectMany(p=>p.Lines).Where(l=>l.Height<.05&&l.Width<.28&&
+                        RelicCatalog.NormalizeOcr(l.Text).Contains("프라임")).ToArray();
+                    var markerRows=primeMarkers.Select(anchor=>
+                    {
+                        var row=new List<RewardText>();
+                        foreach(var marker in primeMarkers.Where(l=>Math.Abs(l.Y-anchor.Y)<.045).OrderByDescending(l=>l.Confidence))
+                            if(!row.Any(l=>Math.Abs(l.X+l.Width/2-marker.X-marker.Width/2)<.055))row.Add(marker);
+                        return row;
+                    }).OrderByDescending(row=>row.Count).FirstOrDefault();
+                    if(markerRows is {Count:>=2})locatedNames=markerRows.Select(l=>new RecognizedReward(l.Text,l,[],false)).ToArray();
+                }
+                // Small Hangul loses distinguishing strokes in the fast downsample.
+                // Keep the whole located name row (including a following Blueprint
+                // line), but recover those pixels from the source before enlarging.
+                // Upscaling an already binarized/downsampled crop cannot recover them.
+                RelicRecognition? ReadNativeRow()
+                {
+                    if(locatedNames.Length<2)return null;
+                    var fastImage=image;
+                    var glyphHeights=passes.SelectMany(p=>p.Lines).Where(l=>RelicCatalog.NormalizeOcr(l.Text).Contains("프라임")&&l.Height<.045)
+                        .Select(l=>l.Height).DefaultIfEmpty(.02).Order().ToArray();
+                    double glyphHeight=glyphHeights[glyphHeights.Length/2];
+                    double firstLine=locatedNames.Min(r=>r.Bounds.Y);
+                    double nativeTop=Math.Max(0,firstLine-.003);
+                    double nativeBottom=Math.Min(1,Math.Max(locatedNames.Max(r=>r.Bounds.Y+r.Bounds.Height),firstLine+glyphHeight*2.3)+.003);
+                    image=new FormatConvertedBitmap(new TransformedBitmap(source,new ScaleTransform(2,2)),PixelFormats.Bgra32,null,0);image.Freeze();
+                    int y=(int)(nativeTop*image.PixelHeight),end=(int)Math.Ceiling(nativeBottom*image.PixelHeight);
+                    int left=(int)(image.PixelWidth*.08),right=(int)(image.PixelWidth*.92);
+                    var row=new CroppedBitmap(image,new(left,y,right-left,end-y));
+                    int start=passes.Count;
+                    Read(BrightText(row),PageSegMode.SparseText,"native-row-bright",y,left,koreanOnly:true);
+                    Read(GoldText(row),PageSegMode.SparseText,"native-row-gold",y,left,koreanOnly:true);
+                    var complete=TryComplete();
+                    var nativeReads=passes.Skip(start).ToArray();
+                    var nativeAnchors=Snapshot().Rewards;
+                    if(complete is null)
+                    foreach(var anchor in nativeAnchors.Where(r=>!r.Confident&&r.Candidates.Length>0))
+                    {
+                        // A row read can split the component off the weapon prefix.
+                        // Include nearby glyph fragments assigned to this card, or
+                        // a tight prefix crop could falsely read a main Blueprint.
+                        var fragments=nativeReads.SelectMany(p=>p.Lines).Where(l=>l.Confidence>=40&&l.Text.Any(c=>c is >= '\uac00' and <= '\ud7a3')&&
+                            ReferenceEquals(nativeAnchors.MinBy(a=>Math.Abs(l.X+l.Width/2-a.Bounds.X-a.Bounds.Width/2)),anchor)).ToArray();
+                        double glyphLeft=Math.Min(anchor.Bounds.X,fragments.Select(l=>l.X).DefaultIfEmpty(anchor.Bounds.X).Min());
+                        double glyphRight=Math.Max(anchor.Bounds.X+anchor.Bounds.Width,fragments.Select(l=>l.X+l.Width).DefaultIfEmpty(anchor.Bounds.X+anchor.Bounds.Width).Max());
+                        int labelLeft=Math.Max(left,(int)(glyphLeft*image.PixelWidth)-24);
+                        int labelRight=Math.Min(right,(int)Math.Ceiling(glyphRight*image.PixelWidth)+24);
+                        int nativeGlyphTop=Math.Max(y,(int)(anchor.Bounds.Y*image.PixelHeight)-6);
+                        int labelEnd=Math.Min(end,(int)Math.Ceiling((anchor.Bounds.Y+Math.Max(anchor.Bounds.Height,glyphHeight*2.3))*image.PixelHeight)+6);
+                        if(labelRight<=labelLeft||labelEnd<=nativeGlyphTop)continue;
+                        var label=new CroppedBitmap(image,new(labelLeft,nativeGlyphTop,labelRight-labelLeft,labelEnd-nativeGlyphTop));
+                        Read(CleanLabelTop(BrightText(label)),PageSegMode.SingleBlock,$"refine-native-bright-{labelLeft}",nativeGlyphTop,labelLeft,koreanOnly:true);
+                        Read(CleanLabelTop(GoldText(label)),PageSegMode.SingleBlock,$"refine-native-gold-{labelLeft}",nativeGlyphTop,labelLeft,koreanOnly:true);
+                        complete=TryComplete();if(complete is not null)break;
+                    }
+                    // A shorter row must be independently read in full, never
+                    // inferred from just the labels we managed to recognize.
+                    var rewards=Snapshot().Rewards;
+                    bool extraText=nativeReads.SelectMany(p=>p.Lines).Any(l=>l.Confidence>=55&&l.Text.Count(c=>c is >= '\uac00' and <= '\ud7a3')>=4&&
+                        !rewards.Any(r=>Math.Abs(l.X+l.Width/2-r.Bounds.X-r.Bounds.Width/2)<Math.Max(.035,r.Bounds.Width*.55)));
+                    if(complete is null&&rewards.Length is >=1 and <=3&&rewards.All(r=>r.Confident)&&
+                        rewards.Length==passes.Max(p=>p.Rewards.Length)&&nativeReads.Length==2&&!extraText&&
+                        rewards.All(r=>Corroborated(r)&&evidence.Any(e=>e.Reward.Candidates.FirstOrDefault()?.Item.Id==r.Item!.Id&&e.Reward.Candidates[0].Similarity==1&&e.Reward.Bounds.Confidence>=65))&&
+                        nativeReads.All(p=>p.Rewards.Length==rewards.Length&&p.Rewards.Zip(rewards).All(pair=>
+                            Math.Abs(pair.First.Bounds.X+pair.First.Bounds.Width/2-pair.Second.Bounds.X-pair.Second.Bounds.Width/2)<.035)))
+                        complete=new(rewards,nativeReads.SelectMany(p=>p.Lines).ToArray(),$"보상 {rewards.Length}개 자동 인식 완료",Timing());
+                    image=fastImage;
+                    return complete;
                 }
                 bool expandedRowRead=false;
                 RelicRecognition? ReadExpandedRow(RecognizedReward[] located)
@@ -107,7 +185,12 @@ internal static class RelicOcr
                     Read(InvertedValue(row),PageSegMode.SparseText,"wrapped-row-inverted",y,koreanOnly:true);
                     return TryComplete();
                 }
+                // A located but imperfect compact row benefits from source
+                // glyphs first; searching for a displaced/wrapped row retains
+                // the cheaper broad-row route that already handles four cards.
+                if(preferNativeRow){compact=ReadNativeRow();if(compact is not null)return compact;}
                 compact=ReadExpandedRow(locatedNames);if(compact is not null)return compact;
+                if(!preferNativeRow){compact=ReadNativeRow();if(compact is not null)return compact;}
                 // Refine detected names before broad scenery windows. The live
                 // path spends its budget on uncertain labels, not the full scene.
                 var initial=Snapshot();
@@ -227,6 +310,39 @@ internal static class RelicOcr
                             return new(candidate.Rewards,candidate.Lines,$"보상 {count}개 자동 인식 완료",Timing());
                 }
             }
+            // Small imported screenshots can lose a faint syllable in a binary
+            // mask. Read only unresolved, precisely located glyphs from the
+            // original pixels. No fuzzy-name
+            // exception or lower confirmation threshold is introduced here.
+            RelicRecognition? RefineSmallLabels(RecognizedReward[] anchors)
+            {
+                if(source.PixelWidth>=1920&&source.PixelHeight>=1080)return null;
+                if(diagnosticsDirectory is not null)File.WriteAllText(Path.Combine(diagnosticsDirectory,"small-source-anchors.json"),System.Text.Json.JsonSerializer.Serialize(anchors,Catalog.Json));
+                if(anchors.Length>=2&&anchors.Count(a=>RelicCatalog.NormalizeOcr(a.RawText).Contains("프라임"))>=2)
+                foreach(var anchor in anchors.Where(a=>!a.Confident&&a.Candidates.FirstOrDefault()?.Similarity>=.68))
+                {
+                    var archive=image;
+                    try
+                    {
+                        image=new FormatConvertedBitmap(source,PixelFormats.Bgra32,null,0);
+                        int left=Math.Max(0,(int)(anchor.Bounds.X*image.PixelWidth)-4),top=Math.Max(0,(int)(anchor.Bounds.Y*image.PixelHeight)-2);
+                        int right=Math.Min(image.PixelWidth,(int)Math.Ceiling((anchor.Bounds.X+anchor.Bounds.Width)*image.PixelWidth)+4),bottom=Math.Min(image.PixelHeight,(int)Math.Ceiling((anchor.Bounds.Y+anchor.Bounds.Height)*image.PixelHeight)+2);
+                        if(right<=left||bottom<=top)continue;
+                        var label=new CroppedBitmap(image,new(left,top,right-left,bottom-top));
+                        var mode=label.PixelHeight<=22?PageSegMode.SingleLine:PageSegMode.SingleBlock;
+                        // Keep native tiny-line geometry. The large white border
+                        // used for enlarged refinements can suppress six-pixel
+                        // glyphs inside a dark imported screenshot.
+                        Read(new FormatConvertedBitmap(label,PixelFormats.Gray8,null,0),mode,$"small-original-{left}",top,left,koreanOnly:true);
+                        image=new FormatConvertedBitmap(new TransformedBitmap(source,new ScaleTransform(2,2)),PixelFormats.Bgra32,null,0);
+                        var enlarged=new FormatConvertedBitmap(new TransformedBitmap(label,new ScaleTransform(2,2)),PixelFormats.Bgra32,null,0);
+                        Read(InvertedValue(enlarged),mode,$"small-inverted-{left}",top*2,left*2,koreanOnly:true);
+                        var complete=TryComplete();if(complete is not null)return complete;
+                    }
+                    finally{image=archive;}
+                }
+                return null;
+            }
             // Small reward labels sit under detailed item art. Re-read bounded text bands after locating
             // a Prime label; this prevents icons from joining the label and changing its baseline.
             var markers=passes.SelectMany(p=>p.Lines).Where(x=>x.Height<.13&&x.Text.Length<60).Where(x=>RelicCatalog.Normalize(x.Text).Contains("프라임")||RelicCatalog.Normalize(x.Text).Contains("PRIME")).ToArray();
@@ -276,13 +392,21 @@ internal static class RelicOcr
             }
             RelicRecognition Snapshot()
             {
+                // Progress publication and early-exit checks often inspect the
+                // same evidence. Reuse that immutable ranking until a read adds
+                // a pass/evidence; refresh elapsed time, never the decision rules.
+                if(cachedSnapshot is not null&&snapshotPasses==passes.Count&&snapshotEvidence==evidence.Count)return cachedSnapshot with{Timing=Timing()};
                 var lines=passes.SelectMany(p=>p.Lines).DistinctBy(x=>(RelicCatalog.Normalize(x.Text),Math.Round(x.X,2),Math.Round(x.Y,2))).ToArray();
-                var rewards=RelicCatalog.ConfirmCorroborated(Match(lines),evidence);
+                // A prefix from one pass joined to Blueprint from another may
+                // spell a different valid item. Prefer the complete label that
+                // independent full-label reads actually corroborated at this slot.
+                var rewards=RelicCatalog.ConfirmCorroborated(Match(lines,Corroborated),evidence);
                 rewards=rewards.Select(r=>r.Confident&&!Corroborated(r)?r with{Confident=false}:r).ToArray();
                 int confirmed=rewards.Count(r=>r.Confident);
-                return new(rewards,lines,confirmed==rewards.Length&&confirmed>0?$"보상 {confirmed}개 인식":$"보상 {confirmed}개 확인 · 나머지는 이름 확인 필요",Timing());
+                snapshotPasses=passes.Count;snapshotEvidence=evidence.Count;
+                return cachedSnapshot=new(rewards,lines,confirmed==rewards.Length&&confirmed>0?$"보상 {confirmed}개 인식":$"보상 {confirmed}개 확인 · 나머지는 이름 확인 필요",Timing());
             }
-            bool Corroborated(RecognizedReward r)=>evidence.Where(e=>e.Reward.Candidates.FirstOrDefault()?.Item.Id==r.Item!.Id&&
+            bool Corroborated(RecognizedReward r)=>r.Candidates.Length>0&&evidence.Where(e=>e.Reward.Candidates.FirstOrDefault()?.Item.Id==r.Candidates[0].Item.Id&&
                 e.Reward.Candidates[0].Similarity>=.9&&e.Reward.Bounds.Confidence>=40&&Math.Abs(e.Reward.Bounds.X-r.Bounds.X)<.06&&Math.Abs(e.Reward.Bounds.Y-r.Bounds.Y)<.065)
                 .Select(e=>e.Family).Distinct().Count()>=2;
             void Read(BitmapSource input,PageSegMode mode,string name,int offsetY=0,int offsetX=0,bool koreanOnly=false)
@@ -294,26 +418,27 @@ internal static class RelicOcr
                 const int padding=12;
                 var prepared=name.StartsWith("refine-")?PadText(input,padding):input;
                 var border=name.StartsWith("refine-")?padding:0;
-                using var buffer=new MemoryStream();var png=new PngBitmapEncoder();png.Frames.Add(BitmapFrame.Create(prepared));png.Save(buffer);
-                var encoded=buffer.ToArray();
+                var encoded=diagnosticsDirectory is null?null:OcrPixels.Png(prepared);
+                using var pix=OcrPixels.Create(prepared);
                 foreach(var (processor,language) in koreanOnly?new[]{(korean,"ko")}:new[]{(Mixed(),"mixed"),(korean,"ko")})
                 {
                 token.ThrowIfCancellationRequested();var passName=name+"-"+language;
-                if(diagnosticsDirectory is not null)File.WriteAllBytes(Path.Combine(diagnosticsDirectory,passName+".png"),encoded);
+                if(diagnosticsDirectory is not null)File.WriteAllBytes(Path.Combine(diagnosticsDirectory,passName+".png"),encoded!);
                 var readWatch=Stopwatch.StartNew();reads++;
-                using var pix=Pix.LoadFromMemory(encoded);using var page=processor.Process(pix,mode);
+                using var page=processor.Process(pix,mode);
                 using var iterator=page.GetIterator();var words=new List<RewardText>();iterator.Begin();
+                var level=name.StartsWith("refine-native-")||name.StartsWith("small-")?PageIteratorLevel.TextLine:PageIteratorLevel.Word;
                 do
                 {
-                    var text=iterator.GetText(PageIteratorLevel.Word)?.Trim();
-                    if(string.IsNullOrWhiteSpace(text)||!iterator.TryGetBoundingBox(PageIteratorLevel.Word,out var box))continue;
-                    words.Add(new(text,(double)(box.X1-border+offsetX)/image.PixelWidth,(double)(box.Y1-border+offsetY)/image.PixelHeight,(double)box.Width/image.PixelWidth,(double)box.Height/image.PixelHeight,iterator.GetConfidence(PageIteratorLevel.Word)));
-                }while(iterator.Next(PageIteratorLevel.Word));
+                    var text=iterator.GetText(level)?.Trim();
+                    if(string.IsNullOrWhiteSpace(text)||!iterator.TryGetBoundingBox(level,out var box))continue;
+                    words.Add(new(text,(double)(box.X1-border+offsetX)/image.PixelWidth,(double)(box.Y1-border+offsetY)/image.PixelHeight,(double)box.Width/image.PixelWidth,(double)box.Height/image.PixelHeight,iterator.GetConfidence(level)));
+                }while(iterator.Next(level));
                 ocrMilliseconds+=readWatch.Elapsed.TotalMilliseconds;
-                var lines=GroupWords(words,(double)image.PixelWidth/image.PixelHeight);languageLines[language].AddRange(lines);var rewards=Match(lines);passes.Add((lines,rewards));
+                var lines=level==PageIteratorLevel.TextLine?words.ToArray():GroupWords(words,(double)image.PixelWidth/image.PixelHeight);languageLines[language].AddRange(lines);var rewards=Match(lines);passes.Add((lines,rewards));
                 if(!prefetched&&source.PixelWidth>=1920&&source.PixelHeight>=1080&&rewards.Length==4&&rewards.All(r=>r.Confident&&r.Candidates[0].Similarity==1))
                 {prefetched=true;onCandidates?.Invoke(rewards.Select(r=>r.Item!).ToArray());}
-                var family=name.Contains("contrast")?"contrast":name.Contains("tint")?"tint":name.Contains("bright")?"bright":name=="original"?"original":"inverted";
+                var family=name.Contains("contrast")?"contrast":name.Contains("gold")?"gold":name.Contains("tint")?"tint":name.Contains("bright")?"bright":name.Contains("original")?"original":"inverted";
                 evidence.AddRange(rewards.Select(x=>new RewardEvidence(family,x)));
                 if(onProgress is not null)
                 {
@@ -362,6 +487,7 @@ internal static class RelicOcr
                     }
                 }
             }
+            var small=RefineSmallLabels(Fuse());if(small is not null)return small;
             best=(best.Lines,Fuse());
             // A combat HUD can produce two-syllable fragments resembling Requiem names.
             // With no complete label or confident reward anywhere, leave the screen unrecognized.
@@ -420,6 +546,32 @@ internal static class RelicOcr
             bool tinted=maximum>=60&&maximum-minimum>=25&&maximum-minimum>maximum*.22;
             gray[i]=tinted?(byte)0:(byte)255;
         }
+        var result=BitmapSource.Create(width,height,300,300,PixelFormats.Gray8,null,gray,width);result.Freeze();return result;
+    }
+    private static BitmapSource GoldText(BitmapSource source)
+    {
+        int width=source.PixelWidth,height=source.PixelHeight;var data=new byte[width*height*4];source.CopyPixels(data,width*4,0);var gray=new byte[width*height];
+        for(int i=0;i<gray.Length;i++)
+        {
+            int b=data[i*4],g=data[i*4+1],r=data[i*4+2];
+            // Gold UI strokes over gray scenery: preserve their edge intensity
+            // while removing neutral highlights and the blue illustration/border.
+            // Other themes retain the existing bright/tint/contrast fallbacks.
+            gray[i]=r>=110&&r>=g*.95&&g>=b*1.1?(byte)(255-Math.Clamp((r-b-15)*4,0,255)):(byte)255;
+        }
+        var result=BitmapSource.Create(width,height,300,300,PixelFormats.Gray8,null,gray,width);result.Freeze();return result;
+    }
+    private static BitmapSource CleanLabelTop(BitmapSource source)
+    {
+        int width=source.PixelWidth,height=source.PixelHeight;var gray=new byte[width*height];source.CopyPixels(gray,width,0);
+        var ink=new int[height];
+        for(int y=0;y<height;y++)for(int x=0;x<width;x++)if(gray[y*width+x]<128)ink[y]++;
+        double threshold=Math.Max(width*.08,ink.Max()*.25);
+        int first=Array.FindIndex(ink,n=>n>=threshold);
+        // Isolated tips of the item illustration can touch the first glyph and
+        // make Tesseract combine two lines. Remove only sparse leading pixels;
+        // keep the coordinate system and a margin above the dense text row.
+        if(first>0&&first<height*.4)Array.Fill(gray,(byte)255,0,Math.Max(0,first-6)*width);
         var result=BitmapSource.Create(width,height,300,300,PixelFormats.Gray8,null,gray,width);result.Freeze();return result;
     }
     private static BitmapSource LocalContrastText(BitmapSource source)

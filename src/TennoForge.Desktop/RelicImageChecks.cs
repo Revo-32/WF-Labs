@@ -29,7 +29,7 @@ public sealed partial class MainWindow
             view.ChooseImageFile=()=>Path.Combine(root,fixture.Image);
             var timer=Stopwatch.StartNew();
             if(fixture.Live)await view.ReadAsync(RelicOcr.Load(Path.Combine(root,fixture.Image)),live:true);
-            else Invoke(view.LoadButton);
+            else{Invoke(view.ImportMenu);await Idle();Invoke(view.LoadButton);}
             await Idle();
             while(view.Busy){if(timer.Elapsed>TimeSpan.FromMinutes(3))throw new Exception(key+" 인식 제한 시간 초과");await Task.Delay(50);}
             await Idle();var elapsed=timer.Elapsed.TotalSeconds;

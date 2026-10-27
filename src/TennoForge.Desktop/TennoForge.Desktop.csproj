@@ -6,7 +6,7 @@
     <AssemblyName>WFLabs</AssemblyName>
     <Product>WF Labs</Product>
     <Title>WF Labs</Title>
-    <Version>0.10.0-preview.1</Version>
+    <Version>1.0.0-rc.4</Version>
     <StartupObject>TennoForge.Desktop.EntryPoint</StartupObject>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets/Brand/wf-labs.ico</ApplicationIcon>

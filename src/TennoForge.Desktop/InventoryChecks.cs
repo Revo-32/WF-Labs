@@ -1,4 +1,4 @@
-using System.IO;
+﻿using System.IO;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Automation.Peers;
@@ -22,19 +22,25 @@ public sealed partial class MainWindow
         }
         ShowInventory();var p=inventoryPage!;render(this,"inventory-empty",1760,920,1);
         Yes(p.MasteryList.Items.Count==0&&!p.ExportButton.IsEnabled,"연동 전 미보유·미획득으로 추정하지 않음");
-        var c=p.CatalogData;var braton=c.Items.Single(i=>i.EnglishName=="Braton Prime");var rhino=c.Items.Single(i=>i.EnglishName=="Rhino");var recipe=c.Recipes.Single(r=>r.ResultId==braton.Id);var relic=c.Relics.First(r=>r.Refinement==0&&r.Rewards.Any(s=>s.Id==recipe.BlueprintId));
+        var c=p.CatalogData;
+        var braton=c.Items.Single(i=>i.EnglishName=="Braton Prime");var rhino=c.Items.Single(i=>i.EnglishName=="Rhino");var recipe=c.Recipes.Single(r=>r.ResultId==braton.Id);var relic=c.Relics.First(r=>r.Refinement==0&&r.Rewards.Any(s=>s.Id==recipe.BlueprintId));
         // Exercise the real Win32 query/read path against this isolated validation
         // process. No running game, unrelated process or user input is involved.
         var raw=JsonSerializer.Serialize(new{PlayerLevel=20,RegularCredits=234567,Suits=new[]{new{ItemType=rhino.Id,XP=100000}},LongGuns=Array.Empty<object>(),Pistols=Array.Empty<object>(),Melee=Array.Empty<object>(),Recipes=Array.Empty<object>(),MiscItems=new[]{new{ItemType=relic.Id,ItemCount=7}},XPInfo=new[]{new{ItemType=rhino.Id,XP=100000}}});
         var pointer=Marshal.StringToCoTaskMemUTF8(raw);
         try
         {
-            var nativeReader=new InventoryMemoryReader();using var limit=new CancellationTokenSource(TimeSpan.FromSeconds(24));InventoryReadResult? native=null;
+            using var nativeReader=new InventoryMemoryReader();using var limit=new CancellationTokenSource(TimeSpan.FromSeconds(24));InventoryReadResult? native=null;
             for(int pass=0;pass<3&&native?.Snapshot is null;pass++)native=await nativeReader.ReadSelfForCheck(c,limit.Token);
+            File.WriteAllText(Path.Combine(directory,"native-read-diagnostic.json"),JsonSerializer.Serialize(new{native?.Message,native?.BytesRead,native?.Seconds,native?.Regions,native?.Candidates,native?.CompletePass,native?.Deferred,Credits=native?.Snapshot?.Credits,native?.Diagnostic},Catalog.Json));
             Yes(native?.Snapshot is {Credits:234567} found&&found.Count(relic.Id)==7&&found.MasteryRanks[rhino.Id]==10,"실제 Win32 읽기 권한·영역 열거·완전한 인벤토리 추출: 격리 검수 프로세스");
             var again=await nativeReader.ReadSelfForCheck(c,limit.Token);Yes(again.Snapshot?.Credits==234567,"이미 찾은 JSON 위치의 빠른 재판독");
         }
         finally{Marshal.FreeCoTaskMem(pointer);GC.KeepAlive(raw);}
+        // The slice checks create a second, valid inventory JSON. Run them only
+        // after unseeded discovery: freed GC/native memory can retain that JSON,
+        // and a real process scan is allowed to find either valid copy first.
+        checks.AddRange(await CheckInventoryMemorySlices(c));
         var stock=recipe.Ingredients.ToDictionary(i=>i.Id,i=>i.Count);stock[recipe.BlueprintId]=1;stock.Remove(recipe.Ingredients.First(i=>i.Id.Contains("Barrel")).Id);stock[rhino.Id]=1;stock[relic.Id]=12;
         var snapshot=new InventorySnapshot(1,DateTimeOffset.UtcNow,"검수용 목록",20,1_000_000,stock,new(){{rhino.Id,10},{c.Items.Single(i=>i.EnglishName=="Lato").Id,30}},[new(rhino.Id,10,0,null,[])],[],true,true,InventoryImport.EquipmentSections.Concat(new[]{"MiscItems","Recipes","XPInfo"}).ToArray());
         string import=Path.Combine(directory,"import.json");InventoryImport.Save(import,snapshot);p.ChooseImportFile=()=>import;Click(p.ImportButton);await System.Windows.Threading.Dispatcher.Yield();
@@ -58,7 +64,7 @@ public sealed partial class MainWindow
         Yes(quoteCalls==2&&(p.MasteryList.SelectedItem as InventoryRow)?.Model is MasteryPlan{BuyPlatinum:4,AcquisitionOrder:2},"실제 프라임 외 거래 호가 버튼 · 플래티넘/마스터리 비교 반영");
         p.MasteryList.SelectedItem=p.MasteryList.Items.Cast<InventoryRow>().Single(r=>r.Id==braton.Id);p.UpdateLayout();
         var targetButton=p.MasteryDetail.Children.OfType<Button>().Single(b=>(string)b.Content=="필요한 부품의 성유물 찾기");Click(targetButton);await System.Windows.Threading.Dispatcher.Yield();
-        Yes(p.MasteryList.IsVisible&&p.RelicList.IsVisible&&p.RelicGoal.Text.Contains(braton.Name),"성유물 찾기 버튼 · 탭 이동 없이 우측 목표 갱신");
+        Yes(!p.MasteryList.IsVisible&&p.RelicList.IsVisible&&RelicPlanningTab!.IsChecked==true&&p.RelicGoal.Text.Contains(braton.Name),"성유물 찾기 버튼 · 성유물 추천 하위 탭으로 목표 전달");
         // The owned relic here contains its blueprint; choose a fixture where that
         // blueprint is missing too so this path has at least one actual candidate.
         stock.Remove(recipe.BlueprintId);p.UseSnapshot(snapshot with{Quantities=new(stock)},false);p.Squad.SelectedIndex=3;p.Traces.Text="100";p.UpdateLayout();
@@ -70,10 +76,10 @@ public sealed partial class MainWindow
         ((IToggleProvider)new CheckBoxAutomationPeer(p.AllRefinements).GetPattern(PatternInterface.Toggle)).Toggle();await System.Windows.Threading.Dispatcher.Yield();Yes(p.RelicList.Items.Count>1,"실제 정련도 비교 토글 · 상세 후보 보존");
         ((IToggleProvider)new CheckBoxAutomationPeer(p.AllRefinements).GetPattern(PatternInterface.Toggle)).Toggle();await System.Windows.Threading.Dispatcher.Yield();Yes(p.RelicList.Items.Count==1,"기본 성유물 추천은 같은 가족의 최적 정련도 하나로 압축");
         Click(p.ClearGoal);await System.Windows.Threading.Dispatcher.Yield();await Choose(p.RelicOrder,2);Yes(p.RelicCriteria.Text.Contains("두캇")&&p.RelicList.Items.Cast<InventoryRow>().All(r=>r.Value.Contains("두캇")),"실제 추천 정렬 드롭다운 · 두캇 모드 연결");await Choose(p.RelicOrder,0);await Choose(p.Threshold,1);
-        ((IExpandCollapseProvider)new ExpanderAutomationPeer(p.RelicDetails).GetPattern(PatternInterface.ExpandCollapse)).Expand();await System.Windows.Threading.Dispatcher.Yield();Yes(!p.RelicOptions.IsExpanded,"추천 조건·상세가 동시에 목록 공간을 차지하지 않음");p.RelicDetails.IsExpanded=false;
+        Yes(p.RelicDetail.IsVisible&&p.RelicList.IsVisible,"추천 목록과 상세를 두 열에서 함께 표시");
         render(this,"relic-plan",1760,920,1);
         Yes(p.Progress.Model is {Completed:1,InProgress:1}&&p.Progress.Model.Total==c.Items.Count(i=>i.Masterable),"과거 판매한 장비도 전체 숙련 완료 그래프에 포함");
-        var completedButton=Tree(p.Progress).OfType<Button>().Single(b=>System.Windows.Automation.AutomationProperties.GetName(b)=="완료 장비 보기");Click(completedButton);await System.Windows.Threading.Dispatcher.Yield();
+        ShowInventory();var completedButton=Tree(p.Progress).OfType<Button>().Single(b=>System.Windows.Automation.AutomationProperties.GetName(b)=="완료 장비 보기");Click(completedButton);await System.Windows.Threading.Dispatcher.Yield();
         Yes(p.Ownership.SelectedIndex==3&&p.MasteryList.Items.Count==1&&(p.MasteryList.Items[0] as InventoryRow)?.Name==c.Items.Single(i=>i.EnglishName=="Lato").Name,"완료 지표 실제 클릭 · 판매한 숙련 장비 목록 조회");
         p.Ownership.SelectedIndex=1;p.Category.SelectedIndex=1;p.UpdateLayout();Yes(p.MasteryList.Items.Count==1,"마스터리 보유·워프레임 필터");p.Ownership.SelectedIndex=0;p.Category.SelectedIndex=0;
         Yes(!Tree(p).OfType<RivenSections>().Any(),"인벤토리·성유물 하위 탭 제거");
@@ -83,19 +89,31 @@ public sealed partial class MainWindow
         Yes(formaRow.State.Contains("포르마")&&formaRow.Value.StartsWith("+0점")&&!Tree(p.MasteryDetail).OfType<TextBlock>().Any(t=>t.Text.Contains("추가 구매 없이")),"추가 포르마가 필요한 장비를 무료 랭작 가능으로 표시하지 않음");p.UseSnapshot(saved,false);
         p.MasteryList.ScrollIntoView(p.MasteryList.Items[^1]);await System.Windows.Threading.Dispatcher.Yield(System.Windows.Threading.DispatcherPriority.ContextIdle);var listScroll=Tree(p.MasteryList).OfType<ScrollViewer>().First();double before=listScroll.VerticalOffset;
         p.UseSnapshot(p.Snapshot,false);await System.Windows.Threading.Dispatcher.Yield(System.Windows.Threading.DispatcherPriority.ContextIdle);Yes(before>0&&Math.Abs(listScroll.VerticalOffset-before)<1,"동일 목록 동기화 시 사용자가 보던 스크롤 위치 유지");p.MasteryList.ScrollIntoView(p.MasteryList.SelectedItem);
+        var oldSelection=p.MasteryList.SelectedItem;
+        var directRow=p.MasteryList.Items.Cast<InventoryRow>().First(r=>r.Model is MasteryPlan{Owned:false,InFoundry:false} direct&&direct.DirectPurchaseCredits is null&&!c.Recipes.Any(recipe=>recipe.ResultId==direct.Item.Id));
+        p.MasteryList.SelectedItem=directRow;await System.Windows.Threading.Dispatcher.Yield();
+        var directMessages=Tree(p.MasteryDetail).OfType<TextBlock>().Select(t=>t.Text).ToArray();
+        Yes(!directMessages.Any(t=>t.StartsWith("마스터리 1,000당 0 크레딧")),"직접 획득 장비의 레시피 미적용 비용을 무료 제작으로 표시하지 않음");
+        Yes(directMessages.Count(t=>t=="직접 획득·조립 장비 · 아래 획득처에서 조건 확인")<=1,"상세의 같은 획득 조건 문구를 반복하지 않음");
+        p.MasteryList.SelectedItem=oldSelection;
         File.WriteAllText(import,"{invalid}");var previous=p.Snapshot;Click(p.ImportButton);await System.Windows.Threading.Dispatcher.Yield();Yes(ReferenceEquals(previous,p.Snapshot)&&p.Status.Text.Contains("실패"),"손상된 파일 가져오기 실패 시 기존 목록 유지");
+        Yes(p.Status is OperationStatusText{ToneKey:"ErrorBrush"},"목록 가져오기 실패를 오류 의미 색상으로 표시");
+        var failure=p.Status.Text;p.Status.Text="목록을 가져왔습니다.";Yes(p.Status is OperationStatusText{ToneKey:"MutedBrush"},"복구 뒤 이전 오류 색상을 유지하지 않음");
+        p.Status.Text="일부 항목 누락 · 이전 목록 유지";Yes(p.Status is OperationStatusText{ToneKey:"AccentBrush"},"부분 응답 주의와 가져오기 실패 구분");p.Status.Text=failure;
+        await CheckInventoryContinuation(p,Yes);
         foreach(bool dark in new[]{true,false})foreach(var scenario in new[]{"기본","성유물 조건","성유물 상세","완료 장비","동기화 정보"})foreach(var scale in new[]{1d,1.25,1.5})
         {
             var metadata=Tree(p).OfType<Expander>().Single(e=>Equals(e.Header,"동기화 정보"));metadata.IsExpanded=scenario=="동기화 정보";
             SetDarkTheme(dark);p.Ownership.SelectedIndex=scenario=="완료 장비"?3:0;p.RelicOptions.IsExpanded=scenario=="성유물 조건";p.RelicDetails.IsExpanded=scenario=="성유물 상세";
             p.Progress.Update(MasteryOverview.From(c,p.Snapshot));p.UpdateLayout();render(this,$"dashboard-{scenario}-{(dark?"dark":"light")}-{scale:0.##}",1760,920,scale);
-            double ratio=p.Dashboard.ColumnDefinitions[0].ActualWidth/p.Dashboard.ActualWidth;Yes(Math.Abs(ratio-.7)<.01,"장비 화면 70:30 열 비율 유지");
+            double ratio=p.Dashboard.ColumnDefinitions[0].ActualWidth/p.Dashboard.ActualWidth;Yes(Math.Abs(ratio-1)<.01,"장비 화면은 전체 너비를 마스터리에 사용");
             foreach(var progress in Tree(p).OfType<MasteryProgressView>())
             {
                 var circle=(FrameworkElement)progress.Children[0];var label=Tree(circle).OfType<TextBlock>().Single(t=>t.Text=="마스터리 완료");var bounds=label.TransformToAncestor(circle).TransformBounds(new Rect(label.RenderSize));
                 Yes(label.TextAlignment==TextAlignment.Center&&Math.Abs(bounds.Left+bounds.Width/2-circle.ActualWidth/2)<.1,"마스터리 완료 라벨과 도넛의 수평 중심 일치");
             }
-            Yes(p.MasteryList.ActualWidth>400&&p.MasteryList.ActualHeight>240&&p.RelicList.ActualWidth>380&&p.RelicList.ActualHeight>100,"마스터리·성유물 동시 작업 공간 확보");
+            Yes(p.MasteryList.ActualWidth>400&&p.MasteryList.ActualHeight>240&&!p.RelicList.IsVisible,"마스터리 목록·상세 공간 확보 · 성유물 추천 분리");
+            if(scenario=="완료 장비")Yes(p.MasteryDetail.Children.OfType<Button>().All(b=>b.Margin.Bottom>=8),"완료 장비 상세의 연속 버튼도 8px 간격 유지");
             var issues=LayoutDiagnostics.Inspect(p);if(issues.Length>0)File.WriteAllText(Path.Combine(directory,"layout-failure.json"),JsonSerializer.Serialize(issues,Catalog.Json));Yes(issues.Length==0,$"{scenario} 배율 {scale}: 글자·컨트롤 잘림 없음");
             foreach(var scroll in Tree(p).OfType<ScrollViewer>().Where(s=>s.IsVisible&&s.ViewportHeight>0&&s.ScrollableHeight>1).ToArray())
             {scroll.ScrollToEnd();await System.Windows.Threading.Dispatcher.Yield(System.Windows.Threading.DispatcherPriority.ContextIdle);scroll.UpdateLayout();Yes(Math.Abs(scroll.VerticalOffset-scroll.ScrollableHeight)<1,$"상세·목록 스크롤 끝 도달 · {scenario} {scale} ({scroll.VerticalOffset:0.##}/{scroll.ScrollableHeight:0.##})");Yes(LayoutDiagnostics.Inspect(p).Length==0,"스크롤 끝에서 글자 잘림 없음");scroll.ScrollToTop();}

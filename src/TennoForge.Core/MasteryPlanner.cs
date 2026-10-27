@@ -21,16 +21,26 @@ public sealed record MasteryPlan(InventoryItem Item,int EarnedRank,int Remaining
 }
 public static class MasteryPlanner
 {
-    public static MasteryPlan[] Recommend(InventoryCatalog catalog,InventorySnapshot inventory,IReadOnlyDictionary<string,PlannerPrice>? prices=null)
+    public static MasteryPlan[] Recommend(InventoryCatalog catalog,InventorySnapshot inventory,IReadOnlyDictionary<string,PlannerPrice>? prices=null,FarmingPlan? reservations=null)
     {
         prices??=new Dictionary<string,PlannerPrice>();
         if(!inventory.MasteryComplete)return []; // Missing history is unknown, never "unmastered".
         var items=catalog.Items.ToDictionary(x=>x.Id);var recipes=catalog.Recipes.GroupBy(x=>x.ResultId).ToDictionary(x=>x.Key,x=>x.First());var blueprintIds=catalog.Recipes.Select(r=>r.BlueprintId).ToHashSet();
-        var plans=new List<MasteryPlan>();
+        var plans=new List<MasteryPlan>();var reusableBlueprints=catalog.Recipes.Where(r=>!r.ConsumeBlueprint).Select(r=>r.BlueprintId).ToHashSet();
         foreach(var item in catalog.Items.Where(x=>x.Masterable&&x.MaxRank>0))
         {
             int earned=inventory.MasteryRanks.GetValueOrDefault(item.Id);if(earned>=item.MaxRank)continue;
             bool owned=inventory.Count(item.Id)>0;var required=new List<CraftRequirement>();var warnings=new List<string>();var stock=new Dictionary<string,long>(inventory.Quantities);
+            var ownGoal=reservations?.Goals.FirstOrDefault(g=>g.Goal.ItemId==item.Id);
+            if(reservations is not null)
+            {
+                foreach(var pair in reservations.Reserved.Where(r=>r.Value>0&&!reusableBlueprints.Contains(r.Key)))
+                {
+                    long own=ownGoal?.Requirements.Where(r=>r.ItemId==pair.Key).Sum(r=>r.Reserved)??0;
+                    stock[pair.Key]=Math.Max(0,stock.GetValueOrDefault(pair.Key)-Math.Max(0,pair.Value-own));
+                }
+            }
+            long creditBudget=Math.Max(0,inventory.Credits-(reservations?.ReservedCredits??0)+(ownGoal?.ReservedCredits??0));
             long credits=0,blueprintCredits=0;double opportunity=0;bool stale=false;var active=new HashSet<string>();var work=new List<MasteryCraftWork>();var available=new Dictionary<string,int>();
             var produced=new Dictionary<string,List<(long Count,int Job,int Time)>>();
             bool queued=recipes.TryGetValue(item.Id,out var recipe)&&inventory.Crafting.Any(j=>j.BlueprintId==recipe.BlueprintId);
@@ -49,6 +59,7 @@ public static class MasteryPlanner
                 if(take>0&&prices.TryGetValue(id,out var quote)){opportunity+=take*quote.Platinum;stale|=quote.Stale;}
                 if(take>0&&items.GetValueOrDefault(id)?.Masterable==true&&inventory.MasteryRanks.GetValueOrDefault(id)<items[id].MaxRank)warnings.Add(items[id].Name+" 소모 전 랭작 완료 권장");
                 long missing=needed-take;
+                if(missing>0&&inventory.Count(id)>have&&reservations is not null)warnings.Add(items.GetValueOrDefault(id)?.Name+" · 다른 목표에 예약된 수량 제외");
                 int producedTime=0;int? producedJob=null;
                 if(produced.TryGetValue(id,out var lots))for(int i=0;i<lots.Count&&missing>0;i++)
                 {
@@ -94,7 +105,7 @@ public static class MasteryPlanner
                 if(direct is not null){credits=direct.Costs[0].Amount;required.Add(new(item.Id,1,0,1,0));warnings.Add("완성품 크레딧 구매 · 상점에서 구입 후 바로 랭작");}
                 else seconds=Take(item.Id,1).Time;
             }
-            if(credits>inventory.Credits)warnings.Add($"크레딧 부족 · {credits-inventory.Credits:N0} 필요");
+            if(credits>creditBudget)warnings.Add($"크레딧 부족 · {credits-creditBudget:N0} 필요"+(reservations?.ReservedCredits>0?" · 다른 목표 예약 제외":""));
             if(!owned&&!queued&&recipe is null&&direct is null)warnings.Add("직접 획득·조립 장비 · 아래 획득처에서 조건 확인");
             // Acquisition MR is not a levelling lock on a weapon already owned
             // through a bypass (e.g. a claimed Lich weapon).
@@ -120,12 +131,20 @@ public static class MasteryBatchPlanner
 {
     // A practical feasible sequence using the same recommendation order, not a
     // claim of a globally optimal knapsack or a prediction of farming/levelling.
-    public static MasteryBatch Recommend(InventoryCatalog catalog,InventorySnapshot snapshot,IReadOnlyDictionary<string,PlannerPrice>? prices=null,int limit=12)
+    public static MasteryBatch Recommend(InventoryCatalog catalog,InventorySnapshot snapshot,IReadOnlyDictionary<string,PlannerPrice>? prices=null,int limit=12,FarmingPlan? reservations=null)
     {
         if(limit is <1 or >50)throw new ArgumentOutOfRangeException(nameof(limit));
         if(!snapshot.InventoryComplete||!snapshot.MasteryComplete)return new([],0,0,0);
         var stock=new Dictionary<string,long>(snapshot.Quantities);long credits=snapshot.Credits;var chosen=new List<MasteryPlan>();var selected=new HashSet<string>();
         var reusable=catalog.Recipes.Where(r=>!r.ConsumeBlueprint).Select(r=>r.BlueprintId).ToHashSet();
+        if(reservations is not null)
+        {
+            foreach(var pair in reservations.Reserved.Where(p=>!reusable.Contains(p.Key)))stock[pair.Key]=Math.Max(0,stock.GetValueOrDefault(pair.Key)-pair.Value);
+            credits=Math.Max(0,credits-reservations.ReservedCredits);
+            selected.UnionWith(reservations.Goals.Select(g=>g.Goal.ItemId));
+            selected.UnionWith(catalog.Items.Where(i=>i.Masterable&&snapshot.Count(i.Id)>0).Select(i=>i.Id));
+        }
+        long initialCredits=credits;
         for(int index=0;index<limit;index++)
         {
             var next=snapshot with{Quantities=new(stock),Credits=credits};
@@ -149,7 +168,7 @@ public static class MasteryBatchPlanner
                 completion[i]=checked(start+job.Seconds);available[job.ResultId]=completion[i];last=Math.Max(last,completion[i]);
             }
         }
-        return new(chosen.ToArray(),chosen.Sum(p=>p.AvailablePoints),snapshot.Credits-credits,last);
+        return new(chosen.ToArray(),chosen.Sum(p=>p.AvailablePoints),initialCredits-credits,last);
     }
 }
 

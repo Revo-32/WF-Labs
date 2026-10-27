@@ -14,7 +14,7 @@ public sealed partial class MainWindow
     private RivenOverlay? rivenOverlay;
     private RivenOverlay? rivenOverlayRight;
     private readonly DispatcherTimer rivenVisualTimer=new(){Interval=TimeSpan.FromMilliseconds(750)};
-    private readonly RivenWatchState rivenWatch=new(640);
+    private readonly RivenWatchState rivenWatch=new(640,600);
     private Rect[] rivenTextRegions=[];
     private bool rivenProbing;
     private RivenOcrResult? lastRivenCapture;
@@ -29,17 +29,19 @@ public sealed partial class MainWindow
         rivenDebounce.Tick+=(_,_)=>{rivenDebounce.Stop();_=CaptureRivenAsync(true);};
         rivenVisualTimer.Tick+=async(_,_)=>await ProbeRivenAsync();
         ConfigureRivenCapture(rivenCapturePreferences);
-        Closed+=(_,_)=>{rivenCaptureGeneration++;rivenVisualTimer.Stop();rivenDebounce.Stop();rivenAuto?.Dispose();rivenHotkey?.Dispose();rivenCapturePending?.Cancel();CloseRivenOverlay();};
+        Closed+=(_,_)=>{rivenCaptureGeneration++;rivenVisualTimer.Stop();rivenDebounce.Stop();rivenAuto?.Dispose();rivenHotkey?.Dispose();rivenCapturePending?.Cancel();CloseRivenOverlay();RelicCapture.ClearForegroundGameCache();};
     }
     private void ConfigureRivenCapture(RivenCapturePreferences preferences)
     {
         rivenCapturePreferences=preferences;
+        rivenCaptureStatus=preferences.Automatic?"리벤 화면을 열거나 순환하면 자동으로 갱신합니다.":"자동인식을 켜면 리벤 카드의 등장과 옵션 변경을 감지합니다.";SyncRivenRecognition();
         if(!UiFonts.PersistChanges)return;
         var generation=++rivenCaptureGeneration;
         preferences.Save();rivenCapturePending?.Cancel();rivenAuto?.Dispose();rivenAuto=null;rivenDebounce.Stop();
-        rivenVisualTimer.Stop();rivenWatch.Reset();rivenTextRegions=[];CloseRivenOverlay();if(preferences.Automatic)rivenVisualTimer.Start();
+        rivenVisualTimer.Stop();rivenVisualTimer.Interval=TimeSpan.FromMilliseconds(750);rivenWatch.Reset();rivenTextRegions=[];CloseRivenOverlay();if(preferences.Automatic)rivenVisualTimer.Start();
         var registered=rivenHotkey?.Enable(preferences.Hotkey)==true;
         rivenCaptureStatus=preferences.Automatic?"자동 인식 대기 · 리벤 화면을 열거나 순환하면 자동으로 갱신합니다.":preferences.Hotkey&&!registered?"리벤 단축키가 다른 앱과 충돌했습니다.":"자동 인식 꺼짐";
+        SyncRivenRecognition();
         if(preferences.Automatic)rivenAuto=new RelicAutoDetector(_=>{},_=>{},debugOutput:false,observed:line=>
         {
             // Observed in the local game log. No historical replay and no per-frame screen scan.
@@ -60,8 +62,12 @@ public sealed partial class MainWindow
         if(rivenProbing||rivenCapturePending is not null||!rivenCapturePreferences.Automatic)return;rivenProbing=true;
         try
         {
-            var game=RelicCapture.GameWindow();if(RelicCapture.GetForegroundWindow()!=game||RelicCapture.IsMinimized(game)){CloseRivenOverlay();rivenWatch.Reset();rivenTextRegions=[];SetRivenCaptureStatus("게임 전경 대기 · 워프레임이 앞에 있을 때 자동으로 읽습니다.");return;}
+            var game=RelicCapture.ForegroundGameWindow();if(game==IntPtr.Zero){rivenVisualTimer.Interval=TimeSpan.FromMilliseconds(750);CloseRivenOverlay();rivenWatch.Reset();rivenTextRegions=[];SetRivenCaptureStatus("게임 전경 대기 · 워프레임이 앞에 있을 때 자동으로 읽습니다.");return;}
             var frame=RelicCapture.Capture(game,640);var probe=RivenVisualProbe.Analyze(frame,rivenTextRegions);
+            // Expanded-card changes get two independent observations sooner;
+            // idle screens keep the existing low-rate probe. Never queue OCR
+            // while another request is active (guarded at this method's entry).
+            rivenVisualTimer.Interval=TimeSpan.FromMilliseconds(probe.Regions.Length>0?400:750);
             // Use the existing stability wait to prepare weights once. No new
             // capture, full-screen inference, GPU use or per-tick work queue.
             if(probe.Regions.Length>0)_=RivenOcr.PrepareAsync();
@@ -98,7 +104,7 @@ public sealed partial class MainWindow
     }
     private void SetRivenCaptureStatus(string message)
     {
-        if(rivenCaptureStatus==message)return;rivenCaptureStatus=message;
+        if(rivenCaptureStatus==message)return;rivenCaptureStatus=message;SyncRivenRecognition();
         if(rivenCaptureWindow is {} window)window.Status.Text=message;
         if(!UiFonts.PersistChanges)return;
         try

@@ -34,6 +34,7 @@ internal sealed partial class SchedulePage : Grid,IDisposable
     private readonly Dictionary<string,VendorReport> reports=new();
     internal HashSet<string> Wishes {get;private set;}=[];
     internal Action<string>? ModRequested;
+    internal FarmingWorkspace? Farming {get;}
     internal Func<bool,CancellationToken,Task<WorldScheduleData>>? RefreshOverride {get;set;}
     private readonly DispatcherTimer timer=new(){Interval=TimeSpan.FromSeconds(1)};
     private readonly CancellationTokenSource lifetime=new();
@@ -41,6 +42,11 @@ internal sealed partial class SchedulePage : Grid,IDisposable
     private readonly VendorReportClient? reportClient;
     private readonly bool persist,writePreferences;
     private bool busy,reportBusy,disposed;
+    private bool dashboardDirty=true;
+    private Window? dashboardHost;
+    internal bool? DashboardVisibilityOverride {get;set;}
+    internal int DashboardUpdateCount {get;private set;}
+    private bool DashboardVisible=>DashboardVisibilityOverride??(!persist||IsLoaded&&IsVisible&&dashboardHost?.WindowState!=WindowState.Minimized);
     private long minute=-1;
     private DateTimeOffset nextRefresh,nextReport;
     private readonly string folder;
@@ -57,9 +63,9 @@ internal sealed partial class SchedulePage : Grid,IDisposable
         var template=new ControlTemplate(typeof(ListBoxItem));var border=new FrameworkElementFactory(typeof(Border));border.Name="Row";border.SetValue(Border.CornerRadiusProperty,new CornerRadius(3));border.SetValue(Border.BackgroundProperty,Brushes.Transparent);var presenter=new FrameworkElementFactory(typeof(ContentPresenter));presenter.SetValue(ContentPresenter.MarginProperty,new TemplateBindingExtension(Control.PaddingProperty));border.AppendChild(presenter);template.VisualTree=border;
         var selected=new Trigger{Property=ListBoxItem.IsSelectedProperty,Value=true};selected.Setters.Add(new Setter(Border.BackgroundProperty,new DynamicResourceExtension("AccentSurfaceBrush"),"Row"));template.Triggers.Add(selected);var hover=new Trigger{Property=UIElement.IsMouseOverProperty,Value=true};hover.Setters.Add(new Setter(Border.BackgroundProperty,new DynamicResourceExtension("HoverBrush"),"Row"));template.Triggers.Add(hover);style.Setters.Add(new Setter(Control.TemplateProperty,template));box.ItemContainerStyle=style;return box;
     }
-    internal SchedulePage(bool persist=true,string? preferenceFolder=null)
+    internal SchedulePage(bool persist=true,string? preferenceFolder=null,FarmingWorkspace? farming=null)
     {
-        this.persist=persist;writePreferences=persist||preferenceFolder is not null;folder=preferenceFolder??Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"WF Labs","schedules");
+        this.persist=persist;Farming=farming;writePreferences=persist||preferenceFolder is not null;folder=preferenceFolder??Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"WF Labs","schedules");
         Preferences=ReadPreferences();
         if(persist){client=new(folder);reportClient=new();Data=client.Current;LoadWishes();}
         else {Data=new(null,ArbitrationSchedule.Bundled(CatalogData),true,null,DateTimeOffset.MinValue);if(writePreferences)LoadWishes();}
@@ -73,11 +79,25 @@ internal sealed partial class SchedulePage : Grid,IDisposable
         Tier.SelectionChanged+=(_,_)=>FilterChanged();Horizon.SelectionChanged+=(_,_)=>RebuildArbitrations();Mission.Changed+=()=>{Preferences=Preferences with{ExcludedMissions=Mission.Excluded};SavePreferences();FilterChanged();};Faction.SelectionChanged+=(_,_)=>FilterChanged();Shop.SelectionChanged+=(_,_)=>RebuildWeapons();WishOnly.Checked+=(_,_)=>RebuildWeapons();WishOnly.Unchecked+=(_,_)=>RebuildWeapons();
         ArbitrationList.SelectionChanged+=(_,_)=>{ShowArbitration();if(ArbitrationList.IsKeyboardFocusWithin)ArbitrationExpanded.IsExpanded=true;};WeaponList.SelectionChanged+=(_,_)=>{ShowWeapon();if(WeaponList.IsKeyboardFocusWithin)WeaponExpanded.IsExpanded=true;};
         AutomationProperties.SetName(Tier,"중재 등급 필터");AutomationProperties.SetName(Horizon,"중재 조회 기간");AutomationProperties.SetName(Mission,"중재 미션 유형 필터");AutomationProperties.SetName(Faction,"중재 팩션 필터");AutomationProperties.SetName(Shop,"무기 상점 선택");
-        if(persist){Loaded+=async(_,_)=>{StartMonitoring();Tick();await RefreshAsync(false);};Unloaded+=(_,_)=>{if(!BackgroundNeeded)timer.Stop();};timer.Tick+=async(_,_)=>{Tick();if(Clock()>=nextRefresh)await RefreshAsync(false);};}
+        if(persist)
+        {
+            Loaded+=async(_,_)=>{WatchDashboardWindow(Window.GetWindow(this));StartMonitoring();Tick();await RefreshAsync(false);};
+            Unloaded+=(_,_)=>{WatchDashboardWindow(null);dashboardDirty=true;if(!BackgroundNeeded)timer.Stop();};
+            IsVisibleChanged+=(_,_)=>{if(IsLoaded)Tick();};
+            timer.Tick+=async(_,_)=>{Tick();if(Clock()>=nextRefresh)await RefreshAsync(false);};
+        }
         UseData(Data);
     }
     internal event Action? DataChanged;
-    internal void UseData(WorldScheduleData data){Data=data;RebuildArbitrations();RebuildWeapons();Tick();DataChanged?.Invoke();}
+    internal void UseData(WorldScheduleData data){Data=data;dashboardDirty=true;Tick();DataChanged?.Invoke();}
+    private void WatchDashboardWindow(Window? host)
+    {
+        if(ReferenceEquals(dashboardHost,host))return;
+        if(dashboardHost is not null)dashboardHost.StateChanged-=DashboardStateChanged;
+        dashboardHost=host;
+        if(dashboardHost is not null)dashboardHost.StateChanged+=DashboardStateChanged;
+    }
+    private void DashboardStateChanged(object? sender,EventArgs e){if(IsLoaded&&IsVisible)Tick();}
     internal async Task RefreshAsync(bool force)
     {
         if(busy||disposed)return;busy=true;RefreshButton.IsEnabled=false;RefreshButton.Content="갱신 중…";
@@ -93,6 +113,12 @@ internal sealed partial class SchedulePage : Grid,IDisposable
     }
     internal void Tick()
     {
+        if(disposed)return;
+        // Keep due alerts, expiry checks and the game overlay alive while another
+        // page is open, but do not rebuild an unloaded/minimized dashboard each
+        // second. Loaded/visibility/restore refresh the deferred state at once.
+        if(!DashboardVisible){dashboardDirty=true;TickFeatures();return;}
+        DashboardUpdateCount++;
         var now=Clock();var next=Data.Arbitrations.NextS(CatalogData,now,CurrentFilter() with{Tier="S"});var current=Data.Arbitrations.Current(now);var node=current is null?null:CatalogData.Nodes.FirstOrDefault(n=>n.Id==current.NodeId);bool conflict=Data.ArbitrationConflict(now);
         NextTitle.Text=conflict?"다음 S티어 중재 · 일정 불일치 확인 필요":"다음 S티어 중재";NextCountdown.Text=next is null?"일정 없음":WorldScheduleEngine.Countdown(next.StartUtc,now);
         if(!conflict&&(Mission.Excluded.Length>0||Faction.SelectedIndex>0))NextTitle.Text="다음 S티어 중재 · 미션·팩션 필터 적용";
@@ -109,7 +135,7 @@ internal sealed partial class SchedulePage : Grid,IDisposable
             string nextLabel=def.Labels[(phase.StateIndex+1)%def.Labels.Length];view.Next.Text=$"다음 {nextLabel} · {TimeZoneInfo.ConvertTime(phase.EndUtc,WorldScheduleEngine.Korea):HH:mm}";view.Source.Text=Data.CycleFresh(anchor!,now)?anchor!.Source=="공식 월드 상태"?"공식 자료":"월드 상태":"저장 자료 예상";view.Source.SetResourceReference(TextBlock.ForegroundProperty,Data.CycleFresh(anchor!,now)?"MutedBrush":"AccentBrush");view.Source.ToolTip=view.Next.ToolTip=$"기준 자료: {WorldScheduleEngine.KoreaTime(anchor!.SourceUtc??Data.Snapshot!.Timestamp)} · {anchor.Source}\n{Data.Notice}";
         }
         var tenet=WorldScheduleEngine.ShopAt(CatalogData,"tenet",now);var coda=WorldScheduleEngine.ShopAt(CatalogData,"coda",now);TenetClock.Text=WorldScheduleEngine.Countdown(tenet.EndUtc,now);CodaClock.Text=WorldScheduleEngine.Countdown(coda.EndUtc,now);CodaPhase.Text=$"코다 {coda.Batch} → {(coda.Batch=="A"?"B":"A")} · 교체까지";shopClocks.Text=$"테넷 교체 {WorldScheduleEngine.Countdown(tenet.EndUtc,now)}   ·   코다 {coda.Batch} 회차 → {(coda.Batch=="A"?"B":"A")}  {WorldScheduleEngine.Countdown(coda.EndUtc,now)}   ·   위키 주기 예상";
-        long m=now.ToUnixTimeSeconds()/3600;if(m!=minute){minute=m;RebuildArbitrations();RebuildWeapons();}
+        long m=now.ToUnixTimeSeconds()/3600;if(dashboardDirty||m!=minute){dashboardDirty=false;minute=m;RebuildArbitrations();RebuildWeapons();}
         RefreshIncarnon(now);TickFeatures();
     }
     private static ListBoxItem Row(object tag,string title,string subtitle)
@@ -152,5 +178,5 @@ internal sealed partial class SchedulePage : Grid,IDisposable
     private void SaveWishes(){if(!writePreferences)return;try{Directory.CreateDirectory(folder);var path=Path.Combine(folder,"wishlist.json");File.WriteAllText(path+".tmp",JsonSerializer.Serialize(Wishes));File.Move(path+".tmp",path,true);}catch(Exception e)when(e is IOException or UnauthorizedAccessException){reportStatus.Text="찜 목록을 저장하지 못했습니다. 이번 실행에서는 유지됩니다.";}}
     private static FrameworkElement Sources()=>new Expander{Header="자료 기준·갱신 방식",Margin=new(0,20,0,12),Content=new ScrollViewer{MaxHeight=96,VerticalScrollBarVisibility=ScrollBarVisibility.Auto,Content=RivenPresentation.Stack(Text("월드 상태: warframestat.us / PC · 화면을 보는 동안 1분마다 갱신\n주기 API 지연 시 평원·캠비온은 공식 worldState.php로 보완 · 지역별 기준 시각은 마우스 오버로 확인\n중재 일정: browse.wf · 6시간마다 갱신 · 등급: Arbitration Goons\n무기 상점: WF Wiki 주기 기준 예상 · 원소·보너스 제보는 1시간마다 확인\n타이머는 로컬에서 계산합니다. 오프라인에서는 마지막 주기 자료로 예상합니다.\n지구 숲은 공식 Update 38.5에 따라 평원과 같은 낮 100분·밤 50분입니다.",14,"MutedBrush"),Button("공식 주기 변경 내용",()=>Open("https://www.warframe.com/en/patch-notes/pc/38-5-0")),Button("커뮤니티 일정·등급 출처",()=>Open("https://browse.wf/about")))}};
     private static void Open(string url){try{Process.Start(new ProcessStartInfo(url){UseShellExecute=true});}catch(Exception e)when(e is System.ComponentModel.Win32Exception or InvalidOperationException){}}
-    public void Dispose(){disposed=true;timer.Stop();DisposeFeatures();lifetime.Cancel();client?.Dispose();reportClient?.Dispose();lifetime.Dispose();}
+    public void Dispose(){disposed=true;timer.Stop();WatchDashboardWindow(null);DisposeFeatures();lifetime.Cancel();client?.Dispose();reportClient?.Dispose();lifetime.Dispose();}
 }

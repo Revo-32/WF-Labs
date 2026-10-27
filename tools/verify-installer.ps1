@@ -19,7 +19,7 @@ $settingsBefore=Read-SettingsHash
 $profileFolder=Split-Path -Parent $preferences
 function Read-WorkspaceHashes {
     $state=[ordered]@{}
-    foreach($name in @('workspace.json','workspace.json.bak','update-workspace.json','update-workspace.json.restored','appearance.json')) {
+    foreach($name in @('workspace.json','workspace.json.bak','update-workspace.json','update-workspace.json.restored','appearance.json','planning/goals.json','planning/goals.json.bak','inventory/snapshot.json','schedules/preferences.json','relic-settings.json','riven-capture.json')) {
         $path=Join-Path $profileFolder $name
         $state[$name]=if(Test-Path -LiteralPath $path){(Get-FileHash -LiteralPath $path).Hash}else{''}
     }
@@ -46,6 +46,7 @@ try {
     $beforeResult=Get-Content -LiteralPath $report -Raw | ConvertFrom-Json
     $afterResult=Get-Content -LiteralPath $after -Raw | ConvertFrom-Json
     if(-not $beforeResult.passed -or -not $afterResult.passed -or $afterResult.currentVersion -ne $ExpectedVersion -or -not $afterResult.helperPresent -or $afterResult.isPortable -or -not $afterResult.recoveryVerified){throw '설치/업데이트 결과가 예상과 다릅니다.'}
+    if((Test-Path -LiteralPath (Join-Path $qa 'qa-profile')) -and -not $afterResult.planningVerified){throw '업데이트 후 개인 목표·예약·오버레이 복원 검증 실패'}
     if((Read-StartupValue) -ne $startupBefore -or (Read-SettingsHash) -ne $settingsBefore){throw '검증용 설치가 사용자 자동 실행 설정을 변경했습니다.'}
 } finally {
     $updater=Join-Path $install 'Update.exe'
@@ -58,5 +59,5 @@ try {
 }
 if((Read-StartupValue) -ne $startupBefore -or (Read-SettingsHash) -ne $settingsBefore){throw '제거 후 사용자 설정이 바뀌었습니다.'}
 if((Read-WorkspaceHashes) -ne $workspaceBefore){throw '격리 설치 검증이 실제 사용자 작업 파일을 변경했습니다.'}
-@{passed=$true;installedVersion=$beforeResult.currentVersion;updatedVersion=$afterResult.currentVersion;downloaded=$beforeResult.downloaded;restarted=$true;uninstalled=$uninstalled;startupSettingsPreserved=$true;userWorkspacePreserved=$true;helperPresent=$afterResult.helperPresent;recoveryVerified=$afterResult.recoveryVerified} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $qa 'installer-verification.json') -Encoding utf8NoBOM
+@{passed=$true;installedVersion=$beforeResult.currentVersion;updatedVersion=$afterResult.currentVersion;downloaded=$beforeResult.downloaded;restarted=$true;uninstalled=$uninstalled;startupSettingsPreserved=$true;userWorkspacePreserved=$true;helperPresent=$afterResult.helperPresent;recoveryVerified=$afterResult.recoveryVerified;planningVerified=$afterResult.planningVerified} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $qa 'installer-verification.json') -Encoding utf8NoBOM
 Get-Content -LiteralPath (Join-Path $qa 'installer-verification.json')

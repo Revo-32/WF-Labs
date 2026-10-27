@@ -7,7 +7,7 @@ public sealed partial class MainWindow
     {
         if(schedulePage is null)
         {
-            schedulePage=new(UiFonts.PersistChanges);
+            schedulePage=new(UiFonts.PersistChanges,farming:Farming);
             schedulePage.ModRequested=id=>
             {
                 var melee=catalog.Weapons.FirstOrDefault(w=>w.Id==id);if(melee is not null){ShowModding();weapon.SelectedItem=melee;return;}

@@ -67,11 +67,44 @@ with ZipFile(package) as archive:
         model = json.loads(archive.read('lib/app/Assets/Ocr/wfkor.model.json').decode('utf-8'))
         require(hashlib.sha256(archive.read('lib/app/Assets/Ocr/wfkor.traineddata')).hexdigest() == model['sha256'],
                 '추가 학습 한국어 OCR 모델 SHA-256 일치')
+        if model.get('quantization'):
+            require('lib/app/Assets/Ocr/runtime-models.json' in archive.namelist(), '변환된 OCR 모델의 런타임 해시 목록 포함')
+        if 'lib/app/Assets/Ocr/runtime-models.json' in archive.namelist():
+            runtime_models = json.loads(archive.read('lib/app/Assets/Ocr/runtime-models.json').decode('utf-8'))
+            require('lib/app/Assets/Ocr/MODEL-MODIFICATIONS.txt' in archive.namelist(), 'OCR 모델 변경 고지 포함')
+            for name, runtime_metadata in runtime_models['models'].items():
+                require(hashlib.sha256(archive.read('lib/app/Assets/Ocr/' + name)).hexdigest() == runtime_metadata['sha256'],
+                        '정수형 OCR 런타임 모델 SHA-256 일치 · ' + name)
         require('vcredist143-x64' in value('runtimeDependencies'), '설치 시 OCR Visual C++ 런타임 확인')
+    if tuple(map(int, asset['Version'].split('-', 1)[0].split('.')[:2])) >= (1, 0):
+        for name in ['PRIVACY.md','SUPPORT.md','RELEASE_READINESS_2026-10-27.md']:
+            require('lib/app/' + name in archive.namelist(), '사용·데이터 처리 안내 포함 · ' + name)
+    forbidden = {'snapshot.json','goals.json','client-settings.json','workspace.json','update-workspace.json','inventory-inbox.json'}
+    require(not any(Path(name).name.lower() in forbidden or name.lower().endswith(('.wfriven','.pfx','.p12','.dmp')) or '/tests/fixtures/' in name.lower() for name in archive.namelist()), '개인 작업·인벤토리·키·검수 fixture 배포 제외')
     require(config["Prerelease"] == ("-" in asset["Version"]), "미리보기 업데이트 채널")
     require(x64(archive.read("lib/app/WFLabs.exe")), "앱 실행 파일 Windows x64")
+    payload_hashes = {
+        name.removeprefix("lib/app/"): hashlib.sha256(archive.read(name)).hexdigest()
+        for name in archive.namelist() if name.startswith("lib/app/") and not name.endswith("/")
+    }
 with ZipFile(folder / "WFLabs-win-Portable.zip") as archive:
     require(archive.testzip() is None, "압축 배포본 ZIP 무결성")
+    require("WF Labs.exe" in archive.namelist() and x64(archive.read("WF Labs.exe")), "압축 배포본 최상위 실행 파일 · Windows x64")
+    require("current/coreclr.dll" in archive.namelist() and "current/PresentationFramework.dll" in archive.namelist(), "압축 배포본 자체 포함 런타임")
+    require("current/sq.version" in archive.namelist(), "최상위 실행기의 필수 sq.version 포함")
+    portable_metadata = ET.fromstring(archive.read("current/sq.version"))
+    portable_value = lambda key: portable_metadata.findtext(".//{*}" + key)
+    require(portable_value("id") == "WFLabs" and portable_value("mainExe") == "WFLabs.exe", "압축 배포본 실행 대상 연결")
+    require(portable_value("version") == asset["Version"], "압축 배포본 실행 메타데이터 버전 일치")
+    require("current/" + portable_value("mainExe") in archive.namelist(), "압축 배포본 실행 대상 존재")
+    # Velopack relocates its generated updater/stub to the portable root.
+    portable_targets = {
+        name: {"Squirrel.exe": "Update.exe", "WF Labs_ExecutionStub.exe": "WF Labs.exe"}.get(name, "current/" + name)
+        for name in payload_hashes
+    }
+    require(all(target in archive.namelist() for target in portable_targets.values()), "설치·압축 배포본의 전체 앱 구성요소 일치")
+    for name, expected in payload_hashes.items():
+        require(hashlib.sha256(archive.read(portable_targets[name])).hexdigest() == expected, "설치·압축 배포본 내용 SHA-256 일치 · " + name)
 report = {"passed": True, "version": asset["Version"], "directory": str(folder), "checks": checks}
 args.report.parent.mkdir(parents=True, exist_ok=True)
 args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")

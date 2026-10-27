@@ -36,6 +36,12 @@ public sealed partial class MainWindow
         var fake=new RelicFixtureHandler(catalog);var market=new RelicMarketClient(Path.Combine(dir,"market-cache"),fake);
         using var view=new RelicPage(market);SelectPage(4);page.Content=view;
         render(this,"empty",1760,920,1);Yes(CheckHeaderLayout() is not null,"성유물 탭·상단 간격");
+        Yes(view.EmptyState.IsVisible&&!view.CardGrid.IsVisible&&view.Cards.Count==4,"초기에는 논리 보상 슬롯을 유지하고 읽기 전 빈 상태로 안내");
+        Yes(view.Status.Visibility==Visibility.Collapsed,"기본 보상 대기 문구는 상태바와 중복 표시하지 않음");
+        var criteria=Descendants(view).OfType<Expander>().Single(e=>Equals(e.Header,"시세·인식 기준"));criteria.IsExpanded=true;await Idle();
+        Yes(Descendants(criteria).OfType<TextBlock>().Any(t=>t.Text.Contains("화면 이미지는 마켓에 전송"))&&Descendants(criteria).OfType<TextBlock>().Any(t=>t.Text.Contains("FHD(1920×1080)")),"접을 수 있는 시세·인식 기준에서 개인정보·지원 해상도 보존");criteria.IsExpanded=false;
+        void Popup(FrameworkElement element,string name)=>App.Render(element,Path.Combine(dir,name+".png"),Math.Max(1,(int)Math.Ceiling(element.ActualWidth)),Math.Max(1,(int)Math.Ceiling(element.ActualHeight)));
+        var menuReport=await CheckRelicCommandMenus(view,Popup);checks.AddRange(menuReport.Checks);
         var returned=0;view.GameReturnRequested=()=>returned++;Invoke(view.ReturnButton);await Idle();Yes(returned==1,"게임으로 돌아가기 실제 버튼 동작 연결");
         var fixtures=new List<object>();var captured=new List<RelicRecognition>();
         foreach(var (width,height,count,wrap) in new[]{(1280,720,1,false),(1920,1080,2,false),(2560,1440,3,true),(3440,1440,4,true)})
@@ -56,21 +62,46 @@ public sealed partial class MainWindow
             Yes(result.Rewards.Select(r=>r.Item?.Id).SequenceEqual(asymmetric.Select(x=>x.Id)),$"실시간 첫 카드만 윗줄 줄바꿈 {width}×{height}: 4개 확정·순서 일치");
             Yes(timer.Elapsed.TotalSeconds<8,$"실시간 비대칭 줄바꿈 {width}×{height}: 8초 이내");
         }
+        // Required masked real-game glyphs: preserve wrapped component names,
+        // particularly Chassis versus the equally valid main Blueprint.
+        var styanaxPath=Path.Combine(Environment.CurrentDirectory,"tests","fixtures","relic","styanax-three-rewards.png");
+        Yes(File.Exists(styanaxPath),"스티아낙스 실전 글자 회귀 자료 필수 존재");
+        var styanaxExpected=new[]{"yareli_prime_neuroptics_blueprint","styanax_prime_chassis_blueprint","paris_prime_string"};
+        var styanaxUpdates=new List<RelicRecognition>();
+        var styanax=await RelicOcr.RecognizeAsync(RelicOcr.Load(styanaxPath),catalog,default,live:true,onProgress:styanaxUpdates.Add);
+        File.WriteAllText(Path.Combine(dir,"styanax-real-glyphs.json"),JsonSerializer.Serialize(styanax,Catalog.Json));
+        Yes(styanax.Rewards.Select(r=>r.Item?.Slug).SequenceEqual(styanaxExpected),"실전 한글 3개 자동 확정: 스티아낙스 섀시를 일반 설계도로 혼동하지 않음");
+        Yes(styanaxUpdates.SelectMany(r=>r.Rewards).Where(r=>r.Confident).All(r=>styanaxExpected.Contains(r.Item?.Slug)),"중간 진행 결과에도 잘못된 설계도·호가를 게시하지 않음");
+        Yes(styanax.Timing!.TotalMilliseconds<6000,"실전 글자 회귀: 6초 예산 소진 전에 전체 확정");
+        view.ApplyRecognition(styanax);await view.RefreshAsync(false);render(this,"styanax-three-rewards",1760,920,1);
+        Yes(view.Cards.Select(c=>c.Item?.Slug).SequenceEqual(styanaxExpected)&&view.Cards.All(c=>c.Quote?.Error is null&&c.Quote?.ItemId==c.Item?.Id),"스티아낙스 포함 3개 카드·동일 품목 시세 표시");
         view.ApplyRecognition(captured[^1]);await view.RefreshAsync(false);render(this,"recognized",1760,920,1);
         Yes(view.Cards.Count==4,"보상 4개 좌우 순서");
         // Test uncertainty explicitly rather than depending on OCR happening to fail.
         var ambiguous=catalog.Recognize([new("니카나 프라임 블래이드",.1,.4,.2,.03,88)])[0];
-        view.Cards[0].SetRecognition(ambiguous);await view.Cards[0].RefreshAsync(false);
+        view.ApplyRecognition(captured[^1] with{Rewards=[ambiguous,..captured[^1].Rewards.Skip(1)],Notice="보상 1개 이름 확인 필요 · 후보를 선택하세요"});await view.RefreshAsync(false);
         Yes(view.Cards[0].Item is null&&view.Cards[0].Price.Text=="—","오인식 후보를 확정 호가로 보여주지 않음");
+        Yes(view.ReturnButton.ReadLocalValue(Control.BackgroundProperty)==DependencyProperty.UnsetValue,"미확정 보상에서는 게임 복귀보다 이름 확인 행동을 우선");
         view.Cards[0].Search.CancelSearch();Yes(view.Cards[0].Search.QueryInput.Text==ambiguous.RawText&&view.Cards[0].Search.SelectedItem is null,"초점 이탈·검색 취소 후 미확정 OCR 이름 보존");
-        Invoke(view.Cards[0].Correct);await Idle();var search=view.Cards[0].Search;search.QueryInput.Text="니카나 프라임 블레이드";
+        var pendingNotice=view.Status.Text;Invoke(view.Cards[0].Correct);await Idle();view.Cards[0].Search.QueryInput.Text="없는보상";RelicKey(view.Cards[0].Search.QueryInput,Key.Escape);await Idle();
+        Yes(view.Cards[0].Item is null&&view.Status.Text==pendingNotice&&!view.Status.Text.Contains("확인 완료")&&view.Cards[0].Search.QueryInput.Text==ambiguous.RawText,"미확정 검색의 잘못된 입력·취소는 완료로 바꾸지 않고 원문/확인 필요 상태 보존");
+        render(this,"uncertain-reward",1760,920,1);Invoke(view.Cards[0].Correct);await Idle();var search=view.Cards[0].Search;
+        Yes(search.IsVisible&&search.IsDropDownOpen,"후보 확인 한 번으로 편집 입력과 검색 후보 함께 열기");if(search.SearchPopup.Child is FrameworkElement candidates)Popup(candidates,"reward-candidates-popup");search.QueryInput.Text="니카나 프라임 블레이드";
         await Idle();Yes(search.IsDropDownOpen&&search.SelectedItem is null,"검색 입력만으로 품목 확정하지 않음");
         RelicKey(search.QueryInput,System.Windows.Input.Key.Down);Yes(search.SelectedItem is null&&search.Suggestions.SelectedIndex==0,"방향키 후보 강조와 적용 구분");
         render((FrameworkElement)search.SearchPopup.Child,"correction-popup",390,360,1);
         RelicKey(search.QueryInput,System.Windows.Input.Key.Enter);await view.Cards[0].RefreshAsync(false);
-        Yes(view.Cards[0].Item?.Id==testItems[0].Id&&view.Cards[0].Quote?.SellMin==20,"Enter 선택·정정 품목 가격 반영");
-        Invoke(view.Cards[0].Correct);search.QueryInput.Text="없는보상";RelicKey(search.QueryInput,System.Windows.Input.Key.Escape);
-        Yes(view.Cards[0].Item?.Id==testItems[0].Id&&!search.IsDropDownOpen,"Escape로 미확정 입력 취소·기존 품목 유지");
+        await Idle();Yes(view.Cards[0].Item?.Id==testItems[0].Id&&view.Cards[0].Quote?.SellMin==20&&!search.IsVisible,"Enter 선택·정정 품목 가격 반영·기본 읽기 상태 복귀");
+        Yes(view.Status.Text.Contains("보상 4개 확인 완료")&&!view.Status.Text.Contains("이름 확인 필요"),"마지막 미확정 품목 교정 시 페이지 상태도 전체 확인 완료로 갱신");render(this,"corrected-reward",1760,920,1);
+        Invoke(view.Cards[0].Correct);await Idle();search.QueryInput.Text="없는보상";RelicKey(search.QueryInput,System.Windows.Input.Key.Escape);
+        await Idle();Yes(view.Cards[0].Item?.Id==testItems[0].Id&&!search.IsDropDownOpen&&!search.IsVisible&&search.QueryInput.Text==testItems[0].Name,"Escape로 미확정 입력 취소·기존 품목/문구 보존·읽기 상태 복귀");render(this,"correction-canceled",1760,920,1);
+        view.Cards[0].Search.SelectedItem=null;Yes(view.Status.Text.Contains("이름 확인 필요")&&!view.Status.Text.Contains("확인 완료"),"확정 선택을 지우면 이름 확인 필요로 복귀");
+        while(view.Cards.Count>1){Invoke(view.Cards[^1].Remove);await Idle();}Invoke(view.Cards[0].Remove);await Idle();
+        Yes(view.EmptyState.IsVisible&&view.Status.Text=="보상 화면 대기 중"&&!view.Status.Text.Contains("완료"),"모든 보상 제거 후 0개 완료 대신 기본 대기 상태로 복귀");
+        Invoke(Descendants(view.EmptyState).OfType<Button>().Single(b=>Equals(b.Content,"보상 직접 선택")));await Idle();
+        Yes(view.Status.Text.Contains("이름 확인 필요")&&!view.Status.Text.Contains("완료"),"새 수동 보상은 품목 선택 전 확인 완료로 표시하지 않음");view.Cards[0].Search.QueryInput.Text="없는보상";RelicKey(view.Cards[0].Search.QueryInput,Key.Escape);await Idle();
+        Yes(view.Cards[0].Item is null&&!view.Status.Text.Contains("완료"),"빈 수동 보상의 잘못된 검색·취소도 완료로 바꾸지 않음");
+        view.ApplyRecognition(captured[^1]);await view.RefreshAsync(false);
         view.Presence.SelectedIndex=1;await view.RefreshAsync(false);Yes(view.Cards[0].Quote?.SellMin==15,"온라인 필터 변경 후 가격 재조회");
         fake.Fail=true;await view.RefreshAsync(true);Yes(view.Cards[0].Quote is {Stale:true}&&view.Cards[0].Best.Text is not "판매 호가 높음","오프라인 이전 조회 시각 보존·가격 강조 제외");render(this,"offline",1760,920,1);
         fake.Fail=false;view.Presence.SelectedIndex=0;await view.RefreshAsync(true);
@@ -79,9 +110,9 @@ public sealed partial class MainWindow
         Yes(view.Cards[0].Quote?.ItemId==testItems[0].Id,"품목 변경 뒤 지연 응답 덮어쓰기 차단");
         Invoke(view.Cards[^1].Remove);await Idle();Yes(view.Cards.Count==3,"보상 제거 실제 버튼");Invoke(view.AddButton);await Idle();Yes(view.Cards.Count==4,"보상 추가 실제 버튼");view.Cards[^1].Select(testItems[^1]);
         Yes(view.Cards[^1].Price.Text=="거래 불가"&&!view.Cards[^1].MarketLink.IsEnabled,"포르마 거래 불가·마켓 버튼 비활성");
-        view.ClipboardImage=()=>null;Invoke(view.PasteButton);await Idle();Yes(view.Status.Text.Contains("클립보드에 이미지가 없습니다"),"이미지 없는 클립보드 안내");
-        view.ChooseImageFile=()=>Path.Combine(dir,"fixture-1920-2.png");Invoke(view.LoadButton);await WaitRecognition();render(this,"loaded-file",1760,920,1);Yes(view.Cards.Count==2,"이미지 불러오기 버튼 → OCR → 시세: "+view.Status.Text+" / "+view.Cards.Count);
-        view.ClipboardImage=()=>RelicFixture(testItems,1920,1080,false);Invoke(view.PasteButton);await WaitRecognition();Yes(view.Cards.Count==4,"붙여넣기 버튼 → OCR → 비교 · 실제 클립보드 변경 없음");
+        view.ClipboardImage=()=>null;Invoke(view.ImportMenu);await Idle();Invoke(view.PasteButton);await Idle();Yes(view.Status.Text.Contains("클립보드에 이미지가 없습니다")&&view.Status.Visibility==Visibility.Visible,"이미지 없는 클립보드 안내를 접지 않고 표시");
+        view.ChooseImageFile=()=>Path.Combine(dir,"fixture-1920-2.png");Invoke(view.ImportMenu);await Idle();Invoke(view.LoadButton);await WaitRecognition();render(this,"loaded-file",1760,920,1);Yes(view.Cards.Count==2,"이미지 불러오기 버튼 → OCR → 시세: "+view.Status.Text+" / "+view.Cards.Count);
+        view.ClipboardImage=()=>RelicFixture(testItems,1920,1080,false);Invoke(view.ImportMenu);await Idle();Invoke(view.PasteButton);await WaitRecognition();Yes(view.Cards.Count==4,"붙여넣기 버튼 → OCR → 비교 · 실제 클립보드 변경 없음");
         var previousIds=view.Cards.Select(x=>x.Item?.Id).ToArray();var pending=view.ReadAsync(RelicFixture(testItems.Take(1).ToArray(),1920,1080,false));Invoke(view.CancelButton);await Idle();await pending;
         Yes(view.Cards.Select(x=>x.Item?.Id).SequenceEqual(previousIds)&&!view.Busy,"인식 취소 버튼 · 기존 결과 유지");
         var whole=System.Diagnostics.Stopwatch.StartNew();await Task.Delay(150);
@@ -105,10 +136,11 @@ public sealed partial class MainWindow
         }
         UiFonts.Apply("jamsil");SetDarkTheme(true);await Task.Delay(200);render(this,"final",1920,1000,1);
         using(var hotkey=new RelicHotkey(this,()=>{})){Yes(hotkey.Enable(true),"전역 단축키 등록");using var conflict=new WindowHolder();using var competing=new RelicHotkey(conflict.Window,()=>{});Yes(!competing.Enable(true),"단축키 충돌 확인");hotkey.Enable(false);Yes(competing.Enable(true),"단축키 해제 후 재등록");}
-        return new{passed=true,checks=checks.Count,details=checks,ocrFixtures=fixtures,scope="합성 한국어 보상 이미지의 실제 Tesseract 인식과 실제 WPF 컨트롤·HTTP fixture. 실제 게임 영상의 정답률이나 독점 전체화면 캡처를 의미하지 않음."};
+        return new{passed=true,checks=checks.Count,details=checks,ocrFixtures=fixtures,menuLimitations=menuReport.Limitations,scope="합성 한국어 보상 이미지의 실제 Tesseract 인식과 실제 WPF 컨트롤·HTTP fixture. 실제 게임 영상의 정답률이나 독점 전체화면 캡처를 의미하지 않음."};
     }
     private sealed class WindowHolder:IDisposable{internal Window Window=new(){ShowActivated=false,ShowInTaskbar=false,Width=100,Height=100,Left=-30000,Top=-30000};public void Dispose()=>Window.Close();}
     private static void Invoke(Button button)=>((IInvokeProvider)new ButtonAutomationPeer(button).GetPattern(PatternInterface.Invoke)).Invoke();
+    private static void Invoke(MenuItem item)=>((IInvokeProvider)new MenuItemAutomationPeer(item).GetPattern(PatternInterface.Invoke)).Invoke();
     private static void RelicKey(UIElement input,Key key)=>input.RaiseEvent(new KeyEventArgs(Keyboard.PrimaryDevice,PresentationSource.FromVisual(input),0,key){RoutedEvent=Keyboard.PreviewKeyDownEvent});
     private static async Task Idle()=>await Application.Current.Dispatcher.InvokeAsync(()=>{},DispatcherPriority.ApplicationIdle);
     internal static BitmapSource RelicFixture(RelicItem[] items,int width,int height,bool wrap,bool firstWrappedAbove=false)

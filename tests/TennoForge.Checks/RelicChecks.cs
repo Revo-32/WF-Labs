@@ -7,6 +7,7 @@ internal static class RelicChecks
 {
     internal static void Run(Action<string,Action> check)
     {
+        RelicMatchingEquivalenceChecks.Run(check);
         var catalog=RelicCatalog.Bundled();var nikana=catalog.Items.Single(x=>x.Slug=="nikana_prime_blade");
         void Yes(bool b){if(!b)throw new Exception("성유물 조건 불일치");}
         check("공유 시세: 저장본 즉시 조회·한 응답으로 두 거래자 필터·재시작",()=>Snapshot().GetAwaiter().GetResult());
@@ -128,6 +129,19 @@ internal static class RelicChecks
             var reward=catalog.Recognize([new("니카나 프라임 블래이드",.2,.4,.2,.03,55)]).Single();
             var competing=reward with{Candidates=[new(catalog.Items.Single(x=>x.Slug=="tatsu_prime_blade"),.98)]};
             Yes(!RelicCatalog.ConfirmCorroborated([reward],[new("original",reward),new("contrast",reward),new("tint",competing),new("inverted",competing)]).Single().Confident);
+        });
+        check("성유물: 분리된 설계도 조각보다 독립 판독으로 확인한 섀시 전체 이름 우선",()=>
+        {
+            RewardText[] fragments=[new("스티아낙스 프라임",.4,.4,.17,.02,98),new("설계도",.45,.43,.07,.02,98),
+                new("스티아낙스 프라임 섀시",.4,.4,.22,.02,84),new("설계도",.46,.43,.07,.02,59)];
+            var full=catalog.Recognize([new("스티아낙스 프라임 섀시 설계도",.4,.4,.22,.05,59)]).Single();
+            RewardEvidence[] evidence=[new("bright",full),new("gold",full)];
+            bool Confirmed(RecognizedReward r)=>evidence.Where(e=>e.Reward.Candidates[0].Item.Id==r.Candidates[0].Item.Id&&
+                Math.Abs(e.Reward.Bounds.X-r.Bounds.X)<.06).Select(e=>e.Family).Distinct().Count()>=2;
+            var chosen=catalog.Recognize(fragments,corroborated:Confirmed);
+            Yes(RelicCatalog.ConfirmCorroborated(chosen,evidence).Single().Item?.Slug=="styanax_prime_chassis_blueprint");
+            var unverified=catalog.Recognize([new("스티아낙스 프라임 섀시 설계도",.4,.4,.22,.05,20)],corroborated:_=>true);
+            Yes(unverified.All(r=>!r.Confident)); // Ranking evidence never bypasses confidence checks.
         });
         check("성유물: 공통 부품명만으로 프레임을 확정하지 않음",()=>Yes(catalog.Recognize([new("뉴로옵틱스 설계도",.1,.4,.18,.03,99)]).All(x=>!x.Confident&&x.Candidates[0].Similarity<.95)));
         check("성유물: 프라임 글자가 누락되어도 고유 이름·부품이 뚜렷하면 복구",()=>

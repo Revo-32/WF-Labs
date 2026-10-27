@@ -13,7 +13,7 @@ public sealed partial class MainWindow
     {
         var checks=new List<string>();var saved=ReadBuild();
         void Yes(bool value,string label){if(!value)throw new Exception(label);checks.Add(label);}
-        ShowModding();await Idle();checks.AddRange(CheckWeaponSearchUx());
+        ShowModding();await Idle();checks.AddRange(await CheckWeaponSearchUx());
         CheckClickRegions(weapon,Yes);
         try
         {

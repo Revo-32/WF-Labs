@@ -1,6 +1,6 @@
 {
   "retrievedUtc": "2026-10-25T17:40:52.631589+00:00",
-  "dataSha256": "4ac470d3e351f88a79a6df0951e7b5252dbf9a8b9b72146627ba44db75997014",
+  "dataSha256": "5741ac1b58850831ee9dd197d4b68e15e2bb025b84463460d9abeaae2bd6228a",
   "sources": [
     {
       "url": "https://wiki.warframe.com/w/Acceltra?oldid=2774017",
@@ -6182,5 +6182,12 @@
       "Control Module",
       "Control Module"
     ]
+  ],
+  "corrections": [
+    {
+      "id": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetBlueprint",
+      "reason": "Chroma 제작 재료에서 역추적된 출처를 Volt 부품의 고유 획득처로 정정",
+      "source": "https://wiki.warframe.com/w/Volt/Main?oldid=2821373"
+    }
   ]
 }

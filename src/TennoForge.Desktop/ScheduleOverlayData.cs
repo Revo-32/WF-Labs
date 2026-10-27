@@ -10,7 +10,7 @@ internal sealed record ScheduleOverlayData(ScheduleOverlayEntry[] Timers,Schedul
 }
 internal sealed partial class SchedulePage
 {
-    private bool FissureAllowed(FissureMission f)=>Preferences.FissureView switch{1=>f.SteelPath&&!f.Storm,2=>!f.SteelPath&&!f.Storm,3=>f.Storm,4=>Preferences.FissureRules.Any(r=>r.Matches(f)),_=>true};
+    private bool FissureAllowed(FissureMission f)=>Preferences.FissureView switch{1=>f.SteelPath&&!f.Storm,2=>!f.SteelPath&&!f.Storm,3=>f.Storm,4=>Preferences.FissureRules.Any(r=>r.Matches(f)),5=>GoalMissionAllowed(f)&&GoalMissions(Clock()).Any(m=>m.Mission.Id==f.Id),_=>true};
     internal ScheduleOverlayData OverlayData(DateTimeOffset now)
     {
         var timers=new List<ScheduleOverlayEntry>();var ids=Preferences.OverlayItems.ToHashSet();
@@ -30,17 +30,20 @@ internal sealed partial class SchedulePage
         }
         foreach(var id in new[]{"tenet","coda"}.Where(ids.Contains))
         {var w=WorldScheduleEngine.ShopAt(CatalogData,id,now);timers.Add(new(id,id=="tenet"?"테넷 상점":"코다 상점",(w.Batch.Length>0?w.Batch+" 회차 · ":"")+"보너스 교체",WorldScheduleEngine.Countdown(w.EndUtc,now),"예상"));}
-        bool show=Preferences.ShowCurrentFissures||ids.Contains("fissures")||ids.Any(id=>id.StartsWith("fissure:",StringComparison.Ordinal));
+        var goals=GoalMissions(now).Where(m=>GoalMissionAllowed(m.Mission)).ToDictionary(m=>m.Mission.Id);
+        bool show=Preferences.ShowCurrentFissures||ids.Contains("fissures")||ids.Any(id=>id.StartsWith("fissure:",StringComparison.Ordinal))||Preferences.ShowFarmingFissures&&goals.Count>0;
         bool fresh=!Data.Cached&&FissureAlerts.Fresh(Data.Snapshot,now);var fissures=new List<ScheduleOverlayEntry>();
         foreach(var f in (Data.Snapshot?.Fissures??[]).Where(f=>f.Active(now)))
         {
             bool match=Preferences.FissureRules.Any(r=>r.Matches(f));bool pinned=ids.Contains("fissure:"+f.Id);
             bool allowed=FissureAllowed(f);
-            if(!(Preferences.ShowCurrentFissures?allowed:pinned||ids.Contains("fissures")&&match))continue;
-            fissures.Add(new(f.Id,$"{f.TierLabel} · {f.Mission}",f.Node,WorldScheduleEngine.Countdown(f.EndUtc,now),f.Mode+(match?" · 알림 대상":""),match,"fissure"));
+            bool goal=Preferences.ShowFarmingFissures&&goals.TryGetValue(f.Id,out _);
+            if(!(Preferences.ShowCurrentFissures?allowed:pinned||ids.Contains("fissures")&&match||goal&&allowed))continue;
+            string detail=f.Node+(goal?" · "+string.Join(" · ",goals[f.Id].GoalIds.Select(id=>Farming!.Catalog.Name(id))):"");
+            fissures.Add(new(f.Id,$"{f.TierLabel} · {f.Mission}",detail,WorldScheduleEngine.Countdown(f.EndUtc,now),f.Mode+(goal?" · 목표":match?" · 알림 대상":""),match||goal,"fissure"));
         }
         var sorted=fissures.OrderByDescending(f=>f.Highlight).ThenBy(f=>f.Badge.StartsWith("강철의 길")?0:1).ThenBy(f=>f.Value,StringComparer.Ordinal).ToArray();
         string notice=!show?"":!fresh?"균열 자료 갱신 필요 · 저장된 일정은 참고용":sorted.Length==0?"현재 조건에 맞는 열린 균열이 없습니다.":"";
-        return new(timers.ToArray(),sorted,show,notice,fresh?"":"저장 자료"){FissureFilter=Preferences.FissureView switch{1=>"강철의 길",2=>"일반",3=>"보이드 폭풍",4=>"알림 대상",_=>"전체"}};
+        return new(timers.ToArray(),sorted,show,notice,fresh?"":"저장 자료"){FissureFilter=Preferences.FissureView switch{1=>"강철의 길",2=>"일반",3=>"보이드 폭풍",4=>"알림 대상",5=>"내 목표",_=>"전체"}};
     }
 }

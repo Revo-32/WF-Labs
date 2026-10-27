@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using TennoForge.Core;
 
@@ -12,6 +12,7 @@ static class InventoryChecks
     internal static void Run(Action<string,Action> check)
     {
         AcquisitionChecks.Run(check);
+        AcquisitionGroupingChecks.Run(check);
         DashboardChecks.Run(check);
         void Yes(bool b,string message){if(!b)throw new Exception(message);}
         var c=InventoryCatalog.Load();var json=Fixture(c);var snapshot=InventoryImport.Parse(json,c);var braton=c.Items.Single(i=>i.EnglishName=="Braton Prime");

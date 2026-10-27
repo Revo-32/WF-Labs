@@ -34,6 +34,7 @@ try {
     @{RepositoryUrl=$RepositoryUrl.TrimEnd('/');Prerelease=$Version.Contains('-')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $publish 'release-config.json') -Encoding utf8NoBOM
     Copy-Item -LiteralPath (Join-Path $projectRoot 'docs/THIRD_PARTY_NOTICES.txt') -Destination $publish
     Copy-Item -LiteralPath (Join-Path $projectRoot 'COPYRIGHT.md') -Destination $publish
+    foreach($guide in @('PRIVACY.md','SUPPORT.md','RELEASE_READINESS_2026-10-27.md','OCR_PERFORMANCE_2026-10-27.md','UX_REVIEW_2026-10-27.md','RIVEN_OCR_LAYOUT_2026-10-27.md','RC4_LAUNCH_FIX_2026-10-27.md','RC4_RELEASE_CHECK_2026-10-27.md','RANGED_APPROXIMATIONS.md')){Copy-Item -LiteralPath (Join-Path $projectRoot ('docs/'+$guide)) -Destination $publish}
     Copy-Item -LiteralPath (Join-Path $projectRoot 'docs/licenses/VELOPACK-LICENSE.txt') -Destination $publish
     $assets=Get-Content -LiteralPath (Join-Path $projectRoot 'src/TennoForge.Desktop/obj/project.assets.json') -Raw | ConvertFrom-Json
     $runtimeNames=@('Microsoft.NETCore.App.Runtime.win-x64','Microsoft.WindowsDesktop.App.Runtime.win-x64')
