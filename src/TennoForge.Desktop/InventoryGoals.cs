@@ -128,7 +128,15 @@ internal sealed partial class InventoryPage
         if(purchaseView.Parent is Panel previous)previous.Children.Remove(purchaseView);GoalDetail.Children.Add(purchaseView);
         _=CompareGoalPurchasesAsync(definition?.ItemId);
     }
-    internal Task RefreshGoalPurchasesForCheck()=>CompareGoalPurchasesAsync(selectedGoalId);
+    private Task goalPriceRefresh=Task.CompletedTask;
+    internal async Task RefreshGoalPurchasesForCheck()
+    {
+        // UI Automation Invoke queues the Click event. Wait for that event and
+        // its real async quote request before observing a purchase comparison.
+        await System.Windows.Threading.Dispatcher.Yield(System.Windows.Threading.DispatcherPriority.ContextIdle);
+        await goalPriceRefresh;
+        await CompareGoalPurchasesAsync(selectedGoalId);
+    }
     internal Task RefreshGoalPricesForCheck()=>RefreshGoalPricesAsync(selectedGoalId);
     private Dictionary<string,long> GoalDemands(string? id)
     {
@@ -152,7 +160,7 @@ internal sealed partial class InventoryPage
             foreach(var line in comparison.Lines)purchaseView.Children.Add(Text($"{line.Item.Name} ×{line.Quantity} · {line.Cost:0.##} P"+(line.Bundle?" · 세트":""),14));
             foreach(var extra in comparison.ExtraItems)purchaseView.Children.Add(Text($"추가로 남음 · {CatalogData.Name(extra.Id)} ×{extra.Count}",13,"MutedBrush"));
             if(comparison.Stale)purchaseView.Children.Add(Text("오래된 호가 포함 · 구매 전 갱신하세요.",13,"AccentBrush"));
-            var refresh=ActionButton("부품·세트 시세 갱신",()=>_=RefreshGoalPricesAsync(id));purchaseView.Children.Add(refresh);
+            var refresh=ActionButton("부품·세트 시세 갱신",()=>{if(quoteCancellation is null)goalPriceRefresh=RefreshGoalPricesAsync(id);});purchaseView.Children.Add(refresh);
             purchaseView.Children.Add(Text("확인된 등록 호가·세트 구성 기준입니다. 재판매 수익은 비용에서 빼지 않으며, 크레딧·비거래 재료는 별도로 확보합니다.",12,"MutedBrush"));
             var free=new Expander{Header="목표 예약 외 거래 부품",Margin=new(0,12,0,0)};free.Expanded+=(_,_)=>free.Content??=FreeTradeParts();purchaseView.Children.Add(free);
         }

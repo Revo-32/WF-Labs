@@ -36,10 +36,11 @@ public sealed partial class MainWindow
         var quantity=LayoutDiagnostics.Tree(p.GoalDetail).OfType<ComboBox>().Single(b=>AutomationProperties.GetName(b)=="목표 보유 수량");await Choose(quantity,1);await p.RefreshGoalPurchasesForCheck();
         Yes(p.Farming.Document.Goals.Single().Quantity==2&&p.Farming.Plan.Missing[barrel.Id]==2,"실제 수량 드롭다운 → 예약·부족 수량 재계산");
         quantity=LayoutDiagnostics.Tree(p.GoalDetail).OfType<ComboBox>().Single(b=>AutomationProperties.GetName(b)=="목표 보유 수량");await Choose(quantity,0);await p.RefreshGoalPurchasesForCheck();
-        Select(LayoutDiagnostics.Tree(p.GoalDetail).OfType<RadioButton>().Single(b=>AutomationProperties.GetName(b)=="목표 구매 비교"));await Dispatcher.Yield();
-        decimal partPrice=10;int quoteCalls=0;p.QuoteOverride=(item,_)=>{quoteCalls++;decimal value=item.Slug.EndsWith("_set",StringComparison.Ordinal)?8:partPrice;return Task.FromResult(new MarketQuote(item.Id,DateTimeOffset.UtcNow,MarketPresence.InGame,true,value,value,value,5,4));};
+        Select(LayoutDiagnostics.Tree(p.GoalDetail).OfType<RadioButton>().Single(b=>AutomationProperties.GetName(b)=="목표 구매 비교"));await p.RefreshGoalPurchasesForCheck();
+        decimal partPrice=10;int quoteCalls=0;p.QuoteOverride=async(item,token)=>{quoteCalls++;await Task.Delay(20,token);decimal value=item.Slug.EndsWith("_set",StringComparison.Ordinal)?8:partPrice;return new MarketQuote(item.Id,DateTimeOffset.UtcNow,MarketPresence.InGame,true,value,value,value,5,4);};
         Click(LayoutDiagnostics.Tree(p.GoalDetail).OfType<Button>().Single(b=>Equals(b.Content,"부품·세트 시세 갱신")));await p.RefreshGoalPurchasesForCheck();
         string[] Texts()=>LayoutDiagnostics.Tree(p.GoalDetail).OfType<TextBlock>().Select(t=>t.Text).ToArray();
+        File.WriteAllText(Path.Combine(directory,"goal-purchase-debug.json"),JsonSerializer.Serialize(new{quoteCalls,texts=Texts()},Catalog.Json));
         Yes(quoteCalls>=2&&Texts().Any(t=>t.Contains("최소 8 P"))&&Texts().Any(t=>t.Contains("추가로 남음")),"실제 시세 갱신 → 부족 낱개보다 싼 세트·여분 표시");
         partPrice=5;await p.RefreshGoalPricesForCheck();await p.RefreshGoalPurchasesForCheck();Yes(Texts().Any(t=>t.Contains("최소 5 P")),"시세 변경 후 낱개가 유리한 경로로 자동 갱신");
         render(this,"goal-purchase-comparison",1760,920,1);
