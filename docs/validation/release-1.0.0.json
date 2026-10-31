@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "sourceCommit": "f2d11c9b868094f1a4140e99251453088c03621f",
+  "version": "1.0.0",
+  "sourceValidationStages": 21,
+  "sourceCoreChecks": 1788,
+  "shippingCoreChecks": 1788,
+  "packageChecks": 615,
+  "packagedApp": {
+    "checks": [
+      "launcher",
+      "riven",
+      "relic",
+      "updates",
+      "ui",
+      "packaged-core"
+    ],
+    "coreChecks": 1788,
+    "launcherWindowVerified": true,
+    "cleanWindowsVerified": false,
+    "desktopSwitched": false,
+    "version": "1.0.0",
+    "gameInputChanged": false,
+    "coreSha256": "c2121054217438beacb0c55a4ed8028a1ed39f2c679615c8c822beac8f859287",
+    "passed": true
+  },
+  "negativePackageCases": [
+    {
+      "case": "missing-manifest",
+      "passed": true,
+      "exitCode": 1,
+      "expectedRejection": "최상위 실행기의 필수 sq.version 포함"
+    },
+    {
+      "case": "different-payload",
+      "passed": true,
+      "exitCode": 1,
+      "expectedRejection": "설치·압축 배포본 내용 SHA-256 일치 · release-config.json"
+    }
+  ],
+  "legacyInstaller": {
+    "updatedVersion": "1.0.0",
+    "uninstalled": true,
+    "startupSettingsPreserved": true,
+    "userWorkspacePreserved": true,
+    "installedVersion": "0.10.0-qa.21",
+    "restarted": true,
+    "helperPresent": true,
+    "recoveryVerified": true,
+    "passed": true,
+    "planningVerified": false,
+    "downloaded": true
+  },
+  "planningInstaller": {
+    "userWorkspacePreserved": true,
+    "startupSettingsPreserved": true,
+    "uninstalled": true,
+    "passed": true,
+    "downloaded": true,
+    "installedVersion": "1.0.0-qa.2",
+    "restarted": true,
+    "recoveryVerified": true,
+    "helperPresent": true,
+    "planningVerified": true,
+    "updatedVersion": "1.0.0"
+  },
+  "koreanRivenCorpus": {
+    "passed": 45,
+    "exact": 45,
+    "total": 45,
+    "wrongAutomatic": 0
+  },
+  "signing": "NotSigned",
+  "cleanWindowsVerified": false,
+  "actualMonitorMoveVerified": false,
+  "actualLoginStartupVerified": false,
+  "github": {
+    "conclusion": "success",
+    "headSha": "f2d11c9b868094f1a4140e99251453088c03621f",
+    "status": "completed",
+    "url": "https://github.com/Revo-32/WF-Labs/actions/runs/41168884946"
+  },
+  "publicRelease": {
+    "passed": true,
+    "anonymous": true,
+    "installerHttpStatus": 200,
+    "assets": 7,
+    "allAssetSizesAndDigestsMatch": true,
+    "feedMatchesLocal": true,
+    "tagMatchesSource": true,
+    "publishedAt": "2026-10-31T04:51:37Z",
+    "releaseUrl": "https://github.com/Revo-32/WF-Labs/releases/tag/v1.0.0"
+  },
+  "onlineUpdate": {
+    "passed": true,
+    "anonymous": true,
+    "repository": "https://github.com/Revo-32/WF-Labs",
+    "currentVersion": "0.10.0-preview.1",
+    "availableVersion": "1.0.0",
+    "downloadedBytes": 131894547,
+    "sha256": "CA5133595CE00F219156CF6DD9C96DA2262C585761A502386AA7B966E4FA665A",
+    "latestVersionReturnsNoUpdate": true,
+    "stableAndPreviewChannelsVerified": true,
+    "installedContextSimulated": true,
+    "note": "클라이언트와 같은 Velopack GithubSource로 익명 확인·다운로드·해시 검증. 설치 버전 정보만 TestVelopackLocator로 주입하며 사용자 설치본은 변경하지 않음. 실제 설치·재시작·복원은 별도 격리 설치 QA에서 검증."
+  },
+  "assets": [
+    {
+      "name": "assets.win.json",
+      "bytes": 190,
+      "sha256": "a3fde007d83347c03306e4fd54b85a83d67e4f2ba5d2261d695f9bfb4d39ae9f"
+    },
+    {
+      "name": "RELEASES",
+      "bytes": 77,
+      "sha256": "0c304956a01dd380b57d24fd26891f17880f41290ab96efc085385dce5d7421c"
+    },
+    {
+      "name": "releases.win.json",
+      "bytes": 6019,
+      "sha256": "3b4767a1db60139250539a589b99a950da28773db4bdcde9840cd3f3aabd593b"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 514,
+      "sha256": "5d8d6068b279c7d3bb0aab34722b124983a3fe1b8b9bd8e613bec8b72598c617"
+    },
+    {
+      "name": "WFLabs-1.0.0-full.nupkg",
+      "bytes": 131894547,
+      "sha256": "ca5133595ce00f219156cf6dd9c96da2262c585761a502386aa7b966e4fa665a"
+    },
+    {
+      "name": "WFLabs-win-Portable.zip",
+      "bytes": 131878433,
+      "sha256": "6d6e309da60c22fcec269ec54adfde0bfaa5d68033a056a9b25862741e9f389b"
+    },
+    {
+      "name": "WFLabs-win-Setup.exe",
+      "bytes": 139451667,
+      "sha256": "2de0bc436999f0456bb612420be652e21fecb7601cf0f14df68d9b1de1f5a830"
+    }
+  ]
+}
