@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Automation;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -8,6 +8,7 @@ namespace TennoForge.Desktop;
 
 public sealed partial class MainWindow
 {
+    private const double EquipmentSlotHeight=84;
     private readonly TextBlock exilusSlotName=T("＋",14),meleeSlotName=T("＋",14),exilusSlotRank=T("",13),meleeSlotRank=T("",13);
     private Button? exilusSlotButton,meleeSlotButton,zawSlotButton;
     private FrameworkElement? equipmentSlots;
@@ -23,7 +24,7 @@ public sealed partial class MainWindow
             detail.Margin=new(0);detail.SetResourceReference(TextBlock.ForegroundProperty,"AccentBrush");
             var band=new DockPanel{LastChildFill=true};DockPanel.SetDock(detail,Dock.Right);band.Children.Add(detail);band.Children.Add(label);
             var body=new Grid();body.RowDefinitions.Add(new(){Height=GridLength.Auto});body.RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});body.Children.Add(band);Grid.SetRow(name,1);body.Children.Add(name);
-            var button=Button("",open);button.Content=body;button.Padding=new(9,7,9,7);button.Height=100;button.Margin=new(0,0,6,0);button.HorizontalContentAlignment=HorizontalAlignment.Stretch;
+            var button=Button("",open);button.Content=body;button.Padding=new(9,7,9,7);button.Height=EquipmentSlotHeight;button.Margin=new(0,0,6,0);button.HorizontalContentAlignment=HorizontalAlignment.Stretch;
             AutomationProperties.SetName(button,title+" 슬롯 · 변경");slots.Children.Add(button);return button;
         }
         exilusSlotButton=Slot("엑실러스",exilusSlotName,exilusSlotRank,()=>OpenEquipmentPicker("exilus"));

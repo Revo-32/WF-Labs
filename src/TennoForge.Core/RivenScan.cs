@@ -13,6 +13,9 @@ public record RivenScanRecipe(string Ingredients,string Result,double Minimum,do
 }
 public record RivenScanReport(string Kind,int Rank,RivenScanOption[] Options,RivenScanValue[] Values,RivenScanRecipe[] Recipes,string[] Issues)
 {
+    // Literal OCR completeness is independent of historical disposition/rank
+    // compatibility. It never authorizes grading or auto confirmation.
+    public string[] TranscriptionIssues {get;init;}=[];
     public bool DetectedKind {get;init;}
     public string[] KindCandidates {get;init;}=[];
     public string KindBasis {get;init;}="직접 선택";
@@ -57,6 +60,7 @@ public static class RivenScan
             "StatusDuration"=>new[]{"상태이상 지속 시간","상태 이상 지속 시간"},
             "StatusDamage"=>new[]{"상태 이상 피해"},
             "FinisherDamage"=>new[]{"마무리 일격 피해"},
+            "SlamDamage"=>new[]{"지면 강타 피해"},
             "ComboDuration"=>new[]{"연속기 지속 시간"},"InitialCombo"=>new[]{"기본 연속기"},
             "AmmoMaximum"=>new[]{"탄약 최대량"},"ProjectileSpeed"=>new[]{"발사체 속도"},
             "PunchThrough"=>new[]{"두께 꿰뚫기"},"Zoom"=>new[]{"확대율 증가","확대율"},
@@ -64,7 +68,7 @@ public static class RivenScan
             "VsOrokin" or "FactionOrokin"=>new[]{"오로킨에 대한 피해","오로킨 피해"},"VsTechrot" or "FactionTechrot"=>new[]{"테크병에 대한 피해","테크병 피해","테크롯에 대한 피해"},"VsScaldra" or "FactionScaldra"=>new[]{"스칼드라에 대한 피해","스칼드라 피해"},
             "ImpactDamage" or "Impact"=>new[]{"충격","충격 피해"},"PunctureDamage" or "Puncture"=>new[]{"관통","관통 피해"},"SlashDamage" or "Slash"=>new[]{"베기","베기 피해"},
             "Gas"=>new[]{"가스","가스 피해"},"Corrosive"=>new[]{"부식","부식 피해"},"Viral"=>new[]{"바이러스","바이러스 피해"},"Radiation"=>new[]{"방사능","방사능 피해"},"Blast"=>new[]{"폭발","폭발 피해"},"Magnetic"=>new[]{"자성","자성 피해"},
-            "ComboChance"=>new[]{"추가 콤보 카운트 확률","추가 연속기 카운트 확률","연속기 카운트 확률"},"SlideCriticalChance"=>new[]{"슬라이딩 공격 시 치명타 확률","슬라이드 공격에 치명타 확률 추가","슬라이드 공격 시 치명타 확률"},
+            "ComboChance"=>new[]{"추가 콤보 카운트 확률","추가 연속기 카운트 확률","연속기 카운트 확률","연속기 카운트 획득 확률"},"SlideCriticalChance"=>new[]{"슬라이딩 공격 시 치명타 확률","슬라이드 공격에 치명타 확률 추가","슬라이드 공격 시 치명타 확률"},
             "Recoil"=>new[]{"반동","무기 반동"},"FireRate"=>new[]{"연사력","발사 속도"},
             _=>Array.Empty<string>()
         })yield return s;
@@ -78,12 +82,19 @@ public static class RivenScan
             if(!match.Success)
             {
                 var normalized=Normalize(line);
-                if(Regex.IsMatch(line,@"\d.*(%|초|m)")||Keys(kind).Any(k=>Aliases(kind,k).Any(a=>normalized==Normalize(a)||Regex.IsMatch(line,@"\d")&&normalized.Contains(Normalize(a)))))issues.Add("부호·수치 또는 옵션 확인: "+line);
+                bool incompleteOption=Regex.IsMatch(line,@"\d.*(%|초|m)")||Keys(kind).Any(k=>Aliases(kind,k).Any(a=>normalized==Normalize(a)||Regex.IsMatch(line,@"\d")&&normalized.Contains(Normalize(a))));
+                // OCR may render a Latin title suffix as digits or %. An exact
+                // known weapon prefix identifies a header, not a missing stat.
+                if(incompleteOption&&RivenKindDetection.WeaponKind(line) is null)issues.Add("부호·수치 또는 옵션 확인: "+line);
                 continue;
             }
             var name=OptionLabel(Regex.Replace(line.Remove(match.Index,match.Length),@"\([^)]*\)",""));
             var keys=Keys(kind).Where(k=>Aliases(kind,k).Any(a=>Normalize(a)==name)).ToArray();
-            if(keys.Length!=1){issues.Add("옵션 이름 확인: "+line);continue;}
+            if(keys.Length!=1)
+            {
+                if(match.Index>0&&RivenKindDetection.WeaponKind(line[..match.Index]) is not null)continue;
+                issues.Add("옵션 이름 확인: "+line);continue;
+            }
             var key=keys[0];var value=double.Parse(match.Groups["value"].Value.Replace(',','.'),CultureInfo.InvariantCulture);
             if(match.Groups["factor"].Success)
             {
@@ -106,7 +117,7 @@ public static class RivenScan
     public static string NormalizeOcrLabels(string text,string kind)
     {
         var aliases=Keys(kind).SelectMany(key=>Aliases(kind,key).Select(label=>(Key:key,Label:label,Normal:Normalize(label)))).ToArray();
-        return string.Join("\n",LogicalLines(text,kind).Select(line=>
+        return string.Join("\n",LogicalLines(text,kind,normalizeAliasNoise:true).Select(line=>
         {
             var numbers=Number.Matches(line);if(numbers.Count!=1)return line;var number=numbers[0];
             var label=OptionLabel(Regex.Replace(line.Remove(number.Index,number.Length),@"\([^)]*\)",""));
@@ -121,8 +132,8 @@ public static class RivenScan
             if(suffix.Length>0&&suffix.Select(a=>a.Key).Distinct().Count()==1)return number.Value+" "+suffix[0].Label;
             // Only a unique long label one glyph away. Never infer a missing
             // number/sign/unit or fuzzy-match short damage-type names.
-            if(label.Length<5)return line;
-            var close=aliases.Where(a=>a.Normal.Length>=5&&OneEdit(label,a.Normal)).ToArray();
+            if(label.Length<3)return line;
+            var close=aliases.Where(a=>a.Normal.Length>=4&&OneEdit(label,a.Normal)).ToArray();
             return close.Select(a=>a.Key).Distinct().Count()==1?number.Value+" "+close[0].Label:line;
         }));
     }
@@ -135,7 +146,7 @@ public static class RivenScan
     }
     // A displayed option may wrap before or after its signed value. Join only when
     // the result has exactly one number and a complete, known option label.
-    public static string[] LogicalLines(string text,string kind)
+    public static string[] LogicalLines(string text,string kind,bool normalizeAliasNoise=false)
     {
         var lines=text.Split('\n',StringSplitOptions.RemoveEmptyEntries).Select(s=>s.Trim()).ToArray();var result=new List<string>();
         for(int i=0;i<lines.Length;i++)
@@ -146,7 +157,13 @@ public static class RivenScan
                 if(count>1)joined+=" "+lines[i+count-1];var matches=Number.Matches(joined);if(matches.Count>1)break;
                 if(matches.Count!=1)continue;var match=matches[0];
                 var label=OptionLabel(Regex.Replace(joined.Remove(match.Index,match.Length),@"\([^)]*\)",""));
-                if(Keys(kind).Any(k=>Aliases(kind,k).Any(a=>Normalize(a)==label)))
+                bool known=Keys(kind).Any(k=>Aliases(kind,k).Any(a=>Normalize(a)==label));
+                if(!known&&normalizeAliasNoise&&label.Length>=3)
+                {
+                    var close=Keys(kind).Where(k=>Aliases(kind,k).Any(a=>Normalize(a).Length>=4&&OneEdit(label,Normalize(a)))).ToArray();
+                    known=close.Length==1;
+                }
+                if(known)
                 {result.Add(joined);i+=count-1;found=true;break;}
             }
             if(!found)result.Add(lines[i]);
@@ -158,7 +175,15 @@ public static class RivenScan
     public static RivenScanReport Analyze(RivenScanOption[] options,string kind,int rank,string[]? issues=null)
     {
         _=KindName(kind);var errors=new List<string>(issues??[]);var values=new List<RivenScanValue>();var recipes=new List<RivenScanRecipe>();
-        var report=new RivenScanReport(kind,rank,options,[],[],[]);
+        var report=new RivenScanReport(kind,rank,options,[],[],[]){TranscriptionIssues=errors.ToArray()};
+        if(errors.Count>0)
+        {
+            // A skipped option changes the positive/negative count and therefore
+            // every range. Keep the recognized input, but never grade a partial
+            // card as though its remaining options were the complete shape.
+            errors.Add("옵션 구성 확인 전에는 수율을 계산하지 않습니다.");
+            return report with{Issues=errors.Distinct().ToArray()};
+        }
         try
         {
             if(kind=="Melee")RivenValues.Validate(Melee(report),false);else RangedRivens.Validate(Ranged(report),false,false);

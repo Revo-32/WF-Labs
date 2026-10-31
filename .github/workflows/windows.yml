@@ -34,12 +34,17 @@ jobs:
         run: python -X utf8 tools/release-preflight.py
       - name: 계산 및 실제 WPF 화면 검증
         run: ./tools/validate.ps1 -Dotnet (Get-Command dotnet).Source
+      - name: 검증 결과 요약
+        if: always()
+        run: python -X utf8 tools/summarize-validation.py artifacts/validation
       - name: 설치·업데이트 패키지 생성
         env:
           WF_REPOSITORY: ${{ github.repository }}
         run: ./tools/package.ps1 -Dotnet (Get-Command dotnet).Source -RepositoryUrl "https://github.com/$env:WF_REPOSITORY" -OutputDirectory builds/release
       - name: 패키지 무결성과 업데이트 연결 검사
         run: python -X utf8 tools/verify-package.py builds/release
+      - name: 실제 배포본 실행·OCR·계산 검수
+        run: ./tools/verify-packaged-app.ps1 -Directory builds/release -Dotnet (Get-Command dotnet).Source
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -48,6 +53,10 @@ jobs:
             artifacts/validation/
             artifacts/release-preflight.json
             artifacts/package-verification.json
+            artifacts/packaged-app/*-verification.json
+            artifacts/packaged-app/core-checks.json
+            artifacts/packaged-app/core-error.log
+            artifacts/packaged-app/launcher/
       - uses: actions/upload-artifact@v4
         with:
           name: WF-Labs-Windows

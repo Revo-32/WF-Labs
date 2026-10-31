@@ -28,6 +28,15 @@ internal static class ClientUpdateChecks
         var old=JsonSerializer.Deserialize<ClientPreferences>("{\"StartWithWarframe\":true}")!;
         Yes(old.StartWithWarframe&&old.CheckUpdatesAutomatically&&old.DownloadUpdatesAutomatically,"기존 자동 실행 설정 호환 · 새 업데이트 기본값");
         Yes(VelopackUpdateFeed.IsRepository("https://github.com/Revo-32/WF-Labs")&&!VelopackUpdateFeed.IsRepository("https://github.com.evil.test/a/b")&&!VelopackUpdateFeed.IsRepository("https://github.com/a/b?token=x"),"공개 GitHub 저장소 주소 형식 검사");
+        Yes(!VelopackUpdateFeed.IncludePrereleases("1.0.0",true)&&!VelopackUpdateFeed.IncludePrereleases("1.0.0+rc-note",true),"정식판은 잘못된 설정이어도 미리보기 업데이트 제외");
+        Yes(VelopackUpdateFeed.IncludePrereleases("1.0.0-rc.1",true)&&!VelopackUpdateFeed.IncludePrereleases("1.0.0-rc.1",false),"미리보기 채널 허용 및 정식 전용 설정 존중");
+        var diagnostic=ClientDiagnostics.Capture();
+        var diagnosticJson=JsonSerializer.Serialize(diagnostic);
+        Yes(!diagnosticJson.Contains(Environment.UserName,StringComparison.OrdinalIgnoreCase)&&!diagnosticJson.Contains(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),StringComparison.OrdinalIgnoreCase),"진단 파일에는 사용자 이름·프로필 경로 없음");
+        Yes(diagnostic.Components.Length>0&&diagnostic.SchemaVersion==1,"진단 정보 · 앱·런타임·OCR 구성요소 상태");
+        var planningCheckFolder=System.IO.Path.Combine(System.IO.Path.GetTempPath(),"WFLabs-planning-update-"+Guid.NewGuid().ToString("N"));
+        try{InstalledPlanningCheck.Prepare(planningCheckFolder);Yes(InstalledPlanningCheck.Verify(planningCheckFolder),"개인 목표·예약·오버레이 설정 파일의 새 프로세스 복원 fixture");}
+        finally{if(System.IO.Directory.Exists(planningCheckFolder)&&System.IO.Path.GetFullPath(planningCheckFolder).StartsWith(System.IO.Path.GetFullPath(System.IO.Path.GetTempPath()),StringComparison.OrdinalIgnoreCase))System.IO.Directory.Delete(planningCheckFolder,true);}
         var unavailable=new Feed{UnavailableReason="개발 버전"};using(var u=new ClientUpdates(unavailable)){await u.CheckAsync();Yes(unavailable.Checks==0&&u.Phase==ClientUpdatePhase.Unavailable,"미설치 버전은 업데이트 네트워크 요청 없음");}
         var off=new Feed();using(var u=new ClientUpdates(off,()=>new(CheckUpdatesAutomatically:false))){await u.CheckAsync(true);Yes(off.Checks==0,"자동 확인 해제 시 자동 요청 없음");await u.CheckAsync();Yes(off.Checks==1&&off.Downloads==0,"자동 확인을 꺼도 수동 확인 가능");}
         var latest=new Feed{Next=null};using(var u=new ClientUpdates(latest)){await u.CheckAsync();Yes(u.Phase==ClientUpdatePhase.Current&&u.LastChecked is not null,"최신 버전·마지막 확인 시각 표시");}
@@ -52,6 +61,19 @@ internal static class ClientUpdateChecks
             Yes(u.Phase==ClientUpdatePhase.Downloading&&!task.IsCompleted,"설정창을 닫아도 공유 다운로드 유지");
             shared.DownloadGate.SetResult();await task;
             var reopened=new ClientSettingsWindow(()=>{},u);render((FrameworkElement)reopened.Content,"update-ready");
+            var diagnosticPath=System.IO.Path.Combine(System.IO.Path.GetTempPath(),"WFLabs-diagnostic-check-"+Guid.NewGuid().ToString("N")+".json");
+            try
+            {
+                reopened.ChooseDiagnosticFile=()=>diagnosticPath;
+                ((System.Windows.Automation.Provider.IInvokeProvider)new System.Windows.Automation.Peers.ButtonAutomationPeer(reopened.ExportDiagnostics).GetPattern(System.Windows.Automation.Peers.PatternInterface.Invoke)).Invoke();
+                await System.Windows.Threading.Dispatcher.Yield();
+                var exported=JsonSerializer.Deserialize<ClientDiagnosticReport>(System.IO.File.ReadAllText(diagnosticPath))!;
+                Yes(exported.SchemaVersion==1&&exported.Components.Length>0,"실제 진단 저장 버튼 · JSON 파일 생성");
+                reopened.ChooseDiagnosticFile=()=>null;var original=System.IO.File.ReadAllText(diagnosticPath);
+                ((System.Windows.Automation.Provider.IInvokeProvider)new System.Windows.Automation.Peers.ButtonAutomationPeer(reopened.ExportDiagnostics).GetPattern(System.Windows.Automation.Peers.PatternInterface.Invoke)).Invoke();await System.Windows.Threading.Dispatcher.Yield();
+                Yes(System.IO.File.ReadAllText(diagnosticPath)==original,"진단 저장 취소 시 기존 파일 보존");
+            }
+            finally{if(System.IO.File.Exists(diagnosticPath))System.IO.File.Delete(diagnosticPath);}
             Yes(u.Phase==ClientUpdatePhase.Ready&&shared.Downloads==1,"설정창 재진입 시 완료 상태·버전 유지");reopened.Close();
         }
         return new{passed=true,checks};

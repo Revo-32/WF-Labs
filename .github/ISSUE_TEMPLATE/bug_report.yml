@@ -1,0 +1,37 @@
+name: 오류 제보
+description: 계산·인식·화면·업데이트 문제를 제보합니다.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: 계정 비밀번호·토큰·전체 인벤토리는 첨부하지 마세요. 진단 정보는 앱의 업데이트 설정에서 저장할 수 있으며 자동 업로드되지 않습니다.
+  - type: input
+    id: version
+    attributes:
+      label: WF Labs 버전
+      placeholder: 1.0.0-rc.1 / 설치형 또는 압축형
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 순서
+      description: 어떤 화면에서 어떤 동작을 했는지 순서대로 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 기대 결과와 실제 결과
+    validations:
+      required: true
+  - type: input
+    id: display
+    attributes:
+      label: 화면 환경
+      placeholder: Windows 버전 / 게임 해상도 / 창 모드 / Windows 배율
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 진단 정보·스크린샷
+      description: 개인정보를 확인한 뒤 필요한 파일만 직접 첨부해 주세요. 계산 문제는 무기·모드·적·교전 조건을 함께 적어주세요.

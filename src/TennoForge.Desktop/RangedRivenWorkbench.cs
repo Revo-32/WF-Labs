@@ -22,13 +22,16 @@ internal sealed class RangedRivenWorkbench : Grid
     private readonly Action<RangedRivenRoll,int> equip;
     private readonly string category;
     private readonly Func<RangedBuild> capture;
+    private readonly Func<RangedRivenRoll?> equipped;
+    private readonly Button loadEquipped;
     internal RangedRivenWorkbench(string category,Action<RangedRivenRoll,int> equip,Func<RangedRivenRoll?> equipped,Func<RangedBuild> capture)
     {
-        this.category=category;this.equip=equip;this.capture=capture;
+        this.category=category;this.equip=equip;this.capture=capture;this.equipped=equipped;
         RowDefinitions.Add(new(){Height=GridLength.Auto});RowDefinitions.Add(new(){Height=GridLength.Auto});RowDefinitions.Add(new(){Height=new(1,GridUnitType.Star)});
         var toolbar=new WrapPanel{Margin=new(0,0,0,12)};toolbar.Children.Add(context);destination.Margin=new(12,0,12,0);toolbar.Children.Add(destination);
-        void Action(string label,System.Action action){var button=new Button{Content=label,Margin=new(0,0,8,0),Padding=new(12,6,12,6)};button.Click+=(_,_)=>{try{action();}catch(Exception ex) when(ex is ArgumentException or JsonException or IOException or InvalidOperationException){message.Text=ex.Message;message.Visibility=Visibility.Visible;}};toolbar.Children.Add(button);}
-        Action("분석 저장",Save);Action("불러오기",Load);Action("장착한 리벤 가져오기",()=>Set(equipped()??throw new ArgumentException("모딩 화면에 장착한 리벤이 없습니다.")));
+        Button Action(string label,System.Action action){var button=new Button{Content=label,Margin=new(0,0,8,0),Padding=new(12,6,12,6)};button.Click+=(_,_)=>{try{action();}catch(Exception ex) when(ex is ArgumentException or JsonException or IOException or InvalidOperationException){message.Text=ex.Message;message.Visibility=Visibility.Visible;}};toolbar.Children.Add(button);return button;}
+        Action("분석 저장",Save);Action("불러오기",Load);loadEquipped=Action("장착한 리벤 가져오기",()=>Set(MountedRiven()??throw new ArgumentException("현재 모딩 슬롯에 장착한 리벤이 없습니다.")));
+        loadEquipped.IsEnabled=false;ToolTipService.SetShowOnDisabled(loadEquipped,true);
         destination.SelectionChanged+=(_,_)=>{if(content.Content is RangedRivenEditor editor)editor.InvalidateComparison();};
         Children.Add(toolbar);message.SetResourceReference(TextBlock.ForegroundProperty,"TextBrush");Grid.SetRow(message,1);Children.Add(message);Grid.SetRow(content,2);Children.Add(content);
         weapon.ItemsSource=RangedEngine.Weapons.Where(w=>w.Category==category&&RangedEngine.N(w.Raw,"Disposition")>0&&w.WeaponType!="Exalted Weapon").Select(w=>new Weapon(w.Id,w.Name,w.EnglishName,[],0,1,0,1,w.WeaponType)).ToArray();
@@ -41,6 +44,14 @@ internal sealed class RangedRivenWorkbench : Grid
         context.SetResourceReference(TextBlock.ForegroundProperty,"MutedBrush");
         try{var build=capture();var target=RangedEngine.Weapons.Single(w=>w.Id==build.WeaponId);context.Text=RangedEngine.ModCategory(target)==RivenClass?$"DPS 비교 · {target.Name}":$"DPS 비교 · {target.Name} (리벤 종류가 다름)";}
         catch(ArgumentException){context.Text="DPS 비교 대상 · 모딩에서 무기 선택";}
+        try{loadEquipped.IsEnabled=MountedRiven() is not null;}catch(ArgumentException){loadEquipped.IsEnabled=false;}
+        loadEquipped.ToolTip=loadEquipped.IsEnabled?"현재 모딩 슬롯에 장착된 리벤을 가져옵니다.":"현재 모딩 슬롯에 장착된 리벤이 없습니다.";
+    }
+    private RangedRivenRoll? MountedRiven()
+    {
+        if(equipped() is not {} roll)return null;
+        var build=capture();var target=RangedEngine.Weapons.Single(w=>w.Id==build.WeaponId);
+        return build.Slots.Any(s=>s?.ModId==RangedRivens.Mod(target).Id)?roll:null;
     }
     internal void SelectClass(string kind)
     {
@@ -99,6 +110,7 @@ internal sealed class RangedRivenWorkbench : Grid
     internal void PrepareRecoveryCheck(bool pending)=>((RangedRivenEditor)content.Content).PrepareRecoveryCheck(pending);
     internal Task<object> CheckWorkshop()=>((RangedRivenEditor)content.Content).CheckWorkshopAsync();
     internal void SelectSectionForCheck(int index)=>(content.Content as RangedRivenEditor)!.SelectSectionForCheck(index);
+    internal RangedRivenRoll? ValidRollForCheck=>(content.Content as RangedRivenEditor)?.ValidRoll;
     internal void CheckAndEquip()
     {
         if(content.Content is not RangedRivenEditor editor)throw new InvalidOperationException("총기 리벤 작업실이 표시되지 않았습니다.");

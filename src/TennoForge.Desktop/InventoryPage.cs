@@ -18,17 +18,18 @@ internal sealed partial class InventoryPage : Grid,IDisposable
     internal InventoryCatalog CatalogData {get;}=InventoryCatalog.Load();
     internal InventorySnapshot Snapshot {get;private set;}=InventorySnapshot.Empty;
     private readonly Dictionary<string,InventoryItem> items;
+    private readonly MasteryAcquisitionGroups acquisition;
     private readonly Dictionary<string,PlannerPrice> prices=new();
     private readonly Dictionary<string,int> ducats=new();
     private readonly string folder=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"WF Labs","inventory");
     private readonly InventoryMemoryReader reader=new();
     private readonly RelicMarketClient market;
-    internal readonly TextBlock Status=Text("게임에서 인벤토리와 마스터리 이력을 가져오세요.",15);
+    internal readonly TextBlock Status=new OperationStatusText("게임에서 인벤토리와 마스터리 이력을 가져오세요.");
     private readonly TextBlock summary=Text("인벤토리 연동 전",15,"MutedBrush"),priceStatus=Text("공유 저장 시세 · 조회 중",14,"MutedBrush");
     internal readonly Button SyncButton,ImportButton,ExportButton;
     internal readonly CheckBox Automatic=new(){Content="자동 동기화",VerticalAlignment=VerticalAlignment.Center,Margin=new(12,0,16,0)};
     internal readonly TextBox Search=new(){MinWidth=240,Height=36};
-    internal readonly ComboBox Category=new(){ItemsSource=new[]{"전체","워프레임","주무기","보조무기","근접","동반자","아크윙","기타"},SelectedIndex=0,MinWidth=140,Margin=new(10,0,0,0)};
+    internal readonly ComboBox Category=new(){ItemsSource=new[]{"전체 종류","워프레임","주무기","보조무기","근접","동반자","아크윙","기타"},SelectedIndex=0,MinWidth=140,Margin=new(10,0,0,0)};
     internal readonly ComboBox Ownership=new(){ItemsSource=new[]{"전체","보유","랭작 미완료","마스터리 완료"},SelectedIndex=0,MinWidth=160,Margin=new(10,0,0,0)};
     internal readonly ComboBox Squad=new(){ItemsSource=new[]{"혼자 개봉","같은 성유물 · 2명","같은 성유물 · 3명","같은 성유물 · 4명"},SelectedIndex=0,MinWidth=205};
     internal readonly TextBox Traces=new(){Text="0",Width=110,Height=36,Margin=new(12,0,0,0)};
@@ -36,6 +37,7 @@ internal sealed partial class InventoryPage : Grid,IDisposable
     internal readonly ListBox MasteryList=CreateList(),RelicList=CreateList();
     internal readonly StackPanel MasteryDetail=new(),RelicDetail=new();
     private readonly DispatcherTimer timer=new(){Interval=TimeSpan.FromSeconds(30)};
+    private readonly DispatcherTimer automaticContinuation=new(){Interval=TimeSpan.FromSeconds(3)};
     private readonly CancellationTokenSource lifetime=new();
     private MasteryPlan[] plans=[];private bool busy,disposed,pricesLoading,plansDirty=true;private string? goal;private DateTime inboxTime;private readonly bool persist;private int ticks;private HashSet<string> activeTargets=[];
     internal Func<string?>? ChooseImportFile {get;set;}
@@ -43,20 +45,24 @@ internal sealed partial class InventoryPage : Grid,IDisposable
     internal Func<CancellationToken,Task<InventoryReadResult>>? ReadOverride {get;set;}
     internal Action<string>? ModRequested;
     internal Func<bool> CanReadGame {get;set;}=()=>true;
+    internal bool AutomaticContinuationScheduled=>automaticContinuation.IsEnabled;
     private static TextBlock Text(string s,double size=15,string brush="TextBrush")=>RivenPresentation.Text(s,size,brush);
     private static Button ActionButton(string s,Action action){var b=new Button{Content=s,Padding=new(14,7,14,7),Margin=new(0,0,8,0),MinHeight=36};b.Click+=(_,_)=>action();AutomationProperties.SetName(b,s);return b;}
     private static FrameworkElement Scroll(UIElement content)=>new ScrollViewer{Content=content,VerticalScrollBarVisibility=ScrollBarVisibility.Auto,HorizontalScrollBarVisibility=ScrollBarVisibility.Disabled,Padding=new(0,0,12,0)};
-    internal InventoryPage(bool persist=true)
+    internal InventoryPage(bool persist=true,FarmingWorkspace? farming=null)
     {
         this.persist=persist;
-        items=CatalogData.Items.ToDictionary(x=>x.Id);
+        Farming=farming??new FarmingWorkspace(persist,CatalogData);Snapshot=Farming.Inventory;
+        items=CatalogData.Items.ToDictionary(x=>x.Id);acquisition=new(CatalogData);
         market=new(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"WF Labs","relic-market-cache"),snapshotMode:true);
         var marketItems=InventoryMarket.Items.ToDictionary(i=>i.Id);foreach(var item in CatalogData.Items.Where(i=>i.MarketId is not null))if(marketItems.TryGetValue(item.MarketId!,out var m))ducats[item.Id]=m.Ducats;
-        SyncButton=ActionButton("게임에서 동기화",()=>_=SyncAsync());UiHierarchy.Primary(SyncButton);
+        SyncButton=ActionButton("게임에서 동기화",()=>_=SyncAsync());SyncButton.ToolTip="실행 중인 게임의 인벤토리 사본을 읽기 전용으로 확인합니다. 실패하면 마지막 저장 목록을 유지합니다.";UiHierarchy.Primary(SyncButton);
         ImportButton=ActionButton("목록 가져오기",Import);ExportButton=ActionButton("목록 내보내기",Export);
         RefreshQuoteButton=ActionButton("이 장비의 부품 시세 갱신",()=>{if(quoteCancellation is not null)quoteCancellation.Cancel();else _=RefreshSelectedPricesAsync();});
         BuildDashboard();
-        MasteryList.SelectionChanged+=(_,_)=>ShowMastery();RelicList.SelectionChanged+=(_,_)=>ShowRelic();
+        automaticContinuation.Tick+=async(_,_)=>{automaticContinuation.Stop();if(!disposed&&Automatic.IsChecked==true)await SyncAsync(true);};
+        Automatic.Unchecked+=(_,_)=>automaticContinuation.Stop();
+        MasteryList.SelectionChanged+=(_,_)=>{if(!changingRows)ShowMastery();};RelicList.SelectionChanged+=(_,_)=>{if(!changingRows)ShowRelic();};
         Category.SelectionChanged+=(_,_)=>Refresh();Ownership.SelectionChanged+=(_,_)=>Refresh();Search.TextChanged+=(_,_)=>Refresh();
         Squad.SelectionChanged+=(_,_)=>RefreshRelics();Traces.TextChanged+=(_,_)=>RefreshRelics();OnlyAffordable.Checked+=(_,_)=>RefreshRelics();OnlyAffordable.Unchecked+=(_,_)=>RefreshRelics();
         if(persist)
@@ -64,12 +70,12 @@ internal sealed partial class InventoryPage : Grid,IDisposable
             try{var path=Path.Combine(folder,"snapshot.json");if(File.Exists(path))Snapshot=InventoryImport.Parse(File.ReadAllText(path),CatalogData);}
             catch(Exception e)when(e is IOException or JsonException or InvalidDataException){Status.Text="저장 목록을 읽지 못했습니다. 다시 동기화하거나 가져오세요.";}
             try{var preferences=Path.Combine(folder,"preferences.json");Automatic.IsChecked=!File.Exists(preferences)||JsonDocument.Parse(File.ReadAllText(preferences)).RootElement.GetProperty("automatic").GetBoolean();}catch{Automatic.IsChecked=true;}
-            timer.Tick+=async(_,_)=>{await ReadInboxAsync();if(disposed)return;if(Automatic.IsChecked==true)await SyncAsync();if(++ticks%4==0)await LoadPricesAsync();};timer.Start();
+            timer.Tick+=async(_,_)=>{await ReadInboxAsync();if(disposed)return;if(Automatic.IsChecked==true)await SyncAsync(true);if(++ticks%4==0)await LoadPricesAsync();};timer.Start();
             void SavePreference(){Directory.CreateDirectory(folder);File.WriteAllText(Path.Combine(folder,"preferences.json"),JsonSerializer.Serialize(new{automatic=Automatic.IsChecked==true}));}
-            Automatic.Checked+=(_,_)=>{SavePreference();_=SyncAsync();};Automatic.Unchecked+=(_,_)=>SavePreference();
-            Loaded+=async(_,_)=>{await LoadPricesAsync();await ReadInboxAsync();if(Automatic.IsChecked==true)await SyncAsync();};
+            Automatic.Checked+=(_,_)=>{SavePreference();_=SyncAsync(true);};Automatic.Unchecked+=(_,_)=>SavePreference();
+            Loaded+=async(_,_)=>{await LoadPricesAsync();await ReadInboxAsync();if(Automatic.IsChecked==true)await SyncAsync(true);};
         }
-        Refresh();
+        Farming.SetInventory(Snapshot);Farming.Changed+=FarmingChanged;Refresh();
     }
     private static ListBox CreateList()
     {
@@ -84,14 +90,22 @@ internal sealed partial class InventoryPage : Grid,IDisposable
     internal void UseSnapshot(InventorySnapshot snapshot,bool save)
     {
         InventoryImport.Validate(snapshot);Snapshot=snapshot;plansDirty=true;if(save&&persist)InventoryImport.Save(Path.Combine(folder,"snapshot.json"),snapshot);
+        changingPlanning=true;try{Farming.SetInventory(snapshot);}finally{changingPlanning=false;}
         if(!Traces.IsKeyboardFocusWithin)Traces.Text=snapshot.Count("/Lotus/Types/Items/MiscItems/VoidTearDrop").ToString(System.Globalization.CultureInfo.InvariantCulture);Refresh();
     }
-    internal async Task SyncAsync()
+    internal async Task SyncAsync(bool automatic=false)
     {
-        if(busy||disposed)return;if(!CanReadGame()){Status.Text="화면 인식이 진행 중입니다. 다음 동기화 주기에 다시 확인합니다.";return;}busy=true;SyncButton.IsEnabled=false;Status.Text="게임 인벤토리 확인 중…";
+        if(busy||disposed)return;
+        automaticContinuation.Stop();
+        if(!CanReadGame())
+        {
+            Status.Text=automatic?"화면 인식 우선 · 인벤토리 확인은 잠시 후 이어집니다.":"화면 인식이 진행 중입니다. 끝난 뒤 다시 동기화할 수 있습니다.";
+            if(automatic)ScheduleAutomaticContinuation();return;
+        }
+        busy=true;SyncButton.IsEnabled=false;Status.Text="게임 인벤토리 확인 중…";
         try
         {
-            var result=await (ReadOverride is {} read?read(lifetime.Token):reader.ReadAsync(CatalogData,lifetime.Token));if(disposed)return;
+            var result=await (ReadOverride is {} read?read(lifetime.Token):reader.ReadAsync(CatalogData,lifetime.Token,automatic,()=>!CanReadGame()));if(disposed)return;
             if(result.Snapshot is {} snapshot)
             {
                 var missing=InventoryImport.MissingUpdateSections(Snapshot,snapshot);
@@ -99,10 +113,18 @@ internal sealed partial class InventoryPage : Grid,IDisposable
                 UseSnapshot(snapshot,true);
             }
             Status.Text=result.Message+$" · {result.Seconds:0.0}초";
+            if(automatic&&result.Deferred&&result.Snapshot is null&&!result.CompletePass)ScheduleAutomaticContinuation();
         }
         catch(OperationCanceledException){}
         catch(Exception e)when(e is IOException or System.ComponentModel.Win32Exception or InvalidOperationException or UnauthorizedAccessException){Status.Text="동기화 실패 · "+e.Message;}
         finally{busy=false;SyncButton.IsEnabled=true;}
+    }
+    private void ScheduleAutomaticContinuation()
+    {
+        if(disposed||Automatic.IsChecked!=true)return;
+        // One stopped/restarted timer owns continuation; no accumulating Tasks
+        // or immediate loops while OCR is using the CPU.
+        automaticContinuation.Stop();automaticContinuation.Start();
     }
     private async Task ReadInboxAsync()
     {
@@ -135,6 +157,11 @@ internal sealed partial class InventoryPage : Grid,IDisposable
                 ducats[item.Id]=marketItem.Ducats;var quote=await market.QuoteAsync(marketItem,presence,preferences.Crossplay,false,lifetime.Token);
                 if(quote.SellMin is {} p&&p>0){prices[item.Id]=new((double)p,quote.FetchedUtc,quote.Stale);loaded++;if(oldest is null||quote.FetchedUtc<oldest)oldest=quote.FetchedUtc;}
             }
+            foreach(var bundle in FarmingMarket.Document.Bundles)
+            {
+                var quote=await market.QuoteAsync(bundle.Item,presence,preferences.Crossplay,false,lifetime.Token);
+                if(quote.SellMin is >0 and var p)prices[bundle.Item.Id]=new((double)p,quote.FetchedUtc,quote.Stale);
+            }
             if(disposed)return;plansDirty=true;priceStatus.Text=$"공유 저장 시세 {loaded:N0}개 · PC"+(preferences.Crossplay?"·크로스플레이":"")+" 판매 최저 호가"+(oldest is {} d?$" · 가장 오래된 조회 {d.LocalDateTime:MM-dd HH:mm}":" · 성유물 탭에서 시세 준비 가능");Refresh();
         }
         catch(OperationCanceledException){}
@@ -149,16 +176,18 @@ internal sealed partial class InventoryPage : Grid,IDisposable
         if(!dashboardBuilt)return;
         var inventory=Snapshot;summary.Text=inventory.CapturedUtc==DateTimeOffset.MinValue?"연동 전 · 보유 수량과 미획득 이력은 아직 알 수 없습니다.":$"{inventory.Source} · 읽은 시각 {inventory.CapturedUtc.LocalDateTime:MM-dd HH:mm:ss} · MR {inventory.MasteryRank?.ToString()??"미확인"} · 크레딧 {inventory.Credits:N0} · 보유 {inventory.Quantities.Count:N0}종 · "+(inventory.InventoryComplete?"보유 목록 확인됨":"보유 목록 일부")+(inventory.MasteryComplete?"":" · 마스터리 이력 미확인");
         ExportButton.IsEnabled=inventory.CapturedUtc!=DateTimeOffset.MinValue;
-        if(plansDirty){plans=MasteryPlanner.Recommend(CatalogData,inventory,prices);plansDirty=false;}
+        UiHierarchy.SetPrimary(SyncButton,inventory.CapturedUtc==DateTimeOffset.MinValue);
+        if(plansDirty){plans=MasteryPlanner.Recommend(CatalogData,inventory,prices,Farming.Plan);plansDirty=false;}
         Progress.Update(MasteryOverview.From(CatalogData,Snapshot));
-        var filtered=plans.Where(p=>Matches(p.Item,p.Item.Name)&&(Ownership.SelectedIndex!=1||p.Owned));
+        RefreshAcquisitionCounts();
+        var filtered=MasteryPurchaseRecommendations.Order(plans.Where(p=>Matches(p.Item,p.Item.Name)&&(Ownership.SelectedIndex!=1||p.Owned)&&MatchesAcquisition(p)),acquisitionGroup);
         var rows=Ownership.SelectedIndex==3?Enumerable.Empty<InventoryRow>():filtered.Select((p,index)=>new InventoryRow(p.Item.Id,p.Item.Name,
-            p.Owned?p.AvailablePoints>0?"보유 · 랭작 가능":"포르마 후 추가 마스터리":p.InFoundry?"제작 중":p.RankLocked?$"MR {p.Item.MasteryRequired} 필요":p.AcquisitionLabel,
-            $"+{p.AvailablePoints:N0}점"+(p.DirectPurchaseCredits is {} cc?$"\n{cc:N0} Cr":p.BuyPlatinum is >0 and var cost?$"\n{cost:0.#} P":p.Credits>0?$"\n{p.Credits:N0} Cr":""),p));
-        if(Ownership.SelectedIndex is 2 or 3&&Snapshot.MasteryComplete)
+            p.Owned?p.AvailablePoints>0?"보유 · 랭작 가능":"포르마 후 추가 마스터리":p.InFoundry?"제작 중":p.RankLocked?$"MR {p.Item.MasteryRequired} 필요":PurchaseRecommendationLabel(p,index),
+            $"+{p.AvailablePoints:N0}점"+(PurchaseRoutePrice(p) is {} purchase?"\n"+purchase:p.DirectPurchaseCredits is {} cc?$"\n{cc:N0} Cr":p.BuyPlatinum is >0 and var cost?$"\n{cost:0.#} P":p.Credits>0?$"\n{p.Credits:N0} Cr":""),p));
+        if(acquisitionGroup is null&&Ownership.SelectedIndex is 2 or 3&&Snapshot.MasteryComplete)
             rows=rows.Concat(CatalogData.Items.Where(i=>i.Masterable&&Snapshot.MasteryRanks.GetValueOrDefault(i.Id)>=i.MaxRank&&Matches(i,i.Name)).OrderBy(i=>i.Name,StringComparer.Ordinal)
                 .Select(i=>new InventoryRow(i.Id,i.Name,Snapshot.Count(i.Id)>0?"완료 · 보유":"완료 · 과거 이력",$"{i.MaxRank} / {i.MaxRank}",i)));
-        Replace(MasteryList,rows);RefreshRelics();ShowMastery();
+        Replace(MasteryList,rows);RefreshRelics();ShowMastery();RefreshGoals();RefreshMaterials();
         MasteryCount.Text=$"MR {inventory.MasteryRank?.ToString()??"—"} · 목록 {MasteryList.Items.Count:N0}개";
 
     }
@@ -183,11 +212,14 @@ internal sealed partial class InventoryPage : Grid,IDisposable
         if(MasteryList.SelectedItem is InventoryRow{Model:InventoryItem mastered})
         {
             Detail(MasteryDetail,mastered.Name,$"마스터리 완료 · 최고 랭크 {mastered.MaxRank}/{mastered.MaxRank}",Snapshot.Count(mastered.Id)>0?"현재 보유 장비":"판매 여부와 관계없이 과거 숙련 이력에 포함됩니다.");
+            MasteryDetail.Children.Add(ActionButton("제작·수집 목표에 추가",()=>AddFarmingGoal(mastered.Id)));
             if(mastered.Category is "Primary" or "Secondary" or "Melee")MasteryDetail.Children.Add(ActionButton("이 장비 모딩하기",()=>ModRequested?.Invoke(mastered.Id)));
+            foreach(var action in MasteryDetail.Children.OfType<Button>())action.Margin=new(0,0,8,8);
             MasteryDetail.Children.Add(new Expander{Header="획득처·구매 조건",Content=AcquisitionView(mastered.Id),Margin=new(0,16,0,0)});return;
         }
         if(MasteryList.SelectedItem is not InventoryRow{Model:MasteryPlan p}){Detail(MasteryDetail,"마스터리 도우미",Snapshot.MasteryComplete?"검색 조건에 맞는 후보가 없습니다.":"동기화하면 판매한 장비의 이력까지 확인해 중복 랭작을 제외합니다.");return;}
         Detail(MasteryDetail,p.Item.Name,$"최고 랭크 {p.EarnedRank}/{p.Item.MaxRank} · 남은 마스터리 +{p.RemainingPoints:N0}");
+        AddPurchaseRouteSummary(p);
         if(p.Owned)
         {
             MasteryDetail.Children.Add(Text(p.AvailablePoints>0?"보유 장비 · 추가 구매 없이 랭작":"현재 열린 랭크의 마스터리 완료",15,"AccentBrush"));
@@ -195,15 +227,21 @@ internal sealed partial class InventoryPage : Grid,IDisposable
         }
         else
         {
-            MasteryDetail.Children.Add(Text(p.AcquisitionLabel+(p.Ready?" · 제작 준비됨":""),15,"AccentBrush"));
+            MasteryDetail.Children.Add(Text(acquisition.For(p).Label+(p.Ready?" · 제작 준비됨":""),15,"AccentBrush"));
             MasteryDetail.Children.Add(Text(p.InFoundry?"주조소에서 제작 중입니다.":p.DirectPurchaseCredits is {} cc?$"완성품 구매 {cc:N0} 크레딧 · 구매 후 바로 랭작":!CatalogData.Recipes.Any(r=>r.ResultId==p.Item.Id)?"직접 획득·조립 장비 · 아래 획득처에서 조건 확인":$"설계도 구매 {p.BlueprintPurchaseCredits:N0} + 제작 {p.Credits-p.BlueprintPurchaseCredits:N0} 크레딧\n재료 준비 후 {TimeSpan.FromSeconds(p.BuildSeconds):g}",14,"MutedBrush"));
             if(p.BuyPlatinum is >0 and var price)MasteryDetail.Children.Add(Text($"거래 부품 {price:0.#} P · 마스터리 1,000당 {p.PlatinumPer1000Mastery:0.##} P",15));
             if(p.OpportunityPlatinum>0)MasteryDetail.Children.Add(Text($"사용할 보유 부품 시세 {p.OpportunityPlatinum:0.#} P · 추가 구매비와 별도",13,"MutedBrush"));
         }
         if(p.AdditionalForma>0)MasteryDetail.Children.Insert(2,Text($"현재 열린 랭크까지 +{p.AvailablePoints:N0} · 최종 랭크까지 포르마 {p.AdditionalForma}개 추가 필요 · 포르마 비용 별도",15,"AccentBrush"));
-        if(!p.Owned&&!p.InFoundry)MasteryDetail.Children.Add(Text($"마스터리 1,000당 {p.CreditsPer1000Mastery:N0} 크레딧 · 추가 획득 {p.MissingAcquisitions}종",15,"AccentBrush"));
-        foreach(var w in p.Warnings)MasteryDetail.Children.Add(Text(w,14,"AccentBrush"));if(p.PricesStale)MasteryDetail.Children.Add(Text("12시간 이상 지난 시세 포함",14,"AccentBrush"));
-        var relicAction=ActionButton("필요한 부품의 성유물 찾기",()=>{goal=p.Item.Id;RefreshRelics();RelicList.Focus();});
+        if(!p.Owned&&!p.InFoundry)MasteryDetail.Children.Add(Text(CatalogData.Recipes.Any(r=>r.ResultId==p.Item.Id)||p.DirectPurchaseCredits is not null?
+            $"마스터리 1,000당 {p.CreditsPer1000Mastery:N0} 크레딧 · 추가 획득 {p.MissingAcquisitions}종":
+            $"직접 획득·조립 · 추가 획득 {p.MissingAcquisitions}종",15,"AccentBrush"));
+        var detailMessages=MasteryDetail.Children.OfType<TextBlock>().Select(t=>t.Text).ToHashSet(StringComparer.Ordinal);
+        foreach(var w in p.Warnings)if(detailMessages.Add(w))MasteryDetail.Children.Add(Text(w,14,"AccentBrush"));
+        if(p.PricesStale)MasteryDetail.Children.Add(Text("12시간 이상 지난 시세 포함",14,"AccentBrush"));
+        var goalAction=ActionButton(Farming.Document.Goals.Any(g=>g.ItemId==p.Item.Id)?"내 목표 보기":"제작·수집 목표에 추가",()=>AddFarmingGoal(p.Item.Id));
+        UiHierarchy.SetPrimary(goalAction,Snapshot.CapturedUtc!=DateTimeOffset.MinValue&&!p.Owned&&!p.InFoundry);MasteryDetail.Children.Add(goalAction);
+        var relicAction=ActionButton("필요한 부품의 성유물 찾기",()=>{goal=p.Item.Id;selectedGoalId=null;RefreshRelics();RelicPlanningRequested?.Invoke();RelicList.Focus();});
         var targets=p.Requirements.Where(r=>r.Missing>0).Select(r=>r.Id).ToHashSet();relicAction.IsEnabled=CatalogData.Relics.Any(r=>r.Rewards.Any(s=>targets.Contains(s.Id)));if(relicAction.IsEnabled)MasteryDetail.Children.Add(relicAction);
         if(p.Item.Category is "Primary" or "Secondary" or "Melee")MasteryDetail.Children.Add(ActionButton("이 장비 모딩하기",()=>ModRequested?.Invoke(p.Item.Id)));
         if(RefreshQuoteButton.Parent is Panel old)old.Children.Remove(RefreshQuoteButton);
@@ -226,8 +264,11 @@ internal sealed partial class InventoryPage : Grid,IDisposable
     }
     private void RefreshRelics()
     {
-        if(!dashboardBuilt)return;var target=plans.FirstOrDefault(p=>p.Item.Id==goal);var targets=target?.Requirements.Where(r=>r.Missing>0).Select(r=>r.Id).ToHashSet();activeTargets=targets??[];
-        RelicGoal.Text=(target is null?"보유 성유물":target.Item.Name+" · 부족 부품")+(Squad.SelectedIndex==0?" · 1인 개봉":$" · 동일 성유물 {Squad.SelectedIndex+1}명");ClearGoal.IsEnabled=goal is not null;
+        if(!dashboardBuilt)return;var target=plans.FirstOrDefault(p=>p.Item.Id==goal);
+        var targets=target?.Requirements.Where(r=>r.Missing>0).Select(r=>r.Id).ToHashSet();
+        if(target is null&&Farming.Plan.Goals.Length>0)targets=Farming.Plan.Goals.Where(g=>selectedGoalId is null||g.Goal.ItemId==selectedGoalId).SelectMany(g=>g.Requirements).Where(r=>r.Missing>0).Select(r=>r.ItemId).ToHashSet();activeTargets=targets??[];
+        string goalTitle=target?.Item.Name??(Farming.Plan.Goals.Length>0?(selectedGoalId is {} selected?CatalogData.Name(selected):"내 목표 전체"):"보유 성유물");
+        RelicGoal.Text=goalTitle+(targets is {Count:>0}?" · 부족 부품":"")+(Squad.SelectedIndex==0?" · 1인 개봉":$" · 동일 성유물 {Squad.SelectedIndex+1}명");ClearGoal.IsEnabled=goal is not null||selectedGoalId is not null;
         if(!long.TryParse(Traces.Text,out var traces)||traces<0)
         {
             RelicInputError.Text="보이드 잔영은 0 이상의 정수로 입력하세요.";RelicInputError.Visibility=Visibility.Visible;Traces.SetResourceReference(Control.BorderBrushProperty,"ErrorBrush");
@@ -267,5 +308,5 @@ internal sealed partial class InventoryPage : Grid,IDisposable
             var fill=new Border{Background=new SolidColorBrush((Color)ColorConverter.ConvertFromString(slot.Rarity=="RARE"?"#EDCE60":slot.Rarity=="UNCOMMON"?"#A9BCC5":"#AD774F"))};bar.Children.Add(fill);RelicDetail.Children.Add(bar);
         }
     }
-    public void Dispose(){if(disposed)return;disposed=true;timer.Stop();quoteCancellation?.Cancel();lifetime.Cancel();market.Dispose();lifetime.Dispose();}
+    public void Dispose(){if(disposed)return;disposed=true;timer.Stop();automaticContinuation.Stop();Farming.Changed-=FarmingChanged;purchaseCancellation?.Cancel();quoteCancellation?.Cancel();lifetime.Cancel();reader.Dispose();market.Dispose();lifetime.Dispose();}
 }

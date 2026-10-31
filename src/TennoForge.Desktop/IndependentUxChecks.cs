@@ -47,9 +47,11 @@ public sealed partial class MainWindow
             Yes(inventoryPage.RelicInputError.Visibility==Visibility.Visible&&inventoryPage.RelicEmpty.Text.Contains("입력 확인"),"잔영 오류를 입력 옆과 추천 영역에 표시 "+width);
             inventoryPage.Traces.Text="100";Yes(inventoryPage.RelicInputError.Visibility==Visibility.Collapsed,"잔영 입력 복구 "+width);inventoryPage.RelicOptions.IsExpanded=false;
             ShowRelics();Capture("relic-"+width,width,height,scale);var card=relicPage!.Cards[0];
-            Yes(Equals(card.Correct.Content,"보상 선택"),"빈 성유물 카드 보상 선택 행동 "+width);card.Search.ApplyTemplate();
-            Yes(card.Search.Template.FindName("Placeholder",card.Search) is TextBlock {Text:"보상 이름 검색",Visibility:Visibility.Visible},"검색 placeholder 표시 "+width);
-            card.Search.QueryInput.Focus();await Dispatcher.Yield();Yes(((TextBlock)card.Search.Template.FindName("Placeholder",card.Search)).Visibility==Visibility.Collapsed,"검색 초점에서 placeholder·커서 겹침 없음 "+width);KeyboardClear();
+            Yes(relicPage.EmptyState.IsVisible&&!relicPage.CardGrid.IsVisible,"읽기 전 성유물 빈 상태 "+width);
+            Click(LayoutDiagnostics.Tree(relicPage.EmptyState).OfType<Button>().Single(b=>Equals(b.Content,"보상 직접 선택")));await Dispatcher.Yield();card=relicPage.Cards[0];
+            Yes(Equals(card.Correct.Content,"보상 선택")&&card.Search.IsDropDownOpen,"빈 성유물에서 직접 선택 한 번으로 후보 열기 "+width);card.Search.CancelSearch();await Dispatcher.Yield();Click(card.Correct);await Dispatcher.Yield();
+            Yes(card.Search.Template.FindName("Placeholder",card.Search) is TextBlock {Text:"보상 이름 검색",Visibility:Visibility.Collapsed},"검색 초점에서 placeholder·커서 겹침 없음 "+width);card.Search.CancelSearch();await Dispatcher.Yield();
+            Yes(!card.Search.IsVisible,"직접 선택 취소 뒤 기본 읽기 상태 복귀 "+width);KeyboardClear();Click(card.Remove);await Dispatcher.Yield();
             ShowSchedules();Capture("schedule-"+width,width,height,scale);
             if(height<720)
             {
@@ -68,6 +70,54 @@ public sealed partial class MainWindow
         var legacy=System.Text.Json.Nodes.JsonNode.Parse(JsonSerializer.Serialize(draft with{Cost="10"},Catalog.Json))!.AsObject();legacy.Remove("displayedCost");
         editor.RestoreDraft(JsonSerializer.Deserialize<RangedRivenDraft>(legacy.ToJsonString(),Catalog.Json)!);Yes(editor.CaptureDraft().Cost=="18"&&editor.ValidRoll?.BaseDrain==10,"기존 총기 리벤 JSON의 0랭크 코스트 자동복구 호환");
         editor.RestoreDraft(draft with{Cost="19"});Yes(editor.ValidRoll?.BaseDrain==11,"표시 코스트 변경 실제 수용량 모델 반영");editor.RestoreDraft(editor.CaptureDraft());Yes(editor.ValidRoll?.BaseDrain==11,"새 표시 코스트 작업 재복원 동등");
+        ShowInventory();var inventory=inventoryPage!;var savedInventory=inventory.Snapshot;
+        inventory.UseSnapshot(InventorySnapshot.Empty with{MasteryComplete=true,InventoryComplete=true},false);
+        foreach(var (width,height,scale) in new[]{(1760,920,1d),(1280,720,1.5),(1280,688,1.5)})
+        {
+            ((ISelectionItemProvider)new RadioButtonAutomationPeer(inventory.MaterialsTab).GetPattern(PatternInterface.SelectionItem)).Select();await Dispatcher.Yield();
+            inventory.MaterialsGallery.ShowStart();Capture($"materials-{width}",width,height,scale);
+            Yes(inventory.MaterialsGallery.ActualHeight>=220,"필요 재료 갤러리의 세로 작업 영역 확보 "+height);
+            var tile=LayoutDiagnostics.Tree(inventory.MaterialsGallery).OfType<MaterialTileView>().First();var firstId=tile.Material.Id;
+            Click(tile.Details);await Dispatcher.Yield(DispatcherPriority.ApplicationIdle);
+            Yes(tile.DetailsPopup.IsOpen,"재료 타일의 실제 사용 장비 팝업 열기 "+height);
+            var popupSurface=(FrameworkElement)tile.DetailsPopup.Child;
+            Yes(LayoutDiagnostics.Inspect(popupSurface).Length==0,"재료 상세 팝업의 가독성·경계 "+height);
+            App.Render(popupSurface,Path.Combine(directory,$"materials-detail-{width}-{height}.png"),440,(int)Math.Ceiling(popupSurface.ActualHeight),scale);
+            inventory.MaterialsGallery.ShowFooter();await Dispatcher.Yield();inventory.UpdateLayout();
+            Yes(!tile.DetailsPopup.IsOpen,"주 페이지를 스크롤하면 상세 팝업 닫기 "+height);
+            foreach(var expander in LayoutDiagnostics.Tree(inventory.MaterialsPane).OfType<Expander>().Where(e=>e.IsVisible&&!e.Header.ToString()!.StartsWith("사용 장비")).ToArray())
+                ((IExpandCollapseProvider)new ExpanderAutomationPeer(expander).GetPattern(PatternInterface.ExpandCollapse)).Expand();
+            await Dispatcher.Yield();Capture($"materials-expanded-{width}",width,height,scale);
+            var scrolling=LayoutDiagnostics.Tree(inventory.MaterialsGallery).OfType<ScrollViewer>().ToArray();
+            Yes(scrolling.Length==1,"재료·설계도 상세를 모두 펼쳐도 단일 스크롤 "+height);
+            scrolling[0].ScrollToEnd();await Dispatcher.Yield(DispatcherPriority.ApplicationIdle);
+            scrolling[0].ScrollToEnd();await Dispatcher.Yield(DispatcherPriority.ApplicationIdle);inventory.UpdateLayout();
+            Yes(Math.Abs(scrolling[0].VerticalOffset-scrolling[0].ScrollableHeight)<1,"단일 페이지 마지막 계산 설정 접근 "+height);
+            inventory.MaterialBlueprints.IsExpanded=false;inventory.MaterialCalculation.IsExpanded=false;
+            inventory.MaterialsGallery.ShowMaterial(firstId);await Dispatcher.Yield(DispatcherPriority.ApplicationIdle);inventory.UpdateLayout();
+            var restored=LayoutDiagnostics.Tree(inventory.MaterialsGallery).OfType<MaterialTileView>().Single(t=>t.Material.Id==firstId);
+            Yes(restored.Material.Id==firstId&&!restored.DetailsPopup.IsOpen,"스크롤로 타일이 재생성돼도 같은 재료·닫힌 상세 상태 유지 "+height);
+            inventory.MaterialsGallery.ShowStart();
+        }
+        var blueprintSource=inventory.MaterialBlueprintRows;
+        long allocated=GC.GetAllocatedBytesForCurrentThread();var filterClock=System.Diagnostics.Stopwatch.StartNew();
+        for(int repeat=0;repeat<4;repeat++)foreach(string query in new[]{"필","필드","필드론","없는재료zzzz",""}){inventory.MaterialSearch.Text=query;inventory.UpdateLayout();}
+        filterClock.Stop();allocated=GC.GetAllocatedBytesForCurrentThread()-allocated;
+        Yes(ReferenceEquals(blueprintSource,inventory.MaterialBlueprintRows),"재료 검색 입력 중 설계도 목록 재생성 없음");
+        scans.Add(new{name="materials-filter-performance",keystrokes=20,milliseconds=filterClock.Elapsed.TotalMilliseconds,allocatedBytes=allocated,blueprints=inventory.MaterialBlueprintRows.Length});
+        inventory.MaterialSearch.Text="없는재료zzzz";await Dispatcher.Yield();inventory.UpdateLayout();
+        var reset=LayoutDiagnostics.Tree(inventory.MaterialsPane).OfType<Button>().Single(b=>Equals(b.Content,"필터 초기화"));
+        Yes(reset.IsVisible&&LayoutDiagnostics.Tree(inventory.MaterialsPane).OfType<TextBlock>().Any(t=>t.IsVisible&&t.Text=="조건에 맞는 재료가 없습니다."),"재료 검색 결과 없음 · 이유와 복구 행동 표시");
+        Click(reset);await Dispatcher.Yield();Yes(inventory.MaterialSearch.Text==""&&inventory.MaterialsGallery.DisplayedMaterials.Length>0,"필터 초기화 실제 버튼으로 재료 목록 복구");
+        inventory.UseSnapshot(inventory.Snapshot with{InventoryComplete=false},false);await Dispatcher.Yield();
+        Yes(LayoutDiagnostics.Tree(inventory.MaterialsPane).OfType<TextBlock>().Any(t=>t.IsVisible&&t.Text.StartsWith("보유 목록이 일부만 확인되어")),"일부 보유 목록의 잠정 부족분 경고를 재료 요약 옆에 표시");
+        inventory.UseSnapshot(inventory.Snapshot with{MasteryRanks=inventory.CatalogData.Items.Where(i=>i.Masterable).ToDictionary(i=>i.Id,i=>i.MaxRank)},false);await Dispatcher.Yield();inventory.UpdateLayout();
+        var overview=LayoutDiagnostics.Tree(inventory.MaterialsPane).OfType<Button>().Single(b=>Equals(b.Content,"전체 요약 보기"));
+        Yes(overview.IsVisible&&inventory.MaterialsGallery.DisplayedMaterials.Length==0,"남은 제작 재료 없음과 검색 결과 없음을 구분");Click(overview);await Dispatcher.Yield();Yes(inventory.MasteryTab.IsChecked==true,"재료 준비 완료 상태에서 전체 요약으로 실제 이동");
+        inventory.UseSnapshot(savedInventory,false);
+        ShowRelicRewards();var bar=relicPage!.RecognitionBar;relicPage.Automatic.IsChecked=true;relicPage.AutoStatus.Text="이전 인식 실패 · 확인 필요";bar.SetBusy(true);await Dispatcher.Yield();
+        Yes(bar.State=="화면 읽는 중"&&Equals(bar.BorderBrush,Application.Current.FindResource("AccentBrush")),"새 판독 시작 시 이전 오류 색상 해제·실제 진행 상태 우선");bar.SetBusy(false);await Dispatcher.Yield();
+        Yes(bar.State.Contains("확인 필요")&&Equals(bar.BorderBrush,Application.Current.FindResource("ErrorBrush")),"판독 중이 아닐 때 실제 확인 필요 상태 복원");relicPage.Automatic.IsChecked=false;
         ShowModding();var defaults=board.Slots;var mods=new[]{"pressure","bloodrush","shatter","fury","virulent","vicious","weeping","overload"};board.SetSlots(mods.Select(f=>{var m=catalog.Mods.First(x=>x.Family==f);return (ModSlot?)new ModSlot(m.Id,m.MaxRank);}).ToArray());Recalculate();
         Yes(capacityResult?.Fits==false&&planningResult.Text.Contains("실제 장착 불가"),"수용량 초과 시 계산 결과에도 계획용 표시");board.SetSlots(defaults);
         return new{passed=checks.Count,failed=Array.Empty<string>(),checks,scans};

@@ -13,27 +13,53 @@ namespace TennoForge.Desktop;
 internal record RivenOcrCard(string Text,RivenScanReport Report,bool Corroborated,Rect Bounds,string VerificationText="",bool Corrected=false)
 {
     public string TitleText {get;init;}="";
+    public bool TranscriptionVerified {get;init;}
 }
 internal record RivenOcrResult(RivenOcrCard[] Cards,double Seconds,string Notice,string LocatorText="")
 {
     public Rect? SourceCrop{get;init;}
     public double InputGain {get;init;}=1;
 }
-internal static class RivenOcr
+internal static partial class RivenOcr
 {
+    private static bool ReadComplete(RivenOcrResult result)=>result.Cards.Length>0&&result.Cards.All(c=>c.TranscriptionVerified||c.Corroborated&&c.Report.Valid);
     internal static Action<BitmapSource,string>? DiagnosticImage;
-    private static readonly SemaphoreSlim Gate=new(1,1);
+    private static readonly object DiagnosticSync=new();
+    private static void WriteDiagnostic(BitmapSource bitmap,string name)
+    {
+        if(DiagnosticImage is null)return;
+        // A comparison runs two readers. Keep diagnostic file writes serialized
+        // and distinguish equal-sized crops from the left and right cards.
+        lock(DiagnosticSync)DiagnosticImage?.Invoke(bitmap,$"worker-{Array.IndexOf(Workers,Current)}-{name}");
+    }
+    private sealed class Worker
+    {
+        internal readonly SemaphoreSlim Gate=new(1,1);
+        internal TesseractEngine? Primary,Latin,Mixed;
+    }
+    // At most two native OCR contexts: a before/after pair can be read in
+    // parallel without sharing a non-thread-safe Tesseract engine.
+    private static readonly Worker[] Workers=[new(),new()];
+    private static readonly AsyncLocal<Worker?> Context=new();
+    private static Worker Current=>Context.Value??Workers[0];
+    private static SemaphoreSlim Gate=>Current.Gate;
     private static readonly object PreparationSync=new();
     private static Task? preparation;
     internal static Task PrepareAsync()
     {
         lock(PreparationSync)return preparation??=Task.Run(async()=>
         {
+            using var activity=OcrActivity.Enter();
             await Gate.WaitAsync();
             try
             {
-                using var scope=RivenPerformance.Measure("model-preparation");_=Engine();
-                if(KoreanLineRecognizer.Available)
+                using var scope=RivenPerformance.Measure("model-preparation");_=Engine();_=Engine(latin:true);
+                if(RivenLineRecognizer.Available)
+                {
+                    var blank=BitmapSource.Create(320,48,96,96,PixelFormats.Gray8,null,Enumerable.Repeat((byte)255,320*48).ToArray(),320);blank.Freeze();
+                    _=RivenLineRecognizer.Read(blank);
+                }
+                else if(KoreanLineRecognizer.Available)
                 {
                     var blank=BitmapSource.Create(320,48,96,96,PixelFormats.Gray8,null,Enumerable.Repeat((byte)255,320*48).ToArray(),320);blank.Freeze();
                     _=KoreanLineRecognizer.Read(blank);
@@ -44,20 +70,22 @@ internal static class RivenOcr
             finally{Gate.Release();}
         });
     }
-    // Gate serializes all use. Native LSTM weights stay warm across cards and
-    // fallback variants; Latin is loaded only when a numeric glyph needs it.
-    private static TesseractEngine? primaryEngine,latinEngine,mixedEngine;
+    // Each context serializes its own native use. Weights stay warm across
+    // cards and fallbacks; the second context is loaded only for comparison.
     static RivenOcr()
     {
         AppDomain.CurrentDomain.ProcessExit+=(_,_)=>
         {
-            if(!Gate.Wait(0))return;
-            try{primaryEngine?.Dispose();latinEngine?.Dispose();mixedEngine?.Dispose();primaryEngine=latinEngine=mixedEngine=null;}finally{Gate.Release();}
+            foreach(var worker in Workers)
+            {
+                if(!worker.Gate.Wait(0))continue;
+                try{worker.Primary?.Dispose();worker.Latin?.Dispose();worker.Mixed?.Dispose();worker.Primary=worker.Latin=worker.Mixed=null;}finally{worker.Gate.Release();}
+            }
         };
     }
     private static TesseractEngine Engine(bool latin=false,bool mixed=false)
     {
-        ref var cached=ref (latin?ref latinEngine:ref (mixed?ref mixedEngine:ref primaryEngine));
+        var worker=Current;ref var cached=ref (latin?ref worker.Latin:ref (mixed?ref worker.Mixed:ref worker.Primary));
         if(cached is not null)return cached;
         string language=latin?"eng":mixed?OcrModels.Mixed:OcrModels.Korean;
         cached=RivenPerformance.Time("model-init",()=>new TesseractEngine(OcrModels.DirectoryPath,language,EngineMode.LstmOnly),new{language});
@@ -67,6 +95,7 @@ internal static class RivenOcr
     private record Line(string Text,Rect Box);
     internal static async Task<RivenOcrResult> ReadAutomaticAsync(BitmapSource source,Rect[] regions,string kind,int rank,CancellationToken token)
     {
+        using var activity=OcrActivity.Enter();token.ThrowIfCancellationRequested();
         using var automaticScope=RivenPerformance.Measure("automatic",new{source.PixelWidth,source.PixelHeight,regions=regions.Length});
         var timer=Stopwatch.StartNew();
         var anchored=Environment.GetEnvironmentVariable("WF_LABS_RIVEN_ANCHOR")=="0"?[]:await RivenFooterAnchor.FindAsync(source,token);
@@ -86,13 +115,13 @@ internal static class RivenOcr
             return new CroppedBitmap(source,new Int32Rect(x,y,Math.Max(1,Math.Min(source.PixelWidth-x,(int)Math.Ceiling(area.Width*source.PixelWidth))),Math.Max(1,Math.Min(source.PixelHeight-y,(int)Math.Ceiling(area.Height*source.PixelHeight)))));
         }
         var result=(await ReadAsync(Crop(box),kind,rank,token,focused:true)) with{SourceCrop=box};
-        if(anchored.Length>0&&(result.Cards.Length==0||result.Cards.Any(c=>!c.Corroborated||!c.Report.Valid)))
+        if(anchored.Length>0&&!ReadComplete(result))
         {
             var alternateBox=preferPadding?exactBox:RivenVisualProbe.CropBounds(anchored);
             var alternate=(await ReadAsync(Crop(alternateBox),kind,rank,token,focused:true)) with{SourceCrop=alternateBox};
             if(alternate.Cards.Sum(c=>(c.Corroborated?100:0)+(c.Report.Valid?10:0)+c.Report.Options.Length)>=result.Cards.Sum(c=>(c.Corroborated?100:0)+(c.Report.Valid?10:0)+c.Report.Options.Length))result=alternate;
         }
-        if(result.Cards.Length==0||result.Cards.Any(c=>!c.Corroborated||!c.Report.Valid))
+        if(!ReadComplete(result))
         {
             var full=await ReadAsync(source,kind,rank,token,splitCards:false);
             int Score(RivenOcrResult r)=>r.Cards.Sum(c=>(c.Corroborated?100:0)+(c.Report.Valid?10:0)+c.Report.Options.Length);
@@ -103,11 +132,12 @@ internal static class RivenOcr
     private static async Task<RivenOcrResult> ReadSeparatedAsync(BitmapSource source,Rect[] anchors,string kind,int rank,CancellationToken token)
     {
         using var scope=RivenPerformance.Measure("separated-cards");var clock=Stopwatch.StartNew();
-        var ordered=anchors.OrderBy(a=>a.X).ToArray();var cards=new List<RivenOcrCard>();var diagnostics=new List<string>();
+        var ordered=anchors.OrderBy(a=>a.X).ToArray();var cards=new RivenOcrCard[2];var diagnostics=new string[2];
         double middle=(ordered[0].X+ordered[0].Width/2+ordered[1].X+ordered[1].Width/2)/2;
         int Score(RivenOcrResult result)=>result.Cards.Sum(c=>(c.Corroborated?100:0)+(c.Report.Valid?10:0)+c.Report.Options.Length);
-        for(int index=0;index<2;index++)
+        async Task ReadCard(int index)
         {
+            Context.Value=Workers[index];
             token.ThrowIfCancellationRequested();var anchor=ordered[index];bool padding=anchor.Width>.14;
             Rect Area(bool padded)
             {
@@ -121,12 +151,12 @@ internal static class RivenOcr
                 return (new CroppedBitmap(source,new Int32Rect(x,y,w,h)),new Rect(x/(double)source.PixelWidth,y/(double)source.PixelHeight,w/(double)source.PixelWidth,h/(double)source.PixelHeight));
             }
             var crop=Crop(Area(padding));var result=await ReadAsync(crop.Image,kind,rank,token,focused:true);
-            if(result.Cards.Length!=1||result.Cards.Any(c=>!c.Corroborated||!c.Report.Valid))
+            if(result.Cards.Length!=1||!ReadComplete(result))
             {
                 var alternateCrop=Crop(Area(!padding));var alternate=await ReadAsync(alternateCrop.Image,kind,rank,token,focused:true);
                 if(Score(alternate)>Score(result)){result=alternate;crop=alternateCrop;}
             }
-            if(result.Cards.Length==0||result.Cards.Any(c=>!c.Corroborated||!c.Report.Valid))
+            if(!ReadComplete(result))
             {
                 var thorough=await ReadAsync(crop.Image,kind,rank,token,splitCards:false);
                 if(Score(thorough)>Score(result))result=thorough;
@@ -135,15 +165,18 @@ internal static class RivenOcr
             if(card is null)
             {
                 var report=kind=="Auto"?RivenKindDetection.Resolve("",rank):RivenScan.Parse("",kind,rank);
-                cards.Add(new("",report,false,anchor));
+                cards[index]=new("",report,false,anchor);
             }
-            else cards.Add(card with{Bounds=new Rect(crop.Bounds.X+card.Bounds.X*crop.Bounds.Width,crop.Bounds.Y+card.Bounds.Y*crop.Bounds.Height,card.Bounds.Width*crop.Bounds.Width,card.Bounds.Height*crop.Bounds.Height)});
-            diagnostics.Add($"CARD {index} GAIN {result.InputGain:0.###}:\n"+result.LocatorText);
+            else cards[index]=card with{Bounds=new Rect(crop.Bounds.X+card.Bounds.X*crop.Bounds.Width,crop.Bounds.Y+card.Bounds.Y*crop.Bounds.Height,card.Bounds.Width*crop.Bounds.Width,card.Bounds.Height*crop.Bounds.Height)};
+            diagnostics[index]=$"CARD {index} GAIN {result.InputGain:0.###}:\n"+result.LocatorText;
         }
+        if(Environment.GetEnvironmentVariable("WF_LABS_RIVEN_SERIAL")=="1"){await ReadCard(0);await ReadCard(1);}
+        else await Task.WhenAll(ReadCard(0),ReadCard(1));
         return new(cards.ToArray(),clock.Elapsed.TotalSeconds,cards.All(c=>c.Corroborated)?"두 카드의 옵션을 확인했습니다.":"일부 카드의 인식 내용을 확인하세요.",string.Join("\n",diagnostics)){SourceCrop=new Rect(0,0,1,1)};
     }
     internal static async Task<RivenOcrResult> ReadAsync(BitmapSource source,string kind,int rank,CancellationToken token,bool focused=false,bool splitCards=true)
     {
+        using var activity=OcrActivity.Enter();token.ThrowIfCancellationRequested();
         using var readScope=RivenPerformance.Measure("read",new{source.PixelWidth,source.PixelHeight});
         RelicOcr.Validate(source);
         if(!focused&&splitCards&&source.PixelWidth>source.PixelHeight*1.35)
@@ -156,12 +189,36 @@ internal static class RivenOcr
         await Gate.WaitAsync(token);
         try{return await Task.Run(()=>
         {
+            var elapsed=Stopwatch.StartNew();
+            // The domain model was trained on original color contrast. Tone
+            // gain would also amplify the card's purple checkerboard.
+            if(Environment.GetEnvironmentVariable("WF_LABS_RIVEN_FAST_ROWS")!="0"&&(focused||w<h*1.3)&&TryFastCard(pixels,w,h,kind,rank,token,focused) is {} fast)
+                return fast with{Seconds=elapsed.Elapsed.TotalSeconds};
             double gain=1;
             if(focused||w<h*1.3){var normalized=RivenTone.Normalize(pixels,w,h);pixels=normalized.Pixels;gain=normalized.Gain;RivenPerformance.Event("card-tone",new{gain});}
             // Locked/spliced traits are white. Include them in the first pass,
             // rather than exhausting purple-only variants before discovering one.
-            var elapsed=Stopwatch.StartNew();var result=Read(pixels,w,h,kind,rank,token,includeNeutral:true);
-            if(!focused&&(result.Cards.Length==0||result.Cards.Any(c=>!c.Corroborated||!c.Report.Valid)))
+            var result=Read(pixels,w,h,kind,rank,token,includeNeutral:true);
+            if(w<320&&(focused||w<h*1.3)&&!ReadComplete(result))
+            {
+                // Imported web crops and small focused cards can have too few
+                // pixels for the initial line locator to find any row. Keep the
+                // original first; only an unresolved compact card gets one
+                // bounded interpolation pass. No characters are synthesized.
+                using var resizeScope=RivenPerformance.Measure("compact-card-locator",new{w,h});
+                double resize=Math.Min(3,384d/w);
+                var bitmap=BitmapSource.Create(w,h,96,96,PixelFormats.Bgra32,null,pixels,w*4);
+                var enlargedBitmap=new FormatConvertedBitmap(new TransformedBitmap(bitmap,new ScaleTransform(resize,resize)),PixelFormats.Bgra32,null,0);
+                int ew=enlargedBitmap.PixelWidth,eh=enlargedBitmap.PixelHeight;var enlargedPixels=new byte[ew*eh*4];enlargedBitmap.CopyPixels(enlargedPixels,ew*4,0);
+                try
+                {
+                    var compact=Read(enlargedPixels,ew,eh,kind,rank,token,includeNeutral:true);
+                    int Score(RivenOcrResult r)=>r.Cards.Sum(c=>(c.Corroborated?100:0)+(c.Report.Valid?10:0)+c.Report.Options.Length);
+                    if(Score(compact)>Score(result))result=compact;
+                }
+                finally{Array.Clear(enlargedPixels);}
+            }
+            if(!focused&&!ReadComplete(result))
             {
                 // Some imported/tightly cropped images lose a line boundary in
                 // the Korean segmenter. One cached mixed-language pass remains
@@ -172,7 +229,7 @@ internal static class RivenOcr
             }
             foreach(bool enlarged in focused?Array.Empty<bool>():new[]{true,false})
             {
-                if(result.Cards.Length>0&&result.Cards.All(c=>c.Corroborated&&c.Report.Valid))break;
+                if(ReadComplete(result))break;
                 var locked=Read(pixels,w,h,kind,rank,token,true,enlarged);
                 int Score(RivenOcrResult r)=>r.Cards.Sum(c=>(c.Corroborated?100:0)+(c.Report.Valid?10:0)+c.Report.Options.Length);
                 if(Score(locked)>=Score(result))result=locked;
@@ -251,22 +308,75 @@ internal static class RivenOcr
             // by the sparse locator. Keep that label and the following value row.
             if(includeNeutral)foreach(var line in initial.Where(l=>LabelHint(l.Text)&&l.Box.Top>=box.Top&&l.Box.Top<=box.Bottom+Math.Max(20,l.Box.Height*2)&&Math.Abs(l.Box.X+l.Box.Width/2-box.X-box.Width/2)<box.Width*.7).OrderBy(l=>l.Box.Y))
             {box=Rect.Union(box,line.Box);if(new[]{"그리니어","코퍼스","인페스티드","오로킨","테크병","스칼드라"}.Any(line.Text.Contains)&&!Regex.IsMatch(line.Text,@"\d"))box=Rect.Union(box,new Rect(line.Box.X,line.Box.Y,line.Box.Width,line.Box.Height*2.6));}
-            box.Inflate(18,14);box.Intersect(new Rect(0,0,input.PixelWidth,input.PixelHeight));
-            BitmapSource crop=new CroppedBitmap(input,new Int32Rect((int)box.X,(int)box.Y,(int)box.Width,(int)box.Height));
+            // A locator can see only the lower portion of the first white
+            // line. Keep one glyph height above it instead of clipping the
+            // next line and retrying the entire card at several scales.
+            var trackingBox=box;trackingBox.Inflate(18,14);trackingBox.Intersect(new Rect(0,0,input.PixelWidth,input.PixelHeight));
+            double topPadding=Math.Max(14,group.Max(l=>l.Box.Height)*1.5);
+            box=new Rect(box.X-18,box.Y-topPadding,box.Width+36,box.Height+topPadding+14);
+            box.Intersect(new Rect(0,0,input.PixelWidth,input.PixelHeight));
+            var cropArea=new Int32Rect((int)box.X,(int)box.Y,(int)box.Width,(int)box.Height);
+            BitmapSource crop=new CroppedBitmap(input,cropArea);
+            // An MR footer can be occluded or absent in an imported screenshot.
+            // The sparse locator has now found the actual option block. Reuse
+            // that bounded, unaltered crop instead of repeatedly reading the
+            // entire viewport. The same independent numeric checks still apply.
+            if(width>height*1.3&&!enlarged&&!mixed&&Environment.GetEnvironmentVariable("WF_LABS_RIVEN_FAST_ROWS")!="0")
+            {
+                var bounded=new FormatConvertedBitmap(crop,PixelFormats.Bgra32,null,0);
+                int cw=bounded.PixelWidth,ch=bounded.PixelHeight;var blockPixels=new byte[cw*ch*4];bounded.CopyPixels(blockPixels,cw*4,0);
+                try
+                {
+                    string locatedKind=kind=="Auto"?RivenKindDetection.WeaponKind(title)??kind:kind;
+                    var located=TryFastCard(blockPixels,cw,ch,locatedKind,rank,token,focused:true);
+                    if(located?.Cards is [var card]&&report.Options.All(o=>card.Report.Options.Any(c=>c.Key==o.Key)))
+                    {
+                        var area=card.Bounds;
+                        cards.Add(card with{TitleText=title,Bounds=new Rect((cropArea.X+area.X*cw)/input.PixelWidth,
+                            (cropArea.Y+area.Y*ch)/input.PixelHeight,area.Width*cw/input.PixelWidth,area.Height*ch/input.PixelHeight)});
+                        diagnostics.Add("LOCATED FAST:\n"+located.LocatorText);continue;
+                    }
+                }
+                finally{Array.Clear(blockPixels);}
+            }
             // Native and enlarged crops are separate, bounded fallback passes.
             // They cover different UI scales without discarding the older path.
             double factor=enlarged?Math.Clamp(42d/group.Average(l=>l.Box.Height),1,2):1;
             if(factor>1.05)crop=new TransformedBitmap(crop,new ScaleTransform(factor,factor));
-            DiagnosticImage?.Invoke(crop,$"card-crop-{width}-{height}-{includeNeutral}-{cards.Count}");
+            // OCR needs generous padding to recover clipped white glyphs. The
+            // change probe instead follows only the actual, confirmed option
+            // rows; animated artwork must never become part of its signature.
+            var geometry=new List<Line[]>();
+            bool InsideCrop(Line line)=>box.Contains(new Point(line.Box.X+line.Box.Width/2,line.Box.Y+line.Box.Height/2));
+            geometry.Add(initial.Where(InsideCrop).ToArray());
+            if(purpleLocator is not null)geometry.Add(purpleLocator.Where(InsideCrop).ToArray());
+            Line[] InputLines(IEnumerable<Line> lines)=>lines.Select(line=>line with{Box=new Rect(
+                cropArea.X+line.Box.X*cropArea.Width/crop.PixelWidth,cropArea.Y+line.Box.Y*cropArea.Height/crop.PixelHeight,
+                line.Box.Width*cropArea.Width/crop.PixelWidth,line.Box.Height*cropArea.Height/crop.PixelHeight)}).ToArray();
+            WriteDiagnostic(crop,$"card-crop-{width}-{height}-{includeNeutral}-{cards.Count}");
             var second=ReadLines(Prepare(crop,true,true,includeNeutral),PageSegMode.SingleBlock);
+            geometry.Add(InputLines(second));
             var secondText=NormalizeText(string.Join("\n",second.Select(l=>l.Text)));var secondReport=Parse(secondText);
-            bool confirmed=report.Valid&&secondReport.Valid&&Same(report,secondReport);
+            bool confirmed=report.Valid&&secondReport.Valid&&Same(report,secondReport);bool transcriptionVerified=false;
             var evidence=new List<(string Text,RivenScanReport Report)>{(initialText,initialReport),(secondText,secondReport)};
             if(alternateLocatorReport is not null)evidence.Add((alternateLocatorText!,alternateLocatorReport));
             bool ConfirmEvidence()
             {
                 foreach(var candidate in evidence.Where(e=>e.Report.Valid).OrderByDescending(e=>e.Report.Options.Length))
                     if(CorroboratedBy(candidate.Report,evidence.Select(e=>kind=="Auto"?Parse(e.Text,candidate.Report.Kind):e.Report))){text=candidate.Text;report=candidate.Report;return true;}
+                // Historical images and non-max rank cards may transcribe
+                // perfectly while failing today's range check. Stop rereading
+                // only after two complete observations agree; never grade them.
+                if(kind!="Auto"||RivenKindDetection.WeaponKind(title) is not null)
+                foreach(var candidate in evidence.Where(e=>CompleteTranscription(e.Report)).OrderByDescending(e=>e.Report.Options.Length))
+                {
+                    var raw=evidence.Select(e=>kind=="Auto"?Parse(e.Text,candidate.Report.Kind):e.Report).ToArray();
+                    var keys=candidate.Report.Options.Select(o=>o.Key).ToHashSet();
+                    if(raw.Any(r=>r.Options.Any(o=>DisplayedPrecision(o)&&!keys.Contains(o.Key))))continue;
+                    if(raw.Count(r=>CompleteTranscription(r)&&r.Kind==candidate.Report.Kind&&r.Options.SequenceEqual(candidate.Report.Options))<2)continue;
+                    if(candidate.Report.Options.Any(o=>raw.SelectMany(r=>r.Options).Where(x=>x.Key==o.Key&&DisplayedPrecision(x)).Distinct().Any(other=>other!=o&&raw.Count(r=>r.Options.Contains(other))>=2)))continue;
+                    text=candidate.Text;report=candidate.Report;transcriptionVerified=true;return true;
+                }
                 return false;
             }
             // Keep a usable refinement for correction, but never silently call one pass verified.
@@ -274,7 +384,9 @@ internal static class RivenOcr
             if(!confirmed)confirmed=ConfirmEvidence();
             if(!confirmed)
             {
-                var thirdText=NormalizeText(string.Join("\n",ReadLines(Prepare(crop,false,true,includeNeutral),PageSegMode.SingleBlock).Select(l=>l.Text)));
+                var third=ReadLines(Prepare(crop,false,true,includeNeutral),PageSegMode.SingleBlock);
+                geometry.Add(InputLines(third));
+                var thirdText=NormalizeText(string.Join("\n",third.Select(l=>l.Text)));
                 var thirdReport=Parse(thirdText);
                 evidence.Add((thirdText,thirdReport));
                 confirmed=secondReport.Valid&&thirdReport.Valid&&Same(secondReport,thirdReport);
@@ -286,7 +398,8 @@ internal static class RivenOcr
                     foreach(bool binary in new[]{false,true})
                     {
                         var rows=ReadRows(crop,binary);
-                        foreach(var rawRows in new[]{rows.Korean,rows.Learned}.Where(s=>s.Length>0))
+                        geometry.Add(InputLines(rows.KoreanLines));geometry.Add(InputLines(rows.LearnedLines));geometry.Add(InputLines(rows.TrainedLines));
+                        foreach(var rawRows in new[]{rows.Trained,rows.Korean,rows.Learned}.Where(s=>s.Length>0))
                         {
                             diagnostics.Add($"ROW {binary}:\n"+rawRows);var rowText=NormalizeText(rawRows);var rowReport=Parse(rowText);
                             evidence.Add((rowText,rowReport));
@@ -298,15 +411,19 @@ internal static class RivenOcr
                 }
             }
             if(report.Options.Length==0)continue;
-            cards.Add(new(text,report,confirmed,new Rect(box.X/input.PixelWidth,box.Y/input.PixelHeight,box.Width/input.PixelWidth,box.Height/input.PixelHeight),secondText){TitleText=title});
+            if(confirmed&&TryOptionBounds(geometry,report,out var optionBounds))
+            {
+                optionBounds.Inflate(2,2);optionBounds.Intersect(new Rect(0,0,input.PixelWidth,input.PixelHeight));
+                trackingBox=optionBounds;
+            }
+            cards.Add(new(text,report,confirmed&&report.Valid,new Rect(trackingBox.X/input.PixelWidth,trackingBox.Y/input.PixelHeight,trackingBox.Width/input.PixelWidth,trackingBox.Height/input.PixelHeight),secondText){TitleText=title,TranscriptionVerified=transcriptionVerified||confirmed&&report.Valid});
         }
         return new(cards.ToArray(),clock.Elapsed.TotalSeconds,cards.Count==0?"리벤 옵션을 찾지 못했습니다. 카드가 크게 보이도록 연 뒤 다시 읽거나 스크린샷을 불러오세요.":"무기 종류 자동 판별 · 랭크는 설정값 기준입니다. 범위 위치는 획득 확률이 아닙니다.",string.Join("\n",initial.Select(l=>l.Text).Concat(diagnostics)));
 
         List<Line> ReadLines(BitmapSource prepared,PageSegMode mode,TesseractEngine? processor=null)
         {
-            using var lineScope=RivenPerformance.Measure("tesseract",new{mode=mode.ToString(),prepared.PixelWidth,prepared.PixelHeight,language=processor is null?(mixed?"mixed":"korean"):ReferenceEquals(processor,primaryEngine)?"korean":"digits"});
-            token.ThrowIfCancellationRequested();using var buffer=new MemoryStream();var png=new PngBitmapEncoder();png.Frames.Add(BitmapFrame.Create(prepared));png.Save(buffer);
-            using var pix=Pix.LoadFromMemory(buffer.ToArray());using var page=(processor??engine).Process(pix,mode);using var it=page.GetIterator();it.Begin();var lines=new List<Line>();
+            using var lineScope=RivenPerformance.Measure("tesseract",new{mode=mode.ToString(),prepared.PixelWidth,prepared.PixelHeight,language=processor is null?(mixed?"mixed":"korean"):ReferenceEquals(processor,Current.Primary)?"korean":"digits"});
+            token.ThrowIfCancellationRequested();using var pix=OcrPixels.Create(prepared);using var page=(processor??engine).Process(pix,mode);using var it=page.GetIterator();it.Begin();var lines=new List<Line>();
             do
             {
                 var text=it.GetText(PageIteratorLevel.TextLine)?.Trim();
@@ -314,7 +431,7 @@ internal static class RivenOcr
             }while(it.Next(PageIteratorLevel.TextLine));
             return lines;
         }
-        (string Korean,string Learned) ReadRows(BitmapSource source,bool binary)
+        (string Korean,string Learned,string Trained,Line[] KoreanLines,Line[] LearnedLines,Line[] TrainedLines) ReadRows(BitmapSource source,bool binary)
         {
             using var rowScope=RivenPerformance.Measure("rows",new{binary});
             var mask=RemoveEdgeFrame(Prepare(source,true,true,includeNeutral));
@@ -332,7 +449,7 @@ internal static class RivenOcr
                 else if(top>=0&&y-last>3){if(last-top>=5)rows.Add((Math.Max(0,top-3),Math.Min(h,last+4)));top=-1;}
             }
             if(top>=0&&last-top>=5)rows.Add((Math.Max(0,top-3),Math.Min(h,last+4)));
-            var texts=new List<string>();var learnedTexts=new List<string>();foreach(var row in rows.Take(16))
+            var texts=new List<string>();var learnedTexts=new List<string>();var trainedTexts=new List<string>();var koreanLines=new List<Line>();var learnedLines=new List<Line>();var trainedLines=new List<Line>();foreach(var row in rows.Take(16))
             {
                 // Do not shave a fixed percentage off the row: long options
                 // start near the crop edge and can lose their sign/first digit.
@@ -353,7 +470,19 @@ internal static class RivenOcr
                     if(firstGroup.Left<w*.05&&firstGroup.Right-firstGroup.Left<thin&&groups[1].Left-firstGroup.Right>gap)left=Math.Max(left,groups[1].Left-3);
                     if(lastGroup.Right>w*.95&&lastGroup.Right-lastGroup.Left<thin&&lastGroup.Left-groups[^2].Right>gap)right=Math.Min(right,groups[^2].Right+3);
                 }
+                // Keep the ink bounds, not the full-width OCR strip. The latter
+                // can include a moving frame despite recognizing correct text.
+                int glyphLeft=right,glyphRight=left,glyphTop=row.Bottom,glyphBottom=row.Top;
+                for(int y=row.Top;y<row.Bottom;y++)for(int x=left;x<right;x++)if(bits[y*w+x]<128)
+                {glyphLeft=Math.Min(glyphLeft,x);glyphRight=Math.Max(glyphRight,x+1);glyphTop=Math.Min(glyphTop,y);glyphBottom=Math.Max(glyphBottom,y+1);}
+                var inkBounds=glyphRight>glyphLeft&&glyphBottom>glyphTop?new Rect(glyphLeft,glyphTop,glyphRight-glyphLeft,glyphBottom-glyphTop):Rect.Empty;
+                var koBounds=inkBounds;var learnedBounds=inkBounds;
                 var slice=new CroppedBitmap(clean,new Int32Rect(left,row.Top,right-left,row.Bottom-row.Top));
+                if(RivenLineRecognizer.Available)
+                {
+                    var trained=RivenLineRecognizer.Read(slice);diagnostics.Add($"TRAINED {binary}: {trained.Text} ({trained.Confidence:0.000})");
+                    if(trained.Confidence>=.90){trainedTexts.Add(trained.Text);if(!inkBounds.IsEmpty)trainedLines.Add(new(trained.Text,inkBounds));}
+                }
                 (string Text,double Confidence) learned=("",0);
                 if(KoreanLineRecognizer.Available)
                 {
@@ -365,7 +494,7 @@ internal static class RivenOcr
                 var padded=Enumerable.Repeat((byte)255,(rw+2*pad)*(rh+2*pad)).ToArray();
                 for(int y=0;y<rh;y++)Buffer.BlockCopy(raw,y*rw,padded,(y+pad)*(rw+2*pad)+pad,rw);
                 var bitmap=BitmapSource.Create(rw+2*pad,rh+2*pad,300,300,PixelFormats.Gray8,null,padded,rw+2*pad);
-                DiagnosticImage?.Invoke(bitmap,$"row-{width}-{height}-{includeNeutral}-{binary}-{row.Top}");
+                WriteDiagnostic(bitmap,$"row-{width}-{height}-{includeNeutral}-{binary}-{row.Top}");
                 var ko=string.Join(" ",ReadLines(bitmap,PageSegMode.SingleLine,Engine()).Select(l=>l.Text));
                 bool Parsed(string value)=>(kind=="Auto"?RivenKindDetection.Kinds:new[]{kind}).Any(k=>RivenScan.Parse(RivenScan.NormalizeOcrLabels(value,k),k,rank).Options is [var option]&&DisplayedPrecision(option));
                 string english="";
@@ -376,28 +505,130 @@ internal static class RivenOcr
                     var label=Regex.Replace(ko,@"[^가-힣\s]","");
                     if(latinNumbers.Count==1){var candidate=latinNumbers[0].Value+" "+label;if(Parsed(candidate))ko=candidate;}
                 }
+                // A wrapped purple title can overlap the vertical extent of a
+                // white locked trait. Projection then produces two text lines,
+                // which a single-line reader cannot decode. Isolate neutral
+                // glyphs only for an unresolved row, trim their actual ink, and
+                // require independent engines to agree on its complete value.
+                if(!Parsed(ko)&&KoreanLineRecognizer.Available&&NeutralLine(new CroppedBitmap(source,new Int32Rect(left,row.Top,right-left,row.Bottom-row.Top)),binary,out var neutralBounds) is {} neutral)
+                {
+                    var neutralKo=string.Join(" ",ReadLines(neutral,PageSegMode.SingleLine,Engine()).Select(l=>l.Text));
+                    var neutralLearned=KoreanLineRecognizer.Read(neutral);
+                    bool Agree(string a,string b)=>(kind=="Auto"?RivenKindDetection.Kinds:new[]{kind}).Any(k=>
+                    {
+                        var first=RivenScan.Parse(RivenScan.NormalizeOcrLabels(a,k),k,rank).Options;
+                        var second=RivenScan.Parse(RivenScan.NormalizeOcrLabels(b,k),k,rank).Options;
+                        return first is [var x]&&second is [var y]&&x==y&&DisplayedPrecision(x);
+                    });
+                    diagnostics.Add($"NEUTRAL {binary}: KO={neutralKo} / LEARNED={neutralLearned.Text} ({neutralLearned.Confidence:0.000})");
+                    WriteDiagnostic(neutral,$"neutral-row-{width}-{height}-{binary}-{row.Top}");
+                    static string[] Numbers(string value)=>Regex.Matches(value,@"[+−–－-]\s*\d+(?:[.,]\d)?\s*(?:%|ｍ|m(?![A-Za-z])|초(?![가-힣]))?").Select(m=>Regex.Replace(m.Value,@"\s","").Replace(',','.').Replace('−','-').Replace('–','-').Replace('－','-')).ToArray();
+                    var readNumbers=Numbers(neutralKo);var learnedNumbers=Numbers(neutralLearned.Text);
+                    bool numericAgreement=readNumbers.Length==1&&readNumbers.SequenceEqual(learnedNumbers);
+                    if(!numericAgreement&&neutralLearned.Confidence>=.75&&Parsed(neutralLearned.Text))
+                    {
+                        var neutralLatin=string.Join(" ",ReadLines(neutral,PageSegMode.SingleLine,Engine(true)).Select(l=>l.Text));
+                        diagnostics.Add($"NEUTRAL NUMBERS {binary}: "+neutralLatin);
+                        var latinRead=Numbers(neutralLatin);numericAgreement=latinRead.Length==1&&latinRead.SequenceEqual(learnedNumbers);
+                    }
+                    if(neutralLearned.Confidence>=.75&&Parsed(neutralLearned.Text)&&numericAgreement)
+                    {
+                        // Keep the two readings independent. A different Korean
+                        // label in Tesseract is never silently replaced; only its
+                        // separately read number supports the learned reading.
+                        // The complete card still needs the second image pass.
+                        learned=neutralLearned;
+                        learnedBounds=new Rect(left+neutralBounds.X,row.Top+neutralBounds.Y,neutralBounds.Width,neutralBounds.Height);
+                        if(Agree(neutralKo,neutralLearned.Text)){ko=neutralKo;koBounds=learnedBounds;}
+                    }
+                }
                 bool latinFactor=false;
                 if(!Regex.IsMatch(learned.Text,@"[가-힣]")&&Regex.IsMatch(ko+learned.Text,@"[xX×]")&&!Regex.IsMatch(learned.Text,@"^[xX×]\s*\d+(?:[.,]\d{1,2})?\s*$"))
                 {
                     if(english.Length==0)english=string.Join(" ",ReadLines(bitmap,PageSegMode.SingleLine,Engine(true)).Select(l=>l.Text));
                     if(Regex.IsMatch(english.Trim(),@"^[xX×]\s*\d+(?:[.,]\d{1,2})?\s*$")){learned=(english.Trim(),0);latinFactor=true;diagnostics.Add("LATIN FACTOR: "+english);}
                 }
-                if(learned.Confidence>=.75||latinFactor)learnedTexts.Add(learned.Text);
+                if(learned.Confidence>=.75||latinFactor){learnedTexts.Add(learned.Text);if(!learnedBounds.IsEmpty)learnedLines.Add(new(learned.Text,learnedBounds));}
                 diagnostics.Add($"LINE {binary}: KO={ko} / ENG={english}");
-                if(LabelHint(ko)||Regex.IsMatch(ko,@"(?:[+−–－-]\s*\d+(?:[.,]\d+)?\s*(?:%|ｍ|m|초)|[xX×]\s*\d+[.,]\d+)"))texts.Add(ko);
+                if(LabelHint(ko)||Regex.IsMatch(ko,@"(?:[+−–－-]\s*\d+(?:[.,]\d+)?\s*(?:%|ｍ|m|초)|[xX×]\s*\d+[.,]\d+)")){texts.Add(ko);if(!koBounds.IsEmpty)koreanLines.Add(new(ko,koBounds));}
             }
-            return (string.Join("\n",texts),string.Join("\n",learnedTexts));
+            return (string.Join("\n",texts),string.Join("\n",learnedTexts),string.Join("\n",trainedTexts),koreanLines.ToArray(),learnedLines.ToArray(),trainedLines.ToArray());
         }
+    }
+    private static bool TryOptionBounds(IEnumerable<Line[]> readings,RivenScanReport report,out Rect bounds)
+    {
+        using var trackingScope=RivenPerformance.Measure("tracking-geometry");
+        bounds=Rect.Empty;
+        var matched=new Rect[report.Options.Length];Array.Fill(matched,Rect.Empty);
+        var parsed=new Dictionary<string,RivenScanOption?>(StringComparer.Ordinal);
+        foreach(var reading in readings)
+        {
+            var lines=reading.Where(l=>!l.Box.IsEmpty).OrderBy(l=>l.Box.Y).ToArray();
+            for(int i=0;i<lines.Length;i++)for(int count=1;count<=3&&i+count<=lines.Length;count++)
+            {
+                var segment=lines.AsSpan(i,count);var area=segment[0].Box;bool adjacent=true;
+                for(int j=1;j<segment.Length;j++)
+                {
+                    var before=segment[j-1].Box;var next=segment[j].Box;
+                    if(next.Top-before.Bottom>Math.Max(before.Height,next.Height)*2||Math.Min(before.Right,next.Right)<=Math.Max(before.Left,next.Left)){adjacent=false;break;}
+                    area=Rect.Union(area,next);
+                }
+                if(!adjacent)break;
+                var raw=string.Join("\n",segment.ToArray().Select(l=>l.Text));
+                if(!parsed.TryGetValue(raw,out var option))
+                {
+                    var normalized=RivenScan.NormalizeOcrLabels(raw,report.Kind);
+                    // A title plus a valid option is two logical lines, not one
+                    // option's geometry. Wrapped labels/faction multipliers may
+                    // use up to three physical rows, as in the input parser.
+                    option=RivenScan.LogicalLines(normalized,report.Kind).Length==1&&RivenScan.Parse(normalized,report.Kind,report.Rank).Options is [var single]?single:null;
+                    parsed.Add(raw,option);
+                }
+                if(option is null)continue;
+                int index=Array.FindIndex(report.Options,o=>o.Key==option.Key&&o.Value==option.Value&&o.Negative==option.Negative&&o.Unit==option.Unit);
+                // A sparse iterator can attach the title or frame to an option
+                // line. Prefer the smallest complete matching observation;
+                // unioning every reader's rectangle reintroduces that noise.
+                if(index>=0&&(matched[index].IsEmpty||area.Width*area.Height<matched[index].Width*matched[index].Height))matched[index]=area;
+            }
+        }
+        if(matched.Length==0||matched.Any(b=>b.IsEmpty))return false;
+        bounds=matched.Aggregate(Rect.Union);return true;
     }
     internal static bool Same(RivenScanReport a,RivenScanReport b)=>a.Kind==b.Kind&&a.Rank==b.Rank&&a.Options.SequenceEqual(b.Options)&&a.Issues.Length==0&&b.Issues.Length==0&&a.Options.All(o=>Math.Abs(o.Value-Math.Round(o.Value,1))<1e-8);
     internal static bool CorroboratedBy(RivenScanReport candidate,IEnumerable<RivenScanReport> readings)
     {
         var evidence=readings.Distinct<RivenScanReport>(ReferenceEqualityComparer.Instance).ToArray();
         if(!candidate.Valid||evidence.Any(r=>r.Kind!=candidate.Kind||r.Rank!=candidate.Rank))return false;
+        var keys=candidate.Options.Select(o=>o.Key).ToHashSet();
+        // A card is not complete if any independent reading still contains a
+        // different, precisely displayed trait. Do not silently accept a valid
+        // subset merely because its numeric ranges happen to overlap.
+        if(evidence.SelectMany(r=>r.Options).Any(o=>DisplayedPrecision(o)&&!keys.Contains(o.Key)))return false;
         return candidate.Options.All(o=>DisplayedPrecision(o)&&evidence.Count(e=>e.Options.Contains(o))>=2&&
             !evidence.SelectMany(e=>e.Options.Where(x=>x.Key==o.Key&&DisplayedPrecision(x))).Distinct().Any(other=>other!=o&&evidence.Count(e=>e.Options.Contains(other))>=2));
     }
     private static bool DisplayedPrecision(RivenScanOption option)=>Math.Abs(option.Value-Math.Round(option.Value,1))<1e-8;
+    private static BitmapSource? NeutralLine(BitmapSource source,bool binary,out Rect inkBounds)
+    {
+        inkBounds=Rect.Empty;
+        var converted=new FormatConvertedBitmap(source,PixelFormats.Bgra32,null,0);
+        int w=converted.PixelWidth,h=converted.PixelHeight;var pixels=new byte[w*h*4];converted.CopyPixels(pixels,w*4,0);
+        var gray=Enumerable.Repeat((byte)255,w*h).ToArray();int left=w,right=-1,top=h,bottom=-1,count=0;
+        for(int y=0;y<h;y++)for(int x=0;x<w;x++)
+        {
+            int p=(y*w+x)*4,b=pixels[p],g=pixels[p+1],r=pixels[p+2],value=Math.Max(b,Math.Max(g,r));
+            if(value<=135||value-Math.Min(b,Math.Min(g,r))>=35)continue;
+            gray[y*w+x]=binary?(byte)0:(byte)(255-value);count++;
+            left=Math.Min(left,x);right=Math.Max(right,x);top=Math.Min(top,y);bottom=Math.Max(bottom,y);
+        }
+        if(count<20||bottom-top<5||right-left<12)return null;
+        inkBounds=new Rect(left,top,right-left+1,bottom-top+1);
+        var image=BitmapSource.Create(w,h,300,300,PixelFormats.Gray8,null,gray,w);
+        int x0=Math.Max(0,left-3),y0=Math.Max(0,top-3);
+        var crop=new CroppedBitmap(image,new Int32Rect(x0,y0,Math.Min(w,right+4)-x0,Math.Min(h,bottom+4)-y0));
+        return crop;
+    }
     private static BitmapSource RemoveEdgeFrame(BitmapSource source)
     {
         int w=source.PixelWidth,h=source.PixelHeight;var pixels=new byte[w*h];source.CopyPixels(pixels,w,0);

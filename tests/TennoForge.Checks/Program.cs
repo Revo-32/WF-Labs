@@ -3,6 +3,11 @@ using System.Text.Json;
 using TennoForge.Core;
 
 var catalog = Catalog.Load();
+if(args.Length>0&&args[0]=="--farming-only")
+{
+    var errors=new List<string>();int passed=0;FarmingChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e);}});
+    var farmingReport=JsonSerializer.Serialize(new{passed,failed=errors},Catalog.Json);if(args.Length>1)File.WriteAllText(args[1],farmingReport);Console.WriteLine(farmingReport);Environment.ExitCode=errors.Count==0?0:1;return;
+}
 if(args.Length>0&&args[0]=="--inventory-only")
 {
     var errors=new List<string>();int passed=0;InventoryChecks.Run((name,body)=>{try{body();passed++;Console.WriteLine("통과: "+name);}catch(Exception e){errors.Add(name+": "+e.Message);}});
@@ -203,6 +208,8 @@ Check("버전 3 JSON 극성·카탈리스트·랭크 왕복",()=>{var b=WithCapa
 CoverageChecks.Run(catalog,Check);
 RelicChecks.Run(Check);
 InventoryChecks.Run(Check);
+MasteryMaterialChecks.Run(Check);
+FarmingChecks.Run(Check);
 MeleeChecks.Run(Catalog.LoadMelee(),Check);
 EncounterChecks.Run(Check);
 EnemyChecks.Run(Check);

@@ -1,0 +1,5864 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-30",
+  "rights": "공개 원본은 로컬 학습·검증에만 사용하며 이 저장소·앱에 재배포하지 않습니다.",
+  "cards": 45,
+  "uniqueOriginals": 40,
+  "posts": 19,
+  "split": {
+    "train": 27,
+    "validation": 7,
+    "test": 11
+  },
+  "splitUnit": "같은 원본·게시글/캡처 묶음. 작성자 전체의 독립성까지 보장하는 표본은 아님.",
+  "testPolicy": "test의 11개 이미지는 가중치 학습·모델 선택에 사용하지 않았습니다. 이후 재검사는 고정 회귀입니다.",
+  "limitations": [
+    "한 커뮤니티의 검색 가능한 한국어 이미지 편의 표본",
+    "과거 기질·랭크와 현재 수율 범위를 구분",
+    "기존 실패 12장은 학습/개발로 전환했으며 unseen test로 계산하지 않음"
+  ],
+  "groundTruthCorrections": [
+    {
+      "id": "boar-before",
+      "field": "Electricity",
+      "old": 101.7,
+      "correct": 101.2
+    },
+    {
+      "id": "redeemer-before",
+      "field": "CriticalDamage",
+      "old": 91.3,
+      "correct": 97.3
+    },
+    {
+      "id": "aksomati",
+      "field": "134.5% option key",
+      "old": "Recoil / negative",
+      "correct": "Puncture / positive",
+      "evidence": "sheets/aksomati-label-review.png; enlarged original shows yellow Puncture icon and 관통"
+    }
+  ],
+  "vocabulary": [
+    "피해",
+    "근접 피해",
+    "치명타 확률",
+    "치명타 피해",
+    "멀티샷",
+    "연사력",
+    "연사력 (활 계열 무기에 2배)",
+    "상태 이상 확률",
+    "상태 이상 지속 시간",
+    "상태 이상 지속",
+    "시간",
+    "상태 이상 피해",
+    "탄창 용량",
+    "재장전 속도",
+    "탄약 최대량",
+    "발사체 속도",
+    "두께 꿰뚫기",
+    "반동",
+    "확대율 증가",
+    "충격",
+    "관통",
+    "베기",
+    "화염",
+    "냉기",
+    "전기",
+    "독성",
+    "탄약 효율",
+    "수납 중 재장전",
+    "약점 피해",
+    "약점 치명타 확률",
+    "지면 강타 피해",
+    "강 공격 효율",
+    "사거리",
+    "기본 연속기",
+    "연속기 지속 시간",
+    "추가 연속기 카운트 확률",
+    "추가 연속기 카운트",
+    "연속기 카운트 획득 확률",
+    "확률",
+    "공격 속도",
+    "강 공격 피해",
+    "강 공격 준비 속도",
+    "슬라이드 공격에 치명타",
+    "확률",
+    "추가",
+    "슬라이드 공격에 치명타 확률",
+    "방어 각도",
+    "마무리 일격 피해",
+    "폭발",
+    "부식",
+    "가스",
+    "자성",
+    "방사능",
+    "바이러스",
+    "치명타 확률 (강 공격 시 2배)",
+    "공격 시 2배)",
+    "그리니어에 대한 피해",
+    "코퍼스에 대한 피해",
+    "인페스티드에 대한 피해",
+    "오로킨에 대한 피해",
+    "테크병에 대한 피해",
+    "스칼드라에 대한 피해"
+  ],
+  "items": [
+    {
+      "id": "magnus",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496659",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260827865e6890ab6ee3fbf7bf91ac999ef1c97d122c04f455aed317d81a7384083c920a9184a",
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "sha256": "85bf316978e3d78087acb332df6555958d8421ecd09d0c7dc84165ec55e04fa2",
+      "size": [
+        297,
+        422
+      ],
+      "kind": "Pistol",
+      "rawText": "+91.2% 전기\n그리니어에 대한 피해 x1.51\n+98.8% 확대율 증가\n-192% 피해",
+      "options": [
+        {
+          "key": "Electricity",
+          "value": 91.2,
+          "negative": false
+        },
+        {
+          "key": "FactionGrineer",
+          "value": 51,
+          "negative": false
+        },
+        {
+          "key": "Zoom",
+          "value": 98.8,
+          "negative": false
+        },
+        {
+          "key": "Damage",
+          "value": 192,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496659",
+      "split": "train",
+      "file": "cards/magnus.png",
+      "cropBounds": null
+    },
+    {
+      "id": "strun",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496598",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260827865e6890ab6ee3fbf7bf91ac99ae61394d38cf276c4fb4c86bed44f9ff3db62a8cfba18",
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "sha256": "2587e89d1afd62d3a6d16a1bfb132d30bb2aa2ee116a1a4ccf46df2966211327",
+      "size": [
+        305,
+        429
+      ],
+      "kind": "Shotgun",
+      "rawText": "+135.2% 멀티샷\n+110.8% 상태 이상 피해\n+101.8% 치명타 피해\n-107.2% 충격",
+      "options": [
+        {
+          "key": "Multishot",
+          "value": 135.2,
+          "negative": false
+        },
+        {
+          "key": "StatusDamage",
+          "value": 110.8,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 101.8,
+          "negative": false
+        },
+        {
+          "key": "Impact",
+          "value": 107.2,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496598",
+      "split": "train",
+      "file": "cards/strun.png",
+      "cropBounds": null
+    },
+    {
+      "id": "latron",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496508",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915968b4cef0201789c5e718876d091b43b0a83b84fd962c04193a694088",
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "sha256": "429b08fc0c0f1792e4ef17163192463852e1f3091e6bb5cf4f76faf4064e87fc",
+      "size": [
+        287,
+        446
+      ],
+      "kind": "Rifle",
+      "rawText": "+138.2% 전기\n+246.6% 피해\n인페스티드에 대한 피해\nx0.76",
+      "options": [
+        {
+          "key": "Electricity",
+          "value": 138.2,
+          "negative": false
+        },
+        {
+          "key": "Damage",
+          "value": 246.6,
+          "negative": false
+        },
+        {
+          "key": "FactionInfested",
+          "value": 24,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496508",
+      "split": "train",
+      "file": "cards/latron.png",
+      "cropBounds": null
+    },
+    {
+      "id": "lex",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496330",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa11d028315b16038a51180b889cf1820a1ba16b1f0aafc91f4393db8e173b5d077d74b20c2f7dc39309c7c96131ae7c76970a469143210af2ec87727dab9be4",
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "sha256": "987bae30f35e4c99d7b2b4925ce78ee30a7eaa7c3b49d80cb275b406b2725715",
+      "size": [
+        376,
+        572
+      ],
+      "kind": "Pistol",
+      "rawText": "+184.5% 치명타 확률\n+111% 치명타 피해\n+140.3% 멀티샷\n-48.6% 탄창 용량",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 184.5,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 111,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 140.3,
+          "negative": false
+        },
+        {
+          "key": "Magazine",
+          "value": 48.6,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496330",
+      "split": "train",
+      "file": "cards/lex.png",
+      "cropBounds": null
+    },
+    {
+      "id": "brokenscepter",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496240",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa11d028315b16038a51180b889cf1820a1ba06b1f82df18bd08b06ca28e8e4d5ea804d05726d3507c48fbf7a0982ea30e4dac9ba3879f803e58b6c4",
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "sha256": "8fcbd2d5d1adcd8d6cbf7e117d927acb553c9cc47b81b4e2353f1225c42d2e92",
+      "size": [
+        461,
+        584
+      ],
+      "kind": "Melee",
+      "rawText": "+90.5% 강 공격 효율\n+214.5% 치명타 확률 (강\n공격 시 2배)\n+58.4% 공격 속도\n코퍼스에 대한 피해 x0.58",
+      "options": [
+        {
+          "key": "HeavyEfficiency",
+          "value": 90.5,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 214.5,
+          "negative": false
+        },
+        {
+          "key": "AttackSpeed",
+          "value": 58.4,
+          "negative": false
+        },
+        {
+          "key": "VsCorpus",
+          "value": 42,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496240",
+      "split": "train",
+      "file": "cards/brokenscepter.png",
+      "cropBounds": null
+    },
+    {
+      "id": "corinth",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496240",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa11d028315b16038a51180b889cf1820a1ba06b1f82df18bd08b26aa2818e4a5dad02d8574884c52da0ebdd74e115471f613999b84b738d6a4917ab",
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "sha256": "a9464ff63ccc17acd86be7a060787d5f1262544564509a540f737ca8fb96ca8f",
+      "size": [
+        405,
+        568
+      ],
+      "kind": "Shotgun",
+      "rawText": "+191.5% 피해\n+3 두께 꿰뚫기\n+55.3% 재장전 속도\n코퍼스에 대한 피해 x0.6",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 191.5,
+          "negative": false
+        },
+        {
+          "key": "PunchThrough",
+          "value": 3,
+          "negative": false
+        },
+        {
+          "key": "ReloadSpeed",
+          "value": 55.3,
+          "negative": false
+        },
+        {
+          "key": "FactionCorpus",
+          "value": 40,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496240",
+      "split": "train",
+      "file": "cards/corinth.png",
+      "cropBounds": null
+    },
+    {
+      "id": "aksomati",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496240",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa11d028315b16038a51180b889cf1820a1ba06b1f82df18bd08b16aa4838a4b5fa904da57ac77c86ac3b121fef72b8f8ef0985cc72a3ece011b67d7",
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "sha256": "5980b7442a8190aad01b16614bf5675b8e7937ee714bfbbcf1d086c03b716f6c",
+      "size": [
+        476,
+        567
+      ],
+      "kind": "Pistol",
+      "rawText": "+238.5% 피해\n+134.5% 관통\n+2.9 두께 꿰뚫기\n-68.6% 확대율 증가",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 238.5,
+          "negative": false
+        },
+        {
+          "key": "Puncture",
+          "value": 134.5,
+          "negative": false
+        },
+        {
+          "key": "PunchThrough",
+          "value": 2.9,
+          "negative": false
+        },
+        {
+          "key": "Zoom",
+          "value": 68.6,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496240",
+      "split": "train",
+      "file": "cards/aksomati.png",
+      "cropBounds": null
+    },
+    {
+      "id": "rubico",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496124",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595f76f51123c3c13463befc783071034a118e5dd6b813e7",
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "sha256": "c3094369e634ca2d24ca93c53bf1af5c18ab7e6c17321643de390971419071d4",
+      "size": [
+        317,
+        448
+      ],
+      "kind": "Rifle",
+      "rawText": "+107.4% 상태 이상 지속\n시간\n+128.5% 치명타 피해\n+163.3% 치명타 확률\n-46.1% 탄약 최대량",
+      "options": [
+        {
+          "key": "StatusDuration",
+          "value": 107.4,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 128.5,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 163.3,
+          "negative": false
+        },
+        {
+          "key": "AmmoMaximum",
+          "value": 46.1,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496124",
+      "split": "train",
+      "file": "cards/rubico.png",
+      "cropBounds": null
+    },
+    {
+      "id": "boar-before",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496711",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260827865e6890ab6ee3ffb2eac1aaf99e81493d5e36698cef9b6814dc991dca8df",
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "sha256": "09d1e355fea6a4e0d41dc51ce7b799b94e7ebe4d4ee1dfc5eca66863badbfc94",
+      "size": [
+        410,
+        505
+      ],
+      "kind": "Shotgun",
+      "rawText": "+188.6% 피해\n+92.5% 치명타 확률\n+101.2% 전기\n-80% 탄약 최대량",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 188.6,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 92.5,
+          "negative": false
+        },
+        {
+          "key": "Electricity",
+          "value": 101.2,
+          "negative": false
+        },
+        {
+          "key": "AmmoMaximum",
+          "value": 80,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496711",
+      "split": "train",
+      "file": "cards/boar-before.png",
+      "cropBounds": [
+        20,
+        80,
+        430,
+        585
+      ]
+    },
+    {
+      "id": "boar-after",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496711",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260827865e6890ab6ee3ffb2eac1aaf99e81493d5e36698cef9b6814dc991dca8df",
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "sha256": "f155616ced8f6dc559afe617a6f53f942b34c9a4b37319897c999549eebf7db4",
+      "size": [
+        490,
+        621
+      ],
+      "kind": "Shotgun",
+      "rawText": "+105.4% 연사력 (활 계열\n무기에 2배)\n+114.8% 상태 이상 지속\n시간\n+107.5% 전기\n-80% 탄약 최대량",
+      "options": [
+        {
+          "key": "FireRate",
+          "value": 105.4,
+          "negative": false
+        },
+        {
+          "key": "StatusDuration",
+          "value": 114.8,
+          "negative": false
+        },
+        {
+          "key": "Electricity",
+          "value": 107.5,
+          "negative": false
+        },
+        {
+          "key": "AmmoMaximum",
+          "value": 80,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496711",
+      "split": "train",
+      "file": "cards/boar-after.png",
+      "cropBounds": [
+        475,
+        20,
+        965,
+        641
+      ]
+    },
+    {
+      "id": "sampotes-left",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496542",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915929e095f44a1183c2ee1dd9dfb687698f829aaf64551bf2",
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "sha256": "338fb196702404798e3f5737eba8d0f58a880fa51c1fccceaa02c491dc6be6ac",
+      "size": [
+        481,
+        630
+      ],
+      "kind": "Melee",
+      "rawText": "+194.8% 치명타 확률 (강\n공격 시 2배)\n+100.5% 상태 이상 확률\n+147.5% 지면 강타 피해\n슬라이드 공격에 치명타\n확률 -102.2% 추가",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 194.8,
+          "negative": false
+        },
+        {
+          "key": "StatusChance",
+          "value": 100.5,
+          "negative": false
+        },
+        {
+          "key": "SlamDamage",
+          "value": 147.5,
+          "negative": false
+        },
+        {
+          "key": "SlideCriticalChance",
+          "value": 102.2,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496542",
+      "split": "train",
+      "file": "cards/sampotes-left.png",
+      "cropBounds": [
+        401,
+        115,
+        882,
+        745
+      ]
+    },
+    {
+      "id": "sampotes-right",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496542",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915929e095f44a1183c2ee1dd9dfb687698f829aaf64551bf2",
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "sha256": "737fa915183f7e80695ab366597832967d6a3cd4b7774c28b72c4eeb90335d0e",
+      "size": [
+        413,
+        516
+      ],
+      "kind": "Melee",
+      "rawText": "+194.8% 치명타 확률 (강\n공격 시 2배)\n+202.8% 근접 피해\n+147.5% 지면 강타 피해\n-1.8 사거리",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 194.8,
+          "negative": false
+        },
+        {
+          "key": "Damage",
+          "value": 202.8,
+          "negative": false
+        },
+        {
+          "key": "SlamDamage",
+          "value": 147.5,
+          "negative": false
+        },
+        {
+          "key": "Range",
+          "value": 1.8,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496542",
+      "split": "train",
+      "file": "cards/sampotes-right.png",
+      "cropBounds": [
+        928,
+        172,
+        1341,
+        688
+      ]
+    },
+    {
+      "id": "redeemer-before",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496394",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915968b4cef020118cc2ee1ea3ea85b815d71a2e9c8bf9fefd884ece50bc",
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "sha256": "b9e4a4342bc3a240d82fbd12c3310094ab2c82869bf93c1aedc391a03dd4c391",
+      "size": [
+        220,
+        280
+      ],
+      "kind": "Melee",
+      "rawText": "+97.3% 치명타 피해\n+222.3% 치명타 확률 (강\n공격 시 2배)\n+25.5 기본 연속기\n-89.8% 연속기 카운트 획득\n확률",
+      "options": [
+        {
+          "key": "CriticalDamage",
+          "value": 97.3,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 222.3,
+          "negative": false
+        },
+        {
+          "key": "InitialCombo",
+          "value": 25.5,
+          "negative": false
+        },
+        {
+          "key": "ComboChance",
+          "value": 89.8,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496394",
+      "split": "train",
+      "file": "cards/redeemer-before.png",
+      "cropBounds": [
+        105,
+        80,
+        325,
+        360
+      ]
+    },
+    {
+      "id": "redeemer-after",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496394",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915968b4cef020118cc2ee1ea3ea85b815d71a2e9c8bf9fefd884ece50bc",
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "sha256": "5d906c7e920bf1916cf823a97aafc341e93b592cf0f659c37b4eeaf32aceda91",
+      "size": [
+        255,
+        340
+      ],
+      "kind": "Melee",
+      "rawText": "+91.3% 치명타 피해\n+222.3% 치명타 확률 (강\n공격 시 2배)\n+172.6% 근접 피해\n-87.7% 연속기 카운트 획득\n확률",
+      "options": [
+        {
+          "key": "CriticalDamage",
+          "value": 91.3,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 222.3,
+          "negative": false
+        },
+        {
+          "key": "Damage",
+          "value": 172.6,
+          "negative": false
+        },
+        {
+          "key": "ComboChance",
+          "value": 87.7,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496394",
+      "split": "train",
+      "file": "cards/redeemer-after.png",
+      "cropBounds": [
+        350,
+        50,
+        605,
+        390
+      ]
+    },
+    {
+      "id": "latron-before",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496522",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915968b4cef0201c82c1e51cfce5c17b6597ecd72714f165493faf5b9038",
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "sha256": "9d8ead1c3cfef258525b4ed7636a3efde947dd994d5bff2e804f42a300d0fafe",
+      "size": [
+        305,
+        340
+      ],
+      "kind": "Rifle",
+      "rawText": "+94.7% 냉기\n+184.2% 치명타 확률\n+171.8% 피해\n-52.7% 확대율 증가",
+      "options": [
+        {
+          "key": "Cold",
+          "value": 94.7,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 184.2,
+          "negative": false
+        },
+        {
+          "key": "Damage",
+          "value": 171.8,
+          "negative": false
+        },
+        {
+          "key": "Zoom",
+          "value": 52.7,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496522",
+      "split": "train",
+      "file": "cards/latron-before.png",
+      "cropBounds": [
+        25,
+        45,
+        330,
+        385
+      ]
+    },
+    {
+      "id": "build-boar",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496512",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e06591592de599f3481c89c7e01c049f0e96e773d2269a01d54b7d",
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "sha256": "e57243ce041dba363e3c30dfe3c3936c5e70712faae871a2e126710ea10611e5",
+      "size": [
+        384,
+        506
+      ],
+      "kind": "Shotgun",
+      "rawText": "+50.9% 탄창 용량\n+111.3% 상태 이상 피해\n+145.1% 멀티샷\n-38% 확대율 증가",
+      "options": [
+        {
+          "key": "Magazine",
+          "value": 50.9,
+          "negative": false
+        },
+        {
+          "key": "StatusDamage",
+          "value": 111.3,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 145.1,
+          "negative": false
+        },
+        {
+          "key": "Zoom",
+          "value": 38,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496512",
+      "split": "validation",
+      "file": "cards/build-boar.png",
+      "cropBounds": [
+        811,
+        230,
+        1195,
+        736
+      ]
+    },
+    {
+      "id": "build-torid",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496512",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915927e09dfb46128ac3ef1b9aa6159a98035d9c8059256f36",
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "sha256": "d59ffd8fe264bf412cc81422a5f2bd4b2624850c2f5d5a1d9e31b992b3f4b38b",
+      "size": [
+        373,
+        506
+      ],
+      "kind": "Rifle",
+      "rawText": "+159.9% 치명타 확률\n+99.1% 바이러스\n+105% 멀티샷\n+76.2% 반동",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 159.9,
+          "negative": false
+        },
+        {
+          "key": "Viral",
+          "value": 99.1,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 105,
+          "negative": false
+        },
+        {
+          "key": "Recoil",
+          "value": 76.2,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496512",
+      "split": "validation",
+      "file": "cards/build-torid.png",
+      "cropBounds": [
+        1088,
+        230,
+        1461,
+        736
+      ]
+    },
+    {
+      "id": "build-ogris",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496512",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915929e89efb47168fc0e3195a83eed42084636742734bb67d",
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "sha256": "a24969b5dabb865406bf6016eaab64a03e1e7fb16e5061745fd599d688d1e997",
+      "size": [
+        362,
+        502
+      ],
+      "kind": "Rifle",
+      "rawText": "+59.4% 탄창 용량\n+109.4% 상태 이상 지속\n시간\n+54.3% 탄약 효율\n-107.7% 치명타 피해",
+      "options": [
+        {
+          "key": "Magazine",
+          "value": 59.4,
+          "negative": false
+        },
+        {
+          "key": "StatusDuration",
+          "value": 109.4,
+          "negative": false
+        },
+        {
+          "key": "AmmoEfficiency",
+          "value": 54.3,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 107.7,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496512",
+      "split": "validation",
+      "file": "cards/build-ogris.png",
+      "cropBounds": [
+        1643,
+        373,
+        2005,
+        875
+      ]
+    },
+    {
+      "id": "build-acceltra",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496512",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915926e59bf14e1089c4e61ba5bbb2c1bc2d8a2731c87af084",
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "sha256": "7688f25c0b63d9753edb0ae7885928e4897495d0e4ec184a277bf30d8822e509",
+      "size": [
+        374,
+        497
+      ],
+      "kind": "Rifle",
+      "rawText": "+185.4% 치명타 확률\n+53.8% 탄약 효율\n+128.2% 치명타 피해\n인페스티드에 대한 피해\nx0.63",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 185.4,
+          "negative": false
+        },
+        {
+          "key": "AmmoEfficiency",
+          "value": 53.8,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 128.2,
+          "negative": false
+        },
+        {
+          "key": "FactionInfested",
+          "value": 37,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496512",
+      "split": "validation",
+      "file": "cards/build-acceltra.png",
+      "cropBounds": [
+        1365,
+        378,
+        1739,
+        875
+      ]
+    },
+    {
+      "id": "build-trumna",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496512",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e06591592be09df54a128fcde71b2502517ec2aec3d4e421ce7062",
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "sha256": "0ae5687fd7bd0d0c6fec7ef5d8dd47f3ce76f6ff17517403a11a45f93c07b681",
+      "size": [
+        374,
+        497
+      ],
+      "kind": "Rifle",
+      "rawText": "+171.3% 치명타 확률\n+100.9% 화염\n+121.8% 치명타 피해\n+79.4% 반동",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 171.3,
+          "negative": false
+        },
+        {
+          "key": "Heat",
+          "value": 100.9,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 121.8,
+          "negative": false
+        },
+        {
+          "key": "Recoil",
+          "value": 79.4,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496512",
+      "split": "validation",
+      "file": "cards/build-trumna.png",
+      "cropBounds": [
+        1365,
+        378,
+        1739,
+        875
+      ]
+    },
+    {
+      "id": "build-paris",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496512",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e065915929e79ef04f1189c0e41ad5d90a6dada9db89a5dde835fc",
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "sha256": "cd1c883b7a944086dc7b90055a01a7d1415cae8dd8f1893c1dadd0ab34a0ba1d",
+      "size": [
+        373,
+        506
+      ],
+      "kind": "Rifle",
+      "rawText": "+165.4% 치명타 확률\n+105.3% 상태 이상 확률\n+101.4% 상태 이상 피해\n인페스티드에 대한 피해\nx0.62",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 165.4,
+          "negative": false
+        },
+        {
+          "key": "StatusChance",
+          "value": 105.3,
+          "negative": false
+        },
+        {
+          "key": "StatusDamage",
+          "value": 101.4,
+          "negative": false
+        },
+        {
+          "key": "FactionInfested",
+          "value": 38,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496512",
+      "split": "validation",
+      "file": "cards/build-paris.png",
+      "cropBounds": [
+        1088,
+        230,
+        1461,
+        736
+      ]
+    },
+    {
+      "id": "build-hema",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496512",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a7319963772608371659589e06591592ae19af14e168cc1e21a6c4fe8b1c55ca15d654abc8d5b",
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "sha256": "d3f1879029f095d19f1445c74df60e2932f77f38471d8d18b642f4c8a270ec4f",
+      "size": [
+        374,
+        506
+      ],
+      "kind": "Rifle",
+      "rawText": "+73.6% 연사력 (활 계열\n무기에 2배)\n+102.9% 폭발\n+179.7% 치명타 확률\n+76.2% 반동",
+      "options": [
+        {
+          "key": "FireRate",
+          "value": 73.6,
+          "negative": false
+        },
+        {
+          "key": "Blast",
+          "value": 102.9,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 179.7,
+          "negative": false
+        },
+        {
+          "key": "Recoil",
+          "value": 76.2,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496512",
+      "split": "validation",
+      "file": "cards/build-hema.png",
+      "cropBounds": [
+        1365,
+        230,
+        1739,
+        736
+      ]
+    },
+    {
+      "id": "flux",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595e77f4162a94729b8d25a4c9d3f7ec3f4f53dcd94dcc03",
+      "sourceSha256": "7eb2e66dfad9d12847239fd39db2358cf0f3ee8ca2714d002d976ab3ae1b65f9",
+      "sha256": "16cc3da12507f452d8cd8cfc06a465a1fc5ff6b8e03ac6f970204d572c7331bd",
+      "size": [
+        268,
+        416
+      ],
+      "kind": "Rifle",
+      "rawText": "+167.2% 치명타 확률\n+152.5% 치명타 피해",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 167.2,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 152.5,
+          "negative": false
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/flux.png",
+      "cropBounds": null
+    },
+    {
+      "id": "rattleguts-crit",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595b7ef41325cdc5366670b774700a19750c0822a96cb2c2",
+      "sourceSha256": "b0d01d4605231cbc6725df2cd69339c53fe23e41746a682051bfa1e297628b43",
+      "sha256": "5e6aa281a791d76190bd9b14d786aa60fe364e88d26b6d022991861c5d20bdd2",
+      "size": [
+        277,
+        420
+      ],
+      "kind": "Pistol",
+      "rawText": "+192.1% 치명타 확률\n+109.5% 치명타 피해",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 192.1,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 109.5,
+          "negative": false
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/rattleguts-crit.png",
+      "cropBounds": null
+    },
+    {
+      "id": "rattleguts-cold",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595977f1182b4cee6664dacafcfcb6358b74363b61dce68e",
+      "sourceSha256": "ff8e2d028f59d821bc85537a9a61c6cee770deae46cfdda4a0bf4b5d4a506a1c",
+      "sha256": "84f530823922e6851d60f19d6358f24a73a8bffff5726a319edeaf250540f5e1",
+      "size": [
+        279,
+        426
+      ],
+      "kind": "Pistol",
+      "rawText": "+251.6% 피해\n+97.4% 냉기\n+143.8% 멀티샷\n-99.2% 관통",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 251.6,
+          "negative": false
+        },
+        {
+          "key": "Cold",
+          "value": 97.4,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 143.8,
+          "negative": false
+        },
+        {
+          "key": "Puncture",
+          "value": 99.2,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/rattleguts-cold.png",
+      "cropBounds": null
+    },
+    {
+      "id": "quanta",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595d73f01920c1b4a31d23a6afe13a79ad31263e40ccc54e",
+      "sourceSha256": "4f65b0bda95435f01687fe115b6214e333668a2adcfff9bf526b0fc7006dd329",
+      "sha256": "5822593214979a0191c63b4bc327b242ad88496750720debb1d6e567038641d4",
+      "size": [
+        283,
+        412
+      ],
+      "kind": "Rifle",
+      "rawText": "+192.5% 치명타 확률\n+134.1% 치명타 피해",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 192.5,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 134.1,
+          "negative": false
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/quanta.png",
+      "cropBounds": null
+    },
+    {
+      "id": "akjagara",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595b76f5112615f007f8ba33fbb209f7fbf209595502304c",
+      "sourceSha256": "886b5bfbf29ce95bc77eb89062be810edc94c09742397b95803db280e40a5f79",
+      "sha256": "915060696dcc64bd0104b3d85bbfe48728020f1a9d4dedc8405bad1c0a64036c",
+      "size": [
+        264,
+        415
+      ],
+      "kind": "Pistol",
+      "rawText": "+109.7% 치명타 피해\n+175.5% 치명타 확률",
+      "options": [
+        {
+          "key": "CriticalDamage",
+          "value": 109.7,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 175.5,
+          "negative": false
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/akjagara.png",
+      "cropBounds": null
+    },
+    {
+      "id": "karak",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595571f8172558d04ba03f3d4a63b24ce98624c99af2dedf",
+      "sourceSha256": "7b8e75b80e970d6a2005f068d4a8a50fee8ad390c466230e9c1876230f28827d",
+      "sha256": "176f893ef24467ae7a3bbd45740320db5627684324fac587a47519bc6bd32a46",
+      "size": [
+        280,
+        414
+      ],
+      "kind": "Rifle",
+      "rawText": "+183% 치명타 피해\n+214% 치명타 확률\n-57.3% 상태 이상 확률",
+      "options": [
+        {
+          "key": "CriticalDamage",
+          "value": 183,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 214,
+          "negative": false
+        },
+        {
+          "key": "StatusChance",
+          "value": 57.3,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/karak.png",
+      "cropBounds": null
+    },
+    {
+      "id": "synapse-two",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595e71f71223f419b23882473f7a5334139c7fde872bbc60",
+      "sourceSha256": "4a5362be55f4544d1875ab4c4ccc1c22af6063dd93168315914edb9594527dba",
+      "sha256": "d275ecb2bef863f486516ac3b44b9211720e887eeb46e251a1b184cb85877bbf",
+      "size": [
+        276,
+        406
+      ],
+      "kind": "Rifle",
+      "rawText": "+150.9% 치명타 피해\n+173.6% 치명타 확률",
+      "options": [
+        {
+          "key": "CriticalDamage",
+          "value": 150.9,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 173.6,
+          "negative": false
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/synapse-two.png",
+      "cropBounds": null
+    },
+    {
+      "id": "synapse-three",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595b74f114250cd5f5609445526d370563d552047d3338ad",
+      "sourceSha256": "db6119563e415c51f7462bc21115a1f610ef9932c3b7d85fb8c216afb15aa13f",
+      "sha256": "f7e8875f08e6038e907e494620176e53f70a2ae5d5ad32d63eb18e84dd786469",
+      "size": [
+        294,
+        423
+      ],
+      "kind": "Rifle",
+      "rawText": "+156% 치명타 확률\n+112% 상태 이상 지속 시간\n+142.7% 치명타 피해\n-52% 확대율 증가",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 156,
+          "negative": false
+        },
+        {
+          "key": "StatusDuration",
+          "value": 112,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 142.7,
+          "negative": false
+        },
+        {
+          "key": "Zoom",
+          "value": 52,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/synapse-three.png",
+      "cropBounds": null
+    },
+    {
+      "id": "tigris",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595a73f7132060f2f197452f2ddc3e503e31a0174573f1bd",
+      "sourceSha256": "c52ce969d1dcd8d9535476a0617b2d93ea7762ad0837882af28f9e8f5fd0b9ed",
+      "sha256": "a47d8a4296ea6766707339685aa300cff77dafca75ea7be10012f12ff1d32c62",
+      "size": [
+        269,
+        409
+      ],
+      "kind": "Shotgun",
+      "rawText": "+245.7% 피해\n+182.1% 멀티샷\n코퍼스에 대한 피해 x0.72",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 245.7,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 182.1,
+          "negative": false
+        },
+        {
+          "key": "FactionCorpus",
+          "value": 28,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/tigris.png",
+      "cropBounds": null
+    },
+    {
+      "id": "harpak",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595e73f7122053a02eee7f38634fa74b715ed4128c416155",
+      "sourceSha256": "5d7b8f3b0a845b2aa9b63f8daa44e6121dfc900ca60f397573ed954a221be854",
+      "sha256": "c7f9a3ce5ebfe38159ada5f11bda8559b7f9ae87b2a1d1282591b72a7d94f39d",
+      "size": [
+        249,
+        410
+      ],
+      "kind": "Rifle",
+      "rawText": "+264.1% 피해\n+123.2% 멀티샷\n코퍼스에 대한 피해 x0.76",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 264.1,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 123.2,
+          "negative": false
+        },
+        {
+          "key": "FactionCorpus",
+          "value": 24,
+          "negative": true
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/harpak.png",
+      "cropBounds": null
+    },
+    {
+      "id": "dualtoxocyst",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=496113",
+      "imageUrl": "https://dcimg8.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260837065dd3883a916f6b17a5a13595b70f01220ca43ff08d1581b7f2d734cc7f0f2e63fb7a8",
+      "sourceSha256": "5e5f71fd5eb4f52435675e325b886ccf8c536ce50d2f50470ef688b0cc2403b6",
+      "sha256": "db8d196e4c97f8f25b888cbc24b4061768198034b205bf27094faad1d7287582",
+      "size": [
+        252,
+        416
+      ],
+      "kind": "Pistol",
+      "rawText": "+177.2% 치명타 확률\n+109.4% 치명타 피해",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 177.2,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 109.4,
+          "negative": false
+        }
+      ],
+      "group": "ordis-496113",
+      "split": "test",
+      "file": "cards/dualtoxocyst.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-burst-left",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=491146",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260807e6556df9c94267c2ce7ee413c38bafa3d74bdc07ec61ad9286955ffe7c7fd",
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "sha256": "62f45159c06a96fdb8810bb0832c10b9ab2dddbcb4d04abc01fdec63e604a07f",
+      "size": [
+        392,
+        491
+      ],
+      "kind": "Rifle",
+      "rawText": "+219.3% 피해\n+191.5% 치명타 확률\n+162.3% 관통\n-111.1% 충격",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 219.3,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 191.5,
+          "negative": false
+        },
+        {
+          "key": "Puncture",
+          "value": 162.3,
+          "negative": false
+        },
+        {
+          "key": "Impact",
+          "value": 111.1,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=491146",
+      "split": "train",
+      "file": "cards/legacy-burst-left.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-burst-right",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=491146",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260807e6556df9c94267c2ce7ee413c38bafa3d74bdc07ec61ad9286955ffe7c7fd",
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "sha256": "897c5d2281559fcf5954bf8eda26f4939bcb2b1544ac56b905398fbb0c5b45c7",
+      "size": [
+        461,
+        609
+      ],
+      "kind": "Rifle",
+      "rawText": "+219.3% 피해\n+121.1% 상태 이상 확률\n+151.4% 치명타 피해\n-128.5% 충격",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 219.3,
+          "negative": false
+        },
+        {
+          "key": "StatusChance",
+          "value": 121.1,
+          "negative": false
+        },
+        {
+          "key": "CriticalDamage",
+          "value": 151.4,
+          "negative": false
+        },
+        {
+          "key": "Impact",
+          "value": 128.5,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=491146",
+      "split": "train",
+      "file": "cards/legacy-burst-right.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-magistar",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489969",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa11d028315b16038a51180b889cf1820a18ab6b1fcbc4cd501d8c0bcfe86c2916ddadea3aff8f87c8a48ba4ab412b26a75f5752d73e569b98ba5f295707e54ff73253a3b9cb3af7ed672e2df6e33a8c967a29237c8d",
+      "sourceSha256": "6cb6e25e18277958b4582e3663ec67371a18daa7542d40b12adf608392c1d79d",
+      "sha256": "071825a043d07d20cdd42246cd0157aa550eb3aeae4a63437ffc50bf12130a5d",
+      "size": [
+        343,
+        430
+      ],
+      "kind": "Melee",
+      "rawText": "그리니어에 대한 피해 x1.44\n+107.1% 충격\n+22.2 기본 연속기",
+      "options": [
+        {
+          "key": "VsGrineer",
+          "value": 44.0,
+          "negative": false
+        },
+        {
+          "key": "ImpactDamage",
+          "value": 107.1,
+          "negative": false
+        },
+        {
+          "key": "InitialCombo",
+          "value": 22.2,
+          "negative": false
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489969",
+      "split": "train",
+      "file": "cards/legacy-magistar.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-boar-right",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=491662",
+      "imageUrl": "https://image.dcinside.com/download.php?no=24b0d769e1d32ca73de782fa11d028315b16038a51180b889cf1820a18af6b1f78b18a1877d1cfc10549671bfe8790461f75d849f366fbaa1b9d75adb45cd9e4b1662caa46a1b36c12be33147e2d32088ad232295c9efd&f_no=1a149d7377e9-screenshotUrl.jpg",
+      "sourceSha256": "8377c466a4e92b24874d1b474ccf01f0861fefdc83f2ce3dd2c0ca6728044ca0",
+      "sha256": "b83fb85959b1bfa398e897cd4e296dd5d951d226e0d43fe42618b89315b96e05",
+      "size": [
+        158,
+        205
+      ],
+      "kind": "Shotgun",
+      "rawText": "+144.7% 독성\n+139.8% 냉기\n-84.2% 베기",
+      "options": [
+        {
+          "key": "Toxin",
+          "value": 144.7,
+          "negative": false
+        },
+        {
+          "key": "Cold",
+          "value": 139.8,
+          "negative": false
+        },
+        {
+          "key": "Slash",
+          "value": 84.2,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=491662",
+      "split": "train",
+      "file": "cards/legacy-boar-right.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-heliocor",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=461932",
+      "imageUrl": "https://dcimg1.dcinside.com/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de784fa1bd62531bc86dc33fe20e88dc284ef42ed3c07fb09e132ad4b150cea4f9247c49143eb598d8418662f1196459526eac9e6f8e4219224",
+      "sourceSha256": "c544c0d5fa58a83a23240b9dcf4b266fc1da7252ac5940749af00d037caa6727",
+      "sha256": "f21669eb43bed638f735ab3441a0c2d29df0dfa5a594ef43ee664723d1e5dc10",
+      "size": [
+        354,
+        492
+      ],
+      "kind": "Melee",
+      "rawText": "+152.8% 치명타 피해\n+126.6% 강 공격 효율\n-71.1% 상태 이상 지속 시간",
+      "options": [
+        {
+          "key": "CriticalDamage",
+          "value": 152.8,
+          "negative": false
+        },
+        {
+          "key": "HeavyEfficiency",
+          "value": 126.6,
+          "negative": false
+        },
+        {
+          "key": "StatusDuration",
+          "value": 71.1,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=461932",
+      "split": "train",
+      "file": "cards/legacy-heliocor.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-arca-titron",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489629",
+      "imageUrl": "https://dcimg4.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260807a6527dff38941694143bde0288812165cc707d541af838dd3b98d7fc540ef1e15cdffe4",
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "sha256": "b052e93607107be26b8caa6e1541f30fe894917b3f588d93d6f7f33e8fcc1de4",
+      "size": [
+        263,
+        364
+      ],
+      "kind": "Melee",
+      "rawText": "+65.2% 공격 속도\n+118.8% 전기\n+197.9% 치명타 확률 (강\n공격 시 2배)\n인페스티드에 대한 피해\nx0.6",
+      "options": [
+        {
+          "key": "AttackSpeed",
+          "value": 65.2,
+          "negative": false
+        },
+        {
+          "key": "Electricity",
+          "value": 118.8,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 197.9,
+          "negative": false
+        },
+        {
+          "key": "VsInfested",
+          "value": 40.0,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489629",
+      "split": "train",
+      "file": "cards/legacy-arca-titron.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-hate-sale",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489629",
+      "imageUrl": "https://dcimg4.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260807a6527dff38941694143bde028851c1d5ac5ea16e0da5fcd7febf8b34934855c25d2d798",
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "sha256": "5d8654e66f9262f48e613054e4c0b886926bb20e3f91d5686ebc2a1d1a29e082",
+      "size": [
+        263,
+        388
+      ],
+      "kind": "Melee",
+      "rawText": "+85.6% 치명타 피해\n+186.2% 치명타 확률 (강\n공격 시 2배)\n+96.7% 독성\n-59.7% 강 공격 효율",
+      "options": [
+        {
+          "key": "CriticalDamage",
+          "value": 85.6,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 186.2,
+          "negative": false
+        },
+        {
+          "key": "Toxin",
+          "value": 96.7,
+          "negative": false
+        },
+        {
+          "key": "HeavyEfficiency",
+          "value": 59.7,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489629",
+      "split": "train",
+      "file": "cards/legacy-hate-sale.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-sale-third",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489629",
+      "imageUrl": "https://dcimg4.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260807a6527dff38941694143bde02883131353c1afd079c173854a6235e593600ab0315ff62b",
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "sha256": "76390c5f35c925d441604f05e3e10720d9071a2e82889128298ccec1c233481e",
+      "size": [
+        272,
+        388
+      ],
+      "kind": "Pistol",
+      "rawText": "+224.1% 피해\n+145.5% 멀티샷\n+169.7% 치명타 확률\n-44.2% 재장전 속도",
+      "options": [
+        {
+          "key": "Damage",
+          "value": 224.1,
+          "negative": false
+        },
+        {
+          "key": "Multishot",
+          "value": 145.5,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 169.7,
+          "negative": false
+        },
+        {
+          "key": "ReloadSpeed",
+          "value": 44.2,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489629",
+      "split": "train",
+      "file": "cards/legacy-sale-third.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-sale-fourth",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489629",
+      "imageUrl": "https://dcimg4.dcinside.co.kr/viewimage.php?id=22afd42ff6&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260807a6527dff38941694143bde028831e1258c6593ec9e686bd8424ed26d184607b81725d80",
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "sha256": "f894936317d1735c9cbd499b8085dc553d6835cb498abd53f19ef1b70a0e58a1",
+      "size": [
+        258,
+        378
+      ],
+      "kind": "Melee",
+      "rawText": "+118.7% 치명타 확률 (강\n공격 시 2배)\n+64.1% 독성\n+35.6% 공격 속도\n슬라이드 공격에 치명타\n확률 -72.6% 추가",
+      "options": [
+        {
+          "key": "CriticalChance",
+          "value": 118.7,
+          "negative": false
+        },
+        {
+          "key": "Toxin",
+          "value": 64.1,
+          "negative": false
+        },
+        {
+          "key": "AttackSpeed",
+          "value": 35.6,
+          "negative": false
+        },
+        {
+          "key": "SlideCriticalChance",
+          "value": 72.6,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489629",
+      "split": "train",
+      "file": "cards/legacy-sale-fourth.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-hate-giveaway",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489939",
+      "imageUrl": "https://image.dcinside.com/viewimage.php?id=&no=24b0d769e1d32ca73de782fa1bd6253180d7c2ae01f81a731996377260807b6512dd7a998f2aa79276e88120c6d6a11e9dd31574dbb960b5a23474e4db",
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "sha256": "56e8a8d959a53a3b14ef715dd8fb3ff299e7a36649f6163ec266132e9a3924ee",
+      "size": [
+        468,
+        625
+      ],
+      "kind": "Melee",
+      "rawText": "+80.8% 추가 연속기 카운트\n확률\n+111.5% 화염\n코퍼스에 대한 피해 x0.74",
+      "options": [
+        {
+          "key": "ComboChance",
+          "value": 80.8,
+          "negative": false
+        },
+        {
+          "key": "Heat",
+          "value": 111.5,
+          "negative": false
+        },
+        {
+          "key": "VsCorpus",
+          "value": 26.0,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489939",
+      "split": "train",
+      "file": "cards/legacy-hate-giveaway.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-verglas-left",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489928",
+      "imageUrl": "https://image.dcinside.com/download.php?no=24b0d769e1d32ca73de782fa11d028315b16038a51180b889cf1820a18ab6b1fcbc4cd501d8605cae5672a18daa9ea3abd561d443f6acf868301a062a28042fc&f_no=563.jpg",
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "sha256": "3baf222313d9df66be693b3e0fd212b9a29a0fe4112711ad691ecfa220ebc433",
+      "size": [
+        181,
+        229
+      ],
+      "kind": "Rifle",
+      "rawText": "+106.9% 멀티샷\n+103.8% 독성\n+172.2% 치명타 확률\n코퍼스에 대한 피해 x0.55",
+      "options": [
+        {
+          "key": "Multishot",
+          "value": 106.9,
+          "negative": false
+        },
+        {
+          "key": "Toxin",
+          "value": 103.8,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 172.2,
+          "negative": false
+        },
+        {
+          "key": "FactionCorpus",
+          "value": 45.0,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489928",
+      "split": "train",
+      "file": "cards/legacy-verglas-left.png",
+      "cropBounds": null
+    },
+    {
+      "id": "legacy-verglas-right",
+      "pageUrl": "https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489928",
+      "imageUrl": "https://image.dcinside.com/download.php?no=24b0d769e1d32ca73de782fa11d028315b16038a51180b889cf1820a18ab6b1fcbc4cd501d8605cae5672a18daa9ea3abd561d443f6acf868301a062a28042fc&f_no=563.jpg",
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "sha256": "e4565e00612940994718b6db2a3dd7d89852eef1dec1316657586b13e1b20d05",
+      "size": [
+        227,
+        263
+      ],
+      "kind": "Rifle",
+      "rawText": "+72.5% 연사력 (활 계열\n무기에 2배)\n+3.2 두께 꿰뚫기\n+172.2% 치명타 확률\n인페스티드에 대한 피해\nx0.56",
+      "options": [
+        {
+          "key": "FireRate",
+          "value": 72.5,
+          "negative": false
+        },
+        {
+          "key": "PunchThrough",
+          "value": 3.2,
+          "negative": false
+        },
+        {
+          "key": "CriticalChance",
+          "value": 172.2,
+          "negative": false
+        },
+        {
+          "key": "FactionInfested",
+          "value": 44.0,
+          "negative": true
+        }
+      ],
+      "group": "legacy-https://gall.dcinside.com/mgallery/board/view/?id=ordis&no=489928",
+      "split": "train",
+      "file": "cards/legacy-verglas-right.png",
+      "cropBounds": null
+    }
+  ],
+  "trainingRows": [
+    {
+      "card": "magnus",
+      "text": "+91.2% 전기",
+      "split": "train",
+      "box": [
+        23,
+        250,
+        220,
+        270
+      ],
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "geometry": "native"
+    },
+    {
+      "card": "magnus",
+      "text": "그리니어에 대한 피해 x1.51",
+      "split": "train",
+      "box": [
+        0,
+        272,
+        282,
+        295
+      ],
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "geometry": "native"
+    },
+    {
+      "card": "magnus",
+      "text": "+98.8% 확대율 증가",
+      "split": "train",
+      "box": [
+        0,
+        294,
+        297,
+        316
+      ],
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "geometry": "native"
+    },
+    {
+      "card": "magnus",
+      "text": "-192% 피해",
+      "split": "train",
+      "box": [
+        0,
+        317,
+        297,
+        338
+      ],
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "geometry": "native"
+    },
+    {
+      "card": "strun",
+      "text": "+135.2% 멀티샷",
+      "split": "train",
+      "box": [
+        0,
+        256,
+        239,
+        277
+      ],
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "geometry": "native"
+    },
+    {
+      "card": "strun",
+      "text": "+110.8% 상태 이상 피해",
+      "split": "train",
+      "box": [
+        0,
+        278,
+        271,
+        300
+      ],
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "geometry": "native"
+    },
+    {
+      "card": "strun",
+      "text": "+101.8% 치명타 피해",
+      "split": "train",
+      "box": [
+        0,
+        300,
+        259,
+        322
+      ],
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "geometry": "native"
+    },
+    {
+      "card": "strun",
+      "text": "-107.2% 충격",
+      "split": "train",
+      "box": [
+        0,
+        323,
+        235,
+        344
+      ],
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "geometry": "native"
+    },
+    {
+      "card": "latron",
+      "text": "+138.2% 전기",
+      "split": "train",
+      "box": [
+        66,
+        269,
+        229,
+        291
+      ],
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "geometry": "native"
+    },
+    {
+      "card": "latron",
+      "text": "+246.6% 피해",
+      "split": "train",
+      "box": [
+        77,
+        293,
+        219,
+        315
+      ],
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "geometry": "native"
+    },
+    {
+      "card": "latron",
+      "text": "인페스티드에 대한 피해",
+      "split": "train",
+      "box": [
+        37,
+        317,
+        260,
+        339
+      ],
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "geometry": "native"
+    },
+    {
+      "card": "latron",
+      "text": "x0.76",
+      "split": "train",
+      "box": [
+        0,
+        342,
+        179,
+        362
+      ],
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "geometry": "native"
+    },
+    {
+      "card": "lex",
+      "text": "+184.5% 치명타 확률",
+      "split": "train",
+      "box": [
+        56,
+        344,
+        318,
+        371
+      ],
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "geometry": "native"
+    },
+    {
+      "card": "lex",
+      "text": "+111% 치명타 피해",
+      "split": "train",
+      "box": [
+        68,
+        373,
+        305,
+        401
+      ],
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "geometry": "native"
+    },
+    {
+      "card": "lex",
+      "text": "+140.3% 멀티샷",
+      "split": "train",
+      "box": [
+        86,
+        404,
+        289,
+        431
+      ],
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "geometry": "native"
+    },
+    {
+      "card": "lex",
+      "text": "-48.6% 탄창 용량",
+      "split": "train",
+      "box": [
+        0,
+        433,
+        294,
+        462
+      ],
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "geometry": "native"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "+90.5% 강 공격 효율",
+      "split": "train",
+      "box": [
+        72,
+        297,
+        385,
+        318
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "native"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "+214.5% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        72,
+        323,
+        385,
+        347
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "native"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        72,
+        351,
+        386,
+        374
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "native"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "+58.4% 공격 속도",
+      "split": "train",
+      "box": [
+        63,
+        378,
+        412,
+        401
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "native"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "코퍼스에 대한 피해 x0.58",
+      "split": "train",
+      "box": [
+        51,
+        406,
+        408,
+        428
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "native"
+    },
+    {
+      "card": "corinth",
+      "text": "+191.5% 피해",
+      "split": "train",
+      "box": [
+        39,
+        315,
+        352,
+        336
+      ],
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "geometry": "native"
+    },
+    {
+      "card": "corinth",
+      "text": "+3 두께 꿰뚫기",
+      "split": "train",
+      "box": [
+        39,
+        342,
+        353,
+        365
+      ],
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "geometry": "native"
+    },
+    {
+      "card": "corinth",
+      "text": "+55.3% 재장전 속도",
+      "split": "train",
+      "box": [
+        85,
+        370,
+        384,
+        393
+      ],
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "geometry": "native"
+    },
+    {
+      "card": "corinth",
+      "text": "코퍼스에 대한 피해 x0.6",
+      "split": "train",
+      "box": [
+        10,
+        396,
+        381,
+        419
+      ],
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "geometry": "native"
+    },
+    {
+      "card": "aksomati",
+      "text": "+238.5% 피해",
+      "split": "train",
+      "box": [
+        82,
+        306,
+        395,
+        327
+      ],
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "geometry": "native"
+    },
+    {
+      "card": "aksomati",
+      "text": "+134.5% 관통",
+      "split": "train",
+      "box": [
+        82,
+        333,
+        396,
+        354
+      ],
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "geometry": "native"
+    },
+    {
+      "card": "aksomati",
+      "text": "+2.9 두께 꿰뚫기",
+      "split": "train",
+      "box": [
+        69,
+        360,
+        427,
+        383
+      ],
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "geometry": "native"
+    },
+    {
+      "card": "aksomati",
+      "text": "-68.6% 확대율 증가",
+      "split": "train",
+      "box": [
+        54,
+        387,
+        423,
+        410
+      ],
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "geometry": "native"
+    },
+    {
+      "card": "rubico",
+      "text": "+107.4% 상태 이상 지속",
+      "split": "train",
+      "box": [
+        41,
+        242,
+        278,
+        265
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "native"
+    },
+    {
+      "card": "rubico",
+      "text": "시간",
+      "split": "train",
+      "box": [
+        137,
+        266,
+        183,
+        288
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "native"
+    },
+    {
+      "card": "rubico",
+      "text": "+128.5% 치명타 피해",
+      "split": "train",
+      "box": [
+        54,
+        290,
+        264,
+        312
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "native"
+    },
+    {
+      "card": "rubico",
+      "text": "+163.3% 치명타 확률",
+      "split": "train",
+      "box": [
+        54,
+        314,
+        265,
+        336
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "native"
+    },
+    {
+      "card": "rubico",
+      "text": "-46.1% 탄약 최대량",
+      "split": "train",
+      "box": [
+        0,
+        337,
+        317,
+        360
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-before",
+      "text": "+188.6% 피해",
+      "split": "train",
+      "box": [
+        53,
+        300,
+        371,
+        324
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-before",
+      "text": "+92.5% 치명타 확률",
+      "split": "train",
+      "box": [
+        53,
+        325,
+        371,
+        350
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-before",
+      "text": "+101.2% 전기",
+      "split": "train",
+      "box": [
+        45,
+        351,
+        395,
+        374
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-before",
+      "text": "-80% 탄약 최대량",
+      "split": "train",
+      "box": [
+        36,
+        376,
+        392,
+        400
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-after",
+      "text": "+105.4% 연사력 (활 계열",
+      "split": "train",
+      "box": [
+        0,
+        310,
+        490,
+        340
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-after",
+      "text": "무기에 2배)",
+      "split": "train",
+      "box": [
+        40,
+        342,
+        490,
+        372
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-after",
+      "text": "+114.8% 상태 이상 지속",
+      "split": "train",
+      "box": [
+        39,
+        374,
+        490,
+        403
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-after",
+      "text": "시간",
+      "split": "train",
+      "box": [
+        39,
+        406,
+        435,
+        435
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-after",
+      "text": "+107.5% 전기",
+      "split": "train",
+      "box": [
+        128,
+        437,
+        468,
+        467
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "boar-after",
+      "text": "-80% 탄약 최대량",
+      "split": "train",
+      "box": [
+        14,
+        469,
+        464,
+        498
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "+194.8% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        0,
+        316,
+        481,
+        346
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        0,
+        348,
+        440,
+        377
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "+100.5% 상태 이상 확률",
+      "split": "train",
+      "box": [
+        15,
+        380,
+        440,
+        409
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "+147.5% 지면 강타 피해",
+      "split": "train",
+      "box": [
+        44,
+        412,
+        440,
+        441
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "슬라이드 공격에 치명타",
+      "split": "train",
+      "box": [
+        95,
+        443,
+        476,
+        473
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "확률 -102.2% 추가",
+      "split": "train",
+      "box": [
+        15,
+        475,
+        472,
+        505
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "+194.8% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        37,
+        284,
+        354,
+        308
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        37,
+        309,
+        354,
+        333
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "+202.8% 근접 피해",
+      "split": "train",
+      "box": [
+        37,
+        334,
+        355,
+        358
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "+147.5% 지면 강타 피해",
+      "split": "train",
+      "box": [
+        63,
+        360,
+        382,
+        384
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "-1.8 사거리",
+      "split": "train",
+      "box": [
+        15,
+        385,
+        378,
+        409
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "+97.3% 치명타 피해",
+      "split": "train",
+      "box": [
+        22,
+        139,
+        220,
+        153
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "+222.3% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        22,
+        152,
+        220,
+        167
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        23,
+        166,
+        220,
+        180
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "+25.5 기본 연속기",
+      "split": "train",
+      "box": [
+        23,
+        180,
+        198,
+        194
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "-89.8% 연속기 카운트 획득",
+      "split": "train",
+      "box": [
+        18,
+        194,
+        213,
+        208
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "확률",
+      "split": "train",
+      "box": [
+        12,
+        207,
+        211,
+        221
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "+91.3% 치명타 피해",
+      "split": "train",
+      "box": [
+        0,
+        169,
+        255,
+        186
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "+222.3% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        30,
+        187,
+        255,
+        203
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        81,
+        204,
+        255,
+        220
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "+172.6% 근접 피해",
+      "split": "train",
+      "box": [
+        56,
+        221,
+        234,
+        238
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "-87.7% 연속기 카운트 획득",
+      "split": "train",
+      "box": [
+        30,
+        238,
+        251,
+        255
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "확률",
+      "split": "train",
+      "box": [
+        3,
+        256,
+        248,
+        267
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "native"
+    },
+    {
+      "card": "latron-before",
+      "text": "+94.7% 냉기",
+      "split": "train",
+      "box": [
+        42,
+        230,
+        282,
+        247
+      ],
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "geometry": "native"
+    },
+    {
+      "card": "latron-before",
+      "text": "+184.2% 치명타 확률",
+      "split": "train",
+      "box": [
+        42,
+        248,
+        282,
+        266
+      ],
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "geometry": "native"
+    },
+    {
+      "card": "latron-before",
+      "text": "+171.8% 피해",
+      "split": "train",
+      "box": [
+        33,
+        267,
+        305,
+        285
+      ],
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "geometry": "native"
+    },
+    {
+      "card": "latron-before",
+      "text": "-52.7% 확대율 증가",
+      "split": "train",
+      "box": [
+        22,
+        286,
+        304,
+        304
+      ],
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "geometry": "native"
+    },
+    {
+      "card": "build-boar",
+      "text": "+50.9% 탄창 용량",
+      "split": "validation",
+      "box": [
+        35,
+        299,
+        384,
+        323
+      ],
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "geometry": "native"
+    },
+    {
+      "card": "build-boar",
+      "text": "+111.3% 상태 이상 피해",
+      "split": "validation",
+      "box": [
+        34,
+        324,
+        384,
+        348
+      ],
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "geometry": "native"
+    },
+    {
+      "card": "build-boar",
+      "text": "+145.1% 멀티샷",
+      "split": "validation",
+      "box": [
+        106,
+        349,
+        352,
+        373
+      ],
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "geometry": "native"
+    },
+    {
+      "card": "build-boar",
+      "text": "-38% 확대율 증가",
+      "split": "validation",
+      "box": [
+        11,
+        374,
+        384,
+        398
+      ],
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "geometry": "native"
+    },
+    {
+      "card": "build-torid",
+      "text": "+159.9% 치명타 확률",
+      "split": "validation",
+      "box": [
+        0,
+        299,
+        373,
+        322
+      ],
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "geometry": "native"
+    },
+    {
+      "card": "build-torid",
+      "text": "+99.1% 바이러스",
+      "split": "validation",
+      "box": [
+        0,
+        324,
+        373,
+        347
+      ],
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "geometry": "native"
+    },
+    {
+      "card": "build-torid",
+      "text": "+105% 멀티샷",
+      "split": "validation",
+      "box": [
+        114,
+        349,
+        266,
+        372
+      ],
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "geometry": "native"
+    },
+    {
+      "card": "build-torid",
+      "text": "+76.2% 반동",
+      "split": "validation",
+      "box": [
+        0,
+        374,
+        373,
+        397
+      ],
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "geometry": "native"
+    },
+    {
+      "card": "build-ogris",
+      "text": "+59.4% 탄창 용량",
+      "split": "validation",
+      "box": [
+        0,
+        283,
+        276,
+        307
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "native"
+    },
+    {
+      "card": "build-ogris",
+      "text": "+109.4% 상태 이상 지속",
+      "split": "validation",
+      "box": [
+        0,
+        307,
+        307,
+        332
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "native"
+    },
+    {
+      "card": "build-ogris",
+      "text": "시간",
+      "split": "validation",
+      "box": [
+        27,
+        333,
+        209,
+        356
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "native"
+    },
+    {
+      "card": "build-ogris",
+      "text": "+54.3% 탄약 효율",
+      "split": "validation",
+      "box": [
+        93,
+        358,
+        362,
+        381
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "native"
+    },
+    {
+      "card": "build-ogris",
+      "text": "-107.7% 치명타 피해",
+      "split": "validation",
+      "box": [
+        2,
+        383,
+        360,
+        406
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "native"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "+185.4% 치명타 확률",
+      "split": "validation",
+      "box": [
+        30,
+        277,
+        342,
+        301
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "native"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "+53.8% 탄약 효율",
+      "split": "validation",
+      "box": [
+        31,
+        301,
+        341,
+        326
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "native"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "+128.2% 치명타 피해",
+      "split": "validation",
+      "box": [
+        29,
+        328,
+        341,
+        351
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "native"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "인페스티드에 대한 피해",
+      "split": "validation",
+      "box": [
+        0,
+        353,
+        365,
+        376
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "native"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "x0.63",
+      "split": "validation",
+      "box": [
+        0,
+        380,
+        360,
+        400
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "native"
+    },
+    {
+      "card": "build-trumna",
+      "text": "+171.3% 치명타 확률",
+      "split": "validation",
+      "box": [
+        31,
+        299,
+        374,
+        326
+      ],
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "geometry": "native"
+    },
+    {
+      "card": "build-trumna",
+      "text": "+100.9% 화염",
+      "split": "validation",
+      "box": [
+        30,
+        328,
+        343,
+        351
+      ],
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "geometry": "native"
+    },
+    {
+      "card": "build-trumna",
+      "text": "+121.8% 치명타 피해",
+      "split": "validation",
+      "box": [
+        79,
+        353,
+        368,
+        376
+      ],
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "geometry": "native"
+    },
+    {
+      "card": "build-trumna",
+      "text": "+79.4% 반동",
+      "split": "validation",
+      "box": [
+        0,
+        378,
+        365,
+        401
+      ],
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "geometry": "native"
+    },
+    {
+      "card": "build-paris",
+      "text": "+165.4% 치명타 확률",
+      "split": "validation",
+      "box": [
+        0,
+        274,
+        373,
+        297
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "native"
+    },
+    {
+      "card": "build-paris",
+      "text": "+105.3% 상태 이상 확률",
+      "split": "validation",
+      "box": [
+        0,
+        299,
+        373,
+        323
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "native"
+    },
+    {
+      "card": "build-paris",
+      "text": "+101.4% 상태 이상 피해",
+      "split": "validation",
+      "box": [
+        0,
+        324,
+        373,
+        347
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "native"
+    },
+    {
+      "card": "build-paris",
+      "text": "인페스티드에 대한 피해",
+      "split": "validation",
+      "box": [
+        73,
+        349,
+        307,
+        372
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "native"
+    },
+    {
+      "card": "build-paris",
+      "text": "x0.62",
+      "split": "validation",
+      "box": [
+        0,
+        376,
+        373,
+        396
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "native"
+    },
+    {
+      "card": "build-hema",
+      "text": "+73.6% 연사력 (활 계열",
+      "split": "validation",
+      "box": [
+        30,
+        274,
+        374,
+        297
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "native"
+    },
+    {
+      "card": "build-hema",
+      "text": "무기에 2배)",
+      "split": "validation",
+      "box": [
+        0,
+        299,
+        374,
+        322
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "native"
+    },
+    {
+      "card": "build-hema",
+      "text": "+102.9% 폭발",
+      "split": "validation",
+      "box": [
+        0,
+        324,
+        374,
+        347
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "native"
+    },
+    {
+      "card": "build-hema",
+      "text": "+179.7% 치명타 확률",
+      "split": "validation",
+      "box": [
+        77,
+        349,
+        372,
+        372
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "native"
+    },
+    {
+      "card": "build-hema",
+      "text": "+76.2% 반동",
+      "split": "validation",
+      "box": [
+        9,
+        374,
+        373,
+        397
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-burst-left",
+      "text": "+219.3% 피해",
+      "split": "train",
+      "box": [
+        43,
+        288,
+        345,
+        311
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-burst-left",
+      "text": "+191.5% 치명타 확률",
+      "split": "train",
+      "box": [
+        43,
+        313,
+        345,
+        335
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-burst-left",
+      "text": "+162.3% 관통",
+      "split": "train",
+      "box": [
+        32,
+        337,
+        377,
+        359
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-burst-left",
+      "text": "-111.1% 충격",
+      "split": "train",
+      "box": [
+        18,
+        361,
+        373,
+        383
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-burst-right",
+      "text": "+219.3% 피해",
+      "split": "train",
+      "box": [
+        41,
+        362,
+        417,
+        389
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-burst-right",
+      "text": "+121.1% 상태 이상 확률",
+      "split": "train",
+      "box": [
+        40,
+        392,
+        418,
+        420
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-burst-right",
+      "text": "+151.4% 치명타 피해",
+      "split": "train",
+      "box": [
+        96,
+        422,
+        457,
+        450
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-burst-right",
+      "text": "-128.5% 충격",
+      "split": "train",
+      "box": [
+        8,
+        452,
+        451,
+        480
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-magistar",
+      "text": "그리니어에 대한 피해 x1.44",
+      "split": "train",
+      "box": [
+        0,
+        274,
+        343,
+        295
+      ],
+      "sourceSha256": "6cb6e25e18277958b4582e3663ec67371a18daa7542d40b12adf608392c1d79d",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-magistar",
+      "text": "+107.1% 충격",
+      "split": "train",
+      "box": [
+        0,
+        296,
+        343,
+        316
+      ],
+      "sourceSha256": "6cb6e25e18277958b4582e3663ec67371a18daa7542d40b12adf608392c1d79d",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-magistar",
+      "text": "+22.2 기본 연속기",
+      "split": "train",
+      "box": [
+        0,
+        317,
+        343,
+        337
+      ],
+      "sourceSha256": "6cb6e25e18277958b4582e3663ec67371a18daa7542d40b12adf608392c1d79d",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-boar-right",
+      "text": "+144.7% 독성",
+      "split": "train",
+      "box": [
+        11,
+        134,
+        155,
+        143
+      ],
+      "sourceSha256": "8377c466a4e92b24874d1b474ccf01f0861fefdc83f2ce3dd2c0ca6728044ca0",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-boar-right",
+      "text": "+139.8% 냉기",
+      "split": "train",
+      "box": [
+        41,
+        144,
+        157,
+        153
+      ],
+      "sourceSha256": "8377c466a4e92b24874d1b474ccf01f0861fefdc83f2ce3dd2c0ca6728044ca0",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-boar-right",
+      "text": "-84.2% 베기",
+      "split": "train",
+      "box": [
+        4,
+        155,
+        155,
+        164
+      ],
+      "sourceSha256": "8377c466a4e92b24874d1b474ccf01f0861fefdc83f2ce3dd2c0ca6728044ca0",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-heliocor",
+      "text": "+152.8% 치명타 피해",
+      "split": "train",
+      "box": [
+        39,
+        329,
+        293,
+        351
+      ],
+      "sourceSha256": "c544c0d5fa58a83a23240b9dcf4b266fc1da7252ac5940749af00d037caa6727",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-heliocor",
+      "text": "+126.6% 강 공격 효율",
+      "split": "train",
+      "box": [
+        30,
+        353,
+        354,
+        375
+      ],
+      "sourceSha256": "c544c0d5fa58a83a23240b9dcf4b266fc1da7252ac5940749af00d037caa6727",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-heliocor",
+      "text": "-71.1% 상태 이상 지속 시간",
+      "split": "train",
+      "box": [
+        20,
+        376,
+        354,
+        399
+      ],
+      "sourceSha256": "c544c0d5fa58a83a23240b9dcf4b266fc1da7252ac5940749af00d037caa6727",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "+65.2% 공격 속도",
+      "split": "train",
+      "box": [
+        53,
+        189,
+        238,
+        211
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "+118.8% 전기",
+      "split": "train",
+      "box": [
+        58,
+        211,
+        243,
+        234
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "+197.9% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        22,
+        233,
+        246,
+        257
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        81,
+        256,
+        236,
+        279
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "인페스티드에 대한 피해",
+      "split": "train",
+      "box": [
+        32,
+        279,
+        236,
+        302
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "x0.6",
+      "split": "train",
+      "box": [
+        113,
+        303,
+        157,
+        321
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "+85.6% 치명타 피해",
+      "split": "train",
+      "box": [
+        49,
+        209,
+        215,
+        228
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "+186.2% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        30,
+        229,
+        236,
+        248
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        83,
+        249,
+        183,
+        269
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "+96.7% 독성",
+      "split": "train",
+      "box": [
+        69,
+        270,
+        196,
+        289
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "-59.7% 강 공격 효율",
+      "split": "train",
+      "box": [
+        0,
+        290,
+        263,
+        309
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-third",
+      "text": "+224.1% 피해",
+      "split": "train",
+      "box": [
+        74,
+        225,
+        196,
+        244
+      ],
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-third",
+      "text": "+145.5% 멀티샷",
+      "split": "train",
+      "box": [
+        65,
+        245,
+        207,
+        265
+      ],
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-third",
+      "text": "+169.7% 치명타 확률",
+      "split": "train",
+      "box": [
+        45,
+        266,
+        227,
+        286
+      ],
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-third",
+      "text": "-44.2% 재장전 속도",
+      "split": "train",
+      "box": [
+        0,
+        286,
+        272,
+        306
+      ],
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "+118.7% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        26,
+        189,
+        234,
+        208
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        79,
+        209,
+        180,
+        228
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "+64.1% 독성",
+      "split": "train",
+      "box": [
+        64,
+        230,
+        193,
+        248
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "+35.6% 공격 속도",
+      "split": "train",
+      "box": [
+        54,
+        249,
+        205,
+        269
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "슬라이드 공격에 치명타",
+      "split": "train",
+      "box": [
+        34,
+        269,
+        225,
+        289
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "확률 -72.6% 추가",
+      "split": "train",
+      "box": [
+        0,
+        289,
+        258,
+        309
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-giveaway",
+      "text": "+80.8% 추가 연속기 카운트",
+      "split": "train",
+      "box": [
+        0,
+        373,
+        468,
+        402
+      ],
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-giveaway",
+      "text": "확률",
+      "split": "train",
+      "box": [
+        211,
+        405,
+        468,
+        434
+      ],
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-giveaway",
+      "text": "+111.5% 화염",
+      "split": "train",
+      "box": [
+        131,
+        436,
+        468,
+        465
+      ],
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-hate-giveaway",
+      "text": "코퍼스에 대한 피해 x0.74",
+      "split": "train",
+      "box": [
+        7,
+        468,
+        468,
+        498
+      ],
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-left",
+      "text": "+106.9% 멀티샷",
+      "split": "train",
+      "box": [
+        15,
+        135,
+        181,
+        148
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-left",
+      "text": "+103.8% 독성",
+      "split": "train",
+      "box": [
+        15,
+        148,
+        165,
+        161
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-left",
+      "text": "+172.2% 치명타 확률",
+      "split": "train",
+      "box": [
+        28,
+        161,
+        180,
+        174
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-left",
+      "text": "코퍼스에 대한 피해 x0.55",
+      "split": "train",
+      "box": [
+        4,
+        175,
+        178,
+        186
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "+72.5% 연사력 (활 계열",
+      "split": "train",
+      "box": [
+        0,
+        134,
+        227,
+        149
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "무기에 2배)",
+      "split": "train",
+      "box": [
+        5,
+        151,
+        227,
+        164
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "+3.2 두께 꿰뚫기",
+      "split": "train",
+      "box": [
+        20,
+        166,
+        227,
+        181
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "+172.2% 치명타 확률",
+      "split": "train",
+      "box": [
+        20,
+        182,
+        207,
+        197
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "인페스티드에 대한 피해",
+      "split": "train",
+      "box": [
+        38,
+        198,
+        224,
+        211
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "x0.56",
+      "split": "train",
+      "box": [
+        5,
+        218,
+        220,
+        228
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "native"
+    },
+    {
+      "card": "magnus",
+      "text": "+91.2% 전기",
+      "split": "train",
+      "box": [
+        91,
+        247,
+        219,
+        271
+      ],
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "magnus",
+      "text": "그리니어에 대한 피해 x1.51",
+      "split": "train",
+      "box": [
+        0,
+        271,
+        281,
+        295
+      ],
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "magnus",
+      "text": "+98.8% 확대율 증가",
+      "split": "train",
+      "box": [
+        0,
+        293,
+        297,
+        317
+      ],
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "magnus",
+      "text": "-192% 피해",
+      "split": "train",
+      "box": [
+        0,
+        316,
+        297,
+        339
+      ],
+      "sourceSha256": "0c962221fcb59fc26e79f1da5ac568454616dc95fb8d757bebe3a44b5d64bef6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "strun",
+      "text": "+135.2% 멀티샷",
+      "split": "train",
+      "box": [
+        0,
+        256,
+        238,
+        278
+      ],
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "geometry": "runtime"
+    },
+    {
+      "card": "strun",
+      "text": "+110.8% 상태 이상 피해",
+      "split": "train",
+      "box": [
+        0,
+        277,
+        270,
+        301
+      ],
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "geometry": "runtime"
+    },
+    {
+      "card": "strun",
+      "text": "+101.8% 치명타 피해",
+      "split": "train",
+      "box": [
+        0,
+        300,
+        258,
+        323
+      ],
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "geometry": "runtime"
+    },
+    {
+      "card": "strun",
+      "text": "-107.2% 충격",
+      "split": "train",
+      "box": [
+        0,
+        323,
+        305,
+        345
+      ],
+      "sourceSha256": "5508393c4099a55189dda8055b49cd980b31f1ab9244caba752725530d2233c0",
+      "geometry": "runtime"
+    },
+    {
+      "card": "latron",
+      "text": "+138.2% 전기",
+      "split": "train",
+      "box": [
+        67,
+        268,
+        228,
+        292
+      ],
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "geometry": "runtime"
+    },
+    {
+      "card": "latron",
+      "text": "+246.6% 피해",
+      "split": "train",
+      "box": [
+        78,
+        292,
+        218,
+        315
+      ],
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "geometry": "runtime"
+    },
+    {
+      "card": "latron",
+      "text": "인페스티드에 대한 피해",
+      "split": "train",
+      "box": [
+        38,
+        316,
+        259,
+        340
+      ],
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "geometry": "runtime"
+    },
+    {
+      "card": "latron",
+      "text": "x0.76",
+      "split": "train",
+      "box": [
+        0,
+        341,
+        178,
+        362
+      ],
+      "sourceSha256": "711a6d7b3b005224377b001e7b41e3c7f43aa79b11c64b28b331586c78f659a2",
+      "geometry": "runtime"
+    },
+    {
+      "card": "lex",
+      "text": "+184.5% 치명타 확률",
+      "split": "train",
+      "box": [
+        57,
+        343,
+        317,
+        372
+      ],
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "lex",
+      "text": "+111% 치명타 피해",
+      "split": "train",
+      "box": [
+        69,
+        373,
+        304,
+        402
+      ],
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "lex",
+      "text": "+140.3% 멀티샷",
+      "split": "train",
+      "box": [
+        87,
+        404,
+        288,
+        432
+      ],
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "lex",
+      "text": "-48.6% 탄창 용량",
+      "split": "train",
+      "box": [
+        0,
+        433,
+        376,
+        463
+      ],
+      "sourceSha256": "2cbb54d6d321432804f0972599139da352e0aa29afd6f675db841b705845d05c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "+90.5% 강 공격 효율",
+      "split": "train",
+      "box": [
+        73,
+        293,
+        384,
+        322
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "+214.5% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        73,
+        320,
+        385,
+        349
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        72,
+        348,
+        385,
+        376
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "+58.4% 공격 속도",
+      "split": "train",
+      "box": [
+        63,
+        376,
+        411,
+        403
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "brokenscepter",
+      "text": "코퍼스에 대한 피해 x0.58",
+      "split": "train",
+      "box": [
+        50,
+        403,
+        409,
+        431
+      ],
+      "sourceSha256": "678dafe11c0d7f4cd800c65062b3d127d464e856fd185716a1f9390a96b29ce6",
+      "geometry": "runtime"
+    },
+    {
+      "card": "corinth",
+      "text": "+191.5% 피해",
+      "split": "train",
+      "box": [
+        40,
+        311,
+        352,
+        338
+      ],
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "corinth",
+      "text": "+3 두께 꿰뚫기",
+      "split": "train",
+      "box": [
+        40,
+        339,
+        352,
+        367
+      ],
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "corinth",
+      "text": "+55.3% 재장전 속도",
+      "split": "train",
+      "box": [
+        27,
+        367,
+        383,
+        394
+      ],
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "corinth",
+      "text": "코퍼스에 대한 피해 x0.6",
+      "split": "train",
+      "box": [
+        11,
+        394,
+        381,
+        423
+      ],
+      "sourceSha256": "f8abbcf009879e5f4d4b08674839ed7fbd4629f48f57b12a9cbf0a8c6411a65b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "aksomati",
+      "text": "+238.5% 피해",
+      "split": "train",
+      "box": [
+        83,
+        303,
+        395,
+        330
+      ],
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "geometry": "runtime"
+    },
+    {
+      "card": "aksomati",
+      "text": "+134.5% 관통",
+      "split": "train",
+      "box": [
+        83,
+        330,
+        395,
+        358
+      ],
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "geometry": "runtime"
+    },
+    {
+      "card": "aksomati",
+      "text": "+2.9 두께 꿰뚫기",
+      "split": "train",
+      "box": [
+        70,
+        357,
+        426,
+        385
+      ],
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "geometry": "runtime"
+    },
+    {
+      "card": "aksomati",
+      "text": "-68.6% 확대율 증가",
+      "split": "train",
+      "box": [
+        55,
+        385,
+        423,
+        413
+      ],
+      "sourceSha256": "a1d8ff0ecf22e9e1e5ede42700dbc1c6bd4f3ed85dd290530d4fd1bc1346cdeb",
+      "geometry": "runtime"
+    },
+    {
+      "card": "rubico",
+      "text": "+107.4% 상태 이상 지속",
+      "split": "train",
+      "box": [
+        0,
+        241,
+        277,
+        266
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "rubico",
+      "text": "시간",
+      "split": "train",
+      "box": [
+        0,
+        266,
+        182,
+        285
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "rubico",
+      "text": "+128.5% 치명타 피해",
+      "split": "train",
+      "box": [
+        0,
+        289,
+        263,
+        313
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "rubico",
+      "text": "+163.3% 치명타 확률",
+      "split": "train",
+      "box": [
+        0,
+        313,
+        317,
+        337
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "rubico",
+      "text": "-46.1% 탄약 최대량",
+      "split": "train",
+      "box": [
+        0,
+        336,
+        317,
+        361
+      ],
+      "sourceSha256": "3125d1d357ee070d7b4877db6ee8f41b358711c104bae9cf89bd69686f18163c",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-before",
+      "text": "+188.6% 피해",
+      "split": "train",
+      "box": [
+        54,
+        299,
+        370,
+        324
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-before",
+      "text": "+92.5% 치명타 확률",
+      "split": "train",
+      "box": [
+        54,
+        324,
+        370,
+        350
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-before",
+      "text": "+101.2% 전기",
+      "split": "train",
+      "box": [
+        45,
+        350,
+        394,
+        375
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-before",
+      "text": "-80% 탄약 최대량",
+      "split": "train",
+      "box": [
+        37,
+        375,
+        391,
+        401
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-after",
+      "text": "+105.4% 연사력 (활 계열",
+      "split": "train",
+      "box": [
+        0,
+        309,
+        490,
+        341
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-after",
+      "text": "무기에 2배)",
+      "split": "train",
+      "box": [
+        164,
+        341,
+        490,
+        373
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-after",
+      "text": "+114.8% 상태 이상 지속",
+      "split": "train",
+      "box": [
+        82,
+        373,
+        490,
+        404
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-after",
+      "text": "시간",
+      "split": "train",
+      "box": [
+        210,
+        407,
+        434,
+        429
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-after",
+      "text": "+107.5% 전기",
+      "split": "train",
+      "box": [
+        129,
+        437,
+        467,
+        467
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "boar-after",
+      "text": "-80% 탄약 최대량",
+      "split": "train",
+      "box": [
+        15,
+        468,
+        463,
+        500
+      ],
+      "sourceSha256": "3a882c8e6b299470930b1f216553f1d459a61db74d66be7c3b4443bed42a1bcf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "+194.8% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        0,
+        315,
+        481,
+        347
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        0,
+        347,
+        391,
+        379
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "+100.5% 상태 이상 확률",
+      "split": "train",
+      "box": [
+        9,
+        379,
+        398,
+        410
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "+147.5% 지면 강타 피해",
+      "split": "train",
+      "box": [
+        77,
+        410,
+        412,
+        442
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "슬라이드 공격에 치명타",
+      "split": "train",
+      "box": [
+        96,
+        442,
+        475,
+        474
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-left",
+      "text": "확률 -102.2% 추가",
+      "split": "train",
+      "box": [
+        16,
+        474,
+        472,
+        505
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "+194.8% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        60,
+        283,
+        353,
+        309
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        135,
+        308,
+        354,
+        334
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "+202.8% 근접 피해",
+      "split": "train",
+      "box": [
+        97,
+        334,
+        354,
+        359
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "+147.5% 지면 강타 피해",
+      "split": "train",
+      "box": [
+        64,
+        359,
+        381,
+        385
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "sampotes-right",
+      "text": "-1.8 사거리",
+      "split": "train",
+      "box": [
+        16,
+        386,
+        377,
+        409
+      ],
+      "sourceSha256": "42c1fa3cf952e3d89c0a17fbffb79d15fdd7c939fcf22bcba4ae1c2acf814a9d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "+97.3% 치명타 피해",
+      "split": "train",
+      "box": [
+        23,
+        138,
+        220,
+        154
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "+222.3% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        23,
+        151,
+        220,
+        168
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        24,
+        165,
+        220,
+        181
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "+25.5 기본 연속기",
+      "split": "train",
+      "box": [
+        24,
+        179,
+        197,
+        195
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "-89.8% 연속기 카운트 획득",
+      "split": "train",
+      "box": [
+        34,
+        193,
+        212,
+        209
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-before",
+      "text": "확률",
+      "split": "train",
+      "box": [
+        13,
+        207,
+        210,
+        222
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "+91.3% 치명타 피해",
+      "split": "train",
+      "box": [
+        0,
+        168,
+        255,
+        187
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "+222.3% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        31,
+        185,
+        255,
+        205
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        82,
+        202,
+        255,
+        222
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "+172.6% 근접 피해",
+      "split": "train",
+      "box": [
+        57,
+        220,
+        192,
+        239
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "-87.7% 연속기 카운트 획득",
+      "split": "train",
+      "box": [
+        31,
+        237,
+        250,
+        256
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "redeemer-after",
+      "text": "확률",
+      "split": "train",
+      "box": [
+        4,
+        255,
+        248,
+        268
+      ],
+      "sourceSha256": "1597ff5f1e9c76e4d719faae00bc4ad96b7c00f9c706235056047ef3295af13f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "latron-before",
+      "text": "+94.7% 냉기",
+      "split": "train",
+      "box": [
+        43,
+        226,
+        221,
+        248
+      ],
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "geometry": "runtime"
+    },
+    {
+      "card": "latron-before",
+      "text": "+184.2% 치명타 확률",
+      "split": "train",
+      "box": [
+        43,
+        247,
+        255,
+        267
+      ],
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "geometry": "runtime"
+    },
+    {
+      "card": "latron-before",
+      "text": "+171.8% 피해",
+      "split": "train",
+      "box": [
+        34,
+        266,
+        217,
+        285
+      ],
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "geometry": "runtime"
+    },
+    {
+      "card": "latron-before",
+      "text": "-52.7% 확대율 증가",
+      "split": "train",
+      "box": [
+        38,
+        285,
+        304,
+        305
+      ],
+      "sourceSha256": "a1a6f65ee02a50a17970f9a90684c8d12312a035c399e342c2179df106aa9fae",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-boar",
+      "text": "+50.9% 탄창 용량",
+      "split": "validation",
+      "box": [
+        100,
+        295,
+        384,
+        324
+      ],
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-boar",
+      "text": "+111.3% 상태 이상 피해",
+      "split": "validation",
+      "box": [
+        68,
+        323,
+        384,
+        349
+      ],
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-boar",
+      "text": "+145.1% 멀티샷",
+      "split": "validation",
+      "box": [
+        107,
+        349,
+        277,
+        374
+      ],
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-boar",
+      "text": "-38% 확대율 증가",
+      "split": "validation",
+      "box": [
+        12,
+        373,
+        384,
+        399
+      ],
+      "sourceSha256": "9e380da17f100b1cd8723e4aaba10ee0827ac51efc89755216abacce64d2fdb7",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-torid",
+      "text": "+159.9% 치명타 확률",
+      "split": "validation",
+      "box": [
+        0,
+        297,
+        373,
+        323
+      ],
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-torid",
+      "text": "+99.1% 바이러스",
+      "split": "validation",
+      "box": [
+        0,
+        323,
+        373,
+        348
+      ],
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-torid",
+      "text": "+105% 멀티샷",
+      "split": "validation",
+      "box": [
+        24,
+        349,
+        373,
+        373
+      ],
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-torid",
+      "text": "+76.2% 반동",
+      "split": "validation",
+      "box": [
+        0,
+        373,
+        373,
+        398
+      ],
+      "sourceSha256": "ec080781330c7ce43c686108cf0200ed8a27f35ae63c1d55ab1c5666c0332ca9",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-ogris",
+      "text": "+59.4% 탄창 용량",
+      "split": "validation",
+      "box": [
+        0,
+        282,
+        275,
+        309
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-ogris",
+      "text": "+109.4% 상태 이상 지속",
+      "split": "validation",
+      "box": [
+        0,
+        306,
+        306,
+        333
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-ogris",
+      "text": "시간",
+      "split": "validation",
+      "box": [
+        162,
+        334,
+        208,
+        353
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-ogris",
+      "text": "+54.3% 탄약 효율",
+      "split": "validation",
+      "box": [
+        17,
+        357,
+        362,
+        382
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-ogris",
+      "text": "-107.7% 치명타 피해",
+      "split": "validation",
+      "box": [
+        3,
+        382,
+        360,
+        407
+      ],
+      "sourceSha256": "fe6703bf8ac2147572446c3c8874733006ee6379b36d64614130275783a94af4",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "+185.4% 치명타 확률",
+      "split": "validation",
+      "box": [
+        80,
+        277,
+        296,
+        305
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "+53.8% 탄약 효율",
+      "split": "validation",
+      "box": [
+        0,
+        302,
+        374,
+        327
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "+128.2% 치명타 피해",
+      "split": "validation",
+      "box": [
+        79,
+        327,
+        295,
+        353
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "인페스티드에 대한 피해",
+      "split": "validation",
+      "box": [
+        0,
+        352,
+        364,
+        378
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-acceltra",
+      "text": "x0.63",
+      "split": "validation",
+      "box": [
+        0,
+        379,
+        360,
+        401
+      ],
+      "sourceSha256": "2133744bada520c09f7b090c258449dc53b982392f19b1a8ee8f4aa71960a727",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-trumna",
+      "text": "+171.3% 치명타 확률",
+      "split": "validation",
+      "box": [
+        0,
+        300,
+        374,
+        327
+      ],
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-trumna",
+      "text": "+100.9% 화염",
+      "split": "validation",
+      "box": [
+        103,
+        328,
+        271,
+        352
+      ],
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-trumna",
+      "text": "+121.8% 치명타 피해",
+      "split": "validation",
+      "box": [
+        23,
+        352,
+        367,
+        377
+      ],
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-trumna",
+      "text": "+79.4% 반동",
+      "split": "validation",
+      "box": [
+        0,
+        377,
+        364,
+        402
+      ],
+      "sourceSha256": "75596fd9d2886757d9a5e1d66c281275c2c1298cac7fdb33ab96a523a621ffdf",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-paris",
+      "text": "+165.4% 치명타 확률",
+      "split": "validation",
+      "box": [
+        0,
+        267,
+        373,
+        298
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-paris",
+      "text": "+105.3% 상태 이상 확률",
+      "split": "validation",
+      "box": [
+        0,
+        298,
+        373,
+        323
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-paris",
+      "text": "+101.4% 상태 이상 피해",
+      "split": "validation",
+      "box": [
+        0,
+        323,
+        373,
+        348
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-paris",
+      "text": "인페스티드에 대한 피해",
+      "split": "validation",
+      "box": [
+        24,
+        348,
+        306,
+        373
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-paris",
+      "text": "x0.62",
+      "split": "validation",
+      "box": [
+        0,
+        375,
+        373,
+        397
+      ],
+      "sourceSha256": "deda9ed3ced4b0cb15b01f900a6dbfe5fc9a968d318e7d5d38a5686a90bd9504",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-hema",
+      "text": "+73.6% 연사력 (활 계열",
+      "split": "validation",
+      "box": [
+        67,
+        273,
+        374,
+        298
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-hema",
+      "text": "무기에 2배)",
+      "split": "validation",
+      "box": [
+        0,
+        298,
+        374,
+        323
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-hema",
+      "text": "+102.9% 폭발",
+      "split": "validation",
+      "box": [
+        0,
+        323,
+        374,
+        348
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-hema",
+      "text": "+179.7% 치명타 확률",
+      "split": "validation",
+      "box": [
+        78,
+        348,
+        371,
+        373
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "build-hema",
+      "text": "+76.2% 반동",
+      "split": "validation",
+      "box": [
+        9,
+        373,
+        373,
+        398
+      ],
+      "sourceSha256": "1c14857ce2b7fd74669d0a48d5355905b4b180b67800fd0579e32e8c21e5575b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-burst-left",
+      "text": "+219.3% 피해",
+      "split": "train",
+      "box": [
+        44,
+        288,
+        345,
+        312
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-burst-left",
+      "text": "+191.5% 치명타 확률",
+      "split": "train",
+      "box": [
+        44,
+        311,
+        345,
+        336
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-burst-left",
+      "text": "+162.3% 관통",
+      "split": "train",
+      "box": [
+        33,
+        336,
+        376,
+        360
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-burst-left",
+      "text": "-111.1% 충격",
+      "split": "train",
+      "box": [
+        38,
+        361,
+        372,
+        384
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-burst-right",
+      "text": "+219.3% 피해",
+      "split": "train",
+      "box": [
+        131,
+        361,
+        416,
+        390
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-burst-right",
+      "text": "+121.1% 상태 이상 확률",
+      "split": "train",
+      "box": [
+        81,
+        391,
+        378,
+        421
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-burst-right",
+      "text": "+151.4% 치명타 피해",
+      "split": "train",
+      "box": [
+        27,
+        421,
+        429,
+        451
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-burst-right",
+      "text": "-128.5% 충격",
+      "split": "train",
+      "box": [
+        34,
+        453,
+        450,
+        481
+      ],
+      "sourceSha256": "51dd2bd09d120c15eea962dc9a8bf715cc08d4236d4dca027012517669d80c5f",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-magistar",
+      "text": "그리니어에 대한 피해 x1.44",
+      "split": "train",
+      "box": [
+        0,
+        273,
+        343,
+        296
+      ],
+      "sourceSha256": "6cb6e25e18277958b4582e3663ec67371a18daa7542d40b12adf608392c1d79d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-magistar",
+      "text": "+107.1% 충격",
+      "split": "train",
+      "box": [
+        0,
+        296,
+        343,
+        317
+      ],
+      "sourceSha256": "6cb6e25e18277958b4582e3663ec67371a18daa7542d40b12adf608392c1d79d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-magistar",
+      "text": "+22.2 기본 연속기",
+      "split": "train",
+      "box": [
+        0,
+        316,
+        343,
+        338
+      ],
+      "sourceSha256": "6cb6e25e18277958b4582e3663ec67371a18daa7542d40b12adf608392c1d79d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-boar-right",
+      "text": "+144.7% 독성",
+      "split": "train",
+      "box": [
+        42,
+        131,
+        154,
+        144
+      ],
+      "sourceSha256": "8377c466a4e92b24874d1b474ccf01f0861fefdc83f2ce3dd2c0ca6728044ca0",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-boar-right",
+      "text": "+139.8% 냉기",
+      "split": "train",
+      "box": [
+        42,
+        142,
+        156,
+        155
+      ],
+      "sourceSha256": "8377c466a4e92b24874d1b474ccf01f0861fefdc83f2ce3dd2c0ca6728044ca0",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-boar-right",
+      "text": "-84.2% 베기",
+      "split": "train",
+      "box": [
+        4,
+        153,
+        155,
+        165
+      ],
+      "sourceSha256": "8377c466a4e92b24874d1b474ccf01f0861fefdc83f2ce3dd2c0ca6728044ca0",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-heliocor",
+      "text": "+152.8% 치명타 피해",
+      "split": "train",
+      "box": [
+        40,
+        328,
+        292,
+        352
+      ],
+      "sourceSha256": "c544c0d5fa58a83a23240b9dcf4b266fc1da7252ac5940749af00d037caa6727",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-heliocor",
+      "text": "+126.6% 강 공격 효율",
+      "split": "train",
+      "box": [
+        82,
+        353,
+        354,
+        376
+      ],
+      "sourceSha256": "c544c0d5fa58a83a23240b9dcf4b266fc1da7252ac5940749af00d037caa6727",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-heliocor",
+      "text": "-71.1% 상태 이상 지속 시간",
+      "split": "train",
+      "box": [
+        21,
+        375,
+        354,
+        400
+      ],
+      "sourceSha256": "c544c0d5fa58a83a23240b9dcf4b266fc1da7252ac5940749af00d037caa6727",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "+65.2% 공격 속도",
+      "split": "train",
+      "box": [
+        54,
+        189,
+        237,
+        212
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "+118.8% 전기",
+      "split": "train",
+      "box": [
+        59,
+        211,
+        242,
+        235
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "+197.9% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        23,
+        233,
+        245,
+        257
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        82,
+        256,
+        235,
+        281
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "인페스티드에 대한 피해",
+      "split": "train",
+      "box": [
+        33,
+        278,
+        235,
+        301
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-arca-titron",
+      "text": "x0.6",
+      "split": "train",
+      "box": [
+        0,
+        307,
+        156,
+        323
+      ],
+      "sourceSha256": "0de25196510e19b5be7ad72f90645780494b6dc18245939d870f2a3040dd5c07",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "+85.6% 치명타 피해",
+      "split": "train",
+      "box": [
+        50,
+        208,
+        263,
+        229
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "+186.2% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        0,
+        228,
+        263,
+        249
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        0,
+        248,
+        263,
+        270
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "+96.7% 독성",
+      "split": "train",
+      "box": [
+        0,
+        269,
+        263,
+        290
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-sale",
+      "text": "-59.7% 강 공격 효율",
+      "split": "train",
+      "box": [
+        0,
+        289,
+        263,
+        310
+      ],
+      "sourceSha256": "a59eba75297f50ce32bbdf5b363aea370a02627b92db5273327e2e1354e6ceff",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-third",
+      "text": "+224.1% 피해",
+      "split": "train",
+      "box": [
+        0,
+        224,
+        272,
+        244
+      ],
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-third",
+      "text": "+145.5% 멀티샷",
+      "split": "train",
+      "box": [
+        0,
+        245,
+        272,
+        266
+      ],
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-third",
+      "text": "+169.7% 치명타 확률",
+      "split": "train",
+      "box": [
+        0,
+        265,
+        272,
+        286
+      ],
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-third",
+      "text": "-44.2% 재장전 속도",
+      "split": "train",
+      "box": [
+        0,
+        285,
+        272,
+        307
+      ],
+      "sourceSha256": "718ad101eb3fe16d78b80f180b267fe5d60e614faa990f789f4ca9301f57ec19",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "+118.7% 치명타 확률 (강",
+      "split": "train",
+      "box": [
+        27,
+        188,
+        233,
+        209
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "공격 시 2배)",
+      "split": "train",
+      "box": [
+        80,
+        208,
+        215,
+        229
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "+64.1% 독성",
+      "split": "train",
+      "box": [
+        65,
+        229,
+        192,
+        249
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "+35.6% 공격 속도",
+      "split": "train",
+      "box": [
+        55,
+        249,
+        204,
+        270
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "슬라이드 공격에 치명타",
+      "split": "train",
+      "box": [
+        35,
+        268,
+        224,
+        290
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-sale-fourth",
+      "text": "확률 -72.6% 추가",
+      "split": "train",
+      "box": [
+        0,
+        288,
+        258,
+        310
+      ],
+      "sourceSha256": "373c35fe1b0bde3bad1f22c569263594a34b547d53fe866d1c6cc2e44f8cc81b",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-giveaway",
+      "text": "+80.8% 추가 연속기 카운트",
+      "split": "train",
+      "box": [
+        0,
+        372,
+        468,
+        403
+      ],
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-giveaway",
+      "text": "확률",
+      "split": "train",
+      "box": [
+        30,
+        404,
+        468,
+        426
+      ],
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-giveaway",
+      "text": "+111.5% 화염",
+      "split": "train",
+      "box": [
+        27,
+        437,
+        468,
+        466
+      ],
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-hate-giveaway",
+      "text": "코퍼스에 대한 피해 x0.74",
+      "split": "train",
+      "box": [
+        33,
+        467,
+        468,
+        498
+      ],
+      "sourceSha256": "4e7dbb0eea1f86ea3737fe36d5406f860bdcf34e39a77ba0e3cb9119120c012d",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-left",
+      "text": "+106.9% 멀티샷",
+      "split": "train",
+      "box": [
+        46,
+        134,
+        181,
+        149
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-left",
+      "text": "+103.8% 독성",
+      "split": "train",
+      "box": [
+        45,
+        147,
+        164,
+        162
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-left",
+      "text": "+172.2% 치명타 확률",
+      "split": "train",
+      "box": [
+        29,
+        160,
+        179,
+        175
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-left",
+      "text": "코퍼스에 대한 피해 x0.55",
+      "split": "train",
+      "box": [
+        4,
+        173,
+        178,
+        187
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "+72.5% 연사력 (활 계열",
+      "split": "train",
+      "box": [
+        0,
+        133,
+        227,
+        150
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "무기에 2배)",
+      "split": "train",
+      "box": [
+        2,
+        148,
+        227,
+        166
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "+3.2 두께 꿰뚫기",
+      "split": "train",
+      "box": [
+        21,
+        165,
+        227,
+        182
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "+172.2% 치명타 확률",
+      "split": "train",
+      "box": [
+        21,
+        180,
+        206,
+        198
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "인페스티드에 대한 피해",
+      "split": "train",
+      "box": [
+        39,
+        196,
+        224,
+        214
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    },
+    {
+      "card": "legacy-verglas-right",
+      "text": "x0.56",
+      "split": "train",
+      "box": [
+        6,
+        214,
+        222,
+        229
+      ],
+      "sourceSha256": "254700204e302f63dccd0ec52a45d25d9afaca50ef5e3b94bf0cb3758b6f25ef",
+      "geometry": "runtime"
+    }
+  ]
+}

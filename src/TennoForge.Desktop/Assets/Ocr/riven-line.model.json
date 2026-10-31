@@ -1,0 +1,66 @@
+{
+  "name": "WF Labs Korean Riven PP-OCRv5 CTC fine-tune",
+  "version": "riven-ko-20261030-head4",
+  "sha256": "6d23adfaf42579e3dfb172dc810032658bb1b602dc5f70ef6257901276de32e7",
+  "bytes": 13572266,
+  "base": {
+    "name": "korean_PP-OCRv5_rec_mobile",
+    "producer": "PaddlePaddle / PaddleOCR",
+    "conversionPublisher": "RapidAI / RapidOCR",
+    "source": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.9.2/onnx/PP-OCRv5/rec/korean_PP-OCRv5_rec_mobile.onnx",
+    "sourceIndex": "https://github.com/RapidAI/RapidOCR/blob/main/python/rapidocr/default_models.yaml",
+    "sha256": "cd6e2ea50f6943ca7271eb8c56a877a5a90720b7047fe9c41a2e541a25773c9b",
+    "license": "Apache-2.0",
+    "runtime": "Microsoft.ML.OnnxRuntime 1.22.1 CPU",
+    "fineTunedByWFLabs": false,
+    "usage": "판독 미확정 글줄·무기 제목의 보조 인식. 숫자·부호는 다른 판독으로 교차 확인."
+  },
+  "baseLicense": "Apache-2.0",
+  "modifiedBy": "WF Labs",
+  "fineTunedByWFLabs": true,
+  "method": "사전 학습 backbone·SVTR 시퀀스 인코더는 보존하고 CTC 최종 weight/bias만 실제 역전파로 재학습",
+  "changedInitializers": [
+    "linear_8.w_0",
+    "linear_8.b_0"
+  ],
+  "runtime": "Microsoft.ML.OnnxRuntime 1.22.1 CPU",
+  "runtimeDependencies": "Python·PyTorch·CUDA·PaddlePaddle 불필요",
+  "corpus": {
+    "cards": 45,
+    "uniqueOriginals": 40,
+    "posts": 19,
+    "trainCards": 27,
+    "validationCards": 7,
+    "testCards": 11,
+    "manifest": "tests/fixtures/riven-public-corpus-20261030.json",
+    "manifestSha256": "c0c81717551ef6d3e8287f031ba22508979288cffbef04a0286ca675ce9e8de3"
+  },
+  "training": {
+    "seed": 20261030,
+    "torch": "2.9.1+cu128",
+    "pillow": "13.0.0",
+    "featureOnnxRuntime": "1.31.1",
+    "syntheticLines": 1400,
+    "realPhysicalLines": 155,
+    "realTrainingViews": 738,
+    "featureManifestSha256": "c14fa7483a865f240fef88cf657fb11d6a72786e6c9e51e9e48cca2bde666a90",
+    "selectedRun": "paddle-head4",
+    "selectedStep": 1000,
+    "frozenTestUsed": false,
+    "curriculum": "원본 crop과 실제 런타임 crop, 원색·반전·색상 분리, 학습 split 내 hard example mining; 미지 숫자는 합성으로 다양화"
+  },
+  "validation": {
+    "uniquePhysicalLines": 32,
+    "views": 192,
+    "rawExact": 186,
+    "rawCharacterErrorRate": 0.0031446540880503146,
+    "semanticErrors": 0,
+    "normalization": "숫자·부호·단위 보존, 긴 옵션명 한 글자 오인식의 유일 후보만 정규화"
+  },
+  "safeguards": [
+    "원문 인식과 현재 기질·랭크 수율 검사를 분리",
+    "범위에 맞춰 숫자를 변경하지 않음",
+    "원색/마스크 일치와 별도 Tesseract 숫자·부호·단위 확인",
+    "학습 이미지·정답 lookup은 앱에 포함하지 않음"
+  ]
+}

@@ -68,7 +68,10 @@ public sealed partial class MainWindow : Window
         }
         workspaceViewport.SizeChanged+=(_,_)=>FitWorkspace();
         workspaceViewport.ScrollChanged+=(_,e)=>{if(e.ViewportWidthChange!=0||e.ViewportHeightChange!=0)FitWorkspace();};FitWorkspace();
-        Grid.SetRow(workflowBar,1);root.Children.Insert(1,workflowBar);
+        var workflowHost=new StackPanel();workflowHost.Children.Add(workflowBar);
+        RivenRecognitionBar=new("리벤",RivenAutomatic,RivenAutoStatus){Margin=new(20,6,20,4),Visibility=Visibility.Collapsed};workflowHost.Children.Add(RivenRecognitionBar);
+        RivenAutomatic.Checked+=(_,_)=>SetRivenAutomatic(true);RivenAutomatic.Unchecked+=(_,_)=>SetRivenAutomatic(false);
+        Grid.SetRow(workflowHost,1);root.Children.Insert(1,workflowHost);
         WindowFrame.Attach(this, root);
         // Private validation desktops have an unrelated, often 1024x768 monitor.
         // Their requested native viewport must not race with production work-area

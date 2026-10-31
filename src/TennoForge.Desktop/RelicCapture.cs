@@ -16,6 +16,7 @@ internal static class RelicCapture
     [DllImport("user32.dll")]private static extern int ReleaseDC(IntPtr hwnd,IntPtr dc);
     [DllImport("user32.dll")]private static extern bool IsIconic(IntPtr hwnd);
     [DllImport("user32.dll")]private static extern bool IsWindowVisible(IntPtr hwnd);
+    [DllImport("user32.dll")]private static extern uint GetWindowThreadProcessId(IntPtr hwnd,out uint processId);
     [DllImport("user32.dll")]internal static extern IntPtr GetForegroundWindow();
     [DllImport("user32.dll")]internal static extern bool SetForegroundWindow(IntPtr hwnd);
     [DllImport("user32.dll")]internal static extern bool ShowWindow(IntPtr hwnd,int command);
@@ -39,6 +40,50 @@ internal static class RelicCapture
     [DllImport("gdi32.dll")]private static extern bool SetBrushOrgEx(IntPtr dc,int x,int y,IntPtr previous);
     [DllImport("gdi32.dll")]private static extern bool DeleteObject(IntPtr value);
     [DllImport("gdi32.dll")]private static extern bool DeleteDC(IntPtr dc);
+    private static readonly object foregroundIdentitySync=new();
+    private static Process? foregroundProcess;
+    private static uint foregroundProcessId;
+    private static bool foregroundIsGame;
+    internal static int ForegroundIdentityLookups {get;private set;}
+    internal static (bool Visible,bool Minimized,uint ProcessId,uint ThreadId,int Lookups) WindowIdentityStateForCheck(IntPtr window)
+    {
+        uint thread=GetWindowThreadProcessId(window,out var pid);
+        return(IsWindowVisible(window),IsIconic(window),pid,thread,ForegroundIdentityLookups);
+    }
+    internal static IntPtr ForegroundGameWindow()=>GameWindowIdentity(GetForegroundWindow());
+    // This helper verifies identity only. Periodic detection supplies the actual
+    // foreground HWND; the capture path independently checks focus again.
+    internal static IntPtr GameWindowIdentity(IntPtr window)
+    {
+        if(window==IntPtr.Zero||!IsWindowVisible(window)||IsIconic(window)||GetWindowThreadProcessId(window,out var pid)==0||pid==0)return IntPtr.Zero;
+        lock(foregroundIdentitySync)
+        {
+            try
+            {
+                // Query the current HWND owner on every observation, but keep one
+                // bound Process handle instead of enumerating every system process.
+                // HasExited refers to that handle, so reused HWNDs/PIDs do not make
+                // a later unrelated process inherit a positive Warframe identity.
+                if(foregroundProcess is not null&&foregroundProcessId==pid&&!foregroundProcess.HasExited)
+                    return foregroundIsGame&&GetWindowThreadProcessId(window,out var owner)!=0&&owner==pid?window:IntPtr.Zero;
+                ClearForegroundGameCache();
+                foregroundProcess=Process.GetProcessById(checked((int)pid));foregroundProcessId=pid;ForegroundIdentityLookups++;
+                if(foregroundProcess.HasExited){ClearForegroundGameCache();return IntPtr.Zero;}
+                var name=foregroundProcess.ProcessName;
+                foregroundIsGame=(name.Equals("Warframe.x64",StringComparison.OrdinalIgnoreCase)||name.Equals("Warframe",StringComparison.OrdinalIgnoreCase))&&!foregroundProcess.HasExited;
+                return foregroundIsGame&&GetWindowThreadProcessId(window,out var currentOwner)!=0&&currentOwner==pid?window:IntPtr.Zero;
+            }
+            catch(Exception e)when(e is ArgumentException or InvalidOperationException or System.ComponentModel.Win32Exception or NotSupportedException)
+            {ClearForegroundGameCache();return IntPtr.Zero;}
+        }
+    }
+    internal static void ClearForegroundGameCache()
+    {
+        lock(foregroundIdentitySync)
+        {
+            foregroundProcess?.Dispose();foregroundProcess=null;foregroundProcessId=0;foregroundIsGame=false;
+        }
+    }
     internal static IntPtr GameWindow()
     {
         var handles=new List<IntPtr>();

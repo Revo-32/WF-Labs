@@ -34,6 +34,7 @@ try {
     @{RepositoryUrl=$RepositoryUrl.TrimEnd('/');Prerelease=$Version.Contains('-')} | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $publish 'release-config.json') -Encoding utf8NoBOM
     Copy-Item -LiteralPath (Join-Path $projectRoot 'docs/THIRD_PARTY_NOTICES.txt') -Destination $publish
     Copy-Item -LiteralPath (Join-Path $projectRoot 'COPYRIGHT.md') -Destination $publish
+    foreach($guide in @('PRIVACY.md','SUPPORT.md','RELEASE_1_0_0.md','OCR_RIVEN_CORPUS_2026-10-30.md','USER_ACCEPTANCE_2026-10-30.md','MASTERY_MATERIAL_GALLERY_2026-10-31.md','RANGED_APPROXIMATIONS.md')){Copy-Item -LiteralPath (Join-Path $projectRoot ('docs/'+$guide)) -Destination $publish}
     Copy-Item -LiteralPath (Join-Path $projectRoot 'docs/licenses/VELOPACK-LICENSE.txt') -Destination $publish
     $assets=Get-Content -LiteralPath (Join-Path $projectRoot 'src/TennoForge.Desktop/obj/project.assets.json') -Raw | ConvertFrom-Json
     $runtimeNames=@('Microsoft.NETCore.App.Runtime.win-x64','Microsoft.WindowsDesktop.App.Runtime.win-x64')
@@ -48,7 +49,9 @@ try {
         if(-not(Get-ChildItem -LiteralPath $notices -File)){throw '런타임 고지 파일이 비어 있습니다.'}
     }
     $shortcuts = if ($NoShortcuts) { 'None' } else { 'Desktop,StartMenuRoot' }
-    & $Dotnet vpk pack --packId $PackageId --packVersion $Version --packDir $publish --packTitle 'WF Labs' --packAuthors 'WF Labs' --mainExe WFLabs.exe --runtime win-x64 --framework vcredist143-x64 --icon src/TennoForge.Desktop/Assets/Brand/wf-labs.ico --shortcuts $shortcuts --outputDir $OutputDirectory --releaseNotes docs/RELEASE_NOTES.md
+    $releaseNotes = Join-Path $projectRoot ('docs/releases/'+$Version+'.md')
+    if(-not(Test-Path -LiteralPath $releaseNotes)){$releaseNotes=Join-Path $projectRoot 'docs/RELEASE_NOTES.md'}
+    & $Dotnet vpk pack --packId $PackageId --packVersion $Version --packDir $publish --packTitle 'WF Labs' --packAuthors 'WF Labs' --mainExe WFLabs.exe --runtime win-x64 --framework vcredist143-x64 --icon src/TennoForge.Desktop/Assets/Brand/wf-labs.ico --shortcuts $shortcuts --outputDir $OutputDirectory --releaseNotes $releaseNotes
     if ($LASTEXITCODE -ne 0) { throw '설치 파일 생성 실패' }
     $hashes = Get-ChildItem -LiteralPath $OutputDirectory -File | Where-Object Name -ne 'SHA256SUMS.txt' | ForEach-Object { $hash=Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256; "$($hash.Hash.ToLowerInvariant())  $($_.Name)" }
     $hashes | Set-Content -LiteralPath (Join-Path $OutputDirectory 'SHA256SUMS.txt') -Encoding utf8NoBOM

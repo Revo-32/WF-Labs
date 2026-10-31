@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 using System.Windows;
@@ -32,6 +32,28 @@ public partial class App : Application
                     window.Width=width;window.Height=height;window.UpdateLayout();
                 }
             }));
+        if(e.Args.Length>=2&&e.Args[0]=="--ocr-pixel-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{var numerics=OcrArgMaxChecks.Run();var pixels=OcrPixelChecks.Run();var footer=await RivenFooterPreparationChecks.RunAsync();File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(new{passed=true,numerics,pixels,footer},Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--resource-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{var report=await window.CheckResourceUsage(dir);File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
+        if(e.Args.Length>=2&&e.Args[0]=="--riven-latency-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            Dispatcher.BeginInvoke(async()=>{try{await RivenLatencyChecks.Run(dir);Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}});return;
+        }
+        if(e.Args.Length>=2&&e.Args[0] is "--farming-check" or "--equipment-navigation-check")
+        {
+            var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
+            var window=new MainWindow{Width=1760,Height=920,Left=-30000,Top=-30000,ShowActivated=false,ShowInTaskbar=false};
+            window.Loaded+=async(_,_)=>{try{Action<FrameworkElement,string,int,int,double> capture=(element,name,width,height,scale)=>Render(element is Window w?(FrameworkElement)w.Content:element,Path.Combine(dir,name+".png"),width,height,scale,element as MainWindow);var report=e.Args[0]=="--farming-check"?await window.CheckFarming(dir,capture):await window.CheckEquipmentNavigation(dir,capture);File.WriteAllText(Path.Combine(dir,"checks.json"),JsonSerializer.Serialize(report,Catalog.Json));Shutdown(0);}catch(Exception ex){File.WriteAllText(Path.Combine(dir,"error.txt"),ex.ToString());Shutdown(1);}};window.Show();return;
+        }
         if(e.Args.Length>=2&&e.Args[0]=="--inventory-live-check")
         {
             var dir=Path.GetFullPath(e.Args[1]);Directory.CreateDirectory(dir);ShutdownMode=ShutdownMode.OnExplicitShutdown;
@@ -618,7 +640,16 @@ public partial class App : Application
         =>Render((FrameworkElement)w.Content,path,width,height,scale,w as MainWindow);
     internal static void Render(FrameworkElement root,string path,int width,int height,double scale=1,MainWindow? previewWindow=null)
     {
-        var nativePreview=Window.GetWindow(root) is {IsVisible:true} host&&ReferenceEquals(host.Content,root);
+        // Delegates taking FrameworkElement can pass a Window. Render its
+        // content through the native-resize path too; otherwise the bitmap is
+        // cropped from the old HWND size and a layout scan can pass offscreen.
+        if(root is Window window)
+        {Render((FrameworkElement)window.Content,path,width,height,scale,window as MainWindow);return;}
+        // Borderless dialogs have the same native maximum tracking size as the
+        // main window on a headless runner. Resize the actual HWND before
+        // rendering its whole content; inner/native-chrome previews keep their
+        // intentional content dimensions.
+        var nativePreview=Window.GetWindow(root) is {IsVisible:true,WindowStyle:WindowStyle.None} host&&ReferenceEquals(host.Content,root);
         if(nativePreview&&Window.GetWindow(root) is {} native)
         {
             // Whole-window previews must measure the requested viewport, not leave

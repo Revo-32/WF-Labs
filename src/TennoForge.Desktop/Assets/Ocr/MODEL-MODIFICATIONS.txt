@@ -1,0 +1,24 @@
+WF Labs OCR 런타임 모델 변경 고지 · 2026-10-27
+
+wfkor.traineddata와 eng.traineddata는 기존 float LSTM 가중치를
+Tesseract lstmtraining --stop_training --convert_to_int로 정수형 변환했습니다.
+추가 학습을 수행한 결과가 아니며, 상위 프로젝트의 원본 배포 파일과 다릅니다.
+원본·변환 모델의 SHA-256과 변환 도구는 runtime-models.json 및 wfkor.model.json에 기록합니다.
+LSTM 이외 문자 집합·recoder·사전·버전 구성요소는 원본과 동일합니다.
+추가 학습에는 보존된 float 원본 또는 학습 checkpoint를 사용해야 합니다.
+
+기존 한국어 모델의 학습 내용과 한계는 wfkor.model.json을 참조하세요.
+기존 라이선스와 저작권 고지는 그대로 적용됩니다.
+Tesseract/tessdata: TESSDATA-LICENSE.txt, TESSERACT-LICENSE.txt
+출처: https://tesseract-ocr.github.io/tessdoc/tess5/TrainingTesseract-5.html
+
+2026-10-30 · riven-line.onnx
+한국어 PP-OCRv5의 CTC 최종 분류기 weight/bias를 WF Labs가 추가 학습했습니다.
+기반 ONNX의 backbone·SVTR 시퀀스 인코더와 graph 연산은 그대로 보존했습니다.
+독자적으로 처음부터 학습한 범용 OCR이라고 표시하지 않습니다.
+공개 한국어 리벤 원본 40개에서 카드 45개를 확보하여 27/7/11로 분리했습니다.
+시험 11개는 가중치 학습·모델 선택에 사용하지 않았습니다.
+원본 게임 이미지·추출 glyph·학습용 글꼴·정답 fixture는 앱에 포함하지 않습니다.
+원본 korean-line-v5.onnx와 Tesseract 모델은 이번 재학습으로 변경하지 않았습니다.
+기반 Apache-2.0 고지·ONNX 변환 고지는 계속 보존합니다.
+출처·가중치 해시·학습/검증 조건: riven-line.model.json

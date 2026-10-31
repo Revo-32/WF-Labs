@@ -1,0 +1,34 @@
+{
+  "source": "user-provided codex-clipboard-2db7b3bc-9760-4bf2-af47-21d31ac9ee85.png",
+  "date": "2026-10-27",
+  "sourceSha256": "05a405c41abadce46ba7694b21525f379a510960e76fcb2016c30f915aedd758",
+  "crop": [
+    187,
+    65,
+    680,
+    712
+  ],
+  "image": "innodem-two-locks-real.png",
+  "sha256": "47da70d91d9c64f20b9a894929a3e63c81b6c55d889eeec2b98cf868ae97f9dd",
+  "training": false,
+  "options": [
+    {
+      "key": "Electricity",
+      "value": 110.6
+    },
+    {
+      "key": "StatusDamage",
+      "value": 110.1
+    },
+    {
+      "key": "HeavyEfficiency",
+      "value": 76.9
+    },
+    {
+      "key": "SlashDamage",
+      "value": 117.5,
+      "negative": true
+    }
+  ],
+  "note": "Original pixels cropped to remove currency UI. Two white locked traits, wrapped purple title. No synthetic text or numeric repairs."
+}

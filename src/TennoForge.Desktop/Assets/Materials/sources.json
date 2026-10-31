@@ -1,0 +1,4037 @@
+{
+  "schemaVersion": 1,
+  "reviewedDate": "2026-10-31",
+  "artworkGenerated": false,
+  "transformation": "원본 RGBA를 유지해 긴 변 128px 이하로 Lanczos 축소·PNG 저장. 재작화·합성 없음.",
+  "notice": "게임 이미지 권리: Digital Extremes. WFCD의 MIT 라이선스는 게임 이미지의 권리를 대체하지 않습니다.",
+  "catalogSha256": "8565f5446477a68f91502d4c71c454e2a186ef09e211a9e34c9da8b9ec538e90",
+  "requiredIds": 600,
+  "coveredIds": 600,
+  "images": [
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/ArgonCrystal"
+      ],
+      "file": "001e7d3e58530a12d532.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ArgonCrystal.png",
+      "originalSha256": "001e7d3e58530a12d5329b91a8c8ca2813a9292d6ff344accd12bc4282075781",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2490b028ccd134e12a6b58e9b95cfea399dd46492790196541cc40778a4a6271",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPistolReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonVandalReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CarminePentaReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGunbladeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpRubanRifleReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DeraVandalReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GorgonWraithReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GunScytheReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ImperatorVandalReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/InfSniperRifleReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KarakWraithReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LatoVandalReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronWraithReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PaxDuviricusShotgunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ProteaSMGReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SheduHeavyWeaponReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SnipetronVandalReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StrunWraithReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnAlchemistShotgunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnQuadSniperRifleReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnoLotusPodShotgunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/WraithSidearmReceiver"
+      ],
+      "file": "009808fc5c2e419f2b39.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericGunReceiver.png",
+      "originalSha256": "009808fc5c2e419f2b39776fbe9263de7c6e3f93e9a087141b8965ba6097649b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "11ac06401c2998b8b36059fe77092b1359f765bda6ae7a035a6a132e86c7bfe4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceRareA"
+      ],
+      "file": "00c5fd098815c1bc5f95.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/1999ResourceRareA.png",
+      "originalSha256": "00c5fd098815c1bc5f9538bafadc11b5fc5d196c9a941d23ed3a441713d4dafe",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "519985b9ddbb674207c5ef9ed8e7358322878b440a1dd18201850e0ae95189c9",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Tellurium"
+      ],
+      "file": "01e8aed2f664cac8e1ca.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Tellurium.png",
+      "originalSha256": "01e8aed2f664cac8e1cad44a023ec7b42b29c4d913715d69a45432aefdb514da",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "e049583a5acb48fb7218fa190910c66daf51638d5dca86218fa259da673b88db",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Forma"
+      ],
+      "file": "030f51e91c054f2cff4c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericComponent.png",
+      "originalSha256": "030f51e91c054f2cff4c60d2d407971e8ad801ff52d981c9bc961cd303ca3c70",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "109a7ada272b516fac164589de08c387e4d40f9167c7211f27939daccfd096a8",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishNeuralRelayItem"
+      ],
+      "file": "048af7786988db1b8dd7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartNeuralRelay.png",
+      "originalSha256": "048af7786988db1b8dd7558d268fa18c91de9eb78de19ebec03ef5b729b8ab0b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "50f632a415d199a23a842478bd66d3aa0f4a9b866caceda8673b310a4f4360ba",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponBarrelItem"
+      ],
+      "file": "05ed55c36eed44386378.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DamagedEntratiMechGunBarrel.png",
+      "originalSha256": "05ed55c36eed4438637815473d4635c44ff17fd53c1175ef5164e380b0c05004",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "3a447fc3e45f1afe539c9366bdcdc31e4b6661345369cd3498b78c3a24bdf93c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/RailjackMiscItems/GallosRailjackItem"
+      ],
+      "file": "07746b7e0d04b45210bd.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentGallos.png",
+      "originalSha256": "07746b7e0d04b45210bd3cf6af8f09a187bd118e16793370cf807ba343d94b84",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "10eac5808b1d32bb28e56c30bbb160789dc9cdc43b7aba18b95cf3072b1568c4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/Fish/GenericDuviriFishPartAItem"
+      ],
+      "file": "07a793dc2d8179c41205.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPebble.png",
+      "originalSha256": "07a793dc2d8179c41205acedc8d7c93e68826971d5da250ee0faf42c18b45e03",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d10b387a18de106ecd1d1fa1cd690119979970310ce2b6120af41fd31767af5c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Tau/Resources/TwelveResourceCommonItem"
+      ],
+      "file": "085be40529f3e470d1c2.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/TwelveResourceCommonItem.png",
+      "originalSha256": "085be40529f3e470d1c24c2a92d198bb8b23d4299a1ecc7a659095e4a2f39ef3",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "8a7979753bad12aa3d6022648bb1299640f77fe9b72a2bd95ee746bf87efe37d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Cryotic"
+      ],
+      "file": "08bbdc85aa005b1228bb.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentCryotic.png",
+      "originalSha256": "08bbdc85aa005b1228bbea5e84ca7a2a03544a2b73050fb8e20e5c3d5bed9c8c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "3b1560a7f56246b8268bf68be6aaac7916bf6a429eab3be59aeecbf92278522a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/CoolantItem"
+      ],
+      "file": "0944ab65347bfe87ed42.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Coolant.png",
+      "originalSha256": "0944ab65347bfe87ed42b8e23a3bc3cdc6287e6c2d9358854d688f0d8236c41d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "eb47218d5c2aa3ed569d0bc79e4e93d2b752f13e959da73d6a592556b5eccf39",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishRotobladeItem"
+      ],
+      "file": "09b5c83a6ebd2db160e7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartRotorBlade.png",
+      "originalSha256": "09b5c83a6ebd2db160e7b80a91188f3159332f23cac2d976f833c04a8140af91",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "a744261fc327143026339780378f04093298700514b6b34ce3db3da2193ee5b7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemACutItem"
+      ],
+      "file": "0b0c2c581fcbb41991f5.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisCommonGemACut.png",
+      "originalSha256": "0b0c2c581fcbb41991f5df97dd446ccc35b4a0e23931e1a917c0126509e0d71d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ba10fc90667b5bdc2ebcabc55602d4220580cda1f9ae89048fc10c2d77768d34",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishCPartItem"
+      ],
+      "file": "0ce2af7cdf9df6820797.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosInfestedFishCPart.png",
+      "originalSha256": "0ce2af7cdf9df68207976a538dccb8c6447a68ee8e75d090bd0b7e14a26a1c6f",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1dffe0f890ef862000137f86b14a2fe589580eec5b784a2b08f50a8f2a373023",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/BirdOfPreyPartItem"
+      ],
+      "file": "0d45ea95a3e8fc571b90.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/BirdOfPreyPartItem.png",
+      "originalSha256": "0d45ea95a3e8fc571b90e55dcef6096c8f5b2c5b9d18c91ffb7827610e32d450",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "34b313aae18c479ea2546c62bddf3e68cf519dc1df89323f02c64704eb28bf9d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriFractalItem"
+      ],
+      "file": "0debc9bc647796a2d64b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriRunicMarrow.png",
+      "originalSha256": "0debc9bc647796a2d64b477d4f603ac0ac37570c8839add170fd8ff796bb9dc1",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "c048eea84943981db610995ef16aa236dc84434aee60b79f10a473bd628dac37",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishCPartItem"
+      ],
+      "file": "0f38cd516ffb0c6c1cc6.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosOrokinFishCPart.png",
+      "originalSha256": "0f38cd516ffb0c6c1cc634663e96943b0f9bc29ea604627b3272f2ba7c29ac56",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "3dd4f9ba26dd6e71196689bd7f1446e5a53036a6088ce4522fde8223053ccf0d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/CommonGemBCutAItem"
+      ],
+      "file": "111deddc4ee5a08234a2.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CommonGemBCutA.png",
+      "originalSha256": "111deddc4ee5a08234a219480888dd1b259d10ce9c415eb12b011904f3d62510",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "21734fe6fd304f83636013c0735eebe6b4e3e6f8d348655b18f2355fdfdd0a8d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonGemACutItem"
+      ],
+      "file": "159f07747914c61d7e34.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosUncommonGemACut.png",
+      "originalSha256": "159f07747914c61d7e34613e9fe40f8097ecd0378cb14faa973749d32ab9fa4d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "49f11181971437c15fc8cdd97f20b6c0554c219ca675a93fbe4ca69d93052e26",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriEnemyDropItem"
+      ],
+      "file": "16a584dd75c5923b4b58.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriAnima.png",
+      "originalSha256": "16a584dd75c5923b4b5828fc53bb984a84e98ff64c849d2afa104fee856ca84e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6b3356cbb93cd35e2e87999241a2406fa3cdb72b01dadfcd593d2b6a6aabc31a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemACutItem"
+      ],
+      "file": "185827ca4f697752f5ee.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosEidolonGemACut.png",
+      "originalSha256": "185827ca4f697752f5ee0b39a1bf890dc1ef47a4006886dbccb432dca15cb0f5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "800c71496ce0117cf6aaf7e90a9958a66bd7fbeed9551eb5aa721b503a8dbe81",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishEPartItem"
+      ],
+      "file": "18c520ddee98c5a0945f.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosInfestedFishEPart.png",
+      "originalSha256": "18c520ddee98c5a0945f415e4b9b417bc55cf1b27c6d969492b2bbcf708fcde1",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "f8d0c991966752a0c7cc1ca47f633a94783c02e8d1d6e531e63928477e7d9752",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MushroomJournal/ViralMushroomJournalItem"
+      ],
+      "file": "19bff19ce7ba90ee37d4.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MushroomIconViral.png",
+      "originalSha256": "19bff19ce7ba90ee37d41b019f7f88bbd8b1e2557ce18a5f569f4da30a513a11",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d1aff4e171d70017a8bb5360e44362cd547622e54d2a1e26413abc067a41bdba",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/IraditeItem"
+      ],
+      "file": "1a37717eeede1c9d8689.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Iradite.png",
+      "originalSha256": "1a37717eeede1c9d8689ea69ef33bda255d2ee5cf53eaa1e917badbdcadbf506",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "87ae94385e737b4491a11dd444ee843a4b376b012fc323569f77463a490e3086",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishDPartItem"
+      ],
+      "file": "1af0f9e3cd4641561774.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosInfestedFishDPart.png",
+      "originalSha256": "1af0f9e3cd464156177430db43942044819456bd9b930265de5a0d8e3e6c31cc",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "55616eac4fcdbde7483d30df640c9a0dc122f65c58e5c8fe6a7d4d8820703830",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkbroncoPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AklexPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkmagnusPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkvastoPrimeLink",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBoOrnament",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TipedoPrimeOrnament"
+      ],
+      "file": "1c1aaed63319af3bcba1.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericComponentPrimePlug.png",
+      "originalSha256": "1c1aaed63319af3bcba11788ba83f135530253bedceb70c87c74b5e50295d957",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6a2dc8673d8f3e416de30e03dcb75ed3e7cc4447692c33bbb16056421ddc1e22",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEcosynthAnalyzerItem"
+      ],
+      "file": "1c9b3b90a9f4529a1c1e.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartEcosynthAnalyzer.png",
+      "originalSha256": "1c9b3b90a9f4529a1c1ea7ad4681964c121eceb98a1020b1160dd17fa311c3da",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b8ef14c5c4ad9fa67592f9a6eb7666ccf9e953f19b66285696b9154a367c932c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemBCutItem"
+      ],
+      "file": "1f529f790ad2e65b1dbe.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosCommonGemBCut.png",
+      "originalSha256": "1f529f790ad2e65b1dbee1ae0fe4165970d39b0206c4ea239cd2b39b65e9789a",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "4310e27c2f553a1a7d622c1fa0cd875a2a44c3a1f2692373f453b3aeb64ac996",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Ferrite"
+      ],
+      "file": "1f6c770257a6bbfb0a4c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentFerrite.png",
+      "originalSha256": "1f6c770257a6bbfb0a4cb0ac5c39ba24f7c98c761f79af2ae435e306622e1a5e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "3a959aa9b1f97f792a7fd2a891eacc1a053f986a09ad579816b23dc03bc41f86",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemC"
+      ],
+      "file": "1f9c77ed9319591f1ae5.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPlantExtractC.png",
+      "originalSha256": "1f9c77ed9319591f1ae5ba56e1d83a0b1faa5f3338c56330c08ed821f19d60fa",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "132fc36aff9cac7b7080e5119c4f2db6dce888d2f9c1b9f0bf2aa4913f374ee0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriRockItem"
+      ],
+      "file": "22b37268b03a780061cf.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriAggristone.png",
+      "originalSha256": "22b37268b03a780061cf959e8a1751133ffa8eaa9a40081d23cf6805aa58b30a",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "a0de51ddb08af7a97853784662d75f59bfb9c15a46c30a136dd7d17e17549cec",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MushroomJournal/BlastMushroomJournalItem"
+      ],
+      "file": "22ceafee00b416986f50.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MushroomIconBlast.png",
+      "originalSha256": "22ceafee00b416986f504bde852620b8e381edc6d370df77f5ee561f87bfaca5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2c29a4c4ad1a2787df3bfba0f084a77f223320ee59a66d2656578416d91f29c9",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsUncommonDogTag"
+      ],
+      "file": "23e84739cae86fbb57bf.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/QuillsUncommonPickup.png",
+      "originalSha256": "23e84739cae86fbb57bfccc52dd3585f9320ced1e00b0a95f7034d02ac326272",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d987fae54bfdac16695054768b37d065bc61f845f7ad7316ea2c74c74066763d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonVandalStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CarminePentaStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGhostCatcherGlaivePartHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGunbladeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpRubanRifleStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DeraVandalStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GorgonWraithStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/InfSniperRifleStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KarakWraithStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronWraithStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MiterChassis",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PaxDuviricusShotgunStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SheduHeavyWeaponChassis",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SnipetronVandalStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalChassis",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StrunWraithStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ThrowingHammerMotor",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnAlchemistShotgunStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnQuadSniperRifleStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnoLotusPodShotgunStock"
+      ],
+      "file": "257fbb8d77923edb6a79.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericGunStock.png",
+      "originalSha256": "257fbb8d77923edb6a79f4f28efcec618549bd635e7d7132cef4a4e7c7ce41a3",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2b7e604dfe2f471c3ba6eb911c51fb889655f124a9153ca7bb825b94ebbbcac8",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceUncommonB"
+      ],
+      "file": "25979a8c21e13b462c0a.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/1999ResourceUncommonB.png",
+      "originalSha256": "25979a8c21e13b462c0a08650a34ab8434c0199eeace4d708e62348cad1fb6f5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "fe695ec16c8b67f7a0dbb38d4544bcfd42f8e1240fd463e0a6ba84774028b0f2",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AnkyrosPrimeGauntlet",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CobraCranePrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DestrezaPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DualKeresPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DualZorenPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/FragorPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GramPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GuandaoPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GunsenPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KarystPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KogakePrimeGauntlet",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KronenPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MasseterPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/NinkondiPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/OkinaPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PangolinPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBoHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCronusLongSwordHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDualKamasHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeGalatineHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeNamiSkylaHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeNikanaHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScindoHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScytheHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeVenkaClawsGauntlet",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/QuassusPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/RedeemerPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SarofangPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ScourgePrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SilvaAegisPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TatsuPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TekkoPrimeGauntlet",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TipedoPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VolnusPrimeHandle"
+      ],
+      "file": "294d86a1423c85e71335.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWeaponPrimeHilt.png",
+      "originalSha256": "294d86a1423c85e7133502077e7883eed5b5694cb5b3a3f86cc31de7c1f5ba95",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "4e46f5ff5571ddde986f3fc8454b5eef6e81176b6e8effb294b2c5f5dca181e4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AcceltraPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AstillaPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BazaPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BoarPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BoltorPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorinthPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/FulminPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/NagantakaPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/NinkondiPrimeChain",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PantheraPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PhantasmaPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaString",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowString",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosString",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuString",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeTigrisStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/RubicoPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SomaPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StradavarPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StrunPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SybarisPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TenoraPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TiberonPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TrumnaPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VectisPrimeStock",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ZhugePrimeString"
+      ],
+      "file": "29c75335972c1246b5d9.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericGunPrimeStock.png",
+      "originalSha256": "29c75335972c1246b5d97a312d82d9c5a965d60b66769744162796de2e8d1539",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b17c6a304a40753a6f27beb52caa00cb366a9e22a16c305376c3112b8ee94ac0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriMushroomItem"
+      ],
+      "file": "29e98c3b30eb1b21596b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPlantExtractMushroom.png",
+      "originalSha256": "29e98c3b30eb1b21596b998b065b33a7c1d6b526da8085e07327bea41de44ecb",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "97c64bf831a9b22def7481e4c5681171825f4fbe1aa8777d56d97e637b5c029e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishThermalLaserItem"
+      ],
+      "file": "2b5cd99c7c086e95902d.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartThermalLaser.png",
+      "originalSha256": "2b5cd99c7c086e95902dba0b6acd5b1bb4ddbfd672f989c96afade961546f8fb",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "f056a638695cf6a55a7a708ee2940b99b5e6feaedacc08e14f1fa8f09c1b4912",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemF"
+      ],
+      "file": "2d374440f7b7e51f2440.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPlantExtractF.png",
+      "originalSha256": "2d374440f7b7e51f2440b72bf86a6f6f86f5bbad83eb8575526089cb8b39649c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "79e8d8637467473c34caf079729aa6bf3b6954ca85deeaad01d5f2298fd9cf48",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidMicroidItem"
+      ],
+      "file": "2ddf0e58a43491f2dd5c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CrpArachnoidPowerCoreMicroid.png",
+      "originalSha256": "2ddf0e58a43491f2dd5cdcc0a758e6619ba42401834a8c2d35c5f5edae82ba8d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "f5a2d723f49841768f63a5b3693388baa6b1370f46fc25b92860f1858dfb8483",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/EntratiLab/Resources/MurmurItem"
+      ],
+      "file": "2efeacf04128a8bc4431.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MurmurItem.png",
+      "originalSha256": "2efeacf04128a8bc4431767f84ff8f971f27f63f164a5360abe846799a5b4f5f",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "72941598f9f38a7a0b7ffcb18b649480828815af52cede075b04ecb7ff65dfe8",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/MemoryCryptoFragment"
+      ],
+      "file": "319bc30c5f3e76ccec2d.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MemoryCryptoFragment.png",
+      "originalSha256": "319bc30c5f3e76ccec2dbb0747b0f43957226173651e70116f71a9d86c8f60ef",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "00456780ee30219930c3921822d28833270c8376a64beafecc698e19bb8a6685",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceCommonB"
+      ],
+      "file": "31c08da7cbaf0a05d4fb.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/1999ResourceCommonB.png",
+      "originalSha256": "31c08da7cbaf0a05d4fbc715161f1e2a7bb7cb9d6f88c5dbf2e8c6f835b7d736",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6f3c023c2e443f6eb9b173cf16275a31a2f6b0cef1edfa4fc1ad6fff858a8574",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponReceiverItem"
+      ],
+      "file": "34ec3fbb65756d77f24b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DamagedEntratiMechGunReceiver.png",
+      "originalSha256": "34ec3fbb65756d77f24b9d956075c8f9b213b0ab4e8ac0f730db45cb95613a67",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "09b09a4456cb2d26904c84c5096f9524b5c8da6ff4eb86a46946e117e447d294",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/EntratiWispItem"
+      ],
+      "file": "3607fbd1755bb362f01a.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EntratiWisp.png",
+      "originalSha256": "3607fbd1755bb362f01a69d688ea903dfcff36206603a86428d49c68d013b864",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "725017b7c597a924250797ec2ef9d55963ae8fadfd2b918e81c058ad179dc496",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Game/CatbrowPet/CatbrowGeneticSignature"
+      ],
+      "file": "37180f5da1dcd758e6b7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/KavatGeneticStrain.png",
+      "originalSha256": "37180f5da1dcd758e6b71fe206d494015acb20822b30e0b849f7adf02d89a19a",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "86eda3149f3af3e9f0de0aa0ff080a77b81dce38b92c0b9090d62e0d5c103c53",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/PolymerBundle"
+      ],
+      "file": "37c3662ba9079a0072be.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/PolymerBundle.png",
+      "originalSha256": "37c3662ba9079a0072bef703661f2886748e72e79c596a352eb34e6c934c89c6",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "81fe8aecba9a5c6e39ac12d100f2e109d120523ef2e5c33f8fc5638c2ffc55fa",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/Fish/GenericDuviriFishPartCItem"
+      ],
+      "file": "3b4b2f6b93bee4f542cd.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriFang.png",
+      "originalSha256": "3b4b2f6b93bee4f542cd4a9538905e386c00ace8907ce6d5a5fc7ee326841193",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1b3957e3dd61e19bf243e3da59bf52ed436e7b860234d37c6f6c6fd0ca132fb4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishEntroplasmaItem"
+      ],
+      "file": "3b608346cf84a78764ab.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartEntroplasma.png",
+      "originalSha256": "3b608346cf84a78764ab78d294d620433f6759a3ea965339ea7b30e01e085250",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "550f414cf5fe8a8a380bab1ad9e7fea4f539bc2e1cdfe14a6d8d383b7ed82d93",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeCerebrum",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCerebrum",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeCerebrum",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCerebrum",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeCerebrum"
+      ],
+      "file": "3bcf79a8297ff72a1cc4.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWarframePrimeHelmet.png",
+      "originalSha256": "3bcf79a8297ff72a1cc44307a20d580844ceadc3da1b6910f0b65e28c216e84e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d3dc67635553a332b732251f4f00ae0a89a777cddce76547ad73494d4e8a97cc",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Zariman/Resources/EclipseVoidWraithItem"
+      ],
+      "file": "3c3e1f39e04291c2d475.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EclipseVoidWraithItem.png",
+      "originalSha256": "3c3e1f39e04291c2d4752d4428e9224327d7b0a0599b8a94ea97976af5cb354f",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "246527cdd6dd614ffc89587eb66703d92fab5950141fa5c75d8e066ce4f92bfb",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MushroomJournal/PlainMushroomJournalItem"
+      ],
+      "file": "3d5c0199a56e61831bdf.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MushroomIconPlain.png",
+      "originalSha256": "3d5c0199a56e61831bdf75a218a9342f0ad9a15af57457b7d9471649d3242acb",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "109173d0934b5b2b91fdd6e8fb696f8ea8c224b5605e638a30208802d86dcfa5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/NeuralSensor"
+      ],
+      "file": "3da0edf66265c5ab5026.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/NeuralSensor.png",
+      "originalSha256": "3da0edf66265c5ab5026a5cce7c3199f98a18040c99dcf128dbdb44d3c55c030",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2a9ee333812e0f9cf8b5ea53b6a1ae729f3a811b89244e3ff2af4b9b398604b5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/GrokdrulItem"
+      ],
+      "file": "3ff7f7ad057ae2c30c23.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Grokdrul.png",
+      "originalSha256": "3ff7f7ad057ae2c30c23c60e7484705a8dde233390d909bdffce08b44ba31361",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "cec70e83a14bb033a30046bd9972f5380220428d71366ecc6e134aaa970c8f24",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/PrimeBucks"
+      ],
+      "file": "407e36b64104d548be51.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Ducat.png",
+      "originalSha256": "407e36b64104d548be5155ac23e47cb1bf2fd8cbbc54767e882ee56582b53c26",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "18d819cf7dc71cf8e578c11289d1dc7a448140b5954e09973e03bc43139d5bfe",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemE"
+      ],
+      "file": "40ea817bed978af5f038.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPlantExtractE.png",
+      "originalSha256": "40ea817bed978af5f038e1f73feee36b531e2d24b17e69cd3332d0273843246c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b107a244ebb31ae67333921baa731bb2f125dab958e64d49f5fb9cb3a5118e44",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishAPartItem"
+      ],
+      "file": "421e591d6ca0b1697a6c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceEyes.png",
+      "originalSha256": "421e591d6ca0b1697a6c624d202e0def8ecebb504c655e8618a9a1f772e9fc1a",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "9516333a37c0a81090d9c0b377cb9f9bfa884d3769131badb52907a3e240cfea",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishAnoscopicSensorItem"
+      ],
+      "file": "4684cdb78a5b3cda9bdd.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartAnoscopicSensor.png",
+      "originalSha256": "4684cdb78a5b3cda9bdd947a9ff85e14e837fa937ad9cfae40d946b5bad2a8b6",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2afd30da017cd329c45b9da9416d89a7ca43eb524194efa9764b1010b170bbce",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemA"
+      ],
+      "file": "4720843327c3178f5cc4.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ZarimanMiscItemA.png",
+      "originalSha256": "4720843327c3178f5cc47bee6f04790cf645f4cd97580927d48cfad442f729b2",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b016ecf0e36b45b83061d5569713c7615eea6cda939695dc8f0a2a75573601e3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/VenusTreeItem"
+      ],
+      "file": "47a604bf4101f9500a85.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/VenusTree.png",
+      "originalSha256": "47a604bf4101f9500a8505f277818d927d503a24223936731b4818b832979f9c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "bfb228a320f2b5cbbb1f44824efcdc2dde7cbb536f97fbdcf061aef0a2c4ce61",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothUncommonFishAPartItem"
+      ],
+      "file": "49d2f42f49401d685316.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceTeeth.png",
+      "originalSha256": "49d2f42f49401d685316d396c5fc787a8299bd7f0a6d146b8c21d24ff3e14fc9",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d2ef68bb139ed7190478174169118480ff4232cb438cace9016339def5942643",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CobraCranePrimeGuard",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KogakePrimeBoot",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SilvaAegisPrimeGuard"
+      ],
+      "file": "4a8eec8b9f04cbec62ab.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWeaponPrimeGuard.png",
+      "originalSha256": "4a8eec8b9f04cbec62abe58d376fc9468bb3511e63b01bca3611ca58ccef1b20",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "e4b6786cc2f4cd4e95cd61590994711fe0af3509995c4bd3172457f988ce602f",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidHungerItem"
+      ],
+      "file": "4c25919cb78f2103841b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CrpArachnoidPowerCoreHunger.png",
+      "originalSha256": "4c25919cb78f2103841b7a80ef9a628f18f741b7a36cbdeee4dfe520dc197487",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "bf0c19ed1fe5213f78366c900b74ce28e2d93beef075e21d19dbf2c7edaf49a5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Zariman/Resources/VoidWraithItem"
+      ],
+      "file": "4c94f425ca8fc5f28afe.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/VoidWraithItem.png",
+      "originalSha256": "4c94f425ca8fc5f28afedbe061e31517e4dbc394c12e2166adc92d0ca45ca653",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "0b15fcf61788b22bbf27de8cf276db402a239d66cca4415e66107aa2fd7b233d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/ForestRodentPartItem"
+      ],
+      "file": "4f6b9b7940d81437f96c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ForestRodentSpine.png",
+      "originalSha256": "4f6b9b7940d81437f96cfc024c9512d956cc7d68d0fd181dac2251e574af033d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1b882adbe0ee8c0830a5cfb63229d6361af37f45c876eafe6f0b87b78bb3bbe4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagRare"
+      ],
+      "file": "516533cf6efad1c7b572.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EntratiLabDogTagRare.png",
+      "originalSha256": "516533cf6efad1c7b5726b7f6efa321a69c93ff9818b383ea58adbf64394d1ea",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "605b1c64012149e6b0ed65c2a461da496c56331ef7e6f65e04b5f0fa9fdae291",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartWeaponPodItem"
+      ],
+      "file": "519e388f2272da6c88b0.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DamagedMechPartWeaponPod.png",
+      "originalSha256": "519e388f2272da6c88b099401151910da4b703f049519d94e1f8c4df8401c0bf",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "53545b12e81e9f5101431e59a5b100bcd56df64e78617576af7403763e9baed2",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/GenericFishScrapItem"
+      ],
+      "file": "53e5818d59c13268d346.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartScrap.png",
+      "originalSha256": "53e5818d59c13268d3463a35de574f6773b2b06edfaabaf3c434a9ce2575c642",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "7530c12b8dbb53e52ecf3865ae447059b4834da03a683571502ffc1eee171d25",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishAPartItem"
+      ],
+      "file": "545eaa46379fbe49269e.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosInfestedFishAPart.png",
+      "originalSha256": "545eaa46379fbe49269edee74e739ea230d72fdfd37df8677544378b46fb3d3c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1329bd2705081b425f32f6a7e5e66a0f1df9fa45959610c51d499fbd60d9b3ec",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemG"
+      ],
+      "file": "5700ab9d87820512086c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPlantExtractG.png",
+      "originalSha256": "5700ab9d87820512086c529966957a53026d5f18f49b788820cec0c2b608e3e9",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "8172564a88ec9412dd5a7d2848e870e90425a0c921a023eeb2358b1a36d5e5d4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeCarapace",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCarapace",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeCarapace",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosCarapace",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCarapace",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeCarapace"
+      ],
+      "file": "5702b05afff568642608.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWarframePrimeChassis.png",
+      "originalSha256": "5702b05afff568642608ef8257c33556967868fdf61fcfdf7b1dd28c11cedf9b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1afe5ad0bfa478da7d5a1e6961b2398cda75f292e8968c4078075059fbb1e267",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayCommonFishAPartItem"
+      ],
+      "file": "5934a5b1958822bcb5b3.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceBones.png",
+      "originalSha256": "5934a5b1958822bcb5b3e8819cc3f2b69a9a3c4adc1116387fc8887589d8face",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b482695c53dbc0629f406fcc2823fb1904a77a37d6b488cd75f800ab70536afd",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/SentientShards/SentientShardCommonItem"
+      ],
+      "file": "5bac071f13ec8a35e8b8.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SentientShardCommon.png",
+      "originalSha256": "5bac071f13ec8a35e8b81b3d8848a5535f111851305b393bb0697d6de27bb79a",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2a74b3d2f0de496af767125735b943231c49edf02a7950bc780346f2e7906acb",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AcceltraPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AstillaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BazaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BoarPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BoltorPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorinthPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/EpitaphPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/FulminPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/HystrixPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KnellPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/NagantakaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PanderoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PantheraPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PhantasmaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/Prime1HShotgunBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeTigrisBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PyranaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/RubicoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ScourgePrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SomaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StradavarPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StrunPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SybarisPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TenoraPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TiberonPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TrumnaPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VectisPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VeloxPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ZaktiPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ZhugePrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ZylokPrimeBarrel"
+      ],
+      "file": "5d1ccbae0e62d8841fdc.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericGunPrimeBarrel.png",
+      "originalSha256": "5d1ccbae0e62d8841fdc22b2fb28d383cc9b040d6c518e09ea241617b0086f2b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "092a335be35b90bab02289e15eb47e09aeb4d442e6944bcf29dfd66fe94f7b76",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KestrelPrimeGrip",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowGrip",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosGrip",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuGrip",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerHolster",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ZhugePrimeStock"
+      ],
+      "file": "5dfa35364223400ae189.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericComponentPrimeLatch.png",
+      "originalSha256": "5dfa35364223400ae1896f6bbff250b6a1bda514b4571252077740575dc9dc4d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "04ba6d6451eb58679ba7e3871a5047b742b0bf8398d3ba304fc1f3074bdef088",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/OrokinFishSaganModuleItem"
+      ],
+      "file": "5e71295306ef4a0fe52d.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartSaganModule.png",
+      "originalSha256": "5e71295306ef4a0fe52d7441f6111d832e9210f62140af8403176e152333c542",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d473c210f63b99dacc070301ec84a61c248a78c02663bff52ba57c4a626c5a9a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishDissipatorCoilItem"
+      ],
+      "file": "5fac680770ff85b7faa9.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartDissipatorCoil.png",
+      "originalSha256": "5fac680770ff85b7faa990cf53e942c2104df9824ffcfc32fa273f1f791e27d9",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "937d9d9cc37403b091289ead44b2e38790844d9a9ffa137d4773944311cb4ab2",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriProcessedItem"
+      ],
+      "file": "67b8f4cc8357cfcc601e.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPearl.png",
+      "originalSha256": "67b8f4cc8357cfcc601e89e79b8b5193d21a5081187d901af2df0c307547b999",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "01d1c9d4ec9ed5d0e2987e41a869a55bf075a669e69f38130518d5bec0dded5d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidCamperTerraItem"
+      ],
+      "file": "6869ff9a292403338197.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CrpArachnoidPowerCoreCamperTerra.png",
+      "originalSha256": "6869ff9a292403338197001bd4b6294fc08dd353e6809403223a0f472ae5a25e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "99c4e5bc3fd4d4412453f38767dd8e174d487824b2c165ae166b977f41e9c1e6",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/RailjackMiscItems/AsteriteRailjackItem"
+      ],
+      "file": "68d943f09ef5939190a9.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentAsterite.png",
+      "originalSha256": "68d943f09ef5939190a9b996f73dad63e9971936a9613bc4b288c132fcf92d84",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "e31e8638ca60a3fe57e2fd6f22095fc691d359e49e7f3ea6c84bf7bb224fc060",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelCarapace"
+      ],
+      "file": "68da87ba52d12bfe0ddf.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWarframeChassis.png",
+      "originalSha256": "68da87ba52d12bfe0ddf1f8f3a27e630fe80da3b2505c09e484dcba26a591900",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2befd415fde3c5143922ac7a3cee58a9b401ae054ed80f330693e32345232008",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/OrokinCell"
+      ],
+      "file": "6930b9b1b71a415b5634.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentCell.png",
+      "originalSha256": "6930b9b1b71a415b5634e00955c73bffa3ee86012d0d784535c82f4a3133b1cf",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6c2e0def3aa305947e02a4fe92569b5dbf9e7b05d0fe2f12047be13c703328a7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishVenedoCaseItem"
+      ],
+      "file": "698f5d6de75bace0642f.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartVenedoCase.png",
+      "originalSha256": "698f5d6de75bace0642fa3791fe21d1d33f340d1d7a48687f22f3ddfa6e3e0d5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6357ffa8890def3d21627022f08c04aa915433c3199ccbe69dab6bb49126015e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/UncommonOreAAlloyAItem"
+      ],
+      "file": "6a767a0c07d7f56c8c90.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/UncommonOreAAlloyA.png",
+      "originalSha256": "6a767a0c07d7f56c8c9054d476913784eabdf71decdfbaa7c22d1d2b9a9a9a7f",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "a39237dc5a8f9ff5cd9de9229790ebc761777c86289f4434a75744d45691c56c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetCItem"
+      ],
+      "file": "6ab8f851e7e34227b784.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CorpusWidgetC.png",
+      "originalSha256": "6ab8f851e7e34227b7847c9487f656c4cdbdffcee1ecb4e448bfd787d55b659c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "420679c873bdb8a73e63f48083225e2e21b28ce9940246a3ef63120731842c37",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/RailjackMiscItems/CubicsRailjackItem"
+      ],
+      "file": "6b84cf0e13c1ef15892c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentCubics.png",
+      "originalSha256": "6b84cf0e13c1ef15892c8a07bc2b6534570ef345c48a66822f36b6a47ed0f396",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "90dff22218cbe60351b9e26c75eaa9dd17715f12dc9fa0856ad1252c4a5bcd6c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosRareOreAAlloyItem"
+      ],
+      "file": "6bd715710ffb266fd6e0.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosRareOreAAlloy.png",
+      "originalSha256": "6bd715710ffb266fd6e0f3b5f8123f527e809c2785ac5718599950d0ee2e7b76",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "859e5748c78a80563a5f4ecad20495f70349f5cb101f0408ff99fececd85c3b2",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MushroomJournal/CorrosiveMushroomJournalItem"
+      ],
+      "file": "6c3e8e519881e81faaaf.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MushroomIconCorrosive.png",
+      "originalSha256": "6c3e8e519881e81faaaf3a34e15eb521ed2f1a2c8955d849972b32b1be54dd4c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "05578dc836e011c479d9b07647438332b76ca3abd5c33608778f6b7e3b8bf38e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Rubedo"
+      ],
+      "file": "6e768e699fdd031885ea.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentRubedo.png",
+      "originalSha256": "6e768e699fdd031885eaae2fade120bb22097125462d891b04f229a2f1f2463d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ae94f9eb42a1848b3d362a55df28b2def25d3c3b12c6d1729d0053d860341311",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/CetusWispItem"
+      ],
+      "file": "7298c59de348c3bc2535.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CetusWisp.png",
+      "originalSha256": "7298c59de348c3bc2535fc21731aab07fc819aa48dccefc2c9ccf4082e27feb4",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "65caa8203d27d295f00cbb2d2d51e0bf9362897aef9034abb716e3f125f796e2",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/EidolonFruitItem"
+      ],
+      "file": "735c47c2f642de77b33c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EidolonFruit.png",
+      "originalSha256": "735c47c2f642de77b33c61ecbbb3f6e0fb96fdca7e2bc158235f10c3bab3d63d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b194588f123397093cb4f7bc611ee68ff973ea55e40408cf61345186a6113e84",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/AlloyPlate"
+      ],
+      "file": "7468ede4353dc4325e42.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/AlloyPlate.png",
+      "originalSha256": "7468ede4353dc4325e428c16ac0fcaf2df47414790f7fc170322271112a99cfc",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2b53dd06db4e7174f06eb3bb572a0daf4c0fd24b1350845d599acd7ff7dcc6d5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Tau/Resources/TwelveResourceRareItem"
+      ],
+      "file": "74c58abc114e78083289.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/TwelveResourceRareItem.png",
+      "originalSha256": "74c58abc114e78083289e5ec1ead252b223aa69f587c87cf03a5512dab46d128",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "276d5e3f65a6f33d93a398a27a8ac1abb815d866a9efb44d988055d113943551",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreBAlloyItem"
+      ],
+      "file": "774874ba03f49d949be2.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosCommonOreBAlloy.png",
+      "originalSha256": "774874ba03f49d949be27a3e05bc3d5304faee76ebee13adb889ba893358fe9e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "a652c97f24ff27749f5f49852e6a50fc035cc03819b7b8b1656eff8f8966e119",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosCommonOreAAlloyItem"
+      ],
+      "file": "7af59ee15945865332c4.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosCommonOreAAlloy.png",
+      "originalSha256": "7af59ee15945865332c44eb318ed6a47bbcb2590c9df1cc15d39c4301d66fcfc",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1bae2359a493f0a5a337969499d62432a6e088939e99bf3fd2b09595dfe3f83f",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/OrbStoneItem"
+      ],
+      "file": "7c9f1bd6f75534fca2a2.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/OrbStoneItem.png",
+      "originalSha256": "7c9f1bd6f75534fca2a2afbf55c38e82a4df3eba30cbc55a94765c8b37d03e5c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "fc533a78a84f69c9081546633e23876669e145399cc122199404bb32d710d121",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordGuard",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldAegis"
+      ],
+      "file": "7cb8cc43a874d9a09635.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericComponentLatch.png",
+      "originalSha256": "7cb8cc43a874d9a09635ce295253273cd5cd9868a843686c384d025da6070368",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "34d78ccc396c680487a3713a17817322aac1618d4334a4f5b75ecf9f34bbc42c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/RareGemACutAItem"
+      ],
+      "file": "7e03fd8238b2a472be1e.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RareGemACutA.png",
+      "originalSha256": "7e03fd8238b2a472be1ee48282bd4256d036d36892e2224619806f92e8b52580",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b5c0b36a30f587e6d71025c0c1a87d4e778bf00961d01e96041e8508bfc918bc",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabMiscItemB"
+      ],
+      "file": "81bedbebc54677daade4.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EntratiLabMiscItemB.png",
+      "originalSha256": "81bedbebc54677daade4acba93d7800bfb405160f7bf91c9330b54da0b025ad5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "7ac29ec903183ba612220eb2bc7232aeaaa65c690151024225c23c5b2d6c0f42",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/RailjackMiscItems/IsosRailjackItem"
+      ],
+      "file": "8245d3b98df904bd27de.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentIsos.png",
+      "originalSha256": "8245d3b98df904bd27decae8cd97162894ee3d76f2b6307a37a0933922b97be3",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "c18694b27978f148addea9fd29f0f9e92b10210e9bbbbfc9bcd43493e4031837",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/NistlebrushItem"
+      ],
+      "file": "83011921172f67fcbc18.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/NistlebrushItem.png",
+      "originalSha256": "83011921172f67fcbc18a42c7efb87cc84c24cb69eead8fe42578b7ee0fc15f9",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1340c4cabf9ef955bfb2382bc4770b0e83b8a68cc347bbcc9d48dfafe6f4f77d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/UncommonGemACutAItem"
+      ],
+      "file": "83a96eec6326f0f6f813.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/UncommonGemACutA.png",
+      "originalSha256": "83a96eec6326f0f6f8132c79773ffb79fb73f2e33901fff3d9afa0aa77b9aeb3",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "c3752aef2c446fecce0c999ae7df0fe698cb147abc0caa96601f773f5fb9f4c7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/RareOreAAlloyAItem"
+      ],
+      "file": "83bc57ff146acd74a02d.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RareOreAAlloyA.png",
+      "originalSha256": "83bc57ff146acd74a02d396ea4e5cb42203e1dc1ef1432acee4bec06bf1cbc75",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "5f21591d8f41b3bae47541863cb3aec0a23f11b43279e7aa73c8523471c2e6cd",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Eidolonium"
+      ],
+      "file": "847420b6fc1257d75166.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Eidolonium.png",
+      "originalSha256": "847420b6fc1257d75166a27af1f67ffb9b9901ed4c11413f569f3c58955863a5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "c0a5da5c58fa662b6291c5c6eb55847e409ddfd4baf96274fe5445644f08aae0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceCommonA"
+      ],
+      "file": "855965440b4b31599be0.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/1999ResourceCommonA.png",
+      "originalSha256": "855965440b4b31599be0037fb8c0b03e3c2904e2bdcd48fa64b7edcab8b52eeb",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "10d942a2e498592c587c2ffba591efc4bc3d920795ff76caa814e556739533b4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/EidolonGemACutAItem"
+      ],
+      "file": "85f2c1db7318511e1f32.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EidolonGemACutA.png",
+      "originalSha256": "85f2c1db7318511e1f32b3a77579b191a818eacc6610920ea39b4b6caa61e8a8",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ca10c808a092a668a3c03e43bedf5211cc60b0a415c66ed26de05a53d83c96f7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Zariman/Resources/VoidAngelItem"
+      ],
+      "file": "882ef5b85b0da572cf59.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/VoidAngelItem.png",
+      "originalSha256": "882ef5b85b0da572cf59e82a789c94938905e3bb84e7e8b6f689f7b95fb2d660",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "61e0809c99962c021f7dc49372f9afb4c1166f511a8bf0c5e054400764fa4205",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishBPartItem"
+      ],
+      "file": "89208af47cd732351740.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosInfestedFishBPart.png",
+      "originalSha256": "89208af47cd7323517402634271f484f030e1d1579957202a302b3cd4c421de0",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6b20f0f7d5ad6196a77455021e4aa68d5290f74ca63e495e2c64977656b83d51",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericSharedFishPartItem"
+      ],
+      "file": "89d79a3373a867b13f7c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosGenericSharedFishPart.png",
+      "originalSha256": "89d79a3373a867b13f7c84c0e7ab443f152735cbe0b05bdc45bf2becb3a9c47d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ec158c277e709e3dde592a090581a3ae126dedfd884ae5e95d143d8455bf573a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosUncommonOreAAlloyItem"
+      ],
+      "file": "8ad2147941e933c1d820.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosUncommonOreAAlloy.png",
+      "originalSha256": "8ad2147941e933c1d8206b9ba652378057f83f4c4d4bc99c878b0bb61759d5b6",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ee73c687ae06c11065e5e68980d644c6534285f5d9a84826350a8cc3f1b8a8f4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/1999Wf/Resources/1999ResourceUncommonA"
+      ],
+      "file": "8d6c9f86a99a5129aca3.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/1999ResourceUncommonA.png",
+      "originalSha256": "8d6c9f86a99a5129aca3b6fd56a33e041b34621a0f71939e7e2cd45a5e1f2550",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "293e9faf12a3fd3dc57688874a68cff84e4f587dd3d9c941027775f674022a60",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/CommonOreAAlloyAItem"
+      ],
+      "file": "8d96a0451a912f604f7b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CommonOreAAlloyA.png",
+      "originalSha256": "8d96a0451a912f604f7b22a20c13eb75a9b159036c6eb2ce97dac1c286cc6f4b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "76cf771be25aaa8439bc19852dc35d64fbbfe581210d0d36ab50b4d828108e18",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MushroomJournal/RadiationMushroomJournalItem"
+      ],
+      "file": "8ea0c5c808f6aa7a8416.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MushroomIconRadiation.png",
+      "originalSha256": "8ea0c5c808f6aa7a8416cb30bf955caf6be71d159608aa3dcf436c6ff0c6d067",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "a48655150995e806acb138c5ad89971d28ca74e758e42064f7071dca23e0f78e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHead",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGhostCatcherGlaivePartBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGunbladeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/FuraxWraithLeftGauntlet",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/FuraxWraithRightGauntlet",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GrnChainSawTonfaBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GunScytheBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/InfBoomerangBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/InfWarFanGuard",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MiterBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MortiforShieldAndSwordBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TeshinGlaiveBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ThrowingHammerHead",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/WarBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/WolfFrameAxeWeaponBlade"
+      ],
+      "file": "8fbc23afd6cad8c134e1.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWeaponBlade.png",
+      "originalSha256": "8fbc23afd6cad8c134e19455ab2e620bd43f978dd4b1df5d75cae94fac057849",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "03441d62986e9a1d5b464c8d739785ea43f3993eaa8c6e4d8c263b1cd87bcc04",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Keys/BardQuest/BardQuestSequencerPartC"
+      ],
+      "file": "905c5c1501a86fab62f4.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MandochordStrum.png",
+      "originalSha256": "905c5c1501a86fab62f486eeca234cd16aaa464e9dacd6d2daf903bf3cfc872b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6148bd06d2c72afa955cce18046d3f1e56f0eb103909e2a561347c95b75b1000",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishFPartItem"
+      ],
+      "file": "911bb7770ffb5ad1cc7d.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosInfestedFishFPart.png",
+      "originalSha256": "911bb7770ffb5ad1cc7db620ca9e73b78e2e0d76a8762cedd9f78e9dd8502365",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "4f18e212637864ca3c45d1d55fb12be782a845c23eab2ce6251522876f1e3834",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonOreAAlloyItem"
+      ],
+      "file": "919601ab59b801736523.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisUncommonOreAAlloy.png",
+      "originalSha256": "919601ab59b801736523a89d7877634baacbec30031ca1cd8465cf636ad5a41c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "439d48863e8a68d1da65a6e1ab6905e920fea157e4676f273db612a41f4190d0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/NautilusPrimeSystems",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierSystems",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDethcubeSystems",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHeliosSystems",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmSystems",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ShadePrimeSystems"
+      ],
+      "file": "927c0addf75b4a7650dd.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWarframePrimeSystem.png",
+      "originalSha256": "927c0addf75b4a7650ddcf500f7e861f8f51f20e85225ccf315e621e299c21b2",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "c8e60bb7cda81f9e304c6c1097e7ff2d08a6666e0b48bb8a1ae0e8256a395b01",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagCommon"
+      ],
+      "file": "929d08b067e238b51f28.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EntratiLabDogTagCommon.png",
+      "originalSha256": "929d08b067e238b51f28fbd66d18d8d095f269f68e08eed1738baaaedfa2410b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d3ed9c3644b5b8265c4276d696b8867d8bd92abe5d8599a069e646290672e5c0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosRareGemACutItem"
+      ],
+      "file": "939afaa20919f73b3809.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosRareGemACut.png",
+      "originalSha256": "939afaa20919f73b380955c5f360c81a9872350cbd9b20c7cba44cb199b86f1b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "87b3712958bbd98ad7891cb8e5fdcfaeddec94a015999446018fe18c0ceb5421",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosInfestedFishGPartItem"
+      ],
+      "file": "93bb7e19918422283c23.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosInfestedFishGPart.png",
+      "originalSha256": "93bb7e19918422283c236546e1a264bfbc1ca4b52b9b0375547fa178c266e210",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "062db3e8a7431ade19dc8d4eebe5af76af54204b08bd13da3650fac6fcd7e67f",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/NightRareFishAPartItem"
+      ],
+      "file": "95fa5212c7dc7603e6f7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceBrain.png",
+      "originalSha256": "95fa5212c7dc7603e6f788839c11722a55e5afa00262599fbd0ce65d73b3e8e5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "22beead0870f484402074a52b89788fbd022a083ab57170a32b5099292120d30",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Keys/BardQuest/BardQuestSequencerPartB"
+      ],
+      "file": "969e2d06f6a9ebe761de.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MandochordResonator.png",
+      "originalSha256": "969e2d06f6a9ebe761dead87a5541b5ace922353a7963f2529ab68e100870bc0",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6592bbb28cc989e92304fd0ca02781ff775aa85e9c725baa1d5fdee095e31ec8",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanMiscItemB"
+      ],
+      "file": "979a9efea9e5eb3beae2.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ZarimanMiscItemB.png",
+      "originalSha256": "979a9efea9e5eb3beae2388de1799cd30aae7ad2a2c9405b6ef7f4285fbd97f4",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2cc0773e50b32c4bb35d50484f7d2b2ddd38605ce4f00c266f15a768b181c00d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelSystems"
+      ],
+      "file": "9833d913904e5c476a56.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWarframeSystem.png",
+      "originalSha256": "9833d913904e5c476a563b5cf3d701c669bc2f9624bbe569d0345f644d1e4807",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2589eb01b32bf0f943fa873377845ad83830adaf36a410669e566cff1772fb5d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishExaBrainItem"
+      ],
+      "file": "996be27762a8938bef3e.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartExaBrain.png",
+      "originalSha256": "996be27762a8938bef3e9c48b3794c5c026dcf3f0023a79cb21963118c39cb31",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "c01d753821790f4447cf971e125d6b6726206294e1604bc0dddac50ccd479c77",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartSystemsItem"
+      ],
+      "file": "996deb8607bafac73f84.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DamagedMechPartSystems.png",
+      "originalSha256": "996deb8607bafac73f84e17a53c0b6b93978fe0d3ec5e09ddfb60329d84c87d1",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "42b1b820f3e1845e24322c2adb053ae9ddacdc5c7b04d97c63a82a741748c656",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosCommonGemACutItem"
+      ],
+      "file": "9981087554163578d136.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosCommonGemACut.png",
+      "originalSha256": "9981087554163578d136c593c4d4105be4e6cec8a0a5eaa738549e7c060b757b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "52843c343556ad9c2f86162b184276ea46b4187d1ab678646a07f92b76be6393",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Salvage"
+      ],
+      "file": "9b2c160daa3ce2dd09e7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentSalvage.png",
+      "originalSha256": "9b2c160daa3ce2dd09e7f17c0f141d186919f5c26c3d8c4b79c3c737377c031f",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "8e1353fb5a78c1abbfae581a590d83812b6fd721d9969f42a79fec518a51a5f5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/DayUncommonFishBPartItem"
+      ],
+      "file": "9be01055a381f721f3af.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceHorn.png",
+      "originalSha256": "9be01055a381f721f3af67a90fcff150f367145d50eeb33ab53096443a3ee2aa",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "db540f32adc9e94b735414b45648d4de444796d5f1a4c0d10cf5e67d512abd38",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Research/BioComponent"
+      ],
+      "file": "9c0d947a6ee5ba2889f9.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/InfestedComponent.png",
+      "originalSha256": "9c0d947a6ee5ba2889f9b4177ece1d3e612689bff4b92d9d797bdeb8e530e54c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "5d079cc29a9823b967148be5ce0803514dc585b7fd86984061670aa39d6f2d54",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/RailjackMiscItems/ScrapRailjackItem"
+      ],
+      "file": "9c1a6366030c55e20308.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentScrap.png",
+      "originalSha256": "9c1a6366030c55e20308f6e54ddedcc0119524dcbde9497a4298185fd6311889",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b5de0bdf27579d487e5caf3f09b2d4f175ad06b4b192cc8f632d0bda14a36ee0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Research/ChemComponent"
+      ],
+      "file": "9d7a4063343e0f605875.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GrineerComponent.png",
+      "originalSha256": "9d7a4063343e0f6058750e0f3ab858e20da27937bfc8473211e5eeef4892bc2e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "302d88f37701f4b6809d774bbc6ce25c54ea5922c1c5551fa04b3c5d970c5538",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Circuits"
+      ],
+      "file": "9e2a2656afe1d1660392.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentCircuits.png",
+      "originalSha256": "9e2a2656afe1d1660392bf8c0484560e620a72e10f82178e7cc81e642b3d088c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "8179c3794e652a6e64e3847234df34c7a4f35d9ff0481bd19d7c044e844c8cb0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MortiforShieldAndSwordGuard"
+      ],
+      "file": "9e9d30b5da5d3b6c5661.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWeaponGuard.png",
+      "originalSha256": "9e9d30b5da5d3b6c56618a8c7122b65368075c3c446b880102e9968d6b46325d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "4ea2d4f47eb2dfca515a68adfbae056de7b4b91d2bdfb08a3670345b7784df7c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Keys/BardQuest/BardQuestSequencerPartA"
+      ],
+      "file": "9ec932970655404f5220.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MandochordBridge.png",
+      "originalSha256": "9ec932970655404f52205c7a3a3d3b1b581ac725a393ead63e71c4050b01fd02",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "13d1098c84fef1a1a23a768e7a2666d85c578c9fea4e16fda658751295f67988",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemD"
+      ],
+      "file": "9ecb1bc1215c40d10ddf.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPlantExtractD.png",
+      "originalSha256": "9ecb1bc1215c40d10ddf5098e5ad67efab407a204b850f5da12464b7a147c138",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ec9cb70c6a5134e6ab9465e8450d289d8a733bef049ec774c895cfcb04fcbf3a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreAAlloyItem"
+      ],
+      "file": "9f6676f8b7a2375cd9e3.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisCommonOreAAlloy.png",
+      "originalSha256": "9f6676f8b7a2375cd9e3b09bc25ba2a68bec88632c8c792cf13d63f75ab9efa7",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "62829358d09958d84e317f53aecbe5981556f62c2892988e304592f5e9c65ff9",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothRareFishAPartItem"
+      ],
+      "file": "a2504121107b146414b2.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceOrgan.png",
+      "originalSha256": "a2504121107b146414b2f1bac909b4faaff619844a61bf0d2b29feb138cba6f7",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "99f7770f40dfe23ef8b299d631ea7255642cc6041822800a48e7cf7e64e5f0d1",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Research/EnergyComponent"
+      ],
+      "file": "a3815d1141ca903d4a10.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CorpusComponent.png",
+      "originalSha256": "a3815d1141ca903d4a105794d2f99f670754729e426d51fa08a665b6f5f931b6",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "5785798ce260ff714ad6ee282a4531c9fb610d1128d20dde2e807d3066f8625a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Morphic"
+      ],
+      "file": "a3a2f2750ea7ae30f61a.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentMorphic.png",
+      "originalSha256": "a3a2f2750ea7ae30f61a3df2e3bae588274e2f9bfc921eaf4acc7c7668e9279d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "0297c768c4440a25948f36f84d4a4436d1d0dbf19c9c088e17e9cd47b1716d8c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/ConcentratedGas"
+      ],
+      "file": "a3e1320090c580636813.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentConcentratedGas.png",
+      "originalSha256": "a3e1320090c5806368133b26c9c576a5f8d309a7d5fa7e32e96da85dce807518",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1bcc012d037e956da1e485110439ea164cd0cbb6746829bf53ee7d2256ef864e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisCommonGemBCutItem"
+      ],
+      "file": "a459c26fba82e8b25f06.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisCommonGemBCut.png",
+      "originalSha256": "a459c26fba82e8b25f06ccdedc50c959c69b28b83e22d3111c616b9f137f710d",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ce932e344499ca23c7ef24f0e1eac8c66394a98781e6d0e9bbb5b265f19789a5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabMiscItemA"
+      ],
+      "file": "a632d0d254afb94d2417.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EntratiLabMiscItemA.png",
+      "originalSha256": "a632d0d254afb94d241704055ea6c2969278431da3257e207154f377b0d90a4e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2c0267b07d4f214cba3d52ac341c57437971a2c6a198eed731a30e1027eab814",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/VenusCoconutItem"
+      ],
+      "file": "a7dfd1706eb010b92f2e.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/VenusCoconut.png",
+      "originalSha256": "a7dfd1706eb010b92f2ee8f33c77135d21b1d5d4ff0e1a5cdccd268aab7752ed",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "5bd859598c733952fd388b54b419c5d9dcf654f94346eae22598f952e891a763",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishBPartItem"
+      ],
+      "file": "a8cdfcd7aa9014b8295b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceFleshTube.png",
+      "originalSha256": "a8cdfcd7aa9014b8295ba86a535e8ad802696510757d4ecf87e57a49680d9dcf",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d81bf1c4ac616fc8e71502d02e48c6164a7de98d404c27a36e27ca766f43e4f5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/FungusHeartItem"
+      ],
+      "file": "aaf0cd5122ef4aac8e2c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FungusHeart.png",
+      "originalSha256": "aaf0cd5122ef4aac8e2c803d87baa9f030f4686f3585c8e59f4e0d3792a98ca0",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "e022b387277fd1fd9ba8b3f852f03979c6606e3ba96326d7d125adb22063b808",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Tau/Resources/TwelveResourceUncommonItem"
+      ],
+      "file": "ab6004679b41998c99fb.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/TwelveResourceUncommonItem.png",
+      "originalSha256": "ab6004679b41998c99fb90fd6ef10da60be8efe13963a3ccbd524026714b7765",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "cb0035703a5717229b65e2ca347454bd26a08ce9825aa89d76830ca9e46b70d4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/RailjackMiscItems/TitaniumRailjackItem"
+      ],
+      "file": "ac8f56963a2ae18fe816.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentTitanium.png",
+      "originalSha256": "ac8f56963a2ae18fe8167c3f778f65a4d8a0aa30e3dbf0f02f2ed1e99a1dec84",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b97ba5e8f6d3da47353276c143d98a1693e1a910d9b2774c039e9f61d7100fcd",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/ShrineFragment"
+      ],
+      "file": "af3b550ab767206e3f33.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/StrandsOfFate.png",
+      "originalSha256": "af3b550ab767206e3f3319343d4ebe453c8d888ecb58e1099c64d6e80122b91b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "e6b2f591a65db122ed368b45802b1866a5f61cccde7030a474799d9d6b25aa4b",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfGorgaricusSeedItem"
+      ],
+      "file": "af79bc40a2a1b8e4e6b1.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/InfGorgaricusSeedItem.png",
+      "originalSha256": "af79bc40a2a1b8e4e6b14f76973a7c0f6c74ce5df2a5dac1038dbbe9bb06fec8",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "9333178569fefbaa6140a8edae077002692024af62bc46b991242067d2eaba50",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisCommonOreBAlloyItem"
+      ],
+      "file": "b1318e70c7472d6e5477.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisCommonOreBAlloy.png",
+      "originalSha256": "b1318e70c7472d6e547789b6f0ad03e5cf275ebad16e015b5b4165b09e726c13",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "9d667cad9efed4fedb5e35b821a88682e57bad1a28cfdfd96ad780953b2b3716",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Deimos/DeimosEidolonGemBCutItem"
+      ],
+      "file": "b1f6a3930633540a5163.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosEidolonGemBCut.png",
+      "originalSha256": "b1f6a3930633540a5163b1f52cfc6fda9999da55c749a9a805f584cd60f2ac97",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "404d9f7d36445372c81e3fecd2c0274aa04eaf2c88edb6faa58947d3300d53f7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Research/BioFragment"
+      ],
+      "file": "b3d92e45213101ee9885.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/InfestedFragment.png",
+      "originalSha256": "b3d92e45213101ee98855d15ac67974ed861b92df7d2740c2cc8999db03bc6ab",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "f53877ee1bb860f1cccbb3a1c3ec05bf1157f55edb94b77ebfe4ec666eecf1f6",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/DuviriMITW/Resources/DuviriMurmurItemA"
+      ],
+      "file": "b41f4024b4bfd49abd19.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriMurmurItemA.png",
+      "originalSha256": "b41f4024b4bfd49abd1922552657bbbeec6981a9201470a58ac59dbb8eba1bb7",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "cf0216c726a7ef0e42f40ed52d56ce9d991d8ce8285c04462fc8bdd38b38c119",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/EmpyreanSentinelCerebrum"
+      ],
+      "file": "b5687dba2fd5790443a6.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWarframeHelmet.png",
+      "originalSha256": "b5687dba2fd5790443a660d4e06f6dcb48fc6938c71848ff5c82b0a41ad998d3",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "01b8f260422c6816eddfca1689e162140abb0a85d44f074d385c1256ed42c00c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Gallium"
+      ],
+      "file": "b702fdc4bf790d0ff7f1.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentGallium.png",
+      "originalSha256": "b702fdc4bf790d0ff7f12ea5613138ad90b8976df6882a2be27876699e675b73",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "e7080c78ead534c86932d5d1f974d29fc4a0f0e94d20d8060348fb42266cc406",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/CorpusFishParralelBiodeItem"
+      ],
+      "file": "b7b40ad834c37f6ed3a2.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartParallelBiode.png",
+      "originalSha256": "b7b40ad834c37f6ed3a266c937487e7872d1bb700ab014a72622f02aedc4ac74",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "160475ec620c2d9516f3768f8228032329cba933f58704596179580c2e66c933",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Eidolon/Resources/QuillsDogTag"
+      ],
+      "file": "b840d9b706093e83c47c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/QuillsCommonPickup.png",
+      "originalSha256": "b840d9b706093e83c47c2f6b045f44ae960b793f4fe9c4e8343591dd5eb7b978",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d3a5ba0e1af5dcbe6366838c0cbf239a413cf3acc8b0baa2ca1b3d376fd4299a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisRareOreAAlloyItem"
+      ],
+      "file": "b8a06e2f912868243d85.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisRareOreAAlloy.png",
+      "originalSha256": "b8a06e2f912868243d8570d75e40e96ce6b7295e157108da061bc751ded3ffc0",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ac49bd6d55609cc26eab482b1cc6b030266e62a739312fdee275043248f6f6d3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHookSwordHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchScytheHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GrnChainSawTonfaHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GunScytheHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MiterHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MortiforShieldAndSwordHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SheduHeavyWeaponHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ThrowingHammerHandle",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/WarHilt",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/WolfFrameAxeWeaponHandle"
+      ],
+      "file": "b99548d02eccc4983277.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWeaponHilt.png",
+      "originalSha256": "b99548d02eccc49832773bc9faf3a5b6e13ac488cdf912c7ccd023f01f34e7e7",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "518950ebb1766c64cf9e5fcfe61213a8bc68e76fb8a7a7116c23087acf94cc05",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosGenericInfestedFishPartItem"
+      ],
+      "file": "bbc4b69d6799d41cffc7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosGenericInfestedFishPart.png",
+      "originalSha256": "bbc4b69d6799d41cffc7ae40767dc57b99b9143e969cfcbc3d276b7ff49c5314",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "1e6caeb20b78d6e4b747189fba0ee6ab16752f4ab7640de2599901d83928bdb7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/EidolonGemBCutAItem"
+      ],
+      "file": "bce97ce82794d7bbf37e.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EidolonGemBCutA.png",
+      "originalSha256": "bce97ce82794d7bbf37e3ef51e4347871ae9977757d90bfadf7b5be232383759",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ce9e2debc2748d70b5148449f0ca5ab5ecf245b946fc6b1d64d87ca7bc14967d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemACutItem"
+      ],
+      "file": "be4a359bb3de7ad2fefb.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisEidolonGemACut.png",
+      "originalSha256": "be4a359bb3de7ad2fefbfb9f8fda26c34ae03a3fb3268fab443de4e748c977fd",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "29fde882790053ad8cb895b49d1532a4f1bca816c6ae8ad3b6e8c77ce8151360",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Zariman/Resources/ZarimanDogTagBounty"
+      ],
+      "file": "bfabbe2d422419d7b33d.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ZarimanDogTagBounty.png",
+      "originalSha256": "bfabbe2d422419d7b33de24689cb399a854c891a8e43eaa4d8481788b40f4c44",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "159e49c2f336ccc4469b602568bfb76735d33bbb1bd140e801a984e8fc9757c0",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/SentientFragmentLootItem"
+      ],
+      "file": "c2d903f95d018c22bdd7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/AnomalyShard.png",
+      "originalSha256": "c2d903f95d018c22bdd7d53f226e6f64a2f48570e957781ae2c17f40bff0155b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "91f5bb7b13a74de6cd87efede1b4f3048d9a7fc4aeac905dd263a42682351c95",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisEidolonGemBCutItem"
+      ],
+      "file": "c344d4a3a13424cd6c40.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisEidolonGemBCut.png",
+      "originalSha256": "c344d4a3a13424cd6c40876782404fc7b63520845653b75fdb03a7ef97a9e4fa",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "87da7716279e1d7cb217c0fe943cb3dc238e277286cd90b1c8d242d848d3558a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/ControlModule"
+      ],
+      "file": "c7aa42702ccd4f453fbf.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ControlModule.png",
+      "originalSha256": "c7aa42702ccd4f453fbfa2379aa2bf5716381cfd1267f68f051967db51e01b0c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "c1df14443a0e628bc75ec00813094bf876f902c117f1bcd4438dbd9f26ee2cbf",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MushroomJournal/MagneticMushroomJournalItem"
+      ],
+      "file": "c83ffbbef159374f1759.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MushroomIconMagnetic.png",
+      "originalSha256": "c83ffbbef159374f1759557305b9d835954c61fb70599a8581a613281f08ea9c",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b3f9e59662eacbb453808e281009c804856b31fbdb258bdd9cfe96eca3dfe17b",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishOilItem"
+      ],
+      "file": "c9734d7efa2ee1ce0f8f.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceOil.png",
+      "originalSha256": "c9734d7efa2ee1ce0f8f1007021c233a9445892cc16efed7c4087ee8896cc8f3",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b27f659ae03da11558fe34c16cf349ee80ba15a5f9d405ea76db1a8a67e46a38",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Alertium"
+      ],
+      "file": "c9fcd05e03e177d8b29b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Alertium.png",
+      "originalSha256": "c9fcd05e03e177d8b29b0a05cbcf88220f6db777886836fb12b9de62f58b5f84",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "341a3716b836cd0808a764de9e95bd9e6c88e231dad79873f6811b3d8aec358c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartChassisItem"
+      ],
+      "file": "ca008bc2392f39b73962.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DamagedMechPartChassis.png",
+      "originalSha256": "ca008bc2392f39b73962fa6fc27273518a73a5be1ded52aa168a919a65235892",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "e5aec4e81f236e58090fbb5023cefda2e831ebc86df15869c30706f8602f4f96",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishScalesItem"
+      ],
+      "file": "cc159dda4aafaf3fd66b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceScales.png",
+      "originalSha256": "cc159dda4aafaf3fd66becdb44663cbf75105924abc756bbe8c2e991a51f33e1",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "04f3ceeb8c158e0eae77b0354a677857aee7a5b1e0ef23c0a5a318a2e9244de4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MushroomJournal/GasMushroomJournalItem"
+      ],
+      "file": "cdb111cb35acf2440cb8.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/MushroomIconGas.png",
+      "originalSha256": "cdb111cb35acf2440cb831981fa39258bd670d6dbb987c2856adce3fa880b0cb",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "f0191554b94def3cbcb04d5cb3c58e99cb8bbebbf7386c6799ef006893d755a5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AcceltraPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfurisPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkariusPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkboltoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkjagaraPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AksomatiPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AlternoxPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AstillaPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BazaPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BoarPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BoltorPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CedoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorinthPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorvasPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/EpitaphPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/FulminPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/HystrixPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KnellPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KompressaPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LarkspurPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MagnusPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/NagantakaPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PanderoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PantheraPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PerigalePrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PhantasmaPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/Prime1HShotgunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLightningGunReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeTigrisReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PyranaPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/RubicoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SomaPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SteflosPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StradavarPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StrunPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SybarisPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TenoraPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TiberonPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TrumnaPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VectisPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VeloxPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ZaktiPrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ZhugePrimeReceiver",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ZylokPrimeReceiver"
+      ],
+      "file": "cef7e27d739988a92c03.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericGunPrimeReceiver.png",
+      "originalSha256": "cef7e27d739988a92c034783d1dfe929f825d23bacd5146d28e684c6f632d00e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "5d0f66112c0c10b0e5b4e81e63cf0baa7e8d9eb2a31455c23d131ff5f46edad4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Neurode"
+      ],
+      "file": "cfcbfe61eb6a8f5815b7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentNeurode.png",
+      "originalSha256": "cfcbfe61eb6a8f5815b75e19d4ab2dd81112316c04a333d5935609fbd6502180",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "c8e80fbf3eff6b9f1faffd2a34f85c534ec919eb9510ef8c310be78b0a4e936d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Plastids"
+      ],
+      "file": "d23d53a18d9af9f59fb7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentPlastids.png",
+      "originalSha256": "d23d53a18d9af9f59fb7d860cc319da923de83e2d9630a42dcb8b9bfc1393803",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "4efe7e85f0b58a1ee607821e2d9b8c728873a285bb896dea00cafcea421a30d8",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/CommonGemACutAItem"
+      ],
+      "file": "d4ab39908bd1ce81dbf7.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CommonGemACutA.png",
+      "originalSha256": "d4ab39908bd1ce81dbf74343289e53bd8084a7f39ec48abe41dc75469b046bc9",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b4362a2c596d3e7b20f2880076e311e1e11bcd34c994cbbc386938eadc3aa9bc",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AfentisPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AnkyrosPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CobraCranePrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CorufellPrimeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DestrezaPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DualKeresPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DualZorenPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/FragorPrimeHead",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GlaivePrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GlaivePrimeDisc",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GramPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GuandaoPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GunsenPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KarystPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KestrelPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KronenPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MasseterPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/OkinaPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PangolinPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaLowerLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBallisticaUpperLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowLowerLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowUpperLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosLowerLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCernosUpperLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCronusLongSwordBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuLowerLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDaikyuUpperLimb",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDualKamasBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeGalatineBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouStars",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeNamiSkylaBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeNikanaBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScindoBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScytheBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeVenkaClawsBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/QuassusPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/RedeemerPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SarofangPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ScourgePrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SilvaAegisPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TatsuPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TekkoPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VentoPrimeBlade",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VolnusPrimeHead"
+      ],
+      "file": "d5138701cdf24328e8ef.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericWeaponPrimeBlade.png",
+      "originalSha256": "d5138701cdf24328e8efb78f1a0ef0ac1f37c0f09a4562dc949c7f0224bce6e3",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "3a0fa52b8747727c72a4f0a2d257823f7655f3e9d262633a80c55df8eeaf1ea3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/DagathAbyssItem"
+      ],
+      "file": "d58b27ec5b94e3f82e1d.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DagathAbyssItem.png",
+      "originalSha256": "d58b27ec5b94e3f82e1d348af51f9aacd1a3224f850331add69faadd4527f4bc",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "6c077b50c574e62fae59a6a7691d3fa0f283ebf7b28d3736b5540bd5f3464e4b",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishAPartItem"
+      ],
+      "file": "d5a6d5fe7b025e91d809.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosOrokinFishAPart.png",
+      "originalSha256": "d5a6d5fe7b025e91d80953cb0c9ec6de47bb26a548abc93b00c7a13f897b5a43",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "75e04ff8bd65b2dab934022f2b62700bbde5e0ccaf0b3696dab8844900adc102",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetBItem"
+      ],
+      "file": "d72ceeab1e335121171c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CorpusWidgetB.png",
+      "originalSha256": "d72ceeab1e335121171cd550b013103e1eb77fec0ea57a41e564706610099c89",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "45f557f4661a265336bbaf4869e5e37743ded378f0235339ab07e05c9dc862f4",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/OxiumAlloy"
+      ],
+      "file": "d9e543329067cd8ad5d9.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentOxium.png",
+      "originalSha256": "d9e543329067cd8ad5d9d96b6fdd30920503c0fb9e0311911fdfcad350531c94",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "cff5179acc22034bdfd7f3aea5a40df28027336c4b4455a819682a0dfda8a887",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisUncommonGemACutItem"
+      ],
+      "file": "dad712f2230fafa476fb.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisUncommonGemACut.png",
+      "originalSha256": "dad712f2230fafa476fb1d2069d07c328c1ac332327a65bbecab39e6758c26e3",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "4dc7bd3633ea0327c4281e3dce628be1dd50a5f5fd11476ffe2aecda2f854c6d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Solaris/FishParts/SolarisFishLatheCoogulantItem"
+      ],
+      "file": "dc65b957964b60e0b412.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishPartLatheCoogulant.png",
+      "originalSha256": "dc65b957964b60e0b412ec715d9fdeb0759587c9cef40d3e75308d416fa51705",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b85c104abf3025c4aa447d2a67ab41743e7330c21d3cb66480ca0867e7fbb111",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Deimos/SeriglassShard"
+      ],
+      "file": "dcf952801dd782edf448.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SeriglassShard.png",
+      "originalSha256": "dcf952801dd782edf448003f07c9b963e87776dc74aef1c4f1cf8a35d5981d91",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "965267e8fa82828c621660ee39964a7e98d1fc2d0daad4138ff4aef861813b09",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Solaris/SolarisRareGemACutItem"
+      ],
+      "file": "dedd387ec36c798a7ed8.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SolarisRareGemACut.png",
+      "originalSha256": "dedd387ec36c798a7ed8f219429fedf18b71306a58b489ebb9032d1f9461de5b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2a9a1ba3618eca3415a2835c921603464821b80989147f6011ef8b3bb176111e",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/CorpusWidgetAItem"
+      ],
+      "file": "dee52a118dd1d8871b25.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CorpusWidgetA.png",
+      "originalSha256": "dee52a118dd1d8871b2545d07858a4499a8d9abbe34db7bee508e500f6b4f010",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "42c52d1af6ba628f10b093f2abb5029b3d852aba14cb0e80dfe90e1a409f3490",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechPartEngineItem"
+      ],
+      "file": "def206fc266b3f2a8947.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DamagedMechPartEngine.png",
+      "originalSha256": "def206fc266b3f2a8947e148974ca571bf0cd24f307e056829f6d1a6e56cef8e",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2da9f6c34346d87fa63f01e7e3971a4c81325e8e20b4297382a9c71f3e0d4708",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Gems/Eidolon/CommonOreBAlloyBItem"
+      ],
+      "file": "df20d93bb5504d54a1be.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CommonOreBAlloyA.png",
+      "originalSha256": "df20d93bb5504d54a1be2e47430b9bee4c405dabf307b8e8db9feb9284b87ab9",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "0af0c03b63f419cccfbf4d130b77a03f42e33679779b311b0344fe0005a5a1e7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemB"
+      ],
+      "file": "dffdcd9e115eeb402ea8.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPlantExtractB.png",
+      "originalSha256": "dffdcd9e115eeb402ea84c20bcf3ea3d532e16f33c18e82755815bde08ef55a0",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "cecb9e56c6374d28a120d203be613a678dffb92325c93515cc5381bc663b5920",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Kuva"
+      ],
+      "file": "e082340a33c949451a73.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Kuva.png",
+      "originalSha256": "e082340a33c949451a7399aab8dfce7a630e19eee907190d2dfa1e7272d77e56",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "5a9d44d83413460d0859f6403997d4b65acb3541607c8e91540feaef5337c50b",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Weapons/Tenno/Pistol/HeavyPistol"
+      ],
+      "file": "e1afb15dba9d9c864d97.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/Lex.png",
+      "originalSha256": "e1afb15dba9d9c864d9731b5ebbde5a6054d50375494e04256dafcd9ff48cc0b",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "dce7bdf633ff90b6deb46ff2f6d104413fb572f260dbb988ba799055c5e8bd50",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/Nanospores"
+      ],
+      "file": "e5bf4ead8477a660f09a.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/ComponentNanospores.png",
+      "originalSha256": "e5bf4ead8477a660f09aca249341218281ba380773d22cabb256cdec61fa403a",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "23e336d6db6833d7d323120fb91801ecb2dd785494608cb9511b53a68b2e0f0d",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/Mechs/DamagedMechWeaponStockItem"
+      ],
+      "file": "e699a3cf81446cb9155f.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DamagedEntratiMechGunStock.png",
+      "originalSha256": "e699a3cf81446cb9155f698491c66881dc6352626567b8ce4165faec2dbac6ac",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "2a3cc83882652eb18e073bb78f85b2ed2d5ad732ae280b2e8b9bafc78ab6ea7a",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidCamperItem"
+      ],
+      "file": "e6a7c354b90b07e6fb88.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CrpArachnoidPowerCoreCamper.png",
+      "originalSha256": "e6a7c354b90b07e6fb88a65052648d62677a93b75bbfd24406e404536380fcd6",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "af4456cd9d9436e6c6bd0e80e7d944f3151ea122c1cecdba98ae43b9e8c9fea5",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/Fish/GenericDuviriFishPartBItem"
+      ],
+      "file": "e7042fc93c01258bcb36.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriScale.png",
+      "originalSha256": "e7042fc93c01258bcb3630dd8994b44a2b7d28ac0c9cb232931bff484eca1fb2",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "189311e22603653cdb8968388a84981355525456b16cd1b120ff9cd13d0ec5e1",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriDragonDropItem"
+      ],
+      "file": "e79b5dc955c8c9af7531.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriWyrmsoul.png",
+      "originalSha256": "e79b5dc955c8c9af7531d2938c87738a4c7bd9d5b2488455b17a95afe20e5021",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "3e6cf54f5e40dcf197412900207fe3542a932f89ec3d89c24bd9f966bc97f0bc",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/SpecterParticleResidue"
+      ],
+      "file": "e81e8abf183f1cc1a127.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/SpecterParticleResidue.png",
+      "originalSha256": "e81e8abf183f1cc1a127a32948cdfc07eb95556c9c0ee5ad66af53b17707ba77",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "a5776b6f6592f70c0338adfff8f07524dc01c6489e7250948de50fa86ec90e53",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/EidolonFishMeatItem"
+      ],
+      "file": "e83cb633503a5c4358e3.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceMeat.png",
+      "originalSha256": "e83cb633503a5c4358e3adfc668c8d12d8ed95ca0d9c7de140a317ae5c849ec7",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "ad5ea6afa000cf89e52f2ac5269dd90dd39bdf7f737ccd85d62f0a1250909ab3",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/RailjackMiscItems/CarbidesRailjackItem"
+      ],
+      "file": "e8bf579c2829515e241b.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentCarbides.png",
+      "originalSha256": "e8bf579c2829515e241b1f92bf572006be3615418718ab2938efc683a72edda8",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "af7a214dee7ad63605557101e67cefc6f2ff0dd932de82560ca41eb45298b2ff",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Venus/Resources/ArachnoidWraithItem"
+      ],
+      "file": "e8f93b15dbf145cb3a83.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/CrpArachnoidPowerCoreWraith.png",
+      "originalSha256": "e8f93b15dbf145cb3a83adc80027a041ad170d500bc0a9ac760678fb45a4f6e5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "8affe76b5bbe7448649c4d360b511bdac3b3ac0f5d66786531a42c4b650baed7",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/EntratiLab/Resources/EntratiLabDogTagUncommon"
+      ],
+      "file": "e8fca510fa606f3065e1.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/EntratiLabDogTagUncommon.png",
+      "originalSha256": "e8fca510fa606f3065e16b423dcf4a7e6da2343d0a50c5d6bc6a39fa0ad04635",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "b4b2dae38014d39bd6261b3fff70190341a1a9cbfab92565ad46180348ce58d2",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/InfestedMicroplanet/Resources/InfMapricoFruitItem"
+      ],
+      "file": "ef8c6350d399d76f5c01.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/InfMapricoFruit.png",
+      "originalSha256": "ef8c6350d399d76f5c01e0b98a37b0cbd06d733a691e38bd201f55a4e382f5da",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "e86afc152684b9e4842ba20e734bf55caac2aaa634e5e7982962776dfdacf432",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/GrnFlameSpearPart"
+      ],
+      "file": "f1a44cf19967219e7bb0.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/JavlokCapacitor.png",
+      "originalSha256": "f1a44cf19967219e7bb0ed25ece3f47ebd2e0504ed3604a464b76e665e06ab28",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "fea17dd8ed251c147eeff7ba085c70dc8c0ea16b9a83d87071f135316e1a6c24",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGhostCatcherGlaivePartCore",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/InfBoomerangDisc",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/InfWarFanRivet",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TeshinGlaiveDisc",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithLink"
+      ],
+      "file": "f1ccb0b39f9ca57a53e1.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericComponentPlug.png",
+      "originalSha256": "f1ccb0b39f9ca57a53e13d1722868d70b52e47640eafdaa9bc59f4691aa9d08a",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d947305593c89cc7ebf5be0f1f9320f184a4f9d3b912b3a836c59d08e45ef84f",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Gameplay/Duviri/Resource/DuviriPlantItemA"
+      ],
+      "file": "f5c120dd135215b61c5a.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DuviriPlantExtractA.png",
+      "originalSha256": "f5c120dd135215b61c5a0c2874a6e8be254f02ef26f93c5003bebe68f5dd2ca8",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "003f51b4e1f011992b7cb4c2f63505207a07d31acc4251af6af5a98ef57e58fc",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchBurstGunBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchLongRifleBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/AthodaiPistolBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonVandalBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CarminePentaBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpGunbladeBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/CrpRubanRifleBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/DeraVandalBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/GorgonWraithBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ImperatorVandalBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/InfSniperRifleBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/KarakWraithBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LatoVandalBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronWraithBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/MiterBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/PaxDuviricusShotgunBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/ProteaSMGBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SheduHeavyWeaponBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SnipetronVandalBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/SpectraVandalBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/StrunWraithBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnAlchemistShotgunBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnConcreteArchgunBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnQuadSniperRifleBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TnoLotusPodShotgunBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/TwinVipersWraithBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolBarrel",
+        "/Lotus/Types/Recipes/Weapons/WeaponParts/WraithSidearmBarrel"
+      ],
+      "file": "f83e56d75d50f94df7bc.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/GenericGunBarrel.png",
+      "originalSha256": "f83e56d75d50f94df7bc6a6d127c0f43730662c5636ceeb38575deee9d4f16ab",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "80c474227c5a3d61b5ef4784fe3b876116a8cccc851662606b896042dd7c2b69",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/MiscItems/NarmerBountyResource"
+      ],
+      "file": "fa22786c4f78bb42f70e.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentProgens.png",
+      "originalSha256": "fa22786c4f78bb42f70e4392a44f646262e465918b2933e11eff09dd269dcc68",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "9cc3d6664d5edd4245359f53d9c8824e4a2a324f0d943b4da2164f3fb6e3d630",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Eidolon/FishParts/BothCommonFishAPartItem"
+      ],
+      "file": "fac2f48a588724f2170c.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/FishResourceGills.png",
+      "originalSha256": "fac2f48a588724f2170c483ec0e3d68be45752a7d9787a4c286561d3a4e8cec6",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "adb727f87ee4a81fbb5bd37a8b3cd3afe74f8dc4afdf2dc920dded6d498fadcd",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/RailjackMiscItems/NullstonesRailjackItem"
+      ],
+      "file": "fbe71c72c30340b3362d.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/RailjackComponentNullstones.png",
+      "originalSha256": "fbe71c72c30340b3362d686ba18f9941204b008ec73ce52dda19cb0f64f8d5f5",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "3aaa49b9bd87d605711afaf27dbdceee4ecb868bfceb37d674c9b5701ea7184c",
+      "size": [
+        128,
+        128
+      ]
+    },
+    {
+      "ids": [
+        "/Lotus/Types/Items/Fish/Deimos/FishParts/DeimosOrokinFishBPartItem"
+      ],
+      "file": "fe740d3557f2ba4cf5cd.png",
+      "sourceUrl": "https://raw.githubusercontent.com/WFCD/warframe-items/bb5937b4cd65500c5437978d1c014f954d22816b/data/img/DeimosOrokinFishBPart.png",
+      "originalSha256": "fe740d3557f2ba4cf5cd5dbf4a2569cadab0ad9dbd471a0622cced662705fede",
+      "originalSize": [
+        512,
+        512
+      ],
+      "sha256": "d32e3d542b2dd6ca10c801b4b367d43c445ccee76e11fdfd0a9ca66e5b6e2258",
+      "size": [
+        128,
+        128
+      ]
+    }
+  ],
+  "missing": []
+}

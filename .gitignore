@@ -15,3 +15,6 @@ Releases/
 *.wfriven
 
 .venv/
+
+# 오타로 생성된 로컬 검사 보고서
+/--report*

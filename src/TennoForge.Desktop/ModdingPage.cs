@@ -130,9 +130,11 @@ public sealed partial class MainWindow
         left.SizeChanged+=(_,_)=>
         {
             bool compact=left.ActualHeight<710;board.SetCompact(compact);split.ColumnDefinitions[1].Width=new(split.ActualWidth<1550?24:40);
+            bool shortWorkspace=left.ActualHeight<560;
+            equipmentCard.Margin=new(0,0,0,shortWorkspace?6:12);libraryCard.Padding=new(0,shortWorkspace?6:10,0,0);
             foreach(var slot in new[]{exilusSlotButton,meleeSlotButton,zawSlotButton})if(slot is not null)
             {
-                slot.Height=compact?48:100;slot.Padding=compact?new(8,6,8,6):new(9,7,9,7);
+                slot.Height=compact?48:EquipmentSlotHeight;slot.Padding=compact?new(8,6,8,6):new(9,7,9,7);
                 if(slot.Content is Grid content&&content.Children[0] is DockPanel band)foreach(var text in band.Children.OfType<TextBlock>()){text.FontSize=compact?12:13;text.LineHeight=compact?16:20;text.Margin=new(0);}
             }
             foreach(var name in new[]{exilusSlotName,meleeSlotName,zawSlotName})name.Height=compact?20:40;

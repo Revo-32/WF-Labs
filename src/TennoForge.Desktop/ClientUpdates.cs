@@ -29,6 +29,12 @@ internal sealed class VelopackUpdateFeed : IClientUpdateFeed
     public string CurrentVersion=>manager?.CurrentVersion?.ToString()??AppVersion;
     public string? UnavailableReason { get; }
     public ClientRelease? Pending=>manager is {IsInstalled:true,IsPortable:false,UpdatePendingRestart:{} asset}?Release(asset):null;
+    internal static string ConfiguredChannel
+    {
+        get{try{var config=JsonSerializer.Deserialize<ReleaseConfiguration>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory,"release-config.json")))??new();return ChannelLabel(AppVersion,config.Prerelease);}catch(Exception ex)when(ex is IOException or JsonException or UnauthorizedAccessException){return "설정 확인 필요";}}
+    }
+    internal static bool IncludePrereleases(string version,bool configured)=>version.Split('+')[0].Contains('-')&&configured;
+    internal static string ChannelLabel(string version,bool configured)=>IncludePrereleases(version,configured)?"미리보기 · 정식 버전 포함":"정식 버전";
     internal static bool IsRepository(string value)=>Regex.IsMatch(value,@"\Ahttps://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/?\z",RegexOptions.CultureInvariant);
     internal VelopackUpdateFeed()
     {
@@ -36,7 +42,7 @@ internal sealed class VelopackUpdateFeed : IClientUpdateFeed
         {
             var config=JsonSerializer.Deserialize<ReleaseConfiguration>(File.ReadAllText(Path.Combine(AppContext.BaseDirectory,"release-config.json")))??new();
             if(!IsRepository(config.RepositoryUrl)){UnavailableReason="배포 저장소가 연결되지 않았습니다. 연결된 설치형 버전에서 업데이트할 수 있습니다.";return;}
-            manager=new UpdateManager(new GithubSource(config.RepositoryUrl,null,config.Prerelease));
+            manager=new UpdateManager(new GithubSource(config.RepositoryUrl,null,IncludePrereleases(AppVersion,config.Prerelease)));
             if(!manager.IsInstalled||manager.IsPortable)UnavailableReason="개발·압축 버전입니다. 자동 업데이트는 설치형 버전에서 사용할 수 있습니다.";
         }
         catch(Exception ex){UnavailableReason="업데이트 설정을 읽지 못했습니다. "+ex.Message;}

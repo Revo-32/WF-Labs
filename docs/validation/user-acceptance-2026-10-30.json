@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "reportedDate": "2026-10-30",
+  "timezone": "Asia/Seoul",
+  "status": "passed",
+  "evidenceType": "user_playtest_report",
+  "scope": "한국어 성유물 보상 자동 인식·시세 오버레이의 실전 연속 사용",
+  "mission": "강철의 길 범람",
+  "enemyLevelReached": 9999,
+  "rawReport": "강길 범람에서 9999몹 볼떄까지 돌렸는데 계쏙 안정적으로 잘 나왔어",
+  "build": {
+    "version": "1.0.0-rc.6-ocr.1",
+    "fileName": "WFLabs.dll",
+    "sha256": "4e1f7a1fa83b5a32ca3a5d105b08e2425ecbf8d85daf653dd7d2e6a3f34c5081",
+    "identificationBasis": "테스트 중 실행 경로 관측 및 사용자 결과 보고 시 해당 DLL 체크섬 확인"
+  },
+  "measuredDurationSeconds": null,
+  "rewardRoundCount": null,
+  "recognitionErrorCount": null,
+  "measuredLatencySeconds": null,
+  "separateCandidate": {
+    "version": "1.0.0-rc.6-ui.1",
+    "sameUserAcceptanceApplied": false,
+    "status": "자동·격리 검수 통과, 별도 실전 사용 결과 미보고"
+  }
+}

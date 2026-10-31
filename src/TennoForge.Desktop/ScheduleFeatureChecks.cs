@@ -36,7 +36,11 @@ internal sealed partial class SchedulePage
         ((IExpandCollapseProvider)new ExpanderAutomationPeer(picks).GetPattern(PatternInterface.ExpandCollapse)).Collapse();await Dispatcher.Yield();
         int alerts=0;AlertSink=a=>alerts+=a.Length;var now=DateTimeOffset.Parse("2026-10-26T00:00:00Z");Clock=()=>now;
         var f=new FissureMission("ui-check-1","자리만 · 투불 광장","MT_VOID_CASCADE",6,true,false,now.AddMinutes(-1),now.AddHours(1));
-        var snapshot=Data.Snapshot! with{Timestamp=now,Fissures=[f,f with{Id="ignore-normal",SteelPath=false}],FissuresUtc=now};UseData(Data with{Snapshot=snapshot,Cached=false});Yes(alerts==1,"실제 페이지 데이터 갱신 → 강길 범람만 1회 알림");
+        var snapshot=Data.Snapshot! with{Timestamp=now,Fissures=[f,f with{Id="ignore-normal",SteelPath=false}],FissuresUtc=now};
+        int dashboardBefore=DashboardUpdateCount;DashboardVisibilityOverride=false;
+        UseData(Data with{Snapshot=snapshot,Cached=false});Yes(alerts==1,"숨긴 일정의 데이터 갱신 → 강길 범람만 1회 알림");
+        Tick();Tick();Yes(DashboardUpdateCount==dashboardBefore&&alerts==1,"백그라운드에서는 메인 UI 재구성 없이 알림·중복 방지 유지");
+        DashboardVisibilityOverride=true;Tick();Yes(DashboardUpdateCount==dashboardBefore+1,"일정을 다시 표시하면 최신 대시보드를 즉시 갱신");DashboardVisibilityOverride=null;
         Tick();Tick();Yes(alerts==1,"1초 타이머·재렌더링에서 중복 알림 없음");UseData(Data with{Cached=true});Yes(alerts==1,"연결 실패 캐시 자료에서 알림 안 함");UseData(Data with{Cached=false});Yes(alerts==1,"연결 복구 후 같은 균열 재알림 안 함");
         Yes(OverlayData(now).Fissures.Length==2&&OverlayData(now).Fissures.Count(f=>f.Highlight)==1,"현재 열린 균열을 모두 표시하고 알림 대상 구분");
         await Tab("알림");var notify=LayoutDiagnostics.Tree(root).OfType<CheckBox>().Single(c=>Equals(c.Content,"새 게임 얼럿 알림"));Toggle(notify);Yes(Preferences.NotifyGameAlerts,"새 게임 얼럿 알림 실제 켜기");

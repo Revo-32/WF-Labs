@@ -14,10 +14,11 @@ internal sealed class RewardSearchBox : Control
     private object? selectedItem;
     private string suggestedText="";
     private object[] items=[];
+    private RelicCatalog? searchCatalog;
     public IEnumerable? ItemsSource
     {
         get=>items;
-        set{items=value?.Cast<object>().ToArray()??[];if(selectedItem is not null&&!items.Contains(selectedItem))SelectedItem=null;Filter("");}
+        set{items=value?.Cast<object>().ToArray()??[];searchCatalog=null;if(selectedItem is not null&&!items.Contains(selectedItem))SelectedItem=null;Filter("");}
     }
     public IList Items=>items;
     public Func<RelicItem,bool>? SuggestionFilter {get;set;}
@@ -36,6 +37,7 @@ internal sealed class RewardSearchBox : Control
     public string Text=>(SelectedItem as RelicItem)?.Name??"";
     public string DisplayMemberPath{get;set;}="Name";
     public event SelectionChangedEventHandler? SelectionChanged;
+    internal event Action? DropDownClosed;
     public static readonly DependencyProperty IsDropDownOpenProperty=DependencyProperty.Register(nameof(IsDropDownOpen),typeof(bool),typeof(RewardSearchBox),new FrameworkPropertyMetadata(false));
     public bool IsDropDownOpen{get=>(bool)GetValue(IsDropDownOpenProperty);set=>SetValue(IsDropDownOpenProperty,value);}
     private TextBox? query;
@@ -105,7 +107,7 @@ internal sealed class RewardSearchBox : Control
         ((ToggleButton)Template.FindName("Open",this)).Click+=(_,_)=>{if(IsDropDownOpen){Filter("");query.Focus();query.SelectAll();}};
         var toggle=(ToggleButton)Template.FindName("Open",this);toggle.ApplyTemplate();
         if(toggle.Template.FindName("Chevron",toggle) is FrameworkElement arrow)UiMotion.Attach(SearchPopup,arrow);
-        SearchPopup.Closed+=(_,_)=>{composing=false;SyncText();};
+        SearchPopup.Closed+=(_,_)=>{composing=false;SyncText();DropDownClosed?.Invoke();};
         SyncText();Filter("");
     }
     protected override void OnPreviewKeyDown(KeyEventArgs e)
@@ -143,7 +145,10 @@ internal sealed class RewardSearchBox : Control
     {
         if(suggestions is null)return;
         var q=Normalize(text);
-        var catalog=new RelicCatalog(DateTimeOffset.MinValue,Items.Cast<RelicItem>().ToArray());
+        bool stale=searchCatalog is null||searchCatalog.Items.Length!=items.Length;
+        if(!stale)for(int i=0;i<items.Length;i++)if(!ReferenceEquals(items[i],searchCatalog!.Items[i])){stale=true;break;}
+        if(stale)searchCatalog=new RelicCatalog(DateTimeOffset.MinValue,items.Cast<RelicItem>().ToArray());
+        var catalog=searchCatalog!;
         var matches=q.Length==0?catalog.Items.Take(30).ToArray():catalog.Search(text,30).Select(x=>x.Item).ToArray();
         suggestions.ItemsSource=matches;suggestions.SelectedIndex=-1;
         empty!.Visibility=matches.Length==0?Visibility.Visible:Visibility.Collapsed;
@@ -152,6 +157,6 @@ internal sealed class RewardSearchBox : Control
     internal void OpenSuggestions(){ApplyTemplate();Filter(query!.Text);IsDropDownOpen=true;query.Focus();query.SelectAll();}
     private void SyncText()
     {if(query is null)return;syncing=true;try{query.Text=(SelectedItem as RelicItem)?.Name??suggestedText;}finally{syncing=false;}}
-    private void Commit(RelicItem w){SelectedItem=w;IsDropDownOpen=false;SyncText();query?.Focus();query?.SelectAll();}
+    private void Commit(RelicItem w){SelectedItem=w;IsDropDownOpen=false;SyncText();if(IsVisible){query?.Focus();query?.SelectAll();}}
     internal void CancelSearch(){IsDropDownOpen=false;SyncText();}
 }

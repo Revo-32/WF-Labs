@@ -12,32 +12,54 @@ internal static class RivenFooterAnchor
     private const string M="11100000111/11100000111/11100000111/11110001111/11110001111/11111011111/11111011011/11011011011/11011011011/11011011011/11001110011/11001110011/11000100011/11000000011/11000000011";
     private const string R="11111111000/11111111110/11100001110/11100000110/11100000110/11100000110/11100001110/11111111100/11111111000/11100111000/11100011100/11100011110/11100001110/11100000110/01100000111";
     private static readonly string[] TemplateM=M.Split('/'),TemplateR=R.Split('/');
+    private sealed record PreparedFrame(int Width,int Height,byte[] Pixels);
     internal static Task<Rect[]> FindAsync(BitmapSource source,CancellationToken token)
     {
-        var bgra=new FormatConvertedBitmap(source,PixelFormats.Bgra32,null,0);int w=bgra.PixelWidth,h=bgra.PixelHeight;
-        var pixels=new byte[w*h*4];bgra.CopyPixels(pixels,w*4,0);
-        return Task.Run(()=>
+        token.ThrowIfCancellationRequested();
+        // Keep WIC conversion, scaling and CopyPixels on the source's owning
+        // thread. Only the reduced plain pixel buffer crosses to the worker.
+        // Async previously converted to BGRA before detaching/scaling; preserve
+        // that ordering, including non-BGRA/alpha inputs.
+        var prepared=Prepare(new FormatConvertedBitmap(source,PixelFormats.Bgra32,null,0));
+        return FindPreparedAsync(prepared,token);
+    }
+    private static async Task<Rect[]> FindPreparedAsync(PreparedFrame prepared,CancellationToken token)
+    {
+        try{return await Task.Run(()=>
         {
             token.ThrowIfCancellationRequested();
-            var detached=BitmapSource.Create(w,h,96,96,PixelFormats.Bgra32,null,pixels,w*4);detached.Freeze();
-            var result=Find(detached);token.ThrowIfCancellationRequested();return result;
-        },token);
+            var result=Find(prepared);token.ThrowIfCancellationRequested();return result;
+        },token).ConfigureAwait(false);}
+        finally{Array.Clear(prepared.Pixels);}
     }
     internal static Rect[] Find(BitmapSource source)
     {
-        var normal=FindCore(source,false);
+        var prepared=Prepare(source);
+        try{return Find(prepared);}
+        finally{Array.Clear(prepared.Pixels);}
+    }
+    private static PreparedFrame Prepare(BitmapSource source)
+    {
+        using var scope=RivenPerformance.Measure("footer-preparation");
+        double scale=Math.Min(1,2560d/source.PixelWidth);
+        var image=new FormatConvertedBitmap(scale<1?new TransformedBitmap(source,new ScaleTransform(scale,scale)):source,PixelFormats.Bgra32,null,0);
+        int w=image.PixelWidth,h=image.PixelHeight;var pixels=new byte[w*h*4];
+        try{image.CopyPixels(pixels,w*4,0);return new(w,h,pixels);}
+        catch{Array.Clear(pixels);throw;}
+    }
+    private static Rect[] Find(PreparedFrame prepared)
+    {
+        var normal=FindCore(prepared,false);
         if(normal.Length==2)return normal;
-        var dim=FindCore(source,true);var combined=normal.ToList();
+        var dim=FindCore(prepared,true);var combined=normal.ToList();
         foreach(var candidate in dim)
             if(!combined.Any(a=>Rect.Intersect(a,candidate).Width>Math.Min(a.Width,candidate.Width)*.4&&Rect.Intersect(a,candidate).Height>Math.Min(a.Height,candidate.Height)*.3))combined.Add(candidate);
         return combined.Count is 1 or 2?combined.OrderBy(a=>a.X).ToArray():normal;
     }
-    private static Rect[] FindCore(BitmapSource source,bool dim)
+    private static Rect[] FindCore(PreparedFrame prepared,bool dim)
     {
         using var scope=RivenPerformance.Measure("footer-anchor");
-        double scale=Math.Min(1,2560d/source.PixelWidth);
-        var image=new FormatConvertedBitmap(scale<1?new TransformedBitmap(source,new ScaleTransform(scale,scale)):source,PixelFormats.Bgra32,null,0);
-        int w=image.PixelWidth,h=image.PixelHeight;var pixels=new byte[w*h*4];image.CopyPixels(pixels,w*4,0);var mask=new byte[w*h];
+        int w=prepared.Width,h=prepared.Height;var pixels=prepared.Pixels;var mask=new byte[w*h];
         for(int i=0;i<mask.Length;i++){int p=i*4,b=pixels[p],g=pixels[p+1],r=pixels[p+2];if(r>(dim?42:75)&&r-g>(dim?7:12)&&b-r>(dim?5:8))mask[i]=1;}
         var seen=new bool[w*h];var component=new List<int>();var glyphs=new List<Int32Rect>();
         for(int start=0;start<mask.Length;start++)

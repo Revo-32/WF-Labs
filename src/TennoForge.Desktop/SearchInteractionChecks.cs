@@ -116,7 +116,7 @@ public sealed partial class MainWindow
                 expand.Collapse();await Settle();Yes(!UiMotion.Animating(dropdown)&&UiMotion.Angle(dropdown)==0,"경량 모드에서 애니메이션 없이 상태 전환");SetLightMode(false);
                 weapon.IsDropDownOpen=true;await Task.Delay(180);Yes(UiMotion.Angle(weapon.SearchPopup)==180,"무기 검색에도 같은 열림 표시");weapon.CancelSearch();await Task.Delay(180);
             }
-            checks.AddRange(CheckWeaponSearchUx());
+            checks.AddRange(await CheckWeaponSearchUx());
             foreach(var font in UiFonts.Choices)foreach(var dark in new[]{true,false})foreach(var scale in new[]{1d,1.25,1.5})
             {
                 UiFonts.Apply(font.Id);SetDarkTheme(dark);ShowModding();await Settle();

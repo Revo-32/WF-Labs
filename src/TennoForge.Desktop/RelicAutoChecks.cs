@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Text.Json;
 using System.Windows;
+using System.Windows.Interop;
 using System.Windows.Automation.Peers;
 using System.Windows.Automation.Provider;
 using TennoForge.Core;
@@ -16,6 +17,38 @@ public sealed partial class MainWindow
     internal async Task<object> CheckRelicAuto(string dir,Action<FrameworkElement,string,int,int,double> render)
     {
         var checks=new List<string>();void Yes(bool value,string name){if(!value)throw new InvalidOperationException(name);checks.Add(name);}
+        var ownHandle=new WindowInteropHelper(this).EnsureHandle();
+        var identityStates=new List<object>();
+        void IdentityState(string phase)
+        {
+            var s=RelicCapture.WindowIdentityStateForCheck(ownHandle);
+            identityStates.Add(new{phase,managedLoaded=IsLoaded,managedVisible=IsVisible,windowState=WindowState.ToString(),nativeVisible=s.Visible,minimized=s.Minimized,pid=s.ProcessId,thread=s.ThreadId,lookups=s.Lookups});
+            File.WriteAllText(Path.Combine(dir,"foreground-identity.json"),JsonSerializer.Serialize(identityStates,Catalog.Json));
+        }
+        IdentityState("loaded-before-idle");
+        // Loaded can run before Window.Show has set native WS_VISIBLE. Waiting
+        // for the private desktop's idle turn finishes that transition without
+        // activating any window or weakening the real capture visibility guard.
+        await Idle();IdentityState("after-private-window-idle");
+        var visibleWindow=RelicCapture.WindowIdentityStateForCheck(ownHandle);
+        Yes(visibleWindow.Visible&&!visibleWindow.Minimized&&visibleWindow.ProcessId==(uint)Environment.ProcessId,"private 검수 HWND가 native 표시를 마친 뒤 identity 판정 시작");
+        var beforeForeground=RelicCapture.GetForegroundWindow();RelicCapture.ClearForegroundGameCache();
+        try
+        {
+            int firstLookups=RelicCapture.ForegroundIdentityLookups;
+            Yes(ownHandle!=IntPtr.Zero&&RelicCapture.GameWindowIdentity(ownHandle)==IntPtr.Zero,"격리된 WF Labs HWND를 Warframe으로 오판하지 않음");
+            IdentityState("after-first-identity-read");
+            int afterFirst=RelicCapture.ForegroundIdentityLookups;
+            Yes(afterFirst==firstLookups+1,"새 HWND 소유 프로세스 identity 조회 1회");
+            Yes(Enumerable.Range(0,32).All(_=>RelicCapture.GameWindowIdentity(ownHandle)==IntPtr.Zero)&&RelicCapture.ForegroundIdentityLookups==afterFirst,"같은 살아 있는 PID의 부정 판정 32회에 identity 조회 재사용");
+            RelicCapture.ClearForegroundGameCache();
+            Yes(RelicCapture.GameWindowIdentity(ownHandle)==IntPtr.Zero&&RelicCapture.ForegroundIdentityLookups==afterFirst+1,"identity 캐시 해제 뒤 새 조회 1회");
+            Yes(RelicCapture.GameWindowIdentity(IntPtr.Zero)==IntPtr.Zero&&RelicCapture.GameWindowIdentity(new(-1))==IntPtr.Zero,"0·잘못된 HWND에서 게임 창을 만들지 않음");
+            var closed=new Window{ShowActivated=false,ShowInTaskbar=false};var closedHandle=new WindowInteropHelper(closed).EnsureHandle();closed.Close();
+            Yes(RelicCapture.GameWindowIdentity(closedHandle)==IntPtr.Zero,"닫힌 private HWND는 게임 창으로 판정하지 않음");
+            Yes(RelicCapture.GetForegroundWindow()==beforeForeground,"identity 캐시 검수가 전경·포커스를 전환하지 않음");
+        }
+        finally{RelicCapture.ClearForegroundGameCache();IdentityState("after-cache-cleanup");}
         var path=Path.Combine(dir,"fixture-EE.log");File.WriteAllText(path,"1 Script [Info]: Got rewards\n");
         var events=new ConcurrentQueue<RelicRewardSignal>();
         var detector=new RelicAutoDetector(events.Enqueue,_=>{},path,debugOutput:false);
@@ -69,6 +102,6 @@ public sealed partial class MainWindow
         var peer=new CheckBoxAutomationPeer(view.Automatic);var toggle=(IToggleProvider)peer.GetPattern(PatternInterface.Toggle);
         toggle.Toggle();toggle.Toggle();Yes(toggles.SequenceEqual(new[]{false,true}),"자동 인식 체크박스의 실제 Automation Toggle 이벤트");
         render(this,"auto-minimum",1760,920,1);render(this,"auto-125",1760,920,1.25);render(this,"auto-150",1760,920,1.5);
-        return new{passed=true,checks,idleCpuMilliseconds,idleWallMilliseconds,idleOneCorePercent=idleCpuMilliseconds/idleWallMilliseconds*100,nativeInput=false,screenCapture=false,debugChannelClaimed=false,scope="기록 재생·비공개 Windows 로그 채널·증분 감시·설정·실제 WPF 토글 검수. 대기 CPU는 격리 앱 전체이며 실전 게임 성능 측정이 아님."};
+        return new{passed=true,checks,idleCpuMilliseconds,idleWallMilliseconds,idleOneCorePercent=idleCpuMilliseconds/idleWallMilliseconds*100,nativeInput=false,screenCapture=false,debugChannelClaimed=false,scope="기록 재생·비공개 Windows 로그 채널·증분 감시·설정·실제 WPF 토글 검수. 대기 CPU는 격리 앱 전체이며 실전 게임 성능 측정이 아님.",foregroundIdentityScope="격리된 WF Labs HWND의 부정 판정·반복 PID 캐시·해제·잘못된/닫힌 HWND만 확인. 실제 Warframe 긍정 판정·PID/HWND 재사용 실험은 포함하지 않음."};
     }
 }

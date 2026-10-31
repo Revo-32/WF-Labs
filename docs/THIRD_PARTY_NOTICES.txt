@@ -55,7 +55,10 @@ COPYRIGHT.md를 참조하세요.
   ONNX 변환 배포본(v3.9.2)을 내장합니다. Apache License 2.0.
   Assets/Ocr/PADDLEOCR-LICENSE.txt, RAPIDOCR-LICENSE.txt 및
   korean-line-v5.model.json의 원본 URL·SHA-256·용도를 참조하세요.
-  WF Labs가 이 모델을 추가 학습했다고 표시하지 않습니다.
+  원본 korean-line-v5.onnx는 추가 학습 없이 보존합니다.
+  별도 riven-line.onnx는 이 기반 모델의 CTC 최종 분류기만 WF Labs가 추가 학습한 파일입니다.
+  기반 고지를 유지하며 riven-line.model.json, MODEL-MODIFICATIONS.txt에 수정·출처·해시를 구분합니다.
+  학습에 사용한 공개 게임 이미지와 글꼴 파일은 새 모델의 배포 파일에 넣지 않았습니다.
 - Microsoft.ML.OnnxRuntime 1.22.1: MIT License.
   Assets/Ocr/ONNXRUNTIME-LICENSE.txt 및 ONNXRUNTIME-THIRD-PARTY-NOTICES.txt 참조. CPU로 로컬 추론하며 Python이나
   PaddlePaddle 런타임, GPU 실행 공급자는 앱에 포함하지 않습니다.
@@ -84,3 +87,11 @@ data/incarnon-rotations.json은 WARFRAME Wiki contributors의 Incarnon 문서
 유지합니다. 공식 EndlessXpSchedule의 주간 선택지·기간과 비교해 기준 주차를 연결했으며,
 정규화 파일에 원본 URL·개정·SHA-256을 보존합니다. 한국어 품목명·내부 ID는
 기존 Public Export 데이터와 연결합니다. WF-WIKI-NOTICE.txt 및 PUBLIC-EXPORT 관련 고지를 따릅니다.
+
+2026-10-26 거래 세트 구성:
+data/inventory-market-bundles.json은 warframe.market v2 공개 품목 API의 세트 구성·수량을 정규화합니다. 원본 URL·응답 SHA-256을 데이터에 보존합니다. 기존 WARFRAME-MARKET-NOTICE 및 Public Export 한국어 명칭 고지를 따르며, 자체 코드의 권리 고지를 외부 데이터에 적용하지 않습니다.
+
+2026-10-31 필요 재료 아이콘:
+Digital Extremes의 기존 게임 이미지 214개를 WFCD 고정 자료의 내부 ID로 연결해
+최대 128px PNG로 축소했습니다. 생성·재작화한 이미지가 아닙니다.
+MATERIAL-ICONS-NOTICE.txt와 Assets/Materials/sources.json의 개정·원본 URL·해시를 따릅니다.

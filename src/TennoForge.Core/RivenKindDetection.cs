@@ -8,8 +8,9 @@ public static class RivenKindDetection
     public static readonly string[] Kinds=["Melee","Rifle","Shotgun","Pistol"];
     private static string Normal(string value)=>Regex.Replace(value,@"[^가-힣A-Za-z0-9]","").ToLowerInvariant();
     private static readonly Lazy<(string Name,string Kind)[]> Names=new(()=>
-        ReferenceCatalog.Load().Weapons.Where(w=>w.Category is "melee" or "primary" or "secondary")
-            .SelectMany(w=>new[]{w.Name,w.EnglishName}.Select(name=>(Name:Normal(name),Kind:w.Category=="melee"?"Melee":RangedEngine.ModCategory(w))))
+        ReferenceCatalog.Load().Weapons.Where(w=>w.Category is "melee" or "primary" or "secondary"||
+                w.Category=="companion"&&w.WeaponType is "Rifle" or "Sniper Rifle" or "Pistol" or "Shotgun")
+            .SelectMany(w=>new[]{w.Name,w.EnglishName}.Select(name=>(Name:Normal(name),Kind:w.Category=="melee"?"Melee":w.WeaponType=="Pistol"?"Pistol":RangedEngine.ModCategory(w))))
             .Where(w=>w.Name.Length>=2||Regex.IsMatch(w.Name,@"^[가-힣]$")).Distinct().OrderByDescending(w=>w.Name.Length).ToArray());
 
     public static string? WeaponKind(string text)

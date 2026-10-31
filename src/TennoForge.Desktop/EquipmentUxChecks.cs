@@ -17,7 +17,8 @@ public sealed partial class MainWindow
         }
         try
         {
-            Yes(new[]{exilusSlotButton!,meleeSlotButton!,zawSlotButton!}.All(b=>b.Visibility==Visibility.Visible&&b.ActualWidth>100&&b.ActualHeight==100),"엑실러스·근접 아케인·조우 슬롯의 동시 배치와 크기");
+            Yes(new[]{exilusSlotButton!,meleeSlotButton!,zawSlotButton!}.All(b=>b.Visibility==Visibility.Visible&&b.ActualWidth>100&&b.ActualHeight>=44),"엑실러스·근접 아케인·조우 슬롯의 동시 배치와 클릭 영역");
+            Yes(LayoutDiagnostics.Inspect(equipmentSlots!).Length==0,"추가 슬롯의 제목·장착 이름·랭크 글자 경계");
             encounterChoice.SelectedValue=EncounterMode.FirstHit;
             var content=Open("melee");var name=ReferenceCatalog.Load().Arcanes.Single(a=>a.EnglishName=="Melee Exposure").Name;
             var search=Descendants(content).OfType<TextBox>().Single();search.Text="Melee Exposure";content.UpdateLayout();

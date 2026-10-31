@@ -6,7 +6,7 @@
     <AssemblyName>WFLabs</AssemblyName>
     <Product>WF Labs</Product>
     <Title>WF Labs</Title>
-    <Version>0.10.0-preview.1</Version>
+    <Version>1.0.0</Version>
     <StartupObject>TennoForge.Desktop.EntryPoint</StartupObject>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets/Brand/wf-labs.ico</ApplicationIcon>
@@ -18,6 +18,8 @@
     <Resource Include="Assets/Polarities/*.svg" />
     <Resource Include="Assets/Brand/wf-labs-symbol.svg" />
     <Resource Include="Assets/Brand/wf-labs.ico" />
+    <Resource Include="Assets/Materials/*.png" />
+    <EmbeddedResource Include="Assets/Materials/sources.json" LogicalName="WFLabs.material-icons.json" />
     <EmbeddedResource Include="Assets/Audio/schedule-notification.wav" LogicalName="WFLabs.schedule-notification.wav" />
     <Content Include="Assets/Audio/schedule-notification.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <Content Include="release-config.json" CopyToOutputDirectory="PreserveNewest" />
@@ -31,6 +33,7 @@
     <Content Include="Fonts/THE-JAMSIL-SOURCE.json" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="Fonts/The_Jamsil_LICENSE_Korean.pdf" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="../../data/WFCD-LICENSE.txt" Link="WFCD-LICENSE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../data/MATERIAL-ICONS-NOTICE.txt" Link="MATERIAL-ICONS-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
     <Content Include="../../data/inventory-sources.json" Link="Data/inventory-sources.json" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="../../data/inventory-acquisition.json" Link="Data/inventory-acquisition.json" CopyToOutputDirectory="PreserveNewest" />
     <Content Include="../../data/inventory-acquisition-provenance.json" Link="Data/inventory-acquisition-provenance.json" CopyToOutputDirectory="PreserveNewest" />

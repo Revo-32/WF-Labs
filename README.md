@@ -5,17 +5,27 @@
 </picture>
 
 <p align="center">
-  <a href="https://github.com/Revo-32/WF-Labs/releases/tag/v0.10.0-preview.1"><strong>Windows 설치 파일 받기 ↗</strong></a>
+  <a href="https://github.com/Revo-32/WF-Labs/releases/tag/v1.0.0"><strong>Windows 설치 파일 받기 ↗</strong></a>
   &nbsp; · &nbsp;
   <a href="docs/DISTRIBUTION.md">설치·업데이트</a>
   &nbsp; · &nbsp;
-  <a href="https://github.com/Revo-32/WF-Labs/issues">문제 제보</a>
+  <a href="docs/SUPPORT.md">도움말·문제 제보</a>
+  &nbsp; · &nbsp;
+  <a href="docs/PRIVACY.md">데이터 처리</a>
 </p>
 
 **WF Labs**는 워프레임 PC 한국어 사용자를 위한 빌드 분석 도구입니다. 모드를 배치하고, 적과 교전 조건을 설정하면 피해량·DPS·TTK를 비교할 수 있습니다. 리벤 분석부터 다음에 할 활동을 고르는 과정까지 한 앱에서 이어갑니다.
 
-> **현재 공개 버전 · 0.10.0-preview.1**<br>
-> 한국어 성유물·리벤 OCR, 게임 오버레이, 일정과 마스터리 도우미를 추가한 공개 미리보기입니다. [릴리즈 노트와 설치 파일 보기 →](https://github.com/Revo-32/WF-Labs/releases/tag/v0.10.0-preview.1)
+> **정식 버전 · 1.0.0**<br>
+> 한국어 성유물·리벤 OCR부터 모딩, 일정, 파밍 목표와 마스터리 제작 계획까지 연결합니다. [릴리즈 노트와 설치 파일 보기 →](https://github.com/Revo-32/WF-Labs/releases/tag/v1.0.0)
+
+## 1.0에서 새로 정리한 작업 흐름
+
+- **내 장비 → 목표 등록**: 부족 부품·재료 예약부터 성유물 추천·정련·미션 알림·보상 강조까지 이어집니다.
+- **내 장비 → 필요 재료**: 남은 제작 장비의 재료를 합산하고 가공·오픈월드·희귀·일반 재료를 실제 게임 이미지와 함께 한 페이지에 표시합니다.
+- **성유물·리벤 → 자동 인식**: 각 화면 상단에서 켜고 끄며 감지 상태를 확인합니다. 리벤은 무기 종류를 자동 판별하고 순환 전·후 옵션을 비교합니다.
+
+[1.0 배포 범위와 검증 안내](docs/RELEASE_1_0_0.md) · [실전 성유물 사용 확인](docs/USER_ACCEPTANCE_2026-10-30.md)
 
 ## 모딩에서 비교까지, 한 화면에서
 
@@ -31,9 +41,9 @@
 | :--- | :--- |
 | **모드 · 피해 비교** | 주무기·보조무기·근접 모딩, 적·레벨·방어층, DPS·TTK, 빌드 A/B 비교와 계산 근거 |
 | **리벤 · 접합과 순환** | 종류별 옵션 범위·수율, 접합 후보, 순환·쿠바 예산과 현재 빌드의 DPS·TTK 비교 |
-| **성유물 · 보상 선택** <sup>0.10</sup> | 한국어 보상 자동 인식, 플래티넘·두캇 비교, 저장 시세와 오인식 수정 |
-| **일정 · 다음 활동** <sup>0.10</sup> | 낮·밤, 중재 유형·팩션 필터, 테넷·코다 상점, 인카논 순환, 일정 오버레이와 알림 |
-| **내 장비 · 마스터리 계획** <sup>0.10</sup> | 숙련 진행 그래프, 제작·구매 추천, 획득처·필요 재화, 보유 성유물의 기대값·정련 계획 |
+| **성유물 · 보상 선택** | 한국어 보상 자동 인식, 플래티넘·두캇 비교, 저장 시세와 오인식 수정 |
+| **일정 · 다음 활동** | 낮·밤, 중재 유형·팩션 필터, 테넷·코다 상점, 인카논 순환, 일정 오버레이와 알림 |
+| **내 장비 · 마스터리 계획** | 숙련 진행 그래프, 제작·구매 추천, 획득처·필요 재료 갤러리, 목표별 예약·낱개/세트 구매 비교 |
 
 <details>
 <summary><strong>리벤 화면 보기</strong> — 옵션이 가능한 범위의 어디에 있는지</summary>
@@ -59,11 +69,11 @@
 
 ## 설치와 업데이트
 
-1. [공개 릴리즈](https://github.com/Revo-32/WF-Labs/releases/tag/v0.10.0-preview.1)에서 `WFLabs-win-Setup.exe`를 받아 설치합니다. Windows x64용이며 .NET 런타임을 포함합니다. 설치 시 OCR에 필요한 Visual C++ x64 런타임을 확인합니다.
+1. [공개 릴리즈](https://github.com/Revo-32/WF-Labs/releases/tag/v1.0.0)에서 `WFLabs-win-Setup.exe`를 받아 설치합니다. Windows x64용이며 .NET 런타임을 포함합니다. 설치 시 OCR에 필요한 Visual C++ x64 런타임을 확인합니다.
 2. 앱 상단 **업데이트**에서 확인·다운로드하고, **설치 후 다시 시작**으로 적용합니다. 작업 중 강제로 재시작하지 않습니다.
 3. **설정**에서 자동 업데이트 확인·다운로드, Windows 로그인 시 실행, 워프레임 시작 시 실행을 선택합니다.
 
-Portable 배포본과 자세한 요구 사항은 [설치·업데이트 안내](docs/DISTRIBUTION.md)를 확인하세요. 개발 미리보기이며 설치 파일에는 Authenticode 서명이 없습니다. 준비 중인 릴리즈 초안은 클라이언트 업데이트 목록에 노출되지 않습니다.
+Portable 배포본과 자세한 요구 사항은 [설치·업데이트 안내](docs/DISTRIBUTION.md)를 확인하세요. 설치 파일은 사용자 결정에 따라 Authenticode 서명 없이 배포합니다. Windows에서 게시자를 확인할 수 없다는 경고가 표시될 수 있습니다. 준비 중인 릴리즈 초안은 클라이언트 업데이트 목록에 노출되지 않습니다.
 
 ## 근거와 한계를 함께 표시합니다
 
@@ -71,7 +81,7 @@ Portable 배포본과 자세한 요구 사항은 [설치·업데이트 안내](d
 
 - **계산 범위** — [구현 상태](docs/IMPLEMENTATION_STATUS.md) · [총기 근사 모델](docs/RANGED_APPROXIMATIONS.md) · [원문 자료 공백](docs/RANGED_SOURCE_GAPS.md)
 - **검증** — [Windows 빌드·UI 검사](https://github.com/Revo-32/WF-Labs/actions/workflows/windows.yml) · [계산·자료 검증 기록](docs/VALIDATION.md)
-- **0.10 참고** — 실시간 게임 캡처는 FHD 이상을 대상으로 합니다. OCR은 화면 배율·배경에 따라 실패할 수 있고, 인벤토리 직접 읽기는 시험 지원입니다. 시세에는 저장 시각을 표시합니다. 중재 S티어는 커뮤니티 판단입니다.
+- **지원 범위** — 실시간 게임 캡처는 FHD 이상을 대상으로 합니다. OCR은 화면 배율·배경에 따라 실패할 수 있고, 인벤토리 직접 읽기는 시험 지원입니다. 시세에는 저장 시각을 표시합니다. 중재 S티어는 커뮤니티 판단입니다.
 
 <details>
 <summary><strong>소스 확인과 개발 환경</strong></summary>
@@ -85,6 +95,10 @@ dotnet build WFLabs.sln -c Release
 ```
 
 전체 검증에는 별도 Windows 데스크톱에서의 실제 WPF 렌더링·상호작용 검사가 포함됩니다. 물리 모니터 이동이나 실제 게임 병행 검수를 대신하지는 않습니다.
+
+개발 중인 다음 버전: [공개 한국어 리벤 45장 추가 학습·검증](docs/OCR_RIVEN_CORPUS_2026-10-30.md) · [필요 재료 분류·수량·기존 게임 아이콘](docs/MASTERY_MATERIALS_2026-10-31.md) · [카테고리별 3·4열 재료 페이지](docs/MASTERY_MATERIAL_GALLERY_2026-10-31.md) · [1.0 출시 전 마감 목록](docs/RELEASE_READINESS_2026-10-31.md). 현재 공개 릴리즈에 포함되었다는 뜻은 아닙니다.
+
+[2026-10-30 강화 UI·UX·성능 검수](docs/UI_UX_PERFORMANCE_REVIEW_2026-10-30.md)에서는 작은 창·상세 펼침·검색 복구를 보완하고, OCR 판독 결과를 유지하는 후처리를 검증했습니다.
 
 [과거 개발 기록](docs/history/README_LEGACY_2026-10-26.md) · [UX 원칙](docs/UX_PRINCIPLES.md)
 
